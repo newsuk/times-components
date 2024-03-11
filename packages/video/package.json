@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.17.2",
+  "version": "4.18.0",
   "main": "dist/video",
   "dev": "src/video",
   "description": "Video",

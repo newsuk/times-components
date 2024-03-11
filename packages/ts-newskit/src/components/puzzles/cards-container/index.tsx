@@ -10,8 +10,9 @@ import { Puzzle } from '../archive/types';
 import { StyledTitleBar } from './styles';
 import { ScrollControls } from './ScrollControls';
 import { PuzzleCard } from '../puzzle-card';
+import { PuzzleScrollClickHandlerType } from './types';
 
-interface CardsContainerProps {
+export interface CardsContainerProps {
   cards: Puzzle[];
   title?: string;
   isScrollable?: boolean;
@@ -21,13 +22,21 @@ interface CardsContainerProps {
 }
 
 export const CardsContainer = ({
-  cards,
-  title,
-  isScrollable = false,
-  seeAllLink,
-  isImageCropped = false,
-  isDashHidden = false
-}: CardsContainerProps) => {
+  cardsProps,
+  clickHandler
+}: {
+  cardsProps: CardsContainerProps;
+  clickHandler: PuzzleScrollClickHandlerType;
+}) => {
+  const {
+    cards,
+    title,
+    isScrollable = false,
+    seeAllLink,
+    isImageCropped = false,
+    isDashHidden = false
+  } = cardsProps;
+
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -55,10 +64,13 @@ export const CardsContainer = ({
         actionItem={() =>
           isScrollable && cards.length > 4 ? (
             <ScrollControls
-              scrollRef={scrollRef}
-              seeAllLink={seeAllLink}
-              cardRef={cardRef}
-              sectionTitle={title}
+              scrollProps={{
+                scrollRef,
+                cardRef,
+                seeAllLink,
+                sectionTitle: title
+              }}
+              clickHandler={clickHandler}
             />
           ) : null
         }
@@ -71,6 +83,7 @@ export const CardsContainer = ({
         {seeAllLink ? (
           <LinkInline
             href={seeAllLink}
+            data-testid="card-controller-see-all-link"
             overrides={{
               externalIcon: { size: '0' },
               stylePreset: 'inkBrand010'
@@ -79,7 +92,7 @@ export const CardsContainer = ({
             {title}
           </LinkInline>
         ) : (
-          title
+          <span data-testid="no-see-all-link">{title}</span>
         )}
       </StyledTitleBar>
       <Scroll

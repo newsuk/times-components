@@ -32,7 +32,8 @@ export const PuzzleCard = ({
       key={data.id}
       overrides={{
         height: '100%',
-        stylePreset: 'puzzleCard'
+        stylePreset: 'puzzleCard',
+        maxWidth: '293px'
       }}
     >
       <PuzzleCardImgWrapper
@@ -41,7 +42,6 @@ export const PuzzleCard = ({
       >
         {imageUrl ? (
           <Image
-            loadingAspectRatio="3:2"
             alt={data.title || 'Puzzle thumbnail'}
             src={croppedImageUrl}
             loading={isLazyLoading ? 'lazy' : 'eager'}
