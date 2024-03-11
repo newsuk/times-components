@@ -17,6 +17,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span
@@ -76,11 +77,11 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             SEE ALL
           </span>
         </a>
-        <button
+        <a
           aria-label="scroll left"
           class="css-1v2cnmj"
           data-testid="scroll-left"
-          type="button"
+          href=""
         >
           <svg
             class="css-1e6cmyg"
@@ -116,12 +117,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               />
             </g>
           </svg>
-        </button>
-        <button
+        </a>
+        <a
           aria-label="scroll right"
           class="css-19u5zmf"
           data-testid="scroll-right"
-          type="button"
+          href=""
         >
           <svg
             class="css-1e6cmyg"
@@ -157,7 +158,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               />
             </g>
           </svg>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -1020,6 +1021,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span
@@ -1925,6 +1927,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span
