@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.176.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.175.0...@times-components/ts-newskit@1.176.0) (2024-03-11)
+
+
+### Features
+
+* **TMPZ-19:** adding pass through click tracking ([#3779](https://github.com/newsuk/times-components/issues/3779)) ([9691075](https://github.com/newsuk/times-components/commit/9691075ea4579fb4251fd276cc3407020b6ea9f7))
+
+
+
+
+
+# [1.175.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.174.0...@times-components/ts-newskit@1.175.0) (2024-03-11)
+
+
+### Features
+
+* **TMPZ-368:** Use transparent icons for puzzle tiles and add a background color, enabling same images to be used on sidebar ([#3794](https://github.com/newsuk/times-components/issues/3794)) ([442df31](https://github.com/newsuk/times-components/commit/442df3165e12fa8f53f2b4e02339f0cb0f61d3fe))
+* **TNLBT-1128:** Added style presets for Chip component ([#3795](https://github.com/newsuk/times-components/issues/3795)) ([a0ae650](https://github.com/newsuk/times-components/commit/a0ae650bf11e100b834b120faf8d9c421418bce2))
+
+
+
+
+
 # [1.174.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.173.0...@times-components/ts-newskit@1.174.0) (2024-03-07)
 
 
