@@ -1,4 +1,4 @@
-import { getCpnId } from "../../src/utils";
+import getCpnId from "../../src/utils";
 
 describe("utils", () => {
   describe("getCpnId()", () => {

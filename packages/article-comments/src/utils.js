@@ -5,5 +5,6 @@ const parseCookie = cookie =>
     return acc;
   }, {});
 
-export const getCpnId = cookie =>
-  cookie ? parseCookie(cookie).eid : undefined;
+const getCpnId = cookie => (cookie ? parseCookie(cookie).eid : undefined);
+
+export default { getCpnId };
