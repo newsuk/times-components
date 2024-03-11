@@ -18,45 +18,6 @@ const css = `
     height: 100%;
     width: 100%;
     background-color: unset !important;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: unset;
-      bottom: 0;
-      left: 0;
-      
-      background-image: url(${videoPlayIcon.base});
-      background-size: contain;
-      background-repeat: no-repeat;
-      
-      aspect-ratio: 1 !important;
-      width: 25%;
-      height: unset;
-      min-width: 80px;
-      min-height: 80px;
-      max-width: 128px;
-      max-height: 128px;
-
-      transition: background-image 100ms ease-in-out;
-    }
-
-    span:before {
-      display: none;
-    }
-
-    &:focus {
-      outline: none;
-      &::before {
-        background-image: url(${videoPlayIcon.hover});
-      }
-    }
-    &:hover {
-      &::before {
-        background-image: url(${videoPlayIcon.hover});
-      }
-    }
   }
 
   .video-js .vjs-dock-text {
@@ -69,6 +30,56 @@ const css = `
 
   .video-js .vjs-tech {
     position: relative;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::before, .vjs-big-play-button .vjs-icon-placeholder::after {
+    content: "" !important;
+
+    position: absolute;
+    top: unset !important;
+    bottom: 0;
+    left: 0;
+    
+    background-image: url(${videoPlayIcon.base});
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    aspect-ratio: 1 !important;
+    width: 25% !important;
+    height: unset !important;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 128px;
+    max-height: 128px;
+    transition: opacity 100ms ease-in-out;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::before {
+    background-image: url(${videoPlayIcon.base});
+    opacity: 1;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::after {
+    background-image: url(${videoPlayIcon.hover});
+    opacity: 0;
+  }
+
+  .vjs-big-play-button:hover .vjs-icon-placeholder::before {
+      opacity: 0;
+  }
+  .vjs-big-play-button:hover .vjs-icon-placeholder::after {
+      opacity: 1;
+  }
+  .vjs-big-play-button:focus .vjs-icon-placeholder::before {
+    background-image: url(${videoPlayIcon.hover});
+  }
+
+  .vjs-big-play-button:focus {
+   outline: none;
+  }
+
+  .video-js.vjs-has-started  .vjs-big-play-button .vjs-icon-placeholder::before, .video-js.vjs-has-started  .vjs-big-play-button .vjs-icon-placeholder::after {
+    display: none !important;
   }
 `;
 
