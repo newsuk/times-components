@@ -67,11 +67,14 @@ export const SidebarWarpper = styled.div`
   position: sticky;
   top: 162px;
   display: none;
+  left: 100%;
 
   @media (min-width: ${breakpoints.wide}px) {
-    display: block;
+    width: 19.8333%;
+    display: inline-block;
   }
   @media (min-width: ${breakpoints.huge}px) {
+    width: 18.8333%;
     top: 112px;
   }
 `;
@@ -79,15 +82,12 @@ export const SidebarWarpper = styled.div`
 export const PuzzlesSidebar = styled.div`
   position: sticky;
   padding-left: ${spacing(4)};
-  left: 100%;
   z-index: 1;
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 19.8333%;
     padding-right: ${spacing(8)};
   }
   @media (min-width: ${breakpoints.huge}px) {
-    width: 18.8333%;
     padding-right: ${spacing(10)};
   }
 `;
