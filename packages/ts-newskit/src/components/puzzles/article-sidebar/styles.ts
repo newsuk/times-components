@@ -19,7 +19,7 @@ export const StyledCardComposable = styled(CardComposable)`
 export const StyledCardMedia = styled(CardMedia)`
   picture {
     min-height: 40px;
-    min-width: 60px;
+    min-width: 40px;
     background: transparent;
   }
 `;
