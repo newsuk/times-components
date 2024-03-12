@@ -97,11 +97,11 @@ function getAuthors({ bylines }) {
   return bylines.map(byline => byline.author).filter(author => author);
 }
 
-function getAuthorSchema(article) {
+function getAuthorSchema(article, domainSpecificUrl) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-        const url = `https://thetimes.co.uk/profile/${slug}`;
+        const url = `${domainSpecificUrl}/profile/${slug}`;
         return {
           "@type": "Person",
           name,
@@ -255,7 +255,8 @@ function Head({
   paidContentClassName,
   getFallbackThumbnailUrl169,
   swgProductId,
-  breadcrumbs
+  breadcrumbs,
+  domainSpecificUrl
 }) {
   const {
     descriptionMarkup,
@@ -419,7 +420,7 @@ function Head({
             "@type": "ListItem",
             position: breadcrumbIndex + 1,
             name: breadcrumb.title,
-            item: `https://thetimes.co.uk/${breadcrumb.slug}`
+            item: `${domainSpecificUrl}/${breadcrumb.slug}`
           }))
         }
       : null;
@@ -487,6 +488,7 @@ Head.propTypes = {
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
+  domainSpecificUrl: PropTypes.string,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 

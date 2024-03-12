@@ -1,6 +1,8 @@
 export * from "./screen";
 export * from "./strings";
 export * from "./scroll-to-element-id";
+export * from "./transform-domain-com";
+export * from "./get-domain-specific-url";
 
 export { default as clean } from "./props";
 export { default as addMissingProtocol } from "./add-missing-protocol";

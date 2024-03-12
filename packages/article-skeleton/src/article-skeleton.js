@@ -1,6 +1,6 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { CanShowPuzzleSidebar } from "@times-components/utils";
+import { CanShowPuzzleSidebar, getDomainSpecificUrl } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -175,6 +175,7 @@ const ArticleSkeleton = ({
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
+  const domainSpecificUrl = getDomainSpecificUrl(hostName, 'https://www.thetimes.co.uk');
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
@@ -251,6 +252,7 @@ const ArticleSkeleton = ({
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
             breadcrumbs={breadcrumbs}
+            domainSpecificUrl={domainSpecificUrl}
           />
           {!!zephrDivs && (
             <StaticContent
@@ -416,6 +418,7 @@ const ArticleSkeleton = ({
                       isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
+                      domainSpecificUrl={domainSpecificUrl}
                     />
                   )}
                 </LazyLoad>

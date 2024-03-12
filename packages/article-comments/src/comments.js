@@ -39,7 +39,8 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked
+      onCommentSettingsClicked,
+      domainSpecificUrl
     } = this.props;
 
     if (!this.container || !articleId || !commentingConfig) {
@@ -136,7 +137,7 @@ class Comments extends Component {
     launcherScript.setAttribute("data-post-id", articleId);
     launcherScript.setAttribute(
       "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`
+      `${domainSpecificUrl}/article/${articleId}`
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
@@ -218,7 +219,8 @@ Comments.propTypes = {
   onCommentRecommend: PropTypes.func,
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
-  onCommentSettingsClicked: PropTypes.func
+  onCommentSettingsClicked: PropTypes.func,
+  domainSpecificUrl: PropTypes.string
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.

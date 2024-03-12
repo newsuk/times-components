@@ -36,7 +36,8 @@ const ArticleExtras = ({
   isSharingSavingEnabled,
   isCommentEnabled,
   storefrontConfig,
-  breadcrumbs
+  breadcrumbs,
+  domainSpecificUrl
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -113,6 +114,7 @@ const ArticleExtras = ({
         commentingConfig={commentingConfig}
         isCommentEnabled={isCommentEnabled}
         storefrontConfig={storefrontConfig}
+        domainSpecificUrl={domainSpecificUrl}
       />
     </UserState>
   );
@@ -137,7 +139,8 @@ ArticleExtras.propTypes = {
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
-  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
+  domainSpecificUrl: PropTypes.string
 };
 
 ArticleExtras.defaultProps = {
