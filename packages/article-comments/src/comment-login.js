@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import { getCpnId } from "./utils";
+import getCpnId from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
   const xhr = new XMLHttpRequest();
