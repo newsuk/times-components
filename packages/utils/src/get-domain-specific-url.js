@@ -4,7 +4,7 @@ const paths = [
   /thetimes\.co\.uk\/([a-z0-9-]+\/)+[a-z0-9-]+-([bcdfghjklmnpqrstvwxz23567890]{9,11}$)/g
 ];
 
-const subdomains = [/login.(.*?)thetimes.co.uk/g];
+const subdomains = [/www.(.*?)thetimes.co.uk/g, /login.(.*?)thetimes.co.uk/g];
 
 const getDomainSpecificUrl = (host, url) => {
   if (host.includes("thetimes.com")) {
