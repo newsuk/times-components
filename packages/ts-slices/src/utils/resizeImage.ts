@@ -14,13 +14,14 @@ const getResizeImage = (url: string, width: number) => {
   const params = new URLSearchParams(api.search.slice(1));
   params.set('resize', resize.toString());
 
-  const origin =
-    api.origin.includes('uat-thetimes')
-      ? api.origin.replace("uat-thetimes", "thetimes")
-      : api.origin;
+  const origin = api.origin.includes('uat-thetimes')
+    ? api.origin.replace('uat-thetimes', 'thetimes')
+    : api.origin;
 
   return `${origin}${api.pathname}?${params.toString()}`;
 };
 
 export const resizeImage = (url: string, width: number) =>
-(url.includes('thetimes.') && url.includes('/imageserver')) ? getResizeImage(url, width) : url;
+  url.includes('thetimes.') && url.includes('/imageserver')
+    ? getResizeImage(url, width)
+    : url;
