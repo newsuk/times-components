@@ -15,12 +15,12 @@ const getResizeImage = (url: string, width: number) => {
   params.set('resize', resize.toString());
 
   const origin =
-    api.origin === 'https://www.uat-thetimes.co.uk'
-      ? 'https://www.thetimes.co.uk'
+    api.origin.includes('uat-thetimes')
+      ? api.origin.replace("uat-thetimes", "thetimes")
       : api.origin;
 
   return `${origin}${api.pathname}?${params.toString()}`;
 };
 
 export const resizeImage = (url: string, width: number) =>
-  url.includes('thetimes.co.uk/imageserver') ? getResizeImage(url, width) : url;
+(url.includes('thetimes.') && url.includes('/imageserver')) ? getResizeImage(url, width) : url;
