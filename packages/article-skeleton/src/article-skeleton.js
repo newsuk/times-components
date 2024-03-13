@@ -322,20 +322,20 @@ const ArticleSkeleton = ({
                                 url:
                                   "https://www.thetimes.co.uk/puzzles/crossword",
                                 imgUrl:
-                                  "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-cf4c909719.png"
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
                                 imgUrl:
-                                  "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F04934dfb-0e8f-4f00-872d-c796fed01ba3.png?crop=1250%2C833%2C0%2C0&resize=500"
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png"
                               },
                               {
                                 title: "Sudoku",
                                 url:
                                   "https://www.thetimes.co.uk/puzzles/sudoku",
                                 imgUrl:
-                                  "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2Fadeba5d7-ec95-4435-82f3-7837c2b02072.png?crop=1250%2C833%2C0%2C0&resize=500"
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png"
                               }
                             ]}
                           />
