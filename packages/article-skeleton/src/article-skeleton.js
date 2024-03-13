@@ -1,6 +1,9 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { CanShowPuzzleSidebar, getDomainSpecificUrl } from "@times-components/utils";
+import {
+  CanShowPuzzleSidebar,
+  getDomainSpecificUrl
+} from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -175,7 +178,9 @@ const ArticleSkeleton = ({
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const domainSpecificUrl = getDomainSpecificUrl(hostName, 'https://www.thetimes.co.uk');
+  const domainSpecificUrl = hostName
+    ? getDomainSpecificUrl(hostName, "https://www.thetimes.co.uk")
+    : "https://www.thetimes.co.uk";
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
@@ -314,28 +319,23 @@ const ArticleSkeleton = ({
                       <TCThemeProvider theme={PuzzlesWebLightTheme}>
                         <PuzzlesSidebar ref={sidebarRef}>
                           <ArticleSidebar
-                            pageLink="https://www.thetimes.co.uk/puzzles"
+                            pageLink={`${domainSpecificUrl}/puzzles`}
                             sectionTitle="Puzzles"
                             data={[
                               {
                                 title: "Crossword",
-                                url:
-                                  "https://www.thetimes.co.uk/puzzles/crossword",
-                                imgUrl:
-                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-cf4c909719.png"
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-cf4c909719.png`
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
-                                imgUrl:
-                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png"
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png`
                               },
                               {
                                 title: "Sudoku",
-                                url:
-                                  "https://www.thetimes.co.uk/puzzles/sudoku",
-                                imgUrl:
-                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png"
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png`
                               }
                             ]}
                           />

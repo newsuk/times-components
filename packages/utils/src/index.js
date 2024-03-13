@@ -1,8 +1,6 @@
 export * from "./screen";
 export * from "./strings";
 export * from "./scroll-to-element-id";
-export * from "./transform-domain-com";
-export * from "./get-domain-specific-url";
 
 export { default as clean } from "./props";
 export { default as addMissingProtocol } from "./add-missing-protocol";
@@ -24,6 +22,9 @@ export { default as TcFlatList } from "./tc-flat-list";
 export { default as TcText } from "./tc-text";
 export { default as TcTextLink } from "./tc-text-link";
 export { default as TcScrollView } from "./tc-scroll-view";
+export { default as transformDomainCom } from "./transform-domain-com";
+export { default as getDomainSpecificUrl } from "./get-domain-specific-url";
+
 export {
   default as CanShowPuzzleSidebar
 } from "./article-puzzle-sidebar-whitelist";

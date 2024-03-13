@@ -488,7 +488,7 @@ Head.propTypes = {
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
-  domainSpecificUrl: PropTypes.string,
+  domainSpecificUrl: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 

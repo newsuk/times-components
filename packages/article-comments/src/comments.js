@@ -220,7 +220,7 @@ Comments.propTypes = {
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
   onCommentSettingsClicked: PropTypes.func,
-  domainSpecificUrl: PropTypes.string
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.

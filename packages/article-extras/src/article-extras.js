@@ -140,7 +140,7 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleExtras.defaultProps = {

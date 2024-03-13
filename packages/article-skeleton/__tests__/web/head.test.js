@@ -58,6 +58,21 @@ describe("Head", () => {
         articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        domainSpecificUrl="https://www.thetimes.co.uk"
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs correct metadata with .COM host", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={article}
+        articleUrl={article.url}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+        domainSpecificUrl="https://www.thetimes.com"
       />
     );
 

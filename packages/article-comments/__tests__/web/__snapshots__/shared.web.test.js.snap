@@ -181,6 +181,44 @@ exports[`User States enabled comments 1`] = `
 </DocumentFragment>
 `;
 
+exports[`User States uses com host when received 1`] = `
+<DocumentFragment>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.com/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`disabled comments 1`] = `
 <DocumentFragment>
   .c0 {
