@@ -35,6 +35,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             }}
           >
             <CardLink external={false} expand href={pageLink} />
+
             <Stack flow="horizontal-center" stackDistribution="space-between">
               <TextBlock as="h3" typographyPreset="editorialDisplay002">
                 {sectionTitle}
