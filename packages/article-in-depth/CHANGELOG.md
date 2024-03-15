@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.80.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.41...@times-components/article-in-depth@3.80.0) (2024-03-15)
+
+
+### Features
+
+* **TMRX-1984:** Update ad positioning ([#3796](https://github.com/newsuk/times-components/issues/3796)) ([b5892e3](https://github.com/newsuk/times-components/commit/b5892e39131af32500f03b498346613b713979d1))
+
+
+
+
+
 ## [3.79.41](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.40...@times-components/article-in-depth@3.79.41) (2024-03-12)
 
 **Note:** Version bump only for package @times-components/article-in-depth
