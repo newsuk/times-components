@@ -1,14 +1,16 @@
-const transformDomainCom = data => {
-  const replaceObj = {
-    "www.thetimes.co.uk": "www.thetimes.com",
-    "-thetimes.co.uk": "-thetimes.com"
-  };
-  const transformedData = data.replace(
-    /www.thetimes.co.uk|-thetimes.co.uk/g,
-    match => replaceObj[match]
-  );
+const transformDomainCom = (data, hostName) => {
+  if(!hostName || hostName.includes('thetimes.com')) {
+    const stringifiedData = JSON.stringify(data);
 
-  return transformedData;
+    const transformedData = stringifiedData.replace(
+      /(www.(|uat-|staging-?)thetimes).co.uk/gm,
+      (match) => match.replace('.co.uk', '.com')
+    );
+
+    return JSON.parse(transformedData);
+  }
+
+  return data;
 };
 
 export default transformDomainCom;

@@ -5,6 +5,7 @@ import {
   SliceArticle,
   MouseEventType
 } from '@times-components/ts-slices';
+import { transformDomainCom } from '@times-components/utils';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
@@ -14,6 +15,7 @@ import { Header } from './styles';
 
 export const RecommendedArticles: React.FC<{
   heading: string;
+  domainSpecificUrl: string;
 }> = ({ heading }) => {
   const { loading, error, data } = useFetch<any>();
 
@@ -26,6 +28,7 @@ export const RecommendedArticles: React.FC<{
   if (!articles || !articles.length) {
     return null;
   }
+  const transformedArticles = transformDomainCom(articles, "https://www.thetimes.com")
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
@@ -42,7 +45,7 @@ export const RecommendedArticles: React.FC<{
     <div id="recommended-articles">
       <Header>{heading}</Header>
       <Slice
-        slice={getRecommendedArticlesSlice(articles)}
+        slice={getRecommendedArticlesSlice(transformedArticles)}
         clickHandler={onClickHandler}
       />
     </div>

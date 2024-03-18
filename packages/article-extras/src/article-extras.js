@@ -69,6 +69,7 @@ const ArticleExtras = ({
             articleId={articleId}
             articleHeadline={articleHeadline}
             articleSection={section}
+            domainSpecificUrl={domainSpecificUrl}
           />
         )}
       </div>

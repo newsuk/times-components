@@ -60,7 +60,7 @@ describe('<RecommendedArticles>', () => {
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
 
-    const { asFragment } = render(<RecommendedArticles heading={heading} />);
+    const { asFragment } = render(<RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />);
 
     expect(asFragment().firstChild).toBeNull();
   });
@@ -68,7 +68,7 @@ describe('<RecommendedArticles>', () => {
   it('should render the error state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ error: 'Some error occurred' });
 
-    const { asFragment } = render(<RecommendedArticles heading={heading} />);
+    const { asFragment } = render(<RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />);
 
     expect(asFragment().firstChild).toBeNull();
   });
@@ -79,7 +79,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles heading={heading} />
+      <RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />
     );
 
     expect(getByText(heading));
@@ -93,7 +93,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles heading={heading} />
+      <RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />
     );
 
     expect(getByText(heading));
@@ -106,7 +106,7 @@ describe('<RecommendedArticles>', () => {
     (useFetch as jest.Mock).mockReturnValue({ data: previewData });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles heading={heading} />
+      <RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />
     );
 
     expect(getByText(heading));
@@ -126,7 +126,7 @@ describe('<RecommendedArticles>', () => {
         context={initialContext}
         analyticsStream={analyticsStream}
       >
-        <RecommendedArticles heading={heading} />
+        <RecommendedArticles heading={heading} domainSpecificUrl="https://thetimes.co.uk" />
       </TrackingContextProvider>
     );
 
