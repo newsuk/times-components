@@ -8,7 +8,7 @@ import {
 } from "@times-components/icons";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
-import { Popover, Stack } from "newskit";
+import { Stack } from "newskit";
 import { SaveStar } from "@times-components/ts-components";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
@@ -16,7 +16,7 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
-import { StyledButton } from "./styled";
+import { StyledButton, PopoverContent, StyledPopover } from "./styled";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
@@ -54,11 +54,16 @@ class SaveAndShareBar extends Component {
         spaceInline="space050"
       >
         {sharingEnabled && (
-          <Popover
+          <StyledPopover
             placement="top"
             header="Share this article"
+            overrides={{
+              minWidth: { xs: "90%", md: "auto" }
+            }}
             content={
-              <Stack flow="horizontal-center" spaceInline="space050">
+              <PopoverContent
+                flow={{ xs: "vertical-start", md: "horizontal-center" }}
+              >
                 <SectionContext.Consumer>
                   {({ publicationName }) => (
                     <UserState
@@ -82,6 +87,7 @@ class SaveAndShareBar extends Component {
 
                 <ShareItem
                   testId="share-twitter"
+                  tooltipContent="Share on Twitter"
                   href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
                   onClick={onShareOnTwitter}
                 >
@@ -100,6 +106,7 @@ class SaveAndShareBar extends Component {
 
                 <ShareItem
                   testId="share-facebook"
+                  tooltipContent="Share on Facebook"
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
                   onClick={onShareOnFB}
                 >
@@ -118,6 +125,7 @@ class SaveAndShareBar extends Component {
 
                 <ShareItem
                   testId="copy-to-clickboard"
+                  tooltipContent="Copy link to clipboard"
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
                   onClick={this.copyToClipboard}
                 >
@@ -133,7 +141,7 @@ class SaveAndShareBar extends Component {
                     Link
                   </ShareItemLabel>
                 </ShareItem>
-              </Stack>
+              </PopoverContent>
             }
           >
             <StyledButton
@@ -142,7 +150,7 @@ class SaveAndShareBar extends Component {
             >
               <NewsKitShareIcon /> Share
             </StyledButton>
-          </Popover>
+          </StyledPopover>
         )}
         {savingEnabled ? (
           <>

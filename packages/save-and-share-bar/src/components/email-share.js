@@ -63,7 +63,11 @@ class EmailShare extends Component {
     const { isLoading } = this.state;
 
     return (
-      <ShareItem onClick={this.onShare} testId="email-share">
+      <ShareItem
+        tooltipContent="Share by email"
+        onClick={this.onShare}
+        testId="email-share"
+      >
         <ShareItemLabel
           icon={
             isLoading ? (

@@ -1,4 +1,10 @@
-import { Button, styled } from "newskit";
+import {
+  Button,
+  Popover,
+  Stack,
+  getMediaQueryFromTheme,
+  styled
+} from "newskit";
 
 export const StyledButton = styled(Button)`
   border-radius: 0;
@@ -11,4 +17,14 @@ export const IconActivityIndicatorContainer = styled.div`
     height: 16px;
     width: 16px;
   }
+`;
+
+export const StyledPopover = styled(Popover)`
+  ${getMediaQueryFromTheme("xs", "md")} {
+    left: 5%;
+  }
+`;
+
+export const PopoverContent = styled(Stack)`
+  gap: 24px;
 `;

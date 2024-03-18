@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, TextBlock, LinkStandalone, styled } from "newskit";
+import { Stack, TextBlock, LinkStandalone, styled, Tooltip } from "newskit";
 import PropTypes from "prop-types";
 
 const StyledLinkStandalone = styled(LinkStandalone)`
@@ -12,20 +12,27 @@ const StyledLinkStandalone = styled(LinkStandalone)`
 export const ShareItem = ({
   children,
   testId,
+  tooltipContent,
   href,
   onClick = () => {},
   ...props
 }) => (
-  <StyledLinkStandalone
-    data-testid={testId}
-    onClick={onClick}
-    href={href}
-    target="_blank"
-    external={false}
-    {...props}
+  <Tooltip
+    content={tooltipContent}
+    placement="bottom"
+    trigger={["focus", "hover"]}
   >
-    {children}
-  </StyledLinkStandalone>
+    <StyledLinkStandalone
+      data-testid={testId}
+      onClick={onClick}
+      href={href}
+      target="_blank"
+      external={false}
+      {...props}
+    >
+      {children}
+    </StyledLinkStandalone>
+  </Tooltip>
 );
 
 export const ShareItemLabel = ({ children, icon }) => (
@@ -39,13 +46,15 @@ ShareItem.propTypes = {
   children: PropTypes.node.isRequired,
   testId: PropTypes.string,
   href: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  tooltipContent: PropTypes.string
 };
 
 ShareItem.defaultProps = {
   testId: "share-item",
   href: "",
-  onClick: () => {}
+  onClick: () => {},
+  tooltipContent: ""
 };
 
 ShareItemLabel.propTypes = {
