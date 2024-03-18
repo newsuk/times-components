@@ -98,7 +98,7 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__NativeAd-sc-4v1r4q-14, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
       );
 
       let isAnyAdIntersecting = false;
