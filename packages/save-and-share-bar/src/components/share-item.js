@@ -1,6 +1,13 @@
 import React from "react";
-import { Stack, TextBlock, LinkStandalone } from "newskit";
+import { Stack, TextBlock, LinkStandalone, styled } from "newskit";
 import PropTypes from "prop-types";
+
+const StyledLinkStandalone = styled(LinkStandalone)`
+  cursor: pointer;
+  &:hover {
+    text-decoration: none !important;
+  }
+`;
 
 export const ShareItem = ({
   children,
@@ -9,17 +16,16 @@ export const ShareItem = ({
   onClick = () => {},
   ...props
 }) => (
-  <LinkStandalone
+  <StyledLinkStandalone
     data-testid={testId}
     onClick={onClick}
     href={href}
     target="_blank"
     external={false}
-    style={{ cursor: "pointer" }}
     {...props}
   >
     {children}
-  </LinkStandalone>
+  </StyledLinkStandalone>
 );
 
 export const ShareItemLabel = ({ children, icon }) => (

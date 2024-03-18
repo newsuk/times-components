@@ -2,14 +2,9 @@
 
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
 <a
-  className="css-1p646ro"
+  className="css-14g8zj3"
   data-testid="email-share"
   href=""
-  style={
-    Object {
-      "cursor": "pointer",
-    }
-  }
   target="_blank"
 >
   <span

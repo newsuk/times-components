@@ -40,6 +40,7 @@ export default {
                     getTokenisedShareUrl={mockGetTokenisedArticleUrl}
                     savingEnabled={boolean("Is Saving Enabled", true)}
                     sharingEnabled={boolean("Is Sharing Enabled", true)}
+                    isPreviewMode
                   />
                 )}
               </MessageContext.Consumer>

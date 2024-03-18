@@ -43,7 +43,8 @@ class SaveAndShareBar extends Component {
       savingEnabled,
       sharingEnabled,
       onShareOnFB,
-      onShareOnTwitter
+      onShareOnTwitter,
+      isPreviewMode
     } = this.props;
 
     return (
@@ -144,16 +145,25 @@ class SaveAndShareBar extends Component {
           </Popover>
         )}
         {savingEnabled ? (
-          <UserState
-            state={UserState.showArticleSaveButton}
-            serverRender={false}
-          >
-            <div data-testid="save-star">
-              <SaveStar articleId={articleId}>
-                <SaveButton />
-              </SaveStar>
-            </div>
-          </UserState>
+          <>
+            <UserState
+              state={UserState.showArticleSaveButton}
+              serverRender={false}
+            >
+              <div data-testid="save-star">
+                <SaveStar articleId={articleId}>
+                  <SaveButton />
+                </SaveStar>
+              </div>
+            </UserState>
+            {isPreviewMode && (
+              <div data-testid="save-star">
+                <SaveStar articleId={articleId} isPreviewMode>
+                  <SaveButton />
+                </SaveStar>
+              </div>
+            )}
+          </>
         ) : null}
       </Stack>
     );
@@ -171,7 +181,8 @@ SaveAndShareBar.propTypes = {
   onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired
+  sharingEnabled: PropTypes.bool.isRequired,
+  isPreviewMode: PropTypes.bool
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
@@ -179,7 +190,8 @@ SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
-  getTokenisedShareUrl: getTokenisedArticleUrlApi
+  getTokenisedShareUrl: getTokenisedArticleUrlApi,
+  isPreviewMode: (PropTypes.bool = false)
 };
 
 export default withTrackEvents(SaveAndShareBar);
