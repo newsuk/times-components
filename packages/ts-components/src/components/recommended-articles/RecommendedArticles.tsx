@@ -28,7 +28,10 @@ export const RecommendedArticles: React.FC<{
   if (!articles || !articles.length) {
     return null;
   }
-  const transformedArticles = transformDomainCom(articles, "https://www.thetimes.com")
+  const transformedArticles = transformDomainCom(
+    articles,
+    'https://www.thetimes.com'
+  );
 
   const { fireAnalyticsEvent } = useTrackingContext();
 

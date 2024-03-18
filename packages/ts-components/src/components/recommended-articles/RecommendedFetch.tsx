@@ -58,7 +58,10 @@ export const RecommendedFetch: React.FC<{
           }
         }}
       >
-        <RecommendedArticles heading={heading} domainSpecificUrl={domainSpecificUrl} />
+        <RecommendedArticles
+          heading={heading}
+          domainSpecificUrl={domainSpecificUrl}
+        />
       </TrackingContextProvider>
     </FetchProvider>
   ) : null;
