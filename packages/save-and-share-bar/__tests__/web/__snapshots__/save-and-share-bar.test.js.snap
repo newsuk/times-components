@@ -1,214 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
-<BarItem
-  dataTestId="email-share"
-  url=""
->
-  <IconActivityIndicator
-    size="small"
-    style={
-      Object {
-        "borderRadius": 9999,
-        "height": 40,
-        "overflow": "hidden",
-        "width": 40,
-      }
+<a
+  className="css-1p646ro"
+  data-testid="email-share"
+  href=""
+  style={
+    Object {
+      "cursor": "pointer",
     }
-  />
-</BarItem>
+  }
+  target="_blank"
+>
+  <span
+    className="css-17x5lw"
+  >
+    <div
+      className="css-1xnclyu"
+    >
+      <div
+        className="css-1o99qvy"
+      >
+        <IconActivityIndicator
+          size="small"
+        />
+      </div>
+      <div
+        className="css-1o99qvy"
+      >
+        <p
+          className="css-1ynvxmq"
+        >
+          Email
+        </p>
+      </div>
+    </div>
+  </span>
+</a>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="css-18bz6hs"
   data-testid="save-and-share-bar"
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "row",
-      "height": "100%",
-      "justifyContent": "space-between",
-      "paddingBottom": "10px",
-      "paddingTop": "10px",
-    }
-  }
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
-    style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "height": 40,
-      }
-    }
+    className="css-7i4qsc"
   >
-    <div
-      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
-          "fontSize": 14,
-          "lineHeight": "14px",
-          "marginRight": "10px",
-          "transform": "translateY(9%)",
-        }
-      }
+    <button
+      aria-haspopup="dialog"
+      className="css-9uf6vt"
+      data-testid="button"
+      size="small"
+      type="button"
     >
-      Share
-    </div>
-    <BarItem
-      dataTestId="email-share"
-      url=""
-    >
-      <IconEmail
-        fillColour="currentColor"
-        height={16}
-        title="Share by email"
-      />
-    </BarItem>
-    <BarItem
-      dataTestId="share-twitter"
-      target="_blank"
-      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
-    >
-      <IconTwitter
-        fillColour="currentColor"
-        height={16}
-        title="Share on Twitter"
-      />
-    </BarItem>
-    <BarItem
-      dataTestId="share-facebook"
-      target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
-    >
-      <IconFacebook
-        fillColour="currentColor"
-        height={18}
-        title="Share on Facebook"
-      />
-    </BarItem>
-    <BarItem
-      color="#696969"
-      dataTestId="copy-to-clickboard"
-      hoverColor="#1D1D1B"
-      url=""
-    >
-      <IconCopyLink
-        fillColour="currentColor"
-        height={16}
-        title="Copy link to clipboard"
-      />
-    </BarItem>
+      <svg
+        fill="none"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          height="16"
+          id="mask0_2527_128"
+          maskUnits="userSpaceOnUse"
+          style={
+            Object {
+              "maskType": "alpha",
+            }
+          }
+          width="16"
+          x="0"
+          y="0"
+        >
+          <path
+            clipRule="evenodd"
+            d="M10.6933 11.2601C11.04 10.9468 11.4933 10.7468 12 10.7468C13.0733 10.7468 13.9467 11.6201 13.9467 12.6934C13.9467 13.7668 13.0733 14.6401 12 14.6401C10.9267 14.6401 10.0533 13.7668 10.0533 12.6934C10.0533 12.5468 10.0733 12.4001 10.1067 12.2601L5.36 9.48677C5 9.82011 4.52667 10.0268 4 10.0268C2.89333 10.0268 2 9.13344 2 8.02677C2 6.92011 2.89333 6.02677 4 6.02677C4.52667 6.02677 5 6.23344 5.36 6.56677L10.06 3.82677C10.0267 3.67344 10 3.52011 10 3.36011C10 2.25344 10.8933 1.36011 12 1.36011C13.1067 1.36011 14 2.25344 14 3.36011C14 4.46677 13.1067 5.36011 12 5.36011C11.4733 5.36011 11 5.15344 10.64 4.82011L5.94 7.56011C5.97333 7.71344 6 7.86677 6 8.02677C6 8.18677 5.97333 8.34011 5.94 8.49344L10.6933 11.2601ZM12.6667 3.36011C12.6667 2.99344 12.3667 2.69344 12 2.69344C11.6333 2.69344 11.3333 2.99344 11.3333 3.36011C11.3333 3.72677 11.6333 4.02677 12 4.02677C12.3667 4.02677 12.6667 3.72677 12.6667 3.36011ZM4 8.69344C3.63333 8.69344 3.33333 8.39344 3.33333 8.02677C3.33333 7.66011 3.63333 7.36011 4 7.36011C4.36667 7.36011 4.66667 7.66011 4.66667 8.02677C4.66667 8.39344 4.36667 8.69344 4 8.69344ZM11.3333 12.7068C11.3333 13.0734 11.6333 13.3734 12 13.3734C12.3667 13.3734 12.6667 13.0734 12.6667 12.7068C12.6667 12.3401 12.3667 12.0401 12 12.0401C11.6333 12.0401 11.3333 12.3401 11.3333 12.7068Z"
+            fill="#333333"
+            fillRule="evenodd"
+          />
+        </mask>
+        <g
+          mask="url(#mask0_2527_128)"
+        >
+          <rect
+            fill="#333333"
+            height="16"
+            width="16"
+          />
+        </g>
+      </svg>
+      <span
+        className="css-1x1ve0y"
+      >
+         Share
+      </span>
+    </button>
   </div>
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
-    data-testid="save-star"
-    style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "height": 40,
-        "marginLeft": "auto",
-      }
-    }
+    className="css-7i4qsc"
   >
-    <SaveStar
-      articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
-    />
+    <div
+      data-testid="save-star"
+    >
+      <SaveStar
+        articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="css-18bz6hs"
   data-testid="save-and-share-bar"
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "row",
-      "height": "100%",
-      "justifyContent": "space-between",
-      "paddingBottom": "10px",
-      "paddingTop": "10px",
-    }
-  }
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
-    style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "height": 40,
-      }
-    }
+    className="css-7i4qsc"
   >
-    <div
-      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
-          "fontSize": 14,
-          "lineHeight": "14px",
-          "marginRight": "10px",
-          "transform": "translateY(9%)",
-        }
-      }
+    <button
+      aria-haspopup="dialog"
+      className="css-9uf6vt"
+      data-testid="button"
+      size="small"
+      type="button"
     >
-      Share
-    </div>
-    <BarItem
-      dataTestId="email-share"
-      url=""
-    >
-      <IconEmail
-        fillColour="currentColor"
-        height={16}
-        title="Share by email"
-      />
-    </BarItem>
-    <BarItem
-      dataTestId="share-twitter"
-      target="_blank"
-      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
-    >
-      <IconTwitter
-        fillColour="currentColor"
-        height={16}
-        title="Share on Twitter"
-      />
-    </BarItem>
-    <BarItem
-      dataTestId="share-facebook"
-      target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
-    >
-      <IconFacebook
-        fillColour="currentColor"
-        height={18}
-        title="Share on Facebook"
-      />
-    </BarItem>
-    <BarItem
-      color="#696969"
-      dataTestId="copy-to-clickboard"
-      hoverColor="#1D1D1B"
-      url=""
-    >
-      <IconCopyLink
-        fillColour="currentColor"
-        height={16}
-        title="Copy link to clipboard"
-      />
-    </BarItem>
+      <svg
+        fill="none"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          height="16"
+          id="mask0_2527_128"
+          maskUnits="userSpaceOnUse"
+          style={
+            Object {
+              "maskType": "alpha",
+            }
+          }
+          width="16"
+          x="0"
+          y="0"
+        >
+          <path
+            clipRule="evenodd"
+            d="M10.6933 11.2601C11.04 10.9468 11.4933 10.7468 12 10.7468C13.0733 10.7468 13.9467 11.6201 13.9467 12.6934C13.9467 13.7668 13.0733 14.6401 12 14.6401C10.9267 14.6401 10.0533 13.7668 10.0533 12.6934C10.0533 12.5468 10.0733 12.4001 10.1067 12.2601L5.36 9.48677C5 9.82011 4.52667 10.0268 4 10.0268C2.89333 10.0268 2 9.13344 2 8.02677C2 6.92011 2.89333 6.02677 4 6.02677C4.52667 6.02677 5 6.23344 5.36 6.56677L10.06 3.82677C10.0267 3.67344 10 3.52011 10 3.36011C10 2.25344 10.8933 1.36011 12 1.36011C13.1067 1.36011 14 2.25344 14 3.36011C14 4.46677 13.1067 5.36011 12 5.36011C11.4733 5.36011 11 5.15344 10.64 4.82011L5.94 7.56011C5.97333 7.71344 6 7.86677 6 8.02677C6 8.18677 5.97333 8.34011 5.94 8.49344L10.6933 11.2601ZM12.6667 3.36011C12.6667 2.99344 12.3667 2.69344 12 2.69344C11.6333 2.69344 11.3333 2.99344 11.3333 3.36011C11.3333 3.72677 11.6333 4.02677 12 4.02677C12.3667 4.02677 12.6667 3.72677 12.6667 3.36011ZM4 8.69344C3.63333 8.69344 3.33333 8.39344 3.33333 8.02677C3.33333 7.66011 3.63333 7.36011 4 7.36011C4.36667 7.36011 4.66667 7.66011 4.66667 8.02677C4.66667 8.39344 4.36667 8.69344 4 8.69344ZM11.3333 12.7068C11.3333 13.0734 11.6333 13.3734 12 13.3734C12.3667 13.3734 12.6667 13.0734 12.6667 12.7068C12.6667 12.3401 12.3667 12.0401 12 12.0401C11.6333 12.0401 11.3333 12.3401 11.3333 12.7068Z"
+            fill="#333333"
+            fillRule="evenodd"
+          />
+        </mask>
+        <g
+          mask="url(#mask0_2527_128)"
+        >
+          <rect
+            fill="#333333"
+            height="16"
+            width="16"
+          />
+        </g>
+      </svg>
+      <span
+        className="css-1x1ve0y"
+      >
+         Share
+      </span>
+    </button>
   </div>
+  <div
+    className="css-7i4qsc"
+  />
 </div>
 `;

@@ -1,9 +1,7 @@
 import React from 'react';
 import { colours } from '@times-components/ts-styleguide';
 import { IconStar } from '@times-components/icons';
-
-import { useFetch } from '../../helpers/fetch/FetchProvider';
-
+import { ContentProps } from './ContentProvider';
 import {
   IconContainer,
   LoadingIcon,
@@ -23,12 +21,12 @@ const getIconTitle = (isSaved: boolean) =>
 const getIconFillColour = (isSaved: boolean) =>
   isSaved ? colours.functional.action : colours.functional.white;
 
-export const SaveStarUI: React.FC<{
-  articleId: string;
-  onToggleSave: (id: string, isSaved: boolean) => void;
-}> = ({ articleId, onToggleSave }) => {
-  const { loading, error, data } = useFetch<ArticleBookmark>();
-
+export const SaveStarUI: React.FC<
+  {
+    articleId: string;
+    onToggleSave: (id: string, isSaved: boolean) => void;
+  } & ContentProps
+> = ({ articleId, onToggleSave, loading, error, data }) => {
   if (loading) {
     return (
       <>

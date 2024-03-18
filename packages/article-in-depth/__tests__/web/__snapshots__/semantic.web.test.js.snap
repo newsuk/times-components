@@ -101,104 +101,44 @@ exports[`1. a full article 1`] = `
     <span>
       The Times
     </span>
-    Share
-    <a
-      href=""
-      target={null}
+    <button
+      aria-haspopup="dialog"
+      data-testid="button"
+      size="small"
+      type="button"
     >
       <svg
-        aria-label="icon-email"
-        height={16}
-        role="img"
-        title="Share by email"
-        viewBox="0 0 22 16"
-        width={22}
-      >
-        <title>
-          Share by email
-        </title>
-        <g>
-          <path
-            d="7662b27a9a5411e756afc5097a4eb94d"
-          />
-        </g>
-      </svg>
-    </a>
-    <a
-      href="https://twitter.com/intent/tweet?text=https://url.io"
-      target="_blank"
-    >
-      <svg
-        aria-label="icon-twitter"
-        height={16}
-        role="img"
-        title="Share on Twitter"
-        viewBox="0 0 24 24"
-        width={20}
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <title>
-          Share on Twitter
-        </title>
-        <g
-          clipPath="url(#clip0_2702_211136)"
+        <mask
+          height="16"
+          id="mask0_2527_128"
+          maskUnits="userSpaceOnUse"
+          width="16"
+          x="0"
+          y="0"
         >
           <path
-            d="e7781feea17d63d57f67e7eaa876efac"
+            clipRule="evenodd"
+            d="8b95ca39f7ab58f0e14a1cefe90b4e2b"
           />
-        </g>
-        <defs>
-          <clipPath>
-            <rect
-              height="24"
-              width="24"
-            />
-          </clipPath>
-        </defs>
-      </svg>
-    </a>
-    <a
-      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-      target="_blank"
-    >
-      <svg
-        aria-label="icon-facebook"
-        height={18}
-        role="img"
-        title="Share on Facebook"
-        viewBox="14 10 10.592460632324219 20.397258758544922"
-        width={9}
-      >
-        <title>
-          Share on Facebook
-        </title>
-        <g>
-          <path
-            d="8f9b8bbdce60b96352628d3dbf6e37a0"
+        </mask>
+        <g
+          mask="url(#mask0_2527_128)"
+        >
+          <rect
+            height="16"
+            width="16"
           />
         </g>
       </svg>
-    </a>
-    <a
-      href=""
-      target={null}
-    >
-      <svg
-        aria-label="icon-copy-link"
-        height={16}
-        role="img"
-        title="Copy link to clipboard"
-        viewBox="0 0 15 15"
-        width={15}
-      >
-        <title>
-          Copy link to clipboard
-        </title>
-        <path
-          d="f65af77b7574644b0c2e60934732135f"
-        />
-      </svg>
-    </a>
+      <span>
+         Share
+      </span>
+    </button>
     <article>
       <img
         alt="An image caption"
@@ -299,104 +239,44 @@ exports[`1. a full article 1`] = `
           Topic
         </a>
       </nav>
-      Share
-      <a
-        href=""
-        target={null}
+      <button
+        aria-haspopup="dialog"
+        data-testid="button"
+        size="small"
+        type="button"
       >
         <svg
-          aria-label="icon-email"
-          height={16}
-          role="img"
-          title="Share by email"
-          viewBox="0 0 22 16"
-          width={22}
-        >
-          <title>
-            Share by email
-          </title>
-          <g>
-            <path
-              d="7662b27a9a5411e756afc5097a4eb94d"
-            />
-          </g>
-        </svg>
-      </a>
-      <a
-        href="https://twitter.com/intent/tweet?text=https://url.io"
-        target="_blank"
-      >
-        <svg
-          aria-label="icon-twitter"
-          height={16}
-          role="img"
-          title="Share on Twitter"
-          viewBox="0 0 24 24"
-          width={20}
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            Share on Twitter
-          </title>
-          <g
-            clipPath="url(#clip0_2702_211136)"
+          <mask
+            height="16"
+            id="mask0_2527_128"
+            maskUnits="userSpaceOnUse"
+            width="16"
+            x="0"
+            y="0"
           >
             <path
-              d="e7781feea17d63d57f67e7eaa876efac"
+              clipRule="evenodd"
+              d="8b95ca39f7ab58f0e14a1cefe90b4e2b"
             />
-          </g>
-          <defs>
-            <clipPath>
-              <rect
-                height="24"
-                width="24"
-              />
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-        target="_blank"
-      >
-        <svg
-          aria-label="icon-facebook"
-          height={18}
-          role="img"
-          title="Share on Facebook"
-          viewBox="14 10 10.592460632324219 20.397258758544922"
-          width={9}
-        >
-          <title>
-            Share on Facebook
-          </title>
-          <g>
-            <path
-              d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          </mask>
+          <g
+            mask="url(#mask0_2527_128)"
+          >
+            <rect
+              height="16"
+              width="16"
             />
           </g>
         </svg>
-      </a>
-      <a
-        href=""
-        target={null}
-      >
-        <svg
-          aria-label="icon-copy-link"
-          height={16}
-          role="img"
-          title="Copy link to clipboard"
-          viewBox="0 0 15 15"
-          width={15}
-        >
-          <title>
-            Copy link to clipboard
-          </title>
-          <path
-            d="f65af77b7574644b0c2e60934732135f"
-          />
-        </svg>
-      </a>
+        <span>
+           Share
+        </span>
+      </button>
     </article>
   </main>
 </article>
