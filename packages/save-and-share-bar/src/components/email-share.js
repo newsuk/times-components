@@ -37,9 +37,8 @@ class EmailShare extends Component {
             this.openMailClient(data.article.tokenisedUrl);
           }
         })
-        .catch(error => {
+        .catch(() => {
           this.setState({ isLoading: false });
-          console.error("Error in connecting to api", error);
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
