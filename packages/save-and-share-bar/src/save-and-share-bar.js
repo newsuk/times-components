@@ -165,7 +165,7 @@ class SaveAndShareBar extends Component {
               </div>
             </UserState>
             {isPreviewMode && (
-              <div data-testid="save-star">
+              <div data-testid="save-star-preview">
                 <SaveStar articleId={articleId} isPreviewMode>
                   <SaveButton />
                 </SaveStar>

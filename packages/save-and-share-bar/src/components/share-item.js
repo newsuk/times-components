@@ -9,6 +9,14 @@ const StyledLinkStandalone = styled(LinkStandalone)`
   }
 `;
 
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+`;
+
 export const ShareItem = ({
   children,
   testId,
@@ -37,7 +45,7 @@ export const ShareItem = ({
 
 export const ShareItemLabel = ({ children, icon }) => (
   <Stack flow="horizontal-center" spaceInline="space020">
-    {icon}
+    <IconContainer>{icon}</IconContainer>
     <TextBlock typographyPreset="utilityLabel020">{children}</TextBlock>
   </Stack>
 );
