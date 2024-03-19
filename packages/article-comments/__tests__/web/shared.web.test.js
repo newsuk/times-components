@@ -9,7 +9,10 @@ import { UserState } from "./mocks";
 import ArticleComments from "../../src/article-comments";
 import { ssoCallback } from "../../src/comment-login";
 
-const renderComments = ({ enabled }) =>
+const renderComments = ({
+  enabled,
+  domainSpecificUrl = "https://www.thetimes.co.uk"
+}) =>
   render(
     <ArticleComments
       articleId="dummy-article-id"
@@ -21,6 +24,7 @@ const renderComments = ({ enabled }) =>
       storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
       isCommentEnabled
+      domainSpecificUrl={domainSpecificUrl}
     />
   );
 
@@ -59,6 +63,22 @@ describe("User States", () => {
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
       "https://launcher.spot.im/spot/sp_pCQgrRiN"
     );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("uses com host when received", () => {
+    const { asFragment, baseElement } = renderComments({
+      count: 123,
+      enabled: true,
+      domainSpecificUrl: "https://www.thetimes.com"
+    });
+
+    expect(
+      baseElement
+        .getElementsByTagName("script")[0]
+        .getAttribute("data-post-url")
+    ).toEqual("https://www.thetimes.com/article/dummy-article-id");
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -120,6 +140,7 @@ it("Render comments label, when comments are loaded", () => {
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
       isCommentEnabled
+      domainSpecificUrl="https://www.thetimes.co.uk"
     />
   );
 
@@ -151,6 +172,7 @@ describe("window listeners added", () => {
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
         isCommentEnabled
+        domainSpecificUrl="https://www.thetimes.co.uk"
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();

@@ -13,6 +13,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
   >
     <Head
       articleUrl="https://url.io"
+      domainSpecificUrl="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -67,6 +68,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
             }
           }
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -152,6 +154,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
   >
     <Head
       articleUrl="https://url.io"
+      domainSpecificUrl="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -204,6 +207,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
             }
           }
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {

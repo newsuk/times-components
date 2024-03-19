@@ -38,6 +38,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
   >
     <Head
       articleUrl="https://url.io"
+      domainSpecificUrl="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -331,6 +332,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             }
           }
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -416,6 +418,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
   >
     <Head
       articleUrl="https://url.io"
+      domainSpecificUrl="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -709,6 +712,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             }
           }
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
