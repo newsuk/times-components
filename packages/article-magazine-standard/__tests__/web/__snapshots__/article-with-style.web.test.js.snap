@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c20 {
+.c22 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c20:first-of-type:after {
+.c22:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c23 {
+.c25 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c19 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -91,7 +91,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c26 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -119,7 +119,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c29 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -148,7 +148,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c22 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +169,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c21 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +188,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c24 {
+.c26 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -197,7 +197,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c25 {
+.c27 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -248,6 +248,10 @@ exports[`full article with style 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c19 {
+  position: relative;
 }
 
 .c17 {
@@ -503,7 +507,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c22 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -513,47 +517,32 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c25 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c26 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -562,13 +551,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c29 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c29 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -580,7 +584,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c23 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -589,19 +593,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c26 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c24 {
+  .c26 {
     min-height: 283px;
   }
 }
@@ -610,6 +614,14 @@ exports[`full article with style 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -865,108 +877,116 @@ exports[`full article with style 1`] = `
       <article
         className="c18"
       >
-        <div>
-          <div>
-            <div
-              className="c19"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <Link>
-          Some Link
-        </Link>
-        <p
-          className="c20"
-        >
-          Some content
-        </p>
-        <div
-          className="c21"
-        >
-          <div
-            className="c22"
-          >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
-          </div>
-        </div>
         <div
           className="c19"
         >
-          <figure
-            margin={0}
+          <div
+            className="c20"
           >
-            <div
-              className="c4"
-              paddingBottom="56.25%"
-              position="relative"
-            >
-              <div
-                className="c4"
-                height="100%"
-                position="absolute"
-                width="100%"
-              >
+            <div>
+              <div>
                 <div
-                  className="lcpItem"
-                  height="100%"
-                  width="100%"
+                  className="c21"
                 >
-                  <div
-                    height="100%"
-                    position="relative"
-                    width="100%"
-                  >
-                    <video
-                      className="video-js"
-                      height="100%"
-                      width="100%"
-                    />
-                  </div>
+                  <ArticleImage />
                 </div>
               </div>
             </div>
-            <figcaption>
+            <Link>
+              Some Link
+            </Link>
+            <p
+              className="c22"
+            >
+              Some content
+            </p>
+            <div
+              className="c23"
+            >
               <div
-                className="c23"
+                className="c24"
               >
-                <Caption />
+                <PullQuote>
+                  The pull quote content
+                </PullQuote>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div
-          className="c24"
-        >
-          <h2
-            className="c25"
-          >
-            Advertisement
-          </h2>
-          <AdContainer />
-        </div>
-        <div>
-          <div>
+            </div>
+            <div
+              className="c21"
+            >
+              <figure
+                margin={0}
+              >
+                <div
+                  className="c4"
+                  paddingBottom="56.25%"
+                  position="relative"
+                >
+                  <div
+                    className="c4"
+                    height="100%"
+                    position="absolute"
+                    width="100%"
+                  >
+                    <div
+                      className="lcpItem"
+                      height="100%"
+                      width="100%"
+                    >
+                      <div
+                        height="100%"
+                        position="relative"
+                        width="100%"
+                      >
+                        <video
+                          className="video-js"
+                          height="100%"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <div
+                    className="c25"
+                  >
+                    <Caption />
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
             <div
               className="c26"
             >
-              <ArticleImage />
+              <h2
+                className="c27"
+              >
+                Advertisement
+              </h2>
+              <AdContainer />
             </div>
+            <div>
+              <div>
+                <div
+                  className="c28"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div
+                  className="c29"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div />
           </div>
         </div>
-        <div>
-          <div>
-            <div
-              className="c27"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -1009,7 +1029,7 @@ exports[`full article with style in the culture magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c20 {
+.c22 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -1020,13 +1040,13 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20:first-of-type:after {
+.c22:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c23 {
+.c25 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1045,7 +1065,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c19 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1068,7 +1088,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c26 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1096,7 +1116,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c29 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1125,7 +1145,7 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.c22 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1146,7 +1166,7 @@ exports[`full article with style in the culture magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c21 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1165,7 +1185,7 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.c24 {
+.c26 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -1174,7 +1194,7 @@ exports[`full article with style in the culture magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c25 {
+.c27 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -1225,6 +1245,10 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c19 {
+  position: relative;
 }
 
 .c17 {
@@ -1481,7 +1505,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c22 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -1491,47 +1515,32 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c25 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c26 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1540,13 +1549,28 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c29 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c29 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -1558,7 +1582,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c23 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1567,19 +1591,19 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c26 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c24 {
+  .c26 {
     min-height: 283px;
   }
 }
@@ -1588,6 +1612,14 @@ exports[`full article with style in the culture magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -1843,108 +1875,116 @@ exports[`full article with style in the culture magazine 1`] = `
       <article
         className="c18"
       >
-        <div>
-          <div>
-            <div
-              className="c19"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <Link>
-          Some Link
-        </Link>
-        <p
-          className="c20"
-        >
-          Some content
-        </p>
-        <div
-          className="c21"
-        >
-          <div
-            className="c22"
-          >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
-          </div>
-        </div>
         <div
           className="c19"
         >
-          <figure
-            margin={0}
+          <div
+            className="c20"
           >
-            <div
-              className="c4"
-              paddingBottom="56.25%"
-              position="relative"
-            >
-              <div
-                className="c4"
-                height="100%"
-                position="absolute"
-                width="100%"
-              >
+            <div>
+              <div>
                 <div
-                  className="lcpItem"
-                  height="100%"
-                  width="100%"
+                  className="c21"
                 >
-                  <div
-                    height="100%"
-                    position="relative"
-                    width="100%"
-                  >
-                    <video
-                      className="video-js"
-                      height="100%"
-                      width="100%"
-                    />
-                  </div>
+                  <ArticleImage />
                 </div>
               </div>
             </div>
-            <figcaption>
+            <Link>
+              Some Link
+            </Link>
+            <p
+              className="c22"
+            >
+              Some content
+            </p>
+            <div
+              className="c23"
+            >
               <div
-                className="c23"
+                className="c24"
               >
-                <Caption />
+                <PullQuote>
+                  The pull quote content
+                </PullQuote>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div
-          className="c24"
-        >
-          <h2
-            className="c25"
-          >
-            Advertisement
-          </h2>
-          <AdContainer />
-        </div>
-        <div>
-          <div>
+            </div>
+            <div
+              className="c21"
+            >
+              <figure
+                margin={0}
+              >
+                <div
+                  className="c4"
+                  paddingBottom="56.25%"
+                  position="relative"
+                >
+                  <div
+                    className="c4"
+                    height="100%"
+                    position="absolute"
+                    width="100%"
+                  >
+                    <div
+                      className="lcpItem"
+                      height="100%"
+                      width="100%"
+                    >
+                      <div
+                        height="100%"
+                        position="relative"
+                        width="100%"
+                      >
+                        <video
+                          className="video-js"
+                          height="100%"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <div
+                    className="c25"
+                  >
+                    <Caption />
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
             <div
               className="c26"
             >
-              <ArticleImage />
+              <h2
+                className="c27"
+              >
+                Advertisement
+              </h2>
+              <AdContainer />
             </div>
+            <div>
+              <div>
+                <div
+                  className="c28"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div
+                  className="c29"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div />
           </div>
         </div>
-        <div>
-          <div>
-            <div
-              className="c27"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -1987,7 +2027,7 @@ exports[`full article with style in the style magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c20 {
+.c22 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -1998,13 +2038,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20:first-of-type:after {
+.c22:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c23 {
+.c25 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2023,7 +2063,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c19 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2046,7 +2086,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c26 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2074,7 +2114,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c29 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2103,7 +2143,7 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.c22 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2124,7 +2164,7 @@ exports[`full article with style in the style magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c21 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2143,7 +2183,7 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.c24 {
+.c26 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -2152,7 +2192,7 @@ exports[`full article with style in the style magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c25 {
+.c27 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -2203,6 +2243,10 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c19 {
+  position: relative;
 }
 
 .c17 {
@@ -2460,7 +2504,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c22 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -2470,47 +2514,32 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c25 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c26 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2519,13 +2548,28 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c29 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c29 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -2537,7 +2581,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c23 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2546,19 +2590,19 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c26 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c24 {
+  .c26 {
     min-height: 283px;
   }
 }
@@ -2567,6 +2611,14 @@ exports[`full article with style in the style magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -2822,108 +2874,116 @@ exports[`full article with style in the style magazine 1`] = `
       <article
         className="c18"
       >
-        <div>
-          <div>
-            <div
-              className="c19"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <Link>
-          Some Link
-        </Link>
-        <p
-          className="c20"
-        >
-          Some content
-        </p>
-        <div
-          className="c21"
-        >
-          <div
-            className="c22"
-          >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
-          </div>
-        </div>
         <div
           className="c19"
         >
-          <figure
-            margin={0}
+          <div
+            className="c20"
           >
-            <div
-              className="c4"
-              paddingBottom="56.25%"
-              position="relative"
-            >
-              <div
-                className="c4"
-                height="100%"
-                position="absolute"
-                width="100%"
-              >
+            <div>
+              <div>
                 <div
-                  className="lcpItem"
-                  height="100%"
-                  width="100%"
+                  className="c21"
                 >
-                  <div
-                    height="100%"
-                    position="relative"
-                    width="100%"
-                  >
-                    <video
-                      className="video-js"
-                      height="100%"
-                      width="100%"
-                    />
-                  </div>
+                  <ArticleImage />
                 </div>
               </div>
             </div>
-            <figcaption>
+            <Link>
+              Some Link
+            </Link>
+            <p
+              className="c22"
+            >
+              Some content
+            </p>
+            <div
+              className="c23"
+            >
               <div
-                className="c23"
+                className="c24"
               >
-                <Caption />
+                <PullQuote>
+                  The pull quote content
+                </PullQuote>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div
-          className="c24"
-        >
-          <h2
-            className="c25"
-          >
-            Advertisement
-          </h2>
-          <AdContainer />
-        </div>
-        <div>
-          <div>
+            </div>
+            <div
+              className="c21"
+            >
+              <figure
+                margin={0}
+              >
+                <div
+                  className="c4"
+                  paddingBottom="56.25%"
+                  position="relative"
+                >
+                  <div
+                    className="c4"
+                    height="100%"
+                    position="absolute"
+                    width="100%"
+                  >
+                    <div
+                      className="lcpItem"
+                      height="100%"
+                      width="100%"
+                    >
+                      <div
+                        height="100%"
+                        position="relative"
+                        width="100%"
+                      >
+                        <video
+                          className="video-js"
+                          height="100%"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <div
+                    className="c25"
+                  >
+                    <Caption />
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
             <div
               className="c26"
             >
-              <ArticleImage />
+              <h2
+                className="c27"
+              >
+                Advertisement
+              </h2>
+              <AdContainer />
             </div>
+            <div>
+              <div>
+                <div
+                  className="c28"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div
+                  className="c29"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div />
           </div>
         </div>
-        <div>
-          <div>
-            <div
-              className="c27"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -2966,7 +3026,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c20 {
+.c22 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -2977,13 +3037,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20:first-of-type:after {
+.c22:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c23 {
+.c25 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3002,7 +3062,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c19 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3025,7 +3085,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c26 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3053,7 +3113,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c29 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3082,7 +3142,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.c22 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3103,7 +3163,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c21 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3122,7 +3182,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.c24 {
+.c26 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -3131,7 +3191,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c25 {
+.c27 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -3182,6 +3242,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c19 {
+  position: relative;
 }
 
 .c17 {
@@ -3438,7 +3502,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c22 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -3448,47 +3512,32 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c25 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c26 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -3497,13 +3546,28 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c29 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c29 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -3515,7 +3579,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c23 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -3524,19 +3588,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c26 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c24 {
+  .c26 {
     min-height: 283px;
   }
 }
@@ -3545,6 +3609,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -3800,108 +3872,116 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <article
         className="c18"
       >
-        <div>
-          <div>
-            <div
-              className="c19"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <Link>
-          Some Link
-        </Link>
-        <p
-          className="c20"
-        >
-          Some content
-        </p>
-        <div
-          className="c21"
-        >
-          <div
-            className="c22"
-          >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
-          </div>
-        </div>
         <div
           className="c19"
         >
-          <figure
-            margin={0}
+          <div
+            className="c20"
           >
-            <div
-              className="c4"
-              paddingBottom="56.25%"
-              position="relative"
-            >
-              <div
-                className="c4"
-                height="100%"
-                position="absolute"
-                width="100%"
-              >
+            <div>
+              <div>
                 <div
-                  className="lcpItem"
-                  height="100%"
-                  width="100%"
+                  className="c21"
                 >
-                  <div
-                    height="100%"
-                    position="relative"
-                    width="100%"
-                  >
-                    <video
-                      className="video-js"
-                      height="100%"
-                      width="100%"
-                    />
-                  </div>
+                  <ArticleImage />
                 </div>
               </div>
             </div>
-            <figcaption>
+            <Link>
+              Some Link
+            </Link>
+            <p
+              className="c22"
+            >
+              Some content
+            </p>
+            <div
+              className="c23"
+            >
               <div
-                className="c23"
+                className="c24"
               >
-                <Caption />
+                <PullQuote>
+                  The pull quote content
+                </PullQuote>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div
-          className="c24"
-        >
-          <h2
-            className="c25"
-          >
-            Advertisement
-          </h2>
-          <AdContainer />
-        </div>
-        <div>
-          <div>
+            </div>
+            <div
+              className="c21"
+            >
+              <figure
+                margin={0}
+              >
+                <div
+                  className="c4"
+                  paddingBottom="56.25%"
+                  position="relative"
+                >
+                  <div
+                    className="c4"
+                    height="100%"
+                    position="absolute"
+                    width="100%"
+                  >
+                    <div
+                      className="lcpItem"
+                      height="100%"
+                      width="100%"
+                    >
+                      <div
+                        height="100%"
+                        position="relative"
+                        width="100%"
+                      >
+                        <video
+                          className="video-js"
+                          height="100%"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <div
+                    className="c25"
+                  >
+                    <Caption />
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
             <div
               className="c26"
             >
-              <ArticleImage />
+              <h2
+                className="c27"
+              >
+                Advertisement
+              </h2>
+              <AdContainer />
             </div>
+            <div>
+              <div>
+                <div
+                  className="c28"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div
+                  className="c29"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
+            </div>
+            <div />
           </div>
         </div>
-        <div>
-          <div>
-            <div
-              className="c27"
-            >
-              <ArticleImage />
-            </div>
-          </div>
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>

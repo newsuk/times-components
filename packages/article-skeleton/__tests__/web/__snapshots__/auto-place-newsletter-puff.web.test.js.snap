@@ -23,36 +23,40 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
     <main>
       <div />
       <article>
-        <p>
-          Some paragraph 1
-        </p>
-        <p>
-          Some paragraph 2
-        </p>
-        <p>
-          Some paragraph 3
-        </p>
-        <span>
-          <p>
-            Some paragraph 4
-          </p>
+        <div>
           <div>
-            <InlineNewsletterPuff
-              code="TNL-101"
-              copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
-              headline="Best of Times"
-              section="News"
+            <p>
+              Some paragraph 1
+            </p>
+            <p>
+              Some paragraph 2
+            </p>
+            <p>
+              Some paragraph 3
+            </p>
+            <span>
+              <p>
+                Some paragraph 4
+              </p>
+              <div>
+                <InlineNewsletterPuff
+                  code="TNL-101"
+                  copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
+                  headline="Best of Times"
+                  section="News"
+                />
+              </div>
+              <p
+                id="last-paragraph"
+              >
+                Some paragraph 5
+              </p>
+            </span>
+            <div
+              id="paywall-portal-article-footer"
             />
           </div>
-          <p
-            id="last-paragraph"
-          >
-            Some paragraph 5
-          </p>
-        </span>
-        <div
-          id="paywall-portal-article-footer"
-        />
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -158,34 +162,38 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
     <main>
       <div />
       <article>
-        <p>
-          Some paragraph 1
-        </p>
-        <p>
-          Some paragraph 2
-        </p>
-        <p>
-          Some paragraph 3
-        </p>
-        <AutoNewsletterPuff
-          code="TNL-101"
-          copy="Our flagship newsletter featuring our top stories and analysis, delivered every morning."
-          headline="Best of Times"
-          section="News"
-        />
-        <span>
-          <p>
-            Some paragraph 4
-          </p>
-          <p
-            id="last-paragraph"
-          >
-            Some paragraph 5
-          </p>
-        </span>
-        <div
-          id="paywall-portal-article-footer"
-        />
+        <div>
+          <div>
+            <p>
+              Some paragraph 1
+            </p>
+            <p>
+              Some paragraph 2
+            </p>
+            <p>
+              Some paragraph 3
+            </p>
+            <AutoNewsletterPuff
+              code="TNL-101"
+              copy="Our flagship newsletter featuring our top stories and analysis, delivered every morning."
+              headline="Best of Times"
+              section="News"
+            />
+            <span>
+              <p>
+                Some paragraph 4
+              </p>
+              <p
+                id="last-paragraph"
+              >
+                Some paragraph 5
+              </p>
+            </span>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

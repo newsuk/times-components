@@ -37,7 +37,9 @@ import {
   MainContainer,
   UpdateButtonContainer,
   PuzzlesSidebar,
-  SidebarWarpper
+  SidebarWarpper,
+  ArticleWrapper,
+  ArticleContent
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -96,15 +98,10 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2, #related-articles, #sponsored-article-container, #comments-container"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
       );
-      const relatedArticlesIds = [
-        ".styles__Container-kqn9c8-0 jmmsXr",
-        ".GlobalFooter"
-      ];
 
       let isAnyAdIntersecting = false;
-      let isAnyArticlesIntersecting = false;
 
       adElements.forEach(adElement => {
         if (adElement) {
@@ -119,23 +116,7 @@ const ArticleSkeleton = ({
         }
       });
 
-      relatedArticlesIds.forEach(id => {
-        const relatedArticlesElements = document.querySelectorAll(id);
-        relatedArticlesElements.forEach(relatedArticlesElement => {
-          if (relatedArticlesElement) {
-            const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
-            const isRelatedArticlesIntersecting =
-              relatedArticlesRect.top <= window.innerHeight &&
-              relatedArticlesRect.bottom >= 0;
-
-            if (isRelatedArticlesIntersecting) {
-              isAnyArticlesIntersecting = true;
-            }
-          }
-        });
-      });
-
-      if (isAnyAdIntersecting || isAnyArticlesIntersecting) {
+      if (isAnyAdIntersecting) {
         sidebarNode.style.opacity = "0";
       } else {
         sidebarNode.style.opacity = "1";
@@ -324,86 +305,94 @@ const ArticleSkeleton = ({
                   />
                 )}
               </HeaderContainer>
-              {CanShowPuzzleSidebar(section) && (
-                <SidebarWarpper>
-                  <TCThemeProvider theme={PuzzlesWebLightTheme}>
-                    <PuzzlesSidebar ref={sidebarRef}>
-                      <ArticleSidebar
-                        pageLink="https://www.thetimes.co.uk/puzzles"
-                        sectionTitle="Puzzles"
-                        data={[
-                          {
-                            title: "Crossword",
-                            url: "https://www.thetimes.co.uk/puzzles/crossword",
-                            imgUrl:
-                              "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-cf4c909719.png"
-                          },
-                          {
-                            title: "Polygon",
-                            url: polygonUrl,
-                            imgUrl:
-                              "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png"
-                          },
-                          {
-                            title: "Sudoku",
-                            url: "https://www.thetimes.co.uk/puzzles/sudoku",
-                            imgUrl:
-                              "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png"
-                          }
-                        ]}
-                      />
-                    </PuzzlesSidebar>
-                  </TCThemeProvider>
-                </SidebarWarpper>
-              )}
               <BodyContainer>
-                {!!zephrDivs && (
-                  <StaticContent
-                    html={
-                      '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
-                    }
-                  />
-                )}
-                {newContent && (
-                  <ArticleBody
-                    id={article.id}
-                    analyticsStream={analyticsStream}
-                    content={newContent}
-                    contextUrl={articleUrl}
-                    section={section}
-                    articleHeadline={headline}
-                    paidContentClassName={paidContentClassName}
-                    template={template}
-                    isPreview={isPreview}
-                    isLiveOrBreaking={isLiveOrBreaking}
-                  />
-                )}
-                {isLiveOrBreaking && (
-                  <UserState state={UserState.showLiveUpdateButton}>
-                    <UpdateButtonContainer data-testid="Update button container">
-                      <UpdateButtonWithDelay
-                        delay={8000}
-                        update
-                        display
-                        label="New update"
-                        handleClick={() => scrollToTopAndRefresh(window)}
-                        arrowUp
-                        updatedTime={article.publishedTime}
-                        articleId={article.id}
-                      />
-                    </UpdateButtonContainer>
-                  </UserState>
-                )}
-                <PaywallPortal
-                  id="paywall-portal-article-footer"
-                  componentName="subscribe-cta"
-                >
-                  {!!zephrDivs && (
-                    <StaticContent
-                      html={'<div id="nu-zephr-article-target-paywall"></div>'}
-                    />
+                <ArticleWrapper>
+                  {CanShowPuzzleSidebar(section) && (
+                    <SidebarWarpper>
+                      <TCThemeProvider theme={PuzzlesWebLightTheme}>
+                        <PuzzlesSidebar ref={sidebarRef}>
+                          <ArticleSidebar
+                            pageLink="https://www.thetimes.co.uk/puzzles"
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url:
+                                  "https://www.thetimes.co.uk/puzzles/crossword",
+                                imgUrl:
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-cf4c909719.png"
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl:
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png"
+                              },
+                              {
+                                title: "Sudoku",
+                                url:
+                                  "https://www.thetimes.co.uk/puzzles/sudoku",
+                                imgUrl:
+                                  "https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png"
+                              }
+                            ]}
+                          />
+                        </PuzzlesSidebar>
+                      </TCThemeProvider>
+                    </SidebarWarpper>
                   )}
-                </PaywallPortal>
+                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                    {!!zephrDivs && (
+                      <StaticContent
+                        html={
+                          '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
+                        }
+                      />
+                    )}
+                    {newContent && (
+                      <ArticleBody
+                        id={article.id}
+                        analyticsStream={analyticsStream}
+                        content={newContent}
+                        contextUrl={articleUrl}
+                        section={section}
+                        articleHeadline={headline}
+                        paidContentClassName={paidContentClassName}
+                        template={template}
+                        isPreview={isPreview}
+                        isLiveOrBreaking={isLiveOrBreaking}
+                      />
+                    )}
+                    {isLiveOrBreaking && (
+                      <UserState state={UserState.showLiveUpdateButton}>
+                        <UpdateButtonContainer data-testid="Update button container">
+                          <UpdateButtonWithDelay
+                            delay={8000}
+                            update
+                            display
+                            label="New update"
+                            handleClick={() => scrollToTopAndRefresh(window)}
+                            arrowUp
+                            updatedTime={article.publishedTime}
+                            articleId={article.id}
+                          />
+                        </UpdateButtonContainer>
+                      </UserState>
+                    )}
+                    <PaywallPortal
+                      id="paywall-portal-article-footer"
+                      componentName="subscribe-cta"
+                    >
+                      {!!zephrDivs && (
+                        <StaticContent
+                          html={
+                            '<div id="nu-zephr-article-target-paywall"></div>'
+                          }
+                        />
+                      )}
+                    </PaywallPortal>
+                  </ArticleContent>
+                </ArticleWrapper>
                 <LazyLoad rootMargin={spacing(40)} threshold={0}>
                   {({ observed, registerNode }) => (
                     <ArticleExtras
