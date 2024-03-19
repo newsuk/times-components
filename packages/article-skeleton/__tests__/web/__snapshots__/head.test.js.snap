@@ -76,7 +76,7 @@ exports[`Head outputs a live blog schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Some Headline","mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"datePublished":"2015-03-13T18:54:58.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":null,"url":"https://url.io","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"liveBlogUpdate":[{"@type":"BlogPosting","headline":"headline","datePublished":"2022-04-20T20:30:00","dateModified":"2022-04-20T20:30:00","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"url":"https://url.io#u_20220420203000h","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleBody":"Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections. The pro-Remain party announced its MEP hopefuls from almost 4"}],"articleSection":"Comment","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44"}
+    {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Some Headline","mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"datePublished":"2015-03-13T18:54:58.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":null,"url":"https://url.io","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"liveBlogUpdate":[{"@type":"BlogPosting","headline":"headline","datePublished":"2022-04-20T20:30:00","dateModified":"2022-04-20T20:30:00","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"url":"https://url.io#u_20220420203000h","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleBody":"Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections. The pro-Remain party announced its MEP hopefuls from almost 4"}],"articleSection":"Comment","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44"}
   </script>
 </Helmet>
 `;
@@ -151,7 +151,7 @@ exports[`Head outputs array of author in context schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]},{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]},{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -274,7 +274,7 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/twitterusername"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/twitterusername"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -349,7 +349,7 @@ exports[`Head outputs correct metadata 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://www.thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -428,7 +428,7 @@ exports[`Head outputs correct metadata for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -508,7 +508,7 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -587,7 +587,7 @@ exports[`Head outputs correct metadata when syndicated article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"37a19ac4-1cbb-11ee-8198-bf96b6365670","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"37a19ac4-1cbb-11ee-8198-bf96b6365670","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -662,7 +662,82 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io","isPartOf":{"@type":["CreativeWork","Product"],"name":"The Times & The Sunday Times","productID":"uat-thetimes.co.uk:basic"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io","isPartOf":{"@type":["CreativeWork","Product"],"name":"The Times & The Sunday Times","productID":"uat-thetimes.co.uk:basic"}}
+  </script>
+</Helmet>
+`;
+
+exports[`Head outputs correct metadata with .COM host 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+  </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://url.io"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://url.io"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://www.thetimes.com/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -737,7 +812,7 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":"https://thetimes.co.uk/profile/richard-lloyd-parry"}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":"undefined/profile/richard-lloyd-parry"}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
 </Helmet>
 `;
@@ -816,7 +891,7 @@ exports[`Head outputs seoDescription as video description for a video article wh
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -900,7 +975,7 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop1251.io","caption":"Some Caption"},"thumbnailUrl":"https://crop1251.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop1251.io","caption":"Some Caption"},"thumbnailUrl":"https://crop1251.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -984,7 +1059,7 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop11.io","caption":"Some Caption"},"thumbnailUrl":"https://crop11.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop11.io","caption":"Some Caption"},"thumbnailUrl":"https://crop11.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1068,7 +1143,7 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop23.io","caption":"Some Caption"},"thumbnailUrl":"https://crop23.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop23.io","caption":"Some Caption"},"thumbnailUrl":"https://crop23.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1152,7 +1227,7 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop32.io","caption":"Some Caption"},"thumbnailUrl":"https://crop32.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop32.io","caption":"Some Caption"},"thumbnailUrl":"https://crop32.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1236,7 +1311,7 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop45.io","caption":"Some Caption"},"thumbnailUrl":"https://crop45.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop45.io","caption":"Some Caption"},"thumbnailUrl":"https://crop45.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1320,7 +1395,7 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1392,7 +1467,7 @@ exports[`Head outputs title as video description for a video article when there 
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1476,7 +1551,7 @@ exports[`Head outputs video schema for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
@@ -1560,7 +1635,7 @@ exports[`Head outputs video schema for a video article 2`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"

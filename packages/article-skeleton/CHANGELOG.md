@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.128.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.127.0...@times-components/article-skeleton@1.128.0) (2024-03-19)
+
+
+### Features
+
+* **TMRS-88:** article domain reference updates ([#3798](https://github.com/newsuk/times-components/issues/3798)) ([87289ac](https://github.com/newsuk/times-components/commit/87289ac93dfae6322a54ad49f8ce6d3df80073b2))
+
+
+
+
+
+# [1.127.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.126.1...@times-components/article-skeleton@1.127.0) (2024-03-19)
+
+
+### Features
+
+* **TMPZ-338:** Scroll Article Sidebar off the screen rather than fade at the bottom of an article ([#3781](https://github.com/newsuk/times-components/issues/3781)) ([5d206d5](https://github.com/newsuk/times-components/commit/5d206d5d442a502ab7593db74543b2b98c469bcb))
+
+
+
+
+
+## [1.126.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.126.0...@times-components/article-skeleton@1.126.1) (2024-03-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.126.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.125.5...@times-components/article-skeleton@1.126.0) (2024-03-15)
+
+
+### Features
+
+* **TMRX-1984:** Update ad positioning ([#3796](https://github.com/newsuk/times-components/issues/3796)) ([b5892e3](https://github.com/newsuk/times-components/commit/b5892e39131af32500f03b498346613b713979d1))
+
+
+
+
+
 ## [1.125.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.125.4...@times-components/article-skeleton@1.125.5) (2024-03-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton

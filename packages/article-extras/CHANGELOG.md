@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.25.1...@times-components/article-extras@0.26.0) (2024-03-19)
+
+
+### Features
+
+* **TMRS-88:** article domain reference updates ([#3798](https://github.com/newsuk/times-components/issues/3798)) ([87289ac](https://github.com/newsuk/times-components/commit/87289ac93dfae6322a54ad49f8ce6d3df80073b2))
+
+
+
+
+
+## [0.25.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.25.0...@times-components/article-extras@0.25.1) (2024-03-18)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.24.28...@times-components/article-extras@0.25.0) (2024-03-15)
+
+
+### Features
+
+* **TMRX-1984:** Update ad positioning ([#3796](https://github.com/newsuk/times-components/issues/3796)) ([b5892e3](https://github.com/newsuk/times-components/commit/b5892e39131af32500f03b498346613b713979d1))
+
+
+
+
+
 ## [0.24.28](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.24.27...@times-components/article-extras@0.24.28) (2024-03-12)
 
 **Note:** Version bump only for package @times-components/article-extras

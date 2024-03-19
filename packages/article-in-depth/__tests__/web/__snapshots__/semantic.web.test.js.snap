@@ -164,9 +164,6 @@ exports[`1. a full article 1`] = `
       >
         Some Link
       </a>
-      <h2>
-        Sponsored
-      </h2>
       <p>
         Some content
       </p>
@@ -277,6 +274,9 @@ exports[`1. a full article 1`] = `
            Share
         </span>
       </button>
+      <h2>
+        Sponsored
+      </h2>
     </article>
   </main>
 </article>

@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c22 {
+.c21 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c22:first-of-type:after {
+.c21:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c25 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c18 {
+.c20 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -88,6 +88,34 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c27 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -116,57 +144,8 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 25px;
-}
-
-.c29 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 0;
   display: block;
-}
-
-.c24 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
 }
 
 .c23 {
@@ -185,46 +164,31 @@ exports[`full article with style 1`] = `
   padding: 0px;
   position: relative;
   z-index: 0;
-  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
 }
 
-.c19 {
-  clear: both;
+.c22 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: block;
 }
 
-.c19.hidden {
-  visibility: hidden;
-}
-
-.c20 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c21 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
-.c26 {
+.c25 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -233,7 +197,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c27 {
+.c26 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -308,6 +272,10 @@ exports[`full article with style 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c18 {
+  position: relative;
 }
 
 .c9 {
@@ -479,7 +447,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c21 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -489,62 +457,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c22 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c25 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c18 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c28 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c28 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c29 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c29 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c24 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c27 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c23 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -556,7 +524,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c22 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -565,47 +533,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c23 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c19 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c21 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c21:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c21:last-child {
-    margin-left: 1.5%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
+  .c25 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c26 {
+  .c25 {
     min-height: 283px;
   }
 }
@@ -632,6 +572,14 @@ exports[`full article with style 1`] = `
   .c2 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -907,141 +855,134 @@ exports[`full article with style 1`] = `
         <article
           className="c17"
         >
-          <div>
-            <div>
-              <div
-                className="c18"
-              >
-                <ArticleImage />
-              </div>
-            </div>
-          </div>
-          <Link>
-            Some Link
-          </Link>
-          <div
-            className="group-3 hidden c19"
-          >
-            <h2
-              className="c20"
-            >
-              Sponsored
-            </h2>
-            <div
-              className="c21"
-            />
-            <div
-              className="c21"
-            />
-          </div>
-          <p
-            className="c22"
-          >
-            Some content
-          </p>
-          <div
-            className="c23"
-          >
-            <div
-              className="c24"
-            >
-              <PullQuote>
-                The pull quote content
-              </PullQuote>
-            </div>
-          </div>
           <div
             className="c18"
           >
-            <figure
-              margin={0}
+            <div
+              className="c19"
             >
-              <div
-                className="c6"
-                paddingBottom="56.25%"
-                position="relative"
-              >
-                <div
-                  className="c6"
-                  height="100%"
-                  position="absolute"
-                  width="100%"
-                >
+              <div>
+                <div>
                   <div
-                    className="lcpItem"
-                    height="100%"
-                    width="100%"
+                    className="c20"
                   >
-                    <div
-                      height="100%"
-                      position="relative"
-                      width="100%"
-                    >
-                      <video
-                        className="video-js"
-                        height="100%"
-                        width="100%"
-                      />
-                    </div>
+                    <ArticleImage />
                   </div>
                 </div>
               </div>
-              <figcaption>
+              <Link>
+                Some Link
+              </Link>
+              <p
+                className="c21"
+              >
+                Some content
+              </p>
+              <div
+                className="c22"
+              >
                 <div
-                  className="c25"
+                  className="c23"
+                >
+                  <PullQuote>
+                    The pull quote content
+                  </PullQuote>
+                </div>
+              </div>
+              <div
+                className="c20"
+              >
+                <figure
+                  margin={0}
                 >
                   <div
                     className="c6"
+                    paddingBottom="56.25%"
+                    position="relative"
                   >
                     <div
                       className="c6"
-                      paddingTop="10px"
+                      height="100%"
+                      position="absolute"
+                      width="100%"
                     >
                       <div
-                        className="c8"
-                        color="#696969"
-                        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                        fontSize={14}
-                        lineHeight="19px"
-                        marginBottom={4}
+                        className="lcpItem"
+                        height="100%"
+                        width="100%"
                       >
-                        This is video caption
+                        <div
+                          height="100%"
+                          position="relative"
+                          width="100%"
+                        >
+                          <video
+                            className="video-js"
+                            height="100%"
+                            width="100%"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <figcaption>
+                    <div
+                      className="c24"
+                    >
+                      <div
+                        className="c6"
+                      >
+                        <div
+                          className="c6"
+                          paddingTop="10px"
+                        >
+                          <div
+                            className="c8"
+                            color="#696969"
+                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                            fontSize={14}
+                            lineHeight="19px"
+                            marginBottom={4}
+                          >
+                            This is video caption
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div
+                className="c25"
+              >
+                <h2
+                  className="c26"
+                >
+                  Advertisement
+                </h2>
+                <AdContainer />
+              </div>
+              <div>
+                <div>
+                  <div
+                    className="c27"
+                  >
+                    <ArticleImage />
+                  </div>
                 </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div
-            className="c26"
-          >
-            <h2
-              className="c27"
-            >
-              Advertisement
-            </h2>
-            <AdContainer />
-          </div>
-          <div>
-            <div>
-              <div
-                className="c28"
-              >
-                <ArticleImage />
               </div>
+              <div>
+                <div>
+                  <div
+                    className="c28"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <div />
             </div>
           </div>
-          <div>
-            <div>
-              <div
-                className="c29"
-              >
-                <ArticleImage />
-              </div>
-            </div>
-          </div>
-          <div />
           <ArticleExtras />
         </article>
       </main>

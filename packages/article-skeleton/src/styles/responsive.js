@@ -67,27 +67,38 @@ export const SidebarWarpper = styled.div`
   position: sticky;
   top: 162px;
   display: none;
+  left: 100%;
 
   @media (min-width: ${breakpoints.wide}px) {
-    display: block;
+    width: 19.8333%;
+    display: inline-block;
   }
   @media (min-width: ${breakpoints.huge}px) {
+    width: 18.8333%;
     top: 112px;
   }
 `;
 
 export const PuzzlesSidebar = styled.div`
-  position: absolute;
+  position: sticky;
   padding-left: ${spacing(4)};
-  right: 0;
   z-index: 1;
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 19.8333%;
     padding-right: ${spacing(8)};
   }
   @media (min-width: ${breakpoints.huge}px) {
-    width: 18.8333%;
     padding-right: ${spacing(10)};
+  }
+`;
+
+export const ArticleWrapper = styled.div`
+  position: relative;
+`;
+
+export const ArticleContent = styled.div`
+  @media (min-width: ${breakpoints.wide}px) {
+    margin-top: ${({ showMargin }) => (showMargin ? "-335px" : "0")};
+    transition: margin-top 0.2s ease;
   }
 `;

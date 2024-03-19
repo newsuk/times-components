@@ -13,6 +13,7 @@ import {
   BreadcrumbContainer,
   ShareAndSaveContainer
 } from "./styles/responsive";
+import { NativeAd, NativeAdTitle, Ad } from "./styles";
 
 const clearingStyle = {
   clear: "both"
@@ -35,7 +36,8 @@ const ArticleExtras = ({
   isSharingSavingEnabled,
   isCommentEnabled,
   storefrontConfig,
-  breadcrumbs
+  breadcrumbs,
+  domainSpecificUrl
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -67,12 +69,15 @@ const ArticleExtras = ({
             articleId={articleId}
             articleHeadline={articleHeadline}
             articleSection={section}
+            domainSpecificUrl={domainSpecificUrl}
           />
         )}
       </div>
-      <div id="sponsored-article-container">
-        <div id="sponsored-article" />
-      </div>
+      <NativeAd className="group-3 hidden" key="1">
+        <NativeAdTitle>Sponsored</NativeAdTitle>
+        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
+        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
+      </NativeAd>
     </>
   );
   return (
@@ -110,6 +115,7 @@ const ArticleExtras = ({
         commentingConfig={commentingConfig}
         isCommentEnabled={isCommentEnabled}
         storefrontConfig={storefrontConfig}
+        domainSpecificUrl={domainSpecificUrl}
       />
     </UserState>
   );
@@ -134,7 +140,8 @@ ArticleExtras.propTypes = {
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
-  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleExtras.defaultProps = {

@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.82.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.81.0...@times-components/article-in-depth@3.82.0) (2024-03-19)
+
+
+### Features
+
+* **TMRS-88:** article domain reference updates ([#3798](https://github.com/newsuk/times-components/issues/3798)) ([87289ac](https://github.com/newsuk/times-components/commit/87289ac93dfae6322a54ad49f8ce6d3df80073b2))
+
+
+
+
+
+# [3.81.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.80.1...@times-components/article-in-depth@3.81.0) (2024-03-19)
+
+
+### Features
+
+* **TMPZ-338:** Scroll Article Sidebar off the screen rather than fade at the bottom of an article ([#3781](https://github.com/newsuk/times-components/issues/3781)) ([5d206d5](https://github.com/newsuk/times-components/commit/5d206d5d442a502ab7593db74543b2b98c469bcb))
+
+
+
+
+
+## [3.80.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.80.0...@times-components/article-in-depth@3.80.1) (2024-03-18)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.80.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.41...@times-components/article-in-depth@3.80.0) (2024-03-15)
+
+
+### Features
+
+* **TMRX-1984:** Update ad positioning ([#3796](https://github.com/newsuk/times-components/issues/3796)) ([b5892e3](https://github.com/newsuk/times-components/commit/b5892e39131af32500f03b498346613b713979d1))
+
+
+
+
+
 ## [3.79.41](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.40...@times-components/article-in-depth@3.79.41) (2024-03-12)
 
 **Note:** Version bump only for package @times-components/article-in-depth
