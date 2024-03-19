@@ -16,7 +16,7 @@ import { Header } from './styles';
 export const RecommendedArticles: React.FC<{
   heading: string;
   domainSpecificUrl: string;
-}> = ({ heading }) => {
+}> = ({ heading, domainSpecificUrl }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error) {
@@ -28,10 +28,7 @@ export const RecommendedArticles: React.FC<{
   if (!articles || !articles.length) {
     return null;
   }
-  const transformedArticles = transformDomainCom(
-    articles,
-    'https://www.thetimes.com'
-  );
+  const transformedArticles = transformDomainCom(articles, domainSpecificUrl);
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
