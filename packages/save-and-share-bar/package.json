@@ -34,7 +34,7 @@
   "dependencies": {
     "@storybook/addon-knobs": "6.4.0",
     "@times-components/context": "1.15.0",
-    "@times-components/ts-newskit": "1.176.1",
+    "@times-components/ts-newskit": "1.176.2",
     "newskit": "7.2.0",
     "@times-components/icons": "2.21.18",
     "@times-components/message-bar": "0.7.63",
