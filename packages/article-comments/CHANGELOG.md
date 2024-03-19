@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.42.1...@times-components/article-comments@0.43.0) (2024-03-19)
+
+
+### Features
+
+* **TMRS-88:** article domain reference updates ([#3798](https://github.com/newsuk/times-components/issues/3798)) ([87289ac](https://github.com/newsuk/times-components/commit/87289ac93dfae6322a54ad49f8ce6d3df80073b2))
+
+
+
+
+
 ## [0.42.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.42.0...@times-components/article-comments@0.42.1) (2024-03-11)
 
 **Note:** Version bump only for package @times-components/article-comments
