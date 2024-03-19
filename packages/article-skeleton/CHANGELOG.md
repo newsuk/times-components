@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.127.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.126.1...@times-components/article-skeleton@1.127.0) (2024-03-19)
+
+
+### Features
+
+* **TMPZ-338:** Scroll Article Sidebar off the screen rather than fade at the bottom of an article ([#3781](https://github.com/newsuk/times-components/issues/3781)) ([5d206d5](https://github.com/newsuk/times-components/commit/5d206d5d442a502ab7593db74543b2b98c469bcb))
+
+
+
+
+
 ## [1.126.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.126.0...@times-components/article-skeleton@1.126.1) (2024-03-18)
 
 **Note:** Version bump only for package @times-components/article-skeleton
