@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IconActivityIndicator } from "@times-components/icons";
-import { IconActivityIndicatorContainer, StyledButton } from "../styled";
 import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
 import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
+import { IconActivityIndicatorContainer, StyledButton } from "../styled";
 
 const SaveButton = props => {
   if (props.loading) {
