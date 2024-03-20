@@ -114,32 +114,14 @@ exports[`1. a full article 1`] = `
       type="button"
     >
       <svg
-        height="16"
+        aria-hidden="true"
+        focusable="false"
         viewBox="0 0 16 16"
-        width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <mask
-          height="16"
-          id="mask0_2527_128"
-          maskUnits="userSpaceOnUse"
-          width="16"
-          x="0"
-          y="0"
-        >
-          <path
-            clipRule="evenodd"
-            d="8b95ca39f7ab58f0e14a1cefe90b4e2b"
-          />
-        </mask>
-        <g
-          mask="url(#mask0_2527_128)"
-        >
-          <rect
-            height="16"
-            width="16"
-          />
-        </g>
+        <path
+          d="f816b9d168e3b4f52b448a8e0e73065a"
+        />
       </svg>
       <span>
          Share
@@ -249,32 +231,14 @@ exports[`1. a full article 1`] = `
         type="button"
       >
         <svg
-          height="16"
+          aria-hidden="true"
+          focusable="false"
           viewBox="0 0 16 16"
-          width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <mask
-            height="16"
-            id="mask0_2527_128"
-            maskUnits="userSpaceOnUse"
-            width="16"
-            x="0"
-            y="0"
-          >
-            <path
-              clipRule="evenodd"
-              d="8b95ca39f7ab58f0e14a1cefe90b4e2b"
-            />
-          </mask>
-          <g
-            mask="url(#mask0_2527_128)"
-          >
-            <rect
-              height="16"
-              width="16"
-            />
-          </g>
+          <path
+            d="f816b9d168e3b4f52b448a8e0e73065a"
+          />
         </svg>
         <span>
            Share
