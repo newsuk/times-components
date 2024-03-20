@@ -10,6 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
 import { SaveStar } from "@times-components/ts-components";
+import { Share } from "@emotion-icons/bootstrap/Share";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -20,7 +21,6 @@ import { StyledButton, PopoverContent, StyledPopover } from "./styled";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
-import { NewsKitShareIcon } from "./assets";
 
 class SaveAndShareBar extends Component {
   constructor(props) {
@@ -148,7 +148,7 @@ class SaveAndShareBar extends Component {
               size="small"
               overrides={{ stylePreset: "buttonOutlinedPrimary" }}
             >
-              <NewsKitShareIcon /> Share
+              <Share /> Share
             </StyledButton>
           </StyledPopover>
         )}

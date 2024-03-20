@@ -51,11 +51,10 @@ const articleTemplateTest = (template, options = {}) => {
           cy.get("@raImages").each(item => {
             const url = new URL(item.attr("src"));
             const initialResize = "100";
-            const resize = url.searchParams.get("resize");
+            const resize =
+              url && url.searchParams && url.searchParams.get("resize");
             if (resize) {
-              expect(url.searchParams.get("resize")).to.not.equal(
-                initialResize
-              );
+              expect(resize).to.not.equal(initialResize);
             }
           });
         }));
@@ -178,10 +177,6 @@ const articleTemplateTest = (template, options = {}) => {
             },
             {
               id: "region",
-              enabled: false
-            },
-            {
-              id: "duplicate-id",
               enabled: false
             }
           ]
