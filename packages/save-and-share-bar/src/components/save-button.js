@@ -2,10 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { IconActivityIndicator } from "@times-components/icons";
 import { IconActivityIndicatorContainer, StyledButton } from "../styled";
-import {
-  NewsKitBookmarkOutlineIcon,
-  NewsKitBookmarkFilledIcon
-} from "../assets";
+import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
+import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
 
 const SaveButton = props => {
   if (props.loading) {
@@ -36,9 +34,9 @@ const SaveButton = props => {
         }
       >
         {!isBookmarked ? (
-          <NewsKitBookmarkOutlineIcon />
+          <Bookmark style={{ height: 14, width: 14 }} />
         ) : (
-          <NewsKitBookmarkFilledIcon />
+          <BookmarkFill style={{ height: 14, width: 14 }} />
         )}
         {!isBookmarked ? "Save" : "Saved"}
       </StyledButton>

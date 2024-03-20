@@ -123,7 +123,7 @@ exports[`1. a full article 1`] = `
         />
       </svg>
       <span>
-         Share
+        Share
       </span>
     </button>
     <article>
@@ -240,7 +240,7 @@ exports[`1. a full article 1`] = `
           />
         </svg>
         <span>
-           Share
+          Share
         </span>
       </button>
       <h2>

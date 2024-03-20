@@ -52,6 +52,7 @@ class SaveAndShareBar extends Component {
         data-testid="save-and-share-bar"
         flow="horizontal-center"
         spaceInline="space050"
+        overrides={{ paddingBlock: "14px" }}
       >
         {sharingEnabled && (
           <StyledPopover
@@ -148,7 +149,8 @@ class SaveAndShareBar extends Component {
               size="small"
               overrides={{ stylePreset: "buttonOutlinedPrimary" }}
             >
-              <Share /> Share
+              <Share style={{ height: 14, width: 14 }} />
+              Share
             </StyledButton>
           </StyledPopover>
         )}

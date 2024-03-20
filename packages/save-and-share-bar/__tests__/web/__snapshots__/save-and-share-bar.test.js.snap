@@ -40,7 +40,7 @@ exports[`save and share bar component email icon when tokenising with loading st
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="css-18bz6hs"
+  className="css-1xm9xgk"
   data-testid="save-and-share-bar"
 >
   <div
@@ -58,6 +58,12 @@ exports[`save and share bar component save and share bar renders correctly when 
         className="css-18cthx4-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
+        style={
+          Object {
+            "height": 14,
+            "width": 14,
+          }
+        }
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -68,7 +74,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       <span
         className="css-1x1ve0y"
       >
-         Share
+        Share
       </span>
     </button>
   </div>
@@ -88,7 +94,7 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="css-18bz6hs"
+  className="css-1xm9xgk"
   data-testid="save-and-share-bar"
 >
   <div
@@ -106,6 +112,12 @@ exports[`save and share bar component save and share bar renders correctly when 
         className="css-18cthx4-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
+        style={
+          Object {
+            "height": 14,
+            "width": 14,
+          }
+        }
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -116,7 +128,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       <span
         className="css-1x1ve0y"
       >
-         Share
+        Share
       </span>
     </button>
   </div>
