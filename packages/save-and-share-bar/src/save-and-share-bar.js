@@ -56,7 +56,7 @@ class SaveAndShareBar extends Component {
       >
         {sharingEnabled && (
           <StyledPopover
-            placement="top"
+            placement="bottom"
             header="Share this article"
             overrides={{
               minWidth: { xs: "90%", md: "auto" }

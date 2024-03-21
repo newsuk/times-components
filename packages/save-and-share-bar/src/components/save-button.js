@@ -13,9 +13,8 @@ const SaveButton = props => {
         overrides={{ stylePreset: "buttonOutlinedPrimary" }}
       >
         <IconActivityIndicatorContainer>
-          <IconActivityIndicator size="small" />
+          <IconActivityIndicator size="small" fillColor="#333333" />
         </IconActivityIndicatorContainer>
-        Save
       </StyledButton>
     );
   }
