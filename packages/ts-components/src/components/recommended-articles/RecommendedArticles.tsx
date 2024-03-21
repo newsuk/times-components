@@ -15,7 +15,7 @@ import { Header } from './styles';
 export const RecommendedArticles: React.FC<{
   heading: string;
   domainSpecificUrl: string;
-  transformDomainCom: (data: any, hostName: string) => any
+  transformDomainCom?: (data: any, hostName: string) => any;
 }> = ({ heading, domainSpecificUrl, transformDomainCom }) => {
   const { loading, error, data } = useFetch<any>();
 
@@ -28,7 +28,9 @@ export const RecommendedArticles: React.FC<{
   if (!articles || !articles.length) {
     return null;
   }
-  const transformedArticles = transformDomainCom(articles, domainSpecificUrl);
+  const transformedArticles = transformDomainCom
+    ? transformDomainCom(articles, domainSpecificUrl)
+    : articles;
 
   const { fireAnalyticsEvent } = useTrackingContext();
 

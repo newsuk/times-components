@@ -19,8 +19,14 @@ export const RecommendedFetch: React.FC<{
   articleHeadline: string;
   articleSection: string;
   domainSpecificUrl: string;
-  transformDomainCom: (data: any, hostName: string) => any
-}> = ({ articleId, articleHeadline, articleSection, domainSpecificUrl, transformDomainCom }) => {
+  transformDomainCom?: (data: any, hostName: string) => any;
+}> = ({
+  articleId,
+  articleHeadline,
+  articleSection,
+  domainSpecificUrl,
+  transformDomainCom
+}) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
