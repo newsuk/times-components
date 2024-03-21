@@ -5,7 +5,6 @@ import {
   SliceArticle,
   MouseEventType
 } from '@times-components/ts-slices';
-import { transformDomainCom } from '@times-components/utils';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
@@ -16,7 +15,8 @@ import { Header } from './styles';
 export const RecommendedArticles: React.FC<{
   heading: string;
   domainSpecificUrl: string;
-}> = ({ heading, domainSpecificUrl }) => {
+  transformDomainCom: (data: any, hostName: string) => any
+}> = ({ heading, domainSpecificUrl, transformDomainCom }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error) {

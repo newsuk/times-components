@@ -1,9 +1,6 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import {
-  CanShowPuzzleSidebar,
-  getDomainSpecificUrl
-} from "@times-components/utils";
+import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -140,7 +137,7 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, getDomainSpecificUrl, transformDomainCom } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -419,6 +416,7 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
+                      transformDomainCom={transformDomainCom}
                     />
                   )}
                 </LazyLoad>
