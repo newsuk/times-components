@@ -26,9 +26,15 @@ export const ShareItem = ({
   ...props
 }) => (
   <Tooltip
+    aria-live="polite"
     content={tooltipContent}
     placement="bottom"
     trigger={["focus", "hover"]}
+    overrides={{
+      panel: {
+        typographyPreset: "utilityLabel010"
+      }
+    }}
   >
     <StyledLinkStandalone
       data-testid={testId}
