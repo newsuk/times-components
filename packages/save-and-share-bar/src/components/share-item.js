@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, TextBlock, LinkStandalone, styled, Tooltip } from "newskit";
+import { Stack, TextBlock, LinkStandalone, styled } from "newskit";
 import PropTypes from "prop-types";
 
 const StyledLinkStandalone = styled(LinkStandalone)`
@@ -25,28 +25,17 @@ export const ShareItem = ({
   onClick = () => {},
   ...props
 }) => (
-  <Tooltip
-    aria-live="polite"
-    content={tooltipContent}
-    placement="bottom"
-    trigger={["focus", "hover"]}
-    overrides={{
-      panel: {
-        typographyPreset: "utilityLabel010"
-      }
-    }}
+  <StyledLinkStandalone
+    data-testid={testId}
+    onClick={onClick}
+    href={href}
+    target="_blank"
+    title={tooltipContent}
+    external={false}
+    {...props}
   >
-    <StyledLinkStandalone
-      data-testid={testId}
-      onClick={onClick}
-      href={href}
-      target="_blank"
-      external={false}
-      {...props}
-    >
-      {children}
-    </StyledLinkStandalone>
-  </Tooltip>
+    {children}
+  </StyledLinkStandalone>
 );
 
 export const ShareItemLabel = ({ children, icon }) => (

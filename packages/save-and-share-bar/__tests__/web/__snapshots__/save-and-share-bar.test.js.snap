@@ -6,6 +6,7 @@ exports[`save and share bar component email icon when tokenising with loading st
   data-testid="email-share"
   href=""
   target="_blank"
+  title="Share by email"
 >
   <span
     className="css-17x5lw"
