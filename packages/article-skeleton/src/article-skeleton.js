@@ -137,7 +137,13 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs, getDomainSpecificUrl, transformDomainCom } = articleDataFromRender || {};
+  const {
+    hostName,
+    canonicalUrl,
+    breadcrumbs,
+    getDomainSpecificUrl,
+    transformDomainCom
+  } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
