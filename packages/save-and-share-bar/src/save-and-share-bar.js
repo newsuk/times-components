@@ -180,7 +180,6 @@ class SaveAndShareBar extends Component {
   }
 }
 
-/* eslint-disable react/no-unused-prop-types */
 SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
