@@ -19,7 +19,7 @@ stylePresets.puzzlesCenterAlignedText = {
   }
 };
 
-stylePresets.lightDivider = {
+stylePresets.lightDashedDivider = {
   base: {
     borderStyle: 'dashed none none none',
     borderWidth: '{{borders.borderWidth010}}',
