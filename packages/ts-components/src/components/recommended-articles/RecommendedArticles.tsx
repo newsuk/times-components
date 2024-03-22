@@ -28,18 +28,21 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
-  const transformDomainCom = (articleData: SliceArticle[], hostName: string) => {
-    if(!hostName || hostName.includes('thetimes.com')) {
+  const transformDomainCom = (
+    articleData: SliceArticle[],
+    hostName: string
+  ) => {
+    if (!hostName || hostName.includes('thetimes.com')) {
       const stringifiedData = JSON.stringify(articleData);
-  
+
       const transformedData = stringifiedData.replace(
-          /(www.(|uat-|staging-?)thetimes).co.uk/gm,
-          '$1.com'
+        /(www.(|uat-|staging-?)thetimes).co.uk/gm,
+        '$1.com'
       );
-  
+
       return JSON.parse(transformedData);
     }
-  
+
     return articleData;
   };
 
