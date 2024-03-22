@@ -181,7 +181,7 @@ const ArticleSkeleton = ({
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const domainSpecificUrl = hostName
+  const domainSpecificUrl = (hostName && getDomainSpecificUrl)
     ? getDomainSpecificUrl(hostName, "https://www.thetimes.co.uk")
     : "https://www.thetimes.co.uk";
 

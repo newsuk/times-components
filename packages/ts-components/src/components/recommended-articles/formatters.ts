@@ -47,16 +47,19 @@ const getSummary = (summary?: Summary) =>
     ? summary.children.map(child => child.text).join('') + '...'
     : undefined;
 
-const getImageCrops = (crops: MediaCrop[]) =>
-  crops.map(crop => ({ url: crop.url, ratio: crop.aspectRatio }));
+const getImageCrops = (crops: MediaCrop[], domainSpecificUrl: string) =>
+  crops.map(crop => {
+    const cropPath = new URL(crop.url).pathname
+    return ({ url: domainSpecificUrl + cropPath, ratio: crop.aspectRatio })
+  });
 
-const getImage = (media?: Media) => {
+const getImage = (domainSpecificUrl: string, media?: Media) => {
   if (media) {
     if (media.crops) {
-      return getImageCrops(media.crops);
+      return getImageCrops(media.crops, domainSpecificUrl);
     }
     if (media.posterImage && media.posterImage.crops) {
-      return getImageCrops(media.posterImage.crops);
+      return getImageCrops(media.posterImage.crops, domainSpecificUrl);
     }
   }
   return [];
@@ -64,9 +67,9 @@ const getImage = (media?: Media) => {
 
 // MAIN
 
-const formatArticle = (article: Article): SliceArticle => {
+const formatArticle = (article: Article, domainSpecificUrl: string): SliceArticle => {
   return {
-    url: article.url,
+    url: new URL(article.url).pathname,
     label: article.label,
     byline: getBylines(article.bylines),
     headline: article.headline,
@@ -74,7 +77,7 @@ const formatArticle = (article: Article): SliceArticle => {
     datePublished: article.publishedDateTime,
     images: {
       alt: article.headline,
-      crops: getImage(article.media)
+      crops: getImage(domainSpecificUrl, article.media)
     }
   };
 };
@@ -90,12 +93,12 @@ const getSliceName = (numOfArticles: number) => {
   }
 };
 
-export const getRecommendedArticlesSlice = (articles: Article[]) => {
+export const getRecommendedArticlesSlice = (articles: Article[], domainSpecificUrl: string) => {
   return {
     name: getSliceName(articles.length),
     children: articles
       .map((article: Article) => ({
-        article: formatArticle(article)
+        article: formatArticle(article, domainSpecificUrl)
       }))
       .slice(0, 3)
   };

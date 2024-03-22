@@ -23,14 +23,16 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
+  console.log("transformDomainCom: ", transformDomainCom)
   const articles = get(data, 'recommendations.articles');
 
   if (!articles || !articles.length) {
     return null;
   }
-  const transformedArticles = transformDomainCom
-    ? transformDomainCom(articles, domainSpecificUrl)
-    : articles;
+  console.log("articles: ", articles)
+  // const transformedArticles = transformDomainCom
+  //   ? transformDomainCom(articles, domainSpecificUrl)
+  //   : articles;
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
@@ -47,7 +49,7 @@ export const RecommendedArticles: React.FC<{
     <div id="recommended-articles">
       <Header>{heading}</Header>
       <Slice
-        slice={getRecommendedArticlesSlice(transformedArticles)}
+        slice={getRecommendedArticlesSlice(articles, domainSpecificUrl)}
         clickHandler={onClickHandler}
       />
     </div>
