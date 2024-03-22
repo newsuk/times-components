@@ -28,9 +28,9 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
-  const transformDomainCom = (data: SliceArticle[], hostName: string) => {
+  const transformDomainCom = (articleData: SliceArticle[], hostName: string) => {
     if(!hostName || hostName.includes('thetimes.com')) {
-      const stringifiedData = JSON.stringify(data);
+      const stringifiedData = JSON.stringify(articleData);
   
       const transformedData = stringifiedData.replace(
           /(www.(|uat-|staging-?)thetimes).co.uk/gm,
@@ -40,7 +40,7 @@ export const RecommendedArticles: React.FC<{
       return JSON.parse(transformedData);
     }
   
-    return data;
+    return articleData;
   };
 
   const transformedArticles = transformDomainCom(articles, domainSpecificUrl);
