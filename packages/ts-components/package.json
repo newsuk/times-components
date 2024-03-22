@@ -89,20 +89,16 @@
     "@types/lodash.keyby": "4.6.6",
     "@types/lodash.merge": "4.6.2",
     "@types/styled-components": "5.1.9",
-    "@types/react-dom": "16.9.8",
     "fetch-mock": "9.11.0",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
     "jest-styled-components": "6.3.1",
     "mockdate": "3.0.5",
     "prettier": "1.14.3",
+    "react": "16.9.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "4.2.4"
-  },
-  "peerDependencies": {
-    "react": ">=16.9",
-    "react-dom": ">=16.9"
   },
   "config": {
     "commitizen": {

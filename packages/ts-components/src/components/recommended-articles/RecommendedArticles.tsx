@@ -15,24 +15,35 @@ import { Header } from './styles';
 export const RecommendedArticles: React.FC<{
   heading: string;
   domainSpecificUrl: string;
-  transformDomainCom?: (data: any, hostName: string) => any;
-}> = ({ heading, domainSpecificUrl, transformDomainCom }) => {
+}> = ({ heading, domainSpecificUrl }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error) {
     return null;
   }
 
-  console.log("transformDomainCom: ", transformDomainCom)
   const articles = get(data, 'recommendations.articles');
 
   if (!articles || !articles.length) {
     return null;
   }
-  console.log("articles: ", articles)
-  // const transformedArticles = transformDomainCom
-  //   ? transformDomainCom(articles, domainSpecificUrl)
-  //   : articles;
+
+  const transformDomainCom = (data: SliceArticle[], hostName: string) => {
+    if(!hostName || hostName.includes('thetimes.com')) {
+      const stringifiedData = JSON.stringify(data);
+  
+      const transformedData = stringifiedData.replace(
+          /(www.(|uat-|staging-?)thetimes).co.uk/gm,
+          '$1.com'
+      );
+  
+      return JSON.parse(transformedData);
+    }
+  
+    return data;
+  };
+
+  const transformedArticles = transformDomainCom(articles, domainSpecificUrl);
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
@@ -49,7 +60,7 @@ export const RecommendedArticles: React.FC<{
     <div id="recommended-articles">
       <Header>{heading}</Header>
       <Slice
-        slice={getRecommendedArticlesSlice(articles, domainSpecificUrl)}
+        slice={getRecommendedArticlesSlice(transformedArticles)}
         clickHandler={onClickHandler}
       />
     </div>

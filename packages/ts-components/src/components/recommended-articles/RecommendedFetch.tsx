@@ -19,13 +19,11 @@ export const RecommendedFetch: React.FC<{
   articleHeadline: string;
   articleSection: string;
   domainSpecificUrl: string;
-  transformDomainCom?: (data: any, hostName: string) => any;
 }> = ({
   articleId,
   articleHeadline,
   articleSection,
-  domainSpecificUrl,
-  transformDomainCom
+  domainSpecificUrl
 }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
@@ -68,7 +66,6 @@ export const RecommendedFetch: React.FC<{
         <RecommendedArticles
           heading={heading}
           domainSpecificUrl={domainSpecificUrl}
-          transformDomainCom={transformDomainCom}
         />
       </TrackingContextProvider>
     </FetchProvider>

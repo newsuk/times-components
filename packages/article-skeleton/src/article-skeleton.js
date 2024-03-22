@@ -141,8 +141,7 @@ const ArticleSkeleton = ({
     hostName,
     canonicalUrl,
     breadcrumbs,
-    getDomainSpecificUrl,
-    transformDomainCom
+    getDomainSpecificUrl
   } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
@@ -422,7 +421,6 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
-                      transformDomainCom={transformDomainCom}
                     />
                   )}
                 </LazyLoad>

@@ -27,7 +27,7 @@ const formatLabel = (title: string, article: Partial<SliceArticle>) =>
     .join(' | ');
 
 const flattenAssets = (asset: Asset) => {
-  const crops = [];
+  const crops: any = [];
   if (asset.crop169) {
     crops.push({
       url: asset.crop169.url,

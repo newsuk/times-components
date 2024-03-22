@@ -37,8 +37,7 @@ const ArticleExtras = ({
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  domainSpecificUrl,
-  transformDomainCom
+  domainSpecificUrl
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -71,7 +70,6 @@ const ArticleExtras = ({
             articleHeadline={articleHeadline}
             articleSection={section}
             domainSpecificUrl={domainSpecificUrl}
-            transformDomainCom={transformDomainCom}
           />
         )}
       </div>
@@ -143,8 +141,7 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired,
-  transformDomainCom: PropTypes.func.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleExtras.defaultProps = {

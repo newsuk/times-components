@@ -71,7 +71,7 @@ describe('getRecommendedArticlesSlice()', () => {
   it('should return the correctly formattted slice including 1 article', () => {
     const data = getArticles(previewData, 1);
     const articles = data.recommendations.articles;
-    const slice = getRecommendedArticlesSlice(articles, 'https://www.thetimes.co.uk');
+    const slice = getRecommendedArticlesSlice(articles);
 
     expect(slice).toStrictEqual({
       children: [{ article: expectedArticles[0] }],
@@ -82,7 +82,7 @@ describe('getRecommendedArticlesSlice()', () => {
   it('should return the correctly formattted slice including 2 articles', () => {
     const data = getArticles(previewData, 2);
     const articles = data.recommendations.articles;
-    const slice = getRecommendedArticlesSlice(articles, 'https://www.thetimes.co.uk');
+    const slice = getRecommendedArticlesSlice(articles);
 
     expect(slice).toStrictEqual({
       children: [
@@ -95,7 +95,7 @@ describe('getRecommendedArticlesSlice()', () => {
 
   it('should return the correctly formattted slice including 3 articles', () => {
     const articles = previewData.recommendations.articles;
-    const slice = getRecommendedArticlesSlice(articles as any, 'https://www.thetimes.co.uk');
+    const slice = getRecommendedArticlesSlice(articles as any);
 
     expect(slice).toStrictEqual({
       children: [
