@@ -6026,6 +6026,14 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/react@16.9.8":
+  version "16.9.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.8.tgz#6b01592193213263300f8b242a08b172cc49f63f"
+  integrity sha512-FlifFL8nuWkLqXG3F7UhjglhlONeIUbt+PZOz3fUEba85azJwXGxR18WYnOUfaLW6jt7fMykYO9TTM980em34A==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/scheduler@*":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
@@ -10970,6 +10978,11 @@ cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^2.2.0:
+  version "2.6.21"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
+  integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
 
 csstype@^2.5.7:
   version "2.6.17"
