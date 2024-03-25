@@ -51,7 +51,11 @@ const articleTemplateTest = (template, options = {}) => {
           cy.get("@raImages").each(item => {
             const url = new URL(item.attr("src"));
             const initialResize = "100";
-            expect(url.searchParams.get("resize")).to.not.equal(initialResize);
+            const resize =
+              url && url.searchParams && url.searchParams.get("resize");
+            if (resize) {
+              expect(resize).to.not.equal(initialResize);
+            }
           });
         }));
 

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-
+import React, { cloneElement, useState } from 'react';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
+import { ContentProvider } from './ContentProvider';
 
 export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
-}> = React.memo(({ articleId, isPreviewMode }) => {
+}> = React.memo(({ articleId, isPreviewMode, children }) => {
   const [url, setUrl] = useState<string>(
     `/api/collections/is-bookmarked/${articleId}`
   );
@@ -27,13 +27,22 @@ export const SaveStar: React.FC<{
     }
   };
 
+  const Content = children ? (
+    cloneElement(children as React.ReactElement, {
+      articleId,
+      onToggleSave
+    })
+  ) : (
+    <SaveStarUI articleId={articleId} onToggleSave={onToggleSave} />
+  );
+
   return (
     <FetchProvider
       url={url}
       options={{ credentials: 'same-origin' }}
       previewData={previewData}
     >
-      <SaveStarUI articleId={articleId} onToggleSave={onToggleSave} />
+      <ContentProvider>{Content}</ContentProvider>
     </FetchProvider>
   );
 });

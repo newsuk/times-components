@@ -2783,6 +2783,14 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
+"@emotion-icons/bootstrap@3.27.0":
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/bootstrap/-/bootstrap-3.27.0.tgz#53cde4cc341e0aa79f9a717ee78f2502c9bc1ae5"
+  integrity sha512-ZLUHpiXI/Lsej4i8T9do9Vrn5LGdcYtDAPz09cyHlp5cvEVkncgqAcGmeDVMnweNBf6wB+QzL33IqZiD43S/HA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
 "@emotion-icons/emotion-icon@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.0.0.tgz#d0eb1331c01461b309e58dbcec735ff4d8bd5408"

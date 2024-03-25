@@ -271,7 +271,7 @@ exports[`full article with style 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 0;
+  z-index: 1;
 }
 
 .c2 > .c22 {
