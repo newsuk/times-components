@@ -14,8 +14,7 @@ import { Header } from './styles';
 
 export const RecommendedArticles: React.FC<{
   heading: string;
-  domainSpecificUrl: string;
-}> = ({ heading, domainSpecificUrl }) => {
+}> = ({ heading }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error) {
@@ -27,26 +26,6 @@ export const RecommendedArticles: React.FC<{
   if (!articles || !articles.length) {
     return null;
   }
-
-  const transformDomainCom = (
-    articleData: SliceArticle[],
-    hostName: string
-  ) => {
-    if (!hostName || hostName.includes('thetimes.com')) {
-      const stringifiedData = JSON.stringify(articleData);
-
-      const transformedData = stringifiedData.replace(
-        /(www.(|uat-|staging-?)thetimes).co.uk/gm,
-        '$1.com'
-      );
-
-      return JSON.parse(transformedData);
-    }
-
-    return articleData;
-  };
-
-  const transformedArticles = transformDomainCom(articles, domainSpecificUrl);
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
@@ -63,7 +42,7 @@ export const RecommendedArticles: React.FC<{
     <div id="recommended-articles">
       <Header>{heading}</Header>
       <Slice
-        slice={getRecommendedArticlesSlice(transformedArticles)}
+        slice={getRecommendedArticlesSlice(articles)}
         clickHandler={onClickHandler}
       />
     </div>
