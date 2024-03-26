@@ -156,7 +156,7 @@ const SaveAndShareBar = ({
                   </ShareItem>
 
                   <ShareItem
-                    testId="copy-to-clickboard"
+                    testId="copy-to-clipboard"
                     tooltipContent="Copy link to clipboard"
                     onClick={e => {
                       copyToClipboard(e);
@@ -183,6 +183,7 @@ const SaveAndShareBar = ({
               }
             >
               <StyledButton
+                data-testid="share-button"
                 size="small"
                 overrides={{ stylePreset: 'buttonOutlinedPrimary' }}
               >
