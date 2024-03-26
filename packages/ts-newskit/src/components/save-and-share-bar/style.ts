@@ -12,15 +12,6 @@ export const StyledButton = styled(Button)`
   color: #333333;
 `;
 
-export const IconActivityIndicatorContainer = styled.div`
-  div {
-    height: 16px;
-    width: 16px;
-    border-right-color: #333333;
-    border-width: 0.15em;
-  }
-`;
-
 export const StyledPopover = styled(Popover)`
   ${getMediaQueryFromTheme("xs", "md")} {
     left: 5%;

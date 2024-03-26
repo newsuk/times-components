@@ -8,6 +8,7 @@ const styles = {
     star: {
       height: 18
     },
+    
     fillColour: colours.functional.secondary,
     height: 16,
     hoverFillColour: colours.functional.brandColour,

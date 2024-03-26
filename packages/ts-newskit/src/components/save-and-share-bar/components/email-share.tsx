@@ -1,18 +1,16 @@
-/* eslint-env browser */
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
+// @ts-ignore
 import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import { ShareItem, ShareItemLabel } from "./share-item";
-import styles from "../styl";
+import styles from "../styles/index";
+import { EmailShareProps } from "../types";
 
-class EmailShare extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: false };
-    this.onShare = this.onShare.bind(this);
-  }
+export const EmailShare = (
+  {publicationName = "TIMES", ...props}: EmailShareProps
+  ) => {
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  onShare(e) {
+  const onShare = (e: React.MouseEvent<HTMLElement>) =>  {
     const {
       articleId,
       getTokenisedShareUrl,
@@ -20,37 +18,37 @@ class EmailShare extends Component {
       articleUrl,
       onShareEmail,
       articleHeadline
-    } = this.props;
+    } = props;
 
     e.preventDefault();
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
-      this.setState({ isLoading: true });
+      setIsLoading(true);
 
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
           if (data && data.article) {
-            this.setState({ isLoading: false });
-            this.openMailClient(data.article.tokenisedUrl);
+            setIsLoading(false);
+            openMailClient(data.article.tokenisedUrl);
           }
         })
         .catch(() => {
-          this.setState({ isLoading: false });
+          setIsLoading(false);
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
 
-      this.openMailClient(
+      openMailClient(
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
     }
   }
 
-  openMailClient(url) {
-    const { articleHeadline, publicationName } = this.props;
+  const openMailClient = (url: string) => {
+    const { articleHeadline } = props;
     const publication =
       publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
 
@@ -59,13 +57,11 @@ class EmailShare extends Component {
     window.location.assign(mailtoEmailUrl);
   }
 
-  render() {
-    const { isLoading } = this.state;
-
     return (
       <ShareItem
         tooltipContent="Share by email"
-        onClick={this.onShare}
+        onClick={onShare}
+        href=""
         testId="email-share"
       >
         <ShareItemLabel
@@ -73,7 +69,6 @@ class EmailShare extends Component {
             isLoading ? (
               <IconActivityIndicator
                 size="small"
-                style={styles.activityLoader}
               />
             ) : (
               <IconEmail
@@ -89,20 +84,3 @@ class EmailShare extends Component {
       </ShareItem>
     );
   }
-}
-
-EmailShare.propTypes = {
-  getTokenisedShareUrl: PropTypes.func.isRequired,
-  onShareEmail: PropTypes.func.isRequired,
-  articleUrl: PropTypes.string.isRequired,
-  articleHeadline: PropTypes.string.isRequired,
-  articleId: PropTypes.string.isRequired,
-  shouldTokenise: PropTypes.bool.isRequired,
-  publicationName: PropTypes.string
-};
-
-EmailShare.defaultProps = {
-  publicationName: "TIMES"
-};
-
-export default EmailShare;

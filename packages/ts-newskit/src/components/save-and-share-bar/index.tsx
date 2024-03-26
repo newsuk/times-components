@@ -1,22 +1,22 @@
 import React from "react";
-import {
-  IconFacebook,
-  IconTwitter,
-  IconCopyLink
-} from "@times-components/icons";
+// @ts-ignore
+import { IconFacebook, IconTwitter,IconCopyLink} from "@times-components/icons";
+// @ts-ignore
 import UserState from "@times-components/user-state";
+// @ts-ignore
 import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
-import { SaveStar, TrackingContextProvider } from "@times-components/ts-components";
+import { 
+  SaveStar, 
+  TrackingContextProvider
+ } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
 
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
 import { StyledButton, PopoverContent, StyledPopover } from "./style";
-import EmailShare from "./email-share";
-import SaveButton from "./save-button";
-import { ShareItem, ShareItemLabel } from "./share-item";
+import {EmailShare, SaveButton, ShareItem, ShareItemLabel} from "./components";
 
 const SaveAndShareBar =(props:any) => {
  const clickEvent = (title:string,articleHeadline:string,fireAnalyticsEvent:any) => {
@@ -37,7 +37,7 @@ const SaveAndShareBar =(props:any) => {
   }
 
 
- const copyToClipboard =(e:any) => {
+ const copyToClipboard =(e: React.MouseEvent<HTMLElement>) => {
     const { onCopyLink, articleUrl } = props;
     e.preventDefault();
 
@@ -76,7 +76,7 @@ const SaveAndShareBar =(props:any) => {
                 flow={{ xs: "vertical-left", md: "horizontal-center" }}
               >
                 <SectionContext.Consumer>
-                  {({ publicationName }) => (
+                  {({ publicationName }: any) => (
                     <UserState
                       state={UserState.showTokenisedEmailShare}
                       fallback={
@@ -120,7 +120,7 @@ const SaveAndShareBar =(props:any) => {
                   tooltipContent="Share on Facebook"
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
                   onClick={()=>{
-                      onShareOnFB;
+                      onShareOnFB()
                       clickEvent("Facebook",articleHeadline,fireAnalyticsEvent)
                   }}
                 >
@@ -175,6 +175,7 @@ const SaveAndShareBar =(props:any) => {
             >
               <div data-testid="save-star">
                 <SaveStar articleId={articleId}>
+                  {/* @ts-ignore */}
                   <SaveButton />
                 </SaveStar>
               </div>
@@ -182,6 +183,7 @@ const SaveAndShareBar =(props:any) => {
             {isPreviewMode && (
               <div data-testid="save-star-preview">
                 <SaveStar articleId={articleId} isPreviewMode>
+                  {/* @ts-ignore */}
                   <SaveButton />
                 </SaveStar>
               </div>

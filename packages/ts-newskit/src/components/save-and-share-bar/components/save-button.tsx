@@ -1,11 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
+// @ts-ignore
 import { IconActivityIndicator } from "@times-components/icons";
 import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
 import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
-import { IconActivityIndicatorContainer, StyledButton } from "../styled";
+import { StyledButton } from "../style";
+import {IconActivityIndicatorContainer} from './styled'
+import { SaveButtonProps } from "../types";
 
-const SaveButton = props => {
+export const SaveButton = (props: SaveButtonProps) => {
   if (props.loading) {
     return (
       <StyledButton
@@ -19,7 +21,7 @@ const SaveButton = props => {
     );
   }
 
-  if (props.error || !props.data) return null;
+  if (props.error || !props.data || !props.data.isBookmarked) return null;
 
   const { isBookmarked } = props.data;
 
@@ -29,7 +31,7 @@ const SaveButton = props => {
         size="small"
         overrides={{ stylePreset: "buttonOutlinedPrimary" }}
         onClick={() =>
-          props.onToggleSave(props.articleId, props.data.isBookmarked)
+          props.onToggleSave(props.articleId, isBookmarked)
         }
       >
         {!isBookmarked ? (
@@ -42,13 +44,3 @@ const SaveButton = props => {
     </>
   );
 };
-
-SaveButton.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.bool,
-  data: PropTypes.shape({}),
-  articleId: PropTypes.string,
-  onToggleSave: PropTypes.func
-};
-
-export default SaveButton;
