@@ -1,34 +1,30 @@
-import React from "react";
+import React from 'react';
+import { ShareItem, ShareItemLabel } from './share-item';
 // @ts-ignore
-import { IconEmail, IconActivityIndicator } from "@times-components/icons";
-import { ShareItem, ShareItemLabel } from "./share-item";
-import styles from "../styles/index";
-import { EmailShareProps } from "../types";
+import { IconEmail, IconActivityIndicator } from '@times-components/icons';
 
-export const EmailShare = (
-  {publicationName = "TIMES", ...props}: EmailShareProps
-  ) => {
+import getTokenisedShareUrl from '../utils/get-tokenised-article-url-api';
+
+import type { EmailShareProps } from '../types';
+
+import styles from '../styles';
+
+export const EmailShare = ({
+  publicationName = 'TIMES',
+  ...props
+}: EmailShareProps) => {
   const [isLoading, setIsLoading] = React.useState(false);
 
-  const onShare = (e: React.MouseEvent<HTMLElement>) =>  {
-    const {
-      articleId,
-      getTokenisedShareUrl,
-      shouldTokenise,
-      articleUrl,
-      onShareEmail,
-      articleHeadline
-    } = props;
+  const onShare = (e: React.MouseEvent<HTMLElement>) => {
+    const { articleId, shouldTokenise, articleUrl } = props;
 
     e.preventDefault();
-
-    onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
       setIsLoading(true);
 
       getTokenisedShareUrl(articleId)
-        .then(res => {
+        .then((res: any) => {
           const { data } = res;
           if (data && data.article) {
             setIsLoading(false);
@@ -45,42 +41,39 @@ export const EmailShare = (
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
     }
-  }
+  };
 
   const openMailClient = (url: string) => {
     const { articleHeadline } = props;
     const publication =
-      publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
+      publicationName !== 'TIMES' ? 'The Sunday Times' : 'The Times';
 
     const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`;
 
     window.location.assign(mailtoEmailUrl);
-  }
+  };
 
-    return (
-      <ShareItem
-        tooltipContent="Share by email"
-        onClick={onShare}
-        href=""
-        testId="email-share"
+  return (
+    <ShareItem
+      tooltipContent="Share by email"
+      onClick={onShare}
+      testId="email-share"
+    >
+      <ShareItemLabel
+        icon={
+          isLoading ? (
+            <IconActivityIndicator size="small" />
+          ) : (
+            <IconEmail
+              fillColour="currentColor"
+              height={styles.svgIcon.height}
+              title="Share by email"
+            />
+          )
+        }
       >
-        <ShareItemLabel
-          icon={
-            isLoading ? (
-              <IconActivityIndicator
-                size="small"
-              />
-            ) : (
-              <IconEmail
-                fillColour="currentColor"
-                height={styles.svgIcon.height}
-                title="Share by email"
-              />
-            )
-          }
-        >
-          Email
-        </ShareItemLabel>
-      </ShareItem>
-    );
-  }
+        Email
+      </ShareItemLabel>
+    </ShareItem>
+  );
+};

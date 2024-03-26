@@ -1,9 +1,10 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { NewsKitProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TCThemeProvider } from '../../utils';
 import SaveAndShareBar from './index';
 import { CardComposable } from 'newskit';
-
+import { scales } from "@times-components/ts-styleguide";
+import { MessageManager, MessageContext } from "@times-components/message-bar";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 
 <Meta
   title="Newskit Components/SaveAndShareBar"
@@ -19,11 +20,45 @@ The `SaveAndShareBar`
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const SaveAndShareBarStory = ({sectionTitle, data, pageLink}) => (
-  <NewsKitProvider theme={TimesWebLightTheme}>
-    <SaveAndShareBar />
-  </NewsKitProvider>
+
+export const SaveAndShareBarStory = ({}) => {
+const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
+const mockGetTokenisedArticleUrl = id =>
+  new Promise(resolve =>
+    setTimeout(
+      () =>
+        resolve({
+          data: {
+            article: {
+              tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
+            }
+          }
+        }),
+      1000
+    )
+  );
+  return(<TCThemeProvider>
+          <MockBookmarksProvider delay={1000} articleId={articleId}>
+            <MessageManager delay={3000} scale={scales.medium}>
+              <MessageContext.Consumer>
+                {({ showMessage }) => (
+                  <SaveAndShareBar
+                    articleId={articleId}
+                    articleHeadline="test-headline"
+                    articleUrl="https://www.thetimes.co.uk/"
+                    onCopyLink={() => showMessage("Article link copied")}
+                    getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+                    savingEnabled={true}
+                    sharingEnabled={true}
+                    isPreviewMode
+                  />
+                )}
+              </MessageContext.Consumer>
+            </MessageManager>
+          </MockBookmarksProvider>
+        </TCThemeProvider>
 ); 
+                  }
 
 <Story name="SaveAndShareBar">
   {SaveAndShareBarStory.bind({})}

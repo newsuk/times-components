@@ -1,14 +1,13 @@
-import React from "react";
-import { Stack, TextBlock } from "newskit";
-import { ShareItemLabelProps, ShareItemProps } from "../types";
-import { StyledLinkStandalone, IconContainer } from "./styled";
-
+import React from 'react';
+import { Stack, TextBlock } from 'newskit';
+import { ShareItemLabelProps, ShareItemProps } from '../types';
+import { StyledLinkStandalone, IconContainer } from './styled';
 
 export const ShareItem = ({
   children,
   testId,
   tooltipContent,
-  href,
+  href = '',
   onClick = () => {},
   ...props
 }: ShareItemProps) => (

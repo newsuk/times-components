@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react';
+import { StyledButton, IconActivityIndicatorContainer } from './styled';
 // @ts-ignore
-import { IconActivityIndicator } from "@times-components/icons";
-import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
-import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
-import { StyledButton } from "../style";
-import {IconActivityIndicatorContainer} from './styled'
-import { SaveButtonProps } from "../types";
+import { IconActivityIndicator } from '@times-components/icons';
+import { Bookmark } from '@emotion-icons/bootstrap/Bookmark';
+import { BookmarkFill } from '@emotion-icons/bootstrap/BookmarkFill';
+
+import type { SaveButtonProps } from '../types';
 
 export const SaveButton = (props: SaveButtonProps) => {
+
   if (props.loading) {
     return (
       <StyledButton
         size="small"
-        overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+        overrides={{ stylePreset: 'buttonOutlinedPrimary' }}
       >
         <IconActivityIndicatorContainer>
           <IconActivityIndicator size="small" fillColor="#333333" />
@@ -21,7 +22,7 @@ export const SaveButton = (props: SaveButtonProps) => {
     );
   }
 
-  if (props.error || !props.data || !props.data.isBookmarked) return null;
+  if (props.error || !props.data || props?.data?.isBookmarked === undefined) return null;
 
   const { isBookmarked } = props.data;
 
@@ -29,17 +30,15 @@ export const SaveButton = (props: SaveButtonProps) => {
     <>
       <StyledButton
         size="small"
-        overrides={{ stylePreset: "buttonOutlinedPrimary" }}
-        onClick={() =>
-          props.onToggleSave(props.articleId, isBookmarked)
-        }
+        overrides={{ stylePreset: 'buttonOutlinedPrimary' }}
+        onClick={() => props.onToggleSave(props.articleId, isBookmarked)}
       >
         {!isBookmarked ? (
           <Bookmark style={{ height: 14, width: 14 }} />
         ) : (
           <BookmarkFill style={{ height: 14, width: 14 }} />
         )}
-        {!isBookmarked ? "Save" : "Saved"}
+        {!isBookmarked ? 'Save' : 'Saved'}
       </StyledButton>
     </>
   );
