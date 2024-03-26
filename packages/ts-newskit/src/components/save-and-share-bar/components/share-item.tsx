@@ -8,7 +8,7 @@ export const ShareItem = ({
   testId,
   tooltipContent,
   href = '',
-  onClick = () => {},
+  onClick = () => null,
   ...props
 }: ShareItemProps) => (
   <StyledLinkStandalone

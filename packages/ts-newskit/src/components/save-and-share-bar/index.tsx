@@ -5,12 +5,9 @@ import {
   TrackingContextProvider
 } from '@times-components/ts-components';
 import { StyledButton, PopoverContent, StyledPopover } from './styled';
-import {
-  EmailShare,
-  SaveButton,
-  ShareItem,
-  ShareItemLabel
-} from './components';
+import { EmailShare } from './components/email-share';
+import { SaveButton } from './components/save-button';
+import { ShareItem, ShareItemLabel } from './components/share-item';
 import {
   IconFacebook,
   IconTwitter,
@@ -24,10 +21,10 @@ import UserState from '@times-components/user-state';
 // @ts-ignore
 import { SectionContext } from '@times-components/context';
 
-import SharingApiUrls from './constants';
-import styles from './styles';
+import { SharingApiUrls } from './constants';
+import { styles } from './styles';
 
-import type { SaveAndShareBarProps } from './types';
+import { SaveAndShareBarProps } from './types';
 
 const SaveAndShareBar = ({
   isPreviewMode = false,
@@ -44,7 +41,7 @@ const SaveAndShareBar = ({
 
   const clickEvent = (
     title: string,
-    articleHeadline: string,
+    headline: string,
     fireAnalyticsEvent: any
   ) =>
     fireAnalyticsEvent && {
@@ -58,7 +55,7 @@ const SaveAndShareBar = ({
         event_navigation_browsing_method: 'click',
         event_social_action: title !== 'Share' ? 'share start' : null,
         social_platform: title,
-        article_parent_name: `article : ${articleHeadline}`
+        article_parent_name: `article : ${headline}`
       }
     };
 
@@ -161,7 +158,14 @@ const SaveAndShareBar = ({
                   <ShareItem
                     testId="copy-to-clickboard"
                     tooltipContent="Copy link to clipboard"
-                    onClick={copyToClipboard}
+                    onClick={e => {
+                      copyToClipboard(e);
+                      clickEvent(
+                        'Copy to clipboard',
+                        articleHeadline,
+                        fireAnalyticsEvent
+                      );
+                    }}
                   >
                     <ShareItemLabel
                       icon={
@@ -196,7 +200,15 @@ const SaveAndShareBar = ({
                 <div data-testid="save-star">
                   <SaveStar articleId={articleId}>
                     {/* @ts-ignore */}
-                    <SaveButton />
+                    <SaveButton
+                      onClick={() =>
+                        clickEvent(
+                          'Save Article',
+                          articleHeadline,
+                          fireAnalyticsEvent
+                        )
+                      }
+                    />
                   </SaveStar>
                 </div>
               </UserState>

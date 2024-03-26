@@ -1,6 +1,6 @@
-import { colours } from "@times-components/ts-styleguide";
+import { colours } from '@times-components/ts-styleguide';
 
-const styles = {
+export const styles = {
   svgIcon: {
     fb: {
       height: 18
@@ -8,7 +8,7 @@ const styles = {
     star: {
       height: 18
     },
-    
+
     fillColour: colours.functional.secondary,
     height: 16,
     hoverFillColour: colours.functional.brandColour,
@@ -18,5 +18,3 @@ const styles = {
     }
   }
 };
-
-export default styles;

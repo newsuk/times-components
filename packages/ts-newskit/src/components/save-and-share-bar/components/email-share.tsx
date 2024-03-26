@@ -3,11 +3,11 @@ import { ShareItem, ShareItemLabel } from './share-item';
 // @ts-ignore
 import { IconEmail, IconActivityIndicator } from '@times-components/icons';
 
-import getTokenisedShareUrl from '../utils/get-tokenised-article-url-api';
+import { getTokenisedArticleUrlApi } from '../utils/get-tokenised-article-url-api';
 
-import type { EmailShareProps } from '../types';
+import { EmailShareProps } from '../types';
 
-import styles from '../styles';
+import { styles } from '../styles';
 
 export const EmailShare = ({
   publicationName = 'TIMES',
@@ -23,7 +23,7 @@ export const EmailShare = ({
     if (shouldTokenise) {
       setIsLoading(true);
 
-      getTokenisedShareUrl(articleId)
+      getTokenisedArticleUrlApi(articleId)
         .then((res: any) => {
           const { data } = res;
           if (data && data.article) {

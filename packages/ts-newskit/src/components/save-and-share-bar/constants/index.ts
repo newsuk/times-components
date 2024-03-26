@@ -1,4 +1,4 @@
-export default {
-  facebook: "https://www.facebook.com/sharer/sharer.php",
-  twitter: "https://twitter.com/intent/tweet"
+export const SharingApiUrls = {
+  facebook: 'https://www.facebook.com/sharer/sharer.php',
+  twitter: 'https://twitter.com/intent/tweet'
 };

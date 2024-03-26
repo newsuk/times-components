@@ -17,6 +17,7 @@ export type SaveButtonProps = {
   data?: ArticleBookmark;
   articleId: string;
   onToggleSave: (id: string, isSaved: boolean) => void;
+  onClick?: () => void;
 };
 
 export type ShareItemProps = PropsWithChildren<{

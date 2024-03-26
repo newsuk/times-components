@@ -1,11 +1,9 @@
 // @ts-ignore
-import { getTokenisedArticleUrl } from "@times-components/provider-queries";
+import { getTokenisedArticleUrl } from '@times-components/provider-queries';
 // @ts-ignore
-import { makeClient } from "@times-components/utils";
+import { makeClient } from '@times-components/utils';
 
 const client = makeClient();
 
-const getTokenisedArticleUrlApi = (id: string) =>
+export const getTokenisedArticleUrlApi = (id: string) =>
   client.query({ query: getTokenisedArticleUrl, variables: { id } });
-
-export default getTokenisedArticleUrlApi;

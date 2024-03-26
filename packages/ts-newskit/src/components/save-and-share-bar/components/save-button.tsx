@@ -5,10 +5,9 @@ import { IconActivityIndicator } from '@times-components/icons';
 import { Bookmark } from '@emotion-icons/bootstrap/Bookmark';
 import { BookmarkFill } from '@emotion-icons/bootstrap/BookmarkFill';
 
-import type { SaveButtonProps } from '../types';
+import { SaveButtonProps } from '../types';
 
 export const SaveButton = (props: SaveButtonProps) => {
-
   if (props.loading) {
     return (
       <StyledButton
@@ -22,7 +21,9 @@ export const SaveButton = (props: SaveButtonProps) => {
     );
   }
 
-  if (props.error || !props.data || props?.data?.isBookmarked === undefined) return null;
+  if (props.error || !props.data || props.data.isBookmarked === undefined) {
+    return null;
+  }
 
   const { isBookmarked } = props.data;
 
@@ -31,7 +32,10 @@ export const SaveButton = (props: SaveButtonProps) => {
       <StyledButton
         size="small"
         overrides={{ stylePreset: 'buttonOutlinedPrimary' }}
-        onClick={() => props.onToggleSave(props.articleId, isBookmarked)}
+        onClick={() => {
+          props.onToggleSave(props.articleId, isBookmarked);
+          props.onClick && props.onClick();
+        }}
       >
         {!isBookmarked ? (
           <Bookmark style={{ height: 14, width: 14 }} />

@@ -5,6 +5,7 @@ import { CardComposable } from 'newskit';
 import { scales } from "@times-components/ts-styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
+import { mockGetTokenisedArticleUrl } from "../save-and-share-bar/__tests__/mocks/mock-get-tokenised-article-url"
 
 <Meta
   title="Newskit Components/SaveAndShareBar"
@@ -23,42 +24,29 @@ Please click the 'Canvas' tab for a better viewing experience, where you can rev
 
 export const SaveAndShareBarStory = ({}) => {
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
-const mockGetTokenisedArticleUrl = id =>
-  new Promise(resolve =>
-    setTimeout(
-      () =>
-        resolve({
-          data: {
-            article: {
-              tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
-            }
-          }
-        }),
-      1000
-    )
-  );
-  return(<TCThemeProvider>
-          <MockBookmarksProvider delay={1000} articleId={articleId}>
-            <MessageManager delay={3000} scale={scales.medium}>
-              <MessageContext.Consumer>
-                {({ showMessage }) => (
-                  <SaveAndShareBar
-                    articleId={articleId}
-                    articleHeadline="test-headline"
-                    articleUrl="https://www.thetimes.co.uk/"
-                    onCopyLink={() => showMessage("Article link copied")}
-                    getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                    savingEnabled={true}
-                    sharingEnabled={true}
-                    isPreviewMode
-                  />
-                )}
-              </MessageContext.Consumer>
-            </MessageManager>
-          </MockBookmarksProvider>
-        </TCThemeProvider>
-); 
-                  }
+  return(
+    <TCThemeProvider>
+      <MockBookmarksProvider delay={1000} articleId={articleId}>
+        <MessageManager delay={3000} scale={scales.medium}>
+          <MessageContext.Consumer>
+            {({ showMessage }) => (
+              <SaveAndShareBar
+                articleId={articleId}
+                articleHeadline="test-headline"
+                articleUrl="https://www.thetimes.co.uk/"
+                onCopyLink={() => showMessage("Article link copied")}
+                getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+                savingEnabled={true}
+                sharingEnabled={true}
+                isPreviewMode
+              />
+            )}
+          </MessageContext.Consumer>
+        </MessageManager>
+      </MockBookmarksProvider>
+    </TCThemeProvider>
+  ); 
+}
 
 <Story name="SaveAndShareBar">
   {SaveAndShareBarStory.bind({})}

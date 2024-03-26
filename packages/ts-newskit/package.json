@@ -54,6 +54,7 @@
     "@emotion/styled": "11.11.0",
     "@newskit-themes/the-times": "1.2.1",
     "@emotion-icons/bootstrap": "3.27.0",
+    "@times-components/context": "1.15.0",
     "@times-components/icons": "2.21.18",
     "@times-components/message-bar": "0.7.63",
     "@times-components/provider-queries": "2.21.0",
