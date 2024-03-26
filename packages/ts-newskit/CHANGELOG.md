@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.177.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.176.3...@times-components/ts-newskit@1.177.0) (2024-03-26)
+
+
+### Features
+
+* **TMPZ-000:** Added a style preset for puzzle theme ([#3803](https://github.com/newsuk/times-components/issues/3803)) ([0f8a149](https://github.com/newsuk/times-components/commit/0f8a1496cbb4f477b2782094e547de3a2b17b649))
+
+
+
+
+
 ## [1.176.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.176.2...@times-components/ts-newskit@1.176.3) (2024-03-25)
 
 **Note:** Version bump only for package @times-components/ts-newskit
