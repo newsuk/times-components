@@ -33,7 +33,6 @@ describe('<RecommendedFetch>', () => {
         articleId="1234"
         articleHeadline="Some headline"
         articleSection="news"
-        domainSpecificUrl="https://thetimes.co.uk"
       />
     );
 
@@ -50,7 +49,6 @@ describe('<RecommendedFetch>', () => {
         articleId="1234"
         articleHeadline="Some headline"
         articleSection="scotland"
-        domainSpecificUrl="https://thetimes.co.uk"
       />
     );
 
@@ -63,7 +61,6 @@ describe('<RecommendedFetch>', () => {
         articleId="1234"
         articleHeadline="Some headline"
         articleSection="ireland"
-        domainSpecificUrl="https://thetimes.co.uk"
       />
     );
 

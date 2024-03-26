@@ -27,10 +27,7 @@ storiesOf('Typescript Component/Recommended Articles', module)
       analyticsStream={analyticsStream}
     >
       <FetchProvider previewData={getArticles(previewData, 1)}>
-        <RecommendedArticles
-          heading="Today's News"
-          domainSpecificUrl="https://thetimes.co.uk"
-        />
+        <RecommendedArticles heading="Today's News" />
       </FetchProvider>
     </TrackingContextProvider>
   ))
@@ -53,10 +50,7 @@ storiesOf('Typescript Component/Recommended Articles', module)
       analyticsStream={analyticsStream}
     >
       <FetchProvider previewData={getArticles(previewData, 2)}>
-        <RecommendedArticles
-          heading="Today's Business"
-          domainSpecificUrl="https://thetimes.co.uk"
-        />
+        <RecommendedArticles heading="Today's Business" />
       </FetchProvider>
     </TrackingContextProvider>
   ))
@@ -79,10 +73,7 @@ storiesOf('Typescript Component/Recommended Articles', module)
       analyticsStream={analyticsStream}
     >
       <FetchProvider previewData={previewData}>
-        <RecommendedArticles
-          heading="Today's Sport"
-          domainSpecificUrl="https://thetimes.co.uk"
-        />
+        <RecommendedArticles heading="Today's Sport" />
       </FetchProvider>
     </TrackingContextProvider>
   ));

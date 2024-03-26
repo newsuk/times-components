@@ -60,12 +60,7 @@ describe('<RecommendedArticles>', () => {
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
 
-    const { asFragment } = render(
-      <RecommendedArticles
-        heading={heading}
-        domainSpecificUrl="https://thetimes.co.uk"
-      />
-    );
+    const { asFragment } = render(<RecommendedArticles heading={heading} />);
 
     expect(asFragment().firstChild).toBeNull();
   });
@@ -73,12 +68,7 @@ describe('<RecommendedArticles>', () => {
   it('should render the error state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ error: 'Some error occurred' });
 
-    const { asFragment } = render(
-      <RecommendedArticles
-        heading={heading}
-        domainSpecificUrl="https://thetimes.co.uk"
-      />
-    );
+    const { asFragment } = render(<RecommendedArticles heading={heading} />);
 
     expect(asFragment().firstChild).toBeNull();
   });
@@ -89,10 +79,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles
-        heading={heading}
-        domainSpecificUrl="https://thetimes.co.uk"
-      />
+      <RecommendedArticles heading={heading} />
     );
 
     expect(getByText(heading));
@@ -106,10 +93,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles
-        heading={heading}
-        domainSpecificUrl="https://thetimes.co.uk"
-      />
+      <RecommendedArticles heading={heading} />
     );
 
     expect(getByText(heading));
@@ -122,10 +106,7 @@ describe('<RecommendedArticles>', () => {
     (useFetch as jest.Mock).mockReturnValue({ data: previewData });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles
-        heading={heading}
-        domainSpecificUrl="https://thetimes.co.uk"
-      />
+      <RecommendedArticles heading={heading} />
     );
 
     expect(getByText(heading));
@@ -145,10 +126,7 @@ describe('<RecommendedArticles>', () => {
         context={initialContext}
         analyticsStream={analyticsStream}
       >
-        <RecommendedArticles
-          heading={heading}
-          domainSpecificUrl="https://thetimes.co.uk"
-        />
+        <RecommendedArticles heading={heading} />
       </TrackingContextProvider>
     );
 
