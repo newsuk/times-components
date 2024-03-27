@@ -9,7 +9,11 @@ import {
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
-import { SaveStar, TrackingContextProvider, useTrackingContext } from "@times-components/ts-components";
+import {
+  SaveStar,
+  TrackingContextProvider,
+  useTrackingContext
+} from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
@@ -21,7 +25,7 @@ import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 
-const SaveAndShareBar = (props) => {
+const SaveAndShareBar = props => {
   const {
     articleId,
     articleUrl,
@@ -36,30 +40,30 @@ const SaveAndShareBar = (props) => {
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
-  const clickEvent = (title) => 
-      fireAnalyticsEvent && {
-        action: 'Clicked',
-        attrs: {
-          event_navigation_action: 'navigation',
-          event_navigation_name:
-            title === 'Share'
-              ? `share bar : ${title} : social share ${title}`
-              : null,
-          event_navigation_browsing_method: 'click',
-          event_social_action: title !== 'Share' ? 'share start' : null,
-          social_platform: title,
-          article_parent_name: `article : ${articleHeadline}`
-        }
+  const clickEvent = title =>
+    fireAnalyticsEvent && {
+      action: "Clicked",
+      attrs: {
+        event_navigation_action: "navigation",
+        event_navigation_name:
+          title === "Share"
+            ? `share bar : ${title} : social share ${title}`
+            : null,
+        event_navigation_browsing_method: "click",
+        event_social_action: title !== "Share" ? "share start" : null,
+        social_platform: title,
+        article_parent_name: `article : ${articleHeadline}`
       }
+    };
 
-  const copyToClipboard = (e) => {
+  const copyToClipboard = e => {
     e.preventDefault();
     navigator.clipboard.writeText(articleUrl);
     onCopyLink();
-  }
+  };
 
   return (
-    <TrackingContextProvider context={{object: "SaveAndShareBar"}}>
+    <TrackingContextProvider context={{ object: "SaveAndShareBar" }}>
       <Stack
         data-testid="save-and-share-bar"
         flow="horizontal-center"
@@ -104,8 +108,8 @@ const SaveAndShareBar = (props) => {
                   href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
                   onClick={() => {
                     onShareOnTwitter();
-                    clickEvent('Twitter');
-                  }} 
+                    clickEvent("Twitter");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -126,8 +130,8 @@ const SaveAndShareBar = (props) => {
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
                   onClick={() => {
                     onShareOnFB();
-                    clickEvent('Facebook');
-                  }} 
+                    clickEvent("Facebook");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -148,8 +152,8 @@ const SaveAndShareBar = (props) => {
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
                   onClick={e => {
                     copyToClipboard(e);
-                    clickEvent('Copy to clipboard');
-                  }} 
+                    clickEvent("Copy to clipboard");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -183,14 +187,14 @@ const SaveAndShareBar = (props) => {
             >
               <div data-testid="save-star">
                 <SaveStar articleId={articleId}>
-                  <SaveButton onClick={() => clickEvent('Save Article')}/>
+                  <SaveButton onClick={() => clickEvent("Save Article")} />
                 </SaveStar>
               </div>
             </UserState>
             {isPreviewMode && (
               <div data-testid="save-star-preview">
                 <SaveStar articleId={articleId} isPreviewMode>
-                  <SaveButton onClick={() => clickEvent('Save Article')}/>
+                  <SaveButton onClick={() => clickEvent("Save Article")} />
                 </SaveStar>
               </div>
             )}
@@ -199,7 +203,7 @@ const SaveAndShareBar = (props) => {
       </Stack>
     </TrackingContextProvider>
   );
-}
+};
 
 SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
