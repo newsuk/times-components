@@ -11,8 +11,7 @@ import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
 import {
   SaveStar,
-  TrackingContextProvider,
-  useTrackingContext
+  TrackingContextProvider
 } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
 
@@ -38,9 +37,7 @@ const SaveAndShareBar = props => {
     articleHeadline
   } = props;
 
-  const { fireAnalyticsEvent } = useTrackingContext();
-
-  const clickEvent = title =>
+  const clickEvent = (title, fireAnalyticsEvent) =>
     fireAnalyticsEvent &&
     fireAnalyticsEvent({
       action: "Clicked",
@@ -64,144 +61,154 @@ const SaveAndShareBar = props => {
   };
 
   return (
-    <TrackingContextProvider context={{ object: "SaveAndShareBar" }}>
-      <Stack
-        data-testid="save-and-share-bar"
-        flow="horizontal-center"
-        spaceInline="space050"
-        overrides={{ paddingBlock: "14px" }}
-      >
-        {sharingEnabled && (
-          <StyledPopover
-            placement="bottom"
-            header="Share this article"
-            overrides={{
-              minWidth: { xs: "90%", md: "auto" }
-            }}
-            content={
-              <PopoverContent
-                flow={{ xs: "vertical-start", md: "horizontal-center" }}
-              >
-                <SectionContext.Consumer>
-                  {({ publicationName }) => (
-                    <UserState
-                      state={UserState.showTokenisedEmailShare}
-                      fallback={
+    <TrackingContextProvider>
+      {({ fireAnalyticsEvent }) => (
+        <Stack
+          data-testid="save-and-share-bar"
+          flow="horizontal-center"
+          spaceInline="space050"
+          overrides={{ paddingBlock: "14px" }}
+        >
+          {sharingEnabled && (
+            <StyledPopover
+              placement="bottom"
+              header="Share this article"
+              overrides={{
+                minWidth: { xs: "90%", md: "auto" }
+              }}
+              content={
+                <PopoverContent
+                  flow={{ xs: "vertical-start", md: "horizontal-center" }}
+                >
+                  <SectionContext.Consumer>
+                    {({ publicationName }) => (
+                      <UserState
+                        state={UserState.showTokenisedEmailShare}
+                        fallback={
+                          <EmailShare
+                            {...props}
+                            shouldTokenise={false}
+                            publicationName={publicationName}
+                          />
+                        }
+                      >
                         <EmailShare
                           {...props}
-                          shouldTokenise={false}
+                          shouldTokenise
                           publicationName={publicationName}
+                        />
+                      </UserState>
+                    )}
+                  </SectionContext.Consumer>
+
+                  <ShareItem
+                    testId="share-twitter"
+                    tooltipContent="Share on Twitter"
+                    href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+                    onClick={() => {
+                      onShareOnTwitter();
+                      clickEvent("Twitter", fireAnalyticsEvent);
+                    }}
+                  >
+                    <ShareItemLabel
+                      icon={
+                        <IconTwitter
+                          fillColour="currentColor"
+                          height={styles.svgIcon.height}
+                          title="Share on Twitter"
                         />
                       }
                     >
-                      <EmailShare
-                        {...props}
-                        shouldTokenise
-                        publicationName={publicationName}
-                      />
-                    </UserState>
-                  )}
-                </SectionContext.Consumer>
+                      Twitter
+                    </ShareItemLabel>
+                  </ShareItem>
 
-                <ShareItem
-                  testId="share-twitter"
-                  tooltipContent="Share on Twitter"
-                  href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-                  onClick={() => {
-                    onShareOnTwitter();
-                    clickEvent("Twitter");
-                  }}
-                >
-                  <ShareItemLabel
-                    icon={
-                      <IconTwitter
-                        fillColour="currentColor"
-                        height={styles.svgIcon.height}
-                        title="Share on Twitter"
-                      />
-                    }
+                  <ShareItem
+                    testId="share-facebook"
+                    tooltipContent="Share on Facebook"
+                    href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                    onClick={() => {
+                      onShareOnFB();
+                      clickEvent("Facebook", fireAnalyticsEvent);
+                    }}
                   >
-                    Twitter
-                  </ShareItemLabel>
-                </ShareItem>
+                    <ShareItemLabel
+                      icon={
+                        <IconFacebook
+                          fillColour="currentColor"
+                          height={styles.svgIcon.fb.height}
+                          title="Share on Facebook"
+                        />
+                      }
+                    >
+                      Facebook
+                    </ShareItemLabel>
+                  </ShareItem>
 
-                <ShareItem
-                  testId="share-facebook"
-                  tooltipContent="Share on Facebook"
-                  href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-                  onClick={() => {
-                    onShareOnFB();
-                    clickEvent("Facebook");
-                  }}
-                >
-                  <ShareItemLabel
-                    icon={
-                      <IconFacebook
-                        fillColour="currentColor"
-                        height={styles.svgIcon.fb.height}
-                        title="Share on Facebook"
-                      />
-                    }
+                  <ShareItem
+                    testId="copy-to-clickboard"
+                    tooltipContent="Copy link to clipboard"
+                    href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                    onClick={e => {
+                      copyToClipboard(e);
+                      clickEvent("Copy to clipboard", fireAnalyticsEvent);
+                    }}
                   >
-                    Facebook
-                  </ShareItemLabel>
-                </ShareItem>
-
-                <ShareItem
-                  testId="copy-to-clickboard"
-                  tooltipContent="Copy link to clipboard"
-                  href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-                  onClick={e => {
-                    copyToClipboard(e);
-                    clickEvent("Copy to clipboard");
-                  }}
-                >
-                  <ShareItemLabel
-                    icon={
-                      <IconCopyLink
-                        fillColour="currentColor"
-                        height={styles.svgIcon.height}
-                        title="Copy link to clipboard"
-                      />
-                    }
-                  >
-                    Link
-                  </ShareItemLabel>
-                </ShareItem>
-              </PopoverContent>
-            }
-          >
-            <StyledButton
-              size="small"
-              overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+                    <ShareItemLabel
+                      icon={
+                        <IconCopyLink
+                          fillColour="currentColor"
+                          height={styles.svgIcon.height}
+                          title="Copy link to clipboard"
+                        />
+                      }
+                    >
+                      Link
+                    </ShareItemLabel>
+                  </ShareItem>
+                </PopoverContent>
+              }
             >
-              <Share style={{ height: 14, width: 14 }} />
-              Share
-            </StyledButton>
-          </StyledPopover>
-        )}
-        {savingEnabled ? (
-          <>
-            <UserState
-              state={UserState.showArticleSaveButton}
-              serverRender={false}
-            >
-              <div data-testid="save-star">
-                <SaveStar articleId={articleId}>
-                  <SaveButton onClick={() => clickEvent("Save Article")} />
-                </SaveStar>
-              </div>
-            </UserState>
-            {isPreviewMode && (
-              <div data-testid="save-star-preview">
-                <SaveStar articleId={articleId} isPreviewMode>
-                  <SaveButton onClick={() => clickEvent("Save Article")} />
-                </SaveStar>
-              </div>
-            )}
-          </>
-        ) : null}
-      </Stack>
+              <StyledButton
+                size="small"
+                overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+              >
+                <Share style={{ height: 14, width: 14 }} />
+                Share
+              </StyledButton>
+            </StyledPopover>
+          )}
+          {savingEnabled ? (
+            <>
+              <UserState
+                state={UserState.showArticleSaveButton}
+                serverRender={false}
+              >
+                <div data-testid="save-star">
+                  <SaveStar articleId={articleId}>
+                    <SaveButton
+                      onClick={() =>
+                        clickEvent("Save Article", fireAnalyticsEvent)
+                      }
+                    />
+                  </SaveStar>
+                </div>
+              </UserState>
+              {isPreviewMode && (
+                <div data-testid="save-star-preview">
+                  <SaveStar articleId={articleId} isPreviewMode>
+                    <SaveButton
+                      onClick={() =>
+                        clickEvent("Save Article", fireAnalyticsEvent)
+                      }
+                    />
+                  </SaveStar>
+                </div>
+              )}
+            </>
+          ) : null}
+        </Stack>
+      )}
     </TrackingContextProvider>
   );
 };
