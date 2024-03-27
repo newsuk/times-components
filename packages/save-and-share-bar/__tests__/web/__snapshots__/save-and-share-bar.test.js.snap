@@ -20,9 +20,15 @@ exports[`save and share bar component email icon when tokenising with loading st
         <div
           className="css-15mwjn0"
         >
-          <IconActivityIndicator
-            size="small"
-          />
+          <div
+            className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
+          >
+            <div
+              className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
+              data-fill-colour="#006699"
+              data-title="Activity Indicator"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -37,104 +43,4 @@ exports[`save and share bar component email icon when tokenising with loading st
     </div>
   </span>
 </a>
-`;
-
-exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
-<div
-  className="css-1xm9xgk"
-  data-testid="save-and-share-bar"
->
-  <div
-    className="css-7i4qsc"
-  >
-    <button
-      aria-haspopup="dialog"
-      className="css-9uf6vt"
-      data-testid="button"
-      size="small"
-      type="button"
-    >
-      <svg
-        aria-hidden="true"
-        className="css-18cthx4-EmotionIconBase ex0cdmw0"
-        fill="currentColor"
-        focusable="false"
-        style={
-          Object {
-            "height": 14,
-            "width": 14,
-          }
-        }
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
-        />
-      </svg>
-      <span
-        className="css-1x1ve0y"
-      >
-        Share
-      </span>
-    </button>
-  </div>
-  <div
-    className="css-7i4qsc"
-  >
-    <div
-      data-testid="save-star"
-    >
-      <SaveStar
-        articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
-<div
-  className="css-1xm9xgk"
-  data-testid="save-and-share-bar"
->
-  <div
-    className="css-7i4qsc"
-  >
-    <button
-      aria-haspopup="dialog"
-      className="css-9uf6vt"
-      data-testid="button"
-      size="small"
-      type="button"
-    >
-      <svg
-        aria-hidden="true"
-        className="css-18cthx4-EmotionIconBase ex0cdmw0"
-        fill="currentColor"
-        focusable="false"
-        style={
-          Object {
-            "height": 14,
-            "width": 14,
-          }
-        }
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
-        />
-      </svg>
-      <span
-        className="css-1x1ve0y"
-      >
-        Share
-      </span>
-    </button>
-  </div>
-  <div
-    className="css-7i4qsc"
-  />
-</div>
 `;

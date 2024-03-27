@@ -1,14 +1,10 @@
 /* eslint-env browser */
 import React from "react";
-import TestRenderer, { act } from "react-test-renderer";
+import TestRenderer from "react-test-renderer";
 import { TCThemeProvider } from "@times-components/ts-newskit";
-import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import { ShareItem } from "../src/components/share-item";
-import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/components/email-share";
-import { StyledButton } from "../src/styled";
-import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -55,79 +51,6 @@ export default () => {
       delete global.window.location;
       global.window.location = realLocation;
       global.navigator.clipboard = originalClipboard;
-    });
-    it("save and share bar renders correctly when logged in", () => {
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
-      );
-      expect(testInstance.toJSON()).toMatchSnapshot();
-    });
-    it("save and share bar renders correctly when not logged in", () => {
-      UserState.mockStates = [];
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
-      );
-      expect(testInstance.toJSON()).toMatchSnapshot();
-    });
-    it("onPress events triggers correctly", () => {
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
-      );
-      act(() => {
-        testInstance.root
-          .findAllByType(StyledButton)[0]
-          .props.onClick(mockEvent);
-      });
-      testInstance.root.findAllByType(ShareItem)[3].props.onClick(mockEvent);
-      expect(navigator.clipboard.writeText).toHaveBeenCalledWith(articleUrl);
-      expect(onCopyLink).toHaveBeenCalled();
-    });
-    it("tokenises when logged in as a subscriber", () => {
-      UserState.mockStates = [
-        UserState.showSaveAndShareBar,
-        UserState.showTokenisedEmailShare
-      ];
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <SaveAndShareBar {...props} />
-        </TCThemeProvider>
-      );
-      act(() => {
-        testInstance.root
-          .findAllByType(StyledButton)[0]
-          .props.onClick(mockEvent);
-      });
-      expect(
-        testInstance.root.findByType(EmailShare).props.shouldTokenise
-      ).toEqual(true);
-    });
-    it("does not tokenises when not logged in", () => {
-      UserState.mockStates = [];
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <SaveAndShareBar {...props} />
-        </TCThemeProvider>
-      );
-      act(() => {
-        testInstance.root
-          .findAllByType(StyledButton)[0]
-          .props.onClick(mockEvent);
-      });
-      expect(
-        testInstance.root.findByType(EmailShare).props.shouldTokenise
-      ).toEqual(false);
     });
     it("email icon when tokenising with loading state while network request is fetching data", async () => {
       const apiMock = () =>

@@ -1,3 +1,4 @@
+
 // General Components
 export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export { InfoCard } from './components/in-article-info-card/InfoCard';
@@ -75,7 +76,8 @@ export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
 export {
-  TrackingContextProvider
+  TrackingContextProvider,
+  useTrackingContext
 } from './helpers/tracking/TrackingContextProvider';
 
 export { HiddenDiv } from './components/common-styles';
