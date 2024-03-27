@@ -1,45 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StickySaveAndShareBar renders 1`] = `
-<StickySaveAndShareBar>
-  <sticky-save-and-share-bar__StyledKeylineItem>
-    <StyledComponent
-      forwardedRef={null}
-    >
-      <div>
-        <WithStickyContext(Sticky)>
-          <Sticky
-            className=""
-          >
-            <div />
-            <div>
-              <SaveShareContainerWrapper
-                className=""
-              >
-                <ServerClientRender>
-                  <sticky-save-and-share-bar__SaveShareContainer
-                    className=""
+<TCThemeProvider>
+  <NewsKitProvider>
+    <ThemeProvider>
+      <ThemeProvider>
+        <InstrumentationProvider>
+          <MediaQueryProvider>
+            <LayerOrganizer>
+              <StickySaveAndShareBar>
+                <sticky-save-and-share-bar__StyledKeylineItem>
+                  <StyledComponent
+                    forwardedRef={null}
                   >
-                    <StyledComponent
-                      className=""
-                      forwardedRef={null}
-                    >
-                      <div>
-                        <div>
-                          <Component>
-                            SaveAndShareBar
-                          </Component>
-                        </div>
-                      </div>
-                    </StyledComponent>
-                  </sticky-save-and-share-bar__SaveShareContainer>
-                </ServerClientRender>
-              </SaveShareContainerWrapper>
-            </div>
-          </Sticky>
-        </WithStickyContext(Sticky)>
-      </div>
-    </StyledComponent>
-  </sticky-save-and-share-bar__StyledKeylineItem>
-</StickySaveAndShareBar>
+                    <div>
+                      <WithStickyContext(Sticky)>
+                        <Sticky
+                          className=""
+                        >
+                          <div />
+                          <div>
+                            <SaveShareContainerWrapper
+                              className=""
+                            >
+                              <ServerClientRender>
+                                <sticky-save-and-share-bar__SaveShareContainer
+                                  className=""
+                                >
+                                  <StyledComponent
+                                    className=""
+                                    forwardedRef={null}
+                                  >
+                                    <div>
+                                      <div>
+                                        <SaveAndShareBar>
+                                          <TrackingContextProvider>
+                                            <Stack>
+                                              <Styled(div)
+                                                $wrap={false}
+                                                flexGrow={false}
+                                                flexShrink={false}
+                                                flowReverse={false}
+                                                inline={false}
+                                              >
+                                                <Insertion />
+                                                <div />
+                                              </Styled(div)>
+                                            </Stack>
+                                          </TrackingContextProvider>
+                                        </SaveAndShareBar>
+                                      </div>
+                                    </div>
+                                  </StyledComponent>
+                                </sticky-save-and-share-bar__SaveShareContainer>
+                              </ServerClientRender>
+                            </SaveShareContainerWrapper>
+                          </div>
+                        </Sticky>
+                      </WithStickyContext(Sticky)>
+                    </div>
+                  </StyledComponent>
+                </sticky-save-and-share-bar__StyledKeylineItem>
+              </StickySaveAndShareBar>
+            </LayerOrganizer>
+          </MediaQueryProvider>
+        </InstrumentationProvider>
+      </ThemeProvider>
+    </ThemeProvider>
+  </NewsKitProvider>
+</TCThemeProvider>
 `;

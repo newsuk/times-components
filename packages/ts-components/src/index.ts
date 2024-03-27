@@ -21,7 +21,7 @@ export {
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
 export { SaveStar } from './components/save-star/SaveStar';
-export type {ArticleBookmark} from "./components/save-star/SaveStarUI";
+export { ArticleBookmark } from './components/save-star/SaveStarUI';
 
 // Newsletter Components
 export {
