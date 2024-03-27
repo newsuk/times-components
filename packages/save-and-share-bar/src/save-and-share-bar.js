@@ -41,7 +41,8 @@ const SaveAndShareBar = props => {
   const { fireAnalyticsEvent } = useTrackingContext();
 
   const clickEvent = title =>
-    fireAnalyticsEvent && {
+    fireAnalyticsEvent &&
+    fireAnalyticsEvent({
       action: "Clicked",
       attrs: {
         event_navigation_action: "navigation",
@@ -54,7 +55,7 @@ const SaveAndShareBar = props => {
         social_platform: title,
         article_parent_name: `article : ${articleHeadline}`
       }
-    };
+    });
 
   const copyToClipboard = e => {
     e.preventDefault();
