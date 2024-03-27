@@ -1,4 +1,3 @@
-
 // General Components
 export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export { InfoCard } from './components/in-article-info-card/InfoCard';
