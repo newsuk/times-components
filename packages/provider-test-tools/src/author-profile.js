@@ -1,6 +1,7 @@
 import { MockList } from "graphql-tools";
 import { author as authorQuery } from "@times-components/provider-queries";
 import generateQueries from "./generate-queries";
+import { BASE_DOMAIN } from "./constants";
 
 const biography = [
   {
@@ -45,7 +46,7 @@ const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
           },
           biography,
           hasLeadAssets,
-          image: "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+          image: `//${BASE_DOMAIN}/d/img/profile/deborah-haynes.jpg`,
           jobTitle: "Defence Editor",
           name: "Deborah Haynes",
           twitter: "jdoe",

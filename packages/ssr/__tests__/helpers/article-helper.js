@@ -4,6 +4,7 @@ import {
   checkShareBarLoaded,
   waitUntilSelectorExists
 } from "../cypress/support";
+import { BASE_URL } from "../../src/constants";
 
 const relatedArticleCount = 3;
 
@@ -91,7 +92,7 @@ const articleTemplateTest = (template, options = {}) => {
         .should(
           "have.attr",
           "data-post-url",
-          `https://www.thetimes.co.uk/article/${articleWithCommentsEnabled.id}`
+          `${BASE_URL}/article/${articleWithCommentsEnabled.id}`
         );
     });
 
