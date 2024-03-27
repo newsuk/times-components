@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ShareItem, ShareItemLabel } from './share-item';
 // @ts-ignore
 import { IconEmail, IconActivityIndicator } from '@times-components/icons';
@@ -13,7 +13,7 @@ export const EmailShare = ({
   publicationName = 'TIMES',
   ...props
 }: EmailShareProps) => {
-  const [isLoading, setIsLoading] = React.useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onShare = (e: React.MouseEvent<HTMLElement>) => {
     const { articleId, shouldTokenise, articleUrl } = props;

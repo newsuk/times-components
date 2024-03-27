@@ -26,7 +26,7 @@ import { styles } from './styles';
 
 import { SaveAndShareBarProps } from './types';
 
-const SaveAndShareBar = ({
+export const SaveAndShareBar = ({
   isPreviewMode = false,
   ...props
 }: SaveAndShareBarProps) => {
@@ -43,21 +43,24 @@ const SaveAndShareBar = ({
     title: string,
     headline: string,
     fireAnalyticsEvent: any
-  ) =>
-    fireAnalyticsEvent && {
-      action: 'Clicked',
-      attrs: {
-        event_navigation_action: 'navigation',
-        event_navigation_name:
-          title === 'Share'
-            ? `share bar : ${title} : social share ${title}`
-            : null,
-        event_navigation_browsing_method: 'click',
-        event_social_action: title !== 'Share' ? 'share start' : null,
-        social_platform: title,
-        article_parent_name: `article : ${headline}`
+  ) => {
+    return (
+      fireAnalyticsEvent && {
+        action: 'Clicked',
+        attrs: {
+          event_navigation_action: 'navigation',
+          event_navigation_name:
+            title === 'Share'
+              ? `share bar : ${title} : social share ${title}`
+              : null,
+          event_navigation_browsing_method: 'click',
+          event_social_action: title !== 'Share' ? 'share start' : null,
+          social_platform: title,
+          article_parent_name: `article : ${headline}`
+        }
       }
-    };
+    );
+  };
 
   const copyToClipboard = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
@@ -217,7 +220,15 @@ const SaveAndShareBar = ({
                 <div data-testid="save-star-preview">
                   <SaveStar articleId={articleId} isPreviewMode>
                     {/* @ts-ignore */}
-                    <SaveButton />
+                    <SaveButton
+                      onClick={() =>
+                        clickEvent(
+                          'Save Article',
+                          articleHeadline,
+                          fireAnalyticsEvent
+                        )
+                      }
+                    />
                   </SaveStar>
                 </div>
               )}
@@ -228,5 +239,3 @@ const SaveAndShareBar = ({
     </TrackingContextProvider>
   );
 };
-
-export default SaveAndShareBar;

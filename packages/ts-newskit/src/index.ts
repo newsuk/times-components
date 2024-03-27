@@ -20,4 +20,7 @@ export {
   UpdateButtonWithDelay
 } from './components/misc/update-button/update-button-with-delay';
 
+// ARTICLE SHARE BAR
+export { SaveAndShareBar } from './components/save-and-share-bar';
+
 // TODO Remove after tests - borisovy

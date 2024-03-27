@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import SaveAndShareBar from "@times-components/save-and-share-bar";
+import { SaveAndShareBar } from "@times-components/ts-newskit";
 import Sticky, {
   computeProgressStyles,
   selectors,

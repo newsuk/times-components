@@ -6,8 +6,8 @@ import * as ResizeObserverModule from 'resize-observer-polyfill';
 
 (window as any).ResizeObserver = ResizeObserverModule.default;
 
-import SaveAndShareBar from '..';
-import { TrackingContextProvider } from '@times-components/ts-components';
+import { SaveAndShareBar } from '..';
+import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
 import { mockGetTokenisedArticleUrl } from '../__mocks__/mock-get-tokenised-article-url';
 // @ts-ignore
 import { MockedProvider } from '@times-components/provider-test-tools';
