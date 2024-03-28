@@ -76,7 +76,7 @@ export {
 } from './helpers/view-count-wrapper/ViewCountWrapper';
 export {
   TrackingContextProvider,
-  useTrackingContext,
+  useTrackingContext
 } from './helpers/tracking/TrackingContextProvider';
 
 export { HiddenDiv } from './components/common-styles';
