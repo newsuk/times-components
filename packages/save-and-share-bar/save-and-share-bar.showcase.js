@@ -4,15 +4,9 @@ import { scales } from "@times-components/ts-styleguide";
 import { TCThemeProvider } from "@times-components/ts-newskit";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
-import SaveAndShareBar from "./src/save-and-share-bar";
 import { TrackingContextProvider } from "@times-components/ts-components";
-import { action } from '@storybook/addon-actions';
-
-const analyticsStream = (event) => {
-  // tslint:disable-next-line:no-console
-  console.log('analytics-action', event);
-  action('analytics-action')(event);
-};
+import SaveAndShareBar from "./src/save-and-share-bar";
+import analyticsStream from "./src/fixtures";
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 
@@ -35,33 +29,32 @@ export default {
   children: [
     {
       component: () => (
-        <TrackingContextProvider 
+        <TrackingContextProvider
           analyticsStream={analyticsStream}
           context={{
-            component: 'SaveAndShareBar',
-            
-      }}
+            object: "SaveAndShareBar"
+          }}
         >
-        <TCThemeProvider>
-          <MockBookmarksProvider delay={1000} articleId={articleId}>
-            <MessageManager delay={3000} scale={scales.medium}>
-              <MessageContext.Consumer>
-                {({ showMessage }) => (
-                  <SaveAndShareBar
-                    articleId={articleId}
-                    articleHeadline="test-headline"
-                    articleUrl="https://www.thetimes.co.uk/"
-                    onCopyLink={() => showMessage("Article link copied")}
-                    getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                    savingEnabled={boolean("Is Saving Enabled", true)}
-                    sharingEnabled={boolean("Is Sharing Enabled", true)}
-                    isPreviewMode
-                  />
-                )}
-              </MessageContext.Consumer>
-            </MessageManager>
-          </MockBookmarksProvider>
-        </TCThemeProvider>
+          <TCThemeProvider>
+            <MockBookmarksProvider delay={1000} articleId={articleId}>
+              <MessageManager delay={3000} scale={scales.medium}>
+                <MessageContext.Consumer>
+                  {({ showMessage }) => (
+                    <SaveAndShareBar
+                      articleId={articleId}
+                      articleHeadline="test-headline"
+                      articleUrl="https://www.thetimes.co.uk/"
+                      onCopyLink={() => showMessage("Article link copied")}
+                      getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+                      savingEnabled={boolean("Is Saving Enabled", true)}
+                      sharingEnabled={boolean("Is Sharing Enabled", true)}
+                      isPreviewMode
+                    />
+                  )}
+                </MessageContext.Consumer>
+              </MessageManager>
+            </MockBookmarksProvider>
+          </TCThemeProvider>
         </TrackingContextProvider>
       ),
       name: "Save and Share bar",

@@ -35,7 +35,8 @@ const SaveAndShareBar = props => {
     onShareOnTwitter,
     isPreviewMode,
     onCopyLink,
-    articleHeadline
+    articleHeadline,
+    analyticsStream
   } = props;
 
   const clickEvent = (title, fireAnalyticsEvent) =>
@@ -68,7 +69,10 @@ const SaveAndShareBar = props => {
 
   return (
     <TrackingContextProvider
-      context="SaveAndSharBar"
+      context={{
+        object: "SaveAndShareBar"
+      }}
+      analyticsStream={analyticsStream}
     >
       {({ fireAnalyticsEvent }) => (
         <Stack
