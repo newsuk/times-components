@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React, { Component } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import {
   IconFacebook,
@@ -9,11 +9,14 @@ import {
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
-import { SaveStar } from "@times-components/ts-components";
+import {
+  SaveStar,
+  TrackingContextProvider,
+  useTrackingContext
+} from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
-import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
@@ -22,32 +25,57 @@ import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 
-class SaveAndShareBar extends Component {
-  constructor(props) {
-    super(props);
-    this.copyToClipboard = this.copyToClipboard.bind(this);
-  }
+const SaveAndShareBar = props => {
+  const { fireAnalyticsEvent } = useTrackingContext();
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+  const {
+    articleId,
+    articleUrl,
+    savingEnabled,
+    sharingEnabled,
+    onShareOnFB,
+    onShareOnTwitter,
+    isPreviewMode,
+    onCopyLink,
+    articleHeadline,
+    analyticsStream
+  } = props;
 
-  copyToClipboard(e) {
-    const { onCopyLink, articleUrl } = this.props;
+  const clickEvent = title =>
+    fireAnalyticsEvent &&
+    fireAnalyticsEvent({
+      action: "Clicked",
+      attrs: {
+        event_navigation_action: "navigation",
+        event_navigation_name:
+          title === "Share"
+            ? `share bar : ${title} : social share ${title}`
+            : null,
+        event_navigation_browsing_method: "click",
+        event_social_action: title !== "Share" ? "share start" : null,
+        social_platform: title,
+        article_parent_name: `article : ${articleHeadline}`
+      }
+    });
+
+  const copyToClipboard = e => {
     e.preventDefault();
-
     navigator.clipboard.writeText(articleUrl);
     onCopyLink();
-  }
+  };
 
-  render() {
-    const {
-      articleId,
-      articleUrl,
-      savingEnabled,
-      sharingEnabled,
-      onShareOnFB,
-      onShareOnTwitter,
-      isPreviewMode
-    } = this.props;
+  const togglePopover = statu => {
+    setIsPopoverOpen(prevState => !prevState);
+    clickEvent(`Share: ${statu}`);
+  };
 
-    return (
+  return (
+    <TrackingContextProvider
+      context={{
+        object: "SaveAndShareBar"
+      }}
+      analyticsStream={analyticsStream}
+    >
       <Stack
         data-testid="save-and-share-bar"
         flow="horizontal-center"
@@ -61,6 +89,8 @@ class SaveAndShareBar extends Component {
             overrides={{
               minWidth: { xs: "90%", md: "auto" }
             }}
+            open={isPopoverOpen}
+            onClick={() => togglePopover("Close")}
             content={
               <PopoverContent
                 flow={{ xs: "vertical-start", md: "horizontal-center" }}
@@ -71,16 +101,18 @@ class SaveAndShareBar extends Component {
                       state={UserState.showTokenisedEmailShare}
                       fallback={
                         <EmailShare
-                          {...this.props}
+                          {...props}
                           shouldTokenise={false}
                           publicationName={publicationName}
+                          handleClick={() => clickEvent("Email")}
                         />
                       }
                     >
                       <EmailShare
-                        {...this.props}
+                        {...props}
                         shouldTokenise
                         publicationName={publicationName}
+                        handleClick={() => clickEvent("Email")}
                       />
                     </UserState>
                   )}
@@ -90,7 +122,10 @@ class SaveAndShareBar extends Component {
                   testId="share-twitter"
                   tooltipContent="Share on Twitter"
                   href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-                  onClick={onShareOnTwitter}
+                  onClick={() => {
+                    onShareOnTwitter();
+                    clickEvent("Twitter");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -109,7 +144,10 @@ class SaveAndShareBar extends Component {
                   testId="share-facebook"
                   tooltipContent="Share on Facebook"
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-                  onClick={onShareOnFB}
+                  onClick={() => {
+                    onShareOnFB();
+                    clickEvent("Facebook");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -128,7 +166,10 @@ class SaveAndShareBar extends Component {
                   testId="copy-to-clickboard"
                   tooltipContent="Copy link to clipboard"
                   href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-                  onClick={this.copyToClipboard}
+                  onClick={e => {
+                    copyToClipboard(e);
+                    clickEvent("Copy to clipboard");
+                  }}
                 >
                   <ShareItemLabel
                     icon={
@@ -148,6 +189,7 @@ class SaveAndShareBar extends Component {
             <StyledButton
               size="small"
               overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+              onClick={() => togglePopover(!isPopoverOpen ? "Open" : "Close")}
             >
               <Share style={{ height: 14, width: 14 }} />
               Share
@@ -162,23 +204,23 @@ class SaveAndShareBar extends Component {
             >
               <div data-testid="save-star">
                 <SaveStar articleId={articleId}>
-                  <SaveButton />
+                  <SaveButton onClick={() => clickEvent("Save")} />
                 </SaveStar>
               </div>
             </UserState>
             {isPreviewMode && (
               <div data-testid="save-star-preview">
                 <SaveStar articleId={articleId} isPreviewMode>
-                  <SaveButton />
+                  <SaveButton onClick={() => clickEvent("Save")} />
                 </SaveStar>
               </div>
             )}
           </>
         ) : null}
       </Stack>
-    );
-  }
-}
+    </TrackingContextProvider>
+  );
+};
 
 SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
@@ -203,4 +245,4 @@ SaveAndShareBar.defaultProps = {
   isPreviewMode: (PropTypes.bool = false)
 };
 
-export default withTrackEvents(SaveAndShareBar);
+export default SaveAndShareBar;

@@ -55,6 +55,7 @@
     "@times-components/provider-test-tools": "1.29.2",
     "@times-components/storybook": "4.12.12",
     "@times-components/webpack-configurator": "2.1.0",
+    "@storybook/addon-actions": "6.5.16",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
