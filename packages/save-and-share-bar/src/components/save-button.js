@@ -6,7 +6,15 @@ import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
 import { IconActivityIndicatorContainer, StyledButton } from "../styled";
 
 const SaveButton = props => {
-  if (props.loading) {
+  const { loading, error, data, articleId, onToggleSave, onClick } = props;
+  const handleClick = () => {
+    onToggleSave(articleId, data.isBookmarked);
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  if (loading) {
     return (
       <StyledButton
         size="small"
@@ -19,18 +27,16 @@ const SaveButton = props => {
     );
   }
 
-  if (props.error || !props.data) return null;
+  if (error || !data) return null;
 
-  const { isBookmarked } = props.data;
+  const { isBookmarked } = data;
 
   return (
     <>
       <StyledButton
         size="small"
         overrides={{ stylePreset: "buttonOutlinedPrimary" }}
-        onClick={() =>
-          props.onToggleSave(props.articleId, props.data.isBookmarked)
-        }
+        onClick={handleClick}
       >
         {!isBookmarked ? (
           <Bookmark style={{ height: 14, width: 14 }} />

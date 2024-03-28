@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import {
   IconFacebook,
@@ -25,6 +25,7 @@ import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 
 const SaveAndShareBar = props => {
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   const {
     articleId,
     articleUrl,
@@ -60,6 +61,11 @@ const SaveAndShareBar = props => {
     onCopyLink();
   };
 
+  const togglePopover = (statu, fireAnalyticsEvent) => {
+    setIsPopoverOpen(prevState => !prevState);
+    clickEvent(`Share: ${statu}`, fireAnalyticsEvent);
+  };
+
   return (
     <TrackingContextProvider>
       {({ fireAnalyticsEvent }) => (
@@ -76,6 +82,8 @@ const SaveAndShareBar = props => {
               overrides={{
                 minWidth: { xs: "90%", md: "auto" }
               }}
+              open={isPopoverOpen}
+              onClick={() => togglePopover("Close", fireAnalyticsEvent)}
               content={
                 <PopoverContent
                   flow={{ xs: "vertical-start", md: "horizontal-center" }}
@@ -89,6 +97,9 @@ const SaveAndShareBar = props => {
                             {...props}
                             shouldTokenise={false}
                             publicationName={publicationName}
+                            handleClick={() =>
+                              clickEvent("Email", fireAnalyticsEvent)
+                            }
                           />
                         }
                       >
@@ -96,6 +107,9 @@ const SaveAndShareBar = props => {
                           {...props}
                           shouldTokenise
                           publicationName={publicationName}
+                          handleClick={() =>
+                            clickEvent("Email", fireAnalyticsEvent)
+                          }
                         />
                       </UserState>
                     )}
@@ -172,6 +186,12 @@ const SaveAndShareBar = props => {
               <StyledButton
                 size="small"
                 overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+                onClick={() =>
+                  togglePopover(
+                    !isPopoverOpen ? "Open" : "Close",
+                    fireAnalyticsEvent
+                  )
+                }
               >
                 <Share style={{ height: 14, width: 14 }} />
                 Share
@@ -187,9 +207,7 @@ const SaveAndShareBar = props => {
                 <div data-testid="save-star">
                   <SaveStar articleId={articleId}>
                     <SaveButton
-                      onClick={() =>
-                        clickEvent("Save Article", fireAnalyticsEvent)
-                      }
+                      onClick={() => clickEvent("Save", fireAnalyticsEvent)}
                     />
                   </SaveStar>
                 </div>
@@ -198,9 +216,7 @@ const SaveAndShareBar = props => {
                 <div data-testid="save-star-preview">
                   <SaveStar articleId={articleId} isPreviewMode>
                     <SaveButton
-                      onClick={() =>
-                        clickEvent("Save Article", fireAnalyticsEvent)
-                      }
+                      onClick={() => clickEvent("Save", fireAnalyticsEvent)}
                     />
                   </SaveStar>
                 </div>
