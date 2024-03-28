@@ -76,8 +76,9 @@ export {
 } from './helpers/view-count-wrapper/ViewCountWrapper';
 export {
   TrackingContextProvider,
-  useTrackingContext
+  useTrackingContext,
 } from './helpers/tracking/TrackingContextProvider';
+export { default as analyticsStream } from './fixtures/analytics-actions/analytics-actions'
 
 export { HiddenDiv } from './components/common-styles';
 export { InlineMessage } from './components/inline-message/InlineMessage';

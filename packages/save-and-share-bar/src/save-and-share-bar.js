@@ -67,7 +67,9 @@ const SaveAndShareBar = props => {
   };
 
   return (
-    <TrackingContextProvider>
+    <TrackingContextProvider
+      context="SaveAndSharBar"
+    >
       {({ fireAnalyticsEvent }) => (
         <Stack
           data-testid="save-and-share-bar"

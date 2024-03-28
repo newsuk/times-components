@@ -5,6 +5,14 @@ import { TCThemeProvider } from "@times-components/ts-newskit";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
+import { TrackingContextProvider } from "@times-components/ts-components";
+import { action } from '@storybook/addon-actions';
+
+const analyticsStream = (event) => {
+  // tslint:disable-next-line:no-console
+  console.log('analytics-action', event);
+  action('analytics-action')(event);
+};
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 
@@ -27,6 +35,13 @@ export default {
   children: [
     {
       component: () => (
+        <TrackingContextProvider 
+          analyticsStream={analyticsStream}
+          context={{
+            component: 'SaveAndShareBar',
+            
+      }}
+        >
         <TCThemeProvider>
           <MockBookmarksProvider delay={1000} articleId={articleId}>
             <MessageManager delay={3000} scale={scales.medium}>
@@ -47,6 +62,7 @@ export default {
             </MessageManager>
           </MockBookmarksProvider>
         </TCThemeProvider>
+        </TrackingContextProvider>
       ),
       name: "Save and Share bar",
       type: "story"

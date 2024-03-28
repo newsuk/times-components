@@ -290,6 +290,7 @@ const ArticleSkeleton = ({
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
+                        <TrackingContextProvider>
                         <StickySaveAndShareBar
                           articleId={articleId}
                           articleHeadline={headline}
@@ -300,6 +301,7 @@ const ArticleSkeleton = ({
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
                         />
+                      </TrackingContextProvider>
                       )}
                     </MessageContext.Consumer>
                   </UserState>
