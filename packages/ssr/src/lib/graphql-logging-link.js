@@ -1,4 +1,4 @@
-const {ApolloLink} = require("apollo-link");
+const { ApolloLink } = require("apollo-link");
 
 class LogLink extends ApolloLink {
   constructor(uri, logger) {
@@ -8,7 +8,9 @@ class LogLink extends ApolloLink {
   }
 
   request(operation, forward) {
-    let msg = `Connecting to GraphQL at ${this.uri} for ${operation.operationName}
+    let msg = `Connecting to GraphQL at ${this.uri} for ${
+      operation.operationName
+    }
     with parameters ${JSON.stringify(operation.variables)}`;
     this.logger.debug(msg);
 
