@@ -55,7 +55,6 @@
     "@times-components/context": "1.15.0",
     "@times-components/message-bar": "0.7.63",
     "@times-components/related-articles": "6.17.49",
-    "@times-components/save-and-share-bar": "0.19.53",
     "@times-components/ts-components": "1.82.0",
     "@times-components/ts-newskit": "1.176.2",
     "@times-components/ts-styleguide": "1.50.12",
