@@ -19,7 +19,8 @@ class EmailShare extends Component {
       shouldTokenise,
       articleUrl,
       onShareEmail,
-      articleHeadline
+      articleHeadline,
+      handleClick
     } = this.props;
 
     e.preventDefault();
@@ -46,6 +47,9 @@ class EmailShare extends Component {
       this.openMailClient(
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
+    }
+    if (handleClick) {
+      handleClick();
     }
   }
 
@@ -98,7 +102,8 @@ EmailShare.propTypes = {
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  handleClick: PropTypes.func.isRequired
 };
 
 EmailShare.defaultProps = {

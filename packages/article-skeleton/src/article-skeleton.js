@@ -290,16 +290,21 @@ const ArticleSkeleton = ({
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
-                        <StickySaveAndShareBar
-                          articleId={articleId}
-                          articleHeadline={headline}
-                          articleUrl={articleUrl}
-                          onCopyLink={() => showMessage("Article link copied")}
-                          onSaveToMyArticles={() => {}}
-                          onShareOnEmail={() => {}}
-                          savingEnabled={savingEnabled}
-                          sharingEnabled={sharingEnabled}
-                        />
+                        <TrackingContextProvider>
+                          <StickySaveAndShareBar
+                            articleId={articleId}
+                            articleHeadline={headline}
+                            articleUrl={articleUrl}
+                            onCopyLink={() =>
+                              showMessage("Article link copied")
+                            }
+                            onSaveToMyArticles={() => {}}
+                            onShareOnEmail={() => {}}
+                            savingEnabled={savingEnabled}
+                            sharingEnabled={sharingEnabled}
+                            analyticsStream={analyticsStream}
+                          />
+                        </TrackingContextProvider>
                       )}
                     </MessageContext.Consumer>
                   </UserState>
