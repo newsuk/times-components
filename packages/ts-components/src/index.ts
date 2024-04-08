@@ -96,3 +96,4 @@ export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
+export { StickyBanner } from './components/sticky-banner/StickyBanner';

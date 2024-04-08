@@ -8,7 +8,8 @@ import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
-  WelcomeBanner
+  WelcomeBanner,
+  StickyBanner
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -39,7 +40,8 @@ import {
   PuzzlesSidebar,
   SidebarWarpper,
   ArticleWrapper,
-  ArticleContent
+  ArticleContent,
+  EmailBannerContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -210,6 +212,9 @@ const ArticleSkeleton = ({
         }}
         analyticsStream={analyticsStream}
       >
+        <EmailBannerContainer>
+        <StickyBanner title="Check your inbox">Verify your email by clicking on the link sent to your inbox.</StickyBanner>
+        </EmailBannerContainer>
         {isPreview && (
           <div className="Container">
             <div className="ArticleMetaBanner">
