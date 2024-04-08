@@ -11,8 +11,8 @@ import {
 
 import "../mocks";
 
-import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 import { TCThemeProvider } from "@times-components/ts-newskit";
+import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
 window.matchMedia = jest.fn(() => ({ matches: true }));
 
@@ -32,7 +32,11 @@ addSerializers(
 
 describe("StickySaveAndShareBar", () => {
   it("renders", () => {
-    const component = mount(<TCThemeProvider><StickySaveAndShareBar /></TCThemeProvider>);
+    const component = mount(
+      <TCThemeProvider>
+        <StickySaveAndShareBar />
+      </TCThemeProvider>
+    );
 
     expect(component).toMatchSnapshot();
   });
