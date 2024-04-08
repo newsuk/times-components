@@ -117,7 +117,6 @@ const SaveAndShareBar = props => {
                     </UserState>
                   )}
                 </SectionContext.Consumer>
-
                 <ShareItem
                   testId="share-twitter"
                   tooltipContent="Share on Twitter"
