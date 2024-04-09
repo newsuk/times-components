@@ -3,7 +3,7 @@ import { TcView } from "@times-components/utils";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 import { ArticleKeylineItem } from "../keylines";
 
-export const getHeaderAdStyles = (template) => {
+export const getHeaderAdStyles = template => {
   const hideKeylines = template === "indepth";
 
   return styled(TcView)`
