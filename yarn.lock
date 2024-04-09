@@ -5611,6 +5611,20 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/ts-newskit@1.176.2":
+  version "1.176.2"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-newskit/-/ts-newskit-1.176.2.tgz#a8ab4d45a5e3ea5e822869f6a759cecf3f898f81"
+  integrity sha512-HVfgHZfGAvuoyZeZuyFy9FwCW7dP8z4WVYmNLjPXYmX4SjpignLwKib8icrSBSTVQ3IaOxAKkXIRGlSytQe2+w==
+  dependencies:
+    "@emotion/react" "11.11.0"
+    "@emotion/styled" "11.11.0"
+    "@newskit-themes/the-times" "1.2.1"
+    isomorphic-unfetch "3.1.0"
+    lodash.merge "4.6.2"
+    newskit "7.2.0"
+    react "16.9.0"
+    xss "^1.0.10"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -6033,6 +6047,14 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
+
+"@types/react@16.9.8":
+  version "16.9.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.8.tgz#6b01592193213263300f8b242a08b172cc49f63f"
+  integrity sha512-FlifFL8nuWkLqXG3F7UhjglhlONeIUbt+PZOz3fUEba85azJwXGxR18WYnOUfaLW6jt7fMykYO9TTM980em34A==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
 
 "@types/scheduler@*":
   version "0.16.1"
@@ -10978,6 +11000,11 @@ cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^2.2.0:
+  version "2.6.21"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
+  integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
 
 csstype@^2.5.7:
   version "2.6.17"

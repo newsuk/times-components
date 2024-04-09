@@ -18,8 +18,7 @@ export const RecommendedFetch: React.FC<{
   articleId: string;
   articleHeadline: string;
   articleSection: string;
-  domainSpecificUrl: string;
-}> = ({ articleId, articleHeadline, articleSection, domainSpecificUrl }) => {
+}> = ({ articleId, articleHeadline, articleSection }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
@@ -58,10 +57,7 @@ export const RecommendedFetch: React.FC<{
           }
         }}
       >
-        <RecommendedArticles
-          heading={heading}
-          domainSpecificUrl={domainSpecificUrl}
-        />
+        <RecommendedArticles heading={heading} />
       </TrackingContextProvider>
     </FetchProvider>
   ) : null;
