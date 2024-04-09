@@ -5611,20 +5611,6 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/ts-newskit@1.176.2":
-  version "1.176.2"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-newskit/-/ts-newskit-1.176.2.tgz#a8ab4d45a5e3ea5e822869f6a759cecf3f898f81"
-  integrity sha512-HVfgHZfGAvuoyZeZuyFy9FwCW7dP8z4WVYmNLjPXYmX4SjpignLwKib8icrSBSTVQ3IaOxAKkXIRGlSytQe2+w==
-  dependencies:
-    "@emotion/react" "11.11.0"
-    "@emotion/styled" "11.11.0"
-    "@newskit-themes/the-times" "1.2.1"
-    isomorphic-unfetch "3.1.0"
-    lodash.merge "4.6.2"
-    newskit "7.2.0"
-    react "16.9.0"
-    xss "^1.0.10"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
