@@ -3,7 +3,7 @@ import { TcView } from "@times-components/utils";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 import { ArticleKeylineItem } from "../keylines";
 
-export const getHeaderAdStyles = template => {
+export const getHeaderAdStyles = (template) => {
   const hideKeylines = template === "indepth";
 
   return styled(TcView)`
@@ -107,6 +107,7 @@ export const EmailBannerContainer = styled.div`
   position: fixed;
   top: 20px;
   width: 100%;
-  text-align: -webkit-center;
   z-index: 10;
+  display: flex;
+  justify-content: center;
 `;

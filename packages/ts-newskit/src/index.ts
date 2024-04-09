@@ -21,3 +21,4 @@ export {
 } from './components/misc/update-button/update-button-with-delay';
 
 // TODO Remove after tests - borisovy
+export { Banner } from './components/misc/banner/banner';

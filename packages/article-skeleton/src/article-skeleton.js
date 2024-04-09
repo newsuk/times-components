@@ -9,7 +9,6 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   WelcomeBanner,
-  StickyBanner
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -18,7 +17,8 @@ import {
   TCThemeProvider,
   UpdateButtonWithDelay,
   PuzzlesWebLightTheme,
-  ArticleSidebar
+  ArticleSidebar,
+  Banner,
 } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
@@ -26,7 +26,7 @@ import StaticContent from "./static-content";
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
-  articleSkeletonPropTypes
+  articleSkeletonPropTypes,
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
@@ -41,7 +41,7 @@ import {
   SidebarWarpper,
   ArticleWrapper,
   ArticleContent,
-  EmailBannerContainer
+  EmailBannerContainer,
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -71,7 +71,7 @@ const ArticleSkeleton = ({
   getFallbackThumbnailUrl169,
   zephrDivs,
   showAudioPlayer,
-  storefrontConfig
+  storefrontConfig,
 }) => {
   const {
     commentsEnabled,
@@ -91,8 +91,10 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
   } = article;
+
+  const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const sidebarRef = useRef();
 
@@ -105,7 +107,7 @@ const ArticleSkeleton = ({
 
       let isAnyAdIntersecting = false;
 
-      adElements.forEach(adElement => {
+      adElements.forEach((adElement) => {
         if (adElement) {
           const adRect = adElement.getBoundingClientRect();
           const isAdIntersecting =
@@ -125,6 +127,11 @@ const ArticleSkeleton = ({
       }
     }
   };
+
+  useEffect(() => {
+    const verifyEmailFlag = !!window.sessionStorage.getItem("verifyEmail");
+    setShowEmailVerifyBanner(verifyEmailFlag);
+  }, []);
 
   useEffect(() => {
     const sidebarNode = sidebarRef.current;
@@ -148,16 +155,16 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd,
-    tagLastParagraph
+    tagLastParagraph,
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
-  const scrollToTopAndRefresh = window => {
+  const scrollToTopAndRefresh = (window) => {
     window.scroll({
       left: 0,
-      top: 0
+      top: 0,
     });
     window.location.reload(true);
   };
@@ -166,12 +173,12 @@ const ArticleSkeleton = ({
     {
       elementId: "last-paragraph",
       name: "end of article",
-      eventNavigationName: "Article : View End"
+      eventNavigationName: "Article : View End",
     },
     {
       elementId: "related-articles",
-      name: "related articles"
-    }
+      name: "related articles",
+    },
   ]);
 
   const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
@@ -207,16 +214,16 @@ const ArticleSkeleton = ({
           component: "ArticleSkeleton",
           attrs: {
             article_name: headline || shortHeadline || "",
-            section_details: section
-          }
+            section_details: section,
+          },
         }}
         analyticsStream={analyticsStream}
       >
-        <EmailBannerContainer>
-          <StickyBanner title="Check your inbox">
-            Verify your email by clicking on the link sent to your inbox.
-          </StickyBanner>
-        </EmailBannerContainer>
+        {showVerifyEmailBanner && (
+          <EmailBannerContainer>
+            <Banner title="Check your inbox" body="Verify your email by clicking on the link sent to your inbox." onClose={() => { window.sessionStorage.setItem("verifyEmail", false); setShowEmailVerifyBanner(false)}} />
+          </EmailBannerContainer>
+        )}
         {isPreview && (
           <div className="Container">
             <div className="ArticleMetaBanner">
@@ -331,18 +338,18 @@ const ArticleSkeleton = ({
                               {
                                 title: "Crossword",
                                 url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-cf4c909719.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-cf4c909719.png`,
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png`,
                               },
                               {
                                 title: "Sudoku",
                                 url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png`
-                              }
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png`,
+                              },
                             ]}
                           />
                         </PuzzlesSidebar>
@@ -456,7 +463,7 @@ const ArticleSkeleton = ({
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
-  paidContentClassName: PropTypes.string
+  paidContentClassName: PropTypes.string,
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
