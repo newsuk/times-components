@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ArticlePage, ArticleBody, Paragraph } from './styles';
 
-export const ArticleHarness: React.FC = ({ children }) => {
+export const ArticleHarness: React.FC<any> = ({ children }) => {
   return (
     <ArticlePage>
       <ArticleBody>
