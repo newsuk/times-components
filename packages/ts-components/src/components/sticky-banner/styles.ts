@@ -1,5 +1,5 @@
-import { fonts } from "@times-components/ts-styleguide";
-import styled from "styled-components";
+import { fonts } from '@times-components/ts-styleguide';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 8px;
   z-index: 100;
-  border-top: 3px solid #005C8A;
+  border-top: 3px solid #005c8a;
   box-shadow: 0px 16px 24px 0px rgba(17, 17, 17, 0.08);
   background: white;
 `;
@@ -23,7 +23,6 @@ export const IconContainer = styled.div`
 
 export const ContentContainer = styled.div`
   font-size: 14px;
-
 `;
 
 export const Title = styled.div`
