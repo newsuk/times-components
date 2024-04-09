@@ -7,12 +7,20 @@ import {
 } from "newskit";
 
 export const StyledButton = styled(Button)`
+  position: relative;
   border-radius: 0;
   border-color: #333333;
   color: #333333;
+
+  ${({ isLoading }) => `span,svg { opacity: ${isLoading ? 0 : 1}; }`};
 `;
 
 export const IconActivityIndicatorContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ${({ show }) => `opacity: ${show ? "1" : "0"};`};
   div {
     height: 16px;
     width: 16px;
