@@ -20,9 +20,9 @@ const SaveButton = props => {
           props.onToggleSave(props.articleId, props.data.isBookmarked)
         }
       >
-        <IconActivityIndicatorContainer show={props.isLoading}>
+        {/* <IconActivityIndicatorContainer show={props.isLoading}>
           <IconActivityIndicator size="small" fillColor="#333333" />
-        </IconActivityIndicatorContainer>
+        </IconActivityIndicatorContainer> */}
 
         {!isBookmarked ? (
           <Bookmark style={{ height: 14, width: 14 }} />
