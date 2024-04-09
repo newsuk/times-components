@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c6 {
+.c14 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,7 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c8 {
+.c16 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -32,7 +32,79 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c21 {
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.c7 {
+  font-size: 14px;
+}
+
+.c5 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c8 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c29 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +115,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c21:first-of-type:after {
+.c29:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c24 {
+.c32 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +140,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -91,7 +163,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c35 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -119,7 +191,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c36 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -148,7 +220,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c23 {
+.c31 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +241,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c22 {
+.c30 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +260,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c25 {
+.c33 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -197,7 +269,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c26 {
+.c34 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -214,31 +286,31 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c12 {
+.c20 {
   border: solid #DBDBDB;
   border-width: 1px 0;
 }
 
-.c12 + .c11 {
+.c20 + .c19 {
   margin-top: -1px !important;
 }
 
-.c16 {
+.c24 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c16 + .c15 {
+.c24 + .c23 {
   margin-top: -1px !important;
 }
 
-.c16:last-child {
+.c24:last-child {
   margin-bottom: 30px;
 }
 
-.c3 {
+.c11 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -261,24 +333,32 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c3 > .c15 {
+.c11 > .c23 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c17 {
+.c25 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c26 {
   position: relative;
 }
 
-.c9 {
+.c1 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c17 {
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
@@ -298,7 +378,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 7px;
 }
 
-.c7 {
+.c15 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -316,7 +396,7 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c13 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -330,11 +410,11 @@ exports[`full article with style 1`] = `
   padding-top: 10px;
 }
 
-.c13:last-child {
+.c21:last-child {
   padding-bottom: 10px;
 }
 
-.c5 {
+.c13 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -354,7 +434,7 @@ exports[`full article with style 1`] = `
   padding-right: 10px;
 }
 
-.c10 {
+.c18 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -399,21 +479,21 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c4 {
+.c12 {
   position: relative;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c14 {
+.c22 {
   margin-bottom: 20px;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
 }
 
-.c1 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -447,7 +527,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c29 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -457,51 +537,21 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c29 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c32 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c27 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
   .c28 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -512,7 +562,37 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c35 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c35 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c36 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c36 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -524,7 +604,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c30 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -533,50 +613,50 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c22 {
+  .c30 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c33 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c25 {
+  .c33 {
     min-height: 283px;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c24 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c24 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c16 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c10 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c27 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -584,27 +664,27 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c17 {
     font-size: 45px;
     line-height: 45px;
   }
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c15 {
     margin-top: 0px;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c21 {
     line-height: 18px;
     padding-bottom: 10px;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c13 {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
@@ -616,14 +696,14 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     width: 56.2%;
     margin-bottom: 15px;
   }
 }
 
 @media (min-width:1024px) {
-  .c10 {
+  .c18 {
     display: block;
   }
 }
@@ -635,7 +715,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c12 {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
@@ -643,13 +723,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c22 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c22 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -660,13 +740,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c9 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c1 {
+  .c9 {
     min-height: 250px;
   }
 }
@@ -675,6 +755,46 @@ exports[`full article with style 1`] = `
   className="c0"
 >
   <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <svg>
+              <path />
+            </svg>
+            <div
+              className="c5"
+            >
+              Check your inbox
+            </div>
+          </div>
+          <button
+            className="c6"
+          >
+            <svg>
+              <path />
+            </svg>
+          </button>
+        </div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+          >
+            Verify your email by clicking on the link sent to your inbox.
+          </div>
+        </div>
+      </div>
+    </div>
     <div />
     <article>
       <Helmet>
@@ -698,34 +818,34 @@ exports[`full article with style 1`] = `
         </script>
       </Helmet>
       <div
-        className="c1"
+        className="c9"
       >
         <AdContainer
           marginBottom={0}
         />
       </div>
       <main
-        className="c2"
+        className="c10"
       >
         <div
-          className="c3"
+          className="c11"
         >
           <div
-            className="c4"
+            className="c12"
           >
             <div
-              className="c5"
+              className="c13"
             >
               <div
-                className="c6"
+                className="c14"
               >
                 <div
-                  className="c7"
+                  className="c15"
                   paddingBottom="5px"
                   paddingTop="5px"
                 >
                   <div
-                    className="c8"
+                    className="c16"
                     color="#1D1D1B"
                     fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                     fontSize={12}
@@ -740,12 +860,12 @@ exports[`full article with style 1`] = `
                   </div>
                 </div>
                 <h1
-                  className="c9"
+                  className="c17"
                 >
                   Some Headline
                 </h1>
                 <div
-                  className="c8"
+                  className="c16"
                   color="#333333"
                   fontFamily="TimesModern-Regular, TimesModern-Regular-fallback, serif"
                   fontSize={20}
@@ -755,7 +875,7 @@ exports[`full article with style 1`] = `
                   Some Standfirst
                 </div>
                 <div
-                  className="c6"
+                  className="c14"
                   marginBottom="10px"
                 >
                   <ArticleFlags />
@@ -763,19 +883,19 @@ exports[`full article with style 1`] = `
               </div>
             </div>
             <div
-              className="c10"
+              className="c18"
             >
               <div
-                className="c11 c12"
+                className="c19 c20"
               >
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <div
-                    className="c13"
+                    className="c21"
                   >
                     <div
-                      className="c8"
+                      className="c16"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                       fontSize={14}
@@ -787,16 +907,16 @@ exports[`full article with style 1`] = `
                 </div>
               </div>
               <div
-                className="c11 c12"
+                className="c19 c20"
               >
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <div
-                    className="c13"
+                    className="c21"
                   >
                     <div
-                      className="c8"
+                      className="c16"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                       fontSize={14}
@@ -815,19 +935,19 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <ArticleLeadAsset
-            className="c14"
+            className="c22"
           />
           <div
-            className="c11 inline-meta c15 c16"
+            className="c19 inline-meta c23 c24"
           >
             <div
-              className="c6"
+              className="c14"
             >
               <div
-                className="c13"
+                className="c21"
               >
                 <div
-                  className="c8"
+                  className="c16"
                   color="#696969"
                   fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                   fontSize={14}
@@ -837,10 +957,10 @@ exports[`full article with style 1`] = `
                 </div>
               </div>
               <div
-                className="c13"
+                className="c21"
               >
                 <div
-                  className="c8"
+                  className="c16"
                   color="#696969"
                   fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                   fontSize={14}
@@ -853,18 +973,18 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <article
-          className="c17"
+          className="c25"
         >
           <div
-            className="c18"
+            className="c26"
           >
             <div
-              className="c19"
+              className="c27"
             >
               <div>
                 <div>
                   <div
-                    className="c20"
+                    className="c28"
                   >
                     <ArticleImage />
                   </div>
@@ -874,15 +994,15 @@ exports[`full article with style 1`] = `
                 Some Link
               </Link>
               <p
-                className="c21"
+                className="c29"
               >
                 Some content
               </p>
               <div
-                className="c22"
+                className="c30"
               >
                 <div
-                  className="c23"
+                  className="c31"
                 >
                   <PullQuote>
                     The pull quote content
@@ -890,18 +1010,18 @@ exports[`full article with style 1`] = `
                 </div>
               </div>
               <div
-                className="c20"
+                className="c28"
               >
                 <figure
                   margin={0}
                 >
                   <div
-                    className="c6"
+                    className="c14"
                     paddingBottom="56.25%"
                     position="relative"
                   >
                     <div
-                      className="c6"
+                      className="c14"
                       height="100%"
                       position="absolute"
                       width="100%"
@@ -927,17 +1047,17 @@ exports[`full article with style 1`] = `
                   </div>
                   <figcaption>
                     <div
-                      className="c24"
+                      className="c32"
                     >
                       <div
-                        className="c6"
+                        className="c14"
                       >
                         <div
-                          className="c6"
+                          className="c14"
                           paddingTop="10px"
                         >
                           <div
-                            className="c8"
+                            className="c16"
                             color="#696969"
                             fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                             fontSize={14}
@@ -953,10 +1073,10 @@ exports[`full article with style 1`] = `
                 </figure>
               </div>
               <div
-                className="c25"
+                className="c33"
               >
                 <h2
-                  className="c26"
+                  className="c34"
                 >
                   Advertisement
                 </h2>
@@ -965,7 +1085,7 @@ exports[`full article with style 1`] = `
               <div>
                 <div>
                   <div
-                    className="c27"
+                    className="c35"
                   >
                     <ArticleImage />
                   </div>
@@ -974,7 +1094,7 @@ exports[`full article with style 1`] = `
               <div>
                 <div>
                   <div
-                    className="c28"
+                    className="c36"
                   >
                     <ArticleImage />
                   </div>

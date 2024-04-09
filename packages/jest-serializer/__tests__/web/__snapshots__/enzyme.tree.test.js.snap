@@ -13,9 +13,9 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "gzApqG",
             "rules": Array [
               "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             ],
@@ -23,7 +23,7 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -34,7 +34,7 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
       style={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
         style={null}
       >
         <tc-text__TcText>

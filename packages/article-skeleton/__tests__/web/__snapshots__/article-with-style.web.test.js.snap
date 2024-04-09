@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c15 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,79 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .c6 {
+  font-size: 14px;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c7 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -30,13 +102,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c6:first-of-type:after {
+.c14:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c7 {
+.c15 {
   float: left;
   color: #333333;
   padding-right: 10px;
@@ -47,7 +119,7 @@ exports[`full article with style 1`] = `
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
 }
 
-.c16 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -66,17 +138,17 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c8 {
+.c16 {
   margin-bottom: 20px;
   padding: 0 10px;
 }
 
-.c9 {
+.c17 {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.c10 {
+.c18 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -99,7 +171,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c11 {
+.c19 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -127,7 +199,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c12 {
+.c20 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -156,7 +228,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c14 {
+.c22 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -177,7 +249,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c13 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -196,7 +268,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c17 {
+.c25 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
@@ -207,7 +279,7 @@ exports[`full article with style 1`] = `
   line-height: 25px;
 }
 
-.c18 {
+.c26 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
@@ -218,7 +290,7 @@ exports[`full article with style 1`] = `
   line-height: 22px;
 }
 
-.c19 {
+.c27 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
@@ -229,7 +301,7 @@ exports[`full article with style 1`] = `
   line-height: 19px;
 }
 
-.c20 {
+.c28 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
@@ -240,7 +312,7 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
-.c21 {
+.c29 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
@@ -251,7 +323,7 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
-.c2 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -274,24 +346,32 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c2 > .c22 {
+.c10 > .c30 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c11 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c12 {
   position: relative;
 }
 
 .c0 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -325,7 +405,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c14 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -335,19 +415,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c14 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c24 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c16 {
     width: 80.8%;
     margin-left: auto;
     margin-right: auto;
@@ -356,41 +436,26 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c16 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c18 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c10 {
+  .c18 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
+  .c19 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -399,13 +464,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c12 {
+  .c19 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -417,7 +497,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -426,13 +506,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c25 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -440,20 +520,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c25 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c25 {
     font-size: 28px;
     line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c26 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -461,20 +541,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c26 {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c27 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -482,20 +562,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c27 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c28 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -503,20 +583,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c28 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c29 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -524,27 +604,27 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c29 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c29 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c9 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -552,48 +632,88 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c8 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c0 {
+  .c8 {
     min-height: 250px;
   }
 }
 
 <div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <svg>
+            <path />
+          </svg>
+          <div
+            className="c4"
+          >
+            Check your inbox
+          </div>
+        </div>
+        <button
+          className="c5"
+        >
+          <svg>
+            <path />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Verify your email by clicking on the link sent to your inbox.
+        </div>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
     <div
-      className="c0"
+      className="c8"
     >
       <AdContainer
         marginBottom={0}
       />
     </div>
     <main
-      className="c1"
+      className="c9"
     >
       <div
-        className="c2"
+        className="c10"
       />
       <article
-        className="c3"
+        className="c11"
       >
         <div
-          className="c4"
+          className="c12"
         >
           <div
-            className="c5"
+            className="c13"
           >
             <p
-              className="c6"
+              className="c14"
             >
               <span
-                className="c7"
+                className="c15"
                 color="#1D1D1B"
               >
                 T
@@ -601,14 +721,14 @@ exports[`full article with style 1`] = `
               his being Black History Month, last week
             </p>
             <div
-              className="c8"
+              className="c16"
             >
               <div>
                 <InteractiveWrapper />
               </div>
             </div>
             <div
-              className="c9"
+              className="c17"
             >
               <div>
                 <InteractiveWrapper />
@@ -617,7 +737,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c10"
+                  className="c18"
                 >
                   <ArticleImage />
                 </div>
@@ -626,7 +746,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c11"
+                  className="c19"
                 >
                   <ArticleImage />
                 </div>
@@ -635,7 +755,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c12"
+                  className="c20"
                 >
                   <ArticleImage />
                 </div>
@@ -648,15 +768,15 @@ exports[`full article with style 1`] = `
               className="paidContentClassName"
             >
               <p
-                className="c6"
+                className="c14"
               >
                 Some content
               </p>
               <div
-                className="c13"
+                className="c21"
               >
                 <div
-                  className="c14"
+                  className="c22"
                 >
                   <PullQuote>
                     The pull quote content
@@ -664,18 +784,18 @@ exports[`full article with style 1`] = `
                 </div>
               </div>
               <div
-                className="c10"
+                className="c18"
               >
                 <figure
                   margin={0}
                 >
                   <div
-                    className="c15"
+                    className="c23"
                     paddingBottom="56.25%"
                     position="relative"
                   >
                     <div
-                      className="c15"
+                      className="c23"
                       height="100%"
                       position="absolute"
                       width="100%"
@@ -701,7 +821,7 @@ exports[`full article with style 1`] = `
                   </div>
                   <figcaption>
                     <div
-                      className="c16"
+                      className="c24"
                     >
                       <Caption />
                     </div>
@@ -711,27 +831,27 @@ exports[`full article with style 1`] = `
               <KeyFacts />
             </span>
             <h2
-              className="c17"
+              className="c25"
             >
               This is heading 2
             </h2>
             <h3
-              className="c18"
+              className="c26"
             >
               This is heading 3
             </h3>
             <h4
-              className="c19"
+              className="c27"
             >
               This is heading 4
             </h4>
             <h5
-              className="c20"
+              className="c28"
             >
               This is heading 5
             </h5>
             <h6
-              className="c21"
+              className="c29"
             >
               This is heading 6
             </h6>

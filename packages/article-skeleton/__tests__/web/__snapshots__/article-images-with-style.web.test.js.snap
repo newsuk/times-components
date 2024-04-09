@@ -1,7 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .c6 {
+  font-size: 14px;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c7 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -24,7 +96,7 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c2 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -47,24 +119,32 @@ exports[`1. a primary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c7 {
+.c10 > .c15 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c11 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c12 {
   position: relative;
 }
 
 .c0 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -98,27 +178,27 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c14 {
     width: 56.2%;
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c9 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -126,47 +206,87 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c8 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c0 {
+  .c8 {
     min-height: 250px;
   }
 }
 
 <div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <svg>
+            <path />
+          </svg>
+          <div
+            className="c4"
+          >
+            Check your inbox
+          </div>
+        </div>
+        <button
+          className="c5"
+        >
+          <svg>
+            <path />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Verify your email by clicking on the link sent to your inbox.
+        </div>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
     <div
-      className="c0"
+      className="c8"
     >
       <AdContainer
         marginBottom={0}
       />
     </div>
     <main
-      className="c1"
+      className="c9"
     >
       <div
-        className="c2"
+        className="c10"
       />
       <article
-        className="c3"
+        className="c11"
       >
         <div
-          className="c4"
+          className="c12"
         >
           <div
-            className="c5"
+            className="c13"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <ArticleImage />
                 </div>
@@ -186,7 +306,79 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .c6 {
+  font-size: 14px;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c7 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -205,7 +397,7 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c2 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -228,24 +420,32 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c7 {
+.c10 > .c15 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c11 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c12 {
   position: relative;
 }
 
 .c0 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -279,14 +479,14 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c9 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -294,47 +494,87 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c8 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c0 {
+  .c8 {
     min-height: 250px;
   }
 }
 
 <div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <svg>
+            <path />
+          </svg>
+          <div
+            className="c4"
+          >
+            Check your inbox
+          </div>
+        </div>
+        <button
+          className="c5"
+        >
+          <svg>
+            <path />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Verify your email by clicking on the link sent to your inbox.
+        </div>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
     <div
-      className="c0"
+      className="c8"
     >
       <AdContainer
         marginBottom={0}
       />
     </div>
     <main
-      className="c1"
+      className="c9"
     >
       <div
-        className="c2"
+        className="c10"
       />
       <article
-        className="c3"
+        className="c11"
       >
         <div
-          className="c4"
+          className="c12"
         >
           <div
-            className="c5"
+            className="c13"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <ArticleImage />
                 </div>
@@ -354,7 +594,79 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .c6 {
+  font-size: 14px;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c7 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -382,7 +694,7 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c2 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -405,24 +717,32 @@ exports[`3. a secondary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c7 {
+.c10 > .c15 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c11 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c12 {
   position: relative;
 }
 
 .c0 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -456,7 +776,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -465,20 +785,20 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c14 {
     width: 56.2%;
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c9 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -486,47 +806,87 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c8 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c0 {
+  .c8 {
     min-height: 250px;
   }
 }
 
 <div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <svg>
+            <path />
+          </svg>
+          <div
+            className="c4"
+          >
+            Check your inbox
+          </div>
+        </div>
+        <button
+          className="c5"
+        >
+          <svg>
+            <path />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Verify your email by clicking on the link sent to your inbox.
+        </div>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
     <div
-      className="c0"
+      className="c8"
     >
       <AdContainer
         marginBottom={0}
       />
     </div>
     <main
-      className="c1"
+      className="c9"
     >
       <div
-        className="c2"
+        className="c10"
       />
       <article
-        className="c3"
+        className="c11"
       >
         <div
-          className="c4"
+          className="c12"
         >
           <div
-            className="c5"
+            className="c13"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <ArticleImage />
                 </div>
@@ -546,7 +906,79 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 498px;
+  padding: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 100;
+  border-top: 3px solid #005c8a;
+  box-shadow: 0px 16px 24px 0px rgba(17,17,17,0.08);
+  background: white;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .c6 {
+  font-size: 14px;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  font-family: Roboto-Regular;
+}
+
+.c7 {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.c14 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -575,7 +1007,7 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c2 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -598,24 +1030,32 @@ exports[`4. an inline image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c7 {
+.c10 > .c15 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c11 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c12 {
   position: relative;
 }
 
 .c0 {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 10;
+}
+
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -649,7 +1089,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -658,20 +1098,20 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c14 {
     width: 56.2%;
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
+  .c9 {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c13 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -679,47 +1119,87 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c8 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c0 {
+  .c8 {
     min-height: 250px;
   }
 }
 
 <div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <svg>
+            <path />
+          </svg>
+          <div
+            className="c4"
+          >
+            Check your inbox
+          </div>
+        </div>
+        <button
+          className="c5"
+        >
+          <svg>
+            <path />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          Verify your email by clicking on the link sent to your inbox.
+        </div>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
     <div
-      className="c0"
+      className="c8"
     >
       <AdContainer
         marginBottom={0}
       />
     </div>
     <main
-      className="c1"
+      className="c9"
     >
       <div
-        className="c2"
+        className="c10"
       />
       <article
-        className="c3"
+        className="c11"
       >
         <div
-          className="c4"
+          className="c12"
         >
           <div
-            className="c5"
+            className="c13"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c14"
                 >
                   <ArticleImage />
                 </div>
