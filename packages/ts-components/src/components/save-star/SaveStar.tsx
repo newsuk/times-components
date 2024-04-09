@@ -1,4 +1,4 @@
-import React, { cloneElement, useState } from 'react';
+import React, { cloneElement, useCallback, useMemo, useState } from 'react';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
 import { ContentProvider } from './ContentProvider';
@@ -15,7 +15,9 @@ export const SaveStar: React.FC<{
     isPreviewMode ? { isBookmarked: false } : undefined
   );
 
-  const onToggleSave = (id: string, isSaved: boolean) => {
+  const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
+
+  const onToggleSave = useCallback((id: string, isSaved: boolean) => {
     if (isPreviewMode) {
       setPreviewData({ isBookmarked: !isSaved });
     } else {
@@ -25,7 +27,7 @@ export const SaveStar: React.FC<{
           : `/api/collections/save/${id}`
       );
     }
-  };
+  }, []);
 
   const Content = children ? (
     cloneElement(children as React.ReactElement, {
@@ -37,11 +39,7 @@ export const SaveStar: React.FC<{
   );
 
   return (
-    <FetchProvider
-      url={url}
-      options={{ credentials: 'same-origin' }}
-      previewData={previewData}
-    >
+    <FetchProvider url={url} options={fetchOptions} previewData={previewData}>
       <ContentProvider>{Content}</ContentProvider>
     </FetchProvider>
   );

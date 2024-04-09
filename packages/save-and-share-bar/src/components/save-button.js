@@ -51,4 +51,4 @@ SaveButton.propTypes = {
   onToggleSave: PropTypes.func
 };
 
-export default SaveButton;
+export default React.memo(SaveButton);

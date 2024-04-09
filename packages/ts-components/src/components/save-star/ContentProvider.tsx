@@ -8,13 +8,12 @@ export interface ContentProps {
   data?: ArticleBookmark;
 }
 
-export const ContentProvider: React.FC = ({ children }) => {
+export const ContentProvider: React.FC = React.memo(({ children }) => {
   const fetchResponse = useFetch<ArticleBookmark>();
-
   return (
     <>
       {React.isValidElement<ContentProps>(children) &&
         React.cloneElement(children, fetchResponse)}
     </>
   );
-};
+});
