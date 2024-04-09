@@ -32,7 +32,7 @@
     "npm:publish-canary": "bash ./lib/publish_canary.sh",
     "cinstall": "bash ./lib/custom_install.sh",
     "clean": "watchman watch-del-all && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-* && yarn cache clean && jest --clearCache",
-    "bundle": "lerna run bundle",
+    "bundle": "NODE_OPTIONS=--openssl-legacy-provider lerna run bundle",
     "build:local": "yarn install && yarn bundle && yarn prepublishOnly",
     "postinstall": "yarn run copy-fonts && lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
