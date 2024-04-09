@@ -34,7 +34,7 @@ function SaveAndShareBar(props) {
   } = props;
 
   function copyToClipboard(e) {
-    const { onCopyLink, articleUrl } = props;
+    const { onCopyLink } = props;
     e.preventDefault();
 
     navigator.clipboard.writeText(articleUrl);
