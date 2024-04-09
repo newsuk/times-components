@@ -148,6 +148,7 @@ function SaveAndShareBar(props) {
           </StyledButton>
         </StyledPopover>
       )}
+
       {savingEnabled ? (
         <>
           <UserState
