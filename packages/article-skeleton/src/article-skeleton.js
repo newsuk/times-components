@@ -213,7 +213,9 @@ const ArticleSkeleton = ({
         analyticsStream={analyticsStream}
       >
         <EmailBannerContainer>
-        <StickyBanner title="Check your inbox">Verify your email by clicking on the link sent to your inbox.</StickyBanner>
+          <StickyBanner title="Check your inbox">
+            Verify your email by clicking on the link sent to your inbox.
+          </StickyBanner>
         </EmailBannerContainer>
         {isPreview && (
           <div className="Container">
