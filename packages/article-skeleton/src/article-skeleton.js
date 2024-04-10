@@ -219,7 +219,7 @@ const ArticleSkeleton = ({
         }}
         analyticsStream={analyticsStream}
       >
-                {showVerifyEmailBanner && (
+        {showVerifyEmailBanner && (
           <EmailBannerContainer>
             <Banner
               title="Check your inbox"
