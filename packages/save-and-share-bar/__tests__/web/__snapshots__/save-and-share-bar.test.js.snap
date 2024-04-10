@@ -20,9 +20,13 @@ exports[`save and share bar component email icon when tokenising with loading st
         <div
           className="css-15mwjn0"
         >
-          <IconActivityIndicator
-            size="small"
-          />
+          <div
+            className="css-3pvqi3"
+          >
+            <IconActivityIndicator
+              size="small"
+            />
+          </div>
         </div>
       </div>
       <div
