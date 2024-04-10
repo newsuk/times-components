@@ -7,7 +7,7 @@ import ThumbsUpIcon from './ThumbsUp';
 import ThumbsDownIcon from './ThumbsDown';
 import CloseIcon from './CloseIcon';
 import EmailIcon from './EmailIcon';
-import CloseIcon2 from './CloseIcon2';
+import CloseIconBlack from './CloseIconBlack';
 
 const FilledArrowIconDown = styled(FilledArrowIcon)`
   transform: rotate(180deg);
@@ -53,7 +53,7 @@ export const NewsKitEmailIcon = customToNewsKitIcon(
   props => <EmailIcon {...props} />
 );
 
-export const NewsKitCloseIcon2 = customToNewsKitIcon(
-  'NewsKitCloseIcon2',
-  props => <CloseIcon2 {...props} />
+export const NewsKitCloseIconBlack = customToNewsKitIcon(
+  'NewsKitCloseIconBlack',
+  props => <CloseIconBlack {...props} />
 );

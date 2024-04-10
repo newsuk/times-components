@@ -55,7 +55,7 @@ exports[`Icons Component: NewsKitCloseIcon NewsKitCloseIcon renders with default
 </DocumentFragment>
 `;
 
-exports[`Icons Component: NewsKitCloseIcon2 NewsKitCloseIcon2 renders with default props 1`] = `
+exports[`Icons Component: NewsKitCloseIconBlack NewsKitCloseIconBlack renders with default props 1`] = `
 <DocumentFragment>
   <svg
     class="css-ny3roy"
