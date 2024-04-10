@@ -10,7 +10,11 @@ const SaveButton = props => {
 
   const { isBookmarked } = props.data;
 
-  const bookmarkIconStyles = { height: 14, width: 14, visibility: props.isLoading ? "hidden" : "visible" }
+  const bookmarkIconStyles = {
+    height: 14,
+    width: 14,
+    visibility: props.isLoading ? "hidden" : "visible"
+  };
 
   const buttonText = isBookmarked ? "Saved" : "Save";
   return (
@@ -23,18 +27,18 @@ const SaveButton = props => {
           props.onToggleSave(props.articleId, props.data.isBookmarked)
         }
       >
-       {props.isLoading && <IconActivityIndicatorContainer>
-          <IconActivityIndicator size="small" fillColor="#333333" />
-        </IconActivityIndicatorContainer>}
-
+        {props.isLoading && (
+          <IconActivityIndicatorContainer>
+            <IconActivityIndicator size="small" fillColor="#333333" />
+          </IconActivityIndicatorContainer>
+        )}
 
         {!isBookmarked ? (
           <Bookmark style={bookmarkIconStyles} />
         ) : (
           <BookmarkFill style={bookmarkIconStyles} />
         )}
-        {!props.isLoading ? buttonText : ''}
-
+        {!props.isLoading ? buttonText : ""}
       </StyledButton>
     </>
   );
