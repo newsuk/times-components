@@ -8,7 +8,7 @@ import { IconActivityIndicatorContainer, StyledButton } from "../styled";
 const SaveButton = props => {
   if (props.error || (!props.loading && !props.data)) return null;
 
-  const { isBookmarked } = props.data ?? { isBookmarked: false };
+  const { isBookmarked } = props.data || { isBookmarked: false };
 
   const bookmarkIconStyles = {
     height: 14,
