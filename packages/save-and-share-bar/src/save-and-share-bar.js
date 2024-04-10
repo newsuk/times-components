@@ -20,7 +20,6 @@ import EmailShare from "./email-share";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
-  
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
@@ -29,7 +28,7 @@ class SaveAndShareBar extends Component {
   copyToClipboard(e) {
     const { onCopyLink, articleUrl } = this.props;
     e.preventDefault();
-
+    // comment
     navigator.clipboard.writeText(articleUrl);
     onCopyLink();
   }
