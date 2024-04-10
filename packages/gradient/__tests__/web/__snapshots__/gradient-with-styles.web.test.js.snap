@@ -17,7 +17,7 @@ exports[`1. gradient with style 1`] = `
   className="IS2"
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS1"
   />
 </tc-view__TcView>
 `;
