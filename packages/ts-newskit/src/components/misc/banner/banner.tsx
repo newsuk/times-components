@@ -8,8 +8,8 @@ import {
   Wrapper,
   BannerWrapper
 } from './styles';
-import { EmailIcon } from './emailIcon';
-import { CloseIcon } from './closeIcon';
+import { EmailIcon } from '../../../assets/emailIcon';
+import { CloseIconBlack } from '../../../assets/closeIconBlack';
 
 type Props = {
   onClose: () => void;
@@ -27,7 +27,7 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
             <Title>{title}</Title>
           </TitleWrapper>
           <CloseIconWrapper onClick={onClose}>
-            <CloseIcon />
+            <CloseIconBlack />
           </CloseIconWrapper>
         </Wrapper>
         <Body>{body}</Body>
