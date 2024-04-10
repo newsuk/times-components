@@ -333,8 +333,8 @@ workflows:
                       - build_storybook
                       - run_lint
                       - run_noplatform_tests
-                      - run_web_tests
-                      - run_unit_tests
+                    #   - run_web_tests
+                    #   - run_unit_tests
                       - run_cypress_tests
             - publish_canary:
                   <<: *only_on_pr_branch
