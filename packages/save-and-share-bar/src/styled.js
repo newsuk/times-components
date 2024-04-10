@@ -27,6 +27,15 @@ export const IconActivityIndicatorContainer = styled.div`
   }
 `;
 
+export const EmailSpinnerContainer = styled.div`
+  div {
+    height: 16px;
+    width: 16px;
+    border-right-color: #00527a;
+    border-width: 0.15em;
+  }
+`;
+
 export const StyledPopover = styled(Popover)`
   ${getMediaQueryFromTheme("xs", "md")} {
     left: 5%;

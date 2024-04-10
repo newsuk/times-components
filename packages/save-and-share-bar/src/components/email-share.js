@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import { ShareItem, ShareItemLabel } from "./share-item";
+import { EmailSpinnerContainer } from "../styled";
 import styles from "../styles";
 
 class EmailShare extends Component {
@@ -71,10 +72,9 @@ class EmailShare extends Component {
         <ShareItemLabel
           icon={
             isLoading ? (
-              <IconActivityIndicator
-                size="small"
-                style={styles.activityLoader}
-              />
+              <EmailSpinnerContainer>
+                <IconActivityIndicator size="small" />
+              </EmailSpinnerContainer>
             ) : (
               <IconEmail
                 fillColour="currentColor"
