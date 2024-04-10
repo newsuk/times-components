@@ -1,115 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. iconemail sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-email"
-  height={50}
-  role="img"
-  title="Email Icon"
-  width={68.75}
-/>
-`;
-
-exports[`2. iconfacebook sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-facebook"
-  height={50}
-  role="img"
-  title="Facebook Icon"
-  width={25}
-/>
-`;
-
-exports[`3. iconforwardarrow sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-forward-arrow"
-  height={12}
-  width={7}
-/>
-`;
-
-exports[`4. iconstar sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-save-star"
-  height={50}
-  role="img"
-  title="Save star"
-  width={50}
-/>
-`;
-
-exports[`5. iconcopylink sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-copy-link"
-  height={50}
-  role="img"
-  title="Copy link to clipboard"
-  width={15}
-/>
-`;
-
-exports[`6. iconsavebookmark sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-save-bookmark"
-  height={50}
-  role="img"
-  title="Save to My Articles"
-  width={12}
-/>
-`;
-
-exports[`7. icontwitter sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-twitter"
-  height={50}
-  role="img"
-  title="Twitter Icon"
-  width={62.5}
-  xmlns="http://www.w3.org/2000/svg"
-/>
-`;
-
-exports[`8. iconvideo sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-video"
-  height={50}
-  role="img"
-  title="Video Icon"
-  width={85}
-/>
-`;
-
-exports[`9. iconvideo360player sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-video-360-player"
-  height={50}
-  role="img"
-  title="Video 360 Player Icon"
-  width={54}
-/>
-`;
-
-exports[`10. thestlogo sets a width when height is set 1`] = `
-<svg
-  aria-label="logo-the-sunday-times"
-  height={50}
-  role="img"
-  title="ST"
-  width={50}
-/>
-`;
-
-exports[`11. thetimeslogo sets a width when height is set 1`] = `
-<svg
-  aria-label="logo-the-times"
-  height={50}
-  role="img"
-  title="The Times"
-  width={50}
-/>
-`;
-
-exports[`12. closeicon sets a width when height is set 1`] = `
+exports[`1. closeicon sets a width when height is set 1`] = `
 <svg
   aria-label="icon-close"
   height={50}
@@ -119,14 +10,7 @@ exports[`12. closeicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`13. iconforwardchevron sets a width when height is set 1`] = `
-<svg
-  aria-label="icon-forward-chevron"
-  height={50}
-/>
-`;
-
-exports[`14. iconactivityindicator sets a width when height is set 1`] = `
+exports[`2. iconactivityindicator sets a width when height is set 1`] = `
 <activity-indicator__ActivityIndicatorContainer>
   <div
     className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
@@ -143,4 +27,120 @@ exports[`14. iconactivityindicator sets a width when height is set 1`] = `
     </activity-indicator__ActivityIndicatorSpinner>
   </div>
 </activity-indicator__ActivityIndicatorContainer>
+`;
+
+exports[`3. iconcopylink sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-copy-link"
+  height={50}
+  role="img"
+  title="Copy link to clipboard"
+  width={15}
+/>
+`;
+
+exports[`4. iconemail sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-email"
+  height={50}
+  role="img"
+  title="Email Icon"
+  width={68.75}
+/>
+`;
+
+exports[`5. iconfacebook sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-facebook"
+  height={50}
+  role="img"
+  title="Facebook Icon"
+  width={25}
+/>
+`;
+
+exports[`6. iconforwardarrow sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-forward-arrow"
+  height={12}
+  width={7}
+/>
+`;
+
+exports[`7. iconforwardchevron sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-forward-chevron"
+  height={50}
+/>
+`;
+
+exports[`8. iconsavebookmark sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-save-bookmark"
+  height={50}
+  role="img"
+  title="Save to My Articles"
+  width={12}
+/>
+`;
+
+exports[`9. iconstar sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-save-star"
+  height={50}
+  role="img"
+  title="Save star"
+  width={50}
+/>
+`;
+
+exports[`10. icontwitter sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-twitter"
+  height={50}
+  role="img"
+  title="Twitter Icon"
+  width={62.5}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`11. iconvideo sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-video"
+  height={50}
+  role="img"
+  title="Video Icon"
+  width={85}
+/>
+`;
+
+exports[`12. iconvideo360player sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-video-360-player"
+  height={50}
+  role="img"
+  title="Video 360 Player Icon"
+  width={54}
+/>
+`;
+
+exports[`13. thestlogo sets a width when height is set 1`] = `
+<svg
+  aria-label="logo-the-sunday-times"
+  height={50}
+  role="img"
+  title="ST"
+  width={50}
+/>
+`;
+
+exports[`14. thetimeslogo sets a width when height is set 1`] = `
+<svg
+  aria-label="logo-the-times"
+  height={50}
+  role="img"
+  title="The Times"
+  width={50}
+/>
 `;

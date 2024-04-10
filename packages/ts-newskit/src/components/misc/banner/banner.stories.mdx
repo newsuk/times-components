@@ -1,0 +1,35 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { TCThemeProvider } from '../../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { Banner } from '.';
+
+<Meta
+  title="Newskit Components/Misc/Banner"
+  component={Banner}
+/>
+
+# Banner component
+The `Banner` component is used to show and hide related content.
+
+This component takes in a two props, as below, to display text based content.
+
+## Props
+<Props of={Banner} />
+
+## Code Example
+`<Banner />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const BannerStory = ({ group }) => (
+  <TCThemeProvider theme={TimesWebLightTheme}>
+    <Banner title="Banner title" body="Banner message" onClose={() => console.log('close')} />
+  </TCThemeProvider>
+);
+
+<Story name="Banner">
+  {BannerStory.bind({})}
+</Story>
