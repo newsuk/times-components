@@ -6,7 +6,7 @@ import { Banner } from '../banner';
 describe('Banner', () => {
   it('renders the banner', () => {
     const { asFragment } = render(
-      <Banner title='Title' body='Body' onClose={jest.fn}/>
+      <Banner title="Title" body="Body" onClose={jest.fn} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
