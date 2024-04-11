@@ -13,23 +13,11 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      highResIsLoaded: false,
-      highResIsVisible: false,
-      imageIsLoaded: false,
-      lowResIsLoaded: !props.fadeImageIn
+      highResIsLoaded: false
     };
 
     this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
-    this.handleLowResOnLoad = this.handleLowResOnLoad.bind(this);
-    this.onHighResTransitionEnd = this.onHighResTransitionEnd.bind(this);
-    this.getLowResImage = this.getLowResImage.bind(this);
     this.getHighResImage = this.getHighResImage.bind(this);
-  }
-
-  onHighResTransitionEnd() {
-    this.setState({
-      highResIsVisible: true
-    });
   }
 
   getHighResImage(img) {
@@ -38,71 +26,31 @@ class TimesImage extends Component {
     }
   }
 
-  getLowResImage(img) {
-    if (img && img.complete) {
-      this.handleLowResOnLoad();
-    }
-  }
-
-  handleLowResOnLoad() {
-    this.setState({
-      imageIsLoaded: true,
-      lowResIsLoaded: true
-    });
-  }
-
   handleHighResOnLoad() {
     this.setState({
-      highResIsLoaded: true,
-      imageIsLoaded: true
+      highResIsLoaded: true
     });
   }
 
-  highResImage({ highResSize, lowResSize, url }) {
+  highResImage({ highResSize, url }) {
     const { highResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
+    const imgUrl = highResSize
+      ? appendToImageURL(url, "resize", highResSize)
+      : url;
 
-    if (!lowResSize || highResSize) {
-      return (
-        <StyledImage
-          alt={accessibilityLabel}
-          ref={this.getHighResImage}
-          loading="lazy"
-          isLoaded={highResIsLoaded}
-          onLoad={this.handleHighResOnLoad}
-          onTransitionEnd={this.onHighResTransitionEnd}
-          src={appendToImageURL(url, "resize", highResSize)}
-          zIndex={2}
-        />
-      );
-    }
-
-    return null;
-  }
-
-  lowResImage({ lowResQuality, lowResSize, url }) {
-    const { highResIsVisible, lowResIsLoaded } = this.state;
-    const { accessibilityLabel } = this.props;
-    if (lowResSize && !highResIsVisible) {
-      let imageSource = appendToImageURL(url, "resize", lowResSize);
-      if (lowResQuality) {
-        imageSource = appendToImageURL(imageSource, "quality", lowResQuality);
-      }
-
-      return (
-        <StyledImage
-          alt={accessibilityLabel}
-          loading="lazy"
-          ref={this.getLowResImage}
-          isLoaded={lowResIsLoaded}
-          onLoad={this.handleLowResOnLoad}
-          src={imageSource}
-          zIndex={1}
-        />
-      );
-    }
-
-    return null;
+    return (
+      <StyledImage
+        alt={accessibilityLabel}
+        ref={this.getHighResImage}
+        loading="lazy"
+        isLoaded={highResIsLoaded}
+        onLoad={this.handleHighResOnLoad}
+        onTransitionEnd={this.onHighResTransitionEnd}
+        src={imgUrl}
+        zIndex={2}
+      />
+    );
   }
 
   render() {
@@ -110,15 +58,13 @@ class TimesImage extends Component {
       aspectRatio,
       disablePlaceholder,
       highResSize,
-      lowResQuality,
-      lowResSize,
       style,
       uri,
       onLayout,
       rounded,
       isLcpItem
     } = this.props;
-    const { imageIsLoaded } = this.state;
+    const { highResIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
     const styles = {
       ...style
@@ -135,9 +81,8 @@ class TimesImage extends Component {
         className={(isLcpItem && "lcpItem") || ""}
       >
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
-          {this.highResImage({ highResSize, lowResSize, url })}
-          {this.lowResImage({ lowResQuality, lowResSize, url })}
-          {disablePlaceholder || imageIsLoaded ? null : (
+          {this.highResImage({ highResSize, url })}
+          {disablePlaceholder || highResIsLoaded ? null : (
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}
         </div>
