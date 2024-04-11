@@ -14,7 +14,7 @@ exports[`The minimal serializer should for web not remove className 1`] = `
 
 exports[`The minimal serializer should for web remove empty objects as props 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 kwFxdN"
@@ -24,7 +24,7 @@ exports[`The minimal serializer should for web remove empty objects as props 1`]
 
 exports[`The minimal serializer should for web remove functions as props 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 kwFxdN"
@@ -34,7 +34,7 @@ exports[`The minimal serializer should for web remove functions as props 1`] = `
 
 exports[`The minimal serializer should for web remove undefined props 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 kwFxdN"

@@ -137,11 +137,11 @@ exports[`1. renders 1`] = `
 
 <pagination-container__ContainerWithResults>
   <div
-    className="tc-view__TcView-sc-nuazoi-0 pagination-container__ContainerWithResults-sc-csg9hq-0 hzQkiX"
+    className="tc-view__TcView-nuazoi-0 pagination-container__ContainerWithResults-csg9hq-0 kNNFsO"
   >
     <results__MessageContainer>
       <div
-        className="tc-view__TcView-sc-nuazoi-0 results__MessageContainer-sc-1f306gs-0 dzqlQE"
+        className="tc-view__TcView-nuazoi-0 results__MessageContainer-sc-1f306gs-0 dzqlQE"
       >
         <tc-text__TcText
           className="IS2"
@@ -157,11 +157,11 @@ exports[`1. renders 1`] = `
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
       <div
-        className="tc-view__TcView-sc-nuazoi-0 pagination-border__BorderWithResults-sc-zd8d3i-0 cVXUmx"
+        className="tc-view__TcView-nuazoi-0 pagination-border__BorderWithResults-zd8d3i-0 eiUfKB"
       >
         <responsive__LinkContainer>
           <div
-            className="tc-view__TcView-sc-nuazoi-0 responsive__LinkContainer-sc-ac98ik-0 gvZdVg"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           >
             <link__RespLink
               href="?mock-1"
@@ -179,7 +179,7 @@ exports[`1. renders 1`] = `
                   data-testid="pagination-button-previous"
                 >
                   <div
-                    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS9"
+                    className="tc-view__TcView-nuazoi-0 fPjBcr IS9"
                     data-testid="pagination-button-previous"
                   >
                     <tc-text__TcText
@@ -216,7 +216,7 @@ exports[`1. renders 1`] = `
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="tc-view__TcView-sc-nuazoi-0 responsive__LinkContainer-sc-ac98ik-0 gvZdVg"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           >
             <link__RespLink
               href="?mock-3"
@@ -234,7 +234,7 @@ exports[`1. renders 1`] = `
                   data-testid="pagination-button-next"
                 >
                   <div
-                    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS17"
+                    className="tc-view__TcView-nuazoi-0 fPjBcr IS17"
                     data-testid="pagination-button-next"
                   >
                     <tc-text__TcText
@@ -278,20 +278,20 @@ exports[`1. renders 1`] = `
 exports[`2. renders with no results 1`] = `
 <pagination-container__ContainerWithoutResults>
   <div
-    className="tc-view__TcView-sc-nuazoi-0 pagination-container__ContainerWithoutResults-sc-csg9hq-1 fYUoAV"
+    className="tc-view__TcView-nuazoi-0 pagination-container__ContainerWithoutResults-csg9hq-1 djVJfi"
   >
     <pagination-border__BorderWithoutResults>
       <div
-        className="tc-view__TcView-sc-nuazoi-0 pagination-border__BorderWithoutResults-sc-zd8d3i-1 iBnFjm"
+        className="tc-view__TcView-nuazoi-0 pagination-border__BorderWithoutResults-zd8d3i-1 eVGijm"
       >
         <responsive__LinkContainer>
           <div
-            className="tc-view__TcView-sc-nuazoi-0 responsive__LinkContainer-sc-ac98ik-0 gvZdVg"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           />
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="tc-view__TcView-sc-nuazoi-0 responsive__LinkContainer-sc-ac98ik-0 gvZdVg"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           />
         </responsive__LinkContainer>
       </div>

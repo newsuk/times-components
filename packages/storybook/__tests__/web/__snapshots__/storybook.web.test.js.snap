@@ -2,7 +2,7 @@
 
 exports[`Bar Spacing Decorator 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "flex": 1,
@@ -20,7 +20,7 @@ exports[`Bar Spacing Decorator 1`] = `
 
 exports[`Centered Decorator 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "alignItems": "center",
@@ -45,7 +45,7 @@ exports[`Centered Decorator 1`] = `
 
 exports[`Lateral Spacing Decorator 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "flex": 1,
@@ -215,7 +215,7 @@ Array [
 
 exports[`White Background Decorator 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "backgroundColor": "white",

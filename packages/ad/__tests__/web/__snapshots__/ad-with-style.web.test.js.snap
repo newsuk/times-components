@@ -24,9 +24,9 @@ exports[`1. multiple ad slots 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-sc-nuazoi-0",
+                "componentId": "tc-view__TcView-nuazoi-0",
                 "isStatic": true,
-                "lastClassName": "gzApqG",
+                "lastClassName": "fPjBcr",
                 "rules": Array [
                   "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
                 ],
@@ -34,7 +34,7 @@ exports[`1. multiple ad slots 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -45,7 +45,7 @@ exports[`1. multiple ad slots 1`] = `
         >
           <div
             alignItems="center"
-            className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
             flex={1}
           >
             <DOMContext
@@ -86,9 +86,9 @@ exports[`1. multiple ad slots 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-sc-nuazoi-0",
+                "componentId": "tc-view__TcView-nuazoi-0",
                 "isStatic": true,
-                "lastClassName": "gzApqG",
+                "lastClassName": "fPjBcr",
                 "rules": Array [
                   "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
                 ],
@@ -96,7 +96,7 @@ exports[`1. multiple ad slots 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -107,7 +107,7 @@ exports[`1. multiple ad slots 1`] = `
         >
           <div
             alignItems="center"
-            className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
             flex={1}
           >
             <DOMContext
@@ -148,9 +148,9 @@ exports[`1. multiple ad slots 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-sc-nuazoi-0",
+                "componentId": "tc-view__TcView-nuazoi-0",
                 "isStatic": true,
-                "lastClassName": "gzApqG",
+                "lastClassName": "fPjBcr",
                 "rules": Array [
                   "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
                 ],
@@ -158,7 +158,7 @@ exports[`1. multiple ad slots 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -169,7 +169,7 @@ exports[`1. multiple ad slots 1`] = `
         >
           <div
             alignItems="center"
-            className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
             flex={1}
           >
             <DOMContext
@@ -214,9 +214,9 @@ exports[`2. placeholder when isloading 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "tc-view__TcView-sc-nuazoi-0",
+              "componentId": "tc-view__TcView-nuazoi-0",
               "isStatic": true,
-              "lastClassName": "gzApqG",
+              "lastClassName": "fPjBcr",
               "rules": Array [
                 "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
               ],
@@ -224,7 +224,7 @@ exports[`2. placeholder when isloading 1`] = `
             "displayName": "tc-view__TcView",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
+            "styledComponentId": "tc-view__TcView-nuazoi-0",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -235,7 +235,7 @@ exports[`2. placeholder when isloading 1`] = `
       >
         <div
           alignItems="center"
-          className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+          className="tc-view__TcView-nuazoi-0 fPjBcr"
           flex={1}
         />
       </StyledComponent>
@@ -267,9 +267,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "tc-view__TcView-sc-nuazoi-0",
+              "componentId": "tc-view__TcView-nuazoi-0",
               "isStatic": true,
-              "lastClassName": "gzApqG",
+              "lastClassName": "fPjBcr",
               "rules": Array [
                 "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
               ],
@@ -277,7 +277,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
             "displayName": "tc-view__TcView",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
+            "styledComponentId": "tc-view__TcView-nuazoi-0",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -288,7 +288,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
       >
         <div
           alignItems="center"
-          className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+          className="tc-view__TcView-nuazoi-0 fPjBcr"
           flex={1}
         >
           <DOMContext

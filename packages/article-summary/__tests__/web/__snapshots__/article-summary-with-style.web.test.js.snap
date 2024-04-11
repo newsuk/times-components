@@ -40,11 +40,11 @@ exports[`1. article summary component with a single paragraph 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={null}
 >
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <ArticleLabel
       color="#333333"

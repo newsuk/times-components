@@ -21,7 +21,7 @@ exports[`save and share bar component email icon when tokenising with loading st
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   data-testid="save-and-share-bar"
   style={
     Object {
@@ -36,7 +36,7 @@ exports[`save and share bar component save and share bar renders correctly when 
   }
 >
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     style={
       Object {
         "alignItems": "center",
@@ -106,7 +106,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </BarItem>
   </div>
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     data-testid="save-star"
     style={
       Object {
@@ -126,7 +126,7 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   data-testid="save-and-share-bar"
   style={
     Object {
@@ -141,7 +141,7 @@ exports[`save and share bar component save and share bar renders correctly when 
   }
 >
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     style={
       Object {
         "alignItems": "center",

@@ -2,10 +2,10 @@
 
 exports[`1. with a single author 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-sc-aqlxmn-0 dEEpMG"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Alexandra Frean
   </div>
@@ -14,10 +14,10 @@ exports[`1. with a single author 1`] = `
 
 exports[`2. with a very long byline 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-sc-aqlxmn-0 dEEpMG"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
@@ -27,7 +27,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-sc-aqlxmn-0 dEEpMG"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
@@ -37,7 +37,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-sc-aqlxmn-0 dEEpMG"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>

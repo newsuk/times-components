@@ -2,7 +2,7 @@
 
 exports[`The Web serializer should effect children 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "flex": 1,
@@ -24,7 +24,7 @@ exports[`The Web serializer should effect children 1`] = `
 
 exports[`The Web serializer should effect multiple children 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "backgroundColor": "red",
@@ -53,7 +53,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
     child 2
   </div>
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 kwFxdN"
@@ -71,7 +71,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
 
 exports[`The Web serializer should effect render props 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "flex": 1,
@@ -79,7 +79,7 @@ exports[`The Web serializer should effect render props 1`] = `
   }
 >
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   />
 </div>
 `;
@@ -99,7 +99,7 @@ exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`
 
 exports[`The Web serializer should squash identical styles 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
       "backgroundColor": "red",
@@ -128,7 +128,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
     child 2
   </div>
   <div
-    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 kwFxdN"

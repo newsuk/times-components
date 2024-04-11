@@ -1,38 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. closeicon renders with different colours 1`] = `
-Array [
-  <title />,
-  <path
-    fill="white"
-    stroke="white"
-  />,
-]
-`;
-
-exports[`2. iconactivityindicator renders with different colours 1`] = `
-<activity-indicator__ActivityIndicatorContainer>
-  <div>
-    <activity-indicator__ActivityIndicatorSpinner>
-      <div />
-    </activity-indicator__ActivityIndicatorSpinner>
-  </div>
-</activity-indicator__ActivityIndicatorContainer>
-`;
-
-exports[`3. iconcopylink renders with different colours 1`] = `
-Array [
-  <title>
-    Copy link to clipboard
-  </title>,
-  <path
-    fill="#facade"
-    stroke="#c0ffee"
-  />,
-]
-`;
-
-exports[`4. iconemail renders with different colours 1`] = `
+exports[`1. iconemail renders with different colours 1`] = `
 Array [
   <title>
     Email Icon
@@ -46,7 +14,7 @@ Array [
 ]
 `;
 
-exports[`5. iconfacebook renders with different colours 1`] = `
+exports[`2. iconfacebook renders with different colours 1`] = `
 Array [
   <title>
     Facebook Icon
@@ -60,7 +28,7 @@ Array [
 ]
 `;
 
-exports[`6. iconforwardarrow renders with different colours 1`] = `
+exports[`3. iconforwardarrow renders with different colours 1`] = `
 <g
   fill="#facade"
 >
@@ -68,27 +36,7 @@ exports[`6. iconforwardarrow renders with different colours 1`] = `
 </g>
 `;
 
-exports[`7. iconforwardchevron renders with different colours 1`] = `
-<g
-  fill="#facade"
->
-  <path />
-</g>
-`;
-
-exports[`8. iconsavebookmark renders with different colours 1`] = `
-Array [
-  <title>
-    Save to My Articles
-  </title>,
-  <path
-    fill="#facade"
-    stroke="#c0ffee"
-  />,
-]
-`;
-
-exports[`9. iconstar renders with different colours 1`] = `
+exports[`4. iconstar renders with different colours 1`] = `
 Array [
   <title>
     Save star
@@ -100,7 +48,31 @@ Array [
 ]
 `;
 
-exports[`10. icontwitter renders with different colours 1`] = `
+exports[`5. iconcopylink renders with different colours 1`] = `
+Array [
+  <title>
+    Copy link to clipboard
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
+`;
+
+exports[`6. iconsavebookmark renders with different colours 1`] = `
+Array [
+  <title>
+    Save to My Articles
+  </title>,
+  <path
+    fill="#facade"
+    stroke="#c0ffee"
+  />,
+]
+`;
+
+exports[`7. icontwitter renders with different colours 1`] = `
 Array [
   <title>
     Twitter Icon
@@ -121,7 +93,7 @@ Array [
 ]
 `;
 
-exports[`11. iconvideo renders with different colours 1`] = `
+exports[`8. iconvideo renders with different colours 1`] = `
 Array [
   <title>
     Video Icon
@@ -137,7 +109,7 @@ Array [
 ]
 `;
 
-exports[`12. iconvideo360player renders with different colours 1`] = `
+exports[`9. iconvideo360player renders with different colours 1`] = `
 Array [
   <title>
     Video 360 Player Icon
@@ -149,7 +121,7 @@ Array [
 ]
 `;
 
-exports[`13. thestlogo renders with different colours 1`] = `
+exports[`10. thestlogo renders with different colours 1`] = `
 Array [
   <title>
     ST
@@ -161,7 +133,7 @@ Array [
 ]
 `;
 
-exports[`14. thetimeslogo renders with different colours 1`] = `
+exports[`11. thetimeslogo renders with different colours 1`] = `
 Array [
   <title>
     The Times
@@ -171,4 +143,32 @@ Array [
     stroke="#c0ffee"
   />,
 ]
+`;
+
+exports[`12. closeicon renders with different colours 1`] = `
+Array [
+  <title />,
+  <path
+    fill="white"
+    stroke="white"
+  />,
+]
+`;
+
+exports[`13. iconforwardchevron renders with different colours 1`] = `
+<g
+  fill="#facade"
+>
+  <path />
+</g>
+`;
+
+exports[`14. iconactivityindicator renders with different colours 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div>
+    <activity-indicator__ActivityIndicatorSpinner>
+      <div />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
 `;

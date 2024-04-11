@@ -1,64 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. closeicon renders 1`] = `
-<svg
-  aria-label="icon-close"
-  height={28}
-  role="img"
-  title="Close Icon"
-  viewBox="a20267b134584c37a6dc39235d4a5519"
-  width={20}
->
-  <title>
-    CloseIcon
-  </title>
-  <path
-    d="e47f4fab4bd751d2d3ea1eb7a66c492a"
-    fill="white"
-    stroke="white"
-  />
-</svg>
-`;
-
-exports[`2. iconactivityindicator renders 1`] = `
-<activity-indicator__ActivityIndicatorContainer>
-  <div
-    className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
-  >
-    <activity-indicator__ActivityIndicatorSpinner
-      data-fill-colour="#006699"
-      data-title="IconActivityIndicator"
-    >
-      <div
-        className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
-        data-fill-colour="#006699"
-        data-title="IconActivityIndicator"
-      />
-    </activity-indicator__ActivityIndicatorSpinner>
-  </div>
-</activity-indicator__ActivityIndicatorContainer>
-`;
-
-exports[`3. iconcopylink renders 1`] = `
-<svg
-  aria-label="icon-copy-link"
-  height={15}
-  role="img"
-  title="IconCopyLink"
-  viewBox="7798bdae936d01418f5704cad29092ad"
-  width={20}
->
-  <title>
-    IconCopyLink
-  </title>
-  <path
-    d="9caedb2f218a37cd4660f2ab42e9b771"
-    fill="#696969"
-  />
-</svg>
-`;
-
-exports[`4. iconemail renders 1`] = `
+exports[`1. iconemail renders 1`] = `
 <svg
   aria-label="icon-email"
   role="img"
@@ -80,7 +22,7 @@ exports[`4. iconemail renders 1`] = `
 </svg>
 `;
 
-exports[`5. iconfacebook renders 1`] = `
+exports[`2. iconfacebook renders 1`] = `
 <svg
   aria-label="icon-facebook"
   role="img"
@@ -102,7 +44,7 @@ exports[`5. iconfacebook renders 1`] = `
 </svg>
 `;
 
-exports[`6. iconforwardarrow renders 1`] = `
+exports[`3. iconforwardarrow renders 1`] = `
 <svg
   aria-label="icon-forward-arrow"
   height={12}
@@ -119,23 +61,44 @@ exports[`6. iconforwardarrow renders 1`] = `
 </svg>
 `;
 
-exports[`7. iconforwardchevron renders 1`] = `
+exports[`4. iconstar renders 1`] = `
 <svg
-  aria-label="icon-forward-chevron"
-  viewBox="5c14eb9241a8569e247b0186d9e66a8a"
+  aria-label="icon-save-star"
+  role="img"
+  title="IconStar"
+  viewBox="951cf65ef61fef616e498a37f3f5a9b1"
   width={20}
 >
-  <g
+  <title>
+    IconStar
+  </title>
+  <path
+    d="20db890d0ec5651ed550568cd37b5875"
     fill="#006699"
-  >
-    <path
-      d="cf23b8f47ac97eeec14ee4c65e472078"
-    />
-  </g>
+  />
 </svg>
 `;
 
-exports[`8. iconsavebookmark renders 1`] = `
+exports[`5. iconcopylink renders 1`] = `
+<svg
+  aria-label="icon-copy-link"
+  height={15}
+  role="img"
+  title="IconCopyLink"
+  viewBox="7798bdae936d01418f5704cad29092ad"
+  width={20}
+>
+  <title>
+    IconCopyLink
+  </title>
+  <path
+    d="9caedb2f218a37cd4660f2ab42e9b771"
+    fill="#696969"
+  />
+</svg>
+`;
+
+exports[`6. iconsavebookmark renders 1`] = `
 <svg
   aria-label="icon-save-bookmark"
   height={16}
@@ -154,25 +117,7 @@ exports[`8. iconsavebookmark renders 1`] = `
 </svg>
 `;
 
-exports[`9. iconstar renders 1`] = `
-<svg
-  aria-label="icon-save-star"
-  role="img"
-  title="IconStar"
-  viewBox="951cf65ef61fef616e498a37f3f5a9b1"
-  width={20}
->
-  <title>
-    IconStar
-  </title>
-  <path
-    d="20db890d0ec5651ed550568cd37b5875"
-    fill="#006699"
-  />
-</svg>
-`;
-
-exports[`10. icontwitter renders 1`] = `
+exports[`7. icontwitter renders 1`] = `
 <svg
   aria-label="icon-twitter"
   role="img"
@@ -204,7 +149,7 @@ exports[`10. icontwitter renders 1`] = `
 </svg>
 `;
 
-exports[`11. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <svg
   aria-label="icon-video"
   role="img"
@@ -229,7 +174,7 @@ exports[`11. iconvideo renders 1`] = `
 </svg>
 `;
 
-exports[`12. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <svg
   aria-label="icon-video-360-player"
   role="img"
@@ -247,7 +192,7 @@ exports[`12. iconvideo360player renders 1`] = `
 </svg>
 `;
 
-exports[`13. thestlogo renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
 <svg
   aria-label="logo-the-sunday-times"
   role="img"
@@ -265,7 +210,7 @@ exports[`13. thestlogo renders 1`] = `
 </svg>
 `;
 
-exports[`14. thetimeslogo renders 1`] = `
+exports[`11. thetimeslogo renders 1`] = `
 <svg
   aria-label="logo-the-times"
   role="img"
@@ -281,4 +226,59 @@ exports[`14. thetimeslogo renders 1`] = `
     fill="#FFFFFF"
   />
 </svg>
+`;
+
+exports[`12. closeicon renders 1`] = `
+<svg
+  aria-label="icon-close"
+  height={28}
+  role="img"
+  title="Close Icon"
+  viewBox="a20267b134584c37a6dc39235d4a5519"
+  width={20}
+>
+  <title>
+    CloseIcon
+  </title>
+  <path
+    d="e47f4fab4bd751d2d3ea1eb7a66c492a"
+    fill="white"
+    stroke="white"
+  />
+</svg>
+`;
+
+exports[`13. iconforwardchevron renders 1`] = `
+<svg
+  aria-label="icon-forward-chevron"
+  viewBox="5c14eb9241a8569e247b0186d9e66a8a"
+  width={20}
+>
+  <g
+    fill="#006699"
+  >
+    <path
+      d="cf23b8f47ac97eeec14ee4c65e472078"
+    />
+  </g>
+</svg>
+`;
+
+exports[`14. iconactivityindicator renders 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div
+    className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
+  >
+    <activity-indicator__ActivityIndicatorSpinner
+      data-fill-colour="#006699"
+      data-title="IconActivityIndicator"
+    >
+      <div
+        className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
+        data-fill-colour="#006699"
+        data-title="IconActivityIndicator"
+      />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
 `;

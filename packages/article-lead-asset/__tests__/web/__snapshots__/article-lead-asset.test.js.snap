@@ -2,18 +2,18 @@
 
 exports[`1. renders correctly with an image lead asset 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     margin={0}
   >
     <div
-      className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
       paddingBottom="56.25%"
       position="relative"
     >
       <div
-        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
         height="100%"
         position="absolute"
         width="100%"
@@ -59,18 +59,18 @@ exports[`1. renders correctly with an image lead asset 1`] = `
 
 exports[`2. renders correctly with a video lead asset 1`] = `
 <div
-  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     margin={0}
   >
     <div
-      className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
       paddingBottom="56.25%"
       position="relative"
     >
       <div
-        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
         height="100%"
         position="absolute"
         width="100%"
@@ -115,18 +115,18 @@ exports[`4. correctly renders when there is no displayimage 1`] = `null`;
 
 exports[`5. it renders correctly with a classname 1`] = `
 <div
-  className="test-class-name tc-view__TcView-sc-nuazoi-0 gzApqG"
+  className="test-class-name tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     margin={0}
   >
     <div
-      className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
       paddingBottom="56.25%"
       position="relative"
     >
       <div
-        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
         height="100%"
         position="absolute"
         width="100%"
