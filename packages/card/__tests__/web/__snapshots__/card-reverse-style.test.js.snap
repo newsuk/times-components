@@ -42,16 +42,6 @@ exports[`card with reversed layout 1`] = `
   z-index: 2;
 }
 
-.c4 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
-}
-
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;

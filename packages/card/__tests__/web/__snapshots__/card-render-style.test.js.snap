@@ -19,7 +19,7 @@ exports[`card with default layout 1`] = `
   z-index: 0;
 }
 
-.c4 {
+.c3 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -43,16 +43,6 @@ exports[`card with default layout 1`] = `
 }
 
 .c2 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
-}
-
-.c3 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -191,7 +181,7 @@ exports[`card with default layout 1`] = `
               "componentStyle": ComponentStyle {
                 "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
                 "isStatic": false,
-                "lastClassName": "c3",
+                "lastClassName": "c2",
                 "rules": Array [
                   "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
                   [Function],
@@ -220,7 +210,7 @@ exports[`card with default layout 1`] = `
           }
         >
           <div
-            className="c3"
+            className="c2"
           >
             <tc-text__TcText>
               <StyledComponent
@@ -231,7 +221,7 @@ exports[`card with default layout 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "c4",
+                      "lastClassName": "c3",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -249,7 +239,7 @@ exports[`card with default layout 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="c4"
+                  className="c3"
                 >
                   A card
                 </div>
