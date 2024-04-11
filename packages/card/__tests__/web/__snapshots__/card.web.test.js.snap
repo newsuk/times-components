@@ -852,7 +852,7 @@ exports[`7. card with a loading state 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1057,7 +1057,7 @@ exports[`8. card with a loading state and no image 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1221,7 +1221,7 @@ exports[`9. card with reversed loading state 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1426,7 +1426,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
