@@ -104,10 +104,10 @@ export const ArticleContent = styled.div`
 `;
 
 export const EmailBannerContainer = styled.div`
-  position: fixed;
-  top: 20px;
+  position: sticky;
+  top: 80px;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   justify-content: center;
 `;

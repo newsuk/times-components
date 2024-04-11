@@ -23,13 +23,13 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
         <Wrapper>
           <TitleWrapper>
             <NewsKitEmailIcon />
-            <Title>{title}</Title>
+            <Title typographyPreset="editorialHeadline010">{title}</Title>
           </TitleWrapper>
           <CloseIconWrapper onClick={onClose}>
             <NewsKitCloseIconBlack width={14} height={14} />
           </CloseIconWrapper>
         </Wrapper>
-        <Body>{body}</Body>
+        <Body typographyPreset="utilityBody010">{body}</Body>
       </NewsKitBanner>
     </BannerWrapper>
   );

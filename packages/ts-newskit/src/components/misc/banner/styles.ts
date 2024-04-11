@@ -1,10 +1,10 @@
-import { styled, Banner } from 'newskit';
-import { fonts } from 'newskit/cjs/theme/foundations/fonts';
+import { styled, Banner, TextBlock } from 'newskit';
 
 export const BannerWrapper = styled.div`
   width: 100%;
   max-width: 498px;
   box-shadow: 0px 16px 24px 0px rgba(17, 17, 17, 0.08);
+  z-index: 100;
 `;
 
 export const NewsKitBanner = styled(Banner)`
@@ -29,20 +29,15 @@ export const TitleWrapper = styled.div`
   width: 100%;
 `;
 
-export const Title = styled.h3`
+export const Title = styled(TextBlock)`
   color: #333;
-  font-family: ${fonts.fontSize040};
-  font-size: 18px;
   font-weight: 700;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 16px;
 `;
 
-export const Body = styled.p`
-  color: #333;
-  font-family: Roboto;
-  font-size: 14px;
+export const Body = styled(TextBlock)`
+  color: #696969;
   font-weight: 400;
-  line-height: 24px;
   margin: 0;
 `;
 

@@ -3,7 +3,7 @@
 exports[`Banner renders the banner 1`] = `
 <DocumentFragment>
   <div
-    class="css-bqo7h7"
+    class="css-1tu1y1s"
   >
     <div
       class="css-gre9re"
@@ -54,11 +54,11 @@ exports[`Banner renders the banner 1`] = `
                               fill="#000"
                             />
                           </svg>
-                          <h3
-                            class="css-14u0las"
+                          <p
+                            class="css-1v8qzr2"
                           >
                             Title
-                          </h3>
+                          </p>
                         </div>
                         <button
                           class="css-1fwgiu8"
@@ -79,7 +79,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-1offafh"
+                        class="css-ek7xhi"
                       >
                         Body
                       </p>
@@ -141,11 +141,11 @@ exports[`Banner renders the banner 1`] = `
                               fill="#000"
                             />
                           </svg>
-                          <h3
-                            class="css-14u0las"
+                          <p
+                            class="css-1v8qzr2"
                           >
                             Title
-                          </h3>
+                          </p>
                         </div>
                         <button
                           class="css-1fwgiu8"
@@ -166,7 +166,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-1offafh"
+                        class="css-ek7xhi"
                       >
                         Body
                       </p>
