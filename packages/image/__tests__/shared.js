@@ -116,11 +116,7 @@ export default () => {
       name: "to not have the lcpItem class",
       test: () => {
         const testRenderer = TestRenderer.create(
-          <Image
-            aspectRatio={2}
-            highResSize={1400}
-            uri="https://image.io"
-          />
+          <Image aspectRatio={2} highResSize={1400} uri="https://image.io" />
         );
 
         const lcpImageItem = testRenderer.root.findByType("div");
