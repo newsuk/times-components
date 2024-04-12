@@ -2,7 +2,7 @@
 
 exports[`1. group of topics 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
   flexDirection="row"
   flexWrap="wrap"
   justifyContent="center"
@@ -10,7 +10,7 @@ exports[`1. group of topics 1`] = `
   style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
     marginRight="10px"
     marginTop="10px"
     maxWidth="80%"
@@ -22,7 +22,7 @@ exports[`1. group of topics 1`] = `
         borderColor="#DBDBDB"
         borderRadius={2}
         borderWidth={1}
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
         paddingBottom="10px"
         paddingLeft="15px"
         paddingRight="15px"
@@ -51,7 +51,7 @@ exports[`1. group of topics 1`] = `
 
 exports[`2. group of topics at large scale 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
   flexDirection="row"
   flexWrap="wrap"
   justifyContent="center"
@@ -59,7 +59,7 @@ exports[`2. group of topics at large scale 1`] = `
   style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
     marginRight="10px"
     marginTop="10px"
     maxWidth="80%"
@@ -71,7 +71,7 @@ exports[`2. group of topics at large scale 1`] = `
         borderColor="#DBDBDB"
         borderRadius={2}
         borderWidth={1}
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
         paddingBottom="10px"
         paddingLeft="15px"
         paddingRight="15px"
@@ -100,7 +100,7 @@ exports[`2. group of topics at large scale 1`] = `
 
 exports[`3. group of topics at xlarge scale 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
   flexDirection="row"
   flexWrap="wrap"
   justifyContent="center"
@@ -108,7 +108,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
   style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG"
     marginRight="10px"
     marginTop="10px"
     maxWidth="80%"
@@ -120,7 +120,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
         borderColor="#DBDBDB"
         borderRadius={2}
         borderWidth={1}
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
         paddingBottom="10px"
         paddingLeft="15px"
         paddingRight="15px"
@@ -149,7 +149,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
 
 exports[`4. article topic with style 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
   marginRight="10px"
   marginTop="10px"
   maxWidth="80%"
@@ -161,7 +161,7 @@ exports[`4. article topic with style 1`] = `
       borderColor="#DBDBDB"
       borderRadius={2}
       borderWidth={1}
-      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       paddingBottom="10px"
       paddingLeft="15px"
       paddingRight="15px"
@@ -189,7 +189,7 @@ exports[`4. article topic with style 1`] = `
 
 exports[`5. article topic with no additional style 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
   marginRight="10px"
   marginTop="10px"
   maxWidth="80%"
@@ -201,7 +201,7 @@ exports[`5. article topic with no additional style 1`] = `
       borderColor="#DBDBDB"
       borderRadius={2}
       borderWidth={1}
-      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       paddingBottom="10px"
       paddingLeft="15px"
       paddingRight="15px"

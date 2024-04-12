@@ -102,3 +102,12 @@ export const ArticleContent = styled.div`
     transition: margin-top 0.2s ease;
   }
 `;
+
+export const EmailBannerContainer = styled.div`
+  position: sticky;
+  top: 80px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+`;

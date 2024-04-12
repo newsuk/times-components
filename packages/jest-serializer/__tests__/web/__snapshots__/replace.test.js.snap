@@ -9,9 +9,9 @@ exports[`The replace serializer should provide a helper to return the child of a
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "gzApqG",
             "rules": Array [
               "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             ],
@@ -19,7 +19,7 @@ exports[`The replace serializer should provide a helper to return the child of a
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -29,7 +29,7 @@ exports[`The replace serializer should provide a helper to return the child of a
       forwardedRef={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       >
         <tc-text__TcText>
           <StyledComponent
@@ -78,9 +78,9 @@ exports[`The replace serializer should provide a helper to return the children o
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "tc-view__TcView-nuazoi-0",
+          "componentId": "tc-view__TcView-sc-nuazoi-0",
           "isStatic": true,
-          "lastClassName": "fPjBcr",
+          "lastClassName": "gzApqG",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
           ],
@@ -88,7 +88,7 @@ exports[`The replace serializer should provide a helper to return the children o
         "displayName": "tc-view__TcView",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -209,9 +209,9 @@ exports[`The replace serializer should provide a helper to return the component 
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "gzApqG",
             "rules": Array [
               "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             ],
@@ -219,7 +219,7 @@ exports[`The replace serializer should provide a helper to return the component 
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -229,7 +229,7 @@ exports[`The replace serializer should provide a helper to return the component 
       forwardedRef={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       >
         <ChildComponent
           text="Hello world!"
@@ -249,9 +249,9 @@ exports[`The replace serializer should replace the expected component 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "gzApqG",
             "rules": Array [
               "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             ],
@@ -259,7 +259,7 @@ exports[`The replace serializer should replace the expected component 1`] = `
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -269,7 +269,7 @@ exports[`The replace serializer should replace the expected component 1`] = `
       forwardedRef={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       >
         <Placeholder>
           <ForwardRef(tc-text__TcText)>
@@ -291,9 +291,9 @@ exports[`The replace serializer should replace the expected component completely
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "gzApqG",
             "rules": Array [
               "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             ],
@@ -301,7 +301,7 @@ exports[`The replace serializer should replace the expected component completely
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -311,7 +311,7 @@ exports[`The replace serializer should replace the expected component completely
       forwardedRef={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="tc-view__TcView-sc-nuazoi-0 gzApqG"
       />
     </StyledComponent>
   </tc-view__TcView>

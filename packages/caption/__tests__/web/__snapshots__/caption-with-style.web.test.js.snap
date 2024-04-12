@@ -27,10 +27,10 @@ exports[`1. caption with container and text styles 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS3"
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
@@ -76,10 +76,10 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS3"
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
@@ -125,10 +125,10 @@ exports[`3. caption with only container styles 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-sc-nuazoi-0 gzApqG IS3"
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"

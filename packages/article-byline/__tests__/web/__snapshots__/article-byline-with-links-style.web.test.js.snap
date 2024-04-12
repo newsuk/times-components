@@ -13,10 +13,10 @@ exports[`1. with a single author 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN IS1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy IS1"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -55,10 +55,10 @@ exports[`2. with a very long byline 1`] = `
 </style>
 
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN IS1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy IS1"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -69,7 +69,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN IS2"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy IS2"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -80,7 +80,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN IS3"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy IS3"
     href="/profile/camilla-long"
   >
     Camilla Long

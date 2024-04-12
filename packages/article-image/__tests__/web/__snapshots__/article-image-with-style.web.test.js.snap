@@ -75,7 +75,7 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -85,7 +85,7 @@ Array [
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -124,7 +124,7 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -134,7 +134,7 @@ Array [
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -167,7 +167,7 @@ Array [
                 },
                 "displayName": "responsive__InsetCaptionStyle",
                 "foldedComponentIds": Array [
-                  "tc-view__TcView-nuazoi-0",
+                  "tc-view__TcView-sc-nuazoi-0",
                 ],
                 "render": [Function],
                 "styledComponentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
@@ -189,7 +189,7 @@ Array [
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "tc-view__TcView-nuazoi-0",
+                        "componentId": "tc-view__TcView-sc-nuazoi-0",
                         "isStatic": true,
                         "lastClassName": "c0",
                         "rules": Array [
@@ -199,7 +199,7 @@ Array [
                       "displayName": "tc-view__TcView",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "tc-view__TcView-nuazoi-0",
+                      "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -218,7 +218,7 @@ Array [
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "tc-view__TcView-nuazoi-0",
+                              "componentId": "tc-view__TcView-sc-nuazoi-0",
                               "isStatic": true,
                               "lastClassName": "c0",
                               "rules": Array [
@@ -228,7 +228,7 @@ Array [
                             "displayName": "tc-view__TcView",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "tc-view__TcView-nuazoi-0",
+                            "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -385,7 +385,7 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -395,7 +395,7 @@ Array [
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -434,7 +434,7 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "tc-view__TcView-sc-nuazoi-0",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -444,7 +444,7 @@ Array [
           "displayName": "tc-view__TcView",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -463,7 +463,7 @@ Array [
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "tc-view__TcView-nuazoi-0",
+                  "componentId": "tc-view__TcView-sc-nuazoi-0",
                   "isStatic": true,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -473,7 +473,7 @@ Array [
                 "displayName": "tc-view__TcView",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "tc-view__TcView-nuazoi-0",
+                "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -492,7 +492,7 @@ Array [
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "tc-view__TcView-nuazoi-0",
+                        "componentId": "tc-view__TcView-sc-nuazoi-0",
                         "isStatic": true,
                         "lastClassName": "c0",
                         "rules": Array [
@@ -502,7 +502,7 @@ Array [
                       "displayName": "tc-view__TcView",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "tc-view__TcView-nuazoi-0",
+                      "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],

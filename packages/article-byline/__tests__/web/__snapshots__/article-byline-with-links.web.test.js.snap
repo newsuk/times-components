@@ -2,7 +2,7 @@
 
 exports[`1. single inline element 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 VMNeC"
@@ -14,10 +14,10 @@ exports[`1. single inline element 1`] = `
 
 exports[`2. with the author in the begining 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -32,7 +32,7 @@ exports[`2. with the author in the begining 1`] = `
 
 exports[`3. with the author at the end 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 VMNeC"
@@ -40,7 +40,7 @@ exports[`3. with the author at the end 1`] = `
     RBS Six Nations, 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/mike-atherton"
   >
     Mike Atherton
@@ -50,10 +50,10 @@ exports[`3. with the author at the end 1`] = `
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -64,7 +64,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
      | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/mike-atherton"
   >
     Mike Atherton
@@ -75,7 +75,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
      | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -85,10 +85,10 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -99,7 +99,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
     , 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/mike-atherton"
   >
     Mike Atherton
@@ -110,7 +110,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
     , 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -120,10 +120,10 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 
 exports[`6. with multiple authors separated by spaces 1`] = `
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="tc-view__TcView-sc-nuazoi-0 gzApqG"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/camilla-long"
   >
     Camilla Long
@@ -134,13 +134,13 @@ exports[`6. with multiple authors separated by spaces 1`] = `
      
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/mike-atherton"
   >
     Mike Atherton
   </a>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 vSslN"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-sc-xyehx2-0 czgENy"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
