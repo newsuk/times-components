@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.16.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.33...@times-components/image@6.16.0) (2024-04-12)
+
+
+### Features
+
+* **TMD-177:** removed low res article images ([#3810](https://github.com/newsuk/times-components/issues/3810)) ([2b821e0](https://github.com/newsuk/times-components/commit/2b821e060140457d300ea9ecf8e876eb4e30b944))
+
+
+
+
+
 ## [6.15.33](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.32...@times-components/image@6.15.33) (2024-03-25)
 
 **Note:** Version bump only for package @times-components/image

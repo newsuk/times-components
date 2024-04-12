@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.12.60",
+  "version": "2.12.61",
   "description": "Bulleted list of text data ",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -56,7 +56,7 @@
     "@times-components/markup": "3.8.40",
     "@times-components/markup-forest": "1.9.1",
     "@times-components/responsive": "0.21.4",
-    "@times-components/ts-components": "1.82.1",
+    "@times-components/ts-components": "1.83.0",
     "@times-components/ts-styleguide": "1.50.13",
     "@times-components/utils": "6.20.1",
     "prop-types": "15.7.2",
