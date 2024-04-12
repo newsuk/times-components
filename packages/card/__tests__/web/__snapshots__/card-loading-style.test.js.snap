@@ -83,7 +83,7 @@ exports[`1. card loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-sc-je5757-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -118,10 +118,10 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-sc-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-sc-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -150,7 +150,7 @@ exports[`1. card loading state 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-nuazoi-0",
+                "componentId": "tc-view__TcView-sc-nuazoi-0",
                 "isStatic": true,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -160,7 +160,7 @@ exports[`1. card loading state 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -191,7 +191,7 @@ exports[`1. card loading state 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "componentId": "tc-view__TcView-sc-nuazoi-0",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -201,7 +201,7 @@ exports[`1. card loading state 1`] = `
                     "displayName": "tc-view__TcView",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -259,7 +259,7 @@ exports[`1. card loading state 1`] = `
                     },
                     "displayName": "card-content__TcCardContainer",
                     "foldedComponentIds": Array [
-                      "tc-view__TcView-nuazoi-0",
+                      "tc-view__TcView-sc-nuazoi-0",
                     ],
                     "render": [Function],
                     "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
@@ -408,7 +408,7 @@ exports[`2. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-sc-je5757-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -443,10 +443,10 @@ exports[`2. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-sc-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-sc-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -476,7 +476,7 @@ exports[`2. card with reversed loading state 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-nuazoi-0",
+                "componentId": "tc-view__TcView-sc-nuazoi-0",
                 "isStatic": true,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -486,7 +486,7 @@ exports[`2. card with reversed loading state 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -535,7 +535,7 @@ exports[`2. card with reversed loading state 1`] = `
                     },
                     "displayName": "card-content__TcCardContainer",
                     "foldedComponentIds": Array [
-                      "tc-view__TcView-nuazoi-0",
+                      "tc-view__TcView-sc-nuazoi-0",
                     ],
                     "render": [Function],
                     "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
@@ -607,7 +607,7 @@ exports[`2. card with reversed loading state 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "componentId": "tc-view__TcView-sc-nuazoi-0",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -617,7 +617,7 @@ exports[`2. card with reversed loading state 1`] = `
                     "displayName": "tc-view__TcView",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],

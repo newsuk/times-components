@@ -83,7 +83,7 @@ exports[`card with reversed layout 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "tc-view__TcView-nuazoi-0",
+          "componentId": "tc-view__TcView-sc-nuazoi-0",
           "isStatic": true,
           "lastClassName": "c0",
           "rules": Array [
@@ -93,7 +93,7 @@ exports[`card with reversed layout 1`] = `
         "displayName": "tc-view__TcView",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -141,7 +141,7 @@ exports[`card with reversed layout 1`] = `
               },
               "displayName": "card-content__TcCardContainer",
               "foldedComponentIds": Array [
-                "tc-view__TcView-nuazoi-0",
+                "tc-view__TcView-sc-nuazoi-0",
               ],
               "render": [Function],
               "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
@@ -213,7 +213,7 @@ exports[`card with reversed layout 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "tc-view__TcView-nuazoi-0",
+                "componentId": "tc-view__TcView-sc-nuazoi-0",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -223,7 +223,7 @@ exports[`card with reversed layout 1`] = `
               "displayName": "tc-view__TcView",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "styledComponentId": "tc-view__TcView-sc-nuazoi-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
