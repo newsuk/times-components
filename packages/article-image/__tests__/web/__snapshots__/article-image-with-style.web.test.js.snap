@@ -110,7 +110,6 @@ Array [
           fadeImageIn={false}
           highResSize={null}
           isLcpItem={false}
-          lowResSize={null}
           onImagePress={null}
           rounded={false}
           uri="https://img/someImage"
@@ -421,7 +420,6 @@ Array [
           fadeImageIn={false}
           highResSize={null}
           isLcpItem={false}
-          lowResSize={null}
           onImagePress={null}
           rounded={false}
           uri="https://img/someImage"
