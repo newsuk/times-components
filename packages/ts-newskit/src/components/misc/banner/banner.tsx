@@ -17,6 +17,7 @@ type Props = {
 };
 
 export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
+  console.log('test')
   return (
     <BannerWrapper>
       <NewsKitBanner aria-label="Email verification banner">
