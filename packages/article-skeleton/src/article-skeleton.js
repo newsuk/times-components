@@ -129,7 +129,7 @@ const ArticleSkeleton = ({
   };
 
   useEffect(() => {
-    const verifyEmailFlag = !!window.sessionStorage.getItem("verifyEmail");
+    const verifyEmailFlag = !!JSON.parse(window.sessionStorage.getItem("verifyEmail"));
     setShowEmailVerifyBanner(verifyEmailFlag);
   }, []);
 
