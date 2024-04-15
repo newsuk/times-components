@@ -17,7 +17,8 @@ import {
   TCThemeProvider,
   UpdateButtonWithDelay,
   PuzzlesWebLightTheme,
-  ArticleSidebar
+  ArticleSidebar,
+  Banner
 } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
@@ -39,7 +40,8 @@ import {
   PuzzlesSidebar,
   SidebarWarpper,
   ArticleWrapper,
-  ArticleContent
+  ArticleContent,
+  EmailBannerContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -92,6 +94,8 @@ const ArticleSkeleton = ({
     isCommentEnabled
   } = article;
 
+  const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
+
   const sidebarRef = useRef();
 
   const handleScroll = () => {
@@ -123,6 +127,13 @@ const ArticleSkeleton = ({
       }
     }
   };
+
+  useEffect(() => {
+    const verifyEmailFlag = !!JSON.parse(
+      window.sessionStorage.getItem("verifyEmail")
+    );
+    setShowEmailVerifyBanner(verifyEmailFlag);
+  }, []);
 
   useEffect(() => {
     const sidebarNode = sidebarRef.current;
@@ -210,6 +221,18 @@ const ArticleSkeleton = ({
         }}
         analyticsStream={analyticsStream}
       >
+        {showVerifyEmailBanner && (
+          <EmailBannerContainer>
+            <Banner
+              title="Check your inbox"
+              body="Verify your email by clicking on the link sent to your inbox."
+              onClose={() => {
+                window.sessionStorage.setItem("verifyEmail", false);
+                setShowEmailVerifyBanner(false);
+              }}
+            />
+          </EmailBannerContainer>
+        )}
         {isPreview && (
           <div className="Container">
             <div className="ArticleMetaBanner">
