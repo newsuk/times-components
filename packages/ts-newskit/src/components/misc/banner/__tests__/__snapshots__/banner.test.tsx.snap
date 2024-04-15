@@ -3,14 +3,14 @@
 exports[`Banner renders the banner 1`] = `
 <DocumentFragment>
   <div
-    class="css-1tu1y1s"
+    class="css-197qwxt"
   >
     <div
       class="css-gre9re"
     >
       <div
         aria-label="Email verification banner"
-        class="css-1gud7zt"
+        class="css-1qyqnch"
         data-testid="banner-container"
         role="region"
       >
@@ -36,7 +36,7 @@ exports[`Banner renders the banner 1`] = `
                       class="css-s5sjj8"
                     >
                       <div
-                        class="css-1x0hqjg"
+                        class="css-1bjb3mr"
                       >
                         <div
                           class="css-1vptl7o"
@@ -55,7 +55,7 @@ exports[`Banner renders the banner 1`] = `
                             />
                           </svg>
                           <p
-                            class="css-1v8qzr2"
+                            class="css-hk5gs7"
                           >
                             Title
                           </p>
@@ -79,7 +79,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-ek7xhi"
+                        class="css-j9qpwq"
                       >
                         Body
                       </p>
@@ -97,7 +97,7 @@ exports[`Banner renders the banner 1`] = `
     >
       <div
         aria-label="Email verification banner"
-        class="css-1gud7zt"
+        class="css-1qyqnch"
         data-testid="banner-container"
         role="region"
       >
@@ -123,7 +123,7 @@ exports[`Banner renders the banner 1`] = `
                       class="css-s5sjj8"
                     >
                       <div
-                        class="css-1x0hqjg"
+                        class="css-1bjb3mr"
                       >
                         <div
                           class="css-1vptl7o"
@@ -142,7 +142,7 @@ exports[`Banner renders the banner 1`] = `
                             />
                           </svg>
                           <p
-                            class="css-1v8qzr2"
+                            class="css-hk5gs7"
                           >
                             Title
                           </p>
@@ -166,7 +166,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-ek7xhi"
+                        class="css-j9qpwq"
                       >
                         Body
                       </p>
