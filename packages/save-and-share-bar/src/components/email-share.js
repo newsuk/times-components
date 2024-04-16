@@ -2,8 +2,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { IconEmail, IconActivityIndicator } from "@times-components/icons";
-import styles from "./styles";
-import BarItem from "./bar-item";
+import { ShareItem, ShareItemLabel } from "./share-item";
+import { EmailSpinnerContainer } from "../styled";
+import styles from "../styles";
 
 class EmailShare extends Component {
   constructor(props) {
@@ -37,9 +38,8 @@ class EmailShare extends Component {
             this.openMailClient(data.article.tokenisedUrl);
           }
         })
-        .catch(error => {
+        .catch(() => {
           this.setState({ isLoading: false });
-          console.error("Error in connecting to api", error);
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
@@ -64,17 +64,29 @@ class EmailShare extends Component {
     const { isLoading } = this.state;
 
     return (
-      <BarItem onPress={this.onShare} dataTestId="email-share" url="">
-        {isLoading ? (
-          <IconActivityIndicator size="small" style={styles.activityLoader} />
-        ) : (
-          <IconEmail
-            fillColour="currentColor"
-            height={styles.svgIcon.height}
-            title="Share by email"
-          />
-        )}
-      </BarItem>
+      <ShareItem
+        tooltipContent="Share by email"
+        onClick={this.onShare}
+        testId="email-share"
+      >
+        <ShareItemLabel
+          icon={
+            isLoading ? (
+              <EmailSpinnerContainer>
+                <IconActivityIndicator size="small" />
+              </EmailSpinnerContainer>
+            ) : (
+              <IconEmail
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Share by email"
+              />
+            )
+          }
+        >
+          Email
+        </ShareItemLabel>
+      </ShareItem>
     );
   }
 }

@@ -81,8 +81,10 @@ describe('<FetchProvider>', () => {
         <TestComponent />
       </FetchProvider>
     );
-
-    await findByText(value);
-    expect(asFragment()).toMatchSnapshot();
+    // Await artificial delay
+    setTimeout(async () => {
+      await findByText(value);
+      expect(asFragment()).toMatchSnapshot();
+    }, 2000);
   });
 });
