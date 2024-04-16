@@ -40,7 +40,7 @@
     "@times-components/provider-queries": "2.21.0",
     "@times-components/tracking": "2.22.13",
     "@times-components/ts-components": "1.83.0",
-    "@times-components/ts-newskit": "1.177.1",
+    "@times-components/ts-newskit": "1.177.2",
     "@times-components/ts-styleguide": "1.50.13",
     "@times-components/user-state": "0.5.30",
     "@times-components/utils": "6.20.1",
