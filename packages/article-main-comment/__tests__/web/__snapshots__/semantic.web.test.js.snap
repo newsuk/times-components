@@ -131,7 +131,7 @@ exports[`1. a full article 1`] = `
       <img
         alt="An image caption"
         loading="lazy"
-        src="https://image.io?resize=400&quality=3"
+        src="https://image.io"
       />
       <svg
         height="auto"

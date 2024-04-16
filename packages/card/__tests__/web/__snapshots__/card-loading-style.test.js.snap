@@ -53,16 +53,6 @@ exports[`1. card loading state 1`] = `
 }
 
 .c3 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
-}
-
-.c4 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -260,7 +250,7 @@ exports[`1. card loading state 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
                       "isStatic": false,
-                      "lastClassName": "c4",
+                      "lastClassName": "c3",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
                         [Function],
@@ -290,7 +280,7 @@ exports[`1. card loading state 1`] = `
                 }
               >
                 <div
-                  className="c4"
+                  className="c3"
                 >
                   <_default>
                     <Gradient
@@ -385,16 +375,6 @@ exports[`2. card with reversed loading state 1`] = `
   transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
-}
-
-.c4 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
 }
 
 .c2 {

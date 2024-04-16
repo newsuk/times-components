@@ -10,11 +10,13 @@ class LogLink extends ApolloLink {
   request(operation, forward) {
     let msg = `Connecting to GraphQL at ${this.uri} for ${
       operation.operationName
-    }`;
+    }
+    with parameters ${JSON.stringify(operation.variables)}`;
     this.logger.debug(msg);
 
     return forward(operation).map(data => {
-      msg = `Ending GraphQL request for ${operation.operationName}`;
+      msg = `Ending GraphQL request for ${operation.operationName}
+        with parameters ${JSON.stringify(operation.variables)}`;
       this.logger.debug(msg);
       return data;
     });
