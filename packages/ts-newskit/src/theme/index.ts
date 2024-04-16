@@ -8,4 +8,3 @@ export { TimesWebLightCultureTheme } from './times-web-light-culture';
 export { TimesWebLightWorldTheme } from './times-web-light-world';
 export { TimesWebLightComment } from './times-web-light-comment';
 export { TimesWebLightNews } from './times-web-light-news';
-
