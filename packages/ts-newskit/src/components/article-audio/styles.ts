@@ -54,7 +54,7 @@ export const AudioPlayerContainer = styled(Block)`
   width: 100%;
 
   &.opHide_articleAudio {
-    display: none;
+    display: block;
   }
   &.opShow_articleAudio {
     display: block;

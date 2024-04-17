@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from 'react';
 import {
   AudioPlayerComposable,
   AudioPlayerPlayPauseButton,
@@ -6,7 +7,7 @@ import {
   TextBlock,
   Visible
 } from 'newskit';
-import React, { useEffect, useRef, useState } from 'react';
+import { debounce } from '../../utils';
 import { Feedback } from './feedback';
 import { StickyPlayerDesktop } from './sticky-player/stickyplayer.desktop';
 import { StickyPlayerExpanded } from './sticky-player/stickyplayer.expanded';
@@ -48,11 +49,33 @@ export const InArticleAudio = ({
   const audioRef = useRef<HTMLDivElement>(null);
 
   const pausedText = isPlayed ? 'Paused' : readyToPlayText;
+  const submitMsg = (msg: any) => {
+    const audioChannel = new BroadcastChannel('tm_persisted_audio');
+    audioChannel.postMessage(msg);
+  }
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
     !showStickyPlayer && setShowStickyPlayer(true);
     setIsPlaying(!isPlaying);
+
+    submitMsg(!isPlaying ? 'play' : 'pause'); /* send */
+    // bc.onmessage = function (ev) { 
+    //   console.log(ev);
+    // } /* receive */
+    
+    if (!isPlayed) {
+      window.open("http://localhost:8000/interactives/component/persisted-audio", "The Times Audio Tab", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+    }
+
+    // if (audioTab) {
+    //   audioTab.document.body.innerHTML = `
+    //     <h1>New Audio Tab Player</h1>
+    //     <audio controls autoplay>
+    //       <source src="https://www.thetimes.co.uk/d/optimizely/james-marriott-alt-top-2.mp3" type="audio/mpeg">
+    //     </audio>
+    //   `;
+    // }
   };
 
   useEffect(
@@ -67,8 +90,17 @@ export const InArticleAudio = ({
         }
       };
 
-      document.addEventListener('click', checkIfClickedOutside);
+      const audioPlayerRef = audioRef.current && audioRef.current.querySelector('audio');
+      audioPlayerRef && audioPlayerRef.addEventListener('seeking', debounce(
+          () => submitMsg({
+            msg: 'seek',
+            value: audioPlayerRef.currentTime,
+          }),
+          100
+        )
+      );
 
+      document.addEventListener('click', checkIfClickedOutside);
       return () => {
         document.removeEventListener('click', checkIfClickedOutside);
       };

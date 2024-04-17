@@ -10,7 +10,8 @@ const styles = {
     paddingTop: spacing(2),
     paddingBottom: spacing(2),
     height: "100%",
-    alignItems: "center"
+    alignItems: "center",
+    zIndex: 100
   },
   activityLoader: {
     borderRadius: 9999,

@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
+import { InArticleAudio } from "@times-components/ts-newskit";
 import {
   IconFacebook,
   IconTwitter,
@@ -45,6 +46,18 @@ class SaveAndShareBar extends Component {
 
     return (
       <TcView style={styles.container} data-testid="save-and-share-bar">
+        <InArticleAudio
+          src="https://www.thetimes.co.uk/d/optimizely/james-marriott-alt-top-2.mp3"
+          readyToPlayText='Listen to article'
+          playingText='Playing'
+          narrator='James Marriott'
+          headline='Article headline'
+          feedback={{
+            requestFeedback: true,
+            feedbackMessage: "Want to listen to more articles? Give your feedback below or email",
+            thankyouMessage: "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
+          }}
+        />
         {sharingEnabled && (
           <TcView style={styles.rowItem}>
             <TcText style={checkStylesForUnits(styles.label)}>Share</TcText>
