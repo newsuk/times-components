@@ -213,3 +213,35 @@ stylePresets.iconPreset = {
     borderRadius: '{{borders.borderRadiusCircle}}'
   }
 };
+
+const datechipBase = {
+  borderRadius: '{{borders.borderRadiusPill}}',
+  border: '1.5px solid {{colors.neutral030}}',
+  backgroundColor: '{{colors.white}}',
+  color: '{{colors.inkBase}}',
+  padding: '14px {{spacePresets.space040}}'
+};
+
+export const datechipStylePresets = {
+  chipBasePreset: {
+    base: datechipBase,
+    hover: {
+      border: '1.5px solid {{colors.neutral040}}',
+      color: '#6E2200'
+    }
+  },
+  chipSelectedPreset: {
+    base: {
+      ...datechipBase,
+      border: '1.5px solid #C05729',
+      backgroundColor: '#FEEEDC'
+    }
+  },
+  chipDisabledPreset: {
+    base: {
+      ...datechipBase,
+      border: '1.5px solid {{colors.neutral020}}',
+      color: '{{colors.neutral060}}'
+    }
+  }
+};
