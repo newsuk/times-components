@@ -245,7 +245,7 @@ jobs:
               PACKAGES_TO_PUBLISH=$(cat changed-packages.json | jq -r '.[].name')
               if [ -n "$PACKAGES_TO_PUBLISH" ]; then
                 lerna run bundle --stream
-                yarn lerna:publish:verdaccio
+                yarn --verbose lerna:publish:verdaccio
               else
                 echo "No changed packages to publish."
               fi
