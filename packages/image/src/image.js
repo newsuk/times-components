@@ -32,13 +32,10 @@ class TimesImage extends Component {
     });
   }
 
-  highResImage({ highResSize, url }) {
+  highResImage({ highResSize = 300, url }) {
     const { highResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
-    const imgUrl = highResSize
-      ? appendToImageURL(url, "resize", highResSize)
-      : url;
-
+    const imgUrl = appendToImageURL(url, "resize", highResSize);
     return (
       <StyledImage
         alt={accessibilityLabel}
