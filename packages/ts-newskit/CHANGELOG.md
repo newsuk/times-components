@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.178.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.177.3...@times-components/ts-newskit@1.178.0) (2024-04-18)
+
+
+### Features
+
+* **TMPZ-408:** Stylepresets for date chips on puzzle channel page ([#3824](https://github.com/newsuk/times-components/issues/3824)) ([702bf1c](https://github.com/newsuk/times-components/commit/702bf1ce00de584ab21bae638d86cabd80c0ea73))
+
+
+
+
+
 ## [1.177.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.177.1...@times-components/ts-newskit@1.177.3) (2024-04-17)
 
 **Note:** Version bump only for package @times-components/ts-newskit
