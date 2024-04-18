@@ -129,10 +129,18 @@ const ArticleSkeleton = ({
   };
 
   useEffect(() => {
-    const verifyEmailFlag = !!JSON.parse(
-      window.sessionStorage.getItem("verifyEmail")
+    const isRegisteredUser = !!JSON.parse(
+      window.sessionStorage.getItem("isRegisteredUser")
     );
-    setShowEmailVerifyBanner(verifyEmailFlag);
+    const isVerifyFlagInSession = !!JSON.parse(
+      window.sessionStorage.getItem("verifyBannerDisplayed")
+    );
+    if (isRegisteredUser && !isVerifyFlagInSession) {
+      setShowEmailVerifyBanner(true);
+      window.sessionStorage.setItem("verifyBannerDisplayed", true);
+    } else {
+      setShowEmailVerifyBanner(false);
+    }
   }, []);
 
   useEffect(() => {
