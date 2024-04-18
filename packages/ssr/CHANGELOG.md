@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.53.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.53.0...@times-components/ssr@2.53.1) (2024-04-17)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.53.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.50...@times-components/ssr@2.53.0) (2024-04-17)
+
+
+### Features
+
+* **TMD-11:** redesigned article share bar ([#3800](https://github.com/newsuk/times-components/issues/3800)) ([209b1bc](https://github.com/newsuk/times-components/commit/209b1bc753b571c88b380ae65910cd8bfdd4ae6a))
+
+
+
+
+
 ## [2.52.51](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.50...@times-components/ssr@2.52.51) (2024-04-16)
 
 **Note:** Version bump only for package @times-components/ssr

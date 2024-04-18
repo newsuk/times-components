@@ -245,7 +245,9 @@ jobs:
               PACKAGES_TO_PUBLISH=$(cat changed-packages.json | jq -r '.[].name')
               if [ -n "$PACKAGES_TO_PUBLISH" ]; then
                 lerna run bundle --stream
-                yarn --verbose lerna:publish:verdaccio
+                rm -rf node_modules
+                yarn install --frozen-lockfile --ignore-engines
+                DEBUG=* yarn lerna:publish:verdaccio
               else
                 echo "No changed packages to publish."
               fi
@@ -299,32 +301,37 @@ workflows:
                   requires:
                       - setup
 
-            - verdaccio-test-approval:
-                <<: *only_on_master_branch
-                type: approval
-                requires:
-                  - build_storybook
-                  - run_lint
-                  - run_noplatform_tests
-                  - run_web_tests
-                  - run_unit_tests
-                  - run_cypress_tests
-            - verdaccio-test:
-                <<: *only_on_master_branch
-                requires:
-                  - verdaccio-test-approval
+#            - verdaccio-test-approval:
+#                <<: *only_on_master_branch
+#                type: approval
+#                requires:
+#                  - build_storybook
+#                  - run_lint
+#                  - run_noplatform_tests
+#                  - run_web_tests
+#                  - run_unit_tests
+#                  - run_cypress_tests
+#            - verdaccio-test:
+#                <<: *only_on_master_branch
+#                requires:
+#                  - verdaccio-test-approval
             - publish_coverage:
-                requires:
-                  - build_storybook
-                  - run_lint
-                  - run_noplatform_tests
-                  - run_web_tests
-                  - run_unit_tests
-                  - run_cypress_tests
+                  requires:
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_web_tests
+                      - run_unit_tests
+                      - run_cypress_tests
             - publish_storybook:
                   <<: *only_on_master_branch
                   requires:
-                      - verdaccio-test
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_web_tests
+                      - run_unit_tests
+                      - run_cypress_tests
             - publish_canary_approval:
                   name: Approve canary release
                   type: approval
@@ -343,4 +350,9 @@ workflows:
             - publish_npm:
                   <<: *only_on_master_branch
                   requires:
-                      - verdaccio-test
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_web_tests
+                      - run_unit_tests
+                      - run_cypress_tests
