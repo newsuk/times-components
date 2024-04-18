@@ -148,8 +148,7 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs, getDomainSpecificUrl } =
-    articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -187,11 +186,7 @@ const ArticleSkeleton = ({
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const domainSpecificUrl =
-    hostName && getDomainSpecificUrl
-      ? getDomainSpecificUrl(hostName, "https://www.thetimes.co.uk")
-      : "https://www.thetimes.co.uk";
-
+  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
 
