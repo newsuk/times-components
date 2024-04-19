@@ -35,6 +35,12 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
 
         const fetchData = async () => {
           try {
+            if (previewData) {
+              await new Promise(resolve => setTimeout(resolve, 1500));
+              setData(previewData);
+              setLoading(false);
+              return;
+            }
             if (url) {
               const response = await fetch(url, options);
               const json = await response.json();
@@ -50,12 +56,7 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
           }
         };
 
-        if (previewData) {
-          setData(previewData);
-          setLoading(false);
-        } else {
-          fetchData();
-        }
+        fetchData();
       }
     },
     [url, options, previewData]

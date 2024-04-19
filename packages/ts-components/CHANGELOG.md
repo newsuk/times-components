@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.84.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.84.1...@times-components/ts-components@1.84.2) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.84.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.84.0...@times-components/ts-components@1.84.1) (2024-04-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.83.0...@times-components/ts-components@1.84.0) (2024-04-17)
+
+
+### Features
+
+* **TMD-11:** redesigned article share bar ([#3800](https://github.com/newsuk/times-components/issues/3800)) ([209b1bc](https://github.com/newsuk/times-components/commit/209b1bc753b571c88b380ae65910cd8bfdd4ae6a))
+
+
+
+
+
 # [1.83.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.82.1...@times-components/ts-components@1.83.0) (2024-04-12)
 
 

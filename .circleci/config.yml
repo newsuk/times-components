@@ -3,11 +3,11 @@ version: 2.1
 executors:
     node:
         docker:
-          - image: cimg/node:16.14.0-browsers
+          - image: cimg/node:18.19.1-browsers
         resource_class: 2xlarge
     node_sonar:
         docker:
-          - image: cimg/node:16.13.1
+          - image: cimg/node:18.19.1
         resource_class: small
 
 orbs:
@@ -245,7 +245,9 @@ jobs:
               PACKAGES_TO_PUBLISH=$(cat changed-packages.json | jq -r '.[].name')
               if [ -n "$PACKAGES_TO_PUBLISH" ]; then
                 lerna run bundle --stream
-                yarn lerna:publish:verdaccio
+                rm -rf node_modules
+                yarn install --frozen-lockfile --ignore-engines
+                yarn --verbose lerna:publish:verdaccio
               else
                 echo "No changed packages to publish."
               fi

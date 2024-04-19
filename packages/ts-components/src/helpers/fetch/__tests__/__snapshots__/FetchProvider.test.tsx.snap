@@ -31,11 +31,3 @@ exports[`<FetchProvider> fetch 2`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`<FetchProvider> preview 1`] = `
-<DocumentFragment>
-  <div>
-    Preloaded
-  </div>
-</DocumentFragment>
-`;
