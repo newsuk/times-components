@@ -1,5 +1,10 @@
 const path = require("path");
+const crypto = require("crypto");
 const outputFolder = require("./src/lib/resolve-dist");
+
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
 
 const extensions = [".js"];
 

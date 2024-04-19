@@ -1,4 +1,9 @@
 import path from "path";
+import crypto from "crypto";
+
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
 
 export default ({ exists, readFile }, resolve) => {
   const parseJson = async pathToJson =>
