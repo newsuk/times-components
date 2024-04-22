@@ -4185,10 +4185,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@newskit-themes/the-times@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-1.2.1.tgz#08517b650570f0f1103292658519d80a15d625f9"
-  integrity sha512-Y6hVfUDGj3I9Ql381QvwZnWKGHwr7Xq3CIqS16j96Y90IKCPvNzvb3NnUGwsqLsIzdkx/kyC8i1XZIHfWeu/kw==
+"@newskit-themes/the-times@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-1.2.0.tgz#5a123b1fa1210346cb2a436067cfdeefae2dfb7a"
+  integrity sha512-gZQekwpnvXBVh850NVn1r3POL7AYjXnEDJ5zDVDbR4XtwNf4gnzb9lfk/qYmYrYrTvx5RmNhxmVUcobiVo+WtQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
