@@ -110,10 +110,4 @@ export const EmailBannerContainer = styled.div`
   z-index: 100;
   display: flex;
   justify-content: center;
-  height: 100%;
-  @media (max-width: ${breakpoints.medium}px) {
-    max-width: 327px;
-    height: 100px;
-    margin: auto;
-  }
 `;
