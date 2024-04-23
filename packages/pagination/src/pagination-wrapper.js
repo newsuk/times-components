@@ -12,12 +12,6 @@ export default PaginatedComponent => {
       }
     }
 
-    static replaceHistory(page) {
-      if (typeof window !== "undefined" && window.history) {
-        window.history.replaceState({ page }, null, `?page=${page}`);
-      }
-    }
-
     static getDerivedStateFromProps(props, state) {
       return {
         ...props,
@@ -43,8 +37,6 @@ export default PaginatedComponent => {
           }
         };
       }
-
-      Helper.replaceHistory(page);
     }
 
     componentWillUnmount() {
