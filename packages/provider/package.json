@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.40.14",
+  "version": "1.40.15",
   "main": "dist/provider",
   "dev": "src/provider",
   "description": "Provider",
@@ -35,12 +35,12 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator-web": "0.8.1",
-    "@times-components/jest-serializer": "3.13.8",
-    "@times-components/provider-test-tools": "1.29.2",
-    "@times-components/storybook": "4.12.13",
-    "@times-components/test-utils": "2.4.1",
-    "@times-components/webpack-configurator": "2.1.0",
+    "@times-components/jest-configurator-web": "0.8.2",
+    "@times-components/jest-serializer": "3.13.9",
+    "@times-components/provider-test-tools": "1.29.3",
+    "@times-components/storybook": "4.12.14",
+    "@times-components/test-utils": "2.4.2",
+    "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "depcheck": "0.6.9",
@@ -57,8 +57,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/provider-queries": "2.21.0",
-    "@times-components/utils": "6.20.1",
+    "@times-components/provider-queries": "2.21.1",
+    "@times-components/utils": "6.20.2",
     "graphql-tag": "2.10.3",
     "hoist-non-react-statics": "3.3.2",
     "lodash.isequal": "4.4.0",

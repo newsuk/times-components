@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.178.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.178.0...@times-components/ts-newskit@1.178.1) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 # [1.178.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.177.3...@times-components/ts-newskit@1.178.0) (2024-04-18)
 
 
