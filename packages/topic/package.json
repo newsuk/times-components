@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "5.10.67",
+  "version": "5.10.68",
   "description": "Topic page component ",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -56,11 +56,11 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article-list": "9.17.57",
+    "@times-components/article-list": "9.17.58",
     "@times-components/context": "1.15.2",
     "@times-components/markup": "3.8.41",
     "@times-components/markup-forest": "1.9.2",
-    "@times-components/pagination": "3.12.41",
+    "@times-components/pagination": "3.13.0",
     "@times-components/provider": "1.40.15",
     "@times-components/responsive": "0.21.5",
     "@times-components/tracking": "2.22.14",
