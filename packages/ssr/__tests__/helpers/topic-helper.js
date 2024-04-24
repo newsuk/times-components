@@ -43,7 +43,7 @@ export default (options = {}) => {
     });
 
     it("navigates between article pages", () => {
-      cy.url().should("include", "?page=1");
+      cy.url().should("not.include", "?page=1");
       cy.goToNextArticle();
       cy.url().should("include", "?page=2");
       cy.goToPreviousArticle();
