@@ -27,12 +27,15 @@ exports[`1. renders correctly with an image lead asset 1`] = `
           position="relative"
           width="100%"
         >
-          <img
+          <link
             alt="Chris Reynolds Gordon at one of his party venues in London"
+            as="image"
             display="block"
+            href="https://crop169.io/?resize=360"
             opacity={1}
             position="absolute"
-            src="https://crop169.io/?resize=360"
+            rel="preload"
+            sizes="(max-width: 1500px) 100vw 1500px"
             srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
             width="100%"
             zIndex={2}
@@ -139,12 +142,15 @@ exports[`5. it renders correctly with a classname 1`] = `
           position="relative"
           width="100%"
         >
-          <img
+          <link
             alt="Chris Reynolds Gordon at one of his party venues in London"
+            as="image"
             display="block"
+            href="https://crop169.io/?resize=360"
             opacity={1}
             position="absolute"
-            src="https://crop169.io/?resize=360"
+            rel="preload"
+            sizes="(max-width: 1500px) 100vw 1500px"
             srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
             width="100%"
             zIndex={2}

@@ -140,9 +140,12 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             <div>
               <div>
                 <div>
-                  <img
+                  <link
                     alt="Some Caption"
-                    src="https://crop169.io?resize=360"
+                    as="image"
+                    href="https://crop169.io?resize=360"
+                    rel="preload"
+                    sizes="(max-width: 1500px) 100vw 1500px"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
@@ -406,9 +409,12 @@ exports[`4. an article with ads 1`] = `
             <div>
               <div>
                 <div>
-                  <img
+                  <link
                     alt="Some Caption"
-                    src="https://crop169.io?resize=360"
+                    as="image"
+                    href="https://crop169.io?resize=360"
+                    rel="preload"
+                    sizes="(max-width: 1500px) 100vw 1500px"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
@@ -698,9 +704,12 @@ exports[`7. an article with no author 1`] = `
             <div>
               <div>
                 <div>
-                  <img
+                  <link
                     alt="Some Caption"
-                    src="https://crop169.io?resize=360"
+                    as="image"
+                    href="https://crop169.io?resize=360"
+                    rel="preload"
+                    sizes="(max-width: 1500px) 100vw 1500px"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>

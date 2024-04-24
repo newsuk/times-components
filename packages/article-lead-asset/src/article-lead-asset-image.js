@@ -18,11 +18,14 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
       style={{ ...styles.wrapper, paddingBottom: `${100 / ratio}%` }}
       className="lcpItem"
     >
-      <img
-        alt={alt}
+      <link
+        rel="preload"
+        as="image"
+        href={appendToImageURL(url, "resize", sizes[0])}
         style={styles.img}
-        src={appendToImageURL(url, "resize", sizes[0])}
+        alt={alt}
         srcSet={srcSet.join(",")}
+        sizes="(max-width: 1500px) 100vw 1500px"
       />
     </div>
   );

@@ -920,7 +920,7 @@ exports[`full article with style 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
+                  <link
                     display="block"
                     opacity={1}
                     position="absolute"
@@ -1996,7 +1996,7 @@ exports[`full article with style in the culture magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
+                  <link
                     display="block"
                     opacity={1}
                     position="absolute"
@@ -3073,7 +3073,7 @@ exports[`full article with style in the style magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
+                  <link
                     display="block"
                     opacity={1}
                     position="absolute"
@@ -4149,7 +4149,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
+                  <link
                     display="block"
                     opacity={1}
                     position="absolute"
