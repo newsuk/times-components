@@ -10,7 +10,10 @@ const themeOverrides = {
   typographyPresets
 };
 
-const updatedTheme = formatThemeOverrides(TheTimesLightLifeAndStyle, themeOverrides);
+const updatedTheme = formatThemeOverrides(
+  TheTimesLightLifeAndStyle,
+  themeOverrides
+);
 
 export const TimesWebLightLifeAndStyle = createTheme({
   name: 'times-web-light-life-and-style',
