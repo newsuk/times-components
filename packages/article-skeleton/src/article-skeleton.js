@@ -148,7 +148,7 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, getDomainSpecificUrl } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -308,6 +308,8 @@ const ArticleSkeleton = ({
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
                         <StickySaveAndShareBar
+                          getDomainSpecificUrl={getDomainSpecificUrl}
+                          hostName={hostName}
                           articleId={articleId}
                           articleHeadline={headline}
                           articleUrl={articleUrl}
