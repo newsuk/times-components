@@ -6,6 +6,8 @@ export { PuzzlesWebLightTheme } from './puzzles-web-light';
 export { TimesWebLightBusinessTheme } from './times-web-light-business';
 export { TimesWebLightCultureTheme } from './times-web-light-culture';
 export { TimesWebLightWorldTheme } from './times-web-light-world';
-export { TimesWebLightComment } from './times-web-light-comment';
-export { TimesWebLightNews } from './times-web-light-news';
-export { TimesWebLightLifeAndStyle } from './times-web-light-life-and-style';
+export { TimesWebLightCommentTheme } from './times-web-light-comment';
+export { TimesWebLightNewsTheme } from './times-web-light-news';
+export {
+  TimesWebLightLifeAndStyleTheme
+} from './times-web-light-life-and-style';

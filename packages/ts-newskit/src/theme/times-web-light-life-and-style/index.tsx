@@ -15,7 +15,7 @@ const updatedTheme = formatThemeOverrides(
   themeOverrides
 );
 
-export const TimesWebLightLifeAndStyle = createTheme({
+export const TimesWebLightLifeAndStyleTheme = createTheme({
   name: 'times-web-light-life-and-style',
   ...updatedTheme
 });

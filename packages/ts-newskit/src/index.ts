@@ -7,11 +7,6 @@ export { TimesWebLightTheme } from './theme/times-web-light';
 export { TimesWebLightSportTheme } from './theme/times-web-light-sport';
 export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 
-export { TimesWebLightComment } from './theme/times-web-light-comment';
-export { TimesWebLightNews } from './theme/times-web-light-news';
-export {
-  TimesWebLightLifeAndStyle
-} from './theme/times-web-light-life-and-style';
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
 

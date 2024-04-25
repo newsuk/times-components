@@ -12,7 +12,7 @@ const themeOverrides = {
 
 const updatedTheme = formatThemeOverrides(TheTimesLightNews, themeOverrides);
 
-export const TimesWebLightNews = createTheme({
+export const TimesWebLightNewsTheme = createTheme({
   name: 'times-web-light-news',
   ...updatedTheme
 });
