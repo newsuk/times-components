@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.41...@times-components/pagination@3.13.0) (2024-04-24)
+
+
+### Features
+
+* **TMRS-163:** removed logic for appening page on initial load ([#3830](https://github.com/newsuk/times-components/issues/3830)) ([eae2561](https://github.com/newsuk/times-components/commit/eae2561ba0f7a1786333223768281108b47ff9c5))
+
+
+
+
+
 ## [3.12.41](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.40...@times-components/pagination@3.12.41) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/pagination
