@@ -153,7 +153,7 @@ export default () => {
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
-      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);      
+      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
           <EmailShare
@@ -174,7 +174,7 @@ export default () => {
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
-      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);      
+      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
           <EmailShare
