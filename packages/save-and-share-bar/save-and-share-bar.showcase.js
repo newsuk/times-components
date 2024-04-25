@@ -36,6 +36,8 @@ export default {
                     articleId={articleId}
                     articleHeadline="test-headline"
                     articleUrl="https://www.thetimes.co.uk/"
+                    hostname="https://www.thetimes.co.uk"
+                    getDomainSpecificUrl={(_, url) => url}
                     onCopyLink={() => showMessage("Article link copied")}
                     getTokenisedShareUrl={mockGetTokenisedArticleUrl}
                     savingEnabled={boolean("Is Saving Enabled", true)}
