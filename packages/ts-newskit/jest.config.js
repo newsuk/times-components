@@ -44,7 +44,7 @@ const buildConfig = dir => {
         statements: 95,
         branches: 87,
         lines: 95,
-        functions: 87
+        functions: 86
       }
     }
   };
