@@ -12,7 +12,7 @@ import { buttonStylePresets } from './buttons';
 import { sliceHeaderStylePresets } from './slice-header';
 import { popoverStylePresets } from './popover';
 import { chipStylePresets } from './chip';
-import { filterStylePresets } from './filter'
+import { filterStylePresets } from './filter';
 
 export const stylePresets = {
   ...popoverStylePresets,
