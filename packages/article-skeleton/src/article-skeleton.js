@@ -187,7 +187,7 @@ const ArticleSkeleton = ({
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
+  const host = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
 
@@ -275,7 +275,8 @@ const ArticleSkeleton = ({
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
             breadcrumbs={breadcrumbs}
-            domainSpecificUrl={domainSpecificUrl}
+            host={host}
+            getDomainSpecificUrl={getDomainSpecificUrl}
           />
           {!!zephrDivs && (
             <StaticContent
@@ -339,23 +340,23 @@ const ArticleSkeleton = ({
                       <TCThemeProvider theme={PuzzlesWebLightTheme}>
                         <PuzzlesSidebar ref={sidebarRef}>
                           <ArticleSidebar
-                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            pageLink={`${host}/puzzles`}
                             sectionTitle="Puzzles"
                             data={[
                               {
                                 title: "Crossword",
-                                url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                                url: `${host}/puzzles/crossword`,
+                                imgUrl: `${host}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                                imgUrl: `${host}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
                               },
                               {
                                 title: "Sudoku",
-                                url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                                url: `${host}/puzzles/sudoku`,
+                                imgUrl: `${host}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                               }
                             ]}
                           />
@@ -438,7 +439,7 @@ const ArticleSkeleton = ({
                       isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
-                      domainSpecificUrl={domainSpecificUrl}
+                      host={host}
                     />
                   )}
                 </LazyLoad>

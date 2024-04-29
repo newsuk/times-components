@@ -50,15 +50,18 @@ const paidContentClassName = "class-name";
 const logoUrl =
   "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
 
+  const getDomainSpecificUrl = (_, url) => url;
+
 describe("Head", () => {
   it("outputs correct metadata", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={article}
         articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
-        domainSpecificUrl="https://www.thetimes.co.uk"
+        host="https://www.thetimes.co.uk"
       />
     );
 
@@ -68,11 +71,12 @@ describe("Head", () => {
   it("outputs correct metadata with .COM host", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={article}
         articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
-        domainSpecificUrl="https://www.thetimes.com"
+        host="https://www.thetimes.com"
       />
     );
 
@@ -86,6 +90,7 @@ describe("Head", () => {
     };
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={syndicatedArticle}
         articleUrl={syndicatedArticle.url}
         logoUrl={logoUrl}
@@ -99,6 +104,7 @@ describe("Head", () => {
   it("outputs correct metadata when the swgProductId is passed as prop", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={article}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -113,6 +119,7 @@ describe("Head", () => {
   it("outputs correct metadata for a video article", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={videoArticle}
         articleUrl={videoArticle.url}
         logoUrl={logoUrl}
@@ -125,6 +132,7 @@ describe("Head", () => {
   it("outputs array of author in context schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: [
@@ -235,6 +243,7 @@ describe("Head", () => {
   it("outputs array of keywords in article schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           tiles: [
             {
@@ -271,6 +280,7 @@ describe("Head", () => {
   it("outputs array of sameAs if there are multiple urls", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: [
@@ -316,6 +326,7 @@ describe("Head", () => {
   it("outputs profile url in sameAs if there is no twitter", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: [
@@ -361,6 +372,7 @@ describe("Head", () => {
   it("removes author from context schema if there is empty array of bylines or null bylines", () => {
     let testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: []
@@ -374,6 +386,7 @@ describe("Head", () => {
 
     testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: null
@@ -389,6 +402,7 @@ describe("Head", () => {
   it("outputs correct metadata for seoDescription", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{ ...article, seoDescription: "sample seoDescription" }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -401,6 +415,7 @@ describe("Head", () => {
   it("uses short headline if headline not available", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           headline: null,
@@ -418,6 +433,7 @@ describe("Head", () => {
   it("defaults to an empty string if both headline and shortHeadline are null", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           headline: null,
@@ -435,6 +451,7 @@ describe("Head", () => {
   it("uses the first non-news section in title", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           tiles: [
@@ -485,6 +502,7 @@ describe("Head", () => {
   it("uses news in title if news is the only available section", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           tiles: [
@@ -511,8 +529,10 @@ describe("Head", () => {
   });
 
   it("uses news in title if news is the only available section", () => {
+    const getDomainSpecificUrl2 = jest.fn().mockReturnValue('www.thetimes.co.uk');
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl2}
         article={{
           ...article,
           tiles: [
@@ -541,6 +561,7 @@ describe("Head", () => {
   it("removes section from title if there are no tiles", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           tiles: null
@@ -557,6 +578,7 @@ describe("Head", () => {
   it("removes section from title if there are no tiles with sections", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           tiles: [
@@ -588,6 +610,7 @@ describe("Head", () => {
   it("shows Sunday Times in title if publication is SUNDAYTIMES", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           publicationName: "SUNDAYTIMES"
@@ -604,6 +627,7 @@ describe("Head", () => {
   it("shows Times in title if publication is TIMES", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           publicationName: "TIMES"
@@ -620,6 +644,7 @@ describe("Head", () => {
   it("removes author tags if bylines not available", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           bylines: null
@@ -634,7 +659,7 @@ describe("Head", () => {
   });
 
   it("shows author tags if bylines available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(<Head article={article} getDomainSpecificUrl={getDomainSpecificUrl}/>);
 
     expect(testRenderer.root.findAllByProps({ name: "author" })).toHaveLength(
       1
@@ -644,6 +669,7 @@ describe("Head", () => {
   it("removes description tags if descriptionMarkup not available", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           descriptionMarkup: null
@@ -666,6 +692,7 @@ describe("Head", () => {
   it("removes description tags if descriptionMarkup is empty", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           descriptionMarkup: []
@@ -686,7 +713,7 @@ describe("Head", () => {
   });
 
   it("shows description tags if descriptionMarkup available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(<Head article={article} getDomainSpecificUrl={getDomainSpecificUrl}/>);
 
     expect(
       testRenderer.root.findAllByProps({ name: "description" })
@@ -702,6 +729,7 @@ describe("Head", () => {
   it("removes image tags if leadAsset not available", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           leadAsset: null
@@ -720,7 +748,11 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset available", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={article} articleUrl={article.url} />
+      <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
+        article={article}
+        articleUrl={article.url}
+      />
     );
 
     expect(
@@ -734,6 +766,7 @@ describe("Head", () => {
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={standardArticleWithInlineVideo}
         articleUrl={standardArticleWithInlineVideo.url}
       />
@@ -750,6 +783,7 @@ describe("Head", () => {
   it("outputs video schema for a video article", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={videoArticle}
         articleUrl={videoArticle.url}
         logoUrl={logoUrl}
@@ -762,6 +796,7 @@ describe("Head", () => {
   it("outputs video schema for a video article", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={videoArticle}
         articleUrl={videoArticle.url}
         logoUrl={logoUrl}
@@ -799,6 +834,7 @@ describe("Head", () => {
     it(`outputs thumbnail urls for a article for ${ratio} ratio`, () => {
       const testRenderer = TestRenderer.create(
         <Head
+          getDomainSpecificUrl={getDomainSpecificUrl}
           article={{ ...videoArticle, leadAsset }}
           articleUrl={videoArticle.url}
           logoUrl={logoUrl}
@@ -812,6 +848,7 @@ describe("Head", () => {
   it("outputs title as video description for a video article when there is no summary and seoDescription", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{ ...videoArticle, descriptionMarkup: null }}
         articleUrl={videoArticle.url}
         logoUrl={logoUrl}
@@ -824,6 +861,7 @@ describe("Head", () => {
   it("outputs seoDescription as video description for a video article when there is no summary", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...videoArticle,
           descriptionMarkup: null,
@@ -840,6 +878,7 @@ describe("Head", () => {
   it("outputs a live blog schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           expirableFlags: [{ type: "LIVE", expiryTime: null }],

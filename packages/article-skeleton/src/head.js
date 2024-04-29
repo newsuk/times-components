@@ -97,11 +97,11 @@ function getAuthors({ bylines }) {
   return bylines.map(byline => byline.author).filter(author => author);
 }
 
-function getAuthorSchema(article, domainSpecificUrl) {
+function getAuthorSchema(article, host) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-        const url = `${domainSpecificUrl}/profile/${slug}`;
+        const url = `${host}/profile/${slug}`;
         return {
           "@type": "Person",
           name,
@@ -256,7 +256,8 @@ function Head({
   getFallbackThumbnailUrl169,
   swgProductId,
   breadcrumbs,
-  domainSpecificUrl
+  host,
+  getDomainSpecificUrl
 }) {
   const {
     descriptionMarkup,
@@ -288,10 +289,12 @@ function Head({
     getThumbnailUrl(article) ||
     (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
 
-  const leadassetUrl =
+  const leadassetUrl = getDomainSpecificUrl(
+    host,
     appendToImageURL(getArticleLeadAssetUrl(article), "resize", 1200) ||
-    thumbnailUrl;
-  const authors = getAuthorSchema(article, domainSpecificUrl);
+      thumbnailUrl
+  );
+  const authors = getAuthorSchema(article, host);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
@@ -420,7 +423,7 @@ function Head({
             "@type": "ListItem",
             position: breadcrumbIndex + 1,
             name: breadcrumb.title,
-            item: `${domainSpecificUrl}/${breadcrumb.slug}`
+            item: `${host}/${breadcrumb.slug}`
           }))
         }
       : null;
@@ -488,7 +491,8 @@ Head.propTypes = {
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
-  domainSpecificUrl: PropTypes.string.isRequired,
+  host: PropTypes.string.isRequired,
+  getDomainSpecificUrl: PropTypes.func.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
