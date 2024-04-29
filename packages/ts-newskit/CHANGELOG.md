@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.180.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.179.0...@times-components/ts-newskit@1.180.0) (2024-04-29)
+
+
+### Features
+
+* **TMD-131:** implement updated themes ([#3835](https://github.com/newsuk/times-components/issues/3835)) ([62a0ff2](https://github.com/newsuk/times-components/commit/62a0ff2f6c6cd3f2ce9de4c908f444e54e1f31f2))
+
+
+
+
+
+# [1.179.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.178.1...@times-components/ts-newskit@1.179.0) (2024-04-25)
+
+
+### Features
+
+* **TMD-131:** apply design theme to remaining channels ([#3818](https://github.com/newsuk/times-components/issues/3818)) ([0bbe93c](https://github.com/newsuk/times-components/commit/0bbe93cb61952fef598f285ddb12e67ac65bdac5))
+
+
+
+
+
 ## [1.178.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.178.0...@times-components/ts-newskit@1.178.1) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/ts-newskit
