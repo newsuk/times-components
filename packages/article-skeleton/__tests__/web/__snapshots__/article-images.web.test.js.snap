@@ -13,7 +13,7 @@ exports[`1. a primary image 1`] = `
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -67,7 +67,7 @@ exports[`1. a primary image 1`] = `
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticlesVisible={false}
           savingEnabled={true}
@@ -102,7 +102,7 @@ exports[`2. a fullwidth image 1`] = `
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -156,7 +156,7 @@ exports[`2. a fullwidth image 1`] = `
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticlesVisible={false}
           savingEnabled={true}
@@ -191,7 +191,7 @@ exports[`3. a secondary image 1`] = `
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -245,7 +245,7 @@ exports[`3. a secondary image 1`] = `
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticlesVisible={false}
           savingEnabled={true}
@@ -280,7 +280,7 @@ exports[`4. an inline image 1`] = `
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -334,7 +334,7 @@ exports[`4. an inline image 1`] = `
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticlesVisible={false}
           savingEnabled={true}

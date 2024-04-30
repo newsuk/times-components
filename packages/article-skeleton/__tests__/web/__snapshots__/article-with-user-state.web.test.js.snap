@@ -13,7 +13,7 @@ exports[`Article with user state Render full article when user has access to ful
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -307,7 +307,7 @@ exports[`Article with user state Render full article when user has access to ful
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -393,7 +393,7 @@ exports[`Article with user state Render teaser article when user does not have a
   >
     <Head
       articleUrl="https://url.io"
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
       swgProductId={null}
     />
     <div>
@@ -687,7 +687,7 @@ exports[`Article with user state Render teaser article when user does not have a
             }
           }
           commentsEnabled={true}
-          domainSpecificUrl="https://www.thetimes.co.uk"
+          host="https://www.thetimes.co.uk"
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {

@@ -9,10 +9,7 @@ import { UserState } from "./mocks";
 import ArticleComments from "../../src/article-comments";
 import { ssoCallback } from "../../src/comment-login";
 
-const renderComments = ({
-  enabled,
-  domainSpecificUrl = "https://www.thetimes.co.uk"
-}) =>
+const renderComments = ({ enabled, host = "https://www.thetimes.co.uk" }) =>
   render(
     <ArticleComments
       articleId="dummy-article-id"
@@ -24,7 +21,7 @@ const renderComments = ({
       storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
       isCommentEnabled
-      domainSpecificUrl={domainSpecificUrl}
+      host={host}
     />
   );
 
@@ -71,7 +68,7 @@ describe("User States", () => {
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true,
-      domainSpecificUrl: "https://www.thetimes.com"
+      host: "https://www.thetimes.com"
     });
 
     expect(
@@ -140,7 +137,7 @@ it("Render comments label, when comments are loaded", () => {
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
       isCommentEnabled
-      domainSpecificUrl="https://www.thetimes.co.uk"
+      host="https://www.thetimes.co.uk"
     />
   );
 
@@ -172,7 +169,7 @@ describe("window listeners added", () => {
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
         isCommentEnabled
-        domainSpecificUrl="https://www.thetimes.co.uk"
+        host="https://www.thetimes.co.uk"
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();

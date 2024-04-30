@@ -14,7 +14,7 @@ const ArticleComments = ({
   commentingConfig,
   isCommentEnabled,
   storefrontConfig,
-  domainSpecificUrl
+  host
 }) =>
   isEnabled && isCommentEnabled ? (
     <>
@@ -26,7 +26,7 @@ const ArticleComments = ({
           articleId={articleId}
           isReadOnly={isReadOnly}
           commentingConfig={commentingConfig}
-          domainSpecificUrl={domainSpecificUrl}
+          host={host}
         />
       </UserState>
     </>
@@ -43,7 +43,7 @@ ArticleComments.propTypes = {
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
-  domainSpecificUrl: PropTypes.string.isRequired
+  host: PropTypes.string.isRequired
 };
 
 ArticleComments.defaultProps = {
