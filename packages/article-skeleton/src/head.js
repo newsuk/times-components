@@ -492,13 +492,14 @@ Head.propTypes = {
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
   host: PropTypes.string.isRequired,
-  getDomainSpecificUrl: PropTypes.func.isRequired,
+  getDomainSpecificUrl: PropTypes.func,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 Head.defaultProps = {
   swgProductId: null,
-  breadcrumbs: []
+  breadcrumbs: [],
+  getDomainSpecificUrl: (_, url) => url
 };
 
 export default Head;

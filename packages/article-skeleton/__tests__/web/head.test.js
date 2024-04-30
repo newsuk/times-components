@@ -50,7 +50,7 @@ const paidContentClassName = "class-name";
 const logoUrl =
   "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
 
-  const getDomainSpecificUrl = (_, url) => url;
+const getDomainSpecificUrl = (_, url) => url;
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
@@ -529,10 +529,9 @@ describe("Head", () => {
   });
 
   it("uses news in title if news is the only available section", () => {
-    const getDomainSpecificUrl2 = jest.fn().mockReturnValue('www.thetimes.co.uk');
     const testRenderer = TestRenderer.create(
       <Head
-        getDomainSpecificUrl={getDomainSpecificUrl2}
+        getDomainSpecificUrl={getDomainSpecificUrl}
         article={{
           ...article,
           tiles: [
@@ -659,7 +658,9 @@ describe("Head", () => {
   });
 
   it("shows author tags if bylines available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} getDomainSpecificUrl={getDomainSpecificUrl}/>);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} getDomainSpecificUrl={getDomainSpecificUrl} />
+    );
 
     expect(testRenderer.root.findAllByProps({ name: "author" })).toHaveLength(
       1
@@ -713,7 +714,9 @@ describe("Head", () => {
   });
 
   it("shows description tags if descriptionMarkup available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} getDomainSpecificUrl={getDomainSpecificUrl}/>);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} getDomainSpecificUrl={getDomainSpecificUrl} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ name: "description" })
