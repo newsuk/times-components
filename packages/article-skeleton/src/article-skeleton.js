@@ -440,6 +440,7 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       host={host}
+                      getDomainSpecificUrl={getDomainSpecificUrl}
                     />
                   )}
                 </LazyLoad>

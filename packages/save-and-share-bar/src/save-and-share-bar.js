@@ -40,6 +40,8 @@ function SaveAndShareBar(props) {
     navigator.clipboard.writeText(articleUrl);
     onCopyLink();
   }
+  // eslint-disable-next-line no-console
+  console.log(props, 'save-and-share-bar.js')
 
   return (
     <Stack

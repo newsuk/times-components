@@ -44,6 +44,8 @@ export default {
               commentingConfig={commentingConfig}
               topics={topics}
               section="Comment"
+              getDomainSpecificUrl={(_, url) => url}
+              host={"https://www.thetimes.co.uk"}
             />
           </Container>
         );
@@ -95,6 +97,8 @@ export default {
               relatedArticlesVisible={false}
               commentingConfig={commentingConfig}
               topics={topics}
+              getDomainSpecificUrl={(_, url) => url}
+              host={"https://www.thetimes.co.uk"}
             />
           </>
         );

@@ -37,7 +37,8 @@ const ArticleExtras = ({
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  host
+  host,
+  getDomainSpecificUrl
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -79,6 +80,8 @@ const ArticleExtras = ({
       </NativeAd>
     </>
   );
+  // eslint-disable-next-line no-console
+  console.log(host, getDomainSpecificUrl, 'Came from here');
   return (
     <UserState
       state={UserState.showArticleExtras}
@@ -101,6 +104,8 @@ const ArticleExtras = ({
                   onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
+                  hostName={host}
+                  getDomainSpecificUrl={getDomainSpecificUrl}
                 />
               </ShareAndSaveContainer>
             )}
@@ -140,7 +145,8 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  host: PropTypes.string.isRequired
+  host: PropTypes.string.isRequired,
+  getDomainSpecificUrl: PropTypes.func.isRequired
 };
 
 ArticleExtras.defaultProps = {
