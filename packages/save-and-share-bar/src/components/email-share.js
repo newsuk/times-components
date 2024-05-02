@@ -27,13 +27,17 @@ class EmailShare extends Component {
 
     e.preventDefault();
     // eslint-disable-next-line no-console
-    console.log({ articleId, articleUrl, articleHeadline }, "email-share.js 1");
+    console.log(
+      { articleId, articleUrl, articleHeadline, getDomainSpecificUrl },
+      "email-share.js 1"
+    );
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
       this.setState({ isLoading: true });
-
+      // eslint-disable-next-line no-console
+      console.log("it came just before getTokenisedShareUrl");
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
@@ -45,6 +49,11 @@ class EmailShare extends Component {
             this.setState({ isLoading: false });
             // eslint-disable-next-line no-console
             console.log(hostName, "email-share.js 4");
+            // eslint-disable-next-line no-console
+            console.log(
+              getDomainSpecificUrl,
+              "getDomainSpecificUrl email-share.js 4"
+            );
             this.openMailClient(
               getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
             );
@@ -63,18 +72,33 @@ class EmailShare extends Component {
   }
 
   openMailClient(url) {
+    // eslint-disable-next-line no-console
+    console.log(url, "email-share.js 5");
     const { articleHeadline, publicationName } = this.props;
     const publication =
       publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
 
     const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`;
-
+    // eslint-disable-next-line no-console
+    console.log(mailtoEmailUrl, "email-share.js 6");
     window.location.assign(mailtoEmailUrl);
   }
 
   render() {
     const { isLoading } = this.state;
-
+    const { hostName, getDomainSpecificUrl } = this.props;
+    // eslint-disable-next-line no-console
+    console.log(this.props, "Props from email");
+    // eslint-disable-next-line no-console
+    console.log(
+      'Test GetDomainSpecificUrl with "https://www.uat-thetimes.co.uk/article/22a4d6ab-ecac-4515-bea7-c72eb2207417?shareToken=16bf168b3b9d0d682b6c92dc768eee85"',
+      getDomainSpecificUrl
+        ? getDomainSpecificUrl(
+            hostName,
+            "https://www.uat-thetimes.co.uk/article/22a4d6ab-ecac-4515-bea7-c72eb2207417?shareToken=16bf168b3b9d0d682b6c92dc768eee85"
+          )
+        : "No getDomainSpecificUrl"
+    );
     return (
       <ShareItem
         tooltipContent="Share by email"
