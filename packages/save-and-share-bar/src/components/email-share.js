@@ -27,7 +27,7 @@ class EmailShare extends Component {
 
     e.preventDefault();
     // eslint-disable-next-line no-console
-    console.log({ articleId, articleUrl, articleHeadline }, 'email-share.js 1')
+    console.log({ articleId, articleUrl, articleHeadline }, "email-share.js 1");
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
@@ -38,13 +38,13 @@ class EmailShare extends Component {
         .then(res => {
           const { data } = res;
           // eslint-disable-next-line no-console
-          console.log(res, 'email-share.js 2')
+          console.log(res, "email-share.js 2");
           if (data && data.article) {
             // eslint-disable-next-line no-console
-            console.log(data, 'email-share.js 3')
+            console.log(data, "email-share.js 3");
             this.setState({ isLoading: false });
             // eslint-disable-next-line no-console
-            console.log(hostName, 'email-share.js 4')
+            console.log(hostName, "email-share.js 4");
             this.openMailClient(
               getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
             );

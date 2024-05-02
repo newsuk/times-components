@@ -41,7 +41,7 @@ function SaveAndShareBar(props) {
     onCopyLink();
   }
   // eslint-disable-next-line no-console
-  console.log(props, 'save-and-share-bar.js')
+  console.log(props, "save-and-share-bar.js");
 
   return (
     <Stack

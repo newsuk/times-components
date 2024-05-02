@@ -57,8 +57,8 @@ const StyledKeylineItem = styled(ArticleKeylineItem)`
 const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
-    // eslint-disable-next-line no-console
-    console.log(props, 'sticky-save-and-share-bar.js');
+  // eslint-disable-next-line no-console
+  console.log(props, "sticky-save-and-share-bar.js");
   return (
     <StyledKeylineItem>
       <Sticky

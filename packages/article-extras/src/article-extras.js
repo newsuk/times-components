@@ -81,7 +81,7 @@ const ArticleExtras = ({
     </>
   );
   // eslint-disable-next-line no-console
-  console.log(host, getDomainSpecificUrl, 'Came from here');
+  console.log(host, getDomainSpecificUrl, "Came from here");
   return (
     <UserState
       state={UserState.showArticleExtras}

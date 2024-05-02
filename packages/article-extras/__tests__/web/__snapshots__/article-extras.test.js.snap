@@ -43,6 +43,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    host="https://www.thetimes.co.uk"
     isCommentEnabled={true}
     isEnabled={true}
   />,
@@ -117,6 +118,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    host="https://www.thetimes.co.uk"
     isCommentEnabled={true}
     isEnabled={true}
   />,
@@ -166,6 +168,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    host="https://www.thetimes.co.uk"
     isCommentEnabled={true}
     isEnabled={true}
   />,

@@ -51,7 +51,7 @@ export default () => {
               commentingConfig={commentingConfig}
               topics={topics}
               getDomainSpecificUrl={(_, url) => url}
-              host={"https://www.thetimes.co.uk"}
+              host="https://www.thetimes.co.uk"
             />
           </TCThemeProvider>
         );
@@ -76,7 +76,7 @@ export default () => {
               commentingConfig={commentingConfig}
               topics={topics}
               getDomainSpecificUrl={(_, url) => url}
-              host={"https://www.thetimes.co.uk"}
+              host="https://www.thetimes.co.uk"
             />
           </TCThemeProvider>
         );
@@ -99,7 +99,7 @@ export default () => {
               commentingConfig={commentingConfig}
               topics={topics}
               getDomainSpecificUrl={(_, url) => url}
-              host={"https://www.thetimes.co.uk"}
+              host="https://www.thetimes.co.uk"
             />
           </TCThemeProvider>
         );
@@ -122,7 +122,7 @@ export default () => {
               commentingConfig={commentingConfig}
               topics={topics}
               getDomainSpecificUrl={(_, url) => url}
-              host={"https://www.thetimes.co.uk"}
+              host="https://www.thetimes.co.uk"
             />
           </TCThemeProvider>
         );
