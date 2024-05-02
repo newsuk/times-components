@@ -11,6 +11,7 @@ import { SectionContext } from "@times-components/context";
 import { Stack } from "newskit";
 import { SaveStar } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
+import { transformDomainUrls } from "@times-components/utils";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -30,14 +31,17 @@ function SaveAndShareBar(props) {
     sharingEnabled,
     onShareOnFB,
     onShareOnTwitter,
-    isPreviewMode
+    isPreviewMode,
+    hostName
   } = props;
+
+  const domainSpecificArticleUrl = transformDomainUrls(articleUrl, hostName);
 
   function copyToClipboard(e) {
     const { onCopyLink } = props;
     e.preventDefault();
 
-    navigator.clipboard.writeText(articleUrl);
+    navigator.clipboard.writeText(domainSpecificArticleUrl);
     onCopyLink();
   }
 
@@ -68,6 +72,7 @@ function SaveAndShareBar(props) {
                         {...props}
                         shouldTokenise={false}
                         publicationName={publicationName}
+                        articleUrl={domainSpecificArticleUrl}
                       />
                     }
                   >
@@ -75,6 +80,7 @@ function SaveAndShareBar(props) {
                       {...props}
                       shouldTokenise
                       publicationName={publicationName}
+                      articleUrl={domainSpecificArticleUrl}
                     />
                   </UserState>
                 )}
@@ -83,7 +89,9 @@ function SaveAndShareBar(props) {
               <ShareItem
                 testId="share-twitter"
                 tooltipContent="Share on Twitter"
-                href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+                href={`${
+                  SharingApiUrls.twitter
+                }?text=${domainSpecificArticleUrl}`}
                 onClick={onShareOnTwitter}
               >
                 <ShareItemLabel
@@ -102,7 +110,9 @@ function SaveAndShareBar(props) {
               <ShareItem
                 testId="share-facebook"
                 tooltipContent="Share on Facebook"
-                href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                href={`${
+                  SharingApiUrls.facebook
+                }?u=${domainSpecificArticleUrl}`}
                 onClick={onShareOnFB}
               >
                 <ShareItemLabel
@@ -121,7 +131,9 @@ function SaveAndShareBar(props) {
               <ShareItem
                 testId="copy-to-clickboard"
                 tooltipContent="Copy link to clipboard"
-                href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                href={`${
+                  SharingApiUrls.facebook
+                }?u=${domainSpecificArticleUrl}`}
                 onClick={copyToClipboard}
               >
                 <ShareItemLabel
@@ -185,7 +197,8 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  isPreviewMode: PropTypes.bool
+  isPreviewMode: PropTypes.bool,
+  hostName: PropTypes.string
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
@@ -194,7 +207,8 @@ SaveAndShareBar.defaultProps = {
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
-  isPreviewMode: (PropTypes.bool = false)
+  isPreviewMode: (PropTypes.bool = false),
+  hostName: "www.thetimes.co.uk"
 };
 
 export default withTrackEvents(SaveAndShareBar);
