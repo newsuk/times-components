@@ -20,7 +20,9 @@ class EmailShare extends Component {
       shouldTokenise,
       articleUrl,
       onShareEmail,
-      articleHeadline
+      articleHeadline,
+      getDomainSpecificUrl,
+      hostName
     } = this.props;
 
     e.preventDefault();
@@ -35,7 +37,9 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            this.openMailClient(data.article.tokenisedUrl);
+            this.openMailClient(
+              getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
+            );
           }
         })
         .catch(() => {
@@ -98,7 +102,9 @@ EmailShare.propTypes = {
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  getDomainSpecificUrl: PropTypes.func.isRequired,
+  hostName: PropTypes.string.isRequired
 };
 
 EmailShare.defaultProps = {

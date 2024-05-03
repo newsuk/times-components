@@ -66,7 +66,7 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "an article with ads",
+    name: "an article with ads with .co.uk",
     test() {
       const testRenderer = renderComponent(
         <ArticleMainComment
@@ -82,6 +82,30 @@ export const snapshotTests = renderComponent => [
               }
             ]
           })}
+        />
+      );
+
+      expect(testRenderer).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with ads with .com",
+    test() {
+      const testRenderer = renderComponent(
+        <ArticleMainComment
+          {...sharedProps}
+          article={articleFixture({
+            ...testFixture,
+            ...emptyArticle,
+            content: [
+              {
+                attributes: {},
+                children: [],
+                name: "ad"
+              }
+            ]
+          })}
+          articleDataFromRender={{ hostName: "www.thetimes.com" }}
         />
       );
 

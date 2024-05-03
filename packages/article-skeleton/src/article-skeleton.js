@@ -148,7 +148,8 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, getDomainSpecificUrl } =
+    articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -316,6 +317,8 @@ const ArticleSkeleton = ({
                           onShareOnEmail={() => {}}
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
+                          getDomainSpecificUrl={getDomainSpecificUrl}
+                          hostName={domainSpecificUrl}
                         />
                       )}
                     </MessageContext.Consumer>
