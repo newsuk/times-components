@@ -97,7 +97,7 @@ class EmailShare extends Component {
             hostName,
             "https://www.uat-thetimes.co.uk/article/22a4d6ab-ecac-4515-bea7-c72eb2207417?shareToken=16bf168b3b9d0d682b6c92dc768eee85"
           )
-        : "No getDomainSpecificUrl"
+        : "No getDomainSpecificUrl log"
     );
     return (
       <ShareItem
