@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.84.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.84.6...@times-components/article-in-depth@3.84.7) (2024-05-03)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3840](https://github.com/newsuk/times-components/issues/3840)) ([2111d73](https://github.com/newsuk/times-components/commit/2111d7314cc450d1fd25f413c562f9d45bff6961))
+
+
+
+
+
 ## [3.84.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.84.5...@times-components/article-in-depth@3.84.6) (2024-04-29)
 
 **Note:** Version bump only for package @times-components/article-in-depth
