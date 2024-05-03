@@ -150,7 +150,7 @@ export default () => {
       await testInstance.root.findByType(ShareItem).props.onClick(mockEvent);
       expect(testInstance).toMatchSnapshot();
     });
-    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times) with .co.uk", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
       const getDomainSpecificUrl = jest.fn().mockReturnValue(url);
@@ -165,6 +165,30 @@ export default () => {
         </TCThemeProvider>
       );
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+      await testInstance.root
+        .findAllByType(ShareItem)[0]
+        .props.onClick(mockEvent);
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
+    });
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
+      const mock = await mockGetTokenisedArticleUrl(articleId);
+      const url = mock.data.article.tokenisedUrl;
+      const getDomainSpecificUrl = (host, domain) =>
+        host.includes(".com") ? domain.replace(".co.uk", ".com") : domain;
+      const testInstance = TestRenderer.create(
+        <TCThemeProvider>
+          <EmailShare
+            {...props}
+            shouldTokenise
+            publicationName="TIMES"
+            getDomainSpecificUrl={getDomainSpecificUrl}
+          />
+        </TCThemeProvider>
+      );
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${getDomainSpecificUrl(
+        hostName,
+        url
+      )}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);
