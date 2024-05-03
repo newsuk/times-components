@@ -182,6 +182,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   articleHeadline=""
                   articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
                   articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
                   savingEnabled={true}
                   sharingEnabled={true}
                 />
@@ -459,6 +460,7 @@ exports[`4. an article with ads 1`] = `
                   articleHeadline="Some Headline"
                   articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
                   articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
                   savingEnabled={true}
                   sharingEnabled={true}
                 />
