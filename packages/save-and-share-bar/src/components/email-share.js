@@ -37,6 +37,8 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
+            // tslint:disable-next-line:no-console
+            console.log(hostName, data.article.tokenisedUrl);
             this.openMailClient(
               getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
             );
