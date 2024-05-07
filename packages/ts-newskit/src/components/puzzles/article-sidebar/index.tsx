@@ -8,7 +8,15 @@ import {
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
-import {Container, Description, Divider, ItemTitle, StyledCardComposable, StyledCardMedia, Title } from './styles';
+import {
+  Container,
+  Description,
+  Divider,
+  ItemTitle,
+  Link,
+  StyledCardMedia,
+  Title
+} from './styles';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -24,33 +32,23 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   return (
     <Container>
       <div>
-        <div>
-          <StyledCardComposable
-          >
-            <CardLink external={false} expand href={pageLink} />
+        <Link href={pageLink}>
+          <Stack flow="horizontal-center" stackDistribution="space-between">
+            <Title>{sectionTitle}</Title>
 
-            <Stack flow="horizontal-center" stackDistribution="space-between">
-              <Title>
-                {sectionTitle}
-              </Title>
+            <IconButton
+              overrides={{
+                stylePreset: 'iconPreset',
+                width: 'sizing050',
+                height: 'sizing050'
+              }}
+            >
+              <NewsKitChevronRightIcon />
+            </IconButton>
+          </Stack>
+        </Link>
 
-              <IconButton
-                overrides={{
-                  stylePreset: 'iconPreset',
-                  width: 'sizing050',
-                  height: 'sizing050'
-                }}
-              >
-                <NewsKitChevronRightIcon />
-              </IconButton>
-            </Stack>
-          </StyledCardComposable>
-
-          <Description
-          >
-            Challenge yourself with today’s puzzles.
-          </Description>
-        </div>
+        <Description>Challenge yourself with today’s puzzles.</Description>
       </div>
       <Divider />
 
@@ -81,9 +79,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             />
             <CardLink external={false} expand href={url} />
             <CardContent alignItems="center">
-              <ItemTitle>
-                {title}
-              </ItemTitle>
+              <ItemTitle>{title}</ItemTitle>
             </CardContent>
           </CardComposable>
           <Divider />
