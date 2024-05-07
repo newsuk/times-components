@@ -15,8 +15,6 @@ import {
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/ts-styleguide";
 import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
-import { TCThemeProvider } from "@times-components/ts-newskit";
-
 import Article from "../../src/article-in-depth";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
@@ -138,31 +136,29 @@ const tests = [
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
-        <TCThemeProvider>
-          <ContextProviderWithDefaults
-            value={{
-              theme: { scale, sectionColour },
-              user: { hasAccess: true, isLoggedIn: true }
-            }}
-          >
-            <MockedProvider>
-              <Article
-                adConfig={adConfig}
-                analyticsStream={() => {}}
-                article={article}
-                onAuthorPress={() => {}}
-                onCommentGuidelinesPress={() => {}}
-                onCommentsPress={() => {}}
-                onLinkPress={() => {}}
-                onRelatedArticlePress={() => {}}
-                onTopicPress={() => {}}
-                onVideoPress={() => {}}
-                navigationMode={navigationMode}
-                receiveChildList={() => {}}
-              />
-            </MockedProvider>
-          </ContextProviderWithDefaults>
-        </TCThemeProvider>
+        <ContextProviderWithDefaults
+          value={{
+            theme: { scale, sectionColour },
+            user: { hasAccess: true, isLoggedIn: true }
+          }}
+        >
+          <MockedProvider>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={() => {}}
+              article={article}
+              onAuthorPress={() => {}}
+              onCommentGuidelinesPress={() => {}}
+              onCommentsPress={() => {}}
+              onLinkPress={() => {}}
+              onRelatedArticlePress={() => {}}
+              onTopicPress={() => {}}
+              onVideoPress={() => {}}
+              navigationMode={navigationMode}
+              receiveChildList={() => {}}
+            />
+          </MockedProvider>
+        </ContextProviderWithDefaults>
       );
 
       expect(testRenderer).toMatchSnapshot();

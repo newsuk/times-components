@@ -1,7 +1,6 @@
 import React from "react";
 import { boolean } from "@storybook/addon-knobs";
 import { scales } from "@times-components/ts-styleguide";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
@@ -27,26 +26,24 @@ export default {
   children: [
     {
       component: () => (
-        <TCThemeProvider>
-          <MockBookmarksProvider delay={1000} articleId={articleId}>
-            <MessageManager delay={3000} scale={scales.medium}>
-              <MessageContext.Consumer>
-                {({ showMessage }) => (
-                  <SaveAndShareBar
-                    articleId={articleId}
-                    articleHeadline="test-headline"
-                    articleUrl="https://www.thetimes.co.uk/"
-                    onCopyLink={() => showMessage("Article link copied")}
-                    getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                    savingEnabled={boolean("Is Saving Enabled", true)}
-                    sharingEnabled={boolean("Is Sharing Enabled", true)}
-                    isPreviewMode
-                  />
-                )}
-              </MessageContext.Consumer>
-            </MessageManager>
-          </MockBookmarksProvider>
-        </TCThemeProvider>
+        <MockBookmarksProvider delay={1000} articleId={articleId}>
+          <MessageManager delay={3000} scale={scales.medium}>
+            <MessageContext.Consumer>
+              {({ showMessage }) => (
+                <SaveAndShareBar
+                  articleId={articleId}
+                  articleHeadline="test-headline"
+                  articleUrl="https://www.thetimes.co.uk/"
+                  onCopyLink={() => showMessage("Article link copied")}
+                  getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+                  savingEnabled={boolean("Is Saving Enabled", true)}
+                  sharingEnabled={boolean("Is Sharing Enabled", true)}
+                  isPreviewMode
+                />
+              )}
+            </MessageContext.Consumer>
+          </MessageManager>
+        </MockBookmarksProvider>
       ),
       name: "Save and Share bar",
       type: "story"

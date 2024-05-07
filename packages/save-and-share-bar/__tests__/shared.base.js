@@ -1,13 +1,12 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer, { act } from "react-test-renderer";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import { ShareItem } from "../src/components/share-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/components/email-share";
-import { StyledButton } from "../src/styled";
+import { OutlineButton } from "../src/styled";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
@@ -58,36 +57,30 @@ export default () => {
     });
     it("save and share bar renders correctly when logged in", () => {
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
     it("save and share bar renders correctly when not logged in", () => {
       UserState.mockStates = [];
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
     it("onPress events triggers correctly", () => {
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <MockedProvider>
-            <SaveAndShareBar {...props} />
-          </MockedProvider>
-        </TCThemeProvider>
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
       );
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       testInstance.root.findAllByType(ShareItem)[3].props.onClick(mockEvent);
@@ -99,14 +92,10 @@ export default () => {
         UserState.showSaveAndShareBar,
         UserState.showTokenisedEmailShare
       ];
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <SaveAndShareBar {...props} />
-        </TCThemeProvider>
-      );
+      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       expect(
@@ -115,14 +104,10 @@ export default () => {
     });
     it("does not tokenises when not logged in", () => {
       UserState.mockStates = [];
-      const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <SaveAndShareBar {...props} />
-        </TCThemeProvider>
-      );
+      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       expect(
@@ -135,23 +120,19 @@ export default () => {
           loading: true
         });
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <EmailShare
-            {...props}
-            getTokenisedShareUrl={apiMock}
-            shouldTokenise
-            publicationName="TIMES"
-          />
-        </TCThemeProvider>
+        <EmailShare
+          {...props}
+          getTokenisedShareUrl={apiMock}
+          shouldTokenise
+          publicationName="TIMES"
+        />
       );
       await testInstance.root.findByType(ShareItem).props.onClick(mockEvent);
       expect(testInstance).toMatchSnapshot();
     });
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <EmailShare {...props} shouldTokenise publicationName="TIMES" />
-        </TCThemeProvider>
+        <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
@@ -163,13 +144,11 @@ export default () => {
     });
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <EmailShare
-            {...props}
-            shouldTokenise
-            publicationName="THE SUNDAY TIMES"
-          />
-        </TCThemeProvider>
+        <EmailShare
+          {...props}
+          shouldTokenise
+          publicationName="THE SUNDAY TIMES"
+        />
       );
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
@@ -182,13 +161,7 @@ export default () => {
     it("when not tokenising, but using existing tokenised article, email icon uses existing tokenised article url and change window.location", async () => {
       window.location.search = "?shareToken=foo";
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <EmailShare
-            {...props}
-            shouldTokenise={false}
-            publicationName="TIMES"
-          />
-        </TCThemeProvider>
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
       const url = `${articleUrl}?shareToken=foo`;
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
@@ -199,13 +172,7 @@ export default () => {
     });
     it("when not tokenising email icon uses article url and change window.location", async () => {
       const testInstance = TestRenderer.create(
-        <TCThemeProvider>
-          <EmailShare
-            {...props}
-            shouldTokenise={false}
-            publicationName="TIMES"
-          />
-        </TCThemeProvider>
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
       await testInstance.root
