@@ -19,7 +19,7 @@ export default () => {
     const onCopyLink = jest.fn();
     const onShareEmail = jest.fn();
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
-    const hostName = "https://www.thetimes.com";
+    const hostName = "https://www.thetimes.co.uk";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
     const originalClipboard = { ...global.navigator.clipboard };
@@ -165,14 +165,14 @@ export default () => {
     });
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
-      const url = mock.data.article.tokenisedUrl;
+      const url = mock.data.article.tokenisedUrl.replace("co.uk", "com");
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
           <EmailShare
             {...props}
             shouldTokenise
             publicationName="TIMES"
-            hostName="www.thetimes.co.uk"
+            hostName="https://www.thetimes.com"
           />
         </TCThemeProvider>
       );
