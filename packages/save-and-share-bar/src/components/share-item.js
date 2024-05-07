@@ -1,11 +1,25 @@
 import React from "react";
-import { Stack, TextBlock, LinkStandalone, styled } from "newskit";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const StyledLinkStandalone = styled(LinkStandalone)`
+const ShareItemLabelContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`
+
+const ShareItemLabelText = styled.span`
+font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+`
+
+const StyledLink = styled.a`
+  color: #005C8A;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
-    text-decoration: none !important;
+    color: #00527a;
   }
 `;
 
@@ -25,24 +39,23 @@ export const ShareItem = ({
   onClick = () => {},
   ...props
 }) => (
-  <StyledLinkStandalone
+  <StyledLink
     data-testid={testId}
     onClick={onClick}
     href={href}
     target="_blank"
     title={tooltipContent}
-    external={false}
     {...props}
   >
     {children}
-  </StyledLinkStandalone>
+  </StyledLink>
 );
 
 export const ShareItemLabel = ({ children, icon }) => (
-  <Stack flow="horizontal-center" spaceInline="space020">
+  <ShareItemLabelContainer>
     <IconContainer>{icon}</IconContainer>
-    <TextBlock typographyPreset="utilityLabel020">{children}</TextBlock>
-  </Stack>
+    <ShareItemLabelText>{children}</ShareItemLabelText>
+  </ShareItemLabelContainer>
 );
 
 ShareItem.propTypes = {
