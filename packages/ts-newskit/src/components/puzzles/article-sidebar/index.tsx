@@ -1,9 +1,4 @@
 import React, { FC } from 'react';
-import {
-  CardComposable,
-  CardContent,
-  CardLink,
-} from 'newskit';
 import { Puzzle } from './types';
 import {
   ChevronButton,
@@ -13,7 +8,8 @@ import {
   Divider,
   ItemTitle,
   Link,
-  StyledCardMedia,
+  PuzzleContainer,
+  PuzzleImage,
   Title,
   TitleIconContainer
 } from './styles';
@@ -35,8 +31,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
         <Link href={pageLink}>
           <TitleIconContainer>
             <Title>{sectionTitle}</Title>
-            <ChevronButton
-            >
+            <ChevronButton>
               <ChevronRightIcon />
             </ChevronButton>
           </TitleIconContainer>
@@ -48,34 +43,10 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
 
       {data.map(({ title, url, imgUrl }) => (
         <React.Fragment key={title}>
-          <CardComposable
-            columns="0fr 1fr"
-            overrides={{
-              stylePreset: 'transparentCard',
-              marginBlockStart: 'space040'
-            }}
-            areas={`
-           media content          
-         `}
-          >
-            <StyledCardMedia
-              media={{
-                src: imgUrl,
-                height: '40px',
-                width: 'auto',
-                alt: 'Puzzle thumbnail',
-                placeholderIcon: true,
-                overrides: {
-                  marginInlineEnd: 'space040',
-                  maxWidth: 'initial'
-                }
-              }}
-            />
-            <CardLink external={false} expand href={url} />
-            <CardContent alignItems="center">
-              <ItemTitle>{title}</ItemTitle>
-            </CardContent>
-          </CardComposable>
+          <PuzzleContainer href={url}>
+            <PuzzleImage src={imgUrl} alt="Puzzle thumbnail" />
+            <ItemTitle>{title}</ItemTitle>
+          </PuzzleContainer>
           <Divider />
         </React.Fragment>
       ))}

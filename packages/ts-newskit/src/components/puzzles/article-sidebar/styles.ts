@@ -1,4 +1,4 @@
-import { styled, CardMedia } from 'newskit';
+import styled from '@emotion/styled';
 import ChevronIcon from '../../../assets/ChevronIcon';
 
 export const ChevronRightIcon = styled(ChevronIcon)`
@@ -53,7 +53,7 @@ export const TitleIconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`
+`;
 
 export const Title = styled.h3`
   font-family: 'Times Modern';
@@ -73,7 +73,7 @@ export const ChevronButton = styled.button`
   width: 24px;
   height: 24px;
   padding: 0;
-`
+`;
 
 export const ItemTitle = styled.p`
   font-family: 'Times Modern';
@@ -83,10 +83,21 @@ export const ItemTitle = styled.p`
   letter-spacing: 0em;
 `;
 
-export const StyledCardMedia = styled(CardMedia)`
-  picture {
-    min-height: 40px;
-    min-width: 40px;
-    background: transparent;
+export const PuzzleContainer = styled.a`
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #01000d;
+
+  :hover {
+    color: #00527a;
   }
+`;
+
+export const PuzzleImage = styled.img`
+  height: 40px;
+  width: auto;
+  max-width: initial;
+  margin: 0 14px;
 `;
