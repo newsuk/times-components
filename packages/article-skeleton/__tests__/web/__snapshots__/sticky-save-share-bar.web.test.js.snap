@@ -2,44 +2,36 @@
 
 exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
-  <sticky-save-and-share-bar__StyledKeylineItem>
-    <StyledComponent
-      forwardedRef={null}
+  <WithStickyContext(Sticky)>
+    <Sticky
+      className=""
     >
+      <div />
       <div>
-        <WithStickyContext(Sticky)>
-          <Sticky
-            className=""
-          >
-            <div />
-            <div>
-              <SaveShareContainerWrapper
+        <SaveShareContainerWrapper
+          className=""
+        >
+          <ServerClientRender>
+            <sticky-save-and-share-bar__SaveShareContainer
+              className=""
+            >
+              <StyledComponent
                 className=""
+                forwardedRef={null}
               >
-                <ServerClientRender>
-                  <sticky-save-and-share-bar__SaveShareContainer
-                    className=""
-                  >
-                    <StyledComponent
-                      className=""
-                      forwardedRef={null}
-                    >
-                      <div>
-                        <div>
-                          <Component>
-                            SaveAndShareBar
-                          </Component>
-                        </div>
-                      </div>
-                    </StyledComponent>
-                  </sticky-save-and-share-bar__SaveShareContainer>
-                </ServerClientRender>
-              </SaveShareContainerWrapper>
-            </div>
-          </Sticky>
-        </WithStickyContext(Sticky)>
+                <div>
+                  <div>
+                    <Component>
+                      SaveAndShareBar
+                    </Component>
+                  </div>
+                </div>
+              </StyledComponent>
+            </sticky-save-and-share-bar__SaveShareContainer>
+          </ServerClientRender>
+        </SaveShareContainerWrapper>
       </div>
-    </StyledComponent>
-  </sticky-save-and-share-bar__StyledKeylineItem>
+    </Sticky>
+  </WithStickyContext(Sticky)>
 </StickySaveAndShareBar>
 `;

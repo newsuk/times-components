@@ -167,25 +167,23 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             </div>
           </div>
         </div>
-        <div>
-          <div
-            data-tc-sticky-placeholder={true}
-          />
-          <div
-            data-tc-sticky-container={true}
-          >
-            <div>
-              <div
-                data-tc-sticky-sizer={true}
-              >
-                <SaveAndShareBar
-                  articleHeadline=""
-                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                  articleUrl="https://url.io"
-                  savingEnabled={true}
-                  sharingEnabled={true}
-                />
-              </div>
+        <div
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
+        >
+          <div>
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline=""
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
             </div>
           </div>
         </div>
@@ -444,25 +442,23 @@ exports[`4. an article with ads 1`] = `
             </div>
           </div>
         </div>
-        <div>
-          <div
-            data-tc-sticky-placeholder={true}
-          />
-          <div
-            data-tc-sticky-container={true}
-          >
-            <div>
-              <div
-                data-tc-sticky-sizer={true}
-              >
-                <SaveAndShareBar
-                  articleHeadline="Some Headline"
-                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                  articleUrl="https://url.io"
-                  savingEnabled={true}
-                  sharingEnabled={true}
-                />
-              </div>
+        <div
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
+        >
+          <div>
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline="Some Headline"
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
             </div>
           </div>
         </div>

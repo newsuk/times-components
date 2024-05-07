@@ -8,7 +8,6 @@ import Sticky, {
 } from "@times-components/sticky";
 import { breakpoints, colours } from "@times-components/ts-styleguide";
 import { ServerClientRender } from "@times-components/utils";
-import { ArticleKeylineItem } from "./keylines";
 
 const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
@@ -48,24 +47,16 @@ function SaveShareContainerWrapper(props) {
   );
 }
 
-const StyledKeylineItem = styled(ArticleKeylineItem)`
-  ${selectors.containsSticky(css`
-    border-bottom-color: transparent;
-  `)};
-`;
-
 const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
   return (
-    <StyledKeylineItem>
-      <Sticky
-        Component={SaveShareContainerWrapper}
-        shouldBeSticky={shouldBeSticky}
-      >
-        <SaveAndShareBar {...props} />
-      </Sticky>
-    </StyledKeylineItem>
+    <Sticky
+      Component={SaveShareContainerWrapper}
+      shouldBeSticky={shouldBeSticky}
+    >
+      <SaveAndShareBar {...props} />
+    </Sticky>
   );
 }
 
