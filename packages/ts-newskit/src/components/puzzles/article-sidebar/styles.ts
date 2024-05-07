@@ -1,4 +1,11 @@
 import { styled, CardMedia } from 'newskit';
+import ChevronIcon from '../../../assets/ChevronIcon';
+
+export const ChevronRightIcon = styled(ChevronIcon)`
+  transform: rotate(90deg);
+  width: 24px;
+  height: 24px;
+`;
 
 export const Container = styled.div`
   padding-top: 3px;
@@ -42,6 +49,12 @@ export const Link = styled.a`
   }
 `;
 
+export const TitleIconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
 export const Title = styled.h3`
   font-family: 'Times Modern';
   font-weight: 800;
@@ -50,6 +63,17 @@ export const Title = styled.h3`
   letter-spacing: 0em;
   margin: 0;
 `;
+
+export const ChevronButton = styled.button`
+  background-color: #eeeeee;
+  color: #df7334;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+`
 
 export const ItemTitle = styled.p`
   font-family: 'Times Modern';

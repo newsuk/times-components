@@ -3,19 +3,19 @@ import {
   CardComposable,
   CardContent,
   CardLink,
-  Stack,
-  IconButton
 } from 'newskit';
-import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import {
+  ChevronButton,
+  ChevronRightIcon,
   Container,
   Description,
   Divider,
   ItemTitle,
   Link,
   StyledCardMedia,
-  Title
+  Title,
+  TitleIconContainer
 } from './styles';
 
 export interface ArticleSideBarProps {
@@ -33,19 +33,13 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
     <Container>
       <div>
         <Link href={pageLink}>
-          <Stack flow="horizontal-center" stackDistribution="space-between">
+          <TitleIconContainer>
             <Title>{sectionTitle}</Title>
-
-            <IconButton
-              overrides={{
-                stylePreset: 'iconPreset',
-                width: 'sizing050',
-                height: 'sizing050'
-              }}
+            <ChevronButton
             >
-              <NewsKitChevronRightIcon />
-            </IconButton>
-          </Stack>
+              <ChevronRightIcon />
+            </ChevronButton>
+          </TitleIconContainer>
         </Link>
 
         <Description>Challenge yourself with today’s puzzles.</Description>
