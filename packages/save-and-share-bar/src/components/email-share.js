@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { getDomainSpecificUrl } from "@times-components/utils";
 import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import { ShareItem, ShareItemLabel } from "./share-item";
 import { EmailSpinnerContainer } from "../styled";
@@ -21,7 +22,6 @@ class EmailShare extends Component {
       articleUrl,
       onShareEmail,
       articleHeadline,
-      getDomainSpecificUrl,
       hostName
     } = this.props;
 
@@ -103,7 +103,6 @@ EmailShare.propTypes = {
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
   publicationName: PropTypes.string,
-  getDomainSpecificUrl: PropTypes.func.isRequired,
   hostName: PropTypes.string.isRequired
 };
 

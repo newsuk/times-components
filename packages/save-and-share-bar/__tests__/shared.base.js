@@ -32,8 +32,7 @@ export default () => {
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
       sharingEnabled: true,
       savingEnabled: true,
-      hostName,
-      getDomainSpecificUrl: jest.fn()
+      hostName
     };
     let realLocation;
     let clipboardData;
@@ -153,15 +152,9 @@ export default () => {
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times) with .co.uk", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
-      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
-          <EmailShare
-            {...props}
-            shouldTokenise
-            publicationName="TIMES"
-            getDomainSpecificUrl={getDomainSpecificUrl}
-          />
+          <EmailShare {...props} shouldTokenise publicationName="TIMES" />
         </TCThemeProvider>
       );
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
@@ -173,22 +166,17 @@ export default () => {
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
-      const getDomainSpecificUrl = (host, domain) =>
-        host.includes(".com") ? domain.replace(".co.uk", ".com") : domain;
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
           <EmailShare
             {...props}
             shouldTokenise
             publicationName="TIMES"
-            getDomainSpecificUrl={getDomainSpecificUrl}
+            hostName="www.thetimes.co.uk"
           />
         </TCThemeProvider>
       );
-      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${getDomainSpecificUrl(
-        hostName,
-        url
-      )}`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);
@@ -197,14 +185,12 @@ export default () => {
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
       const mock = await mockGetTokenisedArticleUrl(articleId);
       const url = mock.data.article.tokenisedUrl;
-      const getDomainSpecificUrl = jest.fn().mockReturnValue(url);
       const testInstance = TestRenderer.create(
         <TCThemeProvider>
           <EmailShare
             {...props}
             shouldTokenise
             publicationName="THE SUNDAY TIMES"
-            getDomainSpecificUrl={getDomainSpecificUrl}
           />
         </TCThemeProvider>
       );
