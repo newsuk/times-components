@@ -1,17 +1,15 @@
 import React, { FC } from 'react';
 import {
   TextBlock,
-  Block,
   CardComposable,
   CardContent,
   CardLink,
-  Divider,
   Stack,
   IconButton
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
-import { StyledCardComposable, StyledCardMedia } from './styles';
+import {Container, Description, Divider, StyledCardComposable, StyledCardMedia } from './styles';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -25,9 +23,9 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   pageLink
 }) => {
   return (
-    <Block stylePreset="sidebarCard" paddingBlockStart="space030">
-      <Block>
-        <Block>
+    <Container>
+      <div>
+        <div>
           <StyledCardComposable
             overrides={{
               marginBlockEnd: 'space030',
@@ -53,19 +51,13 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             </Stack>
           </StyledCardComposable>
 
-          <TextBlock
-            as="p"
-            marginBlockEnd="space030"
-            stylePreset="inkBase"
-            typographyPreset="utilityBody010"
+          <Description
           >
             Challenge yourself with today’s puzzles.
-          </TextBlock>
-        </Block>
-      </Block>
-      <Divider
-        overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
-      />
+          </Description>
+        </div>
+      </div>
+      <Divider />
 
       {data.map(({ title, url, imgUrl }) => (
         <React.Fragment key={title}>
@@ -99,14 +91,9 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
               </TextBlock>
             </CardContent>
           </CardComposable>
-          <Divider
-            overrides={{
-              marginBlock: 'space040',
-              stylePreset: 'dashedDivider'
-            }}
-          />
+          <Divider />
         </React.Fragment>
       ))}
-    </Block>
+    </Container>
   );
 };
