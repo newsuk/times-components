@@ -27,18 +27,16 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
 }) => {
   return (
     <Container>
-      <div>
-        <Link href={pageLink}>
-          <TitleIconContainer>
-            <Title>{sectionTitle}</Title>
-            <ChevronButton>
-              <ChevronRightIcon />
-            </ChevronButton>
-          </TitleIconContainer>
-        </Link>
+      <Link href={pageLink}>
+        <TitleIconContainer>
+          <Title>{sectionTitle}</Title>
+          <ChevronButton>
+            <ChevronRightIcon />
+          </ChevronButton>
+        </TitleIconContainer>
+      </Link>
 
-        <Description>Challenge yourself with today’s puzzles.</Description>
-      </div>
+      <Description>Challenge yourself with today’s puzzles.</Description>
       <Divider />
 
       {data.map(({ title, url, imgUrl }) => (

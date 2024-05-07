@@ -97,7 +97,6 @@ export const PuzzleContainer = styled.a`
 
 export const PuzzleImage = styled.img`
   height: 40px;
-  width: auto;
-  max-width: initial;
+  height: 40px;
   margin: 0 14px;
 `;
