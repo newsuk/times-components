@@ -9,10 +9,11 @@ const IconCopyLink = ({
   opacity,
   strokeColour,
   title = "Copy link to clipboard",
+  ariaLabel = "icon-copy-link",
   width
 }) => (
   <svg
-    aria-label="icon-copy-link"
+    aria-label={ariaLabel}
     role="img"
     viewBox="0 0 15 15"
     {...clean({

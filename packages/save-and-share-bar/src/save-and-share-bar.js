@@ -94,7 +94,12 @@ function SaveAndShareBar(props) {
             <Share style={{ height: 14, width: 14 }} />
             Share
           </OutlineButton>
-          <Popover ref={popoverRef} position={position} isOpen={popoverOpen}>
+          <Popover
+            ref={popoverRef}
+            position={position}
+            isOpen={popoverOpen}
+            aria-expanded={popoverOpen}
+          >
             <PopoverHeader>
               <h3>Share this article</h3>
               <CloseButton onClick={togglePopover}>
@@ -132,6 +137,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconTwitter
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.height}
                       title="Share on Twitter"
@@ -151,6 +157,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconFacebook
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.fb.height}
                       title="Share on Facebook"
@@ -170,6 +177,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconCopyLink
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.height}
                       title="Copy link to clipboard"

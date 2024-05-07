@@ -141,7 +141,7 @@ exports[`1. a full article 1`] = `
       title="Share by email"
     >
       <svg
-        aria-label="icon-email"
+        aria-label=""
         height={16}
         role="img"
         title="Share by email"
@@ -168,7 +168,7 @@ exports[`1. a full article 1`] = `
       title="Share on Twitter"
     >
       <svg
-        aria-label="icon-twitter"
+        aria-label=""
         height={16}
         role="img"
         title="Share on Twitter"
@@ -206,7 +206,7 @@ exports[`1. a full article 1`] = `
       title="Share on Facebook"
     >
       <svg
-        aria-label="icon-facebook"
+        aria-label=""
         height={18}
         role="img"
         title="Share on Facebook"
@@ -233,7 +233,7 @@ exports[`1. a full article 1`] = `
       title="Copy link to clipboard"
     >
       <svg
-        aria-label="icon-copy-link"
+        aria-label=""
         height={16}
         role="img"
         title="Copy link to clipboard"
@@ -383,7 +383,7 @@ exports[`1. a full article 1`] = `
         title="Share by email"
       >
         <svg
-          aria-label="icon-email"
+          aria-label=""
           height={16}
           role="img"
           title="Share by email"
@@ -410,7 +410,7 @@ exports[`1. a full article 1`] = `
         title="Share on Twitter"
       >
         <svg
-          aria-label="icon-twitter"
+          aria-label=""
           height={16}
           role="img"
           title="Share on Twitter"
@@ -448,7 +448,7 @@ exports[`1. a full article 1`] = `
         title="Share on Facebook"
       >
         <svg
-          aria-label="icon-facebook"
+          aria-label=""
           height={18}
           role="img"
           title="Share on Facebook"
@@ -475,7 +475,7 @@ exports[`1. a full article 1`] = `
         title="Copy link to clipboard"
       >
         <svg
-          aria-label="icon-copy-link"
+          aria-label=""
           height={16}
           role="img"
           title="Copy link to clipboard"

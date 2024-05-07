@@ -63,6 +63,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       Share
     </button>
     <div
+      aria-expanded={false}
       className="styled__Popover-qkwc0r-3 kkHAGO"
     >
       <div
@@ -105,6 +106,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconEmail
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Share by email"
@@ -131,6 +133,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconTwitter
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Share on Twitter"
@@ -157,6 +160,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconFacebook
+                ariaLabel=""
                 fillColour="currentColor"
                 height={18}
                 title="Share on Facebook"
@@ -183,6 +187,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconCopyLink
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Copy link to clipboard"
@@ -240,6 +245,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       Share
     </button>
     <div
+      aria-expanded={false}
       className="styled__Popover-qkwc0r-3 kkHAGO"
     >
       <div
@@ -282,6 +288,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconEmail
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Share by email"
@@ -308,6 +315,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconTwitter
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Share on Twitter"
@@ -334,6 +342,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconFacebook
+                ariaLabel=""
                 fillColour="currentColor"
                 height={18}
                 title="Share on Facebook"
@@ -360,6 +369,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
             >
               <IconCopyLink
+                ariaLabel=""
                 fillColour="currentColor"
                 height={16}
                 title="Copy link to clipboard"
