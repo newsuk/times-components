@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import {
-  TextBlock,
   CardComposable,
   CardContent,
   CardLink,
@@ -9,7 +8,7 @@ import {
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
-import {Container, Description, Divider, StyledCardComposable, StyledCardMedia } from './styles';
+import {Container, Description, Divider, ItemTitle, StyledCardComposable, StyledCardMedia, Title } from './styles';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -27,17 +26,13 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
       <div>
         <div>
           <StyledCardComposable
-            overrides={{
-              marginBlockEnd: 'space030',
-              stylePreset: 'cardTitleIcon'
-            }}
           >
             <CardLink external={false} expand href={pageLink} />
 
             <Stack flow="horizontal-center" stackDistribution="space-between">
-              <TextBlock as="h3" typographyPreset="editorialDisplay002">
+              <Title>
                 {sectionTitle}
-              </TextBlock>
+              </Title>
 
               <IconButton
                 overrides={{
@@ -86,9 +81,9 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             />
             <CardLink external={false} expand href={url} />
             <CardContent alignItems="center">
-              <TextBlock typographyPreset="editorialSubheadline010">
+              <ItemTitle>
                 {title}
-              </TextBlock>
+              </ItemTitle>
             </CardContent>
           </CardComposable>
           <Divider />

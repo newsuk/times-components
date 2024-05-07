@@ -1,6 +1,4 @@
 import {
-  CardComposable,
-  getColorCssFromTheme,
   styled,
   CardMedia
 } from 'newskit';
@@ -22,23 +20,45 @@ export const Description = styled.p`
   letter-spacing: 0em;
 `
 
-export const Divider = styled.div`
+export const Divider = styled.hr`
   margin: 16px 0;
   border-style: dashed none none none;
   border-width: 1px;
   border-color: #01000d;
 `
 
-export const StyledCardComposable = styled(CardComposable)`
+export const StyledCardComposable = styled.div`
+  margin-right: 12px;
+
   &:hover {
     button {
-      ${getColorCssFromTheme('backgroundColor', 'interface040')};
+      background-color: #e4e4e4;
+    }
+    h3 {
+      color: #00527a;
     }
   }
   h3 {
-    color: inherit;
+    color: #df7334;
   }
 `;
+
+export const Title = styled.h3`
+font-family: "Times Modern";
+font-weight: 800;
+line-height: 1.125;
+font-size: 1.8rem;
+letter-spacing: 0em;
+margin: 0;
+`
+
+export const ItemTitle = styled.p`
+font-family: "Times Modern";
+font-weight: 400;
+line-height: 1.125;
+font-size: 1.6rem;
+letter-spacing: 0em;
+`
 
 export const StyledCardMedia = styled(CardMedia)`
   picture {
