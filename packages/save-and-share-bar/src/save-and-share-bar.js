@@ -16,7 +16,15 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
-import { SaveAndShareBarContainer, ShareButtonContainer, OutlineButton, Popover, PopoverHeader, PopoverContent, CloseButton } from "./styled";
+import {
+  SaveAndShareBarContainer,
+  ShareButtonContainer,
+  OutlineButton,
+  Popover,
+  PopoverHeader,
+  PopoverContent,
+  CloseButton
+} from "./styled";
 import { CloseIcon } from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
@@ -39,24 +47,29 @@ function SaveAndShareBar(props) {
   const shareBtnRef = React.useRef();
   const popoverRef = React.useRef();
 
-  const barPosition = barRef.current ? barRef.current.getBoundingClientRect().bottom : screen.height;
-  const position = screen.height - barPosition > 400 ? "bottom" : "top"
+  const barPosition = barRef.current
+    ? barRef.current.getBoundingClientRect().bottom
+    : screen.height;
+  const position = screen.height - barPosition > 400 ? "bottom" : "top";
 
   useEffect(() => {
-    if(!popoverRef.current) return;
+    if (!popoverRef.current) return;
     function clickHandler(event) {
       // Close popover if clicked outside popover or on share button
-      if (!popoverRef.current.contains(event.target) && event.target !== shareBtnRef.current) {
+      if (
+        !popoverRef.current.contains(event.target) &&
+        event.target !== shareBtnRef.current
+      ) {
         setPopoverOpen(false);
-    }
+      }
     }
 
-    document.body.addEventListener('click', clickHandler);
+    document.body.addEventListener("click", clickHandler);
     return () => {
-      document.body.removeEventListener('click', clickHandler);
-    }
-  },[])
-  
+      document.body.removeEventListener("click", clickHandler);
+    };
+  }, []);
+
   const togglePopover = () => {
     setPopoverOpen(prev => !prev);
   };
@@ -70,13 +83,14 @@ function SaveAndShareBar(props) {
   }
 
   return (
-    <SaveAndShareBarContainer
-      data-testid="save-and-share-bar"
-      ref={barRef}
-    >
+    <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
       {sharingEnabled && (
         <ShareButtonContainer>
-          <OutlineButton ref={shareBtnRef} isPopoverOpen={popoverOpen} onClick={togglePopover}>
+          <OutlineButton
+            ref={shareBtnRef}
+            isPopoverOpen={popoverOpen}
+            onClick={togglePopover}
+          >
             <Share style={{ height: 14, width: 14 }} />
             Share
           </OutlineButton>
@@ -88,86 +102,86 @@ function SaveAndShareBar(props) {
               </CloseButton>
             </PopoverHeader>
             <PopoverContent>
-            <SectionContext.Consumer>
-              {({ publicationName }) => (
-                <UserState
-                  state={UserState.showTokenisedEmailShare}
-                  fallback={
+              <SectionContext.Consumer>
+                {({ publicationName }) => (
+                  <UserState
+                    state={UserState.showTokenisedEmailShare}
+                    fallback={
+                      <EmailShare
+                        {...props}
+                        shouldTokenise={false}
+                        publicationName={publicationName}
+                      />
+                    }
+                  >
                     <EmailShare
                       {...props}
-                      shouldTokenise={false}
+                      shouldTokenise
                       publicationName={publicationName}
+                    />
+                  </UserState>
+                )}
+              </SectionContext.Consumer>
+
+              <ShareItem
+                testId="share-twitter"
+                tooltipContent="Share on Twitter"
+                href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+                onClick={onShareOnTwitter}
+              >
+                <ShareItemLabel
+                  icon={
+                    <IconTwitter
+                      fillColour="currentColor"
+                      height={styles.svgIcon.height}
+                      title="Share on Twitter"
                     />
                   }
                 >
-                  <EmailShare
-                    {...props}
-                    shouldTokenise
-                    publicationName={publicationName}
-                  />
-                </UserState>
-              )}
-            </SectionContext.Consumer>
+                  Twitter
+                </ShareItemLabel>
+              </ShareItem>
 
-            <ShareItem
-              testId="share-twitter"
-              tooltipContent="Share on Twitter"
-              href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-              onClick={onShareOnTwitter}
-            >
-              <ShareItemLabel
-                icon={
-                  <IconTwitter
-                    fillColour="currentColor"
-                    height={styles.svgIcon.height}
-                    title="Share on Twitter"
-                  />
-                }
+              <ShareItem
+                testId="share-facebook"
+                tooltipContent="Share on Facebook"
+                href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                onClick={onShareOnFB}
               >
-                Twitter
-              </ShareItemLabel>
-            </ShareItem>
+                <ShareItemLabel
+                  icon={
+                    <IconFacebook
+                      fillColour="currentColor"
+                      height={styles.svgIcon.fb.height}
+                      title="Share on Facebook"
+                    />
+                  }
+                >
+                  Facebook
+                </ShareItemLabel>
+              </ShareItem>
 
-            <ShareItem
-              testId="share-facebook"
-              tooltipContent="Share on Facebook"
-              href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-              onClick={onShareOnFB}
-            >
-              <ShareItemLabel
-                icon={
-                  <IconFacebook
-                    fillColour="currentColor"
-                    height={styles.svgIcon.fb.height}
-                    title="Share on Facebook"
-                  />
-                }
+              <ShareItem
+                testId="copy-to-clickboard"
+                tooltipContent="Copy link to clipboard"
+                href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                onClick={copyToClipboard}
               >
-                Facebook
-              </ShareItemLabel>
-            </ShareItem>
-
-            <ShareItem
-              testId="copy-to-clickboard"
-              tooltipContent="Copy link to clipboard"
-              href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-              onClick={copyToClipboard}
-            >
-              <ShareItemLabel
-                icon={
-                  <IconCopyLink
-                    fillColour="currentColor"
-                    height={styles.svgIcon.height}
-                    title="Copy link to clipboard"
-                  />
-                }
-              >
-                Link
-              </ShareItemLabel>
-            </ShareItem>
+                <ShareItemLabel
+                  icon={
+                    <IconCopyLink
+                      fillColour="currentColor"
+                      height={styles.svgIcon.height}
+                      title="Copy link to clipboard"
+                    />
+                  }
+                >
+                  Link
+                </ShareItemLabel>
+              </ShareItem>
             </PopoverContent>
           </Popover>
-          </ShareButtonContainer>
+        </ShareButtonContainer>
       )}
 
       {savingEnabled ? (

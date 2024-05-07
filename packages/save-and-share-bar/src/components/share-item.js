@@ -6,16 +6,16 @@ const ShareItemLabelContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-`
+`;
 
 const ShareItemLabelText = styled.span`
-font-family: Roboto;
-font-size: 14px;
-font-weight: 500;
-`
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+`;
 
 const StyledLink = styled.a`
-  color: #005C8A;
+  color: #005c8a;
   text-decoration: none;
   cursor: pointer;
   &:hover {

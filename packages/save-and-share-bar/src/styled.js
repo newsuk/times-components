@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SaveAndShareBarContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
   padding-block: 14px;
-`
+`;
 
 export const ShareButtonContainer = styled.div`
-  position: relative;  
-`
+  position: relative;
+`;
 
 export const OutlineButton = styled.button`
   position: relative;
@@ -17,7 +17,8 @@ export const OutlineButton = styled.button`
   min-width: 84px;
   padding: 8px 12px 8px 12px;
 
-  background-color: ${({isPopoverOpen}) => isPopoverOpen ? "#EEEEEE" : "#fff"};
+  background-color: ${({ isPopoverOpen }) =>
+    isPopoverOpen ? "#EEEEEE" : "#fff"};
   color: #333333;
 
   font-size: 14px;
@@ -35,51 +36,60 @@ export const OutlineButton = styled.button`
 
   transition: background-color 0.2s;
 
-  ${({isLoading}) => isLoading && `
-    border: none;
-    background-color: #EEEEEE;
-  `};
+  ${({ isLoading }) =>
+    isLoading &&
+    `
+      border: none;
+      background-color: #eeeeee;
+      cursor: default;
+    `};
 
   &:hover {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 
   &:focus-visible {
     outline: 2px solid #00527a;
     outline-offset: 2px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 
   &:active {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 `;
 
 export const Popover = styled.div`
   position: absolute;
-  ${({ position }) => position === "top" ? 'top: 0' : 'bottom: 0'};
+  ${({ position }) => (position === "top" ? "top: 0" : "bottom: 0")};
   left: 0;
   right: 12px;
-  transform: ${({ position }) => position === "top" ? 'translateY(calc((100% + 10px) * -1))' : 'translateY(calc((100% + 10px)))'};
+  transform: ${({ position }) =>
+    position === "top"
+      ? "translateY(calc((100% + 10px) * -1))"
+      : "translateY(calc((100% + 10px)))"};
 
-  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-  flex-direction: column;  
-  
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  flex-direction: column;
+
   background-color: #fff;
-  box-shadow: 0px 0px 72px -16px rgba(0,0,0,0.83);
+  box-shadow: 0px 0px 72px -16px rgba(0, 0, 0, 0.83);
   z-index: 99;
-  
+
   width: calc(100vw - 24px);
   max-width: 450px;
 
   /* Pointer Arrow */
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    ${({ position }) => position === "top" ? `
+    ${({ position }) =>
+      position === "top"
+        ? `
       bottom: -16px;
       transform: rotate(180deg);
-    ` : `
+    `
+        : `
     top: -16px;
     `};
     left: 36px;
@@ -95,9 +105,8 @@ export const PopoverHeader = styled.div`
   align-items: center;
   gap: 16px;
 
-  border-bottom: 1px solid #E4E4E4;
-  
-  
+  border-bottom: 1px solid #e4e4e4;
+
   h3 {
     font-family: Roboto;
     font-size: 18px;
@@ -122,7 +131,7 @@ export const PopoverContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
   }
-`
+`;
 
 export const CloseButton = styled.button`
   height: 48px;
@@ -134,20 +143,20 @@ export const CloseButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   transition: background-color 0.2s;
 
   &:focus-visible {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     border: 1px solid #000;
   }
 
   &:hover {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 `;
 
