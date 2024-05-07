@@ -85,7 +85,6 @@ function SaveAndShareBar(props) {
 
   return (
     <>
-      <div style={{ height: 0, backgroundColor: "red" }} />
       <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
         {sharingEnabled && (
           <ShareButtonContainer>
