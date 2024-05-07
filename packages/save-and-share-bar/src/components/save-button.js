@@ -20,6 +20,7 @@ const SaveButton = props => {
   return (
     <>
       <OutlineButton
+        isLoading={props.loading}
         onClick={() =>
           props.onToggleSave(props.articleId, props.data.isBookmarked)
         }

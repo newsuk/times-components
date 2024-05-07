@@ -35,7 +35,22 @@ export const OutlineButton = styled.button`
 
   transition: background-color 0.2s;
 
+  ${({isLoading}) => isLoading && `
+    border: none;
+    background-color: #EEEEEE;
+  `};
+
   &:hover {
+    background-color: #EEEEEE;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #00527a;
+    outline-offset: 2px;
+    background-color: #EEEEEE;
+  }
+
+  &:active {
     background-color: #EEEEEE;
   }
 `;
@@ -146,7 +161,7 @@ export const IconActivityIndicatorContainer = styled.div`
     height: 16px;
     width: 16px;
     border-right-color: #333333;
-    border-width: 0.15em;
+    border-width: 0.125em;
   }
 `;
 
