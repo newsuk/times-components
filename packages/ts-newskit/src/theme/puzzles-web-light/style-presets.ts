@@ -56,7 +56,7 @@ stylePresets.puzzleCard = {
   base: {
     borderWidth: '{{borders.borderWidth010}}',
     borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}',
+    borderColor: '{{colors.interface050}}',
     textAlign: 'center'
   }
 };
