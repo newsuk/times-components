@@ -18,11 +18,11 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
           Puzzles for you
         </h3>
         <button
-          class="css-1nx03l8"
+          class="css-1bky6dv"
         >
           <svg
             aria-hidden="true"
-            class="css-47kwys"
+            class="css-1lbdgr4"
             fill="currentcolor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
