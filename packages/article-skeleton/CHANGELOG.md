@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.130.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.3...@times-components/article-skeleton@1.130.4) (2024-05-08)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3841](https://github.com/newsuk/times-components/issues/3841)) ([d93856d](https://github.com/newsuk/times-components/commit/d93856d152c83f234749f0130613a6938f9d3136))
+
+
+
+
+
 ## [1.130.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.2...@times-components/article-skeleton@1.130.3) (2024-05-03)
 
 
