@@ -3,8 +3,8 @@ import ChevronIcon from '../../../assets/ChevronIcon';
 
 export const ChevronRightIcon = styled(ChevronIcon)`
   transform: rotate(90deg);
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 `;
 
 export const Container = styled.div`
@@ -73,6 +73,9 @@ export const ChevronButton = styled.button`
   width: 24px;
   height: 24px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ItemTitle = styled.p`
