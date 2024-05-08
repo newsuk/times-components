@@ -73,7 +73,8 @@ export const Popover = styled.div`
   flex-direction: column;
 
   background-color: #fff;
-  box-shadow: 0px 0px 72px -16px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px -20px 32px 0px #11111114, 0px 4px 4px 0px #00000040;
+
   z-index: 99;
 
   width: calc(100vw - 24px);
