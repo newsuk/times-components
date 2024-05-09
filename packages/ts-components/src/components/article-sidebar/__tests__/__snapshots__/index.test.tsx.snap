@@ -3,26 +3,26 @@
 exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
 <DocumentFragment>
   <div
-    class="css-46x6yq"
+    class="sc-bwzfXH kMHkGx"
   >
     <a
-      class="css-1o9yx7k"
+      class="sc-ifAKCX jvvxma"
       href="https://www.thetimes.co.uk/puzzles"
     >
       <div
-        class="css-f24dyb"
+        class="sc-EHOje bmFGSY"
       >
         <h3
-          class="css-1pfvgdn"
+          class="sc-bZQynM gOWUqf"
         >
           Puzzles for you
         </h3>
         <button
-          class="css-1bky6dv"
+          class="sc-gzVnrw ecbmwv"
         >
           <svg
             aria-hidden="true"
-            class="css-1lbdgr4"
+            class="sc-bdVaJa uWNzh"
             fill="currentcolor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,48 +40,48 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
       </div>
     </a>
     <p
-      class="css-gzq98r"
+      class="sc-htpNat kOLPHY"
     >
       Challenge yourself with today’s puzzles.
     </p>
     <hr
-      class="css-vrspzj"
+      class="sc-bxivhb ifFdfQ"
     />
     <a
-      class="css-1l89njg"
+      class="sc-dnqmqq gzKzfS"
       href="https://www.thetimes.co.uk/puzzles/crossword"
     >
       <img
         alt="Puzzle thumbnail"
-        class="css-olc9an"
+        class="sc-iwsKbI kQqFam"
         src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
       />
       <p
-        class="css-7y4hry"
+        class="sc-htoDjs cFRsVY"
       >
         Crossword
       </p>
     </a>
     <hr
-      class="css-vrspzj"
+      class="sc-bxivhb ifFdfQ"
     />
     <a
-      class="css-1l89njg"
+      class="sc-dnqmqq gzKzfS"
       href="https://www.thetimes.co.uk/puzzles/sudoku"
     >
       <img
         alt="Puzzle thumbnail"
-        class="css-olc9an"
+        class="sc-iwsKbI kQqFam"
         src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
       />
       <p
-        class="css-7y4hry"
+        class="sc-htoDjs cFRsVY"
       >
         Polygon
       </p>
     </a>
     <hr
-      class="css-vrspzj"
+      class="sc-bxivhb ifFdfQ"
     />
   </div>
 </DocumentFragment>
