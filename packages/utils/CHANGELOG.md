@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.20.3](https://github.com/newsuk/times-components/compare/@times-components/utils@6.20.2...@times-components/utils@6.20.3) (2024-05-08)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3841](https://github.com/newsuk/times-components/issues/3841)) ([d93856d](https://github.com/newsuk/times-components/commit/d93856d152c83f234749f0130613a6938f9d3136))
+
+
+
+
+
 ## [6.20.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.20.1...@times-components/utils@6.20.2) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/utils

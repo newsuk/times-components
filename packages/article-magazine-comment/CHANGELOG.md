@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.80.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.7...@times-components/article-magazine-comment@3.80.8) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.80.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.6...@times-components/article-magazine-comment@3.80.7) (2024-05-03)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3840](https://github.com/newsuk/times-components/issues/3840)) ([2111d73](https://github.com/newsuk/times-components/commit/2111d7314cc450d1fd25f413c562f9d45bff6961))
+
+
+
+
+
+## [3.80.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.5...@times-components/article-magazine-comment@3.80.6) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.80.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.4...@times-components/article-magazine-comment@3.80.5) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.80.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.3...@times-components/article-magazine-comment@3.80.4) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.80.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.80.2...@times-components/article-magazine-comment@3.80.3) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.7](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.20.6...@times-components/save-and-share-bar@0.20.7) (2024-05-08)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3841](https://github.com/newsuk/times-components/issues/3841)) ([d93856d](https://github.com/newsuk/times-components/commit/d93856d152c83f234749f0130613a6938f9d3136))
+
+
+
+
+
+## [0.20.6](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.20.5...@times-components/save-and-share-bar@0.20.6) (2024-05-03)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3840](https://github.com/newsuk/times-components/issues/3840)) ([2111d73](https://github.com/newsuk/times-components/commit/2111d7314cc450d1fd25f413c562f9d45bff6961))
+
+
+
+
+
+## [0.20.5](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.20.4...@times-components/save-and-share-bar@0.20.5) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.20.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.20.3...@times-components/save-and-share-bar@0.20.4) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.20.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.20.2...@times-components/save-and-share-bar@0.20.3) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

@@ -232,7 +232,8 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  isPreviewMode: PropTypes.bool
+  isPreviewMode: PropTypes.bool,
+  hostName: PropTypes.string.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */

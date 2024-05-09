@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.54.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.4...@times-components/ssr@2.54.5) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.54.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.3...@times-components/ssr@2.54.4) (2024-05-03)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.54.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.2...@times-components/ssr@2.54.3) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.54.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.1...@times-components/ssr@2.54.2) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.54.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.0...@times-components/ssr@2.54.1) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.54.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.53.4...@times-components/ssr@2.54.0) (2024-04-24)
+
+
+### Features
+
+* **TMRS-163:** removed logic for appening page on initial load ([#3830](https://github.com/newsuk/times-components/issues/3830)) ([eae2561](https://github.com/newsuk/times-components/commit/eae2561ba0f7a1786333223768281108b47ff9c5))
+
+
+
+
+
 ## [2.53.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.53.3...@times-components/ssr@2.53.4) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/ssr

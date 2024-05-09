@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.82.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.82.3...@times-components/article-main-comment@2.82.4) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.82.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.82.2...@times-components/article-main-comment@2.82.3) (2024-05-03)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3840](https://github.com/newsuk/times-components/issues/3840)) ([2111d73](https://github.com/newsuk/times-components/commit/2111d7314cc450d1fd25f413c562f9d45bff6961))
+
+
+
+
+
+## [2.82.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.82.1...@times-components/article-main-comment@2.82.2) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.82.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.82.0...@times-components/article-main-comment@2.82.1) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.82.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.81.3...@times-components/article-main-comment@2.82.0) (2024-04-25)
+
+
+### Features
+
+* **TMPZ-423:** update sidebar images ([#3832](https://github.com/newsuk/times-components/issues/3832)) ([d15b4b2](https://github.com/newsuk/times-components/commit/d15b4b2516bf6e8075769d2302b27a6deb7c98d4))
+
+
+
+
+
 ## [2.81.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.81.2...@times-components/article-main-comment@2.81.3) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/article-main-comment

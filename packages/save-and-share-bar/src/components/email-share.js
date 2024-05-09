@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { getDomainSpecificUrl } from "@times-components/utils";
 import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import { ShareItem, ShareItemLabel } from "./share-item";
 import { EmailSpinnerContainer } from "../styled";
@@ -20,7 +21,8 @@ class EmailShare extends Component {
       shouldTokenise,
       articleUrl,
       onShareEmail,
-      articleHeadline
+      articleHeadline,
+      hostName
     } = this.props;
 
     e.preventDefault();
@@ -35,7 +37,9 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            this.openMailClient(data.article.tokenisedUrl);
+            this.openMailClient(
+              getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
+            );
           }
         })
         .catch(() => {
@@ -99,7 +103,8 @@ EmailShare.propTypes = {
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
+  hostName: PropTypes.string.isRequired
 };
 
 EmailShare.defaultProps = {

@@ -111,7 +111,7 @@ export const PopoverHeader = styled.div`
   h3 {
     font-family: Roboto;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 450;
     margin: 0;
     padding: 24px;
   }

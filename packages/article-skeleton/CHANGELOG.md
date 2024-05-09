@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.130.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.3...@times-components/article-skeleton@1.130.4) (2024-05-08)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3841](https://github.com/newsuk/times-components/issues/3841)) ([d93856d](https://github.com/newsuk/times-components/commit/d93856d152c83f234749f0130613a6938f9d3136))
+
+
+
+
+
+## [1.130.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.2...@times-components/article-skeleton@1.130.3) (2024-05-03)
+
+
+### Bug Fixes
+
+* **TMRS-173:** Made fix for sharing email ([#3840](https://github.com/newsuk/times-components/issues/3840)) ([2111d73](https://github.com/newsuk/times-components/commit/2111d7314cc450d1fd25f413c562f9d45bff6961))
+
+
+
+
+
+## [1.130.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.1...@times-components/article-skeleton@1.130.2) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.0...@times-components/article-skeleton@1.130.1) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.130.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.129.3...@times-components/article-skeleton@1.130.0) (2024-04-25)
+
+
+### Features
+
+* **TMPZ-423:** update sidebar images ([#3832](https://github.com/newsuk/times-components/issues/3832)) ([d15b4b2](https://github.com/newsuk/times-components/commit/d15b4b2516bf6e8075769d2302b27a6deb7c98d4))
+
+
+
+
+
 ## [1.129.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.129.2...@times-components/article-skeleton@1.129.3) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/article-skeleton

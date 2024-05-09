@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.91.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.3...@times-components/article-main-standard@3.91.4) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.91.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.2...@times-components/article-main-standard@3.91.3) (2024-05-03)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.91.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.1...@times-components/article-main-standard@3.91.2) (2024-04-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.91.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.0...@times-components/article-main-standard@3.91.1) (2024-04-25)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.91.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.90.3...@times-components/article-main-standard@3.91.0) (2024-04-25)
+
+
+### Features
+
+* **TMPZ-423:** update sidebar images ([#3832](https://github.com/newsuk/times-components/issues/3832)) ([d15b4b2](https://github.com/newsuk/times-components/commit/d15b4b2516bf6e8075769d2302b27a6deb7c98d4))
+
+
+
+
+
 ## [3.90.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.90.2...@times-components/article-main-standard@3.90.3) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/article-main-standard

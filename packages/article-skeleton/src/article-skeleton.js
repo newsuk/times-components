@@ -316,6 +316,7 @@ const ArticleSkeleton = ({
                           onShareOnEmail={() => {}}
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
+                          hostName={domainSpecificUrl}
                         />
                       )}
                     </MessageContext.Consumer>
@@ -342,17 +343,17 @@ const ArticleSkeleton = ({
                               {
                                 title: "Crossword",
                                 url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-cf4c909719.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-2ae76bd129.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
                               },
                               {
                                 title: "Sudoku",
                                 url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-e2302ed30e.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                               }
                             ]}
                           />
