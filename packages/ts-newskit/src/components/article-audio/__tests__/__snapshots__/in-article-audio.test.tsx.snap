@@ -41,12 +41,12 @@ exports[`Audio player renders correctly 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-1yaue50"
+            class="css-1o6za2c"
           >
             Listen to article
           </p>
           <p
-            class="article-audio-narrator css-90ibmi"
+            class="article-audio-narrator css-d6x012"
           >
             Narrated by James Marriott
           </p>
@@ -98,12 +98,12 @@ exports[`Audio player renders correctly when visible 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-1yaue50"
+            class="css-1o6za2c"
           >
             Listen to article
           </p>
           <p
-            class="article-audio-narrator css-90ibmi"
+            class="article-audio-narrator css-d6x012"
           >
             Narrated by James Marriott
           </p>

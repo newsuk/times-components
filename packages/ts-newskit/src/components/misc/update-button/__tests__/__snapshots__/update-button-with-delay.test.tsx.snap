@@ -21,7 +21,7 @@ exports[`Render UpdateButtonWithDelay should render the Update button component 
       />
     </svg>
     <span
-      class="css-1x1ve0y"
+      class="css-1bud3bj"
     >
       New Updates
     </span>

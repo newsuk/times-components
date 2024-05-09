@@ -160,14 +160,14 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
         class="css-x9cisz"
       >
         <div
-          class="css-3kc3jp"
+          class="css-fdgfvf"
           data-testid="header-text"
           id="header-floating-ui-7"
         >
           Contractual Title Popover
         </div>
         <div
-          class="css-1qtxy22"
+          class="css-z0hhng"
         />
         <div
           class="css-j3i2on"
@@ -262,7 +262,7 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
     tabindex="-1"
   >
     <p
-      class="css-g3typw nk-tooltip-enter nk-tooltip-enter-active"
+      class="css-75suq2 nk-tooltip-enter nk-tooltip-enter-active"
       data-testid="floating-element-panel"
       tabindex="-1"
     >

@@ -21,7 +21,7 @@ exports[`Render UpdateButton should render the component 1`] = `
       />
     </svg>
     <span
-      class="css-1x1ve0y"
+      class="css-1bud3bj"
     >
       New Updates
     </span>
