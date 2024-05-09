@@ -36,6 +36,32 @@ describe('updateThemeTypography function', () => {
         .fontSize
     );
   });
+
+  test('typographyPreset fontFamily is updated if it has a recognised font that has a fallback', () => {
+    expect(TheTimesLight.typographyPresets.editorialDisplay001.fontFamily).toBe(
+      'Times Modern, Times Modern-fallback, serif'
+    );
+  });
+
+  test('typographyPreset fontFamily is NOT updated if it does not have a recognised font with fallback', () => {
+    const testPreset = {
+      fontFamily: 'Times Modernistic',
+      fontWeight: 800,
+      lineHeight: 1.125,
+      fontSize: '10px',
+      letterSpacing: '0em'
+    };
+
+    ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset = testPreset;
+
+    const updatedTheme = updateThemeTypography(
+      (TheTimesLight as unknown) as Theme
+    );
+    expect(updatedTheme.typographyPresets.testPreset.fontFamily).toBe(
+      ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset
+        .fontFamily
+    );
+  });
 });
 
 describe('addOverride function', () => {

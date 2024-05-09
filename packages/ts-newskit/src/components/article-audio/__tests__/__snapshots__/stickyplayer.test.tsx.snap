@@ -41,12 +41,12 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-1yaue50"
+            class="css-1o6za2c"
           >
             Playing
           </p>
           <p
-            class="article-audio-narrator css-90ibmi"
+            class="article-audio-narrator css-d6x012"
           >
             Narrated by James Marriott
           </p>
@@ -72,13 +72,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   style="width: 480px;"
                 >
                   <p
-                    class="article-audio-details css-1378i5i"
+                    class="article-audio-details css-1gejigy"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
                   </p>
                   <p
-                    class="article-audio-details css-1378i5i"
+                    class="article-audio-details css-1gejigy"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
@@ -254,7 +254,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-1iuvgg2"
               >
                 <span
-                  class="css-lk8lcn"
+                  class="css-bctkrg"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -307,7 +307,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-11r7h3x"
               >
                 <span
-                  class="css-lk8lcn"
+                  class="css-bctkrg"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -321,7 +321,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  class="css-1x1ve0y"
+                  class="css-1bud3bj"
                 >
                   Speed
                 </span>

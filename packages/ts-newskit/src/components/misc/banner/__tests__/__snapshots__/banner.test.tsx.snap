@@ -33,7 +33,7 @@ exports[`Banner renders the banner 1`] = `
                     class="css-1xd7721"
                   >
                     <div
-                      class="css-s5sjj8"
+                      class="css-73p1ql"
                     >
                       <div
                         class="css-1bjb3mr"
@@ -55,7 +55,7 @@ exports[`Banner renders the banner 1`] = `
                             />
                           </svg>
                           <p
-                            class="css-hk5gs7"
+                            class="css-d6ck8d"
                           >
                             Title
                           </p>
@@ -79,7 +79,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-j9qpwq"
+                        class="css-3wtr3k"
                       >
                         Body
                       </p>
@@ -120,7 +120,7 @@ exports[`Banner renders the banner 1`] = `
                     class="css-1xd7721"
                   >
                     <div
-                      class="css-s5sjj8"
+                      class="css-73p1ql"
                     >
                       <div
                         class="css-1bjb3mr"
@@ -142,7 +142,7 @@ exports[`Banner renders the banner 1`] = `
                             />
                           </svg>
                           <p
-                            class="css-hk5gs7"
+                            class="css-d6ck8d"
                           >
                             Title
                           </p>
@@ -166,7 +166,7 @@ exports[`Banner renders the banner 1`] = `
                         </button>
                       </div>
                       <p
-                        class="css-j9qpwq"
+                        class="css-3wtr3k"
                       >
                         Body
                       </p>

@@ -26,7 +26,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
             class="css-1bq9n3y"
           >
             <h3
-              class="css-eqardm"
+              class="css-1w5q84z"
             >
               Puzzles for you
             </h3>
@@ -55,7 +55,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
           </div>
         </div>
         <p
-          class="css-4g5gt6"
+          class="css-apqs5v"
         >
           Challenge yourself with today’s puzzles.
         </p>
@@ -120,7 +120,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
         class="css-btpi9y"
       >
         <p
-          class="css-cj4mhx"
+          class="css-sx8nmc"
         >
           Crossword
         </p>
@@ -185,7 +185,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
         class="css-btpi9y"
       >
         <p
-          class="css-cj4mhx"
+          class="css-sx8nmc"
         >
           Polygon
         </p>

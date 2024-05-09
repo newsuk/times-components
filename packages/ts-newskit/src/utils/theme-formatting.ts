@@ -7,6 +7,18 @@ const modifyBaseRemValue = (multiplier: number, valueToUpdate: string) => {
   return `${updatedVal}rem`;
 };
 
+const validFontNames = ['Roboto', 'Times Modern', 'Times Digital W04 Regular'];
+const getFontFamilyFallbacks = (fontName: string) => {
+  if (validFontNames.includes(fontName)) {
+    let fontFamilies: string = `${fontName}, ${fontName}-fallback`;
+    fontFamilies += fontName === 'Roboto' ? ', sans-serif' : ', serif';
+
+    return fontFamilies;
+  }
+
+  return fontName;
+};
+
 export const updateThemeTypography = (themeObj: Theme) => {
   if (!themeObj.fonts.updated) {
     themeObj.fonts.updated = 1;
@@ -35,12 +47,30 @@ export const updateThemeTypography = (themeObj: Theme) => {
       })
     );
 
+    // Update FontFamily
+    themeObj.fonts = Object.fromEntries(
+      Object.entries(themeObj.fonts).map(font => {
+        if (typeof font[0] === 'string' && font[0].indexOf('fontFamily') >= 0) {
+          return [font[0], getFontFamilyFallbacks(font[1].fontFamily)];
+        }
+        return [font[0], font[1]];
+      })
+    );
+
     // Update Typography Presets
     Object.values(themeObj.typographyPresets).map(preset => {
+      // Update Typography Presets : Font Size
       preset.fontSize =
         typeof preset.fontSize === 'string' && preset.fontSize.includes('rem')
           ? modifyBaseRemValue(1.6, preset.fontSize)
           : preset.fontSize;
+
+      // Update Typography Presets : Font FontFamily
+      preset.fontFamily =
+        typeof preset.fontFamily === 'string' &&
+        validFontNames.includes(preset.fontFamily)
+          ? getFontFamilyFallbacks(preset.fontFamily)
+          : preset.fontFamily;
     });
   }
 
