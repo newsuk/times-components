@@ -33,7 +33,7 @@ exports[`save and share bar component email icon when tokenising with loading st
         className="css-1o99qvy"
       >
         <p
-          className="css-1ynvxmq"
+          className="css-1dkou0h"
         >
           Email
         </p>
@@ -77,7 +77,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         />
       </svg>
       <span
-        className="css-1x1ve0y"
+        className="css-1bud3bj"
       >
         Share
       </span>
@@ -131,7 +131,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         />
       </svg>
       <span
-        className="css-1x1ve0y"
+        className="css-1bud3bj"
       >
         Share
       </span>
