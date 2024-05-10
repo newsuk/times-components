@@ -43,7 +43,7 @@
     "@times-components/ts-styleguide": "1.50.15",
     "@times-components/user-state": "0.5.32",
     "@times-components/utils": "6.20.3",
-    "newskit": "7.2.0",
+    "styled-components": "4.3.2",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
