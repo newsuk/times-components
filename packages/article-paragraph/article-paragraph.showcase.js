@@ -3,7 +3,6 @@ import React, { Fragment } from "react";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import { colours, themeFactory } from "@times-components/ts-styleguide";
-import { ArticleLink } from "@times-components/article-skeleton";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
@@ -43,13 +42,9 @@ const renderParagraph = ({ select, boolean }, ast) => {
       );
     },
     link(key, attributes, children) {
-      const { href, target, dropCap } = attributes;
+      const { href } = attributes;
 
-      return (
-        <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
-          {children}
-        </ArticleLink>
-      );
+      return <a href={href}>{children}</a>;
     }
   });
 };
