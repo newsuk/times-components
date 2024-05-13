@@ -48,16 +48,6 @@ function SaveAndShareBar(props) {
   const shareBtnRef = React.useRef();
   const popoverRef = React.useRef();
 
-  const barPosition = barRef.current
-    ? barRef.current.getBoundingClientRect().bottom
-    : windowHeight;
-  // Position the popover at the top if the bar length is less than 400px from the bottom
-  const position = !windowHeight
-    ? "bottom"
-    : windowHeight - barPosition > 400
-      ? "bottom"
-      : "top";
-
   // Set window height after hydration
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -85,6 +75,19 @@ function SaveAndShareBar(props) {
     };
   }, []);
 
+  const barPosition = barRef.current
+    ? barRef.current.getBoundingClientRect().bottom
+    : windowHeight;
+
+  // Position the popover at the top if the bar length is less than 400px from the bottom
+  function getPosition() {
+    if (!windowHeight) return "bottom";
+    if (windowHeight - barPosition > 400) {
+      return "bottom";
+    }
+    return "top";
+  }
+
   const togglePopover = () => {
     setPopoverOpen(prev => !prev);
   };
@@ -111,7 +114,7 @@ function SaveAndShareBar(props) {
           </OutlineButton>
           <Popover
             ref={popoverRef}
-            position={position}
+            position={getPosition()}
             isOpen={popoverOpen}
             aria-expanded={popoverOpen}
           >
