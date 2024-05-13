@@ -64,7 +64,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </button>
     <div
       aria-expanded={false}
-      className="styled__Popover-qkwc0r-3 hRIknm"
+      className="styled__Popover-qkwc0r-3 jfAJcD"
     >
       <div
         className="styled__PopoverHeader-qkwc0r-4 dzxrqO"
