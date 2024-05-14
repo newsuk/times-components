@@ -2,36 +2,44 @@
 
 exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
-  <WithStickyContext(Sticky)>
-    <Sticky
-      className=""
+  <sticky-save-and-share-bar__SaveShareItem>
+    <StyledComponent
+      forwardedRef={null}
     >
-      <div />
       <div>
-        <SaveShareContainerWrapper
-          className=""
-        >
-          <ServerClientRender>
-            <sticky-save-and-share-bar__SaveShareContainer
-              className=""
-            >
-              <StyledComponent
+        <WithStickyContext(Sticky)>
+          <Sticky
+            className=""
+          >
+            <div />
+            <div>
+              <SaveShareContainerWrapper
                 className=""
-                forwardedRef={null}
               >
-                <div>
-                  <div>
-                    <Component>
-                      SaveAndShareBar
-                    </Component>
-                  </div>
-                </div>
-              </StyledComponent>
-            </sticky-save-and-share-bar__SaveShareContainer>
-          </ServerClientRender>
-        </SaveShareContainerWrapper>
+                <ServerClientRender>
+                  <sticky-save-and-share-bar__SaveShareContainer
+                    className=""
+                  >
+                    <StyledComponent
+                      className=""
+                      forwardedRef={null}
+                    >
+                      <div>
+                        <div>
+                          <Component>
+                            SaveAndShareBar
+                          </Component>
+                        </div>
+                      </div>
+                    </StyledComponent>
+                  </sticky-save-and-share-bar__SaveShareContainer>
+                </ServerClientRender>
+              </SaveShareContainerWrapper>
+            </div>
+          </Sticky>
+        </WithStickyContext(Sticky)>
       </div>
-    </Sticky>
-  </WithStickyContext(Sticky)>
+    </StyledComponent>
+  </sticky-save-and-share-bar__SaveShareItem>
 </StickySaveAndShareBar>
 `;

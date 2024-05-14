@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c19 {
+.c21 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c19:first-of-type:after {
+.c21:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c22 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c18 {
+.c20 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -91,7 +91,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c25 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -119,7 +119,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c26 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -148,7 +148,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c21 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +169,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c20 {
+.c22 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +188,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c23 {
+.c25 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -197,7 +197,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c24 {
+.c26 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -237,44 +237,68 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c27 {
+.c2 > .c29 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c15 {
+.c17 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c16 {
+.c18 {
   position: relative;
 }
 
-.c14 {
+.c16 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c14 [data-tc-sticky-sizer] {
+.c16 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c14.tc-sticky {
+.c16.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c14[MOCK-PROGRESS-SELECTOR] {
+.c16[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c14[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c16[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
+}
+
+.c15 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c15 + .c14 {
+  margin-top: -1px !important;
+}
+
+.c15:last-child {
+  margin-bottom: 10px;
 }
 
 .c4 {
@@ -511,7 +535,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c21 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -521,47 +545,32 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c24 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c20 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c20 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c25 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c25 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
+  .c27 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -570,13 +579,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c28 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c23 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -588,7 +612,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c22 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -597,19 +621,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c25 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c23 {
+  .c25 {
     min-height: 283px;
   }
 }
@@ -622,10 +646,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c19 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
   }
 }
 
@@ -835,31 +877,35 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          display="none"
-        />
-        <div>
+          className="c14 c15"
+        >
           <div
-            className="c14"
-          >
-            <div>
-              <SaveAndShareBar />
+            display="none"
+          />
+          <div>
+            <div
+              className="c16"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <article
-        className="c15"
+        className="c17"
       >
         <div
-          className="c16"
+          className="c18"
         >
           <div
-            className="c17"
+            className="c19"
           >
             <div>
               <div>
                 <div
-                  className="c18"
+                  className="c20"
                 >
                   <ArticleImage />
                 </div>
@@ -869,15 +915,15 @@ exports[`full article with style 1`] = `
               Some Link
             </Link>
             <p
-              className="c19"
+              className="c21"
             >
               Some content
             </p>
             <div
-              className="c20"
+              className="c22"
             >
               <div
-                className="c21"
+                className="c23"
               >
                 <PullQuote>
                   The pull quote content
@@ -885,7 +931,7 @@ exports[`full article with style 1`] = `
               </div>
             </div>
             <div
-              className="c18"
+              className="c20"
             >
               <figure
                 margin={0}
@@ -922,7 +968,7 @@ exports[`full article with style 1`] = `
                 </div>
                 <figcaption>
                   <div
-                    className="c22"
+                    className="c24"
                   >
                     <Caption />
                   </div>
@@ -930,10 +976,10 @@ exports[`full article with style 1`] = `
               </figure>
             </div>
             <div
-              className="c23"
+              className="c25"
             >
               <h2
-                className="c24"
+                className="c26"
               >
                 Advertisement
               </h2>
@@ -942,7 +988,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c25"
+                  className="c27"
                 >
                   <ArticleImage />
                 </div>
@@ -951,7 +997,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c26"
+                  className="c28"
                 >
                   <ArticleImage />
                 </div>

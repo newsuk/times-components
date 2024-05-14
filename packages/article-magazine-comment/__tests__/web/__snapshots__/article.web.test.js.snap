@@ -157,24 +157,26 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             </figcaption>
           </figure>
         </div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline=""
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                hostName="https://www.thetimes.co.uk"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline=""
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -423,24 +425,26 @@ exports[`4. an article with ads with .co.uk 1`] = `
             </figcaption>
           </figure>
         </div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                hostName="https://www.thetimes.co.uk"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -694,24 +698,26 @@ exports[`5. an article with ads with .com 1`] = `
             </figcaption>
           </figure>
         </div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                hostName="www.thetimes.com"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  hostName="www.thetimes.com"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -986,24 +992,26 @@ exports[`8. an article with no author 1`] = `
             </figcaption>
           </figure>
         </div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                hostName="https://www.thetimes.co.uk"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
