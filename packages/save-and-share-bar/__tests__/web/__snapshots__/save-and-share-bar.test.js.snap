@@ -67,7 +67,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       className="styled__Popover-qkwc0r-3 jfAJcD"
     >
       <div
-        className="styled__PopoverHeader-qkwc0r-4 dzxrqO"
+        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
       >
         <h3>
           Share this article
@@ -249,7 +249,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       className="styled__Popover-qkwc0r-3 hRIknm"
     >
       <div
-        className="styled__PopoverHeader-qkwc0r-4 dzxrqO"
+        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
       >
         <h3>
           Share this article

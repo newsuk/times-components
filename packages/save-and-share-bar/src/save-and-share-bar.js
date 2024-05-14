@@ -83,8 +83,8 @@ function SaveAndShareBar(props) {
 
   // Position the popover at the top if the bar length is less than 400px from the bottom
   function getPosition() {
-    const isMobile = windowWidth && windowWidth > 768 ? false : true;
-    const threshold = isMobile ? 400 : 250;
+    const isLargeDevice = windowWidth && windowWidth > 449;
+    const threshold = isLargeDevice ? 250 : 400;
     if (!windowHeight) return "bottom";
     if (windowHeight - barPosition > threshold) {
       return "bottom";
