@@ -23,7 +23,7 @@ exports[`save and share bar component email icon when tokenising with loading st
       </div>
     </div>
     <span
-      className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+      className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
     >
       Email
     </span>
@@ -40,7 +40,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
   >
     <button
-      className="styled__OutlineButton-qkwc0r-2 fLeQVH"
+      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
     >
       <svg
         aria-hidden="true"
@@ -113,7 +113,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Email
             </span>
@@ -140,7 +140,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Twitter
             </span>
@@ -167,7 +167,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Facebook
             </span>
@@ -194,7 +194,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Link
             </span>
@@ -222,7 +222,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
   >
     <button
-      className="styled__OutlineButton-qkwc0r-2 fLeQVH"
+      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
     >
       <svg
         aria-hidden="true"
@@ -295,7 +295,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Email
             </span>
@@ -322,7 +322,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Twitter
             </span>
@@ -349,7 +349,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Facebook
             </span>
@@ -376,7 +376,7 @@ exports[`save and share bar component save and share bar renders correctly when 
               />
             </div>
             <span
-              className="share-item__ShareItemLabelText-sc-1idd4zx-1 fauDRM"
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
             >
               Link
             </span>

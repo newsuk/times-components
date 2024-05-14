@@ -10,7 +10,7 @@ const ShareItemLabelContainer = styled.div`
 
 const ShareItemLabelText = styled.span`
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 `;
 

@@ -27,7 +27,7 @@ export const OutlineButton = styled.button`
 
   cursor: pointer;
   outline: none;
-  border: 1px solid #000;
+  border: 0.5px solid #000;
 
   display: flex;
   justify-content: center;

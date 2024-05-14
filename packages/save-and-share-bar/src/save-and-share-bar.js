@@ -43,6 +43,7 @@ function SaveAndShareBar(props) {
 
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
+  const [windowWidth, setWindowWidth] = React.useState(null);
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -52,6 +53,7 @@ function SaveAndShareBar(props) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       setWindowHeight(window.innerHeight);
+      setWindowWidth(window.innerWidth);
     }
   }, []);
 
@@ -81,8 +83,10 @@ function SaveAndShareBar(props) {
 
   // Position the popover at the top if the bar length is less than 400px from the bottom
   function getPosition() {
+    const isMobile = windowWidth && windowWidth > 768 ? false : true;
+    const threshold = isMobile ? 400 : 250;
     if (!windowHeight) return "bottom";
-    if (windowHeight - barPosition > 400) {
+    if (windowHeight - barPosition > threshold) {
       return "bottom";
     }
     return "top";
