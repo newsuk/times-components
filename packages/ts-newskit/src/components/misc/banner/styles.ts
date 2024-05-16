@@ -12,6 +12,8 @@ export const NewsKitBanner = styled.div`
   border-top: 3px solid #005c8a;
   background-color: #fff;
   padding: 16px;
+  padding-inline: 16px;
+  padding-block: 16px;
   flex-direction: column;
   align-items: flex-start;
   height: 83px;
@@ -38,6 +40,7 @@ export const Title = styled.p`
   font-size: 24px;
   line-height: 27px;
   font-family: 'Times Modern';
+  letter-spacing: 0em;
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 18px;
     line-height: 20px;
@@ -51,6 +54,7 @@ export const Body = styled.p`
   font-size: 16px;
   line-height: 24px;
   font-family: 'Roboto';
+  letter-spacing: 0em;
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 14px;
     line-height: 21px;

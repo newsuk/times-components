@@ -8,7 +8,7 @@ import {
   NewsKitBanner,
   BannerWrapper
 } from './styles';
-import { NewsKitCloseIconBlack, NewsKitEmailIcon } from '../../../assets';
+import { CloseIconBlack, EmailIcon } from '../../../assets';
 
 type Props = {
   onClose: () => void;
@@ -22,14 +22,14 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
       <NewsKitBanner aria-label="Email verification banner">
         <Wrapper>
           <TitleWrapper>
-            <NewsKitEmailIcon />
-            <Title typographyPreset="editorialHeadline010">{title}</Title>
+            <EmailIcon />
+            <Title>{title}</Title>
           </TitleWrapper>
           <CloseIconWrapper onClick={onClose}>
-            <NewsKitCloseIconBlack width={14} height={14} />
+            <CloseIconBlack width={14} height={14} />
           </CloseIconWrapper>
         </Wrapper>
-        <Body typographyPreset="utilityBody010">{body}</Body>
+        <Body>{body}</Body>
       </NewsKitBanner>
     </BannerWrapper>
   );
