@@ -4,7 +4,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="breadcrumbs"
-    class="sc-bwzfXH hmRPVI"
+    class="sc-bwzfXH jIEWCi"
   >
     <a
       aria-current="false"
@@ -14,7 +14,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       Sport
     </a>
     <div
-      class="sc-htpNat xXsV"
+      class="sc-htpNat jVxkgC"
     >
       <svg
         color="#aaaaaa"
@@ -37,7 +37,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       Tennis
     </a>
     <div
-      class="sc-htpNat xXsV"
+      class="sc-htpNat jVxkgC"
     >
       <svg
         color="#aaaaaa"
