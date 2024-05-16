@@ -3,104 +3,61 @@
 exports[`Render Breadcrumbs should render a snapshot 1`] = `
 <DocumentFragment>
   <nav
-    aria-label="breadcrumbs"
-    class="css-elzvrz"
-    data-testid="breadcrumb-container"
+    class="sc-bwzfXH hmRPVI"
   >
-    <ol
-      class="css-wx88k6"
+    <a
+      aria-current="false"
+      class="sc-bdVaJa gZsChJ"
+      href="/sport"
     >
-      <li
-        class="css-1o2fxxh"
+      Sport
+    </a>
+    <div
+      class="sc-htpNat xXsV"
+    >
+      <svg
+        color="#aaaaaa"
+        fill="none"
+        height="16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <a
-          aria-current="false"
-          class="css-adrlo6"
-          data-testid="buttonLink"
-          href="/sport"
-        >
-          <span
-            class="css-1dtf1su"
-          >
-            Sport
-          </span>
-        </a>
-      </li>
-      <li
-        aria-hidden="true"
-        class="css-1o2fxxh"
+        <path
+          d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
+          fill="#aaaaaa"
+        />
+      </svg>
+    </div>
+    <a
+      aria-current="false"
+      class="sc-bdVaJa gZsChJ"
+      href="/sport/tennis"
+    >
+      Tennis
+    </a>
+    <div
+      class="sc-htpNat xXsV"
+    >
+      <svg
+        color="#aaaaaa"
+        fill="none"
+        height="16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="css-3q5u2i-EmotionIconBase ex0cdmw0"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-          />
-        </svg>
-      </li>
-      <li
-        class="css-1o2fxxh"
-      >
-        <a
-          aria-current="false"
-          class="css-adrlo6"
-          data-testid="buttonLink"
-          href="/sport/tennis"
-        >
-          <span
-            class="css-1dtf1su"
-          >
-            Tennis
-          </span>
-        </a>
-      </li>
-      <li
-        aria-hidden="true"
-        class="css-1o2fxxh"
-      >
-        <svg
-          aria-hidden="true"
-          class="css-3q5u2i-EmotionIconBase ex0cdmw0"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-          />
-        </svg>
-      </li>
-      <li
-        class="css-1o2fxxh"
-      >
-        <button
-          aria-current="page"
-          class="css-rxmtxj"
-          data-testid="button"
-          type="button"
-        >
-          <span
-            class="css-1dtf1su"
-          >
-            Australian Open
-          </span>
-        </button>
-      </li>
-    </ol>
+        <path
+          d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
+          fill="#aaaaaa"
+        />
+      </svg>
+    </div>
+    <a
+      aria-current="page"
+      class="sc-bdVaJa gItCja"
+      href="/australian open"
+    >
+      Australian Open
+    </a>
   </nav>
 </DocumentFragment>
 `;
