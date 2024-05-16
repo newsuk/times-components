@@ -14,10 +14,6 @@ describe('Render UpdateButton', () => {
     const { asFragment } = renderComponent('New Updates', handleClickMock);
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should render the loading spinner if loading is true', () => {
-    const { asFragment } = renderComponent('New Update', handleClickMock);
-    expect(asFragment()).toMatchSnapshot();
-  });
   it('should render the label text you pass through', () => {
     const { getByText } = renderComponent('Test New Updates', handleClickMock);
     expect(getByText('Test New Updates')).toBeVisible();
