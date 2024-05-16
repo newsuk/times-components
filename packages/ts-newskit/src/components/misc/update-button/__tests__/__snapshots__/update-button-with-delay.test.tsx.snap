@@ -3,7 +3,7 @@
 exports[`Render UpdateButtonWithDelay should render the Update button component and the DelayComponent as expected when it has an update 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdVaJa eHdkKu"
+    class="sc-bdVaJa kaAiuV"
   >
     <svg
       class="css-ny3roy"

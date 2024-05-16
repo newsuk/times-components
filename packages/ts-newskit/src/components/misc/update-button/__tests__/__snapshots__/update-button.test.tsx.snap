@@ -3,7 +3,7 @@
 exports[`Render UpdateButton should render the component 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdVaJa eHdkKu"
+    class="sc-bdVaJa kaAiuV"
   >
     <svg
       class="css-ny3roy"
@@ -26,7 +26,7 @@ exports[`Render UpdateButton should render the component 1`] = `
 exports[`Render UpdateButton should render the loading spinner if loading is true 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdVaJa eHdkKu"
+    class="sc-bdVaJa kaAiuV"
   >
     <svg
       class="css-ny3roy"

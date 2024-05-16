@@ -19,7 +19,6 @@ export const StyledButton = styled.button`
   padding-inline: ${styleMap.spacing.space030};
   font-family: Roboto;
   font-size: 1.4000000000000001rem;
-  line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
   color: ${styleMap.colors.inkInverse};
@@ -29,6 +28,9 @@ export const StyledButton = styled.button`
   place-content: center;
   place-items: center;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
   &:hover {
     background-color: ${styleMap.colors.interactiveNegative050};
   }
