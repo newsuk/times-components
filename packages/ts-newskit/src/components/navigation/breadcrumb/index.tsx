@@ -17,6 +17,7 @@ type BreadcrumbProps = {
 
 export const Breadcrumb = ({ data }: BreadcrumbProps) => {
   const clickEvent = (title: string) => ({
+    object: 'Breadcrumb',
     action: 'Clicked',
     attrs: {
       event_navigation_action: 'navigation',
