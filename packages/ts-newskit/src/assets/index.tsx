@@ -59,4 +59,6 @@ export const NewsKitCloseIconBlack = customToNewsKitIcon(
   props => <CloseIconBlack {...props} />
 );
 
-export const BreadCrumbIconSeparator = (props: any) => <BreadcrumbIcon {...props}/>
+export const BreadCrumbIconSeparator = (props: any) => (
+  <BreadcrumbIcon {...props} />
+);

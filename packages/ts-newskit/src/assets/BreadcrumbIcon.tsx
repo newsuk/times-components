@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 const BreadcrumbIcon = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -12,5 +12,5 @@ const BreadcrumbIcon = (props: any) => (
       d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
     />
   </svg>
-)
-export default BreadcrumbIcon
+);
+export default BreadcrumbIcon;

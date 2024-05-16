@@ -34,26 +34,50 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title));
   };
 
-const getBreadcrumbSeparator = (
-  index: number,
-  arr: any[],
-) => index < arr.length - 1;
-  
+  const getBreadcrumbSeparator = (index: number, arr: any[]) =>
+    index < arr.length - 1;
+
   return (
     <TrackingContextProvider>
       {({ fireAnalyticsEvent }) => (
-        <Breadcrumbs>
+        <Breadcrumbs aria-label="breadcrumbs">
           {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => {
-            const showSeparator = getBreadcrumbSeparator(breadcrumbIndex, breadcrumbArr);
-            return (
-              showSeparator ? (
-                <>
-                <BreadcrumbItem key={breadcrumbItem.title} aria-current="false" href={breadcrumbItem.url} selected={false} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</BreadcrumbItem>
-                <IconContainer><BreadCrumbIconSeparator color={styleMap.colors.inkNonEssential}/></IconContainer>
-                </>
-              ) : (<BreadcrumbItem aria-current="page" key={breadcrumbItem.title} href={breadcrumbItem.url} selected={true} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</BreadcrumbItem>)
-                
-            )
+            const showSeparator = getBreadcrumbSeparator(
+              breadcrumbIndex,
+              breadcrumbArr
+            );
+            return showSeparator ? (
+              <>
+                <BreadcrumbItem
+                  key={breadcrumbItem.title}
+                  aria-current="false"
+                  href={breadcrumbItem.url}
+                  selected={false}
+                  onClick={() =>
+                    handleClick(fireAnalyticsEvent, breadcrumbItem.title)
+                  }
+                >
+                  {breadcrumbItem.title}
+                </BreadcrumbItem>
+                <IconContainer>
+                  <BreadCrumbIconSeparator
+                    color={styleMap.colors.inkNonEssential}
+                  />
+                </IconContainer>
+              </>
+            ) : (
+              <BreadcrumbItem
+                aria-current="page"
+                key={breadcrumbItem.title}
+                href={breadcrumbItem.url}
+                selected={true}
+                onClick={() =>
+                  handleClick(fireAnalyticsEvent, breadcrumbItem.title)
+                }
+              >
+                {breadcrumbItem.title}
+              </BreadcrumbItem>
+            );
           })}
         </Breadcrumbs>
       )}
