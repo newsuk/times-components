@@ -63,25 +63,26 @@ const StyledBreadcrumbLink = styled.a<{selected: boolean}>`
   };
 `;
 
+const StyledBreadCrumbNav = styled.nav`
+  display: flex;
+`;
+
+const IconContainer = styled.div`
+  height: 32px;
+  display: flex;
+  align-items: center;
+   padding-inline: 8px;
+`;
+
 const getBreadcrumbSeparator = (
   index: number,
-  arr: React.ReactElement<
-    any
-  >[],
+  arr: any[],
 ) => index < arr.length - 1;
   
   return (
     <TrackingContextProvider>
       {({ fireAnalyticsEvent }) => (
-        <nav
-          style={{ display: 'flex'}}
-          // size="small"
-          // overrides={{
-          //   separator: {
-          //     stylePreset: 'breadcrumbSeparator'
-          //   }
-          // }}
-        >
+        <StyledBreadCrumbNav>
           {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => {
             const isLastItem = breadcrumbIndex + 1 === breadcrumbArr.length;
             const showSeparator = getBreadcrumbSeparator(breadcrumbIndex, breadcrumbArr);
@@ -89,13 +90,13 @@ const getBreadcrumbSeparator = (
               showSeparator ? (
                 <>
                 <StyledBreadcrumbLink key={breadcrumbItem.title} href={breadcrumbItem.url} selected={isLastItem} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</StyledBreadcrumbLink>
-                <div style={{ height: '32px', display: 'flex', alignItems: 'center', paddingInline: '8px'}}><BreadCrumbIconSeparator color={styleMap.colors.inkNonEssential}/></div>
+                <IconContainer><BreadCrumbIconSeparator color={styleMap.colors.inkNonEssential}/></IconContainer>
                 </>
               ) : (<StyledBreadcrumbLink key={breadcrumbItem.title} href={breadcrumbItem.url} selected={isLastItem} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</StyledBreadcrumbLink>)
                 
             )
           })}
-        </nav>
+        </StyledBreadCrumbNav>
       )}
     </TrackingContextProvider>
   );
