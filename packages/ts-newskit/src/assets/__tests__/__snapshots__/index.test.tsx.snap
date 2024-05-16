@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons Component: BreadCrumbIconSeparator BreadCrumbIconSeparator renders with default props 1`] = `
+exports[`Icons Component: BreadcrumbIcon BreadcrumbIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
     fill="none"

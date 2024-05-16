@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
-import { BreadCrumbIconSeparator } from '../../../assets';
+import { BreadcrumbIcon } from '../../../assets';
 import {
   TrackingContext,
   TrackingContextProvider
@@ -60,7 +60,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
                   {breadcrumbItem.title}
                 </BreadcrumbItem>
                 <IconContainer>
-                  <BreadCrumbIconSeparator
+                  <BreadcrumbIcon
                     color={styleMap.colors.inkNonEssential}
                   />
                 </IconContainer>
