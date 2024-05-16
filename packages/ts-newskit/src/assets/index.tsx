@@ -2,17 +2,14 @@ import React from 'react';
 import { customToNewsKitIcon } from 'newskit';
 import ChevronRightIcon from './ChevronRightIcon';
 import TooltipIcon from './TooltipIcon';
-import FilledArrowIcon from './FilledArrowIcon';
 import ThumbsUpIcon from './ThumbsUp';
 import ThumbsDownIcon from './ThumbsDown';
 import CloseIcon from './CloseIcon';
 import EmailIcon from './EmailIcon';
 import CloseIconBlack from './CloseIconBlack';
+export { default as FilledArrowIcon}  from './FilledArrowIcon';
 
-export const NewsKitFilledArrowIcon = customToNewsKitIcon(
-  'NewsKitFilledArrowIcon',
-  props => <FilledArrowIcon {...props} />
-);
+// export const NewsKitFilledArrowIcon = () => props => <FilledArrowIcon {...props} />
 
 export const NewsKitThumbsUpIcon = customToNewsKitIcon(
   'NewsKitThumbsUpIcon',

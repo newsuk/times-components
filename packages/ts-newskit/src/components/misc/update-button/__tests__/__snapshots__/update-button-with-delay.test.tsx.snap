@@ -6,7 +6,6 @@ exports[`Render UpdateButtonWithDelay should render the Update button component 
     class="sc-bdVaJa kaAiuV"
   >
     <svg
-      class="css-ny3roy"
       data-testid="upward-arrow"
       fill="none"
       height="16"

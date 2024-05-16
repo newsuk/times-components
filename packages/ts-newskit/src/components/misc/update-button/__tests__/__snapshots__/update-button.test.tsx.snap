@@ -6,7 +6,6 @@ exports[`Render UpdateButton should render the component 1`] = `
     class="sc-bdVaJa kaAiuV"
   >
     <svg
-      class="css-ny3roy"
       data-testid="upward-arrow"
       fill="none"
       height="16"
@@ -19,29 +18,6 @@ exports[`Render UpdateButton should render the component 1`] = `
       />
     </svg>
     New Updates
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Render UpdateButton should render the loading spinner if loading is true 1`] = `
-<DocumentFragment>
-  <button
-    class="sc-bdVaJa kaAiuV"
-  >
-    <svg
-      class="css-ny3roy"
-      data-testid="upward-arrow"
-      fill="none"
-      height="16"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="m3.166 8 .94.94 3.727-3.72v8.113h1.333V5.22l3.72 3.727.947-.947-5.334-5.333L3.166 8Z"
-        fill="currentcolor"
-      />
-    </svg>
-    New Update
   </button>
 </DocumentFragment>
 `;
