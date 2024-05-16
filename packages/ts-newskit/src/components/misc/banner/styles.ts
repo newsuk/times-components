@@ -1,4 +1,4 @@
-import { styled, Banner, TextBlock } from 'newskit';
+import { styled } from 'newskit';
 import { breakpoints } from '@times-components/ts-styleguide';
 
 export const BannerWrapper = styled.div`
@@ -8,7 +8,7 @@ export const BannerWrapper = styled.div`
   width: 100%;
 `;
 
-export const NewsKitBanner = styled(Banner)`
+export const NewsKitBanner = styled.div`
   border-top: 3px solid #005c8a;
   background-color: #fff;
   padding: 16px;
@@ -31,24 +31,26 @@ export const TitleWrapper = styled.div`
   width: 100%;
 `;
 
-export const Title = styled(TextBlock)`
+export const Title = styled.p`
   color: #333;
   font-weight: 700;
   margin: 0 0 0 16px;
   font-size: 24px;
   line-height: 27px;
+  font-family: 'Times Modern';
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 18px;
     line-height: 20px;
   }
 `;
 
-export const Body = styled(TextBlock)`
+export const Body = styled.p`
   color: #696969;
   font-weight: 400;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
+  font-family: 'Roboto';
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 14px;
     line-height: 21px;

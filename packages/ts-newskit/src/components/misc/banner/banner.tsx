@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  NewsKitBanner,
   Body,
   CloseIconWrapper,
   Title,
   TitleWrapper,
   Wrapper,
+  NewsKitBanner,
   BannerWrapper
 } from './styles';
 import { NewsKitCloseIconBlack, NewsKitEmailIcon } from '../../../assets';
