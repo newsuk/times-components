@@ -1,5 +1,6 @@
 import React from 'react';
-import { Breadcrumbs, BreadcrumbItem } from 'newskit';
+import { Breadcrumbs } from 'newskit';
+import styled from 'styled-components';
 import {
   TrackingContext,
   TrackingContextProvider
@@ -32,6 +33,45 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title));
   };
 
+  const styleMap = {
+    colors: {
+      blue070: "#006699",
+      inkContrast: "#01000d",
+      inkSubtle: "#696969",
+      inkNonEssential:"#aaaaaa"
+    }
+  }
+  
+  // const breadcrumbStylePresets = {
+  //   breadcrumbSeparator: {
+  //     base: {
+  //       color: '{{colors.inkNonEssential}}'
+  //     }
+  //   }
+  // };
+
+const StyledBreadcrumbLink = styled.a<{selected: boolean}>`
+  color: inherit;
+  text-decoration: none;
+  display: inline-grid;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.250;
+  letter-spacing: 0%;
+  font-stretch: normal
+  display: inline-grid;
+  background-color: transparent;
+  min-height: 32px;
+  border: none;
+  place-content: center;
+  color: ${({ selected }) => selected ? styleMap.colors.inkContrast : styleMap.colors.inkSubtle}
+  &:hover {
+    color: ${styleMap.colors.blue070}
+  };
+`;
+  
+
   return (
     <TrackingContextProvider>
       {({ fireAnalyticsEvent }) => (
@@ -46,20 +86,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
           {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => {
             const isLastItem = breadcrumbIndex + 1 === breadcrumbArr.length;
             return (
-              <BreadcrumbItem
-                key={breadcrumbItem.title}
-                href={breadcrumbItem.url}
-                selected={isLastItem}
-                overrides={{
-                  stylePreset: 'breadcrumbStyle',
-                  typographyPreset: 'breadcrumbText'
-                }}
-                onClick={() =>
-                  handleClick(fireAnalyticsEvent, breadcrumbItem.title)
-                }
-              >
-                {breadcrumbItem.title}
-              </BreadcrumbItem>
+                <StyledBreadcrumbLink key={breadcrumbItem.title} href={breadcrumbItem.url} selected={isLastItem} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</StyledBreadcrumbLink>
             );
           })}
         </Breadcrumbs>
