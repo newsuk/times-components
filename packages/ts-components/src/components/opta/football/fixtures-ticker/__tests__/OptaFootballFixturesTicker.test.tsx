@@ -35,7 +35,7 @@ const requiredProps = {
   date_to: '2021-07-11'
 };
 
-describe('OptaFootballFixtures', () => {
+describe('OptaFootballFixturesTicker', () => {
   it('should render correctly', async () => {
     const { asFragment, getByText } = render(
       <OptaFootballFixturesTicker {...requiredProps} />
