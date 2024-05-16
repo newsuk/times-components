@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.14.2...@times-components/watermark@2.15.0) (2024-05-16)
+
+
+### Features
+
+* **TMRS-170:** add opta football fixtures ticker component ([#3849](https://github.com/newsuk/times-components/issues/3849)) ([e8524a9](https://github.com/newsuk/times-components/commit/e8524a97bd58a8ab134f61f1394d061da5fe55d5))
+
+
+
+
+
 ## [2.14.2](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.14.1...@times-components/watermark@2.14.2) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/watermark
