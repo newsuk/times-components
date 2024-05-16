@@ -8,6 +8,7 @@ import ThumbsDownIcon from './ThumbsDown';
 import CloseIcon from './CloseIcon';
 import EmailIcon from './EmailIcon';
 import CloseIconBlack from './CloseIconBlack';
+import BreadcrumbIcon from './BreadcrumbIcon';
 
 const FilledArrowIconDown = styled(FilledArrowIcon)`
   transform: rotate(180deg);
@@ -57,3 +58,5 @@ export const NewsKitCloseIconBlack = customToNewsKitIcon(
   'NewsKitCloseIconBlack',
   props => <CloseIconBlack {...props} />
 );
+
+export const BreadCrumbIconSeparator = (props: any) => <BreadcrumbIcon {...props}/>
