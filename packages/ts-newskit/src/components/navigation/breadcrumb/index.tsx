@@ -89,7 +89,7 @@ const getBreadcrumbSeparator = (
               showSeparator ? (
                 <>
                 <StyledBreadcrumbLink key={breadcrumbItem.title} href={breadcrumbItem.url} selected={isLastItem} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</StyledBreadcrumbLink>
-                <div style={{ height: '32px', display: 'flex', alignItems: 'center'}}><BreadCrumbIconSeparator color={styleMap.colors.inkNonEssential}/></div>
+                <div style={{ height: '32px', display: 'flex', alignItems: 'center', paddingInline: '8px'}}><BreadCrumbIconSeparator color={styleMap.colors.inkNonEssential}/></div>
                 </>
               ) : (<StyledBreadcrumbLink key={breadcrumbItem.title} href={breadcrumbItem.url} selected={isLastItem} onClick={() => handleClick(fireAnalyticsEvent, breadcrumbItem.title)}>{breadcrumbItem.title}</StyledBreadcrumbLink>)
                 
