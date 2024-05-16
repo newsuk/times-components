@@ -8,7 +8,6 @@ type UpdateWithDelayProps = {
   delay: number;
   label: string;
   handleClick: () => void;
-  arrowUp: boolean;
   updatedTime: string;
   articleId: string;
   update: boolean;

@@ -10,7 +10,6 @@ const renderComponent = (
   display: boolean,
   label: string,
   handleClick: any,
-  arrowUp: boolean,
   updatedTime: string,
   articleId: string,
   update: boolean
@@ -21,7 +20,6 @@ const renderComponent = (
       display={display}
       label={label}
       handleClick={handleClick}
-      arrowUp={arrowUp}
       updatedTime={updatedTime}
       articleId={articleId}
       update={update}
@@ -35,7 +33,6 @@ describe('Render UpdateButtonWithDelay', () => {
       true,
       'New Updates',
       handleClickMock,
-      true,
       '2023-10-12T00:00:00.000Z',
       '12345',
       true
@@ -53,7 +50,6 @@ describe('Render UpdateButtonWithDelay', () => {
       true,
       'Update Now',
       handleClickMock,
-      true,
       '2023-10-12T00:00:00.000Z',
       '12345',
       false
