@@ -9,15 +9,6 @@ import CloseIcon from './CloseIcon';
 import EmailIcon from './EmailIcon';
 import CloseIconBlack from './CloseIconBlack';
 
-const FilledArrowIconDown = styled(FilledArrowIcon)`
-  transform: rotate(180deg);
-`;
-
-export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
-  'NewsKitFilledArrowIconDown',
-  props => <FilledArrowIconDown {...props} />
-);
-
 export const NewsKitFilledArrowIcon = customToNewsKitIcon(
   'NewsKitFilledArrowIcon',
   props => <FilledArrowIcon {...props} />
