@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 const styleMap = {
   colors: {
-    interactiveNegative040: "#9f0000",
-    interactiveNegative050: "#800000",
+    interactiveNegative040: '#9f0000',
+    interactiveNegative050: '#800000',
     inkInverse: '#FFFFFF'
   },
-   spacing: {
-    space030: "12px",
-    space020: "8px",
-   }
-}
+  spacing: {
+    space030: '12px',
+    space020: '8px'
+  }
+};
 
 export const StyledButton = styled.button`
   border: none;
@@ -30,9 +30,9 @@ export const StyledButton = styled.button`
   place-items: center;
   cursor: pointer;
   &:hover {
-    background-color: ${styleMap.colors.interactiveNegative050}
+    background-color: ${styleMap.colors.interactiveNegative050};
   }
   &:active {
-    background-color: ${styleMap.colors.interactiveNegative050}
+    background-color: ${styleMap.colors.interactiveNegative050};
   }
 `;

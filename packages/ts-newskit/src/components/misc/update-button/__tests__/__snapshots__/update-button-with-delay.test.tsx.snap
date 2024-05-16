@@ -3,16 +3,14 @@
 exports[`Render UpdateButtonWithDelay should render the Update button component and the DelayComponent as expected when it has an update 1`] = `
 <DocumentFragment>
   <button
-    class="css-12pttu1"
-    data-testid="button"
-    type="button"
+    class="sc-bdVaJa eHdkKu"
   >
     <svg
       class="css-ny3roy"
       data-testid="upward-arrow"
       fill="none"
       height="16"
-      width="17"
+      width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -20,11 +18,7 @@ exports[`Render UpdateButtonWithDelay should render the Update button component 
         fill="currentcolor"
       />
     </svg>
-    <span
-      class="css-1x1ve0y"
-    >
-      New Updates
-    </span>
+    New Updates
   </button>
 </DocumentFragment>
 `;

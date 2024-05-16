@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  NewsKitFilledArrowIcon,
-} from '../../../assets';
+import { NewsKitFilledArrowIcon } from '../../../assets';
 import { StyledButton } from './styles';
 
 type UpdateButtonProps = {
@@ -9,15 +7,10 @@ type UpdateButtonProps = {
   handleClick: () => void;
 };
 
-export const UpdateButton = ({
-  label,
-  handleClick,
-}: UpdateButtonProps) => {
+export const UpdateButton = ({ label, handleClick }: UpdateButtonProps) => {
   return (
-    <StyledButton
-      onClick={() => handleClick()}
-    >
-        <NewsKitFilledArrowIcon data-testid="upward-arrow" />
+    <StyledButton onClick={() => handleClick()}>
+      <NewsKitFilledArrowIcon data-testid="upward-arrow" />
       {label}
     </StyledButton>
   );

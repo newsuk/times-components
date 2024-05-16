@@ -3,16 +3,14 @@
 exports[`Render UpdateButton should render the component 1`] = `
 <DocumentFragment>
   <button
-    class="css-12pttu1"
-    data-testid="button"
-    type="button"
+    class="sc-bdVaJa eHdkKu"
   >
     <svg
       class="css-ny3roy"
       data-testid="upward-arrow"
       fill="none"
       height="16"
-      width="17"
+      width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -20,11 +18,7 @@ exports[`Render UpdateButton should render the component 1`] = `
         fill="currentcolor"
       />
     </svg>
-    <span
-      class="css-1x1ve0y"
-    >
-      New Updates
-    </span>
+    New Updates
   </button>
 </DocumentFragment>
 `;
@@ -32,24 +26,22 @@ exports[`Render UpdateButton should render the component 1`] = `
 exports[`Render UpdateButton should render the loading spinner if loading is true 1`] = `
 <DocumentFragment>
   <button
-    aria-busy="true"
-    aria-live="polite"
-    class="css-bwwssu"
-    data-testid="button"
-    type="button"
+    class="sc-bdVaJa eHdkKu"
   >
     <svg
-      aria-hidden="true"
-      class="css-mxa34f"
-      fill="currentColor"
-      viewBox="0 0 64 64"
+      class="css-ny3roy"
+      data-testid="upward-arrow"
+      fill="none"
+      height="16"
+      width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle
-        cx="50%"
-        cy="50%"
+      <path
+        d="m3.166 8 .94.94 3.727-3.72v8.113h1.333V5.22l3.72 3.727.947-.947-5.334-5.333L3.166 8Z"
+        fill="currentcolor"
       />
     </svg>
+    New Update
   </button>
 </DocumentFragment>
 `;

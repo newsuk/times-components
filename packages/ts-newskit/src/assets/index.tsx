@@ -1,5 +1,5 @@
 import React from 'react';
-import { customToNewsKitIcon, styled } from 'newskit';
+import { customToNewsKitIcon } from 'newskit';
 import ChevronRightIcon from './ChevronRightIcon';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
