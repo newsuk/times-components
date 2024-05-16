@@ -39,6 +39,9 @@ export {
 } from './components/opta/cricket/scorecard/OptaCricketScorecard';
 
 export {
+  OptaFootballFixturesTicker
+} from './components/opta/football/fixtures-ticker/OptaFootballFixturesTicker';
+export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
 export {
