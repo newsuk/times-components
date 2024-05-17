@@ -19,6 +19,9 @@ export const NewsKitBanner = styled.div`
   @media screen and (min-width: ${breakpoints.wide}px) {
     padding-block: 10px;
   }
+  @media screen and (min-width: ${breakpoints.medium}px) {
+    padding-right: 30px;
+  }
 `;
 
 export const BannerContentWrapper = styled.div`
