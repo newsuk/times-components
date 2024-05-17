@@ -21,9 +21,9 @@ export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
   }
 `;
 
-export const PlaceholderContainer = styled.div`
+export const PlaceholderContainer = styled.div<{ height?: number }>`
   position: relative;
-  height: 200px;
+  height: ${({ height }) => height || '200'}px;
 `;
 
 export const WidgetContainerBase = styled.div`

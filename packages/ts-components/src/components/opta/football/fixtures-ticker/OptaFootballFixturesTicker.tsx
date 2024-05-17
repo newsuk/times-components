@@ -58,14 +58,14 @@ export const OptaFootballFixturesTicker: React.FC<{
   }, []);
 
   return (
-    <Container border={false} fullWidth={full_width}>
+    <>
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer>
+        <PlaceholderContainer height={100}>
           <Placeholder />
         </PlaceholderContainer>
       )}
-    </Container>
+    </>
   );
 });

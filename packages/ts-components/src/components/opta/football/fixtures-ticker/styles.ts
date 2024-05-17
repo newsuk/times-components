@@ -42,7 +42,7 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 export const WidgetContainer = styled(WidgetContainerBase)`
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Window {
-      left: 20px !important;
+      left: 0 !important;
       right: 0 !important;
     }
   }
@@ -75,12 +75,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
 
     @media (max-width: ${breakpoints.small}px) {
-      opacity: 0 !important;
-      transition-duration: 0.2s;
-
-      &:hover {
-        opacity: 1 !important;
-      }
+      display: none !important;
     }
   }
 
