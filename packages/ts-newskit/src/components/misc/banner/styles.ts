@@ -13,7 +13,7 @@ export const NewsKitBanner = styled.div`
   background-color: #fff;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 12px;
+  padding-left: 16px;
   padding-block: 12px;
   padding-right: 16px;
   @media screen and (min-width: ${breakpoints.wide}px) {
