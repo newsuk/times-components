@@ -7,7 +7,7 @@ import ThumbsDownIcon from './ThumbsDown';
 import CloseIcon from './CloseIcon';
 import EmailIcon from './EmailIcon';
 import CloseIconBlack from './CloseIconBlack';
-export { default as FilledArrowIcon}  from './FilledArrowIcon';
+export { default as FilledArrowIcon } from './FilledArrowIcon';
 
 // export const NewsKitFilledArrowIcon = () => props => <FilledArrowIcon {...props} />
 
