@@ -3,16 +3,13 @@
 exports[`OptaFootballFixturesTicker should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa giUBsz"
+    class="sc-htpNat sc-ifAKCX elhfwo"
+  />
+  <div
+    class="sc-bwzfXH eLGWmp"
+    height="100"
   >
-    <div
-      class="sc-htpNat sc-ifAKCX gxAjSa"
-    />
-    <div
-      class="sc-bwzfXH kVYHKf"
-    >
-      Placeholder
-    </div>
+    Placeholder
   </div>
 </DocumentFragment>
 `;
@@ -20,14 +17,10 @@ exports[`OptaFootballFixturesTicker should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa giUBsz"
+    class="sc-htpNat sc-ifAKCX elhfwo"
   >
-    <div
-      class="sc-htpNat sc-ifAKCX gxAjSa"
-    >
-      <div>
-        Widget
-      </div>
+    <div>
+      Widget
     </div>
   </div>
 </DocumentFragment>
