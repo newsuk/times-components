@@ -60,9 +60,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
                   {breadcrumbItem.title}
                 </BreadcrumbItem>
                 <IconContainer>
-                  <BreadcrumbIcon
-                    color={styleMap.colors.inkNonEssential}
-                  />
+                  <BreadcrumbIcon color={styleMap.colors.inkNonEssential} />
                 </IconContainer>
               </>
             ) : (
