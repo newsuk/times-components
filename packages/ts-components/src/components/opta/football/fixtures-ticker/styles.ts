@@ -40,6 +40,13 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 `;
 
 export const WidgetContainer = styled(WidgetContainerBase)`
+  @media (max-width: ${breakpoints.small}px) {
+    .Opta-Window {
+      left: 20px !important;
+      right: 0 !important;
+    }
+  }  
+
   .Opta-Scroller {
     background-color: white !important;
 
@@ -66,6 +73,15 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     &.Opta-Previous::after {
       transform: rotate(90deg) translateX(2px);
     }
+
+    @media (max-width: ${breakpoints.small}px) {
+      opacity: 0 !important;
+      transition-duration: .2s;
+
+      &:hover {
+        opacity: 1 !important;
+      }
+    }  
   }
 
   .Opta-fixture {
