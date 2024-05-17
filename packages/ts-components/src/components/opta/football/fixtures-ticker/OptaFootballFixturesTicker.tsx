@@ -58,7 +58,7 @@ export const OptaFootballFixturesTicker: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady} fullWidth={full_width}>
+    <Container border={false} fullWidth={full_width}>
       <WidgetContainer ref={ref} />
 
       {!isReady && (
