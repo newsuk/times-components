@@ -11,12 +11,18 @@ export const BannerWrapper = styled.div`
 export const NewsKitBanner = styled.div`
   border-top: 3px solid #005c8a;
   background-color: #fff;
-  padding: 16px;
-  padding-inline: 16px;
-  padding-block: 16px;
   flex-direction: column;
   align-items: flex-start;
-  height: 83px;
+  padding-left: 12px;
+  padding-block: 12px;
+  padding-right: 16px;
+  @media screen and (min-width: ${breakpoints.wide}px) {
+    padding-block: 10px;
+  }
+`;
+
+export const BannerContentWrapper = styled.div`
+  flex-direction: inherit;
 `;
 
 export const Wrapper = styled.div`
@@ -24,7 +30,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  @media screen and (min-width: ${breakpoints.medium}px) {
+    margin-bottom: 8px;
+  }
 `;
 
 export const TitleWrapper = styled.div`

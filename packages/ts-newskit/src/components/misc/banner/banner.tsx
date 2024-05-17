@@ -6,7 +6,8 @@ import {
   TitleWrapper,
   Wrapper,
   NewsKitBanner,
-  BannerWrapper
+  BannerWrapper,
+  BannerContentWrapper
 } from './styles';
 import { CloseIconBlack, EmailIcon } from '../../../assets';
 
@@ -20,6 +21,7 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
   return (
     <BannerWrapper>
       <NewsKitBanner aria-label="Email verification banner">
+      <BannerContentWrapper role="region">
         <Wrapper>
           <TitleWrapper>
             <EmailIcon />
@@ -30,6 +32,7 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
           </CloseIconWrapper>
         </Wrapper>
         <Body>{body}</Body>
+      </BannerContentWrapper>
       </NewsKitBanner>
     </BannerWrapper>
   );
