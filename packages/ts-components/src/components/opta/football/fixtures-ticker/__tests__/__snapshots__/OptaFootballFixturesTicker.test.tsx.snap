@@ -6,7 +6,7 @@ exports[`OptaFootballFixturesTicker should render correctly 1`] = `
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX lclCDG"
+      class="sc-htpNat sc-ifAKCX jzahBe"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -20,10 +20,10 @@ exports[`OptaFootballFixturesTicker should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hGXeaj"
+    class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX lclCDG"
+      class="sc-htpNat sc-ifAKCX jzahBe"
     >
       <div>
         Widget

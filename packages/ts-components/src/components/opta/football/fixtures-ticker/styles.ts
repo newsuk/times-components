@@ -45,7 +45,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       left: 20px !important;
       right: 0 !important;
     }
-  }  
+  }
 
   .Opta-Scroller {
     background-color: white !important;
@@ -76,12 +76,12 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
     @media (max-width: ${breakpoints.small}px) {
       opacity: 0 !important;
-      transition-duration: .2s;
+      transition-duration: 0.2s;
 
       &:hover {
         opacity: 1 !important;
       }
-    }  
+    }
   }
 
   .Opta-fixture {
