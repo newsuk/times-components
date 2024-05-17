@@ -1,4 +1,4 @@
-import { styled } from 'newskit';
+import styled from 'styled-components';
 import { breakpoints } from '@times-components/ts-styleguide';
 
 export const BannerWrapper = styled.div`
