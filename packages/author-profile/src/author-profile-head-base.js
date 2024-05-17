@@ -2,7 +2,6 @@ import React, { memo } from "react";
 import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/ts-styleguide";
-import { useBreakpointKey } from "newskit";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
@@ -20,8 +19,8 @@ const AuthorProfileHeadBase = memo(
     twitter,
     contractualTitle
   }) => {
-    const breakpoint = useBreakpointKey();
-    const isLargeDevice = breakpoint === "lg" || breakpoint === "xl";
+    const isLargeDevice =
+      typeof window !== "undefined" && window.innerWidth >= 1440;
 
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
