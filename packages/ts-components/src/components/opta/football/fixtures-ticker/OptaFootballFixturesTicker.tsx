@@ -10,7 +10,7 @@ import {
   initComponent
 } from '../../utils/config';
 
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaFootballFixturesTicker: React.FC<{
@@ -18,8 +18,7 @@ export const OptaFootballFixturesTicker: React.FC<{
   competition: string;
   date_from?: string;
   date_to?: string;
-  full_width?: boolean;
-}> = React.memo(({ season, competition, date_from, date_to, full_width }) => {
+}> = React.memo(({ season, competition, date_from, date_to }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -58,14 +57,14 @@ export const OptaFootballFixturesTicker: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady} fullWidth={full_width}>
+    <>
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer>
+        <PlaceholderContainer height={100}>
           <Placeholder />
         </PlaceholderContainer>
       )}
-    </Container>
+    </>
   );
 });
