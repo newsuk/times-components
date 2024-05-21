@@ -3,21 +3,21 @@
 exports[`Banner renders the banner 1`] = `
 <DocumentFragment>
   <div
-    class="css-197qwxt"
+    class="sc-bdVaJa VUwsZ"
   >
     <div
       aria-label="Email verification banner"
-      class="css-xqp7m8"
+      class="sc-bwzfXH eWmkTr"
     >
       <div
-        class="css-1rdrtra"
+        class="sc-htpNat kKgziG"
         role="region"
       >
         <div
-          class="css-96nnue"
+          class="sc-bxivhb iVoVQA"
         >
           <div
-            class="css-1vptl7o"
+            class="sc-ifAKCX fBzQxS"
           >
             <svg
               fill="none"
@@ -32,13 +32,13 @@ exports[`Banner renders the banner 1`] = `
               />
             </svg>
             <p
-              class="css-qlas33"
+              class="sc-EHOje dMjtnD"
             >
               Title
             </p>
           </div>
           <button
-            class="css-1fwgiu8"
+            class="sc-gzVnrw hWbcjJ"
           >
             <svg
               fill="none"
@@ -55,7 +55,7 @@ exports[`Banner renders the banner 1`] = `
           </button>
         </div>
         <p
-          class="css-su67ks"
+          class="sc-bZQynM jtrtRX"
         >
           Body
         </p>
