@@ -1,32 +1,33 @@
 import React from 'react';
-import { showcaseConverter } from '@times-components/storybook';
+import { storiesOf } from '@storybook/react';
+import { select, text, withKnobs } from '@storybook/addon-knobs';
 
-import { ArticleHarness } from '../../../../fixtures/article-harness/ArticleHarness';
 import { OptaFootballFixturesTicker } from './OptaFootballFixturesTicker';
+const competitons = [
+  '1',
+  '2',
+  '5',
+  '6',
+  '8',
+  '10',
+  '14',
+  '38',
+  '80',
+  '235',
+  '941',
+  '1125'
+];
 
-const showcase = {
-  children: [
-    {
-      decorator: (storyFn: () => React.ReactNode) => (
-        <ArticleHarness>{storyFn()}</ArticleHarness>
-      ),
-      type: 'decorator'
-    },
-    {
-      component: () => (
-        <OptaFootballFixturesTicker
-          season="2023"
-          competition="8"
-          date_from=""
-          date_to=""
-        />
-      ),
-      name: 'Fixtures Ticker',
-      type: 'story'
-    }
-  ],
-  name: 'Typescript Component/In Article/Football/Fixtures'
-};
-
-// @ts-ignore
-showcaseConverter(module, showcase);
+storiesOf('Typescript Component/In Article/Football/Fixtures', module)
+  .addDecorator(withKnobs)
+  .add('Fixtures Ticker', () => {
+    const selComp = select('Competition', competitons, '8');
+    return (
+      <OptaFootballFixturesTicker
+        season={text('season', '2023')}
+        competition={selComp}
+        date_from=""
+        date_to=""
+      />
+    );
+  });
