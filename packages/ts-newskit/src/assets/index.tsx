@@ -5,11 +5,6 @@ import TooltipIcon from './TooltipIcon';
 import ThumbsUpIcon from './ThumbsUp';
 import ThumbsDownIcon from './ThumbsDown';
 import CloseIcon from './CloseIcon';
-import EmailIcon from './EmailIcon';
-import CloseIconBlack from './CloseIconBlack';
-export { default as FilledArrowIcon } from './FilledArrowIcon';
-
-// export const NewsKitFilledArrowIcon = () => props => <FilledArrowIcon {...props} />
 
 export const NewsKitThumbsUpIcon = customToNewsKitIcon(
   'NewsKitThumbsUpIcon',
@@ -36,12 +31,6 @@ export const NewsKitTooltipIcon = customToNewsKitIcon(
   props => <TooltipIcon {...props} />
 );
 
-export const NewsKitEmailIcon = customToNewsKitIcon(
-  'NewsKitEmailIcon',
-  props => <EmailIcon {...props} />
-);
-
-export const NewsKitCloseIconBlack = customToNewsKitIcon(
-  'NewsKitCloseIconBlack',
-  props => <CloseIconBlack {...props} />
-);
+export { default as CloseIconBlack } from '../assets/CloseIconBlack';
+export { default as EmailIcon } from '../assets/EmailIcon';
+export { default as FilledArrowIcon } from './FilledArrowIcon';
