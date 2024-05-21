@@ -9,7 +9,8 @@
         "url": "/sport/tennis"
       },
       {
-        "title": "Australian Open"
+        "title": "Australian Open",
+        "url": "/australian open"
       }
     ],
     "breadcrumbItemsForTrackingDemo" : [
