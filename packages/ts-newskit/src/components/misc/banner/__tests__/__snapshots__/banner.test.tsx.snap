@@ -3,180 +3,62 @@
 exports[`Banner renders the banner 1`] = `
 <DocumentFragment>
   <div
-    class="css-197qwxt"
+    class="sc-bdVaJa VUwsZ"
   >
     <div
-      class="css-gre9re"
+      aria-label="Email verification banner"
+      class="sc-bwzfXH eWmkTr"
     >
       <div
-        aria-label="Email verification banner"
-        class="css-1qyqnch"
-        data-testid="banner-container"
+        class="sc-htpNat kKgziG"
         role="region"
       >
         <div
-          class="css-8atxkm"
+          class="sc-bxivhb iVoVQA"
         >
           <div
-            class="css-1el0fus"
+            class="sc-ifAKCX fBzQxS"
           >
-            <div
-              class="css-16gqvb8"
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="css-1x1bokb"
-              >
-                <div
-                  class="css-1fjxkj8"
-                >
-                  <div
-                    class="css-1xd7721"
-                  >
-                    <div
-                      class="css-s5sjj8"
-                    >
-                      <div
-                        class="css-1bjb3mr"
-                      >
-                        <div
-                          class="css-1vptl7o"
-                        >
-                          <svg
-                            class="css-ny3roy"
-                            fill="none"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M22 9.98V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19L2.01 7C2.01 5.9 2.9 5 4 5H14.1C14.04 5.32 14 5.66 14 6C14 6.34 14.04 6.68 14.1 7H4L12 12L15.67 9.71C16.14 10.14 16.69 10.47 17.3 10.69L12 14L4 9V19H20V10.9C20.74 10.75 21.42 10.42 22 9.98ZM16 6C16 7.66 17.34 9 19 9C20.66 9 22 7.66 22 6C22 4.34 20.66 3 19 3C17.34 3 16 4.34 16 6Z"
-                              fill="#000"
-                            />
-                          </svg>
-                          <p
-                            class="css-hk5gs7"
-                          >
-                            Title
-                          </p>
-                        </div>
-                        <button
-                          class="css-1fwgiu8"
-                        >
-                          <svg
-                            class="css-ny3roy"
-                            fill="none"
-                            height="14"
-                            viewBox="0 0 14 14"
-                            width="14"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
-                              fill="#000"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                      <p
-                        class="css-j9qpwq"
-                      >
-                        Body
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <path
+                d="M22 9.98V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19L2.01 7C2.01 5.9 2.9 5 4 5H14.1C14.04 5.32 14 5.66 14 6C14 6.34 14.04 6.68 14.1 7H4L12 12L15.67 9.71C16.14 10.14 16.69 10.47 17.3 10.69L12 14L4 9V19H20V10.9C20.74 10.75 21.42 10.42 22 9.98ZM16 6C16 7.66 17.34 9 19 9C20.66 9 22 7.66 22 6C22 4.34 20.66 3 19 3C17.34 3 16 4.34 16 6Z"
+                fill="#000"
+              />
+            </svg>
+            <p
+              class="sc-EHOje dMjtnD"
+            >
+              Title
+            </p>
           </div>
+          <button
+            class="sc-gzVnrw hWbcjJ"
+          >
+            <svg
+              fill="none"
+              height="14"
+              viewBox="0 0 14 14"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                fill="#000"
+              />
+            </svg>
+          </button>
         </div>
-      </div>
-    </div>
-    <div
-      class="css-11l110t"
-    >
-      <div
-        aria-label="Email verification banner"
-        class="css-1qyqnch"
-        data-testid="banner-container"
-        role="region"
-      >
-        <div
-          class="css-8atxkm"
+        <p
+          class="sc-bZQynM jtrtRX"
         >
-          <div
-            class="css-1el0fus"
-          >
-            <div
-              class="css-16gqvb8"
-            >
-              <div
-                class="css-12yaafp"
-              >
-                <div
-                  class="css-4qr6vx"
-                >
-                  <div
-                    class="css-1xd7721"
-                  >
-                    <div
-                      class="css-s5sjj8"
-                    >
-                      <div
-                        class="css-1bjb3mr"
-                      >
-                        <div
-                          class="css-1vptl7o"
-                        >
-                          <svg
-                            class="css-ny3roy"
-                            fill="none"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M22 9.98V19C22 20.1 21.1 21 20 21H4C2.9 21 2 20.1 2 19L2.01 7C2.01 5.9 2.9 5 4 5H14.1C14.04 5.32 14 5.66 14 6C14 6.34 14.04 6.68 14.1 7H4L12 12L15.67 9.71C16.14 10.14 16.69 10.47 17.3 10.69L12 14L4 9V19H20V10.9C20.74 10.75 21.42 10.42 22 9.98ZM16 6C16 7.66 17.34 9 19 9C20.66 9 22 7.66 22 6C22 4.34 20.66 3 19 3C17.34 3 16 4.34 16 6Z"
-                              fill="#000"
-                            />
-                          </svg>
-                          <p
-                            class="css-hk5gs7"
-                          >
-                            Title
-                          </p>
-                        </div>
-                        <button
-                          class="css-1fwgiu8"
-                        >
-                          <svg
-                            class="css-ny3roy"
-                            fill="none"
-                            height="14"
-                            viewBox="0 0 14 14"
-                            width="14"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
-                              fill="#000"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                      <p
-                        class="css-j9qpwq"
-                      >
-                        Body
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          Body
+        </p>
       </div>
     </div>
   </div>

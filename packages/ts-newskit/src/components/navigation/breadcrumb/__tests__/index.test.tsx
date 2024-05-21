@@ -31,14 +31,14 @@ describe('Render Breadcrumbs', () => {
   });
 
   it('items should have link with href', () => {
-    const { getAllByTestId } = renderBreadcrumb();
-    const title = getAllByTestId('buttonLink')[0];
+    const { getAllByRole } = renderBreadcrumb();
+    const title = getAllByRole('link')[0];
     expect(title).toHaveAttribute('href', '/sport');
   });
 
   it('last breadcrumb should be selected', () => {
-    const { getAllByTestId } = renderBreadcrumb();
-    const title = getAllByTestId('button')[0];
+    const { getAllByRole } = renderBreadcrumb();
+    const title = getAllByRole('link')[2];
     expect(title).toHaveAttribute('aria-current', 'page');
   });
 

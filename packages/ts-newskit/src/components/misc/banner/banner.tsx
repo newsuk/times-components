@@ -1,14 +1,15 @@
 import React from 'react';
 import {
-  NewsKitBanner,
   Body,
   CloseIconWrapper,
   Title,
   TitleWrapper,
   Wrapper,
-  BannerWrapper
+  NewsKitBanner,
+  BannerWrapper,
+  BannerContentWrapper
 } from './styles';
-import { NewsKitCloseIconBlack, NewsKitEmailIcon } from '../../../assets';
+import { CloseIconBlack, EmailIcon } from '../../../assets';
 
 type Props = {
   onClose: () => void;
@@ -20,16 +21,18 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
   return (
     <BannerWrapper>
       <NewsKitBanner aria-label="Email verification banner">
-        <Wrapper>
-          <TitleWrapper>
-            <NewsKitEmailIcon />
-            <Title typographyPreset="editorialHeadline010">{title}</Title>
-          </TitleWrapper>
-          <CloseIconWrapper onClick={onClose}>
-            <NewsKitCloseIconBlack width={14} height={14} />
-          </CloseIconWrapper>
-        </Wrapper>
-        <Body typographyPreset="utilityBody010">{body}</Body>
+        <BannerContentWrapper role="region">
+          <Wrapper>
+            <TitleWrapper>
+              <EmailIcon />
+              <Title>{title}</Title>
+            </TitleWrapper>
+            <CloseIconWrapper onClick={onClose}>
+              <CloseIconBlack width={14} height={14} />
+            </CloseIconWrapper>
+          </Wrapper>
+          <Body>{body}</Body>
+        </BannerContentWrapper>
       </NewsKitBanner>
     </BannerWrapper>
   );
