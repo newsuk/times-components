@@ -7,5 +7,5 @@ export const buttonStylePresets = {
       borderWidth:
         '{{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}}'
     }
-  },
+  }
 };
