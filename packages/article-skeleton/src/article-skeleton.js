@@ -148,7 +148,11 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, audio } = articleDataFromRender || {};
+
+
+  console.log("articleDataFromRender=audio", audio);
+  
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -322,6 +326,7 @@ const ArticleSkeleton = ({
                     </MessageContext.Consumer>
                   </UserState>
                 ) : null}
+              
                 {!!zephrDivs && (
                   <StaticContent
                     html={
