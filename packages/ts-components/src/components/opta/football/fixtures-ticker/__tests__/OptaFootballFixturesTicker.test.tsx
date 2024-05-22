@@ -30,12 +30,12 @@ import { OptaFootballFixturesTicker } from '../OptaFootballFixturesTicker';
 
 const requiredProps = {
   season: '2020',
-  competition: '3',
+  competition: '8',
   date_from: '2021-06-20',
   date_to: '2021-07-11'
 };
 
-describe('OptaFootballFixturesTicker', () => {
+describe('OptaFootballFixturesTicker with flags', () => {
   it('should render correctly', async () => {
     const { asFragment, getByText } = render(
       <OptaFootballFixturesTicker {...requiredProps} />
@@ -44,9 +44,9 @@ describe('OptaFootballFixturesTicker', () => {
 
     await waitForElementToBeRemoved(getByText('Placeholder'));
 
-    expect(mockInitSettings).toHaveBeenCalledTimes(1);
-    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
-    expect(mockInitComponent).toHaveBeenCalledTimes(1);
+    expect(mockInitSettings).toHaveBeenCalledTimes(2);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(2);
+    expect(mockInitComponent).toHaveBeenCalledTimes(2);
 
     expect(asFragment()).toMatchSnapshot();
   });

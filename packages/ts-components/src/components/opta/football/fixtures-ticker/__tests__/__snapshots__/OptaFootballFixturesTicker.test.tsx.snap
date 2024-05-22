@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OptaFootballFixturesTicker should render correctly 1`] = `
+exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX elhfwo"
+    class="sc-htpNat sc-ifAKCX bUDcbI"
   />
   <div
     class="sc-bwzfXH eLGWmp"
@@ -14,10 +14,10 @@ exports[`OptaFootballFixturesTicker should render correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker should render correctly 2`] = `
+exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX elhfwo"
+    class="sc-htpNat sc-ifAKCX bUDcbI"
   >
     <div>
       Widget

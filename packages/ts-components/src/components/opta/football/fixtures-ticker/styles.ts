@@ -40,6 +40,10 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 `;
 
 export const WidgetContainer = styled(WidgetContainerBase)`
+  .Opta {
+    font-family: Roboto !important;
+  }
+
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Window {
       left: 0 !important;
@@ -95,6 +99,12 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
     .Opta-Team {
       height: 24px !important;
+
+      .team-flag {
+        width: 20px;
+        margin-bottom: -2px;
+        margin-right: 8px;
+      }
     }
     .Opta-timings {
       height: 24px !important;
@@ -104,10 +114,14 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     .Opta-TeamName,
     .Opta-Team-Score {
       color: black !important;
-      font-weight: bold !important;
+      font-weight: 700 !important;
     }
     &.Opta-prematch .Opta-Team-Score::after {
       content: '-';
+    }
+
+    .Opta-Image-Team-Small {
+      height: 20px;
     }
   }
 
