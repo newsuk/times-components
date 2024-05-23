@@ -8,7 +8,7 @@ export const ChevronRightIcon = styled(ChevronIcon)`
 `;
 
 export const Container = styled.div`
-  padding-top: 3px;
+  padding-top: 12px;
   border-style: solid none none none;
   border-width: 3px;
   border-color: #df7334;
@@ -16,12 +16,12 @@ export const Container = styled.div`
 
 export const Description = styled.p`
   display: block;
-  padding-right: 12px;
   font-family: 'Roboto';
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.4rem;
   letter-spacing: 0em;
+  margin: 7px 0 4px;
 `;
 
 export const Divider = styled.hr`
@@ -29,12 +29,14 @@ export const Divider = styled.hr`
   border-style: dashed none none none;
   border-width: 1px;
   border-color: #01000d;
+  &:first-of-type {
+    margin-top: 11px;
+  }
 `;
 
 export const Link = styled.a`
   display: block;
   text-decoration: none;
-  padding-top: 12px;
 
   &:hover {
     button {
@@ -61,7 +63,7 @@ export const Title = styled.h3`
   line-height: 1.125;
   font-size: 1.8rem;
   letter-spacing: 0em;
-  margin: 0;
+  margin: 2px 0 0;
 `;
 
 export const ChevronButton = styled.button`
@@ -81,9 +83,10 @@ export const ChevronButton = styled.button`
 export const ItemTitle = styled.p`
   font-family: 'Times Modern';
   font-weight: 400;
-  line-height: 1.125;
+  line-height: 1;
   font-size: 1.6rem;
   letter-spacing: 0em;
+  margin: 12px 0;
 `;
 
 export const PuzzleContainer = styled.a`
@@ -100,6 +103,6 @@ export const PuzzleContainer = styled.a`
 
 export const PuzzleImage = styled.img`
   height: 40px;
-  height: 40px;
-  margin: 0 14px;
+  width: 40px;
+  margin: 0 16px 0 0;
 `;
