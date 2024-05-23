@@ -121,14 +121,6 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '0%',
       fontStretch: 'normal'
     },
-    breadcrumbText: {
-      fontFamily: 'Roboto-Regular',
-      fontSize: '12px',
-      fontWeight: 500,
-      lineHeight: '1.250',
-      letterSpacing: '0%',
-      fontStretch: 'normal'
-    },
     articleListTitle: {
       fontFamily: 'TimesModern-Regular',
       fontSize: '18px',

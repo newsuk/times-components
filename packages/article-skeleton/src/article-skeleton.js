@@ -392,7 +392,6 @@ const ArticleSkeleton = ({
                             display
                             label="New update"
                             handleClick={() => scrollToTopAndRefresh(window)}
-                            arrowUp
                             updatedTime={article.publishedTime}
                             articleId={article.id}
                           />

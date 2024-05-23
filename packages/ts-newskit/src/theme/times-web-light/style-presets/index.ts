@@ -1,4 +1,3 @@
-import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
 import { mastheadStylePresets } from './masthead';
 import { menuStylePresets } from './menu';
@@ -15,7 +14,6 @@ import { chipStylePresets } from './chip';
 
 export const stylePresets = {
   ...popoverStylePresets,
-  ...breadcrumbStylePresets,
   ...buttonStylePresets,
   ...colorStylePresets,
   ...mastheadStylePresets,

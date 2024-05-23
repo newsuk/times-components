@@ -1,5 +1,6 @@
 import React from 'react';
-import { Breadcrumbs, BreadcrumbItem } from 'newskit';
+import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
+import { BreadcrumbIcon } from '../../../assets';
 import {
   TrackingContext,
   TrackingContextProvider
@@ -16,6 +17,7 @@ type BreadcrumbProps = {
 
 export const Breadcrumb = ({ data }: BreadcrumbProps) => {
   const clickEvent = (title: string) => ({
+    object: 'Breadcrumb',
     action: 'Clicked',
     attrs: {
       event_navigation_action: 'navigation',
@@ -32,28 +34,41 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title));
   };
 
+  const getBreadcrumbSeparator = (index: number, arr: any[]) =>
+    index < arr.length - 1;
+
   return (
     <TrackingContextProvider>
       {({ fireAnalyticsEvent }) => (
-        <Breadcrumbs
-          size="small"
-          overrides={{
-            separator: {
-              stylePreset: 'breadcrumbSeparator'
-            }
-          }}
-        >
+        <Breadcrumbs aria-label="breadcrumbs">
           {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => {
-            const isLastItem = breadcrumbIndex + 1 === breadcrumbArr.length;
-            return (
+            const showSeparator = getBreadcrumbSeparator(
+              breadcrumbIndex,
+              breadcrumbArr
+            );
+            return showSeparator ? (
+              <>
+                <BreadcrumbItem
+                  key={breadcrumbItem.title}
+                  aria-current="false"
+                  href={breadcrumbItem.url}
+                  selected={false}
+                  onClick={() =>
+                    handleClick(fireAnalyticsEvent, breadcrumbItem.title)
+                  }
+                >
+                  {breadcrumbItem.title}
+                </BreadcrumbItem>
+                <IconContainer>
+                  <BreadcrumbIcon color={styleMap.colors.inkNonEssential} />
+                </IconContainer>
+              </>
+            ) : (
               <BreadcrumbItem
+                aria-current="page"
                 key={breadcrumbItem.title}
                 href={breadcrumbItem.url}
-                selected={isLastItem}
-                overrides={{
-                  stylePreset: 'breadcrumbStyle',
-                  typographyPreset: 'breadcrumbText'
-                }}
+                selected={true}
                 onClick={() =>
                   handleClick(fireAnalyticsEvent, breadcrumbItem.title)
                 }
