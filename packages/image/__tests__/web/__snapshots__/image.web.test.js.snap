@@ -21,10 +21,7 @@ exports[`1. default layout 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -35,29 +32,6 @@ exports[`1. default layout 1`] = `
       loading="lazy"
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
-    <div
-      height="100%"
-      width="100%"
-    >
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -83,10 +57,7 @@ exports[`2. default layout without uri 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -97,29 +68,6 @@ exports[`2. default layout without uri 1`] = `
       loading="lazy"
       src={null}
     />
-    <div
-      height="100%"
-      width="100%"
-    >
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -145,10 +93,7 @@ exports[`3. default layout without aspect ratio 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -159,29 +104,6 @@ exports[`3. default layout without aspect ratio 1`] = `
       loading="lazy"
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
     />
-    <div
-      height="100%"
-      width="100%"
-    >
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -207,10 +129,7 @@ exports[`4. rounded image 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -221,29 +140,6 @@ exports[`4. rounded image 1`] = `
       loading="lazy"
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
-    <div
-      height="100%"
-      width="100%"
-    >
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -269,10 +165,7 @@ exports[`5. with existing url params 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -283,29 +176,6 @@ exports[`5. with existing url params 1`] = `
       loading="lazy"
       src="https://image.io?resize=1400"
     />
-    <div
-      height="100%"
-      width="100%"
-    >
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-          stroke="none"
-          strokeWidth="1"
-        >
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -331,10 +201,7 @@ exports[`6. with disabled placeholder 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
