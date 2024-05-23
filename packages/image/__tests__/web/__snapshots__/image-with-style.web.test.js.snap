@@ -21,10 +21,7 @@ exports[`1. default image 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -38,28 +35,6 @@ exports[`1. default image 1`] = `
     <img
       className="c1"
     />
-    <div
-      alignItems="center"
-      backgroundColor="#EDEDED"
-      borderRadius={0}
-      bottom={0}
-      className="c0"
-      justifyContent="center"
-      left={0}
-      position="absolute"
-      right={0}
-      top={0}
-      zIndex={0}
-    >
-      <svg
-        maxHeight="50%"
-        maxWidth="25%"
-      >
-        <g>
-          <path />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;
@@ -85,10 +60,7 @@ exports[`2. default modal 1`] = `
 
 .c1 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -102,28 +74,6 @@ exports[`2. default modal 1`] = `
     <img
       className="c1"
     />
-    <div
-      alignItems="center"
-      backgroundColor="#EDEDED"
-      borderRadius={0}
-      bottom={0}
-      className="c0"
-      justifyContent="center"
-      left={0}
-      position="absolute"
-      right={0}
-      top={0}
-      zIndex={0}
-    >
-      <svg
-        maxHeight="50%"
-        maxWidth="25%"
-      >
-        <g>
-          <path />
-        </g>
-      </svg>
-    </div>
   </div>
 </div>
 `;

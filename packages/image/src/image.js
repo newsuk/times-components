@@ -4,46 +4,17 @@ import {
   appendToImageURL,
   TcView
 } from "@times-components/utils";
-import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      highResIsLoaded: false
-    };
-
-    this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
-    this.getHighResImage = this.getHighResImage.bind(this);
-  }
-
-  getHighResImage(img) {
-    if (img && img.complete) {
-      this.handleHighResOnLoad();
-    }
-  }
-
-  handleHighResOnLoad() {
-    this.setState({
-      highResIsLoaded: true
-    });
-  }
-
   highResImage({ highResSize = 300, url }) {
-    const { highResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
     const imgUrl = appendToImageURL(url, "resize", highResSize);
     return (
       <StyledImage
         alt={accessibilityLabel}
-        ref={this.getHighResImage}
         loading="lazy"
-        isLoaded={highResIsLoaded}
-        onLoad={this.handleHighResOnLoad}
-        onTransitionEnd={this.onHighResTransitionEnd}
         src={imgUrl}
         zIndex={2}
       />
@@ -53,7 +24,6 @@ class TimesImage extends Component {
   render() {
     const {
       aspectRatio,
-      disablePlaceholder,
       highResSize,
       style,
       uri,
@@ -61,7 +31,6 @@ class TimesImage extends Component {
       rounded,
       isLcpItem
     } = this.props;
-    const { highResIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
     const styles = {
       ...style
@@ -79,9 +48,6 @@ class TimesImage extends Component {
       >
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, url })}
-          {disablePlaceholder || highResIsLoaded ? null : (
-            <Placeholder borderRadius={rounded ? "50%" : 0} />
-          )}
         </div>
       </TcView>
     );
