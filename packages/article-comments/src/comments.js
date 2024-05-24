@@ -75,74 +75,98 @@ class Comments extends Component {
       }
     };
 
-    document.addEventListener(
-      "spot-im-current-user-typing-start",
-      onCommentStart
-    );
+    const setupEventListeners = () => {
+      document.addEventListener(
+        "spot-im-current-user-typing-start",
+        onCommentStart
+      );
+      document.addEventListener(
+        "spot-im-current-user-sent-message",
+        onCommentPost
+      );
+      document.addEventListener(
+        "spot-im-notification-drop-down-link",
+        onCommentNotification
+      );
+      document.addEventListener(
+        "spot-im-user-up-vote-click",
+        onCommentRecommend
+      );
+      document.addEventListener("spot-im-sort-by-select", event =>
+        getFilterEvent(event)
+      );
+      document.addEventListener(
+        "spot-im-user-clicked-reply",
+        onCommentReplyClick
+      );
+      document.addEventListener(
+        "spot-im-clicked-settings",
+        onCommentSettingsClicked
+      );
+      document.addEventListener(
+        "spot-im-user-notifications-click",
+        onCommentNotificationClicked
+      );
+      document.addEventListener(
+        "spot-im-open-user-profile",
+        onCommentUsernameClicked
+      );
+      document.addEventListener("spot-im-share-type", event =>
+        getShareEvent(event)
+      );
+    };
 
-    document.addEventListener(
-      "spot-im-current-user-sent-message",
-      onCommentPost
-    );
-    document.addEventListener(
-      "spot-im-notification-drop-down-link",
-      onCommentNotification
-    );
-    document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
-    document.addEventListener("spot-im-sort-by-select", event =>
-      getFilterEvent(event)
-    );
-    document.addEventListener(
-      "spot-im-user-clicked-reply",
-      onCommentReplyClick
-    );
-    document.addEventListener(
-      "spot-im-clicked-settings",
-      onCommentSettingsClicked
-    );
-    document.addEventListener(
-      "spot-im-user-notifications-click",
-      onCommentNotificationClicked
-    );
-    document.addEventListener(
-      "spot-im-open-user-profile",
-      onCommentUsernameClicked
-    );
-    document.addEventListener("spot-im-share-type", event =>
-      getShareEvent(event)
-    );
-
-    if (!isReadOnly) {
-      if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction();
-      } else {
-        document.addEventListener("spot-im-api-ready", () => {
+    const setupSSO = () => {
+      if (!isReadOnly) {
+        if (window.SPOTIM && window.SPOTIM.startSSO) {
           executeSSOtransaction();
-        });
+        } else {
+          document.addEventListener("spot-im-api-ready", () => {
+            executeSSOtransaction();
+          });
+        }
       }
-    }
 
-    // In case of token expiration we need to renew sso
-    document.addEventListener("spot-im-renew-sso", () => {
-      executeSSOtransaction();
-    });
+      // In case of token expiration we need to renew sso
+      document.addEventListener("spot-im-renew-sso", () => {
+        executeSSOtransaction();
+      });
+    };
 
-    const launcherScript = document.createElement("script");
-    launcherScript.setAttribute("defer", "defer");
-    launcherScript.setAttribute(
-      "src",
-      `https://launcher.spot.im/spot/${commentingConfig.account}`
-    );
-    launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
-    launcherScript.setAttribute("data-post-id", articleId);
-    launcherScript.setAttribute(
-      "data-post-url",
-      `${domainSpecificUrl}/article/${articleId}`
-    );
-    launcherScript.setAttribute("data-seo-enabled", true);
-    launcherScript.setAttribute("data-livefyre-url", articleId);
+    const appendLauncherScript = () => {
+      const launcherScript = document.createElement("script");
+      launcherScript.setAttribute("defer", "defer");
+      launcherScript.setAttribute(
+        "src",
+        `https://launcher.spot.im/spot/${commentingConfig.account}`
+      );
+      launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
+      launcherScript.setAttribute("data-post-id", articleId);
+      launcherScript.setAttribute(
+        "data-post-url",
+        `${domainSpecificUrl}/article/${articleId}`
+      );
+      launcherScript.setAttribute("data-seo-enabled", true);
+      launcherScript.setAttribute("data-livefyre-url", articleId);
 
-    this.container.appendChild(launcherScript);
+      this.container.appendChild(launcherScript);
+
+      // Ensure script is loaded
+      launcherScript.onload = () => {
+        console.log("SpotIM script loaded successfully");
+        setupEventListeners();
+        setupSSO();
+      };
+
+      launcherScript.onerror = () => {
+        console.error("Failed to load SpotIM script");
+      };
+    };
+
+    // Ensure the container is empty before appending
+    this.container.innerHTML = "";
+
+    appendLauncherScript();
   }
 
   disposeComments() {
