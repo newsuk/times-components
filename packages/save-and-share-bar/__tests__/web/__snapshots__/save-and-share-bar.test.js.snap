@@ -101,9 +101,9 @@ exports[`save and share bar component save and share bar renders correctly when 
       id="article-audio-container"
     >
       <div
-        className="css-1uvgrtl"
+        className="css-38lglc"
       >
-        test
+        Loading...
       </div>
     </div>
   </div>
@@ -160,9 +160,9 @@ exports[`save and share bar component save and share bar renders correctly when 
       id="article-audio-container"
     >
       <div
-        className="css-1uvgrtl"
+        className="css-38lglc"
       >
-        test
+        Loading...
       </div>
     </div>
   </div>

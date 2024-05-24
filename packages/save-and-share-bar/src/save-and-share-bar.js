@@ -177,7 +177,7 @@ function SaveAndShareBar(props) {
       ) : null}
 
       <div id="article-audio-container">
-        <AudioButton>test</AudioButton>
+        <AudioButton>Loading...</AudioButton>
       </div>
     </Stack>
   );
