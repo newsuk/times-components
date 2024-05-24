@@ -98,7 +98,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="css-7i4qsc"
   >
     <div
-      id="article-audio-container"
+      id="article-audio-wrapper"
     />
   </div>
 </div>
@@ -151,7 +151,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="css-7i4qsc"
   >
     <div
-      id="article-audio-container"
+      id="article-audio-wrapper"
     />
   </div>
 </div>
