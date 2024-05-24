@@ -1,11 +1,14 @@
-export const replaceFlags = async (
+export const replaceFlags = (
   element: HTMLCollectionOf<Element> | undefined
 ) => {
-  const replaceImages = await setInterval(() => {
+  let count = 0;
+  const replaceImages = setInterval(() => {
+    if (count >= 5) { clearInterval(replaceImages); }
+    count++;
+
     if (element && element.length > 0) {
       for (let optaFlagContainer of element) {
-        const country =
-          optaFlagContainer && (optaFlagContainer as HTMLElement).innerText;
+        const country = (optaFlagContainer as HTMLElement).innerText;
 
         if (!optaFlagContainer.querySelector('img')) {
           const countryImg = document.createElement('img');
