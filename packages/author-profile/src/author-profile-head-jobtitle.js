@@ -18,12 +18,6 @@ const AuthorProfileHeadJobTitle = ({
     >
       {jobTitle.toLowerCase()}
     </AuthorProfileHeadJobTitleContainer>
-    {contractualTitle ? (
-      <JobTitle
-        contractualTitle={contractualTitle}
-        isLargeDevice={isLargeDevice}
-      />
-    ) : null}
   </div>
 );
 
