@@ -14,8 +14,10 @@ Array [
     <div>
       <div>
         <div
-          id="article-audio-wrapper-test"
-        />
+          id="article-audio-wrapper"
+        >
+          some content
+        </div>
       </div>
     </div>
   </div>,
@@ -94,8 +96,10 @@ Array [
     <div>
       <div>
         <div
-          id="article-audio-wrapper-test"
-        />
+          id="article-audio-wrapper"
+        >
+          some content
+        </div>
       </div>
     </div>
   </div>,
@@ -149,8 +153,10 @@ Array [
     <div>
       <div>
         <div
-          id="article-audio-wrapper-test"
-        />
+          id="article-audio-wrapper"
+        >
+          some content
+        </div>
       </div>
     </div>
   </div>,
