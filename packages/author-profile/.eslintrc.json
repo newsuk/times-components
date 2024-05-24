@@ -1,6 +1,3 @@
 {
-  "extends": ["@times-components/thetimes"],
-  "rules": {
-    "no-undef": "off"
-  }
+  "extends": ["@times-components/thetimes"]
 }

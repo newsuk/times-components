@@ -1,15 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { checkStylesForUnits } from "@times-components/utils";
-import { JobTitle } from "@times-components/ts-newskit";
 import styles from "./styles";
 import { AuthorProfileHeadJobTitleContainer } from "./styles/responsive";
 
-const AuthorProfileHeadJobTitle = ({
-  jobTitle,
-  contractualTitle,
-  isLargeDevice
-}) => (
+const AuthorProfileHeadJobTitle = ({ jobTitle }) => (
   <div style={checkStylesForUnits(styles.jobTitleContainer)}>
     <AuthorProfileHeadJobTitleContainer
       role="heading"
@@ -22,13 +17,7 @@ const AuthorProfileHeadJobTitle = ({
 );
 
 AuthorProfileHeadJobTitle.propTypes = {
-  jobTitle: PropTypes.string.isRequired,
-  contractualTitle: PropTypes.string,
-  isLargeDevice: PropTypes.bool.isRequired
-};
-
-AuthorProfileHeadJobTitle.defaultProps = {
-  contractualTitle: ""
+  jobTitle: PropTypes.string.isRequired
 };
 
 export default AuthorProfileHeadJobTitle;

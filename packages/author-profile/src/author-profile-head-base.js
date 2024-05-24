@@ -16,25 +16,15 @@ const AuthorProfileHeadBase = memo(
     renderBiography,
     renderImage,
     renderName,
-    twitter,
-    contractualTitle
+    twitter
   }) => {
-    const isLargeDevice =
-      typeof window !== "undefined" && window.innerWidth >= 1440;
-
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }
 
     const renderJobTitle = () => {
       if (!jobTitle) return null;
-      return (
-        <AuthorProfileHeadJobTitle
-          jobTitle={jobTitle}
-          contractualTitle={contractualTitle}
-          isLargeDevice={isLargeDevice}
-        />
-      );
+      return <AuthorProfileHeadJobTitle jobTitle={jobTitle} />;
     };
 
     const renderTwitterLink = () => {
@@ -71,8 +61,7 @@ AuthorProfileHeadBase.propTypes = {
   renderBiography: PropTypes.func.isRequired,
   renderImage: PropTypes.func.isRequired,
   renderName: PropTypes.func.isRequired,
-  twitter: PropTypes.string,
-  contractualTitle: PropTypes.string
+  twitter: PropTypes.string
 };
 
 AuthorProfileHeadBase.defaultProps = {
