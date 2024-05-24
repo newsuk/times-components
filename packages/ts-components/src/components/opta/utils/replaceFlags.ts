@@ -3,7 +3,9 @@ export const replaceFlags = (
 ) => {
   let count = 0;
   const replaceImages = setInterval(() => {
-    if (count >= 5) { clearInterval(replaceImages); }
+    if (count >= 5) {
+      clearInterval(replaceImages);
+    }
     count++;
 
     if (element && element.length > 0) {
