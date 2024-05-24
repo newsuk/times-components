@@ -97,7 +97,9 @@ exports[`save and share bar component save and share bar renders correctly when 
   <div
     className="css-7i4qsc"
   >
-    <div />
+    <div>
+      test
+    </div>
   </div>
 </div>
 `;
@@ -148,7 +150,9 @@ exports[`save and share bar component save and share bar renders correctly when 
   <div
     className="css-7i4qsc"
   >
-    <div />
+    <div>
+      test
+    </div>
   </div>
 </div>
 `;
