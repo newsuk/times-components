@@ -109,11 +109,12 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     .Opta-timings {
       height: 24px !important;
       order: -1;
+      color: #aaaaaa !important;
     }
 
     .Opta-TeamName,
     .Opta-Team-Score {
-      color: black !important;
+      color: #01000d !important;
       font-weight: 700 !important;
     }
     &.Opta-prematch .Opta-Team-Score::after {
