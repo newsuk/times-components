@@ -1,135 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article list header 1`] = `
-.c10 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1,auto);
-  width: 32px;
-  height: 32px;
-  margin-inline-start: 8px;
-  padding-inline: 8px;
-  padding-block: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #00000000;
-  border-radius: 50%;
-  color: #333333;
-  cursor: pointer;
-}
-
-.c6 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 {
-  display: none;
-  position: absolute;
-  top: -55px;
-  left: 4px;
-  box-shadow: 0px 20px 32px 0px #11111114;
-  border-radius: 0px;
-  border-style: none;
-  z-index: 80;
-}
-
-.c7 div {
-  margin: 0;
-  color: #333333;
-  border-radius: 0px;
-  background-color: #ffffff;
-  white-space: nowrap;
-  display: grid;
-  grid-template-areas: 'header close' 'content content';
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto 1fr;
-}
-
-.c7 div::after {
-  content: '';
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-sizing: border-box;
-  background-color: #ffffff;
-  width: 16px;
-  height: 16px;
-  left: 12px;
-  bottom: calc(-16px / 2);
-}
-
-.c8 div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: header;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  box-shadow: 0px 20px 32px 0px #11111114;
-  border-radius: 0px;
-  border-style: none;
-  font-family: Roboto;
-  font-size: 1.4000000000000001rem;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0em;
-  -moz-letter-spacing: 0em;
-  -ms-letter-spacing: 0em;
-  letter-spacing: 0em;
-  padding-inline: 24px;
-  padding-block: 16px;
-}
-
-.c9 {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  padding: 16px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-
-.c9:focus-visible {
-  background-color: #eeeeee;
-  border: 1px solid #000;
-}
-
-.c9:hover {
-  background-color: #eeeeee;
-}
-
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -172,7 +43,7 @@ exports[`1. an article list header 1`] = `
   z-index: 0;
 }
 
-.c12 {
+.c7 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -219,7 +90,7 @@ exports[`1. an article list header 1`] = `
   font-size: 30px;
 }
 
-.c11 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -288,7 +159,7 @@ exports[`1. an article list header 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c6 {
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
@@ -297,7 +168,7 @@ exports[`1. an article list header 1`] = `
 }
 
 @media (min-width:1320px) {
-  .c11 {
+  .c6 {
     max-width: 760px;
   }
 }
@@ -359,45 +230,6 @@ exports[`1. an article list header 1`] = `
         >
           job title
         </h2>
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-          >
-            <div
-              className="c8"
-            >
-              <div>
-                Contractual Title
-              </div>
-              <button
-                className="c9"
-              >
-                <svg>
-                  <path />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <button
-            className="c10"
-          >
-            <svg
-              className="css-ny3roy"
-            >
-              <mask
-                maskType="alpha"
-              >
-                <path />
-                <path />
-              </mask>
-              <g>
-                <path />
-              </g>
-            </svg>
-          </button>
-        </div>
       </div>
       <div
         alignItems="flex-end"
@@ -424,14 +256,14 @@ exports[`1. an article list header 1`] = `
         </TextLink>
       </div>
       <div
-        className="c11"
+        className="c6"
         paddingBottom="30px"
         paddingLeft="10px"
         paddingRight="10px"
         width="100%"
       >
         <div
-          className="c12"
+          className="c7"
           color="#333333"
           fontFamily="TimesDigitalW04, TimesDigitalW04-fallback, serif"
           fontSize={16}
