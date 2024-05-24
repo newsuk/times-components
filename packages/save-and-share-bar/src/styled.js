@@ -46,3 +46,9 @@ export const StyledPopover = styled(Popover)`
 export const PopoverContent = styled(Stack)`
   gap: 24px;
 `;
+
+export const AudioButton = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: hotpink;
+`;

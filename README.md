@@ -46,7 +46,7 @@ To debug our web Storybook:
 5. In the _Network_ tab under the leftmost pane, expand _top_ =>
    _storybook-preview-iframe_ => _webpack://_ => _._ => _packages_
 
-Any of these source files can be debugged directly
+Any of these source files can be debugged directly.
 
 ## Link times-components to the Render project
 
