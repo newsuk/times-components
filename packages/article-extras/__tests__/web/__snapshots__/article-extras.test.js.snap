@@ -11,7 +11,16 @@ Array [
     </nav>
   </div>,
   <div>
-    <div />
+    <div>
+      <div>
+        <div
+          id="article-audio-container"
+          suppressHydrationWarning={true}
+        >
+          <div />
+        </div>
+      </div>
+    </div>
   </div>,
   <div
     id="related-articles"
@@ -85,7 +94,16 @@ Array [
     </nav>
   </div>,
   <div>
-    <div />
+    <div>
+      <div>
+        <div
+          id="article-audio-container"
+          suppressHydrationWarning={true}
+        >
+          <div />
+        </div>
+      </div>
+    </div>
   </div>,
   <div
     id="related-articles"
@@ -134,7 +152,16 @@ Array [
     </nav>
   </div>,
   <div>
-    <div />
+    <div>
+      <div>
+        <div
+          id="article-audio-container"
+          suppressHydrationWarning={true}
+        >
+          <div />
+        </div>
+      </div>
+    </div>
   </div>,
   <div
     id="related-articles"
