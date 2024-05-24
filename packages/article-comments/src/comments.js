@@ -128,7 +128,7 @@ class Comments extends Component {
     });
 
     const launcherScript = document.createElement("script");
-    launcherScript.setAttribute("async", "async");
+    launcherScript.setAttribute("defer", "defer");
     launcherScript.setAttribute(
       "src",
       `https://launcher.spot.im/spot/${commentingConfig.account}`
