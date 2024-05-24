@@ -25,12 +25,12 @@ exports[`Render comments label, when comments are loaded 1`] = `
   >
     <div>
       <script
-        async="async"
         data-livefyre-url="dummy-article-id"
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
         data-spotim-module="spotim-launcher"
+        defer="defer"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
     </div>
@@ -168,12 +168,12 @@ exports[`User States enabled comments 1`] = `
   >
     <div>
       <script
-        async="async"
         data-livefyre-url="dummy-article-id"
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
         data-spotim-module="spotim-launcher"
+        defer="defer"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
     </div>
@@ -206,12 +206,12 @@ exports[`User States uses com host when received 1`] = `
   >
     <div>
       <script
-        async="async"
         data-livefyre-url="dummy-article-id"
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.com/article/dummy-article-id"
         data-seo-enabled="true"
         data-spotim-module="spotim-launcher"
+        defer="defer"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
     </div>
@@ -326,12 +326,12 @@ exports[`single comment 1`] = `
   >
     <div>
       <script
-        async="async"
         data-livefyre-url="dummy-article-id"
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
         data-spotim-module="spotim-launcher"
+        defer="defer"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
     </div>
@@ -380,12 +380,12 @@ exports[`zero comments 1`] = `
   >
     <div>
       <script
-        async="async"
         data-livefyre-url="dummy-article-id"
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
         data-spotim-module="spotim-launcher"
+        defer="defer"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
     </div>
