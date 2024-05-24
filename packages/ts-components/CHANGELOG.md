@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.3...@times-components/ts-components@1.86.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
 ## [1.85.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.2...@times-components/ts-components@1.85.3) (2024-05-24)
 
 **Note:** Version bump only for package @times-components/ts-components

@@ -38,7 +38,7 @@
 
     "skipLibCheck": true,
 
-    "lib": ["es6", "dom", "es2017"],
+    "lib": ["es6", "dom", "es2017", "dom.iterable"],
     "types": ["jest"],
     "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
   },
