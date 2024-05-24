@@ -171,7 +171,7 @@ function SaveAndShareBar(props) {
         </>
       ) : null}
 
-      <div id="article-audio-wrapper" />
+      <div data-testid="article-audio-wrapper" />
     </Stack>
   );
 }
