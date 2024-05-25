@@ -98,7 +98,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="css-7i4qsc"
   >
     <div
-      className="article-audio-wrapper"
+      id="article-audio-container-undefined"
     />
   </div>
 </div>
@@ -151,7 +151,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     className="css-7i4qsc"
   >
     <div
-      className="article-audio-wrapper"
+      id="article-audio-container-undefined"
     />
   </div>
 </div>

@@ -30,7 +30,8 @@ function SaveAndShareBar(props) {
     sharingEnabled,
     onShareOnFB,
     onShareOnTwitter,
-    isPreviewMode
+    isPreviewMode,
+    uniqueId
   } = props;
 
   function copyToClipboard(e) {
@@ -171,7 +172,7 @@ function SaveAndShareBar(props) {
         </>
       ) : null}
 
-      <div className="article-audio-wrapper" />
+      <div id={`article-audio-container-${uniqueId}`} />
     </Stack>
   );
 }
@@ -188,7 +189,7 @@ SaveAndShareBar.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isPreviewMode: PropTypes.bool,
-  hostName: PropTypes.string.isRequired
+  uniqueId: PropTypes.string.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
