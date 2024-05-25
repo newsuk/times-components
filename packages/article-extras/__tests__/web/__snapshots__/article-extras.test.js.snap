@@ -13,13 +13,13 @@ Array [
   <div>
     <div>
       <div>
-        <div
+        <aside
           id="article-audio-container-bottom"
         >
-          <div>
+          <button>
             loading...
-          </div>
-        </div>
+          </button>
+        </aside>
       </div>
     </div>
   </div>,
@@ -97,13 +97,13 @@ Array [
   <div>
     <div>
       <div>
-        <div
+        <aside
           id="article-audio-container-bottom"
         >
-          <div>
+          <button>
             loading...
-          </div>
-        </div>
+          </button>
+        </aside>
       </div>
     </div>
   </div>,
@@ -156,13 +156,13 @@ Array [
   <div>
     <div>
       <div>
-        <div
+        <aside
           id="article-audio-container-bottom"
         >
-          <div>
+          <button>
             loading...
-          </div>
-        </div>
+          </button>
+        </aside>
       </div>
     </div>
   </div>,

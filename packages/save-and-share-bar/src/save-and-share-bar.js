@@ -177,9 +177,9 @@ function SaveAndShareBar(props) {
         </>
       ) : null}
 
-      <div id={`article-audio-container-${uniqueId}`}>
+      <aside id={`article-audio-container-${uniqueId}`}>
         <AudioButton>loading...</AudioButton>
-      </div>
+      </aside>
     </Stack>
   );
 }
