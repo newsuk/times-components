@@ -99,7 +99,13 @@ exports[`save and share bar component save and share bar renders correctly when 
   >
     <div
       id="article-audio-container-test"
-    />
+    >
+      <div
+        className="css-3fuigf"
+      >
+        loading...
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -152,7 +158,13 @@ exports[`save and share bar component save and share bar renders correctly when 
   >
     <div
       id="article-audio-container-test"
-    />
+    >
+      <div
+        className="css-3fuigf"
+      >
+        loading...
+      </div>
+    </div>
   </div>
 </div>
 `;

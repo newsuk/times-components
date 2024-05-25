@@ -15,7 +15,11 @@ Array [
       <div>
         <div
           id="article-audio-container-bottom"
-        />
+        >
+          <div>
+            loading...
+          </div>
+        </div>
       </div>
     </div>
   </div>,
@@ -95,7 +99,11 @@ Array [
       <div>
         <div
           id="article-audio-container-bottom"
-        />
+        >
+          <div>
+            loading...
+          </div>
+        </div>
       </div>
     </div>
   </div>,
@@ -150,7 +158,11 @@ Array [
       <div>
         <div
           id="article-audio-container-bottom"
-        />
+        >
+          <div>
+            loading...
+          </div>
+        </div>
       </div>
     </div>
   </div>,

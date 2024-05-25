@@ -46,3 +46,9 @@ export const StyledPopover = styled(Popover)`
 export const PopoverContent = styled(Stack)`
   gap: 24px;
 `;
+
+export const AudioButton = styled.div`
+  width: 16px;
+  height: 16px;
+  background-color: #cc0000;
+`;

@@ -17,7 +17,12 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
-import { StyledButton, PopoverContent, StyledPopover } from "./styled";
+import {
+  StyledButton,
+  PopoverContent,
+  StyledPopover,
+  AudioButton
+} from "./styled";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
@@ -172,7 +177,9 @@ function SaveAndShareBar(props) {
         </>
       ) : null}
 
-      <div id={`article-audio-container-${uniqueId}`} />
+      <div id={`article-audio-container-${uniqueId}`}>
+        <AudioButton>loading...</AudioButton>
+      </div>
     </Stack>
   );
 }
