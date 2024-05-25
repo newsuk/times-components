@@ -101,7 +101,6 @@ const ArticleExtras = ({
                   onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
-                  hostName={domainSpecificUrl}
                   uniqueId="bottom"
                 />
               </ShareAndSaveContainer>
