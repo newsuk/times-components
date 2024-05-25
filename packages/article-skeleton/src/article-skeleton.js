@@ -316,6 +316,7 @@ const ArticleSkeleton = ({
                           onShareOnEmail={() => {}}
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
+                          hostName={domainSpecificUrl}
                           uniqueId="top"
                         />
                       )}
