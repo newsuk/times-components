@@ -32,7 +32,8 @@ export default () => {
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
       sharingEnabled: true,
       savingEnabled: true,
-      hostName
+      hostName,
+      uniqueId: "test"
     };
     let realLocation;
     let clipboardData;

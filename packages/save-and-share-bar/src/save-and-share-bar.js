@@ -189,6 +189,7 @@ SaveAndShareBar.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isPreviewMode: PropTypes.bool,
+  hostName: PropTypes.string.isRequired,
   uniqueId: PropTypes.string.isRequired
 };
 
