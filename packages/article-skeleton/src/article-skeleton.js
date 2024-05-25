@@ -303,6 +303,9 @@ const ArticleSkeleton = ({
                   />
                 )}
                 <Header />
+                <StaticContent
+                  html={'<div id="article-audio-wrapper"></div>'}
+                />
                 {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>

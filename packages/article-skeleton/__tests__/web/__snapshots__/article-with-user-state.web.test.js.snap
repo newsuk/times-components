@@ -22,7 +22,16 @@ exports[`Article with user state Render full article when user has access to ful
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>
@@ -402,7 +411,16 @@ exports[`Article with user state Render teaser article when user does not have a
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>
