@@ -1,4 +1,4 @@
-export const replaceFlags = (
+export const replaceNationalTeamDetails = (
   element: HTMLCollectionOf<Element> | undefined
 ) => {
   let count = 0;
@@ -11,6 +11,10 @@ export const replaceFlags = (
     if (element && element.length > 0) {
       for (let optaFlagContainer of element) {
         const country = (optaFlagContainer as HTMLElement).innerText;
+
+        if (country && country.includes('Third Place')) {
+          (optaFlagContainer as HTMLElement).innerText = "TBD"
+        }
 
         if (!optaFlagContainer.querySelector('img')) {
           const countryImg = document.createElement('img');

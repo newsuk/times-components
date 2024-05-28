@@ -12,14 +12,17 @@ import {
 
 import { PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
-import { replaceFlags } from '../../utils/replaceFlags';
+import { replaceNationalTeamDetails } from '../../utils/replaceNationalTeamDetails';
 
 export const OptaFootballFixturesTicker: React.FC<{
   season: string;
   competition: string;
   date_from?: string;
   date_to?: string;
-}> = React.memo(({ season, competition, date_from, date_to }) => {
+  days_ahead?: number;
+  days_before?: number;
+  round?: string;
+}> = React.memo(({ season, competition, date_from, date_to, days_ahead, days_before, round }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -45,6 +48,9 @@ export const OptaFootballFixturesTicker: React.FC<{
             competition,
             date_from,
             date_to,
+            days_ahead,
+            days_before,
+            round,
             live: true,
             start_on_current: true,
             template: 'strip',
@@ -54,6 +60,7 @@ export const OptaFootballFixturesTicker: React.FC<{
             show_grouping: true,
             show_crests: !isNationalCompetition,
             show_date: true,
+            show_live: true,
             date_format: 'ddd Do MMM'
           }).outerHTML;
 
@@ -72,7 +79,7 @@ export const OptaFootballFixturesTicker: React.FC<{
     [ref]
   );
 
-  isNationalCompetition && replaceFlags(optaImages);
+  isNationalCompetition && replaceNationalTeamDetails(optaImages);
 
   return (
     <>

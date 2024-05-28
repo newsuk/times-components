@@ -24,8 +24,8 @@ jest.mock('../../../utils/config', () => ({
   initElement: mockInitElement,
   initComponent: mockInitComponent
 }));
-jest.mock('../../../utils/replaceFlags', () => ({
-  replaceFlags: mockReplaceFlags
+jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
+  replaceNationalTeamDetails: mockReplaceFlags
 }));
 
 import { OptaFootballFixturesTicker } from '../OptaFootballFixturesTicker';

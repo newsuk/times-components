@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, text, withKnobs } from '@storybook/addon-knobs';
+import { select, text, number, withKnobs } from '@storybook/addon-knobs';
 
 import { OptaFootballFixturesTicker } from './OptaFootballFixturesTicker';
 const competitons = [
@@ -29,6 +29,9 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
         competition={selComp}
         date_from=""
         date_to=""
+        days_ahead={number('days ahead (of current day)', 100)}
+        days_before={number('days before (of current day)', 100)}
+        round={text('round(s)', '')}
       />
     );
   });
