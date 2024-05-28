@@ -99,3 +99,4 @@ export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
+export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';

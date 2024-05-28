@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArticleSidebar, ArticleSideBarProps } from '../index';
-import { render } from '../../../../utils/test-utils';
+import { ArticleSidebar, ArticleSideBarProps } from '../ArticleSidebar';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 const defaultProps: ArticleSideBarProps = {

@@ -940,178 +940,70 @@ exports[`6. an article with puzzle sidebar 1`] = `
           <div>
             <div>
               <div>
-                <div>
+                <a
+                  href="https://www.thetimes.co.uk/puzzles"
+                >
                   <div>
-                    <div>
-                      <a
-                        href="https://www.thetimes.co.uk/puzzles"
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <span />
-                      </a>
-                      <div>
-                        <h3>
-                          Puzzles
-                        </h3>
-                        <button
-                          size="small"
-                          type="button"
-                        >
-                          <svg
-                            aria-hidden="true"
-                            fill="currentcolor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                              fill="currentcolor"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <p>
-                      Challenge yourself with today’s puzzles.
-                    </p>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
                   </div>
-                </div>
-                <hr
-                  aria-hidden={true}
-                />
-                <div>
-                  <div>
-                    <picture>
-                      <div>
-                        <div>
-                          <svg
-                            aria-hidden="true"
-                            fill="currentColor"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0V0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <img
-                        alt="Puzzle thumbnail"
-                        height="40px"
-                        src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png"
-                        width="auto"
-                      />
-                    </picture>
-                  </div>
-                  <a
-                    href="https://www.thetimes.co.uk/puzzles/crossword"
-                  >
-                    <span />
-                  </a>
-                  <div>
-                    <p>
-                      Crossword
-                    </p>
-                  </div>
-                </div>
-                <hr
-                  aria-hidden={true}
-                />
-                <div>
-                  <div>
-                    <picture>
-                      <div>
-                        <div>
-                          <svg
-                            aria-hidden="true"
-                            fill="currentColor"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0V0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <img
-                        alt="Puzzle thumbnail"
-                        height="40px"
-                        src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-875ea55487.png"
-                        width="auto"
-                      />
-                    </picture>
-                  </div>
-                  <a>
-                    <span />
-                  </a>
-                  <div>
-                    <p>
-                      Polygon
-                    </p>
-                  </div>
-                </div>
-                <hr
-                  aria-hidden={true}
-                />
-                <div>
-                  <div>
-                    <picture>
-                      <div>
-                        <div>
-                          <svg
-                            aria-hidden="true"
-                            fill="currentColor"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0V0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <img
-                        alt="Puzzle thumbnail"
-                        height="40px"
-                        src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
-                        width="auto"
-                      />
-                    </picture>
-                  </div>
-                  <a
-                    href="https://www.thetimes.co.uk/puzzles/sudoku"
-                  >
-                    <span />
-                  </a>
-                  <div>
-                    <p>
-                      Sudoku
-                    </p>
-                  </div>
-                </div>
-                <hr
-                  aria-hidden={true}
-                />
+                </a>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+                <hr />
+                <a
+                  href="https://www.thetimes.co.uk/puzzles/crossword"
+                >
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png"
+                  />
+                  <p>
+                    Crossword
+                  </p>
+                </a>
+                <hr />
+                <a>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-875ea55487.png"
+                  />
+                  <p>
+                    Polygon
+                  </p>
+                </a>
+                <hr />
+                <a
+                  href="https://www.thetimes.co.uk/puzzles/sudoku"
+                >
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
+                  />
+                  <p>
+                    Sudoku
+                  </p>
+                </a>
+                <hr />
               </div>
             </div>
           </div>

@@ -11,7 +11,6 @@ export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 export { Breadcrumb } from './components/navigation/breadcrumb';
 
 // PUZZLES
-export { ArticleSidebar } from './components/puzzles/article-sidebar';
 export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 
 // MISC
