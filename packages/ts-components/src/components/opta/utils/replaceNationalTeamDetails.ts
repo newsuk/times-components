@@ -13,7 +13,7 @@ export const replaceNationalTeamDetails = (
         const country = (optaFlagContainer as HTMLElement).innerText;
 
         if (country && country.includes('Third Place')) {
-          (optaFlagContainer as HTMLElement).innerText = "TBD"
+          (optaFlagContainer as HTMLElement).innerText = 'TBD';
         }
 
         if (!optaFlagContainer.querySelector('img')) {

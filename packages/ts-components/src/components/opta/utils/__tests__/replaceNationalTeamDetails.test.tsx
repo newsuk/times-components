@@ -30,7 +30,9 @@ describe('replaceNationalTeamDetails', () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(elements);
+    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(
+      elements
+    );
 
     expect(optaFn.replaceNationalTeamDetails).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
@@ -46,7 +48,9 @@ describe('replaceNationalTeamDetails', () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(elements);
+    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(
+      elements
+    );
 
     expect(optaFn.replaceNationalTeamDetails).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
