@@ -17,7 +17,12 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
-import { StyledButton, PopoverContent, StyledPopover } from "./styled";
+import {
+  StyledButton,
+  PopoverContent,
+  StyledPopover,
+  AudioButton
+} from "./styled";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
@@ -30,7 +35,8 @@ function SaveAndShareBar(props) {
     sharingEnabled,
     onShareOnFB,
     onShareOnTwitter,
-    isPreviewMode
+    isPreviewMode,
+    uniqueId
   } = props;
 
   function copyToClipboard(e) {
@@ -170,6 +176,10 @@ function SaveAndShareBar(props) {
           )}
         </>
       ) : null}
+
+      <aside id={`article-audio-container-${uniqueId}`}>
+        <AudioButton>loading...</AudioButton>
+      </aside>
     </Stack>
   );
 }
@@ -186,7 +196,8 @@ SaveAndShareBar.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isPreviewMode: PropTypes.bool,
-  hostName: PropTypes.string.isRequired
+  hostName: PropTypes.string.isRequired,
+  uniqueId: PropTypes.string.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */

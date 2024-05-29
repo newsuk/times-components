@@ -126,6 +126,13 @@ exports[`1. a full article 1`] = `
         Share
       </span>
     </button>
+    <aside
+      id="article-audio-container-top"
+    >
+      <button>
+        loading...
+      </button>
+    </aside>
     <article>
       <img
         alt="An image caption"
@@ -243,6 +250,13 @@ exports[`1. a full article 1`] = `
           Share
         </span>
       </button>
+      <aside
+        id="article-audio-container-bottom"
+      >
+        <button>
+          loading...
+        </button>
+      </aside>
       <h2>
         Sponsored
       </h2>

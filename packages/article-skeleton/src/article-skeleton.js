@@ -317,6 +317,7 @@ const ArticleSkeleton = ({
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
                           hostName={domainSpecificUrl}
+                          uniqueId="top"
                         />
                       )}
                     </MessageContext.Consumer>

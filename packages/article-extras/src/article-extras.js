@@ -101,6 +101,7 @@ const ArticleExtras = ({
                   onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
+                  uniqueId="bottom"
                 />
               </ShareAndSaveContainer>
             )}
