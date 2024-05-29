@@ -857,6 +857,7 @@ exports[`full article with style 1`] = `
           className="c13"
           marginBottom="20px"
         />
+        <div />
         <div
           className="c14 c15 c16"
         >
@@ -1855,6 +1856,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c13"
           marginBottom="20px"
         />
+        <div />
         <div
           className="c14 c15 c16"
         >
@@ -2854,6 +2856,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c13"
           marginBottom="20px"
         />
+        <div />
         <div
           className="c14 c15 c16"
         >
@@ -3852,6 +3855,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c13"
           marginBottom="20px"
         />
+        <div />
         <div
           className="c14 c15 c16"
         >

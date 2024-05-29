@@ -871,6 +871,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
         </div>
+        <div />
         <div
           className="c14 c15 c16"
         >

@@ -142,6 +142,14 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             </div>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -395,6 +403,14 @@ exports[`4. an article with ads with .co.uk 1`] = `
             </div>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -653,6 +669,14 @@ exports[`5. an article with ads with .com 1`] = `
             </div>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -911,6 +935,14 @@ exports[`6. an article with puzzle sidebar 1`] = `
             </div>
           </div>
         </div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div>
           <div
             data-tc-sticky-placeholder={true}

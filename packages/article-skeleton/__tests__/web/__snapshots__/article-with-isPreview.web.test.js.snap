@@ -47,7 +47,16 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>
@@ -427,7 +436,16 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>

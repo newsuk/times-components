@@ -22,7 +22,16 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>
@@ -163,7 +172,16 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
       />
     </div>
     <main>
-      <div />
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"article-audio-wrapper\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+      </div>
       <article>
         <div>
           <div>
