@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.86.0...@times-components/ts-components@1.87.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+* **TMRS-209:** add filters for displayed fixtures ([#3862](https://github.com/newsuk/times-components/issues/3862)) ([4d011af](https://github.com/newsuk/times-components/commit/4d011af71c847784e0b8b67d79ccd327bce6be0b))
+
+
+
+
+
 # [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.3...@times-components/ts-components@1.86.0) (2024-05-24)
 
 

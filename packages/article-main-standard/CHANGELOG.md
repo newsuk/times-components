@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.92.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.9...@times-components/article-main-standard@3.92.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+
+
+
+
+
 ## [3.91.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.91.8...@times-components/article-main-standard@3.91.9) (2024-05-24)
 
 **Note:** Version bump only for package @times-components/article-main-standard
