@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewsKitTooltipIcon } from '../../../assets';
+import { TooltipIcon } from '../../../assets';
 import {
   CloseButton,
   IconButton,
@@ -28,7 +28,7 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
           onMouseOver={() => setTooltipOpen(true)}
           onMouseOut={() => setTooltipOpen(false)}
         >
-          <NewsKitTooltipIcon />
+          <TooltipIcon />
         </IconButton>
       </Tooltip>
     </>
@@ -60,7 +60,7 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
           data-testid="Popover"
           onClick={togglePopover}
         >
-          <NewsKitTooltipIcon />
+          <TooltipIcon />
         </IconButton>
       </Popover>
     </>
