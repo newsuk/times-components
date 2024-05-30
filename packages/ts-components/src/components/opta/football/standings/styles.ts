@@ -185,7 +185,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
             th {
               width: 42px;
-              padding: 6px 0 0 0;
+              padding: 0;
               color: ${colours.section.sport};
               font-family: ${fonts.supporting};
               font-size: 14px;

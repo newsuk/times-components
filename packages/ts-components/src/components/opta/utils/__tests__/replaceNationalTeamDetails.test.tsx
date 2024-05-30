@@ -23,20 +23,34 @@ const mockReplaceNationalTeamDetails = () => {
   return mockDomContainer;
 };
 
-describe('replaceNationalTeamDetails', () => {
-  jest.spyOn(optaFn, 'replaceNationalTeamDetails');
+describe('isNationalCompetition', () => {
+  jest.spyOn(optaFn, 'isNationalCompetition');
+
+  it('should return TRUE if is in array of national competitions', async () => {
+    const isNationalCompetition = optaFn.isNationalCompetition('3');
+    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('3');
+    expect(isNationalCompetition).toBe(true);
+  });
+
+  it('should return FALSE if is in array of national competitions', async () => {
+    const isNationalCompetition = optaFn.isNationalCompetition('8');
+    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('8');
+    expect(isNationalCompetition).toBe(false);
+  });
+});
+
+describe('replaceWithTBD', () => {
+  jest.spyOn(optaFn, 'replaceWithTBD');
 
   it('should replace images when valid elements are passed', async () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(
-      elements
-    );
+    const replaceWithTBD = await optaFn.replaceWithTBD(elements);
 
-    expect(optaFn.replaceNationalTeamDetails).toHaveBeenCalledWith(elements);
+    expect(optaFn.replaceWithTBD).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
-    expect(replaceNationalTeamDetails).toBe(undefined);
+    expect(replaceWithTBD).toBe(undefined);
     const transformedElements = Array.from(elements);
     expect(transformedElements[0].querySelector('img')).toBeInstanceOf;
     expect((transformedElements[0] as HTMLElement).innerText).toBe('Portugal');
@@ -48,13 +62,11 @@ describe('replaceNationalTeamDetails', () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceNationalTeamDetails = await optaFn.replaceNationalTeamDetails(
-      elements
-    );
+    const replaceWithTBD = await optaFn.replaceWithTBD(elements);
 
-    expect(optaFn.replaceNationalTeamDetails).toHaveBeenCalledWith(elements);
+    expect(optaFn.replaceWithTBD).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
-    expect(replaceNationalTeamDetails).toBe(undefined);
+    expect(replaceWithTBD).toBe(undefined);
     const transformedElements = Array.from(elements);
     expect(transformedElements[2].querySelector('img')).not.toBeInstanceOf;
     expect((transformedElements[2] as HTMLElement).innerText).toBe('TBD');

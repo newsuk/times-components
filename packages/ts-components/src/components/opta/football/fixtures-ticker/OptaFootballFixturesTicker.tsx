@@ -12,7 +12,8 @@ import {
 
 import { PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
-import { replaceNationalTeamDetails } from '../../utils/replaceNationalTeamDetails';
+import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
+import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 
 export const OptaFootballFixturesTicker: React.FC<{
   season: string;
@@ -35,11 +36,7 @@ export const OptaFootballFixturesTicker: React.FC<{
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
-    const [optaImages, setOptaImages] = useState<
-      HTMLCollectionOf<Element> | undefined
-    >();
-    const nationalCompetitions = ['3', '5', '6', '235', '941', '1125'];
-    const isNationalCompetition = nationalCompetitions.includes(competition);
+    const isNationalComp = isNationalCompetition(competition);
 
     useEffect(
       () => {
@@ -67,7 +64,7 @@ export const OptaFootballFixturesTicker: React.FC<{
               match_status: 'all',
               order_by: 'date_ascending',
               show_grouping: true,
-              show_crests: !isNationalCompetition,
+              show_crests: !isNationalComp,
               show_date: true,
               show_live: true,
               date_format: 'ddd Do MMM'
@@ -75,20 +72,13 @@ export const OptaFootballFixturesTicker: React.FC<{
 
             initComponent();
             setIsReady(true);
-
-            if (isNationalCompetition) {
-              const TeamNameContainers =
-                ref.current &&
-                ref.current.getElementsByClassName('Opta-TeamName');
-              TeamNameContainers && setOptaImages(TeamNameContainers);
-            }
           }
         });
       },
       [ref]
     );
 
-    isNationalCompetition && replaceNationalTeamDetails(optaImages);
+    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
 
     return (
       <>
