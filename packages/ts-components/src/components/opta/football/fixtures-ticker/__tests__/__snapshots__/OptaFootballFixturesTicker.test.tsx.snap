@@ -3,7 +3,7 @@
 exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glfVXf"
+    class="sc-htpNat sc-ifAKCX hfzpiP"
   />
   <div
     class="sc-bwzfXH eLGWmp"
@@ -17,7 +17,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glfVXf"
+    class="sc-htpNat sc-ifAKCX hfzpiP"
   >
     <div>
       Widget
@@ -29,7 +29,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glfVXf"
+    class="sc-htpNat sc-ifAKCX hfzpiP"
   />
   <div
     class="sc-bwzfXH eLGWmp"
@@ -43,7 +43,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = 
 exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glfVXf"
+    class="sc-htpNat sc-ifAKCX hfzpiP"
   >
     <div>
       Widget
