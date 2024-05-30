@@ -129,7 +129,7 @@ export const LeadAsset = styled(ArticleLeadAsset)`
   order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(6)};
+    margin-bottom: ${spacing(2)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {

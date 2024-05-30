@@ -64,10 +64,6 @@ export const InteractiveContainer = styled.div`
 export const LeadAsset = styled(TcView)`
   margin-bottom: ${spacing(2)};
 
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
-  }
-
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
     margin: 0 auto;

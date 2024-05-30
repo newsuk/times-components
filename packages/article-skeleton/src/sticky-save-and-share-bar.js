@@ -6,13 +6,14 @@ import Sticky, {
   selectors,
   mediaQuery
 } from "@times-components/sticky";
-import { breakpoints, colours } from "@times-components/ts-styleguide";
+import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 import { ServerClientRender } from "@times-components/utils";
-import { ArticleKeylineItem } from "./keylines";
 
 const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
   height: 60px;
+  display: flex;
+  align-items: center;
 
   ${props =>
     props.isClient && [
@@ -37,6 +38,32 @@ const SaveShareContainer = styled.div`
     ]};
 `;
 
+const SaveShareItem = styled.div`
+  order: 3;
+  & + & {
+    margin-top: -1px !important;
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin: 0 auto;
+  }
+
+  &:last-child {
+    margin-bottom: ${spacing(2)};
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+
+  margin-left: ${spacing(2)};
+  margin-right: ${spacing(2)};
+`;
+
 // This is to avoid transition styles being server side rendered which we
 // do not need. They'll be quite large and are unnecessary on initial render
 function SaveShareContainerWrapper(props) {
@@ -48,24 +75,18 @@ function SaveShareContainerWrapper(props) {
   );
 }
 
-const StyledKeylineItem = styled(ArticleKeylineItem)`
-  ${selectors.containsSticky(css`
-    border-bottom-color: transparent;
-  `)};
-`;
-
 const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
   return (
-    <StyledKeylineItem>
+    <SaveShareItem>
       <Sticky
         Component={SaveShareContainerWrapper}
         shouldBeSticky={shouldBeSticky}
       >
         <SaveAndShareBar {...props} />
       </Sticky>
-    </StyledKeylineItem>
+    </SaveShareItem>
   );
 }
 

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import TestRenderer, { act } from "react-test-renderer";
 import PropTypes from "prop-types";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
 import { ShareItem } from "../src/components/share-item";
-import { StyledButton } from "../src/styled";
+import { OutlineButton } from "../src/styled";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
 const mockEvent = {
@@ -58,23 +57,21 @@ export default () => {
     let realLocation;
 
     const TestComponent = () => (
-      <TCThemeProvider>
-        <MockedProvider>
-          <WithTrackingContext
-            analyticsStream={stream}
-            articleUrl={articleUrl}
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            onCopyLink={onCopyLink}
-            onShareOnFB={onShareOnFB}
-            onShareOnTwitter={onShareOnTwitter}
-            getTokenisedShareUrl={getTokenisedShareUrl}
-            onShareEmail={onShareEmail}
-            sharingEnabled
-            savingEnabled
-          />
-        </MockedProvider>
-      </TCThemeProvider>
+      <MockedProvider>
+        <WithTrackingContext
+          analyticsStream={stream}
+          articleUrl={articleUrl}
+          articleId={articleId}
+          articleHeadline={articleHeadline}
+          onCopyLink={onCopyLink}
+          onShareOnFB={onShareOnFB}
+          onShareOnTwitter={onShareOnTwitter}
+          getTokenisedShareUrl={getTokenisedShareUrl}
+          onShareEmail={onShareEmail}
+          sharingEnabled
+          savingEnabled
+        />
+      </MockedProvider>
     );
 
     beforeEach(() => {
@@ -96,7 +93,7 @@ export default () => {
       const testInstance = TestRenderer.create(<TestComponent />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       const shareOnTwitterBarItem = testInstance.root.findAllByType(
@@ -112,7 +109,7 @@ export default () => {
       const testInstance = TestRenderer.create(<TestComponent />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       const shareOnFacebookBarItem = testInstance.root.findAllByType(
@@ -130,7 +127,7 @@ export default () => {
       const testInstance = TestRenderer.create(<TestComponent />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       const copyToClipboardBarItem = testInstance.root.findAllByType(
@@ -148,7 +145,7 @@ export default () => {
       const testInstance = TestRenderer.create(<TestComponent />);
       act(() => {
         testInstance.root
-          .findAllByType(StyledButton)[0]
+          .findAllByType(OutlineButton)[0]
           .props.onClick(mockEvent);
       });
       const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(

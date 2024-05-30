@@ -81,6 +81,7 @@ class EmailShare extends Component {
               </EmailSpinnerContainer>
             ) : (
               <IconEmail
+                ariaLabel=""
                 fillColour="currentColor"
                 height={styles.svgIcon.height}
                 title="Share by email"

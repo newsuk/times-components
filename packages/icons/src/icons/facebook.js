@@ -11,10 +11,11 @@ const IconFacebook = ({
   height,
   strokeColour,
   title = "Facebook Icon",
+  ariaLabel = "icon-facebook",
   width
 }) => (
   <svg
-    aria-label="icon-facebook"
+    aria-label={ariaLabel}
     role="img"
     viewBox={viewBox}
     {...clean({

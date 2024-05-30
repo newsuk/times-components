@@ -5611,6 +5611,18 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/jest-serializer@3.13.12":
+  version "3.13.12"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-serializer/-/jest-serializer-3.13.12.tgz#8b0e9bc68e2215d8322f19e24eb61bb1d8c17659"
+  integrity sha512-r587rnqdjOkENhQFEQaGW30DkJ2exsz6UKypte11h6Z1uk2xoV9SPgSX9xHM7ekAGWqcl6JCPy+lDjLQpOtaEg==
+  dependencies:
+    "@times-components/utils" "6.20.5"
+    css "^2.2.1"
+    enzyme-to-json "3.3.5"
+    hyphenate-style-name "1.0.2"
+    lodash.isequal "4.4.0"
+    lodash.omitby "4.6.0"
+
 "@times-components/link@3.17.19":
   version "3.17.19"
   resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.17.19.tgz#bc64846e37b10248a5ca78f9077b8855fdd5d432"
@@ -5623,6 +5635,39 @@
     react-dom "16.9.0"
     styled-components "4.3.2"
 
+"@times-components/link@3.17.20":
+  version "3.17.20"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.17.20.tgz#782da4bad9b68d29246924d754a406e5fb8007f9"
+  integrity sha512-14KynxrGP6d5g/FtwjyvPlnsTZYIYPJZU0rhwdZQ6a0SUsh+MRaqJmpHTz2oqMojGVTuqXvbnzbMaUIsSgWN0g==
+  dependencies:
+    "@times-components/ts-styleguide" "1.50.20"
+    "@times-components/utils" "6.20.5"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/storybook@4.12.20":
+  version "4.12.20"
+  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-4.12.20.tgz#f75591bb3bd83be99282f3b1f0e89c7e6d3986de"
+  integrity sha512-4qRmcxxWZaYJx1vcAI1LPSOwGLO6jQUnD3rTTq2ep2ZYRiVASIh0J/56xvqUuT4ufB1ZAnXzIpPGTBf4s+PZgQ==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@storybook/addon-actions" "6.5.16"
+    "@storybook/addon-knobs" "6.4.0"
+    "@storybook/react" "6.5.16"
+    "@times-components/schema" "0.7.5"
+    "@times-components/user-state" "0.5.37"
+    "@times-components/utils" "6.20.5"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link-http "1.5.14"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-apollo "2.5.5"
+    react-helmet-async "1.0.2"
+    styled-components "4.3.2"
+
 "@times-components/ts-styleguide@1.50.19":
   version "1.50.19"
   resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.50.19.tgz#2be3b84a206d287a4a802154b090df6b1182457f"
@@ -5632,6 +5677,43 @@
     "@times-components/utils" "6.20.5"
     react "16.9.0"
     styled-components "4.3.2"
+
+"@times-components/ts-styleguide@1.50.20":
+  version "1.50.20"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.50.20.tgz#5b528980dca4314012e893bfbe939b6fcd32220f"
+  integrity sha512-0dARH03YXqAsLCCKeUVwuXOUNdXCZ4BYeGhi6vIxugeUc++sjmfxhJTem7S3CTd4DXhGk+Se7zismdW2I9KBWQ==
+  dependencies:
+    "@times-components/link" "3.17.20"
+    "@times-components/utils" "6.20.5"
+    react "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/user-state@0.5.37":
+  version "0.5.37"
+  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.5.37.tgz#b3b2a960109045f0a77a789f6796774aa079124d"
+  integrity sha512-B58mR5PNNrEM3AeSIlRmLD918HYebUBipz05NfAMh0kYshAVRTuRoJJ8uPBfB1csMIzh/NSkMFr4lnppgSIuaw==
+  dependencies:
+    "@storybook/addon-knobs" "6.4.0"
+    "@times-components/context" "1.17.0"
+    "@times-components/utils" "6.20.5"
+    prop-types "15.7.2"
+
+"@times-components/utils@6.20.5":
+  version "6.20.5"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.20.5.tgz#d68f65eb6ed621094a983c911f47d769cc14cd83"
+  integrity sha512-X58HSVjAl/ZNo/sQTbqRrHSj0CxC1JsAkZ55PzRKUb7mfpTbOBvHdgev/kkcB4UnICGGcC/xx5Odow38/s/grA==
+  dependencies:
+    "@times-components/schema" "0.7.5"
+    "@times-components/ts-styleguide" "1.50.19"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
