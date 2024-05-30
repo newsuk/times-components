@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { IconActivityIndicator } from "@times-components/icons";
 import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
 import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
-import { IconActivityIndicatorContainer, StyledButton } from "../styled";
+import { IconActivityIndicatorContainer, OutlineButton } from "../styled";
 
 const SaveButton = props => {
   if (props.error || (!props.loading && !props.data)) return null;
@@ -19,10 +19,8 @@ const SaveButton = props => {
   const buttonText = isBookmarked ? "Saved" : "Save";
   return (
     <>
-      <StyledButton
-        style={{ width: 84, height: 32 }}
-        size="small"
-        overrides={{ stylePreset: "buttonOutlinedPrimary" }}
+      <OutlineButton
+        isLoading={props.loading}
         onClick={() =>
           props.onToggleSave(props.articleId, props.data.isBookmarked)
         }
@@ -38,7 +36,7 @@ const SaveButton = props => {
           <BookmarkFill style={bookmarkIconStyles} />
         )}
         {!props.loading ? buttonText : ""}
-      </StyledButton>
+      </OutlineButton>
     </>
   );
 };

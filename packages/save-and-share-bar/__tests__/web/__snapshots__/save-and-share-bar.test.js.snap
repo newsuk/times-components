@@ -2,61 +2,45 @@
 
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
 <a
-  className="css-14g8zj3"
+  className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
   data-testid="email-share"
   href=""
   target="_blank"
   title="Share by email"
 >
-  <span
-    className="css-17x5lw"
+  <div
+    className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
   >
     <div
-      className="css-1xnclyu"
+      className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
     >
       <div
-        className="css-1o99qvy"
+        className="styled__EmailSpinnerContainer-qkwc0r-8 jwSyWD"
       >
-        <div
-          className="css-15mwjn0"
-        >
-          <div
-            className="css-3pvqi3"
-          >
-            <IconActivityIndicator
-              size="small"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-1o99qvy"
-      >
-        <p
-          className="css-1ynvxmq"
-        >
-          Email
-        </p>
+        <IconActivityIndicator
+          size="small"
+        />
       </div>
     </div>
-  </span>
+    <span
+      className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+    >
+      Email
+    </span>
+  </div>
 </a>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="css-1xm9xgk"
+  className="styled__SaveAndShareBarContainer-qkwc0r-0 ipJsvA"
   data-testid="save-and-share-bar"
 >
   <div
-    className="css-7i4qsc"
+    className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
   >
     <button
-      aria-haspopup="dialog"
-      className="css-b42vbo"
-      data-testid="button"
-      size="small"
-      type="button"
+      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
     >
       <svg
         aria-hidden="true"
@@ -76,41 +60,169 @@ exports[`save and share bar component save and share bar renders correctly when 
           d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
         />
       </svg>
-      <span
-        className="css-1x1ve0y"
-      >
-        Share
-      </span>
+      Share
     </button>
+    <div
+      aria-expanded={false}
+      className="styled__Popover-qkwc0r-3 jfAJcD"
+    >
+      <div
+        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
+      >
+        <h3>
+          Share this article
+        </h3>
+        <button
+          className="styled__CloseButton-qkwc0r-6 drykZc"
+        >
+          <svg
+            fill="none"
+            height={12}
+            viewBox="0 0 14 14"
+            width={12}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+              fill="#333333"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="styled__PopoverContent-qkwc0r-5 dKaMVi"
+      >
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="email-share"
+          href=""
+          target="_blank"
+          title="Share by email"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconEmail
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Share by email"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Email
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="share-twitter"
+          href="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Share on Twitter"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconTwitter
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Share on Twitter"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Twitter
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="share-facebook"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Share on Facebook"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconFacebook
+                ariaLabel=""
+                fillColour="currentColor"
+                height={18}
+                title="Share on Facebook"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Facebook
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="copy-to-clickboard"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Copy link to clipboard"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconCopyLink
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Copy link to clipboard"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
   <div
-    className="css-7i4qsc"
+    data-testid="save-star"
   >
-    <div
-      data-testid="save-star"
-    >
-      <SaveStar
-        articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
-      />
-    </div>
+    <SaveStar
+      articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+    />
   </div>
 </div>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="css-1xm9xgk"
+  className="styled__SaveAndShareBarContainer-qkwc0r-0 ipJsvA"
   data-testid="save-and-share-bar"
 >
   <div
-    className="css-7i4qsc"
+    className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
   >
     <button
-      aria-haspopup="dialog"
-      className="css-b42vbo"
-      data-testid="button"
-      size="small"
-      type="button"
+      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
     >
       <svg
         aria-hidden="true"
@@ -130,15 +242,148 @@ exports[`save and share bar component save and share bar renders correctly when 
           d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
         />
       </svg>
-      <span
-        className="css-1x1ve0y"
-      >
-        Share
-      </span>
+      Share
     </button>
+    <div
+      aria-expanded={false}
+      className="styled__Popover-qkwc0r-3 hRIknm"
+    >
+      <div
+        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
+      >
+        <h3>
+          Share this article
+        </h3>
+        <button
+          className="styled__CloseButton-qkwc0r-6 drykZc"
+        >
+          <svg
+            fill="none"
+            height={12}
+            viewBox="0 0 14 14"
+            width={12}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+              fill="#333333"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="styled__PopoverContent-qkwc0r-5 dKaMVi"
+      >
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="email-share"
+          href=""
+          target="_blank"
+          title="Share by email"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconEmail
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Share by email"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Email
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="share-twitter"
+          href="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Share on Twitter"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconTwitter
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Share on Twitter"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Twitter
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="share-facebook"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Share on Facebook"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconFacebook
+                ariaLabel=""
+                fillColour="currentColor"
+                height={18}
+                title="Share on Facebook"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Facebook
+            </span>
+          </div>
+        </a>
+        <a
+          className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
+          data-testid="copy-to-clickboard"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+          target="_blank"
+          title="Copy link to clipboard"
+        >
+          <div
+            className="share-item__ShareItemLabelContainer-sc-1idd4zx-0 ermvTp"
+          >
+            <div
+              className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
+            >
+              <IconCopyLink
+                ariaLabel=""
+                fillColour="currentColor"
+                height={16}
+                title="Copy link to clipboard"
+              />
+            </div>
+            <span
+              className="share-item__ShareItemLabelText-sc-1idd4zx-1 BAhpn"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
-  <div
-    className="css-7i4qsc"
-  />
 </div>
 `;

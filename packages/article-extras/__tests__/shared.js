@@ -8,7 +8,6 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
@@ -40,18 +39,16 @@ export default () => {
       name: "renders correctly",
       test: () => {
         const testInstance = TestRenderer.create(
-          <TCThemeProvider>
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-            />
-          </TCThemeProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -63,18 +60,16 @@ export default () => {
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
-          <TCThemeProvider>
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-            />
-          </TCThemeProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -84,18 +79,16 @@ export default () => {
       name: "read only comments when the user is a share token reader",
       test: () => {
         const testInstance = TestRenderer.create(
-          <TCThemeProvider>
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-            />
-          </TCThemeProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -105,18 +98,16 @@ export default () => {
       name: "renders the additional related articles",
       test: () => {
         const testInstance = TestRenderer.create(
-          <TCThemeProvider>
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-            />
-          </TCThemeProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();

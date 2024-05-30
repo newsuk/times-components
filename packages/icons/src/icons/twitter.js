@@ -10,10 +10,11 @@ const IconTwitter = ({
   height,
   strokeColour,
   title = "Twitter Icon",
+  ariaLabel = "icon-twitter",
   width
 }) => (
   <svg
-    aria-label="icon-twitter"
+    aria-label={ariaLabel}
     role="img"
     viewBox="0 0 24 24"
     {...clean({

@@ -644,7 +644,7 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c14 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 

@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c22 {
+.c21 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c22:first-of-type:after {
+.c21:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c25 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c21 {
+.c20 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -88,6 +88,34 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c27 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -116,39 +144,11 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 25px;
-}
-
-.c29 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c24 {
+.c23 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +169,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c23 {
+.c22 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +188,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c26 {
+.c25 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -197,7 +197,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c27 {
+.c26 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -237,63 +237,68 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c14 {
+.c2 > .c29 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c18 {
+.c17 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c19 {
+.c18 {
   position: relative;
 }
 
-.c17 {
+.c16 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c17 [data-tc-sticky-sizer] {
+.c16 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c17.tc-sticky {
+.c16.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c17[MOCK-PROGRESS-SELECTOR] {
+.c16[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c17[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c16[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c16 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
+.c15 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c16 + .c15 {
+.c15 + .c14 {
   margin-top: -1px !important;
 }
 
-.c16:last-child {
-  margin-bottom: 30px;
-}
-
-.c16.contains-tc-sticky {
-  border-bottom-color: transparent;
+.c15:last-child {
+  margin-bottom: 10px;
 }
 
 .c4 {
@@ -530,7 +535,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c21 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -540,62 +545,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c22 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c25 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
   .c21 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c21 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c28 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c28 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c29 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c29 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c24 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c27 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c23 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -607,7 +612,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c22 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -616,19 +621,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c23 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c25 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c26 {
+  .c25 {
     min-height: 283px;
   }
 }
@@ -641,7 +646,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c19 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
@@ -649,19 +654,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c15 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c15 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c16 {
+  .c15 {
     width: 56.2%;
   }
 }
@@ -872,14 +877,14 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c14 c15 c16"
+          className="c14 c15"
         >
           <div
             display="none"
           />
           <div>
             <div
-              className="c17"
+              className="c16"
             >
               <div>
                 <SaveAndShareBar />
@@ -889,18 +894,18 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c18"
+        className="c17"
       >
         <div
-          className="c19"
+          className="c18"
         >
           <div
-            className="c20"
+            className="c19"
           >
             <div>
               <div>
                 <div
-                  className="c21"
+                  className="c20"
                 >
                   <ArticleImage />
                 </div>
@@ -910,15 +915,15 @@ exports[`full article with style 1`] = `
               Some Link
             </Link>
             <p
-              className="c22"
+              className="c21"
             >
               Some content
             </p>
             <div
-              className="c23"
+              className="c22"
             >
               <div
-                className="c24"
+                className="c23"
               >
                 <PullQuote>
                   The pull quote content
@@ -926,7 +931,7 @@ exports[`full article with style 1`] = `
               </div>
             </div>
             <div
-              className="c21"
+              className="c20"
             >
               <figure
                 margin={0}
@@ -963,7 +968,7 @@ exports[`full article with style 1`] = `
                 </div>
                 <figcaption>
                   <div
-                    className="c25"
+                    className="c24"
                   >
                     <Caption />
                   </div>
@@ -971,10 +976,10 @@ exports[`full article with style 1`] = `
               </figure>
             </div>
             <div
-              className="c26"
+              className="c25"
             >
               <h2
-                className="c27"
+                className="c26"
               >
                 Advertisement
               </h2>
@@ -983,7 +988,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c28"
+                  className="c27"
                 >
                   <ArticleImage />
                 </div>
@@ -992,7 +997,7 @@ exports[`full article with style 1`] = `
             <div>
               <div>
                 <div
-                  className="c29"
+                  className="c28"
                 >
                   <ArticleImage />
                 </div>
