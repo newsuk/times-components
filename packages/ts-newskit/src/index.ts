@@ -1,16 +1,5 @@
-export { TCThemeProvider, TimesWebThemes } from './utils/TCThemeProvider';
-export { formatThemeOverrides } from './utils/theme-formatting';
-
-// THEMES
-export { TimesWebLightTheme } from './theme/times-web-light';
-export { TimesWebLightSportTheme } from './theme/times-web-light-sport';
-export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
-
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
-
-// PUZZLES
-export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';
