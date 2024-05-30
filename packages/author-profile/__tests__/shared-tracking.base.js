@@ -35,13 +35,13 @@ export default props => {
         );
 
         const articleListHeader = TestRenderer.create(
-            <ArticleListHeader
-              {...articleList.props.articleListHeader.props}
-              analyticsStream={analyticsStream}
-              author={author}
-              page={5}
-              pageSize={10}
-            />
+          <ArticleListHeader
+            {...articleList.props.articleListHeader.props}
+            analyticsStream={analyticsStream}
+            author={author}
+            page={5}
+            pageSize={10}
+          />
         );
 
         const twitterLink = articleListHeader.root.find(

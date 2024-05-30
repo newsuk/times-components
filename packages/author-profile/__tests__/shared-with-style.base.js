@@ -29,9 +29,7 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          <>
-            {articleList.props.articleListHeader}
-          </>
+          <>{articleList.props.articleListHeader}</>
         );
 
         expect(articleListHeader).toMatchSnapshot();
@@ -49,9 +47,7 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          <>
-            {articleList.props.articleListHeader}
-          </>
+          <>{articleList.props.articleListHeader}</>
         );
 
         expect(articleListHeader).toMatchSnapshot();

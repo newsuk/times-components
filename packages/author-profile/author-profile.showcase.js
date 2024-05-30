@@ -60,16 +60,16 @@ const makeAuthorProfile = (decorateAction, params) => (
             pageSize: authorPageSize,
             refetch
           }) => (
-              <AuthorProfile
-                author={author}
-                error={error}
-                isLoading={isLoading}
-                page={page}
-                pageSize={authorPageSize}
-                refetch={refetch}
-                slug={slug}
-                {...getProps(decorateAction)}
-              />
+            <AuthorProfile
+              author={author}
+              error={error}
+              isLoading={isLoading}
+              page={page}
+              pageSize={authorPageSize}
+              refetch={refetch}
+              slug={slug}
+              {...getProps(decorateAction)}
+            />
           )}
         </AuthorProfileProvider>
       </MockedProvider>
