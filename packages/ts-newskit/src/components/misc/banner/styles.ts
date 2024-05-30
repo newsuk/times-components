@@ -8,7 +8,7 @@ export const BannerWrapper = styled.div`
   width: 100%;
 `;
 
-export const NewsKitBanner = styled.div`
+export const StyledBanner = styled.div`
   border-top: 3px solid #005c8a;
   background-color: #fff;
   flex-direction: column;
