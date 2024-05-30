@@ -8,7 +8,8 @@ import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
-  WelcomeBanner
+  WelcomeBanner,
+  ArticleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -17,7 +18,6 @@ import {
   TCThemeProvider,
   UpdateButtonWithDelay,
   PuzzlesWebLightTheme,
-  ArticleSidebar,
   Banner
 } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
@@ -392,7 +392,6 @@ const ArticleSkeleton = ({
                             display
                             label="New update"
                             handleClick={() => scrollToTopAndRefresh(window)}
-                            arrowUp
                             updatedTime={article.publishedTime}
                             articleId={article.id}
                           />

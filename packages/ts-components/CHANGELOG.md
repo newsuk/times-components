@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.86.0...@times-components/ts-components@1.87.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+* **TMRS-209:** add filters for displayed fixtures ([#3862](https://github.com/newsuk/times-components/issues/3862)) ([4d011af](https://github.com/newsuk/times-components/commit/4d011af71c847784e0b8b67d79ccd327bce6be0b))
+
+
+
+
+
+# [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.3...@times-components/ts-components@1.86.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
+## [1.85.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.2...@times-components/ts-components@1.85.3) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.85.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.1...@times-components/ts-components@1.85.2) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.85.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.0...@times-components/ts-components@1.85.1) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.85.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.84.3...@times-components/ts-components@1.85.0) (2024-05-16)
+
+
+### Features
+
+* **TMRS-170:** add opta football fixtures ticker component ([#3849](https://github.com/newsuk/times-components/issues/3849)) ([e8524a9](https://github.com/newsuk/times-components/commit/e8524a97bd58a8ab134f61f1394d061da5fe55d5))
+
+
+
+
+
 ## [1.84.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.84.2...@times-components/ts-components@1.84.3) (2024-05-08)
 
 **Note:** Version bump only for package @times-components/ts-components

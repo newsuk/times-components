@@ -8,7 +8,6 @@ type UpdateWithDelayProps = {
   delay: number;
   label: string;
   handleClick: () => void;
-  arrowUp: boolean;
   updatedTime: string;
   articleId: string;
   update: boolean;
@@ -19,7 +18,6 @@ export const UpdateButtonWithDelay = ({
   display,
   label,
   handleClick,
-  arrowUp,
   updatedTime,
   articleId,
   update = false
@@ -47,12 +45,7 @@ export const UpdateButtonWithDelay = ({
     <>
       {hasUpdate ? (
         <DelayedComponent delay={delay} initialState={display}>
-          <UpdateButton
-            loading={false}
-            label={label}
-            handleClick={handleClick}
-            arrowUp={arrowUp}
-          />
+          <UpdateButton label={label} handleClick={handleClick} />
         </DelayedComponent>
       ) : null}
     </>

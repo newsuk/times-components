@@ -39,6 +39,9 @@ export {
 } from './components/opta/cricket/scorecard/OptaCricketScorecard';
 
 export {
+  OptaFootballFixturesTicker
+} from './components/opta/football/fixtures-ticker/OptaFootballFixturesTicker';
+export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
 export {
@@ -96,3 +99,4 @@ export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
+export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';

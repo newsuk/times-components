@@ -230,23 +230,6 @@ exports[`1. an article list header 1`] = `
         >
           job title
         </h2>
-        <button
-          className="css-odwgmx"
-        >
-          <svg
-            className="css-ny3roy"
-          >
-            <mask
-              maskType="alpha"
-            >
-              <path />
-              <path />
-            </mask>
-            <g>
-              <path />
-            </g>
-          </svg>
-        </button>
       </div>
       <div
         alignItems="flex-end"

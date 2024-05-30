@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cpKKZE"
+  />
+  <div
+    class="sc-bwzfXH eLGWmp"
+    height="100"
+  >
+    Placeholder
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cpKKZE"
+  >
+    <div>
+      Widget
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cpKKZE"
+  />
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cpKKZE"
+  />
+</DocumentFragment>
+`;

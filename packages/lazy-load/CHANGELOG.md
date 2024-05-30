@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.12.1...@times-components/lazy-load@0.13.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
+## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.12.0...@times-components/lazy-load@0.12.1) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.11.2...@times-components/lazy-load@0.12.0) (2024-05-16)
+
+
+### Features
+
+* **TMRS-170:** add opta football fixtures ticker component ([#3849](https://github.com/newsuk/times-components/issues/3849)) ([e8524a9](https://github.com/newsuk/times-components/commit/e8524a97bd58a8ab134f61f1394d061da5fe55d5))
+
+
+
+
+
 ## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.11.1...@times-components/lazy-load@0.11.2) (2024-04-19)
 
 **Note:** Version bump only for package @times-components/lazy-load

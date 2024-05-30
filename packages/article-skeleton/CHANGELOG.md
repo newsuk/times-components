@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.131.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.9...@times-components/article-skeleton@1.131.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+
+
+
+
+
+## [1.130.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.8...@times-components/article-skeleton@1.130.9) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.7...@times-components/article-skeleton@1.130.8) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.6...@times-components/article-skeleton@1.130.7) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.5...@times-components/article-skeleton@1.130.6) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.4...@times-components/article-skeleton@1.130.5) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.130.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.3...@times-components/article-skeleton@1.130.4) (2024-05-08)
 
 

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bwzfXH kzdaiS"
+  >
+    <a
+      class="sc-ifAKCX kcwwi"
+      href="https://www.thetimes.co.uk/puzzles"
+    >
+      <div
+        class="sc-EHOje bmFGSY"
+      >
+        <h3
+          class="sc-bZQynM dADVqY"
+        >
+          Puzzles for you
+        </h3>
+        <button
+          class="sc-gzVnrw ecbmwv"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-bdVaJa uWNzh"
+            fill="currentcolor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              fill="currentcolor"
+            />
+          </svg>
+        </button>
+      </div>
+    </a>
+    <p
+      class="sc-htpNat ihNbid"
+    >
+      Challenge yourself with today’s puzzles.
+    </p>
+    <hr
+      class="sc-bxivhb euCQXs"
+    />
+    <a
+      class="sc-dnqmqq gzKzfS"
+      href="https://www.thetimes.co.uk/puzzles/crossword"
+    >
+      <img
+        alt="Puzzle thumbnail"
+        class="sc-iwsKbI elYeaz"
+        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+      />
+      <p
+        class="sc-htoDjs bXFtLv"
+      >
+        Crossword
+      </p>
+    </a>
+    <hr
+      class="sc-bxivhb euCQXs"
+    />
+    <a
+      class="sc-dnqmqq gzKzfS"
+      href="https://www.thetimes.co.uk/puzzles/sudoku"
+    >
+      <img
+        alt="Puzzle thumbnail"
+        class="sc-iwsKbI elYeaz"
+        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+      />
+      <p
+        class="sc-htoDjs bXFtLv"
+      >
+        Polygon
+      </p>
+    </a>
+    <hr
+      class="sc-bxivhb euCQXs"
+    />
+  </div>
+</DocumentFragment>
+`;

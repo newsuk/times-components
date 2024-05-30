@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.42](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.41...@times-components/article-topics@4.11.42) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.11.41](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.40...@times-components/article-topics@4.11.41) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.11.40](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.39...@times-components/article-topics@4.11.40) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.11.39](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.38...@times-components/article-topics@4.11.39) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.11.38](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.37...@times-components/article-topics@4.11.38) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.11.37](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.36...@times-components/article-topics@4.11.37) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
 ## [4.11.36](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.11.35...@times-components/article-topics@4.11.36) (2024-05-08)
 
 **Note:** Version bump only for package @times-components/article-topics

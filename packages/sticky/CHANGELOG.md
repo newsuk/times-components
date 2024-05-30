@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.71](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.70...@times-components/sticky@0.5.71) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
+## [0.5.70](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.69...@times-components/sticky@0.5.70) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
+## [0.5.69](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.68...@times-components/sticky@0.5.69) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
+## [0.5.68](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.67...@times-components/sticky@0.5.68) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
+## [0.5.67](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.66...@times-components/sticky@0.5.67) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
+## [0.5.66](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.65...@times-components/sticky@0.5.66) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
 ## [0.5.65](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.5.64...@times-components/sticky@0.5.65) (2024-05-08)
 
 **Note:** Version bump only for package @times-components/sticky
