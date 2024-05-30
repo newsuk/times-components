@@ -15,9 +15,7 @@ import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import {
-  TCThemeProvider,
   UpdateButtonWithDelay,
-  PuzzlesWebLightTheme,
   Banner
 } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
@@ -334,7 +332,6 @@ const ArticleSkeleton = ({
                 <ArticleWrapper>
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
-                      <TCThemeProvider theme={PuzzlesWebLightTheme}>
                         <PuzzlesSidebar ref={sidebarRef}>
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
@@ -358,7 +355,6 @@ const ArticleSkeleton = ({
                             ]}
                           />
                         </PuzzlesSidebar>
-                      </TCThemeProvider>
                     </SidebarWarpper>
                   )}
                   <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>

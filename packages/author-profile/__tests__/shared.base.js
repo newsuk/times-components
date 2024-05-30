@@ -1,6 +1,5 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { iterator } from "@times-components/test-utils";
 import { ApolloError } from "apollo-client";
 import "./mocks";
@@ -113,9 +112,9 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          <TCThemeProvider>
+          <>
             {articleList.props.articleListHeader}
-          </TCThemeProvider>
+          </>
         );
 
         expect(articleListHeader).toMatchSnapshot();

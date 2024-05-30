@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types,no-shadow */
 import React from "react";
 import { TcView, TcText } from "@times-components/utils";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
@@ -118,7 +117,6 @@ const renderArticleSkeleton = ({
   return (
     <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
-        <TCThemeProvider>
           <ArticleSkeleton
             adConfig={articleAdConfig}
             analyticsStream={storybookReporter}
@@ -149,7 +147,6 @@ const renderArticleSkeleton = ({
             )}
             onViewableItemsChanged={() => null}
           />
-        </TCThemeProvider>
       </ContextProviderWithDefaults>
     </MockBookmarksProvider>
   );

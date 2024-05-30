@@ -8,7 +8,6 @@ const { getSectionFromTiles } = require("@times-components/utils/rnw");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
-const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 const {
   ContextProviderWithDefaults,
   defaults
@@ -47,7 +46,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        TCThemeProvider,
         {},
         React.createElement(
           isPreview ? DraftArticleProvider : ArticleProvider,

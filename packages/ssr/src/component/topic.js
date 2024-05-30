@@ -9,7 +9,6 @@ const {
 } = require("@times-components/context/rnw");
 const { scales } = require("@times-components/ts-styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
-const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
@@ -31,7 +30,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        TCThemeProvider,
         {},
         React.createElement(
           TopicProvider,

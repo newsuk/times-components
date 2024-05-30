@@ -5,8 +5,6 @@ import { decorateAction } from "@storybook/addon-actions";
 import { sections } from "@times-components/storybook";
 import { HelmetProvider } from "react-helmet-async";
 import pick from "lodash.pick";
-
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
@@ -76,7 +74,6 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
           <ContextProviderWithDefaults
             value={{ theme: { scale, sectionColour } }}
           >
-            <TCThemeProvider>
               <ArticleSkeleton
                 adConfig={articleAdConfig}
                 commentingConfig={commentingConfig}
@@ -115,7 +112,6 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
                 )}
                 onViewableItemsChanged={() => null}
               />
-            </TCThemeProvider>
           </ContextProviderWithDefaults>
         </MockBookmarksProvider>
       </TrackingContextProvider>

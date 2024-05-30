@@ -8,7 +8,6 @@ const {
   ContextProviderWithDefaults
 } = require("@times-components/context/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
-const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
@@ -27,7 +26,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        TCThemeProvider,
         {},
         React.createElement(
           AuthorProfileProvider,
