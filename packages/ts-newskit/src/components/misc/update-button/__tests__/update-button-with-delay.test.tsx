@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, waitFor } from "@testing-library/react";
+import { render, waitFor } from '@testing-library/react';
 import { UpdateButtonWithDelay } from '../update-button-with-delay';
 
 const handleClickMock = jest.fn();
