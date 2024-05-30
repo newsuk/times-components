@@ -117,36 +117,32 @@ const renderArticleSkeleton = ({
   return (
     <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
-          <ArticleSkeleton
-            adConfig={articleAdConfig}
-            analyticsStream={storybookReporter}
-            data={data}
-            Header={showHeader}
-            isPreview={isPreview}
-            onAuthorPress={preventDefaultedAction(decorateAction)(
-              "onAuthorPress"
-            )}
-            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-              "onCommentGuidelinesPress"
-            )}
-            onCommentsPress={preventDefaultedAction(decorateAction)(
-              "onCommentsPress"
-            )}
-            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-              "onRelatedArticlePress"
-            )}
-            onTopicPress={preventDefaultedAction(decorateAction)(
-              "onTopicPress"
-            )}
-            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
-            )}
-            onVideoPress={preventDefaultedAction(decorateAction)(
-              "onVideoPress"
-            )}
-            onViewableItemsChanged={() => null}
-          />
+        <ArticleSkeleton
+          adConfig={articleAdConfig}
+          analyticsStream={storybookReporter}
+          data={data}
+          Header={showHeader}
+          isPreview={isPreview}
+          onAuthorPress={preventDefaultedAction(decorateAction)(
+            "onAuthorPress"
+          )}
+          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+            "onCommentGuidelinesPress"
+          )}
+          onCommentsPress={preventDefaultedAction(decorateAction)(
+            "onCommentsPress"
+          )}
+          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+            "onRelatedArticlePress"
+          )}
+          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          )}
+          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+          onViewableItemsChanged={() => null}
+        />
       </ContextProviderWithDefaults>
     </MockBookmarksProvider>
   );

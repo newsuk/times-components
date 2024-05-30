@@ -74,44 +74,44 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
           <ContextProviderWithDefaults
             value={{ theme: { scale, sectionColour } }}
           >
-              <ArticleSkeleton
-                adConfig={articleAdConfig}
-                commentingConfig={commentingConfig}
-                analyticsStream={storybookReporter}
-                data={data}
-                articleDataFromRender={{
-                  breadcrumbs: [
-                    { title: "World", url: "/world" },
-                    { title: "News", url: "/news" }
-                  ]
-                }}
-                isPreview={false}
-                onAuthorPress={preventDefaultedAction(decorateAction)(
-                  "onAuthorPress"
-                )}
-                onCommentGuidelinesPress={preventDefaultedAction(
-                  decorateAction
-                )("onCommentGuidelinesPress")}
-                onCommentsPress={preventDefaultedAction(decorateAction)(
-                  "onCommentsPress"
-                )}
-                onLinkPress={preventDefaultedAction(decorateAction)(
-                  "onLinkPress"
-                )}
-                onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                  "onRelatedArticlePress"
-                )}
-                onTopicPress={preventDefaultedAction(decorateAction)(
-                  "onTopicPress"
-                )}
-                onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-                  "onTwitterLinkPress"
-                )}
-                onVideoPress={preventDefaultedAction(decorateAction)(
-                  "onVideoPress"
-                )}
-                onViewableItemsChanged={() => null}
-              />
+            <ArticleSkeleton
+              adConfig={articleAdConfig}
+              commentingConfig={commentingConfig}
+              analyticsStream={storybookReporter}
+              data={data}
+              articleDataFromRender={{
+                breadcrumbs: [
+                  { title: "World", url: "/world" },
+                  { title: "News", url: "/news" }
+                ]
+              }}
+              isPreview={false}
+              onAuthorPress={preventDefaultedAction(decorateAction)(
+                "onAuthorPress"
+              )}
+              onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+                "onCommentGuidelinesPress"
+              )}
+              onCommentsPress={preventDefaultedAction(decorateAction)(
+                "onCommentsPress"
+              )}
+              onLinkPress={preventDefaultedAction(decorateAction)(
+                "onLinkPress"
+              )}
+              onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                "onRelatedArticlePress"
+              )}
+              onTopicPress={preventDefaultedAction(decorateAction)(
+                "onTopicPress"
+              )}
+              onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                "onTwitterLinkPress"
+              )}
+              onVideoPress={preventDefaultedAction(decorateAction)(
+                "onVideoPress"
+              )}
+              onViewableItemsChanged={() => null}
+            />
           </ContextProviderWithDefaults>
         </MockBookmarksProvider>
       </TrackingContextProvider>
