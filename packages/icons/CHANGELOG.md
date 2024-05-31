@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.22.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.27...@times-components/icons@2.22.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
 ## [2.21.27](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.26...@times-components/icons@2.21.27) (2024-05-30)
 
 **Note:** Version bump only for package @times-components/icons
