@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.84.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.83.0...@times-components/article-main-comment@2.84.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
 # [2.83.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.82.9...@times-components/article-main-comment@2.83.0) (2024-05-30)
 
 

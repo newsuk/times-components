@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-and-share-bar",
-  "version": "0.20.13",
+  "version": "0.21.0",
   "description": "Save and Share bar ",
   "main": "dist/save-and-share-bar",
   "dev": "src/save-and-share-bar",
@@ -34,17 +34,17 @@
   "dependencies": {
     "@emotion-icons/bootstrap": "3.27.0",
     "@storybook/addon-knobs": "6.4.0",
-    "@times-components/context": "1.17.0",
-    "@times-components/icons": "2.21.27",
-    "@times-components/message-bar": "0.7.72",
+    "@times-components/context": "1.18.0",
+    "@times-components/icons": "2.22.0",
+    "@times-components/message-bar": "0.7.73",
     "@times-components/provider-queries": "2.21.1",
-    "@times-components/tracking": "2.22.21",
-    "@times-components/ts-components": "1.87.0",
-    "@times-components/ts-styleguide": "1.50.21",
-    "@times-components/user-state": "0.5.38",
+    "@times-components/tracking": "2.22.22",
+    "@times-components/ts-components": "1.88.0",
+    "@times-components/ts-styleguide": "1.50.22",
+    "@times-components/user-state": "0.5.39",
     "@times-components/utils": "6.20.6",
-    "styled-components": "4.3.2",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
@@ -52,7 +52,7 @@
     "@times-components/jest-configurator-web": "0.8.2",
     "@times-components/jest-serializer": "3.13.13",
     "@times-components/provider-test-tools": "1.29.3",
-    "@times-components/storybook": "4.12.21",
+    "@times-components/storybook": "4.12.22",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
