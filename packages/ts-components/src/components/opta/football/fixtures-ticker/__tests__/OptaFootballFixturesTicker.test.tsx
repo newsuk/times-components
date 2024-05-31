@@ -9,7 +9,8 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
-const mockReplaceFlags = jest.fn();
+const mockIsNationalComp = jest.fn();
+const mockUseUpdateNationalTeamDetails = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -25,10 +26,14 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
-  replaceNationalTeamDetails: mockReplaceFlags
+  isNationalCompetition: mockIsNationalComp
+}));
+jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
+  useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails
 }));
 
 import { OptaFootballFixturesTicker } from '../OptaFootballFixturesTicker';
+import { isNationalCompetition } from '../../../utils/replaceNationalTeamDetails';
 
 const requiredProps = {
   season: '2020',
@@ -36,6 +41,10 @@ const requiredProps = {
   date_from: '2021-06-20',
   date_to: '2021-07-11'
 };
+
+afterEach(() => {
+  jest.clearAllMocks();
+});
 
 describe('OptaFootballFixturesTicker with flags', () => {
   it('should render correctly', async () => {
@@ -46,9 +55,9 @@ describe('OptaFootballFixturesTicker with flags', () => {
 
     await waitForElementToBeRemoved(getByText('Placeholder'));
 
-    expect(mockInitSettings).toHaveBeenCalledTimes(2);
-    expect(mockInitStyleSheet).toHaveBeenCalledTimes(2);
-    expect(mockInitComponent).toHaveBeenCalledTimes(2);
+    expect(mockInitSettings).toHaveBeenCalled();
+    expect(mockInitStyleSheet).toHaveBeenCalled();
+    expect(mockInitComponent).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -60,20 +69,19 @@ describe('OptaFootballFixturesTicker without flags', () => {
   });
 
   it('should render correctly', async () => {
-    React.useState = jest.fn().mockReturnValue([true, () => React.useState]);
-    React.useState = jest
-      .fn()
-      .mockReturnValue([document.createElement('div'), () => React.useState]);
+    (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
-    const { asFragment } = render(
+    const { asFragment, getByText } = render(
       <OptaFootballFixturesTicker season="2023" competition="3" />
     );
     expect(asFragment()).toMatchSnapshot();
 
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
-    expect(mockReplaceFlags).toHaveBeenCalled();
+    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });
