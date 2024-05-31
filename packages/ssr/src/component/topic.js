@@ -29,38 +29,38 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     React.createElement(
       ApolloProvider,
       { client },
-        React.createElement(
-          TopicProvider,
-          {
-            debounceTimeMs,
-            page,
-            pageSize,
-            slug: topicSlug
-          },
-          ({ isLoading, error, refetch, topic }) =>
-            React.createElement(
-              ContextProviderWithDefaults,
-              {
-                value: {
-                  makeArticleUrl,
-                  makeTopicUrl,
-                  theme: { scale, sectionColour }
-                }
-              },
-              React.createElement(Topic, {
-                analyticsStream,
-                error,
-                isLoading,
-                onArticlePress: () => {},
-                onTwitterLinkPress: () => {},
-                page,
-                pageSize,
-                refetch,
-                slug: topicSlug,
-                topic
-              })
-            )
-        )
+      React.createElement(
+        TopicProvider,
+        {
+          debounceTimeMs,
+          page,
+          pageSize,
+          slug: topicSlug
+        },
+        ({ isLoading, error, refetch, topic }) =>
+          React.createElement(
+            ContextProviderWithDefaults,
+            {
+              value: {
+                makeArticleUrl,
+                makeTopicUrl,
+                theme: { scale, sectionColour }
+              }
+            },
+            React.createElement(Topic, {
+              analyticsStream,
+              error,
+              isLoading,
+              onArticlePress: () => {},
+              onTwitterLinkPress: () => {},
+              page,
+              pageSize,
+              refetch,
+              slug: topicSlug,
+              topic
+            })
+          )
+      )
     )
   );
 };
