@@ -25,8 +25,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     React.createElement(
       ApolloProvider,
       { client },
-      React.createElement(
-        {},
         React.createElement(
           AuthorProfileProvider,
           {
@@ -53,7 +51,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               })
             )
         )
-      )
     )
   );
 };

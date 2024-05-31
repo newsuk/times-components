@@ -45,8 +45,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     React.createElement(
       ApolloProvider,
       { client },
-      React.createElement(
-        {},
         React.createElement(
           isPreview ? DraftArticleProvider : ArticleProvider,
           {
@@ -110,7 +108,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             );
           }
         )
-      )
     )
   );
 };

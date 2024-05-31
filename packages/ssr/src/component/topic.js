@@ -29,8 +29,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     React.createElement(
       ApolloProvider,
       { client },
-      React.createElement(
-        {},
         React.createElement(
           TopicProvider,
           {
@@ -63,7 +61,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               })
             )
         )
-      )
     )
   );
 };
