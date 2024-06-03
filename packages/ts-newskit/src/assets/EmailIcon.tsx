@@ -1,7 +1,6 @@
-import { SvgProps } from 'newskit';
 import React from 'react';
 
-const EmailIcon: React.FC<SvgProps> = ({
+const EmailIcon: React.FC<any> = ({
   width = 24,
   height = 24,
   color = '#000',

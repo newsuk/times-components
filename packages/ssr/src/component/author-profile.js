@@ -8,7 +8,6 @@ const {
   ContextProviderWithDefaults
 } = require("@times-components/context/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
-const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
@@ -27,34 +26,30 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        TCThemeProvider,
-        {},
-        React.createElement(
-          AuthorProfileProvider,
-          {
-            debounceTimeMs,
-            page,
-            pageSize,
-            slug: authorSlug
-          },
-          ({ author, isLoading, error, refetch }) =>
-            React.createElement(
-              ContextProviderWithDefaults,
-              { value: { makeArticleUrl, makeTopicUrl } },
-              React.createElement(AuthorProfile, {
-                analyticsStream,
-                author,
-                error,
-                isLoading,
-                onArticlePress: () => {},
-                onTwitterLinkPress: () => {},
-                page,
-                pageSize,
-                refetch,
-                slug: authorSlug
-              })
-            )
-        )
+        AuthorProfileProvider,
+        {
+          debounceTimeMs,
+          page,
+          pageSize,
+          slug: authorSlug
+        },
+        ({ author, isLoading, error, refetch }) =>
+          React.createElement(
+            ContextProviderWithDefaults,
+            { value: { makeArticleUrl, makeTopicUrl } },
+            React.createElement(AuthorProfile, {
+              analyticsStream,
+              author,
+              error,
+              isLoading,
+              onArticlePress: () => {},
+              onTwitterLinkPress: () => {},
+              page,
+              pageSize,
+              refetch,
+              slug: authorSlug
+            })
+          )
       )
     )
   );
