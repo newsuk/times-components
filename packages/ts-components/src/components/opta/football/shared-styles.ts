@@ -36,15 +36,15 @@ const flagStyles = Object.keys(countries).map(
     }.svg);
     background-size: 20px;
     background-repeat: no-repeat;
-
-    @media (max-width: ${breakpoints.small}px) {
-      background-image: none;
-      padding-left: 0 !important;
-    }
   }
   .Opta-Team-${countryCode} .Opta-Team  {
     background-position: 0 13px;
     padding-left: 28px;
+    
+    @media (max-width: ${breakpoints.small}px) {
+      background-image: none;
+      padding-left: 0 !important;
+    }
   }
   .Opta-Team-${countryCode}.Opta-Team  {
     background-position: 10px 8px;
