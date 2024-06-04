@@ -44,7 +44,31 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     font-family: Roboto !important;
   }
 
+  .Opta-Scroll, .Opta-Window {
+    height: 80px;
+  }
+
   @media (max-width: ${breakpoints.small}px) {
+    .Opta-Scroll {
+      &::before, &::after {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        z-index: 15;
+        transition: all 0.3s linear 0s;
+        background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+        width: 64px;
+        height: 100%;
+        bottom: 0px;
+        left: 0;
+      }
+      &::after {
+        left: unset;
+        right: 0px;
+        transform: rotate(180deg);
+      }
+    }
+
     .Opta-Window {
       left: 0 !important;
       right: 0 !important;
@@ -53,10 +77,18 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
   .Opta-Scroller {
     background-color: white !important;
-
-    border: 1px solid #999999 !important;
+    border: 1px solid #999 !important;
     border-radius: 2px;
+    box-sizing: border-box;
     padding: 39px 0 !important;
+    width: 28px !important;
+
+    &:hover {
+      background-color: #F5F5F5 !important;
+    }
+    &:active {
+      background-color: #EEE !important;
+    }
 
     &::after {
       background: rgba(0, 0, 0, 0)
@@ -81,11 +113,18 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     @media (max-width: ${breakpoints.small}px) {
       display: none !important;
     }
+    @media (max-width: ${breakpoints.medium}px) {
+      width: 18px !important;
+    }
+    @media (max-width: ${breakpoints.wide}px) {
+      width: 24px !important;
+    }
   }
 
   .Opta-fixture {
-    background-color: #f5f5f5;
+    background-color: white;
     border-radius: 4px;
+    box-sizing: border-box;
     height: 80px;
     width: 160px !important;
     margin-inline: 4px;
@@ -109,16 +148,36 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     .Opta-timings {
       height: 24px !important;
       order: -1;
-      color: #aaaaaa !important;
+      color: #696969 !important;
     }
 
+    .Opta-timings .Opta-Time * {
+      font-weight: 700;
+      color: #01000D !important;
+    }
+    
     .Opta-TeamName,
     .Opta-Team-Score {
-      color: #01000d !important;
-      font-weight: 700 !important;
+      color: #01000D !important;
+      font-family: 'Roboto-Medium' !important;
     }
-    &.Opta-prematch .Opta-Team-Score::after {
-      content: '-';
+
+    &.Opta-prematch {
+      background-color: #f5f5f5;
+      .Opta-Team-Score::after {
+        content: '-';
+      }
+      .Opta-timings .Opta-Time * {
+        font-weight: 400;
+        color: #696969 !important;
+      }
+    }
+
+    &.Opta-result {
+      border: 1px solid #CCC;
+    }
+    &.Opta-live {
+      border: 1px solid #01000D;
     }
 
     .Opta-Image-Team-Small {

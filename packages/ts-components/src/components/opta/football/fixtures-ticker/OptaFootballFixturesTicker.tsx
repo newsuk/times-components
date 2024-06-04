@@ -85,7 +85,7 @@ export const OptaFootballFixturesTicker: React.FC<{
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer height={100}>
+          <PlaceholderContainer height={80}>
             <Placeholder />
           </PlaceholderContainer>
         )}
