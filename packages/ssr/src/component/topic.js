@@ -9,6 +9,7 @@ const {
 } = require("@times-components/context/rnw");
 const { scales } = require("@times-components/ts-styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
+const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
@@ -30,36 +31,40 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        TopicProvider,
-        {
-          debounceTimeMs,
-          page,
-          pageSize,
-          slug: topicSlug
-        },
-        ({ isLoading, error, refetch, topic }) =>
-          React.createElement(
-            ContextProviderWithDefaults,
-            {
-              value: {
-                makeArticleUrl,
-                makeTopicUrl,
-                theme: { scale, sectionColour }
-              }
-            },
-            React.createElement(Topic, {
-              analyticsStream,
-              error,
-              isLoading,
-              onArticlePress: () => {},
-              onTwitterLinkPress: () => {},
-              page,
-              pageSize,
-              refetch,
-              slug: topicSlug,
-              topic
-            })
-          )
+        TCThemeProvider,
+        {},
+        React.createElement(
+          TopicProvider,
+          {
+            debounceTimeMs,
+            page,
+            pageSize,
+            slug: topicSlug
+          },
+          ({ isLoading, error, refetch, topic }) =>
+            React.createElement(
+              ContextProviderWithDefaults,
+              {
+                value: {
+                  makeArticleUrl,
+                  makeTopicUrl,
+                  theme: { scale, sectionColour }
+                }
+              },
+              React.createElement(Topic, {
+                analyticsStream,
+                error,
+                isLoading,
+                onArticlePress: () => {},
+                onTwitterLinkPress: () => {},
+                page,
+                pageSize,
+                refetch,
+                slug: topicSlug,
+                topic
+              })
+            )
+        )
       )
     )
   );

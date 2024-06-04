@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.55.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.12...@times-components/ssr@2.55.0) (2024-06-03)
-
-
-### Features
-
-* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
-
-
-
-
-
 ## [2.54.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.54.11...@times-components/ssr@2.54.12) (2024-05-31)
 
 **Note:** Version bump only for package @times-components/ssr

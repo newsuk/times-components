@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types,no-shadow */
 import React from "react";
 import { TcView, TcText } from "@times-components/utils";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
@@ -117,32 +118,38 @@ const renderArticleSkeleton = ({
   return (
     <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
-        <ArticleSkeleton
-          adConfig={articleAdConfig}
-          analyticsStream={storybookReporter}
-          data={data}
-          Header={showHeader}
-          isPreview={isPreview}
-          onAuthorPress={preventDefaultedAction(decorateAction)(
-            "onAuthorPress"
-          )}
-          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-            "onCommentGuidelinesPress"
-          )}
-          onCommentsPress={preventDefaultedAction(decorateAction)(
-            "onCommentsPress"
-          )}
-          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-            "onRelatedArticlePress"
-          )}
-          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-            "onTwitterLinkPress"
-          )}
-          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-          onViewableItemsChanged={() => null}
-        />
+        <TCThemeProvider>
+          <ArticleSkeleton
+            adConfig={articleAdConfig}
+            analyticsStream={storybookReporter}
+            data={data}
+            Header={showHeader}
+            isPreview={isPreview}
+            onAuthorPress={preventDefaultedAction(decorateAction)(
+              "onAuthorPress"
+            )}
+            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+              "onCommentGuidelinesPress"
+            )}
+            onCommentsPress={preventDefaultedAction(decorateAction)(
+              "onCommentsPress"
+            )}
+            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+              "onRelatedArticlePress"
+            )}
+            onTopicPress={preventDefaultedAction(decorateAction)(
+              "onTopicPress"
+            )}
+            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+              "onTwitterLinkPress"
+            )}
+            onVideoPress={preventDefaultedAction(decorateAction)(
+              "onVideoPress"
+            )}
+            onViewableItemsChanged={() => null}
+          />
+        </TCThemeProvider>
       </ContextProviderWithDefaults>
     </MockBookmarksProvider>
   );

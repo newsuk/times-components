@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '../../../../utils/test-utils';
 
 import { UpdateButton } from '../update-button';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, fireEvent } from '@testing-library/react';
+import { fireEvent } from '@testing-library/react';
+import { render } from '../../../../utils/test-utils';
 import { Breadcrumb } from '../index';
 import { breadcrumbItems } from '../fixtures/breadcrumbs.json';
 import { TrackingContextProvider } from '../../../../utils/TrackingContextProvider';
