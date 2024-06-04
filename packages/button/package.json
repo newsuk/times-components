@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.10.49",
+  "version": "2.10.50",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
