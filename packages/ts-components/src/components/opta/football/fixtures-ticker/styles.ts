@@ -44,19 +44,25 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     font-family: Roboto !important;
   }
 
-  .Opta-Scroll, .Opta-Window {
+  .Opta-Scroll,
+  .Opta-Window {
     height: 80px;
   }
 
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Scroll {
-      &::before, &::after {
-        content: "";
+      &::before,
+      &::after {
+        content: '';
         pointer-events: none;
         position: absolute;
         z-index: 15;
         transition: all 0.3s linear 0s;
-        background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+        background-image: linear-gradient(
+          -90deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgb(255, 255, 255) 100%
+        );
         width: 64px;
         height: 100%;
         bottom: 0px;
@@ -84,10 +90,10 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     width: 28px !important;
 
     &:hover {
-      background-color: #F5F5F5 !important;
+      background-color: #f5f5f5 !important;
     }
     &:active {
-      background-color: #EEE !important;
+      background-color: #eee !important;
     }
 
     &::after {
@@ -153,12 +159,12 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
     .Opta-timings .Opta-Time * {
       font-weight: 700;
-      color: #01000D !important;
+      color: #01000d !important;
     }
-    
+
     .Opta-TeamName,
     .Opta-Team-Score {
-      color: #01000D !important;
+      color: #01000d !important;
       font-family: 'Roboto-Medium' !important;
     }
 
@@ -174,10 +180,10 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
 
     &.Opta-result {
-      border: 1px solid #CCC;
+      border: 1px solid #ccc;
     }
     &.Opta-live {
-      border: 1px solid #01000D;
+      border: 1px solid #01000d;
     }
 
     .Opta-Image-Team-Small {
