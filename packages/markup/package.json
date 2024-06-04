@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.50.23",
-    "@times-components/utils": "6.20.6"
+    "@times-components/utils": "6.21.0"
   },
   "resolutions": {
     "react": "16.9.0",

@@ -59,9 +59,9 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article-list": "9.17.66",
-    "@times-components/gradient": "3.5.49",
-    "@times-components/icons": "2.22.0",
+    "@times-components/article-list": "9.17.67",
+    "@times-components/gradient": "3.5.50",
+    "@times-components/icons": "2.22.1",
     "@times-components/image": "6.17.10",
     "@times-components/link": "3.17.23",
     "@times-components/markup": "3.8.50",
