@@ -52,7 +52,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/error-view": "2.6.49",
+    "@times-components/error-view": "2.6.50",
     "@times-components/icons": "2.22.0",
     "@times-components/image": "6.17.10",
     "@times-components/ts-styleguide": "1.50.23",

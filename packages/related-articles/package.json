@@ -55,8 +55,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article-summary": "3.24.66",
-    "@times-components/card": "6.14.10",
+    "@times-components/article-summary": "3.24.67",
+    "@times-components/card": "6.14.11",
     "@times-components/context": "1.18.0",
     "@times-components/link": "3.17.23",
     "@times-components/markup-forest": "1.9.2",

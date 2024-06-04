@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@times-components/button": "2.10.50",
-    "@times-components/date-publication": "0.30.23",,
+    "@times-components/date-publication": "0.30.23",
     "@times-components/icons": "2.22.0",
     "@times-components/image": "6.17.10",
     "@times-components/link": "3.17.23",
