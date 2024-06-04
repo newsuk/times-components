@@ -50,15 +50,15 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.13.43",
-    "@times-components/article-label": "2.18.22",
-    "@times-components/date-publication": "0.30.22",
+    "@times-components/article-byline": "3.13.44",
+    "@times-components/article-label": "2.18.23",
+    "@times-components/date-publication": "0.30.23",,
     "@times-components/markup": "3.8.50",
     "@times-components/markup-forest": "1.9.2",
     "@times-components/ts-components": "1.88.1",
     "@times-components/ts-styleguide": "1.50.23",
     "@times-components/utils": "6.21.0",
-    "@times-components/video-label": "2.11.50",
+    "@times-components/video-label": "2.11.51",
     "prop-types": "15.7.2"
   },
   "resolutions": {

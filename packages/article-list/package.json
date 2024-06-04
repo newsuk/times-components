@@ -35,8 +35,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.2",
-    "@times-components/jest-serializer": "3.13.13",
-    "@times-components/provider": "1.40.23",
+    "@times-components/jest-serializer": "3.13.14",
+    "@times-components/provider": "1.40.24",
     "@times-components/provider-queries": "2.21.1",
     "@times-components/provider-test-tools": "1.29.3",
     "@times-components/storybook": "4.12.23",
@@ -60,7 +60,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ad": "2.22.11",
+    "@times-components/ad": "2.22.12",
     "@times-components/article-summary": "3.24.66",
     "@times-components/button": "2.10.50",
     "@times-components/card": "6.14.10",
