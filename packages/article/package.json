@@ -59,9 +59,9 @@
     "@times-components/article-main-comment": "2.84.0",
     "@times-components/article-main-standard": "3.93.0",
     "@times-components/context": "1.18.0",
-    "@times-components/message-bar": "0.7.73",
+    "@times-components/message-bar": "0.7.74",
     "@times-components/provider": "1.40.23",
-    "@times-components/responsive": "0.21.9",
+    "@times-components/responsive": "0.22.0",
     "@times-components/ts-styleguide": "1.50.22"
   },
   "resolutions": {

@@ -62,11 +62,11 @@
   "dependencies": {
     "@times-components/ad": "2.22.11",
     "@times-components/article-summary": "3.24.66",
-    "@times-components/button": "2.10.49",
+    "@times-components/button": "2.10.50",
     "@times-components/card": "6.14.10",
     "@times-components/context": "1.18.0",
     "@times-components/error-view": "2.6.49",
-    "@times-components/image": "6.17.9",
+    "@times-components/image": "6.17.10",
     "@times-components/lazy-load": "0.14.0",
     "@times-components/link": "3.17.23",
     "@times-components/pagination": "3.13.8",

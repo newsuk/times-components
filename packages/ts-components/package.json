@@ -50,14 +50,14 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/button": "2.10.49",
+    "@times-components/button": "2.10.50",
     "@times-components/date-publication": "0.30.22",
     "@times-components/icons": "2.22.0",
-    "@times-components/image": "6.17.9",
+    "@times-components/image": "6.17.10",
     "@times-components/link": "3.17.23",
     "@times-components/provider": "1.40.23",
     "@times-components/provider-queries": "2.21.1",
-    "@times-components/related-articles": "6.17.62",
+    "@times-components/related-articles": "6.17.63",
     "@times-components/ts-slices": "1.9.10",
     "@times-components/ts-styleguide": "1.50.23",
     "@times-components/utils": "6.21.0",
