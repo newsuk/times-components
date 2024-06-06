@@ -14,14 +14,24 @@ const showcase = {
     },
     {
       component: () => (
-        <OptaFootballPlayerStats season="2020" competition="3" visible_categories="goals" match="2041900" />
+        <OptaFootballPlayerStats
+          season="2020"
+          competition="3"
+          visible_categories="goals"
+          match="2041900"
+        />
       ),
       name: 'PlayerStats (goals)',
       type: 'story'
     },
     {
       component: () => (
-        <OptaFootballPlayerStats season="2020" competition="3" visible_categories="assists" match="2041900" />
+        <OptaFootballPlayerStats
+          season="2020"
+          competition="3"
+          visible_categories="assists"
+          match="2041900"
+        />
       ),
       name: 'PlayerStats (assists)',
       type: 'story'

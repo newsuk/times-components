@@ -39,7 +39,9 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
   }
 `;
 
-export const WidgetContainer = styled(WidgetContainerBase)<{ isNationalComp?: boolean }>`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  isNationalComp?: boolean;
+}>`
   .Opta {
     .Opta-js-main {
       padding: 0;
@@ -59,7 +61,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{ isNationalComp?: bo
             column-span: all;
             display: block;
             margin-top: 24px;
-          }  
+          }
 
           td.Opta-Nest.Opta-JS-Nest-Content.Opta-Expanded {
             display: inline;
@@ -137,16 +139,19 @@ export const WidgetContainer = styled(WidgetContainerBase)<{ isNationalComp?: bo
               &.Opta-Team {
                 background-position: center left;
                 width: 34%;
-                padding-left: ${({ isNationalComp }) => isNationalComp ? '38px;' : '10px;'}
-
-                &.Opta-Home {
+                padding-left: ${({ isNationalComp }) =>
+                    isNationalComp ? '38px;' : '10px;'}
+                  &.Opta-Home {
                   background-position: center right;
-                  padding-right: ${({ isNationalComp }) => isNationalComp ? '38px;' : '10px;'};
+                  padding-right: ${({ isNationalComp }) =>
+                    isNationalComp ? '38px;' : '10px;'};
                   padding-left: 0;
                   text-align: right;
                 }
 
-                ${({ isNationalComp }) => !isNationalComp && `
+                ${({ isNationalComp }) =>
+                  !isNationalComp &&
+                  `
                   @media (max-width: ${breakpoints.medium}px) {
                     padding-left: 15px;
 
@@ -155,7 +160,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{ isNationalComp?: bo
                       padding-left: 0;
                     }
                   }
-                `}
+                `};
               }
 
               &.Opta-Score {
@@ -176,7 +181,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{ isNationalComp?: bo
               }
 
               &.Opta-Crest {
-
                 img {
                   width: 20px;
                 }

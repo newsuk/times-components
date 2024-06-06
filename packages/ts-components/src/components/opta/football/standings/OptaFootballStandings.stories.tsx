@@ -18,7 +18,14 @@ const showcase = {
       type: 'story'
     },
     {
-      component: () => <OptaFootballStandings season="2023" competition="3" full_width columns />,
+      component: () => (
+        <OptaFootballStandings
+          season="2023"
+          competition="3"
+          full_width
+          columns
+        />
+      ),
       name: 'Standings (2 columns - desktop)',
       type: 'story'
     },

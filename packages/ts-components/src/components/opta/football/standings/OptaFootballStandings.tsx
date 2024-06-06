@@ -23,41 +23,45 @@ export const OptaFootballStandings: React.FC<{
   full_width?: boolean;
   columns?: boolean;
 }> = React.memo(
-  ({ season, competition, default_nav = 1, navigation, full_width, columns }) => {
+  ({
+    season,
+    competition,
+    default_nav = 1,
+    navigation,
+    full_width,
+    columns
+  }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition);
 
-    useEffect(
-      () => {
-        const sport = 'football';
+    useEffect(() => {
+      const sport = 'football';
 
-        initSettings();
-        initStyleSheet(sport);
+      initSettings();
+      initStyleSheet(sport);
 
-        initScript().then(() => {
-          if (ref.current) {
-            ref.current.innerHTML = initElement('opta-widget', {
-              sport,
-              widget: 'standings',
-              season,
-              competition,
-              live: true,
-              navigation: navigation ? 'dropdown' : undefined,
-              default_nav,
-              show_crests: !isNationalComp,
-              team_naming: 'brief',
-              breakpoints: 520
-            }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport,
+            widget: 'standings',
+            season,
+            competition,
+            live: true,
+            navigation: navigation ? 'dropdown' : undefined,
+            default_nav,
+            show_crests: !isNationalComp,
+            team_naming: 'brief',
+            breakpoints: 520
+          }).outerHTML;
 
-            initComponent();
-            setIsReady(true);
-          }
-        });
-      },
-      []
-    );
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    }, []);
 
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
