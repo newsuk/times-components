@@ -21,8 +21,9 @@ export const OptaFootballStandings: React.FC<{
   default_nav?: string;
   navigation?: boolean;
   full_width?: boolean;
+  columns?: boolean;
 }> = React.memo(
-  ({ season, competition, default_nav = 1, navigation, full_width }) => {
+  ({ season, competition, default_nav = 1, navigation, full_width, columns }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
@@ -55,14 +56,14 @@ export const OptaFootballStandings: React.FC<{
           }
         });
       },
-      [ref]
+      []
     );
 
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
       <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} />
+        <WidgetContainer ref={ref} columns={columns} />
 
         {!isReady && (
           <PlaceholderContainer>

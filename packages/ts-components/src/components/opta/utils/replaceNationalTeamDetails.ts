@@ -16,5 +16,5 @@ export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
         (optaFlagContainer as HTMLElement).innerText = 'TBD';
       }
     }
-  }, 500);
+  }, 1000);
 };

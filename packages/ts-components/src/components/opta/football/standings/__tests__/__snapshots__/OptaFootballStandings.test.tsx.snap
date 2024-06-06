@@ -6,7 +6,7 @@ exports[`OptaFootballStandings should render correctly 1`] = `
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-bxivhb jWwzep team-flags"
+      class="sc-htpNat sc-bxivhb jxiDob team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -23,7 +23,40 @@ exports[`OptaFootballStandings should render correctly 2`] = `
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-bxivhb jWwzep team-flags"
+      class="sc-htpNat sc-bxivhb jxiDob team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballStandings should render correctly, with columns 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa giUBsz"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb kkuUvG team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballStandings should render correctly, with columns 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa hGXeaj"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb kkuUvG team-flags"
     >
       <div>
         Widget
