@@ -12,6 +12,8 @@ import {
 
 import { Container, PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
+import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
+import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 
 export const OptaFootballPlayerStats: React.FC<{
   season: string;
@@ -24,52 +26,45 @@ export const OptaFootballPlayerStats: React.FC<{
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
+    const isNationalComp = isNationalCompetition(competition);
 
-    useEffect(() => {
-      const sport = 'football';
+    useEffect(
+      () => {
+        const sport = 'football';
 
-      initSettings();
-      initStyleSheet(sport);
+        initSettings();
+        initStyleSheet(sport);
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement('opta-widget', {
-            sport,
-            widget: 'player_ranking',
-            season,
-            competition,
-            match,
-            template: 'normal',
-            graph_style: 'relative',
-            visible_categories,
-            live: true,
-            show_match_header: true,
-            show_halftime_score: true,
-            show_competition_name: true,
-            show_date: true,
-            show_crests: true,
-            date_format: 'DD/MM/YYYY',
-            breakpoints: '520'
-          }).outerHTML;
+        initScript().then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement('opta-widget', {
+              sport,
+              widget: 'player_ranking',
+              season,
+              competition,
+              match,
+              template: 'normal',
+              graph_style: 'relative',
+              visible_categories,
+              live: true,
+              show_match_header: true,
+              show_halftime_score: true,
+              show_competition_name: true,
+              show_date: true,
+              show_crests: true,
+              date_format: 'DD/MM/YYYY',
+              breakpoints: '520'
+            }).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
-    }, []);
+            initComponent();
+            setIsReady(true);
+          }
+        });
+      },
+      [ref]
+    );
 
-    // <opta-widget
-    // navigation="tabs_more"
-    // show_crests="false"
-    // show_images="false"
-    // show_ranks="true"
-    // show_appearances="false"
-    // visible_categories="goals"
-    // limit="30"
-    // hide_zeroes="true"
-    // show_team_names="true"
-    // team_naming="full"
-    // player_naming="full" show_logo="true" show_title="true" breakpoints="400" sport="football"></opta-widget>
+    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
 
     return (
       <Container border={isReady} fullWidth={full_width}>

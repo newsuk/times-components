@@ -44,9 +44,9 @@ describe('OptaFootballPlayerStats', () => {
 
     await waitForElementToBeRemoved(getByText('Placeholder'));
 
-    expect(mockInitSettings).toHaveBeenCalledTimes(1);
-    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
-    expect(mockInitComponent).toHaveBeenCalledTimes(1);
+    expect(mockInitSettings).toHaveBeenCalledTimes(2);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(2);
+    expect(mockInitComponent).toHaveBeenCalledTimes(2);
 
     expect(asFragment()).toMatchSnapshot();
   });
