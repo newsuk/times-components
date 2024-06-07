@@ -18,11 +18,10 @@ import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamD
 export const OptaFootballPlayerStats: React.FC<{
   season: string;
   competition: string;
-  match: string;
   visible_categories: string; // goals | assists | cards_red | cards_yellow
   full_width?: boolean;
 }> = React.memo(
-  ({ season, competition, match, full_width, visible_categories }) => {
+  ({ season, competition, full_width, visible_categories }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
@@ -42,7 +41,6 @@ export const OptaFootballPlayerStats: React.FC<{
               widget: 'player_ranking',
               season,
               competition,
-              match,
               template: 'normal',
               graph_style: 'relative',
               visible_categories,

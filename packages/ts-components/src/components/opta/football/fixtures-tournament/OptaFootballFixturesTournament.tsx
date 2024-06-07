@@ -20,10 +20,12 @@ export const OptaFootballFixturesTournament: React.FC<{
   competition: string;
   date_from?: string;
   date_to?: string;
+  days_ahead?: number;
+  days_before?: number;
   round?: string;
   full_width?: boolean;
 }> = React.memo(
-  ({ season, competition, date_from, date_to, round, full_width }) => {
+  ({ season, competition, date_from, date_to, days_ahead, days_before, round, full_width }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
@@ -46,6 +48,8 @@ export const OptaFootballFixturesTournament: React.FC<{
               competition,
               date_from,
               date_to,
+              days_ahead,
+              days_before,
               round,
               live: true,
               grouping: 'matchday',
