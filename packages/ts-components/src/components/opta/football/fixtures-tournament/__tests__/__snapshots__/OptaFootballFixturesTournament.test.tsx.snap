@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa giUBsz"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX DqVFC team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa hGXeaj"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX DqVFC team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render other competitions correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa giUBsz"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX kvVhKh"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render other competitions correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa hGXeaj"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX kvVhKh"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -59,7 +59,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
           &:has(h3) {
             column-span: all;
-            display: block;
             margin-top: 24px;
           }
 

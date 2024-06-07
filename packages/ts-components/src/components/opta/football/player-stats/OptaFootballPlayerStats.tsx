@@ -20,60 +20,58 @@ export const OptaFootballPlayerStats: React.FC<{
   competition: string;
   visible_categories: string; // goals | assists | cards_red | cards_yellow
   full_width?: boolean;
-}> = React.memo(
-  ({ season, competition, full_width, visible_categories }) => {
-    const ref = React.createRef<HTMLDivElement>();
+}> = React.memo(({ season, competition, full_width, visible_categories }) => {
+  const ref = React.createRef<HTMLDivElement>();
 
-    const [isReady, setIsReady] = useState<boolean>(false);
-    const isNationalComp = isNationalCompetition(competition);
+  const [isReady, setIsReady] = useState<boolean>(false);
+  const isNationalComp = isNationalCompetition(competition);
 
-    useEffect(
-      () => {
-        const sport = 'football';
+  useEffect(
+    () => {
+      const sport = 'football';
 
-        initSettings();
-        initStyleSheet(sport);
+      initSettings();
+      initStyleSheet(sport);
 
-        initScript().then(() => {
-          if (ref.current) {
-            ref.current.innerHTML = initElement('opta-widget', {
-              sport,
-              widget: 'player_ranking',
-              season,
-              competition,
-              template: 'normal',
-              graph_style: 'relative',
-              visible_categories,
-              live: true,
-              show_match_header: true,
-              show_halftime_score: true,
-              show_competition_name: true,
-              show_date: true,
-              show_crests: true,
-              date_format: 'DD/MM/YYYY',
-              breakpoints: '520'
-            }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport,
+            widget: 'player_ranking',
+            season,
+            competition,
+            template: 'normal',
+            graph_style: 'relative',
+            visible_categories,
+            live: true,
+            show_match_header: true,
+            show_halftime_score: true,
+            show_competition_name: true,
+            show_date: true,
+            show_crests: true,
+            date_format: 'DD/MM/YYYY',
+            breakpoints: '520'
+          }).outerHTML;
 
-            initComponent();
-            setIsReady(true);
-          }
-        });
-      },
-      [ref]
-    );
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    },
+    [ref]
+  );
 
-    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
+  isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
 
-    return (
-      <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} />
+  return (
+    <Container border={isReady} fullWidth={full_width}>
+      <WidgetContainer ref={ref} />
 
-        {!isReady && (
-          <PlaceholderContainer>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
-      </Container>
-    );
-  }
-);
+      {!isReady && (
+        <PlaceholderContainer>
+          <Placeholder />
+        </PlaceholderContainer>
+      )}
+    </Container>
+  );
+});

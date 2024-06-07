@@ -33,7 +33,6 @@ const buildConfig = dir => {
       '<rootDir>/packages/ts-components/src/**/*.(tsx|ts)',
       '!<rootDir>/packages/ts-components/src/**/*.(stories|d).*',
       '!<rootDir>/packages/ts-components/src/index.*',
-      '!<rootDir>/packages/ts-components/src/fixtures/**',
       '!<rootDir>/node_modules/'
     ],
     coverageThreshold: {
