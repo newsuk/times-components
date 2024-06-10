@@ -3,7 +3,9 @@ import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  columns?: boolean;
+}>`
   .Opta {
     h3.Opta-groupname {
       height: 40px;
@@ -32,6 +34,10 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       margin: 0;
       padding: 0;
       background-color: transparent;
+
+      @media (min-width: ${breakpoints.medium}px) {
+        ${({ columns }) => columns && 'column-count: 2;'};
+      }
 
       &.Opta-Dropdown {
         .Opta-Nav {

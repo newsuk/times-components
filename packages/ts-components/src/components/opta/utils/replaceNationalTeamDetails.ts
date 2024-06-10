@@ -8,11 +8,20 @@ export const isNationalCompetition = (competition: string) => {
 };
 
 export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
-  setTimeout(() => {
+  let count = 0;
+  const replaceDetails = setInterval(() => {
+    if (count >= 5) {
+      clearInterval(replaceDetails);
+    }
+    count++;
+
     for (let optaFlagContainer of element) {
       const country = (optaFlagContainer as HTMLElement).innerText;
 
-      if (country && country.includes('Third Place')) {
+      if (
+        country &&
+        (country.includes('Third Place') || country.includes('Group'))
+      ) {
         (optaFlagContainer as HTMLElement).innerText = 'TBD';
       }
     }

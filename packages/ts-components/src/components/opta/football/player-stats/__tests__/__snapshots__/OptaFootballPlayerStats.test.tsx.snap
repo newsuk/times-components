@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OptaFootballFixtures should render correctly 1`] = `
+exports[`OptaFootballPlayerStats should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX iHxEZu"
+      class="sc-htpNat sc-bxivhb iNxpQd team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -17,13 +17,13 @@ exports[`OptaFootballFixtures should render correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixtures should render correctly 2`] = `
+exports[`OptaFootballPlayerStats should render correctly 2`] = `
 <DocumentFragment>
   <div
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX iHxEZu"
+      class="sc-htpNat sc-bxivhb iNxpQd team-flags"
     >
       <div>
         Widget

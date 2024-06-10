@@ -30,7 +30,7 @@ const countries: Record<string, string> = {
 
 const flagStyles = Object.keys(countries).map(
   (countryCode: string) => `
-  .Opta-Team-${countryCode} .Opta-Team, .Opta-Team-${countryCode}.Opta-Team  {
+  .Opta-Team-${countryCode} .Opta-Team, .Opta-Team-${countryCode}.Opta-Team, .Opta-Player .Opta-Image-Team-${countryCode} {
     background-image: url(https://nuk-tnl-editorial-prod-staticassets.s3.eu-west-1.amazonaws.com/opta/euro-flags/${
       countries[countryCode]
     }.svg);
@@ -49,6 +49,22 @@ const flagStyles = Object.keys(countries).map(
   .Opta-Team-${countryCode}.Opta-Team  {
     background-position: 10px 8px;
     padding-left: 38px !important;
+  }
+
+  .Opta-Player .Opta-Image-Team-${countryCode} {
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-position: 7px 3px;
+
+    &.Opta-Image-Medium {
+      background-size: 35px;
+      background-position: 0 6px;
+    }
+
+    img {
+      display: none;
+    }
   }
 `
 );

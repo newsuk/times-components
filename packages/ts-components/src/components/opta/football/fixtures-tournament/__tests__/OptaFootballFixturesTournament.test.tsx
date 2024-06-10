@@ -26,21 +26,16 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
-import { OptaFootballStandings } from '../OptaFootballStandings';
-
-const requiredProps = {
-  season: '2020',
-  competition: '3'
-};
+import { OptaFootballFixturesTournament } from '../OptaFootballFixturesTournament';
 
 afterEach(() => {
   jest.clearAllMocks();
 });
 
-describe('OptaFootballStandings', () => {
-  it('should render correctly', async () => {
+describe('OptaFootballFixturesTournament', () => {
+  it('should render national competitions correctly', async () => {
     const { asFragment, getByText } = render(
-      <OptaFootballStandings {...requiredProps} />
+      <OptaFootballFixturesTournament season="2023" competition="3" />
     );
     expect(asFragment()).toMatchSnapshot();
 
@@ -52,10 +47,27 @@ describe('OptaFootballStandings', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-
-  it('should render correctly, with columns', async () => {
+  it('should render national competitions correctly with single column', async () => {
     const { asFragment, getByText } = render(
-      <OptaFootballStandings columns {...requiredProps} />
+      <OptaFootballFixturesTournament
+        season="2023"
+        competition="3"
+        columns={false}
+      />
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
+    expect(mockInitSettings).toHaveBeenCalledTimes(1);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
+    expect(mockInitComponent).toHaveBeenCalledTimes(1);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('should render other competitions correctly', async () => {
+    const { asFragment, getByText } = render(
+      <OptaFootballFixturesTournament season="2023" competition="8" />
     );
     expect(asFragment()).toMatchSnapshot();
 
