@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.88.1...@times-components/ts-components@1.89.0) (2024-06-10)
+
+
+### Features
+
+* **TMRS-208:** update widget tile states ([#3865](https://github.com/newsuk/times-components/issues/3865)) ([13c18f2](https://github.com/newsuk/times-components/commit/13c18f213f9acde4a802d028c05176889e47ff99))
+
+
+
+
+
 ## [1.88.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.88.0...@times-components/ts-components@1.88.1) (2024-06-03)
 
 **Note:** Version bump only for package @times-components/ts-components

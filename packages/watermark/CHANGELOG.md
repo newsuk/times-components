@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.17.0...@times-components/watermark@2.18.0) (2024-06-10)
+
+
+### Features
+
+* **TMRS-208:** update widget tile states ([#3865](https://github.com/newsuk/times-components/issues/3865)) ([13c18f2](https://github.com/newsuk/times-components/commit/13c18f213f9acde4a802d028c05176889e47ff99))
+
+
+
+
+
 # [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.16.0...@times-components/watermark@2.17.0) (2024-05-31)
 
 
