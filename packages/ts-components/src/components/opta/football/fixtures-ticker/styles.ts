@@ -47,29 +47,53 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     font-family: Roboto !important;
   }
 
-  ${({ isApp }) =>
-    isApp &&
-    css`
-      @media (max-width: ${breakpoints.small}px) {
-        .Opta-Scroller {
-          display: block !important;
-        }
+  .Opta-Scroll,
+  .Opta-Window {
+    height: 80px;
+  }
+
+  @media (max-width: ${breakpoints.small}px) {
+    .Opta-Scroll {
+      &::before,
+      &::after {
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        z-index: 15;
+        transition: all 0.3s linear 0s;
+        background-image: linear-gradient(
+          -90deg,
+          ${({ isDarkMode }) => (isDarkMode ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)')} 0%,
+          ${({ isDarkMode }) => (isDarkMode ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)')} 100%,
+        );
+        width: 64px;
+        height: 100%;
+        bottom: 0px;
+        left: 0;
       }
-    `} ${({ isApp }) =>
+      &::after {
+        left: unset;
+        right: 0px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  @media (max-width: ${breakpoints.small}px) {
+    .Opta-Scroller {
+      display: ${({ isApp }) => (isApp ? 'block' : 'none')} !important;
+    }
+  }
+
+  ${({ isApp }) =>
     !isApp &&
     css`
       @media (max-width: ${breakpoints.small}px) {
-        .Opta-Scroller {
-          display: none !important;
-        }
         .Opta-Window {
           left: 0 !important;
           right: 0 !important;
         }
       }
-    `}
-
-  .fixtures-page-link.Opta-fixture {
+    `} .fixtures-page-link.Opta-fixture {
     width: 85px !important;
     padding: 10px 8px;
     border: 1px solid ${({ isDarkMode }) => (isDarkMode ? 'white' : 'black')};
