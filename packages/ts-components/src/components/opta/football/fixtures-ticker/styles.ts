@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
@@ -39,61 +39,84 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
   }
 `;
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  isApp?: boolean;
+  isDarkMode?: boolean;
+}>`
   .Opta {
     font-family: Roboto !important;
   }
 
-  .Opta-Scroll,
-  .Opta-Window {
-    height: 80px;
+  ${({ isApp }) =>
+    isApp &&
+    css`
+      @media (max-width: ${breakpoints.small}px) {
+        .Opta-Scroller {
+          display: block !important;
+        }
+      }
+    `} ${({ isApp }) =>
+    !isApp &&
+    css`
+      @media (max-width: ${breakpoints.small}px) {
+        .Opta-Scroller {
+          display: none !important;
+        }
+        .Opta-Window {
+          left: 0 !important;
+          right: 0 !important;
+        }
+      }
+    `}
+
+  .fixtures-page-link.Opta-fixture {
+    width: 85px !important;
+    padding: 10px 8px;
+    border: 1px solid ${({ isDarkMode }) => (isDarkMode ? 'white' : 'black')};
+    background-color: transparent;
+    a {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      span {
+        color: ${({ isDarkMode }) =>
+          isDarkMode ? 'white' : 'black'}!important;
+        font-size: 12px;
+        font-weight: 700 !important;
+        display: block;
+      }
+      svg {
+        rect {
+          font-weight: 700 !important;
+        }
+      }
+    }
   }
 
-  @media (max-width: ${breakpoints.small}px) {
-    .Opta-Scroll {
-      &::before,
-      &::after {
-        content: '';
-        pointer-events: none;
-        position: absolute;
-        z-index: 15;
-        transition: all 0.3s linear 0s;
-        background-image: linear-gradient(
-          -90deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgb(255, 255, 255) 100%
-        );
-        width: 64px;
-        height: 100%;
-        bottom: 0px;
-        left: 0;
-      }
-      &::after {
-        left: unset;
-        right: 0px;
-        transform: rotate(180deg);
-      }
-    }
-
-    .Opta-Window {
-      left: 0 !important;
-      right: 0 !important;
-    }
+  .Opta-Cf.Opta-Scroll.Opta-Active {
+    background-color: ${({ isDarkMode }) =>
+      isDarkMode ? 'black' : 'white'}!important;
   }
 
   .Opta-Scroller {
-    background-color: white !important;
-    border: 1px solid #999 !important;
+    background-color: ${({ isDarkMode }) =>
+      isDarkMode ? 'black' : 'white'}!important;
+    border: 1px solid ${({ isDarkMode }) => (isDarkMode ? 'white' : '#999')};
+    border-radius: 2px;
     border-radius: 2px;
     box-sizing: border-box;
     padding: 39px 0 !important;
     width: 28px !important;
 
     &:hover {
-      background-color: #f5f5f5 !important;
+      background-color: ${({ isDarkMode }) =>
+        isDarkMode ? '#303030' : '#f5f5f5'}!important;
     }
     &:active {
-      background-color: #eee !important;
+      background-color: ${({ isDarkMode }) =>
+        isDarkMode ? '#4f4f4f' : '#eee'}!important;
     }
 
     &::after {
@@ -102,7 +125,8 @@ export const WidgetContainer = styled(WidgetContainerBase)`
         no-repeat !important;
       background-size: 210px 186px !important;
       background-position-x: -180px !important;
-      background-position-y: -19px !important;
+      background-position-y: ${({ isDarkMode }) =>
+        isDarkMode ? '-57px' : '-19px'}!important;
       height: 16px !important;
       width: 16px !important;
       top: calc(50% - 8px) !important;
@@ -116,9 +140,6 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       transform: rotate(90deg) translateX(2px);
     }
 
-    @media (max-width: ${breakpoints.small}px) {
-      display: none !important;
-    }
     @media (max-width: ${breakpoints.medium}px) {
       width: 18px !important;
     }
