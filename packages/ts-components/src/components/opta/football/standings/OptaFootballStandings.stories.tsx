@@ -30,7 +30,13 @@ const showcase = {
       type: 'story'
     },
     {
-      component: () => <OptaFootballStandings season="2023" competition="3" />,
+      component: () => (
+        <OptaFootballStandings
+          season="2023"
+          competition="3"
+          show_title={false}
+        />
+      ),
       name: 'Standings (inline)',
       type: 'story'
     },

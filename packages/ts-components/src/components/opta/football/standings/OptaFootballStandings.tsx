@@ -21,6 +21,7 @@ export const OptaFootballStandings: React.FC<{
   default_nav?: string;
   navigation?: boolean;
   full_width?: boolean;
+  show_title?: boolean;
   columns?: boolean;
 }> = React.memo(
   ({
@@ -28,6 +29,7 @@ export const OptaFootballStandings: React.FC<{
     competition,
     default_nav = 1,
     navigation,
+    show_title = true,
     full_width,
     columns
   }) => {
@@ -52,6 +54,7 @@ export const OptaFootballStandings: React.FC<{
             live: true,
             navigation: navigation ? 'dropdown' : undefined,
             default_nav,
+            show_title,
             show_crests: !isNationalComp,
             team_naming: 'brief',
             breakpoints: 520

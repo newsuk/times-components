@@ -18,6 +18,7 @@ const showcase = {
           season="2020"
           competition="3"
           visible_categories="goals"
+          show_title={false}
         />
       ),
       name: 'PlayerStats (goals)',
