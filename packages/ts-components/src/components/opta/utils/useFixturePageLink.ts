@@ -14,7 +14,7 @@ const getAndAddFixturesPageLink = (
     addFixturesPageLink(OptaRoom, fixturesPageUrl, isDarkMode);
     return true;
   }
-  return false
+  return false;
 };
 
 export const useFixturePageLink = (
