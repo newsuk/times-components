@@ -1,6 +1,7 @@
+import { SvgProps } from 'newskit';
 import React from 'react';
 
-const CloseIconBlack: React.FC<any> = ({
+const CloseIconBlack: React.FC<SvgProps> = ({
   width = 24,
   height = 24,
   color = '#000',

@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [6.21.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.20.6...@times-components/utils@6.21.0) (2024-06-03)
-
-
-### Features
-
-* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
-
-
-
-
-
 ## [6.20.6](https://github.com/newsuk/times-components/compare/@times-components/utils@6.20.5...@times-components/utils@6.20.6) (2024-05-30)
 
 **Note:** Version bump only for package @times-components/utils

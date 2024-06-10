@@ -1,9 +1,12 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
 import { JobTitle } from './job-title.tsx';
 
 <Meta
-  title="Components/Misc/JobTitle"
+  title="Newskit Components/Misc/JobTitle"
   component={JobTitle}
 />
 
@@ -24,9 +27,11 @@ This component takes in two props `contractualTitle` and `isLargeDevice` as belo
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
 export const JobTitleStory = ({ isLargeDevice }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
   <div style={{ paddingTop: '150px'}}>
     <JobTitle contractualTitle="Senior Correspondent" isLargeDevice={isLargeDevice} />
   </div>
+  </NewsKitProvider>
 );
 
 <Story name="JobTitle"

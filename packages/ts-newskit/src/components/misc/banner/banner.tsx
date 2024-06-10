@@ -5,7 +5,7 @@ import {
   Title,
   TitleWrapper,
   Wrapper,
-  StyledBanner,
+  NewsKitBanner,
   BannerWrapper,
   BannerContentWrapper
 } from './styles';
@@ -20,7 +20,7 @@ type Props = {
 export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
   return (
     <BannerWrapper>
-      <StyledBanner aria-label="Email verification banner">
+      <NewsKitBanner aria-label="Email verification banner">
         <BannerContentWrapper role="region">
           <Wrapper>
             <TitleWrapper>
@@ -33,7 +33,7 @@ export const Banner: React.FC<Props> = ({ title, body, onClose }) => {
           </Wrapper>
           <Body>{body}</Body>
         </BannerContentWrapper>
-      </StyledBanner>
+      </NewsKitBanner>
     </BannerWrapper>
   );
 };

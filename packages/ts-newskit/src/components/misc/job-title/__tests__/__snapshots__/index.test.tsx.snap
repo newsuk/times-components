@@ -17,6 +17,7 @@ exports[`JobTitle - Larger Devices renders the Job title Tooltip on larger devic
       data-testid="Tooltip"
     >
       <svg
+        class="css-ny3roy"
         fill="none"
         height="16"
         width="16"
@@ -96,6 +97,7 @@ exports[`JobTitle - Smaller Devices renders the Job title Popover 1`] = `
       data-testid="Popover"
     >
       <svg
+        class="css-ny3roy"
         fill="none"
         height="16"
         width="16"
@@ -175,6 +177,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
       data-testid="Popover"
     >
       <svg
+        class="css-ny3roy"
         fill="none"
         height="16"
         width="16"
@@ -231,6 +234,7 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
       data-testid="Tooltip"
     >
       <svg
+        class="css-ny3roy"
         fill="none"
         height="16"
         width="16"

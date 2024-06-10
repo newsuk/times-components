@@ -70,6 +70,7 @@
     "@times-components/provider": "1.40.24",
     "@times-components/responsive": "0.22.0",
     "@times-components/tracking": "2.22.23",
+    "@times-components/ts-newskit": "1.183.0",
     "@times-components/ts-styleguide": "1.50.23",
     "@times-components/utils": "6.21.0",
     "lodash.get": "4.4.2",

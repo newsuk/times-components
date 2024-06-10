@@ -14,7 +14,12 @@ import {
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { UpdateButtonWithDelay, Banner } from "@times-components/ts-newskit";
+import {
+  TCThemeProvider,
+  UpdateButtonWithDelay,
+  PuzzlesWebLightTheme,
+  Banner
+} from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
@@ -329,29 +334,31 @@ const ArticleSkeleton = ({
                 <ArticleWrapper>
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
-                      <PuzzlesSidebar ref={sidebarRef}>
-                        <ArticleSidebar
-                          pageLink={`${domainSpecificUrl}/puzzles`}
-                          sectionTitle="Puzzles"
-                          data={[
-                            {
-                              title: "Crossword",
-                              url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                            },
-                            {
-                              title: "Polygon",
-                              url: polygonUrl,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                            },
-                            {
-                              title: "Sudoku",
-                              url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                            }
-                          ]}
-                        />
-                      </PuzzlesSidebar>
+                      <TCThemeProvider theme={PuzzlesWebLightTheme}>
+                        <PuzzlesSidebar ref={sidebarRef}>
+                          <ArticleSidebar
+                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              },
+                              {
+                                title: "Sudoku",
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              }
+                            ]}
+                          />
+                        </PuzzlesSidebar>
+                      </TCThemeProvider>
                     </SidebarWarpper>
                   )}
                   <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
