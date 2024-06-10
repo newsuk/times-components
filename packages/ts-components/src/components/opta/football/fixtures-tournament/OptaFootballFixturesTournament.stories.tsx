@@ -16,7 +16,8 @@ const showcase = {
       component: () => (
         <OptaFootballFixturesTournament
           season="2023"
-          competition="8"
+          competition="3"
+          show_title={false}
           full_width
         />
       ),

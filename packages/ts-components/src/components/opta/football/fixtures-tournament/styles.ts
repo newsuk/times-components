@@ -41,6 +41,7 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 
 export const WidgetContainer = styled(WidgetContainerBase)<{
   isNationalComp?: boolean;
+  columns?: boolean;
 }>`
   .Opta {
     .Opta-js-main {
@@ -50,7 +51,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       table {
         display: block;
         @media (min-width: ${breakpoints.medium}px) {
-          column-count: 2;
+          ${({ columns }) => columns && 'column-count: 2;'};
         }
 
         tbody {

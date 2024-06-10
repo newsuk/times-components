@@ -33,6 +33,10 @@ const requiredProps = {
   competition: '3'
 };
 
+afterEach(() => {
+  jest.clearAllMocks()
+})
+
 describe('OptaFootballStandings', () => {
   it('should render correctly', async () => {
     const { asFragment, getByText } = render(
@@ -57,9 +61,9 @@ describe('OptaFootballStandings', () => {
 
     await waitForElementToBeRemoved(getByText('Placeholder'));
 
-    expect(mockInitSettings).toHaveBeenCalledTimes(2);
-    expect(mockInitStyleSheet).toHaveBeenCalledTimes(2);
-    expect(mockInitComponent).toHaveBeenCalledTimes(2);
+    expect(mockInitSettings).toHaveBeenCalledTimes(1);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
+    expect(mockInitComponent).toHaveBeenCalledTimes(1);
 
     expect(asFragment()).toMatchSnapshot();
   });

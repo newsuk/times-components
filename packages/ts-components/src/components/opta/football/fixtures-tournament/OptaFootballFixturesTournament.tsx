@@ -24,6 +24,8 @@ export const OptaFootballFixturesTournament: React.FC<{
   days_before?: number;
   matchday?: string;
   round?: string;
+  show_title?: boolean;
+  columns?: boolean;
   full_width?: boolean;
 }> = React.memo(
   ({
@@ -35,6 +37,8 @@ export const OptaFootballFixturesTournament: React.FC<{
     days_before,
     matchday,
     round,
+    show_title = true,
+    columns = true,
     full_width
   }) => {
     const ref = React.createRef<HTMLDivElement>();
@@ -63,6 +67,7 @@ export const OptaFootballFixturesTournament: React.FC<{
               days_before,
               matchday,
               round,
+              show_title,
               live: true,
               grouping: 'matchday',
               show_grouping: true,
@@ -96,7 +101,7 @@ export const OptaFootballFixturesTournament: React.FC<{
 
     return (
       <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} isNationalComp={isNationalComp} />
+        <WidgetContainer ref={ref} isNationalComp={isNationalComp} columns={columns} />
 
         {!isReady && (
           <PlaceholderContainer>
