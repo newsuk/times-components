@@ -34,8 +34,8 @@ const requiredProps = {
 };
 
 afterEach(() => {
-  jest.clearAllMocks()
-})
+  jest.clearAllMocks();
+});
 
 describe('OptaFootballStandings', () => {
   it('should render correctly', async () => {

@@ -101,7 +101,11 @@ export const OptaFootballFixturesTournament: React.FC<{
 
     return (
       <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} isNationalComp={isNationalComp} columns={columns} />
+        <WidgetContainer
+          ref={ref}
+          isNationalComp={isNationalComp}
+          columns={columns}
+        />
 
         {!isReady && (
           <PlaceholderContainer>

@@ -29,8 +29,8 @@ jest.mock('../../../utils/config', () => ({
 import { OptaFootballFixturesTournament } from '../OptaFootballFixturesTournament';
 
 afterEach(() => {
-  jest.clearAllMocks()
-})
+  jest.clearAllMocks();
+});
 
 describe('OptaFootballFixturesTournament', () => {
   it('should render national competitions correctly', async () => {
@@ -49,7 +49,11 @@ describe('OptaFootballFixturesTournament', () => {
   });
   it('should render national competitions correctly with single column', async () => {
     const { asFragment, getByText } = render(
-      <OptaFootballFixturesTournament season="2023" competition="3" columns={false} />
+      <OptaFootballFixturesTournament
+        season="2023"
+        competition="3"
+        columns={false}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
 
