@@ -50,6 +50,12 @@ const flagStyles = Object.keys(countries).map(
     background-position: 10px 8px;
     padding-left: 38px !important;
   }
+  .Opta-Scoreline .Opta-Team-${countryCode}.Opta-Team  {
+    padding-left: 28px !important;
+  }
+  .Opta-Scoreline .Opta-Home.Opta-Team-${countryCode}.Opta-Team  {
+    padding-left: 0 !important;
+  }
 
   .Opta-Player .Opta-Image-Team-${countryCode} {
     width: 100%;

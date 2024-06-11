@@ -18,11 +18,23 @@ export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
     for (let optaFlagContainer of element) {
       const country = (optaFlagContainer as HTMLElement).innerText;
 
-      if (
-        country &&
-        (country.includes('Third Place') || country.includes('Group'))
-      ) {
-        (optaFlagContainer as HTMLElement).innerText = 'TBD';
+      if (country) {
+        if (country.includes('Third Place') || country.includes('Group')) {
+          (optaFlagContainer as HTMLElement).innerText = 'TBD';
+        }
+
+        (optaFlagContainer as HTMLElement).innerText = (optaFlagContainer as HTMLElement).innerText.replace(
+          /Quarter-Finalist/,
+          'QF'
+        );
+        (optaFlagContainer as HTMLElement).innerText = (optaFlagContainer as HTMLElement).innerText.replace(
+          /Semi-Finalist/,
+          'SF'
+        );
+        (optaFlagContainer as HTMLElement).innerText = (optaFlagContainer as HTMLElement).innerText.replace(
+          /Semi-Final/,
+          'SF'
+        );
       }
     }
   }, 500);

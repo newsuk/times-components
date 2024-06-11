@@ -19,6 +19,7 @@ export const OptaFootballStandings: React.FC<{
   season: string;
   competition: string;
   default_nav?: string;
+  classes?: string;
   navigation?: boolean;
   full_width?: boolean;
   show_title?: boolean;
@@ -28,6 +29,7 @@ export const OptaFootballStandings: React.FC<{
     season,
     competition,
     default_nav = 1,
+    classes,
     navigation,
     show_title = true,
     full_width,
@@ -70,7 +72,7 @@ export const OptaFootballStandings: React.FC<{
 
     return (
       <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} columns={columns} />
+        <WidgetContainer ref={ref} columns={columns} className={classes} />
 
         {!isReady && (
           <PlaceholderContainer>

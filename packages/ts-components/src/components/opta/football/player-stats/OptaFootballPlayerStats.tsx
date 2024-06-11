@@ -19,6 +19,7 @@ export const OptaFootballPlayerStats: React.FC<{
   season: string;
   competition: string;
   visible_categories: string; // goals | assists | cards_red | cards_yellow
+  classes?: string;
   show_title?: boolean;
   full_width?: boolean;
 }> = React.memo(
@@ -27,7 +28,8 @@ export const OptaFootballPlayerStats: React.FC<{
     competition,
     full_width,
     show_title = true,
-    visible_categories
+    visible_categories,
+    classes
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -74,7 +76,7 @@ export const OptaFootballPlayerStats: React.FC<{
 
     return (
       <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} />
+        <WidgetContainer ref={ref} className={classes} />
 
         {!isReady && (
           <PlaceholderContainer>
