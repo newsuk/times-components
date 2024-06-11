@@ -61,7 +61,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
           &:has(h3) {
             column-span: all;
-            margin-top: 24px;
             ${({ hide_matchday }) => hide_matchday && 'display: none;'};
           }
 
