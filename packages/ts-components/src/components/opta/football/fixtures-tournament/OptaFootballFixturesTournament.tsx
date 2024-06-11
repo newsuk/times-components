@@ -104,13 +104,12 @@ export const OptaFootballFixturesTournament: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width}>
+      <Container border={isReady} fullWidth={full_width} className={classes}>
         <WidgetContainer
           ref={ref}
           isNationalComp={isNationalComp}
           hide_matchday={hide_matchday}
           columns={columns}
-          className={classes}
         />
 
         {!isReady && (

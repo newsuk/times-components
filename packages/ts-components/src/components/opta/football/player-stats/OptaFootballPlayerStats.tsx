@@ -75,8 +75,8 @@ export const OptaFootballPlayerStats: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width}>
-        <WidgetContainer ref={ref} className={classes} />
+      <Container border={isReady} fullWidth={full_width} className={classes}>
+        <WidgetContainer ref={ref} />
 
         {!isReady && (
           <PlaceholderContainer>
