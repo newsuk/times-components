@@ -10,6 +10,7 @@ const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
 const mockIsNationalComp = jest.fn();
+const mockUseFixturePageLink = jest.fn();
 const mockUseUpdateNationalTeamDetails = jest.fn();
 
 const mockInitElement = () => {
@@ -27,6 +28,9 @@ jest.mock('../../../utils/config', () => ({
 }));
 jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
   isNationalCompetition: mockIsNationalComp
+}));
+jest.mock('../../../utils/useFixturePageLink', () => ({
+  useFixturePageLink: mockUseFixturePageLink
 }));
 jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
   useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails
@@ -81,6 +85,42 @@ describe('OptaFootballFixturesTicker without flags', () => {
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
+    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render correctly with isApp property', async () => {
+    (isNationalCompetition as jest.Mock).mockReturnValue(true);
+
+    const { asFragment, getByText } = render(
+      <OptaFootballFixturesTicker season="2023" competition="3" isApp={true} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
+    expect(mockInitSettings).toHaveBeenCalled();
+    expect(mockInitStyleSheet).toHaveBeenCalled();
+    expect(mockInitComponent).toHaveBeenCalled();
+    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render correctly with fixturesPageUrl, isDarkMode properties', async () => {
+    (isNationalCompetition as jest.Mock).mockReturnValue(true);
+
+    const { asFragment, getByText } = render(
+      <OptaFootballFixturesTicker season="2023" competition="3" isDarkMode={true} fixturesPageUrl={'https://www.thetimes.co.uk/sport/football/euro-2024'} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
+    expect(mockInitSettings).toHaveBeenCalled();
+    expect(mockInitStyleSheet).toHaveBeenCalled();
+    expect(mockInitComponent).toHaveBeenCalled();
+    expect(mockUseFixturePageLink).toHaveBeenCalled();
     expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
