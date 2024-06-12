@@ -24,7 +24,9 @@ export const OptaFootballFixturesTournament: React.FC<{
   days_before?: number;
   matchday?: string;
   round?: string;
+  classes?: string;
   show_title?: boolean;
+  hide_matchday?: boolean;
   columns?: boolean;
   full_width?: boolean;
 }> = React.memo(
@@ -37,6 +39,8 @@ export const OptaFootballFixturesTournament: React.FC<{
     days_before,
     matchday,
     round,
+    classes,
+    hide_matchday,
     show_title = true,
     columns = true,
     full_width
@@ -100,10 +104,11 @@ export const OptaFootballFixturesTournament: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width}>
+      <Container border={isReady} fullWidth={full_width} className={classes}>
         <WidgetContainer
           ref={ref}
           isNationalComp={isNationalComp}
+          hide_matchday={hide_matchday}
           columns={columns}
         />
 

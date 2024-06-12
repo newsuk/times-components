@@ -41,6 +41,7 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 
 export const WidgetContainer = styled(WidgetContainerBase)<{
   isNationalComp?: boolean;
+  hide_matchday?: boolean;
   columns?: boolean;
 }>`
   .Opta {
@@ -60,7 +61,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
           &:has(h3) {
             column-span: all;
-            margin-top: 24px;
+            ${({ hide_matchday }) => hide_matchday && 'display: none;'};
           }
 
           td.Opta-Nest.Opta-JS-Nest-Content.Opta-Expanded {
@@ -112,6 +113,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
             td {
               max-width: none !important;
+              padding: 0;
               color: ${colours.functional.brandColour} !important;
               font-family: ${fonts.headline};
               font-size: 14px;
@@ -122,7 +124,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
               &.Opta-Time {
                 padding-left: 10px;
                 color: ${colours.section.sport} !important;
-                font-family: ${fonts.supporting};
 
                 abbr {
                   font-size: inherit;
@@ -140,11 +141,11 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
                 background-position: center left;
                 width: 34%;
                 padding-left: ${({ isNationalComp }) =>
-                    isNationalComp ? '38px;' : '10px;'}
+                    isNationalComp ? '24px;' : '10px;'}
                   &.Opta-Home {
                   background-position: center right;
                   padding-right: ${({ isNationalComp }) =>
-                    isNationalComp ? '38px;' : '10px;'};
+                    isNationalComp ? '24px;' : '10px;'};
                   padding-left: 0;
                   text-align: right;
                 }
@@ -167,7 +168,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
                 font-size: 16px;
                 line-height: 16px;
                 text-align: center !important;
-                min-width: 25px;
+                width: 20px;
 
                 span {
                   font-size: inherit;
@@ -188,6 +189,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
               &.Opta-Divider {
                 text-align: center;
+                width: 8px;
 
                 abbr {
                   font-size: inherit;

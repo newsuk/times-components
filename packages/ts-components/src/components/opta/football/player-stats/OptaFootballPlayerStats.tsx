@@ -19,6 +19,7 @@ export const OptaFootballPlayerStats: React.FC<{
   season: string;
   competition: string;
   visible_categories: string; // goals | assists | cards_red | cards_yellow
+  classes?: string;
   show_title?: boolean;
   full_width?: boolean;
 }> = React.memo(
@@ -27,7 +28,8 @@ export const OptaFootballPlayerStats: React.FC<{
     competition,
     full_width,
     show_title = true,
-    visible_categories
+    visible_categories,
+    classes
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -59,7 +61,7 @@ export const OptaFootballPlayerStats: React.FC<{
               show_crests: true,
               show_title,
               date_format: 'DD/MM/YYYY',
-              breakpoints: '520'
+              breakpoints: '200'
             }).outerHTML;
 
             initComponent();
@@ -73,7 +75,7 @@ export const OptaFootballPlayerStats: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width}>
+      <Container border={isReady} fullWidth={full_width} className={classes}>
         <WidgetContainer ref={ref} />
 
         {!isReady && (
