@@ -40,8 +40,8 @@ describe('addFixturesPageLink', () => {
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(elements, 'https://www.thetimes.co.uk/sport/football/euro-2024');
     jest.advanceTimersByTime(3000);
     const transformedElements = Array.from(elements);
-    const anchorElement = transformedElements[transformedElements.length-1].querySelector('a') as HTMLElement;
-    expect(anchorElement).toBeInstanceOf;
-    expect(anchorElement.querySelector('span')?.textContent).toBe('Full Fixtures & Results');
+    const anchorElement = transformedElements[transformedElements.length-1].querySelector('a') as HTMLAnchorElement;
+    expect(anchorElement).toBeInstanceOf(HTMLAnchorElement);
+    expect((anchorElement.querySelector('span') as HTMLElement).textContent).toBe('Full Fixtures & Results');
   });
 });

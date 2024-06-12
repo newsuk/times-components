@@ -54,36 +54,35 @@ describe('useFixturePageLink', () => {
   });
 
 
-  const TestComponent = ({ container, isDarkMode, fixturesPageUrl }: {container: string, isDarkMode: boolean, fixturesPageUrl: string}) => {
-    useFixturePageLinkFn.useFixturePageLink(ref, container, isDarkMode, fixturesPageUrl);
+  const TestComponent = ({ container, isDarkMode, pageUrl }: {container: string, isDarkMode: boolean, pageUrl: string}) => {
+    useFixturePageLinkFn.useFixturePageLink(ref, container, isDarkMode, pageUrl);
     return <div ref={ref}><div className={container}></div></div>;
   };
 
   it('should call getAndAddFixturesPageLink on mount', () => {
-    render(<TestComponent container={classNameForFixtures} fixturesPageUrl="http://fixtures.url" isDarkMode={false} />);
+    render(<TestComponent container={classNameForFixtures} pageUrl={fixturesPageUrl} isDarkMode={false} />);
     jest.advanceTimersByTime(3000);
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalled();
   });
 
   it('should have link appended to the end', async () => {
-    const fixturesPageUrl = 'https://www.thetimes.co.uk/sport/football/euro-2024';
-    render(<TestComponent container={classNameForFixtures} fixturesPageUrl={fixturesPageUrl} isDarkMode={false} />);
+    render(<TestComponent container={classNameForFixtures} pageUrl={fixturesPageUrl} isDarkMode={false} />);
     jest.advanceTimersByTime(3000);
     await waitFor(() => {
       const elements = document.getElementsByClassName(classNameForFixtures);
       expect(elements.length).toBe(1);
       const transformedElements = Array.from(elements);
-      const appendedLink: HTMLAnchorElement | null = transformedElements[transformedElements.length-1].querySelector('.fixtures-page-link a');
+      const appendedLink = transformedElements[transformedElements.length-1].querySelector('.fixtures-page-link a') as HTMLAnchorElement;
       expect(appendedLink).toBeInstanceOf(HTMLAnchorElement);
-      expect(appendedLink?.href).toBe(fixturesPageUrl);
-      expect(appendedLink?.querySelector('span')?.textContent).toBe('Full Fixtures & Results');
+      expect(appendedLink.href).toBe(fixturesPageUrl);
+      expect((appendedLink.querySelector('span') as HTMLElement).textContent).toBe('Full Fixtures & Results');
     });
   });
 
   it('should retry adding fixture link inside setInterval', () => {
 
-    const TestComponentMaxRetries = ({ container, isDarkMode, fixturesPageUrl }: {container: string, isDarkMode: boolean, fixturesPageUrl: string}) => {
-      useFixturePageLinkFn.useFixturePageLink(ref, container, isDarkMode, fixturesPageUrl);
+    const TestComponentMaxRetries = ({ container, isDarkMode, pageUrl }: {container: string, isDarkMode: boolean, pageUrl: string}) => {
+      useFixturePageLinkFn.useFixturePageLink(ref, container, isDarkMode, pageUrl);
       return <div ref={ref}></div>;
     };
 
@@ -91,9 +90,8 @@ describe('useFixturePageLink', () => {
 
     jest.useFakeTimers();
     jest.spyOn(global, 'setInterval');
-    const fixturesPageUrl = 'https://www.thetimes.co.uk/sport/football/euro-2024';
 
-    render(<TestComponentMaxRetries container="DummyClass" fixturesPageUrl={fixturesPageUrl} isDarkMode={false} />);
+    render(<TestComponentMaxRetries container="DummyClass" pageUrl={fixturesPageUrl} isDarkMode={false} />);
 
     expect(setInterval).toHaveBeenCalledTimes(1);
     jest.advanceTimersByTime(6000);
