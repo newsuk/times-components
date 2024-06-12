@@ -9,30 +9,25 @@ const CircleArrow = (isDarkMode: boolean) => {
 };
 
 export const addFixturesPageLink = (
-  element: HTMLCollectionOf<Element>,
+  element: Element,
   pageUrl: string = '',
   isDarkMode: boolean = false
 ) => {
-  for (let fixtureContainer of element) {
-    const fixturesPageUrlWrapper = Object.assign(
-      document.createElement('div'),
-      {
-        className: 'fixtures-page-link Opta-fixture'
-      }
-    );
+  const fixturesPageUrlWrapper = Object.assign(document.createElement('div'), {
+    className: 'fixtures-page-link Opta-fixture'
+  });
 
-    const link = Object.assign(document.createElement('a'), {
-      href: pageUrl
-    });
+  const link = Object.assign(document.createElement('a'), {
+    href: pageUrl
+  });
 
-    const linkText = Object.assign(document.createElement('span'), {
-      textContent: 'Full Fixtures & Results'
-    });
+  const linkText = Object.assign(document.createElement('span'), {
+    textContent: 'Full Fixtures & Results'
+  });
 
-    link.appendChild(linkText);
-    link.insertAdjacentHTML('beforeend', CircleArrow(isDarkMode));
+  link.appendChild(linkText);
+  link.insertAdjacentHTML('beforeend', CircleArrow(isDarkMode));
 
-    fixturesPageUrlWrapper.appendChild(link);
-    fixtureContainer.appendChild(fixturesPageUrlWrapper);
-  }
+  fixturesPageUrlWrapper.appendChild(link);
+  element.appendChild(fixturesPageUrlWrapper);
 };

@@ -33,21 +33,18 @@ describe('addFixturesPageLink', () => {
   it.only('should add link at the end of a list when valid elements are passed', async () => {
     jest.useFakeTimers();
     const container = mockAddFixturesPageLink();
-    const elements = container.getElementsByClassName('Opta-Room');
+    const element = container.querySelector('.Opta-Room') as Element;
     await addFixturesPageLinkModule.addFixturesPageLink(
-      elements,
+      element,
       'https://www.thetimes.co.uk/sport/football/euro-2024'
     );
 
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(
-      elements,
+      element,
       'https://www.thetimes.co.uk/sport/football/euro-2024'
     );
     jest.advanceTimersByTime(3000);
-    const transformedElements = Array.from(elements);
-    const anchorElement = transformedElements[
-      transformedElements.length - 1
-    ].querySelector('a') as HTMLAnchorElement;
+    const anchorElement = element.querySelector('a') as HTMLAnchorElement;
     expect(anchorElement).toBeInstanceOf(HTMLAnchorElement);
     expect(
       (anchorElement.querySelector('span') as HTMLElement).textContent

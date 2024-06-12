@@ -26,7 +26,7 @@ describe('getAndAddFixturesPageLink', () => {
       )
     ).toBe(true);
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(
-      expect.any(HTMLCollection),
+      expect.any(HTMLElement),
       fixturesPageUrl,
       false
     );
@@ -180,7 +180,7 @@ describe('useFixturePageLink', () => {
     jest.advanceTimersByTime(6000);
     expect(
       useFixturePageLinkFn.getAndAddFixturesPageLink
-    ).toHaveBeenCalledTimes(12); // 1 initial + 11 retries
+    ).toHaveBeenCalledTimes(31); // 1 initial + 30 retries
 
     jest.useRealTimers();
   });

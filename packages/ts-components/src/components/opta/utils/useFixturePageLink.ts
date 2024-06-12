@@ -6,11 +6,9 @@ export const getAndAddFixturesPageLink = (
   fixturesPageUrl: string,
   isDarkMode: boolean
 ): boolean => {
-  const OptaRoom = document.getElementsByClassName(container);
-  const fixturesPageUrlElement = document.getElementsByClassName(
-    'fixtures-page-link'
-  );
-  if (OptaRoom.length && !fixturesPageUrlElement.length) {
+  const OptaRoom = document.querySelector(`.${container}`);
+  const fixturesPageUrlElement = document.querySelector('.fixtures-page-link');
+  if (OptaRoom && !fixturesPageUrlElement) {
     addFixturesPageLink(OptaRoom, fixturesPageUrl, isDarkMode);
     return true;
   }
@@ -34,7 +32,7 @@ export const useFixturePageLink = (
       if (!addFixtureLink) {
         let count = 0;
         setFixtureLink = setInterval(() => {
-          if (count >= 10) {
+          if (count >= 30) {
             clearInterval(setFixtureLink);
           }
           count++;
@@ -46,7 +44,7 @@ export const useFixturePageLink = (
           if (addFixtureLink) {
             clearInterval(setFixtureLink);
           }
-        }, 500);
+        }, 200);
       }
       return () => {
         if (setFixtureLink) {
