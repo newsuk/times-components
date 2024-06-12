@@ -14,6 +14,7 @@ import { PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
 import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
 import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
+import { useFixturePageLink } from '../../utils/useFixturePageLink';
 
 export const OptaFootballFixturesTicker: React.FC<{
   season: string;
@@ -23,6 +24,9 @@ export const OptaFootballFixturesTicker: React.FC<{
   days_ahead?: number;
   days_before?: number;
   round?: string;
+  isDarkMode?: boolean;
+  isApp?: boolean;
+  fixturesPageUrl?: string;
 }> = React.memo(
   ({
     season,
@@ -31,7 +35,10 @@ export const OptaFootballFixturesTicker: React.FC<{
     date_to,
     days_ahead,
     days_before,
-    round
+    round,
+    isDarkMode,
+    isApp,
+    fixturesPageUrl
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -78,11 +85,15 @@ export const OptaFootballFixturesTicker: React.FC<{
       [ref]
     );
 
+    fixturesPageUrl &&
+      !isApp &&
+      useFixturePageLink(ref, 'Opta-Room', isDarkMode, fixturesPageUrl);
+
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
 
     return (
       <>
-        <WidgetContainer ref={ref} />
+        <WidgetContainer isApp={isApp} isDarkMode={isDarkMode} ref={ref} />
 
         {!isReady && (
           <PlaceholderContainer height={80}>
