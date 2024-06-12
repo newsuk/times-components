@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.89.0...@times-components/ts-components@1.90.0) (2024-06-12)
+
+
+### Features
+
+* **TMRS-223:** Added support for parameters isApp, isDarkMode and fixturesPageUrl for fixtures ticker ([#3869](https://github.com/newsuk/times-components/issues/3869)) ([6302ab9](https://github.com/newsuk/times-components/commit/6302ab979ec88716098f53b8d02c95818cb66032))
+* **TMRS-226:** transform text on euro widgets and add dynamic classes ([#3870](https://github.com/newsuk/times-components/issues/3870)) ([52831d7](https://github.com/newsuk/times-components/commit/52831d79feedeec7d3091c4d70de957b4620a574))
+
+
+
+
+
 # [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.88.1...@times-components/ts-components@1.89.0) (2024-06-10)
 
 

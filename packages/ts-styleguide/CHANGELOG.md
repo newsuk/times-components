@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.50.25](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.50.24...@times-components/ts-styleguide@1.50.25) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
 ## [1.50.24](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.50.23...@times-components/ts-styleguide@1.50.24) (2024-06-10)
 
 **Note:** Version bump only for package @times-components/ts-styleguide

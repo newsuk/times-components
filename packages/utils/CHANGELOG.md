@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.22.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.21.0...@times-components/utils@6.22.0) (2024-06-12)
+
+
+### Features
+
+* **TMRS-226:** transform text on euro widgets and add dynamic classes ([#3870](https://github.com/newsuk/times-components/issues/3870)) ([52831d7](https://github.com/newsuk/times-components/commit/52831d79feedeec7d3091c4d70de957b4620a574))
+
+
+
+
+
 # [6.21.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.20.6...@times-components/utils@6.21.0) (2024-06-03)
 
 
