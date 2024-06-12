@@ -103,6 +103,7 @@ describe('OptaFootballFixturesTicker without flags', () => {
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
+    expect(mockUseFixturePageLink).not.toHaveBeenCalled();
     expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
     expect(asFragment()).toMatchSnapshot();
   });

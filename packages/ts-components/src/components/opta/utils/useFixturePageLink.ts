@@ -1,7 +1,7 @@
 import { RefObject, useEffect } from 'react';
 import { addFixturesPageLink } from './addFixturesPageLink';
 
-const getAndAddFixturesPageLink = (
+export const getAndAddFixturesPageLink = (
   container: string,
   fixturesPageUrl: string,
   isDarkMode: boolean
@@ -25,7 +25,7 @@ export const useFixturePageLink = (
 ) => {
   useEffect(
     () => {
-      const addFixtureLink = getAndAddFixturesPageLink(
+      let addFixtureLink = getAndAddFixturesPageLink(
         container,
         fixturesPageUrl,
         isDarkMode
@@ -37,8 +37,10 @@ export const useFixturePageLink = (
             clearInterval(setFixtureLink);
           }
           count++;
-          getAndAddFixturesPageLink(container, fixturesPageUrl, isDarkMode);
-          clearInterval(setFixtureLink);
+          addFixtureLink = getAndAddFixturesPageLink(container, fixturesPageUrl, isDarkMode);
+          if(addFixtureLink){
+            clearInterval(setFixtureLink);
+          }
         }, 500);
       }
     },

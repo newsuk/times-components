@@ -35,3 +35,23 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
       />
     );
   });
+
+
+storiesOf('Typescript Component/In Article/Football/Fixtures', module)
+  .addDecorator(withKnobs)
+  .add('Fixtures Ticker dark mode and link', () => {
+    const selComp = select('Competition', competitons, '8');
+    return (
+      <OptaFootballFixturesTicker
+        season={text('season', '2023')}
+        competition={selComp}
+        date_from=""
+        date_to=""
+        days_ahead={number('days ahead (of current day)', 100)}
+        days_before={number('days before (of current day)', 100)}
+        round={text('round(s)', '')}
+        isDarkMode={true}
+        fixturesPageUrl='https://www.thetimes.co.uk/sport/football/euro-2024'
+      />
+    );
+  });
