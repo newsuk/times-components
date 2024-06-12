@@ -61,7 +61,7 @@ export const OptaFootballPlayerStats: React.FC<{
               show_crests: true,
               show_title,
               date_format: 'DD/MM/YYYY',
-              breakpoints: '300'
+              breakpoints: '200'
             }).outerHTML;
 
             initComponent();
