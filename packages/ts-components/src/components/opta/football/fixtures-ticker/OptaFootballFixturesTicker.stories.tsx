@@ -36,7 +36,6 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
     );
   });
 
-
 storiesOf('Typescript Component/In Article/Football/Fixtures', module)
   .addDecorator(withKnobs)
   .add('Fixtures Ticker dark mode and link', () => {
@@ -51,7 +50,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
         days_before={number('days before (of current day)', 100)}
         round={text('round(s)', '')}
         isDarkMode={true}
-        fixturesPageUrl='https://www.thetimes.co.uk/sport/football/euro-2024'
+        fixturesPageUrl="https://www.thetimes.co.uk/sport/football/euro-2024"
       />
     );
   });

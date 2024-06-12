@@ -112,7 +112,12 @@ describe('OptaFootballFixturesTicker without flags', () => {
     (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
     const { asFragment, getByText } = render(
-      <OptaFootballFixturesTicker season="2023" competition="3" isDarkMode={true} fixturesPageUrl={'https://www.thetimes.co.uk/sport/football/euro-2024'} />
+      <OptaFootballFixturesTicker
+        season="2023"
+        competition="3"
+        isDarkMode={true}
+        fixturesPageUrl={'https://www.thetimes.co.uk/sport/football/euro-2024'}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
 

@@ -63,8 +63,12 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         transition: all 0.3s linear 0s;
         background-image: linear-gradient(
           -90deg,
-          ${({ isDarkMode }) => (isDarkMode ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)')} 0%,
-          ${({ isDarkMode }) => (isDarkMode ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)')} 100%,
+          ${({ isDarkMode }) =>
+              isDarkMode ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)'}
+            0%,
+          ${({ isDarkMode }) =>
+              isDarkMode ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)'}
+            100%
         );
         width: 64px;
         height: 100%;

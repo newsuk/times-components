@@ -6,7 +6,7 @@ const mockAddFixturesPageLink = () => {
 
   const mockDomWrapper = document.createElement('div');
   mockDomWrapper.classList.add('Opta-Room');
-  
+
   const mockDomElement = document.createElement('div');
   const mockDomElement2 = document.createElement('div');
   const mockDomElement3 = document.createElement('div');
@@ -27,7 +27,6 @@ const mockAddFixturesPageLink = () => {
   return mockDomContainer;
 };
 
-
 describe('addFixturesPageLink', () => {
   jest.spyOn(addFixturesPageLinkModule, 'addFixturesPageLink');
 
@@ -35,13 +34,23 @@ describe('addFixturesPageLink', () => {
     jest.useFakeTimers();
     const container = mockAddFixturesPageLink();
     const elements = container.getElementsByClassName('Opta-Room');
-    await addFixturesPageLinkModule.addFixturesPageLink(elements, 'https://www.thetimes.co.uk/sport/football/euro-2024');
+    await addFixturesPageLinkModule.addFixturesPageLink(
+      elements,
+      'https://www.thetimes.co.uk/sport/football/euro-2024'
+    );
 
-    expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(elements, 'https://www.thetimes.co.uk/sport/football/euro-2024');
+    expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(
+      elements,
+      'https://www.thetimes.co.uk/sport/football/euro-2024'
+    );
     jest.advanceTimersByTime(3000);
     const transformedElements = Array.from(elements);
-    const anchorElement = transformedElements[transformedElements.length-1].querySelector('a') as HTMLAnchorElement;
+    const anchorElement = transformedElements[
+      transformedElements.length - 1
+    ].querySelector('a') as HTMLAnchorElement;
     expect(anchorElement).toBeInstanceOf(HTMLAnchorElement);
-    expect((anchorElement.querySelector('span') as HTMLElement).textContent).toBe('Full Fixtures & Results');
+    expect(
+      (anchorElement.querySelector('span') as HTMLElement).textContent
+    ).toBe('Full Fixtures & Results');
   });
 });

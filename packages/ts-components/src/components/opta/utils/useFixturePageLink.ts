@@ -1,11 +1,11 @@
-import { RefObject, useEffect } from 'react';
+import { useEffect } from 'react';
 import { addFixturesPageLink } from './addFixturesPageLink';
 
 export const getAndAddFixturesPageLink = (
   container: string,
   fixturesPageUrl: string,
   isDarkMode: boolean
-) => {
+): boolean => {
   const OptaRoom = document.getElementsByClassName(container);
   const fixturesPageUrlElement = document.getElementsByClassName(
     'fixtures-page-link'
@@ -18,11 +18,11 @@ export const getAndAddFixturesPageLink = (
 };
 
 export const useFixturePageLink = (
-  ref: RefObject<HTMLDivElement>,
+  ref: React.RefObject<HTMLDivElement>,
   container: string,
   isDarkMode: boolean = false,
   fixturesPageUrl: string
-) => {
+): void => {
   useEffect(
     () => {
       let addFixtureLink = getAndAddFixturesPageLink(
@@ -30,20 +30,30 @@ export const useFixturePageLink = (
         fixturesPageUrl,
         isDarkMode
       );
+      let setFixtureLink: NodeJS.Timeout | undefined;
       if (!addFixtureLink) {
         let count = 0;
-        const setFixtureLink = setInterval(() => {
+        setFixtureLink = setInterval(() => {
           if (count >= 10) {
             clearInterval(setFixtureLink);
           }
           count++;
-          addFixtureLink = getAndAddFixturesPageLink(container, fixturesPageUrl, isDarkMode);
-          if(addFixtureLink){
+          addFixtureLink = getAndAddFixturesPageLink(
+            container,
+            fixturesPageUrl,
+            isDarkMode
+          );
+          if (addFixtureLink) {
             clearInterval(setFixtureLink);
           }
         }, 500);
       }
+      return () => {
+        if (setFixtureLink) {
+          clearInterval(setFixtureLink);
+        }
+      };
     },
-    [ref, fixturesPageUrl, isDarkMode, container]
+    [ref, container, fixturesPageUrl, isDarkMode]
   );
 };
