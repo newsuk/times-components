@@ -37,7 +37,7 @@ const flagStyles = Object.keys(countries).map(
     background-size: 20px;
     background-repeat: no-repeat;
   }
-  .Opta-Team {
+  .Opta-Team-${countryCode} .Opta-Team {
     background-position: 0 13px;
     padding-left: 28px !important;
     
