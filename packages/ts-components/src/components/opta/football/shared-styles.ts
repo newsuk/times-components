@@ -37,7 +37,7 @@ const flagStyles = Object.keys(countries).map(
     background-size: 20px;
     background-repeat: no-repeat;
   }
-  .Opta-Team  {
+  .Opta-Team {
     background-position: 0 13px;
     padding-left: 28px !important;
     
@@ -52,6 +52,12 @@ const flagStyles = Object.keys(countries).map(
   }
   .Opta-Scoreline .Opta-Team-${countryCode}.Opta-Team  {
     padding-left: 28px !important;
+
+    @media (max-width: ${breakpoints.small}px) {
+      background-image: none;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
   .Opta-Scoreline .Opta-Home.Opta-Team-${countryCode}.Opta-Team  {
     padding-left: 0 !important;

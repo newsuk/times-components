@@ -6,7 +6,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX iRArbx team-flags"
+      class="sc-htpNat sc-ifAKCX buWSi team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -23,7 +23,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX iRArbx team-flags"
+      class="sc-htpNat sc-ifAKCX buWSi team-flags"
     >
       <div>
         Widget
@@ -39,7 +39,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX kDCRj team-flags"
+      class="sc-htpNat sc-ifAKCX Owkey team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -56,7 +56,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX kDCRj team-flags"
+      class="sc-htpNat sc-ifAKCX Owkey team-flags"
     >
       <div>
         Widget
@@ -72,7 +72,7 @@ exports[`OptaFootballFixturesTournament should render other competitions correct
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX cmRggy"
+      class="sc-htpNat sc-ifAKCX cICamq"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -89,7 +89,7 @@ exports[`OptaFootballFixturesTournament should render other competitions correct
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX cmRggy"
+      class="sc-htpNat sc-ifAKCX cICamq"
     >
       <div>
         Widget
