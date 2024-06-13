@@ -49,7 +49,11 @@ describe('OptaFootballFixturesTournament', () => {
   });
   it('should render full width correctly', async () => {
     const { asFragment, getByText } = render(
-      <OptaFootballFixturesTournament season="2023" competition="3" full_width />
+      <OptaFootballFixturesTournament
+        season="2023"
+        competition="3"
+        full_width
+      />
     );
     expect(asFragment()).toMatchSnapshot();
 
