@@ -12,59 +12,95 @@ import {
 
 import { PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
+import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
+import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
+import { useFixturePageLink } from '../../utils/useFixturePageLink';
 
 export const OptaFootballFixturesTicker: React.FC<{
   season: string;
   competition: string;
   date_from?: string;
   date_to?: string;
-}> = React.memo(({ season, competition, date_from, date_to }) => {
-  const ref = React.createRef<HTMLDivElement>();
+  days_ahead?: number;
+  days_before?: number;
+  round?: string;
+  isDarkMode?: boolean;
+  isApp?: boolean;
+  fixturesPageUrl?: string;
+}> = React.memo(
+  ({
+    season,
+    competition,
+    date_from,
+    date_to,
+    days_ahead,
+    days_before,
+    round,
+    isDarkMode,
+    isApp,
+    fixturesPageUrl
+  }) => {
+    const ref = React.createRef<HTMLDivElement>();
 
-  const [isReady, setIsReady] = useState<boolean>(false);
+    const [isReady, setIsReady] = useState<boolean>(false);
+    const isNationalComp = isNationalCompetition(competition);
 
-  useEffect(() => {
-    const sport = 'football';
+    useEffect(
+      () => {
+        const sport = 'football';
 
-    initSettings();
-    initStyleSheet(sport);
+        initSettings();
+        initStyleSheet(sport);
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport,
-          widget: 'fixtures',
-          season,
-          competition,
-          date_from,
-          date_to,
-          live: true,
-          start_on_current: true,
-          template: 'strip',
-          team_naming: 'brief',
-          match_status: 'all',
-          order_by: 'date_ascending',
-          show_grouping: true,
-          show_crests: true,
-          show_date: true,
-          date_format: 'ddd Do MMM'
-        }).outerHTML;
+        initScript().then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement('opta-widget', {
+              sport,
+              widget: 'fixtures',
+              season,
+              competition,
+              date_from,
+              date_to,
+              days_ahead,
+              days_before,
+              round,
+              live: true,
+              start_on_current: true,
+              template: 'strip',
+              team_naming: 'brief',
+              match_status: 'all',
+              order_by: 'date_ascending',
+              show_grouping: true,
+              show_crests: !isNationalComp,
+              show_date: true,
+              show_live: true,
+              date_format: 'ddd Do MMM'
+            }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, []);
+            initComponent();
+            setIsReady(true);
+          }
+        });
+      },
+      [ref]
+    );
 
-  return (
-    <>
-      <WidgetContainer ref={ref} />
+    fixturesPageUrl &&
+      !isApp &&
+      useFixturePageLink(ref, 'Opta-Room', isDarkMode, fixturesPageUrl);
 
-      {!isReady && (
-        <PlaceholderContainer height={100}>
-          <Placeholder />
-        </PlaceholderContainer>
-      )}
-    </>
-  );
-});
+    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
+
+    return (
+      <>
+        <WidgetContainer isApp={isApp} isDarkMode={isDarkMode} ref={ref} />
+
+        {!isReady && (
+          <PlaceholderContainer height={80}>
+            <Placeholder />
+          </PlaceholderContainer>
+        )}
+      </>
+    );
+  }
+);

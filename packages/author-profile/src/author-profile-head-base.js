@@ -2,7 +2,6 @@ import React, { memo } from "react";
 import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/ts-styleguide";
-import { useBreakpointKey } from "newskit";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
@@ -17,25 +16,15 @@ const AuthorProfileHeadBase = memo(
     renderBiography,
     renderImage,
     renderName,
-    twitter,
-    contractualTitle
+    twitter
   }) => {
-    const breakpoint = useBreakpointKey();
-    const isLargeDevice = breakpoint === "lg" || breakpoint === "xl";
-
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }
 
     const renderJobTitle = () => {
       if (!jobTitle) return null;
-      return (
-        <AuthorProfileHeadJobTitle
-          jobTitle={jobTitle}
-          contractualTitle={contractualTitle}
-          isLargeDevice={isLargeDevice}
-        />
-      );
+      return <AuthorProfileHeadJobTitle jobTitle={jobTitle} />;
     };
 
     const renderTwitterLink = () => {
@@ -72,8 +61,7 @@ AuthorProfileHeadBase.propTypes = {
   renderBiography: PropTypes.func.isRequired,
   renderImage: PropTypes.func.isRequired,
   renderName: PropTypes.func.isRequired,
-  twitter: PropTypes.string,
-  contractualTitle: PropTypes.string
+  twitter: PropTypes.string
 };
 
 AuthorProfileHeadBase.defaultProps = {

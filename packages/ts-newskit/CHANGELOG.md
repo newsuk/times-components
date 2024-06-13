@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.184.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.183.0...@times-components/ts-newskit@1.184.0) (2024-06-12)
+
+
+### Features
+
+* **TMRS-226:** transform text on euro widgets and add dynamic classes ([#3870](https://github.com/newsuk/times-components/issues/3870)) ([52831d7](https://github.com/newsuk/times-components/commit/52831d79feedeec7d3091c4d70de957b4620a574))
+
+
+
+
+
+# [1.183.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.182.0...@times-components/ts-newskit@1.183.0) (2024-06-03)
+
+
+### Features
+
+* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
+
+
+
+
+
+# [1.182.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.181.2...@times-components/ts-newskit@1.182.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+
+
+
+
+
+## [1.181.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.181.1...@times-components/ts-newskit@1.181.2) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 ## [1.181.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.181.0...@times-components/ts-newskit@1.181.1) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/ts-newskit

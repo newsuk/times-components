@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import {
   IconFacebook,
@@ -8,7 +8,6 @@ import {
 } from "@times-components/icons";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
-import { Stack } from "newskit";
 import { SaveStar } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
 
@@ -17,7 +16,16 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 
-import { StyledButton, PopoverContent, StyledPopover } from "./styled";
+import {
+  SaveAndShareBarContainer,
+  ShareButtonContainer,
+  OutlineButton,
+  Popover,
+  PopoverHeader,
+  PopoverContent,
+  CloseButton
+} from "./styled";
+import CloseIcon from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
@@ -33,6 +41,61 @@ function SaveAndShareBar(props) {
     isPreviewMode
   } = props;
 
+  const [popoverOpen, setPopoverOpen] = React.useState(false);
+  const [windowHeight, setWindowHeight] = React.useState(null);
+  const [windowWidth, setWindowWidth] = React.useState(null);
+
+  const barRef = React.useRef();
+  const shareBtnRef = React.useRef();
+  const popoverRef = React.useRef();
+
+  // Set window height after hydration
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowHeight(window.innerHeight);
+      setWindowWidth(window.innerWidth);
+    }
+  }, []);
+
+  // Add event listener to close popover when clicked outside
+  useEffect(() => {
+    if (!popoverRef.current) return undefined;
+    function clickHandler(event) {
+      // Close popover if clicked outside popover or on share button
+      if (
+        !popoverRef.current.contains(event.target) &&
+        event.target !== shareBtnRef.current
+      ) {
+        setPopoverOpen(false);
+      }
+    }
+
+    document.body.addEventListener("click", clickHandler);
+
+    return () => {
+      document.body.removeEventListener("click", clickHandler);
+    };
+  }, []);
+
+  const barPosition = barRef.current
+    ? barRef.current.getBoundingClientRect().bottom
+    : windowHeight;
+
+  // Position the popover at the top if the bar length is less than 400px from the bottom
+  function getPosition() {
+    const isLargeDevice = windowWidth && windowWidth > 449;
+    const threshold = isLargeDevice ? 250 : 400;
+    if (!windowHeight) return "bottom";
+    if (windowHeight - barPosition > threshold) {
+      return "bottom";
+    }
+    return "top";
+  }
+
+  const togglePopover = () => {
+    setPopoverOpen(prev => !prev);
+  };
+
   function copyToClipboard(e) {
     const { onCopyLink } = props;
     e.preventDefault();
@@ -42,23 +105,30 @@ function SaveAndShareBar(props) {
   }
 
   return (
-    <Stack
-      data-testid="save-and-share-bar"
-      flow="horizontal-center"
-      spaceInline="space050"
-      overrides={{ paddingBlock: "14px" }}
-    >
+    <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
       {sharingEnabled && (
-        <StyledPopover
-          placement="bottom"
-          header="Share this article"
-          overrides={{
-            minWidth: { xs: "90%", md: "auto" }
-          }}
-          content={
-            <PopoverContent
-              flow={{ xs: "vertical-start", md: "horizontal-center" }}
-            >
+        <ShareButtonContainer>
+          <OutlineButton
+            ref={shareBtnRef}
+            isPopoverOpen={popoverOpen}
+            onClick={togglePopover}
+          >
+            <Share style={{ height: 14, width: 14 }} />
+            Share
+          </OutlineButton>
+          <Popover
+            ref={popoverRef}
+            position={getPosition()}
+            isOpen={popoverOpen}
+            aria-expanded={popoverOpen}
+          >
+            <PopoverHeader>
+              <h3>Share this article</h3>
+              <CloseButton onClick={togglePopover}>
+                <CloseIcon />
+              </CloseButton>
+            </PopoverHeader>
+            <PopoverContent>
               <SectionContext.Consumer>
                 {({ publicationName }) => (
                   <UserState
@@ -89,6 +159,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconTwitter
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.height}
                       title="Share on Twitter"
@@ -108,6 +179,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconFacebook
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.fb.height}
                       title="Share on Facebook"
@@ -127,6 +199,7 @@ function SaveAndShareBar(props) {
                 <ShareItemLabel
                   icon={
                     <IconCopyLink
+                      ariaLabel=""
                       fillColour="currentColor"
                       height={styles.svgIcon.height}
                       title="Copy link to clipboard"
@@ -137,16 +210,8 @@ function SaveAndShareBar(props) {
                 </ShareItemLabel>
               </ShareItem>
             </PopoverContent>
-          }
-        >
-          <StyledButton
-            size="small"
-            overrides={{ stylePreset: "buttonOutlinedPrimary" }}
-          >
-            <Share style={{ height: 14, width: 14 }} />
-            Share
-          </StyledButton>
-        </StyledPopover>
+          </Popover>
+        </ShareButtonContainer>
       )}
 
       {savingEnabled ? (
@@ -170,7 +235,7 @@ function SaveAndShareBar(props) {
           )}
         </>
       ) : null}
-    </Stack>
+    </SaveAndShareBarContainer>
   );
 }
 

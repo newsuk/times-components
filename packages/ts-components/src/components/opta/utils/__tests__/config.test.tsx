@@ -1,4 +1,9 @@
-import { initSettings, initStyleSheet, initElement } from '../config';
+import {
+  initSettings,
+  initStyleSheet,
+  initElement,
+  initComponent
+} from '../config';
 
 describe('Opta config', () => {
   it('should initialise opta settings', async () => {
@@ -6,6 +11,14 @@ describe('Opta config', () => {
     expect(window.opta_settings.subscription_id).toEqual(
       'db98cff9f9612c01bbf3435964748e95'
     );
+  });
+
+  it('should initialise football stylesheet', async () => {
+    initStyleSheet('cricket');
+    const element = document.head.querySelector(
+      'link[href="https://secure.widget.cloud.opta.net/v3/css/v3.cricket.opta-widgets.css"]'
+    );
+    expect(element).toBeTruthy();
   });
 
   it('should initialise football stylesheet', async () => {
@@ -34,5 +47,11 @@ describe('Opta config', () => {
     expect(element.nodeName).toEqual('OPTA-WIDGET');
     expect(element.getAttribute('sport')).toEqual('football');
     expect(element.childNodes[0].nodeName).toEqual('OPTA-SUB-WIDGET');
+  });
+
+  it('should create the correct element', async () => {
+    const element = initComponent();
+
+    expect(element).toBe(undefined);
   });
 });

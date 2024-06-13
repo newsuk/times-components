@@ -1,23 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OptaFootballFixturesTicker should render correctly 1`] = `
+exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX elhfwo"
+    class="sc-htpNat sc-ifAKCX caFyxi"
   />
   <div
-    class="sc-bwzfXH eLGWmp"
-    height="100"
+    class="sc-bwzfXH uxFfR"
+    height="80"
   >
     Placeholder
   </div>
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker should render correctly 2`] = `
+exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX elhfwo"
+    class="sc-htpNat sc-ifAKCX caFyxi"
+  >
+    <div>
+      Widget
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX caFyxi"
+  />
+  <div
+    class="sc-bwzfXH uxFfR"
+    height="80"
+  >
+    Placeholder
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX caFyxi"
+  >
+    <div>
+      Widget
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX kVKYmp"
+  />
+  <div
+    class="sc-bwzfXH uxFfR"
+    height="80"
+  >
+    Placeholder
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX kVKYmp"
+  >
+    <div>
+      Widget
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cKbsMn"
+  />
+  <div
+    class="sc-bwzfXH uxFfR"
+    height="80"
+  >
+    Placeholder
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat sc-ifAKCX cKbsMn"
   >
     <div>
       Widget

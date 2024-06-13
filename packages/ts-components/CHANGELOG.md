@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.89.0...@times-components/ts-components@1.90.0) (2024-06-12)
+
+
+### Features
+
+* **TMRS-223:** Added support for parameters isApp, isDarkMode and fixturesPageUrl for fixtures ticker ([#3869](https://github.com/newsuk/times-components/issues/3869)) ([6302ab9](https://github.com/newsuk/times-components/commit/6302ab979ec88716098f53b8d02c95818cb66032))
+* **TMRS-226:** transform text on euro widgets and add dynamic classes ([#3870](https://github.com/newsuk/times-components/issues/3870)) ([52831d7](https://github.com/newsuk/times-components/commit/52831d79feedeec7d3091c4d70de957b4620a574))
+
+
+
+
+
+# [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.88.1...@times-components/ts-components@1.89.0) (2024-06-10)
+
+
+### Features
+
+* **TMRS-208:** update widget tile states ([#3865](https://github.com/newsuk/times-components/issues/3865)) ([13c18f2](https://github.com/newsuk/times-components/commit/13c18f213f9acde4a802d028c05176889e47ff99))
+
+
+
+
+
+## [1.88.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.88.0...@times-components/ts-components@1.88.1) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.88.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.87.0...@times-components/ts-components@1.88.0) (2024-05-31)
+
+
+### Features
+
+* **TMRS-211:** update standings widget and replace flags function ([#3864](https://github.com/newsuk/times-components/issues/3864)) ([af29cba](https://github.com/newsuk/times-components/commit/af29cbaa1eb84dbaec158579506a9aa67ce13962))
+
+
+
+
+
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.86.0...@times-components/ts-components@1.87.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+* **TMRS-209:** add filters for displayed fixtures ([#3862](https://github.com/newsuk/times-components/issues/3862)) ([4d011af](https://github.com/newsuk/times-components/commit/4d011af71c847784e0b8b67d79ccd327bce6be0b))
+
+
+
+
+
+# [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.3...@times-components/ts-components@1.86.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
+## [1.85.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.2...@times-components/ts-components@1.85.3) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.85.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.85.1...@times-components/ts-components@1.85.2) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/ts-components

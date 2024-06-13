@@ -106,12 +106,7 @@ exports[`1. a full article 1`] = `
         Some Caption
       </figcaption>
     </figure>
-    <button
-      aria-haspopup="dialog"
-      data-testid="button"
-      size="small"
-      type="button"
-    >
+    <button>
       <svg
         aria-hidden="true"
         focusable="false"
@@ -122,10 +117,140 @@ exports[`1. a full article 1`] = `
           d="f816b9d168e3b4f52b448a8e0e73065a"
         />
       </svg>
-      <span>
-        Share
-      </span>
+      Share
     </button>
+    <h3>
+      Share this article
+    </h3>
+    <button>
+      <svg
+        height={12}
+        viewBox="0 0 14 14"
+        width={12}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="41814072799e1ba683d6814fad95e914"
+        />
+      </svg>
+    </button>
+    <a
+      data-testid="email-share"
+      href=""
+      target="_blank"
+      title="Share by email"
+    >
+      <svg
+        aria-label=""
+        height={16}
+        role="img"
+        title="Share by email"
+        viewBox="0 0 22 16"
+        width={22}
+      >
+        <title>
+          Share by email
+        </title>
+        <g>
+          <path
+            d="7662b27a9a5411e756afc5097a4eb94d"
+          />
+        </g>
+      </svg>
+      <span>
+        Email
+      </span>
+    </a>
+    <a
+      data-testid="share-twitter"
+      href="https://twitter.com/intent/tweet?text=https://url.io"
+      target="_blank"
+      title="Share on Twitter"
+    >
+      <svg
+        aria-label=""
+        height={16}
+        role="img"
+        title="Share on Twitter"
+        viewBox="0 0 24 24"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Share on Twitter
+        </title>
+        <g
+          clipPath="url(#clip0_2702_211136)"
+        >
+          <path
+            d="e7781feea17d63d57f67e7eaa876efac"
+          />
+        </g>
+        <defs>
+          <clipPath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <span>
+        Twitter
+      </span>
+    </a>
+    <a
+      data-testid="share-facebook"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+      target="_blank"
+      title="Share on Facebook"
+    >
+      <svg
+        aria-label=""
+        height={18}
+        role="img"
+        title="Share on Facebook"
+        viewBox="14 10 10.592460632324219 20.397258758544922"
+        width={9}
+      >
+        <title>
+          Share on Facebook
+        </title>
+        <g>
+          <path
+            d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          />
+        </g>
+      </svg>
+      <span>
+        Facebook
+      </span>
+    </a>
+    <a
+      data-testid="copy-to-clickboard"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+      target="_blank"
+      title="Copy link to clipboard"
+    >
+      <svg
+        aria-label=""
+        height={16}
+        role="img"
+        title="Copy link to clipboard"
+        viewBox="0 0 15 15"
+        width={15}
+      >
+        <title>
+          Copy link to clipboard
+        </title>
+        <path
+          d="f65af77b7574644b0c2e60934732135f"
+        />
+      </svg>
+      <span>
+        Link
+      </span>
+    </a>
     <article>
       <img
         alt="An image caption"
@@ -211,12 +336,7 @@ exports[`1. a full article 1`] = `
           Topic
         </a>
       </nav>
-      <button
-        aria-haspopup="dialog"
-        data-testid="button"
-        size="small"
-        type="button"
-      >
+      <button>
         <svg
           aria-hidden="true"
           focusable="false"
@@ -227,10 +347,140 @@ exports[`1. a full article 1`] = `
             d="f816b9d168e3b4f52b448a8e0e73065a"
           />
         </svg>
-        <span>
-          Share
-        </span>
+        Share
       </button>
+      <h3>
+        Share this article
+      </h3>
+      <button>
+        <svg
+          height={12}
+          viewBox="0 0 14 14"
+          width={12}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="41814072799e1ba683d6814fad95e914"
+          />
+        </svg>
+      </button>
+      <a
+        data-testid="email-share"
+        href=""
+        target="_blank"
+        title="Share by email"
+      >
+        <svg
+          aria-label=""
+          height={16}
+          role="img"
+          title="Share by email"
+          viewBox="0 0 22 16"
+          width={22}
+        >
+          <title>
+            Share by email
+          </title>
+          <g>
+            <path
+              d="7662b27a9a5411e756afc5097a4eb94d"
+            />
+          </g>
+        </svg>
+        <span>
+          Email
+        </span>
+      </a>
+      <a
+        data-testid="share-twitter"
+        href="https://twitter.com/intent/tweet?text=https://url.io"
+        target="_blank"
+        title="Share on Twitter"
+      >
+        <svg
+          aria-label=""
+          height={16}
+          role="img"
+          title="Share on Twitter"
+          viewBox="0 0 24 24"
+          width={20}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Share on Twitter
+          </title>
+          <g
+            clipPath="url(#clip0_2702_211136)"
+          >
+            <path
+              d="e7781feea17d63d57f67e7eaa876efac"
+            />
+          </g>
+          <defs>
+            <clipPath>
+              <rect
+                height="24"
+                width="24"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <span>
+          Twitter
+        </span>
+      </a>
+      <a
+        data-testid="share-facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+        target="_blank"
+        title="Share on Facebook"
+      >
+        <svg
+          aria-label=""
+          height={18}
+          role="img"
+          title="Share on Facebook"
+          viewBox="14 10 10.592460632324219 20.397258758544922"
+          width={9}
+        >
+          <title>
+            Share on Facebook
+          </title>
+          <g>
+            <path
+              d="8f9b8bbdce60b96352628d3dbf6e37a0"
+            />
+          </g>
+        </svg>
+        <span>
+          Facebook
+        </span>
+      </a>
+      <a
+        data-testid="copy-to-clickboard"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+        target="_blank"
+        title="Copy link to clipboard"
+      >
+        <svg
+          aria-label=""
+          height={16}
+          role="img"
+          title="Copy link to clipboard"
+          viewBox="0 0 15 15"
+          width={15}
+        >
+          <title>
+            Copy link to clipboard
+          </title>
+          <path
+            d="f65af77b7574644b0c2e60934732135f"
+          />
+        </svg>
+        <span>
+          Link
+        </span>
+      </a>
       <h2>
         Sponsored
       </h2>

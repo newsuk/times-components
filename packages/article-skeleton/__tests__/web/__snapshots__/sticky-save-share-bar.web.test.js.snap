@@ -2,7 +2,7 @@
 
 exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
-  <sticky-save-and-share-bar__StyledKeylineItem>
+  <sticky-save-and-share-bar__SaveShareItem>
     <StyledComponent
       forwardedRef={null}
     >
@@ -40,6 +40,6 @@ exports[`StickySaveAndShareBar renders 1`] = `
         </WithStickyContext(Sticky)>
       </div>
     </StyledComponent>
-  </sticky-save-and-share-bar__StyledKeylineItem>
+  </sticky-save-and-share-bar__SaveShareItem>
 </StickySaveAndShareBar>
 `;

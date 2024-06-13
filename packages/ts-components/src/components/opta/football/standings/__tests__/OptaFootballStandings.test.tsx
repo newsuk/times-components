@@ -33,10 +33,29 @@ const requiredProps = {
   competition: '3'
 };
 
+afterEach(() => {
+  jest.clearAllMocks();
+});
+
 describe('OptaFootballStandings', () => {
   it('should render correctly', async () => {
     const { asFragment, getByText } = render(
       <OptaFootballStandings {...requiredProps} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
+    expect(mockInitSettings).toHaveBeenCalledTimes(1);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
+    expect(mockInitComponent).toHaveBeenCalledTimes(1);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render correctly, with columns', async () => {
+    const { asFragment, getByText } = render(
+      <OptaFootballStandings columns {...requiredProps} />
     );
     expect(asFragment()).toMatchSnapshot();
 

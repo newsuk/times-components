@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.11](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.10...@times-components/pagination@3.13.11) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.10](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.9...@times-components/pagination@3.13.10) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.9](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.8...@times-components/pagination@3.13.9) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.7...@times-components/pagination@3.13.8) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.6...@times-components/pagination@3.13.7) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.5...@times-components/pagination@3.13.6) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.13.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.4...@times-components/pagination@3.13.5) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.13.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.13.3...@times-components/pagination@3.13.4) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/pagination

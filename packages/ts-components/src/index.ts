@@ -45,6 +45,9 @@ export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
 export {
+  OptaFootballFixturesTournament
+} from './components/opta/football/fixtures-tournament/OptaFootballFixturesTournament';
+export {
   OptaFootballStandings
 } from './components/opta/football/standings/OptaFootballStandings';
 export {
@@ -53,6 +56,9 @@ export {
 export {
   OptaFootballMatchStats
 } from './components/opta/football/match-stats/OptaFootballMatchStats';
+export {
+  OptaFootballPlayerStats
+} from './components/opta/football/player-stats/OptaFootballPlayerStats';
 
 export {
   OptaRugbyFixtures
@@ -99,3 +105,4 @@ export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
+export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';

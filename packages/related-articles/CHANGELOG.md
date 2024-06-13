@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.17.65](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.64...@times-components/related-articles@6.17.65) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.64](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.63...@times-components/related-articles@6.17.64) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.63](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.62...@times-components/related-articles@6.17.63) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.62](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.61...@times-components/related-articles@6.17.62) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.61](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.60...@times-components/related-articles@6.17.61) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.60](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.59...@times-components/related-articles@6.17.60) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.17.59](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.58...@times-components/related-articles@6.17.59) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [6.17.58](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.17.57...@times-components/related-articles@6.17.58) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/related-articles

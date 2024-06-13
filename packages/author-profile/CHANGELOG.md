@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.18.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.18.1...@times-components/author-profile@6.18.2) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.18.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.18.0...@times-components/author-profile@6.18.1) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+# [6.18.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.57...@times-components/author-profile@6.18.0) (2024-06-03)
+
+
+### Features
+
+* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
+
+
+
+
+
+## [6.17.57](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.56...@times-components/author-profile@6.17.57) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.56](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.55...@times-components/author-profile@6.17.56) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.55](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.54...@times-components/author-profile@6.17.55) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.54](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.53...@times-components/author-profile@6.17.54) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
 ## [6.17.53](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.52...@times-components/author-profile@6.17.53) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/author-profile

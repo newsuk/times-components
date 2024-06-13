@@ -11,10 +11,11 @@ const IconEmail = ({
   height,
   strokeColour,
   title = "Email Icon",
+  ariaLabel = "icon-email",
   width
 }) => (
   <svg
-    aria-label="icon-email"
+    aria-label={ariaLabel}
     role="img"
     viewBox={viewBox}
     {...clean({

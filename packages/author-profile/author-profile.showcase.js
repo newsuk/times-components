@@ -1,5 +1,4 @@
 import React from "react";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { AdComposer } from "@times-components/ad";
 import { AuthorProfileProvider } from "@times-components/provider";
 import {
@@ -61,18 +60,16 @@ const makeAuthorProfile = (decorateAction, params) => (
             pageSize: authorPageSize,
             refetch
           }) => (
-            <TCThemeProvider>
-              <AuthorProfile
-                author={author}
-                error={error}
-                isLoading={isLoading}
-                page={page}
-                pageSize={authorPageSize}
-                refetch={refetch}
-                slug={slug}
-                {...getProps(decorateAction)}
-              />
-            </TCThemeProvider>
+            <AuthorProfile
+              author={author}
+              error={error}
+              isLoading={isLoading}
+              page={page}
+              pageSize={authorPageSize}
+              refetch={refetch}
+              slug={slug}
+              {...getProps(decorateAction)}
+            />
           )}
         </AuthorProfileProvider>
       </MockedProvider>

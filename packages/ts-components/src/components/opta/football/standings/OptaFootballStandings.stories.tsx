@@ -13,18 +13,36 @@ const showcase = {
       type: 'decorator'
     },
     {
-      component: () => <OptaFootballStandings season="2020" competition="8" />,
+      component: () => <OptaFootballStandings season="2023" competition="8" />,
       name: 'Standings',
       type: 'story'
     },
     {
-      component: () => <OptaFootballStandings season="2020" competition="3" />,
+      component: () => (
+        <OptaFootballStandings
+          season="2023"
+          competition="3"
+          full_width
+          columns
+        />
+      ),
+      name: 'Standings (2 columns - desktop)',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <OptaFootballStandings
+          season="2023"
+          competition="3"
+          show_title={false}
+        />
+      ),
       name: 'Standings (inline)',
       type: 'story'
     },
     {
       component: () => (
-        <OptaFootballStandings season="2020" competition="3" navigation />
+        <OptaFootballStandings season="2023" competition="3" navigation />
       ),
       name: 'Standings (dropdown)',
       type: 'story'
@@ -32,7 +50,7 @@ const showcase = {
     {
       component: () => (
         <OptaFootballStandings
-          season="2020"
+          season="2023"
           competition="3"
           default_nav="4"
           navigation

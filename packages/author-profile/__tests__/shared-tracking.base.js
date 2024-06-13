@@ -1,6 +1,5 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import { iterator } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import "./mocks";
@@ -36,15 +35,13 @@ export default props => {
         );
 
         const articleListHeader = TestRenderer.create(
-          <TCThemeProvider>
-            <ArticleListHeader
-              {...articleList.props.articleListHeader.props}
-              analyticsStream={analyticsStream}
-              author={author}
-              page={5}
-              pageSize={10}
-            />
-          </TCThemeProvider>
+          <ArticleListHeader
+            {...articleList.props.articleListHeader.props}
+            analyticsStream={analyticsStream}
+            author={author}
+            page={5}
+            pageSize={10}
+          />
         );
 
         const twitterLink = articleListHeader.root.find(

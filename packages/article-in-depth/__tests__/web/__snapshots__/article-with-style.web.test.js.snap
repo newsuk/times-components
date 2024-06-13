@@ -272,6 +272,14 @@ exports[`full article with style 1`] = `
 .c18 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c18 [data-tc-sticky-sizer] {
@@ -293,8 +301,9 @@ exports[`full article with style 1`] = `
 }
 
 .c17 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -304,11 +313,7 @@ exports[`full article with style 1`] = `
 }
 
 .c17:last-child {
-  margin-bottom: 30px;
-}
-
-.c17.contains-tc-sticky {
-  border-bottom-color: transparent;
+  margin-bottom: 10px;
 }
 
 .c15 {
@@ -897,7 +902,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c10 c16 c17"
+          className="c16 c17"
         >
           <div
             display="none"
@@ -1326,6 +1331,14 @@ exports[`full article with style in the culture magazine 1`] = `
 .c18 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c18 [data-tc-sticky-sizer] {
@@ -1347,8 +1360,9 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c17 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -1358,11 +1372,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c17:last-child {
-  margin-bottom: 30px;
-}
-
-.c17.contains-tc-sticky {
-  border-bottom-color: transparent;
+  margin-bottom: 10px;
 }
 
 .c15 {
@@ -1952,7 +1962,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c10 c16 c17"
+          className="c16 c17"
         >
           <div
             display="none"
@@ -2381,6 +2391,14 @@ exports[`full article with style in the style magazine 1`] = `
 .c18 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c18 [data-tc-sticky-sizer] {
@@ -2402,8 +2420,9 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c17 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -2413,11 +2432,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c17:last-child {
-  margin-bottom: 30px;
-}
-
-.c17.contains-tc-sticky {
-  border-bottom-color: transparent;
+  margin-bottom: 10px;
 }
 
 .c15 {
@@ -3008,7 +3023,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c10 c16 c17"
+          className="c16 c17"
         >
           <div
             display="none"
@@ -3437,6 +3452,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .c18 {
   background-color: #FFFFFF;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c18 [data-tc-sticky-sizer] {
@@ -3458,8 +3481,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c17 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -3469,11 +3493,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c17:last-child {
-  margin-bottom: 30px;
-}
-
-.c17.contains-tc-sticky {
-  border-bottom-color: transparent;
+  margin-bottom: 10px;
 }
 
 .c15 {
@@ -4063,7 +4083,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c10 c16 c17"
+          className="c16 c17"
         >
           <div
             display="none"

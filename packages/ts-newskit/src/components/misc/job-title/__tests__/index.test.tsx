@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, fireEvent } from '../../../../utils/test-utils';
+import { render, fireEvent } from '@testing-library/react';
 import { JobTitleTooltip, JobTitlePopover, JobTitle } from '../job-title';
 import * as ResizeObserverModule from 'resize-observer-polyfill';
 
@@ -38,11 +38,11 @@ describe('JobTitleTooltip', () => {
     } = render(
       <JobTitleTooltip contractualTitle="Contractual Title Tooltip" />
     );
-    expect(queryByTestId('floating-element-panel')).toBeFalsy();
-    expect(queryByText('Contractual Title Tooltip')).toBeFalsy();
+    expect(queryByTestId('Tooltip-context')).not.toBeVisible();
+    expect(queryByText('Contractual Title Tooltip')).not.toBeVisible();
     fireEvent.mouseEnter(getByRole('button'));
     expect(asFragment()).toMatchSnapshot();
-    expect(getByTestId('floating-element-panel')).toBeVisible();
+    expect(getByTestId('Tooltip')).toBeVisible();
     expect(getByText('Contractual Title Tooltip')).toBeVisible();
   });
 });
@@ -59,11 +59,11 @@ describe('JobTitlePopover', () => {
     } = render(
       <JobTitlePopover contractualTitle="Contractual Title Popover" />
     );
-    expect(queryByTestId('floating-element-panel')).toBeFalsy();
-    expect(queryByText('Contractual Title Popover')).toBeFalsy();
+    expect(queryByTestId('Popover-context')).not.toBeVisible();
+    expect(queryByText('Contractual Title Popover')).not.toBeVisible();
     fireEvent.click(getByRole('button'));
     expect(asFragment()).toMatchSnapshot();
-    expect(getByTestId('floating-element-panel')).toBeVisible();
+    expect(getByTestId('Popover')).toBeVisible();
     expect(getByText('Contractual Title Popover')).toBeVisible();
     const closeButton = getByTestId('close-button');
     expect(closeButton).toBeVisible();

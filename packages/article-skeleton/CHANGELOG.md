@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.133.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.133.1...@times-components/article-skeleton@1.133.2) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.133.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.133.0...@times-components/article-skeleton@1.133.1) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.133.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.132.0...@times-components/article-skeleton@1.133.0) (2024-06-03)
+
+
+### Features
+
+* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
+
+
+
+
+
+# [1.132.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.131.0...@times-components/article-skeleton@1.132.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
+# [1.131.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.9...@times-components/article-skeleton@1.131.0) (2024-05-30)
+
+
+### Features
+
+* **TMPZ-389:** convert article sidebar to the styled component ([#3845](https://github.com/newsuk/times-components/issues/3845)) ([5f11224](https://github.com/newsuk/times-components/commit/5f11224b2aeda420d3a7f298fce368eb2c8ccc32))
+
+
+
+
+
+## [1.130.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.8...@times-components/article-skeleton@1.130.9) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.130.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.7...@times-components/article-skeleton@1.130.8) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.130.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.130.6...@times-components/article-skeleton@1.130.7) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton

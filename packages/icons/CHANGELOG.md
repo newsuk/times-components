@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.22.3](https://github.com/newsuk/times-components/compare/@times-components/icons@2.22.2...@times-components/icons@2.22.3) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.22.2](https://github.com/newsuk/times-components/compare/@times-components/icons@2.22.1...@times-components/icons@2.22.2) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.22.1](https://github.com/newsuk/times-components/compare/@times-components/icons@2.22.0...@times-components/icons@2.22.1) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+# [2.22.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.27...@times-components/icons@2.22.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
+## [2.21.27](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.26...@times-components/icons@2.21.27) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.21.26](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.25...@times-components/icons@2.21.26) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.21.25](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.24...@times-components/icons@2.21.25) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
 ## [2.21.24](https://github.com/newsuk/times-components/compare/@times-components/icons@2.21.23...@times-components/icons@2.21.24) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/icons

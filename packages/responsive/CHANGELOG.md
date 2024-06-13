@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.22.0...@times-components/responsive@0.23.0) (2024-06-12)
+
+
+### Features
+
+* **TMRS-226:** transform text on euro widgets and add dynamic classes ([#3870](https://github.com/newsuk/times-components/issues/3870)) ([52831d7](https://github.com/newsuk/times-components/commit/52831d79feedeec7d3091c4d70de957b4620a574))
+
+
+
+
+
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.21.9...@times-components/responsive@0.22.0) (2024-06-03)
+
+
+### Features
+
+* **TMD-374:** Remove newskit and clean up ([#3863](https://github.com/newsuk/times-components/issues/3863)) ([db8bd2f](https://github.com/newsuk/times-components/commit/db8bd2f9d77ad906d43e2de3bf6d677217d2eb3e))
+
+
+
+
+
+## [0.21.9](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.21.8...@times-components/responsive@0.21.9) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.21.8](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.21.7...@times-components/responsive@0.21.8) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
 ## [0.21.7](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.21.6...@times-components/responsive@0.21.7) (2024-05-17)
 
 **Note:** Version bump only for package @times-components/responsive

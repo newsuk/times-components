@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.76](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.75...@times-components/message-bar@0.7.76) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.75](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.74...@times-components/message-bar@0.7.75) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.74](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.73...@times-components/message-bar@0.7.74) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.73](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.72...@times-components/message-bar@0.7.73) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.72](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.71...@times-components/message-bar@0.7.72) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.71](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.70...@times-components/message-bar@0.7.71) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.7.70](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.69...@times-components/message-bar@0.7.70) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
 ## [0.7.69](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.68...@times-components/message-bar@0.7.69) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/message-bar

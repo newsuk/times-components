@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.31](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.30...@times-components/pull-quote@3.15.31) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.30](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.29...@times-components/pull-quote@3.15.30) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.29](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.28...@times-components/pull-quote@3.15.29) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.28](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.27...@times-components/pull-quote@3.15.28) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.27](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.26...@times-components/pull-quote@3.15.27) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.26](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.25...@times-components/pull-quote@3.15.26) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.25](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.24...@times-components/pull-quote@3.15.25) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
 ## [3.15.24](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.23...@times-components/pull-quote@3.15.24) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/pull-quote

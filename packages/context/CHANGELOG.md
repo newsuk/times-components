@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.18.0...@times-components/context@1.19.0) (2024-06-10)
+
+
+### Features
+
+* **TMRS-208:** update widget tile states ([#3865](https://github.com/newsuk/times-components/issues/3865)) ([13c18f2](https://github.com/newsuk/times-components/commit/13c18f213f9acde4a802d028c05176889e47ff99))
+
+
+
+
+
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.17.0...@times-components/context@1.18.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.16.1...@times-components/context@1.17.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
 ## [1.16.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.16.0...@times-components/context@1.16.1) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/context

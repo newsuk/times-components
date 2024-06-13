@@ -1,70 +1,71 @@
 import React from 'react';
-import { Popover, IconButton, Tooltip } from 'newskit';
-import { NewsKitTooltipIcon } from '../../../assets';
+import { TooltipIcon } from '../../../assets';
+import {
+  CloseButton,
+  IconButton,
+  Popover,
+  PopoverContext,
+  PopoverHeader,
+  Tooltip,
+  TooltipContext
+} from './styles';
+import CloseIcon from './assets/close-icon';
 
 export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
-}) => (
-  <Tooltip
-    aria-live="polite"
-    content={contractualTitle}
-    placement="top-start"
-    trigger={['focus', 'hover']}
-    overrides={{
-      offset: 'space000',
-      panel: {
-        typographyPreset: 'utilityLabel010'
-      }
-    }}
-    data-testid="Tooltip"
-  >
-    <IconButton
-      aria-label="See contractual title, button"
-      data-testid="Tooltip"
-      overrides={{
-        stylePreset: 'iconButtonMinimalSecondary',
-        marginInlineStart: 'space020'
-      }}
-    >
-      <NewsKitTooltipIcon />
-    </IconButton>
-  </Tooltip>
-);
+}) => {
+  const [tooltipOpen, setTooltipOpen] = React.useState(false);
+
+  return (
+    <>
+      <Tooltip>
+        <TooltipContext data-testid="Tooltip-context" isOpen={tooltipOpen}>
+          {contractualTitle}
+        </TooltipContext>
+        <IconButton
+          aria-label="See contractual title, button"
+          data-testid="Tooltip"
+          onMouseOver={() => setTooltipOpen(true)}
+          onMouseOut={() => setTooltipOpen(false)}
+        >
+          <TooltipIcon />
+        </IconButton>
+      </Tooltip>
+    </>
+  );
+};
 
 export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
-}) => (
-  <Popover
-    content={<>{null}</>}
-    header={contractualTitle}
-    placement="top-start"
-    overrides={{
-      closeButtonContainer: {
-        stylePreset: 'popover'
-      },
-      offset: 'space000',
-      content: {
-        paddingBlock: 'space000',
-        paddingInline: 'space000'
-      },
-      header: {
-        typographyPreset: 'utilityLabel010',
-        stylePreset: 'popover'
-      }
-    }}
-  >
-    <IconButton
-      aria-label="See contractual title, button"
-      data-testid="Popover"
-      overrides={{
-        stylePreset: 'iconButtonMinimalSecondary',
-        marginInlineStart: 'space020'
-      }}
-    >
-      <NewsKitTooltipIcon />
-    </IconButton>
-  </Popover>
-);
+}) => {
+  const [popoverOpen, setPopoverOpen] = React.useState(false);
+
+  const togglePopover = () => {
+    setPopoverOpen(!popoverOpen);
+  };
+
+  return (
+    <>
+      <Popover>
+        <PopoverContext data-testid="Popover-context" isOpen={popoverOpen}>
+          <PopoverHeader>
+            <div>{contractualTitle}</div>
+            <CloseButton data-testid="close-button" onClick={togglePopover}>
+              <CloseIcon />
+            </CloseButton>
+          </PopoverHeader>
+        </PopoverContext>
+        <IconButton
+          aria-label="See contractual title, button"
+          data-testid="Popover"
+          onClick={togglePopover}
+        >
+          <TooltipIcon />
+        </IconButton>
+      </Popover>
+    </>
+  );
+};
 
 export const JobTitle: React.FC<{
   contractualTitle: string;

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.25](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.24...@times-components/date-publication@0.30.25) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.24](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.23...@times-components/date-publication@0.30.24) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.23](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.22...@times-components/date-publication@0.30.23) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.22](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.21...@times-components/date-publication@0.30.22) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.21](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.20...@times-components/date-publication@0.30.21) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.20](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.19...@times-components/date-publication@0.30.20) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.30.19](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.18...@times-components/date-publication@0.30.19) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
 ## [0.30.18](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.30.17...@times-components/date-publication@0.30.18) (2024-05-20)
 
 **Note:** Version bump only for package @times-components/date-publication
