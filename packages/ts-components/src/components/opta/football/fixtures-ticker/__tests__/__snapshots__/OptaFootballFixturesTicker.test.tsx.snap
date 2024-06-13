@@ -3,7 +3,7 @@
 exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX fWWLXh"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -17,7 +17,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX fWWLXh"
   >
     <div>
       Widget
@@ -29,7 +29,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX fWWLXh"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -43,33 +43,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = 
 exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
-  >
-    <div>
-      Widget
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-htpNat sc-ifAKCX kVKYmp"
-  />
-  <div
-    class="sc-bwzfXH uxFfR"
-    height="80"
-  >
-    Placeholder
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-htpNat sc-ifAKCX kVKYmp"
+    class="sc-htpNat sc-ifAKCX fWWLXh"
   >
     <div>
       Widget
@@ -81,7 +55,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX cKbsMn"
+    class="sc-htpNat sc-ifAKCX dsZoQZ"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -95,7 +69,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with i
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX cKbsMn"
+    class="sc-htpNat sc-ifAKCX dsZoQZ"
   >
     <div>
       Widget

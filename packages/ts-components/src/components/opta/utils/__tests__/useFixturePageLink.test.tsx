@@ -21,14 +21,12 @@ describe('getAndAddFixturesPageLink', () => {
     expect(
       useFixturePageLinkFn.getAndAddFixturesPageLink(
         classNameForFixtures,
-        fixturesPageUrl,
-        false
+        fixturesPageUrl
       )
     ).toBe(true);
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalledWith(
       expect.any(HTMLElement),
-      fixturesPageUrl,
-      false
+      fixturesPageUrl
     );
   });
 
@@ -37,8 +35,7 @@ describe('getAndAddFixturesPageLink', () => {
     expect(
       useFixturePageLinkFn.getAndAddFixturesPageLink(
         classNameForFixtures,
-        fixturesPageUrl,
-        false
+        fixturesPageUrl
       )
     ).toBe(false);
     expect(
@@ -51,8 +48,7 @@ describe('getAndAddFixturesPageLink', () => {
     expect(
       useFixturePageLinkFn.getAndAddFixturesPageLink(
         classNameForFixtures,
-        fixturesPageUrl,
-        false
+        fixturesPageUrl
       )
     ).toBe(false);
     expect(
@@ -65,8 +61,7 @@ describe('getAndAddFixturesPageLink', () => {
     expect(
       useFixturePageLinkFn.getAndAddFixturesPageLink(
         classNameForFixtures,
-        fixturesPageUrl,
-        false
+        fixturesPageUrl
       )
     ).toBe(true);
     expect(addFixturesPageLinkModule.addFixturesPageLink).toHaveBeenCalled();
@@ -86,7 +81,6 @@ describe('useFixturePageLink', () => {
 
   const TestComponent = ({
     container,
-    isDarkMode,
     pageUrl
   }: {
     container: string;
@@ -96,7 +90,6 @@ describe('useFixturePageLink', () => {
     useFixturePageLinkFn.useFixturePageLink(
       ref,
       container,
-      isDarkMode,
       pageUrl
     );
     return (
@@ -145,17 +138,14 @@ describe('useFixturePageLink', () => {
   it('should retry adding fixture link inside setInterval', () => {
     const TestComponentMaxRetries = ({
       container,
-      isDarkMode,
       pageUrl
     }: {
       container: string;
-      isDarkMode: boolean;
       pageUrl: string;
     }) => {
       useFixturePageLinkFn.useFixturePageLink(
         ref,
         container,
-        isDarkMode,
         pageUrl
       );
       return <div ref={ref} />;
@@ -172,7 +162,6 @@ describe('useFixturePageLink', () => {
       <TestComponentMaxRetries
         container="DummyClass"
         pageUrl={fixturesPageUrl}
-        isDarkMode={false}
       />
     );
 

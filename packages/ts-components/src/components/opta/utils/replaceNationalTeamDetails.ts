@@ -10,7 +10,7 @@ export const isNationalCompetition = (competition: string) => {
 export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
   let count = 0;
   const replaceDetails = setInterval(() => {
-    if (count >= 5) {
+    if (count >= 25) {
       clearInterval(replaceDetails);
     }
     count++;
