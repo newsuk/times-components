@@ -71,13 +71,17 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         left: 0;
         visibility: hidden;
 
-        @media (prefers-color-scheme: dark) {
-          background-image: linear-gradient(
-            -90deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgb(0, 0, 0) 100%
-          );
-        }
+        ${({ isApp }) =>
+          isApp &&
+          `
+          @media (prefers-color-scheme: dark) {
+            background-image: linear-gradient(
+              -90deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgb(0, 0, 0) 100%
+            );
+          }
+        `};
       }
       &::after {
         left: unset;
@@ -137,29 +141,37 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       }
     }
 
-    @media (prefers-color-scheme: dark) {
-      border: 1px solid white;
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid white;
 
-      a {
-        span {
-          color: white !important;
-        }
-        svg {
-          stroke: white;
-          path {
-            fill: white;
+        a {
+          span {
+            color: white !important;
+          }
+          svg {
+            stroke: white;
+            path {
+              fill: white;
+            }
           }
         }
       }
-    }
+    `};
   }
 
   .Opta-Cf.Opta-Scroll.Opta-Active {
     background-color: white !important;
 
-    @media (prefers-color-scheme: dark) {
-      background-color: black !important;
-    }
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        background-color: black !important;
+      }
+    `};
   }
 
   .Opta-Scroller {
@@ -204,20 +216,24 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     @media (max-width: ${breakpoints.wide}px) {
       width: 24px !important;
     }
-    @media (prefers-color-scheme: dark) {
-      background-color: black !important;
-      border: 1px solid white !important;
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        background-color: black !important;
+        border: 1px solid white !important;
 
-      &:hover {
-        background-color: #303030 !important;
+        &:hover {
+          background-color: #303030 !important;
+        }
+        &:active {
+          background-color: #4f4f4f !important;
+        }
+        &::after {
+          background-position-y: -57px !important;
+        }
       }
-      &:active {
-        background-color: #4f4f4f !important;
-      }
-      &::after {
-        background-position-y: -57px !important;
-      }
-    }
+    `};
   }
 
   .Opta-fixture {
