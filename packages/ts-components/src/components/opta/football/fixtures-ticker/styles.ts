@@ -48,7 +48,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
   .Opta-Scroll,
   .Opta-Window {
-    height: 80px;
+    height: 80px !important;
   }
 
   @media (max-width: ${breakpoints.small}px) {
@@ -138,6 +138,9 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         }
         stroke: black;
         fill: transparent;
+        path {
+          fill: black;
+        }
       }
     }
 
