@@ -87,11 +87,7 @@ describe('useFixturePageLink', () => {
     isDarkMode: boolean;
     pageUrl: string;
   }) => {
-    useFixturePageLinkFn.useFixturePageLink(
-      ref,
-      container,
-      pageUrl
-    );
+    useFixturePageLinkFn.useFixturePageLink(ref, container, pageUrl);
     return (
       <div ref={ref}>
         <div className={container} />
@@ -143,11 +139,7 @@ describe('useFixturePageLink', () => {
       container: string;
       pageUrl: string;
     }) => {
-      useFixturePageLinkFn.useFixturePageLink(
-        ref,
-        container,
-        pageUrl
-      );
+      useFixturePageLinkFn.useFixturePageLink(ref, container, pageUrl);
       return <div ref={ref} />;
     };
 

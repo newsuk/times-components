@@ -95,7 +95,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         visibility: visible;
       }
     }
-
   }
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Scroller {
