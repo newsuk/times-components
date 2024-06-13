@@ -3,7 +3,7 @@
 exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -17,7 +17,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   >
     <div>
       Widget
@@ -29,7 +29,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -43,7 +43,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = 
 exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX caFyxi"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   >
     <div>
       Widget
@@ -52,10 +52,10 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = 
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 1`] = `
+exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX kVKYmp"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -66,10 +66,10 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl, isDarkMode properties 2`] = `
+exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX kVKYmp"
+    class="sc-htpNat sc-ifAKCX ejNhWM"
   >
     <div>
       Widget
@@ -81,7 +81,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX cKbsMn"
+    class="sc-htpNat sc-ifAKCX jYRHnt"
   />
   <div
     class="sc-bwzfXH uxFfR"
@@ -95,7 +95,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with i
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX cKbsMn"
+    class="sc-htpNat sc-ifAKCX jYRHnt"
   >
     <div>
       Widget
