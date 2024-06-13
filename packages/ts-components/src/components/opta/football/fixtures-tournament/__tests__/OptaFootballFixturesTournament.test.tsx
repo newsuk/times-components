@@ -47,6 +47,16 @@ describe('OptaFootballFixturesTournament', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it('should render full width correctly', async () => {
+    const { asFragment, getByText } = render(
+      <OptaFootballFixturesTournament season="2023" competition="3" full_width />
+    );
+    expect(asFragment()).toMatchSnapshot();
+
+    await waitForElementToBeRemoved(getByText('Placeholder'));
+
+    expect(asFragment()).toMatchSnapshot();
+  });
   it('should render national competitions correctly with single column', async () => {
     const { asFragment, getByText } = render(
       <OptaFootballFixturesTournament
