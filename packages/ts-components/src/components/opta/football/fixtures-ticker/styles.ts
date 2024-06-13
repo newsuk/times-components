@@ -147,6 +147,9 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         }
         svg {
           stroke: white;
+          path {
+            fill: white;
+          }
         }
       }
     }
