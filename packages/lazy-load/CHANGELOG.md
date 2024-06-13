@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.15.0...@times-components/lazy-load@0.16.0) (2024-06-13)
+
+
+### Features
+
+* **TMRS-240:** widget updates ([#3871](https://github.com/newsuk/times-components/issues/3871)) ([9de5b40](https://github.com/newsuk/times-components/commit/9de5b407d66bbf4f6ce7c62f6c35281323197082))
+
+
+
+
+
 # [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.14.0...@times-components/lazy-load@0.15.0) (2024-06-10)
 
 
