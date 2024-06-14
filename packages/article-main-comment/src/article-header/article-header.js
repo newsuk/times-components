@@ -49,6 +49,12 @@ const ArticleHeader = ({
       styles={checkStylesForUnits(styles.articleHeadline)}
     >
       {headline}
+      <div
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: '<div id="nu-zephr-header-target"></div>'
+        }}
+      />
     </HeadlineContainer>
     <FlagsContainer>
       <UpdatedTimeProvider updatedTime={updatedTime}>
