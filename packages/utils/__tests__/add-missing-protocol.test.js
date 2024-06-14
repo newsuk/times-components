@@ -1,15 +1,16 @@
+import { BASE_DOMAIN } from "../src/constants";
 import { addMissingProtocol } from "../src/index";
 
 describe("addMissingProtocol should", () => {
   it("add https to the url if it's missing the protocol", () => {
-    expect(addMissingProtocol("//thetimes.co.uk")).toEqual(
-      "https://thetimes.co.uk"
+    expect(addMissingProtocol(`//${BASE_DOMAIN}`)).toEqual(
+      `https://${BASE_DOMAIN}`
     );
   });
 
   it("return the given url if it has a protocol already", () => {
-    expect(addMissingProtocol("http://thetimes.co.uk")).toEqual(
-      "http://thetimes.co.uk"
+    expect(addMissingProtocol(`http://${BASE_DOMAIN}`)).toEqual(
+      `http://${BASE_DOMAIN}`
     );
   });
 

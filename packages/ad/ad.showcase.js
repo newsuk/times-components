@@ -5,6 +5,7 @@ import { NewTab } from "@times-components/storybook";
 import { TcText } from "@times-components/utils";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
+import { SHOWCASE_ARTICLE_BASE_URL } from "./src/utils/constants";
 
 const withOpenInNewWindow = children => (
   <AdComposer adConfig={adConfig}>
@@ -24,8 +25,7 @@ const slotNames = [
   "pixelskin"
 ];
 
-const articleContextURL =
-  "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const articleContextURL = `${SHOWCASE_ARTICLE_BASE_URL}/edition/news/france-defies-may-over-russia-37b27qd2s`;
 
 const renderAd = slotName => (
   <Fragment>
