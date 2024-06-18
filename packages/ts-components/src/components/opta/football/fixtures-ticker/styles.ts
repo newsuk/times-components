@@ -195,7 +195,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     border-radius: 4px;
     box-sizing: border-box;
     height: 80px;
-    width: 160px !important;
     margin-inline: 4px;
     display: flex;
     flex-direction: column;
