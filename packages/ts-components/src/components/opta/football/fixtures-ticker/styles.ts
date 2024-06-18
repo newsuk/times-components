@@ -52,55 +52,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   @media (max-width: ${breakpoints.small}px) {
-    .Opta-Scroll {
-      &::before,
-      &::after {
-        content: '';
-        pointer-events: none;
-        position: absolute;
-        z-index: 15;
-        transition: all 0.3s linear 0s;
-        background-image: linear-gradient(
-          -90deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgb(255, 255, 255) 100%
-        );
-        width: 64px;
-        height: 100%;
-        bottom: 0px;
-        left: 0;
-        visibility: hidden;
-
-        ${({ isApp }) =>
-          isApp &&
-          `
-          @media (prefers-color-scheme: dark) {
-            background-image: linear-gradient(
-              -90deg,
-              rgba(0, 0, 0, 0) 0%,
-              rgb(0, 0, 0) 100%
-            );
-          }
-        `};
-      }
-      &::after {
-        left: unset;
-        right: 0px;
-        transform: rotate(180deg);
-      }
-    }
-    .Opta-Scroll:has(.Opta-Previous.Opta-Active) {
-      &::before {
-        visibility: visible;
-      }
-    }
-    .Opta-Scroll:has(.Opta-Next.Opta-Active) {
-      &::after {
-        visibility: visible;
-      }
-    }
-  }
-  @media (max-width: ${breakpoints.small}px) {
     .Opta-Scroller {
       display: ${({ isApp }) => (isApp ? 'block' : 'none')} !important;
     }
@@ -244,7 +195,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     border-radius: 4px;
     box-sizing: border-box;
     height: 80px;
-    width: 160px !important;
     margin-inline: 4px;
     display: flex;
     flex-direction: column;
