@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.92.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.91.0...@times-components/ts-components@1.92.0) (2024-06-18)
+
+
+### Features
+
+* **TMRS-243:** add width value and remove fade ([#3873](https://github.com/newsuk/times-components/issues/3873)) ([d26b907](https://github.com/newsuk/times-components/commit/d26b9079adf07947a407f3a36a42a71e5145b574))
+* **TMW-000:** Add error message to newsletter puff ([#3872](https://github.com/newsuk/times-components/issues/3872)) ([5f1e892](https://github.com/newsuk/times-components/commit/5f1e8928018e5ea17d4c7c0795386234994f6497))
+
+
+
+
+
 # [1.91.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.90.0...@times-components/ts-components@1.91.0) (2024-06-13)
 
 
