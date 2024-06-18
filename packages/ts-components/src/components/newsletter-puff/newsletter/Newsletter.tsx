@@ -69,7 +69,8 @@ export const Newsletter = ({
         {justSubscribedError && (
           <InpSubscribedContainer>
             <InpCopy>
-              An error occurred! Please sign up using - <NewsletterPuffLink />
+              An error occurred. Please use the link below.
+              <NewsletterPuffLink />
             </InpCopy>
             <InpPreferencesContainer />
           </InpSubscribedContainer>
