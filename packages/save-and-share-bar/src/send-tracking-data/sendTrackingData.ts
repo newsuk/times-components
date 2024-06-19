@@ -1,14 +1,5 @@
-export type TrackingData = Record<string, string | number | boolean | object>;
-export interface WindowWithUtag extends Window {
-    utag:
-        | {
-              link: (data: TrackingData) => void;
-          }
-        | undefined;
-}
-
-function sendTrackingData(data?: TrackingData) {
-    const windowWithUtag = window as any as WindowWithUtag;
+function sendTrackingData(data) {
+    const windowWithUtag = window;
 
     if (data && windowWithUtag.utag) {
         requestAnimationFrame(() => {
