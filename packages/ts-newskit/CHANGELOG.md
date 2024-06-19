@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.186.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.185.0...@times-components/ts-newskit@1.186.0) (2024-06-19)
+
+
+### Features
+
+* **TMW-000:** Add error message to newsletter puff ([#3875](https://github.com/newsuk/times-components/issues/3875)) ([1b61983](https://github.com/newsuk/times-components/commit/1b6198344bae4aca0345bbe116d7501abcc31295))
+
+
+
+
+
 # [1.185.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.184.0...@times-components/ts-newskit@1.185.0) (2024-06-13)
 
 
