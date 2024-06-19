@@ -10,6 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
+import {sendTrackingData} from '../src/send-tracking-data/sendTrackingData.ts';
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -48,6 +49,14 @@ function SaveAndShareBar(props) {
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
   const popoverRef = React.useRef();
+
+  const trackingData = {
+    display: {
+        event_navigation_action: 'share bar',
+        event_navigation_name: 'share bar: expanded',
+        event_navigation_browsing_method: 'automated',
+    },
+  };
 
   // Set window height after hydration
   useEffect(() => {
@@ -93,6 +102,7 @@ function SaveAndShareBar(props) {
   }
 
   const togglePopover = () => {
+    sendTrackingData(trackingData.display)
     setPopoverOpen(prev => !prev);
   };
 
