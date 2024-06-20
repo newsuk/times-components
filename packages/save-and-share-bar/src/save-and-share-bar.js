@@ -10,7 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
-import sendTrackingData from './send-tracking-data/sendTrackingData.js';
+import sendTrackingData from "./sendTrackingData/sendTrackingData.js";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -52,10 +52,10 @@ function SaveAndShareBar(props) {
 
   const trackingData = {
     display: {
-        event_navigation_action: 'share bar',
-        event_navigation_name: 'share bar: expanded',
-        event_navigation_browsing_method: 'automated',
-    },
+      event_navigation_action: "share bar",
+      event_navigation_name: "share bar: expanded",
+      event_navigation_browsing_method: "automated"
+    }
   };
 
   // Set window height after hydration
@@ -103,7 +103,7 @@ function SaveAndShareBar(props) {
 
   const togglePopover = () => {
     setPopoverOpen(prev => !prev);
-    sendTrackingData(trackingData.display)
+    sendTrackingData(trackingData.display);
   };
 
   function copyToClipboard(e) {
