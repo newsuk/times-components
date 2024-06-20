@@ -10,7 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
 import { Share } from "@emotion-icons/bootstrap/Share";
-import {sendTrackingData} from '../src/send-tracking-data/sendTrackingData.ts';
+import sendTrackingData from './send-tracking-data/sendTrackingData.js';
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -102,8 +102,8 @@ function SaveAndShareBar(props) {
   }
 
   const togglePopover = () => {
-    sendTrackingData(trackingData.display)
     setPopoverOpen(prev => !prev);
+    sendTrackingData(trackingData.display)
   };
 
   function copyToClipboard(e) {

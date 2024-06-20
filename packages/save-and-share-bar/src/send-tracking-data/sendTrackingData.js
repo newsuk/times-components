@@ -1,8 +1,8 @@
 function sendTrackingData(data) {
-    const windowWithUtag = window;
+    const windowWithUtag = global.window;
 
     if (data && windowWithUtag.utag) {
-        requestAnimationFrame(() => {
+        windowWithUtag.requestAnimationFrame(() => {
             setTimeout(() => {
                 if (windowWithUtag.utag) {
                     windowWithUtag.utag.link(data);                    
@@ -12,4 +12,4 @@ function sendTrackingData(data) {
     }
 }
 
-export { sendTrackingData };
+export default sendTrackingData;
