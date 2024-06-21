@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.24.0...@times-components/responsive@0.25.0) (2024-06-21)
+
+
+### Features
+
+* **TMRS-243:** euro ticker widget updates ([#3876](https://github.com/newsuk/times-components/issues/3876)) ([1523613](https://github.com/newsuk/times-components/commit/1523613e748cc230421d465f236fe69b48dae7ec))
+
+
+
+
+
 # [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.23.0...@times-components/responsive@0.24.0) (2024-06-18)
 
 
