@@ -190,8 +190,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   .Opta-fixture {
-    border-radius: 4px;
-    box-sizing: border-box;
     height: 80px;
     padding-inline: 4px;
     display: flex;
