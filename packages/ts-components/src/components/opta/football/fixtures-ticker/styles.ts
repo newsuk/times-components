@@ -191,17 +191,19 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   .Opta-fixture {
-    background-color: white;
     border-radius: 4px;
     box-sizing: border-box;
     height: 80px;
-    margin-inline: 4px;
+    padding-inline: 4px;
     display: flex;
     flex-direction: column;
 
+    > div {
+      background-color: white !important;
+    }
+
     .Opta-Team,
     .Opta-timings {
-      background-color: transparent !important;
       border-right: 0 !important;
     }
     .Opta-Team {
@@ -217,6 +219,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       height: 24px !important;
       order: -1;
       color: #696969 !important;
+      border-start-start-radius: 4px;
+      border-start-end-radius: 4px;
     }
 
     .Opta-timings .Opta-Time * {
@@ -230,8 +234,16 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       font-family: 'Roboto-Medium' !important;
     }
 
+    .Opta-Away {
+      border-end-start-radius: 4px;
+      border-end-end-radius: 4px;
+      height: 34px !important;
+    }
+
     &.Opta-prematch {
-      background-color: #f5f5f5;
+      > div {
+        background-color: #f5f5f5 !important;
+      }
       .Opta-Team-Score::after {
         content: '-';
       }
