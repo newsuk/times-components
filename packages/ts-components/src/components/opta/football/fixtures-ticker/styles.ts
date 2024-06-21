@@ -53,7 +53,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Scroller {
-      display: ${({ isApp }) => (isApp ? 'block' : 'none')} !important;
+      display: none !important;
     }
   }
 
@@ -131,7 +131,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   .Opta-Scroller {
     background-color: white !important;
     border: 1px solid #999 !important;
-    border-radius: 2px;
     border-radius: 2px;
     box-sizing: border-box;
     padding: 39px 0 !important;
@@ -253,11 +252,33 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       }
     }
 
-    &.Opta-result {
-      border: 1px solid #ccc;
+    &.Opta-result > div {
+      border: 1px solid #ccc !important;
+
+      &.Opta-timings {
+        border-bottom: none !important;
+      }
+      &.Opta-Home {
+        border-bottom: none !important;
+        border-top: none !important;
+      }
+      &.Opta-Away {
+        border-top: none !important;
+      }
     }
-    &.Opta-live {
-      border: 1px solid #01000d;
+    &.Opta-live > div {
+      border: 1px solid #01000d !important;
+
+      &.Opta-timings {
+        border-bottom: none !important;
+      }
+      &.Opta-Home {
+        border-bottom: none !important;
+        border-top: none !important;
+      }
+      &.Opta-Away {
+        border-top: none !important;
+      }
     }
 
     .Opta-Image-Team-Small {
