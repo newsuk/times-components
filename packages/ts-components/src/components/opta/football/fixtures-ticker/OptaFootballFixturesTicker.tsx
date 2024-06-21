@@ -73,7 +73,8 @@ export const OptaFootballFixturesTicker: React.FC<{
               show_date: true,
               show_live: true,
               date_format: 'ddd Do MMM',
-              fixture_width: 160
+              fixture_width: 160,
+              breakpoints: 520
             }).outerHTML;
 
             initComponent();
