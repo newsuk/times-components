@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.21.0...@times-components/context@1.22.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-246:** remove 0 value entries ([#3877](https://github.com/newsuk/times-components/issues/3877)) ([4a0616b](https://github.com/newsuk/times-components/commit/4a0616bf172d488ac01a684cc7bbd76784941ecf))
+
+
+
+
+
 # [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.20.0...@times-components/context@1.21.0) (2024-06-19)
 
 
