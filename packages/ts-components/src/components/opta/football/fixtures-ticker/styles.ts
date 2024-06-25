@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
@@ -57,16 +57,16 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     }
   }
 
-  ${({ isApp }) =>
-    !isApp &&
-    css`
-      @media (max-width: ${breakpoints.small}px) {
-        .Opta-Window {
-          left: 0 !important;
-          right: 0 !important;
-        }
-      }
-    `} .fixtures-page-link.Opta-fixture {
+  @media (max-width: ${breakpoints.small}px) {
+    .Opta-Window {
+      left: 0 !important;
+      right: 0 !important;
+      overflow-x: auto;
+      position: relative;
+    }
+  }
+
+  .fixtures-page-link.Opta-fixture {
     width: 85px !important;
     padding: 10px 8px;
     border: 1px solid black;
