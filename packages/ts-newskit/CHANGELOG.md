@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.188.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.187.0...@times-components/ts-newskit@1.188.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update styling ([#3879](https://github.com/newsuk/times-components/issues/3879)) ([cd64b88](https://github.com/newsuk/times-components/commit/cd64b88a956775ff78d43190e26486e921b5b7d1))
+
+
+
+
+
 # [1.187.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.186.0...@times-components/ts-newskit@1.187.0) (2024-06-25)
 
 

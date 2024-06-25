@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.40.32",
+  "version": "1.40.33",
   "main": "dist/provider",
   "dev": "src/provider",
   "description": "Provider",
@@ -38,7 +38,7 @@
     "@times-components/jest-configurator-web": "0.8.2",
     "@times-components/jest-serializer": "3.13.18",
     "@times-components/provider-test-tools": "1.29.3",
-    "@times-components/storybook": "4.12.31",
+    "@times-components/storybook": "4.12.32",
     "@times-components/test-utils": "2.4.2",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
