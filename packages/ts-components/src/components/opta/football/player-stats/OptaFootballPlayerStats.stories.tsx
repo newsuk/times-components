@@ -34,6 +34,17 @@ const showcase = {
       ),
       name: 'PlayerStats (assists)',
       type: 'story'
+    },
+    {
+      component: () => (
+        <OptaFootballPlayerStats
+          season="2023"
+          competition="3"
+          visible_categories="cards_red"
+        />
+      ),
+      name: 'PlayerStats (red cards)',
+      type: 'story'
     }
   ],
   name: 'Typescript Component/In Article/Football/PlayerStats'
