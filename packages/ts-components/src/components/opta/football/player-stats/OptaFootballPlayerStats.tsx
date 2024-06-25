@@ -20,6 +20,7 @@ export const OptaFootballPlayerStats: React.FC<{
   competition: string;
   visible_categories: string; // goals | assists | cards_red | cards_yellow
   classes?: string;
+  hide_zeroes?: boolean;
   show_title?: boolean;
   full_width?: boolean;
 }> = React.memo(
@@ -27,6 +28,7 @@ export const OptaFootballPlayerStats: React.FC<{
     season,
     competition,
     full_width,
+    hide_zeroes = true,
     show_title = true,
     visible_categories,
     classes
@@ -48,6 +50,7 @@ export const OptaFootballPlayerStats: React.FC<{
             ref.current.innerHTML = initElement('opta-widget', {
               sport,
               widget: 'player_ranking',
+              hide_zeroes,
               season,
               competition,
               template: 'normal',
