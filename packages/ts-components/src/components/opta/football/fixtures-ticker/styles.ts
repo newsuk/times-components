@@ -61,8 +61,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     .Opta-Window {
       left: 0 !important;
       right: 0 !important;
-      overflow-x: auto;
-      position: relative;
+      overflow-x: auto !important;
+      position: relative !important;
     }
   }
 
