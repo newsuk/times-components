@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.25.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.24.0...@times-components/utils@6.25.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update app styling ([#3878](https://github.com/newsuk/times-components/issues/3878)) ([419f771](https://github.com/newsuk/times-components/commit/419f77179001cad44b3f684b5ff2ad400ec33eb4))
+
+
+
+
+
 # [6.24.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.23.0...@times-components/utils@6.24.0) (2024-06-21)
 
 
