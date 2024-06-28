@@ -12,8 +12,8 @@ import {
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import "./mocks";
-import Image from "../src";
 import shared from "./shared.base";
+import Image from "../src";
 
 export default () => {
   addSerializers(
