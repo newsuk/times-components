@@ -24,7 +24,6 @@ export const OptaFootballFixturesTicker: React.FC<{
   days_ahead?: number;
   days_before?: number;
   round?: string;
-  isDarkMode?: boolean;
   isApp?: boolean;
   fixturesPageUrl?: string;
 }> = React.memo(
@@ -36,7 +35,6 @@ export const OptaFootballFixturesTicker: React.FC<{
     days_ahead,
     days_before,
     round,
-    isDarkMode,
     isApp,
     fixturesPageUrl
   }) => {
@@ -74,7 +72,9 @@ export const OptaFootballFixturesTicker: React.FC<{
               show_crests: !isNationalComp,
               show_date: true,
               show_live: true,
-              date_format: 'ddd Do MMM'
+              date_format: 'ddd Do MMM',
+              fixture_width: 160,
+              breakpoints: 520
             }).outerHTML;
 
             initComponent();
@@ -87,13 +87,13 @@ export const OptaFootballFixturesTicker: React.FC<{
 
     fixturesPageUrl &&
       !isApp &&
-      useFixturePageLink(ref, 'Opta-Room', isDarkMode, fixturesPageUrl);
+      useFixturePageLink(ref, 'Opta-Room', fixturesPageUrl);
 
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
 
     return (
       <>
-        <WidgetContainer isApp={isApp} isDarkMode={isDarkMode} ref={ref} />
+        <WidgetContainer isApp={isApp} ref={ref} />
 
         {!isReady && (
           <PlaceholderContainer height={80}>

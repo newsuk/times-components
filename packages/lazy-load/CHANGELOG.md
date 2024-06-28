@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.18.0...@times-components/lazy-load@0.19.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update styling ([#3879](https://github.com/newsuk/times-components/issues/3879)) ([cd64b88](https://github.com/newsuk/times-components/commit/cd64b88a956775ff78d43190e26486e921b5b7d1))
+
+
+
+
+
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.17.0...@times-components/lazy-load@0.18.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-246:** remove 0 value entries ([#3877](https://github.com/newsuk/times-components/issues/3877)) ([4a0616b](https://github.com/newsuk/times-components/commit/4a0616bf172d488ac01a684cc7bbd76784941ecf))
+
+
+
+
+
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.16.0...@times-components/lazy-load@0.17.0) (2024-06-19)
+
+
+### Features
+
+* **TMW-000:** Add error message to newsletter puff ([#3875](https://github.com/newsuk/times-components/issues/3875)) ([1b61983](https://github.com/newsuk/times-components/commit/1b6198344bae4aca0345bbe116d7501abcc31295))
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.15.0...@times-components/lazy-load@0.16.0) (2024-06-13)
+
+
+### Features
+
+* **TMRS-240:** widget updates ([#3871](https://github.com/newsuk/times-components/issues/3871)) ([9de5b40](https://github.com/newsuk/times-components/commit/9de5b407d66bbf4f6ce7c62f6c35281323197082))
+
+
+
+
+
 # [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.14.0...@times-components/lazy-load@0.15.0) (2024-06-10)
 
 

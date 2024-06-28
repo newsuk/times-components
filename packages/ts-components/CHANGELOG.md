@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.97.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.96.0...@times-components/ts-components@1.97.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update styling ([#3879](https://github.com/newsuk/times-components/issues/3879)) ([cd64b88](https://github.com/newsuk/times-components/commit/cd64b88a956775ff78d43190e26486e921b5b7d1))
+
+
+
+
+
+# [1.96.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.95.0...@times-components/ts-components@1.96.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update app styling ([#3878](https://github.com/newsuk/times-components/issues/3878)) ([419f771](https://github.com/newsuk/times-components/commit/419f77179001cad44b3f684b5ff2ad400ec33eb4))
+
+
+
+
+
+# [1.95.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.94.0...@times-components/ts-components@1.95.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-246:** remove 0 value entries ([#3877](https://github.com/newsuk/times-components/issues/3877)) ([4a0616b](https://github.com/newsuk/times-components/commit/4a0616bf172d488ac01a684cc7bbd76784941ecf))
+
+
+
+
+
+# [1.94.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.93.0...@times-components/ts-components@1.94.0) (2024-06-21)
+
+
+### Features
+
+* **TMRS-243:** euro ticker widget updates ([#3876](https://github.com/newsuk/times-components/issues/3876)) ([1523613](https://github.com/newsuk/times-components/commit/1523613e748cc230421d465f236fe69b48dae7ec))
+
+
+
+
+
+# [1.93.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.92.0...@times-components/ts-components@1.93.0) (2024-06-19)
+
+
+### Features
+
+* **TMW-000:** Add error message to newsletter puff ([#3874](https://github.com/newsuk/times-components/issues/3874)) ([e7332ee](https://github.com/newsuk/times-components/commit/e7332eecd60152011410b71de5b7441b86169ba6))
+
+
+
+
+
+# [1.92.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.91.0...@times-components/ts-components@1.92.0) (2024-06-18)
+
+
+### Features
+
+* **TMRS-243:** add width value and remove fade ([#3873](https://github.com/newsuk/times-components/issues/3873)) ([d26b907](https://github.com/newsuk/times-components/commit/d26b9079adf07947a407f3a36a42a71e5145b574))
+* **TMW-000:** Add error message to newsletter puff ([#3872](https://github.com/newsuk/times-components/issues/3872)) ([5f1e892](https://github.com/newsuk/times-components/commit/5f1e8928018e5ea17d4c7c0795386234994f6497))
+
+
+
+
+
+# [1.91.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.90.0...@times-components/ts-components@1.91.0) (2024-06-13)
+
+
+### Features
+
+* **TMRS-240:** widget updates ([#3871](https://github.com/newsuk/times-components/issues/3871)) ([9de5b40](https://github.com/newsuk/times-components/commit/9de5b407d66bbf4f6ce7c62f6c35281323197082))
+
+
+
+
+
 # [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.89.0...@times-components/ts-components@1.90.0) (2024-06-12)
 
 

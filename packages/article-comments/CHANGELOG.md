@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.43.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.22...@times-components/article-comments@0.43.23) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.22](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.21...@times-components/article-comments@0.43.22) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.21](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.20...@times-components/article-comments@0.43.21) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.20](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.19...@times-components/article-comments@0.43.20) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.19](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.18...@times-components/article-comments@0.43.19) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.17...@times-components/article-comments@0.43.18) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.16...@times-components/article-comments@0.43.17) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
 ## [0.43.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.15...@times-components/article-comments@0.43.16) (2024-06-12)
 
 **Note:** Version bump only for package @times-components/article-comments

@@ -26,6 +26,7 @@ export const InlineNewsletterPuff = ({
   section
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
+  const [justSubscribedError, setJustSubscribedError] = useState(false);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -51,6 +52,9 @@ export const InlineNewsletterPuff = ({
             mutation={subscribeNewsletterMutation}
             onCompleted={({ subscribeNewsletter = {} }: any) => {
               setJustSubscribed(subscribeNewsletter.isSubscribed);
+            }}
+            onError={() => {
+              setJustSubscribedError(true);
             }}
           >
             {(
@@ -80,6 +84,7 @@ export const InlineNewsletterPuff = ({
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
                     justSubscribed={justSubscribed}
+                    justSubscribedError={justSubscribedError}
                     headline={headline}
                     updatingSubscription={updatingSubscription}
                     copy={copy}

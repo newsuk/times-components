@@ -3,13 +3,12 @@ import { addFixturesPageLink } from './addFixturesPageLink';
 
 export const getAndAddFixturesPageLink = (
   container: string,
-  fixturesPageUrl: string,
-  isDarkMode: boolean
+  fixturesPageUrl: string
 ): boolean => {
   const OptaRoom = document.querySelector(`.${container}`);
   const fixturesPageUrlElement = document.querySelector('.fixtures-page-link');
   if (OptaRoom && !fixturesPageUrlElement) {
-    addFixturesPageLink(OptaRoom, fixturesPageUrl, isDarkMode);
+    addFixturesPageLink(OptaRoom, fixturesPageUrl);
     return true;
   }
   return false;
@@ -18,15 +17,13 @@ export const getAndAddFixturesPageLink = (
 export const useFixturePageLink = (
   ref: React.RefObject<HTMLDivElement>,
   container: string,
-  isDarkMode: boolean = false,
   fixturesPageUrl: string
 ): void => {
   useEffect(
     () => {
       let addFixtureLink = getAndAddFixturesPageLink(
         container,
-        fixturesPageUrl,
-        isDarkMode
+        fixturesPageUrl
       );
       let setFixtureLink: NodeJS.Timeout | undefined;
       if (!addFixtureLink) {
@@ -38,8 +35,7 @@ export const useFixturePageLink = (
           count++;
           addFixtureLink = getAndAddFixturesPageLink(
             container,
-            fixturesPageUrl,
-            isDarkMode
+            fixturesPageUrl
           );
           if (addFixtureLink) {
             clearInterval(setFixtureLink);
@@ -52,6 +48,6 @@ export const useFixturePageLink = (
         }
       };
     },
-    [ref, container, fixturesPageUrl, isDarkMode]
+    [ref, container, fixturesPageUrl]
   );
 };

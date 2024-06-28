@@ -108,14 +108,13 @@ describe('OptaFootballFixturesTicker without flags', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render correctly with fixturesPageUrl, isDarkMode properties', async () => {
+  it('should render correctly with fixturesPageUrl', async () => {
     (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
     const { asFragment, getByText } = render(
       <OptaFootballFixturesTicker
         season="2023"
         competition="3"
-        isDarkMode={true}
         fixturesPageUrl={'https://www.thetimes.co.uk/sport/football/euro-2024'}
       />
     );

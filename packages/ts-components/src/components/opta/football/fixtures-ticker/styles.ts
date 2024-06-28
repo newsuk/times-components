@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
@@ -41,7 +41,6 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 
 export const WidgetContainer = styled(WidgetContainerBase)<{
   isApp?: boolean;
-  isDarkMode?: boolean;
 }>`
   .Opta {
     font-family: Roboto !important;
@@ -49,58 +48,28 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
   .Opta-Scroll,
   .Opta-Window {
-    height: 80px;
+    height: 80px !important;
   }
 
-  @media (max-width: ${breakpoints.small}px) {
-    .Opta-Scroll {
-      &::before,
-      &::after {
-        content: '';
-        pointer-events: none;
-        position: absolute;
-        z-index: 15;
-        transition: all 0.3s linear 0s;
-        background-image: linear-gradient(
-          -90deg,
-          ${({ isDarkMode }) =>
-              isDarkMode ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)'}
-            0%,
-          ${({ isDarkMode }) =>
-              isDarkMode ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)'}
-            100%
-        );
-        width: 64px;
-        height: 100%;
-        bottom: 0px;
-        left: 0;
-      }
-      &::after {
-        left: unset;
-        right: 0px;
-        transform: rotate(180deg);
-      }
-    }
-  }
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Scroller {
-      display: ${({ isApp }) => (isApp ? 'block' : 'none')} !important;
+      display: none !important;
     }
   }
 
-  ${({ isApp }) =>
-    !isApp &&
-    css`
-      @media (max-width: ${breakpoints.small}px) {
-        .Opta-Window {
-          left: 0 !important;
-          right: 0 !important;
-        }
-      }
-    `} .fixtures-page-link.Opta-fixture {
+  @media (max-width: ${breakpoints.small}px) {
+    .Opta-Window {
+      left: 0 !important;
+      right: 0 !important;
+      overflow-x: auto !important;
+      position: relative !important;
+    }
+  }
+
+  .fixtures-page-link.Opta-fixture {
     width: 85px !important;
     padding: 10px 8px;
-    border: 1px solid ${({ isDarkMode }) => (isDarkMode ? 'white' : 'black')};
+    border: 1px solid black;
     background-color: transparent;
     a {
       display: flex;
@@ -109,8 +78,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       flex-direction: column;
       height: 100%;
       span {
-        color: ${({ isDarkMode }) =>
-          isDarkMode ? 'white' : 'black'}!important;
+        color: black !important;
         font-size: 12px;
         font-weight: 700 !important;
         display: block;
@@ -119,32 +87,60 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         rect {
           font-weight: 700 !important;
         }
+        stroke: black;
+        fill: transparent;
+        path {
+          fill: black;
+        }
       }
     }
+
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid white;
+
+        a {
+          span {
+            color: white !important;
+          }
+          svg {
+            stroke: white;
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+    `};
   }
 
   .Opta-Cf.Opta-Scroll.Opta-Active {
-    background-color: ${({ isDarkMode }) =>
-      isDarkMode ? 'black' : 'white'}!important;
+    background-color: white !important;
+
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        background-color: black !important;
+      }
+    `};
   }
 
   .Opta-Scroller {
-    background-color: ${({ isDarkMode }) =>
-      isDarkMode ? 'black' : 'white'}!important;
-    border: 1px solid ${({ isDarkMode }) => (isDarkMode ? 'white' : '#999')};
-    border-radius: 2px;
+    background-color: white !important;
+    border: 1px solid #999 !important;
     border-radius: 2px;
     box-sizing: border-box;
     padding: 39px 0 !important;
     width: 28px !important;
 
     &:hover {
-      background-color: ${({ isDarkMode }) =>
-        isDarkMode ? '#303030' : '#f5f5f5'}!important;
+      background-color: #f5f5f5 !important;
     }
     &:active {
-      background-color: ${({ isDarkMode }) =>
-        isDarkMode ? '#4f4f4f' : '#eee'}!important;
+      background-color: #eee !important;
     }
 
     &::after {
@@ -153,8 +149,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         no-repeat !important;
       background-size: 210px 186px !important;
       background-position-x: -180px !important;
-      background-position-y: ${({ isDarkMode }) =>
-        isDarkMode ? '-57px' : '-19px'}!important;
+      background-position-y: -19px !important;
       height: 16px !important;
       width: 16px !important;
       top: calc(50% - 8px) !important;
@@ -174,21 +169,38 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     @media (max-width: ${breakpoints.wide}px) {
       width: 24px !important;
     }
+    ${({ isApp }) =>
+      isApp &&
+      `
+      @media (prefers-color-scheme: dark) {
+        background-color: black !important;
+        border: 1px solid white !important;
+
+        &:hover {
+          background-color: #303030 !important;
+        }
+        &:active {
+          background-color: #4f4f4f !important;
+        }
+        &::after {
+          background-position-y: -57px !important;
+        }
+      }
+    `};
   }
 
   .Opta-fixture {
-    background-color: white;
-    border-radius: 4px;
-    box-sizing: border-box;
     height: 80px;
-    width: 160px !important;
-    margin-inline: 4px;
+    padding-inline: 4px;
     display: flex;
     flex-direction: column;
 
+    > div {
+      background-color: white !important;
+    }
+
     .Opta-Team,
     .Opta-timings {
-      background-color: transparent !important;
       border-right: 0 !important;
     }
     .Opta-Team {
@@ -204,6 +216,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       height: 24px !important;
       order: -1;
       color: #696969 !important;
+      border-start-start-radius: 4px;
+      border-start-end-radius: 4px;
     }
 
     .Opta-timings .Opta-Time * {
@@ -217,8 +231,16 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       font-family: 'Roboto-Medium' !important;
     }
 
+    .Opta-Away {
+      border-end-start-radius: 4px;
+      border-end-end-radius: 4px;
+      height: 34px !important;
+    }
+
     &.Opta-prematch {
-      background-color: #f5f5f5;
+      > div {
+        background-color: #f5f5f5 !important;
+      }
       .Opta-Team-Score::after {
         content: '-';
       }
@@ -228,11 +250,33 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       }
     }
 
-    &.Opta-result {
-      border: 1px solid #ccc;
+    &.Opta-result > div {
+      border: 1px solid #ccc !important;
+
+      &.Opta-timings {
+        border-bottom: none !important;
+      }
+      &.Opta-Home {
+        border-bottom: none !important;
+        border-top: none !important;
+      }
+      &.Opta-Away {
+        border-top: none !important;
+      }
     }
-    &.Opta-live {
-      border: 1px solid #01000d;
+    &.Opta-live > div {
+      border: 1px solid #01000d !important;
+
+      &.Opta-timings {
+        border-bottom: none !important;
+      }
+      &.Opta-Home {
+        border-bottom: none !important;
+        border-top: none !important;
+      }
+      &.Opta-Away {
+        border-top: none !important;
+      }
     }
 
     .Opta-Image-Team-Small {

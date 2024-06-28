@@ -49,7 +49,6 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
         days_ahead={number('days ahead (of current day)', 100)}
         days_before={number('days before (of current day)', 100)}
         round={text('round(s)', '')}
-        isDarkMode={true}
         fixturesPageUrl="https://www.thetimes.co.uk/sport/football/euro-2024"
       />
     );

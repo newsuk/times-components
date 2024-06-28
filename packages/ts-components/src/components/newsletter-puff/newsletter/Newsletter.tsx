@@ -19,6 +19,7 @@ type NewsletterProps = {
   intersectObserverRef: (ref: HTMLElement | null) => void;
   section?: string;
   justSubscribed: boolean;
+  justSubscribedError: boolean;
   headline: string;
   updatingSubscription: boolean;
   copy: string;
@@ -30,6 +31,7 @@ export const Newsletter = ({
   intersectObserverRef,
   section,
   justSubscribed,
+  justSubscribedError,
   headline,
   updatingSubscription,
   copy,
@@ -54,7 +56,7 @@ export const Newsletter = ({
     <React.Fragment>
       <InpContainer section={section}>
         {updatingSubscription && <LoadingOverlay />}
-        {justSubscribed ? (
+        {justSubscribed && (
           <InpSubscribedContainer>
             <InpCopy>
               You've succesfully signed up to{' '}
@@ -63,16 +65,27 @@ export const Newsletter = ({
             </InpCopy>
             <InpPreferencesContainer />
           </InpSubscribedContainer>
-        ) : (
-          <InpSignupContainer>
-            <InpCopy>
-              <InpSignupHeadline>{headline} </InpSignupHeadline>
-              {`${copy} `}
-              {PuffButton('link')}
-            </InpCopy>
-            {PuffButton('button')}
-          </InpSignupContainer>
         )}
+        {justSubscribedError && (
+          <InpSubscribedContainer>
+            <InpCopy>
+              An error occurred. Please use the link below.
+              <NewsletterPuffLink />
+            </InpCopy>
+            <InpPreferencesContainer />
+          </InpSubscribedContainer>
+        )}
+        {!justSubscribed &&
+          !justSubscribedError && (
+            <InpSignupContainer>
+              <InpCopy>
+                <InpSignupHeadline>{headline} </InpSignupHeadline>
+                {`${copy} `}
+                {PuffButton('link')}
+              </InpCopy>
+              {PuffButton('button')}
+            </InpSignupContainer>
+          )}
       </InpContainer>
     </React.Fragment>
   );

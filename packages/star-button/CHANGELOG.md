@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.82](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.81...@times-components/star-button@0.4.82) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.81](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.80...@times-components/star-button@0.4.81) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.80](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.79...@times-components/star-button@0.4.80) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.79](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.78...@times-components/star-button@0.4.79) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.78](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.77...@times-components/star-button@0.4.78) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.77](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.76...@times-components/star-button@0.4.77) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.4.76](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.75...@times-components/star-button@0.4.76) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
 ## [0.4.75](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.4.74...@times-components/star-button@0.4.75) (2024-06-12)
 
 **Note:** Version bump only for package @times-components/star-button

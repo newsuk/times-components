@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`OptaFootballFixturesTournament should render full width correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa bzdUzT"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render full width correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa jODlXD"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`OptaFootballFixturesTournament should render national competitions correctly 1`] = `
 <DocumentFragment>
   <div
