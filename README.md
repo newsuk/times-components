@@ -65,9 +65,9 @@ Besides linking the Times Components and Render repos together, you can view cha
 
 Tests are currently using [jest](https://jestjs.io/) to run so if you want to debug any test follow these steps:
 
-1. (FIND YOUR TEST COMMAND) `jest --config="./packages/provider/__tests__/jest.config.js"`. Depending on what directory we start the tests from, the `--config` directory may differ. My currenct directory is at the repo root: `times-components`.
+1. (FIND YOUR TEST COMMAND) `jest --config="./packages/provider/__tests__/jest.config.js"`. Depending on what directory we start the tests from, the `--config` directory may differ. My current directory is at the repo root: `times-components`.
 
-2. See your test command from the `package.json` for the speciffic package you want to check out.
+2. See your test command from the `package.json` for the specific package you want to check out.
 
 > NOTE: If you don't have jest installed globally, you can use it locally from the `node_modules/.bin/jest`
 
