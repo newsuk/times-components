@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.85.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.84.11...@times-components/article-main-comment@2.85.0) (2024-07-02)
+
+
+### Features
+
+* **TMD-329:** remove placeholder for article image ([#3856](https://github.com/newsuk/times-components/issues/3856)) ([9f1d249](https://github.com/newsuk/times-components/commit/9f1d249ac23312d00cb47a995767deb856e81a71))
+
+
+
+
+
 ## [2.84.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.84.10...@times-components/article-main-comment@2.84.11) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/article-main-comment
