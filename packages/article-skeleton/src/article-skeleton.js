@@ -363,6 +363,7 @@ const ArticleSkeleton = ({
                       />
                     )}
                     {newContent && (
+                      <TCThemeProvider theme={PuzzlesWebLightTheme}>
                       <ArticleBody
                         id={article.id}
                         analyticsStream={analyticsStream}
@@ -375,6 +376,7 @@ const ArticleSkeleton = ({
                         isPreview={isPreview}
                         isLiveOrBreaking={isLiveOrBreaking}
                       />
+                      </TCThemeProvider>
                     )}
                     {isLiveOrBreaking && (
                       <UserState state={UserState.showLiveUpdateButton}>
