@@ -30,7 +30,7 @@ export const WidgetContainerBase = styled.div`
   .Opta {
     .Opta_W {
       margin: 0;
-      background-color: transparent;
+      background-color: transparent !important;
 
       h2 {
         height: auto;

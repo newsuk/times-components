@@ -47,7 +47,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   .Opta-Scroll,
-  .Opta-Window {
+  .Opta-Window,
+  .Opta-Room {
     height: 80px !important;
   }
 
@@ -117,15 +118,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   .Opta-Cf.Opta-Scroll.Opta-Active {
-    background-color: white !important;
-
-    ${({ isApp }) =>
-      isApp &&
-      `
-      @media (prefers-color-scheme: dark) {
-        background-color: black !important;
-      }
-    `};
+    background-color: transparent !important;
   }
 
   .Opta-Scroller {
