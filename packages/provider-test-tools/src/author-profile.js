@@ -114,7 +114,7 @@ export default ({
           },
           Crop: () => ({
             url:
-              "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg"
+              "https://www.thetimes.com/d/assets/tech_300_200.jpg"
           }),
           Image: () => {
             imageIndex += 1;
