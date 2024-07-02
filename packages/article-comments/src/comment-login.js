@@ -2,9 +2,11 @@
 import getCpnId from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
+  console.log("doso je pajdo");
   const xhr = new XMLHttpRequest();
   xhr.addEventListener("load", () => {
     const success = xhr.status === 200;
+    console.log(success, "sucess wtf");
     const { spotimCodeB } = success ? JSON.parse(xhr.response) : {};
     if (spotimCodeB) {
       completeSSOCallback(spotimCodeB);
@@ -29,7 +31,7 @@ const executeSSOtransaction = () => {
       window.nuk.getCookieValue("acs_tnl");
 
     const cpn = `${getCpnId(acsTnlCookie)}_v2`;
-
+    console.log(cpn, "CPN");
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
 };

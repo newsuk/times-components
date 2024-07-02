@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.17.21...@times-components/article-image@7.18.0) (2024-07-02)
+
+
+### Features
+
+* **TMD-329:** remove placeholder for article image ([#3856](https://github.com/newsuk/times-components/issues/3856)) ([9f1d249](https://github.com/newsuk/times-components/commit/9f1d249ac23312d00cb47a995767deb856e81a71))
+
+
+
+
+
 ## [7.17.21](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.17.20...@times-components/article-image@7.17.21) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/article-image

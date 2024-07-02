@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.84](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.83...@times-components/key-facts@2.12.84) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
 ## [2.12.83](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.82...@times-components/key-facts@2.12.83) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/key-facts

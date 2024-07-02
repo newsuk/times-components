@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.19.0...@times-components/lazy-load@0.20.0) (2024-07-02)
+
+
+### Features
+
+* **TMD-329:** remove placeholder for article image ([#3856](https://github.com/newsuk/times-components/issues/3856)) ([9f1d249](https://github.com/newsuk/times-components/commit/9f1d249ac23312d00cb47a995767deb856e81a71))
+
+
+
+
+
 # [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.18.0...@times-components/lazy-load@0.19.0) (2024-06-25)
 
 
