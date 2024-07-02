@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.26.0...@times-components/responsive@0.26.1) (2024-07-02)
+
+
+### Bug Fixes
+
+* **TMRS-272:** review styling ([#3880](https://github.com/newsuk/times-components/issues/3880)) ([b089614](https://github.com/newsuk/times-components/commit/b089614da43b72401f4db849fbbfa9073f693998))
+
+
+
+
+
 # [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.25.0...@times-components/responsive@0.26.0) (2024-06-25)
 
 
