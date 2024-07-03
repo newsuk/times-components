@@ -12,7 +12,6 @@ import Responsive from "@times-components/responsive";
 import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
-import authorProfileTrackingContext from "./author-profile-tracking-context";
 import Head from "./head";
 
 const AuthorProfile = ({
@@ -146,4 +145,4 @@ const AuthorProfile = ({
 AuthorProfile.propTypes = propTypes;
 AuthorProfile.defaultProps = defaultProps;
 
-export default withPageState(authorProfileTrackingContext(AuthorProfile));
+export default withPageState(AuthorProfile);

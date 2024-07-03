@@ -5,7 +5,6 @@ import { Animations } from "@times-components/ts-styleguide";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
-import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 
 const AuthorProfileHeadBase = memo(
@@ -71,4 +70,4 @@ AuthorProfileHeadBase.defaultProps = {
   twitter: ""
 };
 
-export default authorProfileHeadTrackingEvents(AuthorProfileHeadBase);
+export default AuthorProfileHeadBase;

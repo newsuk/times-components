@@ -16,21 +16,5 @@ Array [
       "object": "AuthorProfile",
     },
   ],
-  Array [
-    Object {
-      "action": "Pressed",
-      "attrs": Object {
-        "articlesCount": 28,
-        "authorName": "Name",
-        "eventTime": "2018-01-01T00:00:00.000Z",
-        "page": 5,
-        "pageSize": 10,
-        "twitterHandle": "twitter",
-        "url": "https://twitter.com/twitter",
-      },
-      "component": "TwitterLink",
-      "object": "AuthorProfile",
-    },
-  ],
 ]
 `;
