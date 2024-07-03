@@ -1,34 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article list loading 1`] = `
-<topicArticlesProvider>
-  <Helmet>
-    <title>
-       | The Times & The Sunday Times
-    </title>
-    <meta
-      content="Discover expert articles from The Times and The Sunday Times."
-      name="description"
-    />
-    <link
-      href="/topic/some-slug"
-      rel="canonical"
-    />
-  </Helmet>
-  <ArticleList
-    articleListHeader={
-      <TopicHead
-        isLoading={true}
-        metaDescription=""
-        name=""
-      />
+<div
+  className="lcpHeading tc-view__TcView-nuazoi-0 fPjBcr"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F9F9F9",
+      "borderBottomColor": "#F0F0F0",
+      "borderBottomWidth": 1,
+      "flexDirection": "column",
+      "minHeight": 90,
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "40px",
+      "width": "100%",
     }
-    articlesLoading={true}
-    count={0}
-    emptyStateMessage="e68a9e92b17f4f4171c55353e2bab553"
-    imageRatio={1.5}
-    page={1}
-    showImages={true}
-  />
-</topicArticlesProvider>
+  }
+>
+  <div
+    className="tc-view__TcView-nuazoi-0 responsive__HeadContainerWithDescription-sc-1qy9k4m-0 fnRXto"
+  >
+    <h1
+      className="responsive__ResponsiveName-sc-1qy9k4m-2 hUoTmP"
+    >
+      Test Name
+    </h1>
+    <div
+      className="tc-view__TcView-nuazoi-0 responsive__ResponsiveDivider-sc-1qy9k4m-3 iqYrdR"
+    />
+    <div
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
+      data-testid="topic-description"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04, TimesDigitalW04-fallback, serif",
+          "fontSize": 15,
+          "lineHeight": "26px",
+          "paddingBottom": "15px",
+          "textAlign": "center",
+        }
+      }
+    >
+      Test 
+      <i>
+        italic 
+      </i>
+      <b>
+        bold
+      </b>
+       text.
+    </div>
+  </div>
+</div>
 `;

@@ -11,7 +11,7 @@ import {
 } from "./styles/responsive";
 import styles from "./styles";
 
-const TopicHead = ({ name, description, isLoading }) => {
+const TopicHead = ({ name, description }) => {
   const Container =
     description && description.length
       ? HeadContainerWithDescription
@@ -30,9 +30,7 @@ const TopicHead = ({ name, description, isLoading }) => {
       </Fragment>
     ) : null;
 
-  return isLoading ? (
-    <TcView style={styles.wrapper} />
-  ) : (
+  return (
     <TcView style={styles.wrapper} className="lcpHeading">
       <Container>
         <ResponsiveName accessibilityRole="header" testID="topic-name">
