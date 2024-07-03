@@ -2,7 +2,6 @@ import React from "react";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
-import { withPageState } from "@times-components/pagination";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
@@ -88,4 +87,4 @@ const AuthorProfile = ({
 AuthorProfile.propTypes = propTypes;
 AuthorProfile.defaultProps = defaultProps;
 
-export default withPageState(AuthorProfile);
+export default AuthorProfile;
