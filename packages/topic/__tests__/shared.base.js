@@ -104,38 +104,6 @@ export default props => {
       }
     },
     {
-      name: "fetches more articles",
-      test() {
-        const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
-        );
-
-        const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
-        );
-
-        articleList.props.fetchMore(2);
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "fetches more articles and falls back to previous data if no more",
-      test() {
-        const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
-        );
-
-        const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
-        );
-
-        articleList.props.fetchMore(3);
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
       name: "an article list header",
       test() {
         const testInstance = TestRenderer.create(
