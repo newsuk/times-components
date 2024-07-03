@@ -2,14 +2,12 @@ import React, { memo } from "react";
 import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/ts-styleguide";
-import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import styles from "./styles";
 
 const AuthorProfileHeadBase = memo(
   ({
-    isLoading,
     jobTitle,
     onTwitterLinkPress,
     renderBiography,
@@ -17,10 +15,6 @@ const AuthorProfileHeadBase = memo(
     renderName,
     twitter
   }) => {
-    if (isLoading) {
-      return <AuthorProfileHeadLoading />;
-    }
-
     const renderJobTitle = () => {
       if (!jobTitle) return null;
       return <AuthorProfileHeadJobTitle jobTitle={jobTitle} />;
@@ -54,7 +48,6 @@ const AuthorProfileHeadBase = memo(
 );
 
 AuthorProfileHeadBase.propTypes = {
-  isLoading: PropTypes.bool,
   jobTitle: PropTypes.string,
   onTwitterLinkPress: PropTypes.func,
   renderBiography: PropTypes.func.isRequired,
@@ -64,7 +57,6 @@ AuthorProfileHeadBase.propTypes = {
 };
 
 AuthorProfileHeadBase.defaultProps = {
-  isLoading: true,
   jobTitle: "",
   onTwitterLinkPress: () => {},
   twitter: ""

@@ -290,11 +290,48 @@ exports[`2. an article list header loading 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  width: 100%;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
   position: relative;
   z-index: 0;
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .c0 {
@@ -317,9 +354,46 @@ exports[`2. an article list header loading 1`] = `
   padding-top: 30px;
 }
 
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
 @media (min-width:768px) {
   .c0 {
     padding-top: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 680px;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c3 {
+    max-width: 760px;
   }
 }
 
@@ -334,27 +408,31 @@ exports[`2. an article list header loading 1`] = `
   width="100%"
 >
   <div
-    alignItems="center"
-    backgroundColor="#F9F9F9"
-    borderBottomColor="#F0F0F0"
-    borderBottomWidth={1}
     className="c1"
-    minHeight={264}
     width="100%"
   >
     <div
-      borderColor="#FFFFFF"
-      borderRadius={50}
-      className="c1"
-      height={100}
-      overflow="hidden"
-      position="absolute"
-      top="30px"
-      width={100}
+      alignItems="center"
+      backgroundColor="transparent"
+      className="c2"
+      width="100%"
     >
-      <Gradient
-        flex={1}
-      />
+      <div
+        className="c3"
+        paddingBottom="30px"
+        paddingLeft="10px"
+        paddingRight="10px"
+        width="100%"
+      >
+        <div
+          className="c4"
+          color="#333333"
+          fontFamily="TimesDigitalW04, TimesDigitalW04-fallback, serif"
+          fontSize={16}
+          lineHeight="27px"
+          textAlign="center"
+        />
+      </div>
     </div>
   </div>
 </div>

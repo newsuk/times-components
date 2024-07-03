@@ -179,7 +179,9 @@ exports[`7. an article list header loading 1`] = `
 <div>
   <div>
     <div>
-      <Gradient />
+      <div>
+        <div />
+      </div>
     </div>
   </div>
 </div>
