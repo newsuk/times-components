@@ -35,6 +35,7 @@ class TimesImage extends Component {
     const styles = {
       ...style
     };
+    Object.assign(styles, { backgroundColor: "#efefef" });
     if (rounded) {
       Object.assign(styles, { borderRadius: "50%", overflow: "hidden" });
     }
