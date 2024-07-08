@@ -31,7 +31,7 @@ const countries: Record<string, string> = {
 const flagStyles = Object.keys(countries).map(
   (countryCode: string) => `
   .Opta-Team-${countryCode} .Opta-Team, .Opta-Team-${countryCode}.Opta-Team, .Opta-Player .Opta-Image-Team-${countryCode} {
-    background-image: url(https://nuk-tnl-editorial-prod-staticassets.s3.eu-west-1.amazonaws.com/opta/euro-flags/${
+    background-image: url(https://extras.thetimes.co.uk/web/opta/euro-flags/${
       countries[countryCode]
     }.svg);
     background-size: 20px;
