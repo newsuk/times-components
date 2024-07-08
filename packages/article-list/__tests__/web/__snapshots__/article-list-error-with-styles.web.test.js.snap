@@ -155,6 +155,7 @@ exports[`1. page error 1`] = `
     className="c1"
   >
     <div
+      backgroundColor="#efefef"
       className="c2"
     >
       <div
