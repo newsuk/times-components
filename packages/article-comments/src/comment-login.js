@@ -16,11 +16,14 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallback = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
-    completeSSOCallback
-  );
+const ssoCallback = (codeA, completeSSOCallback) =>{
+  console.log('SSO FIRED')
+return loginRequest(
+  `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
+  completeSSOCallback
+);
+}
+  
 
 const executeSSOtransaction = () => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
