@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.98.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.0...@times-components/ts-components@1.98.1) (2024-07-08)
+
+
+### Bug Fixes
+
+* **TMD-529:** add background colour to image container ([#3883](https://github.com/newsuk/times-components/issues/3883)) ([034e31d](https://github.com/newsuk/times-components/commit/034e31dd00463ff6ec431ca7425179e1ad5495c6))
+
+
+
+
+
 # [1.98.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.97.1...@times-components/ts-components@1.98.0) (2024-07-02)
 
 
