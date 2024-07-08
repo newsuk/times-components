@@ -2,10 +2,12 @@
 import getCpnId from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
+      // eslint-disable-next-line no-consoleß
   console.log("doso je pajdo");
   const xhr = new XMLHttpRequest();
   xhr.addEventListener("load", () => {
     const success = xhr.status === 200;
+        // eslint-disable-next-line no-consoleß
     console.log(success, "sucess wtf");
     const { spotimCodeB } = success ? JSON.parse(xhr.response) : {};
     if (spotimCodeB) {
@@ -17,6 +19,7 @@ const loginRequest = (url, completeSSOCallback) => {
 };
 
 const ssoCallback = (codeA, completeSSOCallback) =>{
+      // eslint-disable-next-line no-consoleß
   console.log('SSO FIRED')
 return loginRequest(
   `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
@@ -34,6 +37,7 @@ const executeSSOtransaction = () => {
       window.nuk.getCookieValue("acs_tnl");
 
     const cpn = `${getCpnId(acsTnlCookie)}_v2`;
+        // eslint-disable-next-line no-consoleß
     console.log(cpn, "CPN");
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
