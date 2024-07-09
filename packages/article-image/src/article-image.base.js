@@ -71,6 +71,8 @@ const ArticleImage = ({
     relativeVerticalOffset
   } = imageOptions;
   const { caption, credits } = captionOptions;
+  // eslint-disable-next-line no-console
+  console.log(imageOptions, 'imageOptions');
 
   if (display === "inline") {
     return (
