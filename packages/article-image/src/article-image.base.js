@@ -12,9 +12,9 @@ import styles from "./styles";
 const captionStyle = {
   secondary: {
     container: {
-      paddingTop: 0
-    }
-  }
+      paddingTop: 0,
+    },
+  },
 };
 
 function getCaptionComponent(display) {
@@ -55,7 +55,7 @@ const ArticleImage = ({
   imageOptions,
   captionOptions,
   onImagePress,
-  images
+  images,
 }) => {
   const {
     display,
@@ -68,11 +68,11 @@ const ArticleImage = ({
     relativeHeight,
     relativeWidth,
     relativeHorizontalOffset,
-    relativeVerticalOffset
+    relativeVerticalOffset,
   } = imageOptions;
   const { caption, credits } = captionOptions;
   // eslint-disable-next-line no-console
-  console.log(imageOptions, 'imageOptions');
+  console.log(imageOptions, "imageOptions");
 
   if (display === "inline") {
     return (
