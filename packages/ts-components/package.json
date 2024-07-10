@@ -58,6 +58,7 @@
     "@times-components/provider": "1.40.35",
     "@times-components/provider-queries": "2.21.1",
     "@times-components/related-articles": "6.17.75",
+    "@times-components/ts-newskit": "1.189.0",
     "@times-components/ts-slices": "1.9.22",
     "@times-components/ts-styleguide": "1.50.34",
     "@times-components/utils": "6.26.0",

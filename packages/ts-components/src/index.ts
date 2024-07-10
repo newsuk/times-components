@@ -21,6 +21,7 @@ export {
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
 export { SaveStar } from './components/save-star/SaveStar';
+export { JobTitle } from './components/job-title/job-title';
 
 // Newsletter Components
 export {
