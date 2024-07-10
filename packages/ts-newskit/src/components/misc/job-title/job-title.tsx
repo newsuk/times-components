@@ -1,5 +1,5 @@
 import React from 'react';
-import { TooltipIcon } from '@times-components/ts-newskit';
+import { TooltipIcon } from '../../../assets';
 import {
   CloseButton,
   IconButton,
