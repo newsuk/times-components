@@ -9,7 +9,7 @@ import {
   BannerWrapper,
   BannerContentWrapper
 } from './styles';
-import { CloseIconBlack, EmailIcon } from '../../../assets';
+import { CloseIconBlack, EmailIcon } from '@times-components/ts-newskit/src/assets';
 
 type Props = {
   onClose: () => void;
