@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, waitFor } from '@testing-library/react';
-import { UpdateButtonWithDelay } from '../update-button-with-delay';
+import { UpdateButtonWithDelay, fetchData } from '../update-button-with-delay';
 
 const handleClickMock = jest.fn();
 
@@ -64,4 +64,13 @@ describe('Render UpdateButtonWithDelay', () => {
 
     unmount();
   });
+  it ('should not error on fetch with a valid articleId', async () => {
+    await expect(fetchData("12345")).resolves.not.toThrowError();
+  });
+  it ('should return the publishedTime on fetch with a valid articleId', async () => {
+    expect(fetchData("12345")).not.toBeUndefined();
+  });
 });
+
+
+

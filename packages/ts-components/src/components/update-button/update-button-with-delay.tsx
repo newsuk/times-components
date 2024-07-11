@@ -13,6 +13,17 @@ type UpdateWithDelayProps = {
   update: boolean;
 };
 
+export const fetchData = async (articleId: string) => {
+  try {
+    const response = await fetch(`/api/article-update-time/${articleId}`);
+    const json = await response.json();
+    return json.article.publishedTime;
+  } catch (err) {
+    // tslint:disable-next-line:no-console
+    console.log(err);
+  }
+};
+
 export const UpdateButtonWithDelay = ({
   delay,
   display,
@@ -24,18 +35,8 @@ export const UpdateButtonWithDelay = ({
 }: UpdateWithDelayProps) => {
   const [hasUpdate, setUpdate] = useState(update);
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`/api/article-update-time/${articleId}`);
-        const json = await response.json();
-        return json.article.publishedTime;
-      } catch (err) {
-        // tslint:disable-next-line:no-console
-        console.log(err);
-      }
-    };
     const interval = setInterval(async () => {
-      (await fetchData()) > updatedTime && setUpdate(true);
+      (await fetchData(articleId)) > updatedTime && setUpdate(true);
     }, 120000);
 
     return () => clearInterval(interval);
