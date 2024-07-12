@@ -30,7 +30,7 @@ export {
   DelayedComponent
 } from './components/delayed-component/delayed-component';
 
-// Newsletter Components
+// Newsletter Components.
 export {
   AutoNewsletterPuff
 } from './components/newsletter-puff/AutoNewsletterPuff';
