@@ -1,6 +1,9 @@
 import React from 'react';
 import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
-import { TrackingContext, TrackingContextProvider } from '@times-components/ts-newskit';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '@times-components/ts-newskit/src';
 import { BreadcrumbIcon } from '../../assets';
 
 type BreadcrumbsItem = {
