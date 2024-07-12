@@ -1,20 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons Component: BreadcrumbIcon BreadcrumbIcon renders with default props 1`] = `
-<DocumentFragment>
-  <svg
-    fill="none"
-    height="16"
-    width="16"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-    />
-  </svg>
-</DocumentFragment>
-`;
-
 exports[`Icons Component: CloseIconBlack CloseIconBlack renders with default props 1`] = `
 <DocumentFragment>
   <svg

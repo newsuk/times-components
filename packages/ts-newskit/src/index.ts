@@ -6,7 +6,6 @@ export {
   UpdateButtonWithDelay
 } from './components/misc/update-button/update-button-with-delay';
 export { Banner } from './components/misc/banner/banner';
-export { BreadcrumbIcon } from './assets';
 export { TrackingContext, TrackingContextProvider } from './utils/TrackingContextProvider'
 
 // TODO Remove after tests - borisovy
