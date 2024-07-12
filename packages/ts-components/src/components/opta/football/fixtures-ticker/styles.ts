@@ -41,6 +41,7 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
 
 export const WidgetContainer = styled(WidgetContainerBase)<{
   isApp?: boolean;
+  showButtons?: boolean;
 }>`
   .Opta {
     font-family: Roboto !important;
@@ -52,18 +53,21 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     height: 80px !important;
   }
 
-  @media (max-width: ${breakpoints.small}px) {
-    .Opta-Scroller {
-      display: none !important;
+  ${({ showButtons }) => !showButtons && `
+    @media (max-width: ${breakpoints.small}px) {
+      .Opta-Scroller {
+        display: none !important;
+      }
     }
-  }
+  `}
 
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Window {
-      left: 0 !important;
+      left: ${({ showButtons }) => showButtons ? '30px' : '0'} !important;
       right: 0 !important;
       overflow-x: auto !important;
       position: relative !important;
+      ${({ showButtons }) => showButtons && 'width: calc(100% - 60px) !important;' } 
     }
   }
 
