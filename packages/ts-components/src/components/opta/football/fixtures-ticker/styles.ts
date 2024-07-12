@@ -53,7 +53,9 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     height: 80px !important;
   }
 
-  ${({ showButtons }) => !showButtons && `
+  ${({ showButtons }) =>
+    !showButtons &&
+    `
     @media (max-width: ${breakpoints.small}px) {
       .Opta-Scroller {
         display: none !important;
@@ -63,11 +65,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
   @media (max-width: ${breakpoints.small}px) {
     .Opta-Window {
-      left: ${({ showButtons }) => showButtons ? '30px' : '0'} !important;
+      left: ${({ showButtons }) => (showButtons ? '30px' : '0')} !important;
       right: 0 !important;
-      overflow-x: auto !important;
-      position: relative !important;
-      ${({ showButtons }) => showButtons && 'width: calc(100% - 60px) !important;' } 
+      ${({ showButtons }) =>
+        showButtons
+          ? 'width: calc(100% - 60px) !important;'
+          : `
+        overflow-x: auto !important;
+        position: relative !important;`}
     }
   }
 
