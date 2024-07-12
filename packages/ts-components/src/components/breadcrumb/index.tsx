@@ -3,7 +3,7 @@ import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
 import {
   TrackingContext,
   TrackingContextProvider
-} from '@times-components/ts-newskit/src';
+} from '../../helpers/tracking/TrackingContextProvider';
 import { BreadcrumbIcon } from '../../assets';
 
 type BreadcrumbsItem = {

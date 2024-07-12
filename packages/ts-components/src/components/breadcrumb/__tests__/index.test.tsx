@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/react';
 import { Breadcrumb } from '../index';
 import { breadcrumbItems } from '../fixtures/breadcrumbs.json';
-import { TrackingContextProvider } from '@times-components/ts-newskit/src';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
 describe('Render Breadcrumbs', () => {
   const renderBreadcrumb = (analyticsStream?: (event: any) => void) =>
