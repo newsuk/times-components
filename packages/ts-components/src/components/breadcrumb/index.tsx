@@ -1,10 +1,10 @@
 import React from 'react';
 import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
+import { BreadcrumbIcon } from '../../assets';
 import {
   TrackingContext,
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
-import { BreadcrumbIcon } from '../../assets';
 
 type BreadcrumbsItem = {
   title: string;
