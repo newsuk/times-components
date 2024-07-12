@@ -64,13 +64,10 @@ describe('Render UpdateButtonWithDelay', () => {
 
     unmount();
   });
-  it ('should not error on fetch with a valid articleId', async () => {
-    await expect(fetchData("12345")).resolves.not.toThrowError();
+  it('should not error on fetch with a valid articleId', async () => {
+    await expect(fetchData('12345')).resolves.not.toThrowError();
   });
-  it ('should return the publishedTime on fetch with a valid articleId', async () => {
-    expect(fetchData("12345")).not.toBeUndefined();
+  it('should return the publishedTime on fetch with a valid articleId', async () => {
+    expect(fetchData('12345')).not.toBeUndefined();
   });
 });
-
-
-

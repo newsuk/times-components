@@ -21,14 +21,14 @@ export {
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
 export { SaveStar } from './components/save-star/SaveStar';
-export {
-  UpdateButton
-} from './components/update-button/update-button';
+export { UpdateButton } from './components/update-button/update-button';
 export {
   UpdateButtonWithDelay
 } from './components/update-button/update-button-with-delay';
 export { Banner } from './components/banner/banner';
-export { DelayedComponent } from './components/delayed-component/delayed-component';
+export {
+  DelayedComponent
+} from './components/delayed-component/delayed-component';
 
 // Newsletter Components
 export {

@@ -5,9 +5,7 @@ import { ArticleHarness } from '../ArticleHarness';
 
 describe('Render ArticleHarness', () => {
   it('renders the ArticleHarness', () => {
-    const { asFragment } = render(
-      <ArticleHarness />
-    );
+    const { asFragment } = render(<ArticleHarness />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
