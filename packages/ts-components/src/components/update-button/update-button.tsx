@@ -1,5 +1,5 @@
 import React from 'react';
-import { FilledArrowIcon } from '@times-components/ts-newskit/src/assets';
+import { FilledArrowIcon } from '../../assets';
 import { StyledButton } from './styles';
 
 type UpdateButtonProps = {
