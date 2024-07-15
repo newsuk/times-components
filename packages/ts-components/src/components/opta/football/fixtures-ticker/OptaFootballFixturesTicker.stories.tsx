@@ -38,7 +38,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
 
 storiesOf('Typescript Component/In Article/Football/Fixtures', module)
   .addDecorator(withKnobs)
-  .add('Fixtures Ticker dark mode and link', () => {
+  .add('Fixtures Ticker buttons and link', () => {
     const selComp = select('Competition', competitons, '8');
     return (
       <OptaFootballFixturesTicker
@@ -50,6 +50,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
         days_before={number('days before (of current day)', 100)}
         round={text('round(s)', '')}
         fixturesPageUrl="https://www.thetimes.co.uk/sport/football/euro-2024"
+        showButtons
       />
     );
   });
