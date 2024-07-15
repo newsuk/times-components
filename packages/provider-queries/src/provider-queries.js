@@ -20,7 +20,3 @@ export {
   default as authorArticlesWithImages,
   propsToVariables as authorArticlesWithImagesPTV
 } from "./author-articles-with-images";
-export {
-  default as topicArticles,
-  propsToVariables as topicArticlesPTV
-} from "./topic-articles";
