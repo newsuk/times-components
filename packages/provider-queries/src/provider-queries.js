@@ -9,7 +9,6 @@ export getNewsletter from "./get-newsletter";
 export getTokenisedArticleUrl from "./get-tokenised-article-url";
 export saveBookmarks from "./save-bookmark";
 export subscribeNewsletter from "./subscribe-newsletter";
-export topic from "./topic";
 export unsaveBookmarks from "./unsave-bookmark";
 
 export {
