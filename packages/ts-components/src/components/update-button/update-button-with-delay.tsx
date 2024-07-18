@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { DelayedComponent } from '../delayed-component/delayed-component';
 import { UpdateButton } from './update-button';
 import fetch from 'isomorphic-unfetch';
@@ -34,13 +34,22 @@ export const UpdateButtonWithDelay = ({
   update = false
 }: UpdateWithDelayProps) => {
   const [hasUpdate, setUpdate] = useState(update);
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      (await fetchData(articleId)) > updatedTime && setUpdate(true);
-    }, 120000);
+  const cachedFetch = useCallback(
+    async () => {
+      return await fetchData(articleId);
+    },
+    [articleId]
+  );
+  useEffect(
+    () => {
+      const interval = setInterval(async () => {
+        (await cachedFetch()) > updatedTime && setUpdate(true);
+      }, 120000);
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearInterval(interval);
+    },
+    [cachedFetch, updatedTime]
+  );
 
   return (
     <>
