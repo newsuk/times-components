@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.98.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.1...@times-components/ts-components@1.98.2) (2024-07-15)
+
+
+### Bug Fixes
+
+* **TMRS-277:** addition of buttons prop ([#3888](https://github.com/newsuk/times-components/issues/3888)) ([8751ba8](https://github.com/newsuk/times-components/commit/8751ba8d0950d2b0ef4196e15126b173a636c611))
+
+
+
+
+
 ## [1.98.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.0...@times-components/ts-components@1.98.1) (2024-07-08)
 
 
