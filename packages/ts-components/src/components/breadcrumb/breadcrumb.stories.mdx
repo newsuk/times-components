@@ -1,8 +1,8 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { Breadcrumb } from './index.tsx';
+import { Breadcrumb } from './breadcrumb.tsx';
 import { breadcrumbItems, breadcrumbItemsForTrackingDemo } from './fixtures/breadcrumbs.json';
-import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
-import analyticsStream from "../fixtures/analytics-actions"
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 <Meta
   title="Components/Navigation/Breadcrumb"

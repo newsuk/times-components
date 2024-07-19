@@ -21,6 +21,13 @@ export {
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
 export { SaveStar } from './components/save-star/SaveStar';
+export { Breadcrumb } from './components/breadcrumb/breadcrumb';
+export { UpdateButton } from './components/update-button/update-button';
+export {
+  UpdateButtonWithDelay
+} from './components/update-button/update-button-with-delay';
+export { Banner } from './components/banner/banner';
+export { JobTitle } from './components/job-title/job-title';
 
 // Newsletter Components
 export {
@@ -84,6 +91,7 @@ export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
 export {
+  TrackingContext,
   TrackingContextProvider
 } from './helpers/tracking/TrackingContextProvider';
 

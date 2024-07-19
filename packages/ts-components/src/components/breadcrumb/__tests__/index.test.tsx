@@ -1,9 +1,9 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/react';
-import { Breadcrumb } from '../index';
+import { Breadcrumb } from '../breadcrumb';
 import { breadcrumbItems } from '../fixtures/breadcrumbs.json';
-import { TrackingContextProvider } from '../../../../utils/TrackingContextProvider';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
 describe('Render Breadcrumbs', () => {
   const renderBreadcrumb = (analyticsStream?: (event: any) => void) =>

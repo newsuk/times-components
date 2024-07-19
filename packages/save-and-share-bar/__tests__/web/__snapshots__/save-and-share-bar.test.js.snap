@@ -44,16 +44,11 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <svg
         aria-hidden="true"
-        className="css-18cthx4-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
-        style={
-          Object {
-            "height": 14,
-            "width": 14,
-          }
-        }
+        height={14}
         viewBox="0 0 16 16"
+        width={14}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -226,16 +221,11 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <svg
         aria-hidden="true"
-        className="css-18cthx4-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
-        style={
-          Object {
-            "height": 14,
-            "width": 14,
-          }
-        }
+        height={14}
         viewBox="0 0 16 16"
+        width={14}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

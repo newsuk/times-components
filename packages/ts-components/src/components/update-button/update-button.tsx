@@ -1,5 +1,5 @@
 import React from 'react';
-import { FilledArrowIcon } from '../../../assets';
+import FilledArrowIcon from './assets/FilledArrowIcon';
 import { StyledButton } from './styles';
 
 type UpdateButtonProps = {

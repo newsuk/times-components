@@ -31,15 +31,7 @@ const buildConfig = dir => {
     collectCoverage: true,
     coverageReporters: ['json', 'html', 'lcov', 'text'],
     coverageDirectory: path.join(dir, 'coverage'),
-    collectCoverageFrom: [
-      '<rootDir>/packages/ts-newskit/src/**/*.(tsx|ts)',
-      '!<rootDir>/packages/ts-newskit/src/**/*.(stories|d).*',
-      '!<rootDir>/packages/ts-newskit/src/index.*',
-      '!<rootDir>/packages/ts-components/src/fixtures/**',
-      '!<rootDir>/node_modules/',
-      '!<rootDir>/packages/ts-newskit/src/**/fixtures/*.(tsx|ts)',
-      '!<rootDir>/packages/ts-newskit/src/**/shared-styles/index.ts',
-    ],
+    collectCoverageFrom: [],
     coverageThreshold: {
       global: {
         statements: 25,
