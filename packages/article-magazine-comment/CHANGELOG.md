@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.83.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.82.2...@times-components/article-magazine-comment@3.83.0) (2024-07-23)
+
+
+### Features
+
+* **TMD-477:** remove emotion icons ([#3892](https://github.com/newsuk/times-components/issues/3892)) ([ee7f436](https://github.com/newsuk/times-components/commit/ee7f4361a29b53aaeb3e9a354a7eda896d21abab))
+
+
+
+
+
 ## [3.82.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.82.1...@times-components/article-magazine-comment@3.82.2) (2024-07-15)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
