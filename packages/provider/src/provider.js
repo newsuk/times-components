@@ -7,8 +7,6 @@ export ArticleProvider from "./article";
 export GetNewsletter from "./get-newsletter";
 export ArticleExtrasProvider from "./article-extras";
 export EditionProvider from "./edition";
-export TopicProvider from "./topic";
-export TopicArticlesProvider from "./topic-articles";
 export DraftArticleProvider from "./draft-article";
 
 export default from "./connect";

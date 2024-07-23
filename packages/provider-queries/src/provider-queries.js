@@ -9,7 +9,6 @@ export getNewsletter from "./get-newsletter";
 export getTokenisedArticleUrl from "./get-tokenised-article-url";
 export saveBookmarks from "./save-bookmark";
 export subscribeNewsletter from "./subscribe-newsletter";
-export topic from "./topic";
 export unsaveBookmarks from "./unsave-bookmark";
 
 export {
@@ -20,7 +19,3 @@ export {
   default as authorArticlesWithImages,
   propsToVariables as authorArticlesWithImagesPTV
 } from "./author-articles-with-images";
-export {
-  default as topicArticles,
-  propsToVariables as topicArticlesPTV
-} from "./topic-articles";

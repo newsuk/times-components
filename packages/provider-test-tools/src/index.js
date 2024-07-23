@@ -13,7 +13,6 @@ import mm from "./make-mocks";
 import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
 import providerTester from "./provider-tester";
-import topic from "./topic";
 import inlineVideo from "./fixtures/inline-video.json";
 import keyFacts from "./fixtures/key-facts.json";
 import pullQuote from "./fixtures/pull-quote.json";
@@ -51,7 +50,6 @@ export {
   MockFixture,
   providerTester,
   schemaToMocks,
-  topic,
   bookmarks,
   MockBookmarksProvider
 };

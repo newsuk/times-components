@@ -5,16 +5,13 @@ import {
   article as makeArticleParams,
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture,
-  topic as makeTopicParams
+  MockFixture
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,
-  AuthorArticlesWithImagesProvider,
-  TopicProvider,
-  TopicArticlesProvider
+  AuthorArticlesWithImagesProvider
 } from "./src/provider.js";
 
 export default {
@@ -187,77 +184,6 @@ export default {
         );
       },
       name: "Author Profile Articles with Images",
-      type: "story"
-    },
-    {
-      component: () => {
-        const articleImageRatio = "3:2";
-        const name = "Chelsea";
-        const pageSize = 2;
-        const slug = "chelsea";
-
-        return (
-          <MockFixture
-            params={makeTopicParams({
-              articleVariables: iteration => ({
-                first: pageSize,
-                imageRatio: articleImageRatio,
-                skip: (iteration - 1) * pageSize,
-                slug
-              }),
-              name,
-              pageSize,
-              slug
-            })}
-            render={mocks => (
-              <MockedProvider mocks={mocks}>
-                <TopicProvider debounceTimeMs={0} slug="chelsea">
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
-                </TopicProvider>
-              </MockedProvider>
-            )}
-          />
-        );
-      },
-      name: "Topic",
-      type: "story"
-    },
-    {
-      component: () => {
-        const articleImageRatio = "3:2";
-        const name = "Chelsea";
-        const pageSize = 2;
-        const slug = "chelsea";
-
-        return (
-          <MockFixture
-            params={makeTopicParams({
-              articleVariables: iteration => ({
-                first: pageSize,
-                imageRatio: articleImageRatio,
-                skip: (iteration - 1) * pageSize,
-                slug
-              }),
-              name,
-              pageSize,
-              slug
-            })}
-            render={mocks => (
-              <MockedProvider mocks={mocks}>
-                <TopicArticlesProvider
-                  debounceTimeMs={0}
-                  page={1}
-                  pageSize={pageSize}
-                  slug={slug}
-                >
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
-                </TopicArticlesProvider>
-              </MockedProvider>
-            )}
-          />
-        );
-      },
-      name: "Topic Articles",
       type: "story"
     }
   ],
