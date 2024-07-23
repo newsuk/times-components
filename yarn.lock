@@ -2554,13 +2554,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.14.0":
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
-  integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
-  dependencies:
-    regenerator-runtime "^0.13.11"
-
 "@babel/runtime@^7.15.4":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.15.tgz#38f46494ccf6cf020bd4eed7124b425e83e523b8"
@@ -2775,21 +2768,6 @@
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
-
-"@emotion-icons/bootstrap@3.27.0":
-  version "3.27.0"
-  resolved "https://registry.yarnpkg.com/@emotion-icons/bootstrap/-/bootstrap-3.27.0.tgz#53cde4cc341e0aa79f9a717ee78f2502c9bc1ae5"
-  integrity sha512-ZLUHpiXI/Lsej4i8T9do9Vrn5LGdcYtDAPz09cyHlp5cvEVkncgqAcGmeDVMnweNBf6wB+QzL33IqZiD43S/HA==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@emotion-icons/emotion-icon" "4.1.0"
-
-"@emotion-icons/emotion-icon@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.1.0.tgz#587667e92a72dc3b271713eed4b72c6bf3b22df1"
-  integrity sha512-bOUbWj8DPjUK5MtRx2ApMudOnh/tasqJwa+sdRbqsZD0g0hYf0jCsTDNs/57VvGOJH2PfWDKD1jbLjwajAYT9A==
-  dependencies:
-    "@babel/runtime" "^7.14.0"
 
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
