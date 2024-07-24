@@ -7,12 +7,19 @@ import props from "./key-facts-prop-types";
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
 // Function to convert key items incorrectly marked as "paywall" into list items
-function formatPaywallItems (items) {
-  return [...items].map(item => (item.name === "paywall" ? {...item.children[0]} : {
-      ...item, 
-      children: item.children.map (i => i.name === "paywall" ? ({...i.children[0]}) : i)
-    }))
-  }
+function formatPaywallItems(items) {
+  return [...items].map(
+    item =>
+      item.name === "paywall"
+        ? { ...item.children[0] }
+        : {
+            ...item,
+            children: item.children.map(
+              i => (i.name === "paywall" ? { ...i.children[0] } : i)
+            )
+          }
+  );
+}
 
 const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
   const {
@@ -21,7 +28,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
   } = ast;
 
   const { children: keyFactsItems } = children[0];
-  const formattedKeyFactItems = formatPaywallItems(keyFactsItems)
+  const formattedKeyFactItems = formatPaywallItems(keyFactsItems);
 
   const articleFlag = isLiveOrBreaking
     ? isLiveOrBreaking.toLowerCase()
