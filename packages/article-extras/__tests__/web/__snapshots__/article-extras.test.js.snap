@@ -36,6 +36,26 @@ Array [
       id="advert-inarticle-native-2"
     />
   </div>,
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
+  </div>,
   <ArticleComments
     articleId="dummy-article-id"
     commentingConfig={
@@ -110,6 +130,26 @@ Array [
       id="advert-inarticle-native-2"
     />
   </div>,
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
+  </div>,
   <ArticleComments
     articleId="dummy-article-id"
     commentingConfig={
@@ -158,6 +198,26 @@ Array [
       data-parent="group-3"
       id="advert-inarticle-native-2"
     />
+  </div>,
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
