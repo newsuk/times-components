@@ -477,6 +477,9 @@ exports[`1. a full article 1`] = `
       <h2>
         Sponsored
       </h2>
+      <span>
+        PROMOTED CONTENT
+      </span>
     </article>
   </main>
 </article>
