@@ -195,7 +195,6 @@ const contentWithAd = [
         name: "paragraph",
         children: []
       },
-     
       {
         name: "paragraph",
         children: []
