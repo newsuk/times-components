@@ -10,8 +10,10 @@ const insertInlineAd = children => {
   const paywallChildren = child.children;
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
-    .filter(item => item.name === "paragraph")
-    .pop();
+    .filter(item => item.name === "paragraph");
+
+  // remove last paragraph to stop ads being appended to the end of the article
+  paywallParagraphs.pop();
 
   const paraPostition = [10, 15, 20, 25];
 
