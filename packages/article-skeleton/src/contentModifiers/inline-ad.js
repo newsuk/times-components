@@ -10,7 +10,9 @@ const insertInlineAd = children => {
   const paywallChildren = child.children;
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
-    .filter(item => item.name === "paragraph");
+    .filter(item => item.name === "paragraph")
+    .pop();
+
   const paraPostition = [10, 15, 20, 25];
 
   paraPostition.forEach((item, i) => {
@@ -21,7 +23,7 @@ const insertInlineAd = children => {
         : null;
 
       if (indexPos && indexPos !== null) {
-        paywallChildren.splice(indexPos + i, 0, {
+        paywallChildren.splice(indexPos + i + 1, 0, {
           name: `inlineAd${i + 1}`,
           children: []
         });
