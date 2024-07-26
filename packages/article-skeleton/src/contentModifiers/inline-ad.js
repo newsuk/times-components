@@ -15,6 +15,7 @@ const insertInlineAd = children => {
   // remove last paragraph to stop ads being appended to the end of the article
   paywallParagraphs.pop();
 
+  // insert AFTER these positions - so insert in positions 10, 15, 20, 25
   const paraPostition = [9, 14, 19, 24];
 
   paraPostition.forEach((item, i) => {
