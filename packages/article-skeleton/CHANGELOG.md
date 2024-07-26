@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.134.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.133.14...@times-components/article-skeleton@1.134.0) (2024-07-26)
+
+
+### Features
+
+* **TMW-000:** Update article ad positions ([#3896](https://github.com/newsuk/times-components/issues/3896)) ([6333718](https://github.com/newsuk/times-components/commit/63337182651101d42e599f3637f496b0680c59dc))
+
+
+
+
+
 ## [1.133.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.133.13...@times-components/article-skeleton@1.133.14) (2024-07-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton
