@@ -102,10 +102,6 @@ const contentWithOutAd = [
       {
         name: "paragraph",
         children: []
-      },
-      {
-        name: "paragraph",
-        children: []
       }
     ]
   }
@@ -192,13 +188,14 @@ const contentWithAd = [
         children: []
       },
       {
-        name: "paragraph",
-        children: []
-      },
-      {
         name: "inlineAd1",
         children: []
       },
+      {
+        name: "paragraph",
+        children: []
+      },
+     
       {
         name: "paragraph",
         children: []
@@ -212,10 +209,6 @@ const contentWithAd = [
         children: []
       },
       // 15th para
-      {
-        name: "paragraph",
-        children: []
-      },
       {
         name: "paragraph",
         children: []
