@@ -23,7 +23,10 @@ const buildConfig = dir => {
     },
     globals: {
       'ts-jest': {
-        tsConfig: './tsconfig.jest.json'
+        tsConfig: './tsconfig.jest.json',
+        globals: {
+          isolatedModules: true
+        }
       }
     },
     collectCoverage: true,
