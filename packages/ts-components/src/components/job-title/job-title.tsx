@@ -1,5 +1,5 @@
 import React from 'react';
-import { TooltipIcon } from '../../../assets';
+import TooltipIcon from './assets/TooltipIcon';
 import {
   CloseButton,
   IconButton,
