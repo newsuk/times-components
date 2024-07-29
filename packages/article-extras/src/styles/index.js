@@ -91,4 +91,47 @@ const styles = {
   }
 };
 
+export const PromotedContentContainer = styled.div`
+  border-top: 2px solid #1d1d1b;
+  background-color: #f5f5f5;
+  padding: 20px;
+`;
+
+export const PromotedContentTitle = styled.span`
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3b3b3b;
+`;
+
+export const PromotedContentGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 14px;
+  row-gap: 16px;
+  margin-block-start: 14px;
+`;
+
+export const PromotedContentAd = styled.div`
+  position: relative;
+  min-height: 250px;
+
+  &:nth-child(1)::after,
+  &:nth-child(4)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -8px;
+    width: 1px;
+    height: 100%;
+    background-color: #c2c2c2;
+  }
+`;
+
+export const PromotedContentSectionDivider = styled.div`
+  border-top: 1px solid #e4e4e4;
+  grid-column: 1 / 3;
+`;
+
 export default styles;
