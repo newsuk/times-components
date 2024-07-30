@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 
 import { MockTopic, MockArticle } from "@times-components/fixture-generator";
+import { terminalLog } from "../cypress/support";
 
 export default (options = {}) => {
   const qs = options.qs || "";
@@ -69,7 +70,7 @@ export default (options = {}) => {
           }
         ]
       });
-      cy.checkA11y();
+      cy.checkA11y(null, null, terminalLog, null);
     });
   });
 };
