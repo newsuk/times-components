@@ -93,11 +93,11 @@ const ArticleExtras = ({
     <PromotedContentContainer>
       <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
       <PromotedContentGrid>
-        <PromotedContentAd id="advert-inarticle-native-1" />
-        <PromotedContentAd id="advert-inarticle-native-2" />
-        <PromotedContentSectionDivider />
         <PromotedContentAd id="advert-inarticle-native-3" />
         <PromotedContentAd id="advert-inarticle-native-4" />
+        <PromotedContentSectionDivider />
+        <PromotedContentAd id="advert-inarticle-native-5" />
+        <PromotedContentAd id="advert-inarticle-native-6" />
       </PromotedContentGrid>
     </PromotedContentContainer>
   );
