@@ -1,4 +1,5 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
+import { terminalLog } from "../cypress/support";
 import {
   checkDropCapChanges,
   checkShareBarLoaded,
@@ -181,7 +182,7 @@ const articleTemplateTest = (template, options = {}) => {
             }
           ]
         })
-        .checkA11y();
+        .checkA11y(null, null, terminalLog, null);
     });
   });
 };
