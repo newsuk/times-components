@@ -11,7 +11,12 @@ const insertInlineAd = children => {
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
     .filter(item => item.name === "paragraph");
-  const paraPostition = [10, 15, 20, 25];
+
+  // remove last paragraph to stop ads being appended to the end of the article
+  paywallParagraphs.pop();
+
+  // insert AFTER these positions - so insert in positions 10, 15, 20, 25
+  const paraPostition = [9, 14, 19, 24];
 
   paraPostition.forEach((item, i) => {
     const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
@@ -21,7 +26,7 @@ const insertInlineAd = children => {
         : null;
 
       if (indexPos && indexPos !== null) {
-        paywallChildren.splice(indexPos + i, 0, {
+        paywallChildren.splice(indexPos + i + 1, 0, {
           name: `inlineAd${i + 1}`,
           children: []
         });

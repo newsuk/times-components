@@ -5,6 +5,10 @@ executors:
         docker:
           - image: cimg/node:18.19.1-browsers
         resource_class: medium+
+    node_2xlarge:
+        docker:
+          - image: cimg/node:18.19.1-browsers
+        resource_class: 2xlarge
     node_sonar:
         docker:
           - image: cimg/node:18.19.1
@@ -131,7 +135,7 @@ jobs:
         - sonarcloud/scan
 
     run_cypress_tests:
-        executor: node
+        executor: node_2xlarge
         steps:
             - checkout
             - attach_workspace:
