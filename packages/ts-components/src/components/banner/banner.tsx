@@ -9,7 +9,8 @@ import {
   BannerWrapper,
   BannerContentWrapper
 } from './styles';
-import { CloseIconBlack, EmailIcon } from '../../../assets';
+import CloseIconBlack from './assets/CloseIconBlack';
+import EmailIcon from './assets/EmailIcon';
 
 type Props = {
   onClose: () => void;
