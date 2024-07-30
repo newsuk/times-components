@@ -1,9 +1,9 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
-import { terminalLog } from "../cypress/support";
 import {
   checkDropCapChanges,
   checkShareBarLoaded,
-  waitUntilSelectorExists
+  waitUntilSelectorExists,
+  terminalLog
 } from "../cypress/support";
 
 const relatedArticleCount = 3;
