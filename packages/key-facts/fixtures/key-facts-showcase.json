@@ -102,6 +102,18 @@
                 "value": " as “anti-worker and anti-business” and said that it would “royally screw” Britain’s service sector."
               },
               "children": []
+            },
+            {
+              "name": "paywall",
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": " (This list item is marked as paywall content)"
+                  },
+                  "children": []
+                }
+              ]
             }
           ]
         }
