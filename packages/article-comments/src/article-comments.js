@@ -6,6 +6,7 @@ import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
+import { UserEntitlementProvider } from "@times-components/ts-user-entitlement-state";
 
 const ArticleComments = ({
   articleId,
@@ -14,41 +15,57 @@ const ArticleComments = ({
   commentingConfig,
   isCommentEnabled,
   storefrontConfig,
-  domainSpecificUrl
-}) =>
-  isEnabled && isCommentEnabled ? (
+  domainSpecificUrl,
+}) => {
+  const entitlementFeatureEnable = sessionStorage.getItem(
+    "entitlementFeatureEnable"
+  );
+  return isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      <UserState state={UserState.showCommentingModule}>
-        <Comments
-          articleId={articleId}
-          isReadOnly={isReadOnly}
-          commentingConfig={commentingConfig}
-          domainSpecificUrl={domainSpecificUrl}
-        />
-      </UserState>
+      {!entitlementFeatureEnable ? (
+        <UserState state={UserState.showCommentingModule}>
+          <p>inside UserState provider</p>
+          <Comments
+            articleId={articleId}
+            isReadOnly={isReadOnly}
+            commentingConfig={commentingConfig}
+            domainSpecificUrl={domainSpecificUrl}
+          />
+        </UserState>
+      ) : (
+        <UserEntitlementProvider>
+          <Comments
+            articleId={articleId}
+            isReadOnly={isReadOnly}
+            commentingConfig={commentingConfig}
+            domainSpecificUrl={domainSpecificUrl}
+          />
+        </UserEntitlementProvider>
+      )}
     </>
   ) : (
     <DisabledComments />
   );
+};
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired,
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
 };
 
 ArticleComments.defaultProps = {
   isReadOnly: false,
-  isCommentEnabled: true
+  isCommentEnabled: true,
 };
 
 export default ArticleComments;

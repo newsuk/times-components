@@ -30,6 +30,8 @@ function ClientUserStateConsumer({ children, serverRender = true }) {
             const { nuk = {} } = window;
             const clientUser = nuk.user || {};
 
+
+
             return children({ user: { ...user, ...clientUser } });
           }}
           server={serverRender ? () => children({ user }) : null}

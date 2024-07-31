@@ -79,7 +79,8 @@ export {
 } from './components/recommended-articles/RecommendedFetch';
 
 // Helpers
-export { FetchProvider } from './helpers/fetch/FetchProvider';
+export { FetchProvider, useFetch } from './helpers/fetch/FetchProvider';
+
 export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
