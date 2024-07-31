@@ -89,7 +89,7 @@ const ArticleExtras = ({
     </>
   );
 
-  const PromotedContentSection = () => (
+  const renderPromotedContent = () => (
     <PromotedContentContainer>
       <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
       <PromotedContentGrid>
@@ -131,7 +131,7 @@ const ArticleExtras = ({
         </UserState>
       )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
-      <PromotedContentSection />
+      {renderPromotedContent()}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
