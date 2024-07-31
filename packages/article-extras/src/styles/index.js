@@ -98,6 +98,7 @@ export const PromotedContentContainer = styled.div`
   margin-block-start: 20px;
 
   @media (min-width: ${breakpoints.wide}px) {
+    padding: 16px;
     margin-block-start: 28px;
     margin-inline: 20px;
   }
