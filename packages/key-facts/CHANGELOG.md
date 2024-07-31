@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.87](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.86...@times-components/key-facts@2.12.87) (2024-07-30)
+
+
+### Bug Fixes
+
+* **TMD-551:** render mislabelled paywall key facts ([#3893](https://github.com/newsuk/times-components/issues/3893)) ([3a33244](https://github.com/newsuk/times-components/commit/3a33244d4481675b9c8e0ab4c53b5eaaf52f9f2c))
+
+
+
+
+
 ## [2.12.86](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.85...@times-components/key-facts@2.12.86) (2024-07-15)
 
 **Note:** Version bump only for package @times-components/key-facts

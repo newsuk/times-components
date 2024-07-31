@@ -2,7 +2,8 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 import {
   checkDropCapChanges,
   checkShareBarLoaded,
-  waitUntilSelectorExists
+  waitUntilSelectorExists,
+  terminalLog
 } from "../cypress/support";
 
 const relatedArticleCount = 3;
@@ -181,7 +182,7 @@ const articleTemplateTest = (template, options = {}) => {
             }
           ]
         })
-        .checkA11y();
+        .checkA11y(null, null, terminalLog, null);
     });
   });
 };

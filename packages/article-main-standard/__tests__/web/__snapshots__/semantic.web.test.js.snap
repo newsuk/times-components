@@ -203,7 +203,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         <svg
           aria-hidden="true"
           focusable="false"
+          height={14}
           viewBox="0 0 16 16"
+          width={14}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
