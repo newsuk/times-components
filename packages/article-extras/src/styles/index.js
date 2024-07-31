@@ -95,6 +95,12 @@ export const PromotedContentContainer = styled.div`
   border-top: 2px solid #1d1d1b;
   background-color: #f5f5f5;
   padding: 20px;
+  margin-block-start: 20px;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    margin-block-start: 28px;
+    margin-inline: 20px;
+  }
 `;
 
 export const PromotedContentTitle = styled.span`
@@ -111,6 +117,10 @@ export const PromotedContentGrid = styled.div`
   column-gap: 14px;
   row-gap: 16px;
   margin-block-start: 14px;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 export const PromotedContentAd = styled.div`
@@ -127,11 +137,27 @@ export const PromotedContentAd = styled.div`
     height: 100%;
     background-color: #c2c2c2;
   }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -8px;
+      width: 1px;
+      height: 100%;
+      background-color: #c2c2c2;
+    }
+  }
 `;
 
 export const PromotedContentSectionDivider = styled.div`
   border-top: 1px solid #e4e4e4;
   grid-column: 1 / 3;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: none;
+  }
 `;
 
 export default styles;
