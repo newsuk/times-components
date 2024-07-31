@@ -55,6 +55,7 @@ query TopicArticlesQuery(
         shortHeadline
         summary(maxCharCount: 115)
         url
+        categoryPath
       }
     }
   }
