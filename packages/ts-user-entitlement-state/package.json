@@ -53,6 +53,7 @@
     "@times-components/provider": "1.40.35",
     "@times-components/provider-queries": "2.21.1",
     "@times-components/utils": "6.26.0",
+    "@times-components/ts-components": "1.98.2",
     "graphql": "14.2.1",
     "isomorphic-unfetch": "3.1.0",
     "lodash.get": "4.4.2",
