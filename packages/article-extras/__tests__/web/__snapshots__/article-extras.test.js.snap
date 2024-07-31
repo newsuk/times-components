@@ -24,35 +24,22 @@ Array [
     </div>
   </div>,
   <div>
-    <h2>
-      Sponsored
-    </h2>
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-1"
-    />
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-2"
-    />
-  </div>,
-  <div>
     <span>
       PROMOTED CONTENT
     </span>
     <div>
       <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
         id="advert-inarticle-native-3"
       />
       <div
         id="advert-inarticle-native-4"
-      />
-      <div />
-      <div
-        id="advert-inarticle-native-5"
-      />
-      <div
-        id="advert-inarticle-native-6"
       />
     </div>
   </div>,
@@ -79,17 +66,24 @@ Array [
     />
   </div>,
   <div>
-    <h2>
-      Sponsored
-    </h2>
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-1"
-    />
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-2"
-    />
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
   </div>,
 ]
 `;
@@ -118,35 +112,22 @@ Array [
     </div>
   </div>,
   <div>
-    <h2>
-      Sponsored
-    </h2>
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-1"
-    />
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-2"
-    />
-  </div>,
-  <div>
     <span>
       PROMOTED CONTENT
     </span>
     <div>
       <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
         id="advert-inarticle-native-3"
       />
       <div
         id="advert-inarticle-native-4"
-      />
-      <div />
-      <div
-        id="advert-inarticle-native-5"
-      />
-      <div
-        id="advert-inarticle-native-6"
       />
     </div>
   </div>,
@@ -187,35 +168,22 @@ Array [
     </div>
   </div>,
   <div>
-    <h2>
-      Sponsored
-    </h2>
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-1"
-    />
-    <div
-      data-parent="group-3"
-      id="advert-inarticle-native-2"
-    />
-  </div>,
-  <div>
     <span>
       PROMOTED CONTENT
     </span>
     <div>
       <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
         id="advert-inarticle-native-3"
       />
       <div
         id="advert-inarticle-native-4"
-      />
-      <div />
-      <div
-        id="advert-inarticle-native-5"
-      />
-      <div
-        id="advert-inarticle-native-6"
       />
     </div>
   </div>,

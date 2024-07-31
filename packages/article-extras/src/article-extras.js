@@ -14,9 +14,6 @@ import {
   ShareAndSaveContainer
 } from "./styles/responsive";
 import {
-  NativeAd,
-  NativeAdTitle,
-  Ad,
   PromotedContentContainer,
   PromotedContentTitle,
   PromotedContentGrid,
@@ -81,25 +78,22 @@ const ArticleExtras = ({
           />
         )}
       </div>
-      <NativeAd className="group-3 hidden" key="1">
+      {/* <NativeAd className="group-3 hidden" key="1">
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
         <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd>
+      </NativeAd> */}
+      <PromotedContentContainer>
+        <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
+        <PromotedContentGrid>
+          <PromotedContentAd id="advert-inarticle-native-1" />
+          <PromotedContentAd id="advert-inarticle-native-2" />
+          <PromotedContentSectionDivider />
+          <PromotedContentAd id="advert-inarticle-native-3" />
+          <PromotedContentAd id="advert-inarticle-native-4" />
+        </PromotedContentGrid>
+      </PromotedContentContainer>
     </>
-  );
-
-  const renderPromotedContent = () => (
-    <PromotedContentContainer>
-      <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
-      <PromotedContentGrid>
-        <PromotedContentAd id="advert-inarticle-native-3" />
-        <PromotedContentAd id="advert-inarticle-native-4" />
-        <PromotedContentSectionDivider />
-        <PromotedContentAd id="advert-inarticle-native-5" />
-        <PromotedContentAd id="advert-inarticle-native-6" />
-      </PromotedContentGrid>
-    </PromotedContentContainer>
   );
 
   return (
@@ -131,7 +125,6 @@ const ArticleExtras = ({
         </UserState>
       )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
-      {renderPromotedContent()}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
