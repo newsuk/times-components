@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.56.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.16...@times-components/ssr@2.56.0) (2024-07-31)
+
+
+### Features
+
+* **TMP-1445:** Enable a11y debug output on failure ([#3905](https://github.com/newsuk/times-components/issues/3905)) ([9b21eed](https://github.com/newsuk/times-components/commit/9b21eed8e97ff5785a764f39e88b3ce57b0b4967))
+
+
+
+
+
 ## [2.55.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.15...@times-components/ssr@2.55.16) (2024-07-30)
 
 **Note:** Version bump only for package @times-components/ssr
