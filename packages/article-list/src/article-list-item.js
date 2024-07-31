@@ -107,7 +107,11 @@ const ArticleListItem = props => {
 
   return (
     <Context.Consumer>
-          <Link url={props.article.categoryPath}>
+      {({ makeArticleUrl }) => {
+        const url = props.article.categoryPath || makeArticleUrl(props.article);
+
+        return (
+          <Link url={url}>
             <ListItemWrapper>
               <Card
                 contentContainerClass="articleListContent"
@@ -127,6 +131,8 @@ const ArticleListItem = props => {
               </Card>
             </ListItemWrapper>
           </Link>
+        );
+      }}
     </Context.Consumer>
   );
 };
