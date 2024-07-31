@@ -41,7 +41,7 @@ export const UserEntitlements: React.FC = React.memo(({ children }) => {
 
   const isCommentingEntitlementEnabled = subscriptions.some(subscription => {
     return subscription.featureDecisions.some(decision =>
-      decision.outcome.toLowerCase().includes('enable')
+      decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
     );
   });
 
