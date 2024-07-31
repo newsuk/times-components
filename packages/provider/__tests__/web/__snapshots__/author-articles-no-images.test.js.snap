@@ -9,6 +9,7 @@ Object {
     "list": Array [
       Object {
         "__typename": "Article",
+        "categoryPath": "Hello World",
         "hasVideo": false,
         "headline": "Test Headline 1",
         "id": "d98c2 1c-cb16-11e7-b529-95e3fc05f40f",
@@ -20,7 +21,6 @@ Object {
         "shortIdentifier": "968n7tdck1",
         "shortSummary": Array [],
         "slug": "this-is-slug-1",
-        "url": "Hello World",
       },
     ],
   },
