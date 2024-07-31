@@ -260,6 +260,7 @@ class InlineVideoPlayer extends Component {
             data-embed="default"
             data-player={playerId}
             data-video-id={videoId}
+            preload="metadata"
           />
         </div>
       </div>
