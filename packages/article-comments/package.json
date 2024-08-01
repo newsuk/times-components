@@ -38,7 +38,6 @@
     "@times-components/ts-components": "1.99.0",
     "@times-components/ts-styleguide": "1.50.34",
     "@times-components/user-state": "0.5.51",
-    "@times-components/ts-user-entitlement-state": "1.98.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

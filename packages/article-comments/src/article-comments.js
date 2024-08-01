@@ -6,7 +6,7 @@ import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
-import { UserEntitlementProvider } from "@times-components/ts-user-entitlement-state";
+import { UserEntitlementProvider } from "./user-entitlement-provider";
 
 const ArticleComments = ({
   articleId,

@@ -1,39 +1,40 @@
 import React from 'react';
 import { useFetch } from '@times-components/ts-components';
 
-interface FeatureDecision {
-  code: string;
-  name: string;
-  outcome: string;
-}
+// interface FeatureDecision {
+//   code: string;
+//   name: string;
+//   outcome: string;
+// }
 
-interface Subscription {
-  id: string;
-  featureDecisions: FeatureDecision[];
-}
+// interface Subscription {
+//   id: string;
+//   featureDecisions: FeatureDecision[];
+// }
 
-interface User {
-  cpn: string;
-  subscriptions: Subscription[];
-}
+// interface User {
+//   cpn: string;
+//   subscriptions: Subscription[];
+// }
 
-interface Data {
-  user: User;
-}
+// interface Data {
+//   user: User;
+// }
 
-interface FetchResponse {
-  data: Data;
-}
+// interface FetchResponse {
+//   data: Data;
+// }
 
-export interface UserEntitlementProps {
-  loading?: boolean;
-  error?: string;
-  data: FetchResponse;
-}
+// export interface UserEntitlementProps {
+//   loading?: boolean;
+//   error?: string;
+//   data: FetchResponse;
+// }
 
-export const UserEntitlements: React.FC = React.memo(({ children }) => {
-  // const { data: fetchResponse } = useFetch<FetchResponse>();
-  const data = {
+export const UserEntitlements = React.memo(({ children }) => {
+  const { data: fetchResponse } = useFetch();
+  console.log("fetchResponse", fetchResponse);
+  const data1 = {
     data: {
       user: {
         "cpn": "3BOK090867019",
@@ -64,7 +65,7 @@ export const UserEntitlements: React.FC = React.memo(({ children }) => {
   }
   // console.log('fetchResponse', data);
 
-  const subscriptions: any = []
+  const subscriptions = []
 
   // const subscriptions = data?.data?.user?.subscriptions || []
   // const {
@@ -73,7 +74,7 @@ export const UserEntitlements: React.FC = React.memo(({ children }) => {
   // const { subscriptions } = user || [];
   // console.log('subscriptions', subscriptions);
 
-  console.log('fetchResponse', data);
+  console.log('fetchResponse', data1);
 
   // const isCommentingEntitlementEnabled = subscriptions.some(subscription => {
   //   return subscription.featureDecisions.some(decision =>
