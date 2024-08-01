@@ -74,7 +74,7 @@ export const UserEntitlements = React.memo(({ children }) => {
   // const { subscriptions } = user || [];
   // console.log('subscriptions', subscriptions);
 
-  console.log('fetchResponse', data1);
+  console.log('data1', data1);
 
   // const isCommentingEntitlementEnabled = subscriptions.some(subscription => {
   //   return subscription.featureDecisions.some(decision =>

@@ -32,39 +32,39 @@ export interface UserEntitlementProps {
 }
 
 export const UserEntitlements: React.FC = React.memo(({ children }) => {
-  // const { data: fetchResponse } = useFetch<FetchResponse>();
-  const data = {
-    data: {
-      user: {
-        "cpn": "3BOK090867019",
-        subscriptions: [
-          {
-            "id": "SUB-0011075014",
-            "featureDecisions": [
-              {
-                "code": "fp-752",
-                "name": "Full Commenting Read/Write Access",
-                "outcome": "Disable_Commenting"
-              },
-              {
-                "code": "fp-753",
-                "name": "Full Sharing Access",
-                "outcome": "Disable_Sharing"
-              },
-              {
-                "code": "fp-754",
-                "name": "Full Article Saving Access",
-                "outcome": "Disable_Article_Saving"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  }
+  const { data: fetchResponse } = useFetch<FetchResponse>();
+  // const data = {
+  //   data: {
+  //     user: {
+  //       "cpn": "3BOK090867019",
+  //       subscriptions: [
+  //         {
+  //           "id": "SUB-0011075014",
+  //           "featureDecisions": [
+  //             {
+  //               "code": "fp-752",
+  //               "name": "Full Commenting Read/Write Access",
+  //               "outcome": "Disable_Commenting"
+  //             },
+  //             {
+  //               "code": "fp-753",
+  //               "name": "Full Sharing Access",
+  //               "outcome": "Disable_Sharing"
+  //             },
+  //             {
+  //               "code": "fp-754",
+  //               "name": "Full Article Saving Access",
+  //               "outcome": "Disable_Article_Saving"
+  //             }
+  //           ]
+  //         }
+  //       ]
+  //     }
+  //   }
+  // }
   // console.log('fetchResponse', data);
 
-  const subscriptions: any = []
+  // const subscriptions: any = []
 
   // const subscriptions = data?.data?.user?.subscriptions || []
   // const {
@@ -73,7 +73,7 @@ export const UserEntitlements: React.FC = React.memo(({ children }) => {
   // const { subscriptions } = user || [];
   // console.log('subscriptions', subscriptions);
 
-  console.log('fetchResponse', data);
+  console.log('fetchResponse', fetchResponse);
 
   // const isCommentingEntitlementEnabled = subscriptions.some(subscription => {
   //   return subscription.featureDecisions.some(decision =>
