@@ -17,9 +17,10 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl,
 }) => {
-  const entitlementFeatureEnable = window && window.sessionStorage.getItem(
-    "entitlementFeatureEnable"
-  );
+  // const entitlementFeatureEnable = window && window.sessionStorage.getItem(
+  //   "entitlementFeatureEnable"
+  // );
+  const entitlementFeatureEnable =  true;
   return isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
