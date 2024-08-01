@@ -21,7 +21,8 @@ const ArticleComments = ({
   //   "entitlementFeatureEnable"
   // );
   const entitlementFeatureEnable =  true;
-  return isEnabled && isCommentEnabled ? (
+  return (
+  //  isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
@@ -48,9 +49,10 @@ const ArticleComments = ({
         </UserEntitlementProvider>
       )}
     </>
-  ) : (
-    <DisabledComments />
-  );
+  )
+  //  : (
+  //   <DisabledComments />
+  // );
 };
 
 ArticleComments.propTypes = {
