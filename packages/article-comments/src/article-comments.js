@@ -17,7 +17,7 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl,
 }) => {
-  const entitlementFeatureEnable = sessionStorage.getItem(
+  const entitlementFeatureEnable = window && window.sessionStorage.getItem(
     "entitlementFeatureEnable"
   );
   return isEnabled && isCommentEnabled ? (
@@ -37,6 +37,7 @@ const ArticleComments = ({
         </UserState>
       ) : (
         <UserEntitlementProvider>
+          <p>inside UserEntitlementProvider</p>
           <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
