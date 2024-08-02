@@ -170,7 +170,7 @@ fragment draftArticleProps on DraftArticle {
   shortIdentifier
   shortHeadline
   slug
-  url
+  url: categoryPath
 }
 
 fragment relatedProps on DraftTile {
