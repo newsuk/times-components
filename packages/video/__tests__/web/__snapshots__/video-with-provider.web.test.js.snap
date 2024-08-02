@@ -6,7 +6,6 @@ exports[`1. video without a poster image 1`] = `
     <video
       controls={true}
       id="[video id]-[account id]-[tpa video id]"
-      preload="metadata"
     />
   </div>
 </div>

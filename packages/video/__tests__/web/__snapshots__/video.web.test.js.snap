@@ -11,7 +11,6 @@ exports[`1. 360 video 1`] = `
     </div>
     <video
       poster="c7dd06ff1063ae467c3a3be00c6caeca"
-      preload="metadata"
     />
   </div>
 </div>
@@ -22,7 +21,6 @@ exports[`2. player icon for 360 video not displayed after play 1`] = `
   <div>
     <video
       poster="c7dd06ff1063ae467c3a3be00c6caeca"
-      preload="metadata"
     />
   </div>
 </div>
