@@ -35,12 +35,21 @@ commands:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
                   paths:
                       - ~/.cache/yarn
+
     install-lerna:
       description: 'Install Lerna'
       steps:
         - run:
             name: 'Install Lerna'
             command: yarn global add lerna@7.4.2
+            working_directory: ~/project/
+
+    install-jest:
+      description: 'Install Jest'
+      steps:
+        - run:
+            name: 'Install Jest'
+            command: yarn global add jest
             working_directory: ~/project/
 
 jobs:
