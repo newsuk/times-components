@@ -5,10 +5,10 @@ executors:
         docker:
           - image: cimg/node:18.19.1-browsers
         resource_class: medium+
-    node_xlarge:
+    node_large:
         docker:
           - image: cimg/node:18.19.1-browsers
-        resource_class: xlarge
+        resource_class: large
     node_sonar:
         docker:
           - image: cimg/node:18.19.1
@@ -114,7 +114,7 @@ jobs:
                   working_directory: ~/project/
 
     run_unit_tests:
-        executor: node_xlarge
+        executor: node_large
         steps:
             - checkout
             - install-lerna
