@@ -102,7 +102,7 @@ Object {
               "name": "paragraph",
             },
           ],
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+          "url": "Hello World",
         },
         "leadAsset": Object {
           "__typename": "Image",
@@ -192,7 +192,7 @@ Object {
               "name": "paragraph",
             },
           ],
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+          "url": "Hello World",
         },
         "leadAsset": Object {
           "__typename": "Image",
@@ -282,7 +282,7 @@ Object {
               "name": "paragraph",
             },
           ],
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+          "url": "Hello World",
         },
         "leadAsset": Object {
           "__typename": "Image",

@@ -956,7 +956,7 @@ Object {
             },
           ],
           "updatedTime": "2018-10-25",
-          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+          "url": "Hello World",
         },
         "leadAsset": Object {
           "__typename": "Image",
@@ -1055,6 +1055,6 @@ Object {
     },
   ],
   "updatedTime": "2022-02-24T09:00:00.000Z",
-  "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
+  "url": "Hello World",
 }
 `;
