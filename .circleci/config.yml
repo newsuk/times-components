@@ -43,14 +43,6 @@ commands:
             command: yarn global add lerna@7.4.2
             working_directory: ~/project/
 
-    install-jest:
-      description: 'Install Jest'
-      steps:
-        - run:
-            name: 'Install Jest'
-            command: yarn global add jest
-            working_directory: ~/project/
-
 jobs:
     setup:
         executor: node
