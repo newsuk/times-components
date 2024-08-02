@@ -38,7 +38,7 @@ query ArticleListQuery(
         publishedTime
         shortHeadline
         summary(maxCharCount: 145)
-        categoryPath
+        url: categoryPath
       }
     }
   }
