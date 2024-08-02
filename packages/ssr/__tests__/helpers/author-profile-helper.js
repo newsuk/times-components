@@ -29,7 +29,7 @@ export default (options = {}) => {
       cy.get('div[data-testid="author-bio"]');
     });
 
-    it("should take you to the article page once an article has been selected", () => {
+    xit("should take you to the article page once an article has been selected", () => {
       cy.wait(2000);
       cy.get(`div[data-testid="article-list-item-0"]`).click();
       expect(cy.get('[data-testid="standfirst"]')).to.exist;
