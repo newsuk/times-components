@@ -5,7 +5,7 @@ import { UserEntitlements } from './user-entitlements';
 export const UserEntitlementProvider = ({ children }) => {
   const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
   return (
-    <FetchProvider url="api/get-user-entitlements" options={fetchOptions}>
+    <FetchProvider url="/api/get-user-entitlements" options={fetchOptions}>
       <UserEntitlements>{children}</UserEntitlements>
     </FetchProvider>
   );
