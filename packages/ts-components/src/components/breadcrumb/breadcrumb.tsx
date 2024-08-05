@@ -57,7 +57,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
                     handleClick(fireAnalyticsEvent, breadcrumbItem.title)
                   }
                 >
-                  {breadcrumbItem.title + 'EXAMPLE'}
+                  {breadcrumbItem.title}
                 </BreadcrumbItem>
                 <IconContainer>
                   <BreadcrumbIcon color={styleMap.colors.inkNonEssential} />
