@@ -32,11 +32,11 @@ import { useFetch } from '@times-components/ts-components';
 // }
 
 export const UserEntitlements = React.memo(({ children }) => {
-  const { data: fetchResponse } = useFetch();
-  console.log("fetchResponse", fetchResponse);
+  const { data, loading } = useFetch();
+  console.log("fetchResponse", data);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
-  const featureDecisions = fetchResponse && fetchResponse.user && fetchResponse.user.subscriptions && fetchResponse.user.subscriptions[0] && fetchResponse.user.subscriptions[0].featureDecisions || [];
+  const featureDecisions = data && data.fetchResponse && fetchResponse.user && fetchResponse.user.subscriptions && fetchResponse.user.subscriptions[0] && fetchResponse.user.subscriptions[0].featureDecisions || [];
   // const {
   //   data: { user }
   // } = fetchResponse || {};
@@ -46,6 +46,10 @@ export const UserEntitlements = React.memo(({ children }) => {
   const isCommentingEntitlementEnabled = featureDecisions.some(decision =>
       decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
     );
+
+    if(loading || data == undefined) {
+      return null;
+    }
 
   return <>{isCommentingEntitlementEnabled ? children : null}</>;
 });
