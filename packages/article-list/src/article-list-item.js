@@ -107,32 +107,28 @@ const ArticleListItem = props => {
 
   return (
     <Context.Consumer>
-      {({ makeArticleUrl }) => {
-        const canonicalUrl = makeArticleUrl(props.article);
-
-        return (
-          <Link url={canonicalUrl}>
-            <ListItemWrapper>
-              <Card
-                contentContainerClass="articleListContent"
-                fadeImageIn={fadeImageIn}
-                highResSize={highResSize}
-                imageAccessibilityLabel={imageAccessibilityLabel}
-                imageContainerClass="articleListImage"
-                imageRatio={imageRatio}
-                imageUri={imageUri}
-                isLoading={isLoading}
-                lowResQuality={lowResQuality}
-                lowResSize={lowResSize}
-                showImage={showImage}
-                isLcpItem={index === 0}
-              >
-                <Animations.FadeIn>{children}</Animations.FadeIn>
-              </Card>
-            </ListItemWrapper>
-          </Link>
-        );
-      }}
+      {() => (
+        <Link url={props.article.url}>
+          <ListItemWrapper>
+            <Card
+              contentContainerClass="articleListContent"
+              fadeImageIn={fadeImageIn}
+              highResSize={highResSize}
+              imageAccessibilityLabel={imageAccessibilityLabel}
+              imageContainerClass="articleListImage"
+              imageRatio={imageRatio}
+              imageUri={imageUri}
+              isLoading={isLoading}
+              lowResQuality={lowResQuality}
+              lowResSize={lowResSize}
+              showImage={showImage}
+              isLcpItem={index === 0}
+            >
+              <Animations.FadeIn>{children}</Animations.FadeIn>
+            </Card>
+          </ListItemWrapper>
+        </Link>
+      )}
     </Context.Consumer>
   );
 };

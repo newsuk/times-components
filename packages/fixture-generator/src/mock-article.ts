@@ -44,6 +44,7 @@ class MockArticle {
         .addParagraphs(5)
         .addAds()
         .get(),
+      categoryPath: "/article/123" as Url,
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       template: TemplateType.Mainstandard,
