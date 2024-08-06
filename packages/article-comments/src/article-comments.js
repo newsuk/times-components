@@ -58,7 +58,6 @@ const ArticleComments = ({
         <p>rendering......</p>
           <UserEntitlements userEntitlementsList={userEntitlements}>
           <p>inside UserEntitlements (children) rendered</p>
-            {children}
             </UserEntitlements>
           {/* <Comments
             articleId={articleId}
