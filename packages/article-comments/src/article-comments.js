@@ -6,7 +6,7 @@ import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
-import { UserEntitlementProvider } from "./user-entitlement-provider";
+import UserEntitlementProvider from "./user-entitlement-provider";
 
 const ArticleComments = ({
   articleId,
@@ -21,6 +21,7 @@ const ArticleComments = ({
   //   "entitlementFeatureEnable"
   // );
   const entitlementFeatureEnable =  true;
+  console.log('rendering article-comments1234');
   return (
   //  isEnabled && isCommentEnabled ? (
     <>
@@ -30,22 +31,22 @@ const ArticleComments = ({
       {!entitlementFeatureEnable ? (
         <UserState state={UserState.showCommentingModule}>
           <p>inside UserState provider</p>
-          <Comments
+          {/* <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
             commentingConfig={commentingConfig}
             domainSpecificUrl={domainSpecificUrl}
-          />
+          /> */}
         </UserState>
       ) : (
         <UserEntitlementProvider>
           <p>inside UserEntitlementProvider</p>
-          <Comments
+          {/* <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
             commentingConfig={commentingConfig}
             domainSpecificUrl={domainSpecificUrl}
-          />
+          /> */}
         </UserEntitlementProvider>
       )}
     </>

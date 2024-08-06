@@ -34,55 +34,18 @@ import { useFetch } from '@times-components/ts-components';
 export const UserEntitlements = React.memo(({ children }) => {
   const { data: fetchResponse } = useFetch();
   console.log("fetchResponse", fetchResponse);
-  const data1 = {
-    data: {
-      user: {
-        "cpn": "3BOK090867019",
-        subscriptions: [
-          {
-            "id": "SUB-0011075014",
-            "featureDecisions": [
-              {
-                "code": "fp-752",
-                "name": "Full Commenting Read/Write Access",
-                "outcome": "Disable_Commenting"
-              },
-              {
-                "code": "fp-753",
-                "name": "Full Sharing Access",
-                "outcome": "Disable_Sharing"
-              },
-              {
-                "code": "fp-754",
-                "name": "Full Article Saving Access",
-                "outcome": "Disable_Article_Saving"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  }
-  // console.log('fetchResponse', data);
-
-  const subscriptions = []
 
   // const subscriptions = data?.data?.user?.subscriptions || []
+  const featureDecisions = fetchResponse && fetchResponse.user && fetchResponse.user.subscriptions && fetchResponse.user.subscriptions[0] && fetchResponse.user.subscriptions[0].featureDecisions || [];
   // const {
   //   data: { user }
-  // } = (fetchResponse as FetchResponse) || {};
+  // } = fetchResponse || {};
   // const { subscriptions } = user || [];
-  // console.log('subscriptions', subscriptions);
+  console.log('featureDecisions', featureDecisions);
 
-  console.log('data1', data1);
+  const isCommentingEntitlementEnabled = featureDecisions.some(decision =>
+      decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
+    );
 
-  // const isCommentingEntitlementEnabled = subscriptions.some(subscription => {
-  //   return subscription.featureDecisions.some(decision =>
-  //     decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
-  //   );
-  // });
-
-  // console.log('subscriptions', subscriptions);
-
-  return <>{true ? children : null}</>;
+  return <>{isCommentingEntitlementEnabled ? children : null}</>;
 });
