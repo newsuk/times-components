@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.57.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.56.0...@times-components/ssr@2.57.0) (2024-08-06)
+
+
+### Features
+
+* **TMD-580:** commentCount global variable ([#3914](https://github.com/newsuk/times-components/issues/3914)) ([1fc1da3](https://github.com/newsuk/times-components/commit/1fc1da359c0e3364489e9d39122264fb8f329a27))
+
+
+
+
+
 # [2.56.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.16...@times-components/ssr@2.56.0) (2024-07-31)
 
 
