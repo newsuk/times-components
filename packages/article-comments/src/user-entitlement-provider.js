@@ -3,10 +3,9 @@ import { FetchProvider } from '@times-components/ts-components';
 import { UserEntitlements } from './user-entitlements';
 
 const UserEntitlementProvider = ({ children }) => {
-  const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
   console.log('children inside UserEntitlementProvider', children);
   return (
-    <FetchProvider url="/api/get-user-entitlements" options={fetchOptions}>
+    <FetchProvider url="/api/get-user-entitlements">
       <UserEntitlements>{children}</UserEntitlements>
     </FetchProvider>
   );
