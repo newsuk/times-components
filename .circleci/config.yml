@@ -331,6 +331,8 @@ workflows:
                   name: Approve canary release
                   type: approval
                   <<: *only_on_pr_branch
+                  requires:
+                      - build_storybook
             - publish_canary:
                   <<: *only_on_pr_branch
                   requires:
