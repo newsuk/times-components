@@ -1,12 +1,13 @@
 /* eslint-env browser */
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
 import UserEntitlementProvider from "./user-entitlement-provider";
+import { UserEntitlements } from "./user-entitlements";
 
 const ArticleComments = ({
   articleId,
@@ -22,6 +23,20 @@ const ArticleComments = ({
   // );
   const entitlementFeatureEnable =  true;
   console.log('rendering article-comments1234');
+
+  const [userEntitlements, setUserEntitlements] = useState(undefined);
+  useEffect(() => {
+    if(window){
+      console.log('window accessible');
+    }
+    const fetchUserEntitlements = async () => {
+      const response = await fetch('/api/get-user-entitlements');
+      const data = await response.json();
+      setUserEntitlements(data);
+    }
+    fetchUserEntitlements();
+  }, []);
+
   return (
   //  isEnabled && isCommentEnabled ? (
     <>
@@ -39,15 +54,19 @@ const ArticleComments = ({
           /> */}
         </UserState>
       ) : (
-        <UserEntitlementProvider>
-          <p>inside UserEntitlementProvider</p>
+        <>
+        <p>rendering......</p>
+          <UserEntitlements userEntitlementsList={userEntitlements}>
+          <p>inside UserEntitlements (children) rendered</p>
+            {children}
+            </UserEntitlements>
           {/* <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
             commentingConfig={commentingConfig}
             domainSpecificUrl={domainSpecificUrl}
           /> */}
-        </UserEntitlementProvider>
+        </>
       )}
     </>
   )

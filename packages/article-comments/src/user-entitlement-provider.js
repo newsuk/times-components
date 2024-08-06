@@ -6,8 +6,9 @@ const UserEntitlementProvider = ({ children }) => {
 
   console.log('children inside UserEntitlementProvider', children);
   return (
+    <></>
     // <FetchProvider url="/api/get-user-entitlements">
-      <UserEntitlements>{children}</UserEntitlements>
+      // <UserEntitlements>{children}</UserEntitlements>
     // </FetchProvider>
   );
 };

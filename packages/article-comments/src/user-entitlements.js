@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useFetch } from '@times-components/ts-components';
+import React from 'react';
+// import { useFetch } from '@times-components/ts-components';
 
 // interface FeatureDecision {
 //   code: string;
@@ -31,35 +31,29 @@ import { useFetch } from '@times-components/ts-components';
 //   data: FetchResponse;
 // }
 
-export const UserEntitlements = React.memo(({ children }) => {
+export const UserEntitlements = ({ userEntitlementsList, children }) => {
   // const { data, loading } = useFetch();
-  const [userEntitlements, setUserEntitlements] = useState(undefined);
-  useEffect(() => {
-    const fetchUserEntitlements = async () => {
-      const response = await fetch('/api/get-user-entitlements');
-      const data = await response.json();
-      setUserEntitlements(data);
-    }
-    fetchUserEntitlements();
-  }, []);
 
-  console.log("fetchResponse", userEntitlements);
+
+  console.log("fetchResponse", userEntitlementsList);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
-  const featureDecisions = userEntitlements && userEntitlements.fetchResponse && userEntitlements.user && userEntitlements.user.subscriptions && userEntitlements.user.subscriptions[0] && userEntitlements.user.subscriptions[0].featureDecisions || [];
+  const featureDecisions = userEntitlementsList && userEntitlementsList.fetchResponse && userEntitlementsList.user && userEntitlementsList.user.subscriptions && userEntitlementsList.user.subscriptions[0] && userEntitlementsList.user.subscriptions[0].featureDecisions || [];
   // const {
   //   data: { user }
   // } = fetchResponse || {};
   // const { subscriptions } = user || [];
   console.log('featureDecisions', featureDecisions);
 
-  const isCommentingEntitlementEnabled = featureDecisions && featureDecisions.some(decision =>
-      decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
+  const isCommentingEntitlementEnabled = featureDecisions && featureDecisions.some(decision => {
+    console.log('decision', decision);
+   return decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('disable')
+  }
     );
 
-    if(userEntitlements === undefined) {
+    if(userEntitlementsList === undefined) {
       return null;
     }
 
   return <>{isCommentingEntitlementEnabled ? children : null}</>;
-});
+};
