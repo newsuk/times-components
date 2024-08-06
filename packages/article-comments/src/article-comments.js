@@ -54,18 +54,14 @@ const ArticleComments = ({
           /> */}
         </UserState>
       ) : (
-        <>
-        <p>rendering......</p>
           <UserEntitlements userEntitlementsList={userEntitlements}>
-          <p>inside UserEntitlements (children) rendered</p>
-            </UserEntitlements>
-          {/* <Comments
+          <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
             commentingConfig={commentingConfig}
             domainSpecificUrl={domainSpecificUrl}
-          /> */}
-        </>
+          />
+            </UserEntitlements>
       )}
     </>
   )

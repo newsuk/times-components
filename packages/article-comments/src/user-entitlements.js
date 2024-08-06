@@ -35,7 +35,7 @@ export const UserEntitlements = ({ userEntitlementsList, children }) => {
   // const { data, loading } = useFetch();
 
 
-  console.log("fetchResponse", userEntitlementsList);
+  // console.log("fetchResponse", userEntitlementsList);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
   const featureDecisions = userEntitlementsList && userEntitlementsList.user && userEntitlementsList.user.subscriptions && userEntitlementsList.user.subscriptions[0] && userEntitlementsList.user.subscriptions[0].featureDecisions || [];
@@ -43,10 +43,9 @@ export const UserEntitlements = ({ userEntitlementsList, children }) => {
   //   data: { user }
   // } = fetchResponse || {};
   // const { subscriptions } = user || [];
-  console.log('featureDecisions', featureDecisions);
+  // console.log('featureDecisions', featureDecisions);
 
   const isCommentingEntitlementEnabled = featureDecisions && featureDecisions.some(decision => {
-    console.log('decision', decision);
    return decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('disable')
   }
     );
@@ -55,5 +54,5 @@ export const UserEntitlements = ({ userEntitlementsList, children }) => {
       return null;
     }
 
-  return <>{isCommentingEntitlementEnabled ? children : null}</>;
+  return isCommentingEntitlementEnabled && children;
 };
