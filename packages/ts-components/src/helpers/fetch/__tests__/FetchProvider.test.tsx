@@ -38,13 +38,13 @@ describe('<FetchProvider>', () => {
     const value = 'Fetched';
     fetchMock.mock(endpoint, { status: 200, body: { value } });
 
-    const { asFragment, findByText } = render(
+    const { asFragment, getByText, findByText } = render(
       <FetchProvider url={endpoint}>
         <TestComponent />
       </FetchProvider>
     );
 
-    findByText('loading');
+    getByText('Loading');
     expect(asFragment()).toMatchSnapshot();
 
     await findByText(value);
