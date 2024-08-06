@@ -32,11 +32,21 @@ import { useFetch } from '@times-components/ts-components';
 // }
 
 export const UserEntitlements = React.memo(({ children }) => {
-  const { data, loading } = useFetch();
-  console.log("fetchResponse", data);
+  // const { data, loading } = useFetch();
+  const [userEntitlements, setUserEntitlements] = useState(undefined);
+  useEffect(() => {
+    const fetchUserEntitlements = async () => {
+      const response = await fetch('/api/get-user-entitlements');
+      const data = await response.json();
+      setUserEntitlements(data);
+    }
+    fetchUserEntitlements();
+  }, []);
+
+  console.log("fetchResponse", userEntitlements);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
-  const featureDecisions = data && data.fetchResponse && fetchResponse.user && fetchResponse.user.subscriptions && fetchResponse.user.subscriptions[0] && fetchResponse.user.subscriptions[0].featureDecisions || [];
+  const featureDecisions = userEntitlements && userEntitlements.fetchResponse && userEntitlements.user && userEntitlements.user.subscriptions && userEntitlements.user.subscriptions[0] && userEntitlements.user.subscriptions[0].featureDecisions || [];
   // const {
   //   data: { user }
   // } = fetchResponse || {};
@@ -47,7 +57,7 @@ export const UserEntitlements = React.memo(({ children }) => {
       decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('enable')
     );
 
-    if(loading || data == undefined) {
+    if(userEntitlements === undefined) {
       return null;
     }
 
