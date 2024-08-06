@@ -38,7 +38,7 @@ export const UserEntitlements = ({ userEntitlementsList, children }) => {
   console.log("fetchResponse", userEntitlementsList);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
-  const featureDecisions = userEntitlementsList && userEntitlementsList.fetchResponse && userEntitlementsList.user && userEntitlementsList.user.subscriptions && userEntitlementsList.user.subscriptions[0] && userEntitlementsList.user.subscriptions[0].featureDecisions || [];
+  const featureDecisions = userEntitlementsList && userEntitlementsList.user && userEntitlementsList.user.subscriptions && userEntitlementsList.user.subscriptions[0] && userEntitlementsList.user.subscriptions[0].featureDecisions || [];
   // const {
   //   data: { user }
   // } = fetchResponse || {};
