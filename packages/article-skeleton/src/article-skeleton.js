@@ -86,7 +86,8 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
+    isEntitlementFeatureEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -184,6 +185,9 @@ const ArticleSkeleton = ({
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
+
+  console.log('ArticleSkeleton -> isEntitlementFeatureEnabled',isEntitlementFeatureEnabled);
+
 
   const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
@@ -429,6 +433,7 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
+                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
                     />
                   )}
                 </LazyLoad>
@@ -460,7 +465,8 @@ const ArticleSkeleton = ({
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
-  paidContentClassName: PropTypes.string
+  paidContentClassName: PropTypes.string,
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 

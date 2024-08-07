@@ -16,16 +16,11 @@ const ArticleComments = ({
   commentingConfig,
   isCommentEnabled,
   storefrontConfig,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isEntitlementFeatureEnabled,
 }) => {
   const [userEntitlements, setUserEntitlements] = useState(undefined);
-
-  let entitlementFeatureEnable = false;
-
-  if(typeof window !== undefined) {
-    console.log("query testing...", window.location.search.includes("entitlementFeatureEnable")); 
-  }
-
+  console.log('ArticleComments -> isEntitlementFeatureEnabled',isEntitlementFeatureEnabled);
 
   useEffect(() => {
     const fetchUserEntitlements = async () => {
@@ -35,10 +30,6 @@ const ArticleComments = ({
     };
 
     if(typeof window !== undefined) {
-      entitlementFeatureEnable = window.sessionStorage.getItem(
-        "entitlementFeatureEnable"
-      );
-      console.log('window object acessible............');
       fetchUserEntitlements();
     }
   }, []);
@@ -49,7 +40,7 @@ const ArticleComments = ({
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      {!entitlementFeatureEnable ? (
+      {!isEntitlementFeatureEnabled ? (
         <UserState state={UserState.showCommentingModule}>
           <p>inside UserState provider</p>
           <Comments
