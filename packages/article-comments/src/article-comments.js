@@ -18,11 +18,12 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl
 }) => {
-  const entitlementFeatureEnable = window && window.sessionStorage.getItem(
+  const entitlementFeatureEnable = window && window.sessionStorage && window.sessionStorage.getItem(
     "entitlementFeatureEnable"
   );
+  console.log("entitlementFeatureEnable", entitlementFeatureEnable);
 
-  console.log("query testing...", window && window.location.search.includes("entitlementFeatureEnable")); 
+  // console.log("query testing...", window && window.location.search.includes("entitlementFeatureEnable")); 
 
   const [userEntitlements, setUserEntitlements] = useState(undefined);
 
