@@ -1,17 +1,13 @@
 import React from 'react';
 import { colours } from '@times-components/ts-styleguide';
 import { IconStar } from '@times-components/icons';
-import { ContentProps } from './ContentProvider';
+import { ContentProps } from './types';
 import {
   IconContainer,
   LoadingIcon,
   SaveStarText,
   SaveStarButton
 } from './styles';
-
-export type ArticleBookmark = {
-  isBookmarked: boolean;
-};
 
 const getText = (isSaved: boolean) => (isSaved ? 'Saved' : 'Save');
 

@@ -6,7 +6,7 @@ import {
   HeadlineButtonContainer
 } from './styles';
 import { Label } from '../common-styles';
-import { InfoCardData } from './InfoCard';
+import { InfoCardData } from './types';
 
 export const Card: React.FC<{
   headline: string;

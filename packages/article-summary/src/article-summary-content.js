@@ -2,7 +2,7 @@ import React from "react";
 import { TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { propTypes as treePropType } from "@times-components/markup-forest";
-import { renderAst } from "./article-summary";
+import renderAst from "./shared";
 import styles from "./styles";
 
 const ArticleSummaryContent = ({

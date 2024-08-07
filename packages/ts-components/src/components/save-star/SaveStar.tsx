@@ -1,7 +1,8 @@
 import React, { cloneElement, useCallback, useMemo, useState } from 'react';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
-import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
+import { SaveStarUI } from './SaveStarUI';
 import { ContentProvider } from './ContentProvider';
+import { ArticleBookmark } from './types';
 
 export const SaveStar: React.FC<{
   articleId: string;
