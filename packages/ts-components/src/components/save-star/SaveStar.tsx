@@ -1,10 +1,4 @@
-import React, {
-  cloneElement,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState
-} from 'react';
+import React, { cloneElement, useCallback, useMemo, useState } from 'react';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
 import { ContentProvider } from './ContentProvider';
@@ -13,15 +7,8 @@ export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
 }> = React.memo(({ articleId, isPreviewMode, children }) => {
-  const [url, setUrl] = useState<string | undefined>(undefined);
-
-  useEffect(
-    () => {
-      if (window.nuk && window.nuk.user && window.nuk.user.sLoggedIn) {
-        setUrl(`/api/collections/is-bookmarked/${articleId}`);
-      }
-    },
-    [articleId]
+  const [url, setUrl] = useState<string>(
+    `/api/collections/is-bookmarked/${articleId}`
   );
 
   const [previewData, setPreviewData] = useState<ArticleBookmark | undefined>(
