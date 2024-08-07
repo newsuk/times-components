@@ -18,14 +18,14 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl
 }) => {
-  const entitlementFeatureEnable = window && window.sessionStorage && window.sessionStorage.getItem(
-    "entitlementFeatureEnable"
-  );
-  console.log("entitlementFeatureEnable", entitlementFeatureEnable);
-
-  // console.log("query testing...", window && window.location.search.includes("entitlementFeatureEnable")); 
-
   const [userEntitlements, setUserEntitlements] = useState(undefined);
+
+  let entitlementFeatureEnable = false;
+
+  if(typeof window !== undefined) {
+    console.log("query testing...", window.location.search.includes("entitlementFeatureEnable")); 
+  }
+
 
   useEffect(() => {
     const fetchUserEntitlements = async () => {
@@ -34,7 +34,10 @@ const ArticleComments = ({
       setUserEntitlements(data);
     };
 
-    if(window && entitlementFeatureEnable) {
+    if(typeof window !== undefined) {
+      entitlementFeatureEnable = window.sessionStorage.getItem(
+        "entitlementFeatureEnable"
+      );
       console.log('window object acessible............');
       fetchUserEntitlements();
     }
