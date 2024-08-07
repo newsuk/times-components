@@ -164,7 +164,7 @@ fragment articleProps on Article {
   shortHeadline
   seoDescription
   slug
-  url
+  url: categoryPath
 }
 
 fragment relatedProps on Tile {
