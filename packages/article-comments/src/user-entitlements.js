@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import { useFetch } from '@times-components/ts-components';
 
 // interface FeatureDecision {
@@ -34,25 +34,34 @@ import React from 'react';
 export const UserEntitlements = ({ userEntitlementsList, children }) => {
   // const { data, loading } = useFetch();
 
-
   // console.log("fetchResponse", userEntitlementsList);
 
   // const subscriptions = data?.data?.user?.subscriptions || []
-  const featureDecisions = userEntitlementsList && userEntitlementsList.user && userEntitlementsList.user.subscriptions && userEntitlementsList.user.subscriptions[0] && userEntitlementsList.user.subscriptions[0].featureDecisions || [];
+  const featureDecisions =
+    (userEntitlementsList &&
+      userEntitlementsList.user &&
+      userEntitlementsList.user.subscriptions &&
+      userEntitlementsList.user.subscriptions[0] &&
+      userEntitlementsList.user.subscriptions[0].featureDecisions) ||
+    [];
   // const {
   //   data: { user }
   // } = fetchResponse || {};
   // const { subscriptions } = user || [];
   // console.log('featureDecisions', featureDecisions);
 
-  const isCommentingEntitlementEnabled = featureDecisions && featureDecisions.some(decision => {
-   return decision.code ==="fp-752" && decision.outcome.toLowerCase().includes('disable')
-  }
-    );
+  const isCommentingEntitlementEnabled =
+    featureDecisions &&
+    featureDecisions.some(decision => {
+      return (
+        decision.code === "fp-752" &&
+        decision.outcome.toLowerCase().includes("disable")
+      );
+    });
 
-    if(userEntitlementsList === undefined) {
-      return null;
-    }
+  if (userEntitlementsList === undefined) {
+    return null;
+  }
 
   return isCommentingEntitlementEnabled && children;
 };
