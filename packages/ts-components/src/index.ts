@@ -106,3 +106,4 @@ export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
 export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
+export { Banner } from './components/banner/banner';
