@@ -86,7 +86,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   : "unknown section",
                 isSavingEnabled: sharingSavingFlag,
                 isSharingEnabled: sharingSavingFlag,
-                isCommentEnabled: commentingFlag
+                isCommentEnabled: commentingFlag,
+                isEntitlementFeatureEnabled
               },
               error,
               isLoading,
@@ -105,7 +106,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               zephrDivs,
               showAudioPlayer,
               storefrontConfig,
-              isEntitlementFeatureEnabled
             })
           );
         }
