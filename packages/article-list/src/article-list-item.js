@@ -108,10 +108,10 @@ const ArticleListItem = props => {
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
-        const canonicalUrl = makeArticleUrl(props.article);
+        const url = props.article.categoryPath || makeArticleUrl(props.article);
 
         return (
-          <Link url={canonicalUrl}>
+          <Link url={url}>
             <ListItemWrapper>
               <Card
                 contentContainerClass="articleListContent"

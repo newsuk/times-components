@@ -7,7 +7,7 @@
     "leadAsset": {
       "title": "Lead 1",
       "crop": {
-        "url": "https://lead1.io",
+        "categoryPath": "https://lead1.io",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -49,7 +49,7 @@
         ]
       }
     ],
-    "url": "https://article1.io"
+    "categoryPath": "https://article1.io"
   },
   {
     "bylines": [
@@ -78,7 +78,7 @@
     "leadAsset": {
       "title": "Lead 2",
       "crop": {
-        "url": "https://lead2.io",
+        "categoryPath": "https://lead2.io",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -119,7 +119,7 @@
     ],
     "slug": "this-is-slug-2",
     "shortIdentifier": "968n7tdck2",
-    "url": "https://article2.io"
+    "categoryPath": "https://article2.io"
   },
   {
     "bylines": [
@@ -148,7 +148,7 @@
     "leadAsset": {
       "title": "Lead 3",
       "crop": {
-        "url": "https://lead3.io",
+        "categoryPath": "https://lead3.io",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -189,7 +189,7 @@
     ],
     "slug": "this-is-slug-3",
     "shortIdentifier": "968n7tdck3",
-    "url": "https://article3.io"
+    "categoryPath": "https://article3.io"
   },
   {
     "bylines": [
@@ -218,7 +218,7 @@
     "leadAsset": {
       "title": "Lead 4",
       "crop": {
-        "url": "https://lead4.io",
+        "categoryPath": "https://lead4.io",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -259,7 +259,7 @@
     ],
     "slug": "this-is-slug-4",
     "shortIdentifier": "968n7tdck4",
-    "url": "https://article4.io"
+    "categoryPath": "https://article4.io"
   },
   {
     "bylines": [
@@ -288,7 +288,7 @@
     "leadAsset": {
       "title": "Lead 5",
       "crop": {
-        "url": "https://lead5.io",
+        "categoryPath": "https://lead5.io",
         "__typename": "Crop"
       },
       "type": "Image",
@@ -329,6 +329,6 @@
     ],
     "slug": "this-is-slug-5",
     "shortIdentifier": "968n7tdck5",
-    "url": "https://article5.io"
+    "categoryPath": "https://article5.io"
   }
 ]
