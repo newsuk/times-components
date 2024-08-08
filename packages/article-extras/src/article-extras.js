@@ -43,7 +43,8 @@ const ArticleExtras = ({
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isEntitlementFeatureEnabled
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -127,6 +128,7 @@ const ArticleExtras = ({
         isCommentEnabled={isCommentEnabled}
         storefrontConfig={storefrontConfig}
         domainSpecificUrl={domainSpecificUrl}
+        isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
       />
     </UserState>
   );
@@ -152,7 +154,8 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {

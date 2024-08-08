@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.58.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.57.1...@times-components/ssr@2.58.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
 ## [2.57.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.57.0...@times-components/ssr@2.57.1) (2024-08-08)
 
 **Note:** Version bump only for package @times-components/ssr
