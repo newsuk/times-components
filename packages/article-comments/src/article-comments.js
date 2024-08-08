@@ -20,17 +20,20 @@ const ArticleComments = ({
 }) => {
   const [userEntitlementData, setUserEntitlementData] = useState(undefined);
 
-  useEffect(() => {
-    const fetchUserEntitlements = async () => {
-      const response = await fetch("/api/get-user-entitlements");
-      const data = await response.json();
-      setUserEntitlementData(data);
-    };
+  useEffect(
+    () => {
+      const fetchUserEntitlements = async () => {
+        const response = await fetch("/api/get-user-entitlements");
+        const data = await response.json();
+        setUserEntitlementData(data);
+      };
 
-    if (typeof window !== "undefined") {
-      fetchUserEntitlements();
-    }
-  }, []);
+      if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
+        fetchUserEntitlements();
+      }
+    },
+    [isEntitlementFeatureEnabled]
+  );
 
   return isEnabled && isCommentEnabled ? (
     <>
