@@ -46,9 +46,6 @@ const Article = props => {
     }
   };
 
-  console.log('Article -> article',article);
-
-
   return (
     <Responsive>
       <MessageManager delay={3000} scale={scales.medium}>

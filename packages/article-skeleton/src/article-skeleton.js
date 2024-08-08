@@ -186,9 +186,6 @@ const ArticleSkeleton = ({
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
 
-  console.log('ArticleSkeleton -> isEntitlementFeatureEnabled',isEntitlementFeatureEnabled);
-
-
   const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
     setPolygonUrl(polygon);
@@ -466,7 +463,6 @@ const ArticleSkeleton = ({
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
   paidContentClassName: PropTypes.string,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 

@@ -40,7 +40,6 @@ const ArticleExtras = ({
   domainSpecificUrl,
   isEntitlementFeatureEnabled
 }) => {
-  console.log('ArticleExtras -> isEntitlementFeatureEnabled',isEntitlementFeatureEnabled);
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
       return (

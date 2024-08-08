@@ -6,8 +6,7 @@ import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
-import UserEntitlementProvider from "./user-entitlement-provider";
-import { UserEntitlements } from "./user-entitlements";
+import UserEntitlementState from "./user-entitlement-state";
 
 const ArticleComments = ({
   articleId,
@@ -17,32 +16,29 @@ const ArticleComments = ({
   isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl,
-  isEntitlementFeatureEnabled,
+  isEntitlementFeatureEnabled
 }) => {
-  const [userEntitlements, setUserEntitlements] = useState(undefined);
-  console.log('ArticleComments -> isEntitlementFeatureEnabled',isEntitlementFeatureEnabled);
+  const [userEntitlementData, setUserEntitlementData] = useState(undefined);
 
   useEffect(() => {
     const fetchUserEntitlements = async () => {
       const response = await fetch("/api/get-user-entitlements");
       const data = await response.json();
-      setUserEntitlements(data);
+      setUserEntitlementData(data);
     };
 
-    if(typeof window !== undefined) {
+    if (typeof window !== "undefined") {
       fetchUserEntitlements();
     }
   }, []);
 
-  return (
-    //  isEnabled && isCommentEnabled ? (
+  return isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
       {!isEntitlementFeatureEnabled ? (
         <UserState state={UserState.showCommentingModule}>
-          <p>inside UserState provider</p>
           <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
@@ -51,21 +47,19 @@ const ArticleComments = ({
           />
         </UserState>
       ) : (
-        <UserEntitlements userEntitlementsList={userEntitlements}>
-          <p>inside UserEntitlements</p>
+        <UserEntitlementState userEntitlementData={userEntitlementData}>
           <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
             commentingConfig={commentingConfig}
             domainSpecificUrl={domainSpecificUrl}
           />
-        </UserEntitlements>
+        </UserEntitlementState>
       )}
     </>
+  ) : (
+    <DisabledComments />
   );
-  //  : (
-  //   <DisabledComments />
-  // );
 };
 
 ArticleComments.propTypes = {
@@ -77,7 +71,8 @@ ArticleComments.propTypes = {
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 
 ArticleComments.defaultProps = {
