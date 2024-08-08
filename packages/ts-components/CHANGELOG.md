@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.99.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.2...@times-components/ts-components@1.99.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
 ## [1.98.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.1...@times-components/ts-components@1.98.2) (2024-07-15)
 
 

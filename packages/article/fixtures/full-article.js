@@ -1655,6 +1655,7 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
       }
@@ -1847,6 +1848,8 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
       }
@@ -1992,6 +1995,8 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
         url:
           "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
       }
