@@ -16,8 +16,7 @@ const UserEntitlementState = ({ userEntitlementData, children }) => {
     featureDecisions &&
     featureDecisions.some(
       decision =>
-        decision.code === FP_CODE_COMMENTING &&
-        decision.outcome.toLowerCase().includes("enable")
+        decision.code === FP_CODE_COMMENTING && decision.outcomeAsBoolean
     );
 
   if (userEntitlementData === undefined || !isCommentingEntitlementEnabled) {
@@ -30,7 +29,8 @@ const UserEntitlementState = ({ userEntitlementData, children }) => {
 const FeatureDecisionPropTypes = PropTypes.shape({
   code: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  outcome: PropTypes.string.isRequired
+  outcome: PropTypes.string.isRequired,
+  outcomeAsBoolean: PropTypes.bool.isRequired
 });
 
 const SubscriptionPropTypes = PropTypes.shape({
