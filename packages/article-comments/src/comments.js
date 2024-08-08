@@ -112,6 +112,8 @@ class Comments extends Component {
       getShareEvent(event)
     );
 
+    // eslint-disable-next-line no-console
+    console.log(isReadOnly, "isReadOnly");
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction();

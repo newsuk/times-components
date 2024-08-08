@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-env browser */
 
 import React from "react";
@@ -15,8 +16,11 @@ const ArticleComments = ({
   isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl
-}) =>
-  isEnabled && isCommentEnabled ? (
+}) => {
+  console.log(isEnabled, "isEnabled");
+  console.log(isCommentEnabled, "isCommentEnabled");
+  console.log(UserState, "UserState");
+  return isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
@@ -33,6 +37,7 @@ const ArticleComments = ({
   ) : (
     <DisabledComments />
   );
+};
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,

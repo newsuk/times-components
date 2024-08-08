@@ -66,11 +66,11 @@ describe("getLeadAsset should", () => {
 
   it("return image lead asset values", () => {
     const testLeadAssetResult = {
-      aspectRatio: "16:9",
+      aspectRatio: "3:2",
       displayImage: {
-        ratio: "16:9",
+        ratio: "3:2",
         url:
-          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1512%2C0%2C140"
+          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
       },
       isVideo: false,
       leadAsset
@@ -81,11 +81,11 @@ describe("getLeadAsset should", () => {
 
   it("return video lead asset values", () => {
     const testLeadAssetResult = {
-      aspectRatio: "16:9",
+      aspectRatio: "3:2",
       displayImage: {
-        ratio: "16:9",
+        ratio: "3:2",
         url:
-          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4d3487fe-2ec5-11e9-b26a-04579b7820b3.jpg?crop=1600%2C900%2C0%2C0"
+          "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4d3487fe-2ec5-11e9-b26a-04579b7820b3.jpg?crop=1286%2C857%2C24%2C30"
       },
       isVideo: true,
       leadAsset: {

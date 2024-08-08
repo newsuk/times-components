@@ -2,9 +2,13 @@
 import getCpnId from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
+  // eslint-disable-next-line no-console
+  console.log("doso je pajdo");
   const xhr = new XMLHttpRequest();
   xhr.addEventListener("load", () => {
     const success = xhr.status === 200;
+    // eslint-disable-next-line no-console
+    console.log(success, "sucess wtf");
     const { spotimCodeB } = success ? JSON.parse(xhr.response) : {};
     if (spotimCodeB) {
       completeSSOCallback(spotimCodeB);
@@ -14,11 +18,14 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallback = (codeA, completeSSOCallback) =>
-  loginRequest(
+const ssoCallback = (codeA, completeSSOCallback) => {
+  // eslint-disable-next-line no-console
+  console.log("SSO FIRED");
+  return loginRequest(
     `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   );
+};
 
 const executeSSOtransaction = () => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
@@ -29,7 +36,8 @@ const executeSSOtransaction = () => {
       window.nuk.getCookieValue("acs_tnl");
 
     const cpn = `${getCpnId(acsTnlCookie)}_v2`;
-
+    // eslint-disable-next-line no-console
+    console.log(cpn, "CPN");
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
 };

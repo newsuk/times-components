@@ -28,13 +28,13 @@ const leadAsset = {
 };
 
 describe("for the standard template it should", () => {
-  it("return the 16:9 crop when present", () => {
-    expect(getStandardTemplateCrop(leadAsset).ratio).toEqual("16:9");
+  it("return the 3:2 crop when present", () => {
+    expect(getStandardTemplateCrop(leadAsset).ratio).toEqual("3:2");
   });
 
-  it("return the 3:2 crop", () => {
-    const leadAssetNo169 = { ...leadAsset, crop169: null };
-    expect(getStandardTemplateCrop(leadAssetNo169).ratio).toEqual("3:2");
+  it("return the 16:9 crop", () => {
+    const leadAssetNo169 = { ...leadAsset, crop32: null };
+    expect(getStandardTemplateCrop(leadAssetNo169).ratio).toEqual("16:9");
   });
 
   it("return the 1.25:1 crop", () => {

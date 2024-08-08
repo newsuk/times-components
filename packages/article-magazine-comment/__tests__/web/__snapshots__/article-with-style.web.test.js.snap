@@ -907,7 +907,7 @@ exports[`full article with style 1`] = `
           >
             <div
               className="c5"
-              paddingBottom="56.25%"
+              paddingBottom="66.66666666666666%"
               position="relative"
             >
               <div
@@ -921,7 +921,7 @@ exports[`full article with style 1`] = `
                   display="table"
                   height={0}
                   overflow="hidden"
-                  paddingBottom="56.25%"
+                  paddingBottom="66.66666666666667%"
                   position="relative"
                   width="100%"
                 >
@@ -1988,7 +1988,7 @@ exports[`full article with style in the culture magazine 1`] = `
           >
             <div
               className="c5"
-              paddingBottom="56.25%"
+              paddingBottom="66.66666666666666%"
               position="relative"
             >
               <div
@@ -2002,7 +2002,7 @@ exports[`full article with style in the culture magazine 1`] = `
                   display="table"
                   height={0}
                   overflow="hidden"
-                  paddingBottom="56.25%"
+                  paddingBottom="66.66666666666667%"
                   position="relative"
                   width="100%"
                 >
@@ -3070,7 +3070,7 @@ exports[`full article with style in the style magazine 1`] = `
           >
             <div
               className="c5"
-              paddingBottom="56.25%"
+              paddingBottom="66.66666666666666%"
               position="relative"
             >
               <div
@@ -3084,7 +3084,7 @@ exports[`full article with style in the style magazine 1`] = `
                   display="table"
                   height={0}
                   overflow="hidden"
-                  paddingBottom="56.25%"
+                  paddingBottom="66.66666666666667%"
                   position="relative"
                   width="100%"
                 >
@@ -4151,7 +4151,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           >
             <div
               className="c5"
-              paddingBottom="56.25%"
+              paddingBottom="66.66666666666666%"
               position="relative"
             >
               <div
@@ -4165,7 +4165,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                   display="table"
                   height={0}
                   overflow="hidden"
-                  paddingBottom="56.25%"
+                  paddingBottom="66.66666666666667%"
                   position="relative"
                   width="100%"
                 >
