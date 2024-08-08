@@ -9,7 +9,7 @@ const TestComponent = () => {
 };
 
 describe('UpdatedTimeProvider', () => {
-  it('should pass the updated time to the context value', () => {
+  it('should pass the updated time to the context value', async () => {
     const updatedTime = '2022-03-01T09:00:00.000Z';
 
     const { findByText } = render(
@@ -18,6 +18,6 @@ describe('UpdatedTimeProvider', () => {
       </UpdatedTimeProvider>
     );
 
-    findByText(updatedTime);
+    await findByText(updatedTime);
   });
 });

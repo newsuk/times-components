@@ -107,6 +107,7 @@ export default ({
                 shortIdentifier: `968n7tdck${itemIndex}`,
                 slug: `this-is-slug-${itemIndex}`,
                 summary: [],
+                categoryPath: `/article${itemIndex}`,
                 url: "https://url.io"
               },
               itemIndex
