@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.136.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.135.0...@times-components/article-skeleton@1.136.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
 # [1.135.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.134.1...@times-components/article-skeleton@1.135.0) (2024-08-08)
 
 
