@@ -462,7 +462,7 @@ const ArticleSkeleton = ({
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
-  paidContentClassName: PropTypes.string,
+  paidContentClassName: PropTypes.string
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
