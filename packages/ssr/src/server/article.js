@@ -29,7 +29,7 @@ module.exports = (
     commentingFlag = true,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled
+    isEntitlementFeatureEnabled = false
   },
   userState
 ) => {
