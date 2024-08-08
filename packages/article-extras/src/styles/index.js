@@ -96,11 +96,15 @@ export const PromotedContentContainer = styled.div`
   background-color: #f5f5f5;
   padding: 20px 20px 24px 20px;
   margin-block-start: 20px;
-  margin-block-end: 32px;
+
+  &:not(:last-child) {
+    margin-block-end: 32px;
+  }
 
   @media (min-width: ${breakpoints.wide}px) {
     padding: 16px;
     margin-block-start: 28px;
+    margin-block-end: 32px;
     margin-inline: 20px;
   }
 `;
