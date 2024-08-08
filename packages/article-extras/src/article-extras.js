@@ -78,11 +78,6 @@ const ArticleExtras = ({
           />
         )}
       </div>
-      {/* <NativeAd className="group-3 hidden" key="1">
-        <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
-        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd> */}
       <PromotedContentContainer>
         <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
         <PromotedContentGrid>
