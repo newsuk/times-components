@@ -5,12 +5,7 @@ const UserEntitlementState = ({ userEntitlementData, children }) => {
   const FP_CODE_COMMENTING = "fp-752";
 
   const featureDecisions =
-    (userEntitlementData &&
-      userEntitlementData.user &&
-      userEntitlementData.user.subscriptions &&
-      userEntitlementData.user.subscriptions[0] &&
-      userEntitlementData.user.subscriptions[0].featureDecisions) ||
-    [];
+    userEntitlementData?.user?.subscriptions?.[0]?.featureDecisions || [];
 
   const isCommentingEntitlementEnabled =
     featureDecisions &&
