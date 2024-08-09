@@ -346,9 +346,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           Link
         </span>
       </a>
-      <h2>
-        Sponsored
-      </h2>
+      <span>
+        PROMOTED CONTENT
+      </span>
     </article>
   </main>
 </article>

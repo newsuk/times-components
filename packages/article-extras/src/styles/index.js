@@ -91,4 +91,73 @@ const styles = {
   }
 };
 
+export const PromotedContentContainer = styled.div`
+  border-top: 2px solid #1d1d1b;
+  background-color: #f5f5f5;
+  padding: 20px 20px 24px 20px;
+  margin-block-start: 20px;
+  &:not(:last-child) {
+    margin-block-end: 32px;
+  }
+  @media (min-width: ${breakpoints.wide}px) {
+    padding: 16px;
+    margin-block-start: 28px;
+    margin-block-end: 32px;
+    margin-inline: 20px;
+  }
+`;
+
+export const PromotedContentTitle = styled.span`
+  display: block;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3b3b3b;
+  margin-block: 16px;
+`;
+
+export const PromotedContentGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 32px;
+  @media (min-width: ${breakpoints.wide}px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`;
+
+export const PromotedContentAd = styled.div`
+  position: relative;
+  min-height: 150px;
+  &:nth-child(1)::after,
+  &:nth-child(4)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -16px;
+    width: 1px;
+    height: 100%;
+    background-color: #c2c2c2;
+  }
+  @media (min-width: ${breakpoints.wide}px) {
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -16px;
+      width: 1px;
+      height: 100%;
+      background-color: #c2c2c2;
+    }
+  }
+`;
+
+export const PromotedContentSectionDivider = styled.div`
+  border-top: 1px solid #e4e4e4;
+  grid-column: 1 / 3;
+  @media (min-width: ${breakpoints.wide}px) {
+    display: none;
+  }
+`;
+
 export default styles;
