@@ -13,7 +13,13 @@ import {
   BreadcrumbContainer,
   ShareAndSaveContainer
 } from "./styles/responsive";
-import { NativeAd, NativeAdTitle, Ad } from "./styles";
+import {
+  PromotedContentContainer,
+  PromotedContentTitle,
+  PromotedContentGrid,
+  PromotedContentAd,
+  PromotedContentSectionDivider
+} from "./styles";
 
 const clearingStyle = {
   clear: "both"
@@ -73,11 +79,16 @@ const ArticleExtras = ({
           />
         )}
       </div>
-      <NativeAd className="group-3 hidden" key="1">
-        <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
-        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd>
+      <PromotedContentContainer>
+        <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
+        <PromotedContentGrid>
+          <PromotedContentAd id="advert-inarticle-native-1" />
+          <PromotedContentAd id="advert-inarticle-native-2" />
+          <PromotedContentSectionDivider />
+          <PromotedContentAd id="advert-inarticle-native-3" />
+          <PromotedContentAd id="advert-inarticle-native-4" />
+        </PromotedContentGrid>
+      </PromotedContentContainer>
     </>
   );
   return (
