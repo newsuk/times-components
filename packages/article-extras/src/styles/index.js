@@ -94,13 +94,18 @@ const styles = {
 export const PromotedContentContainer = styled.div`
   border-top: 2px solid #1d1d1b;
   background-color: #f5f5f5;
-  padding: 20px 20px 24px 20px;
+  padding: 16px 10px 24px;
   margin-block-start: 20px;
+
   &:not(:last-child) {
     margin-block-end: 32px;
   }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding: 16px 20px 24px;
+  }
+
   @media (min-width: ${breakpoints.wide}px) {
-    padding: 16px;
     margin-block-start: 28px;
     margin-block-end: 32px;
     margin-inline: 20px;
@@ -114,13 +119,14 @@ export const PromotedContentTitle = styled.span`
   font-size: 12px;
   line-height: 16px;
   color: #3b3b3b;
-  margin-block: 16px;
 `;
 
 export const PromotedContentGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 32px;
+  margin-block-start: 16px;
+
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -137,7 +143,7 @@ export const PromotedContentAd = styled.div`
     right: -16px;
     width: 1px;
     height: 100%;
-    background-color: #c2c2c2;
+    background-color: #e4e4e4;
   }
   @media (min-width: ${breakpoints.wide}px) {
     &:not(:last-child)::after {
@@ -147,7 +153,7 @@ export const PromotedContentAd = styled.div`
       right: -16px;
       width: 1px;
       height: 100%;
-      background-color: #c2c2c2;
+      background-color: #e4e4e4;
     }
   }
 `;
