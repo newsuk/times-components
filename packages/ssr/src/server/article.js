@@ -18,6 +18,7 @@ module.exports = (
     makeTopicUrl,
     navigationMode,
     commentingConfig,
+    commentCount,
     articleDataFromRender,
     paidContentClassName,
     isPreview,
@@ -27,7 +28,8 @@ module.exports = (
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
+    isEntitlementFeatureEnabled = false
   },
   userState
 ) => {
@@ -73,6 +75,7 @@ module.exports = (
       getFallbackThumbnailUrl169,
       navigationMode,
       commentingConfig,
+      commentCount,
       articleDataFromRender,
       userState,
       paidContentClassName,
@@ -82,7 +85,8 @@ module.exports = (
       sharingSavingFlag,
       commentingFlag,
       showAudioPlayer,
-      storefrontConfig
+      storefrontConfig,
+      isEntitlementFeatureEnabled
     },
     name: "article"
   };

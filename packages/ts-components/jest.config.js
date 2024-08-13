@@ -9,6 +9,7 @@ const buildConfig = dir => {
   return {
     rootDir: path.join(dir, '../..'),
     preset: 'ts-jest',
+    maxWorkers: 1,
     moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jest-environment-jsdom-sixteen',

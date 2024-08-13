@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.2](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.1...@times-components/article@7.17.2) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.1](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.0...@times-components/article@7.17.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+# [7.17.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.16.279...@times-components/article@7.17.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
 ## [7.16.279](https://github.com/newsuk/times-components/compare/@times-components/article@7.16.278...@times-components/article@7.16.279) (2024-07-30)
 
 **Note:** Version bump only for package @times-components/article
