@@ -2,7 +2,7 @@ import mockDate from 'mockdate';
 import getActiveFlags from '../getActiveFlags';
 
 describe('get active flags function', () => {
-  //  GMT: Thursday, 14 March 2019 16:22:54
+  //  GMT : Thursday, 14 March 2019 16:22:54
   beforeEach(() => {
     mockDate.set(1552580574000);
   });
