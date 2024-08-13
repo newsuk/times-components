@@ -8,7 +8,7 @@ import {
   LiveArticleFlag
 } from '../LiveArticleFlag';
 
-describe('LiveArticleFlag', () => {
+describe('LiveArticleFlag ', () => {
   it('should render the base live article flag', () => {
     const { baseElement, getByText } = render(
       <BaseLiveArticleFlag title="BASE" />
