@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 const defaultProps: ArticleSideBarProps = {
-  sectionTitle: 'Puzzles for you',
+  sectionTitle: 'Puzzles for you ',
   data: [
     {
       title: 'Crossword',
