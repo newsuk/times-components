@@ -118,7 +118,7 @@ export const PromotedContentTitle = styled.span`
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #3b3b3b;
+  color: #333333;
 `;
 
 export const PromotedContentGrid = styled.div`
