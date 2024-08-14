@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.30.1...@times-components/article-extras@0.31.0) (2024-08-14)
+
+
+### Features
+
+* **TMD-538-539-540:** Move components from ts-newskit into ts-components ([#3891](https://github.com/newsuk/times-components/issues/3891)) ([9c16e26](https://github.com/newsuk/times-components/commit/9c16e264e074eeed1b63cc597ed7656b917a3402)), closes [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896) [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896)
+
+
+
+
+
 ## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.30.0...@times-components/article-extras@0.30.1) (2024-08-08)
 
 **Note:** Version bump only for package @times-components/article-extras
