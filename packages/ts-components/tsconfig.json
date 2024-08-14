@@ -9,6 +9,7 @@
     "declaration": true,
     "inlineSourceMap": true,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "resolveJsonModule": true,
 
     "strict": true /* Enable all strict type-checking options. */,
 
@@ -40,9 +41,17 @@
 
     "lib": ["es6", "dom", "es2017", "dom.iterable"],
     "types": ["jest"],
-    "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types",
+      "../../node_modules/@types"
+    ]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/fixtures/article-harness/__tests__/__snapshots__/articleHarness.test.tsx.snap"
+  ],
   "exclude": ["node_modules/**"],
   "compileOnSave": false
 }

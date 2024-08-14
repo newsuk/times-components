@@ -1,0 +1,38 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { JobTitle } from './job-title.tsx';
+
+<Meta
+  title="Components/Misc/JobTitle"
+  component={JobTitle}
+/>
+
+# Job Title component
+The `Job Title` component is not being used currently.
+We will leave JobTitle implementation as it could be required in the feature. It will require adding a floating element to fix the popover being out of screen issue.
+The `Job Title` component is used to show the author's contractual job title in either a Tooltip (Desktop) or a Popover (Smaller Devices).
+
+This component takes in two props `contractualTitle` and `isLargeDevice` as below.
+
+## Props
+<Props of={JobTitle} />
+
+## Code Example
+`<JobTitle contractualTitle="Senior Correspondent" isLargeDevice={true}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const JobTitleStory = ({ isLargeDevice }) => (
+  <div style={{ paddingTop: '150px'}}>
+    <JobTitle contractualTitle="Senior Correspondent" isLargeDevice={isLargeDevice} />
+  </div>
+);
+
+<Story name="JobTitle"
+  args={{ isLargeDevice: true }}
+  argTypes={{
+    isLargeDevice: { control: "select", options: [true, false] }
+  }}>
+  {JobTitleStory.bind({})}
+</Story>
