@@ -9,4 +9,4 @@ git config user.name "times-tools"
 git config user.email "tools@news.co.uk"
 
 # publish canary to npm
-lerna publish --canary --yes
+lerna publish --canary --yes --preid $(date +%s)
