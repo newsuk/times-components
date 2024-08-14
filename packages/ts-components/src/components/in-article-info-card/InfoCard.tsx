@@ -21,15 +21,8 @@ import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { DeckData } from '../../helpers/fetch/types';
+import { InfoCardData } from './types';
 
-export type InfoCardData = {
-  type: string;
-  data: {
-    image?: string;
-    subtitle?: string;
-    copy: string;
-  };
-};
 type InfoCardFields = { headline: string; label: string; size: Layout };
 
 type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;

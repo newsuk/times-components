@@ -9,12 +9,13 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   WelcomeBanner,
-  ArticleSidebar
+  ArticleSidebar,
+  UpdateButtonWithDelay,
+  Banner
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { UpdateButtonWithDelay, Banner } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
