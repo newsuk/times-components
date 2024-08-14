@@ -2,7 +2,7 @@ import mockDate from 'mockdate';
 import getActiveFlags from '../getActiveFlags';
 
 describe('get active flags function', () => {
-  //  GMT : Thursday, 14 March 2019 16:22:54
+  //  GMT: Thursday, 14 March 2019 16:22:54
   beforeEach(() => {
     mockDate.set(1552580574000);
   });
@@ -11,7 +11,7 @@ describe('get active flags function', () => {
     mockDate.reset();
   });
 
-  it('returns only active flags ', () => {
+  it('returns only active flags', () => {
     const flags = [
       { expiryTime: '2020-03-13T12:00:00.000Z', type: 'UPDATED' },
       { expiryTime: '2019-03-14T12:00:00.000Z', type: 'EXCLUSIVE' }
