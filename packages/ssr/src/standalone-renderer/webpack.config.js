@@ -10,7 +10,6 @@ module.exports = () => ({
   entry: {
     article: path.resolve(__dirname, "./page-init/article.js"),
     "author-profile": path.resolve(__dirname, "./page-init/author-profile.js"),
-    topic: path.resolve(__dirname, "./page-init/topic.js")
   },
   mode: "production",
   module: {
