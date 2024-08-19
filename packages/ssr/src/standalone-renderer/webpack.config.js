@@ -9,7 +9,7 @@ crypto.createHash = algorithm =>
 module.exports = () => ({
   entry: {
     article: path.resolve(__dirname, "./page-init/article.js"),
-    "author-profile": path.resolve(__dirname, "./page-init/author-profile.js"),
+    "author-profile": path.resolve(__dirname, "./page-init/author-profile.js")
   },
   mode: "production",
   module: {

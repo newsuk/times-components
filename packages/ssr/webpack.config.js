@@ -49,7 +49,7 @@ module.exports = {
   ...options,
   entry: {
     article: path.resolve(__dirname, "./src/client/article.js"),
-    "author-profile": path.resolve(__dirname, "./src/client/author-profile.js"),
+    "author-profile": path.resolve(__dirname, "./src/client/author-profile.js")
   },
   module: {
     rules: [babelConfig]

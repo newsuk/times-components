@@ -5,13 +5,13 @@ import {
   article as makeArticleParams,
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture,
+  MockFixture
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,
-  AuthorArticlesWithImagesProvider,
+  AuthorArticlesWithImagesProvider
 } from "./src/provider.js";
 
 export default {
@@ -185,7 +185,7 @@ export default {
       },
       name: "Author Profile Articles with Images",
       type: "story"
-    },
+    }
   ],
   name: "Helpers/Provider"
 };

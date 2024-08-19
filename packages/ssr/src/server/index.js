@@ -3,5 +3,5 @@ const authorProfileServer = require("./author-profile");
 
 module.exports = {
   article: articleServer,
-  authorProfile: authorProfileServer,
+  authorProfile: authorProfileServer
 };
