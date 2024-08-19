@@ -1,4 +1,12 @@
 // General Components
+export {
+  BreakingArticleFlag,
+  LiveArticleFlag
+} from './components/article-flag/LiveArticleFlag';
+export {
+  TrackingContext,
+  TrackingContextProvider
+} from './helpers/tracking/TrackingContextProvider';
 export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export { InfoCard } from './components/in-article-info-card/InfoCard';
 export { GalleryCarousel } from './components/carousel/GalleryCarousel';
@@ -6,10 +14,6 @@ export {
   InfoCardBulletPoints
 } from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
 export { BigNumbers } from './components/in-article-big-numbers/BigNumbers';
-export {
-  BreakingArticleFlag,
-  LiveArticleFlag
-} from './components/article-flag/LiveArticleFlag';
 export {
   ArticleFlag,
   ArticleFlags,
@@ -21,6 +25,13 @@ export {
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
 export { SaveStar } from './components/save-star/SaveStar';
+export { Breadcrumb } from './components/breadcrumb/breadcrumb';
+export { UpdateButton } from './components/update-button/update-button';
+export {
+  UpdateButtonWithDelay
+} from './components/update-button/update-button-with-delay';
+export { Banner } from './components/banner/banner';
+export { JobTitle } from './components/job-title/job-title';
 
 // Newsletter Components
 export {
@@ -84,9 +95,6 @@ export { FetchProvider } from './helpers/fetch/FetchProvider';
 export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
-export {
-  TrackingContextProvider
-} from './helpers/tracking/TrackingContextProvider';
 
 export { HiddenDiv } from './components/common-styles';
 export { InlineMessage } from './components/inline-message/InlineMessage';
