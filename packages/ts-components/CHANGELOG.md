@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.101.0...@times-components/ts-components@1.102.0) (2024-08-22)
+
+
+### Features
+
+* **TMRS-279:** Updated s3 files ([#3882](https://github.com/newsuk/times-components/issues/3882)) ([35da9ec](https://github.com/newsuk/times-components/commit/35da9ecc823c73f0ba6232800900bed306772081))
+
+
+
+
+
 # [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.1...@times-components/ts-components@1.101.0) (2024-08-14)
 
 

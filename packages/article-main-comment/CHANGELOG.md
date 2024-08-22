@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.88.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.87.3...@times-components/article-main-comment@2.88.0) (2024-08-22)
+
+
+### Features
+
+* **TMC-59:** Added Sponsored content block ([#3917](https://github.com/newsuk/times-components/issues/3917)) ([938a686](https://github.com/newsuk/times-components/commit/938a686f68e8a408718f4b20913fbe81747fce80))
+
+
+
+
+
 ## [2.87.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.87.2...@times-components/article-main-comment@2.87.3) (2024-08-14)
 
 **Note:** Version bump only for package @times-components/article-main-comment
