@@ -6,7 +6,7 @@ exports[`OptaFootballFixturesTournament should render full width correctly 1`] =
     class="sc-bdVaJa bzdUzT"
   >
     <div
-      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -23,7 +23,7 @@ exports[`OptaFootballFixturesTournament should render full width correctly 2`] =
     class="sc-bdVaJa jODlXD"
   >
     <div
-      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
     >
       <div>
         Widget
@@ -39,7 +39,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -56,7 +56,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX hBbXRY team-flags"
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
     >
       <div>
         Widget
@@ -72,7 +72,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX bgjuAE team-flags"
+      class="sc-htpNat sc-ifAKCX UELGY team-flags"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -89,7 +89,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX bgjuAE team-flags"
+      class="sc-htpNat sc-ifAKCX UELGY team-flags"
     >
       <div>
         Widget
@@ -105,7 +105,7 @@ exports[`OptaFootballFixturesTournament should render other competitions correct
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX jkwHcf"
+      class="sc-htpNat sc-ifAKCX bqOljm"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -122,7 +122,7 @@ exports[`OptaFootballFixturesTournament should render other competitions correct
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX jkwHcf"
+      class="sc-htpNat sc-ifAKCX bqOljm"
     >
       <div>
         Widget
