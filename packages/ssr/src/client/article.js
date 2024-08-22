@@ -19,7 +19,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
+    isEntitlementFeatureEnabled
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -41,7 +42,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
+    isEntitlementFeatureEnabled
   };
 
   const clientOptions = {

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.2...@times-components/article-comments@0.44.3) (2024-08-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.1...@times-components/article-comments@0.44.2) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.0...@times-components/article-comments@0.44.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.44.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.28...@times-components/article-comments@0.44.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
+## [0.43.28](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.27...@times-components/article-comments@0.43.28) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
 ## [0.43.27](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.26...@times-components/article-comments@0.43.27) (2024-07-15)
 
 **Note:** Version bump only for package @times-components/article-comments

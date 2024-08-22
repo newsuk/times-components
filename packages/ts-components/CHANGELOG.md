@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.101.0...@times-components/ts-components@1.102.0) (2024-08-22)
+
+
+### Features
+
+* **TMRS-279:** Updated s3 files ([#3882](https://github.com/newsuk/times-components/issues/3882)) ([35da9ec](https://github.com/newsuk/times-components/commit/35da9ecc823c73f0ba6232800900bed306772081))
+
+
+
+
+
+# [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.1...@times-components/ts-components@1.101.0) (2024-08-14)
+
+
+### Features
+
+* **TMD-538-539-540:** Move components from ts-newskit into ts-components ([#3891](https://github.com/newsuk/times-components/issues/3891)) ([9c16e26](https://github.com/newsuk/times-components/commit/9c16e264e074eeed1b63cc597ed7656b917a3402)), closes [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896) [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896)
+
+
+
+
+
+## [1.100.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.0...@times-components/ts-components@1.100.1) (2024-08-08)
+
+
+### Bug Fixes
+
+* **TMP-1437:** Call /is-bookmarked only for logged in users ([bd3bef2](https://github.com/newsuk/times-components/commit/bd3bef2213ad57574d0c458ad9f1e252a8b5d6ca))
+* **TMP-1437:** Cleanup ([d301fc9](https://github.com/newsuk/times-components/commit/d301fc972c454d5f5e8a97591515b49660cae706))
+
+
+
+
+
+# [1.100.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.99.0...@times-components/ts-components@1.100.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
+# [1.99.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.2...@times-components/ts-components@1.99.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
 ## [1.98.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.1...@times-components/ts-components@1.98.2) (2024-07-15)
 
 

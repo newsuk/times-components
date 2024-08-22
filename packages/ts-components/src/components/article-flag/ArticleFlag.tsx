@@ -10,6 +10,7 @@ import {
   FlagsContainer
 } from './styles';
 import getActiveFlags from './getActiveFlags';
+import { FlagType } from './types';
 
 const ArticleFlag: React.FC<{ color?: string; title: string }> = ({
   color = colours.functional.primary,
@@ -65,11 +66,6 @@ const flagsMapping = (override = '') => {
     ['LONGREAD', <LongReadArticleFlag {...colourProp} />]
   ]);
 };
-
-export type FlagType = Array<{
-  expiryTime: string | null;
-  type: string;
-}>;
 
 const FlagsView: React.FC<{ allFlags: FlagType; overrideColor?: string }> = ({
   allFlags,

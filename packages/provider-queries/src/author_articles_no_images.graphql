@@ -20,7 +20,7 @@ query ArticleListQuery(
         headline
         shortHeadline
         shortSummary: summary(maxCharCount: $shortSummaryLength)
-        url
+        url: categoryPath
       }
     }
   }
