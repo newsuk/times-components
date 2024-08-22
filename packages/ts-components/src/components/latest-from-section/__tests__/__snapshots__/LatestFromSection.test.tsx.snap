@@ -70,6 +70,7 @@ exports[`<LatestFromSection> renders  1`] = `
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        style="background-color: rgb(239, 239, 239);"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -159,6 +160,7 @@ exports[`<LatestFromSection> renders  1`] = `
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        style="background-color: rgb(239, 239, 239);"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -248,6 +250,7 @@ exports[`<LatestFromSection> renders  1`] = `
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        style="background-color: rgb(239, 239, 239);"
                       >
                         <div
                           style="padding-bottom: 56.25%;"

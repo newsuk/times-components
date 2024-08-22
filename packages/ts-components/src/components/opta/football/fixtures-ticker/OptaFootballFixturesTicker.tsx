@@ -25,6 +25,7 @@ export const OptaFootballFixturesTicker: React.FC<{
   days_before?: number;
   round?: string;
   isApp?: boolean;
+  showButtons?: boolean;
   fixturesPageUrl?: string;
 }> = React.memo(
   ({
@@ -36,6 +37,7 @@ export const OptaFootballFixturesTicker: React.FC<{
     days_before,
     round,
     isApp,
+    showButtons,
     fixturesPageUrl
   }) => {
     const ref = React.createRef<HTMLDivElement>();
@@ -93,7 +95,7 @@ export const OptaFootballFixturesTicker: React.FC<{
 
     return (
       <>
-        <WidgetContainer isApp={isApp} ref={ref} />
+        <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
 
         {!isReady && (
           <PlaceholderContainer height={80}>

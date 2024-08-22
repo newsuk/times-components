@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { fonts } from '@times-components/ts-styleguide';
-import { FlagType } from './ArticleFlag';
+import { FlagType } from './types';
 import { gqlRgbaToStyle } from '@times-components/utils';
 
 export const LiveArticleFlagContainer = styled.div`

@@ -9,12 +9,13 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   WelcomeBanner,
-  ArticleSidebar
+  ArticleSidebar,
+  UpdateButtonWithDelay,
+  Banner
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { UpdateButtonWithDelay, Banner } from "@times-components/ts-newskit";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
@@ -86,7 +87,8 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
+    isEntitlementFeatureEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -429,6 +431,7 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
+                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
                     />
                   )}
                 </LazyLoad>

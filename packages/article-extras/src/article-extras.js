@@ -5,15 +5,20 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { RecommendedFetch } from "@times-components/ts-components";
-import { Breadcrumb } from "@times-components/ts-newskit";
+import { RecommendedFetch, Breadcrumb } from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import {
   BreadcrumbContainer,
   ShareAndSaveContainer
 } from "./styles/responsive";
-import { NativeAd, NativeAdTitle, Ad } from "./styles";
+import {
+  PromotedContentContainer,
+  PromotedContentTitle,
+  PromotedContentGrid,
+  PromotedContentAd,
+  PromotedContentSectionDivider
+} from "./styles";
 
 const clearingStyle = {
   clear: "both"
@@ -37,7 +42,8 @@ const ArticleExtras = ({
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isEntitlementFeatureEnabled
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -72,11 +78,16 @@ const ArticleExtras = ({
           />
         )}
       </div>
-      <NativeAd className="group-3 hidden" key="1">
-        <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
-        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd>
+      <PromotedContentContainer>
+        <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
+        <PromotedContentGrid>
+          <PromotedContentAd id="advert-inarticle-native-1" />
+          <PromotedContentAd id="advert-inarticle-native-2" />
+          <PromotedContentSectionDivider />
+          <PromotedContentAd id="advert-inarticle-native-3" />
+          <PromotedContentAd id="advert-inarticle-native-4" />
+        </PromotedContentGrid>
+      </PromotedContentContainer>
     </>
   );
   return (
@@ -115,6 +126,7 @@ const ArticleExtras = ({
         isCommentEnabled={isCommentEnabled}
         storefrontConfig={storefrontConfig}
         domainSpecificUrl={domainSpecificUrl}
+        isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
       />
     </UserState>
   );
@@ -140,7 +152,8 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {

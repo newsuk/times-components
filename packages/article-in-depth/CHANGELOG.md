@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.88.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.88.2...@times-components/article-in-depth@3.88.3) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.88.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.88.1...@times-components/article-in-depth@3.88.2) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.88.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.88.0...@times-components/article-in-depth@3.88.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.88.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.87.2...@times-components/article-in-depth@3.88.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
+## [3.87.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.87.1...@times-components/article-in-depth@3.87.2) (2024-07-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.87.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.87.0...@times-components/article-in-depth@3.87.1) (2024-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.87.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.86.2...@times-components/article-in-depth@3.87.0) (2024-07-23)
+
+
+### Features
+
+* **TMD-477:** remove emotion icons ([#3892](https://github.com/newsuk/times-components/issues/3892)) ([ee7f436](https://github.com/newsuk/times-components/commit/ee7f4361a29b53aaeb3e9a354a7eda896d21abab))
+
+
+
+
+
+## [3.86.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.86.1...@times-components/article-in-depth@3.86.2) (2024-07-15)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.86.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.86.0...@times-components/article-in-depth@3.86.1) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 # [3.86.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.85.11...@times-components/article-in-depth@3.86.0) (2024-07-02)
 
 

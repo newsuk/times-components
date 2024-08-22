@@ -3,6 +3,103 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.58.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.1...@times-components/ssr@2.58.2) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.58.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.0...@times-components/ssr@2.58.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.58.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.57.1...@times-components/ssr@2.58.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
+## [2.57.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.57.0...@times-components/ssr@2.57.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.57.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.56.0...@times-components/ssr@2.57.0) (2024-08-06)
+
+
+### Features
+
+* **TMD-580:** commentCount global variable ([#3914](https://github.com/newsuk/times-components/issues/3914)) ([1fc1da3](https://github.com/newsuk/times-components/commit/1fc1da359c0e3364489e9d39122264fb8f329a27))
+
+
+
+
+
+# [2.56.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.16...@times-components/ssr@2.56.0) (2024-07-31)
+
+
+### Features
+
+* **TMP-1445:** Enable a11y debug output on failure ([#3905](https://github.com/newsuk/times-components/issues/3905)) ([9b21eed](https://github.com/newsuk/times-components/commit/9b21eed8e97ff5785a764f39e88b3ce57b0b4967))
+
+
+
+
+
+## [2.55.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.15...@times-components/ssr@2.55.16) (2024-07-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.55.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.14...@times-components/ssr@2.55.15) (2024-07-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.55.14](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.13...@times-components/ssr@2.55.14) (2024-07-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.55.13](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.12...@times-components/ssr@2.55.13) (2024-07-15)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.55.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.11...@times-components/ssr@2.55.12) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.55.11](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.55.10...@times-components/ssr@2.55.11) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/ssr

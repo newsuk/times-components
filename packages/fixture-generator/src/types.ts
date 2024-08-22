@@ -1351,6 +1351,8 @@ export interface Article extends ArticleInterface {
   /** Topics that the requested article belong to */
   topics?: (Topic | null)[] | null;
 
+  categoryPath?: Url | null;
+
   url?: Url | null;
 
   template?: TemplateType | null;

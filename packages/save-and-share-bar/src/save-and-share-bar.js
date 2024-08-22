@@ -9,7 +9,6 @@ import {
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
-import { Share } from "@emotion-icons/bootstrap/Share";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
@@ -29,6 +28,7 @@ import CloseIcon from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
+import ShareIcon from "./assets/share-icon";
 
 function SaveAndShareBar(props) {
   const {
@@ -113,7 +113,7 @@ function SaveAndShareBar(props) {
             isPopoverOpen={popoverOpen}
             onClick={togglePopover}
           >
-            <Share style={{ height: 14, width: 14 }} />
+            <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
           <Popover

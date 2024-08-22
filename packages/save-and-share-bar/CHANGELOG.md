@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.3...@times-components/save-and-share-bar@0.22.4) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.22.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.2...@times-components/save-and-share-bar@0.22.3) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.22.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.1...@times-components/save-and-share-bar@0.22.2) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.0...@times-components/save-and-share-bar@0.22.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.21.14...@times-components/save-and-share-bar@0.22.0) (2024-07-23)
+
+
+### Features
+
+* **TMD-477:** remove emotion icons ([#3892](https://github.com/newsuk/times-components/issues/3892)) ([ee7f436](https://github.com/newsuk/times-components/commit/ee7f4361a29b53aaeb3e9a354a7eda896d21abab))
+
+
+
+
+
+## [0.21.14](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.21.13...@times-components/save-and-share-bar@0.21.14) (2024-07-15)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.21.13](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.21.12...@times-components/save-and-share-bar@0.21.13) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.21.12](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.21.11...@times-components/save-and-share-bar@0.21.12) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

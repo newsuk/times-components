@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.1...@times-components/ts-components@1.101.0) (2024-08-14)
+
+
+### Features
+
+* **TMD-538-539-540:** Move components from ts-newskit into ts-components ([#3891](https://github.com/newsuk/times-components/issues/3891)) ([9c16e26](https://github.com/newsuk/times-components/commit/9c16e264e074eeed1b63cc597ed7656b917a3402)), closes [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896) [#3892](https://github.com/newsuk/times-components/issues/3892) [#3896](https://github.com/newsuk/times-components/issues/3896)
+
+
+
+
+
+## [1.100.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.0...@times-components/ts-components@1.100.1) (2024-08-08)
+
+
+### Bug Fixes
+
+* **TMP-1437:** Call /is-bookmarked only for logged in users ([bd3bef2](https://github.com/newsuk/times-components/commit/bd3bef2213ad57574d0c458ad9f1e252a8b5d6ca))
+* **TMP-1437:** Cleanup ([d301fc9](https://github.com/newsuk/times-components/commit/d301fc972c454d5f5e8a97591515b49660cae706))
+
+
+
+
+
+# [1.100.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.99.0...@times-components/ts-components@1.100.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
+# [1.99.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.2...@times-components/ts-components@1.99.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
+## [1.98.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.1...@times-components/ts-components@1.98.2) (2024-07-15)
+
+
+### Bug Fixes
+
+* **TMRS-277:** addition of buttons prop ([#3888](https://github.com/newsuk/times-components/issues/3888)) ([8751ba8](https://github.com/newsuk/times-components/commit/8751ba8d0950d2b0ef4196e15126b173a636c611))
+
+
+
+
+
+## [1.98.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.98.0...@times-components/ts-components@1.98.1) (2024-07-08)
+
+
+### Bug Fixes
+
+* **TMD-529:** add background colour to image container ([#3883](https://github.com/newsuk/times-components/issues/3883)) ([034e31d](https://github.com/newsuk/times-components/commit/034e31dd00463ff6ec431ca7425179e1ad5495c6))
+
+
+
+
+
 # [1.98.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.97.1...@times-components/ts-components@1.98.0) (2024-07-02)
 
 

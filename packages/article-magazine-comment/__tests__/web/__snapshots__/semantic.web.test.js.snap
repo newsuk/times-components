@@ -110,7 +110,9 @@ exports[`1. a full article 1`] = `
       <svg
         aria-hidden="true"
         focusable="false"
+        height={14}
         viewBox="0 0 16 16"
+        width={14}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -340,7 +342,9 @@ exports[`1. a full article 1`] = `
         <svg
           aria-hidden="true"
           focusable="false"
+          height={14}
           viewBox="0 0 16 16"
+          width={14}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -481,9 +485,9 @@ exports[`1. a full article 1`] = `
           Link
         </span>
       </a>
-      <h2>
-        Sponsored
-      </h2>
+      <span>
+        PROMOTED CONTENT
+      </span>
     </article>
   </main>
 </article>

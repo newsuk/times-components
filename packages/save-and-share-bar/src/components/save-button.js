@@ -1,22 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IconActivityIndicator } from "@times-components/icons";
-import { Bookmark } from "@emotion-icons/bootstrap/Bookmark";
-import { BookmarkFill } from "@emotion-icons/bootstrap/BookmarkFill";
 import { IconActivityIndicatorContainer, OutlineButton } from "../styled";
+import BookmarkIcon from "../assets/bookmark-icon";
+import BookmarkFillIcon from "../assets/bookmark-fill-icon";
 
 const SaveButton = props => {
   if (props.error || (!props.loading && !props.data)) return null;
 
   const { isBookmarked } = props.data || { isBookmarked: false };
 
-  const bookmarkIconStyles = {
+  const iconStyles = {
     height: 14,
     width: 14,
     visibility: props.loading ? "hidden" : "visible"
   };
 
   const buttonText = isBookmarked ? "Saved" : "Save";
+
   return (
     <>
       <OutlineButton
@@ -31,9 +32,17 @@ const SaveButton = props => {
           </IconActivityIndicatorContainer>
         )}
         {!isBookmarked ? (
-          <Bookmark style={bookmarkIconStyles} />
+          <BookmarkIcon
+            height={iconStyles.height}
+            width={iconStyles.width}
+            visibility={iconStyles.visibility}
+          />
         ) : (
-          <BookmarkFill style={bookmarkIconStyles} />
+          <BookmarkFillIcon
+            height={iconStyles.height}
+            width={iconStyles.width}
+            visibility={iconStyles.visibility}
+          />
         )}
         {!props.loading ? buttonText : ""}
       </OutlineButton>
