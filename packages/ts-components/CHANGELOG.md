@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.103.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.102.0...@times-components/ts-components@1.103.0) (2024-08-23)
+
+
+### Features
+
+* **TMRS-386:** add component ([#3921](https://github.com/newsuk/times-components/issues/3921)) ([9a0c373](https://github.com/newsuk/times-components/commit/9a0c37357a22acd530afc41f688020e8844569b1))
+
+
+
+
+
 # [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.101.0...@times-components/ts-components@1.102.0) (2024-08-22)
 
 
