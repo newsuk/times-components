@@ -208,7 +208,7 @@ class InlineVideoPlayer extends Component {
   initVideojs() {
     this.player = window.videojs(this.id);
     this.player.ready(() => {
-      this.player.contextmenu({ disabled: true });
+      // this.player.contextmenu({ disabled: true });
     });
     this.player.on("error", this.handleError);
     this.player.on("play", this.handlePlay);
@@ -262,6 +262,7 @@ class InlineVideoPlayer extends Component {
             data-video-id={videoId}
           />
         </div>
+        {/* <div onClick={()=>}>X</div> */}
       </div>
     );
   }
