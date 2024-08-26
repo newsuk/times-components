@@ -37,16 +37,13 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            // eslint-disable-next-line no-console
-            console.log("The ARTICLE:", data.article);
-            // eslint-disable-next-line no-console
-            console.log("articleUrl PASSED BY PROPS:", articleUrl);
-            this.openMailClient(
-              getDomainSpecificUrl(
-                hostName,
-                data.article.categoryPath || data.article.tokenisedUrl
-              )
-            );
+            let tokenizedUrl = data.article.tokenisedUrl;
+
+            if (data.article.categoryPath) {
+              const { search: token } = new URL(data.article.tokenisedUrl);
+              tokenizedUrl = `${hostName}${data.article.categoryPath}${token}`;
+            }
+            this.openMailClient(getDomainSpecificUrl(hostName, tokenizedUrl));
           }
         })
         .catch(() => {
@@ -55,7 +52,6 @@ class EmailShare extends Component {
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
       // eslint-disable-next-line no-console
-      console.log("The ARTICLE_URL:", articleUrl);
       this.openMailClient(
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
