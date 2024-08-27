@@ -84,140 +84,163 @@ const css = `
 `;
 
 class InlineVideoPlayer extends Component {
-  static scriptLoadError = false;
+  // static scriptLoadError = false;
 
-  static activePlayers = [];
+  // static activePlayers = [];
 
-  static brightcoveSDKLoadedStarted = false;
+  // static brightcoveSDKLoadedStarted = false;
 
-  static brightcoveSDKHasLoaded() {
-    return !!(window.bc && window.videojs);
-  }
+  // static brightcoveSDKHasLoaded() {
+  //   return !!(window.bc && window.videojs);
+  // }
 
-  static appendScript(s) {
-    document.body.appendChild(s);
-  }
+  // static appendScript(s) {
+  //   document.body.appendChild(s);
+  // }
 
-  static attachStyles() {
-    const styleTag = document.createElement("style");
-    styleTag.type = "text/css";
-    const cssText = document.createTextNode(css);
-    styleTag.appendChild(cssText);
-    document.head.appendChild(styleTag);
-  }
+  // static attachStyles() {
+  //   const styleTag = document.createElement("style");
+  //   styleTag.type = "text/css";
+  //   const cssText = document.createTextNode(css);
+  //   styleTag.appendChild(cssText);
+  //   document.head.appendChild(styleTag);
+  // }
+
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     error: null,
+  //     hasVideoPlayed: false
+  //   };
+
+  //   this.id = `${props.videoId}-${props.accountId}-${props.id}`;
+  //   this.videoContainerRef = React.createRef();
+  //   this.observer = null;
+  // }
+
+  // componentDidMount() {
+  //   this.observer = this.createIntersectionObserver();
+  //   if (this.observer && this.videoContainerRef) {
+  //     this.observer.observe(this.videoContainerRef.current);
+  //   } else {
+  //     this.loadBrightcoveSDKIfRequired();
+  //   }
+
+  //   if (InlineVideoPlayer.scriptLoadError) {
+  //     this.handleError(InlineVideoPlayer.scriptLoadError);
+  //   }
+
+  //   InlineVideoPlayer.activePlayers.push(this);
+
+  //   if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
+  //     this.initBrightcove();
+  //   }
+  // }
+
+  // componentWillUnmount() {
+  //   InlineVideoPlayer.activePlayers.splice(
+  //     InlineVideoPlayer.activePlayers.indexOf(this)
+  //   );
+  //   if (this.player) {
+  //     this.player.dispose();
+  //     this.player = null;
+  //   }
+
+  //   if (this.observer) {
+  //     this.observer.disconnect();
+  //   }
+  // }
+
+  // handleError = () => {
+  //   this.setState({ error: true });
+  // };
+
+  // handlePlay = () => {
+  //   this.setState({ hasVideoPlayed: true });
+
+  //   InlineVideoPlayer.activePlayers.forEach(video => {
+  //     if (video !== this && video.player) {
+  //       video.player.pause();
+  //     }
+  //   });
+  // };
+
+  // createIntersectionObserver() {
+  //   return "IntersectionObserver" in window
+  //     ? new window.IntersectionObserver(entries => {
+  //         if (entries[0].isIntersecting) {
+  //           this.loadBrightcoveSDKIfRequired();
+  //         }
+  //       })
+  //     : null;
+  // }
+
+  // loadBrightcoveSDKIfRequired() {
+  //   if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
+  //     InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
+
+  //     const s = this.createBrightcoveScript();
+
+  //     s.onload = () => {
+  //       InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
+  //     };
+
+  //     s.onerror = () => {
+  //       InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
+  //       InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
+  //     };
+
+  //     InlineVideoPlayer.appendScript(s);
+  //     InlineVideoPlayer.attachStyles();
+  //   }
+  // }
+
+  // createBrightcoveScript() {
+  //   const { accountId, playerId } = this.props;
+  //   const s = document.createElement("script");
+  //   s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
+  //   s.defer = true;
+
+  //   return s;
+  // }
+
+  // initVideojs() {
+  //   this.player = window.videojs(this.id);
+  //   this.player.ready(() => {
+  //     this.player.contextmenu({ disabled: true });
+  //   });
+  //   this.player.on("error", this.handleError);
+  //   this.player.on("play", this.handlePlay);
+  // }
+
+  // initBrightcove() {
+  //   window.bc(document.getElementById(this.id));
+
+  //   this.initVideojs();
+  // }
+
+  static player;
+  static videoNode;
 
   constructor(props) {
     super(props);
 
-    this.state = {
-      error: null,
-      hasVideoPlayed: false
-    };
+    this.state = {};
 
-    this.id = `${props.videoId}-${props.accountId}-${props.id}`;
-    this.videoContainerRef = React.createRef();
-    this.observer = null;
+    this.player = undefined;
+    this.videoNode = undefined;
   }
 
   componentDidMount() {
-    this.observer = this.createIntersectionObserver();
-    if (this.observer && this.videoContainerRef) {
-      this.observer.observe(this.videoContainerRef.current);
-    } else {
-      this.loadBrightcoveSDKIfRequired();
-    }
-
-    if (InlineVideoPlayer.scriptLoadError) {
-      this.handleError(InlineVideoPlayer.scriptLoadError);
-    }
-
-    InlineVideoPlayer.activePlayers.push(this);
-
-    if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
-      this.initBrightcove();
-    }
+    this.player = window.bc(this.videoNode, this.props);
   }
 
+  // destroy player on unmount
   componentWillUnmount() {
-    InlineVideoPlayer.activePlayers.splice(
-      InlineVideoPlayer.activePlayers.indexOf(this)
-    );
     if (this.player) {
       this.player.dispose();
-      this.player = null;
     }
-
-    if (this.observer) {
-      this.observer.disconnect();
-    }
-  }
-
-  handleError = () => {
-    this.setState({ error: true });
-  };
-
-  handlePlay = () => {
-    this.setState({ hasVideoPlayed: true });
-
-    InlineVideoPlayer.activePlayers.forEach(video => {
-      if (video !== this && video.player) {
-        video.player.pause();
-      }
-    });
-  };
-
-  createIntersectionObserver() {
-    return "IntersectionObserver" in window
-      ? new window.IntersectionObserver(entries => {
-          if (entries[0].isIntersecting) {
-            this.loadBrightcoveSDKIfRequired();
-          }
-        })
-      : null;
-  }
-
-  loadBrightcoveSDKIfRequired() {
-    if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-      InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
-
-      const s = this.createBrightcoveScript();
-
-      s.onload = () => {
-        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
-      };
-
-      s.onerror = () => {
-        InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
-        InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
-      };
-
-      InlineVideoPlayer.appendScript(s);
-      InlineVideoPlayer.attachStyles();
-    }
-  }
-
-  createBrightcoveScript() {
-    const { accountId, playerId } = this.props;
-    const s = document.createElement("script");
-    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
-    s.defer = true;
-
-    return s;
-  }
-
-  initVideojs() {
-    this.player = window.videojs(this.id);
-    this.player.ready(() => {
-      this.player.contextmenu({ disabled: true });
-    });
-    this.player.on("error", this.handleError);
-    this.player.on("play", this.handlePlay);
-  }
-
-  initBrightcove() {
-    window.bc(document.getElementById(this.id));
-
-    this.initVideojs();
   }
 
   render() {

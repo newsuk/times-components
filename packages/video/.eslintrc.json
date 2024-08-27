@@ -1,3 +1,5 @@
 {
-  "extends": ["@times-components/thetimes"]
+  "extends": ["@times-components/thetimes"],
+  "rules": {
+    "no-console": "off"}
 }
