@@ -51,7 +51,6 @@ class EmailShare extends Component {
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
-      // eslint-disable-next-line no-console
       this.openMailClient(
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
