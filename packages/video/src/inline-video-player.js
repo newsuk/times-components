@@ -98,13 +98,13 @@ class InlineVideoPlayer extends Component {
   //   document.body.appendChild(s);
   // }
 
-  // static attachStyles() {
-  //   const styleTag = document.createElement("style");
-  //   styleTag.type = "text/css";
-  //   const cssText = document.createTextNode(css);
-  //   styleTag.appendChild(cssText);
-  //   document.head.appendChild(styleTag);
-  // }
+  static attachStyles() {
+    const styleTag = document.createElement("style");
+    styleTag.type = "text/css";
+    const cssText = document.createTextNode(css);
+    styleTag.appendChild(cssText);
+    document.head.appendChild(styleTag);
+  }
 
   // constructor(props) {
   //   super(props);
@@ -221,6 +221,7 @@ class InlineVideoPlayer extends Component {
   // }
 
   static player;
+
   static videoNode;
 
   constructor(props) {
@@ -234,6 +235,7 @@ class InlineVideoPlayer extends Component {
 
   componentDidMount() {
     this.player = window.bc(this.videoNode, this.props);
+    InlineVideoPlayer.attachStyles();
   }
 
   // destroy player on unmount
