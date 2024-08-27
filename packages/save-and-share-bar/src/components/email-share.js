@@ -37,13 +37,13 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            let tokenizedUrl = data.article.tokenisedUrl;
+            let tokenisedUrl = data.article.tokenisedUrl;
 
             if (data.article.categoryPath) {
               const { search: token } = new URL(data.article.tokenisedUrl);
-              tokenizedUrl = `${hostName}${data.article.categoryPath}${token}`;
+              tokenisedUrl = `${hostName}${data.article.categoryPath}${token}`;
             }
-            this.openMailClient(getDomainSpecificUrl(hostName, tokenizedUrl));
+            this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
           }
         })
         .catch(() => {
