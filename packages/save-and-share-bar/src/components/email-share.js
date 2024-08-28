@@ -37,9 +37,13 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            this.openMailClient(
-              getDomainSpecificUrl(hostName, data.article.tokenisedUrl)
-            );
+            let { tokenisedUrl } = data.article;
+
+            if (data.article.categoryPath) {
+              const { search: token } = new URL(data.article.tokenisedUrl);
+              tokenisedUrl = `${hostName}${data.article.categoryPath}${token}`;
+            }
+            this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
           }
         })
         .catch(() => {
@@ -47,7 +51,6 @@ class EmailShare extends Component {
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
-
       this.openMailClient(
         matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
       );
