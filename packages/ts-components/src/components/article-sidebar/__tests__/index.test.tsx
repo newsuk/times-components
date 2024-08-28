@@ -2,6 +2,7 @@ import React from 'react';
 import { ArticleSidebar, ArticleSideBarProps } from '../ArticleSidebar';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { fireEvent } from '@testing-library/react';
 
 const defaultProps: ArticleSideBarProps = {
   sectionTitle: 'Puzzles for you',
@@ -29,5 +30,14 @@ describe('ArticleSidebar', () => {
   it('should render ArticleSidebar component', () => {
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
+  });
+  it('should call onClickSidebarHeader when header is clicked', () => {
+    const { container } = render(<ArticleSidebar {...defaultProps} />);
+    fireEvent.click(container.querySelector('.trigger')!);
+  });
+
+  it('should call onClick when puzzle card is clicked', () => {
+    const { container } = render(<ArticleSidebar {...defaultProps} />);
+    fireEvent.click(container.querySelector('.trigger-card-link')!);
   });
 });
