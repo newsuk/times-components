@@ -13,6 +13,10 @@ import {
   Title,
   TitleIconContainer
 } from './styles';
+import {
+  useTrackingContext
+} from '../../helpers/tracking/TrackingContextProvider';
+import { handleClick } from './tracking-helpers';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -25,9 +29,16 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   data,
   pageLink
 }) => {
+  const { fireAnalyticsEvent } = useTrackingContext();
+
   return (
     <Container>
-      <Link href={pageLink}>
+      <Link href={pageLink} onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: header selected'
+                    )
+                  }>
         <TitleIconContainer>
           <Title>{sectionTitle}</Title>
           <ChevronButton>
@@ -41,7 +52,13 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
 
       {data.map(({ title, url, imgUrl }) => (
         <React.Fragment key={title}>
-          <PuzzleContainer href={url}>
+          <PuzzleContainer href={url} onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: puzzle selected',
+                      `${title}`
+                    )
+                  }>
             <PuzzleImage src={imgUrl} alt="Puzzle thumbnail" />
             <ItemTitle>{title}</ItemTitle>
           </PuzzleContainer>
