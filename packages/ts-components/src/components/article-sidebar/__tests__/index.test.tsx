@@ -2,6 +2,13 @@ import React from 'react';
 import { ArticleSidebar, ArticleSideBarProps } from '../ArticleSidebar';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { useTrackingContext } from '../../../helpers/tracking/TrackingContextProvider';
+
+jest.mock('../../../helpers/tracking/TrackingContextProvider', () => ({
+  useTrackingContext: jest.fn()
+}));
+
+const mockFireAnalyticsEvent = jest.fn();
 
 const defaultProps: ArticleSideBarProps = {
   sectionTitle: 'Puzzles for you',
@@ -26,17 +33,51 @@ const renderComponent = (props: ArticleSideBarProps) =>
   render(<ArticleSidebar {...props} />);
 
 describe('ArticleSidebar', () => {
+  beforeEach(() => {
+    (useTrackingContext as jest.Mock).mockReturnValue({
+      fireAnalyticsEvent: mockFireAnalyticsEvent
+    });
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should render ArticleSidebar component', () => {
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should call onClickSidebarHeader when header is clicked', () => {
-    const { container } = render(<ArticleSidebar {...defaultProps} />);
+
+  it('should call fireAnalyticsEvent when header is clicked', () => {
+    const { container } = renderComponent(defaultProps);
     fireEvent.click(container.querySelector('.trigger')!);
+
+    expect(mockFireAnalyticsEvent).toHaveBeenCalledWith({
+      object: 'ArticleSidebar',
+      action: 'Clicked',
+      attrs: {
+        event_navigation_action: 'navigation',
+        event_navigation_name: 'puzzle sidebar: header selected',
+        event_navigation_browsing_method: 'click',
+        component_name: 'Article Sidebar'
+      }
+    });
   });
 
-  it('should call onClick when puzzle card is clicked', () => {
-    const { container } = render(<ArticleSidebar {...defaultProps} />);
+  it('should call fireAnalyticsEvent when a puzzle card is clicked', () => {
+    const { container } = renderComponent(defaultProps);
     fireEvent.click(container.querySelector('.trigger-card-link')!);
+
+    expect(mockFireAnalyticsEvent).toHaveBeenCalledWith({
+      object: 'ArticleSidebar',
+      action: 'Clicked',
+      attrs: {
+        event_navigation_action: 'navigation',
+        event_navigation_name: 'puzzle sidebar: puzzle selected',
+        event_navigation_browsing_method: 'click',
+        component_name: 'Article Sidebar',
+        article_parent_name: 'crossword'
+      }
+    });
   });
 });
