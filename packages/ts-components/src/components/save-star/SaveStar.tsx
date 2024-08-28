@@ -14,11 +14,11 @@ export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
 }> = React.memo(({ articleId, isPreviewMode, children }) => {
-  const [url, setUrl] = useState<string | undefined>();
+  const [url, setUrl] = useState<string | undefined>(undefined);
 
   useEffect(
     () => {
-      if (window.nuk && window.nuk.user && window.nuk.user.isLoggedIn) {
+      if (window.nuk && window.nuk.user && window.nuk.user.sLoggedIn) {
         setUrl(`/api/collections/is-bookmarked/${articleId}`);
       }
     },
