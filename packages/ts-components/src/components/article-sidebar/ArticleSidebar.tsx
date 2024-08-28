@@ -36,7 +36,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
         onClick={() =>
           handleClick(fireAnalyticsEvent, 'puzzle sidebar: header selected')
         }
-        className='trigger'
+        className="trigger"
       >
         <TitleIconContainer>
           <Title>{sectionTitle}</Title>
@@ -60,7 +60,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 `${title}`
               )
             }
-            className='trigger-card-link'
+            className="trigger-card-link"
           >
             <PuzzleImage src={imgUrl} alt="Puzzle thumbnail" />
             <ItemTitle>{title}</ItemTitle>

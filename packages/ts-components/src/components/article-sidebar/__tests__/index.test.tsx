@@ -1,8 +1,7 @@
 import React from 'react';
 import { ArticleSidebar, ArticleSideBarProps } from '../ArticleSidebar';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { fireEvent } from '@testing-library/react';
 
 const defaultProps: ArticleSideBarProps = {
   sectionTitle: 'Puzzles for you',
