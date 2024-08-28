@@ -1,4 +1,4 @@
-const clickEvent  = (title: string, parent: string = '') => ({
+const clickEvent = (title: string, parent: string = '') => ({
   object: 'ArticleSidebar',
   action: 'Clicked',
   attrs: {
