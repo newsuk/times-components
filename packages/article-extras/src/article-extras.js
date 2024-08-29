@@ -90,6 +90,7 @@ const ArticleExtras = ({
       </PromotedContentContainer>
     </>
   );
+
   return (
     <UserState
       state={UserState.showArticleExtras}
