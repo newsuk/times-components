@@ -1,6 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { ArticleSidebar } from './ArticleSidebar';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const getAttributes = () => {
   const sectionTitle = 'Puzzles';
@@ -35,9 +37,19 @@ storiesOf('Typescript Component/Article Sidebar', module).add(
     const props = getAttributes();
 
     return (
-      <div style={{ maxWidth: '204px' }}>
-        <ArticleSidebar {...props} />
-      </div>
+      <TrackingContextProvider context={{
+        component: 'ArticleSidebar',
+        attrs: {
+          article_name: 'articleHeadline',
+          section_details: 'section'
+        }
+      }}
+        analyticsStream={analyticsStream}
+      >
+        <div style={{ maxWidth: '204px' }}>
+          <ArticleSidebar {...props} />
+        </div>
+      </TrackingContextProvider>
     );
   }
 );
