@@ -26,6 +26,7 @@ class EmailShare extends Component {
     } = this.props;
 
     e.preventDefault();
+    console.log('tu je on')
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
