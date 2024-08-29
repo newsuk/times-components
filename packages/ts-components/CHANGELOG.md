@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.103.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.2...@times-components/ts-components@1.103.3) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.103.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.1...@times-components/ts-components@1.103.2) (2024-08-28)
+
+
+### Reverts
+
+* **TMP-1437:** Call /is-bookmarked only for logged in users ([#3927](https://github.com/newsuk/times-components/issues/3927)) ([7939ce1](https://github.com/newsuk/times-components/commit/7939ce1cd47bdc213c875195c513754775c03bef))
+
+
+
+
+
 ## [1.103.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.0...@times-components/ts-components@1.103.1) (2024-08-28)
 
 **Note:** Version bump only for package @times-components/ts-components
