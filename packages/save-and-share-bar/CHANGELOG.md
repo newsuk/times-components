@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.6...@times-components/save-and-share-bar@0.23.0) (2024-08-28)
+
+
+### Features
+
+* **TMRS-329:** Category path added to email share ([#3923](https://github.com/newsuk/times-components/issues/3923)) ([e856800](https://github.com/newsuk/times-components/commit/e856800235a26df352a0074edba52941233c094c))
+
+
+
+
+
 ## [0.22.6](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.22.5...@times-components/save-and-share-bar@0.22.6) (2024-08-23)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
