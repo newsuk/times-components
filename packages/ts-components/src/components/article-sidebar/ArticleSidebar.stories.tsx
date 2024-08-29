@@ -37,13 +37,14 @@ storiesOf('Typescript Component/Article Sidebar', module).add(
     const props = getAttributes();
 
     return (
-      <TrackingContextProvider context={{
-        component: 'ArticleSidebar',
-        attrs: {
-          article_name: 'articleHeadline',
-          section_details: 'section'
-        }
-      }}
+      <TrackingContextProvider
+        context={{
+          component: 'ArticleSidebar',
+          attrs: {
+            article_name: 'articleHeadline',
+            section_details: 'section'
+          }
+        }}
         analyticsStream={analyticsStream}
       >
         <div style={{ maxWidth: '204px' }}>
