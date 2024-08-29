@@ -49,7 +49,7 @@ class EmailShare extends Component {
               if (categoryPath) {
                 const { search: token } = new URL(tokenisedUrl);
                 // eslint-disable-next-line no-console
-                console.log(search, "search");
+                console.log(token, "search-token");
                 tokenisedUrl = `${hostName}${categoryPath}${token}`;
               }
               this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
