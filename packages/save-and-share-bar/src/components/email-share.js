@@ -45,11 +45,9 @@ class EmailShare extends Component {
                 tokenisedUrl = `${hostName}${categoryPath}${token}`;
               }
               this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
+            } catch (err) {
+              console.log(err, "Email share error");
             }
-            catch(err) {
-              console.log(err, 'Email share error')
-            }
-            
           }
         })
         .catch(() => {
