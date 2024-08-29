@@ -34,7 +34,7 @@ class EmailShare extends Component {
     if (shouldTokenise) {
       this.setState({ isLoading: true });
       // eslint-disable-next-line no-console
-      console.log(data.article, "shouldTokenise");
+      console.log("before shouldTokenise");
 
       getTokenisedShareUrl(articleId)
         .then(res => {
