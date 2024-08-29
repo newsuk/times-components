@@ -26,7 +26,8 @@ class EmailShare extends Component {
     } = this.props;
 
     e.preventDefault();
-    console.log('tu je on')
+    // eslint-disable-next-line no-console
+    console.log("tu je on");
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
