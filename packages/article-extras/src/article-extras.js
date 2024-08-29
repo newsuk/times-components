@@ -5,8 +5,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { RecommendedFetch } from "@times-components/ts-components";
-import { Breadcrumb } from "@times-components/ts-newskit";
+import { RecommendedFetch, Breadcrumb } from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import {

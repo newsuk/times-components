@@ -8,17 +8,13 @@ import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
 import DatePublication from "@times-components/date-publication";
-import renderTrees from "@times-components/markup-forest";
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";
 import ArticleSummaryStrapline from "./article-summary-strapline";
 import renderer from "./article-summary-renderer";
 import styles from "./styles";
 import summarise from "./summarise";
-
-function renderAst(ast) {
-  return renderTrees(summarise(ast), renderer);
-}
+import renderAst from "./shared";
 
 function Label(props) {
   const { title, isVideo } = props;
