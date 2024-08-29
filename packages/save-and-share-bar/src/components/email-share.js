@@ -65,7 +65,7 @@ class EmailShare extends Component {
             }
           }
         })
-        .catch((err) => {
+        .catch(err => {
           this.setState({ isLoading: false });
           // eslint-disable-next-line no-console
           console.log(err, "Email share error 2");
