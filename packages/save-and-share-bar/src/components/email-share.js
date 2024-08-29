@@ -38,14 +38,23 @@ class EmailShare extends Component {
           if (data && data.article) {
             this.setState({ isLoading: false });
             try {
+              // eslint-disable-next-line no-console
+              console.log(data.article, "Article data");
               let { tokenisedUrl } = data.article;
+              // eslint-disable-next-line no-console
+              console.log(tokenisedUrl, "tokenisedUrl");
               const { categoryPath } = data.article;
+              // eslint-disable-next-line no-console
+              console.log(categoryPath, "categoryPath");
               if (categoryPath) {
                 const { search: token } = new URL(tokenisedUrl);
+                // eslint-disable-next-line no-console
+                console.log(search, "search");
                 tokenisedUrl = `${hostName}${categoryPath}${token}`;
               }
               this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
             } catch (err) {
+              // eslint-disable-next-line no-console
               console.log(err, "Email share error");
             }
           }
