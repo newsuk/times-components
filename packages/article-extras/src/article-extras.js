@@ -1,24 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
-import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
+import RelatedArticles from "@times-components/related-articles";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { RecommendedFetch, Breadcrumb } from "@times-components/ts-components";
+import { RecommendedFetch } from "@times-components/ts-components";
+import { Breadcrumb } from "@times-components/ts-newskit";
+import UserState from "@times-components/user-state";
+import PropTypes from "prop-types";
+import React from "react";
 
 import ArticleTopics from "./article-topics";
-import {
-  BreadcrumbContainer,
-  ShareAndSaveContainer
-} from "./styles/responsive";
-import {
-  PromotedContentContainer,
-  PromotedContentTitle,
-  PromotedContentGrid,
-  PromotedContentAd,
-  PromotedContentSectionDivider
-} from "./styles";
+import { PromotedContentAd, PromotedContentContainer, PromotedContentGrid, PromotedContentSectionDivider, PromotedContentTitle } from "./styles";
+import { BreadcrumbContainer, ShareAndSaveContainer } from "./styles/responsive";
 
 const clearingStyle = {
   clear: "both"
@@ -90,6 +82,7 @@ const ArticleExtras = ({
       </PromotedContentContainer>
     </>
   );
+
   return (
     <UserState
       state={UserState.showArticleExtras}
