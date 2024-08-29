@@ -37,13 +37,19 @@ class EmailShare extends Component {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
-            let { tokenisedUrl } = data.article;
-            const { categoryPath } = data.article;
-            if (categoryPath) {
-              const { search: token } = new URL(tokenisedUrl);
-              tokenisedUrl = `${hostName}${categoryPath}${token}`;
+            try {
+              let { tokenisedUrl } = data.article;
+              const { categoryPath } = data.article;
+              if (categoryPath) {
+                const { search: token } = new URL(tokenisedUrl);
+                tokenisedUrl = `${hostName}${categoryPath}${token}`;
+              }
+              this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
             }
-            this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
+            catch(err) {
+              console.log(err, 'Email share error')
+            }
+            
           }
         })
         .catch(() => {
