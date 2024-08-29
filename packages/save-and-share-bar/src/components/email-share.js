@@ -39,6 +39,8 @@ class EmailShare extends Component {
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
+           // eslint-disable-next-line no-console
+           console.log(data.article, "Article data 1");
           if (data && data.article) {
             this.setState({ isLoading: false });
             try {
