@@ -26,49 +26,29 @@ class EmailShare extends Component {
     } = this.props;
 
     e.preventDefault();
-    // eslint-disable-next-line no-console
-    console.log("tu je on");
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
       this.setState({ isLoading: true });
-      // eslint-disable-next-line no-console
-      console.log("before shouldTokenise");
 
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
-          // eslint-disable-next-line no-console
-          console.log(data.article, "Article data 1");
           if (data && data.article) {
+            let tokenizedUrl = data.article.tokenisedUrl;
+
             this.setState({ isLoading: false });
-            try {
-              // eslint-disable-next-line no-console
-              console.log(data.article, "Article data");
-              let { tokenisedUrl } = data.article;
-              // eslint-disable-next-line no-console
-              console.log(tokenisedUrl, "tokenisedUrl");
-              const { categoryPath } = data.article;
-              // eslint-disable-next-line no-console
-              console.log(categoryPath, "categoryPath");
-              if (categoryPath) {
-                const { search: token } = new URL(tokenisedUrl);
-                // eslint-disable-next-line no-console
-                console.log(token, "search-token");
-                tokenisedUrl = `${hostName}${categoryPath}${token}`;
-              }
-              this.openMailClient(getDomainSpecificUrl(hostName, tokenisedUrl));
-            } catch (err) {
-              // eslint-disable-next-line no-console
-              console.log(err, "Email share error");
+
+            if (data.article.categoryPath) {
+              const { search: token } = new URL(tokenizedUrl);
+              tokenizedUrl = `${hostName}${data.article.categoryPath}${token}`;
             }
+            this.openMailClient(getDomainSpecificUrl(hostName, tokenizedUrl));
           }
         })
-        .catch(err => {
+        .catch(() => {
           this.setState({ isLoading: false });
-          // eslint-disable-next-line no-console
-          console.log(err, "Email share error 2");
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
