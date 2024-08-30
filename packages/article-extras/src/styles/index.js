@@ -1,4 +1,12 @@
-import { breakpoints, colours, fontFactory, fontSizes, fontsWithFallback, spacing, tabletWidth } from "@times-components/ts-styleguide";
+import {
+  breakpoints,
+  colours,
+  fontFactory,
+  fontSizes,
+  fontsWithFallback,
+  spacing,
+  tabletWidth
+} from "@times-components/ts-styleguide";
 import styled from "styled-components";
 
 export const NativeAd = styled.div`
@@ -31,7 +39,7 @@ export const NativeAdTitle = styled.h2`
 
 export const Ad = styled.div`
   flex: 1 1 50%;
-  
+
   @media (max-width: 767px) {
     flex: 1 1 46%;
     &:first-of-type {

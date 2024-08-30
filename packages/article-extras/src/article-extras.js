@@ -8,8 +8,17 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import ArticleTopics from "./article-topics";
-import { PromotedContentAd, PromotedContentContainer, PromotedContentGrid, PromotedContentSectionDivider, PromotedContentTitle } from "./styles";
-import { BreadcrumbContainer, ShareAndSaveContainer } from "./styles/responsive";
+import {
+  PromotedContentAd,
+  PromotedContentContainer,
+  PromotedContentGrid,
+  PromotedContentSectionDivider,
+  PromotedContentTitle
+} from "./styles";
+import {
+  BreadcrumbContainer,
+  ShareAndSaveContainer
+} from "./styles/responsive";
 
 const clearingStyle = {
   clear: "both"
