@@ -78,8 +78,6 @@ function SaveShareContainerWrapper(props) {
 const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
-  // eslint-disable-next-line no-console
-  console.log(props, "props from StickySaveAndShareBar");
   return (
     <SaveShareItem>
       <Sticky
