@@ -84,6 +84,8 @@ function SaveAndShareBar(props) {
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
 
+  const showCommentButton = (commentCount && commentCount > 30) ? true : false;
+
   // Position the popover at the top if the bar length is less than 400px from the bottom
   function getPosition() {
     const isLargeDevice = windowWidth && windowWidth > 449;
@@ -236,8 +238,7 @@ function SaveAndShareBar(props) {
               </SaveStar>
             </div>
           )}
-          {commentCount &&
-            commentCount > 30 && (
+          {showCommentButton && (
               <CommentsLink href="#comments-container">
                 <OutlineButton>
                   <CommentIcon height={14} width={14} />
