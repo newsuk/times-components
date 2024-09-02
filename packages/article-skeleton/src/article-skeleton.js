@@ -88,6 +88,7 @@ const ArticleSkeleton = ({
     isSavingEnabled,
     isSharingEnabled,
     isCommentEnabled,
+    commentCount,
     isEntitlementFeatureEnabled
   } = article;
 
@@ -428,6 +429,7 @@ const ArticleSkeleton = ({
                       topics={topics}
                       isSharingSavingEnabled={isSharingSavingEnabled}
                       isCommentEnabled={isCommentEnabled}
+                      commentCount={commentCount}
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
