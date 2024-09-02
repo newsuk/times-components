@@ -273,7 +273,8 @@ SaveAndShareBar.defaultProps = {
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
-  isPreviewMode: (PropTypes.bool = false)
+  isPreviewMode: (PropTypes.bool = false),
+  commentCount: (PropTypes.number = 0)
 };
 
 export default withTrackEvents(SaveAndShareBar);
