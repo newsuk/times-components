@@ -29,8 +29,8 @@ import CloseIcon from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
-import ShareIcon from "./assets/share-icon";
 import CommentIcon from "./assets/comment-icon";
+import ShareIcon from "./assets/share-icon";
 
 function SaveAndShareBar(props) {
   const {
