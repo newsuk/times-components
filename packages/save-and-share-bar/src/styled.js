@@ -183,3 +183,7 @@ export const EmailSpinnerContainer = styled.div`
     border-width: 0.15em;
   }
 `;
+
+export const CommentsLink = styled.a`
+  all: unset;
+`;

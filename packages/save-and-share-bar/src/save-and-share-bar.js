@@ -22,13 +22,15 @@ import {
   Popover,
   PopoverHeader,
   PopoverContent,
-  CloseButton
+  CloseButton,
+  CommentsLink
 } from "./styled";
 import CloseIcon from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 import ShareIcon from "./assets/share-icon";
+import CommentIcon from "./assets/comment-icon";
 
 function SaveAndShareBar(props) {
   const {
@@ -38,7 +40,8 @@ function SaveAndShareBar(props) {
     sharingEnabled,
     onShareOnFB,
     onShareOnTwitter,
-    isPreviewMode
+    isPreviewMode,
+    commentCount
   } = props;
 
   const [popoverOpen, setPopoverOpen] = React.useState(false);
@@ -233,6 +236,15 @@ function SaveAndShareBar(props) {
               </SaveStar>
             </div>
           )}
+          {commentCount &&
+            commentCount > 30 && (
+              <CommentsLink href="#comments-container">
+                <OutlineButton>
+                  <CommentIcon height={14} width={14} />
+                  1300
+                </OutlineButton>
+              </CommentsLink>
+            )}
         </>
       ) : null}
     </SaveAndShareBarContainer>
@@ -250,6 +262,7 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
+  commentCount: PropTypes.number,
   isPreviewMode: PropTypes.bool,
   hostName: PropTypes.string.isRequired
 };
