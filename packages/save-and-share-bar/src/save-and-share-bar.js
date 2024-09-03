@@ -64,7 +64,8 @@ function SaveAndShareBar(props) {
   useEffect(
     () => {
       if (window.sessionStorage.getItem("showCommentButton") === "true") {
-        if (commentCount && commentCount > -30) {
+        // if (commentCount && commentCount > -30) {
+        if (true) {
           setShowCommentButton(true);
         }
       }
