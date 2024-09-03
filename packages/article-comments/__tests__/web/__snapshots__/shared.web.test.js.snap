@@ -5,11 +5,19 @@ exports[`Render comments label, when comments are loaded 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 
@@ -148,11 +156,19 @@ exports[`User States enabled comments 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 
@@ -186,11 +202,19 @@ exports[`User States uses com host when received 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 
@@ -224,6 +248,10 @@ exports[`disabled comments 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 .c2 {
@@ -267,6 +295,10 @@ exports[`disabled comments 1`] = `
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 
@@ -306,11 +338,19 @@ exports[`single comment 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 
@@ -360,11 +400,19 @@ exports[`zero comments 1`] = `
   .c0 {
   margin-left: auto;
   margin-right: auto;
+  -webkit-scroll-margin-top: 170px;
+  -moz-scroll-margin-top: 170px;
+  -ms-scroll-margin-top: 170px;
+  scroll-margin-top: 170px;
 }
 
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
+    -webkit-scroll-margin-top: 130px;
+    -moz-scroll-margin-top: 130px;
+    -ms-scroll-margin-top: 130px;
+    scroll-margin-top: 130px;
   }
 }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SaveAndShareBarContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   height: 100%;
 `;
 
@@ -186,4 +186,20 @@ export const EmailSpinnerContainer = styled.div`
 
 export const CommentsLink = styled.a`
   all: unset;
+
+  span:nth-of-type(1) {
+    display: none;
+  }
+  span:nth-of-type(2) {
+    color: #333333;
+  }
+
+  @media (min-width: 768px) {
+    span:nth-of-type(1) {
+      display: block;
+    }
+    span:nth-of-type(2) {
+      color: #696969;
+    }
+  }
 `;

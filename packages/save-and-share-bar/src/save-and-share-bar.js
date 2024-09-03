@@ -250,10 +250,19 @@ function SaveAndShareBar(props) {
             </div>
           )}
           {showCommentButton && (
-            <CommentsLink href="#comments-container">
+            <CommentsLink
+              href="#comments-container"
+              onClick={e => {
+                e.preventDefault();
+                document.getElementById("comments-container").scrollIntoView({
+                  behavior: "smooth"
+                });
+              }}
+            >
               <OutlineButton>
                 <CommentIcon height={14} width={14} />
-                {commentCount}
+                <span>Comment</span>
+                <span>{commentCount.toLocaleString()}</span>
               </OutlineButton>
             </CommentsLink>
           )}
@@ -286,7 +295,7 @@ SaveAndShareBar.defaultProps = {
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
   isPreviewMode: (PropTypes.bool = false),
-  commentCount: (PropTypes.number = 0)
+  commentCount: (PropTypes.number = 1300)
 };
 
 export default withTrackEvents(SaveAndShareBar);

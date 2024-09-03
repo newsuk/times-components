@@ -11,8 +11,11 @@ export const CommentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  scroll-margin-top: 170px;
+
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
+    scroll-margin-top: 130px;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
