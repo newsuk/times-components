@@ -202,4 +202,11 @@ export const CommentsLink = styled.a`
       color: #696969;
     }
   }
+
+  div.content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    ${({ isLoading }) => isLoading && "opacity: 0"};
+  }
 `;

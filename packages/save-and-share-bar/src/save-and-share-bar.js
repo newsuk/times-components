@@ -22,15 +22,14 @@ import {
   Popover,
   PopoverHeader,
   PopoverContent,
-  CloseButton,
-  CommentsLink
+  CloseButton
 } from "./styled";
 import CloseIcon from "./assets/close-icon";
 import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 import ShareIcon from "./assets/share-icon";
-import CommentIcon from "./assets/comment-icon";
+import CommentButton from "./components/comment-button";
 
 function SaveAndShareBar(props) {
   const {
@@ -47,7 +46,6 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
-  const [showCommentButton, setShowCommentButton] = React.useState(false);
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -60,18 +58,6 @@ function SaveAndShareBar(props) {
       setWindowWidth(window.innerWidth);
     }
   }, []);
-
-  useEffect(
-    () => {
-      if (window.sessionStorage.getItem("showCommentButton") === "true") {
-        // if (commentCount && commentCount > -30) {
-        if (true) {
-          setShowCommentButton(true);
-        }
-      }
-    },
-    [commentCount]
-  );
 
   // Add event listener to close popover when clicked outside
   useEffect(() => {
@@ -249,23 +235,7 @@ function SaveAndShareBar(props) {
               </SaveStar>
             </div>
           )}
-          {showCommentButton && (
-            <CommentsLink
-              href="#comments-container"
-              onClick={e => {
-                e.preventDefault();
-                document.getElementById("comments-container").scrollIntoView({
-                  behavior: "smooth"
-                });
-              }}
-            >
-              <OutlineButton>
-                <CommentIcon height={14} width={14} />
-                <span>Comment</span>
-                <span>{commentCount.toLocaleString()}</span>
-              </OutlineButton>
-            </CommentsLink>
-          )}
+          <CommentButton commentCount={commentCount} />
         </>
       ) : null}
     </SaveAndShareBarContainer>
@@ -295,7 +265,7 @@ SaveAndShareBar.defaultProps = {
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
   isPreviewMode: (PropTypes.bool = false),
-  commentCount: (PropTypes.number = 1300)
+  commentCount: (PropTypes.number = 0)
 };
 
 export default withTrackEvents(SaveAndShareBar);
