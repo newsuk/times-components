@@ -47,6 +47,7 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
+  const [showCommentButton, setShowCommentButton] = React.useState(false);
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -59,6 +60,17 @@ function SaveAndShareBar(props) {
       setWindowWidth(window.innerWidth);
     }
   }, []);
+
+  useEffect(
+    () => {
+      if (window.sessionStorage.getItem("showCommentButton") === "true") {
+        if (commentCount && commentCount > -30) {
+          setShowCommentButton(true);
+        }
+      }
+    },
+    [commentCount]
+  );
 
   // Add event listener to close popover when clicked outside
   useEffect(() => {
@@ -83,8 +95,6 @@ function SaveAndShareBar(props) {
   const barPosition = barRef.current
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
-
-  const showCommentButton = Boolean(commentCount && commentCount > 30);
 
   // Position the popover at the top if the bar length is less than 400px from the bottom
   function getPosition() {
@@ -242,7 +252,7 @@ function SaveAndShareBar(props) {
             <CommentsLink href="#comments-container">
               <OutlineButton>
                 <CommentIcon height={14} width={14} />
-                1300
+                {commentCount}
               </OutlineButton>
             </CommentsLink>
           )}
