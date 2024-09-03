@@ -15,12 +15,12 @@ const CommentButton = ({ commentCount }) => {
   useEffect(
     () => {
       if (window.sessionStorage.getItem("showCommentButton") === "true") {
-        // commentCount && commentCount > -30
-        if (true) {
+        if (commentCount && commentCount > 30) {
           setShowCommentButton(true);
         }
       }
-      setTimeout(() => setIsLoading(false), 2000);
+      // Arbitrary loading time to allow iframe to load before allowing
+      setTimeout(() => setIsLoading(false), 3000);
     },
     [commentCount]
   );
