@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.103.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.2...@times-components/ts-components@1.103.3) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.103.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.1...@times-components/ts-components@1.103.2) (2024-08-28)
+
+
+### Reverts
+
+* **TMP-1437:** Call /is-bookmarked only for logged in users ([#3927](https://github.com/newsuk/times-components/issues/3927)) ([7939ce1](https://github.com/newsuk/times-components/commit/7939ce1cd47bdc213c875195c513754775c03bef))
+
+
+
+
+
+## [1.103.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.0...@times-components/ts-components@1.103.1) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.103.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.102.0...@times-components/ts-components@1.103.0) (2024-08-23)
+
+
+### Features
+
+* **TMRS-386:** add component ([#3921](https://github.com/newsuk/times-components/issues/3921)) ([9a0c373](https://github.com/newsuk/times-components/commit/9a0c37357a22acd530afc41f688020e8844569b1))
+
+
+
+
+
+# [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.101.0...@times-components/ts-components@1.102.0) (2024-08-22)
+
+
+### Features
+
+* **TMRS-279:** Updated s3 files ([#3882](https://github.com/newsuk/times-components/issues/3882)) ([35da9ec](https://github.com/newsuk/times-components/commit/35da9ecc823c73f0ba6232800900bed306772081))
+
+
+
+
+
 # [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.100.1...@times-components/ts-components@1.101.0) (2024-08-14)
 
 
