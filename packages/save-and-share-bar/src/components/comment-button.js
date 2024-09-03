@@ -20,6 +20,7 @@ const CommentButton = ({ commentCount }) => {
         }
       }
       // Arbitrary loading time to allow iframe to load before allowing
+      // the user to scroll to comments section
       setTimeout(() => setIsLoading(false), 3000);
     },
     [commentCount]
