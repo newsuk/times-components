@@ -122,7 +122,7 @@ jobs:
             lerna run test:unit --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
       - persist_to_workspace:
-          root: .
+          root: ./
           paths:
             - test-results
 
