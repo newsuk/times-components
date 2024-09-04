@@ -106,8 +106,12 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            lerna run test:web --stream --since -- -- --ci --bail --coverage
+            mkdir test-results
+            TEST_FILES=$(circleci tests glob "./__tests__/jest.config.js" | circleci tests split --split-by=timings)
+            yarn test:web --stream --since -- -- --ci --bail --coverage --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml $TEST_FILES
           working_directory: ~/project/
+      - store_test_results:
+          path: ./reports/
 
   run_unit_tests:
     executor: node
@@ -119,24 +123,12 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            lerna run test:unit --stream --since -- -- --ci --bail --coverage
+            mkdir test-results
+            TEST_FILES=$(circleci tests glob "**/*.test.js" | circleci tests split --split-by=timings)
+            yarn test:unit --stream --since -- -- --ci --bail --coverage --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml $TEST_FILES
           working_directory: ~/project/
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - test-results
-
-  rerun_unit_tests:
-    executor: node
-    steps:
-      - checkout
-      - install-lerna
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Rerun Unit Tests
-          command: |
-            lerna run rerun:unit --stream --since -- -- --ci --bail --coverage
+      - store_test_results:
+          path: ./reports/
 
   sonarcloud_scan:
     executor: node_sonar
