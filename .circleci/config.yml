@@ -121,6 +121,22 @@ jobs:
           command: |
             lerna run test:unit --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
+      - persist_to_workspace:
+          root: .
+          paths:
+            - test-results
+
+  rerun_unit_tests:
+    executor: node
+    steps:
+      - checkout
+      - install-lerna
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Rerun Unit Tests
+          command: |
+            lerna run rerun:unit --stream --since -- -- --ci --bail --coverage
 
   sonarcloud_scan:
     executor: node_sonar
@@ -300,6 +316,9 @@ workflows:
       - run_cypress_tests:
           requires:
             - setup
+      - rerun_unit_tests:
+          requires:
+            - run_unit_tests
 
       - verdaccio-test-approval:
           <<: *only_on_master_branch

@@ -44,6 +44,7 @@
     "test:web": "lerna run test:web --stream",
     "test:web:updatesnapshot": "lerna run test:web:updatesnapshot --stream",
     "test:unit": "lerna run test:unit --stream",
+    "rerun:unit": "jest --ci --onlyFailures --reporters=default --reporters=jest-junit --outputFile=test-results/unit/unit_results_rerun.xml",
     "test:unit:updatesnapshot": "lerna run test:unit:updatesnapshot --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
