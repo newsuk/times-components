@@ -34,6 +34,8 @@ export default (cwd, options = {}) => {
       "node_modules/(?!(@times-components|@storybook/react)/)"
     ]
   };
-
+  {
+    reporters: ["default", "jest-junit"]
+  }
   return config;
 };
