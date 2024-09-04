@@ -52,6 +52,8 @@ Any of these source files can be debugged directly.
 
 Follow these steps [here](https://github.com/newsuk/cps-content-render#integrating-with-times-components)
 
+You will also see the option to do a canary release in the pipeline, which will publish a test version of your changes that you can import in render.
+
 ## See your changes in Render with rnw.js files
 
 Besides linking the Times Components and Render repos together, you can view changes made to Times Components in Render through the rnw.js files.
