@@ -114,7 +114,7 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            lerna run test:web | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:web --config jest.config.js --runInBand --" --verbose
+            lerna run test:web | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:web" --verbose
           environment:
             JEST_JUNIT_OUTPUT_DIR: /packages/reports/webtest
           working_directory: ~/project/
@@ -132,7 +132,7 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            lerna run test:unit | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:unit --config jest.config.js --runInBand --" --verbose
+            lerna run test:unit | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:unit" --verbose
           environment:
             JEST_JUNIT_OUTPUT_DIR: /packages/reports/unittest
           working_directory: ~/project/
