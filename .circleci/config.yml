@@ -308,9 +308,6 @@ workflows:
       - run_cypress_tests:
           requires:
             - setup
-      - rerun_unit_tests:
-          requires:
-            - run_unit_tests
 
       - verdaccio-test-approval:
           <<: *only_on_master_branch
