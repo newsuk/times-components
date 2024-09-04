@@ -16679,6 +16679,13 @@ jest-transform-graphql@2.1.0:
   resolved "https://registry.yarnpkg.com/jest-transform-graphql/-/jest-transform-graphql-2.1.0.tgz#903cb66bb27bc2772fd3e5dd4f7e9b57230f5829"
   integrity sha512-oLVErzg6bN9eJPB/b8c1+0go3K1F1OZNkvlbUfOgK+96ulfX/fnp+4jI3tjQ1IUVL2XcSjhzwDwNdwsNI5EhRg==
 
+jest-unit@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/jest-unit/-/jest-unit-0.0.2.tgz#a4bbbcab60ef1661dfbaaba9b16a0ef984bd8f37"
+  integrity sha512-k+S2BK7oES3924x660rFfv6T+v0bgUnpdOjU8dOaPmC4dDpaGgdHiboUIktXpwRE2nYJKOMJRGinWA/fH5RCxQ==
+  dependencies:
+    ts-essentials "^7.0.3"
+
 jest-util@^24.5.0, jest-util@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-24.9.0.tgz#7396814e48536d2e85a37de3e4c431d7cb140162"
@@ -25208,6 +25215,11 @@ ts-dedent@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
+
+ts-essentials@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-7.0.3.tgz#686fd155a02133eedcc5362dc8b5056cde3e5a38"
+  integrity sha512-8+gr5+lqO3G84KdiTSMRLtuyJ+nTBVRKuCrK4lidMPdVeEp0uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT/xQ==
 
 ts-invariant@^0.2.1:
   version "0.2.1"
