@@ -47,6 +47,7 @@ commands:
       - run:
           name: "Install JUnit coverage reporter"
           command: yarn add --dev jest-junit
+          working_directory: ~/project/
 
 jobs:
   setup:
