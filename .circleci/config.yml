@@ -42,6 +42,11 @@ commands:
           name: "Install Lerna"
           command: yarn global add lerna@7.4.2
           working_directory: ~/project/
+    install-junit:
+    steps:
+      - run:
+          name: "Install JUnit coverage reporter"
+          command: yarn add --dev jest-junit
 
 jobs:
   setup:
@@ -52,6 +57,7 @@ jobs:
       - install-dependencies
       - save-yarn
       - install-lerna
+      - install-junit
       - persist_to_workspace:
           root: ./
           paths:
@@ -101,17 +107,18 @@ jobs:
     steps:
       - checkout
       - install-lerna
+      - install-junit
       - attach_workspace:
           at: ./
       - run:
           name: Run Web Tests
           command: |
-            mkdir test-results
-            TEST_FILES=$(circleci tests glob "./__tests__/jest.config.js" | circleci tests split --split-by=timings)
-            yarn test:web --stream --since -- -- --ci --bail --coverage --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml $TEST_FILES
+            lerna run test:web --stream --since -- -- --ci --bail --coverage | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:web --config jest.config.js --runInBand --" --verbose
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: /packages/reports/webtest
           working_directory: ~/project/
       - store_test_results:
-          path: ./reports/
+          path: /packages/reports/webtest
 
   run_unit_tests:
     executor: node
@@ -123,12 +130,12 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            mkdir test-results
-            TEST_FILES=$(circleci tests glob "**/*.test.js" | circleci tests split --split-by=timings)
-            yarn test:unit --stream --since -- -- --ci --bail --coverage --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml $TEST_FILES
+            lerna run test:unit --stream --since -- -- --ci --bail --coverage | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs lerna run test:unit --config jest.config.js --runInBand --" --verbose
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: /packages/reports/unittest
           working_directory: ~/project/
       - store_test_results:
-          path: ./reports/
+          path: /packages/reports/unittest
 
   sonarcloud_scan:
     executor: node_sonar
