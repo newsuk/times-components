@@ -42,7 +42,7 @@ commands:
           name: "Install Lerna"
           command: yarn global add lerna@7.4.2
           working_directory: ~/project/
-    install-junit:
+  install-junit:
     steps:
       - run:
           name: "Install JUnit coverage reporter"
