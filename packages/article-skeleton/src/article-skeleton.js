@@ -91,6 +91,11 @@ const ArticleSkeleton = ({
     isEntitlementFeatureEnabled
   } = article;
 
+  console.log("article-skeleton: ", article)
+  if (article.content.length < 1) {
+    throw new Error('ENOCONTENT')
+  }
+
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const sidebarRef = useRef();
