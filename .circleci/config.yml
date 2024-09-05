@@ -114,15 +114,10 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            set +e
-            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || FAILED=true
-            if [ "$FAILED" = true ]; then
-              echo "Tests failed, rerunning..."
-              JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || exit 1
-            fi
+            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true lerna run test:web --stream -- -- --ci --bail --coverage
           working_directory: ~/project/
       - store_test_results:
-          path: /packages/junit-reports/webtest
+          path: ./test-results/junit
 
   run_unit_tests:
     executor: node
@@ -135,15 +130,10 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            set +e
-            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || FAILED=true
-            if [ "$FAILED" = true ]; then
-              echo "Tests failed, rerunning..."
-              JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || exit 1
-            fi
+            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true lerna run test:unit --stream -- -- --ci --bail --coverage
           working_directory: ~/project/
       - store_test_results:
-          path: /packages/junit-reports/webtest
+          path: ./test-results/junit
 
   sonarcloud_scan:
     executor: node_sonar
