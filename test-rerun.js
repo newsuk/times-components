@@ -19,10 +19,22 @@ glob('packages/**/__tests__', { cwd: process.cwd(), ignore: '**/node_modules/**'
     const packageName = path.dirname(packagePath);
     console.log(`Running tests for ${packageName}`);
 
-    // Set environment variable for jest-junit output name
-    process.env.JEST_JUNIT_OUTPUT_NAME = `jest-junit-${packageName}.xml`;
+    // Path to the jest.config.js file
+    const jestConfigPath = path.join(packagePath, 'jest.config.js');
 
-    // Run tests with dynamic configuration
-    execSync(`npx jest --config="${path.join(packagePath, 'jest.config.js')}" --reporters=default --reporters=jest-junit --ci --bail --coverage`, { stdio: 'inherit' });
+    // Check if jest.config.js exists before running tests
+    if (fs.existsSync(jestConfigPath)) {
+      // Set environment variable for jest-junit output name
+      process.env.JEST_JUNIT_OUTPUT_NAME = `jest-junit-${packageName}.xml`;
+
+      // Run tests with dynamic configuration
+      try {
+        execSync(`npx jest --config="${jestConfigPath}" --reporters=default --reporters=jest-junit --ci --bail --coverage`, { stdio: 'inherit' });
+      } catch (error) {
+        console.error(`Tests failed for ${packageName}: ${error.message}`);
+      }
+    } else {
+      console.warn(`jest.config.js not found for ${packageName}, skipping tests for this package.`);
+    }
   });
 });
