@@ -117,7 +117,7 @@ jobs:
             node test-rerun.js 
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/junit
+          path: ./jest-junit-packages
 
   run_unit_tests:
     executor: node
@@ -133,7 +133,7 @@ jobs:
             JEST_JUNIT_ADD_FILE_ATTRIBUTE=true lerna run test:unit --stream -- -- --ci --bail --coverage
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/junit
+          path: ./jest-junit-packages
 
   sonarcloud_scan:
     executor: node_sonar
