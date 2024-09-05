@@ -234,7 +234,8 @@ class InlineVideoPlayer extends Component {
     if (error) {
       throw new Error("Can't load video"); // caught by parent ErrorView
     }
-
+    console.log('=======props',this.props, this.id)
+ 
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
