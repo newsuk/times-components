@@ -114,10 +114,10 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true lerna run test:web --stream -- -- --ci --bail --coverage
+            node test-rerun.js 
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/junit
+          path: project/test-results/junit
 
   run_unit_tests:
     executor: node
@@ -133,7 +133,7 @@ jobs:
             JEST_JUNIT_ADD_FILE_ATTRIBUTE=true lerna run test:unit --stream -- -- --ci --bail --coverage
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/junit
+          path: project/test-results/junit
 
   sonarcloud_scan:
     executor: node_sonar

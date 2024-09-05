@@ -66,8 +66,7 @@
     "reporters": [
       "default",
       ["jest-junit", {
-        "outputDirectory": "./test-results/junit",
-        "outputName": "results.xml"
+        "outputDirectory": "./test-results/junit"
       }]
     ]
   },
