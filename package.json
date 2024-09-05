@@ -62,7 +62,15 @@
     "transformIgnorePatterns": [
       "node_modules/?!@times-components",
       "packages/?!author-profile"
+    ],
+    "reporters": [
+      "default",
+      ["jest-junit", {
+        "outputDirectory": "./test-results/junit",
+        "outputName": "results.xml"
+      }]
     ]
+
   },
   "config": {
     "commitizen": {

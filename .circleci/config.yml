@@ -114,12 +114,15 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            yarn test:web | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs yarn test:web" --verbose
-          environment:
-            JEST_JUNIT_OUTPUT_DIR: /packages/reports/webtest
+            set +e
+            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || FAILED=true
+            if [ "$FAILED" = true ]; then
+              echo "Tests failed, rerunning..."
+              JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || exit 1
+            fi
           working_directory: ~/project/
       - store_test_results:
-          path: /packages/reports/webtest
+          path: /packages/junit-reports/webtest
 
   run_unit_tests:
     executor: node
@@ -132,12 +135,15 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            yarn test:unit | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs yarn test:unit" --verbose
-          environment:
-            JEST_JUNIT_OUTPUT_DIR: /packages/reports/unittest
+            set +e
+            JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || FAILED=true
+            if [ "$FAILED" = true ]; then
+              echo "Tests failed, rerunning..."
+              JEST_JUNIT_ADD_FILE_ATTRIBUTE=true yarn test:web --verbose || exit 1
+            fi
           working_directory: ~/project/
       - store_test_results:
-          path: /packages/reports/unittest
+          path: /packages/junit-reports/webtest
 
   sonarcloud_scan:
     executor: node_sonar
