@@ -26,6 +26,7 @@ glob('packages/**/__tests__', { cwd: process.cwd(), ignore: '**/node_modules/**'
     if (fs.existsSync(jestConfigPath)) {
       // Set environment variable for jest-junit output name
       process.env.JEST_JUNIT_OUTPUT_NAME = `jest-junit-${packageName}.xml`;
+      process.env.JEST_JUNIT_ADD_FILE_ATTRIBUTE = 'true'; // Add file attribute to the report
 
       // Run tests with dynamic configuration
       try {
