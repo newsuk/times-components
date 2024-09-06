@@ -12,11 +12,11 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 // Use glob to find all package directories
-glob('packages/**/__tests__', { cwd: process.cwd(), ignore: '**/node_modules/**' }, (err, packages) => {
+glob('packages/*', { cwd: process.cwd(), ignore: '**/node_modules/**' }, (err, packages) => {
   if (err) throw err;
 
   packages.forEach(packagePath => {
-    const packageName = path.basename(path.dirname(packagePath)); // Extract package name
+    const packageName = path.basename(packagePath); // Extract package name
     console.log(`Running tests for ${packageName}`);
 
     // Set environment variables for jest-junit output name, directory, and file attribute
@@ -24,7 +24,7 @@ glob('packages/**/__tests__', { cwd: process.cwd(), ignore: '**/node_modules/**'
     process.env.JEST_JUNIT_OUTPUT_DIR = path.resolve(OUTPUT_DIR); // Save all reports in one central directory
     process.env.JEST_JUNIT_ADD_FILE_ATTRIBUTE = 'true'; // Add file attribute to the report
 
-    // Run tests without specifying a custom jest.config.js
+    // Run tests only in the package folder
     try {
       execSync(`npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage`, { cwd: packagePath, stdio: 'inherit' });
     } catch (error) {

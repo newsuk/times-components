@@ -117,7 +117,7 @@ jobs:
             node test-rerun.js 
           working_directory: ~/project/
       - store_test_results:
-          path: ./jest-junit-packages
+          path: ./'path.resolve(OUTPUT_DIR)'/jest-junit-packages
 
   run_unit_tests:
     executor: node
