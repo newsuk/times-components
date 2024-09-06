@@ -117,7 +117,7 @@ jobs:
             node test-rerun.js 
           working_directory: ~/project/
       - store_test_results:
-          path: ./'path.resolve(OUTPUT_DIR)'/jest-junit-packages
+          path: ./test-results/web
 
   run_unit_tests:
     executor: node
@@ -133,7 +133,7 @@ jobs:
             node test-unitRerun.js
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/junit
+          path: ./test-results/unit
 
   sonarcloud_scan:
     executor: node_sonar
