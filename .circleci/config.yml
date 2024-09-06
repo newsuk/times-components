@@ -118,6 +118,8 @@ jobs:
           working_directory: ~/project/
       - store_test_results:
           path: ./test-results/web
+      - store_artifacts:
+          path: ./test-results/web
 
   run_unit_tests:
     executor: node
@@ -133,6 +135,8 @@ jobs:
             node test-unitRerun.js
           working_directory: ~/project/
       - store_test_results:
+          path: ./test-results/unit
+      - store_artifacts:
           path: ./test-results/unit
 
   sonarcloud_scan:
