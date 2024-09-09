@@ -34,7 +34,7 @@ glob('packages/**/__tests__', { cwd: process.cwd(), ignore: '**/node_modules/**'
 
       // Run tests with dynamic configuration
       try {
-        execSync(`npx jest --config="${jestConfigPath}" --reporters=default --reporters=jest-junit --testPathPattern=$(circleci tests split --split-by=filesize) --runInBand --ci --verbose`, { stdio: 'inherit' });
+        execSync(`npx jest --config="${jestConfigPath}" --reporters=default --reporters=jest-junit --testPathPattern=$(circleci tests split --split-by=filesize) --ci --verbose`, { stdio: 'inherit' });
         // npx jest --config="${jestConfigPath}" --reporters=default --reporters=jest-junit --ci --bail --coverage --testPathPattern=$(circleci tests split --split-by=filesize)
       } catch (error) {
         console.error(`Tests failed for ${packageName}: ${error.message}`);
