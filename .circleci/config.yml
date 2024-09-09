@@ -123,6 +123,8 @@ jobs:
 
   run_unit_tests:
     executor: node
+    resource_class: large
+    parallelism: 3
     steps:
       - checkout
       - install-lerna

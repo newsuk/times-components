@@ -31,7 +31,8 @@ fs.readdirSync(packagesDir).forEach(packageName => {
 
     // Run tests only in the package folder
     try {
-      execSync(`npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage`, { cwd: packagePath, stdio: 'inherit' });
+      execSync(`npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage --testPathPattern=$(circleci tests split --split-by=timings)`, { cwd: packagePath, stdio: 'inherit' });
+      //circleci tests run --command="npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage --split-by=timings"
     } catch (error) {
       console.error(`Tests failed for ${packageName}: ${error.message}`);
       hasTestFailures = true;  // Set flag if any test fails
