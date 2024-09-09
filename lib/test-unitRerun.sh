@@ -96,9 +96,14 @@ else
     HAS_TEST_FAILURES=false
 fi
 
-# Store test results in the defined directory
-echo "Storing test results in '$OUTPUT_DIR'..."
-cp -R ./test-results/* "$OUTPUT_DIR" || error_exit "Failed to copy test results."
+# Avoid recursive copy by ensuring the test results are not already in the OUTPUT_DIR
+if [ -d "./test-results" ] && [ "$(realpath ./test-results)" != "$(realpath $OUTPUT_DIR)" ]; then
+    # Store test results in the defined directory
+    echo "Storing test results in '$OUTPUT_DIR'..."
+    cp -R ./* "$OUTPUT_DIR" || error_exit "Failed to copy test results."
+else
+    echo "Skipping test results copy to avoid recursion."
+fi
 
 # Exit with a non-zero status code if any tests failed
 if [ "$HAS_TEST_FAILURES" = true ]; then
