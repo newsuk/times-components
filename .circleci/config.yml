@@ -137,6 +137,7 @@ jobs:
           name: Run Unit Tests
           command: |
             node test-unitRerun.js
+            node test-sharding.js
           working_directory: ~/project/
       - store_test_results:
           path: ./test-results/unit

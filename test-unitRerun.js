@@ -31,8 +31,7 @@ fs.readdirSync(packagesDir).forEach(packageName => {
 
     // Run tests only in the package folder
     try {
-      execSync(`SPLIT_PATTERN=$(circleci tests split --split-by=filesize)
-      npx jest --reporters=default --reporters=jest-junit --testPathPattern="$SPLIT_PATTERN" --ci --verbose`, { cwd: packagePath, stdio: 'inherit' });
+      execSync(`npx jest --reporters=default --reporters=jest-junit -ci --bail --coverage --verbose`, { cwd: packagePath, stdio: 'inherit' });
       // npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage --testPathPattern=$(circleci tests split --split-by=filesize)
       
     } catch (error) {
