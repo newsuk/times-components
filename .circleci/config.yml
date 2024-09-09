@@ -138,9 +138,9 @@ jobs:
             ./lib/test-unitRerun.sh
           working_directory: ~/project/
       - store_test_results:
-          path: ./test-results/unit
+          path: ./test_results/unit
       - store_artifacts:
-          path: ./test-results/unit
+          path: ./test_results/unit
 
   sonarcloud_scan:
     executor: node_sonar
