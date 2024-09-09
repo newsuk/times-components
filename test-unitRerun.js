@@ -31,7 +31,7 @@ fs.readdirSync(packagesDir).forEach(packageName => {
 
     // Run tests only in the package folder
     try {
-      execSync(`npx jest --reporters=default --reporters=jest-junit | circleci tests run --command="JEST_JUNIT_ADD_FILE_ATTRIBUTE=true xargs npx jest --config jest.config.js --runInBand --" --verbose --split-by=timings`, { cwd: packagePath, stdio: 'inherit' });
+      execSync(`npx jest --reporters=default --reporters=jest-junit --testPathPattern=$(circleci tests split --split-by=filesize) --runInBand --ci --verbose`, { cwd: packagePath, stdio: 'inherit' });
       // npx jest --reporters=default --reporters=jest-junit --ci --bail --coverage --testPathPattern=$(circleci tests split --split-by=filesize)
       
     } catch (error) {
