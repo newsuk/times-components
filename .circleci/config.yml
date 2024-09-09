@@ -125,8 +125,6 @@ jobs:
 
   run_unit_tests:
     executor: node
-    resource_class: xlarge
-    parallelism: 5
     steps:
       - checkout
       - install-lerna

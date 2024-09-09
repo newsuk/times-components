@@ -72,21 +72,21 @@ export JEST_JUNIT_OUTPUT_DIR="$OUTPUT_DIR"
 export JEST_JUNIT_OUTPUT_NAME="jest-junit.xml"
 export JEST_JUNIT_ADD_FILE_ATTRIBUTE="true"
 
-# Get the list of tests to run on this container using CircleCI's test splitting
-test_files=$(circleci tests split --split-by=timings)
+# # Get the list of tests to run on this container using CircleCI's test splitting
+# test_files=$(circleci tests split --split-by=timings)
 
-# Ensure there are test files to run
-if [ -z "$test_files" ]; then
-    echo "No tests to run on this container (node $node_index)."
-    exit 0
-fi
+# # Ensure there are test files to run
+# if [ -z "$test_files" ]; then
+#     echo "No tests to run on this container (node $node_index)."
+#     exit 0
+# fi
 
-# Run Jest tests only on the split files for this container
-echo "Running tests on node $node_index of $total_nodes for the following files:"
-echo "$test_files"
+# # Run Jest tests only on the split files for this container
+# echo "Running tests on node $node_index of $total_nodes for the following files:"
+# echo "$test_files"
 
 npx jest --reporters=default --reporters=jest-junit \
-    --ci --verbose $test_files
+    --ci --verbose 
 
 # Check if the Jest command failed
 if [ $? -ne 0 ]; then
