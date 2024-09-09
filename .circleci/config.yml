@@ -125,7 +125,7 @@ jobs:
 
   run_unit_tests:
     executor: node
-    resource_class: large
+    resource_class: xlarge
     parallelism: 5
     steps:
       - checkout
@@ -136,8 +136,8 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            node test-unitRerun.js
-            node test-sharding.js
+            chmod +x ./lib/test-unitRerun.sh 
+            ./lib/test-unitRerun.sh
           working_directory: ~/project/
       - store_test_results:
           path: ./test-results/unit
