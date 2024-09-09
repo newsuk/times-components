@@ -105,6 +105,8 @@ jobs:
           working_directory: ~/project/
   run_web_tests:
     executor: node
+    resource_class: large
+    parallelism: 3
     steps:
       - checkout
       - install-lerna
