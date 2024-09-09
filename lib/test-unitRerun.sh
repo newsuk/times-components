@@ -47,7 +47,6 @@
 # //   process.exit(1);  // Exit the script with an error status
 # # // }
 
-
 #!/bin/bash
 
 # Function to handle errors and exit
@@ -60,9 +59,9 @@ error_exit() {
 node_index=${CIRCLE_NODE_INDEX:-0}    # Current node index
 total_nodes=${CIRCLE_NODE_TOTAL:-1}   # Total number of nodes
 
-# Define the packages directory and test results directory
+# Define the test results directory
+OUTPUT_DIR="./test_results/unit"
 PACKAGES_DIR="./packages"
-OUTPUT_DIR="test-results/unit"
 
 # Create the output directory if it doesn't exist
 echo "Creating directory structure at '$OUTPUT_DIR'..."
@@ -73,18 +72,28 @@ export JEST_JUNIT_OUTPUT_DIR="$OUTPUT_DIR"
 export JEST_JUNIT_OUTPUT_NAME="jest-junit.xml"
 export JEST_JUNIT_ADD_FILE_ATTRIBUTE="true"
 
-# Run Jest tests with CircleCI parallelism and test splitting
-echo "Running tests with CircleCI parallelism (node $node_index of $total_nodes)..."
+# Get the list of tests to run on this container using CircleCI's test splitting
+test_files=$(circleci tests split --split-by=timings)
 
-# Run Jest using test splitting by timings if CircleCI supports it
+# Ensure there are test files to run
+if [ -z "$test_files" ]; then
+    echo "No tests to run on this container (node $node_index)."
+    exit 0
+fi
+
+# Run Jest tests only on the split files for this container
+echo "Running tests on node $node_index of $total_nodes for the following files:"
+echo "$test_files"
+
 npx jest --reporters=default --reporters=jest-junit \
-    --testPathPattern=$(circleci tests split --split-by=timings) \
-    --runInBand --ci --verbose
+    --ci --verbose $test_files
 
 # Check if the Jest command failed
 if [ $? -ne 0 ]; then
     echo "Tests failed."
     HAS_TEST_FAILURES=true
+else
+    HAS_TEST_FAILURES=false
 fi
 
 # # Store test results in the defined directory
