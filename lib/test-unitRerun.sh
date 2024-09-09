@@ -96,9 +96,9 @@ else
     HAS_TEST_FAILURES=false
 fi
 
-# # Store test results in the defined directory
-# echo "Storing test results in '$OUTPUT_DIR'..."
-# cp -R ./test-results/* "$OUTPUT_DIR" || error_exit "Failed to copy test results."
+# Store test results in the defined directory
+echo "Storing test results in '$OUTPUT_DIR'..."
+cp -R ./test-results/* "$OUTPUT_DIR" || error_exit "Failed to copy test results."
 
 # Exit with a non-zero status code if any tests failed
 if [ "$HAS_TEST_FAILURES" = true ]; then
