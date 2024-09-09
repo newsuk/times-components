@@ -106,7 +106,7 @@ jobs:
   run_web_tests:
     executor: node
     resource_class: large
-    parallelism: 3
+    parallelism: 5
     steps:
       - checkout
       - install-lerna
@@ -126,7 +126,7 @@ jobs:
   run_unit_tests:
     executor: node
     resource_class: large
-    parallelism: 3
+    parallelism: 5
     steps:
       - checkout
       - install-lerna
