@@ -265,7 +265,7 @@ SaveAndShareBar.defaultProps = {
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
   isPreviewMode: (PropTypes.bool = false),
-  commentCount: (PropTypes.number = 0)
+  commentCount: (PropTypes.number = 1300)
 };
 
 export default withTrackEvents(SaveAndShareBar);
