@@ -91,8 +91,7 @@ const ArticleSkeleton = ({
     isEntitlementFeatureEnabled
   } = article;
 
-  console.log("article-skeleton: ", article)
-  if (article.content.length < 1) {
+  if (article.tiles.length < 1 && article.content.length < 1) {
     throw new Error('ENOCONTENT')
   }
 
