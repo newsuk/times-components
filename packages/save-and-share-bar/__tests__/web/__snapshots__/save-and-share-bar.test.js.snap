@@ -33,7 +33,7 @@ exports[`save and share bar component email icon when tokenising with loading st
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="styled__SaveAndShareBarContainer-qkwc0r-0 hgOtsW"
+  className="styled__SaveAndShareBarContainer-qkwc0r-0 hGteih"
   data-testid="save-and-share-bar"
 >
   <div
@@ -210,7 +210,7 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="styled__SaveAndShareBarContainer-qkwc0r-0 hgOtsW"
+  className="styled__SaveAndShareBarContainer-qkwc0r-0 hGteih"
   data-testid="save-and-share-bar"
 >
   <div
