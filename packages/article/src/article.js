@@ -14,7 +14,7 @@ export const templates = {
   magazinecomment: ArticleMagazineComment,
   magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard
+  mainstandard: ArticleMainStandard,
 };
 
 export class TakeoverBailout extends Error {
@@ -24,31 +24,31 @@ export class TakeoverBailout extends Error {
   }
 }
 
-const Article = props => {
+const Article = (props) => {
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
-  let { content, tiles } = article || {};
+  let { content } = article || {};
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
-  if (tiles?.length < 1 && content?.length < 1) {
-    throw new Error('ENOCONTENT')
+  if (!article.tiles.length && !content.length) {
+    throw new Error("ENOCONTENT");
   }
-  
+
   let onImagePressArticle = null;
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
-    onImagePressArticle = index => onImagePress(index, mediaList);
+    onImagePressArticle = (index) => onImagePress(index, mediaList);
   }
   const Component = templates[template] || ArticleMainStandard;
   const newProps = {
     ...props,
     article: {
       ...article,
-      template: article && article.template ? article.template : "mainstandard"
-    }
+      template: article && article.template ? article.template : "mainstandard",
+    },
   };
 
   return (
