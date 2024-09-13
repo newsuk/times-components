@@ -15,11 +15,11 @@ export default {
           decorateAction,
           hasScaling: false,
           link: <NewTab />,
-          select
+          select,
         }),
       name: "Article with template choice",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
@@ -29,13 +29,13 @@ export default {
           decorateAction,
           hasScaling: false,
           link: <NewTab />,
-          select
+          select,
         }),
       name: "Article teaser",
       platform: "web",
       type: "story",
-      defaultUserState: USER_STATES.GUEST
-    }
+      defaultUserState: USER_STATES.GUEST,
+    },
   ],
-  name: "Pages/Article (marketing overlays)"
+  name: "Pages/Article (marketing overlays)",
 };

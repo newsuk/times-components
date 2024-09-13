@@ -24,7 +24,7 @@ const requiredProps = {
   onVideoPress: () => {},
   onViewed: () => {},
   receiveChildList: () => {},
-  refetch: () => {}
+  refetch: () => {},
 };
 
 describe("Article", () => {
@@ -51,7 +51,7 @@ describe("Article", () => {
       <Article
         article={{
           publishedTime: "2015-03-23T19:39:39.000Z",
-          template: "undefined"
+          template: "undefined",
         }}
         {...requiredProps}
       />
