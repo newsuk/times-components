@@ -27,10 +27,15 @@ export class TakeoverBailout extends Error {
 const Article = props => {
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
-  let { content } = article || {};
+  let { content, tiles } = article || {};
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
+
+  if (tiles?.length < 1 && content?.length < 1) {
+    throw new Error('ENOCONTENT')
+  }
+  
   let onImagePressArticle = null;
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
