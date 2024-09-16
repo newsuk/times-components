@@ -315,6 +315,7 @@ const ArticleSkeleton = ({
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
                           hostName={domainSpecificUrl}
+                          commentCount={commentCount}
                         />
                       )}
                     </MessageContext.Consumer>
