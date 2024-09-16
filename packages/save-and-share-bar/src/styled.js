@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SaveAndShareBarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 10px;
   height: 100%;
   padding-block: 10px;
