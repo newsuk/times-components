@@ -30,6 +30,7 @@ const requiredProps = {
 
 const articleContentData = {
   content: testFixture.content,
+  section: testFixture.section,
   tiles: [],
 };
 
