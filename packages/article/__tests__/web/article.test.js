@@ -25,13 +25,13 @@ const requiredProps = {
   onVideoPress: () => {},
   onViewed: () => {},
   receiveChildList: () => {},
-  refetch: () => {},
+  refetch: () => {}
 };
 
 const articleContentData = {
   content: testFixture.content,
   section: testFixture.section,
-  tiles: [],
+  tiles: []
 };
 
 describe("Article", () => {
@@ -47,14 +47,14 @@ describe("Article", () => {
   it("throws `ENOCONTENT` error if article content is null", () => {
     const emptyArticleContentData = {
       content: [],
-      tiles: [],
+      tiles: []
     };
 
     const testRenderer = () =>
       TestRenderer.create(
         <Article {...requiredProps} article={emptyArticleContentData} />
       )
-        .then((res) => res.root)
+        .then(res => res.root)
         .catch(() => {});
 
     expect(() => testRenderer()).toThrow("ENOCONTENT");
@@ -75,7 +75,7 @@ describe("Article", () => {
         article={{
           publishedTime: "2015-03-23T19:39:39.000Z",
           template: "undefined",
-          ...articleContentData,
+          ...articleContentData
         }}
         {...requiredProps}
       />
