@@ -4,6 +4,7 @@ export const SaveAndShareBarContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: start;
   height: 100%;
   padding-block: 10px;
 `;

@@ -31,6 +31,11 @@ const Article = props => {
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
+
+  if (article && !article.tiles.length && !content.length) {
+    throw new Error("ENOCONTENT");
+  }
+
   let onImagePressArticle = null;
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
