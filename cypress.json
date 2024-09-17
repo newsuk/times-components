@@ -1,1 +1,1 @@
-{}
+{ "reporter": "cypress-circleci-reporter"}
