@@ -152,6 +152,8 @@ jobs:
 
   run_cypress_tests:
     executor: node
+    resource_class: medium
+    parallelism: 3
     steps:
       - checkout
       - attach_workspace:
@@ -167,7 +169,7 @@ jobs:
       - run:
           name: Run Cypress Tests
           command: |
-            yarn test:e2e
+            circleci tests run --split-by=timings --command="yarn test"
           working_directory: ~/project/
       - store_artifacts:
           path: packages/ssr/__tests__/screenshots
