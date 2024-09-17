@@ -46,6 +46,7 @@
     "test:unit": "lerna run test:unit --stream",
     "test:unit:updatesnapshot": "lerna run test:unit:updatesnapshot --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
+    "test:e2e:ci": "yarn bundle && lerna run test:integration:ci --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
     "lerna:publish:verdaccio": "yarn lerna publish --conventional-commits --concurrency=1  --registry=\"http://localhost:4873\" --no-verify-access --no-git-tag-version   --no-verify-registry --yes ",
     "verdaccio:start": "yarn verdaccio -c ./.verdaccio-config.yaml",

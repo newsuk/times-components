@@ -153,7 +153,7 @@ jobs:
   run_cypress_tests:
     executor: node
     resource_class: medium
-    parallelism: 3
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -165,12 +165,16 @@ jobs:
             sudo apt-get install -y lsof;
             sudo apt-get install --no-install-recommends -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
             yarn cypress install
+            npx lerna exec --scope @times-components/ssr -- yarn add cypress-circleci-reporter --dev
           working_directory: ~/project/
       - run:
           name: Run Cypress Tests
           command: |
-            circleci tests glob "packages/ssr/__tests__/integration/*.js" | circleci tests run --split-by=timings
+            chmod +x ./lib/cypress-rerun.sh
+            ./lib/cypress-rerun.sh
           working_directory: ~/project/
+      - store_test_results:
+          path: packages/ssr/__tests__/test-results
       - store_artifacts:
           path: packages/ssr/__tests__/screenshots
       - store_artifacts:

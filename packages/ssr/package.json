@@ -16,6 +16,7 @@
     "start:testserver": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql SPOT_ID=5p0t_1m_1d yarn start & wait-on tcp:3000",
     "stop:testserver": "kill $(lsof -t -i:3000)",
     "test:integration": "yarn bundle:prod && yarn start:testserver && cypress run; exitCode=$?; yarn stop:testserver; exit $exitCode",
+    "test:integration:ci": "yarn bundle:prod && yarn start:testserver && cypress run --reporter cypress-circleci-reporter --split-by=timings; exitCode=$?; yarn stop:testserver; exit $exitCode",
     "test:integration:debug": "yarn start:testserver && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testserver; exit $exitCode",
     "test:integration:update": "yarn bundle:prod && yarn start:testserver && cypress run --env updateSnapshots=true; exitCode=$?; yarn stop:testserver; exit $exitCode"
   },
@@ -40,6 +41,7 @@
     "axe-core": "3.3.1",
     "cypress": "^9.2.0",
     "cypress-axe": "0.13.0",
+    "cypress-circleci-reporter": "0.2.0",
     "cypress-failed-log": "2.5.1",
     "cypress-image-snapshot": "^4.0.0",
     "depcheck": "0.6.9",
