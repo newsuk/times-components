@@ -169,7 +169,7 @@ jobs:
       - run:
           name: Run Cypress Tests
           command: |
-            circleci tests run --split-by=timings --command="yarn test"
+            circleci tests run --split-by=timings --command="yarn test:e2e"
           working_directory: ~/project/
       - store_artifacts:
           path: packages/ssr/__tests__/screenshots
