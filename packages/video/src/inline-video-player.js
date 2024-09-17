@@ -138,9 +138,10 @@ class InlineVideoPlayer extends Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if(prevProps.videoId !== this.props.videoId)
-    this.loadBrightcoveSDKIfRequired();
+ 
+  componentDidUpdate(prevProps) { // eslint-disable-line react/destructuring-assignment
+    if(prevProps.videoId !== this.props.videoId) // eslint-disable-line react/destructuring-assignment
+    this.loadBrightcoveSDKIfRequired(); // eslint-disable-line react/destructuring-assignment
   }
 
   componentWillUnmount() {
