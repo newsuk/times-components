@@ -177,14 +177,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       isApp &&
       `
       @media (prefers-color-scheme: dark) {
-        background-color: black !important;
-        border: 1px solid white !important;
+        background-color: #1D1D1B !important;
+        border: 1px solid #AAA !important;
 
         &:hover {
-          background-color: #303030 !important;
+          border: 1px solid #333 !important;
         }
         &:active {
-          background-color: #4f4f4f !important;
+          border: 1px solid #696969 !important;
         }
         &::after {
           background-position-y: -57px !important;
