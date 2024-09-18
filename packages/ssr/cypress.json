@@ -6,6 +6,5 @@
   "screenshotsFolder": "__tests__/screenshots",
   "supportFile": "__tests__/cypress/support",
   "video": false,
-  "blockHosts": ["*spot.im"],
   "reporter": "cypress-circleci-reporter"
 }

@@ -42,12 +42,6 @@ commands:
           name: "Install Lerna"
           command: yarn global add lerna@7.4.2
           working_directory: ~/project/
-  install-junit:
-    steps:
-      - run:
-          name: "Install JUnit coverage reporter"
-          command: yarn global add jest-junit
-          working_directory: ~/project/
 
 jobs:
   setup:
@@ -58,7 +52,6 @@ jobs:
       - install-dependencies
       - save-yarn
       - install-lerna
-      - install-junit
       - persist_to_workspace:
           root: ./
           paths:
@@ -103,39 +96,31 @@ jobs:
           command: |
             lerna run test --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
+          
   run_web_tests:
     executor: node
-    resource_class: large
-    parallelism: 5
     steps:
       - checkout
       - install-lerna
-      - install-junit
       - attach_workspace:
           at: ./
       - run:
           name: Run Web Tests
           command: |
-            node test-rerun.js 
+            lerna run test:web --stream --since -- -- --ci --bail --coverage 
           working_directory: ~/project/
-      - store_test_results:
-          path: ./test-results/web
-      - store_artifacts:
-          path: ./test-results/web
 
   run_unit_tests:
     executor: node
     steps:
       - checkout
       - install-lerna
-      - install-junit
       - attach_workspace:
           at: ./
       - run:
           name: Run Unit Tests
           command: |
-            chmod +x ./lib/test-unitRerun.sh 
-            ./lib/test-unitRerun.sh
+            lerna run test:unit --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
       - store_test_results:
           path: ./test_results/unit

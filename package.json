@@ -63,11 +63,6 @@
     "transformIgnorePatterns": [
       "node_modules/?!@times-components",
       "packages/?!author-profile"
-    ],
-    "reporters": [
-      "default",
-      ["jest-junit", {
-      }]
     ]
   },
   "config": {
@@ -166,9 +161,6 @@
     "pm2": "5.3.0",
     "verdaccio": "5.26.2",
     "winston": "3.10.0"
-  },
-  "module.exports" : {
-    "maxWorkers": "50%"
   }
 }
 
