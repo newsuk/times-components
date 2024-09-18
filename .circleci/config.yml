@@ -96,7 +96,7 @@ jobs:
           command: |
             lerna run test --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
-          
+
   run_web_tests:
     executor: node
     steps:
@@ -122,10 +122,6 @@ jobs:
           command: |
             lerna run test:unit --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
-      - store_test_results:
-          path: ./test_results/unit
-      - store_artifacts:
-          path: ./test_results/unit
 
   sonarcloud_scan:
     executor: node_sonar

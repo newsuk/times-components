@@ -127,7 +127,6 @@
     "fs-extra": "7.0.0",
     "global": "4.3.2",
     "handlebars": "4.7.7",
-    "jest-junit": "16.0.0",
     "jest": "24.8.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
