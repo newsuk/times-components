@@ -118,6 +118,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
+    "cypress-circleci-reporter": "0.2.0",
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "es6-promise-pool": "^2.5.0",

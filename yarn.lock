@@ -10830,7 +10830,7 @@ cypress-axe@0.13.0:
   resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-0.13.0.tgz#3234e1a79a27701f2451fcf2f333eb74204c7966"
   integrity sha512-fCIy7RiDCm7t30U3C99gGwQrUO307EYE1QqXNaf9ToK4DVqW8y5on+0a/kUHMrHdlls2rENF6TN9ZPpPpwLrnw==
 
-cypress-circleci-reporter@0.2.0, cypress-circleci-reporter@^0.2.0:
+cypress-circleci-reporter@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/cypress-circleci-reporter/-/cypress-circleci-reporter-0.2.0.tgz#a3e1571694f4e21649a6af4d508e68948d23622d"
   integrity sha512-uhqcJwvtKJ7Bw3RHVBTqUH9GP2L6jq+qLp/+/Jh3/OSe5Af6H7RxIARhvawsvbPrg9lMWdW/jCezjeUcXrl9uA==
