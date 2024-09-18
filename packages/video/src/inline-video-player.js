@@ -142,6 +142,7 @@ class InlineVideoPlayer extends Component {
     const { videoId } = this.props;
     if (prevProps.videoId !== videoId) {
       this.loadBrightcoveSDKIfRequired();
+      this.initBrightcove();
     }
   }
 
