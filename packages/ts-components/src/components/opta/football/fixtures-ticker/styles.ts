@@ -43,6 +43,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   isApp?: boolean;
   showButtons?: boolean;
 }>`
+  height: 80px !important;
+
   .Opta {
     font-family: Roboto !important;
   }
@@ -220,17 +222,29 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       color: #696969 !important;
       border-start-start-radius: 4px;
       border-start-end-radius: 4px;
+
+      @media (prefers-color-scheme: dark) {
+        color: #E4E4E4 !important;
+      }
     }
 
     .Opta-timings .Opta-Time * {
       font-weight: 700;
       color: #01000d !important;
+
+      @media (prefers-color-scheme: dark) {
+        color: #FFF !important;
+      }
     }
 
     .Opta-TeamName,
     .Opta-Team-Score {
       color: #01000d !important;
       font-family: 'Roboto-Medium' !important;
+
+      @media (prefers-color-scheme: dark) {
+        color: #FFF !important;
+      }
     }
 
     .Opta-Away {
@@ -242,6 +256,10 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     &.Opta-prematch {
       > div {
         background-color: #f5f5f5 !important;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: #333 !important;
+        }
       }
       .Opta-Team-Score::after {
         content: '-';
@@ -254,6 +272,11 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
     &.Opta-result > div {
       border: 1px solid #ccc !important;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #1D1D1B !important;
+        border: 1px solid #333 !important;
+      }
 
       &.Opta-timings {
         border-bottom: none !important;
@@ -268,6 +291,11 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     }
     &.Opta-live > div {
       border: 1px solid #01000d !important;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #121212 !important;
+        border: 1px solid #E4E4E4 !important;
+      }
 
       &.Opta-timings {
         border-bottom: none !important;
