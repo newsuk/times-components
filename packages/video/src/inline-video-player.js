@@ -138,15 +138,12 @@ class InlineVideoPlayer extends Component {
     }
   }
 
-
-  componentDidUpdate(prevProps) { 
+  componentDidUpdate(prevProps) {
     const { videoId } = this.props;
     if (prevProps.videoId !== videoId) {
-        this.loadBrightcoveSDKIfRequired();
+      this.loadBrightcoveSDKIfRequired();
     }
   }
- 
-
 
   componentWillUnmount() {
     InlineVideoPlayer.activePlayers.splice(
