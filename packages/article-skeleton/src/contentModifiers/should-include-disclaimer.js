@@ -1,5 +1,3 @@
-import setExternalLinkTargets from './setExternalLinkTargets';
-
 const newDisclaimerText = {
   name: 'paragraph',
   children: [
@@ -79,6 +77,7 @@ const shouldIncludeDisclaimer = (children) => {
           return false;
         }
         affiliateLinkExist = true;
+        console.log('linkovi boolean:', affiliateLinkExist);
       }
       // Check recursively for nested children.
       if (el.children !== undefined && el.children.length) {

@@ -48,6 +48,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 import shouldIncludeDisclaimer from "./contentModifiers/should-include-disclaimer";
+import setExternalLinkTargets from './contentModifiers/setExternalLinkTargets';
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -150,15 +151,15 @@ const ArticleSkeleton = ({
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
-    //tu
   const articleContentReducers = [
     shouldIncludeDisclaimer,
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd,
-    tagLastParagraph
+    tagLastParagraph,
+    setExternalLinkTargets
   ];
-  //salje u article body
+
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);

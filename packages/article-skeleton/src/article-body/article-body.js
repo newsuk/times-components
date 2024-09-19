@@ -485,6 +485,8 @@ const renderers = ({
   link(key, attributes, children) {
     const { href, target, dropCap } = attributes;
 
+    console.log('target', target);
+
     return (
       <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
         {children}

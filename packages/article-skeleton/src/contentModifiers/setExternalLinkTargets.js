@@ -9,6 +9,13 @@ const contentChildren = [
         },
         children: [],
       },
+       {
+        name: 'link',
+        attributes: {
+          href: 'https://www.thetimes.com',
+        },
+        children: [],
+      },
     ],
   },
 ];
@@ -46,6 +53,6 @@ export const setExternalLinkTargets = (children) => {
 };
 
 const updatedChildren = setExternalLinkTargets(contentChildren);
-console.log(updatedChildren);
+console.log('logiram updatedChildren,', updatedChildren);
 
 export default setExternalLinkTargets;
