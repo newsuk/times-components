@@ -905,6 +905,13 @@ exports[`full article with style 1`] = `
             >
               Some content
             </p>
+            <p
+              className="c21"
+            >
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
+            </p>
             <div
               className="c22"
             >
@@ -1907,6 +1914,13 @@ exports[`full article with style in the culture magazine 1`] = `
               className="c21"
             >
               Some content
+            </p>
+            <p
+              className="c21"
+            >
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
             </p>
             <div
               className="c22"
@@ -2912,6 +2926,13 @@ exports[`full article with style in the style magazine 1`] = `
             >
               Some content
             </p>
+            <p
+              className="c21"
+            >
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
+            </p>
             <div
               className="c22"
             >
@@ -3914,6 +3935,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
               className="c21"
             >
               Some content
+            </p>
+            <p
+              className="c21"
+            >
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
             </p>
             <div
               className="c22"
