@@ -1,11 +1,11 @@
 import {
+  breakpoints,
   colours,
   fontFactory,
-  spacing,
-  tabletWidth,
-  breakpoints,
   fontSizes,
-  fontsWithFallback
+  fontsWithFallback,
+  spacing,
+  tabletWidth
 } from "@times-components/ts-styleguide";
 import styled from "styled-components";
 
@@ -39,6 +39,7 @@ export const NativeAdTitle = styled.h2`
 
 export const Ad = styled.div`
   flex: 1 1 50%;
+
   @media (max-width: 767px) {
     flex: 1 1 46%;
     &:first-of-type {
@@ -94,18 +95,15 @@ const styles = {
 export const PromotedContentContainer = styled.div`
   border-top: 2px solid #1d1d1b;
   background-color: #f5f5f5;
-  padding: 16px 10px 24px;
+  padding: 20px 20px 24px 20px;
   margin-block-start: 20px;
 
   &:not(:last-child) {
     margin-block-end: 32px;
   }
 
-  @media (min-width: ${breakpoints.medium}px) {
-    padding: 16px 20px 24px;
-  }
-
   @media (min-width: ${breakpoints.wide}px) {
+    padding: 16px;
     margin-block-start: 28px;
     margin-block-end: 32px;
     margin-inline: 20px;
@@ -118,14 +116,14 @@ export const PromotedContentTitle = styled.span`
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #333333;
+  color: #3b3b3b;
+  margin-block: 16px;
 `;
 
 export const PromotedContentGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 32px;
-  margin-block-start: 16px;
 
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, 1fr);
@@ -135,6 +133,7 @@ export const PromotedContentGrid = styled.div`
 export const PromotedContentAd = styled.div`
   position: relative;
   min-height: 150px;
+
   &:nth-child(1)::after,
   &:nth-child(4)::after {
     position: absolute;
@@ -143,8 +142,9 @@ export const PromotedContentAd = styled.div`
     right: -16px;
     width: 1px;
     height: 100%;
-    background-color: #e4e4e4;
+    background-color: #c2c2c2;
   }
+
   @media (min-width: ${breakpoints.wide}px) {
     &:not(:last-child)::after {
       position: absolute;
@@ -153,7 +153,7 @@ export const PromotedContentAd = styled.div`
       right: -16px;
       width: 1px;
       height: 100%;
-      background-color: #e4e4e4;
+      background-color: #c2c2c2;
     }
   }
 `;
@@ -161,6 +161,7 @@ export const PromotedContentAd = styled.div`
 export const PromotedContentSectionDivider = styled.div`
   border-top: 1px solid #e4e4e4;
   grid-column: 1 / 3;
+
   @media (min-width: ${breakpoints.wide}px) {
     display: none;
   }
