@@ -48,7 +48,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 import shouldIncludeDisclaimer from "./contentModifiers/should-include-disclaimer";
-import setExternalLinkTargets from './contentModifiers/setExternalLinkTargets';
+import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
