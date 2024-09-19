@@ -138,22 +138,25 @@ class InlineVideoPlayer extends Component {
     }
   }
 
-  componentDidUpdate() {
-    this.observer = this.createIntersectionObserver();
-    if (this.observer && this.videoContainerRef) {
-      this.observer.observe(this.videoContainerRef.current);
-    } else {
-      this.loadBrightcoveSDKIfRequired();
-    }
+  componentDidUpdate(prevProps) {
+    const { videoId } = this.props;
+    if (prevProps.videoId !== videoId) {
+      this.observer = this.createIntersectionObserver();
+      if (this.observer && this.videoContainerRef) {
+        this.observer.observe(this.videoContainerRef.current);
+      } else {
+        this.loadBrightcoveSDKIfRequired();
+      }
 
-    if (InlineVideoPlayer.scriptLoadError) {
-      this.handleError(InlineVideoPlayer.scriptLoadError);
-    }
+      if (InlineVideoPlayer.scriptLoadError) {
+        this.handleError(InlineVideoPlayer.scriptLoadError);
+      }
 
-    InlineVideoPlayer.activePlayers.push(this);
+      InlineVideoPlayer.activePlayers.push(this);
 
-    if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
-      this.initBrightcove();
+      if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
+        this.initBrightcove();
+      }
     }
   }
 
