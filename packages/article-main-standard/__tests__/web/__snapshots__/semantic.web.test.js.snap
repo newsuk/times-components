@@ -130,6 +130,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <p>
         Some content
       </p>
+      <p>
+        <i>
+          All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+        </i>
+      </p>
       <blockquote
         url="https://twitter.com/@AName"
       >
