@@ -27,16 +27,21 @@ const setExternalLinkTargets = children => {
     elements.map(el => {
       let newElement = { ...el };
 
+      // Check if element is a link or an interactive element with a URL
       if (
         newElement.name === "link" ||
         (newElement.name === "interactive" &&
           newElement.attributes &&
-          newElement.attributes.element?.value === "times-travel-cta")
+          newElement.attributes.element &&
+          newElement.attributes.element.value === "times-travel-cta")
       ) {
+        const { attributes } = newElement;
+        const { element } = attributes || {};
+        const { attributes: elementAttributes } = element || {};
         const href =
-          newElement.attributes && newElement.name === "interactive"
-            ? newElement.attributes.element?.attributes?.url ?? ""
-            : newElement.attributes.href ?? "";
+          newElement.name === "interactive"
+            ? elementAttributes?.url ?? ""
+            : attributes?.href ?? "";
 
         // If the link is external, set target to _blank
         if (
@@ -47,7 +52,7 @@ const setExternalLinkTargets = children => {
           newElement = {
             ...newElement,
             attributes: {
-              ...newElement.attributes,
+              ...attributes,
               target: "_blank"
             }
           };
