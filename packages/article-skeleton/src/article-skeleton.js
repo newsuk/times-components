@@ -47,7 +47,6 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
-import shouldIncludeDisclaimer from "./contentModifiers/should-include-disclaimer";
 import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
 
 export const reduceArticleContent = (content, reducers) =>
@@ -152,7 +151,6 @@ const ArticleSkeleton = ({
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const articleContentReducers = [
-    shouldIncludeDisclaimer,
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd,
