@@ -30,7 +30,8 @@ const setExternalLinkTargets = children => {
       if (
         newElement.name === "link" ||
         (newElement.name === "interactive" &&
-          newElement.attributes?.element?.value === "times-travel-cta")
+          newElement.attributes &&
+          newElement.attributes.element?.value === "times-travel-cta")
       ) {
         const href =
           newElement.attributes && newElement.name === "interactive"
