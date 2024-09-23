@@ -64,6 +64,5 @@ const setExternalLinkTargets = children => {
 };
 
 const updatedChildren = setExternalLinkTargets(contentChildren);
-console.log("logiram updatedChildren,", updatedChildren);
 
 export default setExternalLinkTargets;
