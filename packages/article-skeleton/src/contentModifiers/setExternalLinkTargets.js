@@ -63,6 +63,4 @@ const setExternalLinkTargets = children => {
   return checkAndSetLinkTarget(clonedChildren);
 };
 
-const updatedChildren = setExternalLinkTargets(contentChildren);
-
 export default setExternalLinkTargets;
