@@ -40,8 +40,8 @@ const setExternalLinkTargets = children => {
         const { attributes: elementAttributes } = element || {};
         const href =
           newElement.name === "interactive"
-            ? elementAttributes?.url ?? ""
-            : attributes?.href ?? "";
+            ? elementAttributes.url || ""
+            : attributes.href || "";
 
         // If the link is external, set target to _blank
         if (
