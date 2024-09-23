@@ -5,6 +5,7 @@ import ArticleMainComment from "@times-components/article-main-comment";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import Article from "../../src/article";
+import { testFixture } from "../../fixtures/full-article";
 
 jest.mock("@times-components/image", () => "TimesImage");
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
@@ -27,6 +28,12 @@ const requiredProps = {
   refetch: () => {}
 };
 
+const articleContentData = {
+  content: testFixture.content,
+  section: testFixture.section,
+  tiles: []
+};
+
 describe("Article", () => {
   it("renders with ArticleMainStandard as the default template if article is null", () => {
     const testRenderer = TestRenderer.create(
@@ -37,9 +44,25 @@ describe("Article", () => {
     expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
   });
 
+  it("throws `ENOCONTENT` error if article content is null", () => {
+    const emptyArticleContentData = {
+      content: [],
+      tiles: []
+    };
+
+    const testRenderer = () =>
+      TestRenderer.create(
+        <Article {...requiredProps} article={emptyArticleContentData} />
+      )
+        .then(res => res.root)
+        .catch(() => {});
+
+    expect(() => testRenderer()).toThrow("ENOCONTENT");
+  });
+
   it("renders with ArticleMainStandard as the default template if no template is provided", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{}} {...requiredProps} />
+      <Article article={{ ...articleContentData }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -51,7 +74,8 @@ describe("Article", () => {
       <Article
         article={{
           publishedTime: "2015-03-23T19:39:39.000Z",
-          template: "undefined"
+          template: "undefined",
+          ...articleContentData
         }}
         {...requiredProps}
       />
@@ -63,7 +87,10 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard as the default template if null is set for template", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: null }} {...requiredProps} />
+      <Article
+        article={{ template: null, ...articleContentData }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 
@@ -72,7 +99,10 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: "mainstandard" }} {...requiredProps} />
+      <Article
+        article={{ template: "mainstandard", ...articleContentData }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 
@@ -81,7 +111,10 @@ describe("Article", () => {
 
   it("renders with ArticleMainComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: "maincomment" }} {...requiredProps} />
+      <Article
+        article={{ template: "maincomment", ...articleContentData }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 
@@ -90,7 +123,10 @@ describe("Article", () => {
 
   it("renders with ArticleMagazineStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: "magazinestandard" }} {...requiredProps} />
+      <Article
+        article={{ template: "magazinestandard", ...articleContentData }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 
@@ -99,7 +135,10 @@ describe("Article", () => {
 
   it("renders with ArticleMagazineComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: "magazinecomment" }} {...requiredProps} />
+      <Article
+        article={{ template: "magazinecomment", ...articleContentData }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 

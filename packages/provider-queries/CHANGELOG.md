@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.2...@times-components/provider-queries@2.23.3) (2024-09-16)
+
+
+### Bug Fixes
+
+* **TMRS-427:** refactor 410 error logic tc ([#3934](https://github.com/newsuk/times-components/issues/3934)) ([d715f97](https://github.com/newsuk/times-components/commit/d715f9716462d76bf92f0c2258c23714d5919196))
+
+
+
+
+
 ## [2.23.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.1...@times-components/provider-queries@2.23.2) (2024-09-06)
 
 **Note:** Version bump only for package @times-components/provider-queries
