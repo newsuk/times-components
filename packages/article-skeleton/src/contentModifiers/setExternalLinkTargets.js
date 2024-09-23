@@ -1,24 +1,24 @@
-const contentChildren = [
-  {
-    name: "paragraph",
-    children: [
-      {
-        name: "link",
-        attributes: {
-          href: "https://www.example.com"
-        },
-        children: []
-      },
-      {
-        name: "link",
-        attributes: {
-          href: "https://www.thetimes.com"
-        },
-        children: []
-      }
-    ]
-  }
-];
+// const contentChildren = [
+//   {
+//     name: "paragraph",
+//     children: [
+//       {
+//         name: "link",
+//         attributes: {
+//           href: "https://www.example.com"
+//         },
+//         children: []
+//       },
+//       {
+//         name: "link",
+//         attributes: {
+//           href: "https://www.thetimes.com"
+//         },
+//         children: []
+//       }
+//     ]
+//   }
+// ];
 
 const setExternalLinkTargets = children => {
   const clonedChildren = [...children];
@@ -33,9 +33,9 @@ const setExternalLinkTargets = children => {
           newElement.attributes?.element?.value === "times-travel-cta")
       ) {
         const href =
-          newElement.name === "interactive"
-            ? newElement.attributes?.element?.attributes?.url ?? ""
-            : newElement.attributes?.href ?? "";
+          newElement.attributes && newElement.name === "interactive"
+            ? newElement.attributes.element?.attributes?.url ?? ""
+            : newElement.attributes.href ?? "";
 
         // If the link is external, set target to _blank
         if (
