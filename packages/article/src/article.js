@@ -24,7 +24,7 @@ export class TakeoverBailout extends Error {
   }
 }
 
-const Article = props => {
+const Article = (props) => {
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
   let { content } = article || {};
@@ -32,7 +32,12 @@ const Article = props => {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
-  if (article && !article.tiles.length && !content.length) {
+  if (
+    article &&
+    !article.isPreview &&
+    !article.tiles.length &&
+    !content.length
+  ) {
     throw new Error("ENOCONTENT");
   }
 
@@ -40,7 +45,7 @@ const Article = props => {
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
-    onImagePressArticle = index => onImagePress(index, mediaList);
+    onImagePressArticle = (index) => onImagePress(index, mediaList);
   }
   const Component = templates[template] || ArticleMainStandard;
   const newProps = {
