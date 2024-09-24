@@ -14,7 +14,7 @@ export const templates = {
   magazinecomment: ArticleMagazineComment,
   magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard
+  mainstandard: ArticleMainStandard,
 };
 
 export class TakeoverBailout extends Error {
@@ -52,8 +52,8 @@ const Article = (props) => {
     ...props,
     article: {
       ...article,
-      template: article && article.template ? article.template : "mainstandard"
-    }
+      template: article && article.template ? article.template : "mainstandard",
+    },
   };
 
   return (
