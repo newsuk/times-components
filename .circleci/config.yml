@@ -154,7 +154,7 @@ jobs:
             ./lib/cypress-rerun.sh
           working_directory: ~/project/
       - store_test_results:
-          path: packages/ssr/__tests__/test-results
+          path: packages/ssr/test_results/cypress
       - store_artifacts:
           path: packages/ssr/__tests__/screenshots
       - store_artifacts:
