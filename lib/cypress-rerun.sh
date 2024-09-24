@@ -15,3 +15,4 @@ mkdir -p "./packages/ssr/test-results"
 ln -s /home/circleci/project/node_modules/cypress-circleci-reporter "/home/circleci/project/packages/ssr/node_modules/cypress-circleci-reporter"
 echo "Running yarn command: 'yarn test:e2e'..."
 yarn test:e2e:ci && echo "Script executed successfully."
+echo Cypress exit code: $exitCode;
