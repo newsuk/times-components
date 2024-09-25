@@ -49,7 +49,6 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
-import t from "@times-components/image/dist/logo/t";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
