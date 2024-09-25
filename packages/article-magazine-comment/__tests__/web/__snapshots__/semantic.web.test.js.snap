@@ -577,7 +577,8 @@ exports[`1. a full article 1`] = `
   <a
     href="/uk/politics/article/labour-party-conference-keir-starmer-speech-latest-news-0nnkxjcqq"
   >
-    'Change has begun': Starmer gives first conference speech
+    'Change has begun': Starmer gives first conference speech'
   </a>
+  <hr />
 </article>
 `;

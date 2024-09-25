@@ -1340,11 +1340,14 @@ exports[`full article with style 1`] = `
               <a
                 className="c38"
               >
-                'Change has begun': Starmer gives first conference speech
+                'Change has begun': Starmer gives first conference speech'
               </a>
             </div>
           </div>
         </div>
+        <hr
+          className="c39"
+        />
       </div>
     </article>
   </div>

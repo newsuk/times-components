@@ -1406,11 +1406,14 @@ exports[`full article with style 1`] = `
             <a
               className="c40"
             >
-              'Change has begun': Starmer gives first conference speech
+              'Change has begun': Starmer gives first conference speech'
             </a>
           </div>
         </div>
       </div>
+      <hr
+        className="c41"
+      />
     </div>
   </article>
 </div>
@@ -1689,7 +1692,7 @@ exports[`full article with style in the culture magazine 1`] = `
   align-items: center;
 }
 
-.c35 {
+.c44 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1713,7 +1716,7 @@ exports[`full article with style in the culture magazine 1`] = `
   line-height: 21px;
 }
 
-.c44 {
+.c42 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1721,7 +1724,7 @@ exports[`full article with style in the culture magazine 1`] = `
   line-height: 21px;
 }
 
-.c45 {
+.c35 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1729,13 +1732,13 @@ exports[`full article with style in the culture magazine 1`] = `
   line-height: 21px;
 }
 
-.c39 {
+.c45 {
   width: 40px;
   height: 40px;
   border-radius: 0;
 }
 
-.c42 {
+.c39 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -2643,7 +2646,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c35"
             >
-              PLAY
+              HAVE YOUR SAY
             </span>
             <hr
               className="c36"
@@ -2651,7 +2654,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c37"
             >
-              PUZZLES
+              89 RECENTLY COMMENTED
             </span>
           </div>
           <div
@@ -2663,7 +2666,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <a
               className="c40"
             >
-              Times General Knowledge No 12345
+              'Change has begun': Starmer gives first conference speech'
             </a>
           </div>
         </div>
@@ -2681,9 +2684,9 @@ exports[`full article with style in the culture magazine 1`] = `
             className="c34"
           >
             <span
-              className="c35"
+              className="c42"
             >
-              VIDEO
+              READ MORE
             </span>
             <hr
               className="c36"
@@ -2691,19 +2694,19 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c37"
             >
-              US
+              SPORT
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
             >
-              Trump used assassination attempt to his advantage
+              Rodri could miss rest of season with knee injury
             </a>
           </div>
         </div>
@@ -2738,7 +2741,7 @@ exports[`full article with style in the culture magazine 1`] = `
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
@@ -2763,7 +2766,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c44"
             >
-              READ MORE
+              VIDEO
             </span>
             <hr
               className="c36"
@@ -2771,19 +2774,19 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c37"
             >
-              SPORT
+              US
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
             >
-              Rodri could miss rest of season with knee injury
+              Trump used assassination attempt to his advantage
             </a>
           </div>
         </div>
@@ -2801,9 +2804,9 @@ exports[`full article with style in the culture magazine 1`] = `
             className="c34"
           >
             <span
-              className="c45"
+              className="c44"
             >
-              HAVE YOUR SAY
+              PLAY
             </span>
             <hr
               className="c36"
@@ -2811,23 +2814,26 @@ exports[`full article with style in the culture magazine 1`] = `
             <span
               className="c37"
             >
-              89 RECENTLY COMMENTED
+              PUZZLES
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c45"
             />
             <a
               className="c40"
             >
-              'Change has begun': Starmer gives first conference speech
+              Times General Knowledge No 12345
             </a>
           </div>
         </div>
       </div>
+      <hr
+        className="c41"
+      />
     </div>
   </article>
 </div>
@@ -4241,11 +4247,14 @@ exports[`full article with style in the style magazine 1`] = `
             <a
               className="c40"
             >
-              'Change has begun': Starmer gives first conference speech
+              'Change has begun': Starmer gives first conference speech'
             </a>
           </div>
         </div>
       </div>
+      <hr
+        className="c41"
+      />
     </div>
   </article>
 </div>
@@ -4524,7 +4533,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   align-items: center;
 }
 
-.c35 {
+.c44 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -4548,7 +4557,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   line-height: 21px;
 }
 
-.c44 {
+.c42 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -4556,7 +4565,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   line-height: 21px;
 }
 
-.c45 {
+.c35 {
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -4564,13 +4573,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   line-height: 21px;
 }
 
-.c39 {
+.c45 {
   width: 40px;
   height: 40px;
   border-radius: 0;
 }
 
-.c42 {
+.c39 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -5478,7 +5487,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c35"
             >
-              PLAY
+              HAVE YOUR SAY
             </span>
             <hr
               className="c36"
@@ -5486,7 +5495,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c37"
             >
-              PUZZLES
+              89 RECENTLY COMMENTED
             </span>
           </div>
           <div
@@ -5498,7 +5507,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <a
               className="c40"
             >
-              Times General Knowledge No 12345
+              'Change has begun': Starmer gives first conference speech'
             </a>
           </div>
         </div>
@@ -5516,9 +5525,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
             className="c34"
           >
             <span
-              className="c35"
+              className="c42"
             >
-              VIDEO
+              READ MORE
             </span>
             <hr
               className="c36"
@@ -5526,19 +5535,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c37"
             >
-              US
+              SPORT
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
             >
-              Trump used assassination attempt to his advantage
+              Rodri could miss rest of season with knee injury
             </a>
           </div>
         </div>
@@ -5573,7 +5582,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
@@ -5598,7 +5607,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c44"
             >
-              READ MORE
+              VIDEO
             </span>
             <hr
               className="c36"
@@ -5606,19 +5615,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c37"
             >
-              SPORT
+              US
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c39"
             />
             <a
               className="c40"
             >
-              Rodri could miss rest of season with knee injury
+              Trump used assassination attempt to his advantage
             </a>
           </div>
         </div>
@@ -5636,9 +5645,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
             className="c34"
           >
             <span
-              className="c45"
+              className="c44"
             >
-              HAVE YOUR SAY
+              PLAY
             </span>
             <hr
               className="c36"
@@ -5646,23 +5655,26 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <span
               className="c37"
             >
-              89 RECENTLY COMMENTED
+              PUZZLES
             </span>
           </div>
           <div
             className="c38"
           >
             <img
-              className="c42"
+              className="c45"
             />
             <a
               className="c40"
             >
-              'Change has begun': Starmer gives first conference speech
+              Times General Knowledge No 12345
             </a>
           </div>
         </div>
       </div>
+      <hr
+        className="c41"
+      />
     </div>
   </article>
 </div>
