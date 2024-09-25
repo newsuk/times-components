@@ -2,8 +2,8 @@
 
 import React from "react";
 import styled from "styled-components";
-import PuzzleIcon from './puzzle-icon'
-import VideoIcon from './video-icon';
+import PuzzleIcon from "./puzzle-icon";
+import VideoIcon from "./video-icon";
 
 const SlideUpWrapper = styled.div`
   overflow: auto;
@@ -192,26 +192,25 @@ const notLightPackContent = [
 
 const getIcon = (label, color) => {
   if (label === "VIDEO") {
-    return <VideoIcon style={{ marginRight: '4px'}} color={color} />;
+    return <VideoIcon style={{ marginRight: "4px" }} color={color} />;
   } else if (label === "PODCAST") {
-    return <VideoIcon style={{ marginRight: '4px'}} color={color}/>;
+    return <VideoIcon style={{ marginRight: "4px" }} color={color} />;
   } else {
-    return <PuzzleIcon style={{ marginRight: '4px'}} color={color}/>;
+    return <PuzzleIcon style={{ marginRight: "4px" }} color={color} />;
   }
-}
+};
 
 export const MagicCarpet = ({ showComponent }) => {
   const getContent = () => {
-    let content = notLightPackContent
+    let content = notLightPackContent;
     if (typeof window !== "undefined") {
-      console.log(window, 'NUK')
-      const isLightPackUser = window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
-      console.log(isLightPackUser, 'IS LIGHT PACK USER')
+      const isLightPackUser =
+        window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
       content = isLightPackUser ? lightPackContent : notLightPackContent;
     }
     return content;
-  }
-  
+  };
+
   const content = getContent();
   return (
     <SlideUpWrapper showComponent={showComponent}>
@@ -237,5 +236,6 @@ export const MagicCarpet = ({ showComponent }) => {
           <CardDivider />
         </>
       ))}
-    </SlideUpWrapper>)
+    </SlideUpWrapper>
+  );
 };
