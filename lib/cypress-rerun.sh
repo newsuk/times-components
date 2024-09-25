@@ -13,23 +13,38 @@
 echo "Creating directory structure at './packages/ssr/test-results'..."
 mkdir -p "./packages/ssr/test-results"
 ln -s /home/circleci/project/node_modules/cypress-circleci-reporter "/home/circleci/project/packages/ssr/node_modules/cypress-circleci-reporter"
-echo "Running yarn command: 'yarn test:e2e'..."
-yarn test:e2e:ci
+echo "Executing e2e tests..."
 
 
-# Capture the exit code of the Cypress tests (from yarn test:ci)
+# Run Cypress tests and capture the exit code
+npx cypress run --reporter cypress-circleci-reporter --spec "$1"
 cypressExitCode=$?
 
-# Stop the test server (ignore any exit code from this command)
-echo "Stopping the test server..."
-yarn stop:testserver || true
+# Stop the test server
+yarn stop:testserver
 
-# Check if Cypress tests failed
-if [ $cypressExitCode -ne 0 ]; then
-  echo "Tests failed with exit code $cypressExitCode."
-else
-  echo "Tests passed."
-fi
-
-# Exit with the Cypress exit code, not the server stop exit code
+# Exit with Cypress's exit code
 exit $cypressExitCode
+
+
+
+
+# yarn test:e2e:ci
+
+
+# # Capture the exit code of the Cypress tests (from yarn test:ci)
+# cypressExitCode=$?
+
+# # Stop the test server (ignore any exit code from this command)
+# echo "Stopping the test server..."
+# yarn stop:testserver || true
+
+# # Check if Cypress tests failed
+# if [ $cypressExitCode -ne 0 ]; then
+#   echo "Tests failed with exit code $cypressExitCode."
+# else
+#   echo "Tests passed."
+# fi
+
+# # Exit with the Cypress exit code, not the server stop exit code
+# exit $cypressExitCode
