@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { CanShowPuzzleSidebar } from "@times-components/utils";
@@ -47,6 +49,7 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
+import t from "@times-components/image/dist/logo/t";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -91,9 +94,10 @@ const ArticleSkeleton = ({
     isEntitlementFeatureEnabled
   } = article;
   const [lastScrollTop, setLastScrollTop] = useState(0);
-    const [lastTime, setLastTime] = useState(Date.now());
-    const [scrollSpeed, setScrollSpeed] = useState(0);
-    const [showComponent, setShowComponent] = useState(false); // Track if the component should be shown
+  const [lastTime, setLastTime] = useState(Date.now());
+
+  const [scrollSpeed, setScrollSpeed] = useState(0);
+  const [showComponent, setShowComponent] = useState(false); // Track if the component should be shown
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
@@ -130,42 +134,44 @@ const ArticleSkeleton = ({
   };
   const speedThreshold = 1000; // Pixels per second threshold for fast scrolling
 
-    const handleDownwardScroll = () => {
-        const currentScrollTop = window.scrollY;
-        const currentTime = Date.now();
+  const handleDownwardScroll = () => {
+    const currentScrollTop = window.scrollY;
+    const currentTime = Date.now();
 
-        // Calculate time difference in seconds
-        const timeDifference = (currentTime - lastTime) / 1000;
-        const scrollDifference = Math.abs(currentScrollTop - lastScrollTop);
+    // Calculate time difference in seconds
+    const timeDifference = (currentTime - lastTime) / 1000;
+    const scrollDifference = Math.abs(currentScrollTop - lastScrollTop);
 
-        if (currentScrollTop < lastScrollTop) {
-            return;
-        }
+    if (currentScrollTop < lastScrollTop) {
+      return;
+    }
 
-        const speed = scrollDifference / timeDifference;
+    const speed = scrollDifference / timeDifference;
 
-        setScrollSpeed(speed.toFixed(2));
+    setScrollSpeed(speed.toFixed(2));
 
-        // If scroll speed exceeds threshold, show the component
-        if (speed > speedThreshold) {
-            setShowComponent(true);
-        }
-        console.log(speed, 'SPEED')
+    // If scroll speed exceeds threshold, show the component
+    if (speed > speedThreshold) {
+      setShowComponent(true);
+    }
 
-        // Update lastScrollTop and lastTime
-        setLastScrollTop(currentScrollTop);
-        setLastTime(currentTime);
-    };
+    // Update lastScrollTop and lastTime
+    setLastScrollTop(currentScrollTop);
+    setLastTime(currentTime);
+  };
 
-    useEffect(() => {
-        // Add scroll event listener when component mounts
-        window.addEventListener('scroll', handleDownwardScroll);
+  useEffect(
+    () => {
+      // Add scroll event listener when component mounts
+      window.addEventListener("scroll", handleDownwardScroll);
 
-        // Clean up event listener when component unmounts
-        return () => {
-            window.removeEventListener('scroll', handleDownwardScroll);
-        };
-    }, [lastScrollTop, lastTime]);
+      // Clean up event listener when component unmounts
+      return () => {
+        window.removeEventListener("scroll", handleDownwardScroll);
+      };
+    },
+    [lastScrollTop, lastTime]
+  );
 
   useEffect(() => {
     const verifyEmailFlag = !!JSON.parse(
@@ -243,7 +249,6 @@ const ArticleSkeleton = ({
     [CanShowPuzzleSidebar, section]
   );
 
-  console.log(showComponent, 'SHOW COMPONENT')
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -498,8 +503,7 @@ const ArticleSkeleton = ({
           <AdContainer slotName="pixel" />
           <AdContainer slotName="pixelteads" />
           <AdContainer slotName="pixelskin" />
-          <MagicCarpet showComponent={showComponent}/>
-          
+          <MagicCarpet showComponent={showComponent} />
         </article>
       </TrackingContextProvider>
     </StickyProvider>
