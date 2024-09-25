@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.13](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.12...@times-components/article@7.17.13) (2024-09-24)
+
+
+### Bug Fixes
+
+* **TMRS-000:** extend logic to ignore preview articles ([#3941](https://github.com/newsuk/times-components/issues/3941)) ([1a89667](https://github.com/newsuk/times-components/commit/1a89667c575e0c80ef60901b7ccc30062a60ae22))
+
+
+
+
+
+## [7.17.12](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.11...@times-components/article@7.17.12) (2024-09-16)
+
+
+### Bug Fixes
+
+* **TMRS-427:** refactor 410 error logic tc ([#3934](https://github.com/newsuk/times-components/issues/3934)) ([d715f97](https://github.com/newsuk/times-components/commit/d715f9716462d76bf92f0c2258c23714d5919196))
+
+
+
+
+
 ## [7.17.11](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.10...@times-components/article@7.17.11) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/article

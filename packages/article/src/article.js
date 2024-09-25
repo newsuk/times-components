@@ -32,7 +32,12 @@ const Article = props => {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
-  if (article && !article.tiles.length && !content.length) {
+  if (
+    article &&
+    !article.isPreview &&
+    !article.tiles.length &&
+    !content.length
+  ) {
     throw new Error("ENOCONTENT");
   }
 
