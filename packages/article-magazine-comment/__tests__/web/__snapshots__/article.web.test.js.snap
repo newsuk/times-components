@@ -436,6 +436,11 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         </div>
       </div>
       <hr />
+      <a
+        href="/register"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -878,6 +883,11 @@ exports[`4. an article with ads with .co.uk 1`] = `
         </div>
       </div>
       <hr />
+      <a
+        href="/register"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -1320,6 +1330,11 @@ exports[`5. an article with ads with .com 1`] = `
         </div>
       </div>
       <hr />
+      <a
+        href="/register"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -1778,6 +1793,11 @@ exports[`8. an article with no author 1`] = `
         </div>
       </div>
       <hr />
+      <a
+        href="/register"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>

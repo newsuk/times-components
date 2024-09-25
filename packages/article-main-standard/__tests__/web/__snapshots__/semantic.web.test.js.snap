@@ -470,5 +470,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     Times General Knowledge No 12345
   </a>
   <hr />
+  <a
+    href="/register"
+  >
+    Customise
+  </a>
 </article>
 `;

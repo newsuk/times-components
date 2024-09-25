@@ -92,6 +92,22 @@ const CardDivider = styled.hr`
   color: #e4e4e4;
 `;
 
+const LinkButton = styled.a`
+  font-family: Roboto-Regular, Roboto-Regular-fallback, serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+`;
+
 const lightPackContent = [
   {
     title: "Amazon demands workers return to office 5 days a week",
@@ -236,6 +252,7 @@ export const MagicCarpet = ({ showComponent }) => {
           <CardDivider />
         </>
       ))}
+      <LinkButton href="/register">Customise</LinkButton>
     </SlideUpWrapper>
   );
 };

@@ -609,5 +609,10 @@ exports[`1. a full article 1`] = `
     Times General Knowledge No 12345
   </a>
   <hr />
+  <a
+    href="/register"
+  >
+    Customise
+  </a>
 </article>
 `;

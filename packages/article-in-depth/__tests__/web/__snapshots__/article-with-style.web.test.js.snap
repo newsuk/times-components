@@ -378,6 +378,23 @@ exports[`full article with style 1`] = `
   color: #e4e4e4;
 }
 
+.c47 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+}
+
 .c11 {
   border: solid #DBDBDB;
   border-width: 1px 0;
@@ -1431,6 +1448,11 @@ exports[`full article with style 1`] = `
       <hr
         className="c41"
       />
+      <a
+        className="c47"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -1812,6 +1834,23 @@ exports[`full article with style in the culture magazine 1`] = `
   width: 1px;
   height: 74px;
   color: #e4e4e4;
+}
+
+.c47 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
 }
 
 .c11 {
@@ -2868,6 +2907,11 @@ exports[`full article with style in the culture magazine 1`] = `
       <hr
         className="c41"
       />
+      <a
+        className="c47"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -3249,6 +3293,23 @@ exports[`full article with style in the style magazine 1`] = `
   width: 1px;
   height: 74px;
   color: #e4e4e4;
+}
+
+.c47 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
 }
 
 .c11 {
@@ -4306,6 +4367,11 @@ exports[`full article with style in the style magazine 1`] = `
       <hr
         className="c41"
       />
+      <a
+        className="c47"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -4687,6 +4753,23 @@ exports[`full article with style in the sunday times magazine 1`] = `
   width: 1px;
   height: 74px;
   color: #e4e4e4;
+}
+
+.c47 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
 }
 
 .c11 {
@@ -5743,6 +5826,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <hr
         className="c41"
       />
+      <a
+        className="c47"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>

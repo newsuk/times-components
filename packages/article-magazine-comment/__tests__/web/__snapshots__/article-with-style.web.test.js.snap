@@ -378,6 +378,23 @@ exports[`full article with style 1`] = `
   color: #e4e4e4;
 }
 
+.c46 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -401,7 +418,7 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c46 {
+.c2 > .c47 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -1452,6 +1469,11 @@ exports[`full article with style 1`] = `
       <hr
         className="c40"
       />
+      <a
+        className="c46"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -1835,6 +1857,23 @@ exports[`full article with style in the culture magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c46 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -1858,7 +1897,7 @@ exports[`full article with style in the culture magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c46 {
+.c2 > .c47 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -2910,6 +2949,11 @@ exports[`full article with style in the culture magazine 1`] = `
       <hr
         className="c40"
       />
+      <a
+        className="c46"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -3293,6 +3337,23 @@ exports[`full article with style in the style magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c46 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -3316,7 +3377,7 @@ exports[`full article with style in the style magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c46 {
+.c2 > .c47 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -4369,6 +4430,11 @@ exports[`full article with style in the style magazine 1`] = `
       <hr
         className="c40"
       />
+      <a
+        className="c46"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
@@ -4752,6 +4818,23 @@ exports[`full article with style in the sunday times magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c46 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 28px;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -4775,7 +4858,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c46 {
+.c2 > .c47 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -5827,6 +5910,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <hr
         className="c40"
       />
+      <a
+        className="c46"
+      >
+        Customise
+      </a>
     </div>
   </article>
 </div>
