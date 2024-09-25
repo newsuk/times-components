@@ -215,6 +215,17 @@ exports[`full article with style 1`] = `
 }
 
 .c29 {
+  overflow: auto;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -webkit-scroll-behavior: auto;
+  -moz-scroll-behavior: auto;
+  -ms-scroll-behavior: auto;
+  scroll-behavior: auto;
+  opacity: 1;
+  pointer-events: 'auto';
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -228,6 +239,13 @@ exports[`full article with style 1`] = `
   border-top: 1px solid #696969;
   -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c38 {
@@ -237,6 +255,8 @@ exports[`full article with style 1`] = `
   font-weight: 400;
   text-align: left;
   padding-left: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c32 {
@@ -257,7 +277,7 @@ exports[`full article with style 1`] = `
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #007A3F;
+  color: #FF5656;
   line-height: 21px;
 }
 
@@ -269,14 +289,44 @@ exports[`full article with style 1`] = `
   line-height: 21px;
 }
 
+.c40 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c41 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #54145D;
+  line-height: 21px;
+}
+
+.c42 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005C8A;
+  line-height: 21px;
+}
+
 .c37 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
+.c43 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
 .c30 {
-  width: 336px;
+  min-width: 336px;
   height: 74px;
 }
 
@@ -314,6 +364,12 @@ exports[`full article with style 1`] = `
   color: #e4e4e4;
 }
 
+.c39 {
+  width: 1px;
+  height: 74px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -337,7 +393,7 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c39 {
+.c2 > .c44 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -1130,11 +1186,171 @@ exports[`full article with style 1`] = `
             <img
               className="c37"
             />
-            <span
+            <a
               className="c38"
             >
               'Change has begun': Starmer gives first conference speech
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c40"
+            >
+              READ MORE
             </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              SPORT
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Rodri could miss rest of season with knee injury
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c41"
+            >
+              PODCAST
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              TIMES NEWS BRIEFING
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Evening Briefing Thursday 26th September
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              VIDEO
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              US
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Trump used assassination attempt to his advantage
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              PLAY
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              PUZZLES
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c43"
+            />
+            <a
+              className="c38"
+            >
+              Times General Knowledge No 12345
+            </a>
           </div>
         </div>
       </div>
@@ -1358,6 +1574,17 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c29 {
+  overflow: auto;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -webkit-scroll-behavior: auto;
+  -moz-scroll-behavior: auto;
+  -ms-scroll-behavior: auto;
+  scroll-behavior: auto;
+  opacity: 1;
+  pointer-events: 'auto';
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -1371,6 +1598,13 @@ exports[`full article with style in the culture magazine 1`] = `
   border-top: 1px solid #696969;
   -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c38 {
@@ -1380,6 +1614,8 @@ exports[`full article with style in the culture magazine 1`] = `
   font-weight: 400;
   text-align: left;
   padding-left: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c32 {
@@ -1400,7 +1636,7 @@ exports[`full article with style in the culture magazine 1`] = `
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #007A3F;
+  color: #FF5656;
   line-height: 21px;
 }
 
@@ -1412,14 +1648,44 @@ exports[`full article with style in the culture magazine 1`] = `
   line-height: 21px;
 }
 
+.c40 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c41 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #54145D;
+  line-height: 21px;
+}
+
+.c42 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005C8A;
+  line-height: 21px;
+}
+
 .c37 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
+.c43 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
 .c30 {
-  width: 336px;
+  min-width: 336px;
   height: 74px;
 }
 
@@ -1457,6 +1723,12 @@ exports[`full article with style in the culture magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c39 {
+  width: 1px;
+  height: 74px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -1480,7 +1752,7 @@ exports[`full article with style in the culture magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c39 {
+.c2 > .c44 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -2274,11 +2546,171 @@ exports[`full article with style in the culture magazine 1`] = `
             <img
               className="c37"
             />
-            <span
+            <a
               className="c38"
             >
               'Change has begun': Starmer gives first conference speech
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c40"
+            >
+              READ MORE
             </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              SPORT
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Rodri could miss rest of season with knee injury
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c41"
+            >
+              PODCAST
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              TIMES NEWS BRIEFING
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Evening Briefing Thursday 26th September
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              VIDEO
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              US
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Trump used assassination attempt to his advantage
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              PLAY
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              PUZZLES
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c43"
+            />
+            <a
+              className="c38"
+            >
+              Times General Knowledge No 12345
+            </a>
           </div>
         </div>
       </div>
@@ -2502,6 +2934,17 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c29 {
+  overflow: auto;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -webkit-scroll-behavior: auto;
+  -moz-scroll-behavior: auto;
+  -ms-scroll-behavior: auto;
+  scroll-behavior: auto;
+  opacity: 1;
+  pointer-events: 'auto';
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -2515,6 +2958,13 @@ exports[`full article with style in the style magazine 1`] = `
   border-top: 1px solid #696969;
   -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c38 {
@@ -2524,6 +2974,8 @@ exports[`full article with style in the style magazine 1`] = `
   font-weight: 400;
   text-align: left;
   padding-left: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c32 {
@@ -2544,7 +2996,7 @@ exports[`full article with style in the style magazine 1`] = `
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #007A3F;
+  color: #FF5656;
   line-height: 21px;
 }
 
@@ -2556,14 +3008,44 @@ exports[`full article with style in the style magazine 1`] = `
   line-height: 21px;
 }
 
+.c40 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c41 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #54145D;
+  line-height: 21px;
+}
+
+.c42 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005C8A;
+  line-height: 21px;
+}
+
 .c37 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
+.c43 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
 .c30 {
-  width: 336px;
+  min-width: 336px;
   height: 74px;
 }
 
@@ -2601,6 +3083,12 @@ exports[`full article with style in the style magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c39 {
+  width: 1px;
+  height: 74px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -2624,7 +3112,7 @@ exports[`full article with style in the style magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c39 {
+.c2 > .c44 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -3419,11 +3907,171 @@ exports[`full article with style in the style magazine 1`] = `
             <img
               className="c37"
             />
-            <span
+            <a
               className="c38"
             >
               'Change has begun': Starmer gives first conference speech
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c40"
+            >
+              READ MORE
             </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              SPORT
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Rodri could miss rest of season with knee injury
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c41"
+            >
+              PODCAST
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              TIMES NEWS BRIEFING
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Evening Briefing Thursday 26th September
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              VIDEO
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              US
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Trump used assassination attempt to his advantage
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              PLAY
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              PUZZLES
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c43"
+            />
+            <a
+              className="c38"
+            >
+              Times General Knowledge No 12345
+            </a>
           </div>
         </div>
       </div>
@@ -3647,6 +4295,17 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c29 {
+  overflow: auto;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+  -webkit-scroll-behavior: auto;
+  -moz-scroll-behavior: auto;
+  -ms-scroll-behavior: auto;
+  scroll-behavior: auto;
+  opacity: 1;
+  pointer-events: 'auto';
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -3660,6 +4319,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border-top: 1px solid #696969;
   -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c38 {
@@ -3669,6 +4335,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   font-weight: 400;
   text-align: left;
   padding-left: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c32 {
@@ -3689,7 +4357,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #007A3F;
+  color: #FF5656;
   line-height: 21px;
 }
 
@@ -3701,14 +4369,44 @@ exports[`full article with style in the sunday times magazine 1`] = `
   line-height: 21px;
 }
 
+.c40 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c41 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #54145D;
+  line-height: 21px;
+}
+
+.c42 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005C8A;
+  line-height: 21px;
+}
+
 .c37 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
+.c43 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
 .c30 {
-  width: 336px;
+  min-width: 336px;
   height: 74px;
 }
 
@@ -3746,6 +4444,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
   color: #e4e4e4;
 }
 
+.c39 {
+  width: 1px;
+  height: 74px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -3769,7 +4473,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c39 {
+.c2 > .c44 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -4563,11 +5267,171 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <img
               className="c37"
             />
-            <span
+            <a
               className="c38"
             >
               'Change has begun': Starmer gives first conference speech
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c40"
+            >
+              READ MORE
             </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              SPORT
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Rodri could miss rest of season with knee injury
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c41"
+            >
+              PODCAST
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              TIMES NEWS BRIEFING
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Evening Briefing Thursday 26th September
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              VIDEO
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              US
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c37"
+            />
+            <a
+              className="c38"
+            >
+              Trump used assassination attempt to his advantage
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="c39"
+      />
+      <div
+        className="c30"
+      >
+        <div
+          className="c31"
+        >
+          <div
+            className="c32"
+          >
+            <span
+              className="c42"
+            >
+              PLAY
+            </span>
+            <hr
+              className="c34"
+            />
+            <span
+              className="c35"
+            >
+              PUZZLES
+            </span>
+          </div>
+          <div
+            className="c36"
+          >
+            <img
+              className="c43"
+            />
+            <a
+              className="c38"
+            >
+              Times General Knowledge No 12345
+            </a>
           </div>
         </div>
       </div>
