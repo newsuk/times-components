@@ -252,7 +252,7 @@ export const MagicCarpet = ({ showComponent }) => {
           <CardDivider />
         </>
       ))}
-      <LinkButton href="/register">Customise</LinkButton>
+      <LinkButton href="/subscribe/digital/">Customise</LinkButton>
     </SlideUpWrapper>
   );
 };

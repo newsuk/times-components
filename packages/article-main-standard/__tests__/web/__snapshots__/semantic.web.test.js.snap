@@ -471,7 +471,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   </a>
   <hr />
   <a
-    href="/register"
+    href="/subscribe/digital/"
   >
     Customise
   </a>
