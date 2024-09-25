@@ -89,126 +89,102 @@ const CardDivider = styled.hr`
   height: 74px;
   color: #e4e4e4;
 `;
-
-const MagicCarpetCard = () => (
-  <MagicCarpetCardWrapper>
-    <MagicCarpetCardContainer>
-      <LabelContainer>
-        <Label color="#FF5656">HAVE YOUR SAY</Label>
-        <LabelDivider />
-        <Label>89 RECENTLY COMMENTED</Label>
-      </LabelContainer>
-      <ImageTextContainer>
-        <Image src="https://s3-alpha-sig.figma.com/img/dd68/3e09/181fd13a92c1ab3e6319601ba403e6a9?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPybSiJqmJXr5pl6BAwdtIZqpBWdVVJxKv-woB4y3EieTJKxfvNMOOyjO5C6u2ZEy0eA9F8iRtAenGLBGbUIBZt322hVscJDtODxjsNc3wP2wNne7khqGCroAJkgpuVQUbP4HvXqKJ-VV8-28KjIkN~YDVxsK0JUU8KuZMgfweWwv0g8auVUXEr1eU9AvaEgR-TMxJ52sNsyC9eE9Kj47V6yfZZ7KUHcUPxtvjjsIxySgJJvfY0FKsECPp5X1y6ym5DxFoknvG~HzfsUXDcuOUvauSIrKlz~S4yhBSCJBkEi0mBN56LPf5i9IlaBRqPmSt1mXPGwYoeEtsnn1e14WA__" />
-        <Title href="/uk/politics/article/labour-party-conference-keir-starmer-speech-latest-news-0nnkxjcqq">
-          'Change has begun': Starmer gives first conference speech
-        </Title>
-      </ImageTextContainer>
-    </MagicCarpetCardContainer>
-  </MagicCarpetCardWrapper>
-);
-
-const MagicCarpetCard1 = () => (
-  <MagicCarpetCardWrapper>
-    <MagicCarpetCardContainer>
-      <LabelContainer>
-        <Label color="#007A3F">READ MORE</Label>
-        <LabelDivider />
-        <Label>SPORT</Label>
-      </LabelContainer>
-      <ImageTextContainer>
-        <Image src="https://s3-alpha-sig.figma.com/img/b168/4d1b/b9361aacf8aa15439db267471ccf52ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=djhM7Ifd4NH-iGmZb5IYPjRG5xrNSOCCXybgwEcfLWNTa5itFXwv715Oe8~-QYy5fenMRts0Oce6GlQ8rOhSqVhR2h1HAmJZZ8VxDL9zSWxZ~IejyHGNj0Q7LXqsxL8vfs7rypyZ94pN48bqIVvNPKi~6qf9~-qbAHx0CJJtCsQXE8102~de5dVTAn-WUIhzqY50UCaImG9IvTcX~tQxJE3aI7dYLvPa~iPpd5OxGrRaBaoQeHe-kXknkb-BpXtJ3AQvhdJXRdGSTRexyDR2eh7NQT6FJPywUz2uxYzikSzFuYYlBg2Ul2K40eQtsOBacuT0mtlwu0x0eWO5iLL~Tg__" />
-        <Title href="/sport/football/article/rodri-knee-injury-man-city-arsenal-x08qk7pdb">
-          Rodri could miss rest of season with knee injury
-        </Title>
-      </ImageTextContainer>
-    </MagicCarpetCardContainer>
-  </MagicCarpetCardWrapper>
-);
-
-const MagicCarpetCard2 = () => (
-  <MagicCarpetCardWrapper>
-    <MagicCarpetCardContainer>
-      <LabelContainer>
-        <Label color="#54145D">PODCAST</Label>
-        <LabelDivider />
-        <Label>TIMES NEWS BRIEFING</Label>
-      </LabelContainer>
-      <ImageTextContainer>
-        <Image src="https://s3-alpha-sig.figma.com/img/8505/83db/efe4ca6f159524c5e9605c09e22beb63?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HNYdABcDQqUiXIfetUZ9OA2Lh5IZ82h6NT4eNrR0mgrj1vk0TFNkd5pbMEAgfjBNwCQPT9kQIoifJ3HE6qjb4D69RgSr~R0Y3uMhuju4jBbmgMIXsE0C1-QjJcSXtj427ttm4ObVlhHlsWRb2lFcO2mlmnRqstmCaCRGqD-oAtUXZYQCXA45Cu27c7ezqBkaMID5VeShG4Psk-JmSXmtMSiPjYwFKlEKktniFs8fnwjdyFlHWxVPt6F~JXUemvDvVFavY9XBYRKdhOd4SkoVhKLe3kvenIFX6~yDqERGaIt1Vh5jAKBnoDxvCXWn~kjIjLKFwOzqYpFmYaeqFFQfjg__" />
-        <Title href="/podcasts/times-news-briefing">
-          Evening Briefing Thursday 26th September
-        </Title>
-      </ImageTextContainer>
-    </MagicCarpetCardContainer>
-  </MagicCarpetCardWrapper>
-);
-
-const MagicCarpetCard3 = () => (
-  <MagicCarpetCardWrapper>
-    <MagicCarpetCardContainer>
-      <LabelContainer>
-        <Label color="#005C8A">VIDEO</Label>
-        <LabelDivider />
-        <Label>US</Label>
-      </LabelContainer>
-      <ImageTextContainer>
-        <Image src="https://s3-alpha-sig.figma.com/img/cdcb/7283/3ad7a0c137457614d3d1a693452964e1?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g5MwasiSQlq1ZyOFr-uaC9NvL3hb1Ui3gkHd7-izDGz7zBgTSHN3~pPpEcBSwBEbzp8-dTXfITS7M4XlM5jPy3GzA7N333yrbkwqWCX~xZkHLXYjnBlwQ59ukqOaRLyWZh1vSMqQTshRPnSso07sHXh37HIWuILsM1AKs9-NgDdNaQeyZgw--70gTFHJEUQ8iQdO00BqzcvRir0SAJXC4oYSRsT6X~qLNzRucIBLfHViEEcKruSWqhv~YPkym7DgeZCYQ9kBuSWb6NxSrNtzC-FNzzIzVAjcsFrUarEEzFgZywRC3n96sBTgHG6HYdJVVpqSIhrgDhD16Y~9ri4-3Q__" />
-        <Title href="world/us-world/article/donald-trump-used-assassination-attempts-advantage-us-election-2024-g9mz5wf8r">
-          Trump used assassination attempt to his advantage
-        </Title>
-      </ImageTextContainer>
-    </MagicCarpetCardContainer>
-  </MagicCarpetCardWrapper>
-);
-
-const MagicCarpetCard4 = () => (
-  <MagicCarpetCardWrapper>
-    <MagicCarpetCardContainer>
-      <LabelContainer>
-        <Label color="#005C8A">PLAY</Label>
-        <LabelDivider />
-        <Label>PUZZLES</Label>
-      </LabelContainer>
-      <ImageTextContainer>
-        <Image
-          square={true}
-          src="https://s3-alpha-sig.figma.com/img/24f9/bc87/903eed2895cf7ef34c3bd86cdb19ee74?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKEomwG~hc7W-ITYVzz8vKI7cKX4bkZ0xv1Ll-SW9mfR621lZvjzGwFO6F5hFrPo37GTok3RUi5G6JdS4jTXwxPPIOMYfPJzwgImrbY2eKElIBD-vSPBDK9U5OXc6dmN3600vGHDvEclr8Ar0FO8ZmXwKhnUa-hM2i2~~UOCHSHorTryt-iOn28pUC4~sqXhRSdz-5FH07IoVekjFmXYhX-mz8FCHgPvE~SrhlTmemubmMvU-FttZjY~rcyr7p9IkLWyXQ3jenq8UFRiiZ9buR0LQ6MpP85ocGQ4MCRnj2uCPVEtMU6wde34oI-GpvEa-B5Cf8zVR7GtF1ZfW5gsAw__"
-        />
-        <Title href="/puzzles/crossword/times-gk-crossword-no-252-n0n70whpb">
-          Times General Knowledge No 12345
-        </Title>
-      </ImageTextContainer>
-    </MagicCarpetCardContainer>
-  </MagicCarpetCardWrapper>
-);
+const content = [
+  {
+    title: "'Change has begun': Starmer gives first conference speech'",
+    titleLink:
+      "/uk/politics/article/labour-party-conference-keir-starmer-speech-latest-news-0nnkxjcqq",
+    image:
+      "https://s3-alpha-sig.figma.com/img/dd68/3e09/181fd13a92c1ab3e6319601ba403e6a9?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPybSiJqmJXr5pl6BAwdtIZqpBWdVVJxKv-woB4y3EieTJKxfvNMOOyjO5C6u2ZEy0eA9F8iRtAenGLBGbUIBZt322hVscJDtODxjsNc3wP2wNne7khqGCroAJkgpuVQUbP4HvXqKJ-VV8-28KjIkN~YDVxsK0JUU8KuZMgfweWwv0g8auVUXEr1eU9AvaEgR-TMxJ52sNsyC9eE9Kj47V6yfZZ7KUHcUPxtvjjsIxySgJJvfY0FKsECPp5X1y6ym5DxFoknvG~HzfsUXDcuOUvauSIrKlz~S4yhBSCJBkEi0mBN56LPf5i9IlaBRqPmSt1mXPGwYoeEtsnn1e14WA__",
+    labels: ["HAVE YOUR SAY", "89 RECENTLY COMMENTED"],
+    labelColor: "#FF5656"
+  },
+  {
+    title: "Rodri could miss rest of season with knee injury",
+    titleLink:
+      "/sport/football/article/rodri-knee-injury-man-city-arsenal-x08qk7pdb",
+    image:
+      "https://s3-alpha-sig.figma.com/img/b168/4d1b/b9361aacf8aa15439db267471ccf52ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=djhM7Ifd4NH-iGmZb5IYPjRG5xrNSOCCXybgwEcfLWNTa5itFXwv715Oe8~-QYy5fenMRts0Oce6GlQ8rOhSqVhR2h1HAmJZZ8VxDL9zSWxZ~IejyHGNj0Q7LXqsxL8vfs7rypyZ94pN48bqIVvNPKi~6qf9~-qbAHx0CJJtCsQXE8102~de5dVTAn-WUIhzqY50UCaImG9IvTcX~tQxJE3aI7dYLvPa~iPpd5OxGrRaBaoQeHe-kXknkb-BpXtJ3AQvhdJXRdGSTRexyDR2eh7NQT6FJPywUz2uxYzikSzFuYYlBg2Ul2K40eQtsOBacuT0mtlwu0x0eWO5iLL~Tg__",
+    labels: ["READ MORE", "SPORT"],
+    labelColor: "#007A3F"
+  },
+  {
+    title: "Evening Briefing Thursday 26th September",
+    titleLink: "/podcasts/times-news-briefing",
+    image:
+      "https://s3-alpha-sig.figma.com/img/8505/83db/efe4ca6f159524c5e9605c09e22beb63?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HNYdABcDQqUiXIfetUZ9OA2Lh5IZ82h6NT4eNrR0mgrj1vk0TFNkd5pbMEAgfjBNwCQPT9kQIoifJ3HE6qjb4D69RgSr~R0Y3uMhuju4jBbmgMIXsE0C1-QjJcSXtj427ttm4ObVlhHlsWRb2lFcO2mlmnRqstmCaCRGqD-oAtUXZYQCXA45Cu27c7ezqBkaMID5VeShG4Psk-JmSXmtMSiPjYwFKlEKktniFs8fnwjdyFlHWxVPt6F~JXUemvDvVFavY9XBYRKdhOd4SkoVhKLe3kvenIFX6~yDqERGaIt1Vh5jAKBnoDxvCXWn~kjIjLKFwOzqYpFmYaeqFFQfjg__",
+    labels: ["PODCAST", "TIMES NEWS BRIEFING"],
+    labelColor: "#54145D"
+  },
+  {
+    title: "Trump used assassination attempt to his advantage",
+    titleLink:
+      "world/us-world/article/donald-trump-used-assassination-attempts-advantage-us-election-2024-g9mz5wf8r",
+    image:
+      "https://s3-alpha-sig.figma.com/img/cdcb/7283/3ad7a0c137457614d3d1a693452964e1?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g5MwasiSQlq1ZyOFr-uaC9NvL3hb1Ui3gkHd7-izDGz7zBgTSHN3~pPpEcBSwBEbzp8-dTXfITS7M4XlM5jPy3GzA7N333yrbkwqWCX~xZkHLXYjnBlwQ59ukqOaRLyWZh1vSMqQTshRPnSso07sHXh37HIWuILsM1AKs9-NgDdNaQeyZgw--70gTFHJEUQ8iQdO00BqzcvRir0SAJXC4oYSRsT6X~qLNzRucIBLfHViEEcKruSWqhv~YPkym7DgeZCYQ9kBuSWb6NxSrNtzC-FNzzIzVAjcsFrUarEEzFgZywRC3n96sBTgHG6HYdJVVpqSIhrgDhD16Y~9ri4-3Q__",
+    labels: ["VIDEO", "US"],
+    labelColor: "#005C8A"
+  },
+  {
+    title: "Times General Knowledge No 12345",
+    titleLink: "/puzzles/crossword/times-gk-crossword-no-252-n0n70whpb",
+    image:
+      "https://s3-alpha-sig.figma.com/img/24f9/bc87/903eed2895cf7ef34c3bd86cdb19ee74?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKEomwG~hc7W-ITYVzz8vKI7cKX4bkZ0xv1Ll-SW9mfR621lZvjzGwFO6F5hFrPo37GTok3RUi5G6JdS4jTXwxPPIOMYfPJzwgImrbY2eKElIBD-vSPBDK9U5OXc6dmN3600vGHDvEclr8Ar0FO8ZmXwKhnUa-hM2i2~~UOCHSHorTryt-iOn28pUC4~sqXhRSdz-5FH07IoVekjFmXYhX-mz8FCHgPvE~SrhlTmemubmMvU-FttZjY~rcyr7p9IkLWyXQ3jenq8UFRiiZ9buR0LQ6MpP85ocGQ4MCRnj2uCPVEtMU6wde34oI-GpvEa-B5Cf8zVR7GtF1ZfW5gsAw__",
+    labels: ["PLAY", "PUZZLES"],
+    labelColor: "#005C8A"
+  }
+];
 
 export const MagicCarpet = ({ showComponent }) => {
   const isLightPackUser =
     window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
   return isLightPackUser ? (
     <SlideUpWrapper showComponent={showComponent}>
-      <MagicCarpetCard />
-      <CardDivider />
-      <MagicCarpetCard1 />
-      <CardDivider />
-      <MagicCarpetCard2 />
-      <CardDivider />
-      <MagicCarpetCard3 />
-      <CardDivider />
-      <MagicCarpetCard4 />
+      {content.map(item => (
+        <>
+          <MagicCarpetCardWrapper>
+            <MagicCarpetCardContainer>
+              <LabelContainer>
+                <Label color={item.labelColor}>{item.labels[0]}</Label>
+                <LabelDivider />
+                <Label>{item.labels[1]}</Label>
+              </LabelContainer>
+              <ImageTextContainer>
+                <Image
+                  square={item.labels.includes("PUZZLES")}
+                  src={item.image}
+                />
+                <Title href={item.titleLink}>{item.title}</Title>
+              </ImageTextContainer>
+            </MagicCarpetCardContainer>
+          </MagicCarpetCardWrapper>
+          <CardDivider />
+        </>
+      ))}
     </SlideUpWrapper>
   ) : (
     <SlideUpWrapper showComponent={showComponent}>
-      <MagicCarpetCard4 />
-      <CardDivider />
-      <MagicCarpetCard3 />
-      <CardDivider />
-      <MagicCarpetCard2 />
-      <CardDivider />
-      <MagicCarpetCard1 />
-      <CardDivider />
-      <MagicCarpetCard />
+      {content.reverse().map(item => (
+        <>
+          <MagicCarpetCardWrapper>
+            <MagicCarpetCardContainer>
+              <LabelContainer>
+                <Label color={item.labelColor}>{item.labels[0]}</Label>
+                <LabelDivider />
+                <Label>{item.labels[1]}</Label>
+              </LabelContainer>
+              <ImageTextContainer>
+                <Image
+                  square={item.labels.includes("PUZZLES")}
+                  src={item.image}
+                />
+                <Title href={item.titleLink}>{item.title}</Title>
+              </ImageTextContainer>
+            </MagicCarpetCardContainer>
+          </MagicCarpetCardWrapper>
+          <CardDivider />
+        </>
+      ))}
     </SlideUpWrapper>
   );
 };
