@@ -214,6 +214,106 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
+.c30 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c39 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c34 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c36 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c38 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c31 {
+  width: 336px;
+  height: 74px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c35 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -237,7 +337,7 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c30 {
+.c2 > .c40 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -1076,6 +1176,47 @@ exports[`full article with style 1`] = `
     <AdContainer />
     <AdContainer />
     <AdContainer />
+    <div
+      className="c30"
+    >
+      <div
+        className="c31"
+      >
+        <div
+          className="c32"
+        >
+          <div
+            className="c33"
+          >
+            <span
+              className="c34"
+            >
+              HAVE YOUR SAY
+            </span>
+            <hr
+              className="c35"
+            />
+            <span
+              className="c36"
+            >
+              89 RECENTLY COMMENTED
+            </span>
+          </div>
+          <div
+            className="c37"
+          >
+            <img
+              className="c38"
+            />
+            <span
+              className="c39"
+            >
+              'Change has begun': Starmer gives first conference speech
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;
@@ -1294,6 +1435,106 @@ exports[`full article with style in the culture magazine 1`] = `
   text-transform: uppercase;
 }
 
+.c30 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c39 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c34 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c36 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c38 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c31 {
+  width: 336px;
+  height: 74px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c35 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -1317,7 +1558,7 @@ exports[`full article with style in the culture magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c30 {
+.c2 > .c40 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -2157,6 +2398,47 @@ exports[`full article with style in the culture magazine 1`] = `
     <AdContainer />
     <AdContainer />
     <AdContainer />
+    <div
+      className="c30"
+    >
+      <div
+        className="c31"
+      >
+        <div
+          className="c32"
+        >
+          <div
+            className="c33"
+          >
+            <span
+              className="c34"
+            >
+              HAVE YOUR SAY
+            </span>
+            <hr
+              className="c35"
+            />
+            <span
+              className="c36"
+            >
+              89 RECENTLY COMMENTED
+            </span>
+          </div>
+          <div
+            className="c37"
+          >
+            <img
+              className="c38"
+            />
+            <span
+              className="c39"
+            >
+              'Change has begun': Starmer gives first conference speech
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;
@@ -2375,6 +2657,106 @@ exports[`full article with style in the style magazine 1`] = `
   text-transform: uppercase;
 }
 
+.c30 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c39 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c34 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c36 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c38 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c31 {
+  width: 336px;
+  height: 74px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c35 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -2398,7 +2780,7 @@ exports[`full article with style in the style magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c30 {
+.c2 > .c40 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -3239,6 +3621,47 @@ exports[`full article with style in the style magazine 1`] = `
     <AdContainer />
     <AdContainer />
     <AdContainer />
+    <div
+      className="c30"
+    >
+      <div
+        className="c31"
+      >
+        <div
+          className="c32"
+        >
+          <div
+            className="c33"
+          >
+            <span
+              className="c34"
+            >
+              HAVE YOUR SAY
+            </span>
+            <hr
+              className="c35"
+            />
+            <span
+              className="c36"
+            >
+              89 RECENTLY COMMENTED
+            </span>
+          </div>
+          <div
+            className="c37"
+          >
+            <img
+              className="c38"
+            />
+            <span
+              className="c39"
+            >
+              'Change has begun': Starmer gives first conference speech
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;
@@ -3457,6 +3880,106 @@ exports[`full article with style in the sunday times magazine 1`] = `
   text-transform: uppercase;
 }
 
+.c30 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c39 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c34 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c36 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c38 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c31 {
+  width: 336px;
+  height: 74px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c35 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -3480,7 +4003,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   z-index: 1;
 }
 
-.c2 > .c30 {
+.c2 > .c40 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -4320,6 +4843,47 @@ exports[`full article with style in the sunday times magazine 1`] = `
     <AdContainer />
     <AdContainer />
     <AdContainer />
+    <div
+      className="c30"
+    >
+      <div
+        className="c31"
+      >
+        <div
+          className="c32"
+        >
+          <div
+            className="c33"
+          >
+            <span
+              className="c34"
+            >
+              HAVE YOUR SAY
+            </span>
+            <hr
+              className="c35"
+            />
+            <span
+              className="c36"
+            >
+              89 RECENTLY COMMENTED
+            </span>
+          </div>
+          <div
+            className="c37"
+          >
+            <img
+              className="c38"
+            />
+            <span
+              className="c39"
+            >
+              'Change has begun': Starmer gives first conference speech
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;

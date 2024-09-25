@@ -214,6 +214,106 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
+.c29 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c38 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c33 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c35 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c37 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c30 {
+  width: 336px;
+  height: 74px;
+}
+
+.c31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c34 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c12 {
   border: solid #DBDBDB;
   border-width: 1px 0;
@@ -989,6 +1089,47 @@ exports[`full article with style 1`] = `
       <AdContainer />
       <AdContainer />
       <AdContainer />
+      <div
+        className="c29"
+      >
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <span
+                className="c33"
+              >
+                HAVE YOUR SAY
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                89 RECENTLY COMMENTED
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c37"
+              />
+              <span
+                className="c38"
+              >
+                'Change has begun': Starmer gives first conference speech
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
   </div>
 </div>

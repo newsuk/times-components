@@ -251,6 +251,106 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
+.c22 {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+}
+
+.c31 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c26 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c28 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c30 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c23 {
+  width: 336px;
+  height: 74px;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c27 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -274,7 +374,7 @@ exports[`full article with style 1`] = `
   z-index: 1;
 }
 
-.c2 > .c22 {
+.c2 > .c32 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -744,6 +844,47 @@ exports[`full article with style 1`] = `
     <AdContainer />
     <AdContainer />
     <AdContainer />
+    <div
+      className="c22"
+    >
+      <div
+        className="c23"
+      >
+        <div
+          className="c24"
+        >
+          <div
+            className="c25"
+          >
+            <span
+              className="c26"
+            >
+              HAVE YOUR SAY
+            </span>
+            <hr
+              className="c27"
+            />
+            <span
+              className="c28"
+            >
+              89 RECENTLY COMMENTED
+            </span>
+          </div>
+          <div
+            className="c29"
+          >
+            <img
+              className="c30"
+            />
+            <span
+              className="c31"
+            >
+              'Change has begun': Starmer gives first conference speech
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
 </div>
 `;
