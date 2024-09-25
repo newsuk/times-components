@@ -26,16 +26,10 @@ export class TakeoverBailout extends Error {
 
 const Article = props => {
   const { article, onImagePress } = props;
-  const { leadAsset, template, isPreview } = article || {};
+  const { leadAsset, template } = article || {};
   let { content } = article || {};
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
-  }
-
-  if (article && !isPreview) {
-    if (!article.tiles.length && !content.length) {
-      throw new Error("ENOCONTENT");
-    }
   }
 
   let onImagePressArticle = null;

@@ -28,12 +28,6 @@ const requiredProps = {
   refetch: () => {}
 };
 
-const articleContentData = {
-  content: testFixture.content,
-  section: testFixture.section,
-  tiles: []
-};
-
 describe("Article", () => {
   it("renders with ArticleMainStandard as the default template if article is null", () => {
     const testRenderer = TestRenderer.create(
@@ -44,40 +38,9 @@ describe("Article", () => {
     expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
   });
 
-  it("throws `ENOCONTENT` error if article content is null", () => {
-    const emptyArticleContentData = {
-      content: [],
-      tiles: []
-    };
-
-    const testRenderer = () =>
-      TestRenderer.create(
-        <Article {...requiredProps} article={emptyArticleContentData} />
-      )
-        .then(res => res.root)
-        .catch(() => {});
-
-    expect(() => testRenderer()).toThrow("ENOCONTENT");
-  });
-
-  it("does not throw `ENOCONTENT` error if article content is null in preview article", () => {
-    const emptyArticleContentData = {
-      content: [],
-      tiles: [],
-      isPreview: true
-    };
-
-    const testRenderer = TestRenderer.create(
-      <Article {...requiredProps} article={emptyArticleContentData} />
-    );
-    const testInstance = testRenderer.root;
-
-    expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
-  });
-
   it("renders with ArticleMainStandard as the default template if no template is provided", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ ...articleContentData }} {...requiredProps} />
+      <Article article={{}} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -89,8 +52,7 @@ describe("Article", () => {
       <Article
         article={{
           publishedTime: "2015-03-23T19:39:39.000Z",
-          template: "undefined",
-          ...articleContentData
+          template: "undefined"
         }}
         {...requiredProps}
       />
@@ -103,7 +65,7 @@ describe("Article", () => {
   it("renders with ArticleMainStandard as the default template if null is set for template", () => {
     const testRenderer = TestRenderer.create(
       <Article
-        article={{ template: null, ...articleContentData }}
+        article={{ template: null }}
         {...requiredProps}
       />
     );
@@ -115,7 +77,7 @@ describe("Article", () => {
   it("renders with ArticleMainStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article
-        article={{ template: "mainstandard", ...articleContentData }}
+        article={{ template: "mainstandard" }}
         {...requiredProps}
       />
     );
@@ -127,7 +89,7 @@ describe("Article", () => {
   it("renders with ArticleMainComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article
-        article={{ template: "maincomment", ...articleContentData }}
+        article={{ template: "maincomment" }}
         {...requiredProps}
       />
     );
@@ -139,7 +101,7 @@ describe("Article", () => {
   it("renders with ArticleMagazineStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article
-        article={{ template: "magazinestandard", ...articleContentData }}
+        article={{ template: "magazinestandard" }}
         {...requiredProps}
       />
     );
@@ -151,7 +113,7 @@ describe("Article", () => {
   it("renders with ArticleMagazineComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article
-        article={{ template: "magazinecomment", ...articleContentData }}
+        article={{ template: "magazinecomment" }}
         {...requiredProps}
       />
     );
