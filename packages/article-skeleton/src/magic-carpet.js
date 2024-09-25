@@ -21,7 +21,7 @@ const SlideUpWrapper = styled.div`
   text-align: center;
   z-index: 1000;
   border-top: 1px solid #696969;
-  transition: bottom 1s ease-in-out; /* Smooth transition */
+  transition: bottom 1s ease-in; /* Smooth transition */
   flex-direction: row;
   display: flex;
   ::-webkit-scrollbar {
@@ -184,7 +184,9 @@ const MagicCarpetCard4 = () => (
 );
 
 export const MagicCarpet = ({ showComponent }) => {
-  return (
+  const isLightPackUser =
+    window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
+  return isLightPackUser ? (
     <SlideUpWrapper showComponent={showComponent}>
       <MagicCarpetCard />
       <CardDivider />
@@ -195,6 +197,18 @@ export const MagicCarpet = ({ showComponent }) => {
       <MagicCarpetCard3 />
       <CardDivider />
       <MagicCarpetCard4 />
+    </SlideUpWrapper>
+  ) : (
+    <SlideUpWrapper showComponent={showComponent}>
+      <MagicCarpetCard4 />
+      <CardDivider />
+      <MagicCarpetCard3 />
+      <CardDivider />
+      <MagicCarpetCard2 />
+      <CardDivider />
+      <MagicCarpetCard1 />
+      <CardDivider />
+      <MagicCarpetCard />
     </SlideUpWrapper>
   );
 };
