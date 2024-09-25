@@ -216,16 +216,12 @@ exports[`full article with style 1`] = `
 
 .c29 {
   overflow: auto;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
-  scrollbar-width: none;
   -webkit-scroll-behavior: auto;
   -moz-scroll-behavior: auto;
   -ms-scroll-behavior: auto;
   scroll-behavior: auto;
   opacity: 1;
-  pointer-events: 'auto';
+  pointer-events: "auto";
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -246,6 +242,10 @@ exports[`full article with style 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c29::-webkit-scrollbar {
+  display: none;
 }
 
 .c38 {
