@@ -5,7 +5,6 @@ import ArticleMainComment from "@times-components/article-main-comment";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import Article from "../../src/article";
-import { testFixture } from "../../fixtures/full-article";
 
 jest.mock("@times-components/image", () => "TimesImage");
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
@@ -64,10 +63,7 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard as the default template if null is set for template", () => {
     const testRenderer = TestRenderer.create(
-      <Article
-        article={{ template: null }}
-        {...requiredProps}
-      />
+      <Article article={{ template: null }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -76,10 +72,7 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article
-        article={{ template: "mainstandard" }}
-        {...requiredProps}
-      />
+      <Article article={{ template: "mainstandard" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -88,10 +81,7 @@ describe("Article", () => {
 
   it("renders with ArticleMainComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article
-        article={{ template: "maincomment" }}
-        {...requiredProps}
-      />
+      <Article article={{ template: "maincomment" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -100,10 +90,7 @@ describe("Article", () => {
 
   it("renders with ArticleMagazineStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article
-        article={{ template: "magazinestandard" }}
-        {...requiredProps}
-      />
+      <Article article={{ template: "magazinestandard" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
@@ -112,10 +99,7 @@ describe("Article", () => {
 
   it("renders with ArticleMagazineComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article
-        article={{ template: "magazinecomment" }}
-        {...requiredProps}
-      />
+      <Article article={{ template: "magazinecomment" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
