@@ -10,6 +10,7 @@
 
 error_exit() {
     echo "Error: Yarn command failure" >&2
+    yarn stop:testserver
     exit 1
 }
 
