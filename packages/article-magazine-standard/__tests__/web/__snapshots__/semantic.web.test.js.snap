@@ -610,7 +610,7 @@ exports[`1. a full article 1`] = `
   </a>
   <hr />
   <a
-    href="/subscribe/digital/"
+    href="/subscribe/digital"
   >
     Customise
   </a>

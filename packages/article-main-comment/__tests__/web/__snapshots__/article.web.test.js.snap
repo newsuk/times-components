@@ -422,7 +422,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </div>
       <hr />
       <a
-        href="/subscribe/digital/"
+        href="/subscribe/digital"
       >
         Customise
       </a>
@@ -854,7 +854,7 @@ exports[`4. an article with ads with .co.uk 1`] = `
       </div>
       <hr />
       <a
-        href="/subscribe/digital/"
+        href="/subscribe/digital"
       >
         Customise
       </a>
@@ -1286,7 +1286,7 @@ exports[`5. an article with ads with .com 1`] = `
       </div>
       <hr />
       <a
-        href="/subscribe/digital/"
+        href="/subscribe/digital"
       >
         Customise
       </a>
@@ -1783,7 +1783,7 @@ exports[`6. an article with puzzle sidebar 1`] = `
       </div>
       <hr />
       <a
-        href="/subscribe/digital/"
+        href="/subscribe/digital"
       >
         Customise
       </a>

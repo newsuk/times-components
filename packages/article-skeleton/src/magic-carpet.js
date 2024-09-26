@@ -105,7 +105,7 @@ const LinkButton = styled.a`
   text-decoration: none;
   font-weight: 500;
   padding: 6px;
-  margin-top: 28px;
+  margin-top: 20px;
 `;
 
 const lightPackContent = [
@@ -252,7 +252,7 @@ export const MagicCarpet = ({ showComponent }) => {
           <CardDivider />
         </>
       ))}
-      <LinkButton href="/subscribe/digital/">Customise</LinkButton>
+      <LinkButton href="/subscribe/digital">Customise</LinkButton>
     </SlideUpWrapper>
   );
 };
