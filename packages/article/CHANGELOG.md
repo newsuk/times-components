@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.15](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.14...@times-components/article@7.17.15) (2024-09-25)
+
+
+### Bug Fixes
+
+* **TMRS-000:** add isPreview to article object ([#3942](https://github.com/newsuk/times-components/issues/3942)) ([e79f0be](https://github.com/newsuk/times-components/commit/e79f0be14e81402c8b3b931ce3ac41e6429792c8))
+
+
+
+
+
 ## [7.17.14](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.13...@times-components/article@7.17.14) (2024-09-25)
 
 **Note:** Version bump only for package @times-components/article
