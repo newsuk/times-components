@@ -163,40 +163,6 @@ server.get("/profile/:slug", (request, response) => {
     );
 });
 
-server.get("/topic/:slug", (request, response) => {
-  const {
-    params: { slug: topicSlug },
-    query: { page, pq }
-  } = request;
-  const currentPage = toNumber(page) || 1;
-  const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
-
-  ssr
-    .topic(
-      { currentPage, topicSlug },
-      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
-    )
-    .then(
-      ({
-        headMarkup,
-        initialProps,
-        initialState,
-        markup,
-        responsiveStyles,
-        styles
-      }) =>
-        response.send(
-          makeHtml(initialState, initialProps, {
-            bundleName: "topic",
-            headMarkup,
-            markup,
-            responsiveStyles,
-            styles
-          })
-        )
-    );
-});
-
 const serviceName = "Stand-alone renderer server";
 
 const App = server.listen(port, () =>

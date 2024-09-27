@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-queries",
-  "version": "2.23.1",
+  "version": "2.23.3",
   "description": "GraphQL queries for sharing",
   "main": "dist/provider-queries",
   "dev": "src/provider-queries",
@@ -38,6 +38,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
+    "@babel/plugin-syntax-export-default-from": "7.24.7",
     "apollo-utilities": "1.2.1",
     "graphql": "14.2.1",
     "graphql-tag": "2.10.3"

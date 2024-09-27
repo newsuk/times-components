@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.0...@times-components/save-and-share-bar@0.24.1) (2024-09-16)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.23.4...@times-components/save-and-share-bar@0.24.0) (2024-09-16)
+
+
+### Features
+
+* **TMD-465:** Article share bar padding and mobile scroll update ([#3935](https://github.com/newsuk/times-components/issues/3935)) ([f59c822](https://github.com/newsuk/times-components/commit/f59c8227bdd21c71937ed5fc06f0ee9a6664a50e))
+
+
+
+
+
+## [0.23.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.23.3...@times-components/save-and-share-bar@0.23.4) (2024-09-09)
+
+
+### Bug Fixes
+
+* **TMD-465:** Article share bar padding and mobile scroll ([#3925](https://github.com/newsuk/times-components/issues/3925)) ([b1b5d19](https://github.com/newsuk/times-components/commit/b1b5d19904d85e15beea8f328cac029bf4596ae3))
+
+
+
+
+
+## [0.23.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.23.2...@times-components/save-and-share-bar@0.23.3) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.23.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.23.1...@times-components/save-and-share-bar@0.23.2) (2024-08-28)
 
 
