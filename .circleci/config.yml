@@ -107,7 +107,7 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            lerna run test:web --stream --since -- -- --ci --bail --coverage 
+            lerna run test:web --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
 
   run_unit_tests:
