@@ -239,7 +239,7 @@ export const InlineAdWrapper = styled.div`
     min-height: 123px;
   }
 
-  @media (min-width: 970px) {
+  @media (min-width: 1024px) {
     min-height: 283px;
   }
 `;
