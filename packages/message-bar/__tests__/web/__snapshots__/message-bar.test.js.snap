@@ -41,3 +41,16 @@ exports[`5. renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`5. renders correctly 2`] = `
+<div>
+  <div />
+  <div>
+    <div>
+      <div>
+        test child content
+      </div>
+    </div>
+  </div>
+</div>
+`;
