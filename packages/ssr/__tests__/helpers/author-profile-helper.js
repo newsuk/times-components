@@ -23,7 +23,7 @@ export default (options = {}) => {
     after(() => cy.task("stopMockServer"));
 
     it("should have the required Author head elements", () => {
-      cy.get('div[data-testid="-head"]');
+      cy.get('div[data-testid="author-head"]');
       cy.get('h1[data-testid="author-name"]');
       cy.get('h2[role="heading"]');
       cy.get('div[data-testid="author-bio"]');
