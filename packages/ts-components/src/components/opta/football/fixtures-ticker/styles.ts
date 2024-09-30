@@ -3,6 +3,10 @@ import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
+export const Container = styled.div`
+  height: 80px;
+`;
+
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
   .Opta {
     h2 {
@@ -43,8 +47,6 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   isApp?: boolean;
   showButtons?: boolean;
 }>`
-  height: 80px !important;
-
   .Opta {
     font-family: Roboto !important;
   }
@@ -224,7 +226,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       border-start-end-radius: 4px;
 
       @media (prefers-color-scheme: dark) {
-        color: #E4E4E4 !important;
+        color: #e4e4e4 !important;
       }
     }
 
@@ -233,7 +235,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       color: #01000d !important;
 
       @media (prefers-color-scheme: dark) {
-        color: #FFF !important;
+        color: #fff !important;
       }
     }
 
@@ -243,7 +245,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       font-family: 'Roboto-Medium' !important;
 
       @media (prefers-color-scheme: dark) {
-        color: #FFF !important;
+        color: #fff !important;
       }
     }
 
@@ -274,7 +276,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       border: 1px solid #ccc !important;
 
       @media (prefers-color-scheme: dark) {
-        background-color: #1D1D1B !important;
+        background-color: #1d1d1b !important;
         border: 1px solid #333 !important;
       }
 
@@ -294,7 +296,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
       @media (prefers-color-scheme: dark) {
         background-color: #121212 !important;
-        border: 1px solid #E4E4E4 !important;
+        border: 1px solid #e4e4e4 !important;
       }
 
       &.Opta-timings {
