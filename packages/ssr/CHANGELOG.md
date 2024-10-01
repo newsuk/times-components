@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.58.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.14...@times-components/ssr@2.58.15) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.58.14](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.13...@times-components/ssr@2.58.14) (2024-09-25)
+
+
+### Bug Fixes
+
+* **TMRS-000:** add isPreview to article object ([#3942](https://github.com/newsuk/times-components/issues/3942)) ([e79f0be](https://github.com/newsuk/times-components/commit/e79f0be14e81402c8b3b931ce3ac41e6429792c8))
+
+
+
+
+
+## [2.58.13](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.12...@times-components/ssr@2.58.13) (2024-09-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.58.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.11...@times-components/ssr@2.58.12) (2024-09-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.58.11](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.10...@times-components/ssr@2.58.11) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/ssr

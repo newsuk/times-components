@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.104.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.5...@times-components/ts-components@1.104.0) (2024-09-30)
+
+
+### Features
+
+* **TMRS-463:** opta ticker styling ([#3938](https://github.com/newsuk/times-components/issues/3938)) ([27a079c](https://github.com/newsuk/times-components/commit/27a079c48a7f3d36d99215fd390d377f9e5cd7a6))
+
+
+
+
+
 ## [1.103.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.4...@times-components/ts-components@1.103.5) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/ts-components
