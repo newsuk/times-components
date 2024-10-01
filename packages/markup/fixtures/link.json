@@ -1,0 +1,91 @@
+{
+  "name": "paragraph",
+  "children": [
+    {
+      "name": "text",
+      "children": [],
+      "attributes": {
+        "value": "Before they became one of the bestselling pop groups in history Abba had to deal with the complaints of a canned fish company that shared their name. Mercifully the "
+      }
+    },
+    {
+      "name": "link",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "firm"
+          }
+        }
+      ],
+      "attributes": {
+        "href": "https://www.thetimes.com/culture/music"
+      }
+    },
+    {
+      "name": "text",
+      "children": [],
+      "attributes": {
+        "value": " relented and the band broke through in 1974 after winning the Eurovision Song Contest with "
+      }
+    },
+    {
+      "name": "emphasis",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "Waterloo"
+          }
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [],
+      "attributes": {
+        "value": ". Comprising two married couples, the Swedish group scored more than a dozen No 1s across the world and have the second highest-selling album in Britain, the compilation "
+      }
+    },
+    {
+      "name": "emphasis",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "Gold"
+          }
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [],
+      "attributes": {
+        "value": ". They split in 1982 after their marriages collapsed but reformed in 2021 for an album and holographic stage show called "
+      }
+    },
+    {
+      "name": "emphasis",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "Voyage"
+          }
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "children": [],
+      "attributes": {
+        "value": "."
+      }
+    }
+  ]
+}

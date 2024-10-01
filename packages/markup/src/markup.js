@@ -31,6 +31,13 @@ export default {
   superscript(key, attributes, renderedChildren) {
     return <sup key={key}>{renderedChildren}</sup>;
   },
+  link(key, attributes, renderedChildren) {
+    return (
+      <a href={attributes.href} key={key}>
+        {renderedChildren}
+      </a>
+    );
+  },
   text(key, { value }) {
     return value;
   }
