@@ -665,7 +665,7 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (min-width:10240px) {
+@media (min-width:1024px) {
   .c1 {
     min-height: 250px;
   }
