@@ -13,7 +13,7 @@ const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
 const subscript = require("./fixtures/multiple-subscripts.json");
 const superscript = require("./fixtures/multiple-superscripts.json");
-const link = [require("./fixtures/link.json")];
+const link = require("./fixtures/link.json");
 
 export default {
   children: [
