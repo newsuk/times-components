@@ -1,25 +1,3 @@
-// const contentChildren = [
-//   {
-//     name: "paragraph",
-//     children: [
-//       {
-//         name: "link",
-//         attributes: {
-//           href: "https://www.example.com"
-//         },
-//         children: []
-//       },
-//       {
-//         name: "link",
-//         attributes: {
-//           href: "https://www.thetimes.com"
-//         },
-//         children: []
-//       }
-//     ]
-//   }
-// ];
-
 const setExternalLinkTargets = children => {
   const clonedChildren = [...children];
 
