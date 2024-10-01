@@ -29,6 +29,7 @@ import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 import ShareIcon from "./assets/share-icon";
+import CommentButton from "./components/comment-button";
 
 function SaveAndShareBar(props) {
   const {
@@ -38,7 +39,8 @@ function SaveAndShareBar(props) {
     sharingEnabled,
     onShareOnFB,
     onShareOnTwitter,
-    isPreviewMode
+    isPreviewMode,
+    commentCount
   } = props;
 
   const [popoverOpen, setPopoverOpen] = React.useState(false);
@@ -233,6 +235,7 @@ function SaveAndShareBar(props) {
               </SaveStar>
             </div>
           )}
+          <CommentButton commentCount={commentCount} />
         </>
       ) : null}
     </SaveAndShareBarContainer>
@@ -250,6 +253,7 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
+  commentCount: PropTypes.number,
   isPreviewMode: PropTypes.bool,
   hostName: PropTypes.string.isRequired
 };
@@ -260,7 +264,8 @@ SaveAndShareBar.defaultProps = {
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
-  isPreviewMode: (PropTypes.bool = false)
+  isPreviewMode: (PropTypes.bool = false),
+  commentCount: (PropTypes.number = 0)
 };
 
 export default withTrackEvents(SaveAndShareBar);

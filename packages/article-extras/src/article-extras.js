@@ -40,6 +40,7 @@ const ArticleExtras = ({
   topics,
   isSharingSavingEnabled,
   isCommentEnabled,
+  commentCount,
   storefrontConfig,
   breadcrumbs,
   domainSpecificUrl,
@@ -112,6 +113,7 @@ const ArticleExtras = ({
                   onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
+                  commentCount={commentCount}
                 />
               </ShareAndSaveContainer>
             )}
@@ -150,6 +152,7 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
+  commentCount: PropTypes.number,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired,
@@ -161,6 +164,7 @@ ArticleExtras.defaultProps = {
   topics: null,
   isSharingSavingEnabled: true,
   isCommentEnabled: true,
+  commentCount: 0,
   breadcrumbs: []
 };
 

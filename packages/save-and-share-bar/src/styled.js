@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const SaveAndShareBarContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 16px;
   justify-content: start;
-  gap: 10px;
   height: 100%;
   padding-block: 10px;
 `;
@@ -183,5 +183,32 @@ export const EmailSpinnerContainer = styled.div`
     width: 16px;
     border-right-color: #00527a;
     border-width: 0.15em;
+  }
+`;
+
+export const CommentsLink = styled.a`
+  all: unset;
+
+  span:nth-of-type(1) {
+    display: none;
+  }
+  span:nth-of-type(2) {
+    color: #333333;
+  }
+
+  @media (min-width: 768px) {
+    span:nth-of-type(1) {
+      display: block;
+    }
+    span:nth-of-type(2) {
+      color: #696969;
+    }
+  }
+
+  div.content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    ${({ isLoading }) => isLoading && "opacity: 0"};
   }
 `;
