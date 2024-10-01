@@ -133,7 +133,7 @@ jobs:
 
   run_cypress_tests:
     executor: node
-    resource_class: xlarge
+    resource_class: medium
     parallelism: 2
     steps:
       - checkout
