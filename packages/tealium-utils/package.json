@@ -13,7 +13,7 @@
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d dist",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "prettier": "1.14.3",
-    "webpack": "4.30.0"
+    "webpack": "5.95.0"
   },
   "dependencies": {
     "@storybook/addon-actions": "6.5.16",

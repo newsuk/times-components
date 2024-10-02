@@ -13,7 +13,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist --copy-files",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack --mode production"
   },
   "jest": {
     "rootDir": "../../",
@@ -55,7 +55,7 @@
     "eslint-plugin-graphql": "2.1.1",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "webpack": "4.30.0"
+    "webpack": "5.95.0"
   },
   "dependencies": {
     "@times-components/fixture-generator": "0.35.1",
@@ -65,9 +65,9 @@
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
     "apollo-utilities": "1.2.1",
-    "graphql": "14.2.1",
-    "graphql-tag": "2.10.3",
-    "graphql-tools": "4.0.4",
+    "graphql": "16.9.0",
+    "graphql-tag": "2.12.6",
+    "graphql-tools": "9.0.1",
     "lodash.isequal": "4.4.0",
     "prop-types": "15.7.2",
     "react": "16.9.0",

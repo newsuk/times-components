@@ -10,8 +10,15 @@ module.exports = async ({ config }, env, defaultConfig) => {
   config.devtool = "eval-source-map";
   config.resolve = {
     ...config.resolve,
+    fullySpecified: false, // Allow imports without the file extension
     alias: {
       ...config.resolve.alias
+    },
+    fallback: {
+      "zlib": false,
+      "stream": false,
+      "https": false,
+      "http": false
     },
     extensions: [".tsx", ".ts", ".js", ".mjs"],
     mainFields: ["devModule", "dev", "module", "main"]
