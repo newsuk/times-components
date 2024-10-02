@@ -5,7 +5,7 @@ import {
   Flag,
   Markup,
   SectionName,
-  TemplateType
+  TemplateType,
 } from "./types";
 import keywords from "./mock-keywords";
 import UUID from "./mock-UUID";
@@ -36,6 +36,35 @@ class MockArticle {
       hasVideo: false,
       commentsEnabled: false,
       isBookmarked: false,
+      inlineImages: [
+						{
+							"id": "a153ba6f-22fa-453d-b3ce-7770fd890945",
+							"caption": "The Met continues to suffer from a crisis of confidence among women",
+							"credits": "Getty IMAGES",
+							"crops": [
+								{
+									"ratio": "3:2"
+								}
+							]
+						}
+					],
+      categoryConnection: {
+						"nodes": [
+							{
+								"title": "Comment",
+								"slug": "comment",
+								"parent": null
+							},
+							{
+								"title": "The Times View",
+								"slug": "the-times-view",
+								"parent": {
+									"title": "Comment",
+									"parent": null
+								}
+							}
+						]
+					},
       commercialTags: ["commercial tag"],
       id: UUID(),
       keywords: keywords(),

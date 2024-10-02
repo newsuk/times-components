@@ -1,7 +1,7 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 import schema from "@times-components/schema/schema.json";
-import { graphql } from "graphql.js";
+import { graphql } from "graphql";
 import { print } from "graphql/language/printer";
 import mm from "./make-mocks";
 

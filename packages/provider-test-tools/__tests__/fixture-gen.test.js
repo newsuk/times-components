@@ -1,7 +1,7 @@
 import { iterator } from "@times-components/test-utils";
 import gql from "graphql-tag";
 import { addTypenameToDocument } from "apollo-utilities";
-import { graphql } from "graphql.js";
+import { graphql } from "graphql";
 import { print } from "graphql/language/printer";
 import mm from "../src/make-mocks";
 import schema from "../fixtures/test-schema.json";

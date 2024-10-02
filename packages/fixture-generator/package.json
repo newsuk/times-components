@@ -12,7 +12,7 @@
     "lint": "yarn prettier:diff && yarn depcheck",
     "fmt": "prettier --write 'src/*.*'",
     "prettier:diff": "prettier --list-different 'src/*.*'",
-    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,jest,prettier,@times-components/schema,graphql-codegen-typescript-template,@types/jest,graphql-code-generator,ts-jest,typescript,typings' --ignore-bin-package=false --skip-missing"
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,jest,prettier,@times-components/schema,graphql-codegen-typescript-template,@types/jest,@graphql-codegen/cli,ts-jest,typescript,typings' --ignore-bin-package=false --skip-missing"
   },
   "repository": {
     "type": "git",
@@ -42,8 +42,12 @@
   "devDependencies": {
     "@times-components/schema": "0.7.5",
     "depcheck": "0.6.9",
-    "graphql-code-generator": "0.14.5",
-    "graphql-codegen-typescript-template": "0.14.5",
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/typescript-operations": "4.2.3",
+    "graphql-codegen-typescript-common": "0.18.2",
+    "graphql-codegen-typescript-client": "0.18.2",
+    "graphql-codegen-typescript-server": "0.18.2",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "ts-jest": "23.10.4",
