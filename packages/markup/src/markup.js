@@ -33,7 +33,15 @@ export default {
   },
   link(key, attributes, renderedChildren) {
     return (
-      <a href={attributes.href} key={key}>
+      <a
+        style={{
+          cursor: "pointer",
+          textDecoration: "underline",
+          color: "#006699"
+        }}
+        href={attributes.href}
+        key={key}
+      >
         {renderedChildren}
       </a>
     );
