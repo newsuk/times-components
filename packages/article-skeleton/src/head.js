@@ -268,8 +268,7 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
-    keywords,
-    id
+    keywords
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -405,7 +404,7 @@ function Head({
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
-    articleSection: sectionname,
+    articleSection: sectionname
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 

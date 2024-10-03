@@ -131,7 +131,7 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
@@ -299,7 +299,7 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
@@ -491,7 +491,7 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
@@ -684,7 +684,7 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
