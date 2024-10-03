@@ -448,13 +448,13 @@ function Head({
       {desc && <meta content={desc} name="twitter:description" />}
       {leadassetUrl && <meta content={leadassetUrl} name="twitter:image" />}
 
-      {isLiveBlogArticle ? (
-        <script type="application/ld+json">
-          {JSON.stringify(liveBlogJsonLD)}
-        </script>
-      ) : (
-        <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+      {isLiveBlogArticle && (
+         <script type="application/ld+json">
+         {JSON.stringify(liveBlogJsonLD)}
+       </script>
       )}
+      
+      <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
 
       {videoJsonLD && (
         <script type="application/ld+json">
