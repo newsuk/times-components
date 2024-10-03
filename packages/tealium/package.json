@@ -13,7 +13,7 @@
     "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
-    "bundle": "NODE_ENV=production webpack -p",
+    "bundle": "NODE_ENV=production webpack --mode production",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },
@@ -38,7 +38,7 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "webpack": "4.30.0"
+    "webpack": "5.95.0"
   },
   "resolutions": {
     "react": "16.9.0",

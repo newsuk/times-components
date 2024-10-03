@@ -46,10 +46,10 @@
     "eslint": "5.9.0",
     "eslint-plugin-cypress": "2.0.1",
     "express": "4.16.3",
-    "graphql": "14.2.1",
+    "graphql": "16.9.0",
     "prettier": "1.14.3",
     "wait-on": "3.1.0",
-    "webpack": "4.30.0"
+    "webpack": "5.95.0"
   },
   "dependencies": {
     "@times-components/article": "7.17.19",

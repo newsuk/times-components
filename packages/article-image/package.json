@@ -15,7 +15,7 @@
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -50,7 +50,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "stylelint": "9.4.0",
-    "webpack": "4.30.0"
+    "webpack": "5.95.0"
   },
   "dependencies": {
     "@times-components/caption": "3.8.55",

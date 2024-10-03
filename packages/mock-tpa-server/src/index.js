@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { ApolloServer } from "apollo-server";
-import { printSchema, buildClientSchema } from "graphql/utilities";
+import { printSchema, buildClientSchema } from "graphql/utilities.js";
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import tpaSchema from "../../schema/schema.json";
 import createMockFunctions from "./create-mock-functions";

@@ -2,6 +2,8 @@ const path = require("path");
 const webpack = require("webpack");
 const crypto = require("crypto");
 
+const distPath = path.resolve(__dirname, "../dist/public");
+
 const cryptoCreateHash = crypto.createHash;
 crypto.createHash = algorithm =>
   cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
@@ -19,7 +21,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DllPlugin({
-      path: path.join("./dist/public", "[name]-manifest.json"),
+      path: path.join(distPath, "[name]-manifest.json"),
       name: "[name]",
       context: path.resolve(__dirname)
     })

@@ -15,5 +15,9 @@ module.exports = {
     "storybook-addon-paddings"
   ],
   framework: '@storybook/react',
+  core: {
+    builder: 'webpack5',
+  },
 };
+
 
