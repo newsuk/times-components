@@ -356,7 +356,6 @@ function Head({
     author: authorSchema,
     articleSection: sectionname,
     keywords: sectionNameList,
-    articleId: id,
     url: articleUrl
   };
 
@@ -407,7 +406,6 @@ function Head({
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname,
-    articleId: id
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
