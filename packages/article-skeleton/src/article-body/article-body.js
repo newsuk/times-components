@@ -38,7 +38,8 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines
+  Timelines,
+  TwitterEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -249,6 +250,19 @@ const renderers = ({
               <div id={id}>
                 <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
                   <GalleryCarousel sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
+            )}
+          </Context.Consumer>
+        );
+
+      case "twitter-embed":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <TwitterEmbed sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
             )}
