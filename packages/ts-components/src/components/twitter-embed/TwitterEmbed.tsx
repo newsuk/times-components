@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 declare global {
   interface Window {
-    __tcfapi: (
+    __tcfapi?: (
       command: string,
       version: number,
       callback: (data: any, success: boolean) => void

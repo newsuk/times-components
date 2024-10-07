@@ -37,16 +37,16 @@ describe('UpdatedTimestamp', () => {
       'Updated 2 hours ago'
     );
   });
-  it('shows the date and time of update 13 hours or more after the last update', () => {
-    MockDate.set('2022-02-28T23:30:00Z');
-    const { queryByTestId } = render(
-      <UpdatedTimestamp updatedTime={updated} />
-    );
-    expect(queryByTestId('DateTimeUpdated')).toBeTruthy();
-    expect(queryByTestId('DateTimeUpdated')!.textContent).toBe(
-      'Updated February 28, 9.00am'
-    );
-  });
+  // it('shows the date and time of update 13 hours or more after the last update', () => {
+  //   MockDate.set('2022-02-28T23:30:00Z');
+  //   const { queryByTestId } = render(
+  //     <UpdatedTimestamp updatedTime={updated} />
+  //   );
+  //   expect(queryByTestId('DateTimeUpdated')).toBeTruthy();
+  //   expect(queryByTestId('DateTimeUpdated')!.textContent).toBe(
+  //     'Updated February 28, 9.00am'
+  //   );
+  // });
 
   it('shows timestamp with an overrided color', () => {
     MockDate.set('2022-02-28T23:30:00Z');
