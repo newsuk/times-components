@@ -31,7 +31,8 @@ describe('TwitterEmbed', () => {
   });
 
   it('calls __tcfapi and logs the success response', () => {
-    mockTcfApi.mockImplementation(callback => {
+    // tslint:disable-next-line:no-unused-variable
+    mockTcfApi.mockImplementation((command, version, callback) => {
       callback({ vendorConsents: {} }, true);
     });
 
