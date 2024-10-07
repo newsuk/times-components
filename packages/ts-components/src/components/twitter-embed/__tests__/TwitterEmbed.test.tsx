@@ -34,6 +34,8 @@ describe('TwitterEmbed', () => {
     // tslint:disable-next-line:no-unused-variable
     mockTcfApi.mockImplementation((command, version, callback) => {
       callback({ vendorConsents: {} }, true);
+      // tslint:disable-next-line:no-console
+      console.log('command', command, version);
     });
 
     render(<TwitterEmbed sectionColour="blue" />);
