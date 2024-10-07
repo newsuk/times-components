@@ -9,23 +9,3 @@ exports[`UpdatedTimestamp does not show the timestamp within the first minute af
   </div>
 </body>
 `;
-
-exports[`UpdatedTimestamp shows timestamp with an overrided color 1`] = `
-<body>
-  <div>
-    <div
-      class="sc-bdVaJa bLzRZB"
-    >
-      <div
-        class="sc-bwzfXH jZDdnH"
-        color="yellow"
-        data-testid="DateTimeUpdated"
-      >
-        Updated 
-        February 28, 
-        10.00am
-      </div>
-    </div>
-  </div>
-</body>
-`;
