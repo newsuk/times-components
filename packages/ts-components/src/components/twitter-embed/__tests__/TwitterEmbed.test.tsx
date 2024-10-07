@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { TwitterEmbed } from '../TwitterEmbed'; // Adjust the path as necessary
 import '@testing-library/jest-dom';
 
@@ -31,7 +31,7 @@ describe('TwitterEmbed', () => {
   });
 
   it('calls __tcfapi and logs the success response', () => {
-    mockTcfApi.mockImplementation((command, version, callback) => {
+    mockTcfApi.mockImplementation(callback => {
       callback({ vendorConsents: {} }, true);
     });
 
