@@ -13,7 +13,7 @@ describe('TwitterEmbed', () => {
     // // Mock console.log to avoid using it directly
     // tslint:disable-next-line:no-console
     jest.spyOn(global.console, 'log').mockImplementation(() => {
-      // Intentionally left blank for linting rules
+      // Intentionally left blank for linting rule
     });
   });
 
