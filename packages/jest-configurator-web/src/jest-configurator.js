@@ -34,5 +34,6 @@ export default (cwd, options = {}) => {
       "node_modules/(?!(@times-components|@storybook/react)/)"
     ]
   };
+
   return config;
 };
