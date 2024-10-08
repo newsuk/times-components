@@ -584,7 +584,7 @@ const addAdsToPreviewContent = (bodyContent, isPreview) => {
       acc.push(element);
 
       if (element.name === "paragraph") {
-        paragraphCount++;
+        paragraphCount += 1;
         if (paragraphCount > 5 && paragraphCount % 5 === 0) {
           acc.push({
             name: "ad",
@@ -592,6 +592,7 @@ const addAdsToPreviewContent = (bodyContent, isPreview) => {
           });
         }
       }
+      return acc;
     }, []);
   }
   return bodyContent;
