@@ -574,30 +574,6 @@ const renderers = ({
   }
 });
 
-const addAdsToPreviewContent = (bodyContent, isPreview) => {
-  if (isPreview) {
-    // Preview articles are of the structure of teaser articles
-    // from TPA, therefore we need to add ads to the content
-    // to match the structure of paywalled articles from TPA
-    let paragraphCount = 0;
-    return bodyContent.reduce((acc, element) => {
-      acc.push(element);
-
-      if (element.name === "paragraph") {
-        paragraphCount += 1;
-        if (paragraphCount > 5 && paragraphCount % 5 === 0) {
-          acc.push({
-            name: "ad",
-            children: []
-          });
-        }
-      }
-      return acc;
-    }, []);
-  }
-  return bodyContent;
-};
-
 const decorateAd = ({ contextUrl, section }) => element =>
   element.name === "ad"
     ? { ...element, attributes: { ...element.attributes, contextUrl, section } }
@@ -617,9 +593,7 @@ const ArticleBody = ({
   id: articleId
 }) =>
   renderTrees(
-    addAdsToPreviewContent(bodyContent, isPreview).map(
-      decorateAd({ contextUrl, section })
-    ),
+    bodyContent.map(decorateAd({ contextUrl, section })),
     renderers({
       paidContentClassName,
       template,
