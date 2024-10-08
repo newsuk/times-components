@@ -1,6 +1,7 @@
-import articleTests from "../helpers/article-helper";
+import articleTests from "../../helpers/author-profile-helper";
+// const authorProfileTests = require('../../helpers/author-profile-helper')
 
-articleTests("magazinecomment", {
+articleTests("indepth", {
   stickyElements: ["#nav"],
   attachFlags: true,
   skipSnapshotTest: true,

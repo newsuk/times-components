@@ -1,9 +1,8 @@
-import articleTests from "../helpers/article-helper";
+import articleTests from "../../helpers/article-helper";
 
-articleTests("mainstandard", {
+articleTests("magazinecomment", {
   stickyElements: ["#nav"],
   attachFlags: true,
-  skipDropCapCheck: true,
   skipSnapshotTest: true,
   blackoutElements: [
     "[data-testid=save-and-share-bar]",

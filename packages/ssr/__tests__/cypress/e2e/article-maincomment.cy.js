@@ -1,6 +1,6 @@
-import articleTests from "../helpers/article-helper";
+import articleTests from "../../helpers/article-helper";
 
-articleTests("magazinestandard", {
+articleTests("maincomment", {
   stickyElements: ["#nav"],
   attachFlags: true,
   skipSnapshotTest: true,

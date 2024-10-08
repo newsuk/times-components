@@ -26,7 +26,7 @@ Cypress.on("fail", error => {
   throw error;
 });
 
-Cypress.on("uncaught:exception", err => {
+Cypress.on("uncaught:exception", (err, runnable) => {
   // should only contain errors that are occuring inside of third party scripts
   // see https://docs.cypress.io/guides/references/error-messages.html#Cypress-detected-that-an-uncaught-error-was-thrown-from-a-cross-origin-script
   if (err.message.includes("cross-origin-script-error")) {
