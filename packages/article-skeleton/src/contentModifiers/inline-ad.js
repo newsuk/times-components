@@ -6,9 +6,8 @@ const insertInlineAd = isPreview => children => {
     if (isPreview) {
       adIndex = clonedChildren.findIndex(item => item.name === "ad");
       return { children: clonedChildren.slice(adIndex) };
-    } else {
-      return clonedChildren.find(item => item.name === "paywall");
     }
+    return clonedChildren.find(item => item.name === "paywall");
   };
 
   const child = getChild();
