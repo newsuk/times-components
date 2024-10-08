@@ -10,14 +10,12 @@ declare global {
   }
 }
 
-export const TwitterEmbed: React.FC<{
-  sectionColour: string;
-}> = () => {
+export const TwitterEmbed: React.FC = () => {
   // tslint:disable-next-line:no-console
-  console.log('window', window);
+  /* console.log('window', window); */
 
   useEffect(() => {
-    if (window.__tcfapi) {
+    /* if (window.__tcfapi) {
       window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
         if (success) {
           // tslint:disable-next-line:no-console
@@ -30,11 +28,12 @@ export const TwitterEmbed: React.FC<{
     } else {
       // tslint:disable-next-line:no-console
       console.log('TCF API not available');
-    }
+    } */
+   console.log('window', window);
   }, []);
 
   // tslint:disable-next-line:no-console
-  console.log('window.__tcfapi', window.__tcfapi);
+  /* console.log('window.__tcfapi', window.__tcfapi); */
 
   return <h1>Test</h1>;
 };

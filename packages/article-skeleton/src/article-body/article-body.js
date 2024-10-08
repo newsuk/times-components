@@ -258,15 +258,11 @@ const renderers = ({
 
       case "twitter-embed":
         return (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <TwitterEmbed sectionColour={theme.sectionColour} />
-                </FetchProvider>
-              </div>
-            )}
-          </Context.Consumer>
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <TwitterEmbed />
+            </div>
+          </InteractiveContainer>
         );
 
       case "newsletter-puff":
