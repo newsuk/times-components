@@ -1,4 +1,6 @@
-const { addMatchImageSnapshotCommand } = require('cypress-image-snapshot/command');
+const {
+  addMatchImageSnapshotCommand
+} = require("cypress-image-snapshot/command");
 
 addMatchImageSnapshotCommand({
   failureThreshold: 0.05,
