@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.138.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.138.0...@times-components/article-skeleton@1.138.1) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.138.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.11...@times-components/article-skeleton@1.138.0) (2024-10-01)
+
+
+### Features
+
+* **TMC-27:** Opening links in new tab ([#3939](https://github.com/newsuk/times-components/issues/3939)) ([bb3dd33](https://github.com/newsuk/times-components/commit/bb3dd33664157f6ec796f70b815dbe6c30017f17))
+
+
+
+
+
+## [1.137.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.10...@times-components/article-skeleton@1.137.11) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.137.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.9...@times-components/article-skeleton@1.137.10) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.137.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.8...@times-components/article-skeleton@1.137.9) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/article-skeleton
