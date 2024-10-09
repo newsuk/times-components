@@ -11,7 +11,9 @@ const insertInlineAd = isPreview => children => {
   };
 
   const child = getChild();
-  const paragraph = clonedChildren.filter(item => item.name === "paragraph");
+  const paragraph = isPreview
+    ? clonedChildren.slice(0, adIndex).filter(item => item.name === "paragraph")
+    : clonedChildren.filter(item => item.name === "paragraph");
 
   if (!child) {
     return clonedChildren;
@@ -31,11 +33,8 @@ const insertInlineAd = isPreview => children => {
   paraPostition.forEach((item, i) => {
     const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
     if (!inlineAd) {
-      const indexPos = paywallParagraphs[
-        item - (isPreview ? adIndex : paragraph.length)
-      ]
-        ? paywallParagraphs[item - (isPreview ? adIndex : paragraph.length)]
-            .index
+      const indexPos = paywallParagraphs[item - paragraph.length]
+        ? paywallParagraphs[item - paragraph.length].index
         : null;
 
       if (indexPos && indexPos !== null) {
