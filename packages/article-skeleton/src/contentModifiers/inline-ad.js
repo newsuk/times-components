@@ -30,8 +30,11 @@ const insertInlineAd = isPreview => children => {
   paraPostition.forEach((item, i) => {
     const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
     if (!inlineAd) {
-      const indexPos = paywallParagraphs[item - paragraph.length]
-        ? paywallParagraphs[item - paragraph.length].index
+      const indexPos = paywallParagraphs[
+        item - (isPreview ? adIndex : paragraph.length)
+      ]
+        ? paywallParagraphs[item - (isPreview ? adIndex : paragraph.length)]
+            .index
         : null;
 
       if (indexPos && indexPos !== null) {
