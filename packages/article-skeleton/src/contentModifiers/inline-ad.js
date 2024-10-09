@@ -16,6 +16,7 @@ const insertInlineAd = isPreview => children => {
   if (!child) {
     return clonedChildren;
   }
+
   const paywallChildren = child.children;
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
