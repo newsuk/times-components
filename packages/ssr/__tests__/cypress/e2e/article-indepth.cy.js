@@ -1,4 +1,4 @@
-import articleTests from "../../helpers/author-profile-helper";
+import articleTests from "../../helpers/article-helper";
 
 articleTests("indepth", {
   stickyElements: ["#nav"],
