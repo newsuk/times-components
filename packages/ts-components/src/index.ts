@@ -118,3 +118,5 @@ export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
+
+export { TwitterEmbed } from './components/twitter-embed/TwitterEmbed';

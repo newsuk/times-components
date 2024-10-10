@@ -1,7 +1,7 @@
 export default [
   {
     attributes: {
-      title: "New Brexit referendum"
+      title: "New Brexit referendummmmmmm"
     },
     children: [
       {
@@ -127,6 +127,21 @@ export default [
       }
     ],
     name: "keyFacts"
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
+      display: "primary",
+      url: "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+      element: {
+        value: "twitter-embed",
+        attributes: {
+          url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
+        }
+      }
+    },
+    children: []
   },
   {
     children: [
