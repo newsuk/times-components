@@ -214,6 +214,187 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
+.c29 {
+  overflow: auto;
+  -webkit-scroll-behavior: auto;
+  -moz-scroll-behavior: auto;
+  -ms-scroll-behavior: auto;
+  scroll-behavior: auto;
+  opacity: 1;
+  pointer-events: "auto";
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #696969;
+  -webkit-transition: bottom 1s ease-in;
+  transition: bottom 1s ease-in;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c29::-webkit-scrollbar {
+  display: none;
+}
+
+.c38 {
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 20px;
+  color: #01000d;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c33 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF5656;
+  line-height: 21px;
+}
+
+.c35 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #696969;
+  line-height: 21px;
+}
+
+.c40 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007A3F;
+  line-height: 21px;
+}
+
+.c41 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #54145D;
+  line-height: 21px;
+}
+
+.c42 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005C8A;
+  line-height: 21px;
+}
+
+.c43 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #DF7334;
+  line-height: 21px;
+}
+
+.c37 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c44 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.c30 {
+  min-width: 336px;
+  height: 74px;
+}
+
+.c31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.c36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.c34 {
+  width: 1px;
+  height: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #e4e4e4;
+}
+
+.c39 {
+  width: 1px;
+  height: 74px;
+  color: #e4e4e4;
+}
+
+.c45 {
+  font-family: Roboto-Regular,Roboto-Regular-fallback,serif;
+  font-size: 14px;
+  width: 92px;
+  margin: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  min-width: 92px;
+  height: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px;
+  margin-top: 20px;
+}
+
 .c12 {
   border: solid #DBDBDB;
   border-width: 1px 0;
@@ -989,6 +1170,224 @@ exports[`full article with style 1`] = `
       <AdContainer />
       <AdContainer />
       <AdContainer />
+      <div
+        className="c29"
+      >
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <span
+                className="c33"
+              >
+                HAVE YOUR SAY
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                89 RECENTLY COMMENTED
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c37"
+              />
+              <a
+                className="c38"
+              >
+                'Change has begun': Starmer gives first conference speech'
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="c39"
+        />
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <span
+                className="c40"
+              >
+                READ MORE
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                SPORT
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c37"
+              />
+              <a
+                className="c38"
+              >
+                Rodri could miss rest of season with knee injury
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="c39"
+        />
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <svg>
+                <path />
+              </svg>
+              <span
+                className="c41"
+              >
+                PODCAST
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                TIMES NEWS BRIEFING
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c37"
+              />
+              <a
+                className="c38"
+              >
+                Evening Briefing Thursday 26th September
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="c39"
+        />
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <svg>
+                <path />
+              </svg>
+              <span
+                className="c42"
+              >
+                VIDEO
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                US
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c37"
+              />
+              <a
+                className="c38"
+              >
+                Trump used assassination attempt to his advantage
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="c39"
+        />
+        <div
+          className="c30"
+        >
+          <div
+            className="c31"
+          >
+            <div
+              className="c32"
+            >
+              <svg>
+                <path />
+              </svg>
+              <span
+                className="c43"
+              >
+                PLAY
+              </span>
+              <hr
+                className="c34"
+              />
+              <span
+                className="c35"
+              >
+                PUZZLES
+              </span>
+            </div>
+            <div
+              className="c36"
+            >
+              <img
+                className="c44"
+              />
+              <a
+                className="c38"
+              >
+                Times General Knowledge No 12345
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="c39"
+        />
+        <a
+          className="c45"
+        >
+          Customise
+        </a>
+      </div>
     </article>
   </div>
 </div>

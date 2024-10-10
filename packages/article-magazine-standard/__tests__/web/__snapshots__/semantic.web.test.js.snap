@@ -490,5 +490,129 @@ exports[`1. a full article 1`] = `
       </span>
     </article>
   </main>
+  <span
+    color="#FF5656"
+  >
+    HAVE YOUR SAY
+  </span>
+  <hr />
+  <span>
+    89 RECENTLY COMMENTED
+  </span>
+  <img
+    src="https://s3-alpha-sig.figma.com/img/dd68/3e09/181fd13a92c1ab3e6319601ba403e6a9?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OPybSiJqmJXr5pl6BAwdtIZqpBWdVVJxKv-woB4y3EieTJKxfvNMOOyjO5C6u2ZEy0eA9F8iRtAenGLBGbUIBZt322hVscJDtODxjsNc3wP2wNne7khqGCroAJkgpuVQUbP4HvXqKJ-VV8-28KjIkN~YDVxsK0JUU8KuZMgfweWwv0g8auVUXEr1eU9AvaEgR-TMxJ52sNsyC9eE9Kj47V6yfZZ7KUHcUPxtvjjsIxySgJJvfY0FKsECPp5X1y6ym5DxFoknvG~HzfsUXDcuOUvauSIrKlz~S4yhBSCJBkEi0mBN56LPf5i9IlaBRqPmSt1mXPGwYoeEtsnn1e14WA__"
+  />
+  <a
+    href="/uk/politics/article/labour-party-conference-keir-starmer-speech-latest-news-0nnkxjcqq"
+  >
+    'Change has begun': Starmer gives first conference speech'
+  </a>
+  <hr />
+  <span
+    color="#007A3F"
+  >
+    READ MORE
+  </span>
+  <hr />
+  <span>
+    SPORT
+  </span>
+  <img
+    src="https://s3-alpha-sig.figma.com/img/b168/4d1b/b9361aacf8aa15439db267471ccf52ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=djhM7Ifd4NH-iGmZb5IYPjRG5xrNSOCCXybgwEcfLWNTa5itFXwv715Oe8~-QYy5fenMRts0Oce6GlQ8rOhSqVhR2h1HAmJZZ8VxDL9zSWxZ~IejyHGNj0Q7LXqsxL8vfs7rypyZ94pN48bqIVvNPKi~6qf9~-qbAHx0CJJtCsQXE8102~de5dVTAn-WUIhzqY50UCaImG9IvTcX~tQxJE3aI7dYLvPa~iPpd5OxGrRaBaoQeHe-kXknkb-BpXtJ3AQvhdJXRdGSTRexyDR2eh7NQT6FJPywUz2uxYzikSzFuYYlBg2Ul2K40eQtsOBacuT0mtlwu0x0eWO5iLL~Tg__"
+  />
+  <a
+    href="/sport/football/article/rodri-knee-injury-man-city-arsenal-x08qk7pdb"
+  >
+    Rodri could miss rest of season with knee injury
+  </a>
+  <hr />
+  <svg
+    height={15}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="1cc574fee26732613f70d964efd83c34"
+    />
+  </svg>
+  <span
+    color="#54145D"
+  >
+    PODCAST
+  </span>
+  <hr />
+  <span>
+    TIMES NEWS BRIEFING
+  </span>
+  <img
+    src="https://s3-alpha-sig.figma.com/img/8505/83db/efe4ca6f159524c5e9605c09e22beb63?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HNYdABcDQqUiXIfetUZ9OA2Lh5IZ82h6NT4eNrR0mgrj1vk0TFNkd5pbMEAgfjBNwCQPT9kQIoifJ3HE6qjb4D69RgSr~R0Y3uMhuju4jBbmgMIXsE0C1-QjJcSXtj427ttm4ObVlhHlsWRb2lFcO2mlmnRqstmCaCRGqD-oAtUXZYQCXA45Cu27c7ezqBkaMID5VeShG4Psk-JmSXmtMSiPjYwFKlEKktniFs8fnwjdyFlHWxVPt6F~JXUemvDvVFavY9XBYRKdhOd4SkoVhKLe3kvenIFX6~yDqERGaIt1Vh5jAKBnoDxvCXWn~kjIjLKFwOzqYpFmYaeqFFQfjg__"
+  />
+  <a
+    href="/podcasts/times-news-briefing"
+  >
+    Evening Briefing Thursday 26th September
+  </a>
+  <hr />
+  <svg
+    height={15}
+    width={14}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="1cc574fee26732613f70d964efd83c34"
+    />
+  </svg>
+  <span
+    color="#005C8A"
+  >
+    VIDEO
+  </span>
+  <hr />
+  <span>
+    US
+  </span>
+  <img
+    src="https://s3-alpha-sig.figma.com/img/cdcb/7283/3ad7a0c137457614d3d1a693452964e1?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g5MwasiSQlq1ZyOFr-uaC9NvL3hb1Ui3gkHd7-izDGz7zBgTSHN3~pPpEcBSwBEbzp8-dTXfITS7M4XlM5jPy3GzA7N333yrbkwqWCX~xZkHLXYjnBlwQ59ukqOaRLyWZh1vSMqQTshRPnSso07sHXh37HIWuILsM1AKs9-NgDdNaQeyZgw--70gTFHJEUQ8iQdO00BqzcvRir0SAJXC4oYSRsT6X~qLNzRucIBLfHViEEcKruSWqhv~YPkym7DgeZCYQ9kBuSWb6NxSrNtzC-FNzzIzVAjcsFrUarEEzFgZywRC3n96sBTgHG6HYdJVVpqSIhrgDhD16Y~9ri4-3Q__"
+  />
+  <a
+    href="/world/us-world/article/donald-trump-used-assassination-attempts-advantage-us-election-2024-g9mz5wf8r"
+  >
+    Trump used assassination attempt to his advantage
+  </a>
+  <hr />
+  <svg
+    height={15}
+    width={15}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="3f00ee739399a5623eac69393855ab8e"
+    />
+  </svg>
+  <span
+    color="#DF7334"
+  >
+    PLAY
+  </span>
+  <hr />
+  <span>
+    PUZZLES
+  </span>
+  <img
+    src="https://s3-alpha-sig.figma.com/img/24f9/bc87/903eed2895cf7ef34c3bd86cdb19ee74?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKEomwG~hc7W-ITYVzz8vKI7cKX4bkZ0xv1Ll-SW9mfR621lZvjzGwFO6F5hFrPo37GTok3RUi5G6JdS4jTXwxPPIOMYfPJzwgImrbY2eKElIBD-vSPBDK9U5OXc6dmN3600vGHDvEclr8Ar0FO8ZmXwKhnUa-hM2i2~~UOCHSHorTryt-iOn28pUC4~sqXhRSdz-5FH07IoVekjFmXYhX-mz8FCHgPvE~SrhlTmemubmMvU-FttZjY~rcyr7p9IkLWyXQ3jenq8UFRiiZ9buR0LQ6MpP85ocGQ4MCRnj2uCPVEtMU6wde34oI-GpvEa-B5Cf8zVR7GtF1ZfW5gsAw__"
+  />
+  <a
+    href="/puzzles/crossword/times-gk-crossword-no-252-n0n70whpb"
+  >
+    Times General Knowledge No 12345
+  </a>
+  <hr />
+  <a
+    href="/subscribe/digital"
+  >
+    Customise
+  </a>
 </article>
 `;
