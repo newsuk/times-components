@@ -39,7 +39,8 @@ storiesOf('Typescript Component/Article Sidebar', module).add(
     return (
       <TrackingContextProvider
         context={{
-          component: 'ArticleSidebar',
+          component: 'ArticleSkeleton',
+          object: 'ArticleSidebar',
           attrs: {
             article_name: 'articleHeadline',
             section_details: 'section'
