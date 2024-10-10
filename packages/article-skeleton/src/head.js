@@ -450,7 +450,6 @@ function Head({
           {JSON.stringify(liveBlogJsonLD)}
         </script>
       )}
-
       <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
 
       {videoJsonLD && (
