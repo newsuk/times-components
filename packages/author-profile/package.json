@@ -60,7 +60,6 @@
   },
   "dependencies": {
     "@times-components/article-list": "9.19.12",
-    "@times-components/article-skeleton": "1.138.1",
     "@times-components/gradient": "3.5.61",
     "@times-components/icons": "2.22.12",
     "@times-components/image": "6.18.1",

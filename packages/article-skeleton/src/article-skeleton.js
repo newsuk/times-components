@@ -18,7 +18,6 @@ import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
-import { getRegistrationType } from "./data-helper";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
