@@ -24,6 +24,7 @@ describe('TwitterEmbed', () => {
   });
 
   it('renders Twitter content if consent is given for Twitter', () => {
+    // tslint:disable-next-line:no-unused-variable
     mockTcfApi.mockImplementation((command, version, callback) => {
       callback({ consentedVendors: [{ name: 'Twitter' }] }, true);
     });
@@ -42,7 +43,7 @@ describe('TwitterEmbed', () => {
   });
 
   it('renders blocked content message if consent for Twitter is not given', () => {
-    // Simulate no consent for Twitter
+    // tslint:disable-next-line:no-unused-variable
     mockTcfApi.mockImplementation((command, version, callback) => {
       callback({ consentedVendors: [] }, true);
     });
@@ -81,7 +82,7 @@ describe('TwitterEmbed', () => {
   });
 
   it('calls __tcfapi and logs an error if consent data is unavailable', () => {
-    // Simulate an error in fetching consent data
+    // tslint:disable-next-line:no-unused-variable
     mockTcfApi.mockImplementation((command, version, callback) => {
       callback(null, false);
     });
