@@ -474,6 +474,4 @@ export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
 
-export { getRegistrationType };
-
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));
