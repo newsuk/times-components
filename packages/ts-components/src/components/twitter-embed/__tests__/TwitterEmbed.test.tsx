@@ -24,7 +24,7 @@ describe('TwitterEmbed', () => {
   it('logs "TCF API not available" if __tcfapi is not defined', () => {
     delete window.__tcfapi;
 
-    render(<TwitterEmbed element={undefined}  />);
+    render(<TwitterEmbed />);
 
     // tslint:disable-next-line:no-console
     expect(console.log).toHaveBeenCalledWith('TCF API not available');
@@ -38,7 +38,7 @@ describe('TwitterEmbed', () => {
       console.log('command', command, version);
     });
 
-    render(<TwitterEmbed element={undefined} />);
+    render(<TwitterEmbed />);
 
     expect(mockTcfApi).toHaveBeenCalledWith(
       'getCustomVendorConsents',

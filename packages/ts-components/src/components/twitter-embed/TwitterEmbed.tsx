@@ -13,16 +13,7 @@ declare global {
   }
 }
 
-export declare type TwitterEmbedProps = {
-    element: any;
-};
-
-export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({element}) => {
-  const isTwitterAllowed = true;
-  const { source} = element;
-
-  console.log('isTwitterAllowed', isTwitterAllowed);
-  console.log('source', source);
+export const TwitterEmbed = () => {
 
   useEffect(() => {
     /* if (window.__tcfapi) {
@@ -64,14 +55,7 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({element}) => {
     openPrivacyModal(ModalType.GDPR, 'messageIdForGDPR'); 
   };
 
-  return isTwitterAllowed ? (
-        <iframe
-          src={source}
-          width="100%"
-          height="500px"
-          title="Twitter Embed"
-        />
-  ) : (
+  return (
     <CardContainer>
     <Header>
     <CustomIconContainer>

@@ -66,6 +66,7 @@ const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
 const hasDisabledAds = id => disabledAds.includes(id);
+const isTwitterAllowed = false;
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -94,6 +95,7 @@ const highResSizeCalc = (observed, key, template) => {
 
   return indepthRetinaScreenWidth || screenWidth;
 };
+
 const renderers = ({
   paidContentClassName,
   template,
@@ -256,12 +258,23 @@ const renderers = ({
         );
 
         case "twitter-embed":
-          return (<InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <div id={id}>
-              <TwitterEmbed/>
-            </div>
-          </InteractiveContainer>);
-
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              {isTwitterAllowed ? (
+                  <div id={id}>
+                    <InteractiveWrapper
+                      attributes={attributes}
+                      element={value}
+                      key={key}
+                      source={url}
+                    />
+                  </div>
+                ) : (
+                  <div id={id}>
+                    <TwitterEmbed />
+                  </div>)}
+            </InteractiveContainer>
+          );
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
