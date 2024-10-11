@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { breakpoints } from '@times-components/ts-styleguide';
-import { IconContainer } from "../save-star/styles";
+import { IconContainer } from '../save-star/styles';
 
 export const CardContainer = styled.div`
   padding: 24px;
   height: auto;
   width: auto;
-  border: 1px solid #E4E4E4;
-  background-color: #F5F5F5;
+  border: 1px solid #e4e4e4;
+  background-color: #f5f5f5;
   margin: 0;
   max-width: 460px;
 `;
@@ -21,14 +21,14 @@ export const CustomIconContainer = styled(IconContainer)`
   width: auto;
   margin-right: 8px;
   svg {
-    fill: #1573a2; 
-    width: 20px;    
-    height: 20px;   
+    fill: #1573a2;
+    width: 20px;
+    height: 20px;
   }
 `;
 
 export const Title = styled.h1`
-  color: #005C8A;
+  color: #005c8a;
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -43,11 +43,11 @@ export const Title = styled.h1`
 
 export const Paragraph = styled.p`
   color: #333;
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 16px;
@@ -58,13 +58,12 @@ export const EnableButton = styled.button`
   display: flex;
   align-items: flex-start;
   align-self: stretch;
-  background-color: #005C8A;
+  background-color: #005c8a;
   padding: 8px 12px;
   width: 100%;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
-
 `;
 
 export const AllowButton = styled.button`
@@ -76,9 +75,8 @@ export const AllowButton = styled.button`
   justify-content: center;
   margin-top: 12px;
   padding: 8px 12px;
-
 `;
 
 export const LinkPrivacyManager = styled.a`
-  color: #00527A;
+  color: #00527a;
 `;

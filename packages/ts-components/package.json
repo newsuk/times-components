@@ -54,6 +54,7 @@
     "@times-components/date-publication": "0.30.34",
     "@times-components/icons": "2.22.12",
     "@times-components/image": "6.18.1",
+    "@times-components/interactive-wrapper": "0.9.89",
     "@times-components/link": "3.17.34",
     "@times-components/provider": "1.41.4",
     "@times-components/provider-queries": "2.23.3",
