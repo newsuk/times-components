@@ -1,6 +1,5 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
-// import { getRegistrationType } from "@times-components/article-skeleton";
 
 export default Component =>
   withTrackingContext(Component, {
