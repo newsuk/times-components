@@ -8,10 +8,10 @@ export default Component =>
       authorName: author && author.name,
       page,
       pageSize,
-      registrationType:
-        typeof window !== "undefined"
-          ? window?.nuk?.user?.registrationType ?? ""
-          : ""
+      registrationType: (() => {
+        const user = (global.nuk && global.nuk.user) || {};
+        return user && user.registrationType ? user.registrationType : "";
+      })()
     }),
     trackingObjectName: "AuthorProfile"
   });
