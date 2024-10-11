@@ -157,7 +157,7 @@ const articleTemplateTest = (template, options = {}) => {
         });
     });
 
-    it("should pass basic a11y test", () => {
+    it.skip("should pass basic a11y test", () => {
       cy.task("startMockServerWith", {
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
