@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { AdContainer } from "@times-components/ad";
@@ -94,7 +94,6 @@ const highResSizeCalc = (observed, key, template) => {
 
   return indepthRetinaScreenWidth || screenWidth;
 };
-
 const renderers = ({
   paidContentClassName,
   template,
@@ -256,14 +255,13 @@ const renderers = ({
           </Context.Consumer>
         );
 
-      case "twitter-embed":
-        return (
-          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+        case "twitter-embed":
+          return (<InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <div id={id}>
-              <TwitterEmbed />
+              <TwitterEmbed/>
             </div>
-          </InteractiveContainer>
-        );
+          </InteractiveContainer>);
+
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations

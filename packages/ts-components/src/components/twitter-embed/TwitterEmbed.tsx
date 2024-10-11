@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import { AllowButton, CardContainer, EnableButton, LinkPrivacyManager, Paragraph, Title, CustomIconContainer, Header } from "./styles";
+import get from "lodash.get";
+import { InfoIcon } from "../inline-message/InfoIcon";
 
 declare global {
   interface Window {
@@ -10,9 +13,16 @@ declare global {
   }
 }
 
-export const TwitterEmbed: React.FC = () => {
-  // tslint:disable-next-line:no-console
-  /* console.log('window', window); */
+export declare type TwitterEmbedProps = {
+    element: any;
+};
+
+export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({element}) => {
+  const isTwitterAllowed = true;
+  const { source} = element;
+
+  console.log('isTwitterAllowed', isTwitterAllowed);
+  console.log('source', source);
 
   useEffect(() => {
     /* if (window.__tcfapi) {
@@ -29,11 +39,49 @@ export const TwitterEmbed: React.FC = () => {
       // tslint:disable-next-line:no-console
       console.log('TCF API not available');
     } */
-   console.log('window', window);
+  console.log('window', window);
   }, []);
 
-  // tslint:disable-next-line:no-console
-  /* console.log('window.__tcfapi', window.__tcfapi); */
+  enum ModalType {
+    GDPR = 'gdpr',
+    CCPA = 'ccpa',
+}
 
-  return <h1>Test</h1>;
+  const openPrivacyModal = (type: ModalType, messageId: string) => {
+    if (typeof window === 'undefined') return;
+
+    const loadModal = get(window, `_sp_.${type}.loadPrivacyManagerModal`);
+
+    if (loadModal) {
+        loadModal(messageId);
+    } else {
+        console.warn('Sourcepoint LoadPrivacyManagerModal is not available');
+    }
+};
+
+  const handlePrivacyManagerClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault(); 
+    openPrivacyModal(ModalType.GDPR, 'messageIdForGDPR'); 
+  };
+
+  return isTwitterAllowed ? (
+        <iframe
+          src={source}
+          width="100%"
+          height="500px"
+          title="Twitter Embed"
+        />
+  ) : (
+    <CardContainer>
+    <Header>
+    <CustomIconContainer>
+      <InfoIcon />
+    </CustomIconContainer>
+    <Title>X (Twitter) content blocked</Title>
+    </Header>
+    <Paragraph>Please enable cookies and other technologies to view this content. You can update your cookies preferences any time using <LinkPrivacyManager  href="#" onClick={handlePrivacyManagerClick}>privacy manager.</LinkPrivacyManager></Paragraph>
+    <EnableButton>Enable cookies</EnableButton>
+    <AllowButton>Allow cookies once</AllowButton>
+  </CardContainer>
+  );
 };
