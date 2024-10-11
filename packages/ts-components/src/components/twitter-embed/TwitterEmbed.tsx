@@ -1,7 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AllowButton, CardContainer, EnableButton, LinkPrivacyManager, Paragraph, Title, CustomIconContainer, Header } from "./styles";
 import get from "lodash.get";
 import { InfoIcon } from "../inline-message/InfoIcon";
+// @ts-ignore
+import InteractiveWrapper from '@times-components/interactive-wrapper';
+
+export declare type TwitterEmbedProps = {
+    element: any;
+    url: string;
+};
 
 declare global {
   interface Window {
@@ -13,23 +20,23 @@ declare global {
   }
 }
 
-export const TwitterEmbed = () => {
+export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({element, url}) => {
+
+  const [isTwitterAllowed, setIsTwitterAllowed] = useState(false);
 
   useEffect(() => {
-    /* if (window.__tcfapi) {
+    if (window.__tcfapi) {
       window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
-        if (success) {
-          // tslint:disable-next-line:no-console
-          console.log('TCF API response:', data);
+        if (success && data?.consentedVendors) {
+          const isTwitterVendorAllowed = data.consentedVendors.some(
+            (vendor: { name: string }) => vendor.name === 'Twitter'
+          );
+          setIsTwitterAllowed(isTwitterVendorAllowed);
         } else {
-          // tslint:disable-next-line:no-console
-          console.log('Error fetching TCF API data');
+          console.log('Error fetching consent data or Twitter not allowed');
         }
       });
-    } else {
-      // tslint:disable-next-line:no-console
-      console.log('TCF API not available');
-    } */
+    }
   console.log('window', window);
   }, []);
 
@@ -55,17 +62,25 @@ export const TwitterEmbed = () => {
     openPrivacyModal(ModalType.GDPR, 'messageIdForGDPR'); 
   };
 
-  return (
-    <CardContainer>
-    <Header>
-    <CustomIconContainer>
-      <InfoIcon />
-    </CustomIconContainer>
-    <Title>X (Twitter) content blocked</Title>
-    </Header>
-    <Paragraph>Please enable cookies and other technologies to view this content. You can update your cookies preferences any time using <LinkPrivacyManager  href="#" onClick={handlePrivacyManagerClick}>privacy manager.</LinkPrivacyManager></Paragraph>
-    <EnableButton>Enable cookies</EnableButton>
-    <AllowButton>Allow cookies once</AllowButton>
-  </CardContainer>
-  );
+  return isTwitterAllowed ? (
+                    <InteractiveWrapper
+                      attributes={element.attributes}
+                      element={element.value}
+                      key={element.key}
+                      source={url}
+                    />
+                ) : (
+                    <CardContainer>
+                      <Header>
+                        <CustomIconContainer>
+                          <InfoIcon />
+                        </CustomIconContainer>
+                        <Title>X (Twitter) content blocked</Title>
+                      </Header>
+                      <Paragraph>Please enable cookies and other technologies to view this content. You can update your cookies preferences any time using <LinkPrivacyManager  href="#" onClick={handlePrivacyManagerClick}>privacy manager.</LinkPrivacyManager></Paragraph>
+                      <EnableButton>Enable cookies</EnableButton>
+                      <AllowButton>Allow cookies once</AllowButton>
+                    </CardContainer>
+  )
+
 };
