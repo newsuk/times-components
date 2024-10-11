@@ -1,5 +1,6 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
+import { getRegistrationType } from "@times-components/article-skeleton";
 
 export default Component =>
   withTrackingContext(Component, {
@@ -7,7 +8,8 @@ export default Component =>
       articlesCount: get(author, "articles.count", 0),
       authorName: author && author.name,
       page,
-      pageSize
+      pageSize,
+      registrationType: getRegistrationType()
     }),
     trackingObjectName: "AuthorProfile"
   });
