@@ -133,7 +133,8 @@ export default [
     attributes: {
       id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
       display: "primary",
-      url: "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+      url:
+        "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
       element: {
         value: "twitter-embed",
         attributes: {
