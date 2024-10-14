@@ -256,14 +256,14 @@ const renderers = ({
           </Context.Consumer>
         );
 
-        case "twitter-embed":
-          return (
-            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-                  <div id={id}>
-                    <TwitterEmbed element={element} url={url} />
-                  </div>
-            </InteractiveContainer>
-          );
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <TwitterEmbed element={element} url={url} />
+            </div>
+          </InteractiveContainer>
+        );
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
