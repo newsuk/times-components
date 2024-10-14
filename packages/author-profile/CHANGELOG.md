@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.19.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.18.26...@times-components/author-profile@6.19.0) (2024-10-11)
+
+
+### Features
+
+* **TMD-760:** add registration type param to author profile pages ([#3955](https://github.com/newsuk/times-components/issues/3955)) ([c1c3398](https://github.com/newsuk/times-components/commit/c1c3398ecfedf4b02bdc70c7f6549f7a8d6191f6))
+
+
+
+
+
 ## [6.18.26](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.18.25...@times-components/author-profile@6.18.26) (2024-10-01)
 
 **Note:** Version bump only for package @times-components/author-profile
