@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import differenceInSeconds from 'date-fns/differenceInSeconds';
 import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
-import formatDistanceStrict from 'date-fns/formatDistanceStrict'; 
+import formatDistanceStrict from 'date-fns/formatDistanceStrict';
 import utcToZonedTime from 'date-fns-tz/utcToZonedTime';
 import format from 'date-fns-tz/format';
 
