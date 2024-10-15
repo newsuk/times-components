@@ -153,7 +153,7 @@ const ArticleSkeleton = ({
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
-    insertInlineAd,
+    insertInlineAd(isPreview),
     tagLastParagraph,
     setExternalLinkTargets
   ];
