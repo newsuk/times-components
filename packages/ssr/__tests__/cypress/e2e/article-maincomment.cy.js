@@ -1,4 +1,4 @@
-import articleTests from "../helpers/article-helper";
+import articleTests from "../../helpers/article-helper";
 
 articleTests("maincomment", {
   stickyElements: ["#nav"],
