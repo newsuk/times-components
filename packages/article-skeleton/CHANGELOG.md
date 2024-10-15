@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.140.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.3...@times-components/article-skeleton@1.140.0) (2024-10-15)
+
+
+### Features
+
+* **TMD-119:** add extra ad slots to preview articles ([#3953](https://github.com/newsuk/times-components/issues/3953)) ([63c3abe](https://github.com/newsuk/times-components/commit/63c3abe92105f8f22609543bf62fd9046af961dc))
+
+
+
+
+
 ## [1.139.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.2...@times-components/article-skeleton@1.139.3) (2024-10-15)
 
 **Note:** Version bump only for package @times-components/article-skeleton
