@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.105.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.104.1...@times-components/ts-components@1.105.0) (2024-10-15)
+
+
+### Features
+
+* **TMPZ-112:** Implement tracking of clicks on puzzles in sidebar component ([#3926](https://github.com/newsuk/times-components/issues/3926)) ([a84e5f3](https://github.com/newsuk/times-components/commit/a84e5f3a2bb34da21824c68a7dd89bb8419ef214))
+
+
+
+
+
 ## [1.104.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.104.0...@times-components/ts-components@1.104.1) (2024-10-14)
 
 **Note:** Version bump only for package @times-components/ts-components
