@@ -4,7 +4,7 @@ import {
   checkShareBarLoaded,
   waitUntilSelectorExists,
   terminalLog
-} from "../cypress/support";
+} from "../cypress/support/e2e.js";
 
 const relatedArticleCount = 3;
 

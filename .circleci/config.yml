@@ -96,6 +96,7 @@ jobs:
           command: |
             lerna run test --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
+
   run_web_tests:
     executor: node
     steps:
@@ -132,6 +133,8 @@ jobs:
 
   run_cypress_tests:
     executor: node
+    resource_class: medium
+    parallelism: 2
     steps:
       - checkout
       - attach_workspace:
@@ -147,8 +150,10 @@ jobs:
       - run:
           name: Run Cypress Tests
           command: |
-            yarn test:e2e
+            chmod +x ./lib/cypress-rerun.sh && ./lib/cypress-rerun.sh
           working_directory: ~/project/
+      - store_test_results:
+          path: packages/ssr/test_results/cypress
       - store_artifacts:
           path: packages/ssr/__tests__/screenshots
       - store_artifacts:

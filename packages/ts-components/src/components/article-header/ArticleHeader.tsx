@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import {
-  differenceInSeconds,
-  differenceInCalendarDays,
-  formatDistanceStrict
-} from 'date-fns';
-import { format, utcToZonedTime } from 'date-fns-tz';
+import differenceInSeconds from 'date-fns/differenceInSeconds';
+import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
+import formatDistanceStrict from 'date-fns/formatDistanceStrict';
+import utcToZonedTime from 'date-fns-tz/utcToZonedTime';
+import format from 'date-fns-tz/format';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';

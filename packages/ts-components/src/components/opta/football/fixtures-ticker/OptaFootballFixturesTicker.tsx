@@ -11,7 +11,7 @@ import {
 } from '../../utils/config';
 
 import { PlaceholderContainer } from '../shared-styles';
-import { WidgetContainer } from './styles';
+import { Container, WidgetContainer } from './styles';
 import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
 import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 import { useFixturePageLink } from '../../utils/useFixturePageLink';
@@ -94,7 +94,7 @@ export const OptaFootballFixturesTicker: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
 
     return (
-      <>
+      <Container>
         <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
 
         {!isReady && (
@@ -102,7 +102,7 @@ export const OptaFootballFixturesTicker: React.FC<{
             <Placeholder />
           </PlaceholderContainer>
         )}
-      </>
+      </Container>
     );
   }
 );

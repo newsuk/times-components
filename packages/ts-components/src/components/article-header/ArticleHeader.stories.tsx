@@ -1,11 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
-import {
-  // format,
-  addMinutes
-} from 'date-fns';
-// import { utcToZonedTime } from 'date-fns-tz';
+import addMinutes from 'date-fns/addMinutes';
 
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import ArticleHeader from './ArticleHeader';

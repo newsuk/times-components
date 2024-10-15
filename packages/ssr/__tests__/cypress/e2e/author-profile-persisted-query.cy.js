@@ -1,4 +1,4 @@
-import authorProfileTests from "../helpers/author-profile-helper";
+import authorProfileTests from "../../helpers/author-profile-helper";
 
 authorProfileTests({
   qs: "?pq=1",

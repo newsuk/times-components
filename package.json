@@ -46,11 +46,13 @@
     "test:unit": "lerna run test:unit --stream",
     "test:unit:updatesnapshot": "lerna run test:unit:updatesnapshot --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
+    "test:e2e:ci": "yarn bundle && lerna run test:integration:ci --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
     "lerna:publish:verdaccio": "yarn lerna publish --conventional-commits --concurrency=1  --registry=\"http://localhost:4873\" --no-verify-access --no-git-tag-version   --no-verify-registry --yes ",
     "verdaccio:start": "yarn verdaccio -c ./.verdaccio-config.yaml",
     "verdaccio:start:detached": "yarn pm2 start \"yarn verdaccio:start\"",
-    "watch": "lerna run watch --stream --no-sort --concurrency 100"
+    "watch": "lerna run watch --stream --no-sort --concurrency 100",
+    "stop:testserver": "kill $(lsof -t -i:3000)"
   },
   "jest": {
     "coveragePathIgnorePatterns": [
@@ -112,6 +114,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
+    "cypress-circleci-reporter": "0.2.0",
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "es6-promise-pool": "^2.5.0",

@@ -87,7 +87,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 isSavingEnabled: sharingSavingFlag,
                 isSharingEnabled: sharingSavingFlag,
                 isCommentEnabled: commentingFlag,
-                isEntitlementFeatureEnabled
+                isEntitlementFeatureEnabled,
+                isPreview
               },
               error,
               isLoading,

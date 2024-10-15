@@ -1,11 +1,9 @@
 import get from 'lodash.get';
-import {
-  max,
-  parseISO,
-  isValid,
-  formatDistanceToNowStrict,
-  differenceInCalendarDays
-} from 'date-fns';
+import max from 'date-fns/max';
+import parseISO from 'date-fns/parseISO';
+import isValid from 'date-fns/isValid';
+import formatDistanceToNowStrict from 'date-fns/formatDistanceToNowStrict';
+import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
 
 import { SliceArticle } from '../types/slice';
 

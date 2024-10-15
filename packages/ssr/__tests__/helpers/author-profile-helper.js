@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
-import { terminalLog } from "../cypress/support";
+import { terminalLog } from "../cypress/support/e2e.js";
 
 export default (options = {}) => {
   const qs = options.qs || "";

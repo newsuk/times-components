@@ -268,8 +268,7 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
-    keywords,
-    id
+    keywords
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -356,7 +355,6 @@ function Head({
     author: authorSchema,
     articleSection: sectionname,
     keywords: sectionNameList,
-    articleId: id,
     url: articleUrl
   };
 
@@ -406,8 +404,7 @@ function Head({
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
-    articleSection: sectionname,
-    articleId: id
+    articleSection: sectionname
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
@@ -448,13 +445,13 @@ function Head({
       {desc && <meta content={desc} name="twitter:description" />}
       {leadassetUrl && <meta content={leadassetUrl} name="twitter:image" />}
 
-      {isLiveBlogArticle ? (
+      {isLiveBlogArticle && (
         <script type="application/ld+json">
           {JSON.stringify(liveBlogJsonLD)}
         </script>
-      ) : (
-        <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
       )}
+
+      <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
 
       {videoJsonLD && (
         <script type="application/ld+json">
