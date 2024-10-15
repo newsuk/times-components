@@ -42,16 +42,28 @@ const shouldIncludeDisclaimer = children => {
   const checkForAffiliate = elements => {
     elements.some(el => {
       // Check if disclaimer text already exists.
+      const isTextCollapseComponent = !!(
+        el.name === "interactive" &&
+        el.attributes.element &&
+        el.attributes.element.value &&
+        el.attributes.element.value === "times-text-collapse"
+      );
+
       if (
         !affiliateDisclaimerExist &&
-        (el.name === "text" ||
-          (el.name === "interactive" &&
-            el.attributes?.element?.value === "times-text-collapse"))
+        (el.name === "text" || isTextCollapseComponent)
       ) {
-        const text =
-          el.name === "interactive"
-            ? el.attributes?.element?.attributes?.disclaimer_text ?? ""
-            : el.attributes?.value ?? "";
+        const textComponentVal =
+          el.name === "text" && el.attributes.value ? el.attributes.value : "";
+        const interactiveComponentVal =
+          isTextCollapseComponent &&
+          el.attributes.element &&
+          el.attributes.element.attributes &&
+          el.attributes.element.attributes.disclaimer_text
+            ? el.attributes.element.attributes.disclaimer_text
+            : "";
+
+        const text = textComponentVal || interactiveComponentVal;
 
         if (
           oldDisclaimerTexts.some(contentText => text.includes(contentText))
@@ -74,16 +86,25 @@ const shouldIncludeDisclaimer = children => {
       }
 
       // Check for affiliate links.
-      if (
-        !affiliateLinkExist &&
-        ((el.name === "interactive" &&
-          el.attributes?.element?.value === "times-travel-cta") ||
-          el.name === "link")
-      ) {
-        const href =
-          el.name === "interactive"
-            ? el.attributes?.element?.attributes?.url ?? ""
-            : el.attributes?.href ?? "";
+      const isTravelCtaComponent = !!(
+        el.name === "interactive" &&
+        el.attributes.element &&
+        el.attributes.element.value &&
+        el.attributes.element.value === "times-travel-cta"
+      );
+
+      if (!affiliateLinkExist && (el.name === "link" || isTravelCtaComponent)) {
+        const linkComponentVal =
+          el.name === "link" && el.attributes.href ? el.attributes.href : "";
+        const ctaComponentVal =
+          isTravelCtaComponent &&
+          el.attributes.element &&
+          el.attributes.element.attributes &&
+          el.attributes.element.attributes.url
+            ? el.attributes.element.attributes.url
+            : "";
+
+        const href = linkComponentVal || ctaComponentVal;
 
         if (
           !href ||
