@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.59.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.59.1...@times-components/ssr@2.59.2) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.59.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.59.0...@times-components/ssr@2.59.1) (2024-10-11)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.59.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.18...@times-components/ssr@2.59.0) (2024-10-10)
+
+
+### Features
+
+* **TDP-4797:** Implement rerun failed Test on Times Component ([#3932](https://github.com/newsuk/times-components/issues/3932)) ([c668b41](https://github.com/newsuk/times-components/commit/c668b415f28468368e83828e05c70d5dae7b79bd))
+* **TDP-4831:** Upgrade Cypress to latest version in times-component repo ([#3954](https://github.com/newsuk/times-components/issues/3954)) ([44b4ef2](https://github.com/newsuk/times-components/commit/44b4ef2c95530eca2cfa1cdd3d4a11d7767f17dd))
+
+
+
+
+
 ## [2.58.18](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.58.17...@times-components/ssr@2.58.18) (2024-10-01)
 
 **Note:** Version bump only for package @times-components/ssr

@@ -1,8 +1,9 @@
-import articleTests from "../helpers/article-helper";
+import articleTests from "../../helpers/article-helper";
 
-articleTests("indepth", {
+articleTests("mainstandard", {
   stickyElements: ["#nav"],
   attachFlags: true,
+  skipDropCapCheck: true,
   skipSnapshotTest: true,
   blackoutElements: [
     "[data-testid=save-and-share-bar]",

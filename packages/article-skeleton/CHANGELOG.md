@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.139.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.0...@times-components/article-skeleton@1.139.1) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.139.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.138.1...@times-components/article-skeleton@1.139.0) (2024-10-10)
+
+
+### Features
+
+* **TMD-897:** Add article schema to live blog ([#3951](https://github.com/newsuk/times-components/issues/3951)) ([fc57bbe](https://github.com/newsuk/times-components/commit/fc57bbe8a85657b2ec396024f23b213245bf4a07))
+
+
+
+
+
 ## [1.138.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.138.0...@times-components/article-skeleton@1.138.1) (2024-10-01)
 
 **Note:** Version bump only for package @times-components/article-skeleton
