@@ -130,7 +130,20 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
     }
   };
 
-  return isTwitterAllowed || allowedOnce ? (
+  // tslint:disable-next-line:no-console
+  console.log('allowedOnce', allowedOnce);
+  // tslint:disable-next-line:no-console
+  console.log(
+    'allowedOnce || isTwitterAllowed',
+    allowedOnce || isTwitterAllowed
+  );
+  // tslint:disable-next-line:no-console
+  console.log(
+    'allowedOnce && isTwitterAllowed',
+    allowedOnce && isTwitterAllowed
+  );
+
+  return isTwitterAllowed ? (
     <InteractiveWrapper
       attributes={element.attributes}
       element={element.value}
