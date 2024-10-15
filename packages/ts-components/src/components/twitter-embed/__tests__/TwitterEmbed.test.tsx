@@ -338,4 +338,238 @@ describe('TwitterEmbed', () => {
       expect.any(Function)
     );
   });
+
+  it('allows cookies once when the Allow cookies once button is clicked', () => {
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Click the "Allow cookies once" button
+    fireEvent.click(
+      screen.getByRole('button', { name: /Allow cookies once/i })
+    );
+
+    // Ensure that Twitter content is unblocked temporarily (InteractiveWrapper is rendered)
+    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+  });
+
+  it('calls enableCookies and logs an error when vendor consent data is not found', () => {
+    const consoleErrorMock = jest
+      .spyOn(global.console, 'error')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    window.__tcfapi = jest.fn((_, __, callback) => {
+      callback(null, true); // Simulate the case where the vendor consent data is missing
+    });
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    expect(consoleErrorMock).toHaveBeenCalledWith(
+      'Twitter vendor consent not available:',
+      null
+    );
+
+    consoleErrorMock.mockRestore();
+  });
+
+  it('calls openPrivacyModal and warns when no modal is available', () => {
+    const consoleWarnMock = jest
+      .spyOn(global.console, 'warn')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Simulate clicking the privacy manager link
+    const privacyManagerLink = screen.getByText('privacy manager.');
+    fireEvent.click(privacyManagerLink);
+
+    // Expect the console warning to be called
+    expect(consoleWarnMock).toHaveBeenCalledWith(
+      'Sourcepoint LoadPrivacyManagerModal is not available'
+    );
+
+    consoleWarnMock.mockRestore();
+  });
+
+  it('logs error when consent setting fails', () => {
+    const consoleErrorMock = jest
+      .spyOn(global.console, 'error')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    window.__tcfapi = jest.fn((_, __, callback) => {
+      callback(
+        {
+          grants: {
+            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
+          }
+        },
+        false
+      ); // Simulate failure
+    });
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    expect(consoleErrorMock).toHaveBeenCalledWith(
+      'Twitter vendor consent not available:',
+      {
+        grants: { '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } } }
+      }
+    );
+
+    consoleErrorMock.mockRestore();
+  });
+
+  it('calls enableCookies and logs a console error when TCF API is not available', () => {
+    const consoleErrorMock = jest
+      .spyOn(global.console, 'error')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    // Simulate missing __tcfapi
+    delete window.__tcfapi;
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Simulate clicking the "Enable cookies" button
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    // Expect a console error
+    expect(consoleErrorMock).toHaveBeenCalledWith(
+      'TCF API is not available or Twitter vendor ID is missing.'
+    );
+
+    consoleErrorMock.mockRestore();
+  });
+
+  it('calls enableCookies and logs a console error when TCF API is not available', () => {
+    const consoleErrorMock = jest
+      .spyOn(global.console, 'error')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    delete window.__tcfapi;
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    expect(consoleErrorMock).toHaveBeenCalledWith(
+      'TCF API is not available or Twitter vendor ID is missing.'
+    );
+
+    consoleErrorMock.mockRestore();
+  });
+  it('calls enableCookies and logs a console error when TCF API is not available', () => {
+    const consoleErrorMock = jest
+      .spyOn(global.console, 'error')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    delete window.__tcfapi;
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    expect(consoleErrorMock).toHaveBeenCalledWith(
+      'TCF API is not available or Twitter vendor ID is missing.'
+    );
+
+    consoleErrorMock.mockRestore();
+  });
+
+  it('logs a warning when the privacy modal is unavailable', () => {
+    const consoleWarnMock = jest
+      .spyOn(global.console, 'warn')
+      .mockImplementation(() => {});
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    (get as jest.Mock).mockReturnValue(undefined);
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Simulate clicking the privacy manager link
+    fireEvent.click(screen.getByText('privacy manager.'));
+
+    // Expect the warning to be logged
+    expect(consoleWarnMock).toHaveBeenCalledWith(
+      'Sourcepoint LoadPrivacyManagerModal is not available'
+    );
+
+    consoleWarnMock.mockRestore();
+  });
+
+  it('returns early when window is undefined (server-side)', () => {
+    // Temporarily mock the window object as undefined
+    const originalWindow = global.window;
+    (global as any).window = undefined;
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    expect(screen.queryByText('X (Twitter) content blocked')).toBeNull();
+
+    // Restore the original window object after the test
+    global.window = originalWindow;
+  });
 });
