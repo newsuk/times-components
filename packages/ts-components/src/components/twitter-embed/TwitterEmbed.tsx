@@ -29,11 +29,6 @@ declare global {
   }
 }
 
-export const setAllowCookiesOnce = (vendorName: any) => ({
-  type: 'SET_ALLOW_COOKIES_ONCE',
-  payload: vendorName
-});
-
 export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
   const [allowedOnce, setAllowedOnce] = useState(false);
   const [isTwitterAllowed, setIsTwitterAllowed] = useState(false);
@@ -62,10 +57,6 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
   }
 
   const openPrivacyModal = (type: ModalType, messageId: string) => {
-    if (typeof window === 'undefined') {
-      return;
-    }
-
     const loadModal = get(window, `_sp_.${type}.loadPrivacyManagerModal`);
 
     if (loadModal) {
