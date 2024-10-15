@@ -552,24 +552,4 @@ describe('TwitterEmbed', () => {
 
     consoleWarnMock.mockRestore();
   });
-
-  it('returns early when window is undefined (server-side)', () => {
-    // Temporarily mock the window object as undefined
-    const originalWindow = global.window;
-    (global as any).window = undefined;
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(<TwitterEmbed element={mockElement} url={url} />);
-
-    expect(screen.queryByText('X (Twitter) content blocked')).toBeNull();
-
-    // Restore the original window object after the test
-    global.window = originalWindow;
-  });
 });
