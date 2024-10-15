@@ -1,4 +1,5 @@
-import { format, addMinutes } from 'date-fns';
+import format from 'date-fns/format';
+import addMinutes from 'date-fns/addMinutes';
 
 const lastSunday = (month: number, year: number) => {
   const lastDayOfMonth = new Date(Date.UTC(year, month + 1, 0));

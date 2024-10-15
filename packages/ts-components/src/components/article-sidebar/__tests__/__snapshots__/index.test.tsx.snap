@@ -6,7 +6,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
     class="sc-bwzfXH kzdaiS"
   >
     <a
-      class="sc-ifAKCX kcwwi"
+      class="trigger sc-ifAKCX kcwwi"
       href="https://www.thetimes.co.uk/puzzles"
     >
       <div
@@ -48,7 +48,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
       class="sc-bxivhb euCQXs"
     />
     <a
-      class="sc-dnqmqq gzKzfS"
+      class="trigger-card-link sc-dnqmqq gzKzfS"
       href="https://www.thetimes.co.uk/puzzles/crossword"
     >
       <img
@@ -66,7 +66,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
       class="sc-bxivhb euCQXs"
     />
     <a
-      class="sc-dnqmqq gzKzfS"
+      class="trigger-card-link sc-dnqmqq gzKzfS"
       href="https://www.thetimes.co.uk/puzzles/sudoku"
     >
       <img

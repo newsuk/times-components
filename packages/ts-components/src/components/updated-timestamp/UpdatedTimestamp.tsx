@@ -1,5 +1,7 @@
 import React from 'react';
-import { differenceInSeconds, format, formatDistanceStrict } from 'date-fns';
+import differenceInSeconds from 'date-fns/differenceInSeconds';
+import formatDistanceStrict from 'date-fns/formatDistanceStrict';
+import format from 'date-fns/format';
 
 import { Container, TimeSinceUpdate } from './styles';
 
