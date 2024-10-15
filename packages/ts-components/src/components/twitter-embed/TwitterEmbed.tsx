@@ -29,7 +29,13 @@ declare global {
   }
 }
 
+export const setAllowCookiesOnce = (vendorName: any) => ({
+  type: 'SET_ALLOW_COOKIES_ONCE',
+  payload: vendorName
+});
+
 export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
+  const [allowedOnce, setAllowedOnce] = useState(false);
   const [isTwitterAllowed, setIsTwitterAllowed] = useState(false);
 
   useEffect(() => {
@@ -70,14 +76,70 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
     }
   };
 
+  const allowCookiesOnce = () => {
+    setAllowedOnce(true);
+    setIsTwitterAllowed(true);
+  };
+
   const handlePrivacyManagerClick = (
     e: React.MouseEvent<HTMLAnchorElement>
   ) => {
     e.preventDefault();
-    openPrivacyModal(ModalType.GDPR, 'messageIdForGDPR');
+    openPrivacyModal(
+      ModalType.GDPR,
+      window.__TIMES_CONFIG__.sourcepoint.gdprMessageId
+    );
   };
 
-  return isTwitterAllowed ? (
+  const socialMediaVendors = {
+    twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' }
+  };
+
+  const enableCookies = () => {
+    const onCustomConsent = (data: any, success: boolean) => {
+      if (success) {
+        // tslint:disable-next-line:no-console
+        console.log('Consent successfully updated', data);
+        setIsTwitterAllowed(true);
+      } else {
+        // tslint:disable-next-line:no-console
+        console.error('Failed to set consent for Twitter.', data);
+      }
+    };
+
+    const twitterVendorId = socialMediaVendors.twitter.id;
+
+    if (window.__tcfapi && twitterVendorId) {
+      window.__tcfapi(
+        'getCustomVendorConsents',
+        2,
+        (data: any, successful: boolean) => {
+          if (successful && data && data.grants[twitterVendorId]) {
+            // const purposeGrants = Object.keys(data.grants[twitterVendorId].purposeGrants).join(',');
+
+            (window.__tcfapi as any)(
+              'postCustomConsent',
+              2,
+              onCustomConsent,
+              twitterVendorId,
+              Object.keys(data.grants[twitterVendorId].purposeGrants),
+              ''
+            );
+          } else {
+            // tslint:disable-next-line:no-console
+            console.error('Twitter vendor consent not available:', data);
+          }
+        }
+      );
+    } else {
+      // tslint:disable-next-line:no-console
+      console.error(
+        'TCF API is not available or Twitter vendor ID is missing.'
+      );
+    }
+  };
+
+  return isTwitterAllowed || allowedOnce ? (
     <InteractiveWrapper
       attributes={element.attributes}
       element={element.value}
@@ -99,8 +161,8 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
           privacy manager.
         </LinkPrivacyManager>
       </Paragraph>
-      <EnableButton>Enable cookies</EnableButton>
-      <AllowButton>Allow cookies once</AllowButton>
+      <EnableButton onClick={enableCookies}>Enable cookies</EnableButton>
+      <AllowButton onClick={allowCookiesOnce}>Allow cookies once</AllowButton>
     </CardContainer>
   );
 };

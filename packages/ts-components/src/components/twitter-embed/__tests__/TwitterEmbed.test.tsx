@@ -72,25 +72,6 @@ describe('TwitterEmbed', () => {
     ).toBeInTheDocument();
   });
 
-  it('handles privacy manager link click', () => {
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(<TwitterEmbed element={mockElement} url={url} />);
-
-    const privacyManagerLink = screen.getByText('privacy manager.');
-    fireEvent.click(privacyManagerLink);
-
-    // Ensure that the privacy modal load function was attempted
-    expect(global.console.warn).toHaveBeenCalledWith(
-      'Sourcepoint LoadPrivacyManagerModal is not available'
-    );
-  });
-
   it('calls __tcfapi and logs an error if consent data is unavailable', () => {
     mockTcfApi.mockImplementation((_, __, callback) => {
       callback(null, false);
@@ -110,8 +91,116 @@ describe('TwitterEmbed', () => {
     );
   });
 
-  it('warns when privacy modal cannot be loaded', () => {
-    (get as jest.Mock).mockReturnValue(null);
+  it('enables cookies and unblocks Twitter content', () => {
+    mockTcfApi.mockImplementation((_, __, callback) => {
+      callback(
+        {
+          grants: {
+            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
+          }
+        },
+        true
+      );
+    });
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
+
+    // Ensure that the __tcfapi function is called with the correct arguments
+    expect(mockTcfApi).toHaveBeenCalledWith(
+      'getCustomVendorConsents',
+      2,
+      expect.any(Function)
+    );
+
+    mockTcfApi.mock.calls[0][2](
+      {
+        grants: { '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } } }
+      },
+      true
+    );
+
+    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+  });
+
+  it('allows cookies once and unblocks Twitter content temporarily', () => {
+    // Mock implementation for __tcfapi
+    mockTcfApi.mockImplementation((_, __, callback) => {
+      callback(
+        {
+          grants: {
+            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
+          }
+        },
+        true
+      );
+    });
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Click the "Allow cookies once" button
+    fireEvent.click(
+      screen.getByRole('button', { name: /Allow cookies once/i })
+    );
+
+    // Ensure that Twitter content is unblocked temporarily (InteractiveWrapper is rendered)
+    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+
+    // Mock that cookies are not permanently set, and content should be blocked again after refresh
+    // Here, we just verify that consent was not permanently stored
+    mockTcfApi.mockReset(); // Reset the mock to simulate a new page load without consent
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Ensure that the blocked content message is rendered again after refresh
+    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
+  });
+
+  it('handles missing __tcfapi gracefully', () => {
+    // Ensure __tcfapi is undefined
+    delete window.__tcfapi;
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Ensure that the blocked content message is rendered
+    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
+    expect(global.console.log).toHaveBeenCalledWith('window', window);
+  });
+
+  it('opens privacy modal when available', () => {
+    const mockLoadPrivacyManagerModal = jest.fn();
+
+    // Mock the sourcepoint configuration
+    window.__TIMES_CONFIG__ = {
+      sourcepoint: {
+        gdprMessageId: 'messageIdForGDPR'
+      }
+    };
+
+    // Mock get to return loadPrivacyManagerModal function
+    (get as jest.Mock).mockReturnValue(mockLoadPrivacyManagerModal);
 
     const mockElement = {
       attributes: {},
@@ -126,8 +215,127 @@ describe('TwitterEmbed', () => {
     const privacyManagerLink = screen.getByText('privacy manager.');
     fireEvent.click(privacyManagerLink);
 
+    // Ensure that the privacy modal load function is called with the correct message ID
+    expect(mockLoadPrivacyManagerModal).toHaveBeenCalledWith(
+      'messageIdForGDPR'
+    );
+  });
+
+  it('handles missing privacy modal gracefully', () => {
+    // Mock get to return undefined (no privacy modal available)
+    (get as jest.Mock).mockReturnValue(undefined);
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Simulate user clicking the privacy manager link
+    const privacyManagerLink = screen.getByText('privacy manager.');
+    fireEvent.click(privacyManagerLink);
+
+    // Ensure that the console.warn is triggered
     expect(global.console.warn).toHaveBeenCalledWith(
       'Sourcepoint LoadPrivacyManagerModal is not available'
+    );
+  });
+
+  it('allows cookies once for Twitter', () => {
+    // Mock implementation for __tcfapi
+    mockTcfApi.mockImplementation((_, __, callback) => {
+      callback(
+        {
+          grants: {
+            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
+          }
+        },
+        true
+      );
+    });
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Click the "Allow cookies once" button
+    fireEvent.click(
+      screen.getByRole('button', { name: /Allow cookies once/i })
+    );
+
+    // Ensure that the Twitter content is rendered after allowing cookies once
+    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+  });
+
+  it('renders Twitter content when isTwitterAllowed is initially true', () => {
+    // Mock implementation to set consent for Twitter from the start
+    mockTcfApi.mockImplementation((_, __, callback) => {
+      callback({ consentedVendors: [{ name: 'Twitter' }] }, true);
+    });
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    // Initially set isTwitterAllowed to true
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Ensure Twitter content is immediately displayed
+    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+  });
+
+  it('handles when __tcfapi is not available on window', () => {
+    // Ensure __tcfapi is undefined
+    delete window.__tcfapi;
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Ensure that blocked content message is rendered when __tcfapi is not available
+    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
+
+    // Ensure that console.log is called since __tcfapi is not available
+    expect(global.console.log).toHaveBeenCalledWith('window', window);
+  });
+
+  it('handles when __tcfapi is a stub', () => {
+    // Define __tcfapi as a stub (noop)
+    window.__tcfapi = jest.fn();
+
+    const mockElement = {
+      attributes: {},
+      value: 'Twitter content',
+      key: 'twitter-embed'
+    };
+    const url = 'https://twitter.com';
+
+    render(<TwitterEmbed element={mockElement} url={url} />);
+
+    // Ensure that blocked content message is rendered since the stub does nothing
+    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
+
+    // Ensure __tcfapi was called, even though it is a stub
+    expect(window.__tcfapi).toHaveBeenCalledWith(
+      'getCustomVendorConsents',
+      2,
+      expect.any(Function)
     );
   });
 });
