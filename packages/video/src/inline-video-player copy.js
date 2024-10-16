@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React, { Component, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { appendToImageURL } from "@times-components/utils";
 import { propTypes, defaultProps } from "./video-prop-types";
 import Video360Icon from "./video-360-icon";
@@ -83,23 +83,18 @@ const css = `
   }
 `;
 
-class InlineVideoPlayer extends Component {
-  static scriptLoadError = false;
+const InlineVideoPlayer = (props) => {
+  const scriptLoadError = false;
+  const activePlayers = [];
+  const brightcoveSDKLoadedStarted = false;
 
-  static activePlayers = [];
-  static activeScripts = [];
+  const brightcoveSDKHasLoaded = () => !!(window.bc && window.videojs);
 
-  static brightcoveSDKLoadedStarted = false;
-
-  static brightcoveSDKHasLoaded() {
-    return !!(window.bc && window.videojs);
-  }
-
-  static appendScript(s) {
+  const appendScript = (s) => {
     document.body.appendChild(s);
   }
 
-  static attachStyles() {
+  const attachStyles = () => {
     const styleTag = document.createElement("style");
     styleTag.type = "text/css";
     const cssText = document.createTextNode(css);
@@ -107,6 +102,8 @@ class InlineVideoPlayer extends Component {
     document.head.appendChild(styleTag);
   }
 
+  const [error, setError] = useState(null)
+  const [hasVideoPlayed, setHasVideoPlayed] = useState(false)
   constructor(props) {
     super(props);
 
@@ -204,8 +201,8 @@ class InlineVideoPlayer extends Component {
 
   loadBrightcoveSDKIfRequired() {
     // console.log("before loadBrightcoveSDKIfRequired", InlineVideoPlayer.brightcoveSDKLoadedStarted)
-    // if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-      console.log("loadBrightcoveSDKIfRequired",InlineVideoPlayer.activeScripts)
+    if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
+      // console.log("loadBrightcoveSDKIfRequired", InlineVideoPlayer.brightcoveSDKLoadedStarted, InlineVideoPlayer.activePlayers)
 
       InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
 
@@ -222,7 +219,7 @@ class InlineVideoPlayer extends Component {
 
       InlineVideoPlayer.appendScript(s);
       InlineVideoPlayer.attachStyles();
-    // }
+    }
   }
 
   createBrightcoveScript() {
@@ -232,13 +229,7 @@ class InlineVideoPlayer extends Component {
     s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
     s.defer = true;
 
-    // if(InlineVideoPlayer.activeScripts.includes(s.src)) {
-    //   return;
-    // } else {
-    //   InlineVideoPlayer.activeScripts.push(s.src)
-    // }
     return s;
-
   }
 
   initVideojs() {

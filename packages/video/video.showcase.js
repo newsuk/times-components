@@ -51,7 +51,7 @@ export default {
           >
             Tablet size:
           </div>
-          <Video {...defaultVideoProps} width={498} height={280} />
+          <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} width={498} height={280} />
 
           <div
             style={{
@@ -61,7 +61,19 @@ export default {
           >
             Desktop size:
           </div>
-          <Video {...defaultVideoProps} width={760} height={427} />
+          <Video {...defaultVideoProps} playerId="MxxcO1yYU" videoId="6353430818112" accountId="5436121856001" width={760} height={427} poster={{uri:"https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"}} />
+          {/* <video id="6353430818112-5436121856001-39f00290-41b8-402f-9fdb-5a778815717d" poster="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960" class="video-js" controls="" data-account="5436121856001" data-application-id="true" data-embed="default" data-player="MxxcO1yYU" data-video-id="6353430818112" style="height: 100%; width: 100%;"></video> */}
+          <div
+            style={{
+              marginBottom: 10,
+              marginTop: 500
+            }}
+          >
+            Desktop size:
+          </div>
+          <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} width={498} height={280} />
+          <Video {...defaultVideoProps} playerId="MxxcO1yYU" videoId="6358939106112" accountId="5436121856001" width={760} height={427} poster={{uri:"https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"}} />
+          {/* <video id="6353430818112-5436121856001-39f00290-41b8-402f-9fdb-5a778815717d" poster="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960" class="video-js" controls="" data-account="5436121856001" data-application-id="true" data-embed="default" data-player="MxxcO1yYU" data-video-id="6353430818112" style="height: 100%; width: 100%;"></video> */}
         </div>
       ),
       name: "default player",
