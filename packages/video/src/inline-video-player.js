@@ -87,6 +87,7 @@ class InlineVideoPlayer extends Component {
   static scriptLoadError = false;
 
   static activePlayers = [];
+  
   static activeScripts = [];
 
   static brightcoveSDKLoadedStarted = false;
