@@ -39,7 +39,7 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
-  TwitterEmbed
+  SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -260,7 +260,7 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <div id={id}>
-              <TwitterEmbed element={element} url={url} />
+              <SocialMediaEmbed element={element} url={url} vendorName={'twitter'} />
             </div>
           </InteractiveContainer>
         );

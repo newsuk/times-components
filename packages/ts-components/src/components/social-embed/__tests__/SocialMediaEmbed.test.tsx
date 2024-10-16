@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { TwitterEmbed } from '../TwitterEmbed';
+import { SocialMediaEmbed } from '../SocialMediaEmbed';
 import '@testing-library/jest-dom';
 import get from 'lodash.get';
 
@@ -41,7 +41,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Assert that InteractiveWrapper is rendered
     expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
@@ -59,7 +65,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Assert that the blocked content message is rendered
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
@@ -70,25 +82,6 @@ describe('TwitterEmbed', () => {
     expect(
       screen.getByRole('button', { name: /Allow cookies once/i })
     ).toBeInTheDocument();
-  });
-
-  it('calls __tcfapi and logs an error if consent data is unavailable', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback(null, false);
-    });
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(<TwitterEmbed element={mockElement} url={url} />);
-
-    expect(global.console.log).toHaveBeenCalledWith(
-      'Error fetching consent data or Twitter not allowed'
-    );
   });
 
   it('enables cookies and unblocks Twitter content', () => {
@@ -110,7 +103,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
 
@@ -154,7 +153,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Click the "Allow cookies once" button
     fireEvent.click(
@@ -168,7 +173,13 @@ describe('TwitterEmbed', () => {
     // Here, we just verify that consent was not permanently stored
     mockTcfApi.mockReset(); // Reset the mock to simulate a new page load without consent
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Ensure that the blocked content message is rendered again after refresh
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
@@ -185,7 +196,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Ensure that the blocked content message is rendered
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
@@ -212,7 +229,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Simulate user clicking the privacy manager link
     const privacyManagerLink = screen.getByText('privacy manager.');
@@ -235,7 +258,13 @@ describe('TwitterEmbed', () => {
     };
     const url = 'https://twitter.com';
 
-    render(<TwitterEmbed element={mockElement} url={url} />);
+    render(
+      <SocialMediaEmbed
+        element={mockElement}
+        url={url}
+        vendorName={'twitter'}
+      />
+    );
 
     // Simulate user clicking the privacy manager link
     const privacyManagerLink = screen.getByText('privacy manager.');

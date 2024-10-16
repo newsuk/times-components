@@ -14,9 +14,10 @@ import { InfoIcon } from '../inline-message/InfoIcon';
 // @ts-ignore
 import InteractiveWrapper from '@times-components/interactive-wrapper';
 
-export declare type TwitterEmbedProps = {
+export declare type SocialEmbedProps = {
   element: any;
   url: string;
+  vendorName: string;
 };
 
 declare global {
@@ -29,27 +30,42 @@ declare global {
   }
 }
 
-export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
+export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
+  element,
+  url,
+  vendorName
+}) => {
   const [allowedOnce, setAllowedOnce] = useState(false);
-  const [isTwitterAllowed, setIsTwitterAllowed] = useState(false);
+  const [isSocialAllowed, setIsSocialAllowed] = useState(false);
 
   useEffect(() => {
     if (window.__tcfapi) {
       window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
         if (success && data && data.consentedVendors) {
-          const isTwitterVendorAllowed = data.consentedVendors.some(
+          const isSocialVendorAllowed = data.consentedVendors.some(
             (vendor: { name: string }) => vendor.name === 'Twitter'
           );
-          setIsTwitterAllowed(isTwitterVendorAllowed);
+          setIsSocialAllowed(isSocialVendorAllowed);
         } else {
           // tslint:disable-next-line:no-console
-          console.log('Error fetching consent data or Twitter not allowed');
+          console.log(
+            `Error fetching consent data or ${vendorName} embed not allowed`
+          );
         }
       });
     }
     // tslint:disable-next-line:no-console
     console.log('window', window);
   }, []);
+
+  useEffect(
+    () => {
+      if (allowedOnce || isSocialAllowed) {
+        setIsSocialAllowed(true);
+      }
+    },
+    [allowedOnce, isSocialAllowed]
+  );
 
   enum ModalType {
     GDPR = 'gdpr',
@@ -69,7 +85,7 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
 
   const allowCookiesOnce = () => {
     setAllowedOnce(true);
-    setIsTwitterAllowed(true);
+    setIsSocialAllowed(true);
   };
 
   const handlePrivacyManagerClick = (
@@ -85,17 +101,24 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
   const socialMediaVendors: {
     [key: string]: { id: string; status: string };
   } = {
-    twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' }
+    twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' },
+    facebook: { id: 'fb_vendor_id', status: 'pending' },
+    instagram: { id: 'insta_vendor_id', status: 'pending' }
   };
 
-  const vendorName = 'twitter';
+  const getVendorTitle = (title: string): string => {
+    if (title === 'twitter') {
+      return 'X (Twitter)';
+    }
+    return socialMediaVendors[title].id || title;
+  };
 
   const enableCookies = (providerName: string) => {
     const onCustomConsent = (_: any, success: boolean) => {
       if (success) {
-        setIsTwitterAllowed(true);
+        setIsSocialAllowed(true);
         return {
-          ...socialMediaVendors.twitter,
+          ...socialMediaVendors.vendorName,
           [vendorName]: {
             ...socialMediaVendors[vendorName],
             status: 'accepted'
@@ -123,7 +146,7 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
             );
           } else {
             // tslint:disable-next-line:no-console
-            console.error('Twitter vendor consent not available:', data);
+            console.error(`${vendorName} vendor consent not available:`, data);
           }
         }
       );
@@ -133,17 +156,11 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
   // tslint:disable-next-line:no-console
   console.log('allowedOnce', allowedOnce);
   // tslint:disable-next-line:no-console
-  console.log(
-    'allowedOnce || isTwitterAllowed',
-    allowedOnce || isTwitterAllowed
-  );
+  console.log('allowedOnce || isSocialAllowed', allowedOnce || isSocialAllowed);
   // tslint:disable-next-line:no-console
-  console.log(
-    'allowedOnce && isTwitterAllowed',
-    allowedOnce && isTwitterAllowed
-  );
+  console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
 
-  return isTwitterAllowed ? (
+  return isSocialAllowed ? (
     <InteractiveWrapper
       attributes={element.attributes}
       element={element.value}
@@ -156,7 +173,7 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
         <CustomIconContainer>
           <InfoIcon />
         </CustomIconContainer>
-        <Title>X (Twitter) content blocked</Title>
+        <Title>{getVendorTitle(vendorName)} content blocked</Title>
       </Header>
       <Paragraph>
         Please enable cookies and other technologies to view this content. You

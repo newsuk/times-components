@@ -119,4 +119,6 @@ export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
 
-export { TwitterEmbed } from './components/twitter-embed/TwitterEmbed';
+export {
+  SocialMediaEmbed as TwitterEmbed
+} from './components/social-embed/SocialMediaEmbed';
