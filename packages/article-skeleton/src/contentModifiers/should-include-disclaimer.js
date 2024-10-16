@@ -139,11 +139,14 @@ const shouldIncludeDisclaimer = children => {
     affiliatesCheck.affiliateLinkExist
   ) {
     const firstParagraph = clonedChildren.find(el => el.name === "paragraph");
-    clonedChildren.splice(
-      clonedChildren.indexOf(firstParagraph) + 1,
-      0,
-      newDisclaimerText
-    );
+
+    if (firstParagraph) {
+      clonedChildren.splice(
+        clonedChildren.indexOf(firstParagraph) + 1,
+        0,
+        newDisclaimerText
+      );
+    }
   }
 
   return clonedChildren;
