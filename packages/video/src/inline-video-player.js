@@ -113,7 +113,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      hasVideoPlayed: false,
+      hasVideoPlayed: false
     };
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;

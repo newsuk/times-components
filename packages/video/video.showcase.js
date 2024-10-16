@@ -158,7 +158,7 @@ export default {
         </div>
       ),
       name: "two players with different videos",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
