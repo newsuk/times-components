@@ -253,7 +253,7 @@ export default {
       ),
       name: "no poster image",
       type: "story"
-    },
+    }
   ],
   name: "Primitives/Video"
 };
