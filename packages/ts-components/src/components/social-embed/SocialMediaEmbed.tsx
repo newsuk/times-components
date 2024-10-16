@@ -38,31 +38,25 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   const [allowedOnce, setAllowedOnce] = useState(false);
   const [isSocialAllowed, setIsSocialAllowed] = useState(false);
 
-  useEffect(() => {
-    if (window.__tcfapi) {
-      window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
-        if (success && data && data.consentedVendors) {
-          const isSocialVendorAllowed = data.consentedVendors.some(
-            (vendor: { name: string }) => vendor.name === 'Twitter'
-          );
-          setIsSocialAllowed(isSocialVendorAllowed);
-        } else {
-          // tslint:disable-next-line:no-console
-          console.log(
-            `Error fetching consent data or ${vendorName} embed not allowed`
-          );
-        }
-      });
-    }
-  }, []);
-
   useEffect(
     () => {
-      if (allowedOnce || isSocialAllowed) {
-        setIsSocialAllowed(true);
+      if (window.__tcfapi) {
+        window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
+          if (success && data && data.consentedVendors) {
+            const isSocialVendorAllowed = data.consentedVendors.some(
+              (vendor: { name: string }) => vendor.name === 'Twitter'
+            );
+            setIsSocialAllowed(isSocialVendorAllowed);
+          } else {
+            // tslint:disable-next-line:no-console
+            console.log(
+              `Error fetching consent data or ${vendorName} embed not allowed`
+            );
+          }
+        });
       }
     },
-    [allowedOnce, isSocialAllowed]
+    [isSocialAllowed]
   );
 
   enum ModalType {
