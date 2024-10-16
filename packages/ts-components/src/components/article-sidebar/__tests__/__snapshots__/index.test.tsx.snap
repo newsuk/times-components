@@ -7,7 +7,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
   >
     <a
       class="trigger sc-ifAKCX kcwwi"
-      href="https://www.thetimes.co.uk/puzzles"
+      href="https://www.thetimes.com/puzzles"
     >
       <div
         class="sc-EHOje bmFGSY"
@@ -49,12 +49,12 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
     />
     <a
       class="trigger-card-link sc-dnqmqq gzKzfS"
-      href="https://www.thetimes.co.uk/puzzles/crossword"
+      href="https://www.thetimes.com/puzzles/crossword"
     >
       <img
         alt="Puzzle thumbnail"
         class="sc-iwsKbI elYeaz"
-        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+        src="https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
       />
       <p
         class="sc-htoDjs bXFtLv"
@@ -67,12 +67,12 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
     />
     <a
       class="trigger-card-link sc-dnqmqq gzKzfS"
-      href="https://www.thetimes.co.uk/puzzles/sudoku"
+      href="https://www.thetimes.com/puzzles/sudoku"
     >
       <img
         alt="Puzzle thumbnail"
         class="sc-iwsKbI elYeaz"
-        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+        src="https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
       />
       <p
         class="sc-htoDjs bXFtLv"

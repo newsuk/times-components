@@ -155,7 +155,7 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     shouldIncludeDisclaimer,
     insertNewsletterPuff(section, isPreview, expirableFlags),
-    insertInlineAd,
+    insertInlineAd(isPreview),
     tagLastParagraph,
     setExternalLinkTargets
   ];
