@@ -44,7 +44,8 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
           if (success && data && data.consentedVendors) {
             const isSocialVendorAllowed = data.consentedVendors.some(
-              (vendor: { name: string }) => vendor.name === 'Twitter'
+              (vendor: { name: string }) =>
+                vendor.name.toLowerCase() === vendorName.toLowerCase()
             );
             setIsSocialAllowed(isSocialVendorAllowed);
           } else {
@@ -56,7 +57,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         });
       }
     },
-    [isSocialAllowed]
+    [vendorName]
   );
 
   enum ModalType {
@@ -94,8 +95,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
     [key: string]: { id: string; status: string };
   } = {
     twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' },
-    facebook: { id: 'fb_vendor_id', status: 'pending' },
-    instagram: { id: 'insta_vendor_id', status: 'pending' }
+    youtube: { id: '5e7ac3fae30e7d1bc1ebf5e8', status: 'pending' }
   };
 
   const getVendorTitle = (title: string): string => {
@@ -112,7 +112,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         return {
           ...socialMediaVendors.vendorName,
           [vendorName]: {
-            ...socialMediaVendors[vendorName],
+            ...socialMediaVendors[providerName],
             status: 'accepted'
           }
         };
@@ -152,7 +152,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   // tslint:disable-next-line:no-console
   console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
 
-  return isSocialAllowed ? (
+  return isSocialAllowed || allowedOnce ? (
     <InteractiveWrapper
       attributes={element.attributes}
       element={element.value}
