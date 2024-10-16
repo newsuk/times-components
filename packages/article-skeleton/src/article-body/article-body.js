@@ -260,7 +260,11 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <div id={id}>
-              <SocialMediaEmbed element={element} url={url} vendorName={'twitter'} />
+              <SocialMediaEmbed
+                element={element}
+                url={url}
+                vendorName="twitter"
+              />
             </div>
           </InteractiveContainer>
         );
