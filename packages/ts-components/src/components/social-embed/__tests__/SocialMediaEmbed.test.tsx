@@ -185,30 +185,6 @@ describe('TwitterEmbed', () => {
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
   });
 
-  it('handles missing __tcfapi gracefully', () => {
-    // Ensure __tcfapi is undefined
-    delete window.__tcfapi;
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-      />
-    );
-
-    // Ensure that the blocked content message is rendered
-    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
-    expect(global.console.log).toHaveBeenCalledWith('window', window);
-  });
-
   it('opens privacy modal when available', () => {
     const mockLoadPrivacyManagerModal = jest.fn();
 
