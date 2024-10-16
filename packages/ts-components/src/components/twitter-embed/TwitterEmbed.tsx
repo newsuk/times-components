@@ -82,50 +82,49 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
     );
   };
 
-  const socialMediaVendors = {
+  const socialMediaVendors: {
+    [key: string]: { id: string; status: string };
+  } = {
     twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' }
   };
 
-  const enableCookies = () => {
-    const onCustomConsent = (data: any, success: boolean) => {
+  const vendorName = 'twitter';
+
+  const enableCookies = (providerName: string) => {
+    const onCustomConsent = (_: any, success: boolean) => {
       if (success) {
-        // tslint:disable-next-line:no-console
-        console.log('Consent successfully updated', data);
         setIsTwitterAllowed(true);
-      } else {
-        // tslint:disable-next-line:no-console
-        console.error('Failed to set consent for Twitter.', data);
+        return {
+          ...socialMediaVendors.twitter,
+          [vendorName]: {
+            ...socialMediaVendors[vendorName],
+            status: 'accepted'
+          }
+        };
       }
     };
 
-    const twitterVendorId = socialMediaVendors.twitter.id;
+    const vendorId = socialMediaVendors[providerName].id;
 
-    if (window.__tcfapi && twitterVendorId) {
+    if (window.__tcfapi && vendorId) {
       window.__tcfapi(
         'getCustomVendorConsents',
         2,
         (data: any, successful: boolean) => {
-          if (successful && data && data.grants[twitterVendorId]) {
-            // const purposeGrants = Object.keys(data.grants[twitterVendorId].purposeGrants).join(',');
-
+          if (successful && data && data.grants[vendorId]) {
             (window.__tcfapi as any)(
               'postCustomConsent',
               2,
               onCustomConsent,
-              twitterVendorId,
-              Object.keys(data.grants[twitterVendorId].purposeGrants),
-              ''
+              [vendorId],
+              Object.keys(data.grants[vendorId].purposeGrants),
+              []
             );
           } else {
             // tslint:disable-next-line:no-console
             console.error('Twitter vendor consent not available:', data);
           }
         }
-      );
-    } else {
-      // tslint:disable-next-line:no-console
-      console.error(
-        'TCF API is not available or Twitter vendor ID is missing.'
       );
     }
   };
@@ -165,7 +164,9 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
           privacy manager.
         </LinkPrivacyManager>
       </Paragraph>
-      <EnableButton onClick={enableCookies}>Enable cookies</EnableButton>
+      <EnableButton onClick={() => enableCookies(vendorName)}>
+        Enable cookies
+      </EnableButton>
       <AllowButton onClick={allowCookiesOnce}>Allow cookies once</AllowButton>
     </CardContainer>
   );
