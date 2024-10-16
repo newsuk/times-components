@@ -21,10 +21,10 @@ const defaultVideoProps = {
   },
   policyKey,
   poster: {
-    uri: posterImageURI,
+    uri: posterImageURI
   },
   videoId,
-  width: 320,
+  width: 320
 };
 
 const mockId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
@@ -37,7 +37,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10,
+              marginTop: 10
             }}
           >
             Mobile size:
@@ -46,7 +46,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20,
+              marginTop: 20
             }}
           >
             Tablet size:
@@ -62,7 +62,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20,
+              marginTop: 20
             }}
           >
             Desktop size:
@@ -78,11 +78,10 @@ export default {
               uri: "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960",
             }}
           />
-          {/* <video id="6353430818112-5436121856001-39f00290-41b8-402f-9fdb-5a778815717d" poster="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960" class="video-js" controls="" data-account="5436121856001" data-application-id="true" data-embed="default" data-player="MxxcO1yYU" data-video-id="6353430818112" style="height: 100%; width: 100%;"></video> */}
           <div
             style={{
               marginBottom: 10,
-              marginTop: 500,
+              marginTop: 500
             }}
           >
             Desktop size:
@@ -105,25 +104,24 @@ export default {
               uri: "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960",
             }}
           />
-          {/* <video id="6353430818112-5436121856001-39f00290-41b8-402f-9fdb-5a778815717d" poster="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960" class="video-js" controls="" data-account="5436121856001" data-application-id="true" data-embed="default" data-player="MxxcO1yYU" data-video-id="6353430818112" style="height: 100%; width: 100%;"></video> */}
         </div>
       ),
       name: "default player",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
         const props = {
           playerId: "y4yoiFCf1",
           videoId: "5992442066001",
-          is360: true,
+          is360: true
         };
         return (
           <div>
             <div
               style={{
                 marginBottom: 10,
-                marginTop: 10,
+                marginTop: 10
               }}
             >
               Mobile size:
@@ -132,7 +130,7 @@ export default {
             <div
               style={{
                 marginBottom: 10,
-                marginTop: 20,
+                marginTop: 20
               }}
             >
               Desktop size:
@@ -149,7 +147,7 @@ export default {
       },
       name: "360 player",
       platform: "web",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -167,7 +165,7 @@ export default {
         <div
           style={{
             height: "100%",
-            width: "100%",
+            width: "100%"
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
@@ -175,7 +173,7 @@ export default {
       ),
       name: "100% width and height",
       platform: "web",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -183,7 +181,7 @@ export default {
           style={{
             height: "100vh",
             overflow: "hidden",
-            width: "100vw",
+            width: "100vw"
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
@@ -191,7 +189,7 @@ export default {
       ),
       name: "100% width and height",
       platform: "web",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -199,7 +197,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10,
+              marginTop: 10
             }}
           >
             Mobile size:
@@ -208,7 +206,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20,
+              marginTop: 20
             }}
           >
             Desktop size:
@@ -223,7 +221,7 @@ export default {
       ),
       name: "with error",
       platform: "web",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -231,7 +229,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10,
+              marginTop: 10
             }}
           >
             Mobile size:
@@ -240,7 +238,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20,
+              marginTop: 20
             }}
           >
             Desktop size:
@@ -254,8 +252,8 @@ export default {
         </div>
       ),
       name: "no poster image",
-      type: "story",
+      type: "story"
     },
   ],
-  name: "Primitives/Video",
+  name: "Primitives/Video"
 };

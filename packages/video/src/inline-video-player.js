@@ -136,16 +136,6 @@ class InlineVideoPlayer extends Component {
 
     InlineVideoPlayer.activePlayers.push(this);
 
-    // InlineVideoPlayer.activePlayers.forEach(video => {
-    //   // console.log(video, "VIDEO")
-    //   if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
-    //     this.initBrightcove();
-    //   }
-    //   // if (video !== this && video.player) {
-    //   //   video.player.pause();
-    //   // }
-    // });
-
     if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
       this.initBrightcove();
     }
@@ -184,7 +174,6 @@ class InlineVideoPlayer extends Component {
       ? new window.IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              // this.brightcoveSDKLoadedStarted = true;
               this.loadBrightcoveSDKIfRequired();
             }
           });
@@ -197,7 +186,6 @@ class InlineVideoPlayer extends Component {
   }
 
   loadBrightcoveSDKIfRequired() {
-    // console.log("before loadBrightcoveSDKIfRequired", InlineVideoPlayer.brightcoveSDKLoadedStarted)
     // if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
 
     InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
@@ -219,7 +207,6 @@ class InlineVideoPlayer extends Component {
   }
 
   createBrightcoveScript() {
-    // console.log(this.props, "createBrightcoveScript")
     const { accountId, playerId } = this.props;
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
