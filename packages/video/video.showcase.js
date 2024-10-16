@@ -75,7 +75,8 @@ export default {
             width={760}
             height={427}
             poster={{
-              uri: "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960",
+              uri:
+                "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"
             }}
           />
           <div
@@ -101,7 +102,8 @@ export default {
             width={760}
             height={427}
             poster={{
-              uri: "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960",
+              uri:
+                "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"
             }}
           />
         </div>

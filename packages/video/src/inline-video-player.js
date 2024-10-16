@@ -236,7 +236,7 @@ class InlineVideoPlayer extends Component {
   }
 
   render() {
-    const { 
+    const {
       width,
       height,
       poster,
@@ -244,8 +244,7 @@ class InlineVideoPlayer extends Component {
       accountId,
       playerId,
       is360
-    } =
-      this.props;
+    } = this.props;
     const { error, hasVideoPlayed } = this.state;
     if (error) {
       throw new Error("Can't load video"); // caught by parent ErrorView
