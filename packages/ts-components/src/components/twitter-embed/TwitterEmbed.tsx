@@ -102,6 +102,7 @@ export const TwitterEmbed: React.FC<TwitterEmbedProps> = ({ element, url }) => {
           }
         };
       }
+      return null;
     };
 
     const vendorId = socialMediaVendors[providerName].id;
