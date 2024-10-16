@@ -87,7 +87,7 @@ class InlineVideoPlayer extends Component {
   static scriptLoadError = false;
 
   static activePlayers = [];
-  
+
   static activeScripts = [];
 
   static brightcoveSDKLoadedStarted = false;
@@ -113,7 +113,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      hasVideoPlayed: false
+      hasVideoPlayed: false,
     };
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;
@@ -126,7 +126,6 @@ class InlineVideoPlayer extends Component {
     if (this.observer && this.videoContainerRef) {
       this.observer.observe(this.videoContainerRef.current);
       this.loadBrightcoveSDKIfRequired();
-
     } else {
       this.loadBrightcoveSDKIfRequired();
     }
@@ -146,7 +145,6 @@ class InlineVideoPlayer extends Component {
     //   //   video.player.pause();
     //   // }
     // });
-
 
     if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
       this.initBrightcove();
@@ -174,7 +172,7 @@ class InlineVideoPlayer extends Component {
   handlePlay = () => {
     this.setState({ hasVideoPlayed: true });
 
-    InlineVideoPlayer.activePlayers.forEach(video => {
+    InlineVideoPlayer.activePlayers.forEach((video) => {
       if (video !== this && video.player) {
         video.player.pause();
       }
@@ -183,7 +181,7 @@ class InlineVideoPlayer extends Component {
 
   createIntersectionObserver() {
     return "IntersectionObserver" in window
-      ? new window.IntersectionObserver(entries => {
+      ? new window.IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               // this.brightcoveSDKLoadedStarted = true;
@@ -202,21 +200,21 @@ class InlineVideoPlayer extends Component {
     // console.log("before loadBrightcoveSDKIfRequired", InlineVideoPlayer.brightcoveSDKLoadedStarted)
     // if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
 
-      InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
+    InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
 
-      const s = this.createBrightcoveScript();
+    const s = this.createBrightcoveScript();
 
-      s.onload = () => {
-        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
-      };
+    s.onload = () => {
+      InlineVideoPlayer.activePlayers.forEach((player) => player.initVideojs());
+    };
 
-      s.onerror = () => {
-        InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
-        InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
-      };
+    s.onerror = () => {
+      InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
+      InlineVideoPlayer.activePlayers.forEach((player) => player.handleError());
+    };
 
-      InlineVideoPlayer.appendScript(s);
-      InlineVideoPlayer.attachStyles();
+    InlineVideoPlayer.appendScript(s);
+    InlineVideoPlayer.attachStyles();
     // }
   }
 
@@ -233,7 +231,6 @@ class InlineVideoPlayer extends Component {
     //   InlineVideoPlayer.activeScripts.push(s.src)
     // }
     return s;
-
   }
 
   initVideojs() {
@@ -252,15 +249,8 @@ class InlineVideoPlayer extends Component {
   }
 
   render() {
-    const {
-      width,
-      height,
-      poster,
-      videoId,
-      accountId,
-      playerId,
-      is360
-    } = this.props;
+    const { width, height, poster, videoId, accountId, playerId, is360 } =
+      this.props;
     const { error, hasVideoPlayed } = this.state;
     if (error) {
       throw new Error("Can't load video"); // caught by parent ErrorView
