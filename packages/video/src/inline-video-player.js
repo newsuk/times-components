@@ -123,18 +123,15 @@ class InlineVideoPlayer extends Component {
 
   componentDidMount() {
     this.observer = this.createIntersectionObserver();
-    // console.log(this.observer, "this.observer")
     if (this.observer && this.videoContainerRef) {
       this.observer.observe(this.videoContainerRef.current);
       this.loadBrightcoveSDKIfRequired();
 
     } else {
-      console.log("ELSE: ", this.observer, this.videoContainerRef)
       this.loadBrightcoveSDKIfRequired();
     }
 
     if (InlineVideoPlayer.scriptLoadError) {
-      console.log("ERROR: ")
       this.handleError(InlineVideoPlayer.scriptLoadError);
     }
 
@@ -152,7 +149,6 @@ class InlineVideoPlayer extends Component {
 
 
     if (InlineVideoPlayer.brightcoveSDKHasLoaded()) {
-      console.log(this, "brightcoveSDKHasLoaded")
       this.initBrightcove();
     }
   }
@@ -190,7 +186,6 @@ class InlineVideoPlayer extends Component {
       ? new window.IntersectionObserver(entries => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              console.log(entries, "entries")
               // this.brightcoveSDKLoadedStarted = true;
               this.loadBrightcoveSDKIfRequired();
             }
@@ -206,7 +201,6 @@ class InlineVideoPlayer extends Component {
   loadBrightcoveSDKIfRequired() {
     // console.log("before loadBrightcoveSDKIfRequired", InlineVideoPlayer.brightcoveSDKLoadedStarted)
     // if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-      console.log("loadBrightcoveSDKIfRequired",InlineVideoPlayer.activeScripts)
 
       InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
 
