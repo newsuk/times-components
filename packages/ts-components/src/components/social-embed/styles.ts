@@ -48,6 +48,7 @@ export const Paragraph = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  margin: 24px 0;
 
   @media (max-width: ${breakpoints.medium}px) {
     font-size: 16px;

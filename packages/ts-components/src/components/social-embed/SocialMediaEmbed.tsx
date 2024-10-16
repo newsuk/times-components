@@ -54,8 +54,6 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         }
       });
     }
-    // tslint:disable-next-line:no-console
-    console.log('window', window);
   }, []);
 
   useEffect(
