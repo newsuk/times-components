@@ -57,7 +57,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         });
       }
     },
-    [vendorName]
+    [vendorName, isSocialAllowed, allowedOnce]
   );
 
   enum ModalType {
