@@ -436,7 +436,9 @@ const ArticleSkeleton = ({
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
                       isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
-                      isSharingSavingEntitlementEnabled={isSharingSavingEntitlementEnabled}
+                      isSharingSavingEntitlementEnabled={
+                        isSharingSavingEntitlementEnabled
+                      }
                     />
                   )}
                 </LazyLoad>

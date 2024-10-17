@@ -8,10 +8,10 @@ const ShareSaveEntitlementState = ({ shareSaveEntitlementData, children }) => {
 
   const featureDecisions =
     (shareSaveEntitlementData &&
-        shareSaveEntitlementData.user &&
-        shareSaveEntitlementData.user.subscriptions &&
-        shareSaveEntitlementData.user.subscriptions[0] &&
-        shareSaveEntitlementData.user.subscriptions[0].featureDecisions) ||
+      shareSaveEntitlementData.user &&
+      shareSaveEntitlementData.user.subscriptions &&
+      shareSaveEntitlementData.user.subscriptions[0] &&
+      shareSaveEntitlementData.user.subscriptions[0].featureDecisions) ||
     [];
 
   const isShareSaveEntitlementEnabled =
@@ -21,7 +21,10 @@ const ShareSaveEntitlementState = ({ shareSaveEntitlementData, children }) => {
         decision.code === FP_CODE_SHARE_AND_SAVE && decision.outcomeAsBoolean
     );
 
-  if (shareSaveEntitlementData === undefined || !isShareSaveEntitlementEnabled) {
+  if (
+    shareSaveEntitlementData === undefined ||
+    !isShareSaveEntitlementEnabled
+  ) {
     return null;
   }
 
