@@ -11,7 +11,7 @@ describe("InlineVideoPlayer", () => {
     delete window.videojs;
     InlineVideoPlayer.scriptLoadError = false;
     InlineVideoPlayer.activePlayers = [];
-    InlineVideoPlayer.brightcoveSDKLoadedStarted = false;
+    InlineVideoPlayer.activeScripts = [];
     document.body.innerHTML = "";
     jest.restoreAllMocks();
   });
@@ -31,7 +31,7 @@ describe("InlineVideoPlayer", () => {
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]" defer=""></script>'
     );
   });
 
@@ -41,11 +41,11 @@ describe("InlineVideoPlayer", () => {
     );
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]" defer=""></script>'
     );
   });
 
-  it.skip("only appends script once video in view (if browser supports IntersectionObserver)", () => {
+  it("only appends script once video in view (if browser supports IntersectionObserver)", () => {
     const observeMock = jest.fn();
     window.IntersectionObserver = jest.fn(() => ({
       observe: observeMock,
@@ -57,17 +57,16 @@ describe("InlineVideoPlayer", () => {
     );
 
     expect(document.body.innerHTML.trim()).not.toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]"></script>'
     );
-
+    
     window.IntersectionObserver.mock.calls[0][0]([{ isIntersecting: true }]);
-
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]" defer=""></script>'
     );
   });
 
-  it.skip("only appends one script tag to the body for multiple players", () => {
+  it("only appends one script tag to the body for multiple players", () => {
     const appendScript = jest.spyOn(InlineVideoPlayer, "appendScript");
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);

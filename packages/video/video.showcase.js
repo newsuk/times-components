@@ -82,25 +82,18 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 500
+              marginTop: 200
             }}
           >
             Desktop size:
           </div>
           <Video
             {...defaultVideoProps}
-            videoId="5612887446001"
-            id={mockId}
-            width={498}
-            height={280}
-          />
-          <Video
-            {...defaultVideoProps}
             playerId="MxxcO1yYU"
             videoId="6358939106112"
             accountId="5436121856001"
-            width={760}
-            height={427}
+            width={498}
+            height={280}
             poster={{
               uri:
                 "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"

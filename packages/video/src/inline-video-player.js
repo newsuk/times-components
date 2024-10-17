@@ -90,8 +90,6 @@ class InlineVideoPlayer extends Component {
 
   static activeScripts = [];
 
-  static brightcoveSDKLoadedStarted = false;
-
   static brightcoveSDKHasLoaded() {
     return !!(window.bc && window.videojs);
   }
@@ -172,51 +170,42 @@ class InlineVideoPlayer extends Component {
   createIntersectionObserver() {
     return "IntersectionObserver" in window
       ? new window.IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              this.loadBrightcoveSDKIfRequired();
-            }
-          });
-
-          // if (entries[0].isIntersecting) {
-          //   this.loadBrightcoveSDKIfRequired();
-          // }
+          if (entries[0].isIntersecting) {
+            this.loadBrightcoveSDKIfRequired();
+          }
         })
       : null;
   }
 
   loadBrightcoveSDKIfRequired() {
-    // if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-
-    InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
-
     const s = this.createBrightcoveScript();
 
-    s.onload = () => {
-      InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
-    };
-
-    s.onerror = () => {
-      InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
-      InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
-    };
-
-    InlineVideoPlayer.appendScript(s);
-    InlineVideoPlayer.attachStyles();
-    // }
+    if(s){
+      s.onload = () => {
+        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
+      };
+  
+      s.onerror = () => {
+        InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
+        InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
+      };
+      
+      InlineVideoPlayer.appendScript(s);
+      InlineVideoPlayer.attachStyles();
+    }
   }
 
   createBrightcoveScript() {
-    const { accountId, playerId } = this.props;
+    const { accountId, playerId, videoId } = this.props;
     const s = document.createElement("script");
-    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
+    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js?videoID=${videoId}`;
     s.defer = true;
 
-    // if(InlineVideoPlayer.activeScripts.includes(s.src)) {
-    //   return;
-    // } else {
-    //   InlineVideoPlayer.activeScripts.push(s.src)
-    // }
+    if(InlineVideoPlayer.activeScripts.includes(s.src)) {
+      return;
+    } else {
+      InlineVideoPlayer.activeScripts.push(s.src)
+    }
     return s;
   }
 
