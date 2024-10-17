@@ -20,7 +20,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentingFlag = true,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled
+    isEntitlementFeatureEnabled,
+    isSharingSavingEntitlementEnabled
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -43,7 +44,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentingFlag,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled
+    isEntitlementFeatureEnabled,
+    isSharingSavingEntitlementEnabled
   };
 
   const clientOptions = {
