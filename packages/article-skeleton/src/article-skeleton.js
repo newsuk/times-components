@@ -46,6 +46,7 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import shouldIncludeDisclaimer from "./contentModifiers/should-include-disclaimer";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
 
@@ -152,6 +153,7 @@ const ArticleSkeleton = ({
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
+    shouldIncludeDisclaimer,
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd(isPreview),
     tagLastParagraph,
