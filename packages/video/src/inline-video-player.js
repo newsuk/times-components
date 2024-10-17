@@ -123,10 +123,9 @@ class InlineVideoPlayer extends Component {
     this.observer = this.createIntersectionObserver();
     if (this.observer && this.videoContainerRef) {
       this.observer.observe(this.videoContainerRef.current);
-      this.loadBrightcoveSDKIfRequired();
-    } else {
-      this.loadBrightcoveSDKIfRequired();
-    }
+    } 
+      
+    this.loadBrightcoveSDKIfRequired();
 
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
@@ -202,7 +201,7 @@ class InlineVideoPlayer extends Component {
     s.defer = true;
 
     if (InlineVideoPlayer.activeScripts.includes(s.src)) {
-      return {};
+      return null;
     }
 
     InlineVideoPlayer.activeScripts.push(s.src);
