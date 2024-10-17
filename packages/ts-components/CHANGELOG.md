@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.105.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.105.1...@times-components/ts-components@1.105.2) (2024-10-17)
+
+
+### Bug Fixes
+
+* **TMRS-514:** ticker styling app ([#3959](https://github.com/newsuk/times-components/issues/3959)) ([f2d9696](https://github.com/newsuk/times-components/commit/f2d969665fd47efb8d73c15850e69563ba2593b2))
+
+
+
+
+
 ## [1.105.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.105.0...@times-components/ts-components@1.105.1) (2024-10-15)
 
 **Note:** Version bump only for package @times-components/ts-components
