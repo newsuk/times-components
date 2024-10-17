@@ -38,26 +38,35 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   const [allowedOnce, setAllowedOnce] = useState(false);
   const [isSocialAllowed, setIsSocialAllowed] = useState(false);
 
+  const checkVendorConsent = () => {
+    if (window.__tcfapi) {
+      window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
+        if (success && data && data.consentedVendors) {
+          const isSocialVendorAllowed = data.consentedVendors.some(
+            (vendor: { name: string }) =>
+              vendor.name.toLowerCase() === vendorName.toLowerCase()
+          );
+          setIsSocialAllowed(isSocialVendorAllowed);
+          // tslint:disable-next-line:no-console
+          console.log(
+            `Consent check for ${vendorName}:`,
+            isSocialVendorAllowed
+          );
+        } else {
+          // tslint:disable-next-line:no-console
+          console.log(
+            `Error fetching consent data or ${vendorName} embed not allowed`
+          );
+        }
+      });
+    }
+  };
+
   useEffect(
     () => {
-      if (window.__tcfapi) {
-        window.__tcfapi('getCustomVendorConsents', 2, (data, success) => {
-          if (success && data && data.consentedVendors) {
-            const isSocialVendorAllowed = data.consentedVendors.some(
-              (vendor: { name: string }) =>
-                vendor.name.toLowerCase() === vendorName.toLowerCase()
-            );
-            setIsSocialAllowed(isSocialVendorAllowed);
-          } else {
-            // tslint:disable-next-line:no-console
-            console.log(
-              `Error fetching consent data or ${vendorName} embed not allowed`
-            );
-          }
-        });
-      }
+      checkVendorConsent();
     },
-    [vendorName, isSocialAllowed, allowedOnce]
+    [vendorName, window.__tcfapi]
   );
 
   enum ModalType {
