@@ -17,6 +17,7 @@ import subscript from "../fixtures/subscript.json";
 import subscriptWithFallback from "../fixtures/subscript-fallback.json";
 import superscript from "../fixtures/superscript.json";
 import superscriptWithFallback from "../fixtures/superscript-fallback.json";
+import link from "../fixtures/link.json";
 
 export default renderComponent => {
   const tests = [
@@ -125,6 +126,16 @@ export default renderComponent => {
       test: () => {
         const output = renderComponent(
           renderTree(superscriptWithFallback, coreRenderers)
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "link",
+      test: () => {
+        const output = renderComponent(
+          <TcView>{renderTree(link, coreRenderers)}</TcView>
         );
 
         expect(output).toMatchSnapshot();
