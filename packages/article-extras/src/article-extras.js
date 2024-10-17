@@ -47,12 +47,14 @@ const ArticleExtras = ({
   isEntitlementFeatureEnabled,
   isSharingSavingEntitlementEnabled
 }) => {
-
-  const [shareSaveEntitlementData, setShareSaveEntitlementData] = useState(undefined);
+  const [shareSaveEntitlementData, setShareSaveEntitlementData] = useState(
+    undefined
+  );
 
   useEffect(
     () => {
       const fetchUserEntitlements = async () => {
+        // eslint-disable-next-line no-undef
         const response = await fetch("/api/get-user-entitlements");
         const data = await response.json();
         console.log("fetchUserEntitlements", data);
@@ -126,7 +128,9 @@ const ArticleExtras = ({
             onShareOnEmail={() => {}}
             savingEnabled={savingEnabled}
             sharingEnabled={sharingEnabled}
-            isSharingSavingEntitlementEnabled={isSharingSavingEntitlementEnabled}
+            isSharingSavingEntitlementEnabled={
+              isSharingSavingEntitlementEnabled
+            }
           />
         </ShareAndSaveContainer>
       )}
@@ -141,16 +145,19 @@ const ArticleExtras = ({
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
-      {isSharingSavingEntitlementEnabled ? 
-        (isSharingSavingEnabled && (
+      {isSharingSavingEntitlementEnabled ? (
+        isSharingSavingEnabled && (
           <UserState state={UserState.showSaveAndShareBar}>
             {renderSaveAndShareBar()}
           </UserState>
-      )):
-      <ShareSaveEntitlementState shareSaveEntitlementData={shareSaveEntitlementData}>
-        {renderSaveAndShareBar()}
-      </ShareSaveEntitlementState>
-      }
+        )
+      ) : (
+        <ShareSaveEntitlementState
+          shareSaveEntitlementData={shareSaveEntitlementData}
+        >
+          {renderSaveAndShareBar()}
+        </ShareSaveEntitlementState>
+      )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
