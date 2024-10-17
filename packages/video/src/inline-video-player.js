@@ -180,16 +180,16 @@ class InlineVideoPlayer extends Component {
   loadBrightcoveSDKIfRequired() {
     const s = this.createBrightcoveScript();
 
-    if(s){
+    if (s) {
       s.onload = () => {
         InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
       };
-  
+
       s.onerror = () => {
         InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
         InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
       };
-      
+
       InlineVideoPlayer.appendScript(s);
       InlineVideoPlayer.attachStyles();
     }
@@ -201,11 +201,11 @@ class InlineVideoPlayer extends Component {
     s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js?videoID=${videoId}`;
     s.defer = true;
 
-    if(InlineVideoPlayer.activeScripts.includes(s.src)) {
-      return;
-    } else {
-      InlineVideoPlayer.activeScripts.push(s.src)
+    if (InlineVideoPlayer.activeScripts.includes(s.src)) {
+      return {};
     }
+
+    InlineVideoPlayer.activeScripts.push(s.src);
     return s;
   }
 

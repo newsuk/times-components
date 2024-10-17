@@ -59,7 +59,7 @@ describe("InlineVideoPlayer", () => {
     expect(document.body.innerHTML.trim()).not.toBe(
       '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]"></script>'
     );
-    
+
     window.IntersectionObserver.mock.calls[0][0]([{ isIntersecting: true }]);
     expect(document.body.innerHTML.trim()).toBe(
       '<script src="//players.brightcove.net/[account id]/default_default/index.min.js?videoID=[video id]" defer=""></script>'
