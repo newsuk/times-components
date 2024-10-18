@@ -32,6 +32,11 @@ exports[`Article with user state Render full article when user has access to ful
               </span>
               his being Black History Month, last week
             </p>
+            <p>
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
+            </p>
             <div>
               <div
                 id="d2f83305-d558-4f78-f582-32115c659355"
@@ -48,7 +53,7 @@ exports[`Article with user state Render full article when user has access to ful
               </div>
             </div>
             <div
-              id="2"
+              id="3"
             >
               <div>
                 <div>
@@ -74,7 +79,7 @@ exports[`Article with user state Render full article when user has access to ful
               </div>
             </div>
             <div
-              id="3"
+              id="4"
             >
               <div>
                 <div>
@@ -100,7 +105,7 @@ exports[`Article with user state Render full article when user has access to ful
               </div>
             </div>
             <div
-              id="4"
+              id="5"
             >
               <div>
                 <div>
@@ -412,6 +417,11 @@ exports[`Article with user state Render teaser article when user does not have a
               </span>
               his being Black History Month, last week
             </p>
+            <p>
+              <i>
+                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
+              </i>
+            </p>
             <div>
               <div
                 id="d2f83305-d558-4f78-f582-32115c659355"
@@ -428,7 +438,7 @@ exports[`Article with user state Render teaser article when user does not have a
               </div>
             </div>
             <div
-              id="2"
+              id="3"
             >
               <div>
                 <div>
@@ -454,7 +464,7 @@ exports[`Article with user state Render teaser article when user does not have a
               </div>
             </div>
             <div
-              id="3"
+              id="4"
             >
               <div>
                 <div>
@@ -480,7 +490,7 @@ exports[`Article with user state Render teaser article when user does not have a
               </div>
             </div>
             <div
-              id="4"
+              id="5"
             >
               <div>
                 <div>
