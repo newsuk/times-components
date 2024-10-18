@@ -9,12 +9,9 @@ import { MockedProvider } from '@times-components/provider-test-tools';
 
 import mockDate from 'mockdate';
 
-import {
-  getNewsletter,
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
-
 
 const renderComponent = (
   analyticsStream?: () => void,
@@ -36,7 +33,7 @@ const renderComponent = (
           }
         }
       }
-    },
+    }
   ]
 ) =>
   render(
@@ -74,8 +71,6 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-
-
   it('renders null when is already subscribed', async () => {
     const component = renderComponent(jest.fn(), [
       {
@@ -109,5 +104,4 @@ describe('Inline Newsletter Puff', () => {
 
     expect(component.baseElement).toMatchSnapshot();
   });
-
 });
