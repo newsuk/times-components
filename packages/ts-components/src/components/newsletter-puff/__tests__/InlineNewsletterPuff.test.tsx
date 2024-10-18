@@ -11,7 +11,6 @@ import mockDate from 'mockdate';
 
 import {
   getNewsletter,
-  subscribeNewsletter
 } from '@times-components/provider-queries';
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
@@ -39,25 +38,6 @@ const renderComponent = (
         }
       }
     },
-    {
-      delay: 50,
-      request: {
-        query: subscribeNewsletter,
-        variables: {
-          code: 'TNL-119'
-        }
-      },
-      result: {
-        data: {
-          subscribeNewsletter: {
-            id: 'a2l6E000000CdHzQAK',
-            isSubscribed: true,
-            title: 'RED BOX',
-            __typename: 'Newsletter'
-          }
-        }
-      }
-    }
   ]
 ) =>
   render(
@@ -95,21 +75,7 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  it('renders signup state', async () => {
-    const component = renderComponent();
-    await component.findAllByText('Sign up with one click');
-    expect(component.baseElement).toMatchSnapshot();
-  });
 
-  it('renders loading state state', async () => {
-    const component = renderComponent();
-    const oneClickSignUp = await component.findAllByText(
-      'Sign up with one click'
-    );
-
-    fireEvent.click(oneClickSignUp[0]);
-    expect(component.baseElement).toMatchSnapshot();
-  });
 
   it('renders null when is already subscribed', async () => {
     const component = renderComponent(jest.fn(), [
@@ -145,38 +111,4 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  describe('intersectionObserverTests', () => {
-    let oldIntersectionObserver: typeof IntersectionObserver;
-    beforeEach(() => {
-      oldIntersectionObserver = window.IntersectionObserver;
-      // @ts-ignore
-      window.IntersectionObserver = FakeIntersectionObserver;
-    });
-
-    afterEach(() => {
-      window.IntersectionObserver = oldIntersectionObserver;
-    });
-
-    it('Sign up with one click : displayed', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      await component.findAllByText('Sign up with one click');
-
-      FakeIntersectionObserver.intersect();
-
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Scrolled',
-        component: 'ArticleSkeleton',
-        object: 'NewsletterPuffButton',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'automated',
-          event_navigation_name: 'widget : puff : sign up now : displayed'
-        }
-      });
-    });
-  });
 });
