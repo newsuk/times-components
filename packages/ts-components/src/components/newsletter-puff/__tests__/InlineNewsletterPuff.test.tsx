@@ -2,7 +2,7 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
@@ -15,7 +15,6 @@ import {
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
-import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 
 const renderComponent = (
   analyticsStream?: () => void,
