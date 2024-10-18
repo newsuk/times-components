@@ -64,9 +64,13 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
 
   useEffect(
     () => {
-      checkVendorConsent();
+      if (window.__tcfapi) {
+        // tslint:disable-next-line:no-console
+        console.log('useEffect enterred');
+        checkVendorConsent();
+      }
     },
-    [vendorName, window.__tcfapi]
+    [vendorName, allowedOnce, isSocialAllowed]
   );
 
   enum ModalType {
