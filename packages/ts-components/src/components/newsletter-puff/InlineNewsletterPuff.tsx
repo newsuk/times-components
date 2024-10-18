@@ -26,7 +26,7 @@ export const InlineNewsletterPuff = ({
   section
 }: InlineNewsletterPuffProps) => {
   const [url, setUrl] = useState<string>(
-    `/api/subscribe-newsletter/${code}`
+    `/api/is-subscribed-newsletter/${code}`
   );
   const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
 
@@ -51,26 +51,26 @@ export const InlineNewsletterPuff = ({
 
         return (
           <FetchProvider url={url} options={fetchOptions}>
-              <ContentProvider>
-              <TrackingContextProvider
-                context={{
-                  object: 'InlineNewsletterPuff',
-                  attrs: {
-                    article_parent_name: newsletter.title,
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-                scrolledEvent={{
-                  object: 'NewsletterPuffButton',
-                  attrs: {
-                    event_navigation_name:
-                      'widget : puff : sign up now : displayed',
-                    event_navigation_browsing_method: 'automated',
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-              >
-                {({ intersectObserverRef }) => (
+            <TrackingContextProvider
+              context={{
+                object: 'InlineNewsletterPuff',
+                attrs: {
+                  article_parent_name: newsletter.title,
+                  event_navigation_action: 'navigation'
+                }
+              }}
+              scrolledEvent={{
+                object: 'NewsletterPuffButton',
+                attrs: {
+                  event_navigation_name:
+                    'widget : puff : sign up now : displayed',
+                  event_navigation_browsing_method: 'automated',
+                  event_navigation_action: 'navigation'
+                }
+              }}
+            >
+              {({ intersectObserverRef }) => (
+                <ContentProvider>
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
@@ -79,9 +79,9 @@ export const InlineNewsletterPuff = ({
                     code={code}
                     subscribeNewsletter={setUrl}
                   />
-                )}
-              </TrackingContextProvider>
-              </ContentProvider>
+                </ContentProvider>
+              )}
+            </TrackingContextProvider>
           </FetchProvider>
         );
       }}

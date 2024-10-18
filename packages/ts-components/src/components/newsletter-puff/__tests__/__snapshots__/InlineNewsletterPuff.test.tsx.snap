@@ -154,41 +154,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
   <div>
     <div
       class="sc-htpNat sc-ifAKCX iWYiTB"
-    >
-      <div
-        class="sc-htpNat sc-iwsKbI cuimXU"
-      >
-        <div
-          class="sc-bxivhb sc-gqjmRU kcwRFH"
-        >
-          <div
-            class="sc-bxivhb sc-gZMcBi bklePC"
-          >
-            Politics. Explained.
-             
-          </div>
-          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
-          <div
-            class="sc-htpNat sc-VigVT cSaWjg"
-          >
-            <button
-              class="sc-bwzfXH gHDjoa"
-            >
-              Sign up with one click
-            </button>
-          </div>
-        </div>
-        <div
-          class="sc-htpNat sc-VigVT iWOUWL"
-        >
-          <button
-            class="sc-bdVaJa knKdEu"
-          >
-            Sign up with one click
-          </button>
-        </div>
-      </div>
-    </div>
+    />
   </div>
 </body>
 `;

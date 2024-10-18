@@ -24,18 +24,19 @@ type NewsletterProps = {
   subscribeNewsletter: any;
   loading?: boolean;
   error?: string;
-  data?: {isSubscribed: boolean};
-}
+  data?: { isSubscribed: boolean };
+};
 
 export const Newsletter = ({
   intersectObserverRef,
   section,
   headline,
   copy,
+  code,
   subscribeNewsletter,
   loading,
   error,
-  data,
+  data
 }: NewsletterProps) => {
   const PuffButton = (style: 'link' | 'button') => (
     <InpSignupCTAContainer ref={intersectObserverRef} childStyle={style}>
@@ -44,7 +45,7 @@ export const Newsletter = ({
         updatingSubscription={loading}
         onPress={() => {
           if (!loading) {
-            subscribeNewsletter();
+            subscribeNewsletter(`/api/subscribe-newsletter/${code}`);
           }
         }}
       />
@@ -55,16 +56,17 @@ export const Newsletter = ({
     <React.Fragment>
       <InpContainer section={section}>
         {loading && <LoadingOverlay />}
-        {data?.isSubscribed && (
-          <InpSubscribedContainer>
-            <InpCopy>
-              You've succesfully signed up to{' '}
-              <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
-              <NewsletterPuffLink />
-            </InpCopy>
-            <InpPreferencesContainer />
-          </InpSubscribedContainer>
-        )}
+        {data &&
+          data.isSubscribed && (
+            <InpSubscribedContainer>
+              <InpCopy>
+                You've succesfully signed up to{' '}
+                <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+                <NewsletterPuffLink />
+              </InpCopy>
+              <InpPreferencesContainer />
+            </InpSubscribedContainer>
+          )}
         {error && (
           <InpSubscribedContainer>
             <InpCopy>
@@ -74,7 +76,8 @@ export const Newsletter = ({
             <InpPreferencesContainer />
           </InpSubscribedContainer>
         )}
-        {!data?.isSubscribed &&
+        {data &&
+          !data.isSubscribed &&
           !error && (
             <InpSignupContainer>
               <InpCopy>
