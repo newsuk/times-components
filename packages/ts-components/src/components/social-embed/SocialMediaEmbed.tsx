@@ -64,13 +64,24 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
 
   useEffect(
     () => {
-      if (window.__tcfapi) {
-        // tslint:disable-next-line:no-console
-        console.log('useEffect enterred');
-        checkVendorConsent();
-      }
+      // tslint:disable-next-line:no-console
+      console.log('useEffect enterred');
+      checkVendorConsent();
     },
     [vendorName, allowedOnce, isSocialAllowed]
+  );
+
+  useEffect(
+    () => {
+      if (isSocialAllowed || allowedOnce) {
+        const script = document.createElement('link');
+        script.href =
+          'https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html';
+        script.rel = 'import';
+        document.body.appendChild(script);
+      }
+    },
+    [isSocialAllowed, allowedOnce]
   );
 
   enum ModalType {
