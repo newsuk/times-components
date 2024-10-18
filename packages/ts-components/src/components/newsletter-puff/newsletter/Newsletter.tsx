@@ -18,34 +18,34 @@ import { InpContainer } from '../styles';
 type NewsletterProps = {
   intersectObserverRef: (ref: HTMLElement | null) => void;
   section?: string;
-  justSubscribed: boolean;
-  justSubscribedError: boolean;
   headline: string;
-  updatingSubscription: boolean;
   copy: string;
   code: string;
-  subscribeNewsletter: ({}) => {};
+  subscribeNewsletter: any;
+  loading?: boolean;
+  error?: string;
+  data?: { isSubscribed: boolean };
 };
 
 export const Newsletter = ({
   intersectObserverRef,
   section,
-  justSubscribed,
-  justSubscribedError,
   headline,
-  updatingSubscription,
   copy,
   code,
-  subscribeNewsletter
+  subscribeNewsletter,
+  loading,
+  error,
+  data
 }: NewsletterProps) => {
   const PuffButton = (style: 'link' | 'button') => (
     <InpSignupCTAContainer ref={intersectObserverRef} childStyle={style}>
       <NewsletterPuffButton
         style={style}
-        updatingSubscription={updatingSubscription}
+        updatingSubscription={loading}
         onPress={() => {
-          if (!updatingSubscription) {
-            subscribeNewsletter({ variables: { code } });
+          if (!loading) {
+            subscribeNewsletter(`/api/subscribe-newsletter/${code}`);
           }
         }}
       />
@@ -55,28 +55,30 @@ export const Newsletter = ({
   return (
     <React.Fragment>
       <InpContainer section={section}>
-        {updatingSubscription && <LoadingOverlay />}
-        {justSubscribed && (
+        {loading && <LoadingOverlay />}
+        {data &&
+          data.isSubscribed && (
+            <InpSubscribedContainer>
+              <InpCopy>
+                You've succesfully signed up to{' '}
+                <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+                <NewsletterPuffLink />
+              </InpCopy>
+              <InpPreferencesContainer />
+            </InpSubscribedContainer>
+          )}
+        {error && (
           <InpSubscribedContainer>
             <InpCopy>
-              You've succesfully signed up to{' '}
-              <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+              Ann error occurred. Please use the link below.
               <NewsletterPuffLink />
             </InpCopy>
             <InpPreferencesContainer />
           </InpSubscribedContainer>
         )}
-        {justSubscribedError && (
-          <InpSubscribedContainer>
-            <InpCopy>
-              An error occurred. Please use the link below.
-              <NewsletterPuffLink />
-            </InpCopy>
-            <InpPreferencesContainer />
-          </InpSubscribedContainer>
-        )}
-        {!justSubscribed &&
-          !justSubscribedError && (
+        {data &&
+          !data.isSubscribed &&
+          !error && (
             <InpSignupContainer>
               <InpCopy>
                 <InpSignupHeadline>{headline} </InpSignupHeadline>
