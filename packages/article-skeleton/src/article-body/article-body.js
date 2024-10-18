@@ -38,7 +38,8 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines
+  Timelines,
+  SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -253,6 +254,19 @@ const renderers = ({
               </div>
             )}
           </Context.Consumer>
+        );
+
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <SocialMediaEmbed
+                element={element}
+                url={url}
+                vendorName="twitter"
+              />
+            </div>
+          </InteractiveContainer>
         );
 
       case "newsletter-puff":
