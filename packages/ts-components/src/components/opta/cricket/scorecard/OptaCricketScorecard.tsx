@@ -57,7 +57,7 @@ export const OptaCricketScorecard: React.FC<{
           show_bowling: true,
           show_economy: true,
           show_fow: true,
-          player_naming: 'last_name',
+          player_naming: 'full',
           breakpoints: '520'
         }).outerHTML;
 
