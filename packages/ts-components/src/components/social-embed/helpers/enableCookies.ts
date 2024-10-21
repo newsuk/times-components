@@ -1,6 +1,7 @@
+import { socialMediaVendors } from './socialMediaVendors';
+
 export const enableCookies = (
   vendorName: string,
-  // socialMediaVendors: any,
   setIsSocialAllowed: (allowed: boolean) => void
 ) => {
   const onCustomConsent = (_: any, success: boolean) => {
@@ -8,13 +9,6 @@ export const enableCookies = (
       setIsSocialAllowed(true);
     }
     return null;
-  };
-
-  const socialMediaVendors: {
-    [key: string]: { id: string; status: string };
-  } = {
-    twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' },
-    youtube: { id: '5e7ac3fae30e7d1bc1ebf5e8', status: 'pending' }
   };
 
   const vendorId = socialMediaVendors[vendorName].id;

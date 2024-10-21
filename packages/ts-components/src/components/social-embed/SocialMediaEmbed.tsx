@@ -14,8 +14,9 @@ import { openPrivacyModal, ModalType } from './helpers/privacyModal';
 // @ts-ignore
 import InteractiveWrapper from '@times-components/interactive-wrapper';
 import { checkVendorConsent } from './helpers/vendorConsent';
-// import { getVendorTitle } from './helpers/getVendorTitle';
+import { getVendorTitle } from './helpers/getVendorTitle';
 import { enableCookies } from './helpers/enableCookies';
+import { socialMediaVendors } from './helpers/socialMediaVendors';
 
 export declare type SocialEmbedProps = {
   element: any;
@@ -77,14 +78,6 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
       window.__TIMES_CONFIG__.sourcepoint.gdprMessageId
     );
   };
-
-  // const socialMediaVendors: {
-  //   [key: string]: { id: string; status: string };
-  // } = {
-  //   twitter: { id: '5fab0c31a22863611c5f8764', status: 'pending' },
-  //   youtube: { id: '5e7ac3fae30e7d1bc1ebf5e8', status: 'pending' }
-  // };
-
   // tslint:disable-next-line:no-console
   console.log('allowedOnce', allowedOnce);
   // tslint:disable-next-line:no-console
@@ -92,7 +85,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   // tslint:disable-next-line:no-console
   console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
 
-  return true ? (
+  return isSocialAllowed || allowedOnce ? (
     <InteractiveWrapper
       attributes={element.attributes}
       element={element.value}
@@ -106,7 +99,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
           <InfoIcon />
         </CustomIconContainer>
         <Title>
-          Lili content blocked
+          {getVendorTitle(vendorName, socialMediaVendors)} content blocked
         </Title>
       </Header>
       <Paragraph>
@@ -117,9 +110,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         </LinkPrivacyManager>
       </Paragraph>
       <EnableButton
-        onClick={() =>
-          enableCookies(vendorName, setIsSocialAllowed)
-        }
+        onClick={() => enableCookies(vendorName, setIsSocialAllowed)}
       >
         Enable cookies
       </EnableButton>

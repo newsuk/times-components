@@ -12,7 +12,7 @@ jest.mock('lodash.get');
 
 const mockTcfApi = jest.fn();
 
-describe('TwitterEmbed', () => {
+describe('SocialMediaEmbed', () => {
   beforeEach(() => {
     // Reset mocks before each test
     mockTcfApi.mockReset();
