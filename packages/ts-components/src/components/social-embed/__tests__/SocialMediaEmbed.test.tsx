@@ -14,7 +14,6 @@ const mockTcfApi = jest.fn();
 
 describe('SocialMediaEmbed', () => {
   beforeEach(() => {
-    // Reset mocks before each test
     mockTcfApi.mockReset();
     window.__tcfapi = mockTcfApi;
 
@@ -25,7 +24,6 @@ describe('SocialMediaEmbed', () => {
   });
 
   afterEach(() => {
-    // Restore mocks after each test
     jest.restoreAllMocks();
   });
 
@@ -49,8 +47,8 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Assert that InteractiveWrapper is rendered
-    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+    const twitterEmbedElement = document.querySelector('twitter-embed');
+    expect(twitterEmbedElement).toHaveAttribute('url', url);
   });
 
   it('renders blocked content message if consent for Twitter is not given', () => {
@@ -73,7 +71,6 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Assert that the blocked content message is rendered
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
     expect(screen.getByText('privacy manager.')).toBeInTheDocument();
     expect(
@@ -113,7 +110,6 @@ describe('SocialMediaEmbed', () => {
 
     fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
 
-    // Ensure that the __tcfapi function is called with the correct arguments
     expect(mockTcfApi).toHaveBeenCalledWith(
       'getCustomVendorConsents',
       2,
@@ -129,8 +125,8 @@ describe('SocialMediaEmbed', () => {
       []
     );
 
-    // Assert that InteractiveWrapper is rendered
-    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+    const twitterEmbedElement = document.querySelector('twitter-embed');
+    expect(twitterEmbedElement).toHaveAttribute('url', url);
   });
 
   it('allows cookies once and unblocks Twitter content temporarily', () => {
@@ -161,16 +157,13 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Click the "Allow cookies once" button
     fireEvent.click(
       screen.getByRole('button', { name: /Allow cookies once/i })
     );
 
-    // Ensure that Twitter content is unblocked temporarily (InteractiveWrapper is rendered)
-    expect(screen.getByText('InteractiveWrapper')).toBeInTheDocument();
+    const twitterEmbedElement = document.querySelector('twitter-embed');
+    expect(twitterEmbedElement).toHaveAttribute('url', url);
 
-    // Mock that cookies are not permanently set, and content should be blocked again after refresh
-    // Here, we just verify that consent was not permanently stored
     mockTcfApi.mockReset(); // Reset the mock to simulate a new page load without consent
 
     render(
@@ -181,21 +174,18 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Ensure that the blocked content message is rendered again after refresh
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
   });
 
   it('opens privacy modal when available', () => {
     const mockLoadPrivacyManagerModal = jest.fn();
 
-    // Mock the sourcepoint configuration
     window.__TIMES_CONFIG__ = {
       sourcepoint: {
         gdprMessageId: 'messageIdForGDPR'
       }
     };
 
-    // Mock get to return loadPrivacyManagerModal function
     (get as jest.Mock).mockReturnValue(mockLoadPrivacyManagerModal);
 
     const mockElement = {
@@ -213,18 +203,15 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Simulate user clicking the privacy manager link
     const privacyManagerLink = screen.getByText('privacy manager.');
     fireEvent.click(privacyManagerLink);
 
-    // Ensure that the privacy modal load function is called with the correct message ID
     expect(mockLoadPrivacyManagerModal).toHaveBeenCalledWith(
       'messageIdForGDPR'
     );
   });
 
   it('handles missing privacy modal gracefully', () => {
-    // Mock get to return undefined (no privacy modal available)
     (get as jest.Mock).mockReturnValue(undefined);
 
     const mockElement = {
@@ -242,11 +229,9 @@ describe('SocialMediaEmbed', () => {
       />
     );
 
-    // Simulate user clicking the privacy manager link
     const privacyManagerLink = screen.getByText('privacy manager.');
     fireEvent.click(privacyManagerLink);
 
-    // Ensure that the console.warn is triggered
     expect(global.console.warn).toHaveBeenCalledWith(
       'Sourcepoint LoadPrivacyManagerModal is not available'
     );
