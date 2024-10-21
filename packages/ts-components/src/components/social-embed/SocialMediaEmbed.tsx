@@ -60,6 +60,13 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         script.rel = 'import';
         document.body.appendChild(script);
       }
+
+      const wrapper = document.getElementById('interactiveWrapper');
+      if (wrapper) {
+        const twitterEmbed = document.createElement('twitter-embed');
+        twitterEmbed.setAttribute('url', url);
+        wrapper.appendChild(twitterEmbed);
+      }
     },
     [isSocialAllowed, allowedOnce]
   );
@@ -86,12 +93,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
 
   return isSocialAllowed || allowedOnce ? (
-    <InteractiveWrapper
-      attributes={element.attributes}
-      element={element.value}
-      key={element.key}
-      source={url}
-    />
+    <div id="interactiveWrapper" />
   ) : (
     <CardContainer>
       <Header>
