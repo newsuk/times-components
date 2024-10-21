@@ -269,22 +269,22 @@ const renderers = ({
           </InteractiveContainer>
         );
 
-        case "times-embed-iframe-max":
-          // const src = element.attributes?.src || "";
-          // const isYoutube = src.includes("youtube");
-          // if(isYoutube){
-            return (
-              <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-                <div id={id}>
-                  <SocialMediaEmbed
-                    element={element}
-                    url={url}
-                    vendorName="youtube"
-                  />
-                </div>
-              </InteractiveContainer>
-            );
-          // } else return null;
+      case "times-embed-iframe-max":
+        // const src = element.attributes?.src || "";
+        // const isYoutube = src.includes("youtube");
+        // if(isYoutube){
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <SocialMediaEmbed
+                element={element}
+                url={url}
+                vendorName="youtube"
+              />
+            </div>
+          </InteractiveContainer>
+        );
+      // } else return null;
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
