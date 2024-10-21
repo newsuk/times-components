@@ -88,7 +88,7 @@ class InlineVideoPlayer extends Component {
 
   static activePlayers = [];
 
-  static brightcoveSDKLoadedStarted = false;
+  static activeScripts = [];
 
   static brightcoveSDKHasLoaded() {
     return !!(window.bc && window.videojs);
@@ -123,9 +123,9 @@ class InlineVideoPlayer extends Component {
     this.observer = this.createIntersectionObserver();
     if (this.observer && this.videoContainerRef) {
       this.observer.observe(this.videoContainerRef.current);
-    } else {
-      this.loadBrightcoveSDKIfRequired();
     }
+
+    this.loadBrightcoveSDKIfRequired();
 
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
@@ -177,11 +177,9 @@ class InlineVideoPlayer extends Component {
   }
 
   loadBrightcoveSDKIfRequired() {
-    if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
-      InlineVideoPlayer.brightcoveSDKLoadedStarted = true;
+    const s = this.createBrightcoveScript();
 
-      const s = this.createBrightcoveScript();
-
+    if (s) {
       s.onload = () => {
         InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
       };
@@ -197,11 +195,16 @@ class InlineVideoPlayer extends Component {
   }
 
   createBrightcoveScript() {
-    const { accountId, playerId } = this.props;
+    const { accountId, playerId, videoId } = this.props;
     const s = document.createElement("script");
-    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
+    s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js?videoID=${videoId}`;
     s.defer = true;
 
+    if (InlineVideoPlayer.activeScripts.includes(s.src)) {
+      return null;
+    }
+
+    InlineVideoPlayer.activeScripts.push(s.src);
     return s;
   }
 
@@ -237,7 +240,6 @@ class InlineVideoPlayer extends Component {
 
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
-      // Added a wrapping div as brightcove adds siblings to the video tag
       <div
         data-is-360={is360}
         data-testid="video-component"

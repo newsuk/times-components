@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
 import React from "react";
-import { TcText, TcView } from "@times-components/utils";
+import { TcText, TcTextLink, TcView } from "@times-components/utils";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fontsWithFallback } from "@times-components/ts-styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
@@ -13,6 +13,7 @@ const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
 const subscript = require("./fixtures/multiple-subscripts.json");
 const superscript = require("./fixtures/multiple-superscripts.json");
+const link = require("./fixtures/link.json");
 
 export default {
   children: [
@@ -33,18 +34,15 @@ export default {
         renderTree(mixture, {
           ...coreRenderers,
           block(key, attributes, renderedChildren) {
-            return {
-              element: <TcView key={key}>{renderedChildren}</TcView>
-            };
+            return <TcView key={key}>{renderedChildren}</TcView>;
           },
           link(key, attributes, renderedChildren) {
-            return {
-              element: (
-                <TcText href={attributes.href} key={key}>
-                  {renderedChildren}
-                </TcText>
-              )
-            };
+            const { href: url } = attributes;
+            return (
+              <TcTextLink href={url} key={key}>
+                {renderedChildren}
+              </TcTextLink>
+            );
           }
         }),
       name: "Mixture of tags",
@@ -53,6 +51,11 @@ export default {
     {
       component: () => <TcText>{renderTrees(bio, coreRenderers)}</TcText>,
       name: "Biography",
+      type: "story"
+    },
+    {
+      component: () => <TcView>{renderTrees(link, coreRenderers)}</TcView>,
+      name: "Link",
       type: "story"
     },
     {
@@ -78,20 +81,18 @@ export default {
           {renderTrees(multiParagraph, {
             ...coreRenderers,
             paragraph(key, attributes, children) {
-              return {
-                element: (
-                  <TcText
-                    key={key}
-                    style={{
-                      color: "red",
-                      fontFamily: fontsWithFallback.headline,
-                      margin: 10
-                    }}
-                  >
-                    {children}
-                  </TcText>
-                )
-              };
+              return (
+                <TcText
+                  key={key}
+                  style={{
+                    color: "red",
+                    fontFamily: fontsWithFallback.headline,
+                    margin: 10
+                  }}
+                >
+                  {children}
+                </TcText>
+              );
             }
           })}
         </TcView>
