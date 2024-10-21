@@ -64,7 +64,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
       const wrapper = document.getElementById('interactiveWrapper');
       if (wrapper) {
         const twitterEmbed = document.createElement('twitter-embed');
-        twitterEmbed.setAttribute('url', url);
+        twitterEmbed.setAttribute('url', element.attributes.url);
         wrapper.appendChild(twitterEmbed);
       }
     },
