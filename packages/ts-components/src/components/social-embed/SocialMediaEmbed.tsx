@@ -45,7 +45,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   useEffect(
     () => {
       // tslint:disable-next-line:no-console
-      console.log('useEffect enterred');
+      console.log('useEffect enterred', element);
       checkVendorConsent(vendorName, setIsSocialAllowed);
     },
     [vendorName, allowedOnce, isSocialAllowed]
