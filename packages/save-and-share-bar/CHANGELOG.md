@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.8](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.7...@times-components/save-and-share-bar@0.24.8) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.7](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.6...@times-components/save-and-share-bar@0.24.7) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.6](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.5...@times-components/save-and-share-bar@0.24.6) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.5](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.4...@times-components/save-and-share-bar@0.24.5) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.3...@times-components/save-and-share-bar@0.24.4) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.2...@times-components/save-and-share-bar@0.24.3) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.1...@times-components/save-and-share-bar@0.24.2) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.0...@times-components/save-and-share-bar@0.24.1) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

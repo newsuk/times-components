@@ -3,6 +3,140 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.17.28](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.27...@times-components/article@7.17.28) (2024-10-19)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.27](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.26...@times-components/article@7.17.27) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.26](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.25...@times-components/article@7.17.26) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.25](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.24...@times-components/article@7.17.25) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.24](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.23...@times-components/article@7.17.24) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.23](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.22...@times-components/article@7.17.23) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.22](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.21...@times-components/article@7.17.22) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.21](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.20...@times-components/article@7.17.21) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.20](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.19...@times-components/article@7.17.20) (2024-10-10)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.19](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.18...@times-components/article@7.17.19) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.18](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.17...@times-components/article@7.17.18) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.17](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.16...@times-components/article@7.17.17) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.16](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.15...@times-components/article@7.17.16) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.15](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.14...@times-components/article@7.17.15) (2024-09-25)
+
+
+### Bug Fixes
+
+* **TMRS-000:** add isPreview to article object ([#3942](https://github.com/newsuk/times-components/issues/3942)) ([e79f0be](https://github.com/newsuk/times-components/commit/e79f0be14e81402c8b3b931ce3ac41e6429792c8))
+
+
+
+
+
+## [7.17.14](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.13...@times-components/article@7.17.14) (2024-09-25)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.17.13](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.12...@times-components/article@7.17.13) (2024-09-24)
+
+
+### Bug Fixes
+
+* **TMRS-000:** extend logic to ignore preview articles ([#3941](https://github.com/newsuk/times-components/issues/3941)) ([1a89667](https://github.com/newsuk/times-components/commit/1a89667c575e0c80ef60901b7ccc30062a60ae22))
+
+
+
+
+
 ## [7.17.12](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.11...@times-components/article@7.17.12) (2024-09-16)
 
 

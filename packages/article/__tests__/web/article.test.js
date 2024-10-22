@@ -60,6 +60,21 @@ describe("Article", () => {
     expect(() => testRenderer()).toThrow("ENOCONTENT");
   });
 
+  it("does not throw `ENOCONTENT` error if article content is null in preview article", () => {
+    const emptyArticleContentData = {
+      content: [],
+      tiles: [],
+      isPreview: true
+    };
+
+    const testRenderer = TestRenderer.create(
+      <Article {...requiredProps} article={emptyArticleContentData} />
+    );
+    const testInstance = testRenderer.root;
+
+    expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
+  });
+
   it("renders with ArticleMainStandard as the default template if no template is provided", () => {
     const testRenderer = TestRenderer.create(
       <Article article={{ ...articleContentData }} {...requiredProps} />

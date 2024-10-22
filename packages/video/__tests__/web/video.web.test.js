@@ -17,6 +17,9 @@ jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/icons", () => ({
   IconVideo360Player: "IconVideo360Player"
 }));
+afterEach(() => {
+  InlineVideoPlayer.activeScripts = [];
+});
 
 const omitProps = new Set(["className", "controls", "id", "style"]);
 

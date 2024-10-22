@@ -3,6 +3,113 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.89.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.7...@times-components/article-main-comment@2.89.8) (2024-10-19)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.6...@times-components/article-main-comment@2.89.7) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.5...@times-components/article-main-comment@2.89.6) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.4...@times-components/article-main-comment@2.89.5) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.3...@times-components/article-main-comment@2.89.4) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.2...@times-components/article-main-comment@2.89.3) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.1...@times-components/article-main-comment@2.89.2) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.89.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.0...@times-components/article-main-comment@2.89.1) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.89.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.12...@times-components/article-main-comment@2.89.0) (2024-10-10)
+
+
+### Features
+
+* **TMD-897:** Add article schema to live blog ([#3951](https://github.com/newsuk/times-components/issues/3951)) ([fc57bbe](https://github.com/newsuk/times-components/commit/fc57bbe8a85657b2ec396024f23b213245bf4a07))
+
+
+
+
+
+## [2.88.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.11...@times-components/article-main-comment@2.88.12) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.88.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.10...@times-components/article-main-comment@2.88.11) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.88.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.9...@times-components/article-main-comment@2.88.10) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.88.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.8...@times-components/article-main-comment@2.88.9) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.88.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.88.7...@times-components/article-main-comment@2.88.8) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/article-main-comment

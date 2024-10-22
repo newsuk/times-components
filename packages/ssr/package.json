@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "2.58.11",
+  "version": "2.59.9",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -16,6 +16,7 @@
     "start:testserver": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql SPOT_ID=5p0t_1m_1d yarn start & wait-on tcp:3000",
     "stop:testserver": "kill $(lsof -t -i:3000)",
     "test:integration": "yarn bundle:prod && yarn start:testserver && cypress run; exitCode=$?; yarn stop:testserver; exit $exitCode",
+    "test:integration:ci": "yarn bundle:prod && yarn start:testserver && circleci tests glob './__tests__/integration/**.js' | circleci tests run --command=\"tr ' ' ',' | xargs npx cypress run --reporter cypress-circleci-reporter --spec \" --verbose --split-by=timings; exitCode=$?; yarn stop:testserver; exit $exitCode",
     "test:integration:debug": "yarn start:testserver && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testserver; exit $exitCode",
     "test:integration:update": "yarn bundle:prod && yarn start:testserver && cypress run --env updateSnapshots=true; exitCode=$?; yarn stop:testserver; exit $exitCode"
   },
@@ -38,7 +39,6 @@
     "@times-components/fixture-generator": "0.35.1",
     "@times-components/mock-tpa-server": "0.4.10",
     "axe-core": "3.3.1",
-    "cypress": "^9.2.0",
     "cypress-axe": "0.13.0",
     "cypress-failed-log": "2.5.1",
     "cypress-image-snapshot": "^4.0.0",
@@ -52,8 +52,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article": "7.17.12",
-    "@times-components/author-profile": "6.18.24",
+    "@times-components/article": "7.17.28",
+    "@times-components/author-profile": "6.19.6",
     "@times-components/context": "1.24.0",
     "@times-components/provider": "1.41.4",
     "@times-components/schema": "0.7.5",
@@ -66,6 +66,7 @@
     "apollo-link-error": "1.1.2",
     "apollo-link-http": "1.5.14",
     "apollo-link-persisted-queries": "0.2.2",
+    "cypress": "^13.14.0",
     "cypress-wait-until": "1.7.2",
     "node-fetch": "2.6.7",
     "react": "16.9.0",

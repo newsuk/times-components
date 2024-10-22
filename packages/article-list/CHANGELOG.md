@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.19.18](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.17...@times-components/article-list@9.19.18) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.16...@times-components/article-list@9.19.17) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.15...@times-components/article-list@9.19.16) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.14...@times-components/article-list@9.19.15) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.14](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.13...@times-components/article-list@9.19.14) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.13](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.12...@times-components/article-list@9.19.13) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.11...@times-components/article-list@9.19.12) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.19.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.10...@times-components/article-list@9.19.11) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.19.10](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.19.9...@times-components/article-list@9.19.10) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/article-list

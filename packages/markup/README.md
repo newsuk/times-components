@@ -16,6 +16,7 @@ functions from `markup-forest`, which iterates over and renders with the given
 - paragraph
 - strong
 - text
+- link
 
 This package should only have core renderers with no dependencies beyond
 React. If a consumer would like to support more complex elements

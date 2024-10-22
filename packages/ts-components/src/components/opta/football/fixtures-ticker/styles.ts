@@ -3,6 +3,10 @@ import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
+export const Container = styled.div`
+  height: 80px;
+`;
+
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
   .Opta {
     h2 {
@@ -175,14 +179,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       isApp &&
       `
       @media (prefers-color-scheme: dark) {
-        background-color: black !important;
-        border: 1px solid white !important;
+        background-color: #1D1D1B !important;
+        border: 1px solid #AAA !important;
 
         &:hover {
-          background-color: #303030 !important;
+          border: 1px solid #333 !important;
         }
         &:active {
-          background-color: #4f4f4f !important;
+          border: 1px solid #696969 !important;
         }
         &::after {
           background-position-y: -57px !important;
@@ -220,17 +224,41 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       color: #696969 !important;
       border-start-start-radius: 4px;
       border-start-end-radius: 4px;
+
+      ${({ isApp }) =>
+        isApp &&
+        `
+          @media (prefers-color-scheme: dark) {
+          color: #e4e4e4 !important;
+        }
+      `}
     }
 
     .Opta-timings .Opta-Time * {
       font-weight: 700;
       color: #01000d !important;
+
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          color: #fff !important;
+        }
+      `}
     }
 
     .Opta-TeamName,
     .Opta-Team-Score {
       color: #01000d !important;
       font-family: 'Roboto-Medium' !important;
+
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          color: #fff !important;
+        }
+      `}
     }
 
     .Opta-Away {
@@ -242,6 +270,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     &.Opta-prematch {
       > div {
         background-color: #f5f5f5 !important;
+
+        ${({ isApp }) =>
+          isApp &&
+          `
+          @media (prefers-color-scheme: dark) {
+            background-color: #333 !important;
+          }
+        `}
       }
       .Opta-Team-Score::after {
         content: '-';
@@ -254,6 +290,15 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
     &.Opta-result > div {
       border: 1px solid #ccc !important;
+
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          background-color: #1d1d1b !important;
+          border: 1px solid #333 !important;
+        }
+      `}
 
       &.Opta-timings {
         border-bottom: none !important;
@@ -268,6 +313,15 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     }
     &.Opta-live > div {
       border: 1px solid #01000d !important;
+
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          background-color: #121212 !important;
+          border: 1px solid #e4e4e4 !important;
+        }
+      `}
 
       &.Opta-timings {
         border-bottom: none !important;

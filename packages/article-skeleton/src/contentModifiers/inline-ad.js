@@ -1,7 +1,19 @@
-const insertInlineAd = children => {
+const insertInlineAd = isPreview => children => {
   const clonedChildren = [...children];
-  const child = clonedChildren.find(item => item.name === "paywall");
-  const paragraph = clonedChildren.filter(item => item.name === "paragraph");
+  let adIndex;
+
+  const getChild = () => {
+    if (isPreview) {
+      adIndex = clonedChildren.findIndex(item => item.name === "ad");
+      return { children: clonedChildren.slice(adIndex) };
+    }
+    return clonedChildren.find(item => item.name === "paywall");
+  };
+
+  const child = getChild();
+  const paragraph = isPreview
+    ? clonedChildren.slice(0, adIndex).filter(item => item.name === "paragraph")
+    : clonedChildren.filter(item => item.name === "paragraph");
 
   if (!child) {
     return clonedChildren;
@@ -33,8 +45,9 @@ const insertInlineAd = children => {
       }
     }
   });
-
-  return clonedChildren;
+  return isPreview
+    ? [...children.slice(0, adIndex), ...paywallChildren]
+    : clonedChildren;
 };
 
 export default insertInlineAd;

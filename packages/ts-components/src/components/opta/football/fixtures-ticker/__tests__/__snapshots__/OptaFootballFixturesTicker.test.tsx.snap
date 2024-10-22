@@ -3,13 +3,17 @@
 exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
-  />
-  <div
-    class="sc-bwzfXH uxFfR"
-    height="80"
+    class="sc-bxivhb dBqngZ"
   >
-    Placeholder
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    />
+    <div
+      class="sc-bwzfXH uxFfR"
+      height="80"
+    >
+      Placeholder
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -17,10 +21,14 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
+    class="sc-bxivhb dBqngZ"
   >
-    <div>
-      Widget
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    >
+      <div>
+        Widget
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -29,13 +37,17 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
-  />
-  <div
-    class="sc-bwzfXH uxFfR"
-    height="80"
+    class="sc-bxivhb dBqngZ"
   >
-    Placeholder
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    />
+    <div
+      class="sc-bwzfXH uxFfR"
+      height="80"
+    >
+      Placeholder
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -43,10 +55,14 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = 
 exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
+    class="sc-bxivhb dBqngZ"
   >
-    <div>
-      Widget
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    >
+      <div>
+        Widget
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -55,13 +71,17 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = 
 exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
-  />
-  <div
-    class="sc-bwzfXH uxFfR"
-    height="80"
+    class="sc-bxivhb dBqngZ"
   >
-    Placeholder
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    />
+    <div
+      class="sc-bwzfXH uxFfR"
+      height="80"
+    >
+      Placeholder
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -69,10 +89,14 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX glDXkH"
+    class="sc-bxivhb dBqngZ"
   >
-    <div>
-      Widget
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    >
+      <div>
+        Widget
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -81,13 +105,17 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX ghnTHZ"
-  />
-  <div
-    class="sc-bwzfXH uxFfR"
-    height="80"
+    class="sc-bxivhb dBqngZ"
   >
-    Placeholder
+    <div
+      class="sc-htpNat sc-EHOje cjTULJ"
+    />
+    <div
+      class="sc-bwzfXH uxFfR"
+      height="80"
+    >
+      Placeholder
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -95,10 +123,14 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with i
 exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 2`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat sc-ifAKCX ghnTHZ"
+    class="sc-bxivhb dBqngZ"
   >
-    <div>
-      Widget
+    <div
+      class="sc-htpNat sc-EHOje cjTULJ"
+    >
+      <div>
+        Widget
+      </div>
     </div>
   </div>
 </DocumentFragment>

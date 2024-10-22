@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.106.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.106.0...@times-components/ts-components@1.106.1) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.106.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.105.2...@times-components/ts-components@1.106.0) (2024-10-18)
+
+
+### Features
+
+* **TMRS-491:** update player_naming on cricket ([#3962](https://github.com/newsuk/times-components/issues/3962)) ([0e0b9aa](https://github.com/newsuk/times-components/commit/0e0b9aacb30d99dbb497003b0ccc02d754b62044))
+
+
+
+
+
+## [1.105.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.105.1...@times-components/ts-components@1.105.2) (2024-10-17)
+
+
+### Bug Fixes
+
+* **TMRS-514:** ticker styling app ([#3959](https://github.com/newsuk/times-components/issues/3959)) ([f2d9696](https://github.com/newsuk/times-components/commit/f2d969665fd47efb8d73c15850e69563ba2593b2))
+
+
+
+
+
+## [1.105.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.105.0...@times-components/ts-components@1.105.1) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.105.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.104.1...@times-components/ts-components@1.105.0) (2024-10-15)
+
+
+### Features
+
+* **TMPZ-112:** Implement tracking of clicks on puzzles in sidebar component ([#3926](https://github.com/newsuk/times-components/issues/3926)) ([a84e5f3](https://github.com/newsuk/times-components/commit/a84e5f3a2bb34da21824c68a7dd89bb8419ef214))
+
+
+
+
+
+## [1.104.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.104.0...@times-components/ts-components@1.104.1) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.104.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.5...@times-components/ts-components@1.104.0) (2024-09-30)
+
+
+### Features
+
+* **TMRS-463:** opta ticker styling ([#3938](https://github.com/newsuk/times-components/issues/3938)) ([27a079c](https://github.com/newsuk/times-components/commit/27a079c48a7f3d36d99215fd390d377f9e5cd7a6))
+
+
+
+
+
 ## [1.103.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.103.4...@times-components/ts-components@1.103.5) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/ts-components

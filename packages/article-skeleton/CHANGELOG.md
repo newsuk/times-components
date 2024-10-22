@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.3...@times-components/article-skeleton@1.140.4) (2024-10-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.140.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.2...@times-components/article-skeleton@1.140.3) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.140.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.1...@times-components/article-skeleton@1.140.2) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.140.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.0...@times-components/article-skeleton@1.140.1) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.140.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.3...@times-components/article-skeleton@1.140.0) (2024-10-15)
+
+
+### Features
+
+* **TMD-119:** add extra ad slots to preview articles ([#3953](https://github.com/newsuk/times-components/issues/3953)) ([63c3abe](https://github.com/newsuk/times-components/commit/63c3abe92105f8f22609543bf62fd9046af961dc))
+
+
+
+
+
+## [1.139.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.2...@times-components/article-skeleton@1.139.3) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.139.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.1...@times-components/article-skeleton@1.139.2) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.139.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.139.0...@times-components/article-skeleton@1.139.1) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.139.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.138.1...@times-components/article-skeleton@1.139.0) (2024-10-10)
+
+
+### Features
+
+* **TMD-897:** Add article schema to live blog ([#3951](https://github.com/newsuk/times-components/issues/3951)) ([fc57bbe](https://github.com/newsuk/times-components/commit/fc57bbe8a85657b2ec396024f23b213245bf4a07))
+
+
+
+
+
+## [1.138.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.138.0...@times-components/article-skeleton@1.138.1) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.138.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.11...@times-components/article-skeleton@1.138.0) (2024-10-01)
+
+
+### Features
+
+* **TMC-27:** Opening links in new tab ([#3939](https://github.com/newsuk/times-components/issues/3939)) ([bb3dd33](https://github.com/newsuk/times-components/commit/bb3dd33664157f6ec796f70b815dbe6c30017f17))
+
+
+
+
+
+## [1.137.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.10...@times-components/article-skeleton@1.137.11) (2024-10-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.137.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.9...@times-components/article-skeleton@1.137.10) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.137.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.137.8...@times-components/article-skeleton@1.137.9) (2024-09-16)
 
 **Note:** Version bump only for package @times-components/article-skeleton

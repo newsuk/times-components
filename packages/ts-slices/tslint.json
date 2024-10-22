@@ -11,6 +11,7 @@
     "object-literal-sort-keys": false,
     "member-access": false,
     "ordered-imports": false,
-    "interface-over-type-literal": false
+    "interface-over-type-literal": false,
+    "no-submodule-imports": false
   }
 }
