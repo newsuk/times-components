@@ -49,6 +49,8 @@ export const HeaderContainer = styled(TcView)`
     margin: 0 auto ${spacing(2)};
     margin-left: auto;
     margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
