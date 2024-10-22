@@ -137,6 +137,7 @@ class InlineVideoPlayer extends Component {
       this.initBrightcove();
     }
   }
+  
   componentWillUnmount() {
     InlineVideoPlayer.activePlayers.splice(
       InlineVideoPlayer.activePlayers.indexOf(this)
