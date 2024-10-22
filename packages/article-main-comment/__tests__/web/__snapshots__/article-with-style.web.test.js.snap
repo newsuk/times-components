@@ -695,8 +695,8 @@ exports[`full article with style 1`] = `
     margin: 0 auto 10px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -748,12 +748,14 @@ exports[`full article with style 1`] = `
   .c9 {
     font-size: 22px;
     line-height: 30px;
+    margin-top: 5px;
     margin-bottom: 25px;
   }
 }
 
 @media (min-width:1024px) {
   .c9 {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 }
