@@ -23,7 +23,7 @@ class RelatedArticles extends Component {
     )
       return null;
 
-    const renderArticleItem = (config, article, leadAssetOverride) => {
+    const renderArticleItem = (config, articleUrl, leadAssetOverride) => {
       const {
         bylineClass = "",
         contentContainerClass,
@@ -38,7 +38,7 @@ class RelatedArticles extends Component {
       } = config;
       return (
         <RelatedArticleItem
-          article={article}
+          article={articleUrl}
           bylineClass={bylineClass}
           contentContainerClass={contentContainerClass}
           headlineClass={headlineClass}
@@ -64,7 +64,7 @@ class RelatedArticles extends Component {
           itemCount={items.length}
           renderItems={config =>
             items.map(item =>
-              renderArticleItem(config, item.article, item.leadAsset)
+              renderArticleItem(config, item.articleUrl, item.leadAsset)
             )
           }
         />
