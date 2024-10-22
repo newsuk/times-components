@@ -9,15 +9,13 @@ const RelatedArticleItemWeb = props => (
     <RelatedArticleItem {...props}>
       {({ article, card, onPress }) => (
         <Context.Consumer>
-          {({ makeArticleUrl }) => (
             <Link
               linkStyle={{ padding: 10 }}
-              onPress={e => onPress(e, { url: makeArticleUrl(article) })}
-              url={makeArticleUrl(article)}
+              onPress={e => onPress(e, { url: article.url })}
+              url={article.url}
             >
               {card}
             </Link>
-          )}
         </Context.Consumer>
       )}
     </RelatedArticleItem>
