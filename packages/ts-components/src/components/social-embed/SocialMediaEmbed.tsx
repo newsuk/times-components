@@ -22,6 +22,7 @@ export declare type SocialEmbedProps = {
   element: any;
   url: string;
   vendorName: string;
+  id: string;
 };
 
 declare global {
@@ -37,7 +38,8 @@ declare global {
 export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   element,
   url,
-  vendorName
+  vendorName,
+  id
 }) => {
   const [allowedOnce, setAllowedOnce] = useState(false);
   const [isSocialAllowed, setIsSocialAllowed] = useState(false);
@@ -45,7 +47,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   useEffect(
     () => {
       // tslint:disable-next-line:no-console
-      console.log('useEffect enterred', url);
+      console.log('useEffect enterred', element);
       checkVendorConsent(vendorName, setIsSocialAllowed);
     },
     [vendorName, allowedOnce, isSocialAllowed]
@@ -61,11 +63,15 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         document.body.appendChild(script);
       }
 
-      const wrapper = document.getElementById('interactiveWrapper');
-      if (wrapper) {
-        const twitterEmbed = document.createElement('twitter-embed');
-        twitterEmbed.setAttribute('url', element.attributes.url);
-        wrapper.appendChild(twitterEmbed);
+      const twitterEmbed = document.createElement('twitter-embed');
+      twitterEmbed.setAttribute('url', url);
+
+      const wrapperId = `interactiveWrapper-${id}`;
+      const interactiveWrapper = document.getElementById(wrapperId);
+
+      if (interactiveWrapper) {
+        interactiveWrapper.innerHTML = '';
+        interactiveWrapper.appendChild(twitterEmbed);
       }
     },
     [isSocialAllowed, allowedOnce]

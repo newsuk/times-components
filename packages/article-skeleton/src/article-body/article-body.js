@@ -264,6 +264,7 @@ const renderers = ({
                 element={element}
                 url={url}
                 vendorName="twitter"
+                id={attributes.id}
               />
             </div>
           </InteractiveContainer>
@@ -280,6 +281,7 @@ const renderers = ({
                 element={element}
                 url={url}
                 vendorName="youtube"
+                id={attributes.id}
               />
             </div>
           </InteractiveContainer>

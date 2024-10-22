@@ -44,6 +44,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -68,6 +69,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -105,6 +107,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -154,6 +157,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -171,6 +175,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -200,6 +205,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
@@ -226,6 +232,7 @@ describe('SocialMediaEmbed', () => {
         element={mockElement}
         url={url}
         vendorName={'twitter'}
+        id={'222'}
       />
     );
 
