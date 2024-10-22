@@ -38,7 +38,6 @@ const sharedStyles = {
   header: {
     // TODO: put back after design signoff
     marginBottom: spacing(3),
-    // paddingBottom: spacing(4),
     paddingTop: spacing(7)
   },
   label: {
@@ -77,8 +76,6 @@ const sharedStyles = {
     color: colours.functional.primary,
     marginTop: spacing(-1),
     marginBottom: spacing(4),
-    // paddingLeft: spacing(2),
-    // paddingRight: spacing(2),
     textAlign: "center"
   }
 };
