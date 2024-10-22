@@ -124,7 +124,7 @@ export const StandfirstContainer = styled.h2`
   font-weight: 400;
 
   ${props => props.styles && props.styles};
-  
+
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
