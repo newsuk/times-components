@@ -75,7 +75,7 @@ const sharedStyles = {
       fontSize: "smallestHeadline"
     }),
     color: colours.functional.primary,
-    marginTop: -spacing(1),
+    marginTop: spacing(-1),
     marginBottom: spacing(4),
     // paddingLeft: spacing(2),
     // paddingRight: spacing(2),
