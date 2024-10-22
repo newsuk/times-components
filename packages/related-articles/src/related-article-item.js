@@ -9,6 +9,7 @@ const RelatedArticleItemWeb = props => (
     <RelatedArticleItem {...props}>
       {({ article, card, onPress }) => (
         <Context.Consumer>
+          {() => (
             <Link
               linkStyle={{ padding: 10 }}
               onPress={e => onPress(e, { url: article.url })}
@@ -16,6 +17,7 @@ const RelatedArticleItemWeb = props => (
             >
               {card}
             </Link>
+          )}
         </Context.Consumer>
       )}
     </RelatedArticleItem>
