@@ -53,14 +53,16 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
 
   useEffect(
     () => {
-      let socialEmbedContainer = document.getElementsByClassName('social-embed')[0];
+      let socialEmbedContainer = document.getElementsByClassName(
+        'social-embed'
+      )[0];
 
       if (socialEmbedContainer) {
         let script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
         script.src = 'https://platform.twitter.com/widgets.js';
-  
+
         socialEmbedContainer.appendChild(script);
       }
     },
@@ -91,7 +93,7 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   return isSocialAllowed || allowedOnce ? (
     <div className="social-embed">
       <blockquote className="twitter-tweet">
-        <a href={`${element.attributes.url}?ref_src=twsrc%5Etfw`}></a>
+        <a href={`${element.attributes.url}?ref_src=twsrc%5Etfw`} />
       </blockquote>
     </div>
   ) : (
