@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const newDisclaimerText = {
   name: "paragraph",
   children: [
@@ -62,24 +64,7 @@ const domainJson = [
   "(www.)?planethowl.com"
 ];
 
-const getDomainListing = async () => {
-  let domainList = domainJson;
-
-  try {
-    const getDomains = await fetch(
-      "https://ads.thetimes.com/affiliates/domains.json"
-    ).then(response => response.text());
-    const formattedRes = getDomains.replaceAll("'", '"');
-    const parsedRes = JSON.parse(`{"response": ${formattedRes} }`);
-    domainList = parsedRes.response;
-  } catch (error) {
-    console.log("Fetching domain listing failed. Using default."); // eslint-disable-line
-  }
-
-  return domainList;
-};
-
-const isLinkAffiliate = async (url = "", adsDomains) => {
+const isLinkAffiliate = (url = "", adsDomains) => {
   const affiliateStrPattern = `<a\\s[^>]*?href="https?:\\/\\/(${adsDomains.join(
     "|"
   )})`;
@@ -90,7 +75,29 @@ const isLinkAffiliate = async (url = "", adsDomains) => {
 };
 
 const shouldIncludeDisclaimer = children => {
-  const adsDomains = getDomainListing();
+  const [domainListing, setDomainListing] = useState(domainJson); // eslint-disable-line
+
+  // eslint-disable-next-line
+  useEffect(() => {
+    async function getDomainListing() {
+      let domainList = domainJson;
+
+      try {
+        const getDomains = await fetch(
+          "https://ads.thetimes.com/affiliates/domains.json"
+        ).then(response => response.text());
+        const formattedRes = getDomains.replaceAll("'", '"');
+        const parsedRes = JSON.parse(`{"response": ${formattedRes} }`);
+        domainList = parsedRes.response;
+      } catch (error) {
+        console.log("Fetching domain listing failed. Using default."); // eslint-disable-line
+      }
+
+      setDomainListing(domainList);
+    }
+
+    getDomainListing();
+  }, []);
 
   const clonedChildren = [...children];
   let affiliateLinkExist = false;
@@ -163,7 +170,7 @@ const shouldIncludeDisclaimer = children => {
 
         const href = linkComponentVal || ctaComponentVal;
 
-        if (!href || !isLinkAffiliate(href, adsDomains)) {
+        if (!href || !isLinkAffiliate(href, domainListing)) {
           return false;
         }
 
