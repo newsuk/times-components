@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<LatestFromSection> no data  1`] = `<DocumentFragment />`;
-
-exports[`<LatestFromSection> renders  1`] = `<DocumentFragment />`;
