@@ -136,7 +136,7 @@ export const StandfirstContainer = styled.h2`
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    margin-top: ${spacing(2)};
-    margin-bottom: ${spacing(4)};
+    margin-top: ${spacing(1)};
+    margin-bottom: ${spacing(5)};
   }
 `;
