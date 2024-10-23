@@ -7,54 +7,37 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
       class="sc-htpNat sc-ifAKCX iWYiTB"
     >
       <div
-        class="sc-htpNat sc-bZQynM fcQclH"
-      >
-        <div
-          class="sc-htpNat sc-htoDjs bnLiNW"
-        >
-          <div
-            class="sc-gzVnrw TDlzj"
-          />
-          <div
-            class="sc-gzVnrw TDlzj"
-          />
-          <div
-            class="sc-gzVnrw TDlzj"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-htpNat sc-iwsKbI cuimXU"
+        class="sc-htpNat sc-dnqmqq duLROv"
       >
         <div
           class="sc-bxivhb sc-gqjmRU kcwRFH"
         >
+          You've succesfully signed up to
+           
           <div
             class="sc-bxivhb sc-gZMcBi bklePC"
           >
-            Politics. Explained.
+            Politics. Explained..
              
           </div>
-          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
-          <div
-            class="sc-htpNat sc-VigVT cSaWjg"
+          <a
+            class="link__RespLink-sc-1ocvixa-0 dfMuic"
+            href="https://home.thetimes.co.uk/myNews"
           >
-            <button
-              class="sc-bwzfXH gHDjoa"
+            <div
+              class="hover-icon__HoverIcon-sc-1ge5rtz-0 jJVcIr"
             >
-              Sign up with one click
-            </button>
-          </div>
+              <div
+                class="sc-bxivhb sc-EHOje jzxwzj"
+              >
+                Explore our newsletters
+              </div>
+            </div>
+          </a>
         </div>
         <div
-          class="sc-htpNat sc-VigVT iWOUWL"
-        >
-          <button
-            class="sc-bdVaJa knKdEu"
-          >
-            Sign up with one click
-          </button>
-        </div>
+          class="sc-htpNat sc-jTzLTM gzkEml"
+        />
       </div>
     </div>
   </div>

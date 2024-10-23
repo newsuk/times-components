@@ -194,7 +194,6 @@ declare module '@times-components/provider' {
 declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
-  export const subscribeNewsletter: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {
