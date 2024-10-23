@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.107.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.106.1...@times-components/ts-components@1.107.0) (2024-10-23)
+
+
+### Features
+
+* **TMRS-487:** related articles category path ([#3970](https://github.com/newsuk/times-components/issues/3970)) ([ad2441c](https://github.com/newsuk/times-components/commit/ad2441cffe800bbf53681d685fbfb873b0f0d5d1))
+
+
+
+
+
 ## [1.106.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.106.0...@times-components/ts-components@1.106.1) (2024-10-18)
 
 **Note:** Version bump only for package @times-components/ts-components
