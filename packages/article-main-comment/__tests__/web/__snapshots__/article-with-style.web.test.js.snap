@@ -755,8 +755,8 @@ exports[`full article with style 1`] = `
 
 @media (min-width:1024px) {
   .c9 {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
   }
 }
 
