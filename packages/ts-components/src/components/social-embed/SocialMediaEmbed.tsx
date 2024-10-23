@@ -20,7 +20,7 @@ import { socialMediaVendors } from './helpers/socialMediaVendors';
 
 export declare type SocialEmbedProps = {
   element: any;
-  url: string;
+  url?: string;
   vendorName: string;
 };
 
@@ -36,7 +36,6 @@ declare global {
 
 export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   element,
-  url,
   vendorName
 }) => {
   const [allowedOnce, setAllowedOnce] = useState(false);
@@ -53,19 +52,15 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
 
   useEffect(
     () => {
-      if (isSocialAllowed || allowedOnce) {
-        const script = document.createElement('link');
-        script.href =
-          'https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html';
-        script.rel = 'import';
-        document.body.appendChild(script);
-      }
+      let socialEmbedContainer = document.getElementsByClassName('social-embed')[0];
 
-      const wrapper = document.getElementById('interactiveWrapper');
-      if (wrapper) {
-        const twitterEmbed = document.createElement('twitter-embed');
-        twitterEmbed.setAttribute('url', url);
-        wrapper.appendChild(twitterEmbed);
+      if (socialEmbedContainer) {
+        let script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://platform.twitter.com/widgets.js';
+  
+        socialEmbedContainer.appendChild(script);
       }
     },
     [isSocialAllowed, allowedOnce]
@@ -93,7 +88,11 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
 
   return isSocialAllowed || allowedOnce ? (
-    <div id="interactiveWrapper" />
+    <div className="social-embed">
+      <blockquote className="twitter-tweet">
+        <a href={`${element.attributes.url}?ref_src=twsrc%5Etfw`}></a>
+      </blockquote>
+    </div>
   ) : (
     <CardContainer>
       <Header>
