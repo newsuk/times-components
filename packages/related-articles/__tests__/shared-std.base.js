@@ -56,14 +56,14 @@ const standard2ArticlesFixtureData = standard2ArticlesFixture({
   firstShortHeadline: "First Short Headline",
   firstSlug: "test-slug",
   firstSummary125: testSummary(125),
-  firstUrl: "https://first.io",
+  firstUrl: "https://thetimes.com/l1/l2/article/first.com",
   secondCrop169: "https://crop2.io",
   secondHeadline: "Second Headline",
   secondLabel: "second label",
   secondSection: "register",
   secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
-  secondUrl: "https://second.io"
+  secondUrl: "https://thetimes.com/l1/l2/article/second.com"
 }).data;
 
 const standard3ArticlesFixtureData = standard3ArticlesFixture({
@@ -75,7 +75,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   firstSlug: "test-slug",
   firstSummary125: testSummary(125),
   firstSummary145: testSummary(145),
-  firstUrl: "https://first.io",
+  firstUrl: "https://thetimes.com/l1/l2/article/first.com",
   secondCrop169: "https://crop2.io",
   secondHeadline: "Second Headline",
   secondLabel: "second label",
@@ -91,7 +91,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
-  thirdUrl: "https://third.io"
+  secondUrl: "https://thetimes.com/l1/l2/article/third.com"
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
