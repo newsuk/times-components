@@ -38,7 +38,6 @@ const sharedStyles = {
   header: {
     // TODO: put back after design signoff
     marginBottom: spacing(3),
-    paddingBottom: spacing(4),
     paddingTop: spacing(7)
   },
   label: {
@@ -75,9 +74,8 @@ const sharedStyles = {
       fontSize: "smallestHeadline"
     }),
     color: colours.functional.primary,
-    marginBottom: spacing(3),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2),
+    marginTop: spacing(-1),
+    marginBottom: spacing(4),
     textAlign: "center"
   }
 };
