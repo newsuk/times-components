@@ -57,11 +57,6 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
               </span>
               his being Black History Month, last week
             </p>
-            <p>
-              <i>
-                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
-              </i>
-            </p>
             <div>
               <div
                 id="d2f83305-d558-4f78-f582-32115c659355"
@@ -78,7 +73,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
               </div>
             </div>
             <div
-              id="3"
+              id="2"
             >
               <div>
                 <div>
@@ -105,7 +100,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
               </div>
             </div>
             <div
-              id="4"
+              id="3"
             >
               <div>
                 <div>
@@ -132,7 +127,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
               </div>
             </div>
             <div
-              id="5"
+              id="4"
             >
               <div>
                 <div>
@@ -445,11 +440,6 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
               </span>
               his being Black History Month, last week
             </p>
-            <p>
-              <i>
-                All recommendations within this article are informed by expert editorial opinion. If you click on a link in this story we may earn affiliate revenue.
-              </i>
-            </p>
             <div>
               <div
                 id="d2f83305-d558-4f78-f582-32115c659355"
@@ -466,7 +456,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
               </div>
             </div>
             <div
-              id="3"
+              id="2"
             >
               <div>
                 <div>
@@ -493,7 +483,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
               </div>
             </div>
             <div
-              id="4"
+              id="3"
             >
               <div>
                 <div>
@@ -520,7 +510,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
               </div>
             </div>
             <div
-              id="5"
+              id="4"
             >
               <div>
                 <div>
