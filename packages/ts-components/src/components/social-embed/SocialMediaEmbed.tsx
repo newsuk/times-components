@@ -22,6 +22,7 @@ export declare type SocialEmbedProps = {
   element: any;
   url?: string;
   vendorName: string;
+  id: string;
 };
 
 declare global {
