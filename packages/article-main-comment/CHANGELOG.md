@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.91.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.90.0...@times-components/article-main-comment@2.91.0) (2024-10-23)
+
+
+### Features
+
+* **TMW-000:** ArticleHeader - MainComment ([#3968](https://github.com/newsuk/times-components/issues/3968)) ([cc6595f](https://github.com/newsuk/times-components/commit/cc6595ffbfae52134c54161bfdfd57aa285c0073))
+
+
+
+
+
 # [2.90.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.89.8...@times-components/article-main-comment@2.90.0) (2024-10-22)
 
 
