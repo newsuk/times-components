@@ -24,7 +24,7 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   shortHeadline: "Test Short Headline",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://thetimes.com/l1/l2/article/test.com"
 }).data;
 
 const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
@@ -35,7 +35,7 @@ const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
   shortHeadline: "",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://thetimes.com/l1/l2/article/test.com"
 }).data;
 
 const standardhasVideoFixtureData = standard1ArticleFixture({
@@ -45,7 +45,7 @@ const standardhasVideoFixtureData = standard1ArticleFixture({
   shortHeadline: "",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://thetimes.com/l1/l2/article/test.com"
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({

@@ -23,7 +23,7 @@ exports[`1. a single related article 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://test.io"
+              url="https://thetimes.com/l1/l2/article/test.com"
             >
               <div>
                 <Card
@@ -108,7 +108,7 @@ Object {
   "attrs": Object {
     "targetArticleHeadline": "Test Short Headline",
     "targetArticleId": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-    "targetArticleUrl": "https://test.io",
+    "targetArticleUrl": "https://thetimes.com/l1/l2/article/test.com",
   },
   "component": "RelatedArticleItem",
 }
