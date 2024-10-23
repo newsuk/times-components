@@ -91,7 +91,7 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
-  secondUrl: "https://thetimes.com/l1/l2/article/third.com"
+  thirdUrl: "https://thetimes.com/l1/l2/article/third.com"
 }).data;
 
 export const sharedNoArticles = noArticlesTests({

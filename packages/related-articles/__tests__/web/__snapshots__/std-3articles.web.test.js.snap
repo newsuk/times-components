@@ -80,7 +80,7 @@ exports[`1. three related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://thetimes.com/l1/l2/article/third.com"
+              url="https://second.io"
             >
               <div>
                 <Card
@@ -137,7 +137,7 @@ exports[`1. three related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
+              url="https://thetimes.com/l1/l2/article/third.com"
             >
               <div>
                 <Card
