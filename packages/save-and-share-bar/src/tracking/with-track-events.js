@@ -4,13 +4,26 @@ export default Component =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
-        actionName: "Pressed",
+        actionName: "navigation",
         eventName: "onSaveToMyArticles",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
+          event_navigation_name: "add to my articles",
+          event_navigation_browsing_method: "click"
         }),
         trackingName: "ArticleSaveToMyArticles"
+      },
+      {
+        actionName: "navigation",
+        eventName: "onRemoveFromMyArticles",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_navigation_name: "remove from my articles",
+          event_navigation_browsing_method: "click"
+        }),
+        trackingName: "ArticleRemoveFromMyArticles"
       },
       {
         actionName: "Pressed",
