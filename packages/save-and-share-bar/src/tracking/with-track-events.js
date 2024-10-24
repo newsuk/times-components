@@ -9,7 +9,7 @@ export default Component =>
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
           articleHeadline,
-          event_navigation_name: "add to my articles",
+          event_navigation_name: "add to my articles"
         }),
         trackingName: "ArticleSaveToMyArticles"
       },
@@ -19,7 +19,7 @@ export default Component =>
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
           articleHeadline,
-          event_navigation_name: "remove from my articles",
+          event_navigation_name: "remove from my articles"
         }),
         trackingName: "ArticleRemoveFromMyArticles"
       },
