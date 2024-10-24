@@ -19,24 +19,25 @@ export const RecommendedFetch: React.FC<{
   articleHeadline: string;
   articleSection: string;
 }> = ({ articleId, articleHeadline, articleSection }) => {
-  const [isClientSide, setIsClientSide] = useState<boolean>(false);
+  const [isClientSide] = useState<boolean>(true);
 
-  useEffect(() => {
-    try {
-      const acsCookie = window.nuk.getCookieValue('acs_tnl');
+  // useEffect(() => {
+  //   try {
+  //     const acsCookie = window.nuk.getCookieValue('acs_tnl');
 
-      const envName = window.__TIMES_CONFIG__.environmentName;
+  //     const envName = window.__TIMES_CONFIG__.environmentName;
 
-      if (acsCookie && isValidEnvironment(envName)) {
-        setIsClientSide(true);
-      }
-    } catch (e) {
-      // tslint:disable-next-line:no-console
-      console.log(e);
-    }
-  }, []);
+  //     if (acsCookie && isValidEnvironment(envName)) {
+  //       setIsClientSide(true);
+  //     }
+  //   } catch (e) {
+  //     // tslint:disable-next-line:no-console
+  //     console.log(e);
+  //   }
+  // }, []);
 
   const heading = 'Read more';
+  
 
   return isClientSide ? (
     <FetchProvider
