@@ -10,7 +10,6 @@ export default Component =>
           articleId,
           articleHeadline,
           event_navigation_name: "add to my articles",
-          event_navigation_browsing_method: "click"
         }),
         trackingName: "ArticleSaveToMyArticles"
       },
@@ -21,7 +20,6 @@ export default Component =>
           articleId,
           articleHeadline,
           event_navigation_name: "remove from my articles",
-          event_navigation_browsing_method: "click"
         }),
         trackingName: "ArticleRemoveFromMyArticles"
       },
