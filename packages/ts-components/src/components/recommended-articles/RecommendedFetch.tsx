@@ -19,24 +19,7 @@ export const RecommendedFetch: React.FC<{
 }> = ({ articleId, articleHeadline, articleSection }) => {
   const [isClientSide] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   try {
-  //     const acsCookie = window.nuk.getCookieValue('acs_tnl');
-
-  //     const envName = window.__TIMES_CONFIG__.environmentName;
-
-  //     if (acsCookie && isValidEnvironment(envName)) {
-  //       setIsClientSide(true);
-  //     }
-  //   } catch (e) {
-  //     // tslint:disable-next-line:no-console
-  //     console.log(e);
-  //   }
-  // }, []);
-
   const heading = 'Read more';
-  
-
   return isClientSide ? (
     <FetchProvider
       url={`/api/recommended-articles/${articleId}/todays_section`}
