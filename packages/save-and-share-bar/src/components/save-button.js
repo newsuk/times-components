@@ -22,9 +22,14 @@ const SaveButton = props => {
     <>
       <OutlineButton
         isLoading={props.loading}
-        onClick={() =>
-          props.onToggleSave(props.articleId, props.data.isBookmarked)
-        }
+        onClick={() => {
+          if (!isBookmarked) {
+            props.onSaveToMyArticles();
+          } else {
+            props.onRemoveFromMyArticles();
+          }
+          props.onToggleSave(props.articleId, props.data.isBookmarked);
+        }}
       >
         {props.loading && (
           <IconActivityIndicatorContainer>
@@ -51,6 +56,8 @@ const SaveButton = props => {
 };
 
 SaveButton.propTypes = {
+  onSaveToMyArticles: PropTypes.func,
+  onRemoveFromMyArticles: PropTypes.func,
   loading: PropTypes.bool,
   error: PropTypes.bool,
   data: PropTypes.shape({}),
