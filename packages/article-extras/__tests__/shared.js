@@ -48,6 +48,7 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
+            isSharingSavingEntitlementEnabled={true}
           />
         );
 
@@ -69,6 +70,7 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
+            isSharingSavingEntitlementEnabled={false}
           />
         );
 
@@ -88,6 +90,7 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
+            isSharingSavingEntitlementEnabled={true}
           />
         );
 
@@ -107,6 +110,7 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
+            isSharingSavingEntitlementEnabled={true}
           />
         );
 

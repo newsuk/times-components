@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
@@ -19,7 +19,6 @@ import {
   PromotedContentAd,
   PromotedContentSectionDivider
 } from "./styles";
-import ShareSaveEntitlementState from "./share-save-entitlement-state";
 
 const clearingStyle = {
   clear: "both"
@@ -39,7 +38,6 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   commentingConfig,
   topics,
-  isSharingSavingEnabled,
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
@@ -47,29 +45,6 @@ const ArticleExtras = ({
   isEntitlementFeatureEnabled,
   isSharingSavingEntitlementEnabled
 }) => {
-  const [shareSaveEntitlementData, setShareSaveEntitlementData] = useState(
-    undefined
-  );
-
-  useEffect(
-    () => {
-      const fetchUserEntitlements = async () => {
-        // eslint-disable-next-line no-undef
-        const response = await fetch("/api/get-user-entitlements");
-        const data = await response.json();
-        console.log("fetchUserEntitlements", data);
-        setShareSaveEntitlementData(data);
-      };
-
-      if (typeof window !== "undefined" && isSharingSavingEntitlementEnabled) {
-        fetchUserEntitlements();
-      }
-    },
-    [isSharingSavingEntitlementEnabled]
-  );
-
-  console.log("shareSaveEntitlementData", shareSaveEntitlementData);
-
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
       return (
@@ -115,27 +90,6 @@ const ArticleExtras = ({
       </PromotedContentContainer>
     </>
   );
-  const renderSaveAndShareBar = () => (
-    <MessageContext.Consumer>
-      {({ showMessage }) => (
-        <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-          <SaveAndShareBar
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            articleUrl={articleUrl}
-            onCopyLink={() => showMessage("Article link copied")}
-            onSaveToMyArticles={() => {}}
-            onShareOnEmail={() => {}}
-            savingEnabled={savingEnabled}
-            sharingEnabled={sharingEnabled}
-            isSharingSavingEntitlementEnabled={
-              isSharingSavingEntitlementEnabled
-            }
-          />
-        </ShareAndSaveContainer>
-      )}
-    </MessageContext.Consumer>
-  );
 
   return (
     <UserState
@@ -145,19 +99,22 @@ const ArticleExtras = ({
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
-      {isSharingSavingEntitlementEnabled ? (
-        isSharingSavingEnabled && (
-          <UserState state={UserState.showSaveAndShareBar}>
-            {renderSaveAndShareBar()}
-          </UserState>
-        )
-      ) : (
-        <ShareSaveEntitlementState
-          shareSaveEntitlementData={shareSaveEntitlementData}
-        >
-          {renderSaveAndShareBar()}
-        </ShareSaveEntitlementState>
+          <MessageContext.Consumer>
+      {({ showMessage }) => (
+        <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice} isSharingSavingEntitlementEnabled={isSharingSavingEntitlementEnabled}>
+          <SaveAndShareBar
+            articleId={articleId}
+            articleHeadline={articleHeadline}
+            articleUrl={articleUrl}
+            onCopyLink={() => showMessage("Article link copied")}
+            onSaveToMyArticles={() => {}}
+            onShareOnEmail={() => {}}
+            savingEnabled={savingEnabled}
+            sharingEnabled={sharingEnabled}
+          />
+        </ShareAndSaveContainer>
       )}
+    </MessageContext.Consumer>
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
