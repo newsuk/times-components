@@ -2,13 +2,15 @@
 import styled from "styled-components";
 import { breakpoints, colours } from "@times-components/ts-styleguide";
 
-export const ShareAndSaveContainer = styled.div<{$isSharingSavingEntitlementEnabled: boolean}>`
+export const ShareAndSaveContainer =
+  styled.div<{ isSharingSavingEntitlementEnabled: boolean }>
+  `
   border-top-color: ${colours.functional.keyline};
   border-top-style: solid;
   border-top-width: 1px;
   width: 56.2%;
   margin: 0 auto;
-  display: ${props => (props.$isSharingSavingEntitlementEnabled ? "flex" : "none")};
+  display: ${({isSharingSavingEntitlementEnabled}) => (isSharingSavingEntitlementEnabled ? "flex" : "none")};
 
   @media (max-width: ${breakpoints.huge}px) {
     display: none;

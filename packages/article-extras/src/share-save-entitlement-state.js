@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 const ShareSaveEntitlementState = ({ shareSaveEntitlementData, children }) => {
   const FP_CODE_SHARE_AND_SAVE = "fp-753";
 
-  console.log("shareSaveEntitlementData in state", shareSaveEntitlementData);
-
   const featureDecisions =
     (shareSaveEntitlementData &&
       shareSaveEntitlementData.user &&
