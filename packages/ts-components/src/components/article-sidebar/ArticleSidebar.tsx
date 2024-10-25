@@ -48,6 +48,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
 
       <Description>Challenge yourself with today’s puzzles.</Description>
       <Divider />
+
       {data.map(({ title, url, imgUrl }) => (
         <React.Fragment key={title}>
           <PuzzleContainer
@@ -61,7 +62,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             }
             className="trigger-card-link"
           >
-            <PuzzleImage src={imgUrl} alt="Puzzle thumbnail" />
+            <PuzzleImage src={imgUrl} alt="Puzzle category thumbnail" />
             <ItemTitle>{title}</ItemTitle>
           </PuzzleContainer>
           <Divider />
