@@ -3,10 +3,10 @@
 exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH kzdaiS"
+    class="sc-bwzfXH gYmlvh"
   >
     <a
-      class="trigger sc-ifAKCX kcwwi"
+      class="trigger sc-ifAKCX YFVti"
       href="https://www.thetimes.com/puzzles"
     >
       <div
@@ -18,7 +18,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
           Puzzles for you
         </h3>
         <button
-          class="sc-gzVnrw ecbmwv"
+          class="sc-gzVnrw eoEpFe"
         >
           <svg
             aria-hidden="true"
