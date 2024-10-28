@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { Mutation } from 'react-apollo';
+import React, { useMemo, useState } from 'react';
 
 import { GetNewsletter } from '@times-components/provider';
-import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import { Placeholder } from '@times-components/image';
 import { capitalise } from '@times-components/utils';
 
@@ -11,6 +9,8 @@ import { Newsletter } from './newsletter/Newsletter';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import { InpContainer } from './styles';
+import { FetchProvider } from '../../helpers/fetch/FetchProvider';
+import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
   copy: string;
@@ -25,8 +25,10 @@ export const InlineNewsletterPuff = ({
   headline,
   section
 }: InlineNewsletterPuffProps) => {
-  const [justSubscribed, setJustSubscribed] = useState(false);
-  const [justSubscribedError, setJustSubscribedError] = useState(false);
+  const [url, setUrl] = useState<string>(
+    `/api/is-subscribed-newsletter/${code}`
+  );
+  const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -43,58 +45,44 @@ export const InlineNewsletterPuff = ({
           );
         }
 
-        if (newsletter.isSubscribed && !justSubscribed) {
+        if (newsletter.isSubscribed) {
           return null;
         }
 
         return (
-          <Mutation
-            mutation={subscribeNewsletterMutation}
-            onCompleted={({ subscribeNewsletter = {} }: any) => {
-              setJustSubscribed(subscribeNewsletter.isSubscribed);
-            }}
-            onError={() => {
-              setJustSubscribedError(true);
-            }}
-          >
-            {(
-              subscribeNewsletter: any,
-              { loading: updatingSubscription }: any
-            ) => (
-              <TrackingContextProvider
-                context={{
-                  object: 'InlineNewsletterPuff',
-                  attrs: {
-                    article_parent_name: newsletter.title,
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-                scrolledEvent={{
-                  object: 'NewsletterPuffButton',
-                  attrs: {
-                    event_navigation_name:
-                      'widget : puff : sign up now : displayed',
-                    event_navigation_browsing_method: 'automated',
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-              >
-                {({ intersectObserverRef }) => (
+          <FetchProvider url={url} options={fetchOptions}>
+            <TrackingContextProvider
+              context={{
+                object: 'InlineNewsletterPuff',
+                attrs: {
+                  article_parent_name: newsletter.title,
+                  event_navigation_action: 'navigation'
+                }
+              }}
+              scrolledEvent={{
+                object: 'NewsletterPuffButton',
+                attrs: {
+                  event_navigation_name:
+                    'widget : puff : sign up now : displayed',
+                  event_navigation_browsing_method: 'automated',
+                  event_navigation_action: 'navigation'
+                }
+              }}
+            >
+              {({ intersectObserverRef }) => (
+                <ContentProvider>
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
-                    justSubscribed={justSubscribed}
-                    justSubscribedError={justSubscribedError}
                     headline={headline}
-                    updatingSubscription={updatingSubscription}
                     copy={copy}
                     code={code}
-                    subscribeNewsletter={subscribeNewsletter}
+                    subscribeNewsletter={setUrl}
                   />
-                )}
-              </TrackingContextProvider>
-            )}
-          </Mutation>
+                </ContentProvider>
+              )}
+            </TrackingContextProvider>
+          </FetchProvider>
         );
       }}
     </GetNewsletter>

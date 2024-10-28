@@ -2,21 +2,24 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
 
 import mockDate from 'mockdate';
 
-import {
-  getNewsletter,
-  subscribeNewsletter
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import { useFetch } from '../../../helpers/fetch/FetchProvider';
 
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+
+jest.mock('../../../helpers/fetch/FetchProvider', () => ({
+  ...jest.requireActual('../../../helpers/fetch/FetchProvider'),
+  useFetch: jest.fn()
+}));
 
 const renderComponent = (
   analyticsStream?: () => void,
@@ -33,25 +36,6 @@ const renderComponent = (
           newsletter: {
             id: 'a2l6E000000CdHzQAK',
             isSubscribed: false,
-            title: 'RED BOX',
-            __typename: 'Newsletter'
-          }
-        }
-      }
-    },
-    {
-      delay: 50,
-      request: {
-        query: subscribeNewsletter,
-        variables: {
-          code: 'TNL-119'
-        }
-      },
-      result: {
-        data: {
-          subscribeNewsletter: {
-            id: 'a2l6E000000CdHzQAK',
-            isSubscribed: true,
             title: 'RED BOX',
             __typename: 'Newsletter'
           }
@@ -95,22 +79,6 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  it('renders signup state', async () => {
-    const component = renderComponent();
-    await component.findAllByText('Sign up with one click');
-    expect(component.baseElement).toMatchSnapshot();
-  });
-
-  it('renders loading state state', async () => {
-    const component = renderComponent();
-    const oneClickSignUp = await component.findAllByText(
-      'Sign up with one click'
-    );
-
-    fireEvent.click(oneClickSignUp[0]);
-    expect(component.baseElement).toMatchSnapshot();
-  });
-
   it('renders null when is already subscribed', async () => {
     const component = renderComponent(jest.fn(), [
       {
@@ -137,6 +105,26 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
+  it('renders signup state', async () => {
+    (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
+
+    const component = renderComponent();
+    await component.findAllByText('Sign up with one click');
+    expect(component.baseElement).toMatchSnapshot();
+  });
+
+  it('renders loading state state', async () => {
+    (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
+
+    const component = renderComponent();
+    const oneClickSignUp = await component.findAllByText(
+      'Sign up with one click'
+    );
+
+    fireEvent.click(oneClickSignUp[0]);
+    expect(component.baseElement).toMatchSnapshot();
+  });
+
   it('renders signup view when not already subscribed', async () => {
     const component = renderComponent();
 
@@ -159,6 +147,9 @@ describe('Inline Newsletter Puff', () => {
 
     it('Sign up with one click : displayed', async () => {
       const analyticsStream = jest.fn();
+      (useFetch as jest.Mock).mockReturnValue({
+        data: { isSubscribed: false }
+      });
       const component = renderComponent(analyticsStream);
 
       await component.findAllByText('Sign up with one click');
