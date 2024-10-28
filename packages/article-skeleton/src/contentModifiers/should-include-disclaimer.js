@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"; // eslint-disable-line
 
 const newDisclaimerText = {
   name: "paragraph",
@@ -108,6 +108,7 @@ const shouldIncludeDisclaimer = children => {
       // Check if disclaimer text already exists.
       const isTextCollapseComponent = !!(
         el.name === "interactive" &&
+        el.attributes &&
         el.attributes.element &&
         el.attributes.element.value &&
         el.attributes.element.value === "times-text-collapse"
@@ -118,9 +119,12 @@ const shouldIncludeDisclaimer = children => {
         (el.name === "text" || isTextCollapseComponent)
       ) {
         const textComponentVal =
-          el.name === "text" && el.attributes.value ? el.attributes.value : "";
+          el.name === "text" && el.attributes && el.attributes.value
+            ? el.attributes.value
+            : "";
         const interactiveComponentVal =
           isTextCollapseComponent &&
+          el.attributes &&
           el.attributes.element &&
           el.attributes.element.attributes &&
           el.attributes.element.attributes.disclaimer_text
@@ -152,6 +156,7 @@ const shouldIncludeDisclaimer = children => {
       // Check for affiliate links.
       const isTravelCtaComponent = !!(
         el.name === "interactive" &&
+        el.attributes &&
         el.attributes.element &&
         el.attributes.element.value &&
         el.attributes.element.value === "times-travel-cta"
@@ -159,9 +164,12 @@ const shouldIncludeDisclaimer = children => {
 
       if (!affiliateLinkExist && (el.name === "link" || isTravelCtaComponent)) {
         const linkComponentVal =
-          el.name === "link" && el.attributes.href ? el.attributes.href : "";
+          el.name === "link" && el.attributes && el.attributes.href
+            ? el.attributes.href
+            : "";
         const ctaComponentVal =
           isTravelCtaComponent &&
+          el.attributes &&
           el.attributes.element &&
           el.attributes.element.attributes &&
           el.attributes.element.attributes.url
