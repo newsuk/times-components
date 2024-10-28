@@ -11,7 +11,7 @@ export const Container = styled.div`
   padding-top: 12px;
   border-style: solid none none none;
   border-width: 3px;
-  border-color: #df7334;
+  border-color: #c05729;
 `;
 
 export const Description = styled.p`
@@ -47,7 +47,7 @@ export const Link = styled.a`
     }
   }
   h3 {
-    color: #df7334;
+    color: #c05729;
   }
 `;
 
@@ -68,7 +68,7 @@ export const Title = styled.h3`
 
 export const ChevronButton = styled.button`
   background-color: #eeeeee;
-  color: #df7334;
+  color: #c05729;
   border-radius: 50%;
   border: none;
   cursor: pointer;

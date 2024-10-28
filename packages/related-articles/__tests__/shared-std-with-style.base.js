@@ -11,7 +11,7 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   section: "thedish",
   shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://thetimes.com/l1/l2/article/test.com"
 }).data;
 
 export default renderComponent => {
