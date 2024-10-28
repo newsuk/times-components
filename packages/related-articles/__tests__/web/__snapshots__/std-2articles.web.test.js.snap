@@ -23,7 +23,7 @@ exports[`1. two related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              url="https://thetimes.com/l1/l2/article/first.com"
             >
               <div>
                 <Card
@@ -80,7 +80,7 @@ exports[`1. two related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              url="https://thetimes.com/l1/l2/article/second.com"
             >
               <div>
                 <Card

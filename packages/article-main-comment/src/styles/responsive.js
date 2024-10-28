@@ -49,8 +49,8 @@ export const HeaderContainer = styled(TcView)`
     margin: 0 auto ${spacing(2)};
     margin-left: auto;
     margin-right: auto;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
@@ -122,17 +122,21 @@ export const StandfirstContainer = styled.h2`
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-weight: 400;
+
   ${props => props.styles && props.styles};
+
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
       font: "bodyRegular",
       fontSize: "infoTitle"
     })}px;
+    margin-top: ${spacing(1)};
     margin-bottom: ${spacing(5)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    margin-bottom: ${spacing(4)};
+    margin-top: ${spacing(1)};
+    margin-bottom: ${spacing(5)};
   }
 `;
