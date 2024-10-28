@@ -38,7 +38,8 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines
+  Timelines,
+  SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -254,6 +255,38 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <SocialMediaEmbed
+                element={element}
+                url={url}
+                vendorName="twitter"
+                id={attributes.id}
+              />
+            </div>
+          </InteractiveContainer>
+        );
+
+      case "times-embed-iframe-max":
+        // const src = element.attributes?.src || "";
+        // const isYoutube = src.includes("youtube");
+        // if(isYoutube){
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <div id={id}>
+              <SocialMediaEmbed
+                element={element}
+                url={url}
+                vendorName="youtube"
+                id={attributes.id}
+              />
+            </div>
+          </InteractiveContainer>
+        );
+      // } else return null;
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations

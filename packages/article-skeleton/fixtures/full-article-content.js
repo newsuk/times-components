@@ -1,7 +1,7 @@
 export default [
   {
     attributes: {
-      title: "New Brexit referendum"
+      title: "New Brexit referendummmmmmm"
     },
     children: [
       {
@@ -127,6 +127,39 @@ export default [
       }
     ],
     name: "keyFacts"
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+      element: {
+        value: "twitter-embed",
+        attributes: {
+          url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "cd578cd9-7076-427f-8b4e-2e23866da03b",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https://youtube.com/embed/p6Cnazi_Fi0",
+          ratio: "r16-9"
+        }
+      }
+    },
+    children: []
   },
   {
     children: [
