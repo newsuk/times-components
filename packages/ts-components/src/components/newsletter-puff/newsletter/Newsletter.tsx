@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { NewsletterPuffButton } from '../newsletter-puff-button/NewsletterPuffButton';
 import { NewsletterPuffLink } from '../newsletter-puff-link/NewsletterPuffLink';
@@ -18,55 +18,55 @@ import { InpContainer } from '../styles';
 type NewsletterProps = {
   intersectObserverRef: (ref: HTMLElement | null) => void;
   section?: string;
-  justSubscribed: boolean;
-  justSubscribedError: boolean;
   headline: string;
-  updatingSubscription: boolean;
   copy: string;
   code: string;
-  subscribeNewsletter: ({}) => {};
+  subscribeNewsletter: any;
+  loading?: boolean;
+  error?: string;
 };
 
 export const Newsletter = ({
   intersectObserverRef,
   section,
-  justSubscribed,
-  justSubscribedError,
   headline,
-  updatingSubscription,
   copy,
   code,
-  subscribeNewsletter
+  subscribeNewsletter,
+  loading,
+  error
 }: NewsletterProps) => {
+  const [justSubscribed, setJustSubscribed] = useState(false);
   const PuffButton = (style: 'link' | 'button') => (
     <InpSignupCTAContainer ref={intersectObserverRef} childStyle={style}>
       <NewsletterPuffButton
         style={style}
-        updatingSubscription={updatingSubscription}
+        updatingSubscription={loading}
         onPress={() => {
-          if (!updatingSubscription) {
-            subscribeNewsletter({ variables: { code } });
+          if (!loading) {
+            setJustSubscribed(true);
+            subscribeNewsletter(`/api/subscribe-newsletter/${code}`);
           }
         }}
       />
     </InpSignupCTAContainer>
   );
-
   return (
     <React.Fragment>
       <InpContainer section={section}>
-        {updatingSubscription && <LoadingOverlay />}
-        {justSubscribed && (
-          <InpSubscribedContainer>
-            <InpCopy>
-              You've succesfully signed up to{' '}
-              <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
-              <NewsletterPuffLink />
-            </InpCopy>
-            <InpPreferencesContainer />
-          </InpSubscribedContainer>
-        )}
-        {justSubscribedError && (
+        {loading && <LoadingOverlay />}
+        {!error &&
+          justSubscribed && (
+            <InpSubscribedContainer>
+              <InpCopy>
+                You've succesfully signed up to{' '}
+                <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+                <NewsletterPuffLink />
+              </InpCopy>
+              <InpPreferencesContainer />
+            </InpSubscribedContainer>
+          )}
+        {error && (
           <InpSubscribedContainer>
             <InpCopy>
               An error occurred. Please use the link below.
@@ -76,7 +76,7 @@ export const Newsletter = ({
           </InpSubscribedContainer>
         )}
         {!justSubscribed &&
-          !justSubscribedError && (
+          !error && (
             <InpSignupContainer>
               <InpCopy>
                 <InpSignupHeadline>{headline} </InpSignupHeadline>
