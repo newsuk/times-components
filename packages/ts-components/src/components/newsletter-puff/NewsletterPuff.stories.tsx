@@ -2,10 +2,7 @@ import { showcaseConverter } from '@times-components/storybook';
 
 import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
-import {
-  getNewsletter,
-  subscribeNewsletter
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
@@ -29,24 +26,6 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
           title: 'Best of Times',
-          __typename: 'Newsletter'
-        }
-      }
-    }
-  },
-  {
-    delay: 1000,
-    request: {
-      query: subscribeNewsletter,
-      variables: {
-        code: 'TNL-101'
-      }
-    },
-    result: {
-      data: {
-        subscribeNewsletter: {
-          id: 'a2l6E000000CdHzQAK',
-          isSubscribed: true,
           __typename: 'Newsletter'
         }
       }
