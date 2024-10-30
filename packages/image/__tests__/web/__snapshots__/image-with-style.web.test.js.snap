@@ -31,7 +31,9 @@ exports[`1. default image 1`] = `
   className="c0"
 >
   <div
+    overflow="hidden"
     paddingBottom="66.66666666666667%"
+    position="relative"
   >
     <img
       className="c1"
@@ -71,7 +73,9 @@ exports[`2. default modal 1`] = `
   className="c0"
 >
   <div
+    overflow="hidden"
     paddingBottom="66.66666666666667%"
+    position="relative"
   >
     <img
       className="c1"
