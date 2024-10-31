@@ -271,22 +271,44 @@ const renderers = ({
         );
 
       case "times-embed-iframe-max":
-        // const src = element.attributes?.src || "";
-        // const isYoutube = src.includes("youtube");
-        // if(isYoutube){
-        return (
-          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <div id={id}>
+        const src = element.attributes?.src || "";
+        const isBestSellingHolidays = src.includes("best-selling-holidays");
+
+        console.log('isBestSellingHolidays', isBestSellingHolidays);
+        console.log('src', src);
+
+        if (isBestSellingHolidays) {
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
               <SocialMediaEmbed
                 element={element}
                 url={url}
-                vendorName="youtube"
+                vendorName="bsh"
                 id={attributes.id}
               />
-            </div>
-          </InteractiveContainer>
-        );
+            </InteractiveContainer>
+          );
+        }
+        
       // } else return null;
+
+      //       case "times-embed-iframe-max":
+      //   // const src = element.attributes?.src || "";
+      //   // const isYoutube = src.includes("youtube");
+      //   // if(isYoutube){
+      //   return (
+      //     <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+      //       <div id={id}>
+      //         <SocialMediaEmbed
+      //           element={element}
+      //           url={url}
+      //           vendorName="youtube"
+      //           id={attributes.id}
+      //         />
+      //       </div>
+      //     </InteractiveContainer>
+      //   );
+      // // } else return null;
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations

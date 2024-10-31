@@ -162,6 +162,25 @@ export default [
     children: []
   },
   {
+					name: "interactive",
+					attributes: {
+						id: "5fc87271-5a4e-4ce1-879b-9326f1d4d465",
+						display: "fullwidth",
+						url: "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+						element: {
+							value: "times-embed-iframe-max",
+							attributes: {
+								src: "https://www.thetimes.co.uk/travel/offers-component/best-selling-holidays/",
+								"date-to": "2024-02-27",
+								headline: "",
+								"date-from": "2024-02-27",
+								standfirst: ""
+							}
+						}
+					},
+					children: []
+				},
+  {
     children: [
       {
         attributes: {
