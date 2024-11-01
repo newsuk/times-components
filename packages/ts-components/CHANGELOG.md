@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.109.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.108.0...@times-components/ts-components@1.109.0) (2024-10-28)
+
+
+### Features
+
+* **TMD-770:** Newsletter components not working ([#3963](https://github.com/newsuk/times-components/issues/3963)) ([647b060](https://github.com/newsuk/times-components/commit/647b060bc67cc76624ba5eb83db80654ee4eaf99))
+
+
+
+
+
+# [1.108.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.107.0...@times-components/ts-components@1.108.0) (2024-10-28)
+
+
+### Features
+
+* **TMPZ-546:** Puzzle sidebar headline Color should be updated ([#3974](https://github.com/newsuk/times-components/issues/3974)) ([d6443e9](https://github.com/newsuk/times-components/commit/d6443e95c6aaad2284cbbeacfe0a2d68a25bf1a8))
+
+
+
+
+
 # [1.107.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.106.1...@times-components/ts-components@1.107.0) (2024-10-23)
 
 

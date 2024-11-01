@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.92.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.92.0...@times-components/article-main-comment@2.92.1) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.92.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.91.2...@times-components/article-main-comment@2.92.0) (2024-10-28)
+
+
+### Features
+
+* **TMPZ-546:** Puzzle sidebar headline Color should be updated ([#3974](https://github.com/newsuk/times-components/issues/3974)) ([d6443e9](https://github.com/newsuk/times-components/commit/d6443e95c6aaad2284cbbeacfe0a2d68a25bf1a8))
+
+
+
+
+
 ## [2.91.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.91.1...@times-components/article-main-comment@2.91.2) (2024-10-23)
 
 **Note:** Version bump only for package @times-components/article-main-comment
