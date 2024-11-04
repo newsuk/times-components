@@ -38,6 +38,141 @@ const newslettersBySection = [
     })
   },
   {
+    section: "environment",
+    payload: setNewsletterPayload({
+      code: "TNL-140",
+      headline: "Environment newsletter",
+      copy:
+        "The latest climate news, book and podcast reviews and reasons to be cheerful."
+    })
+  },
+  {
+    section: "politics",
+    payload: setNewsletterPayload({
+      code: "TNL-119",
+      headline: "Politics newsletter",
+      copy:
+        "Our insider's guide to Westminster, plus a rundown of PMQs every Wednesday."
+    })
+  },
+  {
+    section: "us",
+    payload: setNewsletterPayload({
+      code: "TNL-153",
+      headline: "US Newsletter",
+      copy:
+        "A balanced, fair and fact-checked take on global news and culture for our US readers."
+    })
+  },
+  {
+    section: "fashion",
+    payload: setNewsletterPayload({
+      code: "TNL-108",
+      headline: "Fashion newsletter",
+      copy:
+        "Look good and feel great with the latest tips and trends from our fashion team."
+    })
+  },
+  {
+    section: "beauty",
+    payload: setNewsletterPayload({
+      code: "TNL-108",
+      headline: "Fashion newsletter",
+      copy:
+        "Look good and feel great with the latest tips and trends from our fashion team."
+    })
+  },
+  {
+    section: "food",
+    payload: setNewsletterPayload({
+      code: "TNL-106",
+      headline: "Food Newsletter",
+      copy:
+        "Restaurant reviews, insider insights and recipes from the best chefs in the business."
+    })
+  },
+  {
+    section: "football",
+    payload: setNewsletterPayload({
+      code: "TNL-111",
+      headline: "Football newsletter",
+      copy:
+        "Learn something new about the beautiful game with James Gheerbrant's bespoke analysis."
+    })
+  },
+  {
+    section: "property",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property Newsletter",
+      copy:
+        "Inside Britain's most exclusive homes, plus what's going on in the property market."
+    })
+  },
+  {
+    section: "books",
+    payload: setNewsletterPayload({
+      code: "TNL-115",
+      headline: "Books newsletter",
+      copy:
+        "News, reviews, author interviews and suggested reads from our literary editors."
+    })
+  },
+  {
+    section: "theatre",
+    payload: setNewsletterPayload({
+      code: "TNL-127",
+      headline: "Theatre Newsletter",
+      copy:
+        "Our chief theatre critic on what to see (and what to miss) in the West End and beyond."
+    })
+  },
+  {
+    section: "film",
+    payload: setNewsletterPayload({
+      code: "TNL-133",
+      headline: "TV newsletter",
+      copy:
+        "What to watch or stream, plus news and reviews from our small-screen experts."
+    })
+  },
+  {
+    section: "tv",
+    payload: setNewsletterPayload({
+      code: "TNL-133",
+      headline: "TV newsletter",
+      copy:
+        "What to watch or stream, plus news and reviews from our small-screen experts."
+    })
+  },
+  {
+    section: "puzzles",
+    payload: setNewsletterPayload({
+      code: "TNL-125",
+      headline: "Puzzles Newsletter",
+      copy:
+        "The best crossword clues and quiz questions, plus insights from our puzzles editor."
+    })
+  },
+  {
+    section: "travel",
+    payload: setNewsletterPayload({
+      code: "TNL-149",
+      headline: "Travel newsletter",
+      copy:
+        "Get inspiration for your next trip and a great deal thanks to our carefully curated offers."
+    })
+  },
+  {
+    section: "entrepreneurs",
+    payload: setNewsletterPayload({
+      code: "TNL-145",
+      headline: "Entrepreneurs Newsletter",
+      copy:
+        "Advice and inspiration for entrepreneurs in The Times Enterprise Network's briefing."
+    })
+  },
+  {
     section: "scotland",
     payload: setNewsletterPayload({
       code: "TNL-134",
@@ -50,6 +185,17 @@ const newslettersBySection = [
   },
   {
     section: "money",
+    payload: setNewsletterPayload({
+      code: "TNL-107",
+      headline: "Money newsletter",
+      copy:
+        "Personal finance and investment news from our money experts, every Monday.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
+    })
+  },
+  {
+    section: "economics",
     payload: setNewsletterPayload({
       code: "TNL-107",
       headline: "Money newsletter",
