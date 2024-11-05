@@ -47,6 +47,26 @@ export default Component =>
           articleHeadline
         }),
         trackingName: "ArticleShareOnTwitter"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareBarExpend",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_social_action: "share start"
+        }),
+        trackingName: "ArticleShareOnExpend"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareBarClose",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_social_action: "share start"
+        }),
+        trackingName: "ArticleShareOnClose"
       }
     ]
   });
