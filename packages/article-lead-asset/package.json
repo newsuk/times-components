@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-lead-asset",
-  "version": "1.18.44",
+  "version": "1.18.45",
   "description": "Generalised Lead Asset component for templates to consume & style ",
   "main": "dist/article-lead-asset",
   "dev": "src/article-lead-asset",
@@ -50,7 +50,7 @@
     "@times-components/jest-serializer": "3.13.20",
     "@times-components/test-utils": "2.4.2",
     "@times-components/utils": "6.26.0",
-    "@times-components/video": "4.19.0",
+    "@times-components/video": "4.19.1",
     "prop-types": "15.7.2"
   },
   "resolutions": {
