@@ -36,6 +36,8 @@ function SaveAndShareBar(props) {
     articleUrl,
     savingEnabled,
     sharingEnabled,
+    onShareBarExpend,
+    onShareBarClose,
     onShareOnFB,
     onShareOnTwitter,
     isPreviewMode
@@ -93,8 +95,11 @@ function SaveAndShareBar(props) {
   }
 
   const togglePopover = () => {
-    if(!popoverOpen)onShareBarExpend 
-    else onShareBarClose
+    if (!popoverOpen) {
+      onShareBarExpend();
+    } else {
+      onShareBarClose();
+    }
     setPopoverOpen(prev => !prev);
   };
 
