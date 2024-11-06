@@ -22,7 +22,10 @@ export type SocialMediaEmbedProps = {
   id: string;
 };
 
-export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName, url }) => {
+export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
+  vendorName,
+  url
+}) => {
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
   const [data, setData] = useState<TcData | null>(null);
 
