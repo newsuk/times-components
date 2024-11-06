@@ -27,6 +27,7 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   setIsSocialEmbedAllowed
 }) => {
   const allowCookiesOnce = () => {
+    enableCookies(vendorName);
     setIsSocialEmbedAllowed(true);
   };
 

@@ -262,7 +262,7 @@ const renderers = ({
             <div id={id}>
               <SocialMediaEmbed
                 element={element}
-                url={url}
+                url={attributes.url}
                 vendorName="twitter"
                 id={attributes.id}
               />

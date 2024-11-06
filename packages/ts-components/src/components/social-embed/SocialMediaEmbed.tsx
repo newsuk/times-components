@@ -17,12 +17,12 @@ declare global {
 
 export type SocialMediaEmbedProps = {
   element?: any;
-  url?: string;
+  url: string;
   vendorName: VendorName;
   id: string;
 };
 
-export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName }) => {
+export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName, url }) => {
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
   const [data, setData] = useState<TcData | null>(null);
 
@@ -35,6 +35,8 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName }) => {
             eventStatus: tcData.eventStatus,
             listenerId: tcData.listenerId
           });
+
+          checkVendorConsent(vendorName, setIsSocialEmbedAllowed);
         }
         if (success && tcData.eventStatus === eventStatus.userActionComplete) {
           setData({
@@ -77,6 +79,9 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName }) => {
         script.async = true;
         script.src = 'https://platform.twitter.com/widgets.js';
 
+        let link = document.createElement('a');
+        link.href = `${url}?ref_src=twsrc%5Etfw`;
+
         socialEmbedContainer.appendChild(script);
       }
     },
@@ -89,7 +94,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName }) => {
   console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
 
   return isSocialEmbedAllowed ? (
-    <div className="social-embed" />
+    <blockquote className="social-embed" />
   ) : (
     <BlockedEmbedMessage
       vendorName={vendorName}
