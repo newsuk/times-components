@@ -225,18 +225,26 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       border-start-start-radius: 4px;
       border-start-end-radius: 4px;
 
-      @media (prefers-color-scheme: dark) {
-        color: #e4e4e4 !important;
-      }
+      ${({ isApp }) =>
+        isApp &&
+        `
+          @media (prefers-color-scheme: dark) {
+          color: #e4e4e4 !important;
+        }
+      `}
     }
 
     .Opta-timings .Opta-Time * {
       font-weight: 700;
       color: #01000d !important;
 
-      @media (prefers-color-scheme: dark) {
-        color: #fff !important;
-      }
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          color: #fff !important;
+        }
+      `}
     }
 
     .Opta-TeamName,
@@ -244,9 +252,13 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       color: #01000d !important;
       font-family: 'Roboto-Medium' !important;
 
-      @media (prefers-color-scheme: dark) {
-        color: #fff !important;
-      }
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          color: #fff !important;
+        }
+      `}
     }
 
     .Opta-Away {
@@ -259,9 +271,13 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       > div {
         background-color: #f5f5f5 !important;
 
-        @media (prefers-color-scheme: dark) {
-          background-color: #333 !important;
-        }
+        ${({ isApp }) =>
+          isApp &&
+          `
+          @media (prefers-color-scheme: dark) {
+            background-color: #333 !important;
+          }
+        `}
       }
       .Opta-Team-Score::after {
         content: '-';
@@ -275,10 +291,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     &.Opta-result > div {
       border: 1px solid #ccc !important;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: #1d1d1b !important;
-        border: 1px solid #333 !important;
-      }
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          background-color: #1d1d1b !important;
+          border: 1px solid #333 !important;
+        }
+      `}
 
       &.Opta-timings {
         border-bottom: none !important;
@@ -294,10 +314,14 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
     &.Opta-live > div {
       border: 1px solid #01000d !important;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: #121212 !important;
-        border: 1px solid #e4e4e4 !important;
-      }
+      ${({ isApp }) =>
+        isApp &&
+        `
+        @media (prefers-color-scheme: dark) {
+          background-color: #121212 !important;
+          border: 1px solid #e4e4e4 !important;
+        }
+      `}
 
       &.Opta-timings {
         border-bottom: none !important;

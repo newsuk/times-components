@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.20](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.19...@times-components/article-extras@0.32.20) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.19](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.18...@times-components/article-extras@0.32.19) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.18](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.17...@times-components/article-extras@0.32.18) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.17](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.16...@times-components/article-extras@0.32.17) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.16](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.15...@times-components/article-extras@0.32.16) (2024-10-23)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.15](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.14...@times-components/article-extras@0.32.15) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.14](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.13...@times-components/article-extras@0.32.14) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.32.13](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.12...@times-components/article-extras@0.32.13) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.32.12](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.11...@times-components/article-extras@0.32.12) (2024-10-15)
 
 **Note:** Version bump only for package @times-components/article-extras

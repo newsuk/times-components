@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.19.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.19.0...@times-components/video@4.19.1) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+# [4.19.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.18.27...@times-components/video@4.19.0) (2024-10-19)
+
+
+### Features
+
+* **TMRS-000:** remove comment ([#3964](https://github.com/newsuk/times-components/issues/3964)) ([90bb640](https://github.com/newsuk/times-components/commit/90bb6406e075aac20fc90339d8b3006c9715d7e3))
+
+
+
+
+
+## [4.18.27](https://github.com/newsuk/times-components/compare/@times-components/video@4.18.26...@times-components/video@4.18.27) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.18.26](https://github.com/newsuk/times-components/compare/@times-components/video@4.18.25...@times-components/video@4.18.26) (2024-07-08)
 
 **Note:** Version bump only for package @times-components/video

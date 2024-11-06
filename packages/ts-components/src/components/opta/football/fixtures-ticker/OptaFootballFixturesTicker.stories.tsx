@@ -25,7 +25,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
     const selComp = select('Competition', competitons, '8');
     return (
       <OptaFootballFixturesTicker
-        season={text('season', '2023')}
+        season={text('season', '2024')}
         competition={selComp}
         date_from=""
         date_to=""
@@ -42,7 +42,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
     const selComp = select('Competition', competitons, '8');
     return (
       <OptaFootballFixturesTicker
-        season={text('season', '2023')}
+        season={text('season', '2024')}
         competition={selComp}
         date_from=""
         date_to=""

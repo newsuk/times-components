@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.61...@times-components/markup@3.9.0) (2024-10-18)
+
+
+### Features
+
+* **TMD-892:** Productionise Tag Manager hyperlink tooling ([#3961](https://github.com/newsuk/times-components/issues/3961)) ([fdb8285](https://github.com/newsuk/times-components/commit/fdb82854249456f48aebae62756a6e2615c05cbe))
+
+
+
+
+
 ## [3.8.61](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.60...@times-components/markup@3.8.61) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/markup
