@@ -16,6 +16,8 @@ describe('checkVendorConsent', () => {
     const mockVendorName: VendorName = 'twitter';
     // Mock window.__tcfapi function
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
+      // tslint:disable-next-line:no-console
+      console.log('command, version', command, version);
       callback(
         { consentedVendors: [{ name: 'twitter' }] },
         true // success
@@ -35,6 +37,8 @@ describe('checkVendorConsent', () => {
   it('calls setIsSocialEmbedAllowed with false if vendor consent is not found', () => {
     const mockVendorName: VendorName = 'twitter';
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
+      // tslint:disable-next-line:no-console
+      console.log('command, version', command, version);
       callback({ consentedVendors: [{ name: 'Other Vendor' }] }, true);
     });
 
@@ -47,6 +51,8 @@ describe('checkVendorConsent', () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
     const mockVendorName: VendorName = 'twitter';
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
+      // tslint:disable-next-line:no-console
+      console.log('command, version', command, version);
       callback(null, false); // indicate failure
     });
 
