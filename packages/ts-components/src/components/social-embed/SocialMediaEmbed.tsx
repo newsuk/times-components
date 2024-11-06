@@ -83,6 +83,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName, url })
         link.href = `${url}?ref_src=twsrc%5Etfw`;
 
         socialEmbedContainer.appendChild(script);
+        socialEmbedContainer.appendChild(link);
       }
     },
     [isSocialEmbedAllowed]
