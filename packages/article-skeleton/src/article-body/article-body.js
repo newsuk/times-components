@@ -272,7 +272,7 @@ const renderers = ({
         );
 
       case "times-embed-iframe-max": {
-        const src = element.attributes?.src || "";
+        const src = (element.attributes && element.attributes.src) || "";
         const isBestSellingHolidays = src.includes("best-selling-holidays");
 
         if (isBestSellingHolidays) {

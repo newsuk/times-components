@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { OffersEmbed } from '../OffersEmbed'; 
+import { OffersEmbed } from '../OffersEmbed';
 import '@testing-library/jest-dom';
 
 describe('OffersEmbed Component', () => {
@@ -13,13 +13,16 @@ describe('OffersEmbed Component', () => {
   it('should render the travel offers component when `isBestSellingHolidays` is true', () => {
     const mockElement = {
       attributes: {
-        src: 'https://www.thetimes.co.uk/travel/offers-component/best-selling-holidays/',
-      },
+        src:
+          'https://www.thetimes.co.uk/travel/offers-component/best-selling-holidays/'
+      }
     };
     const url = 'https://www.thetimes.co.uk';
     const id = 'test-id';
 
-    render(<OffersEmbed element={mockElement} url={url} id={id} vendorName={""} />);
+    render(
+      <OffersEmbed element={mockElement} url={url} id={id} vendorName={''} />
+    );
 
     const travelOffersLink = document.querySelector(
       'link[href="https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html"]'
@@ -37,7 +40,10 @@ describe('OffersEmbed Component', () => {
       'https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html'
     );
     expect(travelOffersComponent).toHaveAttribute('offers', 'bsh');
-    expect(travelOffersComponent).toHaveAttribute('title', 'Bestselling holidays');
+    expect(travelOffersComponent).toHaveAttribute(
+      'title',
+      'Bestselling holidays'
+    );
     expect(travelOffersComponent).toHaveAttribute(
       'description',
       'Brought to you by Times Travel.'
@@ -47,13 +53,16 @@ describe('OffersEmbed Component', () => {
   it('should not render the travel offers component when `isBestSellingHolidays` is false', () => {
     const mockElement = {
       attributes: {
-        src: 'https://www.thetimes.co.uk/travel/offers-component/other-holidays/',
-      },
+        src:
+          'https://www.thetimes.co.uk/travel/offers-component/other-holidays/'
+      }
     };
     const url = 'https://www.thetimes.co.uk';
     const id = 'test-id';
 
-    render(<OffersEmbed element={mockElement} url={url} id={id} vendorName={""} />);
+    render(
+      <OffersEmbed element={mockElement} url={url} id={id} vendorName={''} />
+    );
 
     const travelOffersLink = document.querySelector(
       'link[href="https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html"]'
