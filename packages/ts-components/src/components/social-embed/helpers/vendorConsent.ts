@@ -1,6 +1,8 @@
+import { VendorName } from '../types';
+
 export const checkVendorConsent = (
-  vendorName: string,
-  setIsSocialAllowed: (allowed: boolean) => void
+  vendorName: VendorName,
+  setIsSocialEmbedAllowed: (isSocialVendorAllowed: boolean) => void
 ) => {
   if (window.__tcfapi) {
     window.__tcfapi(
@@ -12,12 +14,7 @@ export const checkVendorConsent = (
             (vendor: { name: string }) =>
               vendor.name.toLowerCase() === vendorName.toLowerCase()
           );
-          setIsSocialAllowed(isSocialVendorAllowed);
-          // tslint:disable-next-line:no-console
-          console.log(
-            `Consent check for ${vendorName}:`,
-            isSocialVendorAllowed
-          );
+          setIsSocialEmbedAllowed(isSocialVendorAllowed);
         } else {
           // tslint:disable-next-line:no-console
           console.log(

@@ -1,9 +1,5 @@
 import get from 'lodash.get';
-
-export enum ModalType {
-  GDPR = 'gdpr',
-  CCPA = 'ccpa'
-}
+import { ModalType } from '../types';
 
 export const openPrivacyModal = (type: ModalType, messageId: string) => {
   const loadModal = get(window, `_sp_.${type}.loadPrivacyManagerModal`);

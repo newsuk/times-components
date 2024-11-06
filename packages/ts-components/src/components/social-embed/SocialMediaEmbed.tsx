@@ -1,55 +1,69 @@
-import React, { useEffect, useState } from 'react';
-import {
-  AllowButton,
-  CardContainer,
-  EnableButton,
-  LinkPrivacyManager,
-  Paragraph,
-  Title,
-  CustomIconContainer,
-  Header
-} from './styles';
-import { InfoIcon } from '../inline-message/InfoIcon';
-import { openPrivacyModal, ModalType } from './helpers/privacyModal';
-// @ts-ignore
-import InteractiveWrapper from '@times-components/interactive-wrapper';
+import React, { FC, useEffect, useState } from 'react';
+import { BlockedEmbedMessage } from './BlockedEmbedMessage';
 import { checkVendorConsent } from './helpers/vendorConsent';
-import { getVendorTitle } from './helpers/getVendorTitle';
-import { enableCookies } from './helpers/enableCookies';
-import { socialMediaVendors } from './helpers/socialMediaVendors';
-
-export declare type SocialEmbedProps = {
-  element: any;
-  url?: string;
-  vendorName: string;
-  id: string;
-};
+import { eventStatus } from './constants';
+import { TcData, VendorName } from './types';
 
 declare global {
   interface Window {
     __tcfapi?: (
       command: string,
       version: number,
-      callback: (data: any, success: boolean) => void
+      callback: (data: TcData, success: boolean) => void,
+      listenerId?: number
     ) => void;
   }
 }
 
-export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
-  element,
-  vendorName
-}) => {
-  const [allowedOnce, setAllowedOnce] = useState(false);
-  const [isSocialAllowed, setIsSocialAllowed] = useState(false);
+export type SocialMediaEmbedProps = {
+  element?: any;
+  url?: string;
+  vendorName: VendorName;
+  id: string;
+};
 
-  useEffect(
-    () => {
-      // tslint:disable-next-line:no-console
-      console.log('useEffect enterred', element);
-      checkVendorConsent(vendorName, setIsSocialAllowed);
-    },
-    [vendorName, allowedOnce, isSocialAllowed]
-  );
+export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({ vendorName }) => {
+  const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
+  const [data, setData] = useState<TcData | null>(null);
+
+  useEffect(() => {
+    if (window.__tcfapi) {
+      window.__tcfapi('addEventListener', 2, (tcData, success) => {
+        if (success && tcData.eventStatus === eventStatus.tcLoaded) {
+          setData({
+            cmpStatus: tcData.cmpStatus,
+            eventStatus: tcData.eventStatus,
+            listenerId: tcData.listenerId
+          });
+        }
+        if (success && tcData.eventStatus === eventStatus.userActionComplete) {
+          setData({
+            cmpStatus: tcData.cmpStatus,
+            eventStatus: tcData.eventStatus,
+            listenerId: tcData.listenerId
+          });
+
+          checkVendorConsent(vendorName, setIsSocialEmbedAllowed);
+        }
+      });
+    }
+
+    return () => {
+      if (window.__tcfapi && data && data.listenerId) {
+        window.__tcfapi(
+          'removeEventListener',
+          2,
+          success => {
+            if (success) {
+              // tslint:disable-next-line:no-console
+              console.log(success);
+            }
+          },
+          data.listenerId
+        );
+      }
+    };
+  }, []);
 
   useEffect(
     () => {
@@ -66,59 +80,20 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
         socialEmbedContainer.appendChild(script);
       }
     },
-    [isSocialAllowed, allowedOnce]
+    [isSocialEmbedAllowed]
   );
 
-  const allowCookiesOnce = () => {
-    setAllowedOnce(true);
-    setIsSocialAllowed(true);
-  };
+  // tslint:disable-next-line:no-console
+  console.log('tcData', data);
+  // tslint:disable-next-line:no-console
+  console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
 
-  const handlePrivacyManagerClick = (
-    e: React.MouseEvent<HTMLAnchorElement>
-  ) => {
-    e.preventDefault();
-    openPrivacyModal(
-      ModalType.GDPR,
-      window.__TIMES_CONFIG__.sourcepoint.gdprMessageId
-    );
-  };
-  // tslint:disable-next-line:no-console
-  console.log('allowedOnce', allowedOnce);
-  // tslint:disable-next-line:no-console
-  console.log('allowedOnce || isSocialAllowed', allowedOnce || isSocialAllowed);
-  // tslint:disable-next-line:no-console
-  console.log('allowedOnce && isSocialAllowed', allowedOnce && isSocialAllowed);
-
-  return isSocialAllowed || allowedOnce ? (
-    <div className="social-embed">
-      <blockquote className="twitter-tweet">
-        <a href={`${element.attributes.url}?ref_src=twsrc%5Etfw`} />
-      </blockquote>
-    </div>
+  return isSocialEmbedAllowed ? (
+    <div className="social-embed" />
   ) : (
-    <CardContainer>
-      <Header>
-        <CustomIconContainer>
-          <InfoIcon />
-        </CustomIconContainer>
-        <Title>
-          {getVendorTitle(vendorName, socialMediaVendors)} content blocked
-        </Title>
-      </Header>
-      <Paragraph>
-        Please enable cookies and other technologies to view this content. You
-        can update your cookies preferences any time using{' '}
-        <LinkPrivacyManager href="#" onClick={handlePrivacyManagerClick}>
-          privacy manager.
-        </LinkPrivacyManager>
-      </Paragraph>
-      <EnableButton
-        onClick={() => enableCookies(vendorName, setIsSocialAllowed)}
-      >
-        Enable cookies
-      </EnableButton>
-      <AllowButton onClick={allowCookiesOnce}>Allow cookies once</AllowButton>
-    </CardContainer>
+    <BlockedEmbedMessage
+      vendorName={vendorName}
+      setIsSocialEmbedAllowed={setIsSocialEmbedAllowed}
+    />
   );
 };

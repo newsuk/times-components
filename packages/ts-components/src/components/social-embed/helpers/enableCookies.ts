@@ -1,12 +1,9 @@
 import { socialMediaVendors } from './socialMediaVendors';
 
-export const enableCookies = (
-  vendorName: string,
-  setIsSocialAllowed: (allowed: boolean) => void
-) => {
+export const enableCookies = (vendorName: string) => {
   const onCustomConsent = (_: any, success: boolean) => {
     if (success) {
-      setIsSocialAllowed(true);
+      return true;
     }
     return null;
   };
