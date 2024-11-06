@@ -1,237 +1,68 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { OffersEmbed } from '../OffersEmbed'; 
 import '@testing-library/jest-dom';
-import get from 'lodash.get';
-import { OffersEmbed } from '../OffersEmbed';
 
-// Mocking external dependencies
-jest.mock('@times-components/interactive-wrapper', () =>
-  jest.fn(() => <div>InteractiveWrapper</div>)
-);
-jest.mock('lodash.get');
-
-const mockTcfApi = jest.fn();
-
-describe('OffersEmbed', () => {
+describe('OffersEmbed Component', () => {
   beforeEach(() => {
-    mockTcfApi.mockReset();
-    window.__tcfapi = mockTcfApi;
-
-    /* tslint:disable:no-empty */
-    jest.spyOn(global.console, 'log').mockImplementation(() => {});
-    /* tslint:disable:no-empty */
-    jest.spyOn(global.console, 'warn').mockImplementation(() => {});
+    // Clear the document head and body before each test
+    document.head.innerHTML = '';
+    document.body.innerHTML = '<div id="interactiveWrapper"></div>';
   });
 
-  afterEach(() => {
-    jest.restoreAllMocks();
-  });
-
-  it('renders Twitter content if consent is given for Twitter', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback({ consentedVendors: [{ name: 'Twitter' }] }, true);
-    });
-
+  it('should render the travel offers component when `isBestSellingHolidays` is true', () => {
     const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
+      attributes: {
+        src: 'https://www.thetimes.co.uk/travel/offers-component/best-selling-holidays/',
+      },
     };
-    const url = 'https://twitter.com';
+    const url = 'https://www.thetimes.co.uk';
+    const id = 'test-id';
 
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
+    render(<OffersEmbed element={mockElement} url={url} id={id} vendorName={""} />);
+
+    const travelOffersLink = document.querySelector(
+      'link[href="https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html"]'
+    );
+    const travelOffersComponent = document.querySelector(
+      'times-travel-offers-new'
+    );
+
+    expect(travelOffersLink).toBeInTheDocument();
+    expect(travelOffersLink).toHaveAttribute('rel', 'import');
+
+    expect(travelOffersComponent).toBeInTheDocument();
+    expect(travelOffersComponent).toHaveAttribute(
+      'src',
+      'https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html'
+    );
+    expect(travelOffersComponent).toHaveAttribute('offers', 'bsh');
+    expect(travelOffersComponent).toHaveAttribute('title', 'Bestselling holidays');
+    expect(travelOffersComponent).toHaveAttribute(
+      'description',
+      'Brought to you by Times Travel.'
     );
   });
 
-  it('renders blocked content message if consent for Twitter is not given', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback({ consentedVendors: [] }, true);
-    });
-
+  it('should not render the travel offers component when `isBestSellingHolidays` is false', () => {
     const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
+      attributes: {
+        src: 'https://www.thetimes.co.uk/travel/offers-component/other-holidays/',
+      },
     };
-    const url = 'https://twitter.com';
+    const url = 'https://www.thetimes.co.uk';
+    const id = 'test-id';
 
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
+    render(<OffersEmbed element={mockElement} url={url} id={id} vendorName={""} />);
+
+    const travelOffersLink = document.querySelector(
+      'link[href="https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html"]'
+    );
+    const travelOffersComponent = document.querySelector(
+      'times-travel-offers-new'
     );
 
-    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
-    expect(screen.getByText('privacy manager.')).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: /Enable cookies/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: /Allow cookies once/i })
-    ).toBeInTheDocument();
-  });
-
-  it('enables cookies and unblocks Twitter content', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback(
-        {
-          grants: {
-            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
-          }
-        },
-        true
-      );
-    });
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
-    );
-
-    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
-
-    expect(mockTcfApi).toHaveBeenCalledWith(
-      'getCustomVendorConsents',
-      2,
-      expect.any(Function)
-    );
-
-    expect(mockTcfApi).toHaveBeenCalledWith(
-      'postCustomConsent',
-      2,
-      expect.any(Function),
-      ['5fab0c31a22863611c5f8764'],
-      expect.any(Array),
-      []
-    );
-  });
-
-  it('allows cookies once and unblocks Twitter content temporarily', () => {
-    // Mock implementation for __tcfapi
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback(
-        {
-          grants: {
-            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
-          }
-        },
-        true
-      );
-    });
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
-    );
-
-    fireEvent.click(
-      screen.getByRole('button', { name: /Allow cookies once/i })
-    );
-
-    mockTcfApi.mockReset(); // Reset the mock to simulate a new page load without consent
-
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
-    );
-
-    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
-  });
-
-  it('opens privacy modal when available', () => {
-    const mockLoadPrivacyManagerModal = jest.fn();
-
-    window.__TIMES_CONFIG__ = {
-      sourcepoint: {
-        gdprMessageId: 'messageIdForGDPR'
-      }
-    };
-
-    (get as jest.Mock).mockReturnValue(mockLoadPrivacyManagerModal);
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
-    );
-
-    const privacyManagerLink = screen.getByText('privacy manager.');
-    fireEvent.click(privacyManagerLink);
-
-    expect(mockLoadPrivacyManagerModal).toHaveBeenCalledWith(
-      'messageIdForGDPR'
-    );
-  });
-
-  it('handles missing privacy modal gracefully', () => {
-    (get as jest.Mock).mockReturnValue(undefined);
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-
-    render(
-      <OffersEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-      />
-    );
-
-    const privacyManagerLink = screen.getByText('privacy manager.');
-    fireEvent.click(privacyManagerLink);
-
-    expect(global.console.warn).toHaveBeenCalledWith(
-      'Sourcepoint LoadPrivacyManagerModal is not available'
-    );
+    expect(travelOffersLink).not.toBeInTheDocument();
+    expect(travelOffersComponent).not.toBeInTheDocument();
   });
 });

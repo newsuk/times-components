@@ -271,28 +271,27 @@ const renderers = ({
           </InteractiveContainer>
         );
 
-      case "times-embed-iframe-max":
+      case "times-embed-iframe-max": {
         const src = element.attributes?.src || "";
         const isBestSellingHolidays = src.includes("best-selling-holidays");
-
-        console.log('isBestSellingHolidays', isBestSellingHolidays);
-        console.log('src', src);
 
         if (isBestSellingHolidays) {
           return (
             <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
               <div id={id}>
-              <OffersEmbed
-                element={element}
-                url={url}
-                vendorName="bsh"
-                id={attributes.id}
-              />
+                <OffersEmbed
+                  element={element}
+                  url={url}
+                  vendorName="bsh"
+                  id={attributes.id}
+                />
               </div>
             </InteractiveContainer>
           );
         }
-        
+        return null;
+      }
+
       // } else return null;
 
       //       case "times-embed-iframe-max":
