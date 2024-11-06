@@ -36,7 +36,6 @@ declare global {
 }
 
 export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
-  element,
   url,
   vendorName,
   id
@@ -44,35 +43,22 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
   const [allowedOnce, setAllowedOnce] = useState(false);
   const [isSocialAllowed, setIsSocialAllowed] = useState(false);
 
-  useEffect(() => {
-    checkVendorConsent(vendorName, setIsSocialAllowed);
-  }, [vendorName, allowedOnce, isSocialAllowed]);
+  useEffect(
+    () => {
+      checkVendorConsent(vendorName, setIsSocialAllowed);
+    },
+    [vendorName, allowedOnce, isSocialAllowed]
+  );
 
-  useEffect(() => {
-    const wrapperId = `interactiveWrapper-${id}`;
-    const interactiveWrapper = document.getElementById(wrapperId);
-    const isBestSellingHolidays = element?.attributes?.src?.includes("best-selling-holidays");
+  useEffect(
+    () => {
+      const wrapperId = `interactiveWrapper-${id}`;
+      const interactiveWrapper = document.getElementById(wrapperId);
 
-    if (isSocialAllowed || allowedOnce) {
-      if (isBestSellingHolidays) {
-        const travelOffersLink = document.createElement('link');
-        travelOffersLink.href = 'https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html';
-        travelOffersLink.rel = 'import';
-        document.head.appendChild(travelOffersLink);
-
-        const travelOffersComponent = document.createElement('times-travel-offers-new');
-        travelOffersComponent.setAttribute("src", "https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html");
-        travelOffersComponent.setAttribute("offers", "bsh");
-        travelOffersComponent.setAttribute("title", "You might also like");
-        travelOffersComponent.setAttribute("description", "Brought to you by Times Travel.");
-        travelOffersComponent.setAttribute("selectdata", '[{"ID":35659,"title":"Angkor to the Bay"}]');
-        if (interactiveWrapper) {
-          interactiveWrapper.innerHTML = '';
-          interactiveWrapper.appendChild(travelOffersComponent);
-        }
-      } else {
+      if (isSocialAllowed || allowedOnce) {
         const twitterScript = document.createElement('link');
-        twitterScript.href = 'https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html';
+        twitterScript.href =
+          'https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html';
         twitterScript.rel = 'import';
         document.body.appendChild(twitterScript);
 
@@ -84,15 +70,18 @@ export const SocialMediaEmbed: React.FC<SocialEmbedProps> = ({
           interactiveWrapper.appendChild(twitterEmbed);
         }
       }
-    }
-  }, [isSocialAllowed, allowedOnce]);
+    },
+    [isSocialAllowed, allowedOnce]
+  );
 
   const allowCookiesOnce = () => {
     setAllowedOnce(true);
     setIsSocialAllowed(true);
   };
 
-  const handlePrivacyManagerClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handlePrivacyManagerClick = (
+    e: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     e.preventDefault();
     openPrivacyModal(
       ModalType.GDPR,
