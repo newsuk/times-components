@@ -39,7 +39,8 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
-  SocialMediaEmbed
+  SocialMediaEmbed,
+  OffersEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -280,12 +281,14 @@ const renderers = ({
         if (isBestSellingHolidays) {
           return (
             <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-              <SocialMediaEmbed
+              <div id={id}>
+              <OffersEmbed
                 element={element}
                 url={url}
                 vendorName="bsh"
                 id={attributes.id}
               />
+              </div>
             </InteractiveContainer>
           );
         }
