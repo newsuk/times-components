@@ -35,10 +35,7 @@ describe('checkVendorConsent', () => {
   it('calls setIsSocialEmbedAllowed with false if vendor consent is not found', () => {
     const mockVendorName: VendorName = 'twitter';
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
-      callback(
-        { consentedVendors: [{ name: 'Other Vendor' }] },
-        true
-      );
+      callback({ consentedVendors: [{ name: 'Other Vendor' }] }, true);
     });
 
     checkVendorConsent(mockVendorName, setIsSocialEmbedAllowed);
