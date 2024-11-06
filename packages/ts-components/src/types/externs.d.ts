@@ -24,6 +24,7 @@ declare module '@times-components/ts-slices' {
   export type SliceArticle = {
     id?: string;
     url?: string;
+    categoryPath?: string;
     label?: string;
     byline?: string;
     headline: string;
@@ -194,7 +195,6 @@ declare module '@times-components/provider' {
 declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
-  export const subscribeNewsletter: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {
