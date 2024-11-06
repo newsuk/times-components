@@ -15,7 +15,7 @@ describe('checkVendorConsent', () => {
   it('calls setIsSocialEmbedAllowed with true if vendor consent is found', () => {
     const mockVendorName: VendorName = 'twitter';
     // Mock window.__tcfapi function
-    (window as any).__tcfapi = jest.fn((callback) => {
+    (window as any).__tcfapi = jest.fn((command, version, callback) => {
       callback(
         { consentedVendors: [{ name: 'twitter' }] },
         true // success
@@ -34,7 +34,7 @@ describe('checkVendorConsent', () => {
 
   it('calls setIsSocialEmbedAllowed with false if vendor consent is not found', () => {
     const mockVendorName: VendorName = 'twitter';
-    (window as any).__tcfapi = jest.fn((callback) => {
+    (window as any).__tcfapi = jest.fn((command, version, callback) => {
       callback(
         { consentedVendors: [{ name: 'Other Vendor' }] },
         true
@@ -49,7 +49,7 @@ describe('checkVendorConsent', () => {
   it('logs an error message if fetching consent data fails', () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
     const mockVendorName: VendorName = 'twitter';
-    (window as any).__tcfapi = jest.fn((callback) => {
+    (window as any).__tcfapi = jest.fn((command, version, callback) => {
       callback(null, false); // indicate failure
     });
 
