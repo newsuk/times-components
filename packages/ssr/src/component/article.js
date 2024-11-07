@@ -40,6 +40,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isEntitlementFeatureEnabled
   } = data;
 
+  // eslint-disable-next-line
+  console.log("article data", { articleId, articleDataFromRender });
+
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
