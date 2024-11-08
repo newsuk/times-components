@@ -12,6 +12,11 @@ declare global {
       callback: (data: TcData, success: boolean) => void,
       listenerId?: number
     ) => void;
+    twttr?: {
+      widgets: {
+        load: (element?: HTMLElement) => void;
+      };
+    };
   }
 }
 
@@ -23,8 +28,9 @@ export type SocialMediaEmbedProps = {
 };
 
 export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
-  vendorName,
-  url
+  id,
+  url,
+  vendorName
 }) => {
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
   const [data, setData] = useState<TcData | null>(null);
@@ -70,23 +76,11 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     };
   }, []);
 
+  // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
   useEffect(
     () => {
-      let socialEmbedContainer = document.getElementsByClassName(
-        'social-embed'
-      )[0];
-
-      if (socialEmbedContainer) {
-        let script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'https://platform.twitter.com/widgets.js';
-
-        let link = document.createElement('a');
-        link.href = `${url}?ref_src=twsrc%5Etfw`;
-
-        socialEmbedContainer.appendChild(script);
-        socialEmbedContainer.appendChild(link);
+      if (isSocialEmbedAllowed && window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load();
       }
     },
     [isSocialEmbedAllowed]
@@ -98,7 +92,11 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
 
   return isSocialEmbedAllowed ? (
-    <blockquote className="social-embed" />
+    <div id={id}>
+      <blockquote className="twitter-tweet">
+        <a href={url} />
+      </blockquote>
+    </div>
   ) : (
     <BlockedEmbedMessage
       vendorName={vendorName}
