@@ -259,11 +259,11 @@ const renderers = ({
       case "twitter-embed":
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-              <SocialMediaEmbed
-                url={attributes.url}
-                vendorName="twitter"
-                id={id}
-              />
+            <SocialMediaEmbed
+              url={attributes.url}
+              vendorName="twitter"
+              id={id}
+            />
           </InteractiveContainer>
         );
 
