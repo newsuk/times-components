@@ -17,7 +17,7 @@ import { socialMediaVendors } from './helpers/socialMediaVendors';
 import { VendorName } from './types';
 import { modalType } from './constants';
 
-type BlockedEmbedMessageProps = {
+export type BlockedEmbedMessageProps = {
   vendorName: VendorName;
   setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
 };
