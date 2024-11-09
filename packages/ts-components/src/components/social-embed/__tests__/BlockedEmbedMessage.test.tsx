@@ -5,7 +5,6 @@ import {
   BlockedEmbedMessageProps
 } from '../BlockedEmbedMessage';
 import { enableCookies } from '../helpers/enableCookies';
-import { openPrivacyModal } from '../helpers/privacyModal';
 
 jest.mock('../helpers/enableCookies', () => ({
   enableCookies: jest.fn()
