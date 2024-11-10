@@ -35,61 +35,57 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
   const [data, setData] = useState<TcData | null>(null);
 
-  useEffect(() => {
-    if (window.__tcfapi) {
-      window.__tcfapi('addEventListener', 2, (tcData, success) => {
-        if (success && tcData.eventStatus === eventStatus.tcLoaded) {
-          setData({
-            cmpStatus: tcData.cmpStatus,
-            eventStatus: tcData.eventStatus,
-            listenerId: tcData.listenerId
-          });
-
-          checkVendorConsent(vendorName, setIsSocialEmbedAllowed);
-        }
-        if (success && tcData.eventStatus === eventStatus.userActionComplete) {
-          setData({
-            cmpStatus: tcData.cmpStatus,
-            eventStatus: tcData.eventStatus,
-            listenerId: tcData.listenerId
-          });
-
-          checkVendorConsent(vendorName, setIsSocialEmbedAllowed);
-        }
-      });
-    }
-
-    return () => {
-      if (window.__tcfapi && data && data.listenerId) {
-        window.__tcfapi(
-          'removeEventListener',
-          2,
-          success => {
-            if (success) {
-              // tslint:disable-next-line:no-console
-              console.log(success);
-            }
-          },
-          data.listenerId
-        );
-      }
-    };
-  }, []);
-
-  // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
   useEffect(
     () => {
+      if (window.__tcfapi) {
+        window.__tcfapi('addEventListener', 2, (tcData, success) => {
+          if (success && tcData.eventStatus === eventStatus.tcLoaded) {
+            setData({
+              cmpStatus: tcData.cmpStatus,
+              eventStatus: tcData.eventStatus,
+              listenerId: tcData.listenerId
+            });
+
+            setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
+          }
+          if (
+            success &&
+            tcData.eventStatus === eventStatus.userActionComplete
+          ) {
+            setData({
+              cmpStatus: tcData.cmpStatus,
+              eventStatus: tcData.eventStatus,
+              listenerId: tcData.listenerId
+            });
+
+            setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
+          }
+        });
+      }
+
+      // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
       if (isSocialEmbedAllowed && window.twttr && window.twttr.widgets) {
         window.twttr.widgets.load();
       }
+
+      return () => {
+        if (window.__tcfapi && data && data.listenerId) {
+          window.__tcfapi(
+            'removeEventListener',
+            2,
+            success => {
+              if (success) {
+                // tslint:disable-next-line:no-console
+                console.log(success);
+              }
+            },
+            data.listenerId
+          );
+        }
+      };
     },
     [isSocialEmbedAllowed]
   );
-
-  // tslint:disable-next-line:no-console
-  console.log('tcData', data);
-  // tslint:disable-next-line:no-console
-  console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
 
   return isSocialEmbedAllowed ? (
     <div id={id}>
