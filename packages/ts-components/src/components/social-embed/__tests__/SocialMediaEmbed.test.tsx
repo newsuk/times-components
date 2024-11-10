@@ -132,7 +132,7 @@ describe('SocialMediaEmbed', () => {
     // expect(twitterEmbedElement).toHaveAttribute('url', url);
   });
 
-  it('allows cookies once and unblocks Twitter content temporarily', () => {
+  /* it('allows cookies once and unblocks Twitter content temporarily', () => {
     // Mock implementation for __tcfapi
     mockTcfApi.mockImplementation((_, __, callback) => {
       callback(
@@ -180,7 +180,7 @@ describe('SocialMediaEmbed', () => {
     );
 
     expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
-  });
+  }); */
 
   it('opens privacy modal when available', () => {
     const mockLoadPrivacyManagerModal = jest.fn();

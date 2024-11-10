@@ -19,30 +19,28 @@ import { modalType } from './constants';
 
 export type BlockedEmbedMessageProps = {
   vendorName: VendorName;
-  setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
+  setIsAllowedOnce: Dispatch<SetStateAction<boolean>>;
 };
 
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   vendorName,
-  setIsSocialEmbedAllowed
+  setIsAllowedOnce
 }) => {
   // Allow cookies once - custom hook
   const allowCookiesOnce = () => {
     const vendorId = socialMediaVendors[vendorName].id;
-    const CONSENT_GRANTED_KEY = `consentGranted_${vendorId}`;
 
     // Check if consent has already been granted for this vendor
-    const consentAlreadyGranted =
-      sessionStorage.getItem(CONSENT_GRANTED_KEY) === 'true';
+    const consentAlreadyGranted = sessionStorage.getItem(vendorName) === 'true';
 
     if (consentAlreadyGranted) {
-      setIsSocialEmbedAllowed(true);
+      setIsAllowedOnce(true);
     }
 
     if (!window.__tcfapi) {
       // tslint:disable-next-line:no-console
       console.error('TCF API is not available!');
-      setIsSocialEmbedAllowed(false);
+      setIsAllowedOnce(false);
       return;
     }
 
@@ -56,45 +54,15 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
 
           if (vendorConsent) {
             // Store consent status to avoid future prompts during the session
-            sessionStorage.setItem(CONSENT_GRANTED_KEY, 'true');
-            setIsSocialEmbedAllowed(true);
-          } else {
-            if (!window.__tcfapi) {
-              // tslint:disable-next-line:no-console
-              console.error('TCF API is not available!');
-              setIsSocialEmbedAllowed(false);
-              return;
-            }
-
-            // Request consent via postCustomConsent
-            (window.__tcfapi as any)(
-              'postCustomConsent',
-              2,
-              (postConsentData: any, postSuccess: boolean) => {
-                if (postSuccess) {
-                  sessionStorage.setItem(CONSENT_GRANTED_KEY, 'true');
-                  // tslint:disable-next-line:no-console
-                  console.log('postConsentData', postConsentData);
-                  setIsSocialEmbedAllowed(true);
-                } else {
-                  // tslint:disable-next-line:no-console
-                  console.error(
-                    `Failed to obtain consent for vendor: ${vendorId}`
-                  );
-                  setIsSocialEmbedAllowed(false);
-                }
-              },
-              [vendorId],
-              Object.keys(data.grants[vendorId].purposeGrants),
-              []
-            );
+            sessionStorage.setItem(vendorName, 'true');
+            setIsAllowedOnce(true);
           }
         } else {
           // tslint:disable-next-line:no-console
           console.error(
             `Consent data for vendor ${vendorId} not available or request failed.`
           );
-          setIsSocialEmbedAllowed(false);
+          setIsAllowedOnce(false);
         }
       }
     );

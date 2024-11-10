@@ -34,6 +34,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
 }) => {
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
   const [data, setData] = useState<TcData | null>(null);
+  const [isAllowedOnce, setIsAllowedOnce] = useState(false);
 
   useEffect(
     () => {
@@ -87,6 +88,21 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     [isSocialEmbedAllowed]
   );
 
+  useEffect(
+    () => {
+      window.addEventListener('storage', e => {
+        // tslint:disable-next-line:no-console
+        console.log('event', e);
+        if (e.key === vendorName && e.newValue === 'true') {
+          setIsSocialEmbedAllowed(true);
+        } else {
+          setIsSocialEmbedAllowed(false);
+        }
+      });
+    },
+    [isAllowedOnce]
+  );
+
   return isSocialEmbedAllowed ? (
     <div id={id}>
       <blockquote className="twitter-tweet">
@@ -96,7 +112,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   ) : (
     <BlockedEmbedMessage
       vendorName={vendorName}
-      setIsSocialEmbedAllowed={setIsSocialEmbedAllowed}
+      setIsAllowedOnce={setIsAllowedOnce}
     />
   );
 };
