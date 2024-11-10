@@ -2,76 +2,61 @@ import { checkVendorConsent } from '../vendorConsent';
 import { VendorName } from '../../types';
 
 describe('checkVendorConsent', () => {
-  let setIsSocialEmbedAllowed: jest.Mock;
+  const mockVendorName: VendorName = 'twitter';
 
   beforeEach(() => {
-    setIsSocialEmbedAllowed = jest.fn();
+    // Reset the __tcfapi mock before each test
+    delete (window as any).__tcfapi;
   });
 
-  afterEach(() => {
-    jest.resetAllMocks();
-  });
-
-  it('calls setIsSocialEmbedAllowed with true if vendor consent is found', () => {
-    const mockVendorName: VendorName = 'twitter';
-    // Mock window.__tcfapi function
+  it('returns true if the vendor has given consent', () => {
+    // Mock __tcfapi to simulate vendor consent
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
       // tslint:disable-next-line:no-console
-      console.log('command, version', command, version);
-      callback(
-        { consentedVendors: [{ name: 'twitter' }] },
-        true // success
-      );
+      console.log(version);
+      if (command === 'getCustomVendorConsents') {
+        callback({ consentedVendors: [{ name: mockVendorName }] }, true);
+      }
     });
 
-    checkVendorConsent(mockVendorName, setIsSocialEmbedAllowed);
-
-    expect(setIsSocialEmbedAllowed).toHaveBeenCalledWith(true);
-    expect((window as any).__tcfapi).toHaveBeenCalledWith(
-      'getCustomVendorConsents',
-      2,
-      expect.any(Function)
-    );
+    const result = checkVendorConsent(mockVendorName);
+    expect(result).toBe(true);
   });
 
-  it('calls setIsSocialEmbedAllowed with false if vendor consent is not found', () => {
-    const mockVendorName: VendorName = 'twitter';
+  it('returns false if the vendor has not given consent', () => {
+    // Mock __tcfapi to simulate no consent given by vendor
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
       // tslint:disable-next-line:no-console
-      console.log('command, version', command, version);
-      callback({ consentedVendors: [{ name: 'Other Vendor' }] }, true);
+      console.log(version);
+      if (command === 'getCustomVendorConsents') {
+        callback({ consentedVendors: [{ name: 'otherVendor' }] }, true);
+      }
     });
 
-    checkVendorConsent(mockVendorName, setIsSocialEmbedAllowed);
-
-    expect(setIsSocialEmbedAllowed).toHaveBeenCalledWith(false);
+    const result = checkVendorConsent(mockVendorName);
+    expect(result).toBe(false);
   });
 
-  it('logs an error message if fetching consent data fails', () => {
+  it('returns false if __tcfapi is not available', () => {
+    const result = checkVendorConsent(mockVendorName);
+    expect(result).toBe(false);
+  });
+
+  it('logs an error and returns false on callback failure', () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-    const mockVendorName: VendorName = 'twitter';
+
     (window as any).__tcfapi = jest.fn((command, version, callback) => {
       // tslint:disable-next-line:no-console
-      console.log('command, version', command, version);
-      callback(null, false); // indicate failure
+      console.log(command, version);
+      callback(null, false);
     });
 
-    checkVendorConsent(mockVendorName, setIsSocialEmbedAllowed);
-
-    expect(setIsSocialEmbedAllowed).not.toHaveBeenCalled();
+    const result = checkVendorConsent(mockVendorName);
     expect(consoleSpy).toHaveBeenCalledWith(
       `Error fetching consent data or ${mockVendorName} embed not allowed`
     );
+    expect(result).toBe(false);
 
     consoleSpy.mockRestore();
-  });
-
-  it('does nothing if window.__tcfapi is undefined', () => {
-    delete (window as any).__tcfapi;
-    const mockVendorName: VendorName = 'twitter';
-
-    checkVendorConsent(mockVendorName, setIsSocialEmbedAllowed);
-
-    expect(setIsSocialEmbedAllowed).not.toHaveBeenCalled();
   });
 });
