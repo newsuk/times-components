@@ -28,44 +28,18 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
 }) => {
   // Allow cookies once - custom hook
   const allowCookiesOnce = () => {
-    const vendorId = socialMediaVendors[vendorName].id;
+    /* const vendorId = socialMediaVendors[vendorName].id; */
 
     // Check if consent has already been granted for this vendor
-    const consentAlreadyGranted = sessionStorage.getItem(vendorName) === 'true';
+    const consentAlreadyGranted = sessionStorage.getItem('consentedVendors');
 
     if (consentAlreadyGranted) {
       setIsAllowedOnce(true);
     }
 
-    if (!window.__tcfapi) {
-      // tslint:disable-next-line:no-console
-      console.error('TCF API is not available!');
-      setIsAllowedOnce(false);
-      return;
-    }
-
-    // Use __tcfapi to check and request consent if now previously granted
-    window.__tcfapi(
-      'getCustomVendorConsents',
-      2,
-      (data: any, success: boolean) => {
-        if (success && data && data.grants && data.grants[vendorId]) {
-          const vendorConsent = data.grants[vendorId].vendorGrant;
-
-          if (vendorConsent) {
-            // Store consent status to avoid future prompts during the session
-            sessionStorage.setItem(vendorName, 'true');
-            setIsAllowedOnce(true);
-          }
-        } else {
-          // tslint:disable-next-line:no-console
-          console.error(
-            `Consent data for vendor ${vendorId} not available or request failed.`
-          );
-          setIsAllowedOnce(false);
-        }
-      }
-    );
+    // Store consent status to avoid future prompts during the session
+    sessionStorage.setItem('consentedVendors', `['${vendorName}']`);
+    setIsAllowedOnce(true);
   };
 
   const handlePrivacyManagerClick = (e: MouseEvent<HTMLAnchorElement>) => {

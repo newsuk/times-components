@@ -11,7 +11,8 @@ import {
   WelcomeBanner,
   ArticleSidebar,
   UpdateButtonWithDelay,
-  Banner
+  Banner,
+  useConsent
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -93,6 +94,12 @@ const ArticleSkeleton = ({
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
+  const [
+    isSocialEmbedAllowed,
+    setIsSocialEmbedAllowed,
+    isAllowedOnce,
+    setIsAllowedOnce
+  ] = useConsent();
 
   const sidebarRef = useRef();
 
@@ -379,6 +386,12 @@ const ArticleSkeleton = ({
                         template={template}
                         isPreview={isPreview}
                         isLiveOrBreaking={isLiveOrBreaking}
+                        socialEmbed={{
+                          isSocialEmbedAllowed,
+                          setIsSocialEmbedAllowed,
+                          isAllowedOnce,
+                          setIsAllowedOnce
+                        }}
                       />
                     )}
                     {isLiveOrBreaking && (

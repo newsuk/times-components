@@ -120,3 +120,7 @@ export {
 } from './components/features-carousel/FeaturesCarousel';
 
 export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
+
+// Hooks
+export { useConsent } from './hooks/useConsent';
+export { UseSessionStorage } from './hooks/useSessionStorage';

@@ -1,4 +1,10 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, {
+  FC,
+  useEffect,
+  useState,
+  Dispatch,
+  SetStateAction
+} from 'react';
 import { BlockedEmbedMessage } from './BlockedEmbedMessage';
 import { checkVendorConsent } from './helpers/vendorConsent';
 import { eventStatus } from './constants';
@@ -25,16 +31,27 @@ export type SocialMediaEmbedProps = {
   url: string;
   vendorName: VendorName;
   id: string;
+  socialEmbed: {
+    isSocialEmbedAllowed: boolean;
+    setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
+    isAllowedOnce: boolean;
+    setIsAllowedOnce: Dispatch<SetStateAction<boolean>>;
+  };
 };
 
 export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   id,
   url,
-  vendorName
+  vendorName,
+  socialEmbed
 }) => {
-  const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState(false);
+  const {
+    isSocialEmbedAllowed,
+    setIsSocialEmbedAllowed,
+    isAllowedOnce,
+    setIsAllowedOnce
+  } = socialEmbed;
   const [data, setData] = useState<TcData | null>(null);
-  const [isAllowedOnce, setIsAllowedOnce] = useState(false);
 
   useEffect(
     () => {
@@ -64,11 +81,6 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
         });
       }
 
-      // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
-      if (isSocialEmbedAllowed && window.twttr && window.twttr.widgets) {
-        window.twttr.widgets.load();
-      }
-
       return () => {
         if (window.__tcfapi && data && data.listenerId) {
           window.__tcfapi(
@@ -90,20 +102,19 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
 
   useEffect(
     () => {
-      window.addEventListener('storage', e => {
-        // tslint:disable-next-line:no-console
-        console.log('event', e);
-        if (e.key === vendorName && e.newValue === 'true') {
-          setIsSocialEmbedAllowed(true);
-        } else {
-          setIsSocialEmbedAllowed(false);
-        }
-      });
+      // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
+      if (
+        (isSocialEmbedAllowed || isAllowedOnce) &&
+        window.twttr &&
+        window.twttr.widgets
+      ) {
+        window.twttr.widgets.load();
+      }
     },
-    [isAllowedOnce]
+    [isSocialEmbedAllowed, isAllowedOnce]
   );
 
-  return isSocialEmbedAllowed ? (
+  return isSocialEmbedAllowed || isAllowedOnce ? (
     <div id={id}>
       <blockquote className="twitter-tweet">
         <a href={url} />

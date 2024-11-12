@@ -103,7 +103,8 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  articleId
+  articleId,
+  socialEmbed
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -260,6 +261,7 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <SocialMediaEmbed
+              socialEmbed={socialEmbed}
               url={attributes.url}
               vendorName="twitter"
               id={id}
@@ -602,7 +604,8 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id: articleId
+  id: articleId,
+  socialEmbed
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -615,7 +618,8 @@ const ArticleBody = ({
       isLiveOrBreaking,
       articleId,
       section,
-      articleHeadline
+      articleHeadline,
+      socialEmbed
     })
   );
 
@@ -629,7 +633,15 @@ ArticleBody.propTypes = {
   ).isRequired,
   contextUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string,
-  section: PropTypes.string
+  section: PropTypes.string,
+  socialEmbed: PropTypes.objectOf(
+    PropTypes.shape({
+      isSocialEmbedAllowed: PropTypes.bool,
+      setIsSocialEmbedAllowed: PropTypes.func,
+      isAllowedOnce: PropTypes.bool,
+      setIsAllowedOnce: PropTypes.func
+    })
+  )
 };
 
 export { ArticleLink };
