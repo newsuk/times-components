@@ -1,228 +1,106 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
-import { SocialMediaEmbed } from '../SocialMediaEmbed';
-import '@testing-library/jest-dom';
-import get from 'lodash.get';
+import { render, screen, cleanup } from '@testing-library/react';
+import { SocialMediaEmbed, SocialMediaEmbedProps } from '../SocialMediaEmbed';
+import { BlockedEmbedMessage } from '../BlockedEmbedMessage';
+import { eventStatus } from '../constants';
+import { checkVendorConsent } from '../helpers/vendorConsent';
+import { TcData } from '../types';
+import '@testing-library/jest-dom/extend-expect';
 
-// Mocking external dependencies
-jest.mock('@times-components/interactive-wrapper', () =>
-  jest.fn(() => <div>InteractiveWrapper</div>)
-);
-jest.mock('lodash.get');
+jest.mock('../BlockedEmbedMessage', () => ({
+  BlockedEmbedMessage: jest.fn(() => <div>Blocked Embed Message</div>)
+}));
 
-const mockTcfApi = jest.fn();
+jest.mock('../helpers/vendorConsent', () => ({
+  checkVendorConsent: jest.fn()
+}));
 
-describe('SocialMediaEmbed', () => {
+describe('SocialMediaEmbed component', () => {
+  const defaultProps: SocialMediaEmbedProps = {
+    id: 'test-embed',
+    url: 'https://twitter.com/test/status/123',
+    vendorName: 'twitter',
+    socialEmbed: {
+      isSocialEmbedAllowed: false,
+      setIsSocialEmbedAllowed: jest.fn(),
+      isAllowedOnce: false,
+      setIsAllowedOnce: jest.fn()
+    }
+  };
+
   beforeEach(() => {
-    mockTcfApi.mockReset();
-    window.__tcfapi = mockTcfApi;
-
-    /* tslint:disable:no-empty */
-    jest.spyOn(global.console, 'log').mockImplementation(() => {});
-    /* tslint:disable:no-empty */
-    jest.spyOn(global.console, 'warn').mockImplementation(() => {});
+    (window as any).__tcfapi = jest.fn();
+    (window as any).twttr = {
+      widgets: {
+        load: jest.fn()
+      }
+    };
   });
 
   afterEach(() => {
-    jest.restoreAllMocks();
+    cleanup();
+    jest.clearAllMocks();
+    delete (window as any).__tcfapi;
+    delete (window as any).twttr;
   });
 
-  it('renders Twitter content if consent is given for Twitter', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback({ consentedVendors: [{ name: 'Twitter' }] }, true);
-    });
+  it('renders BlockedEmbedMessage when social embed is not allowed', () => {
+    render(<SocialMediaEmbed {...defaultProps} />);
 
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-    const mockSocialEmbed = {
-      isSocialEmbedAllowed: true,
-      setIsSocialEmbedAllowed: jest.fn(),
-      isAllowedOnce: false,
-      setIsAllowedOnce: jest.fn()
-    };
-
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-        socialEmbed={mockSocialEmbed}
-      />
+    expect(screen.getByText('Blocked Embed Message')).toBeInTheDocument();
+    expect(BlockedEmbedMessage).toHaveBeenCalledWith(
+      expect.objectContaining({
+        vendorName: defaultProps.vendorName,
+        setIsAllowedOnce: defaultProps.socialEmbed.setIsAllowedOnce
+      }),
+      {}
     );
-
-    // const twitterEmbedElement = document.querySelector('twitter-embed');
-    // expect(twitterEmbedElement).toHaveAttribute('url', url);
   });
 
-  it('renders blocked content message if consent for Twitter is not given', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback({ consentedVendors: [] }, true);
-    });
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-    const mockSocialEmbed = {
-      isSocialEmbedAllowed: false,
-      setIsSocialEmbedAllowed: jest.fn(),
-      isAllowedOnce: false,
-      setIsAllowedOnce: jest.fn()
-    };
-
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-        socialEmbed={mockSocialEmbed}
-      />
-    );
-
-    expect(screen.getByText('X (Twitter) content blocked')).toBeInTheDocument();
-    expect(screen.getByText('privacy manager.')).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: /Enable cookies/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: /Allow cookies once/i })
-    ).toBeInTheDocument();
-  });
-
-  /* it('enables cookies and unblocks Twitter content', () => {
-    mockTcfApi.mockImplementation((_, __, callback) => {
-      callback(
-        {
-          grants: {
-            '5fab0c31a22863611c5f8764': { purposeGrants: { '1': true } }
-          }
-        },
-        true
-      );
-    });
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-    const mockSocialEmbed = {
-      isSocialEmbedAllowed: true,
-      setIsSocialEmbedAllowed: jest.fn(),
-      isAllowedOnce: false,
-      setIsAllowedOnce: jest.fn()
-    };
-
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-        socialEmbed={mockSocialEmbed}
-      />
-    );
-
-    fireEvent.click(screen.getByRole('button', { name: /Enable cookies/i }));
-
-    expect(mockTcfApi).toHaveBeenCalledWith(
-      'getCustomVendorConsents',
-      2,
-      expect.any(Function)
-    );
-
-    expect(mockTcfApi).toHaveBeenCalledWith(
-      'postCustomConsent',
-      2,
-      expect.any(Function),
-      ['5fab0c31a22863611c5f8764'],
-      expect.any(Array),
-      []
-    );
-  }); */
-
-  it('opens privacy modal when available', () => {
-    const mockLoadPrivacyManagerModal = jest.fn();
-
-    window.__TIMES_CONFIG__ = {
-      sourcepoint: {
-        gdprMessageId: 'messageIdForGDPR'
+  it('renders the Twitter embed when social embed is allowed', () => {
+    const allowedProps = {
+      ...defaultProps,
+      socialEmbed: {
+        ...defaultProps.socialEmbed,
+        isSocialEmbedAllowed: true
       }
     };
 
-    (get as jest.Mock).mockReturnValue(mockLoadPrivacyManagerModal);
+    render(<SocialMediaEmbed {...allowedProps} />);
 
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
-    };
-    const url = 'https://twitter.com';
-    const mockSocialEmbed = {
-      isSocialEmbedAllowed: false,
-      setIsSocialEmbedAllowed: jest.fn(),
-      isAllowedOnce: false,
-      setIsAllowedOnce: jest.fn()
-    };
-
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-        socialEmbed={mockSocialEmbed}
-      />
-    );
-
-    const privacyManagerLink = screen.getByText('privacy manager.');
-    fireEvent.click(privacyManagerLink);
-
-    expect(mockLoadPrivacyManagerModal).toHaveBeenCalledWith(
-      'messageIdForGDPR'
-    );
+    expect(screen.getByRole('link')).toHaveAttribute('href', defaultProps.url);
   });
 
-  it('handles missing privacy modal gracefully', () => {
-    (get as jest.Mock).mockReturnValue(undefined);
-
-    const mockElement = {
-      attributes: {},
-      value: 'Twitter content',
-      key: 'twitter-embed'
+  it('calls checkVendorConsent and sets consent on tcLoaded event', () => {
+    const tcData: TcData = {
+      cmpStatus: 'loaded',
+      eventStatus: eventStatus.tcLoaded,
+      listenerId: 1
     };
-    const url = 'https://twitter.com';
-    const mockSocialEmbed = {
-      isSocialEmbedAllowed: false,
-      setIsSocialEmbedAllowed: jest.fn(),
-      isAllowedOnce: false,
-      setIsAllowedOnce: jest.fn()
+    const setIsSocialEmbedAllowed = jest.fn();
+    const updatedProps = {
+      ...defaultProps,
+      socialEmbed: {
+        ...defaultProps.socialEmbed,
+        setIsSocialEmbedAllowed
+      }
     };
+    (checkVendorConsent as jest.Mock).mockReturnValue(true);
 
-    render(
-      <SocialMediaEmbed
-        element={mockElement}
-        url={url}
-        vendorName={'twitter'}
-        id={'222'}
-        socialEmbed={mockSocialEmbed}
-      />
-    );
+    render(<SocialMediaEmbed {...updatedProps} />);
 
-    const privacyManagerLink = screen.getByText('privacy manager.');
-    fireEvent.click(privacyManagerLink);
+    const [callback] = (window.__tcfapi as jest.Mock).mock.calls[0].slice(2);
+    callback(tcData, true);
 
-    expect(global.console.warn).toHaveBeenCalledWith(
-      'Sourcepoint LoadPrivacyManagerModal is not available'
-    );
+    expect(checkVendorConsent).toHaveBeenCalledWith(defaultProps.vendorName);
+    expect(setIsSocialEmbedAllowed).toHaveBeenCalledWith(true);
+  });
+
+  it('does not trigger Twitter widget load if twttr is undefined', () => {
+    delete (window as any).twttr;
+
+    render(<SocialMediaEmbed {...defaultProps} />);
+
+    expect(window.twttr).toBeUndefined();
   });
 });

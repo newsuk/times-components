@@ -1,10 +1,4 @@
-import React, {
-  FC,
-  useEffect,
-  useState,
-  Dispatch,
-  SetStateAction
-} from 'react';
+import React, { FC, useEffect, Dispatch, SetStateAction } from 'react';
 import { BlockedEmbedMessage } from './BlockedEmbedMessage';
 import { checkVendorConsent } from './helpers/vendorConsent';
 import { eventStatus } from './constants';
@@ -51,37 +45,22 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     isAllowedOnce,
     setIsAllowedOnce
   } = socialEmbed;
-  const [data, setData] = useState<TcData | null>(null);
 
   useEffect(
     () => {
       if (window.__tcfapi) {
         window.__tcfapi('addEventListener', 2, (tcData, success) => {
-          if (success && tcData.eventStatus === eventStatus.tcLoaded) {
-            setData({
-              cmpStatus: tcData.cmpStatus,
-              eventStatus: tcData.eventStatus,
-              listenerId: tcData.listenerId
-            });
-
-            setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
-          }
           if (
             success &&
-            tcData.eventStatus === eventStatus.userActionComplete
+            (tcData.eventStatus === eventStatus.tcLoaded ||
+              tcData.eventStatus === eventStatus.userActionComplete)
           ) {
-            setData({
-              cmpStatus: tcData.cmpStatus,
-              eventStatus: tcData.eventStatus,
-              listenerId: tcData.listenerId
-            });
-
             setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
           }
         });
       }
 
-      return () => {
+      /* return () => {
         if (window.__tcfapi && data && data.listenerId) {
           window.__tcfapi(
             'removeEventListener',
@@ -95,7 +74,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
             data.listenerId
           );
         }
-      };
+      }; */
     },
     [isSocialEmbedAllowed]
   );
