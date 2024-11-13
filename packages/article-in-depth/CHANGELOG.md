@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.91.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.90.13...@times-components/article-in-depth@3.91.0) (2024-11-13)
+
+
+### Features
+
+* **TMW-000:** Header in-depth update ([#3981](https://github.com/newsuk/times-components/issues/3981)) ([9c46ca6](https://github.com/newsuk/times-components/commit/9c46ca686dc67f4f5ceb2e8d840956b0ebe60b80))
+
+
+
+
+
 ## [3.90.13](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.90.12...@times-components/article-in-depth@3.90.13) (2024-11-05)
 
 **Note:** Version bump only for package @times-components/article-in-depth
