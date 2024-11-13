@@ -31,7 +31,7 @@ export const FlagsContainer = styled(TcView)`
 
 export const HeaderContainer = styled(TcView)`
   ${props => props.styles && props.styles} order: 2;
-  padding-top: 61px 10px 45px;
+  padding: 61px 10px 45px;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
