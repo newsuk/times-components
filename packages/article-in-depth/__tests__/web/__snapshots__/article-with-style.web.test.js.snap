@@ -388,6 +388,7 @@ exports[`full article with style 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  padding-top: 61px 10px 45px;
 }
 
 .c6 {
@@ -484,8 +485,6 @@ exports[`full article with style 1`] = `
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -1447,6 +1446,7 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  padding-top: 61px 10px 45px;
 }
 
 .c6 {
@@ -1544,8 +1544,6 @@ exports[`full article with style in the culture magazine 1`] = `
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -2507,6 +2505,7 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  padding-top: 61px 10px 45px;
 }
 
 .c6 {
@@ -2605,8 +2604,6 @@ exports[`full article with style in the style magazine 1`] = `
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -3568,6 +3565,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  padding-top: 61px 10px 45px;
 }
 
 .c6 {
@@ -3665,8 +3663,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
