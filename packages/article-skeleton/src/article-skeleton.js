@@ -101,6 +101,20 @@ const ArticleSkeleton = ({
     setIsAllowedOnce
   ] = useConsent();
 
+  useEffect(
+    () => {
+      // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
+      if (
+        (isSocialEmbedAllowed || isAllowedOnce) &&
+        window.twttr &&
+        window.twttr.widgets
+      ) {
+        window.twttr.widgets.load();
+      }
+    },
+    [isSocialEmbedAllowed, isAllowedOnce]
+  );
+
   const sidebarRef = useRef();
 
   const handleScroll = () => {

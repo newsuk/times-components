@@ -1,10 +1,16 @@
+import { Dispatch, SetStateAction } from 'react';
 import { socialMediaVendors } from './socialMediaVendors';
 
-export const enableCookies = (vendorName: string) => {
+export const enableCookies = (
+  vendorName: string,
+  setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>
+) => {
   const onCustomConsent = (_: any, success: boolean) => {
     if (success) {
+      setIsSocialEmbedAllowed(true);
       return true;
     }
+    setIsSocialEmbedAllowed(false);
     return null;
   };
 
@@ -27,6 +33,7 @@ export const enableCookies = (vendorName: string) => {
         } else {
           // tslint:disable-next-line:no-console
           console.error(`${vendorName} vendor consent not available:`, data);
+          setIsSocialEmbedAllowed(false);
         }
       }
     );

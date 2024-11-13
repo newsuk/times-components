@@ -17,10 +17,12 @@ jest.mock('../helpers/getVendorTitle', () => ({
 describe('BlockedEmbedMessage', () => {
   const vendorName = 'facebook' as VendorName;
   const setIsAllowedOnce = jest.fn();
+  const setIsSocialEmbedAllowed = jest.fn();
 
   const defaultProps: BlockedEmbedMessageProps = {
     vendorName,
-    setIsAllowedOnce
+    setIsAllowedOnce,
+    setIsSocialEmbedAllowed
   };
 
   beforeEach(() => {
@@ -32,7 +34,10 @@ describe('BlockedEmbedMessage', () => {
     render(<BlockedEmbedMessage {...defaultProps} />);
     const enableButton = screen.getByText('Enable cookies');
     fireEvent.click(enableButton);
-    expect(enableCookies).toHaveBeenCalledWith(vendorName);
+    expect(enableCookies).toHaveBeenCalledWith(
+      vendorName,
+      setIsSocialEmbedAllowed
+    );
   });
 
   it('calls allowCookiesOnce when Allow cookies once button is clicked and updates session storage', () => {

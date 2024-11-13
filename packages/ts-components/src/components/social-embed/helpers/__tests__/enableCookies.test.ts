@@ -9,6 +9,7 @@ jest.mock('../socialMediaVendors', () => ({
 
 describe('enableCookies', () => {
   const mockVendorId = 'facebookId';
+  const setIsSocialEmbedAllowed = jest.fn();
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -27,7 +28,7 @@ describe('enableCookies', () => {
       );
     });
 
-    enableCookies('facebook');
+    enableCookies('facebook', setIsSocialEmbedAllowed);
     expect(window.__tcfapi).toHaveBeenCalledWith(
       'getCustomVendorConsents',
       2,
@@ -50,7 +51,7 @@ describe('enableCookies', () => {
       }
     });
 
-    enableCookies('facebook');
+    enableCookies('facebook', setIsSocialEmbedAllowed);
 
     expect(window.__tcfapi).toHaveBeenCalledWith(
       'postCustomConsent',
@@ -71,7 +72,7 @@ describe('enableCookies', () => {
       callback(null, false); // Simulate unsuccessful __tcfapi call
     });
 
-    enableCookies('facebook');
+    enableCookies('facebook', setIsSocialEmbedAllowed);
 
     // tslint:disable-next-line:no-console
     expect(console.error).toHaveBeenCalledWith(
@@ -83,7 +84,7 @@ describe('enableCookies', () => {
   it('should not call __tcfapi if __tcfapi is not defined', () => {
     delete (window as any).__tcfapi;
 
-    enableCookies('facebook');
+    enableCookies('facebook', setIsSocialEmbedAllowed);
 
     expect(window.__tcfapi).toBeUndefined();
   });

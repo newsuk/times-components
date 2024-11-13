@@ -24,5 +24,8 @@ export const checkVendorConsent = (vendorName: VendorName): boolean => {
     );
   }
 
+  // tslint:disable-next-line:no-console
+  console.log('isSocialVendorAllowed', isSocialVendorAllowed);
+
   return isSocialVendorAllowed;
 };

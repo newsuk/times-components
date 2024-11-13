@@ -20,13 +20,14 @@ import { modalType } from './constants';
 export type BlockedEmbedMessageProps = {
   vendorName: VendorName;
   setIsAllowedOnce: Dispatch<SetStateAction<boolean>>;
+  setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
 };
 
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   vendorName,
-  setIsAllowedOnce
+  setIsAllowedOnce,
+  setIsSocialEmbedAllowed
 }) => {
-  // Allow cookies once - custom hook
   const allowCookiesOnce = () => {
     /* const vendorId = socialMediaVendors[vendorName].id; */
 
@@ -67,7 +68,9 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
           privacy manager.
         </LinkPrivacyManager>
       </Paragraph>
-      <EnableButton onClick={() => enableCookies(vendorName)}>
+      <EnableButton
+        onClick={() => enableCookies(vendorName, setIsSocialEmbedAllowed)}
+      >
         Enable cookies
       </EnableButton>
       <AllowButton onClick={() => allowCookiesOnce()}>

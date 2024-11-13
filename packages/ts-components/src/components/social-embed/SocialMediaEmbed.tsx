@@ -50,11 +50,15 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     () => {
       if (window.__tcfapi) {
         window.__tcfapi('addEventListener', 2, (tcData, success) => {
+          // tslint:disable-next-line:no-console
+          console.log('success, tcData', success, tcData);
           if (
             success &&
             (tcData.eventStatus === eventStatus.tcLoaded ||
               tcData.eventStatus === eventStatus.userActionComplete)
           ) {
+            // tslint:disable-next-line:no-console
+            console.log('PROSLO DO setIsSocialEmbedAllowed');
             setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
           }
         });
@@ -79,20 +83,6 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     [isSocialEmbedAllowed]
   );
 
-  useEffect(
-    () => {
-      // Trigger Twitter embed load when isSocialEmbedAllowed switches to true
-      if (
-        (isSocialEmbedAllowed || isAllowedOnce) &&
-        window.twttr &&
-        window.twttr.widgets
-      ) {
-        window.twttr.widgets.load();
-      }
-    },
-    [isSocialEmbedAllowed, isAllowedOnce]
-  );
-
   return isSocialEmbedAllowed || isAllowedOnce ? (
     <div id={id}>
       <blockquote className="twitter-tweet">
@@ -103,6 +93,7 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     <BlockedEmbedMessage
       vendorName={vendorName}
       setIsAllowedOnce={setIsAllowedOnce}
+      setIsSocialEmbedAllowed={setIsSocialEmbedAllowed}
     />
   );
 };
