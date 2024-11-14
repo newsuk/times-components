@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.110.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.0...@times-components/ts-components@1.110.1) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.110.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.109.0...@times-components/ts-components@1.110.0) (2024-11-05)
+
+
+### Features
+
+* **TMRS-488:** retrieve categoryPath - read more slice  ([#3977](https://github.com/newsuk/times-components/issues/3977)) ([dfa47aa](https://github.com/newsuk/times-components/commit/dfa47aa4baf85b1a5083bb1d6160430fc395843f))
+
+
+
+
+
 # [1.109.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.108.0...@times-components/ts-components@1.109.0) (2024-10-28)
 
 

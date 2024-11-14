@@ -23,7 +23,7 @@ const expectedArticles = [
     summary:
       'How is your bank balance? Even if the cost of living crisis doesn’t constitute a crisis for you, you’ll have noticed that you’re suddenly paying more for  and what felt reasonable may now...',
     url:
-      'https://www.thetimes.co.uk/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6'
+      'l1/l2/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6'
   },
   {
     byline: '',
@@ -42,8 +42,7 @@ const expectedArticles = [
     label: 'Obituary',
     summary:
       'On August 1, 1981, Major Ian Crooke, the operations officer of 22 Special Air Service in Hereford, received a telephone call from London. A Marxist coup d’état was taking place in the former British...',
-    url:
-      'https://www.thetimes.co.uk/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp'
+    url: 'l1/l2/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp'
   },
   {
     byline: 'Patrick Maguire',
@@ -62,8 +61,7 @@ const expectedArticles = [
     label: 'RED BOX | PATRICK MAGUIRE',
     summary:
       'Worse than May. Worse than Major. As bad as Thatcher. of his own MPs, far more than even the most pessimistic whip predicted this time yesterday. Can Boris...',
-    url:
-      'https://www.thetimes.co.uk/article/is-the-party-over-for-boris-johnson-k8s0jxv6r'
+    url: 'l1/l2/article/is-the-party-over-for-boris-johnson-k8s0jxv6r'
   }
 ];
 

@@ -24,6 +24,7 @@ declare module '@times-components/ts-slices' {
   export type SliceArticle = {
     id?: string;
     url?: string;
+    categoryPath?: string;
     label?: string;
     byline?: string;
     headline: string;
