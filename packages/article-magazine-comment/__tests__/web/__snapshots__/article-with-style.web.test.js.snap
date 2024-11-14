@@ -503,8 +503,6 @@ exports[`full article with style 1`] = `
   line-height: 26px;
   color: #333333;
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -1584,8 +1582,6 @@ exports[`full article with style in the culture magazine 1`] = `
   line-height: 26px;
   color: #333333;
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -2666,8 +2662,6 @@ exports[`full article with style in the style magazine 1`] = `
   line-height: 26px;
   color: #333333;
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -3747,8 +3741,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   line-height: 26px;
   color: #333333;
   margin-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
 }
 

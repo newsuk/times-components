@@ -79,8 +79,6 @@ const sharedStyles = {
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2),
     textAlign: "center"
   }
 };

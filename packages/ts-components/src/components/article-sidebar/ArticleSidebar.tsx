@@ -62,7 +62,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             }
             className="trigger-card-link"
           >
-            <PuzzleImage src={imgUrl} alt="Puzzle thumbnail" />
+            <PuzzleImage src={imgUrl} alt="Puzzle category thumbnail" />
             <ItemTitle>{title}</ItemTitle>
           </PuzzleContainer>
           <Divider />
