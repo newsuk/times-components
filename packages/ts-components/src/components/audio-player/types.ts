@@ -18,6 +18,7 @@ export interface StickyAudioPlayerProps {
   onVolumeChange?: (volume: number) => void;
   onPlaybackRateChange?: (rate: number) => void;
   onSeek?: (time: number) => void;
+  onClose?: () => void;
 }
 
 export interface CollapseIconProps {
@@ -54,6 +55,7 @@ export interface PlaybackControlsProps {
   allowPlaybackRateChange: boolean;
   isSpeedModalOpen: boolean;
   setIsSpeedModalOpen: (open: boolean) => void;
+  isMobile?: boolean
 }
 
 export interface VolumeControlProps {

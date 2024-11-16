@@ -1,11 +1,11 @@
 import React from "react";
 
-const PlayIcon = () => (
+const PlayIcon = ({fill}) => (
   <svg
     width="24"
     height="25"
     viewBox="0 0 24 25"
-    fill="white"
+    fill={fill}
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Play Icon"
     role="img"
@@ -21,12 +21,12 @@ const PlayIcon = () => (
     >
       <path
         d="M8 5.66699V19.667L19 12.667L8 5.66699Z"
-        fill="white"
+        fill={fill}
       />
     </mask>
 
     <g mask="url(#mask0_4528_3091)">
-      <rect y="0.666992" width="24" height="24" fill="white" />
+      <rect y="0.666992" width="24" height="24" fill={fill} />
     </g>
   </svg>
 );

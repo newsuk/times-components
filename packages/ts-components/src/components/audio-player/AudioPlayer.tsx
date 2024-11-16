@@ -18,7 +18,21 @@ import {
   SpeedButton,
   PlayPauseButton,
   SpeedOptionsContainer,
-  GlobalStyle,
+  TabletDesktopWrapper,
+  TabletDesktopInnerWrapper,
+  TabletDesktopPlayPauseButton,
+  TabletDesktopStatusText,
+  TabletDesktopVolumeControlContainer,
+  TabletDesktopVolumeButton,
+  TabletDesktopVolumeSlider,
+  TabletDesktopTimeDisplay,
+  TabletDesktopSeekBar,
+  TabletDesktopSpeedButton,
+  TabletDesktopCloseButton,
+  LeftControls,
+  CenterControls,
+  RightControls,
+  SpeedButtonContainer,
 } from './styles';
 import {
   StickyAudioPlayerProps,
@@ -30,7 +44,6 @@ import {
   VolumeControlProps,
 } from './types';
 
-
 import {
   IconCheck,
   PlayerModalIcon,
@@ -38,6 +51,8 @@ import {
   PlayerFront,
   PlayIcon,
   PauseIcon,
+  IconVolume,
+  AudioCloseIcon,
 } from '@times-components/icons';
 
 // Helper function to format time in mm:ss format
@@ -128,6 +143,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
   allowPlaybackRateChange,
   isSpeedModalOpen,
   setIsSpeedModalOpen,
+  isMobile,
 }) => {
   const toggleSpeedModal = () => {
     if (allowPlaybackRateChange) {
@@ -158,7 +174,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
             disabled={!allowTogglePlay}
             aria-label={isPlaying ? 'Pause' : 'Play'}
           >
-            {isPlaying ? <PauseIcon /> : <PlayIcon />}
+            {isPlaying ? <PauseIcon fill="white" /> : <PlayIcon fill="white" />}
           </PlayPauseButton>
           <ControlButton
             onClick={forward}
@@ -176,7 +192,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
         </SpeedButton>
       </Controls>
       {isSpeedModalOpen && (
-        <SpeedSelectModal>
+        <SpeedSelectModal isMobile={isMobile}>
           <SpeedOptionsContainer>
             {speedOptions.map((option) => (
               <SpeedOptionItem
@@ -189,7 +205,10 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
               </SpeedOptionItem>
             ))}
           </SpeedOptionsContainer>
-          <CloseButton onClick={() => setIsSpeedModalOpen(false)}>
+          <CloseButton
+            isMobile={isMobile}
+            onClick={() => setIsSpeedModalOpen(false)}
+          >
             Close
           </CloseButton>
         </SpeedSelectModal>
@@ -223,7 +242,7 @@ const VolumeControl: FC<VolumeControlProps> = ({
   );
 };
 
-// Main AudioPlayer Component
+// Main AudioPlayer Component with Responsive Wrapper
 export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   src,
   title = 'Audio Title',
@@ -244,15 +263,40 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   onVolumeChange,
   onPlaybackRateChange,
   onSeek,
+  onClose,
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = useState<boolean>(isPlayingProp ?? autoPlay);
-  const [isExpanded, setIsExpanded] = useState<boolean>(isExpandedProp ?? true);
+  const [isPlaying, setIsPlaying] = useState<boolean>(
+    isPlayingProp ?? autoPlay
+  );
+  const [isExpanded, setIsExpanded] = useState<boolean>(
+    isExpandedProp ?? true
+  );
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [volume, setVolume] = useState<number>(initialVolume);
   const [speed, setSpeed] = useState<number>(playbackRate);
   const [isSpeedModalOpen, setIsSpeedModalOpen] = useState<boolean>(false);
+  const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(
+    false
+  );
+
+  // State to track if the view is mobile or tablet/desktop
+  const [isMobile, setIsMobile] = useState<boolean>(
+    typeof window !== 'undefined' ? window.innerWidth <= 520 : true
+  );
+
+  // Effect to handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth <= 520);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -352,10 +396,145 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     onPlaybackRateChange && onPlaybackRateChange(rate);
   };
 
-  return (
-    <AudioPlayerContainer isExpanded={isExpanded} isModalOpen={isSpeedModalOpen}>
-      <GlobalStyle />
+  const speedOptions = [0.5, 0.8, 1.0, 1.2, 1.5, 2];
 
+  const toggleSpeedModal = () => {
+    if (allowPlaybackRateChange) {
+      setIsSpeedModalOpen(!isSpeedModalOpen);
+    }
+  };
+
+  const handleSpeedSelect = (selectedSpeed: number) => {
+    handleSpeedChange(selectedSpeed);
+    setIsSpeedModalOpen(false);
+  };
+
+  // If not mobile, render the tablet/desktop player
+  if (!isMobile) {
+    return (
+      <TabletDesktopWrapper>
+        <TabletDesktopInnerWrapper>
+          <audio
+            ref={audioRef}
+            src={src}
+            autoPlay={autoPlay}
+            onTimeUpdate={handleTimeUpdate}
+            onLoadedMetadata={handleLoadedMetadata}
+            onEnded={onEnded}
+          />
+          <LeftControls>
+            <TabletDesktopPlayPauseButton
+              onClick={togglePlayPause}
+              disabled={!allowTogglePlay}
+              aria-label={isPlaying ? 'Pause' : 'Play'}
+            >
+              {isPlaying ? <PauseIcon /> : <PlayIcon />}
+            </TabletDesktopPlayPauseButton>
+            <TabletDesktopStatusText>
+              {isPlaying ? 'Playing' : 'Paused'}
+            </TabletDesktopStatusText>
+            {allowVolumeChange && (
+              <TabletDesktopVolumeControlContainer>
+                <TabletDesktopVolumeButton
+                  onClick={() =>
+                    setIsVolumeSliderVisible(!isVolumeSliderVisible)
+                  }
+                  aria-label="Volume Control"
+                >
+                  <IconVolume />
+                </TabletDesktopVolumeButton>
+                {isVolumeSliderVisible && (
+                  <TabletDesktopVolumeSlider
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value={volume}
+                    onChange={(e) =>
+                      handleVolumeChange(parseFloat(e.target.value))
+                    }
+                  />
+                )}
+              </TabletDesktopVolumeControlContainer>
+            )}
+          </LeftControls>
+
+          <CenterControls>
+            <TabletDesktopTimeDisplay>
+              <span>{formatTime(currentTime)}</span>
+            </TabletDesktopTimeDisplay>
+
+            <TabletDesktopSeekBar
+              type="range"
+              min="0"
+              max={duration}
+              value={currentTime}
+              onChange={(e) => handleSeek(parseFloat(e.target.value))}
+              disabled={!allowSeek}
+              aria-label="Seek Bar"
+              progress={duration > 0 ? (currentTime / duration) * 100 : 0}
+            />
+
+            <TabletDesktopTimeDisplay>
+              <span>{formatTime(duration)}</span>
+            </TabletDesktopTimeDisplay>
+          </CenterControls>
+
+          <RightControls>
+            {allowPlaybackRateChange && (
+              <SpeedButtonContainer>
+                <TabletDesktopSpeedButton
+                  onClick={toggleSpeedModal}
+                  aria-label="Change Playback Speed"
+                >
+                  Speed
+                </TabletDesktopSpeedButton>
+
+                {isSpeedModalOpen && (
+                  <SpeedSelectModal isMobile={isMobile}>
+                    <SpeedOptionsContainer>
+                      {speedOptions.map((option) => (
+                        <SpeedOptionItem
+                          key={option}
+                          selected={option === speed}
+                          onClick={() => handleSpeedSelect(option)}
+                        >
+                          <span>{option}x</span>
+                          {option === speed && <IconCheck />}
+                        </SpeedOptionItem>
+                      ))}
+                    </SpeedOptionsContainer>
+                    <CloseButton
+                      isMobile={isMobile}
+                      onClick={() => setIsSpeedModalOpen(false)}
+                    >
+                      Close
+                    </CloseButton>
+                  </SpeedSelectModal>
+                )}
+              </SpeedButtonContainer>
+            )}
+
+            {allowExpandCollapse && (
+              <TabletDesktopCloseButton
+                onClick={onClose}
+                aria-label="Close Player"
+              >
+                <AudioCloseIcon fill="black" />
+              </TabletDesktopCloseButton>
+            )}
+          </RightControls>
+        </TabletDesktopInnerWrapper>
+      </TabletDesktopWrapper>
+    );
+  }
+
+  // Else, render the mobile AudioPlayer
+  return (
+    <AudioPlayerContainer
+      isExpanded={isExpanded}
+      isModalOpen={isSpeedModalOpen}
+    >
       <audio
         ref={audioRef}
         src={src}
@@ -371,41 +550,31 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
         allowExpandCollapse={allowExpandCollapse}
       />
 
-      {isExpanded && <TitleScroller title={title} />}
-
       {isExpanded && (
-        <SeekBar
-          currentTime={currentTime}
-          duration={duration}
-          onSeek={handleSeek}
-          allowSeek={allowSeek}
-        />
-      )}
-
-      {isExpanded && <TimeDisplay currentTime={currentTime} duration={duration} />}
-
-      {isExpanded && (
-        <PlaybackControls
-          isPlaying={isPlaying}
-          togglePlayPause={togglePlayPause}
-          rewind={handleRewind}
-          forward={handleForward}
-          speed={speed}
-          onSpeedChange={handleSpeedChange}
-          allowTogglePlay={allowTogglePlay}
-          allowSeek={allowSeek}
-          allowPlaybackRateChange={allowPlaybackRateChange}
-          isSpeedModalOpen={isSpeedModalOpen}
-          setIsSpeedModalOpen={setIsSpeedModalOpen}
-        />
-      )}
-
-      {isExpanded && (
-        <VolumeControl
-          volume={volume}
-          onVolumeChange={handleVolumeChange}
-          allowVolumeChange={allowVolumeChange}
-        />
+        <>
+          <TitleScroller title={title} />
+          <SeekBar
+            currentTime={currentTime}
+            duration={duration}
+            onSeek={handleSeek}
+            allowSeek={allowSeek}
+          />
+          <TimeDisplay currentTime={currentTime} duration={duration} />
+          <PlaybackControls
+            isPlaying={isPlaying}
+            togglePlayPause={togglePlayPause}
+            rewind={handleRewind}
+            forward={handleForward}
+            speed={speed}
+            onSpeedChange={handleSpeedChange}
+            allowTogglePlay={allowTogglePlay}
+            allowSeek={allowSeek}
+            allowPlaybackRateChange={allowPlaybackRateChange}
+            isSpeedModalOpen={isSpeedModalOpen}
+            setIsSpeedModalOpen={setIsSpeedModalOpen}
+            isMobile={isMobile}
+          />
+        </>
       )}
     </AudioPlayerContainer>
   );

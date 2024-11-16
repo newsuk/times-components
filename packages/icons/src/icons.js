@@ -18,3 +18,5 @@ export { default as PlayerBack } from "./icons/player-back";
 export { default as PlayerFront} from "./icons/player-front";
 export { default as PlayIcon} from "./icons/play-icon";
 export { default as PauseIcon} from "./icons/pause-icon";
+export { default as IconVolume} from "./icons/audio-volume";
+export { default as AudioCloseIcon} from "./icons/audio-close";
