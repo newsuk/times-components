@@ -24,7 +24,7 @@ const PlayerBack = () => (
         fill="black"
       />
     </mask>
-    
+
     <g mask="url(#mask0_4528_3080)">
       <rect y="0.666992" width="24" height="24" fill="#01000D" />
     </g>

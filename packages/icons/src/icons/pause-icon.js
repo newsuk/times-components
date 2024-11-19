@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const PauseIcon = ({fill}) => (
+const PauseIcon = ({ fill }) => (
   <svg
     width="25"
     height="24"
@@ -10,7 +11,6 @@ const PauseIcon = ({fill}) => (
     aria-label="Pause Icon"
     role="img"
   >
-
     <mask
       id="mask0_4528_2487"
       style={{ maskType: "alpha" }}
@@ -33,5 +33,9 @@ const PauseIcon = ({fill}) => (
     </g>
   </svg>
 );
+
+PauseIcon.propTypes = {
+  fill: PropTypes.string.isRequired
+};
 
 export default PauseIcon;

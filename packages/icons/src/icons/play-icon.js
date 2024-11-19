@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const PlayIcon = ({fill}) => (
+const PlayIcon = ({ fill }) => (
   <svg
     width="24"
     height="25"
@@ -19,10 +20,7 @@ const PlayIcon = ({fill}) => (
       width="24"
       height="25"
     >
-      <path
-        d="M8 5.66699V19.667L19 12.667L8 5.66699Z"
-        fill={fill}
-      />
+      <path d="M8 5.66699V19.667L19 12.667L8 5.66699Z" fill={fill} />
     </mask>
 
     <g mask="url(#mask0_4528_3091)">
@@ -30,5 +28,9 @@ const PlayIcon = ({fill}) => (
     </g>
   </svg>
 );
+
+PlayIcon.propTypes = {
+  fill: PropTypes.string.isRequired
+};
 
 export default PlayIcon;

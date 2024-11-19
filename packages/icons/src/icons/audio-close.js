@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const AudioCloseIcon = ({ fill }) => (
   <svg
@@ -29,5 +30,9 @@ const AudioCloseIcon = ({ fill }) => (
     </g>
   </svg>
 );
+
+AudioCloseIcon.propTypes = {
+  fill: PropTypes.string.isRequired
+};
 
 export default AudioCloseIcon;
