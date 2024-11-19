@@ -1,3 +1,34 @@
+import { theTimesDetectionKey, travelDetectionKey, theTimesSiteCode, travelSiteCode, skimlinksId } from './affiliate-validation';
+
+const wrapAffiliateLink = (affiliateLink) => {
+  const wrapTrackonomics = (trackonomicsUrl) => {
+    const contentPageUrl = window.location.href ? window.location.href : '';
+    const isTravel = contentPageUrl.includes('https://www.thetimes.com/travel') || contentPageUrl.includes('https://www.thetimes.co.uk/travel');
+    const regex = isTravel ? travelDetectionKey : theTimesDetectionKey;
+    const regexTrackonomics = new RegExp(regex);
+
+    if (!regexTrackonomics.test(trackonomicsUrl)) {
+      return trackonomicsUrl;
+    }
+
+    const referrerUrl = document.referrer ? document.referrer : '';
+    const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
+    const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(trackonomicsUrl)}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(referrerUrl)}`;
+
+    return affiliateWrapper;
+  };
+
+  const wrapSkimlinks = (skimlinkUrl) => {
+    const contentPageUrl = window.location.href ? window.location.href : '';
+    const affiliateWrapper = `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(skimlinkUrl)}&sref=${encodeURIComponent(contentPageUrl)}`;
+
+    return affiliateWrapper;
+  };
+
+  const wrapInSkimlinks = wrapSkimlinks(affiliateLink);
+  return wrapTrackonomics(wrapInSkimlinks);
+};
+
 const setExternalLinkTargets = children => {
   const clonedChildren = [...children];
 
@@ -5,7 +36,7 @@ const setExternalLinkTargets = children => {
     elements.map(el => {
       let newElement = { ...el };
 
-      // Check if element is a link or an interactive element with a URL
+      // Check if element is a link or an interactive element with a URL.
       if (
         newElement.name === "link" ||
         (newElement.name === "interactive" &&
@@ -21,19 +52,31 @@ const setExternalLinkTargets = children => {
             ? elementAttributes.url || ""
             : attributes.href || "";
 
-        // If the link is external, set target to _blank
+        // If the link is external, set target to _blank. Wrap affiliate link if necessary.
         if (
           href &&
           !href.startsWith("https://www.thetimes.co.uk") &&
           !href.startsWith("https://www.thetimes.com")
         ) {
-          newElement = {
-            ...newElement,
-            attributes: {
-              ...attributes,
-              target: "_blank"
-            }
-          };
+          if (newElement.name === "interactive") {
+            newElement = {
+              ...newElement,
+              attributes: {
+                ...attributes,
+                target: "_blank",
+                url: wrapAffiliateLink(href),
+              }
+            };
+          } else {
+            newElement = {
+              ...newElement,
+              attributes: {
+                ...attributes,
+                target: "_blank",
+                href: wrapAffiliateLink(href),
+              }
+            };
+          }
         }
       }
 
