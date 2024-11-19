@@ -10,7 +10,6 @@ storiesOf('Typescript Component/Audio Player', module)
     docs: {
       description: {
         component: `
-# AudioPlayer Component
 
 A customizable audio player component with various controls.
 

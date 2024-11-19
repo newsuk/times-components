@@ -293,7 +293,7 @@ export const SpeedSelectModal = styled.div<{ isMobile: boolean }>`
         left: 50%;
         transform: translateX(-50%);
         width: 160px;
-        height: 288px;
+        height: 256px;
         border: 1px solid #ccc;
         padding: 16px 0px;
         box-shadow: 0px 20px 32px 0px #0A0A0A14;

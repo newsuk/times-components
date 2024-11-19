@@ -504,12 +504,6 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
                         </SpeedOptionItem>
                       ))}
                     </SpeedOptionsContainer>
-                    <CloseButton
-                      isMobile={isMobile}
-                      onClick={() => setIsSpeedModalOpen(false)}
-                    >
-                      Close
-                    </CloseButton>
                   </SpeedSelectModal>
                 )}
               </SpeedButtonContainer>
