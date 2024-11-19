@@ -6,8 +6,9 @@ Object {
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareUrlByEmail",
+  "component": "ArticleShareOnExpend",
 }
 `;
 
@@ -29,8 +30,9 @@ Object {
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareOnFacebook",
+  "component": "ArticleShareOnExpend",
 }
 `;
 
@@ -46,8 +48,9 @@ Object {
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareOnTwitter",
+  "component": "ArticleShareOnExpend",
 }
 `;
 

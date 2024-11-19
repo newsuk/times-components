@@ -36,6 +36,8 @@ function SaveAndShareBar(props) {
     articleUrl,
     savingEnabled,
     sharingEnabled,
+    onShareBarExpend,
+    onShareBarClose,
     onShareOnFB,
     onShareOnTwitter,
     onSaveToMyArticles,
@@ -95,6 +97,11 @@ function SaveAndShareBar(props) {
   }
 
   const togglePopover = () => {
+    if (!popoverOpen) {
+      onShareBarExpend();
+    } else {
+      onShareBarClose();
+    }
     setPopoverOpen(prev => !prev);
   };
 
@@ -250,6 +257,8 @@ SaveAndShareBar.propTypes = {
   articleHeadline: PropTypes.string.isRequired,
   getTokenisedShareUrl: PropTypes.func,
   onCopyLink: PropTypes.func.isRequired,
+  onShareBarExpend: PropTypes.func,
+  onShareBarClose: PropTypes.func,
   onShareOnFB: PropTypes.func,
   onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
@@ -263,6 +272,8 @@ SaveAndShareBar.propTypes = {
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
+  onShareBarExpend: () => {},
+  onShareBarClose: () => {},
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
