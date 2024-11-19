@@ -269,7 +269,7 @@ export const SpeedButton = styled.button`
 `;
 
 // Speed Select Modal
-export const SpeedSelectModal = styled.div<{ isMobile: boolean }>`
+export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
   background: #ffffff;
   z-index: 1000;
   display: flex;
@@ -324,7 +324,7 @@ export const SpeedOptionsContainer = styled.div`
 `;
 
 // Speed Option Item
-export const SpeedOptionItem = styled.div<{ selected: boolean; isMobile: boolean }>`
+export const SpeedOptionItem = styled.div<{ selected: boolean; isMobile?: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;

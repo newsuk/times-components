@@ -206,7 +206,6 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
             ))}
           </SpeedOptionsContainer>
           <CloseButton
-            isMobile={isMobile}
             onClick={() => setIsSpeedModalOpen(false)}
           >
             Close
