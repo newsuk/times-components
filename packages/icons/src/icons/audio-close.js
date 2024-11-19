@@ -1,9 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BaseIcon from "./BaseIcon";
+import { clean } from "@times-components/utils";
 
-const AudioCloseIcon = ({ fill, ...props }) => (
-  <BaseIcon {...props}>
+const AudioCloseIcon = ({ fill = "#000", width = 24, height = 24, title = "Audio Close Icon" }) => (
+  <svg
+    aria-label="audio-close-icon"
+    role="img"
+    viewBox="0 0 24 24"
+    {...clean({ width, height, title })}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>{title}</title>
     <mask
       id="mask0_4612_9510"
       style={{ maskType: "alpha" }}
@@ -21,16 +28,20 @@ const AudioCloseIcon = ({ fill, ...props }) => (
     <g mask="url(#mask0_4612_9510)">
       <rect width="24" height="24" fill={fill} />
     </g>
-  </BaseIcon>
+  </svg>
 );
 
 AudioCloseIcon.propTypes = {
   fill: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
   title: PropTypes.string,
 };
 
 AudioCloseIcon.defaultProps = {
-  fill: "#0A0A0A",
+  fill: "#000",
+  width: 24,
+  height: 24,
   title: "Audio Close Icon",
 };
 
