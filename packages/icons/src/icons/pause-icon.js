@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { clean } from "@times-components/utils";
 
-const PauseIcon = ({ fill = "black", width = 25, height = 24, title = "Pause Icon" }) => (
+const PauseIcon = ({
+  fill = "black",
+  width = 25,
+  height = 24,
+  title = "Pause Icon"
+}) => (
   <svg
     aria-label="pause-icon"
     role="img"
@@ -38,14 +43,14 @@ PauseIcon.propTypes = {
   fill: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 
 PauseIcon.defaultProps = {
   fill: "black",
   width: 25,
   height: 24,
-  title: "Pause Icon",
+  title: "Pause Icon"
 };
 
 export default PauseIcon;

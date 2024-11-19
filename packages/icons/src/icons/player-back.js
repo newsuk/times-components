@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { clean } from "@times-components/utils";
 
-const PlayerBack = ({ fill = "black", width = 24, height = 25, title = "Player Back Icon" }) => (
+const PlayerBack = ({
+  fill = "black",
+  width = 24,
+  height = 25,
+  title = "Player Back Icon"
+}) => (
   <svg
     aria-label="player-back-icon"
     role="img"
@@ -36,14 +41,14 @@ PlayerBack.propTypes = {
   fill: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 
 PlayerBack.defaultProps = {
   fill: "black",
   width: 24,
   height: 25,
-  title: "Player Back Icon",
+  title: "Player Back Icon"
 };
 
 export default PlayerBack;

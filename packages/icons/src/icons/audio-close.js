@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { clean } from "@times-components/utils";
 
-const AudioCloseIcon = ({ fill = "#000", width = 24, height = 24, title = "Audio Close Icon" }) => (
+const AudioCloseIcon = ({
+  fill = "#000",
+  width = 24,
+  height = 24,
+  title = "Audio Close Icon"
+}) => (
   <svg
     aria-label="audio-close-icon"
     role="img"
@@ -35,14 +40,14 @@ AudioCloseIcon.propTypes = {
   fill: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 
 AudioCloseIcon.defaultProps = {
   fill: "#000",
   width: 24,
   height: 24,
-  title: "Audio Close Icon",
+  title: "Audio Close Icon"
 };
 
 export default AudioCloseIcon;

@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { clean } from "@times-components/utils";
 
-const IconVolume = ({ fill = "#0A0A0A", width = 24, height = 24, title = "Volume Icon" }) => (
+const IconVolume = ({
+  fill = "#0A0A0A",
+  width = 24,
+  height = 24,
+  title = "Volume Icon"
+}) => (
   <svg
     aria-label="icon-volume"
     role="img"
@@ -37,14 +42,14 @@ IconVolume.propTypes = {
   fill: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 
 IconVolume.defaultProps = {
   fill: "#0A0A0A",
   width: 24,
   height: 24,
-  title: "Volume Icon",
+  title: "Volume Icon"
 };
 
 export default IconVolume;

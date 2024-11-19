@@ -2,7 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { clean } from "@times-components/utils";
 
-const PlayerModalIcon = ({ fill = "#0A0A0A", width = 32, height = 32, title = "Player Modal Icon" }) => (
+const PlayerModalIcon = ({
+  fill = "#0A0A0A",
+  width = 32,
+  height = 32,
+  title = "Player Modal Icon"
+}) => (
   <svg
     aria-label="player-modal-icon"
     role="img"
@@ -32,14 +37,14 @@ PlayerModalIcon.propTypes = {
   fill: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 
 PlayerModalIcon.defaultProps = {
   fill: "#0A0A0A",
   width: 32,
   height: 32,
-  title: "Player Modal Icon",
+  title: "Player Modal Icon"
 };
 
 export default PlayerModalIcon;
