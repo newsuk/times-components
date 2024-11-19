@@ -40,6 +40,8 @@ function SaveAndShareBar(props) {
     onShareBarClose,
     onShareOnFB,
     onShareOnTwitter,
+    onSaveToMyArticles,
+    onRemoveFromMyArticles,
     isPreviewMode
   } = props;
 
@@ -229,7 +231,10 @@ function SaveAndShareBar(props) {
           >
             <div data-testid="save-star">
               <SaveStar articleId={articleId}>
-                <SaveButton />
+                <SaveButton
+                  onSaveToMyArticles={onSaveToMyArticles}
+                  onRemoveFromMyArticles={onRemoveFromMyArticles}
+                />
               </SaveStar>
             </div>
           </UserState>
@@ -257,6 +262,8 @@ SaveAndShareBar.propTypes = {
   onShareOnFB: PropTypes.func,
   onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
+  onSaveToMyArticles: PropTypes.func,
+  onRemoveFromMyArticles: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isPreviewMode: PropTypes.bool,
@@ -270,6 +277,8 @@ SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
+  onSaveToMyArticles: () => {},
+  onRemoveFromMyArticles: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi,
   isPreviewMode: (PropTypes.bool = false)
 };

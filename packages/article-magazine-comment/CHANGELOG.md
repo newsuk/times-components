@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.87.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.87.0...@times-components/article-magazine-comment@3.87.1) (2024-11-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.87.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.86.13...@times-components/article-magazine-comment@3.87.0) (2024-11-14)
+
+
+### Features
+
+* **TMW-000:** Header magazine update ([#3984](https://github.com/newsuk/times-components/issues/3984)) ([9329de0](https://github.com/newsuk/times-components/commit/9329de0f76eae027826ddcd77f6652d70e29ba88))
+
+
+
+
+
+## [3.86.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.86.12...@times-components/article-magazine-comment@3.86.13) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.86.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.86.11...@times-components/article-magazine-comment@3.86.12) (2024-11-05)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
