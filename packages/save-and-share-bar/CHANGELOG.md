@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.25.0...@times-components/save-and-share-bar@0.26.0) (2024-11-19)
+
+
+### Features
+
+* **TMD-63:** Implement events tracking to article share bar ([#3979](https://github.com/newsuk/times-components/issues/3979)) ([101a99d](https://github.com/newsuk/times-components/commit/101a99dd7cdb25b15307a99bceb92abf3f6e3542))
+
+
+
+
+
 # [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.13...@times-components/save-and-share-bar@0.25.0) (2024-11-14)
 
 
