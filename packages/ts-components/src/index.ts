@@ -118,3 +118,6 @@ export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
+
+export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
+export { OffersEmbed } from './components/offers-embed/OffersEmbed';
