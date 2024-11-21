@@ -1,9 +1,8 @@
-import React, { FC, useRef, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import { AudioButton } from './styles';
 import PlayIcon from './assets/PlayIcon'
 import PauseIcon from './assets/PauseIcon';
 import { AudioPlayer } from '../audio-player/AudioPlayer';
-import { useEffect } from '@storybook/addons';
 
 
 export interface ArticleAudioProps {
@@ -15,12 +14,9 @@ audioSrc
 }) => {
   const [audioState, setAudioState] = useState<'not-started' | 'playing' | 'paused'>('not-started');
   const [isAudioPlayerVisible, setisAudioPlayerVisible] = useState<boolean>(false);
-
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  
-
   const [duration, setDuration] = useState<string | null>(null);
-
+  
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioPlayerRef = useRef<{ parentControlToggle: () => void } | null>(null);
 
 
@@ -36,31 +32,24 @@ audioSrc
   const handlePlayPause = () => {
     setisAudioPlayerVisible(true);
 
-  };
-
-  useEffect(() => {
-    if(isAudioPlayerVisible){
-      
     audioPlayerRef.current?.parentControlToggle();
 
     if (audioRef.current) {
       if (audioState === 'playing') {
-       // audioRef.current.pause();
         setAudioState('paused');
-       
       } else if (audioState === 'paused') {
-      //  audioRef.current.play();
         setAudioState('playing');
-       
       } else if (audioState === 'not-started') {
-       // audioRef.current.play();
         setAudioState('playing');
       }
     }
+  };
+
+  useEffect(() => {
+    if (isAudioPlayerVisible && audioPlayerRef.current) {
+      audioPlayerRef.current.parentControlToggle();
     }
-  
-  
-  }, [isAudioPlayerVisible])
+  }, [isAudioPlayerVisible]);
   
 
   return (
@@ -84,15 +73,14 @@ audioSrc
         {audioState === 'playing' ? ( <> <PauseIcon /> Playing</>) : audioState === 'paused' ? (<><PlayIcon color="#fff" />Paused</>) : (<><PlayIcon />Listen</>)}
         <span  style={{
         color: audioState === 'not-started' ? '#696969' : '#fff',
-      }}> {duration}min</span>
+      }}> {duration} min</span>
       </AudioButton>
       { isAudioPlayerVisible &&  <AudioPlayer
-          ref={audioPlayerRef} 
-          
-          src="https://www.kozco.com/tech/LRMonoPhase4.mp3"
-          onPlay={() => console.log('Playing')}
-          onPause={() => console.log('Paused')}
-          onEnded={() => console.log('Ended')}
+          ref={audioPlayerRef}   
+          src={audioSrc}
+          onPlay={() => setAudioState('playing')}
+          onPause={() => setAudioState('paused')}
+          onEnded={() => setAudioState('not-started')}
           onTimeUpdate={(currentTime) => console.log('Current Time:', currentTime)}
           onVolumeChange={(volume) => console.log('Volume:', volume)}
           onPlaybackRateChange={(rate) => console.log('Playback Rate:', rate)}
@@ -103,8 +91,5 @@ audioSrc
     </div>
   );
 };
-
-
-
 
 export default ArticleAudio;
