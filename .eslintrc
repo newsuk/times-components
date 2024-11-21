@@ -12,7 +12,8 @@
         "devDependencies": ["**/storybook/**"],
         "optionalDependencies": false
       }
-    ]
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": "off"
   },
   "settings": {
     "import/resolver": {

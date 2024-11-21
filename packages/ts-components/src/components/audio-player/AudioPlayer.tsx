@@ -239,10 +239,11 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(
-    isPlayingProp ?? autoPlay
+    isPlayingProp !== undefined && isPlayingProp !== null ? isPlayingProp : autoPlay
   );
   const [isExpanded, setIsExpanded] = useState<boolean>(
-    isExpandedProp ?? true
+    isExpandedProp !== undefined && isExpandedProp !== null ? isExpandedProp : true
+
   );
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
@@ -333,13 +334,22 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     if (!allowSeek) {
       return;
     }
-    const newTime = audioRef.current?.currentTime ?? 0;
+    const newTime =
+      audioRef.current?.currentTime !== undefined && audioRef.current?.currentTime !== null
+        ? audioRef.current.currentTime
+        : 0;
     setCurrentTime(newTime);
-    onTimeUpdate && onTimeUpdate(newTime);
+    if (onTimeUpdate) {
+      onTimeUpdate(newTime);
+    }
   };
-
+  
   const handleLoadedMetadata = () => {
-    setDuration(audioRef.current?.duration ?? 0);
+    const loadedDuration =
+      audioRef.current?.duration !== undefined && audioRef.current?.duration !== null
+        ? audioRef.current.duration
+        : 0;
+    setDuration(loadedDuration);
   };
 
   const handleSeek = (time: number) => {
