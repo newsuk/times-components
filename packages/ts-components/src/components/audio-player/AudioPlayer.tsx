@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, FC } from 'react';
+import React, { useState, useEffect, useRef, FC, forwardRef, useImperativeHandle } from 'react';
 import {
   AudioPlayerContainer,
   Row,
@@ -242,7 +242,7 @@ const VolumeControl: FC<VolumeControlProps> = ({
 };
 
 // Main AudioPlayer Component with Responsive Wrapper
-export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
+export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(({
   src,
   title = 'Audio Title',
   autoPlay = false,
@@ -263,7 +263,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   onPlaybackRateChange,
   onSeek,
   onClose,
-}) => {
+}, ref) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(
     isPlayingProp ?? autoPlay
@@ -279,6 +279,12 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(
     false
   );
+
+  useImperativeHandle(ref, () => ({
+    parentControlToggle() {
+      togglePlayPause();
+    }
+  }));
 
   // State to track if the view is mobile or tablet/desktop
   const [isMobile, setIsMobile] = useState<boolean>(
@@ -571,4 +577,4 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       )}
     </AudioPlayerContainer>
   );
-};
+});
