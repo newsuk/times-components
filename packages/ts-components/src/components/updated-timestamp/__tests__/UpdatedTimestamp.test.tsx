@@ -44,7 +44,7 @@ describe('UpdatedTimestamp', () => {
     );
     expect(queryByTestId('DateTimeUpdated')).toBeTruthy();
     expect(queryByTestId('DateTimeUpdated')!.textContent).toBe(
-      'Updated February 28, 9.00am'
+      'Updated February 28, 10.00am'
     );
   });
 
