@@ -29,7 +29,7 @@ import {
   LeftControls,
   CenterControls,
   RightControls,
-  SpeedButtonContainer,
+  SpeedButtonContainer
 } from './styles';
 import {
   StickyAudioPlayerProps,
@@ -37,7 +37,7 @@ import {
   TitleScrollerProps,
   SeekBarProps,
   TimeDisplayProps,
-  PlaybackControlsProps,
+  PlaybackControlsProps
 } from './types';
 
 import {
@@ -48,7 +48,7 @@ import {
   PlayIcon,
   PauseIcon,
   IconVolume,
-  AudioCloseIcon,
+  AudioCloseIcon
 } from '@times-components/icons';
 
 // Helper function to format time in mm:ss format
@@ -62,7 +62,7 @@ const formatTime = (seconds: number): string => {
 const CollapseIcon: FC<CollapseIconProps> = ({
   isExpanded,
   toggleExpand,
-  allowExpandCollapse,
+  allowExpandCollapse
 }) => {
   if (!allowExpandCollapse) {
     return null;
@@ -96,7 +96,7 @@ const SeekBar: FC<SeekBarProps> = ({
   currentTime,
   duration,
   onSeek,
-  allowSeek,
+  allowSeek
 }) => {
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
@@ -107,7 +107,7 @@ const SeekBar: FC<SeekBarProps> = ({
         min="0"
         max={duration}
         value={currentTime}
-        onChange={(e) => onSeek(parseFloat(e.target.value))}
+        onChange={e => onSeek(parseFloat(e.target.value))}
         disabled={!allowSeek}
         aria-label="Seek Bar"
         progress={progress}
@@ -141,7 +141,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
   allowPlaybackRateChange,
   isSpeedModalOpen,
   setIsSpeedModalOpen,
-  isMobile,
+  isMobile
 }) => {
   const toggleSpeedModal = () => {
     if (allowPlaybackRateChange) {
@@ -192,7 +192,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
       {isSpeedModalOpen && (
         <SpeedSelectModal isMobile={isMobile}>
           <SpeedOptionsContainer>
-            {speedOptions.map((option) => (
+            {speedOptions.map(option => (
               <SpeedOptionItem
                 key={option}
                 selected={option === speed}
@@ -233,21 +233,27 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   onVolumeChange,
   onPlaybackRateChange,
   onSeek,
-  onClose,
+  onClose
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(
-    isPlayingProp !== undefined && isPlayingProp !== null ? isPlayingProp : autoPlay
+    isPlayingProp !== undefined && isPlayingProp !== null
+      ? isPlayingProp
+      : autoPlay
   );
   const [isExpanded, setIsExpanded] = useState<boolean>(
-    isExpandedProp !== undefined && isExpandedProp !== null ? isExpandedProp : true
+    isExpandedProp !== undefined && isExpandedProp !== null
+      ? isExpandedProp
+      : true
   );
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [volume, setVolume] = useState<number>(initialVolume);
   const [speed, setSpeed] = useState<number>(playbackRate);
   const [isSpeedModalOpen, setIsSpeedModalOpen] = useState<boolean>(false);
-  const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(false);
+  const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(
+    false
+  );
 
   // State to track if the view is mobile or tablet/desktop
   const [isMobile, setIsMobile] = useState<boolean>(
@@ -266,36 +272,45 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = volume;
-      audioRef.current.playbackRate = speed;
-    }
-  }, [volume, speed]);
-
-  useEffect(() => {
-    if (typeof isPlayingProp === 'boolean') {
-      if (isPlayingProp && audioRef.current) {
-        audioRef.current
-          .play()
-          .then(() => {
-            setIsPlaying(true);
-          })
-          .catch(() => {
-            throw Error('Error attempting to play:');
-          });
-      } else if (audioRef.current) {
-        audioRef.current.pause();
-        setIsPlaying(false);
+  useEffect(
+    () => {
+      if (audioRef.current) {
+        audioRef.current.volume = volume;
+        audioRef.current.playbackRate = speed;
       }
-    }
-  }, [isPlayingProp]);
+    },
+    [volume, speed]
+  );
 
-  useEffect(() => {
-    if (typeof isExpandedProp === 'boolean') {
-      setIsExpanded(isExpandedProp);
-    }
-  }, [isExpandedProp]);
+  useEffect(
+    () => {
+      if (typeof isPlayingProp === 'boolean') {
+        if (isPlayingProp && audioRef.current) {
+          audioRef.current
+            .play()
+            .then(() => {
+              setIsPlaying(true);
+            })
+            .catch(() => {
+              throw Error('Error attempting to play:');
+            });
+        } else if (audioRef.current) {
+          audioRef.current.pause();
+          setIsPlaying(false);
+        }
+      }
+    },
+    [isPlayingProp]
+  );
+
+  useEffect(
+    () => {
+      if (typeof isExpandedProp === 'boolean') {
+        setIsExpanded(isExpandedProp);
+      }
+    },
+    [isExpandedProp]
+  );
 
   const togglePlayPause = () => {
     if (!allowTogglePlay) {
@@ -334,7 +349,9 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       return;
     }
     const newTime =
-      audioRef.current && audioRef.current.currentTime !== undefined && audioRef.current.currentTime !== null
+      audioRef.current &&
+      audioRef.current.currentTime !== undefined &&
+      audioRef.current.currentTime !== null
         ? audioRef.current.currentTime
         : 0;
     setCurrentTime(newTime);
@@ -342,10 +359,12 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       onTimeUpdate(newTime);
     }
   };
-  
+
   const handleLoadedMetadata = () => {
     const loadedDuration =
-      audioRef.current && audioRef.current.duration !== undefined && audioRef.current.duration !== null
+      audioRef.current &&
+      audioRef.current.duration !== undefined &&
+      audioRef.current.duration !== null
         ? audioRef.current.duration
         : 0;
     setDuration(loadedDuration);
@@ -453,7 +472,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
                     max="1"
                     step="0.01"
                     value={volume}
-                    onChange={(e) =>
+                    onChange={e =>
                       handleVolumeChange(parseFloat(e.target.value))
                     }
                   />
@@ -472,7 +491,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
               min="0"
               max={duration}
               value={currentTime}
-              onChange={(e) => handleSeek(parseFloat(e.target.value))}
+              onChange={e => handleSeek(parseFloat(e.target.value))}
               disabled={!allowSeek}
               aria-label="Seek Bar"
               progress={duration > 0 ? (currentTime / duration) * 100 : 0}
@@ -496,7 +515,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
                 {isSpeedModalOpen && (
                   <SpeedSelectModal isMobile={isMobile}>
                     <SpeedOptionsContainer>
-                      {speedOptions.map((option) => (
+                      {speedOptions.map(option => (
                         <SpeedOptionItem
                           key={option}
                           selected={option === speed}

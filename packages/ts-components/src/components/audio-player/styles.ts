@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 // Define breakpoints
 const breakpoints = {
-  sm: '520px',
+  sm: '520px'
 };
 
 // Global Styles - box-sizing
@@ -311,7 +311,7 @@ export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
           width: 0;
           height: 0;
         }
-      `}
+      `};
 `;
 
 // Speed Options Container
@@ -324,7 +324,10 @@ export const SpeedOptionsContainer = styled.div`
 `;
 
 // Speed Option Item
-export const SpeedOptionItem = styled.div<{ selected: boolean; isMobile?: boolean }>`
+export const SpeedOptionItem = styled.div<{
+  selected: boolean;
+  isMobile?: boolean;
+}>`
   display: flex;
   justify-content: space-between;
   align-items: center;

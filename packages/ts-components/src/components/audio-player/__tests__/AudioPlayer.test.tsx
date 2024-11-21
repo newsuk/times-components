@@ -38,7 +38,7 @@ jest.mock('./styles', () => ({
   LeftControls: 'div',
   CenterControls: 'div',
   RightControls: 'div',
-  SpeedButtonContainer: 'div',
+  SpeedButtonContainer: 'div'
 }));
 
 jest.mock('./types', () => ({}));
@@ -51,7 +51,7 @@ jest.mock('@times-components/icons', () => ({
   PlayIcon: () => <span>PlayIcon</span>,
   PauseIcon: () => <span>PauseIcon</span>,
   IconVolume: () => <span>IconVolume</span>,
-  AudioCloseIcon: () => <span>AudioCloseIcon</span>,
+  AudioCloseIcon: () => <span>AudioCloseIcon</span>
 }));
 
 describe('AudioPlayer Component', () => {

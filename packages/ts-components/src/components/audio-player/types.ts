@@ -55,7 +55,7 @@ export interface PlaybackControlsProps {
   allowPlaybackRateChange: boolean;
   isSpeedModalOpen: boolean;
   setIsSpeedModalOpen: (open: boolean) => void;
-  isMobile?: boolean
+  isMobile?: boolean;
 }
 
 export interface VolumeControlProps {

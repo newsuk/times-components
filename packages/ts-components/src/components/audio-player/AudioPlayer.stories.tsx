@@ -159,17 +159,30 @@ A customizable audio player component with various controls.
 />
 \`\`\`
 
-`,
-      },
-    },
+`
+      }
+    }
   })
   .add('Default Audio Player', () => {
     // Use knobs to allow dynamic prop changes in Storybook
-    const src = text('src', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+    const src = text(
+      'src',
+      'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+    );
     const title = text('title', 'Sample Audio Title for Testing');
     const autoPlay = boolean('autoPlay', false);
-    const initialVolume = number('initialVolume', 0.5, { range: true, min: 0, max: 1, step: 0.1 });
-    const playbackRate = number('playbackRate', 1, { range: true, min: 0.5, max: 2, step: 0.1 });
+    const initialVolume = number('initialVolume', 0.5, {
+      range: true,
+      min: 0,
+      max: 1,
+      step: 0.1
+    });
+    const playbackRate = number('playbackRate', 1, {
+      range: true,
+      min: 0.5,
+      max: 2,
+      step: 0.1
+    });
     const isPlayingProp = boolean('isPlayingProp', false);
     const isExpandedProp = boolean('isExpandedProp', true);
     const allowTogglePlay = boolean('allowTogglePlay', true);
