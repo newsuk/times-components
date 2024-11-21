@@ -64,7 +64,9 @@ const CollapseIcon: FC<CollapseIconProps> = ({
   toggleExpand,
   allowExpandCollapse,
 }) => {
-  if (!allowExpandCollapse) return null;
+  if (!allowExpandCollapse) {
+    return null;
+  }
 
   return (
     <Row>
@@ -300,7 +302,9 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   }, [isExpandedProp]);
 
   const togglePlayPause = () => {
-    if (!allowTogglePlay) return;
+    if (!allowTogglePlay) {
+      return;
+    }
     if (audioRef.current?.paused) {
       audioRef.current
         ?.play()
@@ -319,12 +323,16 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   };
 
   const toggleExpand = () => {
-    if (!allowExpandCollapse) return;
+    if (!allowExpandCollapse) {
+      return;
+    }
     setIsExpanded(!isExpanded);
   };
 
   const handleTimeUpdate = () => {
-    if (!allowSeek) return;
+    if (!allowSeek) {
+      return;
+    }
     const newTime = audioRef.current?.currentTime ?? 0;
     setCurrentTime(newTime);
     onTimeUpdate && onTimeUpdate(newTime);
@@ -335,7 +343,9 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   };
 
   const handleSeek = (time: number) => {
-    if (!allowSeek) return;
+    if (!allowSeek) {
+      return;
+    }
     if (audioRef.current) {
       const clampedTime = Math.min(Math.max(time, 0), duration);
       audioRef.current.currentTime = clampedTime;
@@ -343,6 +353,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       onSeek && onSeek(clampedTime);
     }
   };
+  
 
   const handleRewind = () => {
     handleSeek(currentTime - 10);
@@ -353,16 +364,24 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   };
 
   const handleVolumeChange = (newVolume: number) => {
-    if (!allowVolumeChange) return;
+    if (!allowVolumeChange) {
+      return;
+    }
     setVolume(newVolume);
-    if (audioRef.current) audioRef.current.volume = newVolume;
+    if (audioRef.current) {
+      audioRef.current.volume = newVolume;
+    }
     onVolumeChange && onVolumeChange(newVolume);
   };
 
   const handleSpeedChange = (rate: number) => {
-    if (!allowPlaybackRateChange) return;
+    if (!allowPlaybackRateChange) {
+      return;
+    }
     setSpeed(rate);
-    if (audioRef.current) audioRef.current.playbackRate = rate;
+    if (audioRef.current) {
+      audioRef.current.playbackRate = rate;
+    }
     onPlaybackRateChange && onPlaybackRateChange(rate);
   };
 
