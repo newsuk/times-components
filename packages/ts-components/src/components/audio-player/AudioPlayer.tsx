@@ -280,21 +280,21 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
 
   useEffect(() => {
     if (typeof isPlayingProp === 'boolean') {
-      if (isPlayingProp) {
+      if (isPlayingProp && audioRef.current) {
         audioRef.current
-          ?.play()
+          .play()
           .then(() => {
             setIsPlaying(true);
           })
           .catch(() => {
             throw Error('Error attempting to play:');
           });
-      } else {
-        audioRef.current?.pause();
+      } else if (audioRef.current) {
+        audioRef.current.pause();
         setIsPlaying(false);
       }
     }
-  }, [isPlayingProp]);
+  }, [isPlayingProp]);  
 
   useEffect(() => {
     if (typeof isExpandedProp === 'boolean') {
