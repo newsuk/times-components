@@ -203,9 +203,7 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
               </SpeedOptionItem>
             ))}
           </SpeedOptionsContainer>
-          <CloseButton
-            onClick={() => setIsSpeedModalOpen(false)}
-          >
+          <CloseButton onClick={() => setIsSpeedModalOpen(false)}>
             Close
           </CloseButton>
         </SpeedSelectModal>
@@ -243,16 +241,13 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   );
   const [isExpanded, setIsExpanded] = useState<boolean>(
     isExpandedProp !== undefined && isExpandedProp !== null ? isExpandedProp : true
-
   );
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [volume, setVolume] = useState<number>(initialVolume);
   const [speed, setSpeed] = useState<number>(playbackRate);
   const [isSpeedModalOpen, setIsSpeedModalOpen] = useState<boolean>(false);
-  const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(
-    false
-  );
+  const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(false);
 
   // State to track if the view is mobile or tablet/desktop
   const [isMobile, setIsMobile] = useState<boolean>(
@@ -294,7 +289,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
         setIsPlaying(false);
       }
     }
-  }, [isPlayingProp]);  
+  }, [isPlayingProp]);
 
   useEffect(() => {
     if (typeof isExpandedProp === 'boolean') {
@@ -306,20 +301,24 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     if (!allowTogglePlay) {
       return;
     }
-    if (audioRef.current?.paused) {
+    if (audioRef.current && audioRef.current.paused) {
       audioRef.current
-        ?.play()
+        .play()
         .then(() => {
           setIsPlaying(true);
-          onPlay && onPlay();
+          if (onPlay) {
+            onPlay();
+          }
         })
         .catch(() => {
           throw Error('Error attempting to play:');
         });
-    } else {
-      audioRef.current?.pause();
+    } else if (audioRef.current) {
+      audioRef.current.pause();
       setIsPlaying(false);
-      onPause && onPause();
+      if (onPause) {
+        onPause();
+      }
     }
   };
 
@@ -335,7 +334,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       return;
     }
     const newTime =
-      audioRef.current?.currentTime !== undefined && audioRef.current?.currentTime !== null
+      audioRef.current && audioRef.current.currentTime !== undefined && audioRef.current.currentTime !== null
         ? audioRef.current.currentTime
         : 0;
     setCurrentTime(newTime);
@@ -346,7 +345,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   
   const handleLoadedMetadata = () => {
     const loadedDuration =
-      audioRef.current?.duration !== undefined && audioRef.current?.duration !== null
+      audioRef.current && audioRef.current.duration !== undefined && audioRef.current.duration !== null
         ? audioRef.current.duration
         : 0;
     setDuration(loadedDuration);
@@ -360,10 +359,11 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       const clampedTime = Math.min(Math.max(time, 0), duration);
       audioRef.current.currentTime = clampedTime;
       setCurrentTime(clampedTime);
-      onSeek && onSeek(clampedTime);
+      if (onSeek) {
+        onSeek(clampedTime);
+      }
     }
   };
-  
 
   const handleRewind = () => {
     handleSeek(currentTime - 10);
@@ -381,7 +381,9 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     if (audioRef.current) {
       audioRef.current.volume = newVolume;
     }
-    onVolumeChange && onVolumeChange(newVolume);
+    if (onVolumeChange) {
+      onVolumeChange(newVolume);
+    }
   };
 
   const handleSpeedChange = (rate: number) => {
@@ -392,7 +394,9 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     if (audioRef.current) {
       audioRef.current.playbackRate = rate;
     }
-    onPlaybackRateChange && onPlaybackRateChange(rate);
+    if (onPlaybackRateChange) {
+      onPlaybackRateChange(rate);
+    }
   };
 
   const speedOptions = [0.5, 0.8, 1.0, 1.2, 1.5, 2];
