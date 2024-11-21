@@ -190,18 +190,7 @@ A customizable audio player component with various controls.
       allowSeek,
       allowVolumeChange,
       allowPlaybackRateChange,
-      allowExpandCollapse,
-      onPlay: () => console.log('Audio is playing'),
-      onPause: () => console.log('Audio is paused'),
-      onEnded: () => console.log('Audio playback ended'),
-      onTimeUpdate: (currentTime: number) =>
-        console.log('Current time updated:', currentTime),
-      onVolumeChange: (volume: number) =>
-        console.log('Volume changed:', volume),
-      onPlaybackRateChange: (rate: number) =>
-        console.log('Playback rate changed:', rate),
-      onSeek: (time: number) => console.log('Seek to time:', time),
-      onClose: () => console.log('Player closed'),
+      allowExpandCollapse
     };
 
     return <AudioPlayer {...mockProps} />;

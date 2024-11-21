@@ -283,8 +283,8 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
           .then(() => {
             setIsPlaying(true);
           })
-          .catch((error) => {
-            console.error('Error attempting to play:', error);
+          .catch(() => {
+            throw Error('Error attempting to play:');
           });
       } else {
         audioRef.current?.pause();
@@ -308,8 +308,8 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
           setIsPlaying(true);
           onPlay && onPlay();
         })
-        .catch((error) => {
-          console.error('Error attempting to play:', error);
+        .catch(() => {
+          throw Error('Error attempting to play:');
         });
     } else {
       audioRef.current?.pause();
