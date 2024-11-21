@@ -216,31 +216,6 @@ const PlaybackControls: FC<PlaybackControlsProps> = ({
   );
 };
 
-// VolumeControl Component
-const VolumeControl: FC<VolumeControlProps> = ({
-  volume,
-  onVolumeChange,
-  allowVolumeChange,
-}) => {
-  if (!allowVolumeChange) return null;
-
-  return (
-    <VolumeControlContainer>
-      <VolumeLabel htmlFor="volume-slider">Volume:</VolumeLabel>
-      <VolumeSlider
-        id="volume-slider"
-        type="range"
-        min="0"
-        max="1"
-        step="0.01"
-        value={volume}
-        onChange={(e) => onVolumeChange(parseFloat(e.target.value))}
-        aria-label="Volume Control"
-      />
-    </VolumeControlContainer>
-  );
-};
-
 // Main AudioPlayer Component with Responsive Wrapper
 export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   src,

@@ -110,6 +110,7 @@ declare module '@times-components/icons' {
     height?: number;
     width?: number;
     title?: string;
+    fill?: string;
   };
   export const IconForwardChevron: FC<IconProps>;
   export const IconForwardArrow: FC<IconProps>;
