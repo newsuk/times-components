@@ -8,9 +8,6 @@ import {
   StyledTimeDisplay,
   Controls,
   ControlButton,
-  VolumeControlContainer,
-  VolumeLabel,
-  VolumeSlider,
   SpeedSelectModal,
   SpeedOptionItem,
   CloseButton,
@@ -41,7 +38,6 @@ import {
   SeekBarProps,
   TimeDisplayProps,
   PlaybackControlsProps,
-  VolumeControlProps,
 } from './types';
 
 import {
