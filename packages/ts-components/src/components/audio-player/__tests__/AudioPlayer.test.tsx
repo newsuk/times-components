@@ -2,10 +2,8 @@
 import React from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { AudioPlayer } from './AudioPlayer';
+import { AudioPlayer } from '../AudioPlayer';
 
-// Mock Date for consistent testing
-import MockDate from 'mockdate';
 
 describe('AudioPlayer Component', () => {
   const src = 'test-audio.mp3';
