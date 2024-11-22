@@ -13,6 +13,12 @@ export const FeaturesCarouselWindow = styled.div`
   position: relative;
   width: max-content;
   min-width: 100%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-auto-rows: 1fr;
+  grid-gap: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 export const CarouselItem = styled.a`
@@ -22,11 +28,8 @@ export const CarouselItem = styled.a`
   flex-direction: column;
   justify-content: center;
   float: left;
-  height: 200px;
-  margin: 8px;
   text-align: center;
   text-decoration: none;
-  width: 200px;
 
   img {
     height: 80px;
