@@ -6,7 +6,7 @@ export const TitleScroller: FC<TitleScrollerProps> = ({ title }) => {
   return (
     <Row>
       <Title>
-        <div>{title}</div>
+        <div data-testid="title-content">{title}</div>
       </Title>
     </Row>
   );

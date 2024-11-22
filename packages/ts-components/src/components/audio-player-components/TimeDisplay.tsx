@@ -10,8 +10,8 @@ export const TimeDisplay: FC<TimeDisplayProps> = ({
   return (
     <Row>
       <StyledTimeDisplay>
-        <span>{formatTime(currentTime)}</span>
-        <span>{formatTime(duration)}</span>
+        <span data-testid="current-time">{formatTime(currentTime)}</span>
+        <span data-testid="duration">{formatTime(duration)}</span>
       </StyledTimeDisplay>
     </Row>
   );
