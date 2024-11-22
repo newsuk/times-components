@@ -56,7 +56,6 @@ jest.mock('../styles', () => ({
     <div data-testid="audio-player-container">{children}</div>
   )
 }));
-
 describe('AudioPlayer', () => {
   let originalInnerWidth: number;
   let playMock: jest.Mock;
@@ -98,15 +97,30 @@ describe('AudioPlayer', () => {
   });
 
   afterAll(() => {
-    window.innerWidth = originalInnerWidth;
+    // Restore the original innerWidth
+    Object.defineProperty(window, 'innerWidth', {
+      writable: true,
+      configurable: true,
+      value: originalInnerWidth,
+    });
     jest.restoreAllMocks();
   });
+
+  const setWindowInnerWidth = (width: number) => {
+    Object.defineProperty(window, 'innerWidth', {
+      writable: true,
+      configurable: true,
+      value: width,
+    });
+    // Dispatch a resize event to notify listeners
+    window.dispatchEvent(new Event('resize'));
+  };
 
   const renderComponent = (props = {}) =>
     render(<AudioPlayer src="test.mp3" {...props} />);
 
   test('renders correctly on mobile', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const { getByTestId, queryByTestId } = renderComponent();
 
     expect(getByTestId('audio-player-container')).toBeInTheDocument();
@@ -118,7 +132,7 @@ describe('AudioPlayer', () => {
   });
 
   test('renders correctly on desktop', () => {
-    window.innerWidth = 1024;
+    setWindowInnerWidth(1024);
     const { getByTestId, queryByTestId } = renderComponent();
 
     expect(getByTestId('tablet-desktop-player')).toBeInTheDocument();
@@ -126,7 +140,7 @@ describe('AudioPlayer', () => {
   });
 
   test('play and pause functionality', async () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const onPlay = jest.fn();
     const onPause = jest.fn();
     const { getByText } = renderComponent({ onPlay, onPause });
@@ -151,7 +165,7 @@ describe('AudioPlayer', () => {
   });
 
   test('volume change', () => {
-    window.innerWidth = 1024;
+    setWindowInnerWidth(1024);
     const onVolumeChange = jest.fn();
     const { getByText } = renderComponent({ onVolumeChange });
 
@@ -162,7 +176,7 @@ describe('AudioPlayer', () => {
   });
 
   test('expand and collapse', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const { getByTestId, queryByTestId } = renderComponent();
 
     const collapseButton = getByTestId('collapse-icon');
@@ -176,7 +190,7 @@ describe('AudioPlayer', () => {
   });
 
   test('handles isPlayingProp changes', async () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const { rerender, getByText } = render(
       <AudioPlayer src="test.mp3" isPlayingProp={false} />
     );
@@ -201,7 +215,7 @@ describe('AudioPlayer', () => {
   });
 
   test('handles isExpandedProp changes', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const { rerender, getByTestId, queryByTestId } = render(
       <AudioPlayer src="test.mp3" isExpandedProp={false} />
     );
@@ -213,7 +227,7 @@ describe('AudioPlayer', () => {
   });
 
   test('handles onTimeUpdate', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const onTimeUpdate = jest.fn();
     const { container } = renderComponent({ onTimeUpdate });
 
@@ -226,7 +240,7 @@ describe('AudioPlayer', () => {
   });
 
   test('handles onEnded', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const onEnded = jest.fn();
     const { container } = renderComponent({ onEnded });
 
@@ -239,16 +253,13 @@ describe('AudioPlayer', () => {
   });
 
   test('handles window resize', () => {
-    window.innerWidth = 500;
+    setWindowInnerWidth(500);
     const { getByTestId, queryByTestId } = renderComponent();
 
     expect(getByTestId('audio-player-container')).toBeInTheDocument();
     expect(queryByTestId('tablet-desktop-player')).not.toBeInTheDocument();
 
-    act(() => {
-      window.innerWidth = 1024;
-      window.dispatchEvent(new Event('resize'));
-    });
+    setWindowInnerWidth(1024);
 
     expect(queryByTestId('audio-player-container')).not.toBeInTheDocument();
     expect(getByTestId('tablet-desktop-player')).toBeInTheDocument();
