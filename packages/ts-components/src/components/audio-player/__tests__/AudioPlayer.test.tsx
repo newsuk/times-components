@@ -154,7 +154,7 @@ describe('AudioPlayer Component', () => {
     expect(onPause).toHaveBeenCalled();
   });
 
-  it('handles autoPlay prop correctly', () async () => {
+  it('handles autoPlay prop correctly', async () => {
     const onPlay = jest.fn();
     render(
       <AudioPlayer src={src} title={title} autoPlay onPlay={onPlay} />
