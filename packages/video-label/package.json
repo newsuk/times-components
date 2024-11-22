@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video-label",
-  "version": "2.11.62",
+  "version": "2.11.63",
   "description": "A label for articles with videos ",
   "main": "dist/video-label",
   "dev": "src/video-label",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.22.12",
+    "@times-components/icons": "2.23.0",
     "@times-components/ts-styleguide": "1.50.34",
     "@times-components/utils": "6.26.0",
     "lodash.pick": "4.4.0",

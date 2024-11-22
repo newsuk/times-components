@@ -1,16 +1,21 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { clean } from "@times-components/utils";
 
-const PauseIcon = ({fill}) => (
+const PauseIcon = ({
+  fill = "black",
+  width = 25,
+  height = 24,
+  title = "Pause Icon"
+}) => (
   <svg
-    width="25"
-    height="24"
-    viewBox="0 0 25 24"
-    fill={fill}
-    xmlns="http://www.w3.org/2000/svg"
-    aria-label="Pause Icon"
+    aria-label="pause-icon"
     role="img"
+    viewBox="0 0 25 24"
+    {...clean({ width, height, title })}
+    xmlns="http://www.w3.org/2000/svg"
   >
-
+    <title>{title}</title>
     <mask
       id="mask0_4528_2487"
       style={{ maskType: "alpha" }}
@@ -33,5 +38,19 @@ const PauseIcon = ({fill}) => (
     </g>
   </svg>
 );
+
+PauseIcon.propTypes = {
+  fill: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  title: PropTypes.string
+};
+
+PauseIcon.defaultProps = {
+  fill: "black",
+  width: 25,
+  height: 24,
+  title: "Pause Icon"
+};
 
 export default PauseIcon;

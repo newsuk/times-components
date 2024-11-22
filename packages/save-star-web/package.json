@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.10.66",
+  "version": "0.10.67",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.22.12",
+    "@times-components/icons": "2.23.0",
     "@times-components/link": "3.17.34",
     "@times-components/provider": "1.41.4",
     "@times-components/provider-queries": "2.23.3",
