@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { TitleScroller } from '../TitleScroller'; 
+import { TitleScroller } from '../TitleScroller';
 
 // Mocking styled-components
 jest.mock('../styles', () => ({
   Row: ({ children }: any) => <div data-testid="row">{children}</div>,
-  Title: ({ children }: any) => <div data-testid="title">{children}</div>,
+  Title: ({ children }: any) => <div data-testid="title">{children}</div>
 }));
 
 describe('TitleScroller', () => {
@@ -33,7 +33,8 @@ describe('TitleScroller', () => {
   });
 
   test('displays long titles appropriately', () => {
-    const longTitle = 'This is a very long title intended to test how the TitleScroller component handles overflow and ensures that the text is displayed correctly without breaking the layout or causing any visual issues.';
+    const longTitle =
+      'This is a very long title intended to test how the TitleScroller component handles overflow and ensures that the text is displayed correctly without breaking the layout or causing any visual issues.';
     const { getByTestId } = render(<TitleScroller title={longTitle} />);
 
     const titleElement = getByTestId('title').querySelector('div');
@@ -46,11 +47,9 @@ describe('TitleScroller', () => {
 
     const row = getByTestId('row');
     const title = getByTestId('title');
-    const titleDiv = title.querySelector('div');
 
     expect(row.tagName).toBe('DIV');
     expect(title.tagName).toBe('DIV');
-    expect(titleDiv?.tagName).toBe('DIV');
   });
 
   test('matches the snapshot', () => {

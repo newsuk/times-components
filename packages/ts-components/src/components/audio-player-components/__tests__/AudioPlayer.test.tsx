@@ -101,7 +101,7 @@ describe('AudioPlayer', () => {
     Object.defineProperty(window, 'innerWidth', {
       writable: true,
       configurable: true,
-      value: originalInnerWidth,
+      value: originalInnerWidth
     });
     jest.restoreAllMocks();
   });
@@ -110,7 +110,7 @@ describe('AudioPlayer', () => {
     Object.defineProperty(window, 'innerWidth', {
       writable: true,
       configurable: true,
-      value: width,
+      value: width
     });
     // Dispatch a resize event to notify listeners
     window.dispatchEvent(new Event('resize'));
