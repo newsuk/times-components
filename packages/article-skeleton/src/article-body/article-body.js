@@ -103,8 +103,7 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  articleId,
-  socialEmbed
+  articleId
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -261,13 +260,28 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <SocialMediaEmbed
-              socialEmbed={socialEmbed}
               url={attributes.url}
               vendorName="twitter"
               id={id}
             />
           </InteractiveContainer>
         );
+
+      case "times-embed-iframe-max": {
+        const src = (element.attributes && element.attributes.src) || "";
+        const isYoutube = src.includes("youtube");
+        const isTikTok = src.includes("tiktok");
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={src}
+              vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+      }
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
@@ -604,8 +618,7 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id: articleId,
-  socialEmbed
+  id: articleId
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -618,8 +631,7 @@ const ArticleBody = ({
       isLiveOrBreaking,
       articleId,
       section,
-      articleHeadline,
-      socialEmbed
+      articleHeadline
     })
   );
 
@@ -633,15 +645,7 @@ ArticleBody.propTypes = {
   ).isRequired,
   contextUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string,
-  section: PropTypes.string,
-  socialEmbed: PropTypes.objectOf(
-    PropTypes.shape({
-      isSocialEmbedAllowed: PropTypes.bool,
-      setIsSocialEmbedAllowed: PropTypes.func,
-      isAllowedOnce: PropTypes.bool,
-      setIsAllowedOnce: PropTypes.func
-    })
-  )
+  section: PropTypes.string
 };
 
 export { ArticleLink };

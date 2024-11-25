@@ -1,8 +1,10 @@
-import React, { FC, useEffect, Dispatch, SetStateAction } from 'react';
+import React, { FC, useEffect } from 'react';
 import { BlockedEmbedMessage } from './BlockedEmbedMessage';
 import { checkVendorConsent } from './helpers/vendorConsent';
 import { eventStatus } from './constants';
 import { TcData, VendorName } from './types';
+import { useSocialEmbedsContext } from '../../contexts/SocialEmbedsProvider';
+import { Vendor } from './SocialVendor';
 
 declare global {
   interface Window {
@@ -25,26 +27,18 @@ export type SocialMediaEmbedProps = {
   url: string;
   vendorName: VendorName;
   id: string;
-  socialEmbed: {
-    isSocialEmbedAllowed: boolean;
-    setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
-    isAllowedOnce: boolean;
-    setIsAllowedOnce: Dispatch<SetStateAction<boolean>>;
-  };
 };
 
 export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   id,
   url,
-  vendorName,
-  socialEmbed
+  vendorName
 }) => {
   const {
-    isSocialEmbedAllowed,
     setIsSocialEmbedAllowed,
     isAllowedOnce,
-    setIsAllowedOnce
-  } = socialEmbed;
+    isSocialEmbedAllowed
+  } = useSocialEmbedsContext();
 
   useEffect(
     () => {
@@ -59,41 +53,28 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
           ) {
             // tslint:disable-next-line:no-console
             console.log('PROSLO DO setIsSocialEmbedAllowed');
-            setIsSocialEmbedAllowed(checkVendorConsent(vendorName));
+            const consent = checkVendorConsent(vendorName);
+            setIsSocialEmbedAllowed(prev => ({
+              ...prev,
+              [vendorName]: consent
+            }));
           }
         });
       }
-
-      /* return () => {
-        if (window.__tcfapi && data && data.listenerId) {
-          window.__tcfapi(
-            'removeEventListener',
-            2,
-            success => {
-              if (success) {
-                // tslint:disable-next-line:no-console
-                console.log(success);
-              }
-            },
-            data.listenerId
-          );
-        }
-      }; */
     },
-    [isSocialEmbedAllowed]
+    [vendorName, setIsSocialEmbedAllowed]
   );
 
-  return isSocialEmbedAllowed || isAllowedOnce ? (
+  // tslint:disable-next-line:no-console
+  console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
+  // tslint:disable-next-line:no-console
+  console.log('isAllowedOnce', isAllowedOnce);
+
+  return isSocialEmbedAllowed[vendorName] || isAllowedOnce[vendorName] ? (
     <div id={id}>
-      <blockquote className="twitter-tweet">
-        <a href={url} />
-      </blockquote>
+      <Vendor vendorName={vendorName} url={url} />
     </div>
   ) : (
-    <BlockedEmbedMessage
-      vendorName={vendorName}
-      setIsAllowedOnce={setIsAllowedOnce}
-      setIsSocialEmbedAllowed={setIsSocialEmbedAllowed}
-    />
+    <BlockedEmbedMessage vendorName={vendorName} />
   );
 };

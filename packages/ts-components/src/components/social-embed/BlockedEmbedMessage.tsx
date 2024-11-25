@@ -1,4 +1,5 @@
-import React, { FC, MouseEvent, Dispatch, SetStateAction } from 'react';
+/* eslint-disable no-console */
+import React, { FC, MouseEvent, useEffect } from 'react';
 import {
   AllowButton,
   CardContainer,
@@ -16,31 +17,55 @@ import { openPrivacyModal } from './helpers/privacyModal';
 import { socialMediaVendors } from './helpers/socialMediaVendors';
 import { VendorName } from './types';
 import { modalType } from './constants';
+import { useSocialEmbedsContext } from '../../contexts/SocialEmbedsProvider';
 
 export type BlockedEmbedMessageProps = {
   vendorName: VendorName;
-  setIsAllowedOnce: Dispatch<SetStateAction<boolean>>;
-  setIsSocialEmbedAllowed: Dispatch<SetStateAction<boolean>>;
 };
 
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
-  vendorName,
-  setIsAllowedOnce,
-  setIsSocialEmbedAllowed
+  vendorName
 }) => {
+  const {
+    setIsSocialEmbedAllowed,
+    setIsAllowedOnce,
+    isSocialEmbedAllowed,
+    isAllowedOnce
+  } = useSocialEmbedsContext();
+
+  useEffect(
+    () => {
+      // tslint:disable-next-line:no-console
+      console.log('isSocialEmbedAllowed updated:', isSocialEmbedAllowed);
+    },
+    [isSocialEmbedAllowed]
+  );
+
   const allowCookiesOnce = () => {
-    /* const vendorId = socialMediaVendors[vendorName].id; */
+    // tslint:disable-next-line:no-console
+    console.log('entered allowCookiesOnce', vendorName);
+    setIsAllowedOnce(prev => ({
+      ...prev,
+      [vendorName]: true
+    }));
+    // tslint:disable-next-line:no-console
+    console.log(
+      'entered allowCookiesOnce cookies enabled',
+      vendorName,
+      isAllowedOnce
+    );
+  };
 
-    // Check if consent has already been granted for this vendor
-    const consentAlreadyGranted = sessionStorage.getItem('consentedVendors');
-
-    if (consentAlreadyGranted) {
-      setIsAllowedOnce(true);
-    }
-
-    // Store consent status to avoid future prompts during the session
-    sessionStorage.setItem('consentedVendors', `['${vendorName}']`);
-    setIsAllowedOnce(true);
+  const handleEnableCookies = () => {
+    // tslint:disable-next-line:no-console
+    console.log('entered handleEnableCookies', vendorName);
+    enableCookies(vendorName, setIsSocialEmbedAllowed);
+    // tslint:disable-next-line:no-console
+    console.log(
+      'entered handleEnableCookies cookies enabled',
+      vendorName,
+      isSocialEmbedAllowed
+    );
   };
 
   const handlePrivacyManagerClick = (e: MouseEvent<HTMLAnchorElement>) => {
@@ -68,11 +93,7 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
           privacy manager.
         </LinkPrivacyManager>
       </Paragraph>
-      <EnableButton
-        onClick={() => enableCookies(vendorName, setIsSocialEmbedAllowed)}
-      >
-        Enable cookies
-      </EnableButton>
+      <EnableButton onClick={handleEnableCookies}>Enable cookies</EnableButton>
       <AllowButton onClick={() => allowCookiesOnce()}>
         Allow cookies once
       </AllowButton>

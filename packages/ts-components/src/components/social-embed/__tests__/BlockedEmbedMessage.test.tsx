@@ -5,56 +5,106 @@ import {
   BlockedEmbedMessageProps
 } from '../BlockedEmbedMessage';
 import { enableCookies } from '../helpers/enableCookies';
+import { openPrivacyModal } from '../helpers/privacyModal';
 import { VendorName } from '../types';
+import '@testing-library/jest-dom/extend-expect';
+import { useSocialEmbedsContext } from '../../../contexts/SocialEmbedsProvider';
 
 // Mock dependencies
-jest.mock('../helpers/enableCookies');
-jest.mock('../helpers/privacyModal');
+jest.mock('../helpers/enableCookies', () => ({
+  enableCookies: jest.fn()
+}));
+
+jest.mock('../helpers/privacyModal', () => ({
+  openPrivacyModal: jest.fn()
+}));
+
+jest.mock('../../../contexts/SocialEmbedsProvider', () => ({
+  useSocialEmbedsContext: jest.fn()
+}));
+
 jest.mock('../helpers/getVendorTitle', () => ({
   getVendorTitle: jest.fn(() => 'Vendor Title')
 }));
 
-describe('BlockedEmbedMessage', () => {
-  const vendorName = 'facebook' as VendorName;
-  const setIsAllowedOnce = jest.fn();
-  const setIsSocialEmbedAllowed = jest.fn();
+describe('BlockedEmbedMessage Component', () => {
+  const vendorName: VendorName = 'twitter';
 
   const defaultProps: BlockedEmbedMessageProps = {
-    vendorName,
-    setIsAllowedOnce,
-    setIsSocialEmbedAllowed
+    vendorName
+  };
+
+  const mockContext = {
+    setIsSocialEmbedAllowed: jest.fn(),
+    setIsAllowedOnce: jest.fn(),
+    isSocialEmbedAllowed: { twitter: false, facebook: false },
+    isAllowedOnce: { twitter: false, facebook: false }
   };
 
   beforeEach(() => {
     jest.clearAllMocks();
-    sessionStorage.clear();
+    (useSocialEmbedsContext as jest.Mock).mockReturnValue(mockContext);
+
+    (window as any).__TIMES_CONFIG__ = {
+      sourcepoint: {
+        gdprMessageId: 'mockMessageId'
+      }
+    };
   });
 
-  it('calls enableCookies when Enable cookies button is clicked', () => {
+  afterEach(() => {
+    delete (window as any).__TIMES_CONFIG__;
+  });
+
+  it('renders the component with correct content', () => {
+    render(<BlockedEmbedMessage {...defaultProps} />);
+
+    expect(
+      screen.getByText('Vendor Title content blocked')
+    ).toBeInTheDocument();
+    expect(screen.getByText('Enable cookies')).toBeInTheDocument();
+    expect(screen.getByText('Allow cookies once')).toBeInTheDocument();
+    expect(screen.getByText('privacy manager.')).toBeInTheDocument();
+  });
+
+  it('calls enableCookies when the Enable cookies button is clicked', () => {
     render(<BlockedEmbedMessage {...defaultProps} />);
     const enableButton = screen.getByText('Enable cookies');
     fireEvent.click(enableButton);
+
     expect(enableCookies).toHaveBeenCalledWith(
       vendorName,
-      setIsSocialEmbedAllowed
+      mockContext.setIsSocialEmbedAllowed
     );
   });
 
-  it('calls allowCookiesOnce when Allow cookies once button is clicked and updates session storage', () => {
+  it('calls setIsAllowedOnce when Allow cookies once button is clicked', () => {
     render(<BlockedEmbedMessage {...defaultProps} />);
     const allowButton = screen.getByText('Allow cookies once');
     fireEvent.click(allowButton);
-    expect(setIsAllowedOnce).toHaveBeenCalledWith(true);
-    expect(sessionStorage.getItem('consentedVendors')).toBe(
-      `['${vendorName}']`
+
+    expect(mockContext.setIsAllowedOnce).toHaveBeenCalledWith(
+      expect.any(Function)
     );
   });
 
-  it('grants consent if vendor is already in session storage', () => {
-    sessionStorage.setItem('consentedVendors', `['${vendorName}']`);
+  it('calls openPrivacyModal when the privacy manager link is clicked', () => {
     render(<BlockedEmbedMessage {...defaultProps} />);
-    const allowButton = screen.getByText('Allow cookies once');
-    fireEvent.click(allowButton);
-    expect(setIsAllowedOnce).toHaveBeenCalledWith(true);
+    const privacyLink = screen.getByText('privacy manager.');
+    fireEvent.click(privacyLink);
+
+    expect(openPrivacyModal).toHaveBeenCalledWith('gdpr', 'mockMessageId');
+  });
+
+  it('logs isSocialEmbedAllowed updates via useEffect', () => {
+    const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
+
+    render(<BlockedEmbedMessage {...defaultProps} />);
+    expect(consoleLogSpy).toHaveBeenCalledWith(
+      'isSocialEmbedAllowed updated:',
+      mockContext.isSocialEmbedAllowed
+    );
+
+    consoleLogSpy.mockRestore();
   });
 });

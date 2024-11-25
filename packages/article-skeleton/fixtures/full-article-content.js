@@ -162,6 +162,24 @@ export default [
     children: []
   },
   {
+    name: "interactive",
+    attributes: {
+      id: "cd693ed7-51e1-42bd-b528-7d11a42a8c93",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https:\\/\\/www.tiktok.com\\/embed\\/7355418637924060448",
+          "date-to": "2024-09-17",
+          "date-from": "2024-09-17"
+        }
+      }
+    },
+    children: []
+  },
+  {
     children: [
       {
         attributes: {

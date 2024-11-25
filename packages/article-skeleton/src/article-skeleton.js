@@ -12,7 +12,8 @@ import {
   ArticleSidebar,
   UpdateButtonWithDelay,
   Banner,
-  useConsent
+  SocialEmbedsProvider,
+  useSocialEmbedsContext
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -94,25 +95,21 @@ const ArticleSkeleton = ({
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
-  const [
-    isSocialEmbedAllowed,
-    setIsSocialEmbedAllowed,
-    isAllowedOnce,
-    setIsAllowedOnce
-  ] = useConsent();
+
+  const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
   useEffect(
     () => {
       // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
       if (
-        (isSocialEmbedAllowed || isAllowedOnce) &&
+        (isSocialEmbedAllowed.twitter || isAllowedOnce.twitter) &&
         window.twttr &&
         window.twttr.widgets
       ) {
         window.twttr.widgets.load();
       }
     },
-    [isSocialEmbedAllowed, isAllowedOnce]
+    [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
   );
 
   const sidebarRef = useRef();
@@ -400,12 +397,6 @@ const ArticleSkeleton = ({
                         template={template}
                         isPreview={isPreview}
                         isLiveOrBreaking={isLiveOrBreaking}
-                        socialEmbed={{
-                          isSocialEmbedAllowed,
-                          setIsSocialEmbedAllowed,
-                          isAllowedOnce,
-                          setIsAllowedOnce
-                        }}
                       />
                     )}
                     {isLiveOrBreaking && (
@@ -491,6 +482,12 @@ const ArticleSkeleton = ({
   );
 };
 
+const ArticleSkeletonWithProvider = props => (
+  <SocialEmbedsProvider>
+    <ArticleSkeleton {...props} />
+  </SocialEmbedsProvider>
+);
+
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
   paidContentClassName: PropTypes.string
@@ -501,4 +498,6 @@ export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
 
-export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));
+export default articleTrackingContext(
+  withTrackScrollDepth(ArticleSkeletonWithProvider)
+);
