@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.26.1...@times-components/save-and-share-bar@0.26.2) (2024-11-22)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.26.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.26.0...@times-components/save-and-share-bar@0.26.1) (2024-11-20)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.25.0...@times-components/save-and-share-bar@0.26.0) (2024-11-19)
+
+
+### Features
+
+* **TMD-63:** Implement events tracking to article share bar ([#3979](https://github.com/newsuk/times-components/issues/3979)) ([101a99d](https://github.com/newsuk/times-components/commit/101a99dd7cdb25b15307a99bceb92abf3f6e3542))
+
+
+
+
+
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.13...@times-components/save-and-share-bar@0.25.0) (2024-11-14)
+
+
+### Features
+
+* **TMD-601:** add tracking for save article button ([#3971](https://github.com/newsuk/times-components/issues/3971)) ([13e6e42](https://github.com/newsuk/times-components/commit/13e6e425876cfc3465081e1a5feacc72229467f1))
+
+
+
+
+
 ## [0.24.13](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.24.12...@times-components/save-and-share-bar@0.24.13) (2024-11-05)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
