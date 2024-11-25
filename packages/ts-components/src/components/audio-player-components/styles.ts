@@ -1,9 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-
-// Define breakpoints
-const breakpoints = {
-  sm: '520px'
-};
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 // Global Styles - box-sizing
 export const GlobalStyle = createGlobalStyle`
@@ -30,8 +26,8 @@ export const AudioPlayerContainer = styled.div<{
     }
     return isModalOpen ? '370px' : '221px';
   }};
-  background-color: #ffffff;
-  color: #333333;
+  background-color: ${colours.functional.white};
+  color: ${colours.functional.primary};
   box-shadow: 0px -2px 4px 0px #0000001a;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -44,7 +40,7 @@ export const AudioPlayerContainer = styled.div<{
   transform: ${({ isExpanded }) =>
     isExpanded ? 'translateY(0)' : 'translateY(calc(100% - 48px))'};
 
-  @media (max-width: ${breakpoints.sm}) {
+  @media (max-width: ${breakpoints.small}) {
     width: 100%;
   }
 `;
@@ -67,7 +63,7 @@ export const CollapseButton = styled.button`
 
 // Title Scroller
 export const Title = styled.div`
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -103,7 +99,9 @@ export const StyledSeekBar = styled.input<StyledSeekBarProps>`
   height: 4px;
   border-radius: 2px;
   background: ${({ progress }) =>
-    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, #f5f5f5 ${progress}%, #f5f5f5 100%)`};
+    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${
+      colours.functional.whiteGrey
+    } ${progress}%, ${colours.functional.whiteGrey} 100%)`};
   outline: none;
   appearance: none;
   margin: 16px 0 6px 0;
@@ -150,7 +148,7 @@ export const StyledSeekBar = styled.input<StyledSeekBarProps>`
 
 // Time Display
 export const StyledTimeDisplay = styled.div`
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 14px;
   font-weight: 500;
   text-align: right;
@@ -169,7 +167,7 @@ export const Controls = styled.div`
   align-items: center;
   position: relative;
 
-  @media (max-width: ${breakpoints.sm}) {
+  @media (max-width: ${breakpoints.small}) {
     gap: 16px;
   }
 `;
@@ -180,7 +178,7 @@ export const PlaybackButtonsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
-  @media (min-width: ${breakpoints.sm}) {
+  @media (min-width: ${breakpoints.small}) {
     gap: 16px;
   }
 `;
@@ -195,7 +193,7 @@ export const ControlButton = styled.button`
   svg {
     width: 24px;
     height: 24px;
-    fill: #333333;
+    fill: ${colours.functional.primary};
   }
 
   &:disabled {
@@ -237,29 +235,25 @@ export const PlayPauseButton = styled.button`
 // Speed Button
 export const SpeedButton = styled.button`
   background: none;
-  border: 1px solid #333333;
+  border: 1px solid ${colours.functional.primary};
   cursor: pointer;
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 14px;
   font-weight: 500;
-  color: #333333;
+  color: ${colours.functional.primary};
+  margin-left: 16px;
+  position: absolute;
+  right: -10px;
   padding: 8px 16px;
 
-  @media (max-width: ${breakpoints.sm}) {
-    margin-left: 16px;
-    position: absolute;
-    right: -10px;
-    padding: 8px 16px;
-  }
-
-  @media (min-width: ${breakpoints.sm}) {
+  @media (min-width: ${breakpoints.small}) {
     position: absolute;
     right: 0;
     margin-left: 0;
   }
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: ${colours.functional.border};
   }
 
   &:disabled {
@@ -270,7 +264,7 @@ export const SpeedButton = styled.button`
 
 // Speed Select Modal
 export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
-  background: #ffffff;
+  background: ${colours.functional.white};
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -294,7 +288,7 @@ export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
         transform: translateX(-50%);
         width: 160px;
         height: 256px;
-        border: 1px solid #ccc;
+        border: 1px solid ${colours.functional.greyLabel};
         padding: 16px 0px;
         box-shadow: 0px 20px 32px 0px #0A0A0A14;
         overflow: unset;
@@ -307,7 +301,9 @@ export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
           transform: translateX(-50%);
           border-width: 16px 16px 0 16px;
           border-style: solid;
-          border-color: #ffffff transparent transparent transparent;
+          border-color: ${
+            colours.functional.white
+          } transparent transparent transparent;
           width: 0;
           height: 0;
         }
@@ -331,23 +327,28 @@ export const SpeedOptionItem = styled.div<{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: ${({ selected }) => (selected ? '#BEDEED' : 'transparent')};
+  background: ${({ selected }) =>
+    selected ? colours.functional.bannerBackground : 'transparent'};
   padding: 8px 12px;
   cursor: pointer;
   width: ${({ isMobile }) => (isMobile ? '80%;' : '100%')};
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 16px;
   font-weight: 500;
-  color: ${({ selected }) => (selected ? '#1D1D1B' : '#696969')};
+  color: ${({ selected }) =>
+    selected ? colours.functional.brandColour : colours.functional.secondary};
 
   svg {
     width: 20px;
     height: 20px;
-    fill: #1d1d1b;
+    fill: ${colours.functional.brandColour};
   }
 
   &:hover {
-    background: ${({ selected }) => (selected ? '#BEDEED' : '#f0f0f0')};
+    background: ${({ selected }) =>
+      selected
+        ? colours.functional.bannerBackground
+        : colours.functional.border};
   }
 `;
 
@@ -356,10 +357,10 @@ export const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 16px;
   font-weight: 500;
-  color: #333333;
+  color: ${colours.functional.primary};
   padding: 12px 0;
   align-self: center;
 
@@ -379,7 +380,7 @@ export const VolumeControlContainer = styled.div`
 // Volume Label
 export const VolumeLabel = styled.label`
   margin-right: 10px;
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 14px;
   font-weight: 500;
 `;
@@ -389,7 +390,7 @@ export const VolumeSlider = styled.input`
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background: #f5f5f5;
+  background: ${colours.functional.whiteGrey};
   outline: none;
   appearance: none;
 
@@ -415,13 +416,13 @@ export const VolumeSlider = styled.input`
 
   &::-webkit-slider-runnable-track {
     height: 4px;
-    background: #f5f5f5;
+    background: ${colours.functional.whiteGrey};
     border: none;
   }
 
   &::-moz-range-track {
     height: 4px;
-    background: #f5f5f5;
+    background: ${colours.functional.whiteGrey};
     border: none;
   }
 `;
@@ -433,7 +434,7 @@ export const TabletDesktopWrapper = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: ${colours.functional.white};
   box-shadow: 0px -2px 4px 0px #0000001a;
   display: flex;
   align-items: center;
@@ -481,13 +482,13 @@ export const TabletDesktopPlayPauseButton = styled.button`
   svg {
     width: 32px;
     height: 32px;
-    fill: #333333;
+    fill: ${colours.functional.primary};
   }
 `;
 
 // Tablet/Desktop Status Text
 export const TabletDesktopStatusText = styled.span`
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 16px;
   font-weight: 500;
   margin: 0 16px;
@@ -509,7 +510,7 @@ export const TabletDesktopVolumeButton = styled.button`
   svg {
     width: 24px;
     height: 24px;
-    fill: #333333;
+    fill: ${colours.functional.primary};
   }
 `;
 
@@ -517,7 +518,7 @@ export const TabletDesktopVolumeSlider = styled.input`
   width: 100px;
   margin-left: 8px;
   height: 4px;
-  background: #f5f5f5;
+  background: ${colours.functional.whiteGrey};
   outline: none;
   appearance: none;
 
@@ -537,7 +538,7 @@ export const TabletDesktopVolumeSlider = styled.input`
 export const TabletDesktopTimeDisplay = styled.div`
   display: flex;
   align-items: center;
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 14px;
   font-weight: 500;
 
@@ -555,7 +556,9 @@ export const TabletDesktopSeekBar = styled.input<TabletDesktopSeekBarProps>`
   flex-grow: 1;
   height: 4px;
   background: ${({ progress }) =>
-    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, #f5f5f5 ${progress}%, #f5f5f5 100%)`};
+    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${
+      colours.functional.whiteGrey
+    } ${progress}%, ${colours.functional.whiteGrey} 100%)`};
   outline: none;
   appearance: none;
   margin: 0 8px;
@@ -589,17 +592,17 @@ export const TabletDesktopSeekBar = styled.input<TabletDesktopSeekBarProps>`
 // Tablet/Desktop Speed Button
 export const TabletDesktopSpeedButton = styled.button`
   background: none;
-  border: 1px solid #333333;
+  border: 1px solid ${colours.functional.primary};
   cursor: pointer;
-  font-family: Roboto, sans-serif;
+  font-family: ${fonts.supporting};
   font-size: 14px;
   font-weight: 500;
-  color: #333333;
+  color: ${colours.functional.primary};
   padding: 8px 16px;
   margin: 0 16px;
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: ${colours.functional.border};
   }
 
   &:disabled {
@@ -623,6 +626,6 @@ export const TabletDesktopCloseButton = styled.button`
   svg {
     width: 24px;
     height: 24px;
-    fill: #333333;
+    fill: ${colours.functional.primary};
   }
 `;
