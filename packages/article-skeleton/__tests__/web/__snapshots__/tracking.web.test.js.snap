@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should track ArticleLink clicks in analytics 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "linkText": "test link text",
+    "target": "t-target",
+    "url": "test.io",
+  },
+  "component": "ArticleLink",
+}
+`;
