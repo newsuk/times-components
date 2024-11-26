@@ -55,11 +55,32 @@ export interface PlaybackControlsProps {
   allowPlaybackRateChange: boolean;
   isSpeedModalOpen: boolean;
   setIsSpeedModalOpen: (open: boolean) => void;
-  isMobile?: boolean
+  isMobile?: boolean;
 }
 
-export interface VolumeControlProps {
-  volume: number;
-  onVolumeChange: (volume: number) => void;
+export interface TabletDesktopPlayerProps {
+  audioRef: React.RefObject<HTMLAudioElement>;
+  isPlaying: boolean;
+  togglePlayPause: () => void;
+  currentTime: number;
+  duration: number;
+  allowTogglePlay: boolean;
+  allowSeek: boolean;
   allowVolumeChange: boolean;
+  volume: number;
+  setVolume: (volume: number) => void;
+  handleSeek: (time: number) => void;
+  handleVolumeChange: (volume: number) => void;
+  speed: number;
+  handleSpeedChange: (rate: number) => void;
+  allowPlaybackRateChange: boolean;
+  isSpeedModalOpen: boolean;
+  setIsSpeedModalOpen: (open: boolean) => void;
+  speedOptions: number[];
+  handleSpeedSelect: (speed: number) => void;
+  isVolumeSliderVisible: boolean;
+  setIsVolumeSliderVisible: (visible: boolean) => void;
+  onClose?: () => void;
+  allowExpandCollapse?: boolean;
+  isMobile?: boolean;
 }

@@ -2,7 +2,7 @@ import React, { FC, useEffect, useRef, useState } from 'react';
 import { AudioButton } from './styles';
 import PlayIcon from './assets/PlayIcon'
 import PauseIcon from './assets/PauseIcon';
-import { AudioPlayer } from '../audio-player/AudioPlayer';
+import { AudioPlayer } from '../audio-player-components/AudioPlayer';
 
 
 export interface ArticleAudioProps {
@@ -81,11 +81,11 @@ audioSrc
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
           onEnded={() => setAudioState('not-started')}
-          onTimeUpdate={(currentTime) => console.log('Current Time:', currentTime)}
+         /* onTimeUpdate={(currentTime) => console.log('Current Time:', currentTime)}
           onVolumeChange={(volume) => console.log('Volume:', volume)}
           onPlaybackRateChange={(rate) => console.log('Playback Rate:', rate)}
           onSeek={(time) => console.log('Seeked to:', time)}
-          onClose={() => console.log('Player Closed')}
+          onClose={() => console.log('Player Closed')} */
           /> }
      
     </div>
