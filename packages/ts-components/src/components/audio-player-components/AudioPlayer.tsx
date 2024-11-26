@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, FC } from 'react';
+import React, { useState, useEffect, useRef, FC, forwardRef, useImperativeHandle } from 'react';
 import { AudioPlayerContainer } from './styles';
 import { StickyAudioPlayerProps } from './types';
 
@@ -9,7 +9,7 @@ import { TimeDisplay } from './TimeDisplay';
 import { PlaybackControls } from './PlaybackControls';
 import { TabletDesktopPlayer } from './TabletDesktopPlayer';
 
-export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
+export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(({
   src,
   title = 'Audio Title',
   autoPlay = false,
@@ -30,7 +30,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
   onPlaybackRateChange,
   onSeek,
   onClose
-}) => {
+}, ref) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(
     isPlayingProp !== undefined && isPlayingProp !== null
@@ -67,6 +67,12 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useImperativeHandle(ref, () => ({
+    parentControlToggle() {
+      togglePlayPause();
+    }
+  }));
 
   useEffect(
     () => {
@@ -300,4 +306,4 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = ({
       )}
     </>
   );
-};
+});
