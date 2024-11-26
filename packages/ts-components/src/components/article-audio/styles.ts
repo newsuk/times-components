@@ -19,8 +19,7 @@ export const AudioButton = styled.button`
 
   span {
     margin-left: 4px;
-    font-size:12px;
+    font-size: 12px;
     color: #696969;
   }
-`
-
+`;

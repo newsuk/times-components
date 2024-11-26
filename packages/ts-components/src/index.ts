@@ -115,7 +115,7 @@ export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
 export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
-export { ArticleAudio} from './components/article-audio/ArticleAudio';
+export { ArticleAudio } from './components/article-audio/ArticleAudio';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';

@@ -84,3 +84,7 @@ export interface TabletDesktopPlayerProps {
   allowExpandCollapse?: boolean;
   isMobile?: boolean;
 }
+
+export interface AudioPlayerHandle {
+  parentControlToggle: () => void;
+}

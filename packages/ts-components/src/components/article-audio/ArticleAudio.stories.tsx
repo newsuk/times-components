@@ -5,11 +5,10 @@ import { ArticleAudio } from './ArticleAudio';
 storiesOf('Typescript Component/Article Audio', module).add(
   'Article Audio',
   () => {
-
     return (
-        <div style={{padding: '10px' }}>
-          <ArticleAudio audioSrc='https://www.kozco.com/tech/LRMonoPhase4.mp3' />
-        </div>
+      <div style={{ padding: '10px' }}>
+        <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+      </div>
     );
   }
 );

@@ -9,8 +9,12 @@ export interface ArticleAudioProps {
 }
 
 export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
-  const [audioState, setAudioState] = useState<'not-started' | 'playing' | 'paused'>('not-started');
-  const [isAudioPlayerVisible, setisAudioPlayerVisible] = useState<boolean>(false);
+  const [audioState, setAudioState] = useState<
+    'not-started' | 'playing' | 'paused'
+  >('not-started');
+  const [isAudioPlayerVisible, setisAudioPlayerVisible] = useState<boolean>(
+    false
+  );
   const [duration, setDuration] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -35,12 +39,17 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
 
   return (
     <div>
-      <audio ref={audioRef} src={audioSrc} onLoadedMetadata={handleLoadedMetadata} preload="metadata"></audio>
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        onLoadedMetadata={handleLoadedMetadata}
+        preload="metadata"
+      />
       <AudioButton
         onClick={handlePlayPause}
         style={{
           backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : 'unset',
-          color: audioState === 'not-started' ? '#333' : '#fff',
+          color: audioState === 'not-started' ? '#333' : '#fff'
         }}
       >
         {audioState === 'playing' ? (
@@ -58,7 +67,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
         )}
         <span
           style={{
-            color: audioState === 'not-started' ? '#696969' : '#fff',
+            color: audioState === 'not-started' ? '#696969' : '#fff'
           }}
         >
           {' '}
@@ -72,10 +81,12 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
           onEnded={() => setAudioState('not-started')}
-          onTimeUpdate={(currentTime) => console.log('Current Time:', currentTime)}
-          onVolumeChange={(volume) => console.log('Volume:', volume)}
-          onPlaybackRateChange={(rate) => console.log('Playback Rate:', rate)}
-          onSeek={(time) => console.log('Seeked to:', time)}
+          onTimeUpdate={currentTime =>
+            console.log('Current Time:', currentTime)
+          }
+          onVolumeChange={volume => console.log('Volume:', volume)}
+          onPlaybackRateChange={rate => console.log('Playback Rate:', rate)}
+          onSeek={time => console.log('Seeked to:', time)}
           onClose={() => console.log('Player Closed')}
         />
       )}
