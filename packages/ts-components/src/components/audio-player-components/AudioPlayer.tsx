@@ -79,11 +79,14 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(
       return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useImperativeHandle(ref, (): AudioPlayerHandle => ({
-      parentControlToggle: (): void => {
-        togglePlayPause();
-      }
-    }));
+    useImperativeHandle(
+      ref,
+      (): AudioPlayerHandle => ({
+        parentControlToggle: (): void => {
+          togglePlayPause();
+        }
+      })
+    );
 
     useEffect(
       () => {
