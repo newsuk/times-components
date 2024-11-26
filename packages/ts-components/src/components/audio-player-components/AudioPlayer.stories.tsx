@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { AudioPlayer } from './AudioPlayer';
 import { withKnobs, boolean, number, text } from '@storybook/addon-knobs';
 
-storiesOf('Typescript Component/Audio Player', module)
-  .addDecorator(withKnobs) // Allows dynamic prop changes via knobs
+storiesOf('Typescript Component/Audio Player Components', module)
+  .addDecorator(withKnobs)
   .addParameters({
     component: AudioPlayer,
     docs: {
@@ -159,17 +159,29 @@ A customizable audio player component with various controls.
 />
 \`\`\`
 
-`,
-      },
-    },
+`
+      }
+    }
   })
   .add('Default Audio Player', () => {
-    // Use knobs to allow dynamic prop changes in Storybook
-    const src = text('src', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+    const src = text(
+      'src',
+      'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+    );
     const title = text('title', 'Sample Audio Title for Testing');
     const autoPlay = boolean('autoPlay', false);
-    const initialVolume = number('initialVolume', 0.5, { range: true, min: 0, max: 1, step: 0.1 });
-    const playbackRate = number('playbackRate', 1, { range: true, min: 0.5, max: 2, step: 0.1 });
+    const initialVolume = number('initialVolume', 0.5, {
+      range: true,
+      min: 0,
+      max: 1,
+      step: 0.1
+    });
+    const playbackRate = number('playbackRate', 1, {
+      range: true,
+      min: 0.5,
+      max: 2,
+      step: 0.1
+    });
     const isPlayingProp = boolean('isPlayingProp', false);
     const isExpandedProp = boolean('isExpandedProp', true);
     const allowTogglePlay = boolean('allowTogglePlay', true);
@@ -190,18 +202,7 @@ A customizable audio player component with various controls.
       allowSeek,
       allowVolumeChange,
       allowPlaybackRateChange,
-      allowExpandCollapse,
-      onPlay: () => console.log('Audio is playing'),
-      onPause: () => console.log('Audio is paused'),
-      onEnded: () => console.log('Audio playback ended'),
-      onTimeUpdate: (currentTime: number) =>
-        console.log('Current time updated:', currentTime),
-      onVolumeChange: (volume: number) =>
-        console.log('Volume changed:', volume),
-      onPlaybackRateChange: (rate: number) =>
-        console.log('Playback rate changed:', rate),
-      onSeek: (time: number) => console.log('Seek to time:', time),
-      onClose: () => console.log('Player closed'),
+      allowExpandCollapse
     };
 
     return <AudioPlayer {...mockProps} />;
