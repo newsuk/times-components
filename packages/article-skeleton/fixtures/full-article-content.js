@@ -180,6 +180,23 @@ export default [
     children: []
   },
   {
+    name: "interactive",
+    attributes: {
+      id: "79c66dbd-2e9c-4dee-9677-53e7ed94418e",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
+          ratio: "r1-1"
+        }
+      }
+    },
+    children: []
+  },
+  {
     children: [
       {
         attributes: {

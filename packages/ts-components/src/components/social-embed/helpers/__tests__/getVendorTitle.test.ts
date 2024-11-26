@@ -1,29 +1,23 @@
 import { getVendorTitle } from '../getVendorTitle';
+import { socialMediaVendors } from '../socialMediaVendors';
 
 describe('getVendorTitle', () => {
-  const mockSocialMediaVendors = {
-    facebook: 'FacebookID',
-    instagram: 'InstagramID'
-  };
-
-  it('should return "X (Twitter)" if the title is "twitter"', () => {
-    const result = getVendorTitle('twitter', mockSocialMediaVendors);
-    expect(result).toBe('X (Twitter)');
+  it('should return the correct title for twitter', () => {
+    const title = getVendorTitle('twitter', socialMediaVendors);
+    expect(title).toBe('X (Twitter)');
   });
 
-  it('should return the id from socialMediaVendors if the title exists', () => {
-    const result = getVendorTitle('facebook', mockSocialMediaVendors);
-    expect(result).toBe('FacebookID');
+  it('should return the correct title for youtube', () => {
+    const title = getVendorTitle('youtube', socialMediaVendors);
+    expect(title).toBe('Youtube');
   });
 
-  // it('should return the title if it does not exist in socialMediaVendors', () => {
-  //   const result = getVendorTitle('linkedin', mockSocialMediaVendors);
-  //   expect(result).toBe('linkedin');
-  // });
+  it('should return the correct title for tiktok', () => {
+    const title = getVendorTitle('tiktok', socialMediaVendors);
+    expect(title).toBe('Tiktok');
+  });
 
-  // it('should return the title if socialMediaVendors has no id for the given title', () => {
-  //   const mockVendorsWithoutId = { pinterest: {} };
-  //   const result = getVendorTitle('pinterest', mockVendorsWithoutId);
-  //   expect(result).toBe('pinterest');
-  // });
+  it('should throw an error if the title does not exist in socialMediaVendors', () => {
+    expect(() => getVendorTitle('nonexistent', socialMediaVendors)).toThrow();
+  });
 });

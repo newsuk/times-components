@@ -275,7 +275,7 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <SocialMediaEmbed
-              url={src}
+              url={isTikTok ? decodeURIComponent(src) : src}
               vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
               id={id}
             />
