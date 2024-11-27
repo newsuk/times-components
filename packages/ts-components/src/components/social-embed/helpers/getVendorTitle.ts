@@ -5,5 +5,5 @@ export const getVendorTitle = (
   if (title === 'twitter') {
     return 'X (Twitter)';
   }
-  return socialMediaVendors[title];
+  return socialMediaVendors[title].title;
 };
