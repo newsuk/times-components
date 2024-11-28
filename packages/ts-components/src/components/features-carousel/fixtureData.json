@@ -1,5 +1,6 @@
 {
     "featuresCarouselData": {
+        "hideHeading": false,
         "heading": "Your benefits",
         "carouselItems": [
             {

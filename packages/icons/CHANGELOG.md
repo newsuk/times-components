@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.22.12...@times-components/icons@2.23.0) (2024-11-20)
+
+
+### Features
+
+* **TMPZ-777:** Audio player icons ([#3986](https://github.com/newsuk/times-components/issues/3986)) ([c308be7](https://github.com/newsuk/times-components/commit/c308be7e346d8a9112cfd5fc04243f350f3e8cbc))
+
+
+
+
+
 ## [2.22.12](https://github.com/newsuk/times-components/compare/@times-components/icons@2.22.11...@times-components/icons@2.22.12) (2024-07-02)
 
 **Note:** Version bump only for package @times-components/icons

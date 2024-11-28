@@ -144,3 +144,91 @@ exports[`14. iconactivityindicator sets a width when height is set 1`] = `
   </div>
 </activity-indicator__ActivityIndicatorContainer>
 `;
+
+exports[`15. iconcheck sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-check"
+  height={50}
+  role="img"
+  title="Check Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`16. playermodalicon sets a width when height is set 1`] = `
+<svg
+  aria-label="player-modal-icon"
+  height={50}
+  role="img"
+  title="Player Modal Icon"
+  width={32}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`17. playerback sets a width when height is set 1`] = `
+<svg
+  aria-label="player-back-icon"
+  height={50}
+  role="img"
+  title="Player Back Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`18. playerfront sets a width when height is set 1`] = `
+<svg
+  aria-label="player-front-icon"
+  height={50}
+  role="img"
+  title="Player Front Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`19. playicon sets a width when height is set 1`] = `
+<svg
+  aria-label="play-icon"
+  height={50}
+  role="img"
+  title="Play Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`20. pauseicon sets a width when height is set 1`] = `
+<svg
+  aria-label="pause-icon"
+  height={50}
+  role="img"
+  title="Pause Icon"
+  width={25}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`21. iconvolume sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-volume"
+  height={50}
+  role="img"
+  title="Volume Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`22. audiocloseicon sets a width when height is set 1`] = `
+<svg
+  aria-label="audio-close-icon"
+  height={50}
+  role="img"
+  title="Audio Close Icon"
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;

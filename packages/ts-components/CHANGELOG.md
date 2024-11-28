@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.2...@times-components/ts-components@1.111.0) (2024-11-22)
+
+
+### Features
+
+* **TMRS-584:** update benefits rail style ([#3988](https://github.com/newsuk/times-components/issues/3988)) ([5799756](https://github.com/newsuk/times-components/commit/5799756f53154b2f3b51f3acbcfb6e8ed156425a))
+
+
+
+
+
+## [1.110.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.1...@times-components/ts-components@1.110.2) (2024-11-20)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.110.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.0...@times-components/ts-components@1.110.1) (2024-11-05)
 
 **Note:** Version bump only for package @times-components/ts-components
