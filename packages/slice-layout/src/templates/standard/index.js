@@ -50,7 +50,11 @@ class StandardSlice extends Component {
 
 StandardSlice.propTypes = {
   itemCount: PropTypes.number.isRequired,
-  renderItems: PropTypes.func.isRequired
+  renderItems: PropTypes.func.isRequired,
+  hideBorder: PropTypes.bool
+};
+StandardSlice.defaultProps = {
+  hideBorder: false
 };
 
 export default StandardSlice;

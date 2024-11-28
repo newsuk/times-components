@@ -13,14 +13,13 @@ import {
 
 import { Header } from '../../utils/linkedArticles/styles';
 
-interface CategorisedArticles {
+interface CategorisedArticlesProps {
   heading: string;
   articles: Article[];
 }
-export const CategorisedArticles: React.FC<{
-  heading: string;
-  articles: any;
-}> = ({ heading, articles }) => {
+export const CategorisedArticles: React.FC<CategorisedArticlesProps> = (
+  { heading, articles }
+) => {
   const { fireAnalyticsEvent } = useTrackingContext();
 
   const onClickHandler = (__: MouseEventType, article: SliceArticle) => {

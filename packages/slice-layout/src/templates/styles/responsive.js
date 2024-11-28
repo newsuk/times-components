@@ -5,15 +5,14 @@ import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 export const SliceContainer = styled(TcView)`
   align-items: center;
   border-bottom-color: ${colours.functional.keyline};
-  border-bottom-width: ${({ hideBorder }) => hideBorder ? 0 : '1px'};
+  border-bottom-width: ${({ hideBorder }) => (hideBorder ? 0 : "1px")};
   border-style: solid;
   flex: 1;
   justify-content: center;
-  ${({ hideBorder }) => hideBorder && 'margin-bottom: 12px'};
-
+  ${({ hideBorder }) => hideBorder && "margin-bottom: 12px"};
 
   @media (-webkit-min-device-pixel-ratio: 2) {
-    border-bottom-width: ${({ hideBorder }) => hideBorder ? 0 : '0.5px'};
+    border-bottom-width: ${({ hideBorder }) => (hideBorder ? 0 : "0.5px")};
   }
 `;
 

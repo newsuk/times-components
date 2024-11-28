@@ -22,10 +22,10 @@ type SummaryText = { __typename: string; text: string };
 type Summary = { __typename: string; children: SummaryText[] };
 
 export type Article = {
-  __typename: string;
+  __typename?: string;
   url: string;
   slug: string;
-  label: string;
+  label: string | null;
   headline: string;
   publishedDateTime: string;
   bylines?: Byline[];
