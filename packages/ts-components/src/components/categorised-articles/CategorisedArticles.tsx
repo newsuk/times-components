@@ -6,9 +6,7 @@ import {
 } from '@times-components/ts-slices';
 
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
-import {
-  getRecommendedArticlesSlice
-} from '../../utils/linkedArticles/formatters';
+import { getRecommendedArticlesSlice } from '../../utils/linkedArticles/formatters';
 
 import { Header } from '../../utils/linkedArticles/styles';
 
@@ -16,9 +14,10 @@ interface CategorisedArticlesProps {
   heading: string;
   articles: any;
 }
-export const CategorisedArticles: React.FC<CategorisedArticlesProps> = (
-  { heading, articles }
-) => {
+export const CategorisedArticles: React.FC<CategorisedArticlesProps> = ({
+  heading,
+  articles
+}) => {
   const { fireAnalyticsEvent } = useTrackingContext();
 
   const onClickHandler = (__: MouseEventType, article: SliceArticle) => {

@@ -146,7 +146,8 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs, categorisedArticles } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, categorisedArticles } =
+    articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 

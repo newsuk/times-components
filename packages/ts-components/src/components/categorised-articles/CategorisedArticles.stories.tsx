@@ -5,8 +5,9 @@ import previewData from '../../fixtures/preview-data/recommended-articles';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { CategorisedArticles } from './CategorisedArticles';
 
-storiesOf('Typescript Component/Categorised Articles', module)
-  .add('Categorised Articles - 1 Article', () => (
+storiesOf('Typescript Component/Categorised Articles', module).add(
+  'Categorised Articles - 1 Article',
+  () => (
     <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
@@ -24,7 +25,10 @@ storiesOf('Typescript Component/Categorised Articles', module)
       }}
       analyticsStream={analyticsStream}
     >
-      <CategorisedArticles heading="News" articles={previewData.recommendations.articles} />
+      <CategorisedArticles
+        heading="News"
+        articles={previewData.recommendations.articles}
+      />
     </TrackingContextProvider>
-  ));
-
+  )
+);
