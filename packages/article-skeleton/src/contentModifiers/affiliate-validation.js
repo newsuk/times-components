@@ -23,7 +23,7 @@ export const adDomains = [
   "(www.)?privadovpn.com",
   "(www.)?amzn.to",
   "(www.)?amazon.[\\S]*?\\/(dp|gp)\\/[\\S]*?tag=",
-  "(www.)?planethowl.com",
+  "(www.)?planethowl.com"
 ];
 
 export const theTimesDetectionKey = "";
