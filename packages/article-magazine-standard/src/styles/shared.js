@@ -13,8 +13,8 @@ const sharedStyles = {
   container: {
     alignItems: "center",
     marginBottom: spacing(5),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2),
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
     paddingTop: spacing(7)
   },
   datePublication: {
@@ -66,8 +66,6 @@ const sharedStyles = {
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
-    paddingLeft: spacing(2),
-    paddingRight: spacing(2),
     textAlign: "center"
   }
 };

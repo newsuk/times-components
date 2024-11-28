@@ -31,6 +31,7 @@ type Article = {
   bylines?: Byline[];
   summary?: Summary;
   media?: Media;
+  categoryPath: string;
 };
 
 // HELPERS
@@ -66,7 +67,7 @@ const getImage = (media?: Media) => {
 
 const formatArticle = (article: Article): SliceArticle => {
   return {
-    url: article.url,
+    url: article.categoryPath,
     label: article.label,
     byline: getBylines(article.bylines),
     headline: article.headline,

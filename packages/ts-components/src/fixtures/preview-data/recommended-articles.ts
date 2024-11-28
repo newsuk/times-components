@@ -4,6 +4,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6',
+        categoryPath:
+          'l1/l2/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6',
         slug: 'save-or-splurge-what-experts-spend-their-own-money-on',
         label: null,
         headline: 'Save or splurge: what experts spend their own money on',
@@ -51,6 +53,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp',
+        categoryPath:
+          'l1/l2/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp',
         slug: 'lieutenant-colonel-ian-crooke-obituary',
         label: 'Obituary',
         headline: 'Lieutenant Colonel Ian Crooke',
@@ -78,6 +82,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/is-the-party-over-for-boris-johnson-k8s0jxv6r',
+        categoryPath:
+          'l1/l2/article/is-the-party-over-for-boris-johnson-k8s0jxv6r',
         slug: 'is-the-party-over-for-boris-johnson',
         label: 'RED BOX | PATRICK MAGUIRE',
         headline: 'Is the party over for Johnson?',
@@ -118,6 +124,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory-klvfgrj8g',
+        categoryPath:
+          'l1/l2/article/quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory-klvfgrj8g',
         slug:
           'quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory',
         label: 'Political Sketch',
@@ -152,6 +160,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/boris-johnson-should-look-for-an-honourable-exit-7fkgkl2rq',
+        categoryPath:
+          'l1/l2/article/boris-johnson-should-look-for-an-honourable-exit-7fkgkl2rq',
         slug: 'boris-johnson-should-look-for-an-honourable-exit',
         label: 'WILLIAM HAGUE | COMMENT',
         headline: 'Hague: Johnson should look for an honourable exit',
@@ -184,6 +194,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/carrie-johnson-and-hard-times-at-no-10-hfmkr8ssn',
+        categoryPath:
+          'l1/l2/article/carrie-johnson-and-hard-times-at-no-10-hfmkr8ssn',
         slug: 'carrie-johnson-and-hard-times-at-no-10',
         label: 'POLITICS',
         headline: 'Carrie Johnson and hard times at No 10',
@@ -216,6 +228,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote-0f59md3bt',
+        categoryPath:
+          'l1/l2/article/dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote-0f59md3bt',
         slug:
           'dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote',
         label: 'Politics',
@@ -269,6 +283,7 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/margot-heuman-obituary-9fdm8h3hr',
+        categoryPath: 'l1/l2/article/margot-heuman-obituary-9fdm8h3hr',
         slug: 'margot-heuman-obituary',
         label: 'Obituary',
         headline: 'Margot Heuman',
@@ -296,6 +311,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory-wl5fl2jb2',
+        categoryPath:
+          'l1/l2/article/the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory-wl5fl2jb2',
         slug:
           'the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory',
         label: 'LEADING ARTICLE',
@@ -329,6 +346,8 @@ export default {
       {
         url:
           'https://www.thetimes.co.uk/article/boris-johnson-allies-took-time-saving-big-dog-leadership-contest-rn5dzbw8h',
+        categoryPath:
+          'l1/l2/article/boris-johnson-allies-took-time-saving-big-dog-leadership-contest-rn5dzbw8h',
         slug:
           'boris-johnson-allies-took-time-saving-big-dog-leadership-contest',
         label: 'Politics',

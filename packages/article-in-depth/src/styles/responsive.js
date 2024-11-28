@@ -31,6 +31,8 @@ export const FlagsContainer = styled(TcView)`
 
 export const HeaderContainer = styled(TcView)`
   ${props => props.styles && props.styles} order: 2;
+  padding: 61px 10px 45px;
+
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
     margin-top: 0;
@@ -107,6 +109,7 @@ export const StandfirstContainer = styled.h2`
   overflow-wrap: break-word;
   font-weight: 400;
   ${props => props.styles && props.styles}
+
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({

@@ -47,7 +47,13 @@ class TimesImage extends Component {
         testID="Image"
         className={(isLcpItem && "lcpItem") || ""}
       >
-        <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
+        <div
+          style={{
+            paddingBottom: `${100 / aspectRatio}%`,
+            position: "relative",
+            overflow: "hidden"
+          }}
+        >
           {this.highResImage({ highResSize, url })}
         </div>
       </TcView>

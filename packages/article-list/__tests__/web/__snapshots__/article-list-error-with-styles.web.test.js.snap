@@ -159,7 +159,9 @@ exports[`1. page error 1`] = `
       className="c2"
     >
       <div
+        overflow="hidden"
         paddingBottom="110%"
+        position="relative"
       >
         <img
           className="c3"

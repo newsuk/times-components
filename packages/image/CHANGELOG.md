@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.18.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.18.1...@times-components/image@6.18.2) (2024-11-05)
+
+
+### Bug Fixes
+
+* **TMD-839:** handling GIFs as the lead asset within related articles rail ([#3975](https://github.com/newsuk/times-components/issues/3975)) ([d453d0f](https://github.com/newsuk/times-components/commit/d453d0ffd99529725f342ea6ec02581c5c5b1690))
+
+
+
+
+
 ## [6.18.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.18.0...@times-components/image@6.18.1) (2024-07-08)
 
 
