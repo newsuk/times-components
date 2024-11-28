@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; // eslint-disable-line
+import { adDomains } from "./affiliate-validation";
 
 const newDisclaimerText = {
   name: "paragraph",
@@ -36,8 +36,6 @@ const oldDisclaimerTexts = [
   "This article contains links from which we may earn revenue"
 ];
 
-const domainJson = [];
-
 const isLinkAffiliate = (url = "", adsDomains) => {
   const affiliateStrPattern = `<a\\s[^>]*?href="https?:\\/\\/(${adsDomains.join(
     "|"
@@ -49,30 +47,6 @@ const isLinkAffiliate = (url = "", adsDomains) => {
 };
 
 const shouldIncludeDisclaimer = children => {
-  const [domainListing, setDomainListing] = useState(domainJson); // eslint-disable-line
-
-  // eslint-disable-next-line
-  useEffect(() => {
-    async function getDomainListing() {
-      let domainList = domainJson;
-
-      try {
-        const getDomains = await fetch(
-          "https://ads.thetimes.com/affiliates/domains.json"
-        ).then(response => response.text());
-        const formattedRes = getDomains.replaceAll("'", '"');
-        const parsedRes = JSON.parse(`{"response": ${formattedRes} }`);
-        domainList = parsedRes.response;
-      } catch (error) {
-        console.log("Fetching domain listing failed. Using default."); // eslint-disable-line
-      }
-
-      setDomainListing(domainList);
-    }
-
-    getDomainListing();
-  }, []);
-
   const clonedChildren = [...children];
   let affiliateLinkExist = false;
   let affiliateDisclaimerExist = false;
@@ -152,7 +126,7 @@ const shouldIncludeDisclaimer = children => {
 
         const href = linkComponentVal || ctaComponentVal;
 
-        if (!href || !isLinkAffiliate(href, domainListing)) {
+        if (!href || !isLinkAffiliate(href, adDomains)) {
           return false;
         }
 
