@@ -5,6 +5,9 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InfoCardBulletPoints } from './InfoCardBulletPoints';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
+import { getDeckApiUrl } from '../../utils/getDeckApiUrl';
+
+const deckApiUrl: string = getDeckApiUrl();
 
 storiesOf('Typescript Component/In Article/Info Card', module).add(
   'Bullet Points',
@@ -20,7 +23,7 @@ storiesOf('Typescript Component/In Article/Info Card', module).add(
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
+        <FetchProvider url={deckApiUrl + '?id=43978'}>
           <InfoCardBulletPoints sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
