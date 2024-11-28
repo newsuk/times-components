@@ -20,15 +20,16 @@ export type FeaturesCarouselItemProps = {
 type FeaturesCarouselProps = {
   heading: string;
   carouselItems: FeaturesCarouselItemProps[];
+  hideHeading: boolean;
 };
 
 export const FeaturesCarousel: React.FC<FeaturesCarouselProps> = ({
   heading,
-  carouselItems
-}) =>
-  carouselItems ? (
+  carouselItems,
+  hideHeading
+}) => carouselItems ? (
     <div id="benefits-carousel">
-      <Header>{heading}</Header>
+      {hideHeading && <Header>{heading}</Header>}
       <FeaturesCarouselContainer>
         <FeaturesCarouselWindow>
           {carouselItems.map(carouselItem => (
