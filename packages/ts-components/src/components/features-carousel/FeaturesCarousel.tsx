@@ -3,7 +3,7 @@ import { FeaturesCarouselItem } from './FeaturesCarouselItem';
 import {
   FeaturesCarouselContainer,
   FeaturesCarouselWindow,
-  Header,
+  Header
 } from './styles';
 
 export type FeaturesCarouselItemProps = {
@@ -26,14 +26,14 @@ type FeaturesCarouselProps = {
 export const FeaturesCarousel: React.FC<FeaturesCarouselProps> = ({
   heading,
   carouselItems,
-  hideHeading,
+  hideHeading
 }) =>
   carouselItems ? (
     <div id="benefits-carousel">
       {hideHeading && <Header>{heading}</Header>}
       <FeaturesCarouselContainer>
         <FeaturesCarouselWindow>
-          {carouselItems.map((carouselItem) => (
+          {carouselItems.map(carouselItem => (
             <FeaturesCarouselItem {...carouselItem} />
           ))}
         </FeaturesCarouselWindow>

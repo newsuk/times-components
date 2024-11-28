@@ -5,8 +5,10 @@ import { FeaturesCarousel } from '../FeaturesCarousel';
 import { featuresCarouselData } from '../fixtureData.json';
 
 describe('Render FeaturesCarousel', () => {
-  const renderFeaturesCarousel = (hideHeading:boolean = true) =>
-    render(<FeaturesCarousel {...featuresCarouselData} hideHeading={hideHeading} />);
+  const renderFeaturesCarousel = (hideHeading: boolean = true) =>
+    render(
+      <FeaturesCarousel {...featuresCarouselData} hideHeading={hideHeading} />
+    );
 
   it('should render a snapshot', () => {
     const { asFragment } = renderFeaturesCarousel();
@@ -20,7 +22,7 @@ describe('Render FeaturesCarousel', () => {
     expect(getFirstTitle).toBeInTheDocument();
     expect(getHeading).toBeInTheDocument();
   });
-  
+
   it('should render the component without heading', () => {
     const { getByText, queryByText } = renderFeaturesCarousel(false);
     const getFirstTitle = getByText('Title 1');
