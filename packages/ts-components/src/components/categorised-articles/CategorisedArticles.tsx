@@ -7,7 +7,6 @@ import {
 
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 import {
-  Article,
   getRecommendedArticlesSlice
 } from '../../utils/linkedArticles/formatters';
 
@@ -15,7 +14,7 @@ import { Header } from '../../utils/linkedArticles/styles';
 
 interface CategorisedArticlesProps {
   heading: string;
-  articles: Article[];
+  articles: any;
 }
 export const CategorisedArticles: React.FC<CategorisedArticlesProps> = (
   { heading, articles }
