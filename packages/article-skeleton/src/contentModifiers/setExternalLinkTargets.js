@@ -1,9 +1,17 @@
-import { theTimesDetectionKey, travelDetectionKey, theTimesSiteCode, travelSiteCode, skimlinksId } from './affiliate-validation';
+import {
+  theTimesDetectionKey,
+  travelDetectionKey,
+  theTimesSiteCode,
+  travelSiteCode,
+  skimlinksId
+} from "./affiliate-validation";
 
-const wrapAffiliateLink = (affiliateLink) => {
-  const wrapTrackonomics = (trackonomicsUrl) => {
-    const contentPageUrl = window.location.href ? window.location.href : '';
-    const isTravel = contentPageUrl.includes('https://www.thetimes.com/travel') || contentPageUrl.includes('https://www.thetimes.co.uk/travel');
+const wrapAffiliateLink = affiliateLink => {
+  const wrapTrackonomics = trackonomicsUrl => {
+    const contentPageUrl = window.location.href ? window.location.href : "";
+    const isTravel =
+      contentPageUrl.includes("https://www.thetimes.com/travel") ||
+      contentPageUrl.includes("https://www.thetimes.co.uk/travel");
     const regex = isTravel ? travelDetectionKey : theTimesDetectionKey;
     const regexTrackonomics = new RegExp(regex);
 
@@ -11,16 +19,22 @@ const wrapAffiliateLink = (affiliateLink) => {
       return trackonomicsUrl;
     }
 
-    const referrerUrl = document.referrer ? document.referrer : '';
+    const referrerUrl = document.referrer ? document.referrer : "";
     const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
-    const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(trackonomicsUrl)}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(referrerUrl)}`;
+    const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(
+      trackonomicsUrl
+    )}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(
+      referrerUrl
+    )}`;
 
     return affiliateWrapper;
   };
 
-  const wrapSkimlinks = (skimlinkUrl) => {
-    const contentPageUrl = window.location.href ? window.location.href : '';
-    const affiliateWrapper = `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(skimlinkUrl)}&sref=${encodeURIComponent(contentPageUrl)}`;
+  const wrapSkimlinks = skimlinkUrl => {
+    const contentPageUrl = window.location.href ? window.location.href : "";
+    const affiliateWrapper = `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(
+      skimlinkUrl
+    )}&sref=${encodeURIComponent(contentPageUrl)}`;
 
     return affiliateWrapper;
   };
@@ -64,7 +78,7 @@ const setExternalLinkTargets = children => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href),
+                url: wrapAffiliateLink(href)
               }
             };
           } else {
@@ -73,7 +87,7 @@ const setExternalLinkTargets = children => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href),
+                href: wrapAffiliateLink(href)
               }
             };
           }
