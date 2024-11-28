@@ -5,7 +5,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { RecommendedFetch, Breadcrumb } from "@times-components/ts-components";
+import { RecommendedFetch, Breadcrumb, CategorisedArticles } from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import {
@@ -35,6 +35,7 @@ const ArticleExtras = ({
   section,
   articleHeadline,
   relatedArticleSlice,
+  categorisedArticles,
   relatedArticlesVisible,
   commentingConfig,
   topics,
@@ -57,6 +58,8 @@ const ArticleExtras = ({
     return null;
   };
 
+  const { categoryArticles, parentCategoryArticles } = categorisedArticles;
+
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
     isRecommendedActive,
@@ -69,6 +72,7 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
+          hideBorder={!isRecommendedActive && Boolean(categoryArticles)}
         />
         {isRecommendedActive && (
           <RecommendedFetch
@@ -76,6 +80,12 @@ const ArticleExtras = ({
             articleHeadline={articleHeadline}
             articleSection={section}
           />
+        )}
+        {!isRecommendedActive && categoryArticles && (
+          <CategorisedArticles heading={categoryArticles.label} articles={categoryArticles.articles} />
+        )}
+        {!isRecommendedActive && parentCategoryArticles && (
+          <CategorisedArticles heading={parentCategoryArticles.label} articles={parentCategoryArticles.articles} />
         )}
       </div>
       <PromotedContentContainer>
