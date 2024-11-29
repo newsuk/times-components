@@ -3,6 +3,7 @@
 exports[`render CategorisedArticles should render header and slice with articles when valid props provided 1`] = `
 <DocumentFragment>
   <div
+    class="sc-bwzfXH eKeXgs"
     id="categorised-articles"
   >
     <div

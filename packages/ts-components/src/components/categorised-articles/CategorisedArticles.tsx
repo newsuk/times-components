@@ -9,6 +9,7 @@ import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvid
 import { getRecommendedArticlesSlice } from '../../utils/linkedArticles/formatters';
 
 import { Header } from '../../utils/linkedArticles/styles';
+import { Container } from './styles';
 
 interface CategorisedArticlesProps {
   heading: string;
@@ -30,12 +31,12 @@ export const CategorisedArticles: React.FC<CategorisedArticlesProps> = ({
   };
 
   return (
-    <div id="categorised-articles">
+    <Container id="categorised-articles">
       <Header>{`More from ${heading}`}</Header>
       <Slice
         slice={getRecommendedArticlesSlice(articles)}
         clickHandler={onClickHandler}
       />
-    </div>
+    </Container>
   );
 };
