@@ -158,8 +158,8 @@ const ArticleSkeleton = ({
     setExternalLinkTargets
   ];
 
-  const newContent = reduceArticleContent(content, articleContentReducers);
-
+  const newContent = true;
+  
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   const scrollToTopAndRefresh = window => {
