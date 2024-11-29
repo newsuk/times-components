@@ -76,6 +76,8 @@ export const AllowButton = styled.button`
   justify-content: center;
   margin-top: 12px;
   padding: 8px 12px;
+  border-radius: 0px;
+  border-width: 1px;
 `;
 
 export const LinkPrivacyManager = styled.a`
