@@ -78,7 +78,7 @@ export const paywallContentWithNewsletter = {
           attributes: {
             label: "In your inbox",
             code: "TNL-101",
-            headline: "Best of Times",
+            headline: "Daily Briefing",
             copy:
               "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
             imageUri:
