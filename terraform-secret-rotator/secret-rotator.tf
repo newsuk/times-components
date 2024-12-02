@@ -5,6 +5,7 @@ module "secret_rotator_times_components_dev" {
   account                                 = "aws-digital-dev-tnlweb"
   custom_role_arn                         = "arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb"
   create_role                             = false
+  create_kubernetes_external_secrets_role = false
   enable_notifications = {
     enable                 = false
     slack_channel          = ""
