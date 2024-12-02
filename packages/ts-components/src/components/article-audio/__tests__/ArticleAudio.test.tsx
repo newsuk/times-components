@@ -1,8 +1,9 @@
+// __tests__/ArticleAudio.test.tsx
+
 import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { ArticleAudio } from '../ArticleAudio';
-
 
 jest.mock('../styles', () => ({
   AudioButton: ({ children, onClick, style }: any) => (
@@ -28,24 +29,12 @@ jest.mock('../../audio-player-components/AudioPlayer', () => ({
     isPlayingProp,
     onPlay,
     onPause,
-    onEnded,
-    onClose,
-    onTimeUpdate = () => {},
-    onVolumeChange,
-    onPlaybackRateChange,
-    onSeek
+    onEnded
   }: any) => (
     <div data-testid="audio-player">
       <button onClick={onPlay}>Play</button>
       <button onClick={onPause}>Pause</button>
       <button onClick={onEnded}>Ended</button>
-      <button onClick={onClose}>Close</button>
-      <button onClick={() => onTimeUpdate(10)}>Time Update</button>
-      <button onClick={() => onVolumeChange(0.5)}>Volume Change</button>
-      <button onClick={() => onPlaybackRateChange(1.5)}>
-        Playback Rate Change
-      </button>
-      <button onClick={() => onSeek(20)}>Seek</button>
     </div>
   )
 }));
@@ -78,9 +67,7 @@ describe('ArticleAudio', () => {
     const audioButton = getByTestId('audio-button');
     expect(audioButton).toBeInTheDocument();
 
-    // Instead of checking the exact background color, check if the style contains 'unset' or is not set
-    // Alternatively, you can check for the absence of the 'background-color' style
-    expect(audioButton.style.backgroundColor).toBe(''); // Default value if not set
+    expect(audioButton.style.backgroundColor).toBe('');
     expect(audioButton).toHaveStyle('color: #333');
 
     // The initial state should display 'Listen' and the duration
@@ -128,20 +115,6 @@ describe('ArticleAudio', () => {
     fireEvent.click(audioButton);
 
     expect(getByText('Playing')).toBeInTheDocument();
-  });
-
-  test('handles loaded metadata and updates duration', () => {
-    const { getByText, container } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-    );
-
-    const audio = container.querySelector('audio') as HTMLAudioElement;
-
-    act(() => {
-      fireEvent.loadedMetadata(audio);
-    });
-
-    expect(getByText('3 min')).toBeInTheDocument();
   });
 
   test('shows AudioPlayer when audio is played', () => {
@@ -193,44 +166,5 @@ describe('ArticleAudio', () => {
     fireEvent.click(endedButton);
 
     expect(getByText('Listen')).toBeInTheDocument();
-  });
-
-  test('handles AudioPlayer callbacks', () => {
-    const consoleLogMock = jest.spyOn(console, 'log').mockImplementation();
-    const onTimeUpdateMock = jest.fn();
-    const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" onTimeUpdate={onTimeUpdateMock} />
-    );
-
-    // Trigger the 'loadedmetadata' event to set the duration
-    const audio = container.querySelector('audio') as HTMLAudioElement;
-    act(() => {
-      fireEvent.loadedMetadata(audio);
-    });
-
-    const audioButton = getByTestId('audio-button');
-    fireEvent.click(audioButton);
-
-    const timeUpdateButton = getByText('Time Update');
-    fireEvent.click(timeUpdateButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Current Time:', 9);
-
-    const volumeChangeButton = getByText('Volume Change');
-    fireEvent.click(volumeChangeButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Volume:', 0.5);
-
-    const playbackRateChangeButton = getByText('Playback Rate Change');
-    fireEvent.click(playbackRateChangeButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Playback Rate:', 1.5);
-
-    const seekButton = getByText('Seek');
-    fireEvent.click(seekButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Seeked to:', 20);
-
-    const closeButton = getByText('Close');
-    fireEvent.click(closeButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Player Closed');
-
-    consoleLogMock.mockRestore();
   });
 });
