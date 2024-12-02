@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.141.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.13...@times-components/article-skeleton@1.141.0) (2024-12-02)
+
+
+### Features
+
+* **TMD-1082:** update to newsletter title within on click sign up component ([#3990](https://github.com/newsuk/times-components/issues/3990)) ([efddfee](https://github.com/newsuk/times-components/commit/efddfee6358e43a385924af671deedaa03e5ae36))
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+
+
+
+
+
 ## [1.140.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.140.12...@times-components/article-skeleton@1.140.13) (2024-11-22)
 
 **Note:** Version bump only for package @times-components/article-skeleton
