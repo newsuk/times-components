@@ -15,10 +15,10 @@ describe('AudioButton', () => {
     expect(button).toHaveStyleRule('background-color', 'unset');
     expect(button).toHaveStyleRule('border-radius', '0');
     expect(button).toHaveStyleRule('padding', '7px 11px');
-    expect(button).toHaveStyleRule('border', '1px solid #333');
+    expect(button).toHaveStyleRule('border', '1px solid #333333');
     expect(button).toHaveStyleRule('display', 'flex');
     expect(button).toHaveStyleRule('align-items', 'center');
-    expect(button).toHaveStyleRule('color', '#333');
+    expect(button).toHaveStyleRule('color', '#333333');
     expect(button).toHaveStyleRule('font-family', 'Roboto');
     expect(button).toHaveStyleRule('font-weight', '500');
     expect(button).toHaveStyleRule('font-size', '14px');

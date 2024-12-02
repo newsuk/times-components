@@ -1,9 +1,10 @@
 import React, { FC, useState, useRef } from 'react';
 import { AudioButton } from './styles';
-import PlayIcon from './assets/PlayIcon';
-import PauseIcon from './assets/PauseIcon';
 import { AudioPlayer } from '../audio-player-components/AudioPlayer';
-
+import {
+  PlayIcon,
+  PauseIcon,
+} from '@times-components/icons';
 export interface ArticleAudioProps {
   audioSrc: string;
 }
@@ -54,15 +55,15 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
       >
         {audioState === 'playing' ? (
           <>
-            <PauseIcon /> Playing
+            <PauseIcon width={16} height={16} fill="#fff"/> Playing
           </>
         ) : audioState === 'paused' ? (
           <>
-            <PlayIcon color="#fff" /> Paused
+            <PlayIcon width={16} height={16} fill="#fff" /> Paused
           </>
         ) : (
           <>
-            <PlayIcon /> Listen
+            <PlayIcon width={16} height={16} /> Listen
           </>
         )}
         <span
@@ -81,13 +82,6 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
           onEnded={() => setAudioState('not-started')}
-          onTimeUpdate={currentTime =>
-            console.log('Current Time:', currentTime)
-          }
-          onVolumeChange={volume => console.log('Volume:', volume)}
-          onPlaybackRateChange={rate => console.log('Playback Rate:', rate)}
-          onSeek={time => console.log('Seeked to:', time)}
-          onClose={() => console.log('Player Closed')}
         />
       )}
     </div>

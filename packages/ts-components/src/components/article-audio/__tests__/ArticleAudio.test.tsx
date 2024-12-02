@@ -3,6 +3,7 @@ import { render, fireEvent, act } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { ArticleAudio } from '../ArticleAudio';
 
+
 jest.mock('../styles', () => ({
   AudioButton: ({ children, onClick, style }: any) => (
     <button data-testid="audio-button" onClick={onClick} style={style}>
@@ -11,16 +12,14 @@ jest.mock('../styles', () => ({
   )
 }));
 
-jest.mock('../assets/PlayIcon', () => ({
+jest.mock('@times-components/icons', () => ({
   __esModule: true,
-  default: ({ color }: any) => (
+  PlayIcon: ({ color }: any) => (
     <svg data-testid="play-icon" style={{ color: color || '#333' }} />
+  ),
+  PauseIcon: ({ color }: any) => (
+    <svg data-testid="pause-icon" style={{ color: color || '#333' }} />
   )
-}));
-
-jest.mock('../assets/PauseIcon', () => ({
-  __esModule: true,
-  default: () => <svg data-testid="pause-icon" />
 }));
 
 jest.mock('../../audio-player-components/AudioPlayer', () => ({
@@ -31,7 +30,7 @@ jest.mock('../../audio-player-components/AudioPlayer', () => ({
     onPause,
     onEnded,
     onClose,
-    onTimeUpdate,
+    onTimeUpdate = () => {},
     onVolumeChange,
     onPlaybackRateChange,
     onSeek
@@ -67,7 +66,7 @@ describe('ArticleAudio', () => {
 
   test('renders audio button with correct initial state', () => {
     const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
     // Trigger the 'loadedmetadata' event to set the duration
@@ -95,7 +94,7 @@ describe('ArticleAudio', () => {
 
   test('handles play and pause', () => {
     const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
     // Trigger the 'loadedmetadata' event to set the duration
@@ -133,7 +132,7 @@ describe('ArticleAudio', () => {
 
   test('handles loaded metadata and updates duration', () => {
     const { getByText, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
     const audio = container.querySelector('audio') as HTMLAudioElement;
@@ -147,7 +146,7 @@ describe('ArticleAudio', () => {
 
   test('shows AudioPlayer when audio is played', () => {
     const { getByTestId, queryByTestId, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
     // Trigger the 'loadedmetadata' event to set the duration
@@ -166,7 +165,7 @@ describe('ArticleAudio', () => {
 
   test('updates audioState based on AudioPlayer callbacks', () => {
     const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
     // Trigger the 'loadedmetadata' event to set the duration
@@ -198,9 +197,9 @@ describe('ArticleAudio', () => {
 
   test('handles AudioPlayer callbacks', () => {
     const consoleLogMock = jest.spyOn(console, 'log').mockImplementation();
-
+    const onTimeUpdateMock = jest.fn();
     const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="test.mp3" />
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" onTimeUpdate={onTimeUpdateMock} />
     );
 
     // Trigger the 'loadedmetadata' event to set the duration
@@ -214,7 +213,7 @@ describe('ArticleAudio', () => {
 
     const timeUpdateButton = getByText('Time Update');
     fireEvent.click(timeUpdateButton);
-    expect(consoleLogMock).toHaveBeenCalledWith('Current Time:', 10);
+    expect(consoleLogMock).toHaveBeenCalledWith('Current Time:', 9);
 
     const volumeChangeButton = getByText('Volume Change');
     fireEvent.click(volumeChangeButton);
