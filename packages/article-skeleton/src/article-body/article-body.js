@@ -62,19 +62,20 @@ import {
 } from "../styles/article-body/responsive";
 
 let deckApiUrl;
-if (typeof window !== 'undefined') {
-  const environmentName = window.__TIMES_CONFIG__ && window.__TIMES_CONFIG__.environmentName;
+if (typeof window !== "undefined") {
+  const environmentName =
+    window.__TIMES_CONFIG__ && window.__TIMES_CONFIG__.environmentName;
 
-  if (environmentName === 'prod') {
+  if (environmentName === "prod") {
     deckApiUrl =
-      'https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api';
+      "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
   } else {
     deckApiUrl =
-      'https://editorial-tm.staging.newsapis.co.uk/staging/deck-component-data-api';
+      "https://editorial-tm.staging.newsapis.co.uk/staging/deck-component-data-api";
   }
 } else {
   deckApiUrl =
-    'https://editorial-tm.staging.newsapis.co.uk/staging/deck-component-data-api';
+    "https://editorial-tm.staging.newsapis.co.uk/staging/deck-component-data-api";
 }
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
