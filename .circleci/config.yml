@@ -344,7 +344,7 @@ jobs:
     executor: node
     steps:
       - aws-cli/setup:
-          region: SECRETS_REGION
+          region: "eu-west-1"
           role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
       - aws-secrets-manager/get-aws-secret:
           aws-secret-name: times-components/dev/GH_TOKEN
