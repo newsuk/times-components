@@ -9,9 +9,21 @@ executors:
     docker:
       - image: cimg/node:18.19.1
     resource_class: small
+  terraform_secret:  
+    docker:  
+      - image: hashicorp/terraform:1.3.4
 
+parameters:
+  deploy_secrets:
+    type: boolean
+    default: false
+  use_secret_rotator:
+    type: boolean
+    default: true
 orbs:
   sonarcloud: sonarsource/sonarcloud@2.0.0
+  aws-cli: circleci/aws-cli@4.1.2
+  aws-secrets-manager: nukengprod/aws-secrets-manager@0.3.61
 
 commands:
   install-dependencies:
@@ -270,6 +282,73 @@ jobs:
           name: Remove npm and Yarn config files
           command: |
             yarn config delete registry
+  plan-secret-terraform:
+    executor: terraform_secret
+    parameters:
+      env:
+        type: string
+      role:
+        type: string
+      region:
+        type: string
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:DspF5XjPpSTbO6A10IllXExrPFdhKMytxVBgNEBrYAc"
+      - aws-cli/setup:
+          role_arn: << parameters.role >>
+      - run:
+          name: Init terraform
+          command: |
+            cd terraform-secret-rotator
+            terraform init -backend-config=backend_configs/<< parameters.env >>
+      - run:
+          name: Plan terraform
+          command: |
+            cd terraform-secret-rotator
+            terraform plan -var-file=variables/<< parameters.env >>.tfvars -out=<< parameters.env >>-plan
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - terraform-secret-rotator/<< parameters.env >>-plan
+
+  apply-secret-terraform:
+    executor: terraform_secret
+    parameters:
+      env:
+        type: string
+      role:
+        type: string
+      region:
+        type: string
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:DspF5XjPpSTbO6A10IllXExrPFdhKMytxVBgNEBrYAc"
+      - aws-cli/setup:
+          role_arn: << parameters.role >>
+      - run:
+          name: Init terraform
+          command: |
+            cd terraform-secret-rotator
+            terraform init -backend-config=backend_configs/<< parameters.env >>
+      - run:
+          name: Apply terraform
+          command: |
+            cd terraform-secret-rotator
+            terraform apply -var-file=variables/<< parameters.env >>.tfvars -auto-approve
+
+  get_secret_gh_token_dev:
+    executor: node
+    steps:
+      - aws-cli/setup:
+          region: SECRETS_REGION
+          role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
+      - aws-secrets-manager/get-aws-secret:
+          aws-secret-name: times-components/dev/GH_TOKEN
+  
 
 only_on_pr_branch: &only_on_pr_branch
   filters:
@@ -281,6 +360,8 @@ only_on_master_branch: &only_on_master_branch
     branches:
       only:
         - master
+
+
 
 workflows:
   version: 2
@@ -344,7 +425,30 @@ workflows:
           <<: *only_on_pr_branch
           requires:
             - Approve canary release
+      - get_secret_gh_token_dev:
+          filters: pipeline.parameters.use_secret_rotator == true and pipeline.git.branch != "master"
       - publish_npm:
           <<: *only_on_master_branch
           requires:
             - verdaccio-test
+  secrets-rotator:
+    when:
+      and:
+        - equal: [true, << pipeline.parameters.deploy_secrets >>]
+    jobs:
+      - plan-secret-terraform:
+          name: plan-terraform-secret-rotator-dev
+          role: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
+          env: dev
+          region: eu-west-1
+      - approve-apply-terraform-secret-rotator-dev:  
+          type: approval  
+          requires:  
+            - plan-terraform-secret-rotator-dev    
+      - apply-secret-terraform:  
+          name: apply-terraform-secret-rotator-dev  
+          role: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
+          env: dev
+          region: eu-west-1
+          requires:  
+            - approve-apply-terraform-secret-rotator-dev
