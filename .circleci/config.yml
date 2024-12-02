@@ -425,6 +425,8 @@ workflows:
           <<: *only_on_pr_branch
           requires:
             - Approve canary release
+      - get_secret_gh_token_dev:
+          filters: pipeline.parameters.use_secret_rotator == true and pipeline.git.branch != "master"
       - publish_npm:
           <<: *only_on_master_branch
           requires:
