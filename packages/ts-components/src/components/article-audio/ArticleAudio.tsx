@@ -38,6 +38,11 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
     }
   };
 
+  const hidePlayer = () => {
+    setisAudioPlayerVisible(false);
+    
+  }
+
   return (
     <div>
       <audio
@@ -82,6 +87,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
           onEnded={() => setAudioState('not-started')}
+          onClose={() => hidePlayer()}
         />
       )}
     </div>
