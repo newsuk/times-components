@@ -1,32 +1,24 @@
 import React from 'react';
-import get from 'lodash.get';
 import {
   Slice,
   SliceArticle,
   MouseEventType
 } from '@times-components/ts-slices';
 
-import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 import { getRecommendedArticlesSlice } from '../../utils/linkedArticles/formatters';
 
 import { Header } from '../../utils/linkedArticles/styles';
+import { Container } from './styles';
 
-export const RecommendedArticles: React.FC<{
+interface CategorisedArticlesProps {
   heading: string;
-}> = ({ heading }) => {
-  const { loading, error, data } = useFetch<any>();
-
-  if (loading || error) {
-    return null;
-  }
-
-  const articles = get(data, 'recommendations.articles');
-
-  if (!articles || !articles.length) {
-    return null;
-  }
-
+  articles: any;
+}
+export const CategorisedArticles: React.FC<CategorisedArticlesProps> = ({
+  heading,
+  articles
+}) => {
   const { fireAnalyticsEvent } = useTrackingContext();
 
   const onClickHandler = (__: MouseEventType, article: SliceArticle) => {
@@ -39,12 +31,12 @@ export const RecommendedArticles: React.FC<{
   };
 
   return (
-    <div id="recommended-articles">
-      <Header>{heading}</Header>
+    <Container id="categorised-articles">
+      <Header>{`More from ${heading}`}</Header>
       <Slice
         slice={getRecommendedArticlesSlice(articles)}
         clickHandler={onClickHandler}
       />
-    </div>
+    </Container>
   );
 };

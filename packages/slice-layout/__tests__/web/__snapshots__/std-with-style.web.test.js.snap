@@ -215,7 +215,9 @@ exports[`2. a single child element 1`] = `
   <div
     className="c0"
   >
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div
         className="c1"
       >
@@ -475,7 +477,9 @@ exports[`3. two child elements 1`] = `
   <div
     className="c0"
   >
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div
         className="c1"
       >
@@ -755,7 +759,9 @@ exports[`4. three child elements 1`] = `
   <div
     className="c0"
   >
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div
         className="c1"
       >

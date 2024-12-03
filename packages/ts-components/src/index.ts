@@ -88,6 +88,9 @@ export {
 export {
   RecommendedFetch
 } from './components/recommended-articles/RecommendedFetch';
+export {
+  CategorisedArticles
+} from './components/categorised-articles/CategorisedArticles';
 
 // Helpers
 export { FetchProvider } from './helpers/fetch/FetchProvider';

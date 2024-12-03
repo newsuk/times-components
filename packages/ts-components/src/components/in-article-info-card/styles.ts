@@ -117,6 +117,7 @@ export const CarouselIndicator = styled.div<{ active?: boolean }>`
   cursor: pointer;
 `;
 
+// @ts-ignore
 export const StyledCarousel = styled(ReactElasticCarousel)<{
   sectionColour: string;
 }>`

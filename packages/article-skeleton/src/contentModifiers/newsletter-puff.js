@@ -19,7 +19,7 @@ const newslettersBySection = [
     section: "news",
     payload: setNewsletterPayload({
       code: "TNL-101",
-      headline: "Best of Times",
+      headline: "Daily Briefing",
       copy:
         "Our flagship newsletter featuring our top stories and analysis, delivered every morning.",
       imageUri:

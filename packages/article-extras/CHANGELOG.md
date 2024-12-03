@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.24...@times-components/article-extras@0.33.0) (2024-12-02)
+
+
+### Features
+
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+
+
+
+
+
 ## [0.32.24](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.32.23...@times-components/article-extras@0.32.24) (2024-11-22)
 
 **Note:** Version bump only for package @times-components/article-extras

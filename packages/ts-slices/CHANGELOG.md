@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.9.23...@times-components/ts-slices@1.10.0) (2024-12-02)
+
+
+### Features
+
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+
+
+
+
+
 ## [1.9.23](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.9.22...@times-components/ts-slices@1.9.23) (2024-10-14)
 
 **Note:** Version bump only for package @times-components/ts-slices
