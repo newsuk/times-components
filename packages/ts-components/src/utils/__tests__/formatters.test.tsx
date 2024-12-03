@@ -1,7 +1,7 @@
-import { getArticles } from '../helpers';
-import previewData from '../../../fixtures/preview-data/recommended-articles';
+import { getArticles } from '../../components/recommended-articles/helpers';
+import previewData from '../../fixtures/preview-data/recommended-articles';
 
-import { getRecommendedArticlesSlice } from '../formatters';
+import { getRecommendedArticlesSlice } from '../linkedArticles/formatters';
 
 const expectedArticles = [
   {
