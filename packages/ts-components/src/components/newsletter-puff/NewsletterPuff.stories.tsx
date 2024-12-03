@@ -25,7 +25,7 @@ const mocks = [
         newsletter: {
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
-          title: 'Best of Times',
+          title: 'Daily Briefing',
           __typename: 'Newsletter'
         }
       }
@@ -46,7 +46,7 @@ const showcase = {
           >
             <AutoNewsletterPuff
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Best of Times')}
+              headline={text('headline', 'Daily Briefing')}
               copy={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
@@ -72,7 +72,7 @@ const showcase = {
             <InlineNewsletterPuff
               section="news"
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Best of Times')}
+              headline={text('headline', 'Daily Briefing')}
               copy={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
@@ -91,7 +91,7 @@ const showcase = {
       component: ({ text }: any) => (
         <PreviewNewsletterPuff
           section="sport"
-          headline={text('headline', 'Best of Times')}
+          headline={text('headline', 'Daily Briefing')}
           copy={text(
             'copy',
             'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'

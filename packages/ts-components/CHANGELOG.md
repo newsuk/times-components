@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.112.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.112.0...@times-components/ts-components@1.112.1) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.111.0...@times-components/ts-components@1.112.0) (2024-12-02)
+
+
+### Features
+
+* **TMD-1082:** update to newsletter title within on click sign up component ([#3990](https://github.com/newsuk/times-components/issues/3990)) ([efddfee](https://github.com/newsuk/times-components/commit/efddfee6358e43a385924af671deedaa03e5ae36))
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+* **TMRS-593:** update benefits rail ([#3991](https://github.com/newsuk/times-components/issues/3991)) ([3c6b0e1](https://github.com/newsuk/times-components/commit/3c6b0e184e643c3e81a82229a1c4b514d2a62663))
+
+
+
+
+
 # [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.2...@times-components/ts-components@1.111.0) (2024-11-22)
 
 

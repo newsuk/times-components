@@ -8,9 +8,9 @@ import {
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
-import { getRecommendedArticlesSlice } from './formatters';
+import { getRecommendedArticlesSlice } from '../../utils/linkedArticles/formatters';
 
-import { Header } from './styles';
+import { Header } from '../../utils/linkedArticles/styles';
 
 export const RecommendedArticles: React.FC<{
   heading: string;

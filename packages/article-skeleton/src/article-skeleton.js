@@ -164,7 +164,8 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs, categorisedArticles } =
+    articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -442,6 +443,7 @@ const ArticleSkeleton = ({
                       commentsEnabled={commentsEnabled}
                       registerNode={registerNode}
                       relatedArticleSlice={relatedArticleSlice}
+                      categorisedArticles={categorisedArticles}
                       relatedArticlesVisible={
                         !!observed.get("related-articles")
                       }
