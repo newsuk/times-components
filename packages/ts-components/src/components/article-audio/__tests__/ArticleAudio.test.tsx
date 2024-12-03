@@ -23,8 +23,6 @@ jest.mock('@times-components/icons', () => ({
 
 jest.mock('../../audio-player-components/AudioPlayer', () => ({
   AudioPlayer: ({
-    src,
-    isPlayingProp,
     onPlay,
     onPause,
     onEnded
