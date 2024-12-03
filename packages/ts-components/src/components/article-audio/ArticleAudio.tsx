@@ -1,10 +1,7 @@
 import React, { FC, useState, useRef } from 'react';
 import { AudioButton } from './styles';
 import { AudioPlayer } from '../audio-player-components/AudioPlayer';
-import {
-  PlayIcon,
-  PauseIcon,
-} from '@times-components/icons';
+import { PlayIcon, PauseIcon } from '@times-components/icons';
 export interface ArticleAudioProps {
   audioSrc: string;
 }
@@ -40,8 +37,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
 
   const hidePlayer = () => {
     setisAudioPlayerVisible(false);
-    
-  }
+  };
 
   return (
     <div>
@@ -60,7 +56,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
       >
         {audioState === 'playing' ? (
           <>
-            <PauseIcon width={16} height={16} fill="#fff"/> Playing
+            <PauseIcon width={16} height={16} fill="#fff" /> Playing
           </>
         ) : audioState === 'paused' ? (
           <>
