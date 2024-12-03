@@ -59,11 +59,7 @@ module "secret_rotator_times_components_dev" {
 ### Secret Retrieval Jobs
 The following jobs in the CircleCI pipeline handle secret retrieval:
 
-- **Retrieve ARTIFACTORY_API_KEY**
-- **Retrieve ARTIFACTORY_AUTH_TOKEN**
-- **Retrieve ARTIFACTORY_HELM_USERNAME**
-- **Retrieve ARTIFACTORY_HELM_PASSWORD**
-- **Retrieve GITHUB_API_TOKEN**
+- **Retrieve GH_TOKEN**
 
 #### Example Job for Retrieving a Secret:
 ```yaml
