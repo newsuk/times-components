@@ -122,3 +122,15 @@ export { ArticleAudio } from './components/article-audio/ArticleAudio';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
+
+export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
+
+// Hooks
+export { useConsent } from './hooks/useConsent';
+export { UseSessionStorage } from './hooks/useSessionStorage';
+
+// Contexts
+export {
+  useSocialEmbedsContext,
+  SocialEmbedsProvider
+} from './contexts/SocialEmbedsProvider';
