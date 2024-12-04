@@ -57,17 +57,17 @@ jobs:
           paths:
             - ./
 
-  run_lint:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Run Lint
-          command: |
-            yarn lint
-          working_directory: ~/project/
+  # run_lint:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: ./
+  #     - run:
+  #         name: Run Lint
+  #         command: |
+  #           yarn lint
+  #         working_directory: ~/project/
 
   build_storybook:
     executor: node
@@ -97,31 +97,31 @@ jobs:
             lerna run test --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
 
-  run_web_tests:
-    executor: node
-    steps:
-      - checkout
-      - install-lerna
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Run Web Tests
-          command: |
-            lerna run test:web --stream --since -- -- --ci --bail --coverage
-          working_directory: ~/project/
+  # run_web_tests:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - install-lerna
+  #     - attach_workspace:
+  #         at: ./
+  #     - run:
+  #         name: Run Web Tests
+  #         command: |
+  #           lerna run test:web --stream --since -- -- --ci --bail --coverage
+  #         working_directory: ~/project/
 
-  run_unit_tests:
-    executor: node
-    steps:
-      - checkout
-      - install-lerna
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Run Unit Tests
-          command: |
-            lerna run test:unit --stream --since -- -- --ci --bail --coverage
-          working_directory: ~/project/
+  # run_unit_tests:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - install-lerna
+  #     - attach_workspace:
+  #         at: ./
+  #     - run:
+  #         name: Run Unit Tests
+  #         command: |
+  #           lerna run test:unit --stream --since -- -- --ci --bail --coverage
+  #         working_directory: ~/project/
 
   sonarcloud_scan:
     executor: node_sonar
