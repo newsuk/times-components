@@ -12,7 +12,7 @@ export const LazyImage: React.FC<{
 }> = ({ url, alt, isRoundal, isBackground }) => {
   const ref: React.RefObject<HTMLImageElement> = React.createRef();
 
-  const [src, setSrc] = useState<string>();
+  const [src, setSrc] = useState<string | undefined>(url);
 
   useEffect(
     () => {

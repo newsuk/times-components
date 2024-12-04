@@ -19,7 +19,7 @@ class StandardSlice extends Component {
   }
 
   render() {
-    const { renderItems } = this.props;
+    const { renderItems, hideBorder } = this.props;
 
     const items = renderItems(this.config);
 
@@ -28,10 +28,9 @@ class StandardSlice extends Component {
     }
 
     const { ChildrenContainer, ConfigWrapper } = this;
-
     return (
       <ConfigWrapper>
-        <SliceContainer>
+        <SliceContainer hideBorder={hideBorder}>
           <ChildrenContainer>
             {items
               .map(item => (
@@ -51,7 +50,11 @@ class StandardSlice extends Component {
 
 StandardSlice.propTypes = {
   itemCount: PropTypes.number.isRequired,
-  renderItems: PropTypes.func.isRequired
+  renderItems: PropTypes.func.isRequired,
+  hideBorder: PropTypes.bool
+};
+StandardSlice.defaultProps = {
+  hideBorder: false
 };
 
 export default StandardSlice;

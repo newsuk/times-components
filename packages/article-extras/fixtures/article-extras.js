@@ -609,6 +609,90 @@ const relatedArticleSlice = {
   ],
   sliceName: "StandardSlice"
 };
+
+const categorisedArticles = {
+  categoryArticles: {
+    label: "category",
+    articles: [
+      {
+        bylines: [
+          {
+            byline: [
+              {
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Patrick Kidd"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
+              }
+            ]
+          }
+        ],
+        headline: "TMS: Pratchett’s law of the jungle - Disable Saving 2",
+        label: "Health",
+        media: {
+          crops: [
+            {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104",
+              ratio: "3:2"
+            }
+          ]
+        },
+        publicationName: "TIMES",
+        publishedDateTime: "2015-03-23T20:39:39.000Z",
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+      }
+    ]
+  },
+  parentCategoryArticles: {
+    label: "parent",
+    articles: [
+      {
+        bylines: [
+          {
+            byline: [
+              {
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Patrick Kidd"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
+              }
+            ]
+          }
+        ],
+        headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+        label: "Health",
+        media: {
+          crops: [
+            {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104",
+              ratio: "3:2"
+            }
+          ]
+        },
+        publicationName: "TIMES",
+        publishedDateTime: "2015-03-23T19:39:39.000Z",
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+      }
+    ]
+  }
+};
+
 const topics = [
   {
     __typename: "Topic",
@@ -637,4 +721,4 @@ const topics = [
   }
 ];
 
-export { relatedArticleSlice, topics };
+export { relatedArticleSlice, categorisedArticles, topics };

@@ -30,7 +30,7 @@ export const FeaturesCarousel: React.FC<FeaturesCarouselProps> = ({
 }) =>
   carouselItems ? (
     <div id="benefits-carousel">
-      {hideHeading && <Header>{heading}</Header>}
+      {!hideHeading && <Header>{heading}</Header>}
       <FeaturesCarouselContainer>
         <FeaturesCarouselWindow>
           {carouselItems.map(carouselItem => (

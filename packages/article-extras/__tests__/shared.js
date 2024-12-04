@@ -11,7 +11,11 @@ import { iterator } from "@times-components/test-utils";
 
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
-import { relatedArticleSlice, topics } from "../fixtures/article-extras";
+import {
+  relatedArticleSlice,
+  categorisedArticles,
+  topics
+} from "../fixtures/article-extras";
 
 const commentingConfig = {
   account: "sp_pCQgrRiN"
@@ -45,6 +49,7 @@ export default () => {
             commentsEnabled
             registerNode={() => {}}
             relatedArticleSlice={relatedArticleSlice}
+            categorisedArticles={categorisedArticles}
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
@@ -56,7 +61,7 @@ export default () => {
     },
     {
       name:
-        "no topics and comments when user not logged in, only related articles and sponsored div",
+        "no topics and comments when user not logged in, only related articles, category articles, and sponsored div",
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
@@ -66,6 +71,7 @@ export default () => {
             commentsEnabled
             registerNode={() => {}}
             relatedArticleSlice={relatedArticleSlice}
+            categorisedArticles={categorisedArticles}
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
@@ -85,6 +91,7 @@ export default () => {
             commentsEnabled
             registerNode={() => {}}
             relatedArticleSlice={relatedArticleSlice}
+            categorisedArticles={categorisedArticles}
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
@@ -104,6 +111,7 @@ export default () => {
             commentsEnabled
             registerNode={() => {}}
             relatedArticleSlice={relatedArticleSlice}
+            categorisedArticles={categorisedArticles}
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}

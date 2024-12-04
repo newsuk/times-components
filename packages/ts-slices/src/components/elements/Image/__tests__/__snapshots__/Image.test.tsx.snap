@@ -11,10 +11,11 @@ exports[`<Image /> should render image component correctly 1`] = `
       class="sc-bxivhb gqElVf"
     >
       <div
-        class="sc-bdVaJa gqNbEe"
+        class="sc-bdVaJa fdpJDB"
       >
         <img
           alt="image alt text"
+          src="https://dummyimage.com/300"
         />
       </div>
     </div>

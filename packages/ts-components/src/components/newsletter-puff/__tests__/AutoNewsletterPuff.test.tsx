@@ -27,7 +27,7 @@ const mocks = [
         newsletter: {
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
-          title: 'Best of Times',
+          title: 'Daily Briefing',
           __typename: 'Newsletter'
         }
       }

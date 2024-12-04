@@ -110,11 +110,20 @@ declare module '@times-components/icons' {
     height?: number;
     width?: number;
     title?: string;
+    fill?: string;
   };
   export const IconForwardChevron: FC<IconProps>;
   export const IconForwardArrow: FC<IconProps>;
   export const IconStar: FC<IconProps>;
   export const IconActivityIndicator: FC<IconProps>;
+  export const IconCheck: FC<IconProps>;
+  export const PlayerModalIcon: FC<IconProps>;
+  export const PlayerBack: FC<IconProps>;
+  export const PlayerFront: FC<IconProps>;
+  export const PlayIcon: FC<IconProps>;
+  export const PauseIcon: FC<IconProps>;
+  export const IconVolume: FC<IconProps>;
+  export const AudioCloseIcon: FC<IconProps>;
 }
 
 declare module '@times-components/image' {
