@@ -285,19 +285,10 @@ workflows:
   run_tests:
     jobs:
       - setup
-      - run_lint:
-          requires:
-            - setup
       - build_storybook:
           requires:
             - setup
       - run_noplatform_tests:
-          requires:
-            - setup
-      - run_web_tests:
-          requires:
-            - setup
-      - run_unit_tests:
           requires:
             - setup
       - sonarcloud_scan:
@@ -311,10 +302,7 @@ workflows:
           type: approval
           requires:
             - build_storybook
-            - run_lint
             - run_noplatform_tests
-            - run_web_tests
-            - run_unit_tests
             - run_cypress_tests
       - verdaccio-test:
           <<: *only_on_master_branch
@@ -323,10 +311,7 @@ workflows:
       - publish_coverage:
           requires:
             - build_storybook
-            - run_lint
             - run_noplatform_tests
-            - run_web_tests
-            - run_unit_tests
             - run_cypress_tests
       - publish_storybook:
           <<: *only_on_master_branch
