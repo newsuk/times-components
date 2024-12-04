@@ -22,17 +22,12 @@ jest.mock('@times-components/icons', () => ({
 }));
 
 jest.mock('../../audio-player-components/AudioPlayer', () => ({
-  AudioPlayer: ({
-    src,
-    isPlayingProp,
-    onPlay,
-    onPause,
-    onEnded
-  }: any) => (
+  AudioPlayer: ({ onPlay, onPause, onEnded, onClose }: any) => (
     <div data-testid="audio-player">
       <button onClick={onPlay}>Play</button>
       <button onClick={onPause}>Pause</button>
       <button onClick={onEnded}>Ended</button>
+      <button onClick={onClose}>Close</button>
     </div>
   )
 }));
@@ -75,6 +70,35 @@ describe('ArticleAudio', () => {
     // Since audioState is 'not-started', duration color should be '#696969'
     const durationSpan = getByText('3 min');
     expect(durationSpan).toHaveStyle('color: #696969');
+  });
+
+  test('hides AudioPlayer when close button is clicked (using mocked AudioPlayer)', () => {
+    const { getByTestId, queryByTestId, container, getByText } = render(
+      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+    );
+
+    // Trigger the 'loadedmetadata' event to set the duration
+    const audio = container.querySelector('audio') as HTMLAudioElement;
+    act(() => {
+      fireEvent.loadedMetadata(audio);
+    });
+
+    // Initially, the AudioPlayer should not be visible
+    expect(queryByTestId('audio-player')).not.toBeInTheDocument();
+
+    // Click the audio button to start playback
+    const audioButton = getByTestId('audio-button');
+    fireEvent.click(audioButton);
+
+    // The mocked AudioPlayer should now be visible
+    expect(getByTestId('audio-player')).toBeInTheDocument();
+
+    // Use the mocked Close button inside the AudioPlayer to close it
+    const closeButton = getByText('Close');
+    fireEvent.click(closeButton);
+
+    // The AudioPlayer should no longer be visible
+    expect(queryByTestId('audio-player')).not.toBeInTheDocument();
   });
 
   test('handles play and pause', () => {

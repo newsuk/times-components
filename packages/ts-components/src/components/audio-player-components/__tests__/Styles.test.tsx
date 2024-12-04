@@ -32,7 +32,7 @@ import {
   TabletDesktopSeekBar,
   TabletDesktopSpeedButton,
   SpeedButtonContainer,
-  TabletDesktopCloseButton,
+  TabletDesktopCloseButton
 } from '../styles';
 import { colours, fonts, breakpoints } from '@times-components/ts-styleguide';
 
@@ -457,21 +457,30 @@ describe('Styled Components', () => {
       const { container } = render(<StyledSeekBar progress={0} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('0%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('0%')
+      );
     });
 
     it('should apply correct styles with progress at 50%', () => {
       const { container } = render(<StyledSeekBar progress={50} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('50%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('50%')
+      );
     });
 
     it('should apply correct styles with progress at 100%', () => {
       const { container } = render(<StyledSeekBar progress={100} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('100%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('100%')
+      );
     });
   });
 
@@ -480,14 +489,20 @@ describe('Styled Components', () => {
       const { container } = render(<TabletDesktopSeekBar progress={25} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('25%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('25%')
+      );
     });
 
     it('should apply correct styles with progress at 75%', () => {
       const { container } = render(<TabletDesktopSeekBar progress={75} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('75%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('75%')
+      );
     });
   });
 
@@ -498,25 +513,28 @@ describe('Styled Components', () => {
     expect(volumeSlider).toHaveStyleRule('width', '100%');
     expect(volumeSlider).toHaveStyleRule('height', '4px');
     expect(volumeSlider).toHaveStyleRule('border-radius', '2px');
-    expect(volumeSlider).toHaveStyleRule('background', colours.functional.whiteGrey);
+    expect(volumeSlider).toHaveStyleRule(
+      'background',
+      colours.functional.whiteGrey
+    );
     expect(volumeSlider).toHaveStyleRule('outline', 'none');
     expect(volumeSlider).toHaveStyleRule('appearance', 'none');
 
     // Thumb styles
     expect(volumeSlider).toHaveStyleRule('appearance', 'none', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('width', '16px', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('height', '16px', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('border-radius', '50%', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('background', '#1573A2', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
   });
 
@@ -543,7 +561,9 @@ describe('Styled Components', () => {
   });
 
   it('should apply correct styles to CenterControls', () => {
-    const { container } = render(<CenterControls>Center Controls</CenterControls>);
+    const { container } = render(
+      <CenterControls>Center Controls</CenterControls>
+    );
 
     const centerControls = container.firstChild;
     expect(centerControls).toHaveStyleRule('display', 'flex');
@@ -573,13 +593,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(button).toHaveStyleRule('width', '32px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(button).toHaveStyleRule('height', '32px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(button).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg',
+      modifier: 'svg'
     });
   });
 
@@ -597,7 +617,9 @@ describe('Styled Components', () => {
 
   it('should apply correct styles to TabletDesktopVolumeControlContainer', () => {
     const { container } = render(
-      <TabletDesktopVolumeControlContainer>Volume Control</TabletDesktopVolumeControlContainer>
+      <TabletDesktopVolumeControlContainer>
+        Volume Control
+      </TabletDesktopVolumeControlContainer>
     );
 
     const volumeControl = container.firstChild;
@@ -619,13 +641,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(volumeButton).toHaveStyleRule('width', '24px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(volumeButton).toHaveStyleRule('height', '24px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(volumeButton).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg',
+      modifier: 'svg'
     });
   });
 
@@ -636,28 +658,31 @@ describe('Styled Components', () => {
     expect(volumeSlider).toHaveStyleRule('width', '100px');
     expect(volumeSlider).toHaveStyleRule('margin-left', '8px');
     expect(volumeSlider).toHaveStyleRule('height', '4px');
-    expect(volumeSlider).toHaveStyleRule('background', colours.functional.whiteGrey);
+    expect(volumeSlider).toHaveStyleRule(
+      'background',
+      colours.functional.whiteGrey
+    );
     expect(volumeSlider).toHaveStyleRule('outline', 'none');
     expect(volumeSlider).toHaveStyleRule('appearance', 'none');
 
     // Thumb styles
     expect(volumeSlider).toHaveStyleRule('width', '12px', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('height', '12px', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('background', '#1573A2', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('border-radius', '50%', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('border', '1px solid #1573A2', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
     expect(volumeSlider).toHaveStyleRule('margin-top', '-4px', {
-      modifier: '&::-webkit-slider-thumb',
+      modifier: '&::-webkit-slider-thumb'
     });
   });
 
@@ -666,14 +691,20 @@ describe('Styled Components', () => {
       const { container } = render(<TabletDesktopSeekBar progress={0} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('0%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('0%')
+      );
     });
 
     it('should apply correct styles with progress at 50%', () => {
       const { container } = render(<TabletDesktopSeekBar progress={50} />);
 
       const seekBar = container.firstChild;
-      expect(seekBar).toHaveStyleRule('background', expect.stringContaining('50%'));
+      expect(seekBar).toHaveStyleRule(
+        'background',
+        expect.stringContaining('50%')
+      );
     });
   });
 
@@ -684,7 +715,10 @@ describe('Styled Components', () => {
 
     const speedButton = container.firstChild;
     expect(speedButton).toHaveStyleRule('background', 'none');
-    expect(speedButton).toHaveStyleRule('border', `1px solid ${colours.functional.primary}`);
+    expect(speedButton).toHaveStyleRule(
+      'border',
+      `1px solid ${colours.functional.primary}`
+    );
     expect(speedButton).toHaveStyleRule('cursor', 'pointer');
     expect(speedButton).toHaveStyleRule('font-family', fonts.supporting);
     expect(speedButton).toHaveStyleRule('font-size', '14px');
@@ -693,15 +727,19 @@ describe('Styled Components', () => {
     expect(speedButton).toHaveStyleRule('padding', '8px 16px');
     expect(speedButton).toHaveStyleRule('margin', '0 16px');
 
-    expect(speedButton).toHaveStyleRule('background-color', colours.functional.border, {
-      modifier: ':hover',
-    });
+    expect(speedButton).toHaveStyleRule(
+      'background-color',
+      colours.functional.border,
+      {
+        modifier: ':hover'
+      }
+    );
 
     expect(speedButton).toHaveStyleRule('opacity', '0.5', {
-      modifier: ':disabled',
+      modifier: ':disabled'
     });
     expect(speedButton).toHaveStyleRule('cursor', 'not-allowed', {
-      modifier: ':disabled',
+      modifier: ':disabled'
     });
   });
 
@@ -727,13 +765,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(closeButton).toHaveStyleRule('width', '24px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(closeButton).toHaveStyleRule('height', '24px', {
-      modifier: 'svg',
+      modifier: 'svg'
     });
     expect(closeButton).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg',
+      modifier: 'svg'
     });
   });
 });
