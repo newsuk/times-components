@@ -44,15 +44,11 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     () => {
       if (window.__tcfapi) {
         window.__tcfapi('addEventListener', 2, (tcData, success) => {
-          // tslint:disable-next-line:no-console
-          console.log('success, tcData', success, tcData);
           if (
             success &&
             (tcData.eventStatus === eventStatus.tcLoaded ||
               tcData.eventStatus === eventStatus.userActionComplete)
           ) {
-            // tslint:disable-next-line:no-console
-            console.log('PROSLO DO setIsSocialEmbedAllowed');
             const consent = checkVendorConsent(vendorName);
             setIsSocialEmbedAllowed(prev => ({
               ...prev,
@@ -64,11 +60,6 @@ export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
     },
     [vendorName, setIsSocialEmbedAllowed]
   );
-
-  // tslint:disable-next-line:no-console
-  console.log('isSocialEmbedAllowed', isSocialEmbedAllowed);
-  // tslint:disable-next-line:no-console
-  console.log('isAllowedOnce', isAllowedOnce);
 
   return isSocialEmbedAllowed[vendorName] || isAllowedOnce[vendorName] ? (
     <div id={id}>

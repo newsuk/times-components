@@ -37,9 +37,6 @@ export const enableCookies = (
             []
           );
         } else {
-          // Log error and set default value
-          // tslint:disable-next-line:no-console
-          console.error(`${vendorName} vendor consent not available:`, data);
           setIsSocialEmbedAllowed(prev => ({
             ...prev,
             [vendorName]: false

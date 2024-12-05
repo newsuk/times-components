@@ -1,5 +1,4 @@
-/* eslint-disable no-console */
-import React, { FC, MouseEvent, useEffect } from 'react';
+import React, { FC, MouseEvent } from 'react';
 import {
   AllowButton,
   CardContainer,
@@ -28,44 +27,18 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
 }) => {
   const {
     setIsSocialEmbedAllowed,
-    setIsAllowedOnce,
-    isSocialEmbedAllowed,
-    isAllowedOnce
+    setIsAllowedOnce
   } = useSocialEmbedsContext();
 
-  useEffect(
-    () => {
-      // tslint:disable-next-line:no-console
-      console.log('isSocialEmbedAllowed updated:', isSocialEmbedAllowed);
-    },
-    [isSocialEmbedAllowed]
-  );
-
   const allowCookiesOnce = () => {
-    // tslint:disable-next-line:no-console
-    console.log('entered allowCookiesOnce', vendorName);
     setIsAllowedOnce(prev => ({
       ...prev,
       [vendorName]: true
     }));
-    // tslint:disable-next-line:no-console
-    console.log(
-      'entered allowCookiesOnce cookies enabled',
-      vendorName,
-      isAllowedOnce
-    );
   };
 
   const handleEnableCookies = () => {
-    // tslint:disable-next-line:no-console
-    console.log('entered handleEnableCookies', vendorName);
     enableCookies(vendorName, setIsSocialEmbedAllowed);
-    // tslint:disable-next-line:no-console
-    console.log(
-      'entered handleEnableCookies cookies enabled',
-      vendorName,
-      isSocialEmbedAllowed
-    );
   };
 
   const handlePrivacyManagerClick = (e: MouseEvent<HTMLAnchorElement>) => {
