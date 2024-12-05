@@ -43,7 +43,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                 <InlineNewsletterPuff
                   code="TNL-101"
                   copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
-                  headline="Best of Times"
+                  headline="Daily Briefing"
                   section="News"
                 />
               </div>
@@ -179,7 +179,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
             <AutoNewsletterPuff
               code="TNL-101"
               copy="Our flagship newsletter featuring our top stories and analysis, delivered every morning."
-              headline="Best of Times"
+              headline="Daily Briefing"
               section="News"
             />
             <span>
