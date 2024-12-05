@@ -10,5 +10,5 @@ export const eventStatus = {
 } as const;
 
 export const vendors = {
-  twitter: 'twitter',
+  twitter: 'twitter'
 } as const;
