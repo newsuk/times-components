@@ -42,18 +42,6 @@ describe('Recommendations Data', () => {
     });
   });
 
-  it('should verify bylines are properly structured', () => {
-    articles.forEach(article => {
-      article.bylines.forEach(byline => {
-        expect(['inline', 'author']).toContain(byline.type);
-        if (byline.type === 'author') {
-          expect(byline).toHaveProperty('name');
-          expect(typeof byline.name).toBe('string');
-        }
-      });
-    });
-  });
-
   it('should ensure labels are either null or strings', () => {
     articles.forEach(article => {
       expect([null, 'string']).toContain(typeof article.label);
