@@ -125,10 +125,6 @@ export {
 
 export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
 
-// Hooks
-export { useConsent } from './hooks/useConsent';
-export { UseSessionStorage } from './hooks/useSessionStorage';
-
 // Contexts
 export {
   useSocialEmbedsContext,
