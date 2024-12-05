@@ -257,9 +257,7 @@ const renderers = ({
         );
 
       case "times-travel-cta": {
-        console.log('inside');
         const elementAttr = element.attributes;
-        console.log('elementAttr', elementAttr);
 
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -270,10 +268,7 @@ const renderers = ({
               date-to={elementAttr.dateTo}
               date-from={elementAttr.dateFrom}
             >
-              <CtaButton
-                src={elementAttr.src}
-                attributes={elementAttr}
-              />
+              <CtaButton src={elementAttr.src} attributes={elementAttr} />
             </times-travel-cta>
           </InteractiveContainer>
         );
