@@ -122,3 +122,6 @@ export { ArticleAudio } from './components/article-audio/ArticleAudio';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
+
+// Button Components
+export { CtaButton } from './components/cta-button/CtaButton';

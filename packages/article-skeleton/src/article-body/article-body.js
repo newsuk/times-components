@@ -38,7 +38,8 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines
+  Timelines,
+  CtaButton
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -254,6 +255,24 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <times-travel-cta
+              url={elementAttr.url}
+              text={elementAttr.text}
+              target={elementAttr.target}
+              date-to={elementAttr.dateTo}
+              date-from={elementAttr.dateFrom}
+            >
+              <CtaButton src={elementAttr.src} attributes={elementAttr} />
+            </times-travel-cta>
+          </InteractiveContainer>
+        );
+      }
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
