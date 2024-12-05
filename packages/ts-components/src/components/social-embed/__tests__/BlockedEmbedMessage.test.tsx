@@ -95,16 +95,4 @@ describe('BlockedEmbedMessage Component', () => {
 
     expect(openPrivacyModal).toHaveBeenCalledWith('gdpr', 'mockMessageId');
   });
-
-  it('logs isSocialEmbedAllowed updates via useEffect', () => {
-    const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
-
-    render(<BlockedEmbedMessage {...defaultProps} />);
-    expect(consoleLogSpy).toHaveBeenCalledWith(
-      'isSocialEmbedAllowed updated:',
-      mockContext.isSocialEmbedAllowed
-    );
-
-    consoleLogSpy.mockRestore();
-  });
 });

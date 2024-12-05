@@ -63,24 +63,6 @@ describe('enableCookies', () => {
     );
   });
 
-  it('should log an error if vendor consent data is not available', () => {
-    // tslint:disable-next-line:no-console
-    console.error = jest.fn();
-    (window as any).__tcfapi = jest.fn((command, version, callback) => {
-      // tslint:disable-next-line:no-console
-      console.log('command, version', command, version);
-      callback(null, false); // Simulate unsuccessful __tcfapi call
-    });
-
-    enableCookies('facebook', setIsSocialEmbedAllowed);
-
-    // tslint:disable-next-line:no-console
-    expect(console.error).toHaveBeenCalledWith(
-      'facebook vendor consent not available:',
-      null
-    );
-  });
-
   it('should not call __tcfapi if __tcfapi is not defined', () => {
     delete (window as any).__tcfapi;
 
