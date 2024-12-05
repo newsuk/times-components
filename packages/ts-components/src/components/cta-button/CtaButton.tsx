@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import {  BackgroundContainer, ctaButtonStyles, TimesEmbed } from './styles';
+import { BackgroundContainer, ctaButtonStyles, TimesEmbed } from './styles';
 import Button from '@times-components/button';
 
 interface AttributesProps {
@@ -42,27 +42,25 @@ export const CtaButton: React.FC<RootProps> = props => {
           iframeEl.classList.add('deactivate-ratio');
         }
       }
-      console.log('ratio', ratio);
     },
     [stateLoaded, src]
   );
 
   const attributes = props.attributes;
-  console.log('attributes', attributes);
 
   return (
     <BackgroundContainer ratio={ratio || ''} id="iframeEl">
-    <div>
-      {attributes && (
-        <Button
-          title={attributes.text}
-          style={ctaButtonStyles}
-          onPress={() => {
-            window.open(attributes.url, attributes.target || '_blank');
-          }}
-        />
-      )}
-      {id && <TimesEmbed id={id} />}
+      <div>
+        {attributes && (
+          <Button
+            title={attributes.text}
+            style={ctaButtonStyles}
+            onPress={() => {
+              window.open(attributes.url, attributes.target || '_blank');
+            }}
+          />
+        )}
+        {id && <TimesEmbed id={id} />}
       </div>
     </BackgroundContainer>
   );
