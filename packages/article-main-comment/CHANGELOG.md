@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.93.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.92.9...@times-components/article-main-comment@2.93.0) (2024-12-05)
+
+
+### Features
+
+* **TMC-0000:** Implement social embeds ([#3989](https://github.com/newsuk/times-components/issues/3989)) ([4a4e7cd](https://github.com/newsuk/times-components/commit/4a4e7cdceec5fe7402b4403170013f325eec8a84))
+
+
+
+
+
 ## [2.92.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.92.8...@times-components/article-main-comment@2.92.9) (2024-12-03)
 
 **Note:** Version bump only for package @times-components/article-main-comment
