@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.88.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.87.6...@times-components/article-magazine-standard@3.88.0) (2024-12-05)
+
+
+### Features
+
+* **TMC-0000:** Implement social embeds ([#3989](https://github.com/newsuk/times-components/issues/3989)) ([4a4e7cd](https://github.com/newsuk/times-components/commit/4a4e7cdceec5fe7402b4403170013f325eec8a84))
+
+
+
+
+
+## [3.87.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.87.5...@times-components/article-magazine-standard@3.87.6) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.87.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.87.4...@times-components/article-magazine-standard@3.87.5) (2024-12-02)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
