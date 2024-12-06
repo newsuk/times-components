@@ -90,7 +90,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           isPlayingProp={audioState === 'playing'}
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
-          onEnded={() => setAudioState('not-started')}
+          onEnded={() => hidePlayer()}
           onClose={() => hidePlayer()}
         />
         </div>
