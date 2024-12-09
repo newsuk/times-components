@@ -29,7 +29,8 @@ module.exports = (
     commentingFlag = true,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled = false
+    isEntitlementFeatureEnabled = false,
+    isSharingSavingEntitlementEnabled = false
   },
   userState
 ) => {
@@ -86,7 +87,8 @@ module.exports = (
       commentingFlag,
       showAudioPlayer,
       storefrontConfig,
-      isEntitlementFeatureEnabled
+      isEntitlementFeatureEnabled,
+      isSharingSavingEntitlementEnabled
     },
     name: "article"
   };
