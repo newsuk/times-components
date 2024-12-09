@@ -55,7 +55,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
         onClick={handlePlayPause}
         className='article-audio-button'
         style={{
-          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : 'unset',
+          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : "#fff",
           color: audioState === 'not-started' ? '#333' : '#fff'
         }}
       >
@@ -81,9 +81,9 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           {duration} min
         </AudioDuration>
       </AudioButton>
-        <div style={{
-        opacity: !isAudioPlayerVisible ?  0 : 1,
-        visibility: !isAudioPlayerVisible ? 'hidden' : 'visible'
+        <div data-testid="audioPlayerWrapper" style={{
+       
+        display: !isAudioPlayerVisible ? 'none' : 'block'
       }}>
         <AudioPlayer
           src={audioSrc}

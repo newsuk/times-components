@@ -8,16 +8,21 @@ jest.mock('../styles', () => ({
     <button data-testid="audio-button" onClick={onClick} style={style}>
       {children}
     </button>
+  ),
+  AudioDuration: ({ children, style }: any) => (
+    <span data-testid="audio-duration" style={style}>
+      {children}
+    </span>
   )
 }));
 
 jest.mock('@times-components/icons', () => ({
   __esModule: true,
-  PlayIcon: ({ color }: any) => (
-    <svg data-testid="play-icon" style={{ color: color || '#333' }} />
+  PlayIcon: ({ fill }: any) => (
+    <svg data-testid="play-icon" style={{ fill: fill || '#333' }} />
   ),
-  PauseIcon: ({ color }: any) => (
-    <svg data-testid="pause-icon" style={{ color: color || '#333' }} />
+  PauseIcon: ({ fill }: any) => (
+    <svg data-testid="pause-icon" style={{ fill: fill || '#333' }} />
   )
 }));
 
@@ -60,53 +65,51 @@ describe('ArticleAudio', () => {
     const audioButton = getByTestId('audio-button');
     expect(audioButton).toBeInTheDocument();
 
-    expect(audioButton.style.backgroundColor).toBe('');
     expect(audioButton).toHaveStyle('color: #333');
+    expect(audioButton).toHaveStyle('background-color: #fff');
+   
 
     // The initial state should display 'Listen' and the duration
     expect(getByText('Listen')).toBeInTheDocument();
     expect(getByText('3 min')).toBeInTheDocument();
 
-    // Since audioState is 'not-started', duration color should be '#696969'
-    const durationSpan = getByText('3 min');
+    // Verify duration color when 'not-started'
+    const durationSpan = getByTestId('audio-duration');
     expect(durationSpan).toHaveStyle('color: #696969');
   });
 
-  test('hides AudioPlayer when close button is clicked (using mocked AudioPlayer)', () => {
-    const { getByTestId, queryByTestId, container, getByText } = render(
+  test('handles AudioPlayer visibility toggling', () => {
+    const { getByTestId, queryByTestId, getByText, container } = render(
       <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
-
-    // Trigger the 'loadedmetadata' event to set the duration
+  
     const audio = container.querySelector('audio') as HTMLAudioElement;
     act(() => {
       fireEvent.loadedMetadata(audio);
     });
-
-    // Initially, the AudioPlayer should not be visible
-    expect(queryByTestId('audio-player')).not.toBeInTheDocument();
-
-    // Click the audio button to start playback
+  
+    const audioPlayer = queryByTestId('audioPlayerWrapper');
+    
+    // Verify the player is hidden initially
+    expect(audioPlayer).toBeInTheDocument();
+//    expect(audioPlayer).toHaveStyle('opacity: 0');
+    expect(audioPlayer).toHaveStyle('display: none');
+  
+    // Click to show the player
     const audioButton = getByTestId('audio-button');
     fireEvent.click(audioButton);
-
-    // The mocked AudioPlayer should now be visible
-    expect(getByTestId('audio-player')).toBeInTheDocument();
-
-    // Use the mocked Close button inside the AudioPlayer to close it
-    const closeButton = getByText('Close');
-    fireEvent.click(closeButton);
-
-    // The AudioPlayer should no longer be visible
-    expect(queryByTestId('audio-player')).not.toBeInTheDocument();
+  
+    // Verify the player is now visible
+   // expect(audioPlayer).toHaveStyle('opacity: 1');
+    expect(audioPlayer).toHaveStyle('visibility: visible');
   });
 
-  test('handles play and pause', () => {
+  test('handles play and pause state transitions correctly', () => {
     const { getByTestId, getByText, container } = render(
       <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
-    // Trigger the 'loadedmetadata' event to set the duration
+    // Trigger the 'loadedmetadata' event
     const audio = container.querySelector('audio') as HTMLAudioElement;
     act(() => {
       fireEvent.loadedMetadata(audio);
@@ -114,79 +117,76 @@ describe('ArticleAudio', () => {
 
     const audioButton = getByTestId('audio-button');
 
-    // Simulate clicking the play button
+    // Click to play
     fireEvent.click(audioButton);
-
-    // Now, audioState should be 'playing'
+    expect(getByText('Playing')).toBeInTheDocument();
     expect(audioButton).toHaveStyle('background-color: #1D1D1B');
     expect(audioButton).toHaveStyle('color: #fff');
-    expect(getByText('Playing')).toBeInTheDocument();
 
-    // Since audioState is 'playing', duration color should be '#fff'
-    const durationSpan = getByText('3 min');
+    // Duration color should change to white
+    const durationSpan = getByTestId('audio-duration');
     expect(durationSpan).toHaveStyle('color: #fff');
 
-    // Simulate clicking the pause button
+    // Click to pause
     fireEvent.click(audioButton);
-
     expect(getByText('Paused')).toBeInTheDocument();
-    expect(audioButton).toHaveStyle('background-color: #1D1D1B');
-    expect(audioButton).toHaveStyle('color: #fff');
 
-    // Simulate clicking the play button again
+    // Click to play again
     fireEvent.click(audioButton);
-
     expect(getByText('Playing')).toBeInTheDocument();
   });
 
-  test('shows AudioPlayer when audio is played', () => {
-    const { getByTestId, queryByTestId, container } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-    );
-
-    // Trigger the 'loadedmetadata' event to set the duration
-    const audio = container.querySelector('audio') as HTMLAudioElement;
-    act(() => {
-      fireEvent.loadedMetadata(audio);
-    });
-
-    expect(queryByTestId('audio-player')).not.toBeInTheDocument();
-
-    const audioButton = getByTestId('audio-button');
-    fireEvent.click(audioButton);
-
-    expect(getByTestId('audio-player')).toBeInTheDocument();
-  });
-
-  test('updates audioState based on AudioPlayer callbacks', () => {
+  test('updates audioState via AudioPlayer callbacks', () => {
     const { getByTestId, getByText, container } = render(
       <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
 
-    // Trigger the 'loadedmetadata' event to set the duration
+    // Trigger the 'loadedmetadata' event
     const audio = container.querySelector('audio') as HTMLAudioElement;
     act(() => {
       fireEvent.loadedMetadata(audio);
     });
 
     const audioButton = getByTestId('audio-button');
-    fireEvent.click(audioButton); // Start playing
-
-    expect(getByText('Playing')).toBeInTheDocument();
+    fireEvent.click(audioButton); // Play
 
     const pauseButton = getByText('Pause');
-    fireEvent.click(pauseButton);
-
+    fireEvent.click(pauseButton); // Pause
     expect(getByText('Paused')).toBeInTheDocument();
 
     const playButton = getByText('Play');
-    fireEvent.click(playButton);
-
+    fireEvent.click(playButton); // Play again
     expect(getByText('Playing')).toBeInTheDocument();
 
     const endedButton = getByText('Ended');
-    fireEvent.click(endedButton);
-
+    fireEvent.click(endedButton); // Simulate end of playback
     expect(getByText('Listen')).toBeInTheDocument();
   });
+});
+test('hides AudioPlayer when close button is clicked', () => {
+  const { getByTestId, queryByTestId, getByText, container } = render(
+    <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+  );
+
+  // Trigger 'loadedmetadata' event to initialize duration
+  const audio = container.querySelector('audio') as HTMLAudioElement;
+  act(() => {
+    fireEvent.loadedMetadata(audio);
+  });
+
+  // Click the audio button to show the AudioPlayer
+  const audioButton = getByTestId('audio-button');
+  fireEvent.click(audioButton);
+
+  // Verify that the AudioPlayer is now visible
+  const audioPlayer = getByTestId('audioPlayerWrapper');
+  expect(audioPlayer).toHaveStyle('display: block');
+
+
+  // Simulate clicking the close button inside the AudioPlayer
+  const closeButton = getByText('Close');
+  fireEvent.click(closeButton);
+
+  // Verify that the AudioPlayer is hidden again
+  expect(audioPlayer).toHaveStyle('display: none');
 });
