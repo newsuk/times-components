@@ -261,15 +261,7 @@ const renderers = ({
 
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <times-travel-cta
-              url={elementAttr.url}
-              text={elementAttr.text}
-              target={elementAttr.target}
-              date-to={elementAttr.dateTo}
-              date-from={elementAttr.dateFrom}
-            >
-              <CtaButton src={elementAttr.src} attributes={elementAttr} />
-            </times-travel-cta>
+            <CtaButton src={elementAttr.src} attributes={elementAttr} />
           </InteractiveContainer>
         );
       }
