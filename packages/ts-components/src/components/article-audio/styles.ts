@@ -1,10 +1,18 @@
 import styled from 'styled-components';
-import { colours } from '@times-components/ts-styleguide';
+import { colours, breakpoints } from '@times-components/ts-styleguide';
 
+export const AudioDuration = styled.span`
+  display: none;
+  
+  @media (min-width: ${breakpoints.small}px) {
+    display: block
+  }
+
+`;
 export const AudioButton = styled.button`
   background-color: unset;
   border-radius: 0;
-  padding: 7px 11px;
+  padding: 6px 11px;
   border: 1px solid ${colours.functional.primary};
   display: flex;
   align-items: center;
