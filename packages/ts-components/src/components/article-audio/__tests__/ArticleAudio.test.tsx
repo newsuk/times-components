@@ -79,7 +79,7 @@ describe('ArticleAudio', () => {
   });
 
   test('handles AudioPlayer visibility toggling', () => {
-    const { getByTestId, queryByTestId, getByText, container } = render(
+    const { getByTestId, queryByTestId, container } = render(
       <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
   
@@ -164,7 +164,7 @@ describe('ArticleAudio', () => {
   });
 });
 test('hides AudioPlayer when close button is clicked', () => {
-  const { getByTestId, queryByTestId, getByText, container } = render(
+  const { getByTestId, getByText, container } = render(
     <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
   );
 
