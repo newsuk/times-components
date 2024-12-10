@@ -8,13 +8,12 @@ import {
 } from "@times-components/icons";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
-import { SaveStar } from "@times-components/ts-components";
+import { SaveStar, ArticleAudio } from "@times-components/ts-components";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
-import { ArticleAudio } from "@times-components/ts-components";
 
 import {
   SaveAndShareBarContainer,
@@ -223,7 +222,7 @@ function SaveAndShareBar(props) {
           </Popover>
         </ShareButtonContainer>
       )}
-  
+
       {savingEnabled ? (
         <>
           <UserState
@@ -248,8 +247,8 @@ function SaveAndShareBar(props) {
           )}
         </>
       ) : null}
-      <div id="audio-narration-wrapper" style={{display: "none"}}>
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+      <div id="audio-narration-wrapper" style={{ display: "none" }}>
+        <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
       </div>
     </SaveAndShareBarContainer>
   );
