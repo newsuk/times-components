@@ -272,6 +272,21 @@ const renderers = ({
         const isYoutube = src.includes("youtube");
         const isTikTok = src.includes("tiktok");
 
+        if (!isYoutube || !isTikTok) {
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              <div id={id}>
+                <InteractiveWrapper
+                  attributes={attributes}
+                  element={value}
+                  key={key}
+                  source={url}
+                />
+              </div>
+            </InteractiveContainer>
+          );
+        }
+
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <SocialMediaEmbed
