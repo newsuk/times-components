@@ -25,6 +25,7 @@ const article = articleFixture({
     {
       attributes: {
         caption: "An image caption",
+        title: "An image title",
         credits: "The image credits",
         display: "primary",
         ratio: "1500:1000",

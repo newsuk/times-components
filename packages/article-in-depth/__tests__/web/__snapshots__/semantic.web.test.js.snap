@@ -255,7 +255,7 @@ exports[`1. a full article 1`] = `
     </a>
     <article>
       <img
-        alt="An image caption"
+        alt="An image title"
         loading="lazy"
         src="https://image.io"
       />

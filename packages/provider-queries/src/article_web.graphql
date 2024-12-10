@@ -94,6 +94,7 @@ query ArticleQuery($id: ID!) {
 fragment imageProps on Image {
   caption
   credits
+  title
   crop169: crop(ratio: "16:9") {
     ratio
     url
