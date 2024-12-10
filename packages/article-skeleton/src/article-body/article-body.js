@@ -159,7 +159,7 @@ const renderers = ({
       </Context.Consumer>
     );
   },
-  image(key, { id, display, ratio, url, caption, credits }) {
+  image(key, { id, display, ratio, url, caption, title, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
@@ -170,6 +170,7 @@ const renderers = ({
                 <ArticleImage
                   captionOptions={{
                     caption,
+                    title,
                     credits
                   }}
                   imageOptions={{
