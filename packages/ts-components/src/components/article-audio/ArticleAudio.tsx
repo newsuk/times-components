@@ -40,7 +40,6 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
     setisAudioPlayerVisible(false);
     setAudioState('not-started');
   };
-  
 
   return (
     <div>
@@ -49,13 +48,12 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
         src={audioSrc}
         onLoadedMetadata={handleLoadedMetadata}
         preload="metadata"
-       
       />
       <AudioButton
         onClick={handlePlayPause}
-        className='article-audio-button'
+        className="article-audio-button"
         style={{
-          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : "#fff",
+          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : '#fff',
           color: audioState === 'not-started' ? '#333' : '#fff'
         }}
       >
@@ -81,10 +79,12 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           {duration} min
         </AudioDuration>
       </AudioButton>
-        <div data-testid="audioPlayerWrapper" style={{
-       
-        display: !isAudioPlayerVisible ? 'none' : 'block'
-      }}>
+      <div
+        data-testid="audioPlayerWrapper"
+        style={{
+          display: !isAudioPlayerVisible ? 'none' : 'block'
+        }}
+      >
         <AudioPlayer
           src={audioSrc}
           isPlayingProp={audioState === 'playing'}
@@ -93,8 +93,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           onEnded={() => hidePlayer()}
           onClose={() => hidePlayer()}
         />
-        </div>
-    
+      </div>
     </div>
   );
 };

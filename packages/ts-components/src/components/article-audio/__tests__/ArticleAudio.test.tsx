@@ -67,7 +67,6 @@ describe('ArticleAudio', () => {
 
     expect(audioButton).toHaveStyle('color: #333');
     expect(audioButton).toHaveStyle('background-color: #fff');
-   
 
     // The initial state should display 'Listen' and the duration
     expect(getByText('Listen')).toBeInTheDocument();
@@ -82,25 +81,25 @@ describe('ArticleAudio', () => {
     const { getByTestId, queryByTestId, container } = render(
       <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
     );
-  
+
     const audio = container.querySelector('audio') as HTMLAudioElement;
     act(() => {
       fireEvent.loadedMetadata(audio);
     });
-  
+
     const audioPlayer = queryByTestId('audioPlayerWrapper');
-    
+
     // Verify the player is hidden initially
     expect(audioPlayer).toBeInTheDocument();
-//    expect(audioPlayer).toHaveStyle('opacity: 0');
+    //    expect(audioPlayer).toHaveStyle('opacity: 0');
     expect(audioPlayer).toHaveStyle('display: none');
-  
+
     // Click to show the player
     const audioButton = getByTestId('audio-button');
     fireEvent.click(audioButton);
-  
+
     // Verify the player is now visible
-   // expect(audioPlayer).toHaveStyle('opacity: 1');
+    // expect(audioPlayer).toHaveStyle('opacity: 1');
     expect(audioPlayer).toHaveStyle('visibility: visible');
   });
 
@@ -181,7 +180,6 @@ test('hides AudioPlayer when close button is clicked', () => {
   // Verify that the AudioPlayer is now visible
   const audioPlayer = getByTestId('audioPlayerWrapper');
   expect(audioPlayer).toHaveStyle('display: block');
-
 
   // Simulate clicking the close button inside the AudioPlayer
   const closeButton = getByText('Close');

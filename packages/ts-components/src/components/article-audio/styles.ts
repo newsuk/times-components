@@ -3,11 +3,10 @@ import { colours, breakpoints } from '@times-components/ts-styleguide';
 
 export const AudioDuration = styled.span`
   display: none;
-  
-  @media (min-width: ${breakpoints.small}px) {
-    display: block
-  }
 
+  @media (min-width: ${breakpoints.small}px) {
+    display: block;
+  }
 `;
 export const AudioButton = styled.button`
   background-color: unset;
