@@ -131,66 +131,19 @@ export default [
   {
     name: "interactive",
     attributes: {
-      id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
+      id: "620560ef-068e-4bed-b5ce-dd8e5b5c97fc",
       display: "primary",
       url:
-        "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
       element: {
-        value: "twitter-embed",
+        value: "times-travel-cta",
         attributes: {
-          url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
-        }
-      }
-    },
-    children: []
-  },
-  {
-    name: "interactive",
-    attributes: {
-      id: "cd578cd9-7076-427f-8b4e-2e23866da03b",
-      display: "primary",
-      url:
-        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
-      element: {
-        value: "times-embed-iframe-max",
-        attributes: {
-          src: "https://youtube.com/embed/p6Cnazi_Fi0",
-          ratio: "r16-9"
-        }
-      }
-    },
-    children: []
-  },
-  {
-    name: "interactive",
-    attributes: {
-      id: "cd693ed7-51e1-42bd-b528-7d11a42a8c93",
-      display: "primary",
-      url:
-        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
-      element: {
-        value: "times-embed-iframe-max",
-        attributes: {
-          src: "https:\\/\\/www.tiktok.com\\/embed\\/7355418637924060448",
-          "date-to": "2024-09-17",
-          "date-from": "2024-09-17"
-        }
-      }
-    },
-    children: []
-  },
-  {
-    name: "interactive",
-    attributes: {
-      id: "79c66dbd-2e9c-4dee-9677-53e7ed94418e",
-      display: "primary",
-      url:
-        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
-      element: {
-        value: "times-embed-iframe-max",
-        attributes: {
-          src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
-          ratio: "r1-1"
+          url:
+            "https://www.booking.com/hotel/gb/grays-court.en-gb.html?aid=886291&amp;no_rooms=1&amp;group_adults=2&amp;label=times-edition-top-seven-christmas-shops",
+          text: "Book a stay",
+          target: "_blank",
+          dateTo: "2024-12-02",
+          dateFrom: "2024-12-02"
         }
       }
     },

@@ -39,6 +39,7 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
+  CtaButton,
   SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
@@ -256,21 +257,8 @@ const renderers = ({
           </Context.Consumer>
         );
 
-      case "twitter-embed":
-        return (
-          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <SocialMediaEmbed
-              url={attributes.url}
-              vendorName="twitter"
-              id={id}
-            />
-          </InteractiveContainer>
-        );
-
-      case "times-embed-iframe-max": {
-        const src = (element.attributes && element.attributes.src) || "";
-        const isYoutube = src.includes("youtube");
-        const isTikTok = src.includes("tiktok");
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
 
         if (!isYoutube || !isTikTok) {
           return (
@@ -289,11 +277,7 @@ const renderers = ({
 
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <SocialMediaEmbed
-              url={isTikTok ? decodeURIComponent(src) : src}
-              vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
-              id={id}
-            />
+            <CtaButton src={elementAttr.src} attributes={elementAttr} />
           </InteractiveContainer>
         );
       }
