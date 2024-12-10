@@ -53,13 +53,11 @@ Array [
         <div>
           <div>
             <responsive
-              alt={null}
               loading="lazy"
               src="https://img/someImage"
               zIndex={2}
             >
               <img
-                alt={null}
                 loading="lazy"
                 src="https://img/someImage"
               />
@@ -133,13 +131,11 @@ Array [
         <div>
           <div>
             <responsive
-              alt="Some caption"
               loading="lazy"
               src="https://img/someImage"
               zIndex={2}
             >
               <img
-                alt="Some caption"
                 loading="lazy"
                 src="https://img/someImage"
               />
@@ -198,13 +194,11 @@ Array [
         <div>
           <div>
             <responsive
-              alt="Some caption"
               loading="lazy"
               src="https://img/someImage?resize=900"
               zIndex={2}
             >
               <img
-                alt="Some caption"
                 loading="lazy"
                 src="https://img/someImage?resize=900"
               />
