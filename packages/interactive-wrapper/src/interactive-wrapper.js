@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Placeholder } from "@times-components/image";
+import { Container, InteractiveContainer, InteractiveWrapperContainer } from "./styles";
 
 function ensureElement(selector, createElement) {
   if (document.body.querySelector(selector)) {
@@ -109,16 +110,28 @@ export default class InteractiveWrapper extends Component {
   }
 
   render() {
+    // this.props.attributes.height = 1000;
+    // this.props.attributes.height = {
+    //   xs: 1000,
+    //   md: 500
+    // }
+
+    console.log(this.props, "props");
+    console.log(this.component, "component");
+
     return (
-      <>
-        <div
+      <InteractiveWrapperContainer>
+        <Container
           ref={this.placeholder}
-          style={{ height: 150, position: "relative" }}
+          $height={this.props.attributes.height}
         >
           <Placeholder />
-        </div>
-        <div ref={this.component} />
-      </>
+        </Container>
+        <InteractiveContainer
+          ref={this.component}
+          $height={this.props.attributes.height}
+        />
+      </InteractiveWrapperContainer>
     );
   }
 }
