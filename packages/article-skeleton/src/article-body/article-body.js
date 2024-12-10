@@ -39,7 +39,8 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
-  CtaButton
+  CtaButton,
+  SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";

@@ -1,7 +1,7 @@
 export default [
   {
     attributes: {
-      title: "New Brexit referendum"
+      title: "New Brexit referendummmmmmm"
     },
     children: [
       {
