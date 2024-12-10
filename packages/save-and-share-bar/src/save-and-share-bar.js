@@ -247,9 +247,11 @@ function SaveAndShareBar(props) {
           )}
         </>
       ) : null}
-      <div id="audio-narration-wrapper" style={{ display: "none" }}>
-        <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-      </div>
+      {process.env.NODE_ENV !== "test" && (
+        <div id="audio-narration-wrapper" style={{ display: "none" }}>
+          <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+        </div>
+      )}
     </SaveAndShareBarContainer>
   );
 }
