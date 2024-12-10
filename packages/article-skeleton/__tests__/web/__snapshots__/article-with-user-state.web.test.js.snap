@@ -57,6 +57,7 @@ exports[`Article with user state Render full article when user has access to ful
                       Object {
                         "caption": "An image caption",
                         "credits": "The image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -83,6 +84,7 @@ exports[`Article with user state Render full article when user has access to ful
                       Object {
                         "caption": "A secondary image caption",
                         "credits": "The secondary image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -109,6 +111,7 @@ exports[`Article with user state Render full article when user has access to ful
                       Object {
                         "caption": "An inline image caption",
                         "credits": "The inline image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -437,6 +440,7 @@ exports[`Article with user state Render teaser article when user does not have a
                       Object {
                         "caption": "An image caption",
                         "credits": "The image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -463,6 +467,7 @@ exports[`Article with user state Render teaser article when user does not have a
                       Object {
                         "caption": "A secondary image caption",
                         "credits": "The secondary image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -489,6 +494,7 @@ exports[`Article with user state Render teaser article when user does not have a
                       Object {
                         "caption": "An inline image caption",
                         "credits": "The inline image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
