@@ -30,7 +30,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
     ratio,
     uri
   } = imageOptions;
-  const { caption, credits } = captionOptions;
+  const { caption, title, credits } = captionOptions;
 
   const imgCaption = renderCaption(display, caption, credits);
 
@@ -45,7 +45,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
     <figure style={{ margin: 0 }}>
       <InsetImageStyle key="img">
         <Image
-          accessibilityLabel={caption}
+          accessibilityLabel={title || caption}
           aspectRatio={aspectRatio}
           highResSize={highResSize}
           lowResSize={lowResSize}
