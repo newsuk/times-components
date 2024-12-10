@@ -23,7 +23,6 @@ import {
   InArticlePuff,
   InlineNewsletterPuff,
   PreviewNewsletterPuff,
-  AutoNewsletterPuff,
   OptaCricketScorecard,
   OptaFootballFixtures,
   OptaFootballStandings,
@@ -467,22 +466,6 @@ const renderers = ({
           </InteractiveContainer>
         );
     }
-  },
-  autoNewsletterPuff(key, { element }) {
-    const {
-      attributes: { code, copy, headline }
-    } = element;
-
-    return (
-      <AutoNewsletterPuff
-        analyticsStream={analyticsStream}
-        key={key}
-        code={code}
-        copy={copy}
-        headline={headline}
-        section={section}
-      />
-    );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return (
