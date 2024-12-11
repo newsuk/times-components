@@ -8,8 +8,6 @@ interface AttributesProps {
 }
 
 interface RootProps {
-  src: string;
-  ratio?: string;
   attributes?: AttributesProps;
 }
 
@@ -20,7 +18,7 @@ export const CtaButton: React.FC<RootProps> = props => {
     <Link
       href={attributes.url}
       target={attributes.target || '_blank'}
-      rel="noopener noreferrer"
+      rel="nofollow"
     >
       {attributes.text}
     </Link>

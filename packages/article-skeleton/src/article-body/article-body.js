@@ -304,7 +304,7 @@ const renderers = ({
 
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <CtaButton src={elementAttr.src} attributes={elementAttr} />
+            <CtaButton attributes={elementAttr} />
           </InteractiveContainer>
         );
       }
