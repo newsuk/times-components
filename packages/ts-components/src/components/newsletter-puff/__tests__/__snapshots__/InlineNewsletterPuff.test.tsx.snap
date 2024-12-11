@@ -5,6 +5,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
   <div>
     <div
       class="sc-htpNat sc-ifAKCX esKJGb"
+      id="INPCONTAINER Newsletter.tsx"
     >
       <div
         class="sc-htpNat sc-dnqmqq duLROv"
@@ -55,6 +56,7 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
   <div>
     <div
       class="sc-htpNat sc-ifAKCX fbplsh"
+      id="INP CONTAINER InlineNewsletterPuff.tsx"
     >
       <div
         class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -92,6 +94,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
   <div>
     <div
       class="sc-htpNat sc-ifAKCX esKJGb"
+      id="INPCONTAINER Newsletter.tsx"
     >
       <div
         class="sc-htpNat sc-iwsKbI cuimXU"
@@ -136,6 +139,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
   <div>
     <div
       class="sc-htpNat sc-ifAKCX esKJGb"
+      id="INPCONTAINER Newsletter.tsx"
     >
       <div
         class="sc-htpNat sc-iwsKbI cuimXU"
