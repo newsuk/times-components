@@ -257,8 +257,21 @@ const renderers = ({
           </Context.Consumer>
         );
 
-      case "times-travel-cta": {
-        const elementAttr = element.attributes;
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={attributes.url}
+              vendorName="twitter"
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+
+      case "times-embed-iframe-max": {
+        const src = (element.attributes && element.attributes.src) || "";
+        const isYoutube = src.includes("youtube");
+        const isTikTok = src.includes("tiktok");
 
         if (!isYoutube || !isTikTok) {
           return (
@@ -274,6 +287,20 @@ const renderers = ({
             </InteractiveContainer>
           );
         }
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={isTikTok ? decodeURIComponent(src) : src}
+              vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
 
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
