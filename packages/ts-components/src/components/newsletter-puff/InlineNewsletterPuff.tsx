@@ -40,7 +40,7 @@ export const InlineNewsletterPuff = ({
         if (isLoading || !newsletter) {
           return (
             <InpContainer id="INP CONTAINER InlineNewsletterPuff.tsx">
-              <Placeholder data-testid="PLACEHOLDER InlineNewsletterPuff.tsx"/>
+              <Placeholder data-testid="PLACEHOLDER InlineNewsletterPuff.tsx" />
             </InpContainer>
           );
         }

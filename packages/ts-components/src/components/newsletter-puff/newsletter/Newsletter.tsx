@@ -54,7 +54,9 @@ export const Newsletter = ({
   return (
     <React.Fragment>
       <InpContainer section={section} id="INPCONTAINER Newsletter.tsx">
-        {loading && <LoadingOverlay data-testid="LOADINGOVERLAY Newsletters.tsx"/>}
+        {loading && (
+          <LoadingOverlay data-testid="LOADINGOVERLAY Newsletters.tsx" />
+        )}
         {!error &&
           justSubscribed && (
             <InpSubscribedContainer>
