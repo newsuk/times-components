@@ -150,6 +150,24 @@ export default [
     children: []
   },
   {
+    name: "interactive",
+    attributes: {
+      id: "1907da4d-7f6e-41e0-b5d1-094863d60eed",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src:
+            "https://compass.pressekompass.net/compasses/times/is-going-to-university-worth-it_times",
+          ratio: "r1-1"
+        }
+      }
+    },
+    children: []
+  },
+  {
     children: [
       {
         attributes: {

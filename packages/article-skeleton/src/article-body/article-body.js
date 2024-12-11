@@ -260,6 +260,21 @@ const renderers = ({
       case "times-travel-cta": {
         const elementAttr = element.attributes;
 
+        if (!isYoutube || !isTikTok) {
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              <div id={id}>
+                <InteractiveWrapper
+                  attributes={attributes}
+                  element={value}
+                  key={key}
+                  source={url}
+                />
+              </div>
+            </InteractiveContainer>
+          );
+        }
+
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <CtaButton src={elementAttr.src} attributes={elementAttr} />
