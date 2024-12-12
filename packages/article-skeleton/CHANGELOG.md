@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.142.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.2...@times-components/article-skeleton@1.142.3) (2024-12-12)
+
+
+### Bug Fixes
+
+* **TMRS-575:** iframe component heights ([#4006](https://github.com/newsuk/times-components/issues/4006)) ([f4c3691](https://github.com/newsuk/times-components/commit/f4c36910a5a5d7e82dcfd10acfa62e3b3278154f))
+
+
+
+
+
 ## [1.142.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.1...@times-components/article-skeleton@1.142.2) (2024-12-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton
