@@ -110,15 +110,6 @@ export default class InteractiveWrapper extends Component {
   }
 
   render() {
-    // this.props.attributes.height = 1000;
-    // this.props.attributes.height = {
-    //   xs: 1000,
-    //   md: 500
-    // }
-
-    console.log(this.props, "props");
-    console.log(this.component, "component");
-
     return (
       <InteractiveWrapperContainer>
         <Container
