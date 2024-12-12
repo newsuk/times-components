@@ -273,7 +273,7 @@ const renderers = ({
         const isFormStack = src.includes("formstack");
 
         if (isFormStack) {
-          return <script type="text/javascript" src={element.attributes.src}></script>;
+          return <script type="text/javascript" src={element.attributes.src} />;
         }
 
         if (!isYoutube || !isTikTok) {

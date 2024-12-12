@@ -3,7 +3,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Placeholder } from "@times-components/image";
-import { Container, InteractiveContainer, InteractiveWrapperContainer } from "./styles";
+import {
+  Container,
+  InteractiveContainer,
+  InteractiveWrapperContainer
+} from "./styles";
 
 function ensureElement(selector, createElement) {
   if (document.body.querySelector(selector)) {
@@ -110,17 +114,16 @@ export default class InteractiveWrapper extends Component {
   }
 
   render() {
+    const { attributes } = this.props;
+
     return (
       <InteractiveWrapperContainer>
-        <Container
-          ref={this.placeholder}
-          $height={this.props.attributes.height}
-        >
+        <Container ref={this.placeholder} $height={attributes.height}>
           <Placeholder />
         </Container>
         <InteractiveContainer
           ref={this.component}
-          $height={this.props.attributes.height}
+          $height={attributes.height}
         />
       </InteractiveWrapperContainer>
     );
