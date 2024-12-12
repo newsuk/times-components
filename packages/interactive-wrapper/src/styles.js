@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: ${({ $height }) =>
     $height && $height.xs ? "absolute" : "relative"};
   width: 100%;
-  height: ${({ $height }) => $height && $height.xs ? $height.xs : 150}px;
+  height: ${({ $height }) => ($height && $height.xs ? $height.xs : 150)}px;
 
   ${({ $height }) =>
     $height &&
@@ -36,7 +36,8 @@ export const Container = styled.div`
 
 export const InteractiveContainer = styled(Container)`
   position: relative;
-  height: ${({ $height }) => $height && $height.xs ? `${$height.xs}px` : "auto"};
+  height: ${({ $height }) =>
+    $height && $height.xs ? `${$height.xs}px` : "auto"};
 `;
 
 export const InteractiveWrapperContainer = styled.div`
