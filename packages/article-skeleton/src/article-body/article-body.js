@@ -273,7 +273,7 @@ const renderers = ({
         const isFormStack = src.includes("formstack");
 
         if (isFormStack) {
-          return <script type="text/javascript" src="https://times.formstack.com/forms/js.php/wwi17112024_copy"></script>;
+          return <script type="text/javascript" src={element.attributes.src}></script>;
         }
 
         if (!isYoutube || !isTikTok) {
