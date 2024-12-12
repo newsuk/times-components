@@ -275,7 +275,12 @@ const renderers = ({
 
         if (isFormStack) {
           const formStackId = element.attributes.src.split("/").pop();
-          return <script type="text/javascript" src={`https://times.formstack.com/forms/js.php/${formStackId}`} />;
+          return (
+            <script
+              type="text/javascript"
+              src={`https://times.formstack.com/forms/js.php/${formStackId}`}
+            />
+          );
         }
 
         if (!isYoutube || !isTikTok) {
