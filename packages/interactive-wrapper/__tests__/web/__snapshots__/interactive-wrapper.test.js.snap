@@ -17,14 +17,21 @@ exports[`interactive-wrapper polyfillWCIfNecessary adds the polyfill to the page
 exports[`interactive-wrapper re-shows the placeholder on re-render 1`] = `
 <div>
   <div
-    style="height: 150px; position: relative; display: none !important;"
-  />
-  <div>
-    <chapter-header
-      chaptercounter="Chapter%20one"
-      heading="A heading"
-      standfirst="A standfirst"
+    class="styles__InteractiveWrapperContainer-sc-1rzy94h-2 grWVQY"
+  >
+    <div
+      class="styles__Container-sc-1rzy94h-0 qWbev"
+      style="display: none !important;"
     />
+    <div
+      class="styles__Container-sc-1rzy94h-0 styles__InteractiveContainer-sc-1rzy94h-1 Iyyb"
+    >
+      <chapter-header
+        chaptercounter="Chapter%20one"
+        heading="A heading"
+        standfirst="A standfirst"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -32,14 +39,21 @@ exports[`interactive-wrapper re-shows the placeholder on re-render 1`] = `
 exports[`interactive-wrapper renders correctly once polyfill is loaded 1`] = `
 <div>
   <div
-    style="height: 150px; position: relative; display: none !important;"
-  />
-  <div>
-    <chapter-header
-      chaptercounter="Chapter%20one"
-      heading="A heading"
-      standfirst="A standfirst"
+    class="styles__InteractiveWrapperContainer-sc-1rzy94h-2 grWVQY"
+  >
+    <div
+      class="styles__Container-sc-1rzy94h-0 qWbev"
+      style="display: none !important;"
     />
+    <div
+      class="styles__Container-sc-1rzy94h-0 styles__InteractiveContainer-sc-1rzy94h-1 Iyyb"
+    >
+      <chapter-header
+        chaptercounter="Chapter%20one"
+        heading="A heading"
+        standfirst="A standfirst"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -58,29 +72,156 @@ exports[`interactive-wrapper renders the placeholder correctly 1`] = `
   id="a0534eee-682e-4955-8e1e-84b428ef1e79"
   source="//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
 >
-  <div
-    style={
-      Object {
-        "height": 150,
-        "position": "relative",
+  <styles__InteractiveWrapperContainer>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styles__InteractiveWrapperContainer-sc-1rzy94h-2",
+            "isStatic": true,
+            "lastClassName": "grWVQY",
+            "rules": Array [
+              "position:relative;",
+            ],
+          },
+          "displayName": "styles__InteractiveWrapperContainer",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styles__InteractiveWrapperContainer-sc-1rzy94h-2",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
       }
-    }
-  >
-    <Placeholder />
-  </div>
-  <div />
+      forwardedRef={null}
+    >
+      <div
+        className="styles__InteractiveWrapperContainer-sc-1rzy94h-2 grWVQY"
+      >
+        <styles__Container>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styles__Container-sc-1rzy94h-0",
+                  "isStatic": false,
+                  "lastClassName": "qWbev",
+                  "rules": Array [
+                    "position:",
+                    [Function],
+                    ";width:100%;height:",
+                    [Function],
+                    "px;",
+                    [Function],
+                    " ",
+                    [Function],
+                    " ",
+                    [Function],
+                  ],
+                },
+                "displayName": "styles__Container",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "styles__Container-sc-1rzy94h-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={
+              Object {
+                "current": <div
+                  class="styles__Container-sc-1rzy94h-0 qWbev"
+                />,
+              }
+            }
+          >
+            <div
+              className="styles__Container-sc-1rzy94h-0 qWbev"
+            >
+              <Placeholder />
+            </div>
+          </StyledComponent>
+        </styles__Container>
+        <styles__InteractiveContainer>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styles__InteractiveContainer-sc-1rzy94h-1",
+                  "isStatic": false,
+                  "lastClassName": "Iyyb",
+                  "rules": Array [
+                    "position:",
+                    [Function],
+                    ";width:100%;height:",
+                    [Function],
+                    "px;",
+                    [Function],
+                    " ",
+                    [Function],
+                    " ",
+                    [Function],
+                    "position:relative;height:",
+                    [Function],
+                    ";",
+                  ],
+                },
+                "displayName": "styles__InteractiveContainer",
+                "foldedComponentIds": Array [
+                  "styles__Container-sc-1rzy94h-0",
+                ],
+                "render": [Function],
+                "styledComponentId": "styles__InteractiveContainer-sc-1rzy94h-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={
+              Object {
+                "current": <div
+                  class="styles__Container-sc-1rzy94h-0 styles__InteractiveContainer-sc-1rzy94h-1 Iyyb"
+                />,
+              }
+            }
+          >
+            <div
+              className="styles__Container-sc-1rzy94h-0 styles__InteractiveContainer-sc-1rzy94h-1 Iyyb"
+            />
+          </StyledComponent>
+        </styles__InteractiveContainer>
+      </div>
+    </StyledComponent>
+  </styles__InteractiveWrapperContainer>
 </InteractiveWrapper>
 `;
 
 exports[`interactive-wrapper updates the rendered interactive on update 1`] = `
 <div>
   <div
-    style="height: 150px; position: relative; display: none !important;"
-  />
-  <div>
-    <another-component
-      another="attribute"
+    class="styles__InteractiveWrapperContainer-sc-1rzy94h-2 grWVQY"
+  >
+    <div
+      class="styles__Container-sc-1rzy94h-0 qWbev"
+      style="display: none !important;"
     />
+    <div
+      class="styles__Container-sc-1rzy94h-0 styles__InteractiveContainer-sc-1rzy94h-1 Iyyb"
+    >
+      <another-component
+        another="attribute"
+      />
+    </div>
   </div>
 </div>
 `;

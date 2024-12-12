@@ -9,7 +9,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web": "jest -u --config='./__tests__/jest.config.js'",
     "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
@@ -52,7 +52,8 @@
   },
   "dependencies": {
     "@times-components/image": "6.18.2",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",
