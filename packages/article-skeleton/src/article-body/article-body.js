@@ -159,7 +159,7 @@ const renderers = ({
       </Context.Consumer>
     );
   },
-  image(key, { id, display, ratio, url, caption, credits }) {
+  image(key, { id, display, ratio, url, caption, title, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
@@ -170,6 +170,7 @@ const renderers = ({
                 <ArticleImage
                   captionOptions={{
                     caption,
+                    title,
                     credits
                   }}
                   imageOptions={{
@@ -274,7 +275,13 @@ const renderers = ({
         const isFormStack = src.includes("formstack");
 
         if (isFormStack) {
-          return <script type="text/javascript" src={element.attributes.src} />;
+          const formStackId = element.attributes.src.split("/").pop();
+          return (
+            <script
+              type="text/javascript"
+              src={`https://times.formstack.com/forms/js.php/${formStackId}`}
+            />
+          );
         }
 
         if (!isYoutube || !isTikTok) {

@@ -102,7 +102,7 @@ exports[`1. a full article 1`] = `
     </span>
     <figure>
       <img
-        alt="Some Caption"
+        alt="Some Title"
         fetchpriority="high"
         src="https://crop169.io?resize=360"
         srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
@@ -260,7 +260,7 @@ exports[`1. a full article 1`] = `
     </a>
     <article>
       <img
-        alt="An image caption"
+        alt="An image title"
         loading="lazy"
         src="https://image.io"
       />
