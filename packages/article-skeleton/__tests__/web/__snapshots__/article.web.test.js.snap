@@ -106,6 +106,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       Object {
                         "caption": "An image caption",
                         "credits": "The image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -132,6 +133,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       Object {
                         "caption": "A secondary image caption",
                         "credits": "The secondary image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -158,6 +160,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       Object {
                         "caption": "An inline image caption",
                         "credits": "The inline image credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={

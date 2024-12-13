@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 export const propTypes = {
   captionOptions: PropTypes.shape({
     caption: PropTypes.string,
+    title: PropTypes.string,
     credits: PropTypes.string
   }),
   imageOptions: PropTypes.shape({
