@@ -130,3 +130,7 @@ export {
   useSocialEmbedsContext,
   SocialEmbedsProvider
 } from './contexts/SocialEmbedsProvider';
+
+export {
+  AffiliateLinkDisclaimer
+} from './components/affiliate-link-disclaimer/AffiliateLinkDisclaimer';
