@@ -95,11 +95,11 @@ Array [
         className="c0"
       >
         <TimesImage
-          accessibilityLabel="Some caption"
+          accessibilityLabel="Some credits"
           aspectRatio={1.25}
           caption={
             <Caption
-              credits="Some credits"
+              credits="The credits"
               text="Some caption"
             />
           }
@@ -273,14 +273,14 @@ Array [
                           <tc-text__TcText
                             dangerouslySetInnerHTML={
                               Object {
-                                "__html": "SOME CREDITS",
+                                "__html": "THE CREDITS",
                               }
                             }
                           >
                             <StyledComponent
                               dangerouslySetInnerHTML={
                                 Object {
-                                  "__html": "SOME CREDITS",
+                                  "__html": "THE CREDITS",
                                 }
                               }
                               forwardedComponent={
@@ -311,7 +311,7 @@ Array [
                                 className="c3"
                                 dangerouslySetInnerHTML={
                                   Object {
-                                    "__html": "SOME CREDITS",
+                                    "__html": "THE CREDITS",
                                   }
                                 }
                               />
@@ -402,11 +402,11 @@ Array [
         className="c0"
       >
         <TimesImage
-          accessibilityLabel="Another caption"
+          accessibilityLabel="Other credits"
           aspectRatio={1.5}
           caption={
             <Caption
-              credits="Other credits"
+              credits="Times photographer Richard Pohle"
               text="Another caption"
             />
           }
@@ -544,14 +544,14 @@ Array [
                     <tc-text__TcText
                       dangerouslySetInnerHTML={
                         Object {
-                          "__html": "OTHER CREDITS",
+                          "__html": "TIMES PHOTOGRAPHER RICHARD POHLE",
                         }
                       }
                     >
                       <StyledComponent
                         dangerouslySetInnerHTML={
                           Object {
-                            "__html": "OTHER CREDITS",
+                            "__html": "TIMES PHOTOGRAPHER RICHARD POHLE",
                           }
                         }
                         forwardedComponent={
@@ -582,7 +582,7 @@ Array [
                           className="c2"
                           dangerouslySetInnerHTML={
                             Object {
-                              "__html": "OTHER CREDITS",
+                              "__html": "TIMES PHOTOGRAPHER RICHARD POHLE",
                             }
                           }
                         />

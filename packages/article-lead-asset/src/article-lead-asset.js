@@ -39,7 +39,7 @@ const ArticleLeadAsset = ({
   ) : (
     <LeadAssetImage
       aspectRatio={aspectRatio}
-      alt={caption.text}
+      alt={leadAsset.title || caption.text}
       uri={displayImage.url}
     />
   );
