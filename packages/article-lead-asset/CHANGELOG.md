@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.46...@times-components/article-lead-asset@1.19.0) (2024-12-13)
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
 ## [1.18.46](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.45...@times-components/article-lead-asset@1.18.46) (2024-11-20)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
