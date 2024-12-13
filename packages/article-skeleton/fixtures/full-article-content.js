@@ -182,6 +182,26 @@ export default [
   {
     name: "interactive",
     attributes: {
+      id: "606ece43-40a5-4d53-866e-499aacb2a7d0",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-text-collapse-1.0.0/times-text-collapse.html",
+      element: {
+        value: "times-text-collapse",
+        attributes: {
+          disclaimer_text: "This%20article%20contains%20affiliate%20links.",
+          toggle_active_text: "Show%20less",
+          disclaimer_full_text:
+            "Our%20travel%20journalism%20is%20written%20and%20edited%20by%20independent%20experts%20to%20inform%2C%20inspire%20and%20advise%20our%20readers%20about%20the%20best%20choices%20for%20your%20holidays.%20We%20also%20feature%20properties%20and%20itineraries%20from%20a%20specially%20selected%20list%20of%20trusted%20operators.%20These%20buttons%20and%20adverts%20are%20clearly%20signposted%2C%20and%20provide%20direct%20links%20through%20to%20external%20sites.%20If%20you%20click%20and%20buy%20a%20product%2C%20we%20may%20earn%20revenue.",
+          toggle_inactive_text: "Show%20more"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
       id: "79c66dbd-2e9c-4dee-9677-53e7ed94418e",
       display: "primary",
       url:

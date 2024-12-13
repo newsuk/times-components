@@ -38,7 +38,8 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
-  SocialMediaEmbed
+  SocialMediaEmbed,
+  AffiliateLinkDisclaimer
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -298,6 +299,18 @@ const renderers = ({
               vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
               id={id}
             />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-text-collapse": {
+        const elementAttr = element.attributes;
+
+        console.log("tu", elementAttr);
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <AffiliateLinkDisclaimer attributes={elementAttr} />
           </InteractiveContainer>
         );
       }
