@@ -271,6 +271,11 @@ const renderers = ({
         const src = (element.attributes && element.attributes.src) || "";
         const isYoutube = src.includes("youtube");
         const isTikTok = src.includes("tiktok");
+        const isFormStack = src.includes("formstack");
+
+        if (isFormStack) {
+          return <script type="text/javascript" src={element.attributes.src} />;
+        }
 
         if (!isYoutube || !isTikTok) {
           return (
