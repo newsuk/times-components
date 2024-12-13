@@ -1,9 +1,8 @@
 import {
-  theTimesDetectionKey,
-  travelDetectionKey,
   theTimesSiteCode,
   travelSiteCode,
-  skimlinksId
+  skimlinksId,
+  regexTrackonomics
 } from "./affiliate-validation";
 
 const wrapAffiliateLink = affiliateLink => {
@@ -12,8 +11,6 @@ const wrapAffiliateLink = affiliateLink => {
     const isTravel =
       contentPageUrl.includes("https://www.thetimes.com/travel") ||
       contentPageUrl.includes("https://www.thetimes.co.uk/travel");
-    const regex = isTravel ? travelDetectionKey : theTimesDetectionKey;
-    const regexTrackonomics = new RegExp(regex);
 
     if (!regexTrackonomics.test(trackonomicsUrl)) {
       return trackonomicsUrl;
