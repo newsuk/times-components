@@ -39,6 +39,7 @@ export const Disclaimer = styled.div`
     font-style: normal;
     text-decoration: none !important;
     display: inline-flex;
+    margin-top: 5px;
   }
 
   .shortcode-disclaimer__toggle:after {
