@@ -313,8 +313,6 @@ const renderers = ({
       case "times-text-collapse": {
         const elementAttr = element.attributes;
 
-        console.log("tu", elementAttr);
-
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <AffiliateLinkDisclaimer attributes={elementAttr} />
