@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.143.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.3...@times-components/article-skeleton@1.143.0) (2024-12-13)
+
+
+### Bug Fixes
+
+* **TMRS-575:** parse id for embed ([#4007](https://github.com/newsuk/times-components/issues/4007)) ([8fe238f](https://github.com/newsuk/times-components/commit/8fe238f57563fbb566e0a10cc97d331b43d183a2))
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
 ## [1.142.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.2...@times-components/article-skeleton@1.142.3) (2024-12-12)
 
 
