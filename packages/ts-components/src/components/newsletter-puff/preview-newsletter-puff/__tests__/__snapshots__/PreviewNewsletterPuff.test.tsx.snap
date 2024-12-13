@@ -4,7 +4,8 @@ exports[`Preview Newsletter Puff renders 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-htpNat ljXtVU"
+      class="sc-bdVaJa sc-htpNat gCDBVF"
+      id="INPCONTAINER PreviewNewsletterPuff.tsx"
     >
       <div
         class="sc-bdVaJa sc-EHOje hmOAGx"

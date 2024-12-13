@@ -21,7 +21,7 @@ export const PreviewNewsletterPuff = ({
   headline,
   section
 }: PreviewNewsletterPuffProps) => (
-  <InpContainer section={section}>
+  <InpContainer section={section} id="INPCONTAINER PreviewNewsletterPuff.tsx">
     <InpSignupContainer>
       <InpCopy>
         <InpSignupHeadline>{headline} </InpSignupHeadline>
