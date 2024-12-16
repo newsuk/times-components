@@ -276,9 +276,12 @@ const renderers = ({
         if (isFormStack) {
           const formStackId = element.attributes.src.split("/").pop();
           return (
-            <div
-              data-formstack={`https://times.formstack.com/forms/js.php/${formStackId}`}
-            />
+            <div data-formstack={formStackId} className="formstackEmbed">
+              <script
+                type="text/javascript"
+                src={`https://times.formstack.com/forms/js.php/${formStackId}`}
+              />
+            </div>
           );
         }
 
