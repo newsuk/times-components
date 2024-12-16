@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.143.0...@times-components/article-skeleton@1.144.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-224:** CTA button ([#3999](https://github.com/newsuk/times-components/issues/3999)) ([d22a6f7](https://github.com/newsuk/times-components/commit/d22a6f77fb5c003b189f678295a31e92bdec912d))
+
+
+
+
+
 # [1.143.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.3...@times-components/article-skeleton@1.143.0) (2024-12-13)
 
 
