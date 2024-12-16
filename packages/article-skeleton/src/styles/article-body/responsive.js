@@ -42,6 +42,7 @@ export const Paragraph = styled.p`
 `;
 
 export const InteractiveContainer = styled.div`
+  position: relative;
   margin-bottom: ${spacing(4)};
 
   ${props =>

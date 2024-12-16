@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.91](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.90...@times-components/interactive-wrapper@0.9.91) (2024-12-12)
+
+
+### Bug Fixes
+
+* **TMRS-575:** iframe component heights ([#4006](https://github.com/newsuk/times-components/issues/4006)) ([f4c3691](https://github.com/newsuk/times-components/commit/f4c36910a5a5d7e82dcfd10acfa62e3b3278154f))
+
+
+
+
+
 ## [0.9.90](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.89...@times-components/interactive-wrapper@0.9.90) (2024-11-05)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
