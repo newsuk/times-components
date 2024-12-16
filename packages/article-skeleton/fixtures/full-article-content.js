@@ -210,7 +210,7 @@ export default [
         value: "times-embed-iframe-max",
         attributes: {
           src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
-          ratio: "r1-1"
+          ratio: "r1-1",
           url:
             "https://www.booking.com/hotel/gb/grays-court.en-gb.html?aid=886291&amp;no_rooms=1&amp;group_adults=2&amp;label=times-edition-top-seven-christmas-shops",
           text: "Book a stay",

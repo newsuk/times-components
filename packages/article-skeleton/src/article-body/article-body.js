@@ -40,8 +40,7 @@ import {
   Timelines,
   SocialMediaEmbed,
   AffiliateLinkDisclaimer,
-  CtaButton,
-  SocialMediaEmbed
+  CtaButton
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -317,7 +316,7 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <CtaButton attributes={elementAttr} />
-                </InteractiveContainer>
+          </InteractiveContainer>
         );
       }
 
