@@ -38,6 +38,7 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
+  CtaButton,
   SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
@@ -305,6 +306,16 @@ const renderers = ({
               vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
               id={id}
             />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <CtaButton attributes={elementAttr} />
           </InteractiveContainer>
         );
       }
