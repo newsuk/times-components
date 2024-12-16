@@ -131,12 +131,12 @@ export default [
   {
     name: "interactive",
     attributes: {
-      id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
+      id: "620560ef-068e-4bed-b5ce-dd8e5b5c97fc",
       display: "primary",
       url:
-        "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
       element: {
-        value: "twitter-embed",
+        value: "times-travel-cta",
         attributes: {
           url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
         }
@@ -211,6 +211,12 @@ export default [
         attributes: {
           src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
           ratio: "r1-1"
+          url:
+            "https://www.booking.com/hotel/gb/grays-court.en-gb.html?aid=886291&amp;no_rooms=1&amp;group_adults=2&amp;label=times-edition-top-seven-christmas-shops",
+          text: "Book a stay",
+          target: "_blank",
+          dateTo: "2024-12-02",
+          dateFrom: "2024-12-02"
         }
       }
     },

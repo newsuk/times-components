@@ -39,7 +39,9 @@ import {
   safeDecodeURIComponent,
   Timelines,
   SocialMediaEmbed,
-  AffiliateLinkDisclaimer
+  AffiliateLinkDisclaimer,
+  CtaButton,
+  SocialMediaEmbed
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -307,6 +309,15 @@ const renderers = ({
               id={id}
             />
           </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <CtaButton attributes={elementAttr} />
+                </InteractiveContainer>
         );
       }
 
