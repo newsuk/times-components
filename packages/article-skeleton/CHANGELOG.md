@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.144.0...@times-components/article-skeleton@1.145.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-225:** Affiliate link disclaimer ([#4008](https://github.com/newsuk/times-components/issues/4008)) ([3a43bc5](https://github.com/newsuk/times-components/commit/3a43bc5e43b7755def26d956e8294d725647454a))
+
+
+
+
+
 # [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.143.0...@times-components/article-skeleton@1.144.0) (2024-12-16)
 
 
