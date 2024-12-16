@@ -280,6 +280,7 @@ const renderers = ({
               <script
                 type="text/javascript"
                 src={`https://times.formstack.com/forms/js.php/${formStackId}`}
+                async
               />
             </div>
           );
