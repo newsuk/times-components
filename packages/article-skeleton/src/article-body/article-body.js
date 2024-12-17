@@ -273,17 +273,6 @@ const renderers = ({
         const src = (element.attributes && element.attributes.src) || "";
         const isYoutube = src.includes("youtube");
         const isTikTok = src.includes("tiktok");
-        const isFormStack = src.includes("formstack");
-
-        if (isFormStack) {
-          const formStackId = element.attributes.src.split("/").pop();
-          return (
-            <script
-              type="text/javascript"
-              src={`https://times.formstack.com/forms/js.php/${formStackId}`}
-            />
-          );
-        }
 
         if (!isYoutube || !isTikTok) {
           return (
