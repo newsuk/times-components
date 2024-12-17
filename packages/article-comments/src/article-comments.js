@@ -16,31 +16,33 @@ const ArticleComments = ({
   isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl,
-  isEntitlementFeatureEnabled
+  hasCommentingEntitlement
 }) => {
-  const [userEntitlementData, setUserEntitlementData] = useState(undefined);
+  // const [userEntitlementData, setUserEntitlementData] = useState(undefined);
 
-  useEffect(
-    () => {
-      const fetchUserEntitlements = async () => {
-        const response = await fetch("/api/get-user-entitlements");
-        const data = await response.json();
-        setUserEntitlementData(data);
-      };
+  // useEffect(
+  //   () => {
+  //     const fetchUserEntitlements = async () => {
+  //       const response = await fetch("/api/get-user-entitlements");
+  //       const data = await response.json();
+  //       setUserEntitlementData(data);
+  //     };
 
-      if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
-        fetchUserEntitlements();
-      }
-    },
-    [isEntitlementFeatureEnabled]
-  );
+  //     if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
+  //       fetchUserEntitlements();
+  //     }
+  //   },
+  //   [isEntitlementFeatureEnabled]
+  // );
+
+  console.log('hasCommentingEntitlement%%%%%%%%%%%%%%%', hasCommentingEntitlement);
 
   return isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      {!isEntitlementFeatureEnabled ? (
+      {!hasCommentingEntitlement ? (
         <UserState state={UserState.showCommentingModule}>
           <Comments
             articleId={articleId}
@@ -75,7 +77,7 @@ ArticleComments.propTypes = {
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
+  hasCommentingEntitlement: PropTypes.bool.isRequired
 };
 
 ArticleComments.defaultProps = {
