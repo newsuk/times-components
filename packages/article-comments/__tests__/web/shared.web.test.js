@@ -25,7 +25,6 @@ const renderComments = ({
       url="dummy-article-url"
       isCommentEnabled
       domainSpecificUrl={domainSpecificUrl}
-      hasCommentingEntitlement={true}
     />
   );
 
@@ -142,7 +141,6 @@ it("Render comments label, when comments are loaded", () => {
       url="dummy-article-url"
       isCommentEnabled
       domainSpecificUrl="https://www.thetimes.co.uk"
-      hasCommentingEntitlement={true}
     />
   );
 
@@ -175,7 +173,6 @@ describe("window listeners added", () => {
         url="dummy-article-url"
         isCommentEnabled
         domainSpecificUrl="https://www.thetimes.co.uk"
-        hasCommentingEntitlement={true}
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();
