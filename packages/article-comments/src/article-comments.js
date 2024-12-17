@@ -22,10 +22,8 @@ const ArticleComments = ({
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      <p>hasCommentingEntitlement: {hasCommentingEntitlement}</p>
       {hasCommentingEntitlement && (
         <UserState state={UserState.showCommentingModule}>
-          <p>hasCommentingEntitlement: {hasCommentingEntitlement}</p>
           <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
