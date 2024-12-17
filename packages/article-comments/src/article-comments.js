@@ -47,7 +47,7 @@ ArticleComments.propTypes = {
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired,
-  hasCommentingEntitlement: PropTypes.bool
+  hasCommentingEntitlement: PropTypes.bool,
 };
 
 ArticleComments.defaultProps = {
