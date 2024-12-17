@@ -1,12 +1,11 @@
 /* eslint-env browser */
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
-import UserEntitlementState from "./user-entitlement-state";
 
 const ArticleComments = ({
   articleId,
@@ -17,33 +16,16 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl,
   hasCommentingEntitlement
-}) => {
-  // const [userEntitlementData, setUserEntitlementData] = useState(undefined);
-
-  // useEffect(
-  //   () => {
-  //     const fetchUserEntitlements = async () => {
-  //       const response = await fetch("/api/get-user-entitlements");
-  //       const data = await response.json();
-  //       setUserEntitlementData(data);
-  //     };
-
-  //     if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
-  //       fetchUserEntitlements();
-  //     }
-  //   },
-  //   [isEntitlementFeatureEnabled]
-  // );
-
-  console.log('hasCommentingEntitlement%%%%%%%%%%%%%%%', hasCommentingEntitlement);
-
-  return isEnabled && isCommentEnabled ? (
+}) =>
+  isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      {!hasCommentingEntitlement ? (
+      <p>hasCommentingEntitlement: {hasCommentingEntitlement}</p>
+      {hasCommentingEntitlement && (
         <UserState state={UserState.showCommentingModule}>
+          <p>hasCommentingEntitlement: {hasCommentingEntitlement}</p>
           <Comments
             articleId={articleId}
             isReadOnly={isReadOnly}
@@ -51,21 +33,11 @@ const ArticleComments = ({
             domainSpecificUrl={domainSpecificUrl}
           />
         </UserState>
-      ) : (
-        <UserEntitlementState userEntitlementData={userEntitlementData}>
-          <Comments
-            articleId={articleId}
-            isReadOnly={isReadOnly}
-            commentingConfig={commentingConfig}
-            domainSpecificUrl={domainSpecificUrl}
-          />
-        </UserEntitlementState>
       )}
     </>
   ) : (
     <DisabledComments />
   );
-};
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
