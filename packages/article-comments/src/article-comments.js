@@ -54,7 +54,8 @@ ArticleComments.propTypes = {
 
 ArticleComments.defaultProps = {
   isReadOnly: false,
-  isCommentEnabled: true
+  isCommentEnabled: true,
+  hasCommentingEntitlement: false
 };
 
 export default ArticleComments;
