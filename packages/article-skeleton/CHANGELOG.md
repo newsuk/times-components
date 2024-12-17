@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.145.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.145.0...@times-components/article-skeleton@1.145.1) (2024-12-17)
+
+
+### Bug Fixes
+
+* **TMRS-575:** revert updates ([#4011](https://github.com/newsuk/times-components/issues/4011)) ([73b82e6](https://github.com/newsuk/times-components/commit/73b82e606710860aee18f81bed746e24001f287c))
+
+
+
+
+
 # [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.144.0...@times-components/article-skeleton@1.145.0) (2024-12-16)
 
 
