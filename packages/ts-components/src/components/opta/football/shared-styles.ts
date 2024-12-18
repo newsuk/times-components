@@ -81,8 +81,13 @@ const flagStyles = Object.keys(countries).map(
 `
 );
 
-export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
-  margin: 0 auto 20px auto;
+export const Container = styled.div<{
+  border: boolean;
+  fullWidth?: boolean;
+  $height?: number;
+}>`
+  ${({ $height }) =>
+    $height && `height: ${$height}px;`} margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
     border ? `2px solid ${colours.section.sport}` : 'none'};

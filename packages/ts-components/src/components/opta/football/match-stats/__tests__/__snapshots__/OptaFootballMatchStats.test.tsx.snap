@@ -3,13 +3,14 @@
 exports[`OptaFootballMatchStats should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa giUBsz"
+    class="sc-bdVaJa fmzSUJ"
   >
     <div
       class="sc-htpNat sc-bxivhb deUMuZ"
     />
     <div
-      class="sc-bwzfXH kVYHKf"
+      class="sc-bwzfXH bpOSjf"
+      height="640"
     >
       Placeholder
     </div>
@@ -20,7 +21,7 @@ exports[`OptaFootballMatchStats should render correctly 1`] = `
 exports[`OptaFootballMatchStats should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hGXeaj"
+    class="sc-bdVaJa jRWzmN"
   >
     <div
       class="sc-htpNat sc-bxivhb deUMuZ"
