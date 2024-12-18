@@ -3,7 +3,7 @@
 exports[`OptaFootballMatchStats should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hvQJWg"
+    class="sc-bdVaJa fmzSUJ"
   >
     <div
       class="sc-htpNat sc-bxivhb deUMuZ"
@@ -21,7 +21,7 @@ exports[`OptaFootballMatchStats should render correctly 1`] = `
 exports[`OptaFootballMatchStats should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jnmTre"
+    class="sc-bdVaJa jRWzmN"
   >
     <div
       class="sc-htpNat sc-bxivhb deUMuZ"
