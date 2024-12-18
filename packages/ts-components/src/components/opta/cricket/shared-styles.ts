@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
+export const Container = styled.div<{
+  border: boolean;
+  fullWidth?: boolean;
+  $height?: number;
+}>`
+  ${({ $height }) => $height && `height: ${$height}px;`}
   margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
@@ -21,9 +26,9 @@ export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
   }
 `;
 
-export const PlaceholderContainer = styled.div`
+export const PlaceholderContainer = styled.div<{ height?: number }>`
+  height: ${({ height }) => height || '200'}px;
   position: relative;
-  height: 200px;
 `;
 
 export const WidgetContainerBase = styled.div`

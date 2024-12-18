@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -24,6 +24,7 @@ export const OptaFootballStandings: React.FC<{
   full_width?: boolean;
   show_title?: boolean;
   columns?: boolean;
+  height?: number;
 }> = React.memo(
   ({
     season,
@@ -33,7 +34,8 @@ export const OptaFootballStandings: React.FC<{
     navigation,
     show_title = true,
     full_width,
-    columns
+    columns,
+    height,
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -59,7 +61,7 @@ export const OptaFootballStandings: React.FC<{
             show_title,
             show_crests: !isNationalComp,
             team_naming: 'brief',
-            breakpoints: 520
+            breakpoints: 520,
           }).outerHTML;
 
           initComponent();
@@ -71,11 +73,16 @@ export const OptaFootballStandings: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width} className={classes}>
+      <Container
+        border={isReady}
+        fullWidth={full_width}
+        className={classes}
+        $height={height}
+      >
         <WidgetContainer ref={ref} columns={columns} />
 
         {!isReady && (
-          <PlaceholderContainer>
+          <PlaceholderContainer height={height}>
             <Placeholder />
           </PlaceholderContainer>
         )}
