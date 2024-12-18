@@ -38,7 +38,9 @@ import {
   BigNumbers,
   safeDecodeURIComponent,
   Timelines,
-  SocialMediaEmbed
+  SocialMediaEmbed,
+  AffiliateLinkDisclaimer,
+  CtaButton
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -271,17 +273,6 @@ const renderers = ({
         const src = (element.attributes && element.attributes.src) || "";
         const isYoutube = src.includes("youtube");
         const isTikTok = src.includes("tiktok");
-        const isFormStack = src.includes("formstack");
-
-        if (isFormStack) {
-          const formStackId = element.attributes.src.split("/").pop();
-          return (
-            <script
-              type="text/javascript"
-              src={`https://times.formstack.com/forms/js.php/${formStackId}`}
-            />
-          );
-        }
 
         if (!isYoutube || !isTikTok) {
           return (
@@ -305,6 +296,25 @@ const renderers = ({
               vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
               id={id}
             />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <CtaButton attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-text-collapse": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <AffiliateLinkDisclaimer attributes={elementAttr} />
           </InteractiveContainer>
         );
       }

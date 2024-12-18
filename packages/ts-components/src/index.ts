@@ -123,6 +123,8 @@ export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
 
+// Button Components
+export { CtaButton } from './components/cta-button/CtaButton';
 export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
 
 // Contexts
@@ -130,3 +132,7 @@ export {
   useSocialEmbedsContext,
   SocialEmbedsProvider
 } from './contexts/SocialEmbedsProvider';
+
+export {
+  AffiliateLinkDisclaimer
+} from './components/affiliate-link-disclaimer/AffiliateLinkDisclaimer';
