@@ -15,7 +15,7 @@ const getProps = (decorateAction, knobs) => {
   return {
     onPress: preventDefaultedAction(decorateAction)("onPress"),
     style: { width: number("Button width: ", 200) },
-    title: text("Button Title:", "submit")
+    title: text("Button title:", "submit")
   };
 };
 
