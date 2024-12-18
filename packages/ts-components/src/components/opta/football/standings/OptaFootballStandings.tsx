@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent,
+  initComponent
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -35,7 +35,7 @@ export const OptaFootballStandings: React.FC<{
     show_title = true,
     full_width,
     columns,
-    height,
+    height
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -61,7 +61,7 @@ export const OptaFootballStandings: React.FC<{
             show_title,
             show_crests: !isNationalComp,
             team_naming: 'brief',
-            breakpoints: 520,
+            breakpoints: 520
           }).outerHTML;
 
           initComponent();
