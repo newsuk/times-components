@@ -58,7 +58,7 @@ jobs:
             - ./
 
   check-pr-branch:
-    executor: base
+    executor: node
     steps:
       - checkout
       - run:
