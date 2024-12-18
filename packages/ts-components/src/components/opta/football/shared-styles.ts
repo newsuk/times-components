@@ -25,13 +25,15 @@ const countries: Record<string, string> = {
   '362': 'Turkey',
   '520': 'Georgia',
   '359': 'Portugal',
-  '367': 'CzechRep',
+  '367': 'CzechRep'
 };
 
 const flagStyles = Object.keys(countries).map(
   (countryCode: string) => `
   .Opta-Team-${countryCode} .Opta-Team, .Opta-Team-${countryCode}.Opta-Team, .Opta-Player .Opta-Image-Team-${countryCode} {
-    background-image: url(https://extras.thetimes.co.uk/web/opta/euro-flags/${countries[countryCode]}.svg);
+    background-image: url(https://extras.thetimes.co.uk/web/opta/euro-flags/${
+      countries[countryCode]
+    }.svg);
     background-size: 20px;
     background-repeat: no-repeat;
   }
@@ -84,8 +86,8 @@ export const Container = styled.div<{
   fullWidth?: boolean;
   $height?: number;
 }>`
-  ${({ $height }) => $height && `height: ${$height}px;`}
-  margin: 0 auto 20px auto;
+  ${({ $height }) =>
+    $height && `height: ${$height}px;`} margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
     border ? `2px solid ${colours.section.sport}` : 'none'};

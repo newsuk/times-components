@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent,
+  initComponent
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -33,46 +33,49 @@ export const OptaFootballPlayerStats: React.FC<{
     show_title = true,
     visible_categories,
     classes,
-    height,
+    height
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition);
 
-    useEffect(() => {
-      const sport = 'football';
+    useEffect(
+      () => {
+        const sport = 'football';
 
-      initSettings();
-      initStyleSheet(sport);
+        initSettings();
+        initStyleSheet(sport);
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement('opta-widget', {
-            sport,
-            widget: 'player_ranking',
-            hide_zeroes,
-            season,
-            competition,
-            template: 'normal',
-            graph_style: 'relative',
-            visible_categories,
-            live: true,
-            show_match_header: true,
-            show_halftime_score: true,
-            show_competition_name: true,
-            show_date: true,
-            show_crests: true,
-            show_title,
-            date_format: 'DD/MM/YYYY',
-            breakpoints: '200',
-          }).outerHTML;
+        initScript().then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement('opta-widget', {
+              sport,
+              widget: 'player_ranking',
+              hide_zeroes,
+              season,
+              competition,
+              template: 'normal',
+              graph_style: 'relative',
+              visible_categories,
+              live: true,
+              show_match_header: true,
+              show_halftime_score: true,
+              show_competition_name: true,
+              show_date: true,
+              show_crests: true,
+              show_title,
+              date_format: 'DD/MM/YYYY',
+              breakpoints: '200'
+            }).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
-    }, [ref]);
+            initComponent();
+            setIsReady(true);
+          }
+        });
+      },
+      [ref]
+    );
 
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
 
