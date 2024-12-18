@@ -9,4 +9,5 @@ git config user.name "times-tools"
 git config user.email "tools@news.co.uk"
 
 # publish canary to npm
-lerna publish --canary --yes
+BRANCH_HASH=`/bin/echo $CIRCLE_BRANCH | /usr/bin/md5sum | /bin/cut -f1 -d" "`
+lerna publish --canary --yes --preid ${BRANCH_HASH}
