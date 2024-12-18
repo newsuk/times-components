@@ -5,7 +5,7 @@ import { FeaturesCarousel } from '../FeaturesCarousel';
 import { featuresCarouselData } from '../fixtureData.json';
 
 describe('Render FeaturesCarousel', () => {
-  const renderFeaturesCarousel = (hideHeading: boolean = true) =>
+  const renderFeaturesCarousel = (hideHeading: boolean = false) =>
     render(
       <FeaturesCarousel {...featuresCarouselData} hideHeading={hideHeading} />
     );
@@ -24,7 +24,7 @@ describe('Render FeaturesCarousel', () => {
   });
 
   it('should render the component without heading', () => {
-    const { getByText, queryByText } = renderFeaturesCarousel(false);
+    const { getByText, queryByText } = renderFeaturesCarousel(true);
     const getFirstTitle = getByText('Title 1');
     const getHeading = queryByText('Your benefits');
 

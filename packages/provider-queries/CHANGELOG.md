@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.24.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.3...@times-components/provider-queries@2.24.0) (2024-12-13)
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
 ## [2.23.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.2...@times-components/provider-queries@2.23.3) (2024-09-16)
 
 

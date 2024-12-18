@@ -13,7 +13,7 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const { isVisible, onPress, slice, heading } = this.props;
+    const { isVisible, onPress, slice, heading, hideBorder } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
     if (
@@ -61,6 +61,7 @@ class RelatedArticles extends Component {
       <TcView>
         <RelatedArticlesHeading heading={heading} />
         <StandardSlice
+          hideBorder={hideBorder}
           itemCount={items.length}
           renderItems={config =>
             items.map(item =>

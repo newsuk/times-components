@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.114.0...@times-components/ts-components@1.115.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-225:** Affiliate link disclaimer ([#4008](https://github.com/newsuk/times-components/issues/4008)) ([3a43bc5](https://github.com/newsuk/times-components/commit/3a43bc5e43b7755def26d956e8294d725647454a))
+
+
+
+
+
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.113.1...@times-components/ts-components@1.114.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-224:** CTA button ([#3999](https://github.com/newsuk/times-components/issues/3999)) ([d22a6f7](https://github.com/newsuk/times-components/commit/d22a6f77fb5c003b189f678295a31e92bdec912d))
+
+
+
+
+
+## [1.113.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.113.0...@times-components/ts-components@1.113.1) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.112.1...@times-components/ts-components@1.113.0) (2024-12-05)
+
+
+### Features
+
+* **TMC-0000:** Implement social embeds ([#3989](https://github.com/newsuk/times-components/issues/3989)) ([4a4e7cd](https://github.com/newsuk/times-components/commit/4a4e7cdceec5fe7402b4403170013f325eec8a84))
+
+
+
+
+
+## [1.112.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.112.0...@times-components/ts-components@1.112.1) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.111.0...@times-components/ts-components@1.112.0) (2024-12-02)
+
+
+### Features
+
+* **TMD-1082:** update to newsletter title within on click sign up component ([#3990](https://github.com/newsuk/times-components/issues/3990)) ([efddfee](https://github.com/newsuk/times-components/commit/efddfee6358e43a385924af671deedaa03e5ae36))
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+* **TMRS-593:** update benefits rail ([#3991](https://github.com/newsuk/times-components/issues/3991)) ([3c6b0e1](https://github.com/newsuk/times-components/commit/3c6b0e184e643c3e81a82229a1c4b514d2a62663))
+
+
+
+
+
 # [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.110.2...@times-components/ts-components@1.111.0) (2024-11-22)
 
 

@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.101.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.101.2...@times-components/article-main-standard@3.101.3) (2024-12-17)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.101.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.101.1...@times-components/article-main-standard@3.101.2) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.101.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.101.0...@times-components/article-main-standard@3.101.1) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.101.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.100.3...@times-components/article-main-standard@3.101.0) (2024-12-13)
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
+## [3.100.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.100.2...@times-components/article-main-standard@3.100.3) (2024-12-12)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.100.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.100.1...@times-components/article-main-standard@3.100.2) (2024-12-11)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.100.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.100.0...@times-components/article-main-standard@3.100.1) (2024-12-10)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.100.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.99.9...@times-components/article-main-standard@3.100.0) (2024-12-05)
+
+
+### Features
+
+* **TMC-0000:** Implement social embeds ([#3989](https://github.com/newsuk/times-components/issues/3989)) ([4a4e7cd](https://github.com/newsuk/times-components/commit/4a4e7cdceec5fe7402b4403170013f325eec8a84))
+
+
+
+
+
+## [3.99.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.99.8...@times-components/article-main-standard@3.99.9) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.99.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.99.7...@times-components/article-main-standard@3.99.8) (2024-12-02)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.99.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.99.6...@times-components/article-main-standard@3.99.7) (2024-11-22)
 
 **Note:** Version bump only for package @times-components/article-main-standard

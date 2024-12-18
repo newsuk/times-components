@@ -186,6 +186,7 @@ export const CarouselContainer = styled.div<{
   }
 `;
 
+// @ts-ignore
 export const StyledCarousel = styled(ReactElasticCarousel)<{
   isWide: boolean;
   sectionColour: string;

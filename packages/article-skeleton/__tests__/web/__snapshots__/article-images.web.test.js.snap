@@ -36,6 +36,7 @@ exports[`1. a primary image 1`] = `
                       Object {
                         "caption": "A Caption",
                         "credits": "Some Credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -125,6 +126,7 @@ exports[`2. a fullwidth image 1`] = `
                       Object {
                         "caption": "A Caption",
                         "credits": "Some Credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -214,6 +216,7 @@ exports[`3. a secondary image 1`] = `
                       Object {
                         "caption": "A Caption",
                         "credits": "Some Credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={
@@ -303,6 +306,7 @@ exports[`4. an inline image 1`] = `
                       Object {
                         "caption": "A Caption",
                         "credits": "Some Credits",
+                        "title": undefined,
                       }
                     }
                     imageOptions={

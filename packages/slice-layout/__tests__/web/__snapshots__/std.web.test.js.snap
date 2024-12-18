@@ -5,7 +5,9 @@ exports[`1. no child elements 1`] = `""`;
 exports[`2. a single child element 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>
@@ -29,7 +31,9 @@ exports[`2. a single child element 1`] = `
 exports[`3. two child elements 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>
@@ -65,7 +69,9 @@ exports[`3. two child elements 1`] = `
 exports[`4. three child elements 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>

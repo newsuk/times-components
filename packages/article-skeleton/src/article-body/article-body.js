@@ -23,7 +23,6 @@ import {
   InArticlePuff,
   InlineNewsletterPuff,
   PreviewNewsletterPuff,
-  AutoNewsletterPuff,
   OptaCricketScorecard,
   OptaFootballFixtures,
   OptaFootballStandings,
@@ -38,7 +37,10 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines
+  Timelines,
+  SocialMediaEmbed,
+  AffiliateLinkDisclaimer,
+  CtaButton
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -158,7 +160,7 @@ const renderers = ({
       </Context.Consumer>
     );
   },
-  image(key, { id, display, ratio, url, caption, credits }) {
+  image(key, { id, display, ratio, url, caption, title, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
@@ -169,6 +171,7 @@ const renderers = ({
                 <ArticleImage
                   captionOptions={{
                     caption,
+                    title,
                     credits
                   }}
                   imageOptions={{
@@ -254,6 +257,67 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={attributes.url}
+              vendorName="twitter"
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+
+      case "times-embed-iframe-max": {
+        const src = (element.attributes && element.attributes.src) || "";
+        const isYoutube = src.includes("youtube");
+        const isTikTok = src.includes("tiktok");
+
+        if (!isYoutube || !isTikTok) {
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              <div id={id}>
+                <InteractiveWrapper
+                  attributes={attributes}
+                  element={value}
+                  key={key}
+                  source={url}
+                />
+              </div>
+            </InteractiveContainer>
+          );
+        }
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={isTikTok ? decodeURIComponent(src) : src}
+              vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <CtaButton attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-text-collapse": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <AffiliateLinkDisclaimer attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
@@ -439,22 +503,6 @@ const renderers = ({
           </InteractiveContainer>
         );
     }
-  },
-  autoNewsletterPuff(key, { element }) {
-    const {
-      attributes: { code, copy, headline }
-    } = element;
-
-    return (
-      <AutoNewsletterPuff
-        analyticsStream={analyticsStream}
-        key={key}
-        code={code}
-        copy={copy}
-        headline={headline}
-        section={section}
-      />
-    );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return (

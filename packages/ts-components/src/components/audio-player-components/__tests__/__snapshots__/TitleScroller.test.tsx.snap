@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleScroller matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="row"
+  >
+    <div
+      data-testid="title"
+    >
+      <div
+        data-testid="title-content"
+      >
+        Snapshot Test Title
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

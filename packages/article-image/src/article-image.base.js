@@ -70,7 +70,7 @@ const ArticleImage = ({
     relativeHorizontalOffset,
     relativeVerticalOffset
   } = imageOptions;
-  const { caption, credits } = captionOptions;
+  const { caption, title, credits } = captionOptions;
 
   if (display === "inline") {
     return (
@@ -99,7 +99,7 @@ const ArticleImage = ({
     <Fragment>
       <TcView style={styles[`${display}Image`]}>
         <ModalImage
-          accessibilityLabel={caption}
+          accessibilityLabel={title || caption}
           aspectRatio={aspectRatio}
           caption={<Caption credits={credits} text={caption} />}
           highResSize={highResSize}

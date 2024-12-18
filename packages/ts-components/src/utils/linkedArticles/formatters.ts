@@ -21,7 +21,7 @@ type Media = {
 type SummaryText = { __typename: string; text: string };
 type Summary = { __typename: string; children: SummaryText[] };
 
-type Article = {
+export type Article = {
   __typename: string;
   url: string;
   slug: string;
@@ -31,7 +31,7 @@ type Article = {
   bylines?: Byline[];
   summary?: Summary;
   media?: Media;
-  categoryPath: string;
+  categoryPath?: string;
 };
 
 // HELPERS

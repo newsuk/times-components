@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.89.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.89.2...@times-components/article-magazine-comment@3.89.3) (2024-12-17)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.89.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.89.1...@times-components/article-magazine-comment@3.89.2) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.89.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.89.0...@times-components/article-magazine-comment@3.89.1) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.89.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.88.3...@times-components/article-magazine-comment@3.89.0) (2024-12-13)
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
+## [3.88.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.88.2...@times-components/article-magazine-comment@3.88.3) (2024-12-12)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.88.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.88.1...@times-components/article-magazine-comment@3.88.2) (2024-12-11)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.88.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.88.0...@times-components/article-magazine-comment@3.88.1) (2024-12-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.88.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.87.6...@times-components/article-magazine-comment@3.88.0) (2024-12-05)
+
+
+### Features
+
+* **TMC-0000:** Implement social embeds ([#3989](https://github.com/newsuk/times-components/issues/3989)) ([4a4e7cd](https://github.com/newsuk/times-components/commit/4a4e7cdceec5fe7402b4403170013f325eec8a84))
+
+
+
+
+
+## [3.87.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.87.5...@times-components/article-magazine-comment@3.87.6) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.87.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.87.4...@times-components/article-magazine-comment@3.87.5) (2024-12-02)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.87.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.87.3...@times-components/article-magazine-comment@3.87.4) (2024-11-22)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

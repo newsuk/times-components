@@ -5,7 +5,11 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { RecommendedFetch, Breadcrumb } from "@times-components/ts-components";
+import {
+  RecommendedFetch,
+  Breadcrumb,
+  CategorisedArticles
+} from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import {
@@ -35,6 +39,7 @@ const ArticleExtras = ({
   section,
   articleHeadline,
   relatedArticleSlice,
+  categorisedArticles,
   relatedArticlesVisible,
   commentingConfig,
   topics,
@@ -56,6 +61,10 @@ const ArticleExtras = ({
 
     return null;
   };
+  const categoryArticles =
+    (categorisedArticles && categorisedArticles.categoryArticles) || null;
+  const parentCategoryArticles =
+    (categorisedArticles && categorisedArticles.parentCategoryArticles) || null;
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
@@ -69,6 +78,7 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
+          hideBorder={!isRecommendedActive && Boolean(categoryArticles)}
         />
         {isRecommendedActive && (
           <RecommendedFetch
@@ -77,6 +87,20 @@ const ArticleExtras = ({
             articleSection={section}
           />
         )}
+        {!isRecommendedActive &&
+          categoryArticles && (
+            <CategorisedArticles
+              heading={categoryArticles.label}
+              articles={categoryArticles.articles}
+            />
+          )}
+        {!isRecommendedActive &&
+          parentCategoryArticles && (
+            <CategorisedArticles
+              heading={parentCategoryArticles.label}
+              articles={parentCategoryArticles.articles}
+            />
+          )}
       </div>
       <PromotedContentContainer>
         <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
@@ -141,6 +165,7 @@ ArticleExtras.propTypes = {
   commentsEnabled: PropTypes.bool.isRequired,
   registerNode: PropTypes.func.isRequired,
   relatedArticleSlice: PropTypes.shape({}),
+  categorisedArticles: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
@@ -158,6 +183,7 @@ ArticleExtras.propTypes = {
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
+  categorisedArticles: null,
   topics: null,
   isSharingSavingEnabled: true,
   isCommentEnabled: true,
