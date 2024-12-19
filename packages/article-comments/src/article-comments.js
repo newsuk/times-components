@@ -12,17 +12,16 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl,
   hasCommentingEntitlement
 }) =>
-  isEnabled && isCommentEnabled ? (
+  isEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      {!hasCommentingEntitlement ? (
+      {hasCommentingEntitlement && (
         <UserState state={UserState.showCommentingModule}>
           <Comments
             articleId={articleId}
@@ -31,13 +30,6 @@ const ArticleComments = ({
             domainSpecificUrl={domainSpecificUrl}
           />
         </UserState>
-      ) : (
-        <Comments
-          articleId={articleId}
-          isReadOnly={isReadOnly}
-          commentingConfig={commentingConfig}
-          domainSpecificUrl={domainSpecificUrl}
-        />
       )}
     </>
   ) : (
@@ -52,14 +44,12 @@ ArticleComments.propTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
-  isCommentEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired,
   hasCommentingEntitlement: PropTypes.bool.isRequired
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false,
-  isCommentEnabled: true
+  isReadOnly: false
 };
 
 export default ArticleComments;
