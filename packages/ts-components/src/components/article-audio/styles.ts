@@ -5,7 +5,7 @@ export const AudioDuration = styled.span`
   display: none;
 
   @media (min-width: ${breakpoints.small}px) {
-    display: block;
+    display: flex;
   }
 `;
 export const AudioButton = styled.button`
@@ -20,6 +20,8 @@ export const AudioButton = styled.button`
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  position: relative;
+  cursor: pointer;
 
   svg {
     margin-right: 8px;
@@ -30,4 +32,8 @@ export const AudioButton = styled.button`
     font-size: 12px;
     color: ${colours.functional.secondary};
   }
+`;
+
+export const DurationWrapper = styled.div`
+  min-width: 10px;
 `;

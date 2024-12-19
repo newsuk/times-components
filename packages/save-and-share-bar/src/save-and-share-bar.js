@@ -248,7 +248,7 @@ function SaveAndShareBar(props) {
         </>
       ) : null}
       {process.env.NODE_ENV !== "test" && (
-        <div id="audio-narration-wrapper" style={{ display: "none" }}>
+        <div id="audio-narration-wrapper" style={{ visibility: "hidden" }}>
           <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
         </div>
       )}
