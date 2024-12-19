@@ -50,6 +50,9 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@newskit-themes/the-times": "^1.5.2",
     "@times-components/button": "2.10.61",
     "@times-components/date-publication": "0.30.34",
     "@times-components/icons": "2.23.0",
@@ -69,6 +72,7 @@
     "lodash.get": "4.4.2",
     "lodash.keyby": "4.6.0",
     "lodash.merge": "4.6.2",
+    "newskit": "7.7.0",
     "react": "16.9.0",
     "react-apollo": "2.5.5",
     "react-elastic-carousel": "^0.11.5",
