@@ -22,7 +22,7 @@ const ArticleComments = ({
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
-      {hasCommentingEntitlement && (
+      {!hasCommentingEntitlement ? (
         <UserState state={UserState.showCommentingModule}>
           <Comments
             articleId={articleId}
@@ -31,6 +31,13 @@ const ArticleComments = ({
             domainSpecificUrl={domainSpecificUrl}
           />
         </UserState>
+      ) : (
+        <Comments
+          articleId={articleId}
+          isReadOnly={isReadOnly}
+          commentingConfig={commentingConfig}
+          domainSpecificUrl={domainSpecificUrl}
+        />
       )}
     </>
   ) : (
