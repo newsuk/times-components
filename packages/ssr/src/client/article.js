@@ -20,7 +20,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentingFlag = true,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled
+    hasCommentingEntitlement
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -43,7 +43,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentingFlag,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled
+    hasCommentingEntitlement
   };
 
   const clientOptions = {
