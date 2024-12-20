@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.93.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.6...@times-components/article-main-comment@2.93.7) (2024-12-17)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.5...@times-components/article-main-comment@2.93.6) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.4...@times-components/article-main-comment@2.93.5) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.3...@times-components/article-main-comment@2.93.4) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.2...@times-components/article-main-comment@2.93.3) (2024-12-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.1...@times-components/article-main-comment@2.93.2) (2024-12-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.93.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.93.0...@times-components/article-main-comment@2.93.1) (2024-12-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 # [2.93.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.92.9...@times-components/article-main-comment@2.93.0) (2024-12-05)
 
 

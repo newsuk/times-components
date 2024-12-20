@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.114.0...@times-components/ts-components@1.115.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-225:** Affiliate link disclaimer ([#4008](https://github.com/newsuk/times-components/issues/4008)) ([3a43bc5](https://github.com/newsuk/times-components/commit/3a43bc5e43b7755def26d956e8294d725647454a))
+
+
+
+
+
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.113.1...@times-components/ts-components@1.114.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-224:** CTA button ([#3999](https://github.com/newsuk/times-components/issues/3999)) ([d22a6f7](https://github.com/newsuk/times-components/commit/d22a6f77fb5c003b189f678295a31e92bdec912d))
+
+
+
+
+
+## [1.113.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.113.0...@times-components/ts-components@1.113.1) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 # [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.112.1...@times-components/ts-components@1.113.0) (2024-12-05)
 
 

@@ -67,11 +67,13 @@ exports[`full article with style 1`] = `
 }
 
 .c8 {
+  position: relative;
   margin-bottom: 20px;
   padding: 0 10px;
 }
 
 .c9 {
+  position: relative;
   margin-bottom: 20px;
   width: 100%;
 }

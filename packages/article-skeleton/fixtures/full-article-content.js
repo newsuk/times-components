@@ -131,12 +131,12 @@ export default [
   {
     name: "interactive",
     attributes: {
-      id: "462566aa-d23b-489a-c3a6-b11de45c6ec9",
+      id: "620560ef-068e-4bed-b5ce-dd8e5b5c97fc",
       display: "primary",
       url:
-        "https://components.timesdev.tools/lib2/twitter-embed-1.0.0/twitter-embed.html",
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
       element: {
-        value: "twitter-embed",
+        value: "times-travel-cta",
         attributes: {
           url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
         }
@@ -182,6 +182,26 @@ export default [
   {
     name: "interactive",
     attributes: {
+      id: "606ece43-40a5-4d53-866e-499aacb2a7d0",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-text-collapse-1.0.0/times-text-collapse.html",
+      element: {
+        value: "times-text-collapse",
+        attributes: {
+          disclaimer_text: "This%20article%20contains%20affiliate%20links.",
+          toggle_active_text: "Show%20less",
+          disclaimer_full_text:
+            "Our%20travel%20journalism%20is%20written%20and%20edited%20by%20independent%20experts%20to%20inform%2C%20inspire%20and%20advise%20our%20readers%20about%20the%20best%20choices%20for%20your%20holidays.%20We%20also%20feature%20properties%20and%20itineraries%20from%20a%20specially%20selected%20list%20of%20trusted%20operators.%20These%20buttons%20and%20adverts%20are%20clearly%20signposted%2C%20and%20provide%20direct%20links%20through%20to%20external%20sites.%20If%20you%20click%20and%20buy%20a%20product%2C%20we%20may%20earn%20revenue.",
+          toggle_inactive_text: "Show%20more"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
       id: "79c66dbd-2e9c-4dee-9677-53e7ed94418e",
       display: "primary",
       url:
@@ -190,6 +210,30 @@ export default [
         value: "times-embed-iframe-max",
         attributes: {
           src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
+          ratio: "r1-1",
+          url:
+            "https://www.booking.com/hotel/gb/grays-court.en-gb.html?aid=886291&amp;no_rooms=1&amp;group_adults=2&amp;label=times-edition-top-seven-christmas-shops",
+          text: "Book a stay",
+          target: "_blank",
+          dateTo: "2024-12-02",
+          dateFrom: "2024-12-02"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "1907da4d-7f6e-41e0-b5d1-094863d60eed",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src:
+            "https://compass.pressekompass.net/compasses/times/is-going-to-university-worth-it_times",
           ratio: "r1-1"
         }
       }

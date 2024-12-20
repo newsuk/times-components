@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.145.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.145.0...@times-components/article-skeleton@1.145.1) (2024-12-17)
+
+
+### Bug Fixes
+
+* **TMRS-575:** revert updates ([#4011](https://github.com/newsuk/times-components/issues/4011)) ([73b82e6](https://github.com/newsuk/times-components/commit/73b82e606710860aee18f81bed746e24001f287c))
+
+
+
+
+
+# [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.144.0...@times-components/article-skeleton@1.145.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-225:** Affiliate link disclaimer ([#4008](https://github.com/newsuk/times-components/issues/4008)) ([3a43bc5](https://github.com/newsuk/times-components/commit/3a43bc5e43b7755def26d956e8294d725647454a))
+
+
+
+
+
+# [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.143.0...@times-components/article-skeleton@1.144.0) (2024-12-16)
+
+
+### Features
+
+* **TMC-224:** CTA button ([#3999](https://github.com/newsuk/times-components/issues/3999)) ([d22a6f7](https://github.com/newsuk/times-components/commit/d22a6f77fb5c003b189f678295a31e92bdec912d))
+
+
+
+
+
+# [1.143.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.3...@times-components/article-skeleton@1.143.0) (2024-12-13)
+
+
+### Bug Fixes
+
+* **TMRS-575:** parse id for embed ([#4007](https://github.com/newsuk/times-components/issues/4007)) ([8fe238f](https://github.com/newsuk/times-components/commit/8fe238f57563fbb566e0a10cc97d331b43d183a2))
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
+## [1.142.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.2...@times-components/article-skeleton@1.142.3) (2024-12-12)
+
+
+### Bug Fixes
+
+* **TMRS-575:** iframe component heights ([#4006](https://github.com/newsuk/times-components/issues/4006)) ([f4c3691](https://github.com/newsuk/times-components/commit/f4c36910a5a5d7e82dcfd10acfa62e3b3278154f))
+
+
+
+
+
+## [1.142.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.1...@times-components/article-skeleton@1.142.2) (2024-12-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.142.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.142.0...@times-components/article-skeleton@1.142.1) (2024-12-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 # [1.142.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.141.1...@times-components/article-skeleton@1.142.0) (2024-12-05)
 
 
