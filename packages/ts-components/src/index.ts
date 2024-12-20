@@ -119,6 +119,7 @@ export {
 } from './utils/safeDecodeURIComponent';
 export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
 export { ArticleAudio } from './components/article-audio/ArticleAudio';
+export { StickyNote } from './components/sticky-note/StickyNote';
 export {
   FeaturesCarousel
 } from './components/features-carousel/FeaturesCarousel';
