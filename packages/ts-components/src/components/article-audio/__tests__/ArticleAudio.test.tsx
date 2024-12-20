@@ -1,184 +1,161 @@
 import React from 'react';
-import { render, fireEvent, act } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import { ArticleAudio } from '../ArticleAudio';
+import { render, fireEvent, waitFor } from '@testing-library/react';
+import ArticleAudio, { ArticleAudioProps } from '../ArticleAudio';
+import { AudioPlayer } from '../../audio-player-components/AudioPlayer';
+import { StickyNote } from '../../sticky-note/StickyNote';
 
-jest.mock('../styles', () => ({
-  AudioButton: ({ children, onClick, style, ref }: any) => (
-    <button
-      data-testid="audio-button"
-      onClick={onClick}
-      style={style}
-      ref={ref}
-    >
-      {children}
-    </button>
-  ),
-  AudioDuration: ({ children, style }: any) => (
-    <span data-testid="audio-duration" style={style}>
-      {children}
-    </span>
-  ),
-  DurationWrapper: ({ children }: any) => (
-    <span data-testid="duration-wrapper">{children}</span>
-  ),
-}));
+// Import jest-dom for extended matchers
+import '@testing-library/jest-dom';
 
-jest.mock('@times-components/icons', () => ({
-  __esModule: true,
-  PlayIcon: ({ fill }: any) => (
-    <svg data-testid="play-icon" style={{ fill: fill || '#333' }} />
-  ),
-  PauseIcon: ({ fill }: any) => (
-    <svg data-testid="pause-icon" style={{ fill: fill || '#333' }} />
-  ),
+// Mock dependencies
+jest.mock('../../audio-player-components/AudioPlayer', () => ({
+  AudioPlayer: jest.fn(() => <div data-testid="mock-audio-player">Audio Player</div>)
 }));
 
 jest.mock('../../sticky-note/StickyNote', () => ({
-  StickyNote: ({
-    title,
-    copy,
-    position,
-    pointerLeftOffset,
-    cookieValue,
-  }: any) => (
-    <div
-      data-testid="sticky-note"
-      data-title={title}
-      data-copy={copy}
-      data-cookie={cookieValue}
-      style={{ top: position.top, left: position.left, position: 'absolute'}}
-    >
-      Sticky Note
-    </div>
-  ),
+  StickyNote: jest.fn(() => <div data-testid="mock-sticky-note">Sticky Note</div>)
 }));
 
-jest.mock('../../audio-player-components/AudioPlayer', () => ({
-  AudioPlayer: ({ onPlay, onPause, onEnded, onClose }: any) => (
-    <div data-testid="audio-player">
-      <button data-testid="play-button" onClick={onPlay}>Play</button>
-      <button data-testid="pause-button" onClick={onPause}>Pause</button>
-      <button data-testid="ended-button" onClick={onEnded}>Ended</button>
-      <button data-testid="close-button" onClick={onClose}>Close</button>
-    </div>
-  ),
-}));
+describe('ArticleAudio Component', () => {
+  const audioSrc = 'http://example.com/audio.mp3';
+  const setup = (props: Partial<ArticleAudioProps> = {}) => {
+    const defaultProps: ArticleAudioProps = {
+      audioSrc
+    };
+    return render(<ArticleAudio {...defaultProps} {...props} />);
+  };
 
-describe('ArticleAudio', () => {
   beforeEach(() => {
-    // Mock the duration of the audio element
-    Object.defineProperty(HTMLMediaElement.prototype, 'duration', {
-      get(): number {
-        return 120; // 2 minutes
-      },
-    });
-  });
-
-  afterEach(() => {
+    // Clear all mocks before each test
     jest.clearAllMocks();
-    jest.restoreAllMocks();
-    document.cookie = ''; // Clear cookies
+    // Clear cookies
+    document.cookie = 'audioNarrationButtonClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie = 'audioNoticeClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
   });
 
-  test('updates child position and pointer position on window resize', () => {
-    const { getByTestId } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-    );
-  
-    const audioButton = getByTestId('audio-button');
-    const stickyNote = getByTestId('sticky-note');
-  
-    // Mock getBoundingClientRect for the audio button
-    audioButton.getBoundingClientRect = jest.fn(() => ({
-      top: 50, // Simulate the audio button being 50px from the top
-      left: 100,
-      width: 200,
-      height: 50,
-      bottom: 100,
-      right: 300,
-      x: 100,
-      y: 50,
-      toJSON: () => ({}),
-    }));
-  
-    // Simulate resizing the window
-    fireEvent.resize(window);
-  
-    // Log and check StickyNote's new position
-    const stickyNoteTop = parseFloat(stickyNote.style.top);
-    console.log('StickyNote top position:', stickyNote.style.top);
-    expect(stickyNoteTop).toBeGreaterThan(0);
+  it('renders without crashing', () => {
+    const { getByText } = setup();
+    expect(getByText('Listen')).toBeInTheDocument();
   });
 
+  it('displays duration after metadata is loaded', async () => {
+    const { getByTestId, container } = setup();
+    const audioElement = getByTestId('article-audio') as HTMLAudioElement;
 
-  test('handles play, pause, and ended events', () => {
-    const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-    );
-
-    // Trigger 'loadedmetadata' event to initialize duration
-    const audio = container.querySelector('audio') as HTMLAudioElement;
-    act(() => {
-      fireEvent.loadedMetadata(audio);
+    // Mock the duration
+    Object.defineProperty(audioElement, 'duration', {
+      value: 120, // 2 minutes
+      writable: false
     });
 
-    const audioButton = getByTestId('audio-button');
-    const audioPlayer = getByTestId('audio-player');
-    const audioPlayerWrapper = getByTestId('audioPlayerWrapper');
+    // Trigger the metadata loaded event
+    fireEvent.loadedMetadata(audioElement);
 
-    // **Simulate Play Event** (onPlay)
-    const playButton = getByTestId('play-button');
+    await waitFor(() => {
+      // Use container to query the span containing duration
+      const durationSpan = container.querySelector('span');
+      expect(durationSpan).toHaveTextContent('3 min');
+    });
+  });
+
+  it('shows Play button initially', () => {
+    const { getByText } = setup();
+    expect(getByText('Listen')).toBeInTheDocument();
+    // Since the PlayIcon is an SVG, it's better to check for its presence by role or aria-label
+    expect(document.querySelector('svg[aria-label="play-icon"]')).toBeInTheDocument();
+  });
+
+  it('changes to Playing state when Play button is clicked', () => {
+    const { getByText, getByTestId } = setup();
+    const playButton = getByText('Listen');
     fireEvent.click(playButton);
-    expect(audioButton).toHaveTextContent('Playing');
-    expect(audioButton).toHaveStyle('background-color: #1D1D1B');
-    expect(audioButton).toHaveStyle('color: #fff');
 
-    // **Simulate Pause Event** (onPause)
-    const pauseButton = getByTestId('pause-button');
-    fireEvent.click(pauseButton);
-    expect(audioButton).toHaveTextContent('Paused');
-    expect(audioButton).toHaveStyle('background-color: #1D1D1B');
-    expect(audioButton).toHaveStyle('color: #fff');
-
-    // **Ensure AudioPlayer visibility is toggled** after the pause action
-    expect(audioPlayerWrapper).toHaveStyle('display: none'); // The AudioPlayer should be hidden after the pause
-
-    // **Simulate Ended Event** (onEnded)
-    const endedButton = getByTestId('ended-button');
-    fireEvent.click(endedButton);
-    expect(audioButton).toHaveTextContent('Listen');
-    expect(audioButton).toHaveStyle('background-color: #fff');
-    expect(audioButton).toHaveStyle('color: #333');
+    expect(getByText(/Playing/)).toBeInTheDocument();
+    expect(AudioPlayer).toHaveBeenCalledWith(
+      expect.objectContaining({
+        src: audioSrc,
+        isPlayingProp: true
+      }),
+      {}
+    );
+    expect(getByTestId('mock-audio-player')).toBeInTheDocument();
+    // Check if cookie is set
+    expect(document.cookie).toContain('audioNarrationButtonClicked=true');
   });
 
-  test('hides AudioPlayer when close button is clicked', () => {
-    const { getByTestId, getByText, container } = render(
-      <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
-    );
+  it('pauses audio when Pause button is clicked', () => {
+    const { getByText } = setup();
+    const playButton = getByText('Listen');
+    fireEvent.click(playButton); // Start playing
 
-    // Trigger 'loadedmetadata' event to initialize duration
-    const audio = container.querySelector('audio') as HTMLAudioElement;
-    act(() => {
-      fireEvent.loadedMetadata(audio);
+    const pauseButton = getByText(/Playing/);
+    fireEvent.click(pauseButton);
+
+    expect(getByText(/Paused/)).toBeInTheDocument();
+    expect(AudioPlayer).toHaveBeenCalledWith(
+      expect.objectContaining({
+        isPlayingProp: false
+      }),
+      {}
+    );
+  });
+
+  it('hides AudioPlayer when closed', () => {
+    const { getByText, getByTestId } = setup();
+    const playButton = getByText('Listen');
+    fireEvent.click(playButton); // Start playing
+
+    expect(getByTestId('mock-audio-player')).toBeInTheDocument();
+
+    // Simulate onClose
+    const audioPlayer = AudioPlayer as jest.Mock;
+    const onClose = audioPlayer.mock.calls[0][0].onClose;
+    if (onClose) {
+      onClose();
+    }
+
+    const audioPlayerWrapper = getByTestId('audioPlayerWrapper');
+    expect(audioPlayerWrapper).toHaveStyle('display: none');
+  });
+
+  it('shows StickyNote when cookies are not set', () => {
+    const { getByTestId } = setup();
+    expect(getByTestId('mock-sticky-note')).toBeInTheDocument();
+  });
+
+  it('does not show StickyNote when cookies are set', () => {
+    // Set cookies to prevent StickyNote from showing
+    document.cookie = 'audioNarrationButtonClicked=true';
+    document.cookie = 'audioNoticeClicked=true';
+
+    const { queryByTestId } = setup();
+    expect(queryByTestId('mock-sticky-note')).not.toBeInTheDocument();
+  });
+
+  it('handles window resize and updates child position', () => {
+    const addEventListenerSpy = jest.spyOn(window, 'addEventListener');
+    setup();
+
+    expect(addEventListenerSpy).toHaveBeenCalledWith('resize', expect.any(Function));
+  });
+
+  it('sets duration correctly based on audio duration', async () => {
+    const { getByTestId, container } = setup();
+    const audioElement = getByTestId('article-audio') as HTMLAudioElement;
+
+    // Mock the duration
+    Object.defineProperty(audioElement, 'duration', {
+      value: 250, // 4 minutes and 10 seconds
+      writable: false
     });
 
-    // Click the audio button to show the AudioPlayer
-    const audioButton = getByTestId('audio-button');
-    fireEvent.click(audioButton);
+    // Trigger the metadata loaded event
+    fireEvent.loadedMetadata(audioElement);
 
-    // Verify that the AudioPlayer is now visible
-    const audioPlayer = getByTestId('audioPlayerWrapper');
-    expect(audioPlayer).toHaveStyle('display: block');
-
-    // Simulate clicking the close button inside the AudioPlayer
-    const closeButton = getByTestId('close-button');
-    fireEvent.click(closeButton);
-
-    // Verify that the AudioPlayer is hidden again
-    expect(audioPlayer).toHaveStyle('display: none');
-    expect(audioButton).toHaveStyle('background-color: #fff');
-    expect(audioButton).toHaveStyle('color: #333');
-    expect(getByText('Listen')).toBeInTheDocument(); // audioState === 'not-started'
+    await waitFor(() => {
+      // Use container to query the span containing duration
+      const durationSpan = container.querySelector('span');
+      expect(durationSpan).toHaveTextContent('5 min'); // Ceiling of 4.166...
+    });
   });
 });

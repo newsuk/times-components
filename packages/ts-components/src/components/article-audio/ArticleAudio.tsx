@@ -89,6 +89,9 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
     handleShowChild();
 
     window.addEventListener('resize', handleShowChild);
+    return () => {
+      window.removeEventListener('resize', handleShowChild);
+    };
   }, []);
 
   const handleLoadedMetadata = () => {
@@ -120,6 +123,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
   return (
     <div>
       <audio
+        data-testid="article-audio"
         ref={audioRef}
         src={audioSrc}
         onLoadedMetadata={handleLoadedMetadata}
@@ -140,7 +144,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
           </>
         ) : audioState === 'paused' ? (
           <>
-            <PlayIcon width={16} height={16} fill="#fff" /> Paused
+            <PlayIcon width={16} height={16} /> Paused
           </>
         ) : (
           <>
