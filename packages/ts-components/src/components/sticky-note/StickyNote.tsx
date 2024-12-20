@@ -59,7 +59,7 @@ export const StickyNote: FC<StickyNoteProps> = ({
       }}
     >
       <StickyNotePointer
-       data-testid="sticky-note-pointer"
+        data-testid="sticky-note-pointer"
         style={{
           left: pointerLeftOffset - 15
         }}

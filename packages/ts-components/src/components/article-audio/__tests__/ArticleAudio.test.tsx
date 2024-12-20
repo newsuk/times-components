@@ -9,11 +9,15 @@ import '@testing-library/jest-dom';
 
 // Mock dependencies
 jest.mock('../../audio-player-components/AudioPlayer', () => ({
-  AudioPlayer: jest.fn(() => <div data-testid="mock-audio-player">Audio Player</div>)
+  AudioPlayer: jest.fn(() => (
+    <div data-testid="mock-audio-player">Audio Player</div>
+  ))
 }));
 
 jest.mock('../../sticky-note/StickyNote', () => ({
-  StickyNote: jest.fn(() => <div data-testid="mock-sticky-note">Sticky Note</div>)
+  StickyNote: jest.fn(() => (
+    <div data-testid="mock-sticky-note">Sticky Note</div>
+  ))
 }));
 
 describe('ArticleAudio Component', () => {
@@ -29,8 +33,10 @@ describe('ArticleAudio Component', () => {
     // Clear all mocks before each test
     jest.clearAllMocks();
     // Clear cookies
-    document.cookie = 'audioNarrationButtonClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-    document.cookie = 'audioNoticeClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie =
+      'audioNarrationButtonClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie =
+      'audioNoticeClicked=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
   });
 
   it('renders without crashing', () => {
@@ -62,7 +68,9 @@ describe('ArticleAudio Component', () => {
     const { getByText } = setup();
     expect(getByText('Listen')).toBeInTheDocument();
     // Since the PlayIcon is an SVG, it's better to check for its presence by role or aria-label
-    expect(document.querySelector('svg[aria-label="play-icon"]')).toBeInTheDocument();
+    expect(
+      document.querySelector('svg[aria-label="play-icon"]')
+    ).toBeInTheDocument();
   });
 
   it('changes to Playing state when Play button is clicked', () => {
@@ -136,7 +144,10 @@ describe('ArticleAudio Component', () => {
     const addEventListenerSpy = jest.spyOn(window, 'addEventListener');
     setup();
 
-    expect(addEventListenerSpy).toHaveBeenCalledWith('resize', expect.any(Function));
+    expect(addEventListenerSpy).toHaveBeenCalledWith(
+      'resize',
+      expect.any(Function)
+    );
   });
 
   it('sets duration correctly based on audio duration', async () => {

@@ -11,7 +11,7 @@ import {
   Info,
   MoreLink,
   StickyNotePointer,
-  CloseButton,
+  CloseButton
 } from '../styles';
 
 describe('StickyNote styles', () => {
@@ -25,7 +25,10 @@ describe('StickyNote styles', () => {
   it('renders StickyNoteHeader with correct styles', () => {
     const { container } = render(<StickyNoteHeader />);
     expect(container.firstChild).toHaveStyleRule('padding', '26px 24px');
-    expect(container.firstChild).toHaveStyleRule('border-bottom', '1px solid #e4e4e4');
+    expect(container.firstChild).toHaveStyleRule(
+      'border-bottom',
+      '1px solid #e4e4e4'
+    );
   });
 
   it('renders Title with correct styles', () => {

@@ -17,18 +17,20 @@ describe('enableCookies', () => {
   });
 
   it('should call __tcfapi with "getCustomVendorConsents" for the vendor', () => {
-    (window as any).__tcfapi.mockImplementation((command, version, callback) => {
-      if (command === 'getCustomVendorConsents') {
-        callback(
-          {
-            grants: { [mockVendorId]: { purposeGrants: { 1: true } } }
-          },
-          true
-        );
-      } else if (command === 'postCustomConsent') {
-        callback(true, true);
+    (window as any).__tcfapi.mockImplementation(
+      (command, version, callback) => {
+        if (command === 'getCustomVendorConsents') {
+          callback(
+            {
+              grants: { [mockVendorId]: { purposeGrants: { 1: true } } }
+            },
+            true
+          );
+        } else if (command === 'postCustomConsent') {
+          callback(true, true);
+        }
       }
-    });
+    );
 
     enableCookies('facebook', setIsSocialEmbedAllowed);
 
@@ -74,11 +76,13 @@ describe('enableCookies', () => {
           );
         }
       })
-      .mockImplementationOnce((command, version, callback, vendors, purposes, specialPurposes) => {
-        if (command === 'postCustomConsent') {
-          callback(true, true);
+      .mockImplementationOnce(
+        (command, version, callback, vendors, purposes, specialPurposes) => {
+          if (command === 'postCustomConsent') {
+            callback(true, true);
+          }
         }
-      });
+      );
 
     enableCookies('facebook', setIsSocialEmbedAllowed);
 
@@ -110,11 +114,13 @@ describe('enableCookies', () => {
   });
 
   it('should set isSocialEmbedAllowed to false if getCustomVendorConsents is unsuccessful', () => {
-    (window as any).__tcfapi.mockImplementation((command, version, callback) => {
-      if (command === 'getCustomVendorConsents') {
-        callback(null, false);
+    (window as any).__tcfapi.mockImplementation(
+      (command, version, callback) => {
+        if (command === 'getCustomVendorConsents') {
+          callback(null, false);
+        }
       }
-    });
+    );
 
     enableCookies('facebook', setIsSocialEmbedAllowed);
 
@@ -143,11 +149,13 @@ describe('enableCookies', () => {
           );
         }
       })
-      .mockImplementationOnce((command, version, callback, vendors, purposes, specialPurposes) => {
-        if (command === 'postCustomConsent') {
-          callback(true, true);
+      .mockImplementationOnce(
+        (command, version, callback, vendors, purposes, specialPurposes) => {
+          if (command === 'postCustomConsent') {
+            callback(true, true);
+          }
         }
-      });
+      );
 
     enableCookies('facebook', setIsSocialEmbedAllowed);
 
@@ -193,11 +201,13 @@ describe('enableCookies', () => {
           );
         }
       })
-      .mockImplementationOnce((command, version, callback, vendors, purposes, specialPurposes) => {
-        if (command === 'postCustomConsent') {
-          callback(false, false);
+      .mockImplementationOnce(
+        (command, version, callback, vendors, purposes, specialPurposes) => {
+          if (command === 'postCustomConsent') {
+            callback(false, false);
+          }
         }
-      });
+      );
 
     enableCookies('facebook', setIsSocialEmbedAllowed);
 

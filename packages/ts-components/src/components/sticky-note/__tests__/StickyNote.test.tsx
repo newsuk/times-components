@@ -9,7 +9,7 @@ describe('StickyNote component', () => {
     title: 'Test Title',
     copy: 'This is some test content.',
     position: { top: 100, left: 50 },
-    pointerLeftOffset: 25,
+    pointerLeftOffset: 25
   };
 
   it('renders correctly with required props', () => {
@@ -29,7 +29,9 @@ describe('StickyNote component', () => {
   });
 
   it('renders feedbackLink when provided', () => {
-    render(<StickyNote {...defaultProps} feedbackLink="feedback@example.com" />);
+    render(
+      <StickyNote {...defaultProps} feedbackLink="feedback@example.com" />
+    );
 
     // Check for feedback email link
     const feedbackLink = screen.getByText('feedback@example.com');
@@ -38,17 +40,21 @@ describe('StickyNote component', () => {
   });
 
   it('renders LearnMoreLink when provided', () => {
-    render(<StickyNote {...defaultProps} LearnMoreLink="https://example.com/learn-more" />);
+    render(
+      <StickyNote
+        {...defaultProps}
+        LearnMoreLink="https://example.com/learn-more"
+      />
+    );
 
     // Check for learn more link
     const learnMoreLink = screen.getByText('Learn more');
     expect(learnMoreLink).toBeInTheDocument();
-    expect(learnMoreLink).toHaveAttribute('href', 'https://example.com/learn-more');
+    expect(learnMoreLink).toHaveAttribute(
+      'href',
+      'https://example.com/learn-more'
+    );
   });
-
-
-  
-  
 
   it('renders pointer at the correct offset', () => {
     render(<StickyNote {...defaultProps} pointerLeftOffset={30} />);
@@ -72,7 +78,7 @@ describe('StickyNote component', () => {
   it('sets a cookie when closed if cookieValue is provided', () => {
     Object.defineProperty(document, 'cookie', {
       writable: true,
-      value: '',
+      value: ''
     });
 
     render(<StickyNote {...defaultProps} cookieValue="stickyClosed" />);
