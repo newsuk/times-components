@@ -2,7 +2,6 @@ import React from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import ArticleAudio, { ArticleAudioProps } from '../ArticleAudio';
 import { AudioPlayer } from '../../audio-player-components/AudioPlayer';
-import { StickyNote } from '../../sticky-note/StickyNote';
 
 // Import jest-dom for extended matchers
 import '@testing-library/jest-dom';
