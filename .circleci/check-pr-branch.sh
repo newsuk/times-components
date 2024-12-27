@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [[ "$CIRCLE_BRANCH" == "master" ]];
+then
+  echo "Skipping PR branch check for master branch"
+  exit 0
+fi
+
+echo "Checking PR branch is up to date with master branch"
+
 current_branch=$(git branch --show-current)
 merge_base=$(git merge-base $current_branch master)
 recommend_rebase="rebase your branch on the master branch."
