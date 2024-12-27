@@ -293,8 +293,7 @@ workflows:
   run_tests:
     jobs:
       - setup
-      - check-pr-branch:
-          <<: *only_on_pr_branch
+      - check-pr-branch
       - run_lint:
           requires:
             - setup
