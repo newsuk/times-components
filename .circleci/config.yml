@@ -48,22 +48,18 @@ jobs:
     executor: node
     steps:
       - checkout
-      - check-pr-branch
       - restore-yarn
       - install-dependencies
       - save-yarn
       - install-lerna
+      - run:
+          name: "Check if PR is up-to-date and there are no merge commits"
+          command: ./.circleci/check-pr-branch.sh
       - persist_to_workspace:
           root: ./
           paths:
             - ./
 
-  check-pr-branch:
-    executor: node
-    steps:
-      - run:
-          name: "Check if PR is up-to-date and there are no merge commits"
-          command: ./.circleci/check-pr-branch.sh
 
   run_lint:
     executor: node
@@ -296,29 +292,23 @@ workflows:
       - run_lint:
           requires:
             - setup
-            - check-pr-branch
       - build_storybook:
           requires:
             - setup
-            - check-pr-branch
       - run_noplatform_tests:
           requires:
             - setup
-            - check-pr-branch
       - run_web_tests:
           requires:
             - setup
-            - check-pr-branch
       - run_unit_tests:
           requires:
             - setup
-            - check-pr-branch
       - sonarcloud_scan:
           context: SonarCloud
       - run_cypress_tests:
           requires:
             - setup
-            - check-pr-branch
       - verdaccio-test-approval:
           <<: *only_on_master_branch
           type: approval
