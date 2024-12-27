@@ -48,13 +48,13 @@ jobs:
     executor: node
     steps:
       - checkout
+      - run:
+          name: "Check if PR is up-to-date and there are no merge commits"
+          command: ./.circleci/check-pr-branch.sh
       - restore-yarn
       - install-dependencies
       - save-yarn
       - install-lerna
-      - run:
-          name: "Check if PR is up-to-date and there are no merge commits"
-          command: ./.circleci/check-pr-branch.sh
       - persist_to_workspace:
           root: ./
           paths:
