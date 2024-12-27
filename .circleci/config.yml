@@ -48,6 +48,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - check-pr-branch
       - restore-yarn
       - install-dependencies
       - save-yarn
@@ -60,7 +61,6 @@ jobs:
   check-pr-branch:
     executor: node
     steps:
-      - checkout
       - run:
           name: "Check if PR is up-to-date and there are no merge commits"
           command: ./.circleci/check-pr-branch.sh
@@ -293,7 +293,6 @@ workflows:
   run_tests:
     jobs:
       - setup
-      - check-pr-branch
       - run_lint:
           requires:
             - setup
