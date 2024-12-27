@@ -60,7 +60,6 @@ jobs:
           paths:
             - ./
 
-
   run_lint:
     executor: node
     steps:
