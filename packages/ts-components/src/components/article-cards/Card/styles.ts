@@ -1,22 +1,15 @@
-import {
-  CardComposable,
-  getMediaQueryFromTheme,
-  CardContent,
-  CardContentProps,
-  CardComposableProps,
-  CardMedia,
-  TextBlock,
-  TextBlockProps
-} from 'newskit';
 import styled from 'styled-components';
 
-export const StyledCardComposable = styled(CardComposable)<
-  CardComposableProps & { $numOfArticles: number }
->`
+interface CardProps {
+  $numOfArticles: number;
+}
+
+export const StyledCard = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
 
-  ${getMediaQueryFromTheme('md')} {
+  @media (min-width: 768px) {
+    /* Assuming 'md' is 768px */
     position: relative;
 
     &::after {
@@ -37,7 +30,8 @@ export const StyledCardComposable = styled(CardComposable)<
     }
   }
 
-  ${getMediaQueryFromTheme('lg')} {
+  @media (min-width: 1024px) {
+    /* Assuming 'lg' is 1024px */
     ${({ $numOfArticles }) =>
       $numOfArticles === 1 &&
       `
@@ -49,16 +43,27 @@ export const StyledCardComposable = styled(CardComposable)<
   }
 `;
 
-export const StyledCardMedia = styled(CardMedia)`
-  & > picture > img {
-    display: inline;
-  }
+export const StyledMedia = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
-export const StyledCardContent = styled(CardContent)<
-  CardContentProps & { $numOfArticles: number }
->`
-  ${getMediaQueryFromTheme('lg')} {
+export const StyledPicture = styled.picture`
+  display: block;
+  width: 100%;
+  height: auto;
+`;
+
+export const StyledImg = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+`;
+
+export const StyledContent = styled.div<CardProps>`
+  margin-block-start: 16px;
+  @media (min-width: 1024px) {
     ${({ $numOfArticles }) =>
       $numOfArticles === 1 &&
       `
@@ -69,14 +74,54 @@ export const StyledCardContent = styled(CardContent)<
   }
 `;
 
-export const StyledSummaryText = styled(TextBlock)<
-  TextBlockProps & { $numOfArticles: number }
->`
-  ${({ $numOfArticles }) =>
-    $numOfArticles > 1 &&
-    `
-  display: none;
-`} ${getMediaQueryFromTheme('md')} {
+export const StyledText = styled.span<CardProps>`
+  color: rgb(105, 105, 105);
+  font-family: 'Times Digital W04 Regular';
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.5px 0px;
+  margin-block-start: 16px;
+  line-height: 21px;
+
+  @media (min-width: 768px) {
     display: block;
+  }
+`;
+
+export const StyledDivider = styled.hr`
+  border-style: dashed;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StyledLink = styled.a<CardProps>`
+  font-weight: 700;
+  font-family: 'Times Modern';
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: rgb(1, 0, 13);
+
+  @media (max-width: 1024px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles <= 2 &&
+      `
+      font-size: 24px;
+      line-height: 27px;
+    `};
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 28px;
+    line-height: 31.5px;
+
+    ${({ $numOfArticles }) =>
+      $numOfArticles >= 3 &&
+      `
+      font-size: 20px;
+      line-height: 22.5px;
+    `};
   }
 `;
