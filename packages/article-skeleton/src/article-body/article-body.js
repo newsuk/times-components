@@ -43,7 +43,6 @@ import {
   CtaButton,
   ArticleCard
 } from "@times-components/ts-components";
-import { NewsKitProvider } from 'newskit';
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -64,7 +63,6 @@ import {
   InlineAdWrapper,
   InlineAdTitle
 } from "../styles/article-body/responsive";
-import { TimesWebLightTravelTheme } from "@times-components/ts-components/src/components/article-cards/theme";
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
@@ -326,11 +324,9 @@ const renderers = ({
         const elementAttr = element.attributes;
 
         return (
-          <NewsKitProvider theme={TimesWebLightTravelTheme}>
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <ArticleCard article={elementAttr.article} sectionTitle={elementAttr.title} />
+            <ArticleCard element={elementAttr} />
           </InteractiveContainer>
-          </NewsKitProvider>
         );
       }
 

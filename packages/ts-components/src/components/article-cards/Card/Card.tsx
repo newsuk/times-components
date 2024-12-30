@@ -1,115 +1,44 @@
-import React, { FC } from 'react';
-import { Hidden, LinkStandalone } from 'newskit';
+import React from 'react';
 import {
-  StyledCardComposable,
-  StyledCardMedia,
-  StyledCardContent,
-  StyledSummaryText
+  StyledCard,
+  StyledContent,
+  StyledDivider,
+  StyledImg,
+  StyledLink,
+  StyledMedia,
+  StyledPicture,
+  StyledText
 } from './styles';
-import { tealiumTrackingHandler, truncateText } from '../utils';
+import { ArticleCardProps } from '../types';
 
-export type ArticleProps = {
-  id: number;
-  image: {
-    alt: string;
-    url: string;
-  };
-  label: string;
-  headline: string;
-  summary: string;
-  url: string;
-};
+const Card = (props: ArticleCardProps) => {
+  const article = props.article;
 
-export interface ArticleCardProps {
-  article: ArticleProps;
-  sectionTitle: string;
-  numOfArticles: number;
-  isLeadingArticle: boolean;
-  isLastCard: boolean;
-}
-
-const Card: FC<ArticleCardProps> = ({
-  article,
-  sectionTitle,
-  numOfArticles,
-  isLeadingArticle
-  // isLastCard,
-}) => {
   return (
-    <StyledCardComposable $numOfArticles={numOfArticles}>
-      {isLeadingArticle ? (
-        <LinkStandalone
-          href={article.url}
-          external={false}
-          onClick={() => tealiumTrackingHandler(article.headline, sectionTitle)}
-        >
-          <StyledCardMedia
-            media={{
-              src: article.image.url,
-              fit: 'cover'
-            }}
-          />
-        </LinkStandalone>
-      ) : (
-        <Hidden xs sm>
-          <LinkStandalone
-            href={article.url}
-            external={false}
-            onClick={() =>
-              tealiumTrackingHandler(article.headline, sectionTitle)
-            }
-          >
-            <StyledCardMedia
-              media={{
-                src: article.image.url,
-                fit: 'cover'
-              }}
-            />
-          </LinkStandalone>
-        </Hidden>
-      )}
-      <StyledCardContent $numOfArticles={numOfArticles}>
-        <LinkStandalone
-          href={article.url}
-          external={false}
-          overrides={{
-            typographyPreset: {
-              xs: 'editorialHeadline020',
-              md:
-                numOfArticles === 1 ? 'editorialHeadline040' : 'articleCard020',
-              lg:
-                numOfArticles <= 2 ? 'editorialHeadline040' : 'articleCard020',
-              xl: numOfArticles <= 2 ? 'editorialHeadline040' : 'articleCard020'
-            },
-            stylePreset: 'articleHeadlinePreset',
-            marginBlockStart: {
-              xs: `${isLeadingArticle ? 'space045' : 'space000'}`,
-              md: 'space030',
-              lg: 'space040'
-            }
-          }}
-          onClick={() => tealiumTrackingHandler(article.headline, sectionTitle)}
-        >
+    <StyledCard $numOfArticles={props.numOfArticles}>
+      <a
+        href={article.url}
+        onClick={() => {
+          // tslint:disable-next-line:no-console
+          console.log(article.headline);
+        }}
+      >
+        <StyledMedia>
+          <StyledPicture>
+            <StyledImg src={article.image.url} />
+          </StyledPicture>
+        </StyledMedia>
+      </a>
+      <StyledContent $numOfArticles={props.numOfArticles}>
+        <StyledLink $numOfArticles={props.numOfArticles} href={article.url}>
           {article.headline}
-        </LinkStandalone>
-        <StyledSummaryText
-          as="span"
-          typographyPreset="editorialParagraph010"
-          stylePreset="articleSummaryPreset"
-          marginBlockStart="space045"
-          $numOfArticles={numOfArticles}
-        >
-          {truncateText(article.summary, 160)}
-        </StyledSummaryText>
-        {/* {!isLastCard && (
-          <StyledDivider
-            overrides={{
-              marginBlock: numOfArticles === 1 ? 'space060' : 'space045',
-            }}
-          />
-        )} */}
-      </StyledCardContent>
-    </StyledCardComposable>
+        </StyledLink>
+        <StyledText $numOfArticles={props.numOfArticles}>
+          {article.summary}
+        </StyledText>
+        {!props.isLastCard && <StyledDivider data-testid="divider" />}
+      </StyledContent>
+    </StyledCard>
   );
 };
 
