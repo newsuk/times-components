@@ -793,8 +793,8 @@ exports[`full article with style 1`] = `
           alignItems="center"
           className="c3"
           marginBottom="25px"
-          marginLeft="10px"
-          marginRight="10px"
+          paddingLeft="10px"
+          paddingRight="10px"
           paddingTop="35px"
         >
           <div
@@ -1795,8 +1795,8 @@ exports[`full article with style in the culture magazine 1`] = `
           alignItems="center"
           className="c3"
           marginBottom="25px"
-          marginLeft="10px"
-          marginRight="10px"
+          paddingLeft="10px"
+          paddingRight="10px"
           paddingTop="35px"
         >
           <div
@@ -2798,8 +2798,8 @@ exports[`full article with style in the style magazine 1`] = `
           alignItems="center"
           className="c3"
           marginBottom="25px"
-          marginLeft="10px"
-          marginRight="10px"
+          paddingLeft="10px"
+          paddingRight="10px"
           paddingTop="35px"
         >
           <div
@@ -3800,8 +3800,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
           alignItems="center"
           className="c3"
           marginBottom="25px"
-          marginLeft="10px"
-          marginRight="10px"
+          paddingLeft="10px"
+          paddingRight="10px"
           paddingTop="35px"
         >
           <div
