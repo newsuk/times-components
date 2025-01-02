@@ -48,7 +48,7 @@ describe('Card Component', () => {
     const link = screen.getAllByRole('link')[0];
     fireEvent.click(link);
 
-    expect(consoleLogSpy).toHaveBeenCalledWith('Test Headline');
+    expect(consoleLogSpy).toHaveBeenCalledWith('https://example.com');
 
     consoleLogSpy.mockRestore();
   });

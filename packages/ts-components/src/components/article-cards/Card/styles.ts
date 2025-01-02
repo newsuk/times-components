@@ -1,5 +1,46 @@
 import styled from 'styled-components';
 
+interface HiddenProps {
+  xs?: boolean;
+  sm?: boolean;
+  md?: boolean;
+  lg?: boolean;
+}
+
+export const Hidden = styled.div<HiddenProps>`
+  ${({ xs }) =>
+    xs &&
+    `
+    @media (max-width: 767px) {
+      display: none;
+    }
+  `}
+
+  ${({ sm }) =>
+    sm &&
+    `
+    @media (min-width: 768px) and (max-width: 1023px) {
+      display: none;
+    }
+  `}
+
+  ${({ md }) =>
+    md &&
+    `
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      display: none;
+    }
+  `}
+
+  ${({ lg }) =>
+    lg &&
+    `
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  `}
+`;
+
 interface CardProps {
   $numOfArticles: number;
 }
@@ -9,7 +50,6 @@ export const StyledCard = styled.div<CardProps>`
   flex-direction: column;
 
   @media (min-width: 768px) {
-    /* Assuming 'md' is 768px */
     position: relative;
 
     &::after {
@@ -31,7 +71,6 @@ export const StyledCard = styled.div<CardProps>`
   }
 
   @media (min-width: 1024px) {
-    /* Assuming 'lg' is 1024px */
     ${({ $numOfArticles }) =>
       $numOfArticles === 1 &&
       `
@@ -63,6 +102,20 @@ export const StyledImg = styled.img`
 
 export const StyledContent = styled.div<CardProps>`
   margin-block-start: 16px;
+
+  //   @media (max-width: 767px) {
+  //   &:not(:first-child) {
+  //     margin-block-start: 0px;
+  //   }
+
+  //   &:first-child {
+  //     margin-block-start: 16px;
+  //   }
+  // }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (min-width: 1024px) {
     ${({ $numOfArticles }) =>
       $numOfArticles === 1 &&
@@ -83,13 +136,16 @@ export const StyledText = styled.span<CardProps>`
   margin-block-start: 16px;
   line-height: 21px;
 
-  @media (min-width: 768px) {
-    display: block;
+  @media (max-width: 767px) {
+    display: none;
   }
 `;
 
 export const StyledDivider = styled.hr`
   border-style: dashed;
+  border-color: rgb(204, 204, 204);
+  border-width: 1px 0px 0px;
+  margin-block: 20px;
 
   @media (min-width: 768px) {
     display: none;

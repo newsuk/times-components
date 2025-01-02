@@ -7,36 +7,55 @@ import {
   StyledLink,
   StyledMedia,
   StyledPicture,
-  StyledText
+  StyledText,
+  Hidden
 } from './styles';
 import { ArticleCardProps } from '../types';
 
 const Card = (props: ArticleCardProps) => {
-  const article = props.article;
+  const { article, numOfArticles, isLeadingArticle, isLastCard } = props;
 
   return (
-    <StyledCard $numOfArticles={props.numOfArticles}>
-      <a
-        href={article.url}
-        onClick={() => {
-          // tslint:disable-next-line:no-console
-          console.log(article.headline);
-        }}
-      >
-        <StyledMedia>
-          <StyledPicture>
-            <StyledImg src={article.image.url} />
-          </StyledPicture>
-        </StyledMedia>
-      </a>
-      <StyledContent $numOfArticles={props.numOfArticles}>
-        <StyledLink $numOfArticles={props.numOfArticles} href={article.url}>
+    <StyledCard $numOfArticles={numOfArticles}>
+      {isLeadingArticle ? (
+        <a
+          href={article.url}
+          onClick={() => {
+            // tslint:disable-next-line:no-console
+            console.log(article.headline);
+          }}
+        >
+          <StyledMedia>
+            <StyledPicture>
+              <StyledImg src={article.image.url} />
+            </StyledPicture>
+          </StyledMedia>
+        </a>
+      ) : (
+        <Hidden xs>
+          <a
+            href={article.url}
+            onClick={() => {
+              // tslint:disable-next-line:no-console
+              console.log(article.url);
+            }}
+          >
+            <StyledMedia>
+              <StyledPicture>
+                <StyledImg src={article.image.url} />
+              </StyledPicture>
+            </StyledMedia>
+          </a>
+        </Hidden>
+      )}
+      <StyledContent $numOfArticles={numOfArticles}>
+        <StyledLink $numOfArticles={numOfArticles} href={article.url}>
           {article.headline}
         </StyledLink>
-        <StyledText $numOfArticles={props.numOfArticles}>
+        <StyledText $numOfArticles={numOfArticles}>
           {article.summary}
         </StyledText>
-        {!props.isLastCard && <StyledDivider data-testid="divider" />}
+        {!isLastCard && <StyledDivider />}
       </StyledContent>
     </StyledCard>
   );
