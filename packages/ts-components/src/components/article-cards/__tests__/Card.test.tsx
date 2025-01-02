@@ -7,7 +7,7 @@ import Card from '../Card/Card';
 describe('Card Component', () => {
   const mockProps: ArticleCardProps = {
     article: {
-      id: 1,
+      id: '1',
       url: 'https://example.com',
       headline: 'Test Headline',
       image: { url: 'https://example.com/image.jpg', alt: 'test' },
