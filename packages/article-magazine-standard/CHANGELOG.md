@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.89.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.89.3...@times-components/article-magazine-standard@3.89.4) (2024-12-31)
+
+
+### Bug Fixes
+
+* **TMW-000:** Broken header style ([#4017](https://github.com/newsuk/times-components/issues/4017)) ([560435a](https://github.com/newsuk/times-components/commit/560435affdda0c975d5f58b616b978a8fe3b3755))
+
+
+
+
+
 ## [3.89.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.89.2...@times-components/article-magazine-standard@3.89.3) (2024-12-17)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
