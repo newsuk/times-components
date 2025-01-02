@@ -4,10 +4,38 @@ import { Container, Divider, Grid, Title } from './styles';
 import { ArticleCardsProps, ArticleProps } from './types';
 
 export const ArticleCard: FC<ArticleCardsProps> = ({ element }) => {
+  const decodeBase64 = (value: string): string => {
+    try {
+      const binaryString = atob(value);
+
+      const textDecoder = new TextDecoder('utf-8');
+      const binaryArray = Uint8Array.from(binaryString, char =>
+        char.charCodeAt(0)
+      );
+
+      return textDecoder.decode(binaryArray);
+    } catch (error) {
+      // tslint:disable-next-line:no-console
+      console.error('Failed to decode base64 string:', value, error);
+      return value;
+    }
+  };
+
   const decodedArticles: ArticleProps[] = JSON.parse(
     atob(element.articles || '')
-  );
-  const numOfArticles = element.articles.length;
+  ).map((article: ArticleProps) => ({
+    id: decodeBase64(article.id),
+    headline: decodeBase64(article.headline),
+    summary: decodeBase64(article.summary),
+    label: decodeBase64(article.label),
+    url: decodeBase64(article.url),
+    image: {
+      alt: decodeBase64(article.image.alt),
+      url: decodeBase64(article.image.url)
+    }
+  }));
+
+  const numOfArticles = decodedArticles.length;
 
   return (
     <Container>

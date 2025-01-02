@@ -30,8 +30,8 @@ describe('ArticleCard Component', () => {
     title: 'Test Title',
     articles: btoa(
       JSON.stringify([
-        { id: '1', headline: 'Headline 1' },
-        { id: '2', headline: 'Headline 2' }
+        { id: '1', headline: 'Headline 1', image: { alt: "Alt Text 1", url: "https://example.com/image1.jpg" } },
+        { id: '2', headline: 'Headline 2',  image: { alt: "Alt Text 1", url: "https://example.com/image1.jpg" }  }
       ])
     )
   };

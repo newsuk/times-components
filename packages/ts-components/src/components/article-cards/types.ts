@@ -1,5 +1,5 @@
 export type ArticleProps = {
-  id: number;
+  id: string;
   image: {
     alt: string;
     url: string;
