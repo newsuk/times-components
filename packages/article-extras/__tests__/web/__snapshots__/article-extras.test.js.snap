@@ -44,16 +44,6 @@ Array [
       />
     </div>
   </div>,
-  <ArticleComments
-    articleId="dummy-article-id"
-    commentingConfig={
-      Object {
-        "account": "sp_pCQgrRiN",
-      }
-    }
-    isCommentEnabled={true}
-    isEnabled={true}
-  />,
 ]
 `;
 
@@ -226,16 +216,6 @@ Array [
       />
     </div>
   </div>,
-  <ArticleComments
-    articleId="dummy-article-id"
-    commentingConfig={
-      Object {
-        "account": "sp_pCQgrRiN",
-      }
-    }
-    isCommentEnabled={true}
-    isEnabled={true}
-  />,
 ]
 `;
 
@@ -283,15 +263,5 @@ Array [
       />
     </div>
   </div>,
-  <ArticleComments
-    articleId="dummy-article-id"
-    commentingConfig={
-      Object {
-        "account": "sp_pCQgrRiN",
-      }
-    }
-    isCommentEnabled={true}
-    isEnabled={true}
-  />,
 ]
 `;
