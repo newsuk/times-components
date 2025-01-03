@@ -55,6 +55,7 @@ describe("comments-login", () => {
 
 describe("User States", () => {
   it("enabled comments", () => {
+    document.cookie = "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUzI1NiJ9";
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
@@ -84,7 +85,8 @@ describe("User States", () => {
   });
 
   it("RA Users", () => {
-    UserState.mockStates = [UserState.showJoinTheConversationDialog];
+    document.cookie =
+      "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUzI1NiJc9";
 
     const { asFragment, getAllByText } = renderComments({
       count: 123,

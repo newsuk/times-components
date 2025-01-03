@@ -88,9 +88,7 @@ const ArticleSkeleton = ({
     sharingEnabled,
     publishedTime,
     isSavingEnabled,
-    isSharingEnabled,
-    isCommentEnabled,
-    isEntitlementFeatureEnabled
+    isSharingEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -448,11 +446,9 @@ const ArticleSkeleton = ({
                       commentingConfig={commentingConfig}
                       topics={topics}
                       isSharingSavingEnabled={isSharingSavingEnabled}
-                      isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
-                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
                     />
                   )}
                 </LazyLoad>

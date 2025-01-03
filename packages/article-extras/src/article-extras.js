@@ -44,11 +44,9 @@ const ArticleExtras = ({
   commentingConfig,
   topics,
   isSharingSavingEnabled,
-  isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  domainSpecificUrl,
-  isEntitlementFeatureEnabled
+  domainSpecificUrl
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -143,15 +141,15 @@ const ArticleExtras = ({
         </UserState>
       )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
-      <ArticleComments
-        articleId={articleId}
-        isEnabled={commentsEnabled}
-        commentingConfig={commentingConfig}
-        isCommentEnabled={isCommentEnabled}
-        storefrontConfig={storefrontConfig}
-        domainSpecificUrl={domainSpecificUrl}
-        isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
-      />
+      <UserState state={UserState.showArticleComments}>
+        <ArticleComments
+          articleId={articleId}
+          isEnabled={commentsEnabled}
+          commentingConfig={commentingConfig}
+          storefrontConfig={storefrontConfig}
+          domainSpecificUrl={domainSpecificUrl}
+        />
+      </UserState>
     </UserState>
   );
 };
@@ -174,11 +172,9 @@ ArticleExtras.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
-  isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleExtras.defaultProps = {
@@ -186,7 +182,6 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   isSharingSavingEnabled: true,
-  isCommentEnabled: true,
   breadcrumbs: []
 };
 
