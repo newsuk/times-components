@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useState } from "react";
+import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
@@ -89,9 +89,12 @@ describe("User States", () => {
   });
 
   it("RA Users", () => {
-    UserState.mockStates = [UserState.showJoinTheConversationDialog, UserState.showArticleComments];
+    UserState.mockStates = [
+      UserState.showJoinTheConversationDialog,
+      UserState.showArticleComments
+    ];
     document.cookie =
-    "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUfzI1NiJc9";
+      "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUfzI1NiJc9";
     const { asFragment, getAllByText } = renderComments({
       count: 123,
       enabled: true
