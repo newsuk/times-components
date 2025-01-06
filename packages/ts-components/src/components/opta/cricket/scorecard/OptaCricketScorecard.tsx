@@ -17,7 +17,8 @@ export const OptaCricketScorecard: React.FC<{
   competition: string;
   match: string;
   full_width?: boolean;
-}> = React.memo(({ competition, match, full_width }) => {
+  height?: number;
+}> = React.memo(({ competition, match, full_width, height }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -68,11 +69,11 @@ export const OptaCricketScorecard: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady} fullWidth={full_width}>
+    <Container border={isReady} fullWidth={full_width} $height={height}>
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer>
+        <PlaceholderContainer height={height}>
           <Placeholder />
         </PlaceholderContainer>
       )}
