@@ -27,7 +27,7 @@ export const Container = styled.div<{
 `;
 
 export const PlaceholderContainer = styled.div<{ height?: number }>`
-  height: ${({ height }) => height || '200'}px;
+  height: ${({ height }) => height || 200}px;
   position: relative;
 `;
 
