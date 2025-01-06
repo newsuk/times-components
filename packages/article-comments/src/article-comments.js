@@ -74,8 +74,8 @@ const ArticleComments = ({
   return (
     <UserState
       state={UserState.showArticleComments}
-      // fallback={<DisabledComments />}
-      // serverRender={false}
+      fallback={<DisabledComments />}
+      serverRender={false}
     >
       {content}
     </UserState>
