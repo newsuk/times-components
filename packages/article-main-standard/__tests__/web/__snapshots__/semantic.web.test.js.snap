@@ -354,6 +354,14 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       <span>
         PROMOTED CONTENT
       </span>
+      Join the conversation
+      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+      <a
+        href="#"
+        onClick={null}
+      >
+        View offers
+      </a>
     </article>
   </main>
 </article>
