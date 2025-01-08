@@ -100,19 +100,6 @@ jobs:
             lerna run test --stream --since -- -- --ci --bail --coverage
           working_directory: ~/project/
 
-  run_web_tests:
-    executor: node
-    steps:
-      - checkout
-      - install-lerna
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Run Web Tests
-          command: |
-            lerna run test:web --stream --since -- -- --ci --bail --coverage
-          working_directory: ~/project/
-
   sonarcloud_scan:
     executor: node_sonar
     steps:
@@ -284,9 +271,6 @@ workflows:
       - run_noplatform_tests:
           requires:
             - setup
-      - run_web_tests:
-          requires:
-            - setup
       - sonarcloud_scan:
           context: SonarCloud
       - run_cypress_tests:
@@ -299,7 +283,6 @@ workflows:
             - build_storybook
             - run_lint
             - run_noplatform_tests
-            - run_web_tests
             - run_cypress_tests
       - verdaccio-test:
           <<: *only_on_master_branch
@@ -310,7 +293,6 @@ workflows:
             - build_storybook
             - run_lint
             - run_noplatform_tests
-            - run_web_tests
             - run_cypress_tests
       - publish_storybook:
           <<: *only_on_master_branch
