@@ -39,7 +39,7 @@ export const InlineNewsletterPuff = ({
 
         if (isLoading || !newsletter) {
           return (
-            <InpContainer style={{ height: 400 }}>
+            <InpContainer>
               <Placeholder />
             </InpContainer>
           );
