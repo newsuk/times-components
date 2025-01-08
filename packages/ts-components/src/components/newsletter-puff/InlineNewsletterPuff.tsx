@@ -39,7 +39,7 @@ export const InlineNewsletterPuff = ({
 
         if (isLoading || !newsletter) {
           return (
-            <InpContainer style={{ height: 257 }}>
+            <InpContainer id="INPCONTAINER InlineNewsletterPuff.tsx">
               <Placeholder />
             </InpContainer>
           );
