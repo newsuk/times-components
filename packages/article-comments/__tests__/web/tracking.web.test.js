@@ -243,3 +243,17 @@ it("should track when user clicks on their username", () => {
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
 });
+
+it("should track when user clicks view more comments", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.viewMoreComments();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
