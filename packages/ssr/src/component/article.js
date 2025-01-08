@@ -40,9 +40,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isEntitlementFeatureEnabled
   } = data;
 
-  // eslint-disable-next-line no-console
-  console.log("[SSR Article] Data: ", data);
-
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -87,6 +84,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               analyticsStream,
               article: {
                 ...article,
+                ssrAttr: "new-ssr-attribute",
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
