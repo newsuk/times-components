@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 
 import styles from "./styles";
 
-
 export const HeadingForRelatedArticles = styled.h3`
   border: 0px solid black;
   box-sizing: border-box;
