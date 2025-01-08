@@ -48,6 +48,9 @@ jobs:
     executor: node
     steps:
       - checkout
+      - run:
+          name: "Check if PR is up-to-date and there are no merge commits"
+          command: ./.circleci/check-pr-branch.sh
       - restore-yarn
       - install-dependencies
       - save-yarn
@@ -305,7 +308,6 @@ workflows:
       - run_cypress_tests:
           requires:
             - setup
-
       - verdaccio-test-approval:
           <<: *only_on_master_branch
           type: approval
@@ -337,12 +339,7 @@ workflows:
           type: approval
           <<: *only_on_pr_branch
           requires:
-            - build_storybook
-            - run_lint
-            - run_noplatform_tests
-            - run_web_tests
-            - run_unit_tests
-            - run_cypress_tests
+            - setup
       - publish_canary:
           <<: *only_on_pr_branch
           requires:
