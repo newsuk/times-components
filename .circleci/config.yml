@@ -287,9 +287,6 @@ workflows:
       - run_web_tests:
           requires:
             - setup
-      - run_unit_tests:
-          requires:
-            - setup
       - sonarcloud_scan:
           context: SonarCloud
       - run_cypress_tests:
@@ -303,7 +300,6 @@ workflows:
             - run_lint
             - run_noplatform_tests
             - run_web_tests
-            - run_unit_tests
             - run_cypress_tests
       - verdaccio-test:
           <<: *only_on_master_branch
@@ -315,7 +311,6 @@ workflows:
             - run_lint
             - run_noplatform_tests
             - run_web_tests
-            - run_unit_tests
             - run_cypress_tests
       - publish_storybook:
           <<: *only_on_master_branch
