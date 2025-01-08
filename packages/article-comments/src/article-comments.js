@@ -31,7 +31,7 @@ const ArticleComments = ({
     };
 
     const fetchClientSideCookie = () => {
-      const cookies = document.cookie.split("; ");
+      const cookies = window.document.cookie.split("; ");
       const authDecisionCookie = cookies.find(row =>
         row.startsWith("auth-decisions=")
       );
