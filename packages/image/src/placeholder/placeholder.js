@@ -11,7 +11,7 @@ function Placeholder({ borderRadius = 0 }) {
     borderRadius
   };
   return (
-    <TcView height="600px" style={viewStyles} width="100%">
+    <TcView height="140px" style={viewStyles} width="100%" className="test-placeholder">
       <T />
     </TcView>
   );
