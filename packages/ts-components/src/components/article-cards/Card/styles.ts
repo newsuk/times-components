@@ -13,7 +13,7 @@ export const Hidden = styled.div<HiddenProps>`
     `
     @media (max-width: 767px) {
       display: none;
-    }
+}
   `}
 
   ${({ sm }) =>
@@ -44,7 +44,6 @@ export const Hidden = styled.div<HiddenProps>`
 interface CardProps {
   $numOfArticles: number;
 }
-
 export const StyledCard = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
@@ -52,22 +51,26 @@ export const StyledCard = styled.div<CardProps>`
   @media (min-width: 768px) {
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -16px;
-      width: 1px;
-      height: 100%;
-      background-color: #e4e4e4;
-    }
-
-    &:nth-of-type(4n),
-    &:last-child {
+    ${({ $numOfArticles }) =>
+      $numOfArticles > 1 &&
+      `
       &::after {
-        display: none;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -16px;
+        width: 1px;
+        height: 100%;
+        background-color: #e4e4e4;
       }
-    }
+
+      &:nth-of-type(4n),
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    `};
   }
 
   @media (min-width: 1024px) {
@@ -99,23 +102,25 @@ export const StyledImg = styled.img`
   object-fit: cover;
   display: inline-block;
 `;
-
 export const StyledContent = styled.div<CardProps>`
-  margin-block-start: 16px;
-
-  //   @media (max-width: 767px) {
-  //   &:not(:first-child) {
-  //     margin-block-start: 0px;
-  //   }
-
-  //   &:first-child {
-  //     margin-block-start: 16px;
-  //   }
-  // }
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 375px) {
+    &:nth-of-type(1) {
+      margin-block-start: 16px;
+    }
+
+    &:not(:nth-of-type(1)) {
+      margin-block-start: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-block-start: 16px;
+  }
+
   @media (min-width: 1024px) {
     ${({ $numOfArticles }) =>
       $numOfArticles === 1 &&
@@ -146,6 +151,7 @@ export const StyledDivider = styled.hr`
   border-color: rgb(204, 204, 204);
   border-width: 1px 0px 0px;
   margin-block: 20px;
+  width: 100%;
 
   @media (min-width: 768px) {
     display: none;
@@ -156,7 +162,7 @@ export const StyledLink = styled.a<CardProps>`
   font-weight: 700;
   font-family: 'Times Modern';
   font-size: 20px;
-  line-height: 23px;
+  line-height: 22.5px;
   text-decoration: none;
   color: rgb(1, 0, 13);
 
@@ -166,6 +172,24 @@ export const StyledLink = styled.a<CardProps>`
       `
       font-size: 24px;
       line-height: 27px;
+    `};
+  }
+
+  @media (max-width: 768px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles >= 2 &&
+      `
+      font-size: 20px;
+      line-height: 22.5px;
+    `};
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 1 &&
+      `
+      font-size: 28px;
+      line-height: 31.5px;
     `};
   }
 
