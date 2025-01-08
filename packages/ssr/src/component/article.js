@@ -60,6 +60,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             : providerData.article;
           const articleTemplate = article ? article.template : null;
 
+          article.ssrAttr = 'new-ssr-attribute';
+
           // eslint-disable-next-line no-console
           console.log("Provider data: ", article);
 
@@ -84,7 +86,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               analyticsStream,
               article: {
                 ...article,
-                ssrAttr: "new-ssr-attribute",
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
