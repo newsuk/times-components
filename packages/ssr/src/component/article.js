@@ -40,6 +40,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isEntitlementFeatureEnabled
   } = data;
 
+  // eslint-disable-next-line no-console
+  console.log("[SSR Article] Data: ", data);
+
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -59,6 +62,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
+
+          // eslint-disable-next-line no-console
+          console.log("Provider data: ", article);
 
           return React.createElement(
             ContextProviderWithDefaults,
