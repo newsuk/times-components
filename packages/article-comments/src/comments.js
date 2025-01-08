@@ -40,6 +40,7 @@ class Comments extends Component {
       onCommentNotificationClicked,
       onCommentUsernameClicked,
       onCommentSettingsClicked,
+      viewMoreComments,
       domainSpecificUrl
     } = this.props;
 
@@ -108,6 +109,10 @@ class Comments extends Component {
       "spot-im-open-user-profile",
       onCommentUsernameClicked
     );
+    document.addEventListener(
+      "spot-im-show-more-comments-clicked",
+      viewMoreComments
+    );
     document.addEventListener("spot-im-share-type", event =>
       getShareEvent(event)
     );
@@ -167,7 +172,8 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked
+      onCommentSettingsClicked,
+      viewMoreComments
     } = this.props;
 
     return (
@@ -188,6 +194,7 @@ class Comments extends Component {
         onCommentNotificationClicked={onCommentNotificationClicked}
         onCommentUsernameClicked={onCommentUsernameClicked}
         onCommentSettingsClicked={onCommentSettingsClicked}
+        viewMoreComments={viewMoreComments}
       >
         <div
           ref={el => {
@@ -220,6 +227,7 @@ Comments.propTypes = {
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
   onCommentSettingsClicked: PropTypes.func,
+  viewMoreComments: PropTypes.func,
   domainSpecificUrl: PropTypes.string.isRequired
 };
 
@@ -239,7 +247,8 @@ Comments.defaultProps = {
   onCommentRecommend: () => {},
   onCommentNotificationClicked: () => {},
   onCommentUsernameClicked: () => {},
-  onCommentSettingsClicked: () => {}
+  onCommentSettingsClicked: () => {},
+  viewMoreComments: () => {}
 };
 
 export default withTrackEvents(Comments);
