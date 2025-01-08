@@ -53,7 +53,7 @@ export const Newsletter = ({
   );
   return (
     <React.Fragment>
-      <InpContainer section={section}>
+      <InpContainer section={section} id="INPCONTAINER Newsletter.tsx">
         {loading && <LoadingOverlay />}
         {!error &&
           justSubscribed && (
