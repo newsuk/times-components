@@ -13,7 +13,7 @@ const {
   defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
-const { addAttribute } = require("../lib/add-attribute");
+const { setExternalLinkTargets } = require("../lib/set-external-links");
 
 const scale = scales.large;
 
@@ -60,7 +60,12 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
-          const formattedArticle = addAttribute(article);
+          const formattedArticle = article.content.map(contentItem =>
+            setExternalLinkTargets(contentItem.children)
+          );
+
+          // eslint-disable-next-line no-console
+          console.log("Article: ", article);
 
           // eslint-disable-next-line no-console
           console.log("Formatted Article: ", formattedArticle);
@@ -85,7 +90,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               analyticsStream,
               article: {
-                ...formattedArticle,
+                ...article,
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
