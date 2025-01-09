@@ -6,7 +6,7 @@ exports[`<AutoNewsletterPuff> display function always renders 1`] = `
   style="display: block;"
 >
   <div
-    class="sc-htpNat sc-ifAKCX kDQZra"
+    class="sc-htpNat sc-ifAKCX kjWTLC"
   >
     <div
       class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -44,7 +44,7 @@ exports[`<AutoNewsletterPuff> display function doesnt render without consent 1`]
   style="display: none;"
 >
   <div
-    class="sc-htpNat sc-ifAKCX kDQZra"
+    class="sc-htpNat sc-ifAKCX kjWTLC"
   >
     <div
       class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -82,7 +82,7 @@ exports[`<AutoNewsletterPuff> using a display function [1, 3] count = 1 1`] = `
   style="display: block;"
 >
   <div
-    class="sc-htpNat sc-ifAKCX kDQZra"
+    class="sc-htpNat sc-ifAKCX kjWTLC"
   >
     <div
       class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -120,7 +120,7 @@ exports[`<AutoNewsletterPuff> using a display function [1, 3] count = 2 1`] = `
   style="display: none;"
 >
   <div
-    class="sc-htpNat sc-ifAKCX kDQZra"
+    class="sc-htpNat sc-ifAKCX kjWTLC"
   >
     <div
       class="tc-view__TcView-nuazoi-0 fPjBcr"
