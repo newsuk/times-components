@@ -1,4 +1,5 @@
 module.exports.addAttribute = article => ({
   ...article,
-  content: [...article.content[0], ...article.content[1]]
+  content: [...article.content.slice(0, 2)],
+  ssrAttr: "new-ssr-attr"
 });
