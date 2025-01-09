@@ -43,16 +43,16 @@ export const InpContainer = styled(View)<{ section?: string }>`
   margin-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};
   margin-left: ${spacing(2)};
-  height: 157.5px;
+  height: 157.5;
 
   @media (min-width: ${breakpoints.medium}px) {
     margin: 0 auto ${spacing(4)};
     width: 80.8%;
-    height: 157.5px;
+    height: 157.5;
   }
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    height: 117.5px;
+    height: 117.5;
   }
 `;
 
