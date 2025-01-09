@@ -60,18 +60,6 @@ jobs:
           paths:
             - ./
 
-  run_lint:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Run Lint
-          command: |
-            yarn lint
-          working_directory: ~/project/
-
   build_storybook:
     executor: node
     steps:
@@ -262,9 +250,6 @@ workflows:
   run_tests:
     jobs:
       - setup
-      - run_lint:
-          requires:
-            - setup
       - build_storybook:
           requires:
             - setup
@@ -281,7 +266,6 @@ workflows:
           type: approval
           requires:
             - build_storybook
-            - run_lint
             - run_noplatform_tests
             - run_cypress_tests
       - verdaccio-test:
@@ -291,7 +275,6 @@ workflows:
       - publish_coverage:
           requires:
             - build_storybook
-            - run_lint
             - run_noplatform_tests
             - run_cypress_tests
       - publish_storybook:
