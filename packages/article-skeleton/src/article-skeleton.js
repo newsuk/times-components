@@ -13,7 +13,8 @@ import {
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -373,6 +374,10 @@ const ArticleSkeleton = ({
                               imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                             }
                           ]}
+                        />
+                        <QuizleSidebar
+                          pageLink={`${domainSpecificUrl}/quizle`}
+                          sectionTitle="Today's Quizle"
                         />
                       </PuzzlesSidebar>
                     </SidebarWarpper>
