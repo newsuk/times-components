@@ -60,9 +60,11 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
-          const formattedArticle = article.content.map(contentItem =>
+          const articleContent = article.content.map(contentItem =>
             setExternalLinkTargets(contentItem.children)
           );
+
+          const formattedArticle = { ...article, content: articleContent };
 
           // eslint-disable-next-line no-console
           console.log("Article: ", article);
