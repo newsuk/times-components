@@ -39,7 +39,7 @@ export const InlineNewsletterPuff = ({
 
         if (isLoading || !newsletter) {
           return (
-            <InpContainer>
+            <InpContainer id="InpContainer">
               <Placeholder />
             </InpContainer>
           );
