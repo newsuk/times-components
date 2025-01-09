@@ -27,10 +27,11 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
   const backupQuestion = [
     {
       id: 0,
-      publishDate: "2024-10-29T00:00:00.000Z",
-      question: "Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?",
-      solution: "Corgi",
-    },
+      publishDate: '2024-10-29T00:00:00.000Z',
+      question:
+        "Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?",
+      solution: 'Corgi'
+    }
   ];
 
   const fetchQuestions = async () => {
@@ -38,11 +39,12 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
       const response = await fetch(
         'https://tnl-render.tools.news/production/content/puzzles/quizle/questions.json'
       );
-      if (!response.ok) throw new Error('Failed to fetch');
+      if (!response.ok) {
+        throw new Error('Failed to fetch');
+      }
       const data = await response.json();
       return data;
     } catch (error) {
-      console.error('Error fetching questions:', error);
       return backupQuestion; // Return backup questions on error
     }
   };
@@ -50,12 +52,13 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
   const findTodaysQuestion = (questions: typeof backupQuestion) => {
     const today = new Date().toDateString();
     const todaysQuestion = questions.find(
-      (q) => new Date(q.publishDate).toDateString() === today
+      q => new Date(q.publishDate).toDateString() === today
     );
-    return (
-      todaysQuestion?.question ||
-      backupQuestion[0]?.question || 'No questions available.'
-    );
+    return todaysQuestion && todaysQuestion.question
+      ? todaysQuestion.question
+      : backupQuestion[0] && backupQuestion[0].question
+        ? backupQuestion[0].question
+        : 'No questions available.';
   };
 
   useEffect(() => {
@@ -97,17 +100,14 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
           {currentQuestion}
         </p>
         <Link
-              href={pageLink}
-              onClick={() =>
-                handleClick(
-                  fireAnalyticsEvent,
-                  'quizle sidebar: link selected'
-                )
-              }
-              className="quizle-link"
-            >
+          href={pageLink}
+          onClick={() =>
+            handleClick(fireAnalyticsEvent, 'quizle sidebar: link selected')
+          }
+          className="quizle-link"
+        >
           Test your knowledge
-          <span className="q-arrow"></span>
+          <span className="q-arrow" />
         </Link>
       </Bottom>
       <Divider />

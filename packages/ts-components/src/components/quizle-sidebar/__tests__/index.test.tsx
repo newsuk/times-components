@@ -61,7 +61,7 @@ describe('QuizleSidebar', () => {
         event_navigation_action: 'navigation',
         event_navigation_name: 'quizle sidebar: link selected',
         event_navigation_browsing_method: 'click',
-        component_name: 'Quizle Sidebar',
+        component_name: 'Quizle Sidebar'
       }
     });
   });
