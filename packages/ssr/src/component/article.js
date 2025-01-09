@@ -90,7 +90,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               analyticsStream,
               article: {
-                ...article,
+                ...formattedArticle,
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
