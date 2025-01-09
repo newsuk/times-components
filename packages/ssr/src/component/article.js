@@ -13,6 +13,7 @@ const {
   defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
+const { addAttribute } = require("../lib/add-attribute");
 
 const scale = scales.large;
 
@@ -59,9 +60,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
+          const formattedArticle = addAttribute(article);
 
           // eslint-disable-next-line no-console
-          console.log("Provider data: ", article);
+          console.log("Formatted Article: ", formattedArticle);
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -83,7 +85,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               analyticsStream,
               article: {
-                ...article,
+                ...formattedArticle,
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
