@@ -33,7 +33,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
       solution: 'Corgi'
     }
   ];
-  //fetching quizle question from api
+  // fetching quizle question from api
   const fetchQuestions = async () => {
     try {
       const response = await fetch(
