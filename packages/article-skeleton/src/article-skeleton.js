@@ -221,6 +221,7 @@ const ArticleSkeleton = ({
     [CanShowPuzzleSidebar, section]
   );
 
+  console.log("Article url", articleUrl);
   return (
     <StickyProvider>
       <TrackingContextProvider
