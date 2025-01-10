@@ -6,7 +6,8 @@ import {
   showLiveUpdateButton,
   showTokenisedEmailShare,
   showCommentingModule,
-  showJoinTheConversationDialog
+  showJoinTheConversationDialog,
+  showArticleComments
 } from "../src/matchers";
 
 const defaultUserState = {
@@ -202,5 +203,20 @@ describe("user state should", () => {
 
   describe("showJoinTheConversationDialog", () => {
     hasAccessLoggedInMeteredUser(showJoinTheConversationDialog);
+  });
+
+  describe("showArticleComments", () => {
+    it("should return true if hasAccess", () => {
+      const userState = {
+        ...defaultUserState,
+        hasAccess: true
+      };
+      expect(showArticleComments(userState)).toBe(true);
+    });
+
+    it("should return false if not hasAccess", () => {
+      const userState = { ...defaultUserState };
+      expect(showArticleComments(userState)).toBe(false);
+    });
   });
 });
