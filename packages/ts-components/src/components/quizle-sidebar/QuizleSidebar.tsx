@@ -45,7 +45,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
       const data = await response.json();
       return data;
     } catch (error) {
-      return backupQuestion; // Return backup questions on error
+      return backupQuestion;
     }
   };
 
