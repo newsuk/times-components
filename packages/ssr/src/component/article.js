@@ -60,9 +60,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
-          const articleContent = article.content.map(contentItem =>
-            setExternalLinkTargets(contentItem.children)
-          );
+          const articleContent = setExternalLinkTargets(article.content);
 
           const formattedArticle = { ...article, content: articleContent };
 
