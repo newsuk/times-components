@@ -55,6 +55,12 @@ describe("comments-login", () => {
 
 describe("User States", () => {
   it("enabled comments", () => {
+    global.window = Object.create(window);
+
+    Object.defineProperty(window.document, "cookie", {
+      writable: true,
+      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ."
+    });
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
@@ -68,6 +74,11 @@ describe("User States", () => {
   });
 
   it("uses com host when received", () => {
+    global.window = Object.create(window);
+    Object.defineProperty(window.document, "cookie", {
+      writable: true,
+      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ."
+    });
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true,
@@ -84,8 +95,12 @@ describe("User States", () => {
   });
 
   it("RA Users", () => {
-    UserState.mockStates = [UserState.showJoinTheConversationDialog];
-
+    global.window = Object.create(window);
+    UserState.mockStates = [UserState.showArticleComments];
+    Object.defineProperty(window.document, "cookie", {
+      writable: true,
+      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUfzI1NiJc9."
+    });
     const { asFragment, getAllByText } = renderComments({
       count: 123,
       enabled: true

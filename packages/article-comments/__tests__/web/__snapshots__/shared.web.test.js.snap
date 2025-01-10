@@ -3,8 +3,149 @@
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
   .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.c1 {
+  font-family: TimesModern-Bold;
+  font-size: 32px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 24px;
+}
+
+.c2 {
+  font-family: TimesDigitalW04;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008387;
+  color: white;
+  font-family: Roboto-Regular;
+  width: 127px;
+  height: 48px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 24px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 88px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      Join the conversation
+    </div>
+    <div
+      class="c2"
+    >
+      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+    </div>
+    <a
+      class="c3"
+      href="#"
+    >
+      View offers
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`User States No user state 1`] = `
+<DocumentFragment>
+  .c0 {
   margin-left: auto;
   margin-right: auto;
+}
+
+.c2 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c1 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
 }
 
 @media (min-width:768px) {
@@ -21,24 +162,28 @@ exports[`Render comments label, when comments are loaded 1`] = `
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
+    <p
+      class="c1"
+    >
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="c3"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+      >
+        here
+      </a>
+      .
+    </p>
   </div>
 </DocumentFragment>
 `;
-
-exports[`User States No user state 1`] = `<DocumentFragment />`;
 
 exports[`User States RA Users 1`] = `
 <DocumentFragment>
@@ -222,81 +367,102 @@ exports[`User States uses com host when received 1`] = `
 exports[`disabled comments 1`] = `
 <DocumentFragment>
   .c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.c2 {
-  color: #696969;
-  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  margin: 0;
-  padding-bottom: 30px;
-  padding-top: 5px;
-  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px;
 }
 
 .c1 {
-  color: #333333;
-  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
-  font-size: 27px;
-  margin: 0;
-  padding-bottom: 5px;
-  padding-top: 30px;
+  font-family: TimesModern-Bold;
+  font-size: 32px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   text-align: center;
+  padding: 24px;
+}
+
+.c2 {
+  font-family: TimesDigitalW04;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
 }
 
 .c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008387;
+  color: white;
+  font-family: Roboto-Regular;
+  width: 127px;
+  height: 48px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 24px;
 }
 
 @media (min-width:768px) {
   .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
+    padding: 88px;
   }
 }
 
 <div
     class="c0"
   >
-    <p
+    <div
       class="c1"
     >
-      Comments for this article have been turned off
-    </p>
-    <p
+      Join the conversation
+    </div>
+    <div
       class="c2"
     >
-      Comments are subject to our community guidelines, which can be viewed 
-      <a
-        class="c3"
-        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
-      >
-        here
-      </a>
-      .
-    </p>
+      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+    </div>
+    <a
+      class="c3"
+      href="https://www.mockUrl.co.uk"
+    >
+      View offers
+    </a>
   </div>
 </DocumentFragment>
 `;
@@ -304,91 +470,207 @@ exports[`disabled comments 1`] = `
 exports[`single comment 1`] = `
 <DocumentFragment>
   .c0 {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.c1 {
+  font-family: TimesModern-Bold;
+  font-size: 32px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 24px;
+}
+
+.c2 {
+  font-family: TimesDigitalW04;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008387;
+  color: white;
+  font-family: Roboto-Regular;
+  width: 127px;
+  height: 48px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 24px;
 }
 
 @media (min-width:768px) {
   .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
+    padding: 88px;
   }
 }
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
+    <div
+      class="c1"
+    >
+      Join the conversation
     </div>
+    <div
+      class="c2"
+    >
+      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+    </div>
+    <a
+      class="c3"
+      href="https://www.mockUrl.co.uk"
+    >
+      View offers
+    </a>
   </div>
 </DocumentFragment>
 `;
 
-exports[`window listeners added all listeners added 1`] = `
-Array [
-  "spot-im-current-user-typing-start",
-  "spot-im-current-user-sent-message",
-  "spot-im-notification-drop-down-link",
-  "spot-im-user-up-vote-click",
-  "spot-im-sort-by-select",
-  "spot-im-user-clicked-reply",
-  "spot-im-clicked-settings",
-  "spot-im-user-notifications-click",
-  "spot-im-open-user-profile",
-  "spot-im-share-type",
-  "spot-im-renew-sso",
-]
-`;
+exports[`window listeners added all listeners added 1`] = `Array []`;
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
   .c0 {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.c1 {
+  font-family: TimesModern-Bold;
+  font-size: 32px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 24px;
+}
+
+.c2 {
+  font-family: TimesDigitalW04;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008387;
+  color: white;
+  font-family: Roboto-Regular;
+  width: 127px;
+  height: 48px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 24px;
 }
 
 @media (min-width:768px) {
   .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
+    padding: 88px;
   }
 }
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
+    <div
+      class="c1"
+    >
+      Join the conversation
     </div>
+    <div
+      class="c2"
+    >
+      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+    </div>
+    <a
+      class="c3"
+      href="https://www.mockUrl.co.uk"
+    >
+      View offers
+    </a>
   </div>
 </DocumentFragment>
 `;
