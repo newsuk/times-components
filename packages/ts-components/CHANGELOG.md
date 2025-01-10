@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.115.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.115.0...@times-components/ts-components@1.115.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* **TMRS-586:** add heights to opta widgets ([#4012](https://github.com/newsuk/times-components/issues/4012)) ([17e8a41](https://github.com/newsuk/times-components/commit/17e8a41d016f96c2b017efeb59968c2556493564))
+
+
+
+
+
 # [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.114.0...@times-components/ts-components@1.115.0) (2024-12-16)
 
 
