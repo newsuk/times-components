@@ -13,7 +13,8 @@ import {
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -221,7 +222,14 @@ const ArticleSkeleton = ({
     [CanShowPuzzleSidebar, section]
   );
 
-  console.log("Article url", articleUrl);
+  function getFirstSlugFromUrl(articleurl) {
+    const pathSegments = articleurl.split("/").filter(Boolean);
+    return pathSegments[0] || null; // Return the category slug if exists
+  }
+
+  const articlecategory = getFirstSlugFromUrl(articleUrl);
+  const quizCategories = ["culture", "life-style"];
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -353,27 +361,34 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        <ArticleSidebar
-                          pageLink={`${domainSpecificUrl}/puzzles`}
-                          sectionTitle="Puzzles"
-                          data={[
-                            {
-                              title: "Crossword",
-                              url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                            },
-                            {
-                              title: "Polygon",
-                              url: polygonUrl,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                            },
-                            {
-                              title: "Sudoku",
-                              url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                            }
-                          ]}
-                        />
+                        {!quizCategories.includes(articlecategory) ? (
+                          <ArticleSidebar
+                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              },
+                              {
+                                title: "Sudoku",
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              }
+                            ]}
+                          />
+                        ) : (
+                          <QuizleSidebar
+                            pageLink={`${domainSpecificUrl}/quizle`}
+                            sectionTitle="Today's Quizle"
+                          />
+                        )}
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
