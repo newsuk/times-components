@@ -233,6 +233,8 @@ const ArticleSkeleton = ({
   const articlecategory = getFirstSlugFromUrl(articleUrl);
   const quizCategories = ["culture", "life-style"];
 
+  console.log("articlecategory", articlecategory);
+  console.log("articleUrl", articleUrl);
   return (
     <StickyProvider>
       <TrackingContextProvider
