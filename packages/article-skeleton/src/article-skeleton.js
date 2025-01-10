@@ -223,6 +223,9 @@ const ArticleSkeleton = ({
   );
 
   function getFirstSlugFromUrl(articleurl) {
+    if (!articleurl || typeof articleurl !== "string") {
+      return null; // Return null for invalid or missing URLs
+    }
     const pathSegments = articleurl.split("/").filter(Boolean);
     return pathSegments[0] || null; // Return the category slug if exists
   }
