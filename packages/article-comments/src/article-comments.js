@@ -16,7 +16,7 @@ const ArticleComments = ({
   domainSpecificUrl
 }) => {
   const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
-    false
+    undefined
   );
 
   useEffect(() => {
@@ -69,6 +69,9 @@ const ArticleComments = ({
     );
   } else {
     content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
+  }
+  if (hasCommentingEntitlement === undefined) {
+    return null;
   }
 
   return <>{content}</>;
