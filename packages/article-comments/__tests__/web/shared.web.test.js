@@ -96,6 +96,7 @@ describe("User States", () => {
 
   it("RA Users", () => {
     global.window = Object.create(window);
+
     UserState.mockStates = [UserState.showArticleComments];
     Object.defineProperty(window.document, "cookie", {
       writable: true,

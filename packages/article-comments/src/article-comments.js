@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
@@ -72,15 +71,7 @@ const ArticleComments = ({
     content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
   }
 
-  return (
-    <UserState
-      state={UserState.showArticleComments}
-      fallback={<DisabledComments />}
-      serverRender={false}
-    >
-      {content}
-    </UserState>
-  );
+  return <>{content}</>;
 };
 
 ArticleComments.propTypes = {
