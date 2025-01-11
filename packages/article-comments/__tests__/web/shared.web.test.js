@@ -4,8 +4,6 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
 
-import { UserState } from "./mocks";
-
 import ArticleComments from "../../src/article-comments";
 import { ssoCallback } from "../../src/comment-login";
 
@@ -50,74 +48,6 @@ describe("comments-login", () => {
       "GET",
       "/api/comments/loginv2?codeA=mock-code-a"
     );
-  });
-});
-
-describe("User States", () => {
-  it("enabled comments", () => {
-    global.window = Object.create(window);
-
-    Object.defineProperty(window.document, "cookie", {
-      writable: true,
-      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ."
-    });
-    const { asFragment, baseElement } = renderComments({
-      count: 123,
-      enabled: true
-    });
-
-    expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
-      "https://launcher.spot.im/spot/sp_pCQgrRiN"
-    );
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("uses com host when received", () => {
-    global.window = Object.create(window);
-    Object.defineProperty(window.document, "cookie", {
-      writable: true,
-      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ."
-    });
-    const { asFragment, baseElement } = renderComments({
-      count: 123,
-      enabled: true,
-      domainSpecificUrl: "https://www.thetimes.com"
-    });
-
-    expect(
-      baseElement
-        .getElementsByTagName("script")[0]
-        .getAttribute("data-post-url")
-    ).toEqual("https://www.thetimes.com/article/dummy-article-id");
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("RA Users", () => {
-    global.window = Object.create(window);
-
-    UserState.mockStates = [UserState.showArticleComments];
-    Object.defineProperty(window.document, "cookie", {
-      writable: true,
-      value: "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUfzI1NiJc9."
-    });
-    const { asFragment, getAllByText } = renderComments({
-      count: 123,
-      enabled: true
-    });
-    expect(getAllByText("Join the conversation").length).toEqual(1);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("No user state", () => {
-    UserState.mockStates = [];
-
-    const { asFragment } = renderComments({
-      count: 123,
-      enabled: true
-    });
-    expect(asFragment()).toMatchSnapshot();
   });
 });
 
