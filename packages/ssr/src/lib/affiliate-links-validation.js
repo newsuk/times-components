@@ -19,7 +19,7 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
     const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
     const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(
       trackonomicsUrl
-    )}&p=${encodeURIComponent(referrerUrl)}&ref=${encodeURIComponent(
+    )}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(
       referrerUrl
     )}`;
 
@@ -38,8 +38,10 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   return wrapTrackonomics(wrapInSkimlinks);
 };
 
-module.exports.setExternalLinkTargets = children => {
+module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
+  const { canonicalUrl, hostName } = articleDataFromRender;
+  const contentPageUrl = `${hostName}${canonicalUrl}`;
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -73,7 +75,7 @@ module.exports.setExternalLinkTargets = children => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href)
+                url: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           } else {
@@ -82,7 +84,7 @@ module.exports.setExternalLinkTargets = children => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href)
+                href: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           }
