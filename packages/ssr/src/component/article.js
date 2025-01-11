@@ -65,7 +65,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const formattedArticle = { ...article, content: articleContent };
 
           // eslint-disable-next-line no-console
-          console.log("Article: ", article);
+          console.log("Article: ", article, articleDataFromRender);
 
           // eslint-disable-next-line no-console
           console.log("Formatted Article: ", formattedArticle);

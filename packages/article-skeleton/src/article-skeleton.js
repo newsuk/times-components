@@ -48,7 +48,6 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
-import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -171,8 +170,7 @@ const ArticleSkeleton = ({
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertInlineAd(isPreview),
-    tagLastParagraph,
-    setExternalLinkTargets
+    tagLastParagraph
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
