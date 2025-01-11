@@ -3,12 +3,10 @@ const {
   travelSiteCode,
   skimlinksId,
   regexTrackonomics
-} = require("./affiliate-validation");
+} = require("../constants/affiliate-validation");
 
-const wrapAffiliateLink = affiliateLink => {
+const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
-    const contentPageUrl =
-      "https://www.thetimes.com/travel/inspiration/tour-holidays/adventurous-summer-holidays-kklt22gp8";
     const isTravel =
       contentPageUrl.includes("https://www.thetimes.com/travel") ||
       contentPageUrl.includes("https://www.thetimes.co.uk/travel");
@@ -17,12 +15,11 @@ const wrapAffiliateLink = affiliateLink => {
       return trackonomicsUrl;
     }
 
-    const referrerUrl =
-      "https://www.thetimes.com/travel/inspiration/tour-holidays/adventurous-summer-holidays-kklt22gp8";
+    const referrerUrl = "";
     const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
     const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(
       trackonomicsUrl
-    )}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(
+    )}&p=${encodeURIComponent(referrerUrl)}&ref=${encodeURIComponent(
       referrerUrl
     )}`;
 
@@ -30,8 +27,6 @@ const wrapAffiliateLink = affiliateLink => {
   };
 
   const wrapSkimlinks = skimlinkUrl => {
-    const contentPageUrl =
-      "https://www.thetimes.com/travel/inspiration/tour-holidays/adventurous-summer-holidays-kklt22gp8";
     const affiliateWrapper = `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(
       skimlinkUrl
     )}&sref=${encodeURIComponent(contentPageUrl)}`;
