@@ -226,8 +226,14 @@ const ArticleSkeleton = ({
     if (!articleurl || typeof articleurl !== "string") {
       return null; // Return null for invalid or missing URLs
     }
-    const pathSegments = articleurl.split("/").filter(Boolean);
-    return pathSegments[0] || null; // Return the category slug if exists
+    try {
+      const fullUrl = new URL(articleurl); // Parse the URL to extract the path
+      const pathSegments = fullUrl.pathname.split("/").filter(Boolean);
+      return pathSegments[0] || null; // Return the first path segment (slug)
+    } catch (error) {
+      console.error("Invalid URL format:", error);
+      return null;
+    }
   }
 
   const articlecategory = getFirstSlugFromUrl(articleUrl);
