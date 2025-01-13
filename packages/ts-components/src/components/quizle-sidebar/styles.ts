@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import QuizleIcon from './assets/QuizleIcon';
 
 export const QuestionIcon = styled(QuizleIcon)`
-  width: 37.652px;
+  min-width: 37.652px;
   height: 40px;
+  margin-left: 12px;
 `;
 
 export const Container = styled.div`
@@ -79,7 +80,7 @@ export const Bottom = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 8px 0 0;
-  min-height: 226px;
+  min-height: 204px;
   justify-content: space-between;
 
   & .q-icon {
