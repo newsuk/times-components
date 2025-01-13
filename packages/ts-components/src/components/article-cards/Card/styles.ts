@@ -107,7 +107,7 @@ export const StyledContent = styled.div<CardProps>`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 375px) {
+  @media (max-width: 375px) {
     &:nth-of-type(1) {
       margin-block-start: 16px;
     }
@@ -148,6 +148,12 @@ export const StyledText = styled.span<CardProps>`
 
   @media (max-width: 767px) {
     display: none;
+
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 1 &&
+      `
+      display: block;
+    `};
   }
 `;
 
@@ -187,8 +193,6 @@ export const StyledLink = styled.a<CardProps>`
     font-size: 2.8rem;
     line-height: 3.15rem;
 
-    margin-block-start: 16px;
-
     ${({ $numOfArticles }) =>
       $numOfArticles >= 3 &&
       `
@@ -200,8 +204,6 @@ export const StyledLink = styled.a<CardProps>`
   @media (min-width: 767px) and (max-width: 1023px) {
     font-size: 2.8rem;
     line-height: 3.15rem;
-
-    margin-block-start: 16px;
 
     ${({ $numOfArticles }) =>
       $numOfArticles >= 2 &&
