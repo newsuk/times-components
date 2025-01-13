@@ -141,6 +141,11 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
+    const articlesWithNewestSort = ["91616c4d-ae74-431c-842e-50d357da91e7"]; 
+
+    if (articlesWithNewestSort.includes(articleId)) {
+      launcherScript.setAttribute("data-sort-order", "newest");
+    }
 
     this.container.appendChild(launcherScript);
   }
