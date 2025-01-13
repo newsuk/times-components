@@ -16,24 +16,21 @@ const ArticleComments = ({
   isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl,
-  isEntitlementFeatureEnabled
+  isEntitlementFeatureEnabled,
 }) => {
   const [userEntitlementData, setUserEntitlementData] = useState(undefined);
 
-  useEffect(
-    () => {
-      const fetchUserEntitlements = async () => {
-        const response = await fetch("/api/get-user-entitlements");
-        const data = await response.json();
-        setUserEntitlementData(data);
-      };
+  useEffect(() => {
+    const fetchUserEntitlements = async () => {
+      const response = await fetch("/api/get-user-entitlements");
+      const data = await response.json();
+      setUserEntitlementData(data);
+    };
 
-      if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
-        fetchUserEntitlements();
-      }
-    },
-    [isEntitlementFeatureEnabled]
-  );
+    if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
+      fetchUserEntitlements();
+    }
+  }, [isEntitlementFeatureEnabled]);
 
   return isEnabled && isCommentEnabled ? (
     <>
@@ -70,17 +67,17 @@ ArticleComments.propTypes = {
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired,
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired,
 };
 
 ArticleComments.defaultProps = {
   isReadOnly: false,
-  isCommentEnabled: true
+  isCommentEnabled: true,
 };
 
 export default ArticleComments;

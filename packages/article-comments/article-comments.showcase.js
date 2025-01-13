@@ -4,7 +4,7 @@ import { addUserStateKnobs } from "@times-components/user-state";
 import ArticleComments from "./src/article-comments";
 
 const commentingConfig = {
-  account: "sp_pCQgrRiN"
+  account: "sp_pCQgrRiN",
 };
 
 export default {
@@ -26,7 +26,7 @@ export default {
         );
       },
       name: "Enabled",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -41,8 +41,8 @@ export default {
         />
       ),
       name: "Disabled",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Composed/Article Comments"
+  name: "Composed/Article Comments",
 };

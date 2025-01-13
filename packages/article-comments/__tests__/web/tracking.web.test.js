@@ -9,8 +9,8 @@ class WithTrackingContext extends Component {
     const { analyticsStream } = this.props;
     return {
       tracking: {
-        analytics: analyticsStream
-      }
+        analytics: analyticsStream,
+      },
     };
   }
 
@@ -27,11 +27,11 @@ class WithTrackingContext extends Component {
 
 WithTrackingContext.childContextTypes = {
   tracking: PropTypes.shape({
-    analytics: PropTypes.func
-  })
+    analytics: PropTypes.func,
+  }),
 };
 WithTrackingContext.propTypes = {
-  analyticsStream: PropTypes.func.isRequired
+  analyticsStream: PropTypes.func.isRequired,
 };
 
 it("should track Comment start event ", () => {
