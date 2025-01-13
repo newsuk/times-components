@@ -227,7 +227,7 @@ const ArticleSkeleton = ({
       return null; // Return null for invalid or missing URLs
     }
     try {
-      const fullUrl = new URL(articleurl); // Parse the URL to extract the path
+      const fullUrl = new URL(articleurl);
       const pathSegments = fullUrl.pathname.split("/").filter(Boolean);
       return pathSegments[0] || null; // Return the first path segment (slug)
     } catch (error) {
@@ -236,11 +236,8 @@ const ArticleSkeleton = ({
     }
   }
 
-  const articlecategory = getFirstSlugFromUrl(articleUrl);
   const quizCategories = ["culture", "life-style"];
 
-  console.log("articlecategory", articlecategory);
-  console.log("articleUrl", articleUrl);
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -372,7 +369,9 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {!quizCategories.includes(articlecategory) ? (
+                        {!quizCategories.includes(
+                          getFirstSlugFromUrl(articleUrl)
+                        ) ? (
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
                             sectionTitle="Puzzles"
