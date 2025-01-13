@@ -1,8 +1,14 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { ArticleCardProps } from '../types';
 import '@testing-library/jest-dom';
 import Card from '../Card/Card';
+import { ArticleCardProps } from '../types';
+import { tealiumTrackingHandler } from '../utils';
+
+jest.mock('../utils', () => ({
+  ...jest.requireActual('../utils'),
+  tealiumTrackingHandler: jest.fn()
+}));
 
 describe('Card Component', () => {
   const mockProps: ArticleCardProps = {
@@ -42,14 +48,19 @@ describe('Card Component', () => {
   });
 
   it('logs the headline when the link is clicked', () => {
-    const consoleLogSpy = jest.spyOn(console, 'log');
+    const mockTealiumTrackingHandler = jest.fn();
+    (tealiumTrackingHandler as jest.Mock).mockImplementation(
+      mockTealiumTrackingHandler
+    );
+
     render(<Card {...mockProps} />);
 
     const link = screen.getAllByRole('link')[0];
     fireEvent.click(link);
 
-    expect(consoleLogSpy).toHaveBeenCalledWith('https://example.com');
-
-    consoleLogSpy.mockRestore();
+    expect(mockTealiumTrackingHandler).toHaveBeenCalledWith(
+      'Test Headline',
+      'Test Headline'
+    );
   });
 });

@@ -17,17 +17,15 @@ export const Container = styled.div`
 export const Title = styled.span`
   display: block;
   margin-block: 24px;
-  font-family: 'Arial, sans-serif';
-  font-size: 24px;
-  font-weight: bold;
+  font-family: 'Times Modern';
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #01000d;
+  letter-spacing: 0em;
 
   @media (min-width: 768px) {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 32px;
+    font-size: 2.8rem;
+    line-height: 3.15rem;
   }
 
   @media (max-width: 767px) {
@@ -51,6 +49,12 @@ export const Grid = styled.div<{ columns: number }>`
 `;
 
 export const Divider = styled.hr`
-  border: 2px solid #01000d;
+  border: 1px solid #01000d;
+  margin: 0px;
   align-self: stretch;
+  border-radius: 0px;
+
+  @media (max-width: 767px) {
+    border: 3px solid rgb(1, 0, 13);
+  }
 `;

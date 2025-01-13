@@ -11,6 +11,7 @@ import {
   Hidden
 } from './styles';
 import { ArticleCardProps } from '../types';
+import { tealiumTrackingHandler, truncateText } from '../utils';
 
 const Card = (props: ArticleCardProps) => {
   const { article, numOfArticles, isLeadingArticle, isLastCard } = props;
@@ -21,8 +22,7 @@ const Card = (props: ArticleCardProps) => {
         <a
           href={article.url}
           onClick={() => {
-            // tslint:disable-next-line:no-console
-            console.log(article.headline);
+            tealiumTrackingHandler(article.headline, article.headline);
           }}
         >
           <StyledMedia>
@@ -36,8 +36,7 @@ const Card = (props: ArticleCardProps) => {
           <a
             href={article.url}
             onClick={() => {
-              // tslint:disable-next-line:no-console
-              console.log(article.url);
+              tealiumTrackingHandler(article.headline, article.headline);
             }}
           >
             <StyledMedia>
@@ -49,11 +48,17 @@ const Card = (props: ArticleCardProps) => {
         </Hidden>
       )}
       <StyledContent $numOfArticles={numOfArticles}>
-        <StyledLink $numOfArticles={numOfArticles} href={article.url}>
+        <StyledLink
+          $numOfArticles={numOfArticles}
+          href={article.url}
+          onClick={() =>
+            tealiumTrackingHandler(article.headline, article.headline)
+          }
+        >
           {article.headline}
         </StyledLink>
         <StyledText $numOfArticles={numOfArticles}>
-          {article.summary}
+          {truncateText(article.summary, 160)}
         </StyledText>
         {!isLastCard && <StyledDivider />}
       </StyledContent>

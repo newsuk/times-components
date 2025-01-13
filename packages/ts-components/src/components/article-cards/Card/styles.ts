@@ -107,7 +107,7 @@ export const StyledContent = styled.div<CardProps>`
   flex-direction: column;
   justify-content: center;
 
-  @media (max-width: 375px) {
+  @media (min-width: 375px) {
     &:nth-of-type(1) {
       margin-block-start: 16px;
     }
@@ -130,16 +130,21 @@ export const StyledContent = styled.div<CardProps>`
       justify-content: center;
     `};
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin-block-start: 12px;
+  }
 `;
 
 export const StyledText = styled.span<CardProps>`
   color: rgb(105, 105, 105);
   font-family: 'Times Digital W04 Regular';
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   padding: 0.5px 0px;
-  margin-block-start: 16px;
-  line-height: 21px;
+  margin-block-start: 20px;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  padding: 0.5px 0px;
 
   @media (max-width: 767px) {
     display: none;
@@ -148,7 +153,7 @@ export const StyledText = styled.span<CardProps>`
 
 export const StyledDivider = styled.hr`
   border-style: dashed;
-  border-color: rgb(204, 204, 204);
+  border-color: #cccccc;
   border-width: 1px 0px 0px;
   margin-block: 20px;
   width: 100%;
@@ -162,46 +167,47 @@ export const StyledLink = styled.a<CardProps>`
   font-weight: 700;
   font-family: 'Times Modern';
   font-size: 20px;
-  line-height: 22.5px;
+  line-height: 23px;
   text-decoration: none;
-  color: rgb(1, 0, 13);
+  color: #01000d;
+  letter-spacing: 0em;
+  padding: 0.5px 0px;
+  font-stretch: normal;
 
-  @media (max-width: 1024px) {
-    ${({ $numOfArticles }) =>
-      $numOfArticles <= 2 &&
-      `
-      font-size: 24px;
-      line-height: 27px;
-    `};
+  @media (max-width: 375px) {
+    font-size: 1.25rem;
   }
 
-  @media (max-width: 768px) {
-    ${({ $numOfArticles }) =>
-      $numOfArticles >= 2 &&
-      `
-      font-size: 20px;
-      line-height: 22.5px;
-    `};
+  @media (max-width: 767px) {
+    font-size: 2rem;
+    line-height: 2.25rem;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    ${({ $numOfArticles }) =>
-      $numOfArticles === 1 &&
-      `
-      font-size: 28px;
-      line-height: 31.5px;
-    `};
-  }
+  @media (min-width: 1024px) {
+    font-size: 2.8rem;
+    line-height: 3.15rem;
 
-  @media (min-width: 1025px) {
-    font-size: 28px;
-    line-height: 31.5px;
+    margin-block-start: 16px;
 
     ${({ $numOfArticles }) =>
       $numOfArticles >= 3 &&
       `
       font-size: 20px;
-      line-height: 22.5px;
+      line-height: 23px;
+    `};
+  }
+
+  @media (min-width: 767px) and (max-width: 1023px) {
+    font-size: 2.8rem;
+    line-height: 3.15rem;
+
+    margin-block-start: 16px;
+
+    ${({ $numOfArticles }) =>
+      $numOfArticles >= 2 &&
+      `
+      font-size: 20px;
+      line-height: 23px;
     `};
   }
 `;
