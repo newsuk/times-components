@@ -55,9 +55,9 @@ class Comments extends Component {
         case "best":
           return onCommentFilterMostRecommended(event);
         case "oldest":
-          return onCommentFilterOldest(event);
+          return onCommentFilterMostRecommended(event);
         case "newest":
-          return onCommentFilterNewest(event);
+          return onCommentFilterMostRecommended(event);
         default:
           return null;
       }
