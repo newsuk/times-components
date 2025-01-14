@@ -45,6 +45,22 @@ class Comments extends Component {
       return;
     }
 
+    const getFilterEvent = event => {
+      if (articleId === "91616c4d-ae74-431c-842e-50d357da91e7") {
+        return onCommentFilterNewest(event);
+      }
+      switch (event.detail.sortedBy) {
+        case "best":
+          return onCommentFilterNewest(event);
+        case "oldest":
+          return onCommentFilterNewest(event);
+        case "newest":
+          return onCommentFilterNewest(event);
+        default:
+          return null;
+      }
+    };
+
     const getShareEvent = event => {
       switch (event.detail.type) {
         case "link":
@@ -75,7 +91,7 @@ class Comments extends Component {
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
     document.addEventListener("spot-im-sort-by-select", event =>
-      onCommentFilterNewest(event)
+      getFilterEvent(event)
     );
     document.addEventListener(
       "spot-im-user-clicked-reply",
@@ -142,8 +158,6 @@ class Comments extends Component {
       onCommentPost,
       onCommentNotification,
       onCommentFilterNewest,
-      onCommentFilterMostRecommended,
-      onCommentFilterOldest,
       onCommentReplyClick,
       onCommentShareLink,
       onCommentShareTwitter,
@@ -163,8 +177,6 @@ class Comments extends Component {
         onCommentNotification={onCommentNotification}
         onCommentReplyClick={onCommentReplyClick}
         onCommentFilterNewest={onCommentFilterNewest}
-        onCommentFilterMostRecommended={onCommentFilterMostRecommended}
-        onCommentFilterOldest={onCommentFilterOldest}
         onCommentShareLink={onCommentShareLink}
         onCommentShareTwitter={onCommentShareTwitter}
         onCommentShareEmail={onCommentShareEmail}
@@ -194,8 +206,6 @@ Comments.propTypes = {
   onCommentPost: PropTypes.func,
   onCommentNotification: PropTypes.func,
   onCommentFilterNewest: PropTypes.func,
-  onCommentFilterMostRecommended: PropTypes.func,
-  onCommentFilterOldest: PropTypes.func,
   onCommentReplyClick: PropTypes.func,
   onCommentShareLink: PropTypes.func,
   onCommentShareTwitter: PropTypes.func,
@@ -215,8 +225,6 @@ Comments.defaultProps = {
   onCommentNotification: () => {},
   onCommentReplyClick: () => {},
   onCommentFilterNewest: () => {},
-  onCommentFilterMostRecommended: () => {},
-  onCommentFilterOldest: () => {},
   onCommentShareLink: () => {},
   onCommentShareTwitter: () => {},
   onCommentShareEmail: () => {},
