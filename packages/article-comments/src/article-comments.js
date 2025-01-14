@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
@@ -53,16 +54,14 @@ const ArticleComments = ({
     fetchClientSideCookie();
   }, []);
 
+  let content;
   if (hasCommentingEntitlement === undefined) {
-    return null;
+    content = null;
   }
-
   if (!isEnabled && !isCommentEnabled) {
-    return <DisabledComments />;
-  }
-
-  if (hasCommentingEntitlement) {
-    return (
+    content = <DisabledComments />;
+  } else if (hasCommentingEntitlement) {
+    content = (
       <Comments
         articleId={articleId}
         isReadOnly={isReadOnly}
@@ -70,9 +69,14 @@ const ArticleComments = ({
         domainSpecificUrl={domainSpecificUrl}
       />
     );
+  } else {
+    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
+  }
+  if (hasCommentingEntitlement === undefined) {
+    return null;
   }
 
-  return <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
+  return <UserState state={UserState.showArticleComments}>{content}</UserState>;
 };
 
 ArticleComments.propTypes = {
