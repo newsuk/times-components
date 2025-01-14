@@ -2,6 +2,9 @@
 
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
+  <p>
+    Hi
+  </p>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +41,13 @@ exports[`Render comments label, when comments are loaded 1`] = `
 </DocumentFragment>
 `;
 
-exports[`User States No user state 1`] = `<DocumentFragment />`;
+exports[`User States No user state 1`] = `
+<DocumentFragment>
+  <p>
+    Hi
+  </p>
+</DocumentFragment>
+`;
 
 exports[`User States RA Users 1`] = `
 <DocumentFragment>
@@ -140,11 +149,17 @@ exports[`User States RA Users 1`] = `
       View offers
     </a>
   </div>
+  <p>
+    Hi
+  </p>
 </DocumentFragment>
 `;
 
 exports[`User States enabled comments 1`] = `
 <DocumentFragment>
+  <p>
+    Hi
+  </p>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -183,6 +198,9 @@ exports[`User States enabled comments 1`] = `
 
 exports[`User States uses com host when received 1`] = `
 <DocumentFragment>
+  <p>
+    Hi
+  </p>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -303,6 +321,9 @@ exports[`disabled comments 1`] = `
 
 exports[`single comment 1`] = `
 <DocumentFragment>
+  <p>
+    Hi
+  </p>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -357,6 +378,9 @@ Array [
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
+  <p>
+    Hi
+  </p>
   .c0 {
   margin-left: auto;
   margin-right: auto;

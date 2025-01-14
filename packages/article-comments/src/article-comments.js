@@ -40,6 +40,7 @@ const ArticleComments = ({
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
+      <p>Hi</p>
       {!isEntitlementFeatureEnabled ? (
         <UserState state={UserState.showCommentingModule}>
           <Comments
