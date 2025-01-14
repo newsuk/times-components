@@ -48,6 +48,9 @@ class Comments extends Component {
     }
 
     const getFilterEvent = event => {
+      if (articleId === "91616c4d-ae74-431c-842e-50d357da91e7") {
+        return onCommentFilterNewest(event);
+      }
       switch (event.detail.sortedBy) {
         case "best":
           return onCommentFilterMostRecommended(event);
