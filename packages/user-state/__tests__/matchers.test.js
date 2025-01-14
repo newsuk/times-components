@@ -6,7 +6,7 @@ import {
   showLiveUpdateButton,
   showTokenisedEmailShare,
   showCommentingModule,
-  showJoinTheConversationDialog,
+  showJoinTheConversationDialog
 } from "../src/matchers";
 
 const defaultUserState = {
