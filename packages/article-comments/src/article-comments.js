@@ -22,9 +22,7 @@ const ArticleComments = ({
   useEffect(() => {
     const convertBase64JSONCookie = cookieValue => {
       try {
-        return cookieValue
-          ? JSON.parse(Buffer.from(cookieValue, "base64").toString())
-          : undefined;
+        return cookieValue ? JSON.parse(atob(cookieValue)) : undefined;
       } catch (e) {
         return undefined;
       }
@@ -56,6 +54,9 @@ const ArticleComments = ({
   }, []);
 
   let content;
+  if (hasCommentingEntitlement === undefined) {
+    content = null;
+  }
   if (!isEnabled && !isCommentEnabled) {
     content = <DisabledComments />;
   } else if (hasCommentingEntitlement) {
@@ -70,11 +71,8 @@ const ArticleComments = ({
   } else {
     content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
   }
-  if (hasCommentingEntitlement === undefined) {
-    return null;
-  }
 
-  return <>{content}</>;
+  return content;
 };
 
 ArticleComments.propTypes = {
