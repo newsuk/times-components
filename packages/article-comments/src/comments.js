@@ -29,8 +29,6 @@ class Comments extends Component {
       onCommentPost,
       onCommentNotification,
       onCommentFilterNewest,
-      onCommentFilterMostRecommended,
-      onCommentFilterOldest,
       onCommentReplyClick,
       onCommentShareLink,
       onCommentShareTwitter,
@@ -46,22 +44,6 @@ class Comments extends Component {
     if (!this.container || !articleId || !commentingConfig) {
       return;
     }
-
-    const getFilterEvent = event => {
-      if (articleId === "91616c4d-ae74-431c-842e-50d357da91e7") {
-        return onCommentFilterNewest(event);
-      }
-      switch (event.detail.sortedBy) {
-        case "best":
-          return onCommentFilterMostRecommended(event);
-        case "oldest":
-          return onCommentFilterMostRecommended(event);
-        case "newest":
-          return onCommentFilterMostRecommended(event);
-        default:
-          return null;
-      }
-    };
 
     const getShareEvent = event => {
       switch (event.detail.type) {
@@ -93,7 +75,7 @@ class Comments extends Component {
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
     document.addEventListener("spot-im-sort-by-select", event =>
-      getFilterEvent(event)
+      onCommentFilterNewest(event)
     );
     document.addEventListener(
       "spot-im-user-clicked-reply",
