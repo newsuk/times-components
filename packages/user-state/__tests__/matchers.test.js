@@ -7,7 +7,6 @@ import {
   showTokenisedEmailShare,
   showCommentingModule,
   showJoinTheConversationDialog,
-  showArticleComments
 } from "../src/matchers";
 
 const defaultUserState = {
