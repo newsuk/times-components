@@ -53,14 +53,16 @@ const ArticleComments = ({
     fetchClientSideCookie();
   }, []);
 
-  let content;
   if (hasCommentingEntitlement === undefined) {
-    content = null;
+    return null;
   }
+
   if (!isEnabled && !isCommentEnabled) {
-    content = <DisabledComments />;
-  } else if (hasCommentingEntitlement) {
-    content = (
+    return <DisabledComments />;
+  }
+
+  if (hasCommentingEntitlement) {
+    return (
       <Comments
         articleId={articleId}
         isReadOnly={isReadOnly}
@@ -68,11 +70,9 @@ const ArticleComments = ({
         domainSpecificUrl={domainSpecificUrl}
       />
     );
-  } else {
-    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
   }
 
-  return content;
+  return <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
 };
 
 ArticleComments.propTypes = {
