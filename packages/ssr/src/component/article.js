@@ -19,6 +19,25 @@ const {
 
 const scale = scales.large;
 
+(async () => {
+  try {
+    // eslint-disable-next-line no-console
+    console.log("Starting fetch...");
+    const response = await fetch(
+      "https://ads.thesun.co.uk/skimlinks/domains.json"
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    // eslint-disable-next-line no-console
+    console.log("Fetched Data:", data);
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.error("Fetch Error:", error.message);
+  }
+})();
+
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     articleId,

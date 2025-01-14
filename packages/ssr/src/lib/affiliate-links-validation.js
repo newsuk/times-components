@@ -2,26 +2,25 @@ const {
   theTimesSiteCode,
   travelSiteCode,
   skimlinksId,
-  regexTrackonomics
+  trackonomicsRegex
 } = require("../constants/affiliate-validation");
+
+const isAffiliateLink = url => trackonomicsRegex.test(url);
 
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
+    if (!isAffiliateLink(trackonomicsUrl)) {
+      return trackonomicsUrl;
+    }
+
     const isTravel =
       contentPageUrl.includes("https://www.thetimes.com/travel") ||
       contentPageUrl.includes("https://www.thetimes.co.uk/travel");
 
-    if (!regexTrackonomics.test(trackonomicsUrl)) {
-      return trackonomicsUrl;
-    }
-
-    const referrerUrl = "";
     const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
     const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(
       trackonomicsUrl
-    )}&p=${encodeURIComponent(contentPageUrl)}&ref=${encodeURIComponent(
-      referrerUrl
-    )}`;
+    )}&p=${encodeURIComponent(contentPageUrl)}`;
 
     return affiliateWrapper;
   };
@@ -64,6 +63,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
             : attributes.href || "";
 
         // If the link is external, set target to _blank. Wrap affiliate link if necessary.
+        // Izdvojiti u posebnu funkciju
         if (
           href &&
           !href.startsWith("https://www.thetimes.co.uk") &&
