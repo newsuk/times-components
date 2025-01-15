@@ -30,11 +30,11 @@ const fetchSkimlinksDomains = async () => {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
 
-  const data = await response.json();
+  const { domains } = await response.json();
   // eslint-disable-next-line no-console
-  console.log("Fetched Data:", data);
+  console.log("Fetched Data:", domains);
 
-  return data;
+  return domains;
 };
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
