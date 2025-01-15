@@ -30,6 +30,7 @@ exports[`Render comments label, when comments are loaded 1`] = `
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
+        data-sort-by="newest"
         data-spotim-module="spotim-launcher"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
@@ -173,6 +174,7 @@ exports[`User States enabled comments 1`] = `
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
+        data-sort-by="newest"
         data-spotim-module="spotim-launcher"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
@@ -211,6 +213,7 @@ exports[`User States uses com host when received 1`] = `
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.com/article/dummy-article-id"
         data-seo-enabled="true"
+        data-sort-by="newest"
         data-spotim-module="spotim-launcher"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
@@ -331,6 +334,7 @@ exports[`single comment 1`] = `
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
+        data-sort-by="newest"
         data-spotim-module="spotim-launcher"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
@@ -385,6 +389,7 @@ exports[`zero comments 1`] = `
         data-post-id="dummy-article-id"
         data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
         data-seo-enabled="true"
+        data-sort-by="newest"
         data-spotim-module="spotim-launcher"
         src="https://launcher.spot.im/spot/sp_pCQgrRiN"
       />
