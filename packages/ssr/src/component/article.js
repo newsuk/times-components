@@ -19,24 +19,23 @@ const {
 
 const scale = scales.large;
 
-(async () => {
-  try {
-    // eslint-disable-next-line no-console
-    console.log("Starting fetch...");
-    const response = await fetch(
-      "https://ads.thesun.co.uk/skimlinks/domains.json"
-    );
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    // eslint-disable-next-line no-console
-    console.log("Fetched Data:", data);
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error("Fetch Error:", error.message);
+const fetchSkimlinksDomains = async () => {
+  // eslint-disable-next-line no-console
+  console.log("Starting fetch...");
+  const response = await fetch(
+    "https://ads.thesun.co.uk/skimlinks/domains.json"
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
   }
-})();
+
+  const data = await response.json();
+  // eslint-disable-next-line no-console
+  console.log("Fetched Data:", data);
+
+  return data;
+};
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
@@ -62,6 +61,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isEntitlementFeatureEnabled
   } = data;
 
+  const skimlinksDomains = fetchSkimlinksDomains();
+
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -83,7 +84,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const articleTemplate = article ? article.template : null;
           const articleContent = affiliateLinksValidation(
             article.content,
-            articleDataFromRender
+            articleDataFromRender,
+            skimlinksDomains
           );
 
           const formattedArticle = { ...article, content: articleContent };

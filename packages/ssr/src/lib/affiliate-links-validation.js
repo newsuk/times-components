@@ -1,11 +1,17 @@
 const {
   theTimesSiteCode,
   travelSiteCode,
-  skimlinksId,
   trackonomicsRegex
 } = require("../constants/affiliate-validation");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
+
+const filterDomains = domains =>
+  Array.isArray(domains) ? domains.map(retailer => retailer.domain) : [];
+
+/* const constructSkimlinksUrl = (skimlinksId, url, contentPageUrl) => `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(
+    url
+  )}&sref=${encodeURIComponent(contentPageUrl)}` */
 
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
@@ -25,22 +31,24 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
     return affiliateWrapper;
   };
 
-  const wrapSkimlinks = skimlinkUrl => {
-    const affiliateWrapper = `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(
-      skimlinkUrl
-    )}&sref=${encodeURIComponent(contentPageUrl)}`;
-
-    return affiliateWrapper;
-  };
+  const wrapSkimlinks = url => url;
 
   const wrapInSkimlinks = wrapSkimlinks(affiliateLink);
   return wrapTrackonomics(wrapInSkimlinks);
 };
 
-module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
+module.exports.affiliateLinksValidation = (
+  children,
+  articleDataFromRender,
+  skimlinksDomains
+) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
+  const skimlinksDomainsList = filterDomains(skimlinksDomains);
+
+  // eslint-disable-next-line no-console
+  console.log("skimlinksDomainsList:", skimlinksDomainsList);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
