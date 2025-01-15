@@ -40,14 +40,14 @@ class Comments extends Component {
       onCommentNotificationClicked,
       onCommentUsernameClicked,
       onCommentSettingsClicked,
-      domainSpecificUrl
+      domainSpecificUrl,
     } = this.props;
 
     if (!this.container || !articleId || !commentingConfig) {
       return;
     }
 
-    const getFilterEvent = event => {
+    const getFilterEvent = (event) => {
       switch (event.detail.sortedBy) {
         case "best":
           return onCommentFilterMostRecommended(event);
@@ -60,7 +60,7 @@ class Comments extends Component {
       }
     };
 
-    const getShareEvent = event => {
+    const getShareEvent = (event) => {
       switch (event.detail.type) {
         case "link":
           return onCommentShareLink(event);
@@ -89,7 +89,7 @@ class Comments extends Component {
       onCommentNotification
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
-    document.addEventListener("spot-im-sort-by-select", event =>
+    document.addEventListener("spot-im-sort-by-select", (event) =>
       getFilterEvent(event)
     );
     document.addEventListener(
@@ -108,7 +108,7 @@ class Comments extends Component {
       "spot-im-open-user-profile",
       onCommentUsernameClicked
     );
-    document.addEventListener("spot-im-share-type", event =>
+    document.addEventListener("spot-im-share-type", (event) =>
       getShareEvent(event)
     );
 
@@ -141,6 +141,9 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
+    if (articleId === "91616c4d-ae74-431c-842e-50d357da91e7") {
+      launcherScript.setAttribute("data-sort-by", "newest");
+    }
 
     this.container.appendChild(launcherScript);
   }
@@ -167,7 +170,7 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked
+      onCommentSettingsClicked,
     } = this.props;
 
     return (
@@ -190,7 +193,7 @@ class Comments extends Component {
         onCommentSettingsClicked={onCommentSettingsClicked}
       >
         <div
-          ref={el => {
+          ref={(el) => {
             this.container = el;
           }}
         />
@@ -203,7 +206,7 @@ Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired,
   }).isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
@@ -220,7 +223,7 @@ Comments.propTypes = {
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
   onCommentSettingsClicked: PropTypes.func,
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
@@ -239,7 +242,7 @@ Comments.defaultProps = {
   onCommentRecommend: () => {},
   onCommentNotificationClicked: () => {},
   onCommentUsernameClicked: () => {},
-  onCommentSettingsClicked: () => {}
+  onCommentSettingsClicked: () => {},
 };
 
 export default withTrackEvents(Comments);

@@ -11,7 +11,7 @@ import { ssoCallback } from "../../src/comment-login";
 
 const renderComments = ({
   enabled,
-  domainSpecificUrl = "https://www.thetimes.co.uk"
+  domainSpecificUrl = "https://www.thetimes.co.uk",
 }) =>
   render(
     <ArticleComments
@@ -36,7 +36,7 @@ describe("comments-login", () => {
   const xhrMock = {
     open: jest.fn(),
     send: jest.fn(),
-    addEventListener: jest.fn()
+    addEventListener: jest.fn(),
   };
 
   it("uses new commenting service", () => {
@@ -57,7 +57,7 @@ describe("User States", () => {
   it("enabled comments", () => {
     const { asFragment, baseElement } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
 
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
@@ -71,7 +71,7 @@ describe("User States", () => {
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true,
-      domainSpecificUrl: "https://www.thetimes.com"
+      domainSpecificUrl: "https://www.thetimes.com",
     });
 
     expect(
@@ -88,7 +88,7 @@ describe("User States", () => {
 
     const { asFragment, getAllByText } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
     expect(getAllByText("Join the conversation").length).toEqual(1);
     expect(asFragment()).toMatchSnapshot();
@@ -99,7 +99,7 @@ describe("User States", () => {
 
     const { asFragment } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
     expect(asFragment()).toMatchSnapshot();
   });
@@ -108,7 +108,7 @@ describe("User States", () => {
 it("disabled comments", () => {
   const { asFragment, baseElement } = renderComments({
     count: 123,
-    enabled: false
+    enabled: false,
   });
   expect(baseElement.getElementsByClassName("info").length).toEqual(0);
   expect(asFragment()).toMatchSnapshot();
@@ -127,7 +127,7 @@ it("single comment", () => {
 it("Render comments label, when comments are loaded", () => {
   // eslint-disable-next-line no-undef
   window.SPOTIM = {
-    startSSO: () => {}
+    startSSO: () => {},
   };
 
   const { asFragment } = render(

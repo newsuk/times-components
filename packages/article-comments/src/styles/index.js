@@ -6,8 +6,8 @@ const styles = {
   link: {
     ...sharedStyles.link,
     fontFamily: fontsWithFallback.supporting,
-    fontSize: fontSizes.commentsGuidelines
-  }
+    fontSize: fontSizes.commentsGuidelines,
+  },
 };
 
 export default styles;
