@@ -20,7 +20,11 @@ export const CtaButton: React.FC<RootProps> = props => {
       href={attributes.url}
       target={attributes.target || '_blank'}
       onClick={() =>
-        tealiumTrackingHandler(attributes.text, 'navigation', 'click')
+        tealiumTrackingHandler(
+          attributes.text.toLowerCase(),
+          'navigation',
+          'click'
+        )
       }
       rel="nofollow"
     >

@@ -21,7 +21,7 @@ describe('CtaButton Component', () => {
     fireEvent.click(link);
 
     expect(tealiumTrackingHandler).toHaveBeenCalledWith(
-      'Book a Stay',
+      'book a stay',
       'navigation',
       'click'
     );
