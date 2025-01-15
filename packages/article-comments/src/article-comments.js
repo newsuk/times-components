@@ -56,11 +56,12 @@ const ArticleComments = ({
 
   let content;
   if (hasCommentingEntitlement === undefined) {
-    content = null;
-  }
-  if (!isEnabled && !isCommentEnabled) {
     content = <DisabledComments />;
-  } else if (hasCommentingEntitlement) {
+  }
+  if (!isEnabled || !isCommentEnabled) {
+    content = "Commenting is disabled for this article";
+  }
+  if (hasCommentingEntitlement) {
     content = (
       <Comments
         articleId={articleId}
@@ -70,10 +71,12 @@ const ArticleComments = ({
       />
     );
   } else {
-    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
-  }
-  if (hasCommentingEntitlement === undefined) {
-    return null;
+    content = (
+      <JoinTheConversationDialog
+        storefrontConfig={storefrontConfig}
+        domainSpecificUrl={domainSpecificUrl}
+      />
+    );
   }
 
   return <UserState state={UserState.showArticleComments}>{content}</UserState>;
