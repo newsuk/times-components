@@ -1,11 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render comments label, when comments are loaded 1`] = `<DocumentFragment />`;
+exports[`Render comments label, when comments are loaded 1`] = `
+<DocumentFragment>
+  <p>
+    The problem lies below 
+  </p>
+</DocumentFragment>
+`;
 
-exports[`disabled comments 1`] = `<DocumentFragment />`;
+exports[`disabled comments 1`] = `
+<DocumentFragment>
+  <p>
+    The problem lies below 
+  </p>
+</DocumentFragment>
+`;
 
-exports[`single comment 1`] = `<DocumentFragment />`;
+exports[`single comment 1`] = `
+<DocumentFragment>
+  <p>
+    The problem lies below 
+  </p>
+</DocumentFragment>
+`;
 
 exports[`window listeners added all listeners added 1`] = `Array []`;
 
-exports[`zero comments 1`] = `<DocumentFragment />`;
+exports[`zero comments 1`] = `
+<DocumentFragment>
+  <p>
+    The problem lies below 
+  </p>
+</DocumentFragment>
+`;
