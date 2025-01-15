@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 
 // @eslint-ignore
 // import UserState from "@times-components/user-state";
-// import Comments from "./comments";
-// import DisabledComments from "./disabled-comments";
-// import JoinTheConversationDialog from "./join-the-conversation-dialog";
+import Comments from "./comments";
+import DisabledComments from "./disabled-comments";
+import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const ArticleComments = ({
   articleId,
@@ -65,30 +65,28 @@ const ArticleComments = ({
     fetchClientSideCookie();
   }, []);
 
-  return <p>The problem lies below {hasCommentingEntitlement}</p>;
-
   // @ts-ignore
-  // let content;
-  // if (hasCommentingEntitlement === undefined) {
-  //   content = null;
-  // }
-  // if (!isEnabled && !isCommentEnabled) {
-  //   content = <DisabledComments />;
-  // } else if (hasCommentingEntitlement) {
-  //   content = (
-  //     <Comments
-  //       articleId={articleId}
-  //       isReadOnly={isReadOnly}
-  //       commentingConfig={commentingConfig}
-  //       domainSpecificUrl={domainSpecificUrl}
-  //     />
-  //   );
-  // } else {
-  //   content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
-  // }
-  // if (hasCommentingEntitlement === undefined) {
-  //   return null;
-  // }
+  let content;
+  if (!isEnabled && !isCommentEnabled) {
+    content = <DisabledComments />;
+  } else if (hasCommentingEntitlement) {
+    content = (
+      <Comments
+        articleId={articleId}
+        isReadOnly={isReadOnly}
+        commentingConfig={commentingConfig}
+        domainSpecificUrl={domainSpecificUrl}
+      />
+    );
+  } else {
+    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
+  }
+  if (hasCommentingEntitlement === undefined) {
+    return null;
+  }
+
+  console.log(content, "FIND ME");
+  return content;
 
   // return <UserState state={UserState.showArticleComments}>{content}</UserState>;
 };
