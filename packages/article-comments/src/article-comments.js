@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 // @eslint-ignore
-// import UserState from "@times-components/user-state";
+import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
@@ -18,15 +18,6 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl
 }) => {
-  console.log(
-    articleId,
-    isEnabled,
-    isReadOnly,
-    commentingConfig,
-    isCommentEnabled,
-    storefrontConfig,
-    domainSpecificUrl
-  );
   const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
     undefined
   );
@@ -86,9 +77,8 @@ const ArticleComments = ({
   }
 
   console.log(content, "FIND ME");
-  return content;
 
-  // return <UserState state={UserState.showArticleComments}>{content}</UserState>;
+  return <UserState state={UserState.showArticleComments}>{content}</UserState>;
 };
 
 ArticleComments.propTypes = {
