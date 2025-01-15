@@ -141,6 +141,7 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
+    launcherScript.setAttribute("data-sort-by", "newest");
 
     this.container.appendChild(launcherScript);
   }
