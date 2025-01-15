@@ -141,6 +141,10 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
+    //This is only for testing purposes, ideally this should be coming from the TPA like best , newest or oldest
+    if (articleId === "91616c4d-ae74-431c-842e-50d357da91e7") {
+      launcherScript.setAttribute("data-sort-by", "newest");
+    }
 
     this.container.appendChild(launcherScript);
   }
