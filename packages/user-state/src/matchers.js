@@ -44,6 +44,6 @@ export const showJoinTheConversationDialog = userState =>
   hasAccessLoggedInMeteredUser(userState);
 
 export const showArticleComments = userState => {
-  console.log('userState in TC', userState);
+  console.log("userState in TC", userState);
   return userState.hasAccess;
-}
+};
