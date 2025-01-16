@@ -43,4 +43,7 @@ export const showCommentingModule = userState =>
 export const showJoinTheConversationDialog = userState =>
   hasAccessLoggedInMeteredUser(userState);
 
-export const showArticleComments = userState => userState.hasAccess;
+export const showArticleComments = userState => {
+  console.log('userState in TC', userState);
+  return userState.hasAccess;
+}

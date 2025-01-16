@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
-// @eslint-ignore
 import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
@@ -21,7 +19,9 @@ const ArticleComments = ({
   const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
     undefined
   );
-
+  console.log("hasCommentingEntitlement", hasCommentingEntitlement);
+  console.log("isEnabled", isEnabled);
+  console.log("isCommentEnabled", isCommentEnabled);
   useEffect(() => {
     const convertBase64JSONCookie = cookieValue => {
       try {
@@ -39,10 +39,12 @@ const ArticleComments = ({
       const cookieValue = authDecisionCookie
         ? authDecisionCookie.split("=")[1]
         : null;
+      console.log("cookieValue", cookieValue);
 
       if (cookieValue) {
         try {
           const jsonValue = convertBase64JSONCookie(cookieValue);
+          console.log("jsonValue", jsonValue);
           const entitlements = jsonValue ? jsonValue["fp-1111"] : false;
           setHasCommentingEntitlement(entitlements);
         } catch (error) {
@@ -56,7 +58,6 @@ const ArticleComments = ({
     fetchClientSideCookie();
   }, []);
 
-  // @ts-ignore
   let content;
   if (!isEnabled && !isCommentEnabled) {
     content = <DisabledComments />;
@@ -75,8 +76,6 @@ const ArticleComments = ({
   if (hasCommentingEntitlement === undefined) {
     return null;
   }
-
-  console.log(content, "FIND ME");
 
   return <UserState state={UserState.showArticleComments}>{content}</UserState>;
 };
