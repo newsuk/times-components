@@ -4,13 +4,17 @@ export const Container = styled.div`
   max-width: 1144px;
   margin: 0 auto;
   padding-block-end: 24px;
-  padding-inline: 10px;
 
-  @media (min-width: 1024px) {
-    padding: 20px;
+  @media (max-width: 767px) {
+    padding-inline: 10px;
   }
-  @media (min-width: 768px) {
-    padding: 24px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-inline: 24px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1319px) {
+    padding-inline: 20px;
   }
 `;
 
@@ -49,12 +53,13 @@ export const Grid = styled.div<{ columns: number }>`
 `;
 
 export const Divider = styled.hr`
-  border: 1px solid #01000d;
+  border-bottom: 1px solid #01000d;
+  border-top: 0px;
   margin: 0px;
   align-self: stretch;
   border-radius: 0px;
 
   @media (max-width: 767px) {
-    border: 3px solid rgb(1, 0, 13);
+    border-bottom: 3px solid rgb(1, 0, 13);
   }
 `;
