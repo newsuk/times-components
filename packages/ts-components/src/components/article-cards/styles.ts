@@ -27,6 +27,18 @@ export const Title = styled.span`
   color: #01000d;
   letter-spacing: 0em;
 
+  &::before {
+    display: block;
+    content: '';
+    margin-top: -0.2035em;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    margin-top: -0.2215em;
+  }
+
   @media (min-width: 768px) {
     font-size: 2.8rem;
     line-height: 3.15rem;
@@ -36,6 +48,8 @@ export const Title = styled.span`
     margin-block: 20px;
   }
 `;
+
+export const PaddingTitle = styled.span``;
 
 export const Grid = styled.div<{ columns: number }>`
   display: grid;

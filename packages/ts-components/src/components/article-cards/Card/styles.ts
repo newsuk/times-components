@@ -146,6 +146,18 @@ export const StyledText = styled.span<CardProps>`
   letter-spacing: 0em;
   padding: 0.5px 0px;
 
+  &::before {
+    display: block;
+    content: '';
+    margin-top: -0.393em;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    margin-top: -0.415em;
+  }
+
   @media (max-width: 767px) {
     display: none;
 
@@ -180,6 +192,18 @@ export const StyledLink = styled.a<CardProps>`
   padding: 0.5px 0px;
   font-stretch: normal;
 
+  &::before {
+    display: block;
+    content: '';
+    margin-top: -0.216em;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    margin-top: -0.234em;
+  }
+
   @media (max-width: 375px) {
     font-size: 1.25rem;
   }
@@ -187,6 +211,18 @@ export const StyledLink = styled.a<CardProps>`
   @media (max-width: 767px) {
     font-size: 2rem;
     line-height: 2.25rem;
+
+    &::before {
+      display: block;
+      content: '';
+      margin-top: -0.2035em;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      margin-top: -0.2215em;
+    }
   }
 
   @media (min-width: 1024px) {
