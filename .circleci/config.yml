@@ -110,7 +110,7 @@ jobs:
       - run:
           name: Run Web Tests
           command: |
-            lerna run test:web --verbose --since -- -- --ci --coverage 
+            lerna run test:web --since -- -- --ci --coverage --verbose --runInBand --logHeapUsage
           working_directory: ~/project/
 
   run_unit_tests:
