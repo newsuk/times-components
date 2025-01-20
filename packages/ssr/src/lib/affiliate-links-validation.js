@@ -3,11 +3,15 @@ const {
   travelSiteCode,
   trackonomicsRegex
 } = require("../constants/affiliate-links-validation");
-const { wrapSkimlinks } = require("./skimlinks-wrapping");
+const {
+  wrapSkimlinks,
+  fetchSkimlinksDomains,
+  filterDomains
+} = require("./skimlinks-wrapping");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
 
-const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
+const wrapAffiliateLink = (affiliateLink, contentPageUrl, filteredDomains) => {
   const wrapTrackonomics = trackonomicsUrl => {
     if (!isAffiliateLink(trackonomicsUrl)) {
       return trackonomicsUrl;
@@ -25,14 +29,20 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
     return affiliateWrapper;
   };
 
-  const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
+  const skimlinksUrl = wrapSkimlinks(
+    affiliateLink,
+    contentPageUrl,
+    filteredDomains
+  );
   return wrapTrackonomics(skimlinksUrl);
 };
 
-module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
+const affiliateLinksValidation = async (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
+  const skimlinksDomains = await fetchSkimlinksDomains();
+  const filteredDomains = filterDomains(skimlinksDomains);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -66,7 +76,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href, contentPageUrl)
+                url: wrapAffiliateLink(href, contentPageUrl, filteredDomains)
               }
             };
           } else {
@@ -75,7 +85,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl)
+                href: wrapAffiliateLink(href, contentPageUrl, filteredDomains)
               }
             };
           }
@@ -91,3 +101,5 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
 
   return checkAndSetLinkTarget(clonedChildren);
 };
+
+module.exports = { affiliateLinksValidation };
