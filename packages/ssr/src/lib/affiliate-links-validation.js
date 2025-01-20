@@ -13,9 +13,6 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
 
-  // eslint-disable-next-line no-console
-  console.log("contentPageUrl: ", contentPageUrl);
-
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
       let newElement = { ...el };
@@ -63,7 +60,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: ""
+                href: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           }
