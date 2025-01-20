@@ -20,7 +20,7 @@ export const Container = styled.div`
 
 export const Title = styled.span`
   display: block;
-  margin-block: 24px;
+  margin-block: 24px 23px;
   font-family: 'Times Modern';
   font-size: 2.4rem;
   font-weight: 800;
@@ -45,11 +45,9 @@ export const Title = styled.span`
   }
 
   @media (max-width: 767px) {
-    margin-block: 20px;
+    margin-block: 20px 19px;
   }
 `;
-
-export const PaddingTitle = styled.span``;
 
 export const Grid = styled.div<{ columns: number }>`
   display: grid;

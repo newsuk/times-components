@@ -109,7 +109,7 @@ export const StyledContent = styled.div<CardProps>`
 
   @media (max-width: 375px) {
     &:nth-of-type(1) {
-      margin-block-start: 16px;
+      margin-block-start: 15px;
     }
 
     &:not(:nth-of-type(1)) {
@@ -118,7 +118,7 @@ export const StyledContent = styled.div<CardProps>`
   }
 
   @media (min-width: 768px) {
-    margin-block-start: 16px;
+    margin-block-start: 15px;
   }
 
   @media (min-width: 1024px) {
