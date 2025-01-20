@@ -3,11 +3,11 @@ const {
   travelSiteCode,
   trackonomicsRegex
 } = require("../constants/affiliate-links-validation");
-/* const { wrapSkimlinks } = require("./skimlinks-wrapping"); */
+const { wrapSkimlinks } = require("./skimlinks-wrapping");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
 
-const wrapAffiliateLink = (affiliateUrl, contentPageUrl) => {
+const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
     if (!isAffiliateLink(trackonomicsUrl)) {
       return trackonomicsUrl;
@@ -25,8 +25,8 @@ const wrapAffiliateLink = (affiliateUrl, contentPageUrl) => {
     return affiliateWrapper;
   };
 
-  /* const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl); */
-  return wrapTrackonomics(affiliateUrl);
+  const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
+  return wrapTrackonomics(skimlinksUrl);
 };
 
 module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
