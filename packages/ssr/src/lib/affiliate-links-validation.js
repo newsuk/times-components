@@ -3,12 +3,11 @@ const {
   travelSiteCode,
   trackonomicsRegex
 } = require("../constants/affiliate-links-validation");
-const { wrapSkimlinks } = require("./skimlinks-wrapping");
+/* const { wrapSkimlinks } = require("./skimlinks-wrapping"); */
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
 
-// eslint-disable-next-line no-unused-vars
-const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
+const wrapAffiliateLink = (affiliateUrl, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
     if (!isAffiliateLink(trackonomicsUrl)) {
       return trackonomicsUrl;
@@ -26,17 +25,14 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
     return affiliateWrapper;
   };
 
-  const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
-  return wrapTrackonomics(skimlinksUrl);
+  /* const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl); */
+  return wrapTrackonomics(affiliateUrl);
 };
 
 module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
-
-  // eslint-disable-next-line no-console
-  console.log("contentPageUrl: ", contentPageUrl);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -70,7 +66,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: ""
+                url: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           } else {
@@ -79,7 +75,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: ""
+                href: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           }
