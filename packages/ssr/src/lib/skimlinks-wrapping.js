@@ -27,13 +27,13 @@ const urlContainsDomain = url => {
  * @param contentPageUrl The referring page
  * @returns Skimlinks url
  */
-/* const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
+const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
   const skimlinksWrapper = `https://go.skimresources.com/?id=${publisherId}&url=${encodeURIComponent(
     merchantUrl
   )}&sref=${encodeURIComponent(contentPageUrl)}`;
 
   return skimlinksWrapper;
-}; */
+};
 
 const wrapSkimlinks = (url, contentPageUrl) =>
   urlContainsDomain(url) ? constructSkimlinksUrl(url, contentPageUrl) : url;
