@@ -19,24 +19,6 @@ const {
 
 const scale = scales.large;
 
-const fetchSkimlinksDomains = async () => {
-  // eslint-disable-next-line no-console
-  console.log("Starting fetch...");
-  const response = await fetch(
-    "https://ads.thesun.co.uk/skimlinks/domains.json"
-  );
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-
-  const { domains } = await response.json();
-  // eslint-disable-next-line no-console
-  console.log("Fetched Data:", domains);
-
-  return domains;
-};
-
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     articleId,
@@ -61,8 +43,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isEntitlementFeatureEnabled
   } = data;
 
-  const skimlinksDomains = fetchSkimlinksDomains();
-
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -84,17 +64,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const articleTemplate = article ? article.template : null;
           const articleContent = affiliateLinksValidation(
             article.content,
-            articleDataFromRender,
-            skimlinksDomains
+            articleDataFromRender
           );
 
           const formattedArticle = { ...article, content: articleContent };
-
-          // eslint-disable-next-line no-console
-          console.log("Article: ", article, articleDataFromRender);
-
-          // eslint-disable-next-line no-console
-          console.log("Formatted Article: ", formattedArticle);
 
           return React.createElement(
             ContextProviderWithDefaults,

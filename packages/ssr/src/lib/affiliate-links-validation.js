@@ -2,16 +2,10 @@ const {
   theTimesSiteCode,
   travelSiteCode,
   trackonomicsRegex
-} = require("../constants/affiliate-validation");
+} = require("../constants/affiliate-links-validation");
+const { wrapSkimlinks } = require("./skimlinks-wrapping");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
-
-const filterDomains = domains =>
-  Array.isArray(domains) ? domains.map(retailer => retailer.domain) : [];
-
-/* const constructSkimlinksUrl = (skimlinksId, url, contentPageUrl) => `https://go.skimresources.com/?id=${skimlinksId}&url=${encodeURIComponent(
-    url
-  )}&sref=${encodeURIComponent(contentPageUrl)}` */
 
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
@@ -31,24 +25,14 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
     return affiliateWrapper;
   };
 
-  const wrapSkimlinks = url => url;
-
-  const wrapInSkimlinks = wrapSkimlinks(affiliateLink);
-  return wrapTrackonomics(wrapInSkimlinks);
+  const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
+  return wrapTrackonomics(skimlinksUrl);
 };
 
-module.exports.affiliateLinksValidation = (
-  children,
-  articleDataFromRender,
-  skimlinksDomains
-) => {
+module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
-  const skimlinksDomainsList = filterDomains(skimlinksDomains);
-
-  // eslint-disable-next-line no-console
-  console.log("skimlinksDomainsList:", skimlinksDomainsList);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -71,7 +55,6 @@ module.exports.affiliateLinksValidation = (
             : attributes.href || "";
 
         // If the link is external, set target to _blank. Wrap affiliate link if necessary.
-        // Izdvojiti u posebnu funkciju
         if (
           href &&
           !href.startsWith("https://www.thetimes.co.uk") &&
