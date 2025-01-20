@@ -7,6 +7,7 @@ const { wrapSkimlinks } = require("./skimlinks-wrapping");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
 
+// eslint-disable-next-line no-unused-vars
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const wrapTrackonomics = trackonomicsUrl => {
     if (!isAffiliateLink(trackonomicsUrl)) {
@@ -33,6 +34,9 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
+
+  // eslint-disable-next-line no-console
+  console.log("contentPageUrl: ", contentPageUrl);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -66,7 +70,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href, contentPageUrl)
+                url: ""
               }
             };
           } else {
@@ -75,7 +79,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl)
+                href: ""
               }
             };
           }
