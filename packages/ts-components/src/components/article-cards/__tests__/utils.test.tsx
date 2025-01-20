@@ -18,13 +18,14 @@ describe('tealiumTrackingHandler', () => {
 
     tealiumTrackingHandler(articleParentName, sectionDetails);
 
-    expect(global.window.utag.link).toHaveBeenCalledWith({
-      event_navigation_action: 'navigation',
-      event_navigation_name: 'travel contents card selection',
-      event_navigation_browsing_method: 'click',
-      article_parent_name: articleParentName,
-      section_details: sectionDetails
-    });
+    global.window.utag &&
+      expect(global.window.utag.link).toHaveBeenCalledWith({
+        event_navigation_action: 'navigation',
+        event_navigation_name: 'travel contents card selection',
+        event_navigation_browsing_method: 'click',
+        article_parent_name: articleParentName,
+        section_details: sectionDetails
+      });
   });
 });
 

@@ -1,6 +1,6 @@
 declare global {
   interface Window {
-    utag: {
+    utag?: {
       link: (params: Record<string, any>) => void;
     };
   }
@@ -10,13 +10,14 @@ export const tealiumTrackingHandler = (
   articleParentName: string,
   sectionDetails: string
 ) => {
-  global.window.utag.link({
-    event_navigation_action: 'navigation',
-    event_navigation_name: 'travel contents card selection',
-    event_navigation_browsing_method: 'click',
-    article_parent_name: `${articleParentName}`,
-    section_details: `${sectionDetails}`
-  });
+  global.window.utag &&
+    global.window.utag.link({
+      event_navigation_action: 'navigation',
+      event_navigation_name: 'travel contents card selection',
+      event_navigation_browsing_method: 'click',
+      article_parent_name: `${articleParentName}`,
+      section_details: `${sectionDetails}`
+    });
 };
 
 // This function will replace all times.co.uk with .com
