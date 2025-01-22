@@ -31,4 +31,16 @@ describe('CtaButton Component', () => {
     const { container } = render(<CtaButton />);
     expect(container.firstChild).toBeNull();
   });
+
+  it('does not render anything if text is empty or contains only whitespace', () => {
+    const { container: emptyTextContainer } = render(
+      <CtaButton attributes={{ ...defaultProps, text: '' }} />
+    );
+    expect(emptyTextContainer.firstChild).toBeNull();
+
+    const { container: whitespaceTextContainer } = render(
+      <CtaButton attributes={{ ...defaultProps, text: '   ' }} />
+    );
+    expect(whitespaceTextContainer.firstChild).toBeNull();
+  });
 });

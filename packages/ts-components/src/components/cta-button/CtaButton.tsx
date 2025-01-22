@@ -15,7 +15,11 @@ interface RootProps {
 export const CtaButton: React.FC<RootProps> = props => {
   const attributes = props.attributes;
 
-  return attributes ? (
+  if (!attributes || !attributes.text.trim()) {
+    return null;
+  }
+
+  return (
     <Link
       href={attributes.url}
       target={attributes.target || '_blank'}
@@ -30,5 +34,5 @@ export const CtaButton: React.FC<RootProps> = props => {
     >
       {attributes.text}
     </Link>
-  ) : null;
+  );
 };
