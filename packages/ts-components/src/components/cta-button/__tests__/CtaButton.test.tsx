@@ -43,4 +43,11 @@ describe('CtaButton Component', () => {
     );
     expect(whitespaceTextContainer.firstChild).toBeNull();
   });
+
+  it('does not render anything if url is missing or empty', () => {
+    const { container: noUrlContainer } = render(
+      <CtaButton attributes={{ ...defaultProps, url: '' }} />
+    );
+    expect(noUrlContainer.firstChild).toBeNull();
+  });
 });

@@ -15,7 +15,7 @@ interface RootProps {
 export const CtaButton: React.FC<RootProps> = props => {
   const attributes = props.attributes;
 
-  if (!attributes || !attributes.text.trim()) {
+  if (!attributes || !attributes.text.trim() || !attributes.url.trim()) {
     return null;
   }
 
