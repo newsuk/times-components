@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
+import { hasEntitlement } from "@times-components/utils/src";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
@@ -41,7 +42,8 @@ const ArticleComments = ({
       if (cookieValue) {
         try {
           const jsonValue = convertBase64JSONCookie(cookieValue);
-          const entitlements = jsonValue ? jsonValue["fp-1111"] : false;
+          const entitlementChecker = hasEntitlement(jsonValue);
+          const entitlements = entitlementChecker("functionalCommentingFull");
           setHasCommentingEntitlement(entitlements);
         } catch (error) {
           setHasCommentingEntitlement(false);
