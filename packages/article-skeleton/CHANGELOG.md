@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.147.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.146.0...@times-components/article-skeleton@1.147.0) (2025-01-22)
+
+
+### Features
+
+* **TMD-1331:** re enable the automated newsletter puff component ([#4036](https://github.com/newsuk/times-components/issues/4036)) ([837a558](https://github.com/newsuk/times-components/commit/837a558a97d63ec738c6b743d8b171dbc90ab94c))
+
+
+
+
+
 # [1.146.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.145.3...@times-components/article-skeleton@1.146.0) (2025-01-22)
 
 
