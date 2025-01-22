@@ -66,9 +66,7 @@ const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
   return skimlinksWrapper;
 };
 
-const wrapSkimlinks = (url, contentPageUrl, filteredDomains) => {
-  const skimlinksRegex = createDomainRegex(filteredDomains);
-
+const wrapSkimlinks = (url, contentPageUrl, skimlinksRegex) => {
   if (skimlinksRegex.test(url)) {
     return constructSkimlinksUrl(url, contentPageUrl);
   }
@@ -79,5 +77,6 @@ const wrapSkimlinks = (url, contentPageUrl, filteredDomains) => {
 module.exports = {
   wrapSkimlinks,
   fetchSkimlinksDomains,
-  filterDomains
+  filterDomains,
+  createDomainRegex
 };
