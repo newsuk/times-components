@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
-import { hasEntitlement } from "@times-components/utils/src";
+import { hasEntitlement } from "@times-components/utils";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
