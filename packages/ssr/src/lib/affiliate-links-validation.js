@@ -6,12 +6,13 @@ const {
 const {
   wrapSkimlinks,
   fetchSkimlinksDomains,
-  filterDomains
+  filterDomains,
+  createDomainRegex
 } = require("./skimlinks-wrapping");
 
 const isAffiliateLink = url => trackonomicsRegex.test(url);
 
-const wrapAffiliateLink = (affiliateLink, contentPageUrl, filteredDomains) => {
+const wrapAffiliateLink = (affiliateLink, contentPageUrl, skimlinksRegex) => {
   const wrapTrackonomics = trackonomicsUrl => {
     if (!isAffiliateLink(trackonomicsUrl)) {
       return trackonomicsUrl;
@@ -32,7 +33,7 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl, filteredDomains) => {
   const skimlinksUrl = wrapSkimlinks(
     affiliateLink,
     contentPageUrl,
-    filteredDomains
+    skimlinksRegex
   );
   return wrapTrackonomics(skimlinksUrl);
 };
@@ -41,8 +42,10 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
+
   const skimlinksDomains = await fetchSkimlinksDomains();
   const filteredDomains = filterDomains(skimlinksDomains);
+  const skimlinksRegex = createDomainRegex(filteredDomains);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -76,7 +79,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href, contentPageUrl, filteredDomains)
+                url: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
               }
             };
           } else {
@@ -85,7 +88,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl, filteredDomains)
+                href: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
               }
             };
           }
