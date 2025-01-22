@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.146.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.145.3...@times-components/article-skeleton@1.146.0) (2025-01-22)
+
+
+### Features
+
+* **tmc-230:** Article cards ([#4018](https://github.com/newsuk/times-components/issues/4018)) ([3ee1117](https://github.com/newsuk/times-components/commit/3ee11175bf4d33ebe40dc0ae16fd2ec82b6ee781))
+
+
+
+
+
 ## [1.145.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.145.2...@times-components/article-skeleton@1.145.3) (2025-01-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton

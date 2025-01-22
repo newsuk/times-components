@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.116.0...@times-components/ts-components@1.117.0) (2025-01-22)
+
+
+### Features
+
+* **tmc-230:** Article cards ([#4018](https://github.com/newsuk/times-components/issues/4018)) ([3ee1117](https://github.com/newsuk/times-components/commit/3ee11175bf4d33ebe40dc0ae16fd2ec82b6ee781))
+
+
+
+
+
 # [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.115.1...@times-components/ts-components@1.116.0) (2025-01-20)
 
 
