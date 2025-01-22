@@ -40,7 +40,8 @@ import {
   Timelines,
   SocialMediaEmbed,
   AffiliateLinkDisclaimer,
-  CtaButton
+  CtaButton,
+  ArticleCard
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -315,6 +316,16 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <AffiliateLinkDisclaimer attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-article-slices": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <ArticleCard element={elementAttr} />
           </InteractiveContainer>
         );
       }
