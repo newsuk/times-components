@@ -12,8 +12,10 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
+
   const skimlinksDomains = await fetchSkimlinksDomains();
   const filteredDomains = filterDomains(skimlinksDomains);
+  const skimlinksRegex = createDomainRegex(filteredDomains);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -62,7 +64,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl, filteredDomains)
+                href: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
               }
             };
           }
