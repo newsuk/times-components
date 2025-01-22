@@ -137,3 +137,5 @@ export {
 export {
   AffiliateLinkDisclaimer
 } from './components/affiliate-link-disclaimer/AffiliateLinkDisclaimer';
+
+export { ArticleCard } from './components/article-cards/ArticleCard';

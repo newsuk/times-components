@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from './styles';
+import { tealiumTrackingHandler } from '../../helpers/tracking/TrackingHandler';
 
 interface AttributesProps {
   url: string;
@@ -18,6 +19,13 @@ export const CtaButton: React.FC<RootProps> = props => {
     <Link
       href={attributes.url}
       target={attributes.target || '_blank'}
+      onClick={() =>
+        tealiumTrackingHandler(
+          attributes.text.toLowerCase(),
+          'navigation',
+          'click'
+        )
+      }
       rel="nofollow"
     >
       {attributes.text}

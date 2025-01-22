@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.115.1...@times-components/ts-components@1.116.0) (2025-01-20)
+
+
+### Features
+
+* **TMC-3113:** Add tracking for cta buttons ([#4037](https://github.com/newsuk/times-components/issues/4037)) ([9ea608e](https://github.com/newsuk/times-components/commit/9ea608e073b7de7bf836f170d5e22f0443f2f533))
+
+
+
+
+
 ## [1.115.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.115.0...@times-components/ts-components@1.115.1) (2025-01-09)
 
 
