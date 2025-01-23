@@ -96,11 +96,74 @@ export const StyledPicture = styled.picture`
   height: auto;
 `;
 
-export const StyledImg = styled.img`
+export const StyledImg = styled.img<CardProps>`
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: inline-block;
+
+  @media (min-width: 1440px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 4 &&
+      `
+      min-height: 147px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 3 &&
+      `
+      min-height: 202px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles <= 2 &&
+      `
+      min-height: 312px;
+    `};
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 4 &&
+      `
+      min-height: 124px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 3 &&
+      `
+      min-height: 172px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles <= 2 &&
+      `
+      min-height: 267px;
+    `};
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 4 &&
+      `
+      min-height: 87px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 3 &&
+      `
+      min-height: 123px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 1 &&
+      `
+      min-height: 405px;
+    `};
+    ${({ $numOfArticles }) =>
+      $numOfArticles === 2 &&
+      `
+      min-height: 193px;
+    `};
+  }
+
+  @media (max-width: 375px) {
+    min-height: 199px;
+  }
 `;
 export const StyledContent = styled.div<CardProps>`
   display: flex;
