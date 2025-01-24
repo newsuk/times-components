@@ -54,6 +54,7 @@ const Card = (props: ArticleCardProps) => {
             <StyledMedia>
               <StyledPicture>
                 <StyledImg
+                  loading="lazy"
                   src={appendResizeToUrl(article.image.url)}
                   $numOfArticles={numOfArticles}
                 />
