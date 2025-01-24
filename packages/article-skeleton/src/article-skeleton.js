@@ -47,6 +47,7 @@ import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
+import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
@@ -171,6 +172,7 @@ const ArticleSkeleton = ({
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
+    insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd(isPreview),
     tagLastParagraph,
     setExternalLinkTargets
