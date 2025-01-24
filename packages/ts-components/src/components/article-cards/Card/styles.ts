@@ -44,6 +44,7 @@ export const Hidden = styled.div<HiddenProps>`
 interface CardProps {
   $numOfArticles: number;
 }
+
 export const StyledCard = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
@@ -96,7 +97,7 @@ export const StyledPicture = styled.picture`
   height: auto;
 `;
 
-export const StyledImg = styled.img<CardProps>`
+export const StyledImg = styled.img<any>`
   width: 100%;
   height: 100%;
   object-fit: cover;
