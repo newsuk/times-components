@@ -27,8 +27,14 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
     attributes: { title }
   } = ast;
 
+
+
   const { children: keyFactsItems } = children[0];
   const formattedKeyFactItems = formatPaywallItems(keyFactsItems);
+
+  console.log("ast, section, headline, isLiveOrBreaking",ast, section, headline, isLiveOrBreaking)
+  console.log("keyFactsItems", keyFactsItems)
+  console.log("formattedKeyFactItems",formattedKeyFactItems)
 
   const articleFlag = isLiveOrBreaking
     ? isLiveOrBreaking.toLowerCase()
