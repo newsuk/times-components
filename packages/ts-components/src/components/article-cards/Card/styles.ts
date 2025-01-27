@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ImgHTMLAttributes } from 'react';
 
 interface HiddenProps {
   xs?: boolean;
@@ -42,6 +43,10 @@ export const Hidden = styled.div<HiddenProps>`
 `;
 
 interface CardProps {
+  $numOfArticles: number;
+}
+
+interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   $numOfArticles: number;
 }
 
@@ -97,7 +102,7 @@ export const StyledPicture = styled.picture`
   height: auto;
 `;
 
-export const StyledImg = styled.img<any>`
+export const StyledImg = styled.img<ImageProps>`
   width: 100%;
   height: 100%;
   object-fit: cover;
