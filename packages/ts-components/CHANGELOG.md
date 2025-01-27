@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.117.1...@times-components/ts-components@1.118.0) (2025-01-27)
+
+
+### Features
+
+* **tmc-319:** Button not visible if text is empty ([#4043](https://github.com/newsuk/times-components/issues/4043)) ([6214a83](https://github.com/newsuk/times-components/commit/6214a835dd3f4b9e4805a791c2edf7ee2ee46bca))
+
+
+
+
+
 ## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.117.0...@times-components/ts-components@1.117.1) (2025-01-22)
 
 
