@@ -33,7 +33,7 @@ const ArticleComments = ({
     const fetchClientSideCookie = () => {
       const cookies = document.cookie.split("; ");
       const authDecisionCookie = cookies.find(row =>
-        row.startsWith("auth-decisions=")
+        row.startsWith("access-decisions=")
       );
       const cookieValue = authDecisionCookie
         ? authDecisionCookie.split("=")[1]
