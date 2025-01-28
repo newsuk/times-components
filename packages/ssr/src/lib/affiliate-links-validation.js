@@ -2,15 +2,8 @@ const { wrapSkimlinks } = require("./skimlinks-wrapping");
 const { wrapTrackonomics } = require("../lib/trackonomics-wrapping");
 
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
-  console.log("affiliateLink: ", wrapSkimlinks(affiliateLink, contentPageUrl));
-  console.log("contentPageUrl: ", contentPageUrl);
-  console.log("skimlinksLink: ", wrapSkimlinks(affiliateLink, contentPageUrl));
-
   const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
-  console.log(
-    "trackonomicsUrl: ",
-    wrapTrackonomics(affiliateLink, skimlinksUrl, contentPageUrl)
-  );
+
   return wrapTrackonomics(affiliateLink, skimlinksUrl, contentPageUrl);
 };
 
