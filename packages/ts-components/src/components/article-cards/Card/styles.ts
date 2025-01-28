@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ImgHTMLAttributes } from 'react';
 
 interface HiddenProps {
   xs?: boolean;
@@ -46,7 +45,8 @@ interface CardProps {
   $numOfArticles: number;
 }
 
-interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
+interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  loading?: 'lazy' | 'eager' | 'auto';
   $numOfArticles: number;
 }
 
