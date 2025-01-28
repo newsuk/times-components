@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.148.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.147.2...@times-components/article-skeleton@1.148.0) (2025-01-28)
+
+
+### Features
+
+* **TMP-1657:** Update deck-data api ([#4046](https://github.com/newsuk/times-components/issues/4046)) ([874908a](https://github.com/newsuk/times-components/commit/874908a588c6cc943aedff963ff326e74f638ec1))
+
+
+
+
+
 ## [1.147.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.147.1...@times-components/article-skeleton@1.147.2) (2025-01-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton

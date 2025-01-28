@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.118.0...@times-components/ts-components@1.119.0) (2025-01-28)
+
+
+### Features
+
+* **TMP-1657:** Update deck-data api ([#4046](https://github.com/newsuk/times-components/issues/4046)) ([874908a](https://github.com/newsuk/times-components/commit/874908a588c6cc943aedff963ff326e74f638ec1))
+
+
+
+
+
 # [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.117.1...@times-components/ts-components@1.118.0) (2025-01-27)
 
 
