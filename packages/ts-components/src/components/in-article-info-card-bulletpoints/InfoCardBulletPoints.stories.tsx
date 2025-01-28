@@ -20,7 +20,7 @@ storiesOf('Typescript Component/In Article/Info Card', module).add(
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=43978">
           <InfoCardBulletPoints sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>

@@ -19,7 +19,7 @@ storiesOf('Typescript Component/In Article/Timelines', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45060">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=45060">
           <Timelines sectionColour="#008347" />
         </FetchProvider>
       </ArticleHarness>
@@ -37,7 +37,7 @@ storiesOf('Typescript Component/In Article/Timelines', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45061">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=45061">
           <Timelines sectionColour="#008347" />
         </FetchProvider>
       </ArticleHarness>
