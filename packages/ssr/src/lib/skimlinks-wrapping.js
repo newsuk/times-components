@@ -35,10 +35,7 @@ const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
   return skimlinksWrapper;
 };
 
-const wrapSkimlinks = (url, contentPageUrl) => {
-  return urlContainsDomain(url)
-    ? constructSkimlinksUrl(url, contentPageUrl)
-    : url;
-};
+const wrapSkimlinks = (url, contentPageUrl) =>
+  urlContainsDomain(url) ? constructSkimlinksUrl(url, contentPageUrl) : url;
 
 module.exports = { wrapSkimlinks };
