@@ -1,55 +1,24 @@
-const { flowRight } = require("lodash");
 const { publisherId } = require("../constants/affiliate-links-validation");
+const { skimlinksDomainSet } = require("../constants/skimlinks-domains");
 
-const getSecondLevelDomain = str => str.replace(/^(https?:\/\/)?www\./, "");
-
-const trim = str => str.trim();
-
-const removeTrailingSlash = str => str.replace(/\/$/, "");
-
-const stringifyArg = str => (typeof str === "string" ? str : "");
-
-/**
- * Removes http scheme, `www.`, and trailing slash from the string
- * @param str
- * @returns Domain name without www
- */
-const sanitizeDomainName = flowRight(
-  removeTrailingSlash,
-  getSecondLevelDomain,
-  trim,
-  stringifyArg
-);
-
-const fetchSkimlinksDomains = async () => {
-  const response = await fetch(
-    "https://ads.thesun.co.uk/skimlinks/domains.json"
-  );
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+const extractDomain = url => {
+  try {
+    const { hostname } = new URL(url);
+    return hostname.replace(/^www\./, "");
+  } catch (error) {
+    return null;
   }
-
-  const { domains } = await response.json();
-
-  return domains;
 };
 
-/**
- *
- * @param domains List of domains
- * @returns Array of just retailer domains
- */
-const filterDomains = domains =>
-  Array.isArray(domains)
-    ? domains.map(retailer => retailer.domain).map(sanitizeDomainName)
-    : [];
+const urlContainsDomain = url => {
+  const domain = extractDomain(url);
 
-const createDomainRegex = domains => {
-  const domainRegexString = domains.join("|");
-  const skimlinksRegex = new RegExp(domainRegexString);
+  // Ensure skimlinksDomainSet is a Set and domain is valid
+  if (domain && skimlinksDomainSet instanceof Set) {
+    return skimlinksDomainSet.has(domain);
+  }
 
-  return skimlinksRegex;
+  return false;
 };
 
 /**
@@ -66,17 +35,10 @@ const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
   return skimlinksWrapper;
 };
 
-const wrapSkimlinks = (url, contentPageUrl, skimlinksRegex) => {
-  if (skimlinksRegex.test(url)) {
-    return constructSkimlinksUrl(url, contentPageUrl);
-  }
-
-  return url;
+const wrapSkimlinks = (url, contentPageUrl) => {
+  return urlContainsDomain(url)
+    ? constructSkimlinksUrl(url, contentPageUrl)
+    : url;
 };
 
-module.exports = {
-  wrapSkimlinks,
-  fetchSkimlinksDomains,
-  filterDomains,
-  createDomainRegex
-};
+module.exports = { wrapSkimlinks };

@@ -1,51 +1,23 @@
-const {
-  theTimesSiteCode,
-  travelSiteCode,
-  trackonomicsRegex
-} = require("../constants/affiliate-links-validation");
-const {
-  wrapSkimlinks,
-  fetchSkimlinksDomains,
-  filterDomains,
-  createDomainRegex
-} = require("./skimlinks-wrapping");
+const { wrapSkimlinks } = require("./skimlinks-wrapping");
+const { wrapTrackonomics } = require("../lib/trackonomics-wrapping");
 
-const isAffiliateLink = url => trackonomicsRegex.test(url);
+const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
+  console.log("affiliateLink: ", wrapSkimlinks(affiliateLink, contentPageUrl));
+  console.log("contentPageUrl: ", contentPageUrl);
+  console.log("skimlinksLink: ", wrapSkimlinks(affiliateLink, contentPageUrl));
 
-const wrapAffiliateLink = (affiliateLink, contentPageUrl, skimlinksRegex) => {
-  const wrapTrackonomics = trackonomicsUrl => {
-    if (!isAffiliateLink(trackonomicsUrl)) {
-      return trackonomicsUrl;
-    }
-
-    const isTravel =
-      contentPageUrl.includes("https://www.thetimes.com/travel") ||
-      contentPageUrl.includes("https://www.thetimes.co.uk/travel");
-
-    const siteCode = isTravel ? travelSiteCode : theTimesSiteCode;
-    const affiliateWrapper = `https://clicks.trx-hub.com/xid/${siteCode}?q=${encodeURIComponent(
-      trackonomicsUrl
-    )}&p=${encodeURIComponent(contentPageUrl)}`;
-
-    return affiliateWrapper;
-  };
-
-  const skimlinksUrl = wrapSkimlinks(
-    affiliateLink,
-    contentPageUrl,
-    skimlinksRegex
+  const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
+  console.log(
+    "trackonomicsUrl: ",
+    wrapTrackonomics(affiliateLink, skimlinksUrl, contentPageUrl)
   );
-  return wrapTrackonomics(skimlinksUrl);
+  return wrapTrackonomics(affiliateLink, skimlinksUrl, contentPageUrl);
 };
 
-const affiliateLinksValidation = async (children, articleDataFromRender) => {
+module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
-
-  const skimlinksDomains = await fetchSkimlinksDomains();
-  const filteredDomains = filterDomains(skimlinksDomains);
-  const skimlinksRegex = createDomainRegex(filteredDomains);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -79,7 +51,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                url: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
+                url: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           } else {
@@ -88,7 +60,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
+                href: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           }
@@ -104,5 +76,3 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
 
   return checkAndSetLinkTarget(clonedChildren);
 };
-
-module.exports = { affiliateLinksValidation };
