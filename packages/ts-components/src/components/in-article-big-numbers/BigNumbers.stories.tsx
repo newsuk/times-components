@@ -5,6 +5,9 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { BigNumbers } from './BigNumbers';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
+import { getDeckApiUrl } from '../../utils/getDeckApiUrl';
+
+const deckApiUrl = getDeckApiUrl();
 
 storiesOf('Typescript Component/In Article/Big Numbers', module)
   .add('Standard without a headline', () => (
@@ -19,7 +22,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
+        <FetchProvider url={deckApiUrl + '?id=44335'}>
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
@@ -37,7 +40,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44336">
+        <FetchProvider url={deckApiUrl + '?id=44336'}>
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
@@ -55,7 +58,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44334">
+        <FetchProvider url={deckApiUrl + '?id=44334'}>
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
