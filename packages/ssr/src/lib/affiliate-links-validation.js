@@ -8,14 +8,10 @@ const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   return wrapTrackonomics(skimlinksUrl, contentPageUrl);
 };
 
-const affiliateLinksValidation = async (children, articleDataFromRender) => {
+module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
   const clonedChildren = [...children];
   const { canonicalUrl, hostName } = articleDataFromRender;
   const contentPageUrl = `${hostName}${canonicalUrl}`;
-
-  const skimlinksDomains = await fetchSkimlinksDomains();
-  const filteredDomains = filterDomains(skimlinksDomains);
-  const skimlinksRegex = createDomainRegex(filteredDomains);
 
   const checkAndSetLinkTarget = elements =>
     elements.map(el => {
@@ -64,7 +60,7 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl, skimlinksRegex)
+                href: wrapAffiliateLink(href, contentPageUrl)
               }
             };
           }
@@ -80,5 +76,3 @@ const affiliateLinksValidation = async (children, articleDataFromRender) => {
 
   return checkAndSetLinkTarget(clonedChildren);
 };
-
-module.exports = { affiliateLinksValidation };
