@@ -37,7 +37,10 @@ describe('Card Component', () => {
     render(<Card {...mockProps} />);
 
     const image = screen.getByRole('img');
-    expect(image).toHaveAttribute('src', 'https://example.com/image.jpg');
+    expect(image).toHaveAttribute(
+      'src',
+      'https://example.com/image.jpg?resize=750'
+    );
   });
 
   it('renders the link with correct href', () => {
