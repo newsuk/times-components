@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.119.0...@times-components/ts-components@1.120.0) (2025-01-29)
+
+
+### Features
+
+* **tmc-328:** Fix article cards images ([#4044](https://github.com/newsuk/times-components/issues/4044)) ([2edeb82](https://github.com/newsuk/times-components/commit/2edeb828f248ac3327ea426c1bcd8ea53c6cf26d))
+
+
+
+
+
 # [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.118.0...@times-components/ts-components@1.119.0) (2025-01-28)
 
 
