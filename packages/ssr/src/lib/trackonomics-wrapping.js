@@ -24,9 +24,9 @@ const constructTrackonomicsUrl = (trackonomicsUrl, contentPageUrl) => {
   return trackonomicsWrapper;
 };
 
-const wrapTrackonomics = (url, trackonomicsUrl, contentPageUrl) =>
-  isTrackonomicsUrl(url)
-    ? constructTrackonomicsUrl(trackonomicsUrl, contentPageUrl)
-    : trackonomicsUrl;
+const wrapTrackonomics = (skimlinksUrl, contentPageUrl) =>
+  isTrackonomicsUrl(skimlinksUrl)
+    ? constructTrackonomicsUrl(skimlinksUrl, contentPageUrl)
+    : skimlinksUrl;
 
 module.exports = { wrapTrackonomics };
