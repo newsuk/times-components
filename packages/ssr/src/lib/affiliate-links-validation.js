@@ -4,7 +4,7 @@ const { wrapTrackonomics } = require("../lib/trackonomics-wrapping");
 const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
   const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
 
-  return wrapTrackonomics(affiliateLink, skimlinksUrl, contentPageUrl);
+  return wrapTrackonomics(skimlinksUrl, contentPageUrl);
 };
 
 module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
@@ -43,8 +43,14 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               ...newElement,
               attributes: {
                 ...attributes,
-                target: "_blank",
-                url: wrapAffiliateLink(href, contentPageUrl)
+                element: {
+                  ...element,
+                  attributes: {
+                    ...elementAttributes,
+                    target: "_blank",
+                    url: wrapAffiliateLink(href, contentPageUrl)
+                  }
+                }
               }
             };
           } else {
