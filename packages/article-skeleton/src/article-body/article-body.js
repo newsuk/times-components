@@ -522,17 +522,14 @@ const renderers = ({
   },
   autoNewsletterPuff(key, { element }) {
     const {
-      attributes: { code, copy, headline }
+      attributes: { code, description, title }
     } = element;
-
     return (
       <AutoNewsletterPuff
-        analyticsStream={analyticsStream}
         key={key}
         code={code}
-        copy={copy}
-        headline={headline}
-        section={section}
+        description={description}
+        title={title}
       />
     );
   },
