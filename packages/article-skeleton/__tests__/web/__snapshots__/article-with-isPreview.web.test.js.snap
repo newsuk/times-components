@@ -156,7 +156,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             <Link
               target="_blank"
               underlined={true}
-              url="https://link.io"
+              url="https://clicks.trx-hub.com/xid/newsuk_8757f29588_thetimes?q=https%3A%2F%2Fgo.skimresources.com%2F%3Fid%3D34784x1550488%26url%3Dhttps%253A%252F%252Flink.io%26sref%3Dhttp%253A%252F%252Flocalhost%252F&p=http%3A%2F%2Flocalhost%2F&ref="
             >
               Some Link
             </Link>
@@ -241,7 +241,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                               },
                               Object {
                                 "attributes": Object {
-                                  "href": "https://example.io",
+                                  "href": "https://clicks.trx-hub.com/xid/newsuk_8757f29588_thetimes?q=https%3A%2F%2Fgo.skimresources.com%2F%3Fid%3D34784x1550488%26url%3Dhttps%253A%252F%252Fexample.io%26sref%3Dhttp%253A%252F%252Flocalhost%252F&p=http%3A%2F%2Flocalhost%2F&ref=",
                                   "target": "_blank",
                                   "type": "topic",
                                 },
@@ -539,7 +539,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             <Link
               target="_blank"
               underlined={true}
-              url="https://link.io"
+              url="https://clicks.trx-hub.com/xid/newsuk_8757f29588_thetimes?q=https%3A%2F%2Fgo.skimresources.com%2F%3Fid%3D34784x1550488%26url%3Dhttps%253A%252F%252Flink.io%26sref%3Dhttp%253A%252F%252Flocalhost%252F&p=http%3A%2F%2Flocalhost%2F&ref="
             >
               Some Link
             </Link>
@@ -624,7 +624,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                               },
                               Object {
                                 "attributes": Object {
-                                  "href": "https://example.io",
+                                  "href": "https://clicks.trx-hub.com/xid/newsuk_8757f29588_thetimes?q=https%3A%2F%2Fgo.skimresources.com%2F%3Fid%3D34784x1550488%26url%3Dhttps%253A%252F%252Fexample.io%26sref%3Dhttp%253A%252F%252Flocalhost%252F&p=http%3A%2F%2Flocalhost%2F&ref=",
                                   "target": "_blank",
                                   "type": "topic",
                                 },

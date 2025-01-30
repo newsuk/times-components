@@ -49,7 +49,6 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
-import setExternalLinkTargets from "./contentModifiers/setExternalLinkTargets";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -180,8 +179,7 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd(isPreview),
-    tagLastParagraph,
-    setExternalLinkTargets
+    tagLastParagraph
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
