@@ -11,7 +11,8 @@ describe('CtaButton Component', () => {
   const defaultProps = {
     url: 'https://www.example.com',
     target: '_blank',
-    text: 'Book a Stay'
+    text: 'Book a Stay',
+    rel: 'sponsored'
   };
 
   it('calls tealiumTrackingHandler on link click', () => {
