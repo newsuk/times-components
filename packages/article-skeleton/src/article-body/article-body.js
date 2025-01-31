@@ -65,7 +65,8 @@ import {
   InlineAdTitle
 } from "../styles/article-body/responsive";
 
-const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
+const deckApiFallback =
+  "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
 const hasDisabledAds = id => disabledAds.includes(id);
@@ -106,7 +107,8 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  articleId
+  articleId,
+  deckApiUrl
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -194,13 +196,15 @@ const renderers = ({
   },
   interactive(key, { id, url, element, display }) {
     const { attributes, value } = element;
+    const deckApi = deckApiUrl || deckApiFallback;
+
     switch (value) {
       case "in-article-info-card":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <InfoCard sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
@@ -213,7 +217,7 @@ const renderers = ({
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <InfoCardBulletPoints sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
@@ -226,7 +230,7 @@ const renderers = ({
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <BigNumbers sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
@@ -239,7 +243,7 @@ const renderers = ({
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <Timelines sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
@@ -252,7 +256,7 @@ const renderers = ({
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <GalleryCarousel sectionColour={theme.sectionColour} />
                 </FetchProvider>
               </div>
@@ -474,7 +478,7 @@ const renderers = ({
           <Context.Consumer key={key}>
             {({ theme }) => (
               <div id={id}>
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
                   <InArticlePuff
                     sectionColour={theme.sectionColour}
                     forceImageAspectRatio="3:2"
@@ -666,7 +670,8 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id: articleId
+  id: articleId,
+  deckApiUrl
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -679,7 +684,8 @@ const ArticleBody = ({
       isLiveOrBreaking,
       articleId,
       section,
-      articleHeadline
+      articleHeadline,
+      deckApiUrl
     })
   );
 

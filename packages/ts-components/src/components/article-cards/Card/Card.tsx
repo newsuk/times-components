@@ -16,6 +16,14 @@ import { tealiumTrackingHandler, truncateText } from '../utils';
 const Card = (props: ArticleCardProps) => {
   const { article, numOfArticles, isLeadingArticle, isLastCard } = props;
 
+  // Function to append the resize parameter to the image URL
+  const appendResizeToUrl = (url: string): string => {
+    if (!url) {
+      return '';
+    }
+    return `${url}${url.includes('?') ? '&' : '?'}resize=750`;
+  };
+
   return (
     <StyledCard $numOfArticles={numOfArticles}>
       {isLeadingArticle ? (
@@ -27,7 +35,11 @@ const Card = (props: ArticleCardProps) => {
         >
           <StyledMedia>
             <StyledPicture>
-              <StyledImg src={article.image.url} />
+              <StyledImg
+                loading="lazy"
+                src={appendResizeToUrl(article.image.url)}
+                $numOfArticles={numOfArticles}
+              />
             </StyledPicture>
           </StyledMedia>
         </a>
@@ -41,7 +53,11 @@ const Card = (props: ArticleCardProps) => {
           >
             <StyledMedia>
               <StyledPicture>
-                <StyledImg src={article.image.url} />
+                <StyledImg
+                  loading="lazy"
+                  src={appendResizeToUrl(article.image.url)}
+                  $numOfArticles={numOfArticles}
+                />
               </StyledPicture>
             </StyledMedia>
           </a>

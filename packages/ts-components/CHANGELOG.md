@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.119.0...@times-components/ts-components@1.120.0) (2025-01-29)
+
+
+### Features
+
+* **tmc-328:** Fix article cards images ([#4044](https://github.com/newsuk/times-components/issues/4044)) ([2edeb82](https://github.com/newsuk/times-components/commit/2edeb828f248ac3327ea426c1bcd8ea53c6cf26d))
+
+
+
+
+
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.118.0...@times-components/ts-components@1.119.0) (2025-01-28)
+
+
+### Features
+
+* **TMP-1657:** Update deck-data api ([#4046](https://github.com/newsuk/times-components/issues/4046)) ([874908a](https://github.com/newsuk/times-components/commit/874908a588c6cc943aedff963ff326e74f638ec1))
+
+
+
+
+
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.117.1...@times-components/ts-components@1.118.0) (2025-01-27)
+
+
+### Features
+
+* **tmc-319:** Button not visible if text is empty ([#4043](https://github.com/newsuk/times-components/issues/4043)) ([6214a83](https://github.com/newsuk/times-components/commit/6214a835dd3f4b9e4805a791c2edf7ee2ee46bca))
+
+
+
+
+
 ## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.117.0...@times-components/ts-components@1.117.1) (2025-01-22)
 
 

@@ -19,7 +19,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=44335">
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
@@ -37,7 +37,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44336">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=44336">
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>
@@ -55,7 +55,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44334">
+        <FetchProvider url="https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api?id=44334">
           <BigNumbers sectionColour="#636C17" />
         </FetchProvider>
       </ArticleHarness>

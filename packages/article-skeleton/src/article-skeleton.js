@@ -165,8 +165,15 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { hostName, canonicalUrl, breadcrumbs, categorisedArticles } =
-    articleDataFromRender || {};
+
+  const {
+    hostName,
+    canonicalUrl,
+    breadcrumbs,
+    categorisedArticles,
+    deckApiUrl
+  } = articleDataFromRender || {};
+
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -424,6 +431,7 @@ const ArticleSkeleton = ({
                         template={template}
                         isPreview={isPreview}
                         isLiveOrBreaking={isLiveOrBreaking}
+                        deckApiUrl={deckApiUrl}
                       />
                     )}
                     {isLiveOrBreaking && (
