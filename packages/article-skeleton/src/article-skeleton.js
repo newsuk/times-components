@@ -378,9 +378,14 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {!quizCategories.includes(
+                        {quizCategories.includes(
                           getFirstSlugFromUrl(articleUrl)
                         ) ? (
+                          <QuizleSidebar
+                            pageLink={`${domainSpecificUrl}/quizle`}
+                            sectionTitle="Today's Quizle"
+                          />
+                        ) : (
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
                             sectionTitle="Puzzles"
@@ -401,11 +406,6 @@ const ArticleSkeleton = ({
                                 imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                               }
                             ]}
-                          />
-                        ) : (
-                          <QuizleSidebar
-                            pageLink={`${domainSpecificUrl}/quizle`}
-                            sectionTitle="Today's Quizle"
                           />
                         )}
                       </PuzzlesSidebar>
