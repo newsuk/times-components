@@ -55,10 +55,8 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
       q => new Date(q.publishDate).toDateString() === today
     );
     return todaysQuestion && todaysQuestion.question
-      ? todaysQuestion.question
-      : backupQuestion[0] && backupQuestion[0].question
-        ? backupQuestion[0].question
-        : 'No questions available.';
+    ? todaysQuestion.question
+    : backupQuestion[0].question;
   };
 
   useEffect(() => {
