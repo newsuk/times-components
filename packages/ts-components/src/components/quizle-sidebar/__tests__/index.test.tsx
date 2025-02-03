@@ -70,17 +70,19 @@ describe('QuizleSidebar', () => {
     });
   });
 
-  it("should handle API failure and use the backup question", async () => {
-    (global.fetch as jest.Mock).mockRejectedValue(new Error("Failed to fetch"));
-  
+  it('should handle API failure and use the backup question', async () => {
+    (global.fetch as jest.Mock).mockRejectedValue(new Error('Failed to fetch'));
+
     const { getByText } = renderComponent(defaultProps);
     await waitFor(() => expect(global.fetch).toHaveBeenCalled());
-  
+
     expect(
-      getByText("Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?")
+      getByText(
+        "Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?"
+      )
     ).toBeInTheDocument();
   });
-  
+
   it('should display backup question if API returns no questions', async () => {
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
@@ -90,12 +92,16 @@ describe('QuizleSidebar', () => {
     const { getByText } = renderComponent(defaultProps);
     await waitFor(() => expect(global.fetch).toHaveBeenCalled());
 
-    expect(getByText(`Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?`)).toBeInTheDocument();
+    expect(
+      getByText(
+        `Which type of dog gets its name from the Welsh words for 'dwarf' and 'dog'?`
+      )
+    ).toBeInTheDocument();
   });
 
   it("should display today's question if API provides a valid question", async () => {
     const today = new Date().toISOString(); // Get today's date in ISO format
-  
+
     // Mock API returning a valid question for today
     (global.fetch as jest.Mock).mockResolvedValueOnce({
       ok: true,
@@ -103,15 +109,15 @@ describe('QuizleSidebar', () => {
         {
           id: 1,
           publishDate: today,
-          question: "What is the capital of France?",
-          solution: "Paris"
+          question: 'What is the capital of France?',
+          solution: 'Paris'
         }
       ])
     });
-  
+
     const { getByText } = renderComponent(defaultProps);
     await waitFor(() => expect(global.fetch).toHaveBeenCalled());
-  
-    expect(getByText("What is the capital of France?")).toBeInTheDocument();
+
+    expect(getByText('What is the capital of France?')).toBeInTheDocument();
   });
 });
