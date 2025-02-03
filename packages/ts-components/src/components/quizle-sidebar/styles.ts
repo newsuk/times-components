@@ -4,6 +4,7 @@ import QuizleIcon from './assets/QuizleIcon';
 export const QuestionIcon = styled(QuizleIcon)`
   width: 37.652px;
   height: 40px;
+  margin-left: 8px;
 `;
 
 export const Container = styled.div`
@@ -11,6 +12,7 @@ export const Container = styled.div`
   border-style: solid none none none;
   border-width: 3px;
   border-color: #c05729;
+  min-width: 160px;
 `;
 
 export const Description = styled.p`

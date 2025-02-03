@@ -3,7 +3,7 @@
 exports[`QuizleSidebar should render QuizleSidebar component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH gYmlvh"
+    class="sc-bwzfXH iMcKeb"
   >
     <div
       class="sc-EHOje bmFGSY"
@@ -26,7 +26,7 @@ exports[`QuizleSidebar should render QuizleSidebar component 1`] = `
         </a>
       </div>
       <svg
-        class="sc-bdVaJa ifzlDG"
+        class="sc-bdVaJa bNsVCd"
         fill="none"
         viewBox="0 0 382 407"
         xmlns="http://www.w3.org/2000/svg"
