@@ -370,8 +370,8 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) && (
-                    <SidebarWarpper>
+                  <SidebarWarpper>
+                    {CanShowPuzzleSidebar(section) && (
                       <PuzzlesSidebar ref={sidebarRef}>
                         {quizCategories.includes(getFirstSlugFromUrl(url)) ? (
                           <QuizleSidebar
@@ -402,8 +402,8 @@ const ArticleSkeleton = ({
                           />
                         )}
                       </PuzzlesSidebar>
-                    </SidebarWarpper>
-                  )}
+                    )}
+                  </SidebarWarpper>
                   <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                     {!!zephrDivs && (
                       <StaticContent
