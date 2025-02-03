@@ -375,7 +375,8 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {quizCategories.includes(getFirstSlugFromUrl(url)) ? (
+                        {url &&
+                        quizCategories.includes(getFirstSlugFromUrl(url)) ? (
                           <QuizleSidebar
                             pageLink={`${domainSpecificUrl}/quizle`}
                             sectionTitle="Today's Quizle"
