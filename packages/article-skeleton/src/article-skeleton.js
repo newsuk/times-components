@@ -247,61 +247,12 @@ const ArticleSkeleton = ({
 
   useEffect(
     () => {
-      let timer;
-
       if (url) {
-        timer = setTimeout(() => {
-          setShouldShowQuizle(
-            quizCategories.includes(getFirstSlugFromUrl(url))
-          );
-        }, 3000);
+        setShouldShowQuizle(quizCategories.includes(getFirstSlugFromUrl(url)));
       }
-
-      return () => {
-        if (timer) {
-          clearTimeout(timer);
-        }
-      };
     },
     [url]
   );
-
-  const renderSidebar = () => {
-    if (shouldShowQuizle === null) return null;
-
-    if (shouldShowQuizle) {
-      return (
-        <QuizleSidebar
-          pageLink={`${domainSpecificUrl}/quizle`}
-          sectionTitle="Today's Quizle"
-        />
-      );
-    }
-
-    return (
-      <ArticleSidebar
-        pageLink={`${domainSpecificUrl}/puzzles`}
-        sectionTitle="Puzzles"
-        data={[
-          {
-            title: "Crossword",
-            url: `${domainSpecificUrl}/puzzles/crossword`,
-            imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-          },
-          {
-            title: "Polygon",
-            url: polygonUrl,
-            imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-          },
-          {
-            title: "Sudoku",
-            url: `${domainSpecificUrl}/puzzles/sudoku`,
-            imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-          }
-        ]}
-      />
-    );
-  };
 
   return (
     <StickyProvider>
@@ -431,13 +382,41 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) && (
-                    <SidebarWarpper>
-                      <PuzzlesSidebar ref={sidebarRef}>
-                        {renderSidebar()}
-                      </PuzzlesSidebar>
-                    </SidebarWarpper>
-                  )}
+                  {CanShowPuzzleSidebar(section) &&
+                    shouldShowQuizle !== null && (
+                      <SidebarWarpper>
+                        <PuzzlesSidebar ref={sidebarRef}>
+                          {shouldShowQuizle ? (
+                            <QuizleSidebar
+                              pageLink={`${domainSpecificUrl}/quizle`}
+                              sectionTitle="Today's Quizle"
+                            />
+                          ) : (
+                            <ArticleSidebar
+                              pageLink={`${domainSpecificUrl}/puzzles`}
+                              sectionTitle="Puzzles"
+                              data={[
+                                {
+                                  title: "Crossword",
+                                  url: `${domainSpecificUrl}/puzzles/crossword`,
+                                  imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                                },
+                                {
+                                  title: "Polygon",
+                                  url: polygonUrl,
+                                  imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                                },
+                                {
+                                  title: "Sudoku",
+                                  url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                  imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                                }
+                              ]}
+                            />
+                          )}
+                        </PuzzlesSidebar>
+                      </SidebarWarpper>
+                    )}
                   <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                     {!!zephrDivs && (
                       <StaticContent
