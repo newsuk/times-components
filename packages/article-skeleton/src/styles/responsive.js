@@ -68,6 +68,7 @@ export const SidebarWarpper = styled.div`
   top: 162px;
   display: none;
   left: 100%;
+  min-height: 335px;
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 19.8333%;
