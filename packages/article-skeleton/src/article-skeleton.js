@@ -243,6 +243,16 @@ const ArticleSkeleton = ({
   }
 
   const quizCategories = ["culture", "life-style"];
+  const [shouldShowQuizle, setShouldShowQuizle] = useState(null);
+
+  useEffect(
+    () => {
+      if (url) {
+        setShouldShowQuizle(quizCategories.includes(getFirstSlugFromUrl(url)));
+      }
+    },
+    [url]
+  );
 
   return (
     <StickyProvider>
@@ -372,11 +382,11 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {url &&
-                    CanShowPuzzleSidebar(section) && (
+                  {CanShowPuzzleSidebar(section) &&
+                    shouldShowQuizle !== null && (
                       <SidebarWarpper>
                         <PuzzlesSidebar ref={sidebarRef}>
-                          {quizCategories.includes(getFirstSlugFromUrl(url)) ? (
+                          {shouldShowQuizle ? (
                             <QuizleSidebar
                               pageLink={`${domainSpecificUrl}/quizle`}
                               sectionTitle="Today's Quizle"
