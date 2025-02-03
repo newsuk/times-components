@@ -236,17 +236,10 @@ const ArticleSkeleton = ({
   );
 
   function getFirstSlugFromUrl(articleurl) {
-    if (!articleurl || typeof articleurl !== "string") {
-      return null; // Return null for invalid or missing URLs
-    }
-    try {
-      const fullUrl = new URL(articleurl);
-      const pathSegments = fullUrl.pathname.split("/").filter(Boolean);
-      return pathSegments[0] || null; // Return the first path segment (slug)
-    } catch (error) {
-      console.error("Invalid URL format:", error);
-      return null;
-    }
+    if (!articleurl) return null;
+
+    const parts = articleurl.split("/").filter(Boolean);
+    return parts.length > 0 ? parts[0] : null;
   }
 
   const quizCategories = ["culture", "life-style"];
@@ -382,9 +375,7 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {quizCategories.includes(
-                          getFirstSlugFromUrl(articleUrl)
-                        ) ? (
+                        {quizCategories.includes(getFirstSlugFromUrl(url)) ? (
                           <QuizleSidebar
                             pageLink={`${domainSpecificUrl}/quizle`}
                             sectionTitle="Today's Quizle"
