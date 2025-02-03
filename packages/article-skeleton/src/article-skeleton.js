@@ -178,8 +178,6 @@ const ArticleSkeleton = ({
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   console.log("url", url);
-  console.log("canonicalUrl", canonicalUrl);
-  console.log("articleUrl", articleUrl);
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
