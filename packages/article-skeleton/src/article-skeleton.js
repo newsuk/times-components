@@ -373,8 +373,7 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {url &&
-                        quizCategories.includes(getFirstSlugFromUrl(url)) ? (
+                        {quizCategories.includes(getFirstSlugFromUrl(url)) ? (
                           <QuizleSidebar
                             pageLink={`${domainSpecificUrl}/quizle`}
                             sectionTitle="Today's Quizle"
@@ -405,9 +404,7 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent
-                    showMargin={url && CanShowPuzzleSidebar(section)}
-                  >
+                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                     {!!zephrDivs && (
                       <StaticContent
                         html={
