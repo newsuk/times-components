@@ -25,6 +25,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
       <div />
       <article>
         <div>
+          <div />
           <div>
             <p>
               Some paragraph 1
@@ -166,6 +167,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
       <div />
       <article>
         <div>
+          <div />
           <div>
             <p>
               Some paragraph 1
