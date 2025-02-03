@@ -405,7 +405,9 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={url && CanShowPuzzleSidebar(section)}>
+                  <ArticleContent
+                    showMargin={url && CanShowPuzzleSidebar(section)}
+                  >
                     {!!zephrDivs && (
                       <StaticContent
                         html={
