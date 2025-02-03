@@ -25,7 +25,6 @@ exports[`1. a primary image 1`] = `
       <div />
       <article>
         <div>
-          <div />
           <div>
             <div
               id="0"
@@ -116,7 +115,6 @@ exports[`2. a fullwidth image 1`] = `
       <div />
       <article>
         <div>
-          <div />
           <div>
             <div
               id="0"
@@ -207,7 +205,6 @@ exports[`3. a secondary image 1`] = `
       <div />
       <article>
         <div>
-          <div />
           <div>
             <div
               id="0"
@@ -298,7 +295,6 @@ exports[`4. an inline image 1`] = `
       <div />
       <article>
         <div>
-          <div />
           <div>
             <div
               id="0"

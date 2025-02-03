@@ -239,7 +239,6 @@ exports[`1. an article 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <p>
                 Some content
@@ -459,7 +458,6 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <p>
                 Some content
@@ -626,7 +624,6 @@ exports[`5. an article with ads 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <div>
                 <h2>
@@ -1156,7 +1153,6 @@ exports[`7. should show topics when logged in or shared 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <p>
                 Some content
@@ -1434,7 +1430,6 @@ exports[`8. an article with no byline 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <p>
                 Some content
@@ -1755,7 +1750,6 @@ exports[`9. an article with no label 1`] = `
         </div>
         <article>
           <div>
-            <div />
             <div>
               <p>
                 Some content

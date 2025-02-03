@@ -25,7 +25,6 @@ exports[`Article with user state Render full article when user has access to ful
       <div />
       <article>
         <div>
-          <div />
           <div>
             <p>
               <span>
@@ -409,7 +408,6 @@ exports[`Article with user state Render teaser article when user does not have a
       <div />
       <article>
         <div>
-          <div />
           <div>
             <p>
               <span>
