@@ -380,8 +380,7 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) &&
-                    shouldShowQuizle !== null && (
+                  {CanShowPuzzleSidebar(section) && (
                       <SidebarWarpper>
                         <PuzzlesSidebar ref={sidebarRef}>
                           {shouldShowQuizle ? (
@@ -415,11 +414,7 @@ const ArticleSkeleton = ({
                         </PuzzlesSidebar>
                       </SidebarWarpper>
                     )}
-                  <ArticleContent
-                    showMargin={
-                      shouldShowQuizle !== null && CanShowPuzzleSidebar(section)
-                    }
-                  >
+                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                     {!!zephrDivs && (
                       <StaticContent
                         html={
