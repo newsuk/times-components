@@ -244,15 +244,6 @@ const ArticleSkeleton = ({
 
   const [sidebarLoaded, setSidebarLoaded] = useState(false);
 
-  useEffect(
-    () => {
-      if (CanShowPuzzleSidebar(section)) {
-        setSidebarLoaded(false); // Reset state before loading
-      }
-    },
-    [section]
-  );
-
   const handleSidebarLoad = () => {
     setSidebarLoaded(true); // Sidebar has fully loaded
   };
@@ -422,9 +413,7 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent
-                    showMargin={CanShowPuzzleSidebar(section) && sidebarLoaded}
-                  >
+                  <ArticleContent showMargin={sidebarLoaded}>
                     {!!zephrDivs && (
                       <StaticContent
                         html={
