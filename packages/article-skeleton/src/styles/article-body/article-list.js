@@ -37,12 +37,10 @@ export const StyledLi = styled.li`
   font-size: ${fontSizes.bodyMobile}px;
 
   p {
-    // override the default margin of the paragraph as the ul has the widths and margins
     width: 100% !important;
     margin-block-start: 16px;
     margin-block-end: 0;
 
-    // Don't show empty paragraphs
     &:empty {
       display: none;
     }
