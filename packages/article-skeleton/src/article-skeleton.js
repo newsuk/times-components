@@ -242,6 +242,21 @@ const ArticleSkeleton = ({
 
   const quizCategories = ["culture", "life-style"];
 
+  const [sidebarLoaded, setSidebarLoaded] = useState(false);
+
+  useEffect(
+    () => {
+      if (CanShowPuzzleSidebar(section)) {
+        setSidebarLoaded(false); // Reset state before loading
+      }
+    },
+    [section]
+  );
+
+  const handleSidebarLoad = () => {
+    setSidebarLoaded(true); // Sidebar has fully loaded
+  };
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -372,7 +387,10 @@ const ArticleSkeleton = ({
                 <ArticleWrapper>
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
-                      <PuzzlesSidebar ref={sidebarRef}>
+                      <PuzzlesSidebar
+                        ref={sidebarRef}
+                        onLoad={handleSidebarLoad}
+                      >
                         {!quizCategories.includes(getFirstSlugFromUrl(url)) ? (
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
@@ -404,7 +422,9 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                  <ArticleContent
+                    showMargin={CanShowPuzzleSidebar(section) && sidebarLoaded}
+                  >
                     {!!zephrDivs && (
                       <StaticContent
                         html={
