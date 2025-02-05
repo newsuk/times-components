@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.125...@times-components/key-facts@2.13.0) (2025-02-05)
+
+
+### Features
+
+* **TMD-1364:** Key moments block cutting off content when placed low… ([#4045](https://github.com/newsuk/times-components/issues/4045)) ([173a148](https://github.com/newsuk/times-components/commit/173a1489e51159e42d7aadf45eeef3c57cda8324))
+
+
+
+
+
 ## [2.12.125](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.124...@times-components/key-facts@2.12.125) (2025-01-29)
 
 **Note:** Version bump only for package @times-components/key-facts
