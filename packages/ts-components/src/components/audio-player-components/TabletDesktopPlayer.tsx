@@ -17,14 +17,14 @@ import {
   SpeedOptionItem,
   TabletDesktopCloseButton,
   SpeedButtonContainer,
-  SpeedOptionsContainer
+  SpeedOptionsContainer,
 } from './styles';
 import {
   PlayIcon,
   PauseIcon,
   IconVolume,
   IconCheck,
-  AudioCloseIcon
+  AudioCloseIcon,
 } from '@times-components/icons';
 import { formatTime } from './utils';
 import { TabletDesktopPlayerProps } from './types';
@@ -50,7 +50,7 @@ export const TabletDesktopPlayer: FC<TabletDesktopPlayerProps> = ({
   setIsVolumeSliderVisible,
   onClose,
   allowExpandCollapse,
-  isMobile
+  isMobile,
 }) => {
   return (
     <TabletDesktopWrapper>
@@ -81,7 +81,9 @@ export const TabletDesktopPlayer: FC<TabletDesktopPlayerProps> = ({
                   max="1"
                   step="0.01"
                   value={volume}
-                  onChange={e => handleVolumeChange(parseFloat(e.target.value))}
+                  onChange={(e) =>
+                    handleVolumeChange(parseFloat(e.target.value))
+                  }
                 />
               )}
             </TabletDesktopVolumeControlContainer>
@@ -98,7 +100,7 @@ export const TabletDesktopPlayer: FC<TabletDesktopPlayerProps> = ({
             min="0"
             max={duration}
             value={currentTime}
-            onChange={e => handleSeek(parseFloat(e.target.value))}
+            onChange={(e) => handleSeek(parseFloat(e.target.value))}
             disabled={!allowSeek}
             aria-label="Seek Bar"
             progress={duration > 0 ? (currentTime / duration) * 100 : 0}
@@ -126,7 +128,7 @@ export const TabletDesktopPlayer: FC<TabletDesktopPlayerProps> = ({
               {isSpeedModalOpen && (
                 <SpeedSelectModal isMobile={isMobile}>
                   <SpeedOptionsContainer>
-                    {speedOptions.map(option => (
+                    {speedOptions.map((option) => (
                       <SpeedOptionItem
                         key={option}
                         selected={option === speed}

@@ -15,21 +15,21 @@ type TextCropProps = { font: Font } & TextCropAdjustments;
 
 const dynamicTopCrop = ({
   lineHeight = 1,
-  fontSettings: { topCrop, cropLineHeight, cropFontSize }
+  fontSettings: { topCrop, cropLineHeight, cropFontSize },
 }: TextCropStyleProps) =>
   Math.max(topCrop + (lineHeight - cropLineHeight) * (cropFontSize / 2), 0) /
   cropFontSize;
 
 const dynamicBottomCrop = ({
   lineHeight = 1,
-  fontSettings: { bottomCrop, cropLineHeight, cropFontSize }
+  fontSettings: { bottomCrop, cropLineHeight, cropFontSize },
 }: TextCropStyleProps) =>
   Math.max(bottomCrop + (lineHeight - cropLineHeight) * (cropFontSize / 2), 0) /
   cropFontSize;
 
 const Wrapper = styled.div<TextCropStyleProps>`
   background-color: #ffb;
-  padding:0;
+  padding: 0;
   font-family: ${({ fontSettings }) => fontSettings.font};
   line-height: ${({ lineHeight }) => lineHeight};
   &::before,
@@ -42,14 +42,14 @@ const Wrapper = styled.div<TextCropStyleProps>`
 
   &::before {
     /* prettier-ignore */
-    margin-bottom: calc(${props => 0 - dynamicTopCrop(props)}em +
+    margin-bottom: calc(${(props) => 0 - dynamicTopCrop(props)}em +
         ${({ topAdjustment }) => topAdjustment}
     );
   }
 
   &::after {
     /* prettier-ignore */
-    margin-top: calc(${props => 0 - dynamicBottomCrop(props)}em +
+    margin-top: calc(${(props) => 0 - dynamicBottomCrop(props)}em +
         ${({ bottomAdjustment }) => bottomAdjustment}
     );
   }
@@ -60,7 +60,7 @@ export const TextCrop: FC<TextCropProps> = ({
   lineHeight,
   bottomAdjustment = '0px',
   topAdjustment = '0px',
-  font
+  font,
 }) => (
   <Wrapper
     lineHeight={lineHeight}

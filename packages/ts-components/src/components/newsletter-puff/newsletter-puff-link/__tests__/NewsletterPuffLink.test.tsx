@@ -46,8 +46,8 @@ describe('NewsletterPuffLink', () => {
         eventTime: '2021-05-03T00:00:00.000Z',
         event_navigation_browsing_method: 'automated',
         event_navigation_name:
-          'widget : puff : manage preferences here : displayed'
-      }
+          'widget : puff : manage preferences here : displayed',
+      },
     });
   });
 
@@ -72,8 +72,8 @@ describe('NewsletterPuffLink', () => {
         context: 'value',
         eventTime: '2021-05-03T00:00:00.000Z',
         event_navigation_browsing_method: 'click',
-        event_navigation_name: 'widget : puff : manage preferences here'
-      }
+        event_navigation_name: 'widget : puff : manage preferences here',
+      },
     });
   });
 });

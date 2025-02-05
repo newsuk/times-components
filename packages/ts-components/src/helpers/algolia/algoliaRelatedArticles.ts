@@ -37,11 +37,10 @@ const search = async (
 
   const topicSearch = topics
     ? topics
-        .map(
-          topic =>
-            topic.name.indexOf(' ') >= 0
-              ? `"${topic.name.toLowerCase()}"`
-              : topic.name.toLowerCase()
+        .map((topic) =>
+          topic.name.indexOf(' ') >= 0
+            ? `"${topic.name.toLowerCase()}"`
+            : topic.name.toLowerCase()
         )
         .join(' ')
     : '';
@@ -57,9 +56,9 @@ const search = async (
   const optionalWords =
     matchedAndQuotedWords !== null
       ? matchedAndQuotedWords
-          .map(word => word.replace(/"/g, '')) // then remove the quotes
-          .filter(word => !word.match(/^[A-Z].*/))
-          .filter(word => word && word.length > 0)
+          .map((word) => word.replace(/"/g, '')) // then remove the quotes
+          .filter((word) => !word.match(/^[A-Z].*/))
+          .filter((word) => word && word.length > 0)
       : undefined;
 
   const filterSection = section && section !== '' ? [`section:${section}`] : [];
@@ -79,7 +78,7 @@ const search = async (
     optionalWords,
     filters,
     optionalFilters: label && [`label:${label}`],
-    typoTolerance: false
+    typoTolerance: false,
   };
 
   const results = await index.search<AlgoliaArticle>(query, searchOptions);
@@ -87,7 +86,7 @@ const search = async (
     analyticsStream({
       object: 'AlgoliaSearchProvider',
       action: 'Search',
-      attr: { query, searchOptions, results }
+      attr: { query, searchOptions, results },
     });
 
   return results;
@@ -122,7 +121,7 @@ export const searchRelatedArticles = async (
         index,
         {
           ...article,
-          headline: article.headline.toLowerCase()
+          headline: article.headline.toLowerCase(),
         },
         analyticsStream
       );
@@ -133,7 +132,7 @@ export const searchRelatedArticles = async (
         query: searchResults.query,
         sliceName: 'StandardSlice',
         items: searchResults.hits.map(formatArticle),
-        count: searchResults.nbHits
+        count: searchResults.nbHits,
       };
     }
   } catch (e) {

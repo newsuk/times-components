@@ -32,7 +32,7 @@ import {
   TabletDesktopSeekBar,
   TabletDesktopSpeedButton,
   SpeedButtonContainer,
-  TabletDesktopCloseButton
+  TabletDesktopCloseButton,
 } from '../styles';
 import { colours, fonts, breakpoints } from '@times-components/ts-styleguide';
 
@@ -97,7 +97,7 @@ describe('Styled Components', () => {
       );
 
       expect(container.firstChild).toHaveStyleRule('width', '100%', {
-        media: `(max-width:${breakpoints.small})`
+        media: `(max-width:${breakpoints.small})`,
       });
     });
   });
@@ -147,7 +147,7 @@ describe('Styled Components', () => {
     expect(controls).toHaveStyleRule('position', 'relative');
 
     expect(controls).toHaveStyleRule('gap', '16px', {
-      media: `(max-width:${breakpoints.small})`
+      media: `(max-width:${breakpoints.small})`,
     });
   });
 
@@ -163,7 +163,7 @@ describe('Styled Components', () => {
     expect(playbackContainer).toHaveStyleRule('gap', '8px');
 
     expect(playbackContainer).toHaveStyleRule('gap', '16px', {
-      media: `(min-width:${breakpoints.small})`
+      media: `(min-width:${breakpoints.small})`,
     });
   });
 
@@ -177,10 +177,10 @@ describe('Styled Components', () => {
     expect(controlButton).toHaveStyleRule('padding', '0');
 
     expect(controlButton).toHaveStyleRule('opacity', '0.5', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
     expect(controlButton).toHaveStyleRule('cursor', 'not-allowed', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
   });
 
@@ -201,14 +201,14 @@ describe('Styled Components', () => {
     expect(playPauseButton).toHaveStyleRule('position', 'relative');
 
     expect(playPauseButton).toHaveStyleRule('background-color', '#02020f', {
-      modifier: ':hover'
+      modifier: ':hover',
     });
 
     expect(playPauseButton).toHaveStyleRule('opacity', '0.5', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
     expect(playPauseButton).toHaveStyleRule('cursor', 'not-allowed', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
   });
 
@@ -265,38 +265,38 @@ describe('Styled Components', () => {
 
       // Test ::after pseudo-element
       expect(modal).toHaveStyleRule('content', "''", {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('position', 'absolute', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('top', '100%', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('left', '50%', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('transform', 'translateX(-50%)', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('border-width', '16px 16px 0 16px', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('border-style', 'solid', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule(
         'border-color',
         `${colours.functional.white} transparent transparent transparent`,
         {
-          modifier: '::after'
+          modifier: '::after',
         }
       );
       expect(modal).toHaveStyleRule('width', '0', {
-        modifier: '::after'
+        modifier: '::after',
       });
       expect(modal).toHaveStyleRule('height', '0', {
-        modifier: '::after'
+        modifier: '::after',
       });
     });
   });
@@ -343,7 +343,7 @@ describe('Styled Components', () => {
         'background',
         colours.functional.bannerBackground,
         {
-          modifier: ':hover'
+          modifier: ':hover',
         }
       );
     });
@@ -364,7 +364,7 @@ describe('Styled Components', () => {
         'background',
         colours.functional.border,
         {
-          modifier: ':hover'
+          modifier: ':hover',
         }
       );
     });
@@ -383,7 +383,7 @@ describe('Styled Components', () => {
         'background',
         colours.functional.border,
         {
-          modifier: ':hover'
+          modifier: ':hover',
         }
       );
     });
@@ -404,7 +404,7 @@ describe('Styled Components', () => {
     expect(closeButton).toHaveStyleRule('align-self', 'center');
 
     expect(closeButton).toHaveStyleRule('text-decoration', 'underline', {
-      modifier: ':hover'
+      modifier: ':hover',
     });
   });
 
@@ -522,19 +522,19 @@ describe('Styled Components', () => {
 
     // Thumb styles
     expect(volumeSlider).toHaveStyleRule('appearance', 'none', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('width', '16px', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('height', '16px', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('border-radius', '50%', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('background', '#1573A2', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
   });
 
@@ -593,13 +593,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(button).toHaveStyleRule('width', '32px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(button).toHaveStyleRule('height', '32px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(button).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg'
+      modifier: 'svg',
     });
   });
 
@@ -641,13 +641,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(volumeButton).toHaveStyleRule('width', '24px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(volumeButton).toHaveStyleRule('height', '24px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(volumeButton).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg'
+      modifier: 'svg',
     });
   });
 
@@ -667,22 +667,22 @@ describe('Styled Components', () => {
 
     // Thumb styles
     expect(volumeSlider).toHaveStyleRule('width', '12px', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('height', '12px', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('background', '#1573A2', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('border-radius', '50%', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('border', '1px solid #1573A2', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
     expect(volumeSlider).toHaveStyleRule('margin-top', '-4px', {
-      modifier: '&::-webkit-slider-thumb'
+      modifier: '&::-webkit-slider-thumb',
     });
   });
 
@@ -731,15 +731,15 @@ describe('Styled Components', () => {
       'background-color',
       colours.functional.border,
       {
-        modifier: ':hover'
+        modifier: ':hover',
       }
     );
 
     expect(speedButton).toHaveStyleRule('opacity', '0.5', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
     expect(speedButton).toHaveStyleRule('cursor', 'not-allowed', {
-      modifier: ':disabled'
+      modifier: ':disabled',
     });
   });
 
@@ -765,13 +765,13 @@ describe('Styled Components', () => {
 
     // SVG styles
     expect(closeButton).toHaveStyleRule('width', '24px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(closeButton).toHaveStyleRule('height', '24px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
     expect(closeButton).toHaveStyleRule('fill', colours.functional.primary, {
-      modifier: 'svg'
+      modifier: 'svg',
     });
   });
 });

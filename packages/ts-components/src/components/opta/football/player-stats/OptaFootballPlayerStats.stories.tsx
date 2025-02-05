@@ -10,7 +10,7 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
-      type: 'decorator'
+      type: 'decorator',
     },
     {
       component: () => (
@@ -22,7 +22,7 @@ const showcase = {
         />
       ),
       name: 'PlayerStats (goals)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
@@ -33,7 +33,7 @@ const showcase = {
         />
       ),
       name: 'PlayerStats (assists)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
@@ -44,10 +44,10 @@ const showcase = {
         />
       ),
       name: 'PlayerStats (red cards)',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Football/PlayerStats'
+  name: 'Typescript Component/In Article/Football/PlayerStats',
 };
 
 // @ts-ignore

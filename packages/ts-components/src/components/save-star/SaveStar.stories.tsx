@@ -19,8 +19,8 @@ storiesOf('Typescript Component/SaveStar', module).add('SaveStar', () => (
       component: 'ArticleSkeleton',
       attrs: {
         article_name: 'articleHeadline',
-        section_details: 'section'
-      }
+        section_details: 'section',
+      },
     }}
     analyticsStream={analyticsStream}
   >

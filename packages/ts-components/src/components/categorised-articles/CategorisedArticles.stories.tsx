@@ -20,8 +20,8 @@ storiesOf('Typescript Component/Categorised Articles', module).add(
           article_name: '<headline>',
           widget_headline: '<headline>',
           widget_section: '<section>',
-          widget_type: "today's section"
-        }
+          widget_type: "today's section",
+        },
       }}
       analyticsStream={analyticsStream}
     >

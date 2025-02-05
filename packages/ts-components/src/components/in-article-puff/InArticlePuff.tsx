@@ -10,7 +10,7 @@ import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
 import {
   TrackingContext,
-  TrackingContextProvider
+  TrackingContextProvider,
 } from '../../helpers/tracking/TrackingContextProvider';
 
 import { PlaceholderContainer } from '../common-styles';
@@ -20,7 +20,7 @@ import {
   ContentContainer,
   Label,
   Headline,
-  Copy
+  Copy,
 } from './styles';
 
 type InArticlePuffData = {
@@ -39,8 +39,8 @@ type InArticlePuffDeckData = DeckData<never, InArticlePuffData>;
 const scrollEvent = {
   attrs: {
     event_navigation_name: 'in-article component displayed : puff',
-    event_navigation_browsing_method: 'scroll'
-  }
+    event_navigation_browsing_method: 'scroll',
+  },
 };
 
 const clickEvent = (buttonLabel: string, flag?: string) => ({
@@ -48,8 +48,8 @@ const clickEvent = (buttonLabel: string, flag?: string) => ({
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
     event_navigation_browsing_method: 'click',
-    article_flag: flag
-  }
+    article_flag: flag,
+  },
 });
 
 export const InArticlePuff: React.FC<{
@@ -80,14 +80,8 @@ export const InArticlePuff: React.FC<{
     return null;
   }
 
-  const {
-    image,
-    label,
-    headline,
-    copy,
-    link,
-    linkText
-  } = data.body.data[0].data;
+  const { image, label, headline, copy, link, linkText } =
+    data.body.data[0].data;
 
   const hasImage = Boolean(image);
 
@@ -99,8 +93,8 @@ export const InArticlePuff: React.FC<{
           component_type: 'in-article component : puff : interactive',
           event_navigation_action: 'navigation',
           component_name: `${headline}`,
-          article_flag: articleFlag
-        }
+          article_flag: articleFlag,
+        },
       }}
       scrolledEvent={scrollEvent}
     >
@@ -133,7 +127,7 @@ export const InArticlePuff: React.FC<{
               {copy && (
                 <Copy
                   dangerouslySetInnerHTML={{
-                    __html: sanitiseCopy(copy, { b: {}, i: {} })
+                    __html: sanitiseCopy(copy, { b: {}, i: {} }),
                   }}
                 />
               )}

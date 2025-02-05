@@ -4,12 +4,12 @@ const styleMap = {
   colors: {
     interactiveNegative040: '#9f0000',
     interactiveNegative050: '#800000',
-    inkInverse: '#FFFFFF'
+    inkInverse: '#FFFFFF',
   },
   spacing: {
     space030: '12px',
-    space020: '8px'
-  }
+    space020: '8px',
+  },
 };
 
 export const StyledButton = styled.button`

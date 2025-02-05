@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -47,7 +47,7 @@ export const OptaRugbyFixtures: React.FC<{
             show_subgrouping: false,
             show_crests: true,
             date_format: 'dddd MMMM D YYYY',
-            breakpoints: 520
+            breakpoints: 520,
           },
           initElement('opta-widget', {
             sport,
@@ -62,7 +62,7 @@ export const OptaRugbyFixtures: React.FC<{
             show_penalties: true,
             show_drop_goals: 'scored',
             show_cards: 'all',
-            breakpoints: '520'
+            breakpoints: '520',
           })
         ).outerHTML;
 

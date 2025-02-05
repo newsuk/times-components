@@ -33,7 +33,7 @@ export const SaveStar: React.FC<{
   const Content = children ? (
     cloneElement(children as React.ReactElement, {
       articleId,
-      onToggleSave
+      onToggleSave,
     })
   ) : (
     <SaveStarUI articleId={articleId} onToggleSave={onToggleSave} />

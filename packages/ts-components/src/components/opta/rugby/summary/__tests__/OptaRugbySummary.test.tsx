@@ -5,7 +5,7 @@ import 'regenerator-runtime';
 import '@testing-library/jest-dom';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <>Placeholder</>
+  Placeholder: () => <>Placeholder</>,
 }));
 
 const mockInitSettings = jest.fn();
@@ -21,9 +21,9 @@ const mockInitElement = () => {
 jest.mock('../../../utils/config', () => ({
   initSettings: mockInitSettings,
   initStyleSheet: mockInitStyleSheet,
-  initScript: () => new Promise(resolve => resolve({})),
+  initScript: () => new Promise((resolve) => resolve({})),
   initElement: mockInitElement,
-  initComponent: mockInitComponent
+  initComponent: mockInitComponent,
 }));
 
 import { OptaRugbySummary } from '../OptaRugbySummary';
@@ -31,7 +31,7 @@ import { OptaRugbySummary } from '../OptaRugbySummary';
 const requiredProps = {
   season: '2022',
   competition: '209',
-  match: '921100'
+  match: '921100',
 };
 
 describe('OptaRugbySummary', () => {

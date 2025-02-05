@@ -22,45 +22,42 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
   url,
   options,
   previewData,
-  children
+  children,
 }) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
   const [data, setData] = useState<any | undefined>();
 
-  useEffect(
-    () => {
-      if (!loading) {
-        setLoading(true);
+  useEffect(() => {
+    if (!loading) {
+      setLoading(true);
 
-        const fetchData = async () => {
-          try {
-            if (previewData) {
-              await new Promise(resolve => setTimeout(resolve, 1500));
-              setData(previewData);
-              setLoading(false);
-              return;
-            }
-            if (url) {
-              const response = await fetch(url, options);
-              const json = await response.json();
-
-              setData(json);
-              setLoading(false);
-            } else {
-              throw new Error('must provide a Fetch url');
-            }
-          } catch (err) {
-            setError(err instanceof Error ? err.message : 'unknown error');
+      const fetchData = async () => {
+        try {
+          if (previewData) {
+            await new Promise((resolve) => setTimeout(resolve, 1500));
+            setData(previewData);
             setLoading(false);
+            return;
           }
-        };
+          if (url) {
+            const response = await fetch(url, options);
+            const json = await response.json();
 
-        fetchData();
-      }
-    },
-    [url, options, previewData]
-  );
+            setData(json);
+            setLoading(false);
+          } else {
+            throw new Error('must provide a Fetch url');
+          }
+        } catch (err) {
+          setError(err instanceof Error ? err.message : 'unknown error');
+          setLoading(false);
+        }
+      };
+
+      fetchData();
+    }
+  }, [url, options, previewData]);
 
   return (
     <FetchProviderContext.Provider value={{ loading, error, data }}>

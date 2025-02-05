@@ -38,7 +38,7 @@ jest.mock('../styles', () => ({
     <button data-testid="play-pause-button" {...props}>
       {children}
     </button>
-  )
+  ),
 }));
 
 // Mocking icons
@@ -47,7 +47,7 @@ jest.mock('@times-components/icons', () => ({
   PauseIcon: () => <svg data-testid="pause-icon" />,
   IconCheck: () => <svg data-testid="icon-check" />,
   PlayerBack: () => <svg data-testid="player-back-icon" />,
-  PlayerFront: () => <svg data-testid="player-front-icon" />
+  PlayerFront: () => <svg data-testid="player-front-icon" />,
 }));
 
 describe('PlaybackControls', () => {
@@ -99,7 +99,7 @@ describe('PlaybackControls', () => {
 
   test('renders PlayIcon when not playing and PauseIcon when playing', () => {
     const { getByTestId, rerender, queryByTestId } = renderComponent({
-      isPlaying: false
+      isPlaying: false,
     });
     expect(getByTestId('play-icon')).toBeInTheDocument();
     expect(queryByTestId('pause-icon')).not.toBeInTheDocument();

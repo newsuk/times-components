@@ -99,9 +99,7 @@ export const StyledSeekBar = styled.input<StyledSeekBarProps>`
   height: 4px;
   border-radius: 2px;
   background: ${({ progress }) =>
-    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${
-      colours.functional.whiteGrey
-    } ${progress}%, ${colours.functional.whiteGrey} 100%)`};
+    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${colours.functional.whiteGrey} ${progress}%, ${colours.functional.whiteGrey} 100%)`};
   outline: none;
   appearance: none;
   margin: 16px 0 6px 0;
@@ -301,9 +299,7 @@ export const SpeedSelectModal = styled.div<{ isMobile?: boolean }>`
           transform: translateX(-50%);
           border-width: 16px 16px 0 16px;
           border-style: solid;
-          border-color: ${
-            colours.functional.white
-          } transparent transparent transparent;
+          border-color: ${colours.functional.white} transparent transparent transparent;
           width: 0;
           height: 0;
         }
@@ -556,9 +552,7 @@ export const TabletDesktopSeekBar = styled.input<TabletDesktopSeekBarProps>`
   flex-grow: 1;
   height: 4px;
   background: ${({ progress }) =>
-    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${
-      colours.functional.whiteGrey
-    } ${progress}%, ${colours.functional.whiteGrey} 100%)`};
+    `linear-gradient(to right, ${thumbColor} 0%, ${thumbColor} ${progress}%, ${colours.functional.whiteGrey} ${progress}%, ${colours.functional.whiteGrey} 100%)`};
   outline: none;
   appearance: none;
   margin: 0 8px;

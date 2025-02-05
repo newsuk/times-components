@@ -16,8 +16,8 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'articleHeadline',
-          section_details: 'section'
-        }
+          section_details: 'section',
+        },
       }}
       analyticsStream={analyticsStream}
     >
@@ -34,8 +34,8 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'articleHeadline',
-          section_details: 'section'
-        }
+          section_details: 'section',
+        },
       }}
       analyticsStream={analyticsStream}
     >
@@ -56,8 +56,8 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'articleHeadline',
-          section_details: 'section'
-        }
+          section_details: 'section',
+        },
       }}
       analyticsStream={analyticsStream}
     >

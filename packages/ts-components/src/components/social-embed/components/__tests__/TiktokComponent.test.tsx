@@ -17,7 +17,7 @@ describe('TikTok Component', () => {
 
     const script = Array.from(
       document.body.getElementsByTagName('script')
-    ).find(el => el.src === 'https://www.tiktok.com/embed.js');
+    ).find((el) => el.src === 'https://www.tiktok.com/embed.js');
 
     expect(script).toBeTruthy();
     expect(appendChildSpy).toHaveBeenCalledWith(expect.any(HTMLScriptElement));
@@ -31,14 +31,14 @@ describe('TikTok Component', () => {
 
     const script = Array.from(
       document.body.getElementsByTagName('script')
-    ).find(el => el.src === 'https://www.tiktok.com/embed.js');
+    ).find((el) => el.src === 'https://www.tiktok.com/embed.js');
 
     expect(script).toBeFalsy();
     expect(removeChildSpy).toHaveBeenCalledWith(expect.any(HTMLScriptElement));
   });
 
   it('does not throw an error if the script is already removed during unmount', () => {
-    jest.spyOn(document.body, 'removeChild').mockImplementation(node => {
+    jest.spyOn(document.body, 'removeChild').mockImplementation((node) => {
       if (!document.body.contains(node)) {
         throw new Error('The node to be removed is not a child of this node');
       }

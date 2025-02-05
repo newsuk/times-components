@@ -4,7 +4,7 @@ import {
   Title,
   Description,
   IconContainer,
-  ContentContainer
+  ContentContainer,
 } from './styles';
 import { InfoIcon } from './InfoIcon';
 

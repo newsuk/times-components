@@ -5,7 +5,7 @@ import { formatTime } from './utils';
 
 export const TimeDisplay: FC<TimeDisplayProps> = ({
   currentTime,
-  duration
+  duration,
 }) => {
   return (
     <Row>

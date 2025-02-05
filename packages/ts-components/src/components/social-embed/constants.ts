@@ -1,14 +1,14 @@
 export const modalType = {
   GDPR: 'gdpr',
-  CCPA: 'ccpa'
+  CCPA: 'ccpa',
 } as const;
 
 export const eventStatus = {
   tcLoaded: 'tcloaded',
   cmpIsShown: 'cmpuishown',
-  userActionComplete: 'useractioncomplete'
+  userActionComplete: 'useractioncomplete',
 } as const;
 
 export const vendors = {
-  twitter: 'twitter'
+  twitter: 'twitter',
 } as const;

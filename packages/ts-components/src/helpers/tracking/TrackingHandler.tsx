@@ -19,7 +19,7 @@ export const tealiumTrackingHandler = (
       event_navigation_name: eventName,
       event_navigation_action: action,
       event_navigation_browsing_method: browsingMethod,
-      ...additionalParams
+      ...additionalParams,
     });
   } else {
     // tslint:disable-next-line:no-console

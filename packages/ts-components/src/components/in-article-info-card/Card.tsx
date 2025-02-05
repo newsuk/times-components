@@ -3,7 +3,7 @@ import {
   CardContainer,
   CardContent,
   Headline,
-  HeadlineButtonContainer
+  HeadlineButtonContainer,
 } from './styles';
 import { Label } from '../common-styles';
 import { InfoCardData } from './types';

@@ -10,19 +10,19 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
-      type: 'decorator'
+      type: 'decorator',
     },
     {
       component: () => <OptaFootballStandings season="2023" competition="8" />,
       name: 'Standings',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
         <OptaFootballStandings season="2024" competition="10" height={1057} />
       ),
       name: 'Standings (with height)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
@@ -34,7 +34,7 @@ const showcase = {
         />
       ),
       name: 'Standings (2 columns - desktop)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
@@ -45,14 +45,14 @@ const showcase = {
         />
       ),
       name: 'Standings (inline)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
         <OptaFootballStandings season="2023" competition="3" navigation />
       ),
       name: 'Standings (dropdown)',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
@@ -64,10 +64,10 @@ const showcase = {
         />
       ),
       name: 'Standings (default)',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Football/Standings'
+  name: 'Typescript Component/In Article/Football/Standings',
 };
 
 // @ts-ignore

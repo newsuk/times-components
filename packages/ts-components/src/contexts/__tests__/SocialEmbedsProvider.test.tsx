@@ -3,7 +3,7 @@ import { act, waitFor, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import {
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
 } from '../SocialEmbedsProvider';
 import { renderHook } from '@testing-library/react-hooks';
 
@@ -18,13 +18,13 @@ describe('SocialEmbedsProvider and useSocialEmbedsContext', () => {
     expect(result.current.isSocialEmbedAllowed).toEqual({
       twitter: false,
       tiktok: false,
-      youtube: false
+      youtube: false,
     });
 
     expect(result.current.isAllowedOnce).toEqual({
       twitter: false,
       tiktok: false,
-      youtube: false
+      youtube: false,
     });
   });
 
@@ -36,9 +36,9 @@ describe('SocialEmbedsProvider and useSocialEmbedsContext', () => {
     const { result } = renderHook(() => useSocialEmbedsContext(), { wrapper });
 
     act(() => {
-      result.current.setIsSocialEmbedAllowed(prev => ({
+      result.current.setIsSocialEmbedAllowed((prev) => ({
         ...prev,
-        twitter: true
+        twitter: true,
       }));
     });
 
@@ -53,9 +53,9 @@ describe('SocialEmbedsProvider and useSocialEmbedsContext', () => {
     const { result } = renderHook(() => useSocialEmbedsContext(), { wrapper });
 
     act(() => {
-      result.current.setIsSocialEmbedAllowed(prev => ({
+      result.current.setIsSocialEmbedAllowed((prev) => ({
         ...prev,
-        youtube: true
+        youtube: true,
       }));
     });
 

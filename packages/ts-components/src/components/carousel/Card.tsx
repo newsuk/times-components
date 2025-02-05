@@ -8,7 +8,7 @@ import {
   HeadlineButtonContainer,
   ImageTitle,
   MobileOrLarge,
-  NotMobileOrLarge
+  NotMobileOrLarge,
 } from './styles';
 import { Label } from '../common-styles';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
@@ -40,7 +40,7 @@ export const Card: React.FC<{
               <Copy
                 isWide={isWide}
                 dangerouslySetInnerHTML={{
-                  __html: sanitiseCopy(cardData.copy, { br: {}, b: {}, i: {} })
+                  __html: sanitiseCopy(cardData.copy, { br: {}, b: {}, i: {} }),
                 }}
               />
             )}

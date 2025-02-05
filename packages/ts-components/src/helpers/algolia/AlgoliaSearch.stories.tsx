@@ -3,12 +3,12 @@ import { storiesOf } from '@storybook/react';
 
 import {
   AlgoliaSearchProvider,
-  useAlgoliaSearch
+  useAlgoliaSearch,
 } from './AlgoliaSearchProvider';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import {
   AlgoliaArticle,
-  SearchRelatedArticlesResult
+  SearchRelatedArticlesResult,
 } from './algoliaRelatedArticles';
 import { InArticleRelatedArticles } from '../../components/in-article-related-articles/InArticleRelatedArticles';
 import { RelatedArticleType } from '../../components/in-article-related-articles/RelatedArticle';
@@ -18,26 +18,23 @@ const App = () => {
 
   const [results, setResults] = useState<SearchRelatedArticlesResult | null>();
 
-  useEffect(
-    () => {
-      // tslint:disable-next-line:no-console
-      console.log('article.,getRelatedArticles', getRelatedArticles);
-      if (getRelatedArticles) {
-        getRelatedArticles().then(searchResults => setResults(searchResults));
-      }
-    },
-    [getRelatedArticles]
-  );
+  useEffect(() => {
+    // tslint:disable-next-line:no-console
+    console.log('article.,getRelatedArticles', getRelatedArticles);
+    if (getRelatedArticles) {
+      getRelatedArticles().then((searchResults) => setResults(searchResults));
+    }
+  }, [getRelatedArticles]);
 
   const relatedArticles: RelatedArticleType[] = results
-    ? results.items.map(result => ({
+    ? results.items.map((result) => ({
         label: result.article.label,
         headline: result.article.headline,
         link: result.article.url,
         image:
           result.article.leadAsset &&
           result.article.leadAsset.crop169 &&
-          result.article.leadAsset.crop169.url
+          result.article.leadAsset.crop169.url,
       }))
     : [];
 
@@ -60,7 +57,7 @@ const App = () => {
 const algoliaSearchKeys = {
   applicationId: process.env.STORYBOOK_ALGOLIA_ID || '',
   apiKey: process.env.STORYBOOK_ALGOLIA_KEY || '',
-  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ''
+  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || '',
 };
 
 storiesOf('Typescript Component/Algolia/Helper', module).add(
@@ -79,7 +76,7 @@ storiesOf('Typescript Component/Algolia/Helper', module).add(
         id,
         section,
         label,
-        topics: topics.split(',').map(name => ({ name })),
+        topics: topics.split(',').map((name) => ({ name })),
         headline,
         bylines: [
           {
@@ -89,17 +86,17 @@ storiesOf('Typescript Component/Algolia/Helper', module).add(
                 children: [
                   {
                     attributes: {
-                      value: byline
+                      value: byline,
                     },
                     children: [],
-                    name: 'text'
-                  }
+                    name: 'text',
+                  },
                 ],
-                name: 'inline'
-              }
-            ]
-          }
-        ]
+                name: 'inline',
+              },
+            ],
+          },
+        ],
       });
     };
     const handleClearClick = () => {
@@ -116,41 +113,41 @@ storiesOf('Typescript Component/Algolia/Helper', module).add(
           <div className="form">
             <div>
               <span>id</span>
-              <input value={id} onChange={evt => setID(evt.target.value)} />
+              <input value={id} onChange={(evt) => setID(evt.target.value)} />
             </div>
             <div>
               <span>Headline</span>
               <input
                 value={headline}
-                onChange={evt => setHeadline(evt.target.value)}
+                onChange={(evt) => setHeadline(evt.target.value)}
               />
             </div>
             <div>
               <span>Section</span>
               <input
                 value={section}
-                onChange={evt => setSection(evt.target.value)}
+                onChange={(evt) => setSection(evt.target.value)}
               />
             </div>
             <div>
               <span>Label</span>
               <input
                 value={label}
-                onChange={evt => setLabel(evt.target.value)}
+                onChange={(evt) => setLabel(evt.target.value)}
               />
             </div>
             <div>
               <span>Topics</span>
               <input
                 value={topics}
-                onChange={evt => setTopics(evt.target.value)}
+                onChange={(evt) => setTopics(evt.target.value)}
               />
             </div>
             <div>
               <span>Byline</span>
               <input
                 value={byline}
-                onChange={evt => setByline(evt.target.value)}
+                onChange={(evt) => setByline(evt.target.value)}
               />
             </div>
             <div className="buttons">

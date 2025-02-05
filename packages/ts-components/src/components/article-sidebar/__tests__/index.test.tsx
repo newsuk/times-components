@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import { useTrackingContext } from '../../../helpers/tracking/TrackingContextProvider';
 
 jest.mock('../../../helpers/tracking/TrackingContextProvider', () => ({
-  useTrackingContext: jest.fn()
+  useTrackingContext: jest.fn(),
 }));
 
 const mockFireAnalyticsEvent = jest.fn();
@@ -17,16 +17,16 @@ const defaultProps: ArticleSideBarProps = {
       title: 'Crossword',
       url: 'https://www.thetimes.com/puzzles/crossword',
       imgUrl:
-        'https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'
+        'https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500',
     },
     {
       title: 'Polygon',
       url: 'https://www.thetimes.com/puzzles/sudoku',
       imgUrl:
-        'https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'
-    }
+        'https://www.thetimes.com/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500',
+    },
   ],
-  pageLink: 'https://www.thetimes.com/puzzles'
+  pageLink: 'https://www.thetimes.com/puzzles',
 };
 
 const renderComponent = (props: ArticleSideBarProps) =>
@@ -35,7 +35,7 @@ const renderComponent = (props: ArticleSideBarProps) =>
 describe('ArticleSidebar', () => {
   beforeEach(() => {
     (useTrackingContext as jest.Mock).mockReturnValue({
-      fireAnalyticsEvent: mockFireAnalyticsEvent
+      fireAnalyticsEvent: mockFireAnalyticsEvent,
     });
   });
 
@@ -59,8 +59,8 @@ describe('ArticleSidebar', () => {
         event_navigation_action: 'navigation',
         event_navigation_name: 'puzzle sidebar: header selected',
         event_navigation_browsing_method: 'click',
-        component_name: 'Article Sidebar'
-      }
+        component_name: 'Article Sidebar',
+      },
     });
   });
 
@@ -76,8 +76,8 @@ describe('ArticleSidebar', () => {
         event_navigation_name: 'puzzle sidebar: puzzle selected',
         event_navigation_browsing_method: 'click',
         component_name: 'Article Sidebar',
-        article_parent_name: 'crossword'
-      }
+        article_parent_name: 'crossword',
+      },
     });
   });
 });

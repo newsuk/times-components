@@ -5,7 +5,7 @@ import 'regenerator-runtime';
 import '@testing-library/jest-dom';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <>Placeholder</>
+  Placeholder: () => <>Placeholder</>,
 }));
 
 const mockInitSettings = jest.fn();
@@ -21,9 +21,9 @@ const mockInitElement = () => {
 jest.mock('../../../utils/config', () => ({
   initSettings: mockInitSettings,
   initStyleSheet: mockInitStyleSheet,
-  initScript: () => new Promise(resolve => resolve({})),
+  initScript: () => new Promise((resolve) => resolve({})),
   initElement: mockInitElement,
-  initComponent: mockInitComponent
+  initComponent: mockInitComponent,
 }));
 
 import { OptaRugbyFixtures } from '../OptaRugbyFixtures';
@@ -32,7 +32,7 @@ const requiredProps = {
   season: '2022',
   competition: '209',
   date_from: '2022-01-01',
-  date_to: '2022-12-01'
+  date_to: '2022-12-01',
 };
 
 describe('OptaRugbyFixtures', () => {

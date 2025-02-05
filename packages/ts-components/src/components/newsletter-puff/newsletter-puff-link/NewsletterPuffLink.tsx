@@ -14,8 +14,8 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
         attrs: {
           event_navigation_name:
             'widget : puff : manage preferences here : displayed',
-          event_navigation_browsing_method: 'automated'
-        }
+          event_navigation_browsing_method: 'automated',
+        },
       }}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => {
@@ -28,8 +28,8 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
               attrs: {
                 event_navigation_name:
                   'widget : puff : manage preferences here',
-                event_navigation_browsing_method: 'click'
-              }
+                event_navigation_browsing_method: 'click',
+              },
             });
         };
         return (

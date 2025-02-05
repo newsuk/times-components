@@ -53,8 +53,8 @@ export const RecommendedFetch: React.FC<{
             article_name: articleHeadline,
             widget_headline: heading.toLowerCase(),
             widget_section: articleSection,
-            widget_type: "today's section"
-          }
+            widget_type: "today's section",
+          },
         }}
       >
         <RecommendedArticles heading={heading} />

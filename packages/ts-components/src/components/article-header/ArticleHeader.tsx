@@ -18,7 +18,7 @@ import {
   UpdatedTime,
   UpdatedTimeItems,
   UpdatesContainer,
-  FlagContainer
+  FlagContainer,
 } from './styles';
 import { ArticleBylineAuthorData } from '../../types/related-article-slice';
 import { ArticleBylineBlock } from './ArticleBylineBlock';
@@ -40,10 +40,8 @@ const ArticleHeader: React.FC<{
   description?: string;
 }> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
-  const [
-    authorData,
-    setAuthorData
-  ] = useState<ArticleBylineAuthorData | null>();
+  const [authorData, setAuthorData] =
+    useState<ArticleBylineAuthorData | null>();
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -59,31 +57,28 @@ const ArticleHeader: React.FC<{
     }
   });
 
-  useEffect(
-    () => {
-      if (authorSlug === undefined) {
-        setAuthorData(null);
-        return;
+  useEffect(() => {
+    if (authorSlug === undefined) {
+      setAuthorData(null);
+      return;
+    }
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`/api/author-profile/${authorSlug}`);
+        const authorDetails = await response.json();
+        setAuthorData(authorDetails);
+      } catch (err) {
+        // tslint:disable-next-line:no-console
+        console.log(err);
       }
-      const fetchData = async () => {
-        try {
-          const response = await fetch(`/api/author-profile/${authorSlug}`);
-          const authorDetails = await response.json();
-          setAuthorData(authorDetails);
-        } catch (err) {
-          // tslint:disable-next-line:no-console
-          console.log(err);
-        }
-      };
+    };
 
-      fetchData();
-    },
-    [authorSlug]
-  );
+    fetchData();
+  }, [authorSlug]);
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
-      roundingMethod: 'floor'
+      roundingMethod: 'floor',
     }) + ' ago';
 
   const diffInSeconds = differenceInSeconds(currentDateTime, updatedDate);

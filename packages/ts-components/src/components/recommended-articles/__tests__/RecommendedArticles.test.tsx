@@ -10,7 +10,7 @@ import previewData from '../../../fixtures/preview-data/recommended-articles';
 import { RecommendedArticles } from '../RecommendedArticles';
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 jest.mock('@times-components/ts-slices', () => ({
@@ -24,7 +24,7 @@ jest.mock('@times-components/ts-slices', () => ({
         </div>
       ))}
     </div>
-  )
+  ),
 }));
 
 const articles = previewData.recommendations.articles;
@@ -42,8 +42,8 @@ const initialContext = {
     article_name: 'Headline',
     widget_headline: heading.toLowerCase(),
     widget_section: section,
-    widget_type: "today's section"
-  }
+    widget_type: "today's section",
+  },
 };
 
 describe('<RecommendedArticles>', () => {
@@ -75,7 +75,7 @@ describe('<RecommendedArticles>', () => {
 
   it('should render RelatedArticles correctly with 1 article', () => {
     (useFetch as jest.Mock).mockReturnValue({
-      data: getArticles(previewData, 1)
+      data: getArticles(previewData, 1),
     });
 
     const { asFragment, getByText } = render(
@@ -89,7 +89,7 @@ describe('<RecommendedArticles>', () => {
 
   it('should render RelatedArticles correctly with 2 articles', () => {
     (useFetch as jest.Mock).mockReturnValue({
-      data: getArticles(previewData, 2)
+      data: getArticles(previewData, 2),
     });
 
     const { asFragment, getByText } = render(
@@ -139,8 +139,8 @@ describe('<RecommendedArticles>', () => {
       attrs: {
         ...initialContext.attrs,
         eventTime: '2021-05-03T00:00:00.000Z',
-        article_parent_name: articles[0].headline
-      }
+        article_parent_name: articles[0].headline,
+      },
     });
   });
 });

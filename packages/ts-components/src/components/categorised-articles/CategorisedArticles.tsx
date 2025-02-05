@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Slice,
   SliceArticle,
-  MouseEventType
+  MouseEventType,
 } from '@times-components/ts-slices';
 
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
@@ -17,7 +17,7 @@ interface CategorisedArticlesProps {
 }
 export const CategorisedArticles: React.FC<CategorisedArticlesProps> = ({
   heading,
-  articles
+  articles,
 }) => {
   const { fireAnalyticsEvent } = useTrackingContext();
 
@@ -25,7 +25,7 @@ export const CategorisedArticles: React.FC<CategorisedArticlesProps> = ({
     if (fireAnalyticsEvent) {
       fireAnalyticsEvent({
         action: 'Clicked',
-        attrs: { article_parent_name: article.headline }
+        attrs: { article_parent_name: article.headline },
       });
     }
   };

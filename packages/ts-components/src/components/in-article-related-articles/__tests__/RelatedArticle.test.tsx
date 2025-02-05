@@ -8,10 +8,9 @@ import mockDate from 'mockdate';
 const article1 = {
   label: 'VIDEO',
   headline: 'Who is Juan Guaido, the man who declared president?',
-  link:
-    'https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w',
+  link: 'https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w',
   image:
-    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480'
+    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480',
 };
 
 describe('<RelatedArticle>', () => {
@@ -39,8 +38,8 @@ describe('tracking', () => {
           component: 'ArticleSkeleton',
           attrs: {
             articleHeadline: 'articleHeadline',
-            section: 'section'
-          }
+            section: 'section',
+          },
         }}
         analyticsStream={analyticsStream}
       >
@@ -61,8 +60,8 @@ describe('tracking', () => {
         event_navigation_browsing_method: 'click',
         event_navigation_name:
           'button : image : Who is Juan Guaido, the man who declared president?',
-        section: 'section'
-      }
+        section: 'section',
+      },
     });
   });
   it('fires click event when the headline is clicked', () => {
@@ -73,8 +72,8 @@ describe('tracking', () => {
           component: 'ArticleSkeleton',
           attrs: {
             articleHeadline: 'articleHeadline',
-            section: 'section'
-          }
+            section: 'section',
+          },
         }}
         analyticsStream={analyticsStream}
       >
@@ -97,8 +96,8 @@ describe('tracking', () => {
         event_navigation_browsing_method: 'click',
         event_navigation_name:
           'button : headline : Who is Juan Guaido, the man who declared president?',
-        section: 'section'
-      }
+        section: 'section',
+      },
     });
   });
   it('fires click event when "Read Full Story" link is clicked', () => {
@@ -109,8 +108,8 @@ describe('tracking', () => {
           component: 'ArticleSkeleton',
           attrs: {
             articleHeadline: 'articleHeadline',
-            section: 'section'
-          }
+            section: 'section',
+          },
         }}
         analyticsStream={analyticsStream}
       >
@@ -130,8 +129,8 @@ describe('tracking', () => {
         eventTime: '2021-05-03T00:00:00.000Z',
         event_navigation_browsing_method: 'click',
         event_navigation_name: 'button : Read Full Story',
-        section: 'section'
-      }
+        section: 'section',
+      },
     });
   });
 });

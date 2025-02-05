@@ -4,12 +4,16 @@ export const socialMediaVendors: {
   twitter: {
     id: '5fab0c31a22863611c5f8764',
     status: 'pending',
-    title: 'X (Twitter)'
+    title: 'X (Twitter)',
   },
   youtube: {
     id: '5e7ac3fae30e7d1bc1ebf5e8',
     status: 'pending',
-    title: 'Youtube'
+    title: 'Youtube',
   },
-  tiktok: { id: '5e7f6927b8e05c4e491e7380', status: 'pending', title: 'Tiktok' }
+  tiktok: {
+    id: '5e7f6927b8e05c4e491e7380',
+    status: 'pending',
+    title: 'Tiktok',
+  },
 };

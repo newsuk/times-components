@@ -8,7 +8,7 @@ import {
   BylineBlockAuthorContent,
   BylineBlockAuthorName,
   BylineBlockAuthorJobTitle,
-  BylineBlockDescription
+  BylineBlockDescription,
 } from './styles';
 
 export const ArticleBylineBlock: React.FC<{
@@ -24,24 +24,21 @@ export const ArticleBylineBlock: React.FC<{
 
   return (
     <BylineBlockContainer>
-      {authorData &&
-        authorData.image && (
-          <BylineBlockImgContainer>
-            <BylineBlockImg src={authorData.image} alt={authorData.name} />
-          </BylineBlockImgContainer>
-        )}
+      {authorData && authorData.image && (
+        <BylineBlockImgContainer>
+          <BylineBlockImg src={authorData.image} alt={authorData.name} />
+        </BylineBlockImgContainer>
+      )}
       <BylineBlockContent>
         <BylineBlockAuthorContent>
-          {authorData &&
-            authorData.name && (
-              <BylineBlockAuthorName>{authorData.name}</BylineBlockAuthorName>
-            )}
-          {authorData &&
-            authorData.jobTitle && (
-              <BylineBlockAuthorJobTitle>
-                {authorData.jobTitle}
-              </BylineBlockAuthorJobTitle>
-            )}
+          {authorData && authorData.name && (
+            <BylineBlockAuthorName>{authorData.name}</BylineBlockAuthorName>
+          )}
+          {authorData && authorData.jobTitle && (
+            <BylineBlockAuthorJobTitle>
+              {authorData.jobTitle}
+            </BylineBlockAuthorJobTitle>
+          )}
         </BylineBlockAuthorContent>
         {description && (
           <BylineBlockDescription>{description}</BylineBlockDescription>

@@ -2,7 +2,7 @@ export const isNationalCompetition = (competition: string) => {
   const nationalCompetitions = [
     '3', // UEFA European Championship Finals
     '235', // UEFA European Championship Qualifiers
-    '941' // UEFA Nations League
+    '941', // UEFA Nations League
   ];
   return nationalCompetitions.includes(competition);
 };
@@ -25,7 +25,7 @@ export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
 
         const replacements = [
           { pattern: /Quarter-Finalist/g, replacement: 'QF' },
-          { pattern: /Semi-Finalist|Semi-Final/g, replacement: 'SF' }
+          { pattern: /Semi-Finalist|Semi-Final/g, replacement: 'SF' },
         ];
 
         replacements.forEach(({ pattern, replacement }) => {

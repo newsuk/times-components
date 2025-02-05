@@ -14,16 +14,14 @@ const expectedArticles = [
       crops: [
         {
           ratio: '16:9',
-          url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0'
-        }
-      ]
+          url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0',
+        },
+      ],
     },
     label: null,
     summary:
       'How is your bank balance? Even if the cost of living crisis doesn’t constitute a crisis for you, you’ll have noticed that you’re suddenly paying more for  and what felt reasonable may now...',
-    url:
-      'l1/l2/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6'
+    url: 'l1/l2/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6',
   },
   {
     byline: '',
@@ -34,15 +32,14 @@ const expectedArticles = [
       crops: [
         {
           ratio: '16:9',
-          url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293'
-        }
-      ]
+          url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293',
+        },
+      ],
     },
     label: 'Obituary',
     summary:
       'On August 1, 1981, Major Ian Crooke, the operations officer of 22 Special Air Service in Hereford, received a telephone call from London. A Marxist coup d’état was taking place in the former British...',
-    url: 'l1/l2/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp'
+    url: 'l1/l2/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp',
   },
   {
     byline: 'Patrick Maguire',
@@ -53,16 +50,15 @@ const expectedArticles = [
       crops: [
         {
           ratio: '16:9',
-          url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78'
-        }
-      ]
+          url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78',
+        },
+      ],
     },
     label: 'RED BOX | PATRICK MAGUIRE',
     summary:
       'Worse than May. Worse than Major. As bad as Thatcher. of his own MPs, far more than even the most pessimistic whip predicted this time yesterday. Can Boris...',
-    url: 'l1/l2/article/is-the-party-over-for-boris-johnson-k8s0jxv6r'
-  }
+    url: 'l1/l2/article/is-the-party-over-for-boris-johnson-k8s0jxv6r',
+  },
 ];
 
 describe('getRecommendedArticlesSlice()', () => {
@@ -73,7 +69,7 @@ describe('getRecommendedArticlesSlice()', () => {
 
     expect(slice).toStrictEqual({
       children: [{ article: expectedArticles[0] }],
-      name: 'RELATED_ARTICLE_1'
+      name: 'RELATED_ARTICLE_1',
     });
   });
 
@@ -85,9 +81,9 @@ describe('getRecommendedArticlesSlice()', () => {
     expect(slice).toStrictEqual({
       children: [
         { article: expectedArticles[0] },
-        { article: expectedArticles[1] }
+        { article: expectedArticles[1] },
       ],
-      name: 'RELATED_ARTICLE_2'
+      name: 'RELATED_ARTICLE_2',
     });
   });
 
@@ -99,9 +95,9 @@ describe('getRecommendedArticlesSlice()', () => {
       children: [
         { article: expectedArticles[0] },
         { article: expectedArticles[1] },
-        { article: expectedArticles[2] }
+        { article: expectedArticles[2] },
       ],
-      name: 'RELATED_ARTICLE_3'
+      name: 'RELATED_ARTICLE_3',
     });
   });
 });

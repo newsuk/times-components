@@ -28,7 +28,7 @@ storiesOf('Typescript Component/Article Header', module).add(
           slug: 'oliver-wright',
           name: props.name,
           jobTitle: props.jobTitle,
-          image: props.image
+          image: props.image,
         }}
         description={props.description}
       />

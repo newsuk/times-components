@@ -39,17 +39,19 @@ export type Article = {
 const getBylines = (bylines?: Byline[]) =>
   bylines
     ? bylines
-        .map(byline => (byline.type === 'author' ? byline.name : byline.value))
+        .map((byline) =>
+          byline.type === 'author' ? byline.name : byline.value
+        )
         .join('')
     : undefined;
 
 const getSummary = (summary?: Summary) =>
   summary && summary.children
-    ? summary.children.map(child => child.text).join('') + '...'
+    ? summary.children.map((child) => child.text).join('') + '...'
     : undefined;
 
 const getImageCrops = (crops: MediaCrop[]) =>
-  crops.map(crop => ({ url: crop.url, ratio: crop.aspectRatio }));
+  crops.map((crop) => ({ url: crop.url, ratio: crop.aspectRatio }));
 
 const getImage = (media?: Media) => {
   if (media) {
@@ -75,8 +77,8 @@ const formatArticle = (article: Article): SliceArticle => {
     datePublished: article.publishedDateTime,
     images: {
       alt: article.headline,
-      crops: getImage(article.media)
-    }
+      crops: getImage(article.media),
+    },
   };
 };
 
@@ -96,8 +98,8 @@ export const getRecommendedArticlesSlice = (articles: Article[]) => {
     name: getSliceName(articles.length),
     children: articles
       .map((article: Article) => ({
-        article: formatArticle(article)
+        article: formatArticle(article),
       }))
-      .slice(0, 3)
+      .slice(0, 3),
   };
 };

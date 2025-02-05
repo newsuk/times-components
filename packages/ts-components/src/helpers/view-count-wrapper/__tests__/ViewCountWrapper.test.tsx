@@ -105,7 +105,7 @@ describe('<ViewCountWrapper>', () => {
       const { baseElement } = render(
         <ViewCountWrapper
           trackingName={trackingName}
-          displayFunction={value =>
+          displayFunction={(value) =>
             value !== undefined ? [1, 3].includes(value) : false
           }
         >

@@ -3,7 +3,7 @@ import { Breadcrumbs, BreadcrumbItem, IconContainer, styleMap } from './styles';
 import BreadcrumbIcon from './assets/BreadcrumbIcon';
 import {
   TrackingContext,
-  TrackingContextProvider
+  TrackingContextProvider,
 } from '../../helpers/tracking/TrackingContextProvider';
 
 type BreadcrumbsItem = {
@@ -23,8 +23,8 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
       event_navigation_action: 'navigation',
       event_navigation_name: 'header:selection',
       event_navigation_browsing_method: 'click',
-      article_parent_name: `breadcrumb : ${title}`
-    }
+      article_parent_name: `breadcrumb : ${title}`,
+    },
   });
 
   const handleClick = (

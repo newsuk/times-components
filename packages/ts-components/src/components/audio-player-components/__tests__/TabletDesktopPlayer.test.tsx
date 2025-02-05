@@ -68,7 +68,7 @@ jest.mock('../styles', () => ({
   ),
   SpeedOptionsContainer: ({ children }: any) => (
     <div data-testid="speed-options-container">{children}</div>
-  )
+  ),
 }));
 
 // Mocking icons
@@ -77,7 +77,7 @@ jest.mock('@times-components/icons', () => ({
   PauseIcon: () => <svg data-testid="pause-icon" />,
   IconVolume: () => <svg data-testid="icon-volume" />,
   IconCheck: () => <svg data-testid="icon-check" />,
-  AudioCloseIcon: () => <svg data-testid="audio-close-icon" />
+  AudioCloseIcon: () => <svg data-testid="audio-close-icon" />,
 }));
 
 // Mocking utils
@@ -86,7 +86,7 @@ jest.mock('../utils', () => ({
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-  }
+  },
 }));
 
 describe('TabletDesktopPlayer', () => {
@@ -128,7 +128,7 @@ describe('TabletDesktopPlayer', () => {
     isMobile: false,
     audioRef: React.createRef<HTMLAudioElement>(),
     setVolume: mockSetVolume,
-    handleSpeedChange: mockHandleSpeedChange
+    handleSpeedChange: mockHandleSpeedChange,
   };
 
   const renderComponent = (props = {}) =>
@@ -171,7 +171,7 @@ describe('TabletDesktopPlayer', () => {
 
   test('renders PlayIcon when not playing and PauseIcon when playing', () => {
     const { getByTestId, rerender, queryByTestId } = renderComponent({
-      isPlaying: false
+      isPlaying: false,
     });
     expect(getByTestId('play-icon')).toBeInTheDocument();
     expect(queryByTestId('pause-icon')).not.toBeInTheDocument();

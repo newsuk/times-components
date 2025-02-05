@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -48,7 +48,7 @@ export const OptaRugbySummary: React.FC<{
           show_penalties: true,
           show_drop_goals: 'scored',
           date_format: 'DD/MM/YYYY',
-          breakpoints: '520'
+          breakpoints: '520',
         }).outerHTML;
 
         initComponent();

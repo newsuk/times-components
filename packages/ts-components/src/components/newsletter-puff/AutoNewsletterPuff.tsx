@@ -4,19 +4,18 @@ import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 export const AutoNewsletterPuff = ({
   code,
-  copy,
-  headline,
-  section
+  section,
 }: AutoNewsletterPuffProps) => (
   <ViewCountWrapper
     trackingName={`auto-puff-${code}`}
-    displayFunction={count => count !== undefined && [1, 3, 5].includes(count)}
+    displayFunction={(count) =>
+      count !== undefined && [1, 3, 5].includes(count)
+    }
   >
     <InlineNewsletterPuff
       code={code}
-      copy={copy}
-      headline={headline}
       section={section}
+      isAutoNewsletterPuff={true}
     />
   </ViewCountWrapper>
 );

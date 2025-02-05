@@ -15,8 +15,8 @@ const showcase = {
             context={{
               attrs: {
                 articleHeadline: 'articleHeadline',
-                section: 'section'
-              }
+                section: 'section',
+              },
             }}
             analyticsStream={analyticsStream}
           >
@@ -27,7 +27,7 @@ const showcase = {
                     onClick={() =>
                       fireAnalyticsEvent({
                         component: 'button 1',
-                        action: 'click'
+                        action: 'click',
                       })
                     }
                   >
@@ -36,7 +36,7 @@ const showcase = {
                 </div>
                 <TrackingContextProvider
                   context={{
-                    attrs: { subsection: 'nested' }
+                    attrs: { subsection: 'nested' },
                   }}
                   analyticsStream={analyticsStream}
                 >
@@ -45,7 +45,7 @@ const showcase = {
                       onClick={() =>
                         fireNestedAnalyticsEvent({
                           component: 'button nested',
-                          action: 'click'
+                          action: 'click',
                         })
                       }
                     >
@@ -60,10 +60,10 @@ const showcase = {
       },
       name: 'Tracking Context Provider',
       platform: 'web',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/Helpers'
+  name: 'Typescript Component/Helpers',
 };
 
 showcaseConverter(module, showcase);

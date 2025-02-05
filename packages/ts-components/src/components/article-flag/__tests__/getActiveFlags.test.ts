@@ -14,21 +14,21 @@ describe('get active flags function', () => {
   it('returns only active flags', () => {
     const flags = [
       { expiryTime: '2020-03-13T12:00:00.000Z', type: 'UPDATED' },
-      { expiryTime: '2019-03-14T12:00:00.000Z', type: 'EXCLUSIVE' }
+      { expiryTime: '2019-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
     ];
     expect(getActiveFlags(flags)).toEqual([flags[0]]);
   });
   it('returns no flags when all have expired', () => {
     const flags = [
       { expiryTime: '2019-03-14T16:22:54.000Z', type: 'UPDATED' },
-      { expiryTime: '2019-03-14T12:00:00.000Z', type: 'EXCLUSIVE' }
+      { expiryTime: '2019-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
     ];
     expect(getActiveFlags(flags)).toEqual([]);
   });
   it('returns flags when expiry time is null', () => {
     const flags = [
       { expiryTime: null, type: 'UPDATED' },
-      { expiryTime: null, type: 'EXCLUSIVE' }
+      { expiryTime: null, type: 'EXCLUSIVE' },
     ];
     expect(getActiveFlags(flags)).toEqual(flags);
   });

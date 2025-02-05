@@ -21,26 +21,23 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
   >({
     twitter: false,
     tiktok: false,
-    youtube: false
+    youtube: false,
   });
 
   const [isAllowedOnce, setIsAllowedOnce] = useState<Record<string, boolean>>({
     twitter: false,
     tiktok: false,
-    youtube: false
+    youtube: false,
   });
 
-  useEffect(
-    () => {
-      // Set defaults or perform any logic needed to initialize the values
-      setIsAllowedOnce({
-        twitter: isSocialEmbedAllowed.twitter,
-        tiktok: isSocialEmbedAllowed.tiktok,
-        youtube: isSocialEmbedAllowed.youtube
-      });
-    },
-    [isSocialEmbedAllowed]
-  );
+  useEffect(() => {
+    // Set defaults or perform any logic needed to initialize the values
+    setIsAllowedOnce({
+      twitter: isSocialEmbedAllowed.twitter,
+      tiktok: isSocialEmbedAllowed.tiktok,
+      youtube: isSocialEmbedAllowed.youtube,
+    });
+  }, [isSocialEmbedAllowed]);
 
   return (
     <SocialEmbedsContext.Provider
@@ -48,7 +45,7 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
         isSocialEmbedAllowed,
         setIsSocialEmbedAllowed,
         isAllowedOnce,
-        setIsAllowedOnce
+        setIsAllowedOnce,
       }}
     >
       {children}

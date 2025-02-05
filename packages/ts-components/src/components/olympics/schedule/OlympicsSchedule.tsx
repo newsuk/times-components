@@ -11,7 +11,7 @@ export const OlympicsSchedule: FC<{
   inArticle?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode } = config.prod,
-  inArticle = true
+  inArticle = true,
 }) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
@@ -20,7 +20,7 @@ export const OlympicsSchedule: FC<{
   useEffect(() => {
     window.addEventListener(
       'wheel',
-      event => {
+      (event) => {
         if (
           event
             .composedPath()

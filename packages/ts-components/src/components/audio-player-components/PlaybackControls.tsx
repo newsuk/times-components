@@ -9,14 +9,14 @@ import {
   PlaybackButtonsContainer,
   SpeedButton,
   PlayPauseButton,
-  SpeedOptionsContainer
+  SpeedOptionsContainer,
 } from './styles';
 import {
   PlayIcon,
   PauseIcon,
   IconCheck,
   PlayerBack,
-  PlayerFront
+  PlayerFront,
 } from '@times-components/icons';
 import { PlaybackControlsProps } from './types';
 
@@ -32,7 +32,7 @@ export const PlaybackControls: FC<PlaybackControlsProps> = ({
   allowPlaybackRateChange,
   isSpeedModalOpen,
   setIsSpeedModalOpen,
-  isMobile
+  isMobile,
 }) => {
   const toggleSpeedModal = () => {
     if (allowPlaybackRateChange) {
@@ -83,7 +83,7 @@ export const PlaybackControls: FC<PlaybackControlsProps> = ({
       {isSpeedModalOpen && (
         <SpeedSelectModal isMobile={isMobile}>
           <SpeedOptionsContainer>
-            {speedOptions.map(option => (
+            {speedOptions.map((option) => (
               <SpeedOptionItem
                 key={option}
                 selected={option === speed}

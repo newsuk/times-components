@@ -3,7 +3,7 @@ import { render, waitForElementToBeRemoved } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <>Placeholder</>
+  Placeholder: () => <>Placeholder</>,
 }));
 
 const mockInitSettings = jest.fn();
@@ -22,18 +22,18 @@ const mockInitElement = () => {
 jest.mock('../../../utils/config', () => ({
   initSettings: mockInitSettings,
   initStyleSheet: mockInitStyleSheet,
-  initScript: () => new Promise(resolve => resolve({})),
+  initScript: () => new Promise((resolve) => resolve({})),
   initElement: mockInitElement,
-  initComponent: mockInitComponent
+  initComponent: mockInitComponent,
 }));
 jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
-  isNationalCompetition: mockIsNationalComp
+  isNationalCompetition: mockIsNationalComp,
 }));
 jest.mock('../../../utils/useFixturePageLink', () => ({
-  useFixturePageLink: mockUseFixturePageLink
+  useFixturePageLink: mockUseFixturePageLink,
 }));
 jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
-  useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails
+  useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails,
 }));
 
 import { OptaFootballFixturesTicker } from '../OptaFootballFixturesTicker';
@@ -43,7 +43,7 @@ const requiredProps = {
   season: '2020',
   competition: '8',
   date_from: '2021-06-20',
-  date_to: '2021-07-11'
+  date_to: '2021-07-11',
 };
 
 afterEach(() => {

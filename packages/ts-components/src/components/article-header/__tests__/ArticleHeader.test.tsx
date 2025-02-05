@@ -157,7 +157,7 @@ describe('ArticleHeader', () => {
       name: 'Oliver Wright',
       image:
         'https://www.staging-thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fstag%2Fweb%2Fbin%2Fe1ca81d9-5ef0-442e-9493-8d9705bd9d03.jpg?crop=270%2C270%2C0%2C0&resize=200',
-      jobTitle: 'Business Columnist'
+      jobTitle: 'Business Columnist',
     };
 
     it('Does not display the author details if the fetch request throws an error', async () => {

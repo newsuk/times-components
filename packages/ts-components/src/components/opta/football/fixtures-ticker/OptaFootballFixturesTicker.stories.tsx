@@ -16,7 +16,7 @@ const competitons = [
   '80',
   '235',
   '941',
-  '1125'
+  '1125',
 ];
 
 storiesOf('Typescript Component/In Article/Football/Fixtures', module)

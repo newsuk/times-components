@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -42,7 +42,7 @@ export const OptaRugbyStandings: React.FC<{
             navigation: navigation ? 'dropdown' : undefined,
             default_nav,
             show_crests: true,
-            breakpoints: 520
+            breakpoints: 520,
           }).outerHTML;
 
           initComponent();

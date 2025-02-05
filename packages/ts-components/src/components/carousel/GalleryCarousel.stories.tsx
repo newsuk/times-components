@@ -17,8 +17,8 @@ storiesOf('Typescript Component/Gallery Carousel', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>
@@ -37,8 +37,8 @@ storiesOf('Typescript Component/Gallery Carousel', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>
@@ -57,8 +57,8 @@ storiesOf('Typescript Component/Gallery Carousel', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>

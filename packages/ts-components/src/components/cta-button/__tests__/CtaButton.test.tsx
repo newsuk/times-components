@@ -4,14 +4,14 @@ import { CtaButton } from '../CtaButton';
 import { tealiumTrackingHandler } from '../../../helpers/tracking/TrackingHandler';
 
 jest.mock('../../../helpers/tracking/TrackingHandler', () => ({
-  tealiumTrackingHandler: jest.fn()
+  tealiumTrackingHandler: jest.fn(),
 }));
 
 describe('CtaButton Component', () => {
   const defaultProps = {
     url: 'https://www.example.com',
     target: '_blank',
-    text: 'Book a Stay'
+    text: 'Book a Stay',
   };
 
   it('calls tealiumTrackingHandler on link click', () => {

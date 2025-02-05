@@ -10,7 +10,7 @@ describe('Article byline block', () => {
     name: 'Oliver Wright',
     jobTitle: 'Privacy Editor',
     image:
-      'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F043bbdb4-f8df-4856-92a4-132cc1524cb9.jpg?crop=668%2C668%2C0%2C0&resize=200'
+      'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F043bbdb4-f8df-4856-92a4-132cc1524cb9.jpg?crop=668%2C668%2C0%2C0&resize=200',
   };
   const description = 'Analysis';
 

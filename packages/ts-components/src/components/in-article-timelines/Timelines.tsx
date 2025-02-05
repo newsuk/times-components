@@ -3,7 +3,7 @@ import { Placeholder } from '@times-components/image';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import {
   TrackingContext,
-  TrackingContextProvider
+  TrackingContextProvider,
 } from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
@@ -14,7 +14,7 @@ import {
   RightPanel,
   Date,
   SubHeading,
-  StyledShowAllButton
+  StyledShowAllButton,
 } from './styles';
 import {
   PlaceholderContainer,
@@ -23,7 +23,7 @@ import {
   ListContainer,
   List,
   Copy,
-  ShowAllContainer
+  ShowAllContainer,
 } from '../common-styles';
 import { DeckData } from '../../helpers/fetch/types';
 
@@ -42,16 +42,16 @@ type TimelinesDeckData = DeckData<never, TimelinesData>;
 const scrollEvent = {
   attrs: {
     event_navigation_name: 'in-article component displayed : timelines',
-    event_navigation_browsing_method: 'scroll'
-  }
+    event_navigation_browsing_method: 'scroll',
+  },
 };
 
 const clickEvent = (buttonLabel: string) => ({
   action: 'Clicked',
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
-    event_navigation_browsing_method: 'click'
-  }
+    event_navigation_browsing_method: 'click',
+  },
 });
 
 export const Timelines: React.FC<{
@@ -102,8 +102,8 @@ export const Timelines: React.FC<{
             'in-article component : timelines: ' +
             (displayShowAll ? 'interactive' : 'static'),
           event_navigation_action: 'navigation',
-          component_name: `${headline}`
-        }
+          component_name: `${headline}`,
+        },
       }}
       scrolledEvent={scrollEvent}
     >
@@ -132,7 +132,7 @@ export const Timelines: React.FC<{
                       <SubHeading>{row.data.eventHeading}</SubHeading>
                       <Copy
                         dangerouslySetInnerHTML={{
-                          __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                          __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i']),
                         }}
                       />
                     </RightPanel>

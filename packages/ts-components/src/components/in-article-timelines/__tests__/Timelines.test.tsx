@@ -9,19 +9,19 @@ import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
+  Placeholder: () => <div>Placeholder</div>,
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const deckApiPayloadWrapper = () => ({
-  data: testDataBullet
+  data: testDataBullet,
 });
 
 const deckApiPayloadWrapperCircle = () => ({
-  data: testDataCircle
+  data: testDataCircle,
 });
 
 const testDataBullet = {
@@ -32,11 +32,11 @@ const testDataBullet = {
   updated_at: {
     date: '2021-08-16 12:48:43.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'Venezuelan Politics',
-    headline: 'A history of injury troubles'
+    headline: 'A history of injury troubles',
   },
   body: {
     data: [
@@ -45,68 +45,60 @@ const testDataBullet = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Event Heading 1',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '10 June 2018',
           eventHeading: 'Event Heading 2',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '11 June 2018',
           eventHeading: 'Event Heading 3',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '12 June 2018',
           eventHeading: 'Event Heading 4',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '13 June 2018',
           eventHeading: 'Event Heading 5',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '14 June 2018',
           eventHeading: 'Event Heading 6',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '15 June 2018',
           eventHeading: 'Event Heading 7',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
-      }
-    ]
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html><html><head><title>The Times - In Article Timeline with Bullet Points</title></head><body></body></html>'
+  html: '<!DOCTYPE html><html><head><title>The Times - In Article Timeline with Bullet Points</title></head><body></body></html>',
 };
 
 const testDataCircle = {
@@ -117,11 +109,11 @@ const testDataCircle = {
   updated_at: {
     date: '2021-08-16 12:48:43.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'Venezuelan Politics',
-    headline: 'A history of injury troubles'
+    headline: 'A history of injury troubles',
   },
   body: {
     data: [
@@ -132,9 +124,8 @@ const testDataCircle = {
           eventHeading: 'Event Heading 1',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
@@ -143,9 +134,8 @@ const testDataCircle = {
           eventHeading: 'Event Heading 2',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
@@ -154,9 +144,8 @@ const testDataCircle = {
           eventHeading: 'Event Heading 3',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
@@ -165,9 +154,8 @@ const testDataCircle = {
           eventHeading: 'Event Heading 4',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
@@ -176,18 +164,16 @@ const testDataCircle = {
           eventHeading: 'Event Heading 5',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
         data: {
           date: '14 June 2018',
           eventHeading: 'Event Heading 6',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
       },
       {
         type: 'event',
@@ -196,14 +182,12 @@ const testDataCircle = {
           eventHeading: 'Event Heading 7',
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
-        }
-      }
-    ]
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html><html><head><title>The Times - In Article Timeline with Circle Images</title></head><body></body></html>'
+  html: '<!DOCTYPE html><html><head><title>The Times - In Article Timeline with Circle Images</title></head><body></body></html>',
 };
 
 const renderTimelines = () => render(<Timelines sectionColour="#636C17" />);
@@ -277,8 +261,8 @@ describe('Timelines', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
-            }
+              section: 'section',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -301,8 +285,8 @@ describe('Timelines', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : timelines',
-          section: 'section'
-        }
+          section: 'section',
+        },
       });
     });
   });

@@ -20,7 +20,7 @@ export const initSettings = () => {
       subscription_id: 'db98cff9f9612c01bbf3435964748e95',
       language: 'en_GB',
       timezone: 'Europe/London',
-      load_when_visible: false
+      load_when_visible: false,
     };
   }
 };
@@ -59,7 +59,7 @@ export const initElement = (name: string, args?: any, child?: HTMLElement) => {
   const element = document.createElement(name);
 
   if (args) {
-    Object.keys(args).map(key => {
+    Object.keys(args).map((key) => {
       if (args[key] !== undefined) {
         element.setAttribute(key, args[key].toString());
       }

@@ -16,8 +16,8 @@ describe('openPrivacyModal', () => {
     const loadPrivacyManagerModalMock = jest.fn();
     (window as any)._sp_ = {
       gdpr: {
-        loadPrivacyManagerModal: loadPrivacyManagerModalMock
-      }
+        loadPrivacyManagerModal: loadPrivacyManagerModalMock,
+      },
     };
 
     (get as jest.Mock).mockReturnValue(loadPrivacyManagerModalMock);

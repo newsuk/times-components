@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import {
   BlockedEmbedMessage,
-  BlockedEmbedMessageProps
+  BlockedEmbedMessageProps,
 } from '../BlockedEmbedMessage';
 import { enableCookies } from '../helpers/enableCookies';
 import { openPrivacyModal } from '../helpers/privacyModal';
@@ -12,33 +12,33 @@ import { useSocialEmbedsContext } from '../../../contexts/SocialEmbedsProvider';
 
 // Mock dependencies
 jest.mock('../helpers/enableCookies', () => ({
-  enableCookies: jest.fn()
+  enableCookies: jest.fn(),
 }));
 
 jest.mock('../helpers/privacyModal', () => ({
-  openPrivacyModal: jest.fn()
+  openPrivacyModal: jest.fn(),
 }));
 
 jest.mock('../../../contexts/SocialEmbedsProvider', () => ({
-  useSocialEmbedsContext: jest.fn()
+  useSocialEmbedsContext: jest.fn(),
 }));
 
 jest.mock('../helpers/getVendorTitle', () => ({
-  getVendorTitle: jest.fn(() => 'Vendor Title')
+  getVendorTitle: jest.fn(() => 'Vendor Title'),
 }));
 
 describe('BlockedEmbedMessage Component', () => {
   const vendorName: VendorName = 'twitter';
 
   const defaultProps: BlockedEmbedMessageProps = {
-    vendorName
+    vendorName,
   };
 
   const mockContext = {
     setIsSocialEmbedAllowed: jest.fn(),
     setIsAllowedOnce: jest.fn(),
     isSocialEmbedAllowed: { twitter: false, facebook: false },
-    isAllowedOnce: { twitter: false, facebook: false }
+    isAllowedOnce: { twitter: false, facebook: false },
   };
 
   beforeEach(() => {
@@ -47,8 +47,8 @@ describe('BlockedEmbedMessage Component', () => {
 
     (window as any).__TIMES_CONFIG__ = {
       sourcepoint: {
-        gdprMessageId: 'mockMessageId'
-      }
+        gdprMessageId: 'mockMessageId',
+      },
     };
   });
 

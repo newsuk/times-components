@@ -12,7 +12,7 @@ interface RootProps {
   attributes?: AttributesProps;
 }
 
-export const CtaButton: React.FC<RootProps> = props => {
+export const CtaButton: React.FC<RootProps> = (props) => {
   const attributes = props.attributes;
 
   if (!attributes || !attributes.text.trim() || !attributes.url.trim()) {

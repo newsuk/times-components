@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import {
   BaseLiveArticleFlag,
   BreakingArticleFlag,
-  LiveArticleFlag
+  LiveArticleFlag,
 } from '../LiveArticleFlag';
 
 describe('LiveArticleFlag', () => {

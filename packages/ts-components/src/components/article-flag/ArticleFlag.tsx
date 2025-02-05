@@ -7,14 +7,14 @@ import {
   ArticleFlagTextContainer,
   FlagPadding,
   Flags,
-  FlagsContainer
+  FlagsContainer,
 } from './styles';
 import getActiveFlags from './getActiveFlags';
 import { FlagType } from './types';
 
 const ArticleFlag: React.FC<{ color?: string; title: string }> = ({
   color = colours.functional.primary,
-  title
+  title,
 }) => (
   <ArticleFlagContainer>
     <ArticleFlagBullet color={color} />
@@ -29,30 +29,30 @@ const ArticleFlag: React.FC<{ color?: string; title: string }> = ({
 );
 
 const NewArticleFlag: React.FC<{ color?: string }> = ({
-  color = colours.functional.articleFlagNew
+  color = colours.functional.articleFlagNew,
 }) => <ArticleFlag color={color} title="new" />;
 
 const UpdatedArticleFlag: React.FC<{ color?: string }> = ({
-  color = colours.functional.articleFlagUpdated
+  color = colours.functional.articleFlagUpdated,
 }) => <ArticleFlag color={color} title="updated" />;
 
 const ExclusiveArticleFlag: React.FC<{ color?: string }> = ({
-  color = colours.functional.articleFlagExclusive
+  color = colours.functional.articleFlagExclusive,
 }) => <ArticleFlag color={color} title="exclusive" />;
 
 const SponsoredArticleFlag: React.FC<{ color?: string }> = ({
-  color = colours.functional.tertiary
+  color = colours.functional.tertiary,
 }) => <ArticleFlag color={color} title="sponsored" />;
 
 const LongReadArticleFlag: React.FC<{ color?: string }> = ({
-  color = colours.functional.secondary
+  color = colours.functional.secondary,
 }) => <ArticleFlag color={color} title="long read" />;
 
 const flagsMapping = (override = '') => {
   let colourProp;
   if (override !== '') {
     colourProp = {
-      color: override
+      color: override,
     };
   }
 
@@ -63,17 +63,17 @@ const flagsMapping = (override = '') => {
     ['UPDATED', <UpdatedArticleFlag {...colourProp} />],
     ['EXCLUSIVE', <ExclusiveArticleFlag {...colourProp} />],
     ['SPONSORED', <SponsoredArticleFlag {...colourProp} />],
-    ['LONGREAD', <LongReadArticleFlag {...colourProp} />]
+    ['LONGREAD', <LongReadArticleFlag {...colourProp} />],
   ]);
 };
 
 const FlagsView: React.FC<{ allFlags: FlagType; overrideColor?: string }> = ({
   allFlags,
-  overrideColor = ''
+  overrideColor = '',
 }) => {
   return (
     <Flags>
-      {allFlags.map(flag => (
+      {allFlags.map((flag) => (
         <FlagPadding key={flag.type} allFlags={allFlags}>
           {flagsMapping(overrideColor).get(flag.type)}
         </FlagPadding>
@@ -91,7 +91,7 @@ const ArticleFlags: React.FC<{
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
     ...activeFlags,
-    ...(longRead ? [{ expiryTime: null, type: 'LONGREAD' }] : [])
+    ...(longRead ? [{ expiryTime: null, type: 'LONGREAD' }] : []),
   ];
 
   if (!allFlags.length) {
@@ -119,5 +119,5 @@ export {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag
+  LongReadArticleFlag,
 };

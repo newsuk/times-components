@@ -7,12 +7,12 @@ import {
   PopoverContext,
   PopoverHeader,
   Tooltip,
-  TooltipContext
+  TooltipContext,
 } from './styles';
 import CloseIcon from './assets/close-icon';
 
 export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
-  contractualTitle
+  contractualTitle,
 }) => {
   const [tooltipOpen, setTooltipOpen] = React.useState(false);
 
@@ -36,7 +36,7 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
 };
 
 export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
-  contractualTitle
+  contractualTitle,
 }) => {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
 

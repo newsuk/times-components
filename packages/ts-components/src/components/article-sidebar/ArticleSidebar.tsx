@@ -11,7 +11,7 @@ import {
   PuzzleContainer,
   PuzzleImage,
   Title,
-  TitleIconContainer
+  TitleIconContainer,
 } from './styles';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 import { handleClick } from './tracking-helpers';
@@ -25,7 +25,7 @@ export interface ArticleSideBarProps {
 export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   sectionTitle,
   data,
-  pageLink
+  pageLink,
 }) => {
   const { fireAnalyticsEvent } = useTrackingContext();
 

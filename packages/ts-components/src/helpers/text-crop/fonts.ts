@@ -10,7 +10,7 @@ export const fonts = {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'TimesModern-Bold',
   styleMagazine: 'TimesModern-Bold',
-  supporting: 'Roboto-Regular'
+  supporting: 'Roboto-Regular',
 };
 
 export type Font = keyof typeof fonts;
@@ -28,35 +28,35 @@ const TimesModernBold: FontTextCropSettings = {
   topCrop: 11,
   bottomCrop: 23,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 const TimesModernRegular: FontTextCropSettings = {
   font: 'TimesModern-Regular',
   topCrop: 11,
   bottomCrop: 23,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 const TimesDigitalW04: FontTextCropSettings = {
   font: 'TimesDigitalW04',
   topCrop: 14,
   bottomCrop: 18,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 const TimesDigitalW04Regular: FontTextCropSettings = {
   font: 'TimesDigitalW04-Regular',
   topCrop: 14,
   bottomCrop: 18,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 const TimesDigitalW04RegularSC: FontTextCropSettings = {
   font: 'TimesDigitalW04-RegularSC',
   topCrop: 14,
   bottomCrop: 18,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 
 const RobotoRegular: FontTextCropSettings = {
@@ -64,7 +64,7 @@ const RobotoRegular: FontTextCropSettings = {
   topCrop: 6,
   bottomCrop: 26,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 
 const RobotoMedium: FontTextCropSettings = {
@@ -72,7 +72,7 @@ const RobotoMedium: FontTextCropSettings = {
   topCrop: 6,
   bottomCrop: 26,
   cropFontSize: 64,
-  cropLineHeight: 1.2
+  cropLineHeight: 1.2,
 };
 
 const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
@@ -83,7 +83,7 @@ const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
     TimesDigitalW04Regular,
     TimesDigitalW04RegularSC,
     RobotoRegular,
-    RobotoMedium
+    RobotoMedium,
   ],
   ({ font }) => font
 );
@@ -95,7 +95,7 @@ export const getFontCropSettings = (font: Font) => {
       topCrop: 0,
       bottomCrop: 0,
       cropFontSize: 0,
-      cropLineHeight: 1.2
+      cropLineHeight: 1.2,
     }
   );
 };

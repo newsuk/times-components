@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { PlaceholderContainer } from '../shared-styles';
@@ -38,54 +38,51 @@ export const OptaFootballFixturesTicker: React.FC<{
     round,
     isApp,
     showButtons,
-    fixturesPageUrl
+    fixturesPageUrl,
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition);
 
-    useEffect(
-      () => {
-        const sport = 'football';
+    useEffect(() => {
+      const sport = 'football';
 
-        initSettings();
-        initStyleSheet(sport);
+      initSettings();
+      initStyleSheet(sport);
 
-        initScript().then(() => {
-          if (ref.current) {
-            ref.current.innerHTML = initElement('opta-widget', {
-              sport,
-              widget: 'fixtures',
-              season,
-              competition,
-              date_from,
-              date_to,
-              days_ahead,
-              days_before,
-              round,
-              live: true,
-              start_on_current: true,
-              template: 'strip',
-              team_naming: 'brief',
-              match_status: 'all',
-              order_by: 'date_ascending',
-              show_grouping: true,
-              show_crests: !isNationalComp,
-              show_date: true,
-              show_live: true,
-              date_format: 'ddd Do MMM',
-              fixture_width: 160,
-              breakpoints: 520
-            }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport,
+            widget: 'fixtures',
+            season,
+            competition,
+            date_from,
+            date_to,
+            days_ahead,
+            days_before,
+            round,
+            live: true,
+            start_on_current: true,
+            template: 'strip',
+            team_naming: 'brief',
+            match_status: 'all',
+            order_by: 'date_ascending',
+            show_grouping: true,
+            show_crests: !isNationalComp,
+            show_date: true,
+            show_live: true,
+            date_format: 'ddd Do MMM',
+            fixture_width: 160,
+            breakpoints: 520,
+          }).outerHTML;
 
-            initComponent();
-            setIsReady(true);
-          }
-        });
-      },
-      [ref]
-    );
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    }, [ref]);
 
     fixturesPageUrl &&
       !isApp &&

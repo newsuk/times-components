@@ -8,19 +8,19 @@ import { Vendor } from '../SocialVendor';
 jest.mock('../components/TwitterComponent', () => ({
   Twitter: jest.fn(() => (
     <div data-testid="twitter-component">Twitter Component</div>
-  ))
+  )),
 }));
 
 jest.mock('../components/YoutubeComponent', () => ({
   Youtube: jest.fn(() => (
     <div data-testid="youtube-component">Youtube Component</div>
-  ))
+  )),
 }));
 
 jest.mock('../components/TiktokComponent', () => ({
   TikTok: jest.fn(() => (
     <div data-testid="tiktok-component">TikTok Component</div>
-  ))
+  )),
 }));
 
 describe('Vendor Component', () => {

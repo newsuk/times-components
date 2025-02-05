@@ -10,8 +10,8 @@ describe('AffiliateLinkDisclaimer Component', () => {
       toggle_active_text: 'Show%20less',
       toggle_inactive_text: 'Show%20more',
       disclaimer_full_text:
-        'Our%20travel%20journalism%20is%20written%20and%20edited%20by%20independent%20experts%20to%20inform%20and%20advise.'
-    }
+        'Our%20travel%20journalism%20is%20written%20and%20edited%20by%20independent%20experts%20to%20inform%20and%20advise.',
+    },
   };
 
   it('renders the disclaimer text and toggle link initially', () => {

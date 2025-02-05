@@ -13,7 +13,7 @@ const setCounter = (trackingName: string, value: string) => {
     const viewCounts = jsonCount !== null && JSON.parse(jsonCount);
     const newViewCounts = {
       ...(viewCounts || {}),
-      [trackingName]: value
+      [trackingName]: value,
     };
     storageProvider.setItem(STORAGE_KEY, JSON.stringify(newViewCounts));
   }
@@ -57,7 +57,7 @@ export const ViewCountWrapper: FC<{
     ref,
     () => incrementViewCount && incrementViewCount(trackingName),
     {
-      threshold: 0.5
+      threshold: 0.5,
     }
   );
 

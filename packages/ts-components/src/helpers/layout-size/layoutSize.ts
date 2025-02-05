@@ -1,6 +1,6 @@
 export enum Layout {
   Standard = '4043',
-  Wide = '4042'
+  Wide = '4042',
 }
 
 export const isStandard = (layoutSize: Layout) => {

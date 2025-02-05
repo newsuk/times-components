@@ -6,7 +6,7 @@ import {
   IconContainer,
   LoadingIcon,
   SaveStarText,
-  SaveStarButton
+  SaveStarButton,
 } from './styles';
 
 const getText = (isSaved: boolean) => (isSaved ? 'Saved' : 'Save');

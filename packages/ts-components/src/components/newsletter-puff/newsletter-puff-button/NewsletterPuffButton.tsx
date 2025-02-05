@@ -11,7 +11,7 @@ type NewsletterPuffProps = {
 export const NewsletterPuffButton = ({
   updatingSubscription = false,
   onPress,
-  style
+  style,
 }: NewsletterPuffProps) => {
   const { fireAnalyticsEvent } = useTrackingContext();
   const handlePress = () => {
@@ -24,8 +24,8 @@ export const NewsletterPuffButton = ({
           attrs: {
             event_navigation_name: 'widget : puff : sign up now',
             event_navigation_browsing_method: 'click',
-            event_navigation_action: 'navigation'
-          }
+            event_navigation_action: 'navigation',
+          },
         });
     }
   };

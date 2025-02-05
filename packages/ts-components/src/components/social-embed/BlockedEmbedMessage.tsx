@@ -7,7 +7,7 @@ import {
   Header,
   LinkPrivacyManager,
   Paragraph,
-  Title
+  Title,
 } from './styles';
 import { InfoIcon } from '../inline-message/InfoIcon';
 import { getVendorTitle } from './helpers/getVendorTitle';
@@ -23,17 +23,15 @@ export type BlockedEmbedMessageProps = {
 };
 
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
-  vendorName
+  vendorName,
 }) => {
-  const {
-    setIsSocialEmbedAllowed,
-    setIsAllowedOnce
-  } = useSocialEmbedsContext();
+  const { setIsSocialEmbedAllowed, setIsAllowedOnce } =
+    useSocialEmbedsContext();
 
   const allowCookiesOnce = () => {
-    setIsAllowedOnce(prev => ({
+    setIsAllowedOnce((prev) => ({
       ...prev,
-      [vendorName]: true
+      [vendorName]: true,
     }));
   };
 

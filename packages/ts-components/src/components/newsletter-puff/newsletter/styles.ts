@@ -4,7 +4,7 @@ import {
   breakpoints,
   colours,
   fonts,
-  spacing
+  spacing,
 } from '@times-components/ts-styleguide';
 
 import { View, Text } from '../styles';

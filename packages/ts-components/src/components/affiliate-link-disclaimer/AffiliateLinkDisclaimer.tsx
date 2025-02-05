@@ -12,7 +12,7 @@ interface RootProps {
   attributes: AttributesProps;
 }
 
-export const AffiliateLinkDisclaimer: React.FC<RootProps> = props => {
+export const AffiliateLinkDisclaimer: React.FC<RootProps> = (props) => {
   const attributes = props.attributes;
 
   const [open, setOpen] = useState<boolean>(false);
@@ -33,7 +33,7 @@ export const AffiliateLinkDisclaimer: React.FC<RootProps> = props => {
         <a
           className="shortcode-disclaimer__toggle"
           href="#"
-          onClick={e => {
+          onClick={(e) => {
             e.preventDefault();
             setOpen(!open);
           }}

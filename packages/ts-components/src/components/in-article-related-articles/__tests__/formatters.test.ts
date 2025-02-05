@@ -7,15 +7,13 @@ const sample = {
       article: {
         leadAsset: {
           crop169: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450'
+            url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450',
           },
           crop32: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0'
+            url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0',
           },
           id: '39de6425-613f-42d9-847b-cd49b16d7e65',
-          title: "Tokyo Olympics. Day 11. Cycling Track - Women's Team Pursuit"
+          title: "Tokyo Olympics. Day 11. Cycling Track - Women's Team Pursuit",
         },
         bylines: [
           {
@@ -27,16 +25,16 @@ const sample = {
                     name: 'text',
                     children: [],
                     attributes: {
-                      value: 'Rebecca Myers'
-                    }
-                  }
+                      value: 'Rebecca Myers',
+                    },
+                  },
                 ],
                 attributes: {
-                  slug: 'rebecca-myers'
-                }
-              }
+                  slug: 'rebecca-myers',
+                },
+              },
             ],
-            image: null
+            image: null,
           },
           {
             byline: [
@@ -47,14 +45,14 @@ const sample = {
                     name: 'text',
                     children: [],
                     attributes: {
-                      value: ', Tokyo'
-                    }
-                  }
-                ]
-              }
+                      value: ', Tokyo',
+                    },
+                  },
+                ],
+              },
             ],
-            image: null
-          }
+            image: null,
+          },
         ],
         hasVideo: false,
         headline:
@@ -66,10 +64,8 @@ const sample = {
         updatedTime: '2021-08-03T22:51:28.000Z',
         section: 'sport',
         shortIdentifier: 'lfjbwnpw2',
-        slug:
-          'tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble',
-        url:
-          'https://www.thetimes.co.uk/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2',
+        slug: 'tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble',
+        url: 'https://www.thetimes.co.uk/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2',
         summary105: [
           {
             name: 'paragraph',
@@ -78,12 +74,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary125: [
           {
@@ -93,12 +89,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary145: [
           {
@@ -108,12 +104,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary160: [
           {
@@ -123,12 +119,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary175: [
           {
@@ -138,12 +134,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary225: [
           {
@@ -153,14 +149,14 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic titles. They took second place in the sprint and team'
+                    'It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic titles. They took second place in the sprint and team',
                 },
-                children: []
-              }
-            ]
-          }
-        ]
-      }
+                children: [],
+              },
+            ],
+          },
+        ],
+      },
     },
     {
       leadAsset: null,
@@ -168,16 +164,14 @@ const sample = {
         leadAsset: {
           posterImage: {
             crop169: {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0',
             },
             crop32: {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0',
             },
             id: 'f874d69b-bd32-4734-b1f0-37f9cd36dec9',
-            title: ''
-          }
+            title: '',
+          },
         },
         bylines: [
           {
@@ -189,14 +183,14 @@ const sample = {
                     name: 'text',
                     children: [],
                     attributes: {
-                      value: 'Ed Gorman, George Sandeman'
-                    }
-                  }
-                ]
-              }
+                      value: 'Ed Gorman, George Sandeman',
+                    },
+                  },
+                ],
+              },
             ],
-            image: null
-          }
+            image: null,
+          },
         ],
         hasVideo: true,
         headline:
@@ -210,10 +204,8 @@ const sample = {
         shortIdentifier: 'vxc7d03f8',
         shortHeadline:
           'Keely Hodgkinson wins 800m silver, breaking Kelly Holmes’s record',
-        slug:
-          'tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class',
-        url:
-          'https://www.thetimes.co.uk/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8',
+        slug: 'tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class',
+        url: 'https://www.thetimes.co.uk/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8',
         summary105: [
           {
             name: 'paragraph',
@@ -222,12 +214,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary125: [
           {
@@ -237,12 +229,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary145: [
           {
@@ -252,12 +244,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary160: [
           {
@@ -267,12 +259,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary175: [
           {
@@ -282,12 +274,12 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary225: [
           {
@@ -297,29 +289,27 @@ const sample = {
                 name: 'text',
                 attributes: {
                   value:
-                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the 11th day of the Games one of the nation’s most'
+                    'Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the 11th day of the Games one of the nation’s most',
                 },
-                children: []
-              }
-            ]
-          }
-        ]
-      }
+                children: [],
+              },
+            ],
+          },
+        ],
+      },
     },
     {
       leadAsset: null,
       article: {
         leadAsset: {
           crop169: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152'
+            url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152',
           },
           crop32: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0'
+            url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0',
           },
           id: '7781b9f1-6623-4700-9618-d012e2a40028',
-          title: ''
+          title: '',
         },
         bylines: [
           {
@@ -331,14 +321,14 @@ const sample = {
                     name: 'text',
                     children: [],
                     attributes: {
-                      value: 'Jane Edwardes and Fiona Mountford'
-                    }
-                  }
-                ]
-              }
+                      value: 'Jane Edwardes and Fiona Mountford',
+                    },
+                  },
+                ],
+              },
             ],
-            image: null
-          }
+            image: null,
+          },
         ],
         hasVideo: false,
         headline: 'Theatre, also showing',
@@ -351,8 +341,7 @@ const sample = {
         shortIdentifier: 'pldxw3prv',
         shortHeadline: 'Theatre, also showing',
         slug: 'theatre-also-showing',
-        url:
-          'https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv',
+        url: 'https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv',
         summary105: [
           {
             name: 'paragraph',
@@ -363,15 +352,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -379,37 +368,37 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while'
+                    'The Crucible has a history of staging great musicals, and while',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary125: [
           {
@@ -421,15 +410,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -437,37 +426,37 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic'
+                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary145: [
           {
@@ -479,15 +468,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -495,37 +484,37 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as'
+                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary160: [
           {
@@ -537,15 +526,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -553,37 +542,37 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its'
+                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary175: [
           {
@@ -595,15 +584,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -611,37 +600,37 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it'
+                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it',
                 },
-                children: []
-              }
-            ]
-          }
+                children: [],
+              },
+            ],
+          },
         ],
         summary225: [
           {
@@ -653,15 +642,15 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Guys and Dolls'
+                      value: 'Guys and Dolls',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'italic',
@@ -669,41 +658,41 @@ const sample = {
                   {
                     name: 'text',
                     attributes: {
-                      value: 'Crucible, Sheffield'
+                      value: 'Crucible, Sheffield',
                     },
-                    children: []
-                  }
-                ]
+                    children: [],
+                  },
+                ],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
-                  value: '★★★★'
+                  value: '★★★★',
                 },
-                children: []
+                children: [],
               },
               {
                 name: 'break',
-                children: []
+                children: [],
               },
               {
                 name: 'text',
                 attributes: {
                   value:
-                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it still hits the spot. Broadway’s lowlife of'
+                    'The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it still hits the spot. Broadway’s lowlife of',
                 },
-                children: []
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
+                children: [],
+              },
+            ],
+          },
+        ],
+      },
+    },
+  ],
 };
 
 describe('formatRelatedArticles', () => {

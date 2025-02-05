@@ -8,7 +8,7 @@ jest.mock('../styles', () => ({
     <button data-testid="audio-button" onClick={onClick} style={style}>
       {children}
     </button>
-  )
+  ),
 }));
 
 jest.mock('@times-components/icons', () => ({
@@ -18,7 +18,7 @@ jest.mock('@times-components/icons', () => ({
   ),
   PauseIcon: ({ color }: any) => (
     <svg data-testid="pause-icon" style={{ color: color || '#333' }} />
-  )
+  ),
 }));
 
 jest.mock('../../audio-player-components/AudioPlayer', () => ({
@@ -29,7 +29,7 @@ jest.mock('../../audio-player-components/AudioPlayer', () => ({
       <button onClick={onEnded}>Ended</button>
       <button onClick={onClose}>Close</button>
     </div>
-  )
+  ),
 }));
 
 describe('ArticleAudio', () => {
@@ -38,7 +38,7 @@ describe('ArticleAudio', () => {
     Object.defineProperty(HTMLMediaElement.prototype, 'duration', {
       get(): number {
         return 120; // 2 minutes
-      }
+      },
     });
   });
 

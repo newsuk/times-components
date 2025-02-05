@@ -6,15 +6,15 @@ const CircleArrow = () =>
 
 export const addFixturesPageLink = (element: Element, pageUrl: string = '') => {
   const fixturesPageUrlWrapper = Object.assign(document.createElement('div'), {
-    className: 'fixtures-page-link Opta-fixture'
+    className: 'fixtures-page-link Opta-fixture',
   });
 
   const link = Object.assign(document.createElement('a'), {
-    href: pageUrl
+    href: pageUrl,
   });
 
   const linkText = Object.assign(document.createElement('span'), {
-    textContent: 'Full Fixtures & Results'
+    textContent: 'Full Fixtures & Results',
   });
 
   link.appendChild(linkText);

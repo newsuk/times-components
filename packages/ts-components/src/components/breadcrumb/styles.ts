@@ -5,8 +5,8 @@ export const styleMap = {
     blue070: '#006699',
     inkContrast: '#01000d',
     inkSubtle: '#696969',
-    inkNonEssential: '#aaaaaa'
-  }
+    inkNonEssential: '#aaaaaa',
+  },
 };
 
 export const BreadcrumbItem = styled.a<{ selected: boolean }>`

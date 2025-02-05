@@ -19,35 +19,26 @@ export const useFixturePageLink = (
   container: string,
   fixturesPageUrl: string
 ): void => {
-  useEffect(
-    () => {
-      let addFixtureLink = getAndAddFixturesPageLink(
-        container,
-        fixturesPageUrl
-      );
-      let setFixtureLink: NodeJS.Timeout | undefined;
-      if (!addFixtureLink) {
-        let count = 0;
-        setFixtureLink = setInterval(() => {
-          if (count >= 30) {
-            clearInterval(setFixtureLink);
-          }
-          count++;
-          addFixtureLink = getAndAddFixturesPageLink(
-            container,
-            fixturesPageUrl
-          );
-          if (addFixtureLink) {
-            clearInterval(setFixtureLink);
-          }
-        }, 200);
-      }
-      return () => {
-        if (setFixtureLink) {
+  useEffect(() => {
+    let addFixtureLink = getAndAddFixturesPageLink(container, fixturesPageUrl);
+    let setFixtureLink: NodeJS.Timeout | undefined;
+    if (!addFixtureLink) {
+      let count = 0;
+      setFixtureLink = setInterval(() => {
+        if (count >= 30) {
           clearInterval(setFixtureLink);
         }
-      };
-    },
-    [ref, container, fixturesPageUrl]
-  );
+        count++;
+        addFixtureLink = getAndAddFixturesPageLink(container, fixturesPageUrl);
+        if (addFixtureLink) {
+          clearInterval(setFixtureLink);
+        }
+      }, 200);
+    }
+    return () => {
+      if (setFixtureLink) {
+        clearInterval(setFixtureLink);
+      }
+    };
+  }, [ref, container, fixturesPageUrl]);
 };

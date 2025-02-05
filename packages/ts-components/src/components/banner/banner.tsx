@@ -7,7 +7,7 @@ import {
   Wrapper,
   StyledBanner,
   BannerWrapper,
-  BannerContentWrapper
+  BannerContentWrapper,
 } from './styles';
 import CloseIconBlack from './assets/CloseIconBlack';
 import EmailIcon from './assets/EmailIcon';

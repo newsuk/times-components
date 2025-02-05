@@ -3,7 +3,7 @@ import { Placeholder } from '@times-components/image';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import {
   TrackingContext,
-  TrackingContextProvider
+  TrackingContextProvider,
 } from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { breakpoints } from '@times-components/ts-styleguide';
@@ -15,7 +15,7 @@ import {
   List,
   ListItem,
   ReadMoreContainer,
-  ReadMoreButton
+  ReadMoreButton,
 } from './styles';
 import { PlaceholderContainer, Label } from '../common-styles';
 
@@ -34,16 +34,16 @@ const scrollEvent = {
   attrs: {
     event_navigation_name:
       'in-article component displayed : bullet point component',
-    event_navigation_browsing_method: 'automated'
-  }
+    event_navigation_browsing_method: 'automated',
+  },
 };
 
 const clickEvent = (buttonLabel: string) => ({
   action: 'Clicked',
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
-    event_navigation_browsing_method: 'click'
-  }
+    event_navigation_browsing_method: 'click',
+  },
 });
 
 const { medium } = breakpoints;
@@ -97,8 +97,8 @@ export const InfoCardBulletPoints: React.FC<{
             'in-article component : bullet point component: ' +
             (showReadMore && windowWidth < medium ? 'interactive' : 'static'),
           event_navigation_action: 'navigation',
-          component_name: `${headline}`
-        }
+          component_name: `${headline}`,
+        },
       }}
       scrolledEvent={scrollEvent}
     >
@@ -118,7 +118,7 @@ export const InfoCardBulletPoints: React.FC<{
                   <ListItem
                     key={index}
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy(row.data.copy, { b: {}, i: {} })
+                      __html: sanitiseCopy(row.data.copy, { b: {}, i: {} }),
                     }}
                   />
                 ))}

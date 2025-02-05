@@ -11,7 +11,7 @@ const defaultProps = {
   code: '123',
   copy: 'abc',
   headline: 'headline',
-  section: 'sport'
+  section: 'sport',
 };
 
 const mocks = [
@@ -19,8 +19,8 @@ const mocks = [
     request: {
       query: getNewsletter,
       variables: {
-        code: 'TNL-101'
-      }
+        code: 'TNL-101',
+      },
     },
     result: {
       data: {
@@ -28,11 +28,11 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
           title: 'Daily Briefing',
-          __typename: 'Newsletter'
-        }
-      }
-    }
-  }
+          __typename: 'Newsletter',
+        },
+      },
+    },
+  },
 ];
 
 const renderPuff = () =>

@@ -14,7 +14,7 @@ const showcase = {
     {
       component: ({
         boolean: bool,
-        select
+        select,
       }: {
         boolean: (name: string, def: boolean) => boolean;
         select: (
@@ -33,7 +33,7 @@ const showcase = {
           'Content size above component',
           {
             'Half Viewport': '50vh',
-            'Full Viewport': '100vh'
+            'Full Viewport': '100vh',
           },
           '50vh'
         );
@@ -41,7 +41,7 @@ const showcase = {
           background: 'linear-gradient(#f4f4f4, #f4f4f4 50%, #eee 50%, #eee)',
           backgroundSize: '100% 20px',
           border: '30px solid #f4f4f4',
-          height
+          height,
         };
         return (
           <>
@@ -50,7 +50,7 @@ const showcase = {
             {show && (
               <ViewCountWrapper
                 trackingName={trackingName}
-                displayFunction={count => (count || 0) % 2 === 1}
+                displayFunction={(count) => (count || 0) % 2 === 1}
               >
                 <div
                   style={{
@@ -60,7 +60,7 @@ const showcase = {
                     display: 'flex',
                     height: 200,
                     justifyContent: 'center',
-                    width: 200
+                    width: 200,
                   }}
                 >
                   The Puff
@@ -73,10 +73,10 @@ const showcase = {
       },
       name: 'View Count Wrapper in a scroller',
       platform: 'web',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/Helpers/View Count Wrapper'
+  name: 'Typescript Component/Helpers/View Count Wrapper',
 };
 
 // @ts-ignore

@@ -15,7 +15,7 @@ export const InArticleRelatedArticles = ({
   heading,
   relatedArticles,
   sectionColour,
-  showImages = true
+  showImages = true,
 }: RelatedArticlesProps) => (
   <TrackingContextProvider
     context={{
@@ -23,15 +23,15 @@ export const InArticleRelatedArticles = ({
       attrs: {
         component_type: 'in-article component : related articles : interactive',
         event_navigation_action: 'navigation',
-        component_name: `in-article component : related article : in view`
-      }
+        component_name: `in-article component : related article : in view`,
+      },
     }}
     scrolledEvent={{
       attrs: {
         event_navigation_name:
           'in-article component displayed : related article',
-        event_navigation_browsing_method: 'scroll'
-      }
+        event_navigation_browsing_method: 'scroll',
+      },
     }}
   >
     {({ intersectObserverRef }) => (
@@ -47,7 +47,7 @@ export const InArticleRelatedArticles = ({
                 image,
                 summary,
                 byline,
-                publishedTime
+                publishedTime,
               }) =>
                 relatedArticles.length > 1 ? (
                   <RelatedArticle

@@ -60,8 +60,8 @@ describe('NewsletterPuffButton', () => {
         eventTime: '2021-05-03T00:00:00.000Z',
         event_navigation_action: 'navigation',
         event_navigation_browsing_method: 'click',
-        event_navigation_name: 'widget : puff : sign up now'
-      }
+        event_navigation_name: 'widget : puff : sign up now',
+      },
     });
   });
 });

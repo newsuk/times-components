@@ -8,14 +8,14 @@ import {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag
+  LongReadArticleFlag,
 } from '../ArticleFlag';
 import mockDate from 'mockdate';
 
 jest.mock('@times-components/ts-components', () => ({
   __esModule: true,
   ...jest.requireActual('@times-components/ts-components'),
-  LiveArticleFlag: 'LiveArticleFlag'
+  LiveArticleFlag: 'LiveArticleFlag',
 }));
 
 describe('ArticleFlag', () => {
@@ -118,7 +118,7 @@ describe('ArticleFlag', () => {
           { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' },
         ]}
         longRead
         withContainer={false}
@@ -133,7 +133,7 @@ describe('ArticleFlag', () => {
           { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' },
         ]}
         longRead
         withContainer={false}
@@ -149,7 +149,7 @@ describe('ArticleFlag', () => {
           { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
           { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' },
         ]}
         longRead
         withContainer

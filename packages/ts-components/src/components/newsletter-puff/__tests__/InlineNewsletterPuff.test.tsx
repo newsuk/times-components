@@ -18,7 +18,7 @@ import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserv
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
   ...jest.requireActual('../../../helpers/fetch/FetchProvider'),
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const renderComponent = (
@@ -28,8 +28,8 @@ const renderComponent = (
       request: {
         query: getNewsletter,
         variables: {
-          code: 'TNL-119'
-        }
+          code: 'TNL-119',
+        },
       },
       result: {
         data: {
@@ -37,11 +37,11 @@ const renderComponent = (
             id: 'a2l6E000000CdHzQAK',
             isSubscribed: false,
             title: 'RED BOX',
-            __typename: 'Newsletter'
-          }
-        }
-      }
-    }
+            __typename: 'Newsletter',
+          },
+        },
+      },
+    },
   ]
 ) =>
   render(
@@ -55,8 +55,7 @@ const renderComponent = (
             code: 'TNL-119',
             section: 'news',
             headline: 'Politics. Explained.',
-            copy:
-              'Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.'
+            copy: 'Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.',
           }}
         />
       </TrackingContextProvider>
@@ -85,8 +84,8 @@ describe('Inline Newsletter Puff', () => {
         request: {
           query: getNewsletter,
           variables: {
-            code: 'TNL-119'
-          }
+            code: 'TNL-119',
+          },
         },
         result: {
           data: {
@@ -94,11 +93,11 @@ describe('Inline Newsletter Puff', () => {
               id: 'a2l6E000000CdHzQAK',
               isSubscribed: true,
               title: 'RED BOX',
-              __typename: 'Newsletter'
-            }
-          }
-        }
-      }
+              __typename: 'Newsletter',
+            },
+          },
+        },
+      },
     ]);
 
     await delay(0);
@@ -148,7 +147,7 @@ describe('Inline Newsletter Puff', () => {
     it('Sign up with one click : displayed', async () => {
       const analyticsStream = jest.fn();
       (useFetch as jest.Mock).mockReturnValue({
-        data: { isSubscribed: false }
+        data: { isSubscribed: false },
       });
       const component = renderComponent(analyticsStream);
 
@@ -165,8 +164,8 @@ describe('Inline Newsletter Puff', () => {
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'automated',
-          event_navigation_name: 'widget : puff : sign up now : displayed'
-        }
+          event_navigation_name: 'widget : puff : sign up now : displayed',
+        },
       });
     });
   });

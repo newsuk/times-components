@@ -16,7 +16,7 @@ export const UpdatedTimestamp: React.FC<{
   const updatedDate = new Date(updatedTime);
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
-      roundingMethod: 'floor'
+      roundingMethod: 'floor',
     }) + ' ago';
   const diffInSeconds = differenceInSeconds(currentDateTime, updatedDate);
 

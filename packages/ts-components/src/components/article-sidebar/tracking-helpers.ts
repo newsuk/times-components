@@ -6,8 +6,8 @@ const clickEvent = (title: string, parent: string = '') => ({
     event_navigation_name: `${title}`,
     event_navigation_browsing_method: 'click',
     component_name: 'Article Sidebar',
-    ...(parent && { article_parent_name: parent.toLowerCase() })
-  }
+    ...(parent && { article_parent_name: parent.toLowerCase() }),
+  },
 });
 
 const handleClick = (

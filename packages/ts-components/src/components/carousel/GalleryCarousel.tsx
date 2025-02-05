@@ -22,7 +22,7 @@ import {
   Copy,
   Credit,
   ImageTitle,
-  MobileOrLarge
+  MobileOrLarge,
 } from './styles';
 
 const CustomPagination: React.FC<{
@@ -72,7 +72,7 @@ export type GalleryCarouselProps = {
 
 export enum Layout {
   Small = '4033',
-  Wide = '4035'
+  Wide = '4035',
 }
 
 type GalleryCarouselFields = { headline: string; label: string; size: Layout };
@@ -81,7 +81,7 @@ type GalleryCarouselDeckData = DeckData<GalleryCarouselFields, CarouselDataObj>;
 
 export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   sectionColour,
-  initialIndex = 0
+  initialIndex = 0,
 }) => {
   const { loading, error, data } = useFetch<GalleryCarouselDeckData>();
 
@@ -119,14 +119,14 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
         attrs: {
           component_type: 'in-article component : gallery : interactive',
           event_navigation_action: 'navigation',
-          component_name: `${headline}`
-        }
+          component_name: `${headline}`,
+        },
       }}
       scrolledEvent={{
         attrs: {
           event_navigation_name: 'in-article component displayed : gallery',
-          event_navigation_browsing_method: 'scroll'
-        }
+          event_navigation_browsing_method: 'scroll',
+        },
       }}
     >
       {({ intersectObserverRef, fireAnalyticsEvent }) => (
@@ -154,8 +154,8 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                     attrs: {
                       event_navigation_name: `button : ${buttonLabel}`,
                       component_name: headline,
-                      event_navigation_browsing_method: 'click'
-                    }
+                      event_navigation_browsing_method: 'click',
+                    },
                   });
                 }
                 onClick && onClick(index);
@@ -183,7 +183,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
             }}
           >
             {/* @ts-ignore */}
-            {carouselData.map(row => (
+            {carouselData.map((row) => (
               <div style={{ width: '100%' }}>
                 <AspectRatio ratio="3:2">
                   <img src={row.data.image} />
@@ -209,8 +209,8 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                     __html: sanitiseCopy(carouselData[current].data.copy, {
                       br: {},
                       b: {},
-                      i: {}
-                    })
+                      i: {},
+                    }),
                   }}
                 />
               )}

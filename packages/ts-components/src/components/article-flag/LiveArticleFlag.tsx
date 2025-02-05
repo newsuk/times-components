@@ -4,7 +4,7 @@ import {
   LiveArticleFlagText,
   LiveFlagAndTimestampContainer,
   LiveArticleFlagIconContainer,
-  LiveArticleFlagIcon
+  LiveArticleFlagIcon,
 } from './styles';
 import { UpdatedTimestamp } from '../updated-timestamp/UpdatedTimestamp';
 import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
@@ -33,5 +33,5 @@ export const LiveArticleFlag: React.FC<{ color?: string }> = ({ color }) => (
 );
 
 export const BreakingArticleFlag: React.FC<{ color?: string }> = ({
-  color
+  color,
 }) => <BaseLiveArticleFlag timeStampTextColor={color} title="BREAKING" />;

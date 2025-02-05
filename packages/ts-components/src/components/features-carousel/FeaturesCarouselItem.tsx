@@ -7,7 +7,7 @@ export const FeaturesCarouselItem: React.FC<FeaturesCarouselItemProps> = ({
   text,
   image,
   color,
-  url
+  url,
 }) => {
   return (
     <CarouselItem href={url}>

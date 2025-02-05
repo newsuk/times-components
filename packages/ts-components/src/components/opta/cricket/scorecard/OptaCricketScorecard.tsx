@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -59,7 +59,7 @@ export const OptaCricketScorecard: React.FC<{
           show_economy: true,
           show_fow: true,
           player_naming: 'full',
-          breakpoints: '520'
+          breakpoints: '520',
         }).outerHTML;
 
         initComponent();

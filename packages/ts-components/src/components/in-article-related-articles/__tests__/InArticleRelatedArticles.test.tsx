@@ -12,26 +12,26 @@ const relatedArticles = [
     label: 'label1',
     headline: 'headline1',
     link: 'https://link1',
-    image: 'https://image1.jpg'
+    image: 'https://image1.jpg',
   },
   {
     label: 'label2',
     headline: 'headline2',
     link: 'https://link2',
-    image: 'https://image2.jpg'
+    image: 'https://image2.jpg',
   },
   {
     label: 'label3',
     headline: 'headline3',
     link: 'https://link3',
-    image: 'https://image3.jpg'
-  }
+    image: 'https://image3.jpg',
+  },
 ];
 
 jest.mock('../RelatedArticle', () => ({ RelatedArticle: 'RelatedArticle' }));
 
 jest.mock('../SingleRelatedArticle', () => ({
-  SingleRelatedArticle: 'SingleRelatedArticle'
+  SingleRelatedArticle: 'SingleRelatedArticle',
 }));
 
 describe('<RelatedArticle>', () => {
@@ -104,8 +104,8 @@ describe('tracking', () => {
           component: 'ArticleSkeleton',
           attrs: {
             articleHeadline: 'articleHeadline',
-            section: 'section'
-          }
+            section: 'section',
+          },
         }}
         analyticsStream={analyticsStream}
       >
@@ -133,8 +133,8 @@ describe('tracking', () => {
         event_navigation_browsing_method: 'scroll',
         event_navigation_name:
           'in-article component displayed : related article',
-        section: 'section'
-      }
+        section: 'section',
+      },
     });
   });
 });

@@ -69,8 +69,8 @@ describe('trackScrolledIntoView', () => {
         action: 'viewed',
         component: 'my comp',
         attrs: {
-          eventTime: '2021-05-03T00:00:00.000Z'
-        }
+          eventTime: '2021-05-03T00:00:00.000Z',
+        },
       });
     });
 

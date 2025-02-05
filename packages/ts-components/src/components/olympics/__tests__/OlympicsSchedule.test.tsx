@@ -9,13 +9,13 @@ import { OlympicsKeys } from '../OlympicsKeys';
 
 jest.mock('react-helmet-async', () => ({
   Helmet: 'Helmet',
-  HelmetProvider: 'HelmetProvider'
+  HelmetProvider: 'HelmetProvider',
 }));
 
 const keys: OlympicsKeys = {
   endpoint: 'https://endpoint',
   authToken: 'token',
-  gamesCode: 'OG1896'
+  gamesCode: 'OG1896',
 };
 
 describe('<OlympicsSchedule>', () => {

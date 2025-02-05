@@ -8,13 +8,13 @@ jest.mock('../CollapseIcon', () => ({
     <button data-testid="collapse-icon" onClick={toggleExpand}>
       {isExpanded ? 'Collapse' : 'Expand'}
     </button>
-  )
+  ),
 }));
 
 jest.mock('../TitleScroller', () => ({
   TitleScroller: ({ title }: any) => (
     <div data-testid="title-scroller">{title}</div>
-  )
+  ),
 }));
 
 jest.mock('../SeekBar', () => ({
@@ -22,7 +22,7 @@ jest.mock('../SeekBar', () => ({
     <div data-testid="seek-bar">
       <button onClick={() => onSeek(10)}>Seek Forward</button>
     </div>
-  )
+  ),
 }));
 
 jest.mock('../TimeDisplay', () => ({
@@ -30,7 +30,7 @@ jest.mock('../TimeDisplay', () => ({
     <div data-testid="time-display">
       {currentTime} / {duration}
     </div>
-  )
+  ),
 }));
 
 jest.mock('../PlaybackControls', () => ({
@@ -40,7 +40,7 @@ jest.mock('../PlaybackControls', () => ({
       <button onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
       <button onClick={forward}>Forward</button>
     </div>
-  )
+  ),
 }));
 
 jest.mock('../TabletDesktopPlayer', () => ({
@@ -48,13 +48,13 @@ jest.mock('../TabletDesktopPlayer', () => ({
     <div data-testid="tablet-desktop-player">
       <button onClick={() => handleVolumeChange(0.5)}>Set Volume to 0.5</button>
     </div>
-  )
+  ),
 }));
 
 jest.mock('../styles', () => ({
   AudioPlayerContainer: ({ children }: any) => (
     <div data-testid="audio-player-container">{children}</div>
-  )
+  ),
 }));
 describe('AudioPlayer', () => {
   let originalInnerWidth: number;
@@ -101,7 +101,7 @@ describe('AudioPlayer', () => {
     Object.defineProperty(window, 'innerWidth', {
       writable: true,
       configurable: true,
-      value: originalInnerWidth
+      value: originalInnerWidth,
     });
     jest.restoreAllMocks();
   });
@@ -110,7 +110,7 @@ describe('AudioPlayer', () => {
     Object.defineProperty(window, 'innerWidth', {
       writable: true,
       configurable: true,
-      value: width
+      value: width,
     });
     // Dispatch a resize event to notify listeners
     window.dispatchEvent(new Event('resize'));

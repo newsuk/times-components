@@ -9,7 +9,7 @@ export const ArticleCard: FC<ArticleCardsProps> = ({ element }) => {
       const binaryString = atob(value);
 
       const textDecoder = new TextDecoder('utf-8');
-      const binaryArray = Uint8Array.from(binaryString, char =>
+      const binaryArray = Uint8Array.from(binaryString, (char) =>
         char.charCodeAt(0)
       );
 
@@ -31,8 +31,8 @@ export const ArticleCard: FC<ArticleCardsProps> = ({ element }) => {
     url: decodeBase64(article.url),
     image: {
       alt: decodeBase64(article.image.alt),
-      url: decodeBase64(article.image.url)
-    }
+      url: decodeBase64(article.image.url),
+    },
   }));
 
   const numOfArticles = decodedArticles.length;

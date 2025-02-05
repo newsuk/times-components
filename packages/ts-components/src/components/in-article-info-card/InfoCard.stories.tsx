@@ -17,8 +17,8 @@ storiesOf('Typescript Component/In Article/Info Card', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>
@@ -35,8 +35,8 @@ storiesOf('Typescript Component/In Article/Info Card', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>
@@ -53,8 +53,8 @@ storiesOf('Typescript Component/In Article/Info Card', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>
@@ -71,8 +71,8 @@ storiesOf('Typescript Component/In Article/Info Card', module)
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'Headline',
-          section_details: 'Section'
-        }
+          section_details: 'Section',
+        },
       }}
     >
       <ArticleHarness>

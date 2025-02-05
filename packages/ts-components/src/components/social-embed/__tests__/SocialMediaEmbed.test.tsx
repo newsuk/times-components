@@ -9,19 +9,19 @@ import '@testing-library/jest-dom/extend-expect';
 import { useSocialEmbedsContext } from '../../../contexts/SocialEmbedsProvider';
 
 jest.mock('../../../contexts/SocialEmbedsProvider', () => ({
-  useSocialEmbedsContext: jest.fn()
+  useSocialEmbedsContext: jest.fn(),
 }));
 
 jest.mock('../BlockedEmbedMessage', () => ({
-  BlockedEmbedMessage: jest.fn(() => <div>Blocked Embed Message</div>)
+  BlockedEmbedMessage: jest.fn(() => <div>Blocked Embed Message</div>),
 }));
 
 jest.mock('../SocialVendor', () => ({
-  Vendor: jest.fn(() => <div>Vendor Component</div>)
+  Vendor: jest.fn(() => <div>Vendor Component</div>),
 }));
 
 jest.mock('../helpers/vendorConsent', () => ({
-  checkVendorConsent: jest.fn(() => true)
+  checkVendorConsent: jest.fn(() => true),
 }));
 
 describe('SocialMediaEmbed Component', () => {
@@ -29,13 +29,13 @@ describe('SocialMediaEmbed Component', () => {
   const defaultProps: SocialMediaEmbedProps = {
     id: 'test-id',
     url: 'https://twitter.com/test/status/12345',
-    vendorName
+    vendorName,
   };
 
   const mockContext = {
     setIsSocialEmbedAllowed: jest.fn(),
     isAllowedOnce: { twitter: false },
-    isSocialEmbedAllowed: { twitter: false }
+    isSocialEmbedAllowed: { twitter: false },
   };
 
   beforeEach(() => {
@@ -56,7 +56,7 @@ describe('SocialMediaEmbed Component', () => {
     expect(screen.getByText('Blocked Embed Message')).toBeInTheDocument();
     expect(BlockedEmbedMessage).toHaveBeenCalledWith(
       expect.objectContaining({
-        vendorName: defaultProps.vendorName
+        vendorName: defaultProps.vendorName,
       }),
       {}
     );
@@ -65,7 +65,7 @@ describe('SocialMediaEmbed Component', () => {
   it('renders Vendor component when social embed is allowed', () => {
     (useSocialEmbedsContext as jest.Mock).mockReturnValue({
       ...mockContext,
-      isSocialEmbedAllowed: { twitter: true }
+      isSocialEmbedAllowed: { twitter: true },
     });
 
     render(<SocialMediaEmbed {...defaultProps} />);
@@ -74,7 +74,7 @@ describe('SocialMediaEmbed Component', () => {
     expect(Vendor).toHaveBeenCalledWith(
       expect.objectContaining({
         vendorName: defaultProps.vendorName,
-        url: defaultProps.url
+        url: defaultProps.url,
       }),
       {}
     );
@@ -83,16 +83,13 @@ describe('SocialMediaEmbed Component', () => {
   it('calls checkVendorConsent and updates context state when __tcfapi is available', () => {
     const tcData = { eventStatus: eventStatus.tcLoaded };
     const updatedProps = {
-      ...defaultProps
+      ...defaultProps,
     };
 
     render(<SocialMediaEmbed {...updatedProps} />);
 
-    const [
-      command,
-      version,
-      callback
-    ] = (window.__tcfapi as jest.Mock).mock.calls[0];
+    const [command, version, callback] = (window.__tcfapi as jest.Mock).mock
+      .calls[0];
 
     expect(command).toBe('addEventListener');
     expect(version).toBe(2);
@@ -123,7 +120,7 @@ describe('SocialMediaEmbed Component', () => {
   it('renders Vendor component if isAllowedOnce for the vendor is true', () => {
     (useSocialEmbedsContext as jest.Mock).mockReturnValue({
       ...mockContext,
-      isAllowedOnce: { twitter: true }
+      isAllowedOnce: { twitter: true },
     });
 
     render(<SocialMediaEmbed {...defaultProps} />);
@@ -132,7 +129,7 @@ describe('SocialMediaEmbed Component', () => {
     expect(Vendor).toHaveBeenCalledWith(
       expect.objectContaining({
         vendorName: defaultProps.vendorName,
-        url: defaultProps.url
+        url: defaultProps.url,
       }),
       {}
     );

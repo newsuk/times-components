@@ -4,7 +4,7 @@ import {
   InpCopy,
   InpSignupContainer,
   InpSignupHeadline,
-  InpSignupCTAContainer
+  InpSignupCTAContainer,
 } from '../newsletter/styles';
 
 import { NewsletterPuffButton } from '../newsletter-puff-button/NewsletterPuffButton';
@@ -19,7 +19,7 @@ type PreviewNewsletterPuffProps = {
 export const PreviewNewsletterPuff = ({
   copy,
   headline,
-  section
+  section,
 }: PreviewNewsletterPuffProps) => (
   <InpContainer section={section}>
     <InpSignupContainer>

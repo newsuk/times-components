@@ -11,7 +11,7 @@ import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserv
 import mockDate from 'mockdate';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
+  Placeholder: () => <div>Placeholder</div>,
 }));
 
 jest.mock('@times-components/icons', () => ({
@@ -19,35 +19,35 @@ jest.mock('@times-components/icons', () => ({
     <svg className="iconForwardChevron" {...props}>
       IconForwardChevron
     </svg>
-  )
+  ),
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const deckApiPayloadWrapper = (data: { [name: string]: string }) => ({
-  data: { body: { data: [{ data }] } }
+  data: { body: { data: [{ data }] } },
 });
 
 const requiredFields = {
   label: 'interactive',
   headline: 'Where can I get a Covid vaccine in England?',
-  link: 'https://www.thetimes.co.uk'
+  link: 'https://www.thetimes.co.uk',
 };
 
 const optionalFields = {
   ...requiredFields,
   image: 'https://via.placeholder.com/150',
   copy: 'Enter your postcode to find your nearest centre',
-  linkText: 'Read the full article'
+  linkText: 'Read the full article',
 };
 
 let mockIsLiveOrBreakingFlag;
 
 const requiredProps = {
   sectionColour: '#13354E',
-  isLiveOrBreakingFlag: mockIsLiveOrBreakingFlag
+  isLiveOrBreakingFlag: mockIsLiveOrBreakingFlag,
 };
 
 describe('InArticlePuff', () => {
@@ -85,7 +85,9 @@ describe('InArticlePuff', () => {
 
     const links = getAllByRole('link');
     expect(links).toHaveLength(2);
-    links.forEach(a => expect(a).toHaveAttribute('href', requiredFields.link));
+    links.forEach((a) =>
+      expect(a).toHaveAttribute('href', requiredFields.link)
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -145,8 +147,8 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
-            }
+              section: 'section',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -170,8 +172,8 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : puff',
           section: 'section',
-          article_flag: 'no flag'
-        }
+          article_flag: 'no flag',
+        },
       });
     });
 
@@ -187,8 +189,8 @@ describe('InArticlePuff', () => {
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section',
-              article_flag: 'live'
-            }
+              article_flag: 'live',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -213,8 +215,8 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : Read the full article',
           section: 'section',
-          article_flag: 'live'
-        }
+          article_flag: 'live',
+        },
       });
     });
 
@@ -230,8 +232,8 @@ describe('InArticlePuff', () => {
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section',
-              article_flag: 'breaking'
-            }
+              article_flag: 'breaking',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -256,8 +258,8 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : headline',
           section: 'section',
-          article_flag: 'breaking'
-        }
+          article_flag: 'breaking',
+        },
       });
     });
 
@@ -272,8 +274,8 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
-            }
+              section: 'section',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -297,8 +299,8 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : image',
           section: 'section',
-          article_flag: 'no flag'
-        }
+          article_flag: 'no flag',
+        },
       });
     });
   });

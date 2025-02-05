@@ -10,24 +10,24 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
-      type: 'decorator'
+      type: 'decorator',
     },
     {
       component: () => (
         <OptaRugbySummary season="2022" competition="209" match="921100" />
       ),
       name: 'Summary',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
         <OptaRugbySummary season="2022" competition="209" match="921087" />
       ),
       name: 'Summary (results)',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Rugby/Summary'
+  name: 'Typescript Component/In Article/Rugby/Summary',
 };
 
 // @ts-ignore

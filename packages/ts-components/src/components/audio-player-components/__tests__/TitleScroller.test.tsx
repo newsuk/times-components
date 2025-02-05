@@ -6,7 +6,7 @@ import { TitleScroller } from '../TitleScroller';
 // Mocking styled-components
 jest.mock('../styles', () => ({
   Row: ({ children }: any) => <div data-testid="row">{children}</div>,
-  Title: ({ children }: any) => <div data-testid="title">{children}</div>
+  Title: ({ children }: any) => <div data-testid="title">{children}</div>,
 }));
 
 describe('TitleScroller', () => {

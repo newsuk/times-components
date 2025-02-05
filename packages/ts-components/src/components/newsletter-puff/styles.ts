@@ -4,7 +4,7 @@ import {
   breakpoints,
   colours,
   fonts,
-  spacing
+  spacing,
 } from '@times-components/ts-styleguide';
 
 export const View = styled.div`

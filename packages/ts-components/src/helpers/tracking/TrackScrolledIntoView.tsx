@@ -4,13 +4,13 @@ import { TrackingContext, useTrackingContext } from './TrackingContextProvider';
 import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 type TrackScrolledIntoViewProps = {
   analyticsEvent: TrackingContext;
-  children: (
-    props: { intersectObserverRef: (ref: HTMLDivElement | null) => void }
-  ) => JSX.Element;
+  children: (props: {
+    intersectObserverRef: (ref: HTMLDivElement | null) => void;
+  }) => JSX.Element;
 };
 export const TrackScrolledIntoView = ({
   analyticsEvent,
-  children
+  children,
 }: TrackScrolledIntoViewProps) => {
   const [ref, setRef] = useState<HTMLDivElement | null>(null);
   const { fireAnalyticsEvent } = useTrackingContext();
@@ -21,10 +21,10 @@ export const TrackScrolledIntoView = ({
       fireAnalyticsEvent &&
       fireAnalyticsEvent({
         action: 'Scrolled',
-        ...analyticsEvent
+        ...analyticsEvent,
       }),
     {
-      threshold: 0.5
+      threshold: 0.5,
     }
   );
   return <>{children({ intersectObserverRef: setRef })}</>;

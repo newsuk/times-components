@@ -2,7 +2,7 @@ import {
   initSettings,
   initStyleSheet,
   initElement,
-  initComponent
+  initComponent,
 } from '../config';
 
 describe('Opta config', () => {

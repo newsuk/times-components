@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 // Mock the '@storybook/addon-actions' module
 jest.mock('@storybook/addon-actions', () => ({
-  action: jest.fn(() => jest.fn())
+  action: jest.fn(() => jest.fn()),
 }));
 
 describe('analyticsAction', () => {
@@ -41,7 +41,7 @@ describe('analyticsAction', () => {
     // Define an array of events
     const events = [
       { type: 'click', payload: { button: 'submit' } },
-      { type: 'hover', payload: { element: 'image' } }
+      { type: 'hover', payload: { element: 'image' } },
     ];
 
     // Mock the action handler returned by storybook's action

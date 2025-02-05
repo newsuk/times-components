@@ -6,7 +6,7 @@ import { CollapseIconProps } from './types';
 export const CollapseIcon: FC<CollapseIconProps> = ({
   isExpanded,
   toggleExpand,
-  allowExpandCollapse
+  allowExpandCollapse,
 }) => {
   if (!allowExpandCollapse) {
     return null;

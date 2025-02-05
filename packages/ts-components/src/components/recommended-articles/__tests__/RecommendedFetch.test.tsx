@@ -9,7 +9,7 @@ jest.mock('../RecommendedArticles', () => ({
       <div>RecommendedArticles</div>
       <div>{props.heading}</div>
     </div>
-  )
+  ),
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
@@ -18,7 +18,7 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
       FetchProvider
       {props.children}
     </div>
-  )
+  ),
 }));
 
 describe('<RecommendedFetch>', () => {

@@ -9,19 +9,19 @@ import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
+  Placeholder: () => <div>Placeholder</div>,
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const deckApiPayloadWrapper = () => ({
-  data: testDataWide
+  data: testDataWide,
 });
 
 const deckApiPayloadWrapperStandard = () => ({
-  data: testDataStandard
+  data: testDataStandard,
 });
 
 const testDataStandard = {
@@ -32,12 +32,12 @@ const testDataStandard = {
   updated_at: {
     date: '2021-08-16 12:48:43.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'President Race',
     headline: 'The stats behind the two candidates',
-    size: '4043'
+    size: '4043',
   },
   body: {
     data: [
@@ -45,44 +45,40 @@ const testDataStandard = {
         type: 'bignumbers',
         data: {
           number: '$497.8m',
-          copy: 'Money raised by Hillary Clinton'
-        }
+          copy: 'Money raised by Hillary Clinton',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '$247.8m',
-          copy: 'Money raised by Donald Trump'
-        }
+          copy: 'Money raised by Donald Trump',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '71.6m',
-          copy:
-            'The number of people who turned in to the final president debate'
-        }
+          copy: 'The number of people who turned in to the final president debate',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '2-7',
-          copy:
-            'Clinton\u2019s odds of winning the US election (provided by Paddy Power)'
-        }
+          copy: 'Clinton\u2019s odds of winning the US election (provided by Paddy Power)',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '3-1',
-          copy:
-            'Trump\u2019s odds of winning the US election (provided by Paddy Power)'
-        }
-      }
-    ]
+          copy: 'Trump\u2019s odds of winning the US election (provided by Paddy Power)',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html><html><head><title>The Times - In Article Big Numbers</title></head><body></body></html>'
+  html: '<!DOCTYPE html><html><head><title>The Times - In Article Big Numbers</title></head><body></body></html>',
 };
 
 const testDataWide = {
@@ -93,12 +89,12 @@ const testDataWide = {
   updated_at: {
     date: '2021-08-16 12:48:43.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'President Race',
     headline: 'The stats behind the two candidates',
-    size: '4042'
+    size: '4042',
   },
   body: {
     data: [
@@ -106,44 +102,40 @@ const testDataWide = {
         type: 'bignumbers',
         data: {
           number: '$497.8m',
-          copy: 'Money raised by Hillary Clinton'
-        }
+          copy: 'Money raised by Hillary Clinton',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '$247.8m',
-          copy: 'Money raised by Donald Trump'
-        }
+          copy: 'Money raised by Donald Trump',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '71.6m',
-          copy:
-            'The number of people who turned in to the final president debate'
-        }
+          copy: 'The number of people who turned in to the final president debate',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '2-7',
-          copy:
-            'Clinton\u2019s odds of winning the US election (provided by Paddy Power)'
-        }
+          copy: 'Clinton\u2019s odds of winning the US election (provided by Paddy Power)',
+        },
       },
       {
         type: 'bignumbers',
         data: {
           number: '3-1',
-          copy:
-            'Trump\u2019s odds of winning the US election (provided by Paddy Power)'
-        }
-      }
-    ]
+          copy: 'Trump\u2019s odds of winning the US election (provided by Paddy Power)',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html><html><head><title>The Times - In Article Big Numbers</title></head><body></body></html>'
+  html: '<!DOCTYPE html><html><head><title>The Times - In Article Big Numbers</title></head><body></body></html>',
 };
 
 const renderBigNumbers = () => render(<BigNumbers sectionColour="#636C17" />);
@@ -214,8 +206,8 @@ describe('BigNumbers', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
-            }
+              section: 'section',
+            },
           }}
           analyticsStream={analyticsStream}
         >
@@ -238,8 +230,8 @@ describe('BigNumbers', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : big numbers',
-          section: 'section'
-        }
+          section: 'section',
+        },
       });
     });
   });

@@ -13,17 +13,19 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
-  copy: string;
-  headline: string;
+  copy?: string;
+  headline?: string;
   section: string;
   code: string;
+  isAutoNewsletterPuff?: boolean;
 };
 
 export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  section
+  section,
+  isAutoNewsletterPuff,
 }: InlineNewsletterPuffProps) => {
   const [url, setUrl] = useState<string>(
     `/api/is-subscribed-newsletter/${code}`
@@ -56,8 +58,8 @@ export const InlineNewsletterPuff = ({
                 object: 'InlineNewsletterPuff',
                 attrs: {
                   article_parent_name: newsletter.title,
-                  event_navigation_action: 'navigation'
-                }
+                  event_navigation_action: 'navigation',
+                },
               }}
               scrolledEvent={{
                 object: 'NewsletterPuffButton',
@@ -65,8 +67,8 @@ export const InlineNewsletterPuff = ({
                   event_navigation_name:
                     'widget : puff : sign up now : displayed',
                   event_navigation_browsing_method: 'automated',
-                  event_navigation_action: 'navigation'
-                }
+                  event_navigation_action: 'navigation',
+                },
               }}
             >
               {({ intersectObserverRef }) => (
@@ -74,8 +76,10 @@ export const InlineNewsletterPuff = ({
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
-                    headline={headline}
-                    copy={copy}
+                    headline={
+                      isAutoNewsletterPuff ? newsletter.title : headline
+                    }
+                    copy={isAutoNewsletterPuff ? newsletter.description : copy}
                     code={code}
                     subscribeNewsletter={setUrl}
                   />

@@ -8,15 +8,15 @@ import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
+  Placeholder: () => <div>Placeholder</div>,
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const deckApiPayloadWrapper = () => ({
-  data: testData
+  data: testData,
 });
 
 const testData = {
@@ -27,53 +27,47 @@ const testData = {
   updated_at: {
     date: '2021-08-03 15:19:34.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'Venezuelan Politics',
-    headline: 'With a new president officially in place, what will happen?'
+    headline: 'With a new president officially in place, what will happen?',
   },
   body: {
     data: [
       {
         type: 'bulletpoints',
         data: {
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum',
+        },
       },
       {
         type: 'bulletpoints',
         data: {
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al',
+        },
       },
       {
         type: 'bulletpoints',
         data: {
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al',
+        },
       },
       {
         type: 'bulletpoints',
         data: {
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.'
-        }
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.',
+        },
       },
       {
         type: 'bulletpoints',
         data: {
-          copy:
-            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi'
-        }
-      }
-    ]
+          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html><html><head><title>The Times - Info Card Bullet Points</title></head><body></body></html>'
+  html: '<!DOCTYPE html><html><head><title>The Times - Info Card Bullet Points</title></head><body></body></html>',
 };
 
 const renderInfoCardBullet = () =>

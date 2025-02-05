@@ -34,7 +34,7 @@ describe('JobTitleTooltip', () => {
       getByTestId,
       getByText,
       queryByTestId,
-      queryByText
+      queryByText,
     } = render(
       <JobTitleTooltip contractualTitle="Contractual Title Tooltip" />
     );
@@ -55,7 +55,7 @@ describe('JobTitlePopover', () => {
       getByText,
       queryByText,
       queryByTestId,
-      getByTestId
+      getByTestId,
     } = render(
       <JobTitlePopover contractualTitle="Contractual Title Popover" />
     );

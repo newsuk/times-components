@@ -32,34 +32,28 @@ export type SocialMediaEmbedProps = {
 export const SocialMediaEmbed: FC<SocialMediaEmbedProps> = ({
   id,
   url,
-  vendorName
+  vendorName,
 }) => {
-  const {
-    setIsSocialEmbedAllowed,
-    isAllowedOnce,
-    isSocialEmbedAllowed
-  } = useSocialEmbedsContext();
+  const { setIsSocialEmbedAllowed, isAllowedOnce, isSocialEmbedAllowed } =
+    useSocialEmbedsContext();
 
-  useEffect(
-    () => {
-      if (window.__tcfapi) {
-        window.__tcfapi('addEventListener', 2, (tcData, success) => {
-          if (
-            success &&
-            (tcData.eventStatus === eventStatus.tcLoaded ||
-              tcData.eventStatus === eventStatus.userActionComplete)
-          ) {
-            const consent = checkVendorConsent(vendorName);
-            setIsSocialEmbedAllowed(prev => ({
-              ...prev,
-              [vendorName]: consent
-            }));
-          }
-        });
-      }
-    },
-    [vendorName, setIsSocialEmbedAllowed]
-  );
+  useEffect(() => {
+    if (window.__tcfapi) {
+      window.__tcfapi('addEventListener', 2, (tcData, success) => {
+        if (
+          success &&
+          (tcData.eventStatus === eventStatus.tcLoaded ||
+            tcData.eventStatus === eventStatus.userActionComplete)
+        ) {
+          const consent = checkVendorConsent(vendorName);
+          setIsSocialEmbedAllowed((prev) => ({
+            ...prev,
+            [vendorName]: consent,
+          }));
+        }
+      });
+    }
+  }, [vendorName, setIsSocialEmbedAllowed]);
 
   return isSocialEmbedAllowed[vendorName] || isAllowedOnce[vendorName] ? (
     <div id={id}>

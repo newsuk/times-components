@@ -13,11 +13,11 @@ const formatSummary = (article: IndexedArticle, length: number) => [
       {
         attributes: { value: formatSummaryContent(article, length) },
         children: [],
-        name: 'text'
-      }
+        name: 'text',
+      },
     ],
-    name: 'paragraph'
-  }
+    name: 'paragraph',
+  },
 ];
 
 const formatImage = (article: AlgoliaArticle, ratio: string) =>
@@ -32,7 +32,7 @@ export const formatArticle = (article: any) => ({
     leadAsset: {
       id: get(article, 'leadAsset.id'),
       title: get(article, 'leadAsset.title'),
-      crop169: formatImage(article, '16:9')
+      crop169: formatImage(article, '16:9'),
     },
     label: article.label,
     section: article.section,
@@ -42,8 +42,8 @@ export const formatArticle = (article: any) => ({
     bylines: [{ byline: article.byline }],
     publishedTime: article.publishedTime,
     summary125: formatSummary(article, 125),
-    summary145: formatSummary(article, 145)
-  }
+    summary145: formatSummary(article, 145),
+  },
 });
 
 type Bylines = Array<{ byline: Array<{ children: any[] }> }>;

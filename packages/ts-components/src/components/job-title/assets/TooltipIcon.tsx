@@ -15,7 +15,7 @@ const TooltipIcon = (props: any) => (
       y={0}
       maskUnits="userSpaceOnUse"
       style={{
-        maskType: 'alpha'
+        maskType: 'alpha',
       }}
     >
       <path

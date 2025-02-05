@@ -159,9 +159,9 @@ A customizable audio player component with various controls.
 />
 \`\`\`
 
-`
-      }
-    }
+`,
+      },
+    },
   })
   .add('Default Audio Player', () => {
     const src = text(
@@ -174,13 +174,13 @@ A customizable audio player component with various controls.
       range: true,
       min: 0,
       max: 1,
-      step: 0.1
+      step: 0.1,
     });
     const playbackRate = number('playbackRate', 1, {
       range: true,
       min: 0.5,
       max: 2,
-      step: 0.1
+      step: 0.1,
     });
     const isPlayingProp = boolean('isPlayingProp', false);
     const isExpandedProp = boolean('isExpandedProp', true);
@@ -202,7 +202,7 @@ A customizable audio player component with various controls.
       allowSeek,
       allowVolumeChange,
       allowPlaybackRateChange,
-      allowExpandCollapse
+      allowExpandCollapse,
     };
 
     return <AudioPlayer {...mockProps} />;

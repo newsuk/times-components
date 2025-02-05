@@ -2,7 +2,7 @@ import React from 'react';
 import {
   RelatedArticleContainer,
   RelatedArticlesImageContainer,
-  SectionLabel
+  SectionLabel,
 } from './styles';
 import { InArticleLink } from '../in-article-link/InArticleLink';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
@@ -28,7 +28,7 @@ export const RelatedArticle = ({
   headline,
   link,
   image,
-  sectionColour
+  sectionColour,
 }: RelatedArticleProps) => {
   const { fireAnalyticsEvent } = useTrackingContext();
   return (

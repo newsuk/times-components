@@ -10,7 +10,7 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
-      type: 'decorator'
+      type: 'decorator',
     },
     {
       component: () => (
@@ -22,10 +22,10 @@ const showcase = {
         />
       ),
       name: 'Fixture Tournament',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Football/Fixtures'
+  name: 'Typescript Component/In Article/Football/Fixtures',
 };
 
 // @ts-ignore

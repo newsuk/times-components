@@ -4,7 +4,7 @@ describe('tealiumTrackingHandler', () => {
   beforeEach(() => {
     global.window = Object.create(window);
     global.window.utag = {
-      link: jest.fn()
+      link: jest.fn(),
     };
   });
 
@@ -24,7 +24,7 @@ describe('tealiumTrackingHandler', () => {
         event_navigation_name: 'travel contents card selection',
         event_navigation_browsing_method: 'click',
         article_parent_name: articleParentName,
-        section_details: sectionDetails
+        section_details: sectionDetails,
       });
   });
 });

@@ -3,8 +3,8 @@ import { enableCookies } from '../enableCookies';
 jest.mock('../socialMediaVendors', () => ({
   socialMediaVendors: {
     facebook: { id: 'facebookId' },
-    twitter: { id: 'twitterId' }
-  }
+    twitter: { id: 'twitterId' },
+  },
 }));
 
 describe('enableCookies', () => {
@@ -22,7 +22,7 @@ describe('enableCookies', () => {
       console.log('command, version', command, version);
       callback(
         {
-          grants: { [mockVendorId]: { purposeGrants: { 1: true } } }
+          grants: { [mockVendorId]: { purposeGrants: { 1: true } } },
         },
         true
       );
@@ -44,7 +44,7 @@ describe('enableCookies', () => {
       if (command === 'getCustomVendorConsents') {
         callback(
           {
-            grants: { [mockVendorId]: { purposeGrants } }
+            grants: { [mockVendorId]: { purposeGrants } },
           },
           true
         );

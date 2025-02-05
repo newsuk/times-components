@@ -4,7 +4,7 @@ import { fonts } from '@times-components/ts-styleguide';
 const MessageConfig = {
   info: { background: '#bedeed', foreground: '#1573a2' },
   warning: { background: '#ffeecc', foreground: '#ffa300' },
-  error: { background: '#ffd6d6', foreground: '#df0000' }
+  error: { background: '#ffd6d6', foreground: '#df0000' },
 };
 export const Container = styled.div`
   display: flex;

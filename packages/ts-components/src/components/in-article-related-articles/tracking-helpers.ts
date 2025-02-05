@@ -8,8 +8,8 @@ const clickEvent = (buttonLabel: string, headline: string) => ({
         : ''
     }`,
     event_navigation_browsing_method: 'click',
-    component_name: `related article : ${headline}`
-  }
+    component_name: `related article : ${headline}`,
+  },
 });
 
 export const handleClick = (

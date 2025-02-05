@@ -3,7 +3,7 @@ import get from 'lodash.get';
 import {
   Asset,
   RelatedArticleType,
-  RelatedArticleSliceType
+  RelatedArticleSliceType,
 } from '../../types/related-article-slice';
 
 const decodeEntities = (str: string) =>
@@ -31,13 +31,13 @@ const flattenAssets = (asset: Asset) => {
   if (asset.crop169) {
     crops.push({
       url: asset.crop169.url,
-      ratio: '16:9'
+      ratio: '16:9',
     });
   }
   if (asset.crop32) {
     crops.push({
       url: asset.crop32.url,
-      ratio: '3:2'
+      ratio: '3:2',
     });
   }
   return crops;
@@ -54,7 +54,7 @@ const formatArticle = (
 
   const leadAsset = {
     title: get(article, 'leadAsset.title'),
-    crops: leadAssetCrops
+    crops: leadAssetCrops,
   };
   const summary =
     numberOfArticles === 1 &&
@@ -78,8 +78,8 @@ const formatArticle = (
     dateUpdated: article.updatedTime,
     images: {
       alt: '',
-      crops: [...crops, ...leadAssetCrops]
-    }
+      crops: [...crops, ...leadAssetCrops],
+    },
   };
 };
 
@@ -95,12 +95,12 @@ const getSliceName = (relatedArticleSlice: RelatedArticleSliceType) => {
 const formatSlice = (relatedArticleSlice: RelatedArticleSliceType) => {
   return {
     name: getSliceName(relatedArticleSlice),
-    children: relatedArticleSlice.items.map(relatedArticle => ({
+    children: relatedArticleSlice.items.map((relatedArticle) => ({
       article: formatArticle(
         relatedArticle.article,
         relatedArticleSlice.items.length
-      )
-    }))
+      ),
+    })),
   };
 };
 export default formatSlice;

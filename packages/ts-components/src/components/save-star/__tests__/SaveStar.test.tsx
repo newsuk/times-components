@@ -7,7 +7,7 @@ import { SaveStar } from '../SaveStar';
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
   ...jest.requireActual('../../../helpers/fetch/FetchProvider'),
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const articleId = '12345';

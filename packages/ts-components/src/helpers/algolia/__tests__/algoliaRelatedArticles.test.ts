@@ -6,9 +6,9 @@ const article = {
   section: 'sports',
   topics: [
     {
-      name: 'Football'
+      name: 'Football',
     },
-    { name: 'Premier league' }
+    { name: 'Premier league' },
   ],
   bylines: [
     {
@@ -18,21 +18,21 @@ const article = {
           children: [
             {
               attributes: {
-                value: 'By lines here'
+                value: 'By lines here',
               },
               children: [],
-              name: 'text'
-            }
+              name: 'text',
+            },
           ],
-          name: 'inline'
-        }
-      ]
-    }
-  ]
+          name: 'inline',
+        },
+      ],
+    },
+  ],
 };
 
 const resultArticle = {
-  content: ''
+  content: '',
 };
 
 describe('searchRelatedArticles', () => {
@@ -50,7 +50,7 @@ describe('searchRelatedArticles', () => {
       const index = {
         search: jest
           .fn()
-          .mockReturnValueOnce({ nbHits: 1, hits: [resultArticle] })
+          .mockReturnValueOnce({ nbHits: 1, hits: [resultArticle] }),
       };
 
       // @ts-ignore
@@ -72,15 +72,15 @@ describe('searchRelatedArticles', () => {
             'case',
             'football',
             'premier league',
-            `by lines here`
+            `by lines here`,
           ],
           removeStopWords: true,
-          typoTolerance: false
+          typoTolerance: false,
         }
       );
 
       expect(index.search.mock.results).toEqual([
-        { type: 'return', value: { hits: [{ content: '' }], nbHits: 1 } }
+        { type: 'return', value: { hits: [{ content: '' }], nbHits: 1 } },
       ]);
 
       expect(results!.count).toEqual(1);
@@ -93,8 +93,8 @@ describe('searchRelatedArticles', () => {
           .mockReturnValueOnce({ nbHits: 0, hits: [] })
           .mockReturnValueOnce({
             nbHits: 1,
-            hits: [resultArticle, resultArticle]
-          })
+            hits: [resultArticle, resultArticle],
+          }),
       };
       // @ts-ignore
       const results = await searchRelatedArticles(index, article, jest.fn());
@@ -117,11 +117,11 @@ describe('searchRelatedArticles', () => {
               'case',
               'football',
               'premier league',
-              'by lines here'
+              'by lines here',
             ],
             removeStopWords: true,
-            typoTolerance: false
-          }
+            typoTolerance: false,
+          },
         ],
         [
           'Headline with some upper case football "premier league" "by lines here"',
@@ -137,20 +137,20 @@ describe('searchRelatedArticles', () => {
               'case',
               'football',
               'premier league',
-              'by lines here'
+              'by lines here',
             ],
             removeStopWords: true,
-            typoTolerance: false
-          }
-        ]
+            typoTolerance: false,
+          },
+        ],
       ]);
 
       expect(index.search.mock.results).toEqual([
         { type: 'return', value: { hits: [], nbHits: 0 } },
         {
           type: 'return',
-          value: { hits: [{ content: '' }, { content: '' }], nbHits: 1 }
-        }
+          value: { hits: [{ content: '' }, { content: '' }], nbHits: 1 },
+        },
       ]);
 
       expect(results!.count).toEqual(1);
@@ -164,8 +164,8 @@ describe('searchRelatedArticles', () => {
           .mockReturnValueOnce({ nbHits: 0, hits: [] })
           .mockReturnValueOnce({
             nbHits: 1,
-            hits: [resultArticle, resultArticle]
-          })
+            hits: [resultArticle, resultArticle],
+          }),
       };
 
       // @ts-ignore
@@ -189,11 +189,11 @@ describe('searchRelatedArticles', () => {
               'case',
               'football',
               'premier league',
-              'by lines here'
+              'by lines here',
             ],
             removeStopWords: true,
-            typoTolerance: false
-          }
+            typoTolerance: false,
+          },
         ],
         [
           'Headline with some upper case football "premier league" "by lines here"',
@@ -209,11 +209,11 @@ describe('searchRelatedArticles', () => {
               'case',
               'football',
               'premier league',
-              'by lines here'
+              'by lines here',
             ],
             removeStopWords: true,
-            typoTolerance: false
-          }
+            typoTolerance: false,
+          },
         ],
         [
           'headline with some upper case football "premier league" "by lines here"',
@@ -230,12 +230,12 @@ describe('searchRelatedArticles', () => {
               'case',
               'football',
               'premier league',
-              'by lines here'
+              'by lines here',
             ],
             removeStopWords: true,
-            typoTolerance: false
-          }
-        ]
+            typoTolerance: false,
+          },
+        ],
       ]);
 
       expect(index.search.mock.results).toEqual([
@@ -243,8 +243,8 @@ describe('searchRelatedArticles', () => {
         { type: 'return', value: { hits: [], nbHits: 0 } },
         {
           type: 'return',
-          value: { hits: [{ content: '' }, { content: '' }], nbHits: 1 }
-        }
+          value: { hits: [{ content: '' }, { content: '' }], nbHits: 1 },
+        },
       ]);
 
       expect(results!.count).toEqual(1);
@@ -255,7 +255,7 @@ describe('searchRelatedArticles', () => {
           .fn()
           .mockReturnValueOnce({ nbHits: 0, hits: [] })
           .mockReturnValueOnce({ nbHits: 0, hits: [] })
-          .mockReturnValueOnce({ nbHits: 0, hits: [] })
+          .mockReturnValueOnce({ nbHits: 0, hits: [] }),
       };
       // @ts-ignore
       const results = await searchRelatedArticles(index, article, jest.fn());
@@ -269,7 +269,7 @@ describe('searchRelatedArticles', () => {
       const index = {
         search: jest.fn().mockImplementationOnce(() => {
           throw Error('an error');
-        })
+        }),
       };
       // @ts-ignore
       const results = await searchRelatedArticles(index, article, jest.fn());

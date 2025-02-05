@@ -3,7 +3,7 @@ import React, {
   useMemo,
   useCallback,
   useContext,
-  FC
+  FC,
 } from 'react';
 
 import algoliasearch from 'algoliasearch';
@@ -11,7 +11,7 @@ import algoliasearch from 'algoliasearch';
 import {
   searchRelatedArticles,
   AlgoliaArticle,
-  SearchRelatedArticlesResult
+  SearchRelatedArticlesResult,
 } from './algoliaRelatedArticles';
 
 const createAlgoliaIndex = (algoliaSearchKeys: AlgoliaSearchKeys) => {
@@ -31,26 +31,24 @@ export const AlgoliaSearchProvider: FC<AlgoliaSearchProps> = ({
   algoliaSearchKeys,
   article,
   analyticsStream,
-  children
+  children,
 }) => {
-  const algoliaIndex = useMemo(() => createAlgoliaIndex(algoliaSearchKeys), [
-    algoliaSearchKeys
-  ]);
-
-  const getRelatedArticles = useCallback(
-    async () => {
-      if (algoliaIndex && article) {
-        const results = await searchRelatedArticles(
-          algoliaIndex,
-          article,
-          analyticsStream
-        );
-        return results;
-      }
-      return null;
-    },
-    [algoliaIndex, article]
+  const algoliaIndex = useMemo(
+    () => createAlgoliaIndex(algoliaSearchKeys),
+    [algoliaSearchKeys]
   );
+
+  const getRelatedArticles = useCallback(async () => {
+    if (algoliaIndex && article) {
+      const results = await searchRelatedArticles(
+        algoliaIndex,
+        article,
+        analyticsStream
+      );
+      return results;
+    }
+    return null;
+  }, [algoliaIndex, article]);
 
   return (
     <AlgoliaSearchContext.Provider value={{ getRelatedArticles }}>

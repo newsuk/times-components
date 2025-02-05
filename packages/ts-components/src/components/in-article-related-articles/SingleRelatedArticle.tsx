@@ -3,7 +3,7 @@ import DatePublication from '@times-components/date-publication';
 
 import {
   SingleRelatedArticleContainer,
-  SingleRelatedArticlesImageContainer
+  SingleRelatedArticlesImageContainer,
 } from './SingleRelatedArticle.styles';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { RelatedArticleType } from './RelatedArticle';
@@ -20,7 +20,7 @@ export const SingleRelatedArticle = ({
   image,
   summary,
   publishedTime,
-  byline
+  byline,
 }: RelatedArticleProps) => {
   const { fireAnalyticsEvent } = useTrackingContext();
   return (

@@ -10,8 +10,8 @@ describe('render CategorisedArticles', () => {
 
     jest.mock('../../../helpers/tracking/TrackingContextProvider', () => ({
       useTrackingContext: () => ({
-        fireAnalyticsEvent: mockFireEvent
-      })
+        fireAnalyticsEvent: mockFireEvent,
+      }),
     }));
 
     const { container, asFragment } = render(

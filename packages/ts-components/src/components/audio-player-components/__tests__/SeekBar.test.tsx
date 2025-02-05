@@ -8,7 +8,7 @@ jest.mock('../styles', () => ({
   Row: ({ children }: any) => <div data-testid="row">{children}</div>,
   StyledSeekBar: ({ ...props }: any) => (
     <input data-testid="styled-seekbar" {...props} />
-  )
+  ),
 }));
 
 describe('SeekBar', () => {
@@ -67,7 +67,7 @@ describe('SeekBar', () => {
   test('correctly sets progress based on currentTime and duration', () => {
     const { getByTestId, rerender } = renderComponent({
       currentTime: 25,
-      duration: 100
+      duration: 100,
     });
 
     const seekBar = getByTestId('styled-seekbar');

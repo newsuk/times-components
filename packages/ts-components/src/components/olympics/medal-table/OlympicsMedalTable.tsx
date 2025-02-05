@@ -11,7 +11,7 @@ export const OlympicsMedalTable: FC<{
 }> = ({
   keys: { endpoint, authToken, gamesCode } = config.prod,
   highlighted = 'GBR',
-  inArticle = true
+  inArticle = true,
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {

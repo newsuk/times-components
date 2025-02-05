@@ -10,7 +10,7 @@ import {
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
-  InpSubscribedContainer
+  InpSubscribedContainer,
 } from './styles';
 
 import { InpContainer } from '../styles';
@@ -34,7 +34,7 @@ export const Newsletter = ({
   code,
   subscribeNewsletter,
   loading,
-  error
+  error,
 }: NewsletterProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
   const PuffButton = (style: 'link' | 'button') => (
@@ -55,17 +55,16 @@ export const Newsletter = ({
     <React.Fragment>
       <InpContainer section={section}>
         {loading && <LoadingOverlay />}
-        {!error &&
-          justSubscribed && (
-            <InpSubscribedContainer>
-              <InpCopy>
-                You've succesfully signed up to{' '}
-                <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
-                <NewsletterPuffLink />
-              </InpCopy>
-              <InpPreferencesContainer />
-            </InpSubscribedContainer>
-          )}
+        {!error && justSubscribed && (
+          <InpSubscribedContainer>
+            <InpCopy>
+              You've succesfully signed up to{' '}
+              <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+              <NewsletterPuffLink />
+            </InpCopy>
+            <InpPreferencesContainer />
+          </InpSubscribedContainer>
+        )}
         {error && (
           <InpSubscribedContainer>
             <InpCopy>
@@ -75,17 +74,16 @@ export const Newsletter = ({
             <InpPreferencesContainer />
           </InpSubscribedContainer>
         )}
-        {!justSubscribed &&
-          !error && (
-            <InpSignupContainer>
-              <InpCopy>
-                <InpSignupHeadline>{headline} </InpSignupHeadline>
-                {`${copy} `}
-                {PuffButton('link')}
-              </InpCopy>
-              {PuffButton('button')}
-            </InpSignupContainer>
-          )}
+        {!justSubscribed && !error && (
+          <InpSignupContainer>
+            <InpCopy>
+              <InpSignupHeadline>{headline} </InpSignupHeadline>
+              {`${copy} `}
+              {PuffButton('link')}
+            </InpCopy>
+            {PuffButton('button')}
+          </InpSignupContainer>
+        )}
       </InpContainer>
     </React.Fragment>
   );

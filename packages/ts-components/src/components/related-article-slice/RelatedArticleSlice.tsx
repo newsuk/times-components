@@ -3,7 +3,7 @@ import {
   Slice,
   SliceArticle,
   ClickHandlerType,
-  MouseEventType
+  MouseEventType,
 } from '@times-components/ts-slices';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
@@ -22,7 +22,7 @@ export const RelatedArticleSlice = ({
   slice,
   heading,
   clickHandler,
-  analyticsStream
+  analyticsStream,
 }: RelatedArticleSliceProps) => {
   if (!slice) {
     return null;
@@ -42,7 +42,7 @@ export const RelatedArticleSlice = ({
     return {
       id,
       headline: headline || shortHeadline,
-      role: standardRoles[index]
+      role: standardRoles[index],
     };
   });
 
@@ -55,8 +55,8 @@ export const RelatedArticleSlice = ({
         object: 'RelatedArticles',
         attrs: {
           articles,
-          articleCount: `${slice.items.length}`
-        }
+          articleCount: `${slice.items.length}`,
+        },
       }}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => {
@@ -75,8 +75,8 @@ export const RelatedArticleSlice = ({
               targetArticleHeadline: article.headline,
               targetArticleId: article.id!,
               targetArticleUrl: article.url,
-              articleCount: `${slice.items.length}`
-            }
+              articleCount: `${slice.items.length}`,
+            },
           });
         };
         return (

@@ -33,8 +33,8 @@ const scrollEvent = ({ headline }: any) => ({
     component_type: 'interactive',
     event_navigation_action: 'navigation',
     event_navigation_name: 'in article puff cta clicked',
-    event_navigation_browsing_method: 'click'
-  }
+    event_navigation_browsing_method: 'click',
+  },
 });
 
 const showcase = {
@@ -46,7 +46,7 @@ const showcase = {
           'Content size above component',
           {
             'Half Viewport': 'half',
-            'Full Viewport': 'full'
+            'Full Viewport': 'full',
           },
           'half'
         );
@@ -57,15 +57,15 @@ const showcase = {
                 context={{
                   attrs: {
                     articleHeadline: 'articleHeadline',
-                    section: 'section'
-                  }
+                    section: 'section',
+                  },
                 }}
                 analyticsStream={analyticsStream}
               >
                 <StripedContainer className={height} />
                 <TrackScrolledIntoView
                   analyticsEvent={scrollEvent({
-                    headline: 'headline1'
+                    headline: 'headline1',
                   })}
                 >
                   {({ intersectObserverRef }) => (
@@ -75,12 +75,12 @@ const showcase = {
                 <StripedContainer className={height} />
                 <TrackingContextProvider
                   context={{
-                    attrs: { section: 'a different section' }
+                    attrs: { section: 'a different section' },
                   }}
                 >
                   <TrackScrolledIntoView
                     analyticsEvent={scrollEvent({
-                      headline: 'headline2'
+                      headline: 'headline2',
                     })}
                   >
                     {({ intersectObserverRef }) => (
@@ -98,10 +98,10 @@ const showcase = {
       },
       name: 'Track Scrolled into View',
       platform: 'web',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/Helpers'
+  name: 'Typescript Component/Helpers',
 };
 
 // @ts-ignore

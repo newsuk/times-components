@@ -10,7 +10,7 @@ export const sanitiseCopy = (copy: string = '', allowedTags: {} = {}) => {
   let options = {
     whiteList: allowedTags,
     stripIgnoreTag: true,
-    stripIgnoreTagBody: ['script']
+    stripIgnoreTagBody: ['script'],
   };
 
   let decodedCopy = decodeEntities(copy);

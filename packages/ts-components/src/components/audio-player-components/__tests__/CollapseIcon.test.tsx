@@ -9,11 +9,11 @@ jest.mock('../styles', () => ({
     <button data-testid="collapse-button" {...props}>
       {children}
     </button>
-  )
+  ),
 }));
 
 jest.mock('@times-components/icons', () => ({
-  PlayerModalIcon: () => <svg data-testid="player-modal-icon" />
+  PlayerModalIcon: () => <svg data-testid="player-modal-icon" />,
 }));
 
 describe('CollapseIcon', () => {

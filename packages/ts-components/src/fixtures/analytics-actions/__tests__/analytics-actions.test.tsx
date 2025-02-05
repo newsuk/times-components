@@ -2,7 +2,7 @@ import analyticsAction from '../analytics-actions';
 import { action } from '@storybook/addon-actions';
 
 jest.mock('@storybook/addon-actions', () => ({
-  action: jest.fn(() => jest.fn())
+  action: jest.fn(() => jest.fn()),
 }));
 
 describe('analyticsAction', () => {
@@ -31,7 +31,7 @@ describe('analyticsAction', () => {
   it('handles an array of events', () => {
     const events = [
       { type: 'test-event-1', payload: 'test-payload-1' },
-      { type: 'test-event-2', payload: 'test-payload-2' }
+      { type: 'test-event-2', payload: 'test-payload-2' },
     ];
     const storybookActionMock = jest.fn();
     (action as jest.Mock).mockReturnValue(storybookActionMock);

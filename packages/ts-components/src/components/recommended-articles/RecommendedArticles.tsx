@@ -3,7 +3,7 @@ import get from 'lodash.get';
 import {
   Slice,
   SliceArticle,
-  MouseEventType
+  MouseEventType,
 } from '@times-components/ts-slices';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
@@ -33,7 +33,7 @@ export const RecommendedArticles: React.FC<{
     if (fireAnalyticsEvent) {
       fireAnalyticsEvent({
         action: 'Clicked',
-        attrs: { article_parent_name: article.headline }
+        attrs: { article_parent_name: article.headline },
       });
     }
   };

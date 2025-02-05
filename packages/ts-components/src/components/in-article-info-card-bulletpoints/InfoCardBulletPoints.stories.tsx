@@ -14,8 +14,8 @@ storiesOf('Typescript Component/In Article/Info Card', module).add(
         component: 'ArticleSkeleton',
         attrs: {
           article_name: 'articleHeadline',
-          section_details: 'section'
-        }
+          section_details: 'section',
+        },
       }}
       analyticsStream={analyticsStream}
     >

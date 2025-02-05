@@ -19,7 +19,7 @@ storiesOf('Typescript Component/Helpers', module).add('TextCrop', () => {
         backgroundColor: '#fbb',
         display: 'flex',
         justifyContent: 'center',
-        fontSize: `${fontSize}px`
+        fontSize: `${fontSize}px`,
       }}
     >
       <TextCrop lineHeight={lineheight} font={font}>

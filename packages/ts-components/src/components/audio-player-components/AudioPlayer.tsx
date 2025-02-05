@@ -4,7 +4,7 @@ import React, {
   useRef,
   FC,
   forwardRef,
-  useImperativeHandle
+  useImperativeHandle,
 } from 'react';
 import { AudioPlayerContainer } from './styles';
 import { StickyAudioPlayerProps, AudioPlayerHandle } from './types';
@@ -38,7 +38,7 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(
       onVolumeChange,
       onPlaybackRateChange,
       onSeek,
-      onClose
+      onClose,
     },
     ref
   ) => {
@@ -58,9 +58,8 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(
     const [volume, setVolume] = useState<number>(initialVolume);
     const [speed, setSpeed] = useState<number>(playbackRate);
     const [isSpeedModalOpen, setIsSpeedModalOpen] = useState<boolean>(false);
-    const [isVolumeSliderVisible, setIsVolumeSliderVisible] = useState<boolean>(
-      false
-    );
+    const [isVolumeSliderVisible, setIsVolumeSliderVisible] =
+      useState<boolean>(false);
 
     // State to track if the view is mobile or tablet/desktop
     const [isMobile, setIsMobile] = useState<boolean>(
@@ -84,49 +83,40 @@ export const AudioPlayer: FC<StickyAudioPlayerProps> = forwardRef(
       (): AudioPlayerHandle => ({
         parentControlToggle: (): void => {
           togglePlayPause();
-        }
+        },
       })
     );
 
-    useEffect(
-      () => {
-        if (audioRef.current) {
-          audioRef.current.volume = volume;
-          audioRef.current.playbackRate = speed;
-        }
-      },
-      [volume, speed]
-    );
+    useEffect(() => {
+      if (audioRef.current) {
+        audioRef.current.volume = volume;
+        audioRef.current.playbackRate = speed;
+      }
+    }, [volume, speed]);
 
-    useEffect(
-      () => {
-        if (typeof isPlayingProp === 'boolean') {
-          if (isPlayingProp && audioRef.current) {
-            audioRef.current
-              .play()
-              .then(() => {
-                setIsPlaying(true);
-              })
-              .catch(() => {
-                throw Error('Error attempting to play:');
-              });
-          } else if (audioRef.current) {
-            audioRef.current.pause();
-            setIsPlaying(false);
-          }
+    useEffect(() => {
+      if (typeof isPlayingProp === 'boolean') {
+        if (isPlayingProp && audioRef.current) {
+          audioRef.current
+            .play()
+            .then(() => {
+              setIsPlaying(true);
+            })
+            .catch(() => {
+              throw Error('Error attempting to play:');
+            });
+        } else if (audioRef.current) {
+          audioRef.current.pause();
+          setIsPlaying(false);
         }
-      },
-      [isPlayingProp]
-    );
+      }
+    }, [isPlayingProp]);
 
-    useEffect(
-      () => {
-        if (typeof isExpandedProp === 'boolean') {
-          setIsExpanded(isExpandedProp);
-        }
-      },
-      [isExpandedProp]
-    );
+    useEffect(() => {
+      if (typeof isExpandedProp === 'boolean') {
+        setIsExpanded(isExpandedProp);
+      }
+    }, [isExpandedProp]);
 
     const togglePlayPause = () => {
       if (!allowTogglePlay) {

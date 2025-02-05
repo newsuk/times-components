@@ -35,7 +35,7 @@ describe('AudioButton', () => {
     const button = getByTestId('audio-button');
 
     expect(button).toHaveStyleRule('margin-right', '8px', {
-      modifier: 'svg'
+      modifier: 'svg',
     });
   });
 
@@ -49,13 +49,13 @@ describe('AudioButton', () => {
     const button = getByTestId('audio-button');
 
     expect(button).toHaveStyleRule('margin-left', '4px', {
-      modifier: 'span'
+      modifier: 'span',
     });
     expect(button).toHaveStyleRule('font-size', '12px', {
-      modifier: 'span'
+      modifier: 'span',
     });
     expect(button).toHaveStyleRule('color', '#696969', {
-      modifier: 'span'
+      modifier: 'span',
     });
   });
 });

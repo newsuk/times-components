@@ -17,8 +17,8 @@ const mocks = [
     request: {
       query: getNewsletter,
       variables: {
-        code: 'TNL-101'
-      }
+        code: 'TNL-101',
+      },
     },
     result: {
       data: {
@@ -26,11 +26,11 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
           title: 'Daily Briefing',
-          __typename: 'Newsletter'
-        }
-      }
-    }
-  }
+          __typename: 'Newsletter',
+        },
+      },
+    },
+  },
 ];
 
 const showcase = {
@@ -59,7 +59,7 @@ const showcase = {
 
       name: 'Auto Newsletter Puff',
       platform: 'web',
-      type: 'story'
+      type: 'story',
     },
     {
       // eslint-disable-next-line react/prop-types
@@ -84,7 +84,7 @@ const showcase = {
 
       name: 'Inline Newsletter Puff',
       platform: 'web',
-      type: 'story'
+      type: 'story',
     },
     {
       // eslint-disable-next-line react/prop-types
@@ -101,10 +101,10 @@ const showcase = {
 
       name: 'Preview Newsletter Puff',
       platform: 'web',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Newsletter Puffs'
+  name: 'Typescript Component/In Article/Newsletter Puffs',
 };
 
 showcaseConverter(module, showcase);

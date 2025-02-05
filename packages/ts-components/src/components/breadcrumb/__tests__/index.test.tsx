@@ -11,7 +11,7 @@ describe('Render Breadcrumbs', () => {
       <TrackingContextProvider
         context={{
           component: 'breadcrumb',
-          attrs: {}
+          attrs: {},
         }}
         analyticsStream={analyticsStream}
       >

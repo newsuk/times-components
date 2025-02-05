@@ -7,7 +7,7 @@ import { tealiumTrackingHandler } from '../utils';
 
 jest.mock('../utils', () => ({
   ...jest.requireActual('../utils'),
-  tealiumTrackingHandler: jest.fn()
+  tealiumTrackingHandler: jest.fn(),
 }));
 
 describe('Card Component', () => {
@@ -18,12 +18,12 @@ describe('Card Component', () => {
       headline: 'Test Headline',
       image: { url: 'https://example.com/image.jpg', alt: 'test' },
       summary: 'Test Summary',
-      label: ''
+      label: '',
     },
     numOfArticles: 3,
     isLastCard: false,
     sectionTitle: '',
-    isLeadingArticle: false
+    isLeadingArticle: false,
   };
 
   it('renders the article headline and summary', () => {

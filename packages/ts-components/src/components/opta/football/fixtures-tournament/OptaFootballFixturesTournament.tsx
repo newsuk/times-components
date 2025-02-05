@@ -7,7 +7,7 @@ import {
   initStyleSheet,
   initScript,
   initElement,
-  initComponent
+  initComponent,
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../shared-styles';
@@ -43,7 +43,7 @@ export const OptaFootballFixturesTournament: React.FC<{
     hide_matchday,
     show_title = true,
     columns = true,
-    full_width
+    full_width,
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -79,7 +79,7 @@ export const OptaFootballFixturesTournament: React.FC<{
               show_subgrouping: true,
               show_crests: !isNationalComp,
               date_format: 'dddd MMMM D YYYY',
-              breakpoints: 520
+              breakpoints: 520,
             },
             initElement('opta-widget', {
               sport,
@@ -91,7 +91,7 @@ export const OptaFootballFixturesTournament: React.FC<{
               show_crests: true,
               show_goals: true,
               show_cards: 'red',
-              breakpoints: '520'
+              breakpoints: '520',
             })
           ).outerHTML;
 

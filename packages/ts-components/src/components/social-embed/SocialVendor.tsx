@@ -6,14 +6,14 @@ import { TikTok } from './components/TiktokComponent';
 const vendors = {
   twitter: Twitter,
   youtube: Youtube,
-  tiktok: TikTok
+  tiktok: TikTok,
 };
 
 export type VendorName = keyof typeof vendors;
 
 export const Vendor = ({
   vendorName,
-  url
+  url,
 }: {
   vendorName: VendorName;
   url: string;

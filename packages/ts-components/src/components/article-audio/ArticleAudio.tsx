@@ -10,9 +10,8 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
   const [audioState, setAudioState] = useState<
     'not-started' | 'playing' | 'paused'
   >('not-started');
-  const [isAudioPlayerVisible, setisAudioPlayerVisible] = useState<boolean>(
-    false
-  );
+  const [isAudioPlayerVisible, setisAudioPlayerVisible] =
+    useState<boolean>(false);
   const [duration, setDuration] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -51,7 +50,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
         onClick={handlePlayPause}
         style={{
           backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : 'unset',
-          color: audioState === 'not-started' ? '#333' : '#fff'
+          color: audioState === 'not-started' ? '#333' : '#fff',
         }}
       >
         {audioState === 'playing' ? (
@@ -69,7 +68,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
         )}
         <span
           style={{
-            color: audioState === 'not-started' ? '#696969' : '#fff'
+            color: audioState === 'not-started' ? '#696969' : '#fff',
           }}
         >
           {' '}

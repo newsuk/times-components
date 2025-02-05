@@ -7,19 +7,19 @@ import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserv
 import mockDate from 'mockdate';
 
 jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
+  Placeholder: () => <div>Placeholder</div>,
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
-  useFetch: jest.fn()
+  useFetch: jest.fn(),
 }));
 
 const deckApiPayloadWrapper = () => ({
-  data: testDataWide
+  data: testDataWide,
 });
 
 const deckApiPayloadWrapperStandard = () => ({
-  data: testDataStandard
+  data: testDataStandard,
 });
 
 const testDataWide = {
@@ -30,13 +30,13 @@ const testDataWide = {
   updated_at: {
     date: '2021-07-22 08:28:05.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'Best places to stay',
     headline: 'The Sunday Times best British hotels',
     size: '4042',
-    subtitles: 'True'
+    subtitles: 'True',
   },
   body: {
     data: [
@@ -46,9 +46,8 @@ const testDataWide = {
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
           subtitle: 'Birch',
-          copy:
-            'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
-        }
+          copy: 'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently',
+        },
       },
 
       {
@@ -56,46 +55,44 @@ const testDataWide = {
         data: {
           image: '',
           subtitle: 'Mitre',
-          copy:
-            'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history'
-        }
+          copy: 'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 1',
-          copy: 'Copy text 1'
-        }
+          copy: 'Copy text 1',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 2',
-          copy: 'Copy text 2'
-        }
+          copy: 'Copy text 2',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 3',
-          copy: 'Copy text 3'
-        }
+          copy: 'Copy text 3',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 4',
-          copy: 'Copy text 4'
-        }
-      }
-    ]
+          copy: 'Copy text 4',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>'
+  html: '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>',
 };
 
 const testDataStandard = {
@@ -106,13 +103,13 @@ const testDataStandard = {
   updated_at: {
     date: '2021-07-22 08:28:05.000000',
     timezone_type: 3,
-    timezone: 'UTC'
+    timezone: 'UTC',
   },
   fields: {
     label: 'Best places to stay',
     headline: 'The Sunday Times best British hotels',
     size: '4043',
-    subtitles: 'True'
+    subtitles: 'True',
   },
   body: {
     data: [
@@ -122,9 +119,8 @@ const testDataStandard = {
           image:
             'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
           subtitle: 'Birch',
-          copy:
-            'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
-        }
+          copy: 'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently',
+        },
       },
 
       {
@@ -132,46 +128,44 @@ const testDataStandard = {
         data: {
           image: '',
           subtitle: 'Mitre',
-          copy:
-            'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history'
-        }
+          copy: 'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 1',
-          copy: 'Copy text 1'
-        }
+          copy: 'Copy text 1',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 2',
-          copy: 'Copy text 2'
-        }
+          copy: 'Copy text 2',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 3',
-          copy: 'Copy text 3'
-        }
+          copy: 'Copy text 3',
+        },
       },
       {
         type: 'card',
         data: {
           image: '',
           subtitle: 'Subtitle 4',
-          copy: 'Copy text 4'
-        }
-      }
-    ]
+          copy: 'Copy text 4',
+        },
+      },
+    ],
   },
-  html:
-    '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>'
+  html: '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>',
 };
 
 const renderInfoCard = () => render(<InfoCard sectionColour="#636C17" />);

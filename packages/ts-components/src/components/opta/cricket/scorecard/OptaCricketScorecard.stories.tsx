@@ -10,24 +10,24 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
-      type: 'decorator'
+      type: 'decorator',
     },
     {
       component: () => (
         <OptaCricketScorecard competition="2722" match="49716" />
       ),
       name: 'Scorecard',
-      type: 'story'
+      type: 'story',
     },
     {
       component: () => (
         <OptaCricketScorecard competition="3071" match="55391" height={905} />
       ),
       name: 'Scorecard (1st inns) with set height',
-      type: 'story'
-    }
+      type: 'story',
+    },
   ],
-  name: 'Typescript Component/In Article/Cricket/Scorecard'
+  name: 'Typescript Component/In Article/Cricket/Scorecard',
 };
 
 // @ts-ignore

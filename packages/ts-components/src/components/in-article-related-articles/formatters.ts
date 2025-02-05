@@ -12,5 +12,5 @@ export const formatRelatedArticles = (relatedArticleSlice: any) =>
     image:
       get(article, 'leadAsset.crop169.url') ||
       get(article, 'leadAsset.posterImage.crop169.url'),
-    byline: get(article, 'bylines[0].byline[0].children[0].attributes.value')
+    byline: get(article, 'bylines[0].byline[0].children[0].attributes.value'),
   }));

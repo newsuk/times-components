@@ -21,8 +21,8 @@ storiesOf('Typescript Component/Recommended Articles', module)
           article_name: '<headline>',
           widget_headline: '<headline>',
           widget_section: '<section>',
-          widget_type: "today's section"
-        }
+          widget_type: "today's section",
+        },
       }}
       analyticsStream={analyticsStream}
     >
@@ -44,8 +44,8 @@ storiesOf('Typescript Component/Recommended Articles', module)
           article_name: '<headline>',
           widget_headline: '<headline>',
           widget_section: '<section>',
-          widget_type: "today's section"
-        }
+          widget_type: "today's section",
+        },
       }}
       analyticsStream={analyticsStream}
     >
@@ -67,8 +67,8 @@ storiesOf('Typescript Component/Recommended Articles', module)
           article_name: '<headline>',
           widget_headline: '<headline>',
           widget_section: '<section>',
-          widget_type: "today's section"
-        }
+          widget_type: "today's section",
+        },
       }}
       analyticsStream={analyticsStream}
     >

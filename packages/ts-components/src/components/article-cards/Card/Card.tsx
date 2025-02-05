@@ -8,7 +8,7 @@ import {
   StyledMedia,
   StyledPicture,
   StyledText,
-  Hidden
+  Hidden,
 } from './styles';
 import { ArticleCardProps } from '../types';
 import { tealiumTrackingHandler, truncateText } from '../utils';

@@ -7,7 +7,7 @@ import {
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
   LongReadArticleFlag,
-  ArticleFlags
+  ArticleFlags,
 } from './ArticleFlag';
 import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
 import { UpdatedTimeProvider } from '../../helpers/time/UpdatedTimeProvider';
@@ -52,7 +52,7 @@ storiesOf('Typescript Component/Article Flag', module)
         { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
         { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
         { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-        { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+        { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' },
       ]}
       longRead
       withContainer={false}
@@ -66,7 +66,7 @@ storiesOf('Typescript Component/Article Flag', module)
         { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
         { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
         { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-        { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+        { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' },
       ]}
       longRead
       withContainer

@@ -81,7 +81,7 @@ describe('useFixturePageLink', () => {
 
   const TestComponent = ({
     container,
-    pageUrl
+    pageUrl,
   }: {
     container: string;
     isDarkMode: boolean;
@@ -134,7 +134,7 @@ describe('useFixturePageLink', () => {
   it('should retry adding fixture link inside setInterval', () => {
     const TestComponentMaxRetries = ({
       container,
-      pageUrl
+      pageUrl,
     }: {
       container: string;
       pageUrl: string;

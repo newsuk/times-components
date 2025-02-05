@@ -7,15 +7,15 @@ export const enableCookies = (
 ) => {
   const onCustomConsent = (_: any, success: boolean) => {
     if (success) {
-      setIsSocialEmbedAllowed(prev => ({
+      setIsSocialEmbedAllowed((prev) => ({
         ...prev,
-        [vendorName]: true
+        [vendorName]: true,
       }));
       return true;
     }
-    setIsSocialEmbedAllowed(prev => ({
+    setIsSocialEmbedAllowed((prev) => ({
       ...prev,
-      [vendorName]: false
+      [vendorName]: false,
     }));
     return null;
   };
@@ -37,9 +37,9 @@ export const enableCookies = (
             []
           );
         } else {
-          setIsSocialEmbedAllowed(prev => ({
+          setIsSocialEmbedAllowed((prev) => ({
             ...prev,
-            [vendorName]: false
+            [vendorName]: false,
           }));
         }
       }

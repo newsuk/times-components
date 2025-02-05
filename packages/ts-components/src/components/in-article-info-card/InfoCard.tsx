@@ -12,7 +12,7 @@ import {
   CarouselIndicator,
   CarouselContainer,
   StyledCarousel,
-  CardImg
+  CardImg,
 } from './styles';
 import { PlaceholderContainer } from '../common-styles';
 import { Arrow } from '../carousel/Arrow';
@@ -34,7 +34,7 @@ export type GalleryCarouselProps = {
 
 export enum Layout {
   Standard = '4043',
-  Wide = '4042'
+  Wide = '4042',
 }
 
 let breakPointsCard = new Array();
@@ -54,7 +54,7 @@ const CustomPagination: React.FC<{
   data,
   showDisplayItem,
   windowWidth,
-  showDotItem
+  showDotItem,
 }) => {
   return (
     <CarouselButtonContainer>
@@ -101,7 +101,7 @@ const CustomPagination: React.FC<{
 
 export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
-  initialIndex = 0
+  initialIndex = 0,
 }) => {
   const { loading, error, data } = useFetch<InfoCardDeckData>();
 
@@ -151,14 +151,14 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
     breakPointsCard = [
       ...defaultCard,
       { width: medium, itemsToShow: 2, itemsToScroll: 2 },
-      { width: wide, itemsToShow: 3, itemsToScroll: 3 }
+      { width: wide, itemsToShow: 3, itemsToScroll: 3 },
     ];
   }
 
   if (isStandard(size)) {
     breakPointsCard = [
       ...defaultCard,
-      { width: small + 55, itemsToShow: 2, itemsToScroll: 2 }
+      { width: small + 55, itemsToShow: 2, itemsToScroll: 2 },
     ];
   }
 
@@ -189,8 +189,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
             'in-article component : text-image info cards : interactive',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
-          component_name: `${headline}`
-        }
+          component_name: `${headline}`,
+        },
       }}
       scrolledEvent={{
         attrs: {
@@ -199,8 +199,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
             (showDotItem > 1 ? 'interactive' : 'static'),
           event_navigation_name:
             'in-article component displayed : text-image info cards',
-          event_navigation_browsing_method: 'scroll'
-        }
+          event_navigation_browsing_method: 'scroll',
+        },
       }}
     >
       {({ intersectObserverRef, fireAnalyticsEvent }) => (
@@ -226,8 +226,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                   fireAnalyticsEvent({
                     attrs: {
                       event_navigation_name: `button : ${buttonLabel}`,
-                      component_name: headline
-                    }
+                      component_name: headline,
+                    },
                   });
                 }
                 onClick && onClick(indicatorId);
@@ -271,8 +271,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                       __html: sanitiseCopy(row.data.copy, {
                         br: {},
                         b: {},
-                        i: {}
-                      })
+                        i: {},
+                      }),
                     }}
                   />
                 )}
