@@ -11,12 +11,13 @@ const styles = {
 const LinkTextObj = styled(TcTextLink)`
   ${props => (props.style ? checkStylesForUnits(props.style) : "")};
 `;
-const TextLink = ({ children, onPress, style, target, url, ...props }) => {
+const TextLink = ({ children, onPress, style, target, url, rel, ...props }) => {
   const linkStyles = { ...styles.textLink, ...style };
   const textProps = {
     ...props,
     accessibilityRole: "link",
     href: url,
+    rel,
     onClick: onPress,
     style: linkStyles
   };

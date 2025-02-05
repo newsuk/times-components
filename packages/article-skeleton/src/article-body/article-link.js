@@ -7,7 +7,7 @@ import {
 } from "../styles/article-body/article-link";
 import withTrackEvents from "./article-link-tracking-events";
 
-const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
+const ArticleLink = ({ children, target, url, onPress, dropCap, rel }) => (
   <>
     {children.length === 0 ? (
       <>
@@ -16,6 +16,7 @@ const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
           target={target}
           onPress={onPress}
           url={url}
+          rel={rel}
         >
           {url}
         </Link>{" "}
@@ -26,6 +27,7 @@ const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
         responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
         target={target}
         url={url}
+        rel={rel}
         onPress={onPress}
       >
         {children}

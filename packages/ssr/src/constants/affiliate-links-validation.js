@@ -1,30 +1,7 @@
-const adDomains = [
-  "(clicks.)?trx-hub.com",
-  "go.skimresources.com",
-  "go.redirectingat.com",
-  "(www.)?fave.co",
-  "beavertownbrewery.pxf.io",
-  "wilko.sjv.io",
-  "fanatics.93n6tx.net",
-  "ticketmaster-uk.tm7559.net",
-  "(www.)?prf.hn",
-  "nastygal.prf.hn",
-  "selfridges.prf.hn",
-  "bloomwild.prf.hn",
-  "go.linkby.com",
-  "(www.)?awin1.com",
-  "track.webgains.com",
-  "click.linksynergy.com",
-  "(www.)?dpbolvw.net",
-  "(www.)?kqzyfj.com",
-  "(www.)?anrdoezrs.net",
-  "(www.)?veneficus.co.uk",
-  "(www.)?shareasale.com",
-  "(www.)?privadovpn.com",
-  "(www.)?amzn.to",
-  "(www.)?amazon.[\\S]*?\\/(dp|gp)\\/[\\S]*?tag=",
-  "(www.)?planethowl.com"
-];
+// eslint-disable-next-line no-useless-escape
+const affiliateRegexString = `^(?:clicks\.)?trx-hub\.com|go\.skimresources\.com|go\.redirectingat\.com|(?:www\.)?fave\.co|beavertownbrewery\.pxf\.io|wilko\.sjv\.io|fanatics\.93n6tx\.net|ticketmaster-uk\.tm7559\.net|(?:www\.)?prf\.hn|nastygal\.prf\.hn|selfridges\.prf\.hn|bloomwild\.prf\.hn|go\.linkby\.com|(?:www\.)?awin1\.com|track\.webgains\.com|click\.linksynergy\.com|(?:www\.)?dpbolvw\.net|(?:www\.)?kqzyfj\.com|(?:www\.)?anrdoezrs\.net|(?:www\.)?veneficus\.co\.uk|(?:www\.)?shareasale\.com|(?:www\.)?privadovpn\.com|(?:www\.)?amzn\.to|(?:www\.)?amazon\.[^\/\s]+\/(?:dp|gp)\/[^\/\s]+tag=|(?:www\.)?planethowl\.com$`;
+
+const affiliateRegex = new RegExp(affiliateRegexString);
 
 const theTimesSiteCode = "newsuk_8757f29588_thetimes";
 const travelSiteCode = "newsuk_8757f29588_thetimestravel";
@@ -36,7 +13,7 @@ const trackonomicsRegexString =
 const trackonomicsRegex = new RegExp(`.*${trackonomicsRegexString}`);
 
 module.exports = {
-  adDomains,
+  affiliateRegex,
   theTimesSiteCode,
   travelSiteCode,
   publisherId,
