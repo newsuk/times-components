@@ -1,10 +1,10 @@
 query GetNewsletter($code: String!) {
   newsletter(code: $code) {
-		  id
-      code
-      title
-      description
-      frequency
-      isSubscribed
+    id
+    code
+    title
+    description
+    frequency
+    isSubscribed
   }
 }
