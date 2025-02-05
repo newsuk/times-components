@@ -2,8 +2,22 @@ const { wrapSkimlinks } = require("./skimlinks-wrapping");
 const { wrapTrackonomics } = require("../lib/trackonomics-wrapping");
 const { affiliateRegex } = require("../constants/affiliate-links-validation");
 
-// eslint-disable-next-line no-unused-vars
-const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
+const isAffiliateLink = url => affiliateRegex.test(url);
+
+const isExternalLink = url =>
+  url &&
+  !url.startsWith("https://www.thetimes.co.uk") &&
+  !url.startsWith("https://www.thetimes.com");
+
+const addRelTag = url => {
+  if (!isExternalLink(url)) {
+    return null;
+  }
+
+  return isAffiliateLink(url) ? "sponsored" : "nofollow";
+};
+
+const wrapAffiliateLink = (affiliateLink, contentPageUrl, elementName) => {
   const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
   const trackonomicsUrl = wrapTrackonomics(skimlinksUrl, contentPageUrl);
 
