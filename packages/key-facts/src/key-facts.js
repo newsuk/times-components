@@ -8,17 +8,19 @@ import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
 // Function to convert key items incorrectly marked as "paywall" into list items
 function formatPaywallItems(items) {
-  return [...items].map(
-    item =>
-      item.name === "paywall"
-        ? { ...item.children[0] }
-        : {
-            ...item,
-            children: item.children.map(
-              i => (i.name === "paywall" ? { ...i.children[0] } : i)
-            )
-          }
-  );
+  const flattenedItems = items.reduce((accumulator, currentValue) => {
+    if (currentValue.name === "paywall") {
+      return accumulator.concat(currentValue.children);
+    }
+    return accumulator.concat([currentValue]);
+  }, []);
+
+  return [...flattenedItems].map(item => ({
+    ...item,
+    children: item.children.map(
+      i => (i.name === "paywall" ? { ...i.children[0] } : i)
+    )
+  }));
 }
 
 const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
