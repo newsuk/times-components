@@ -1,10 +1,35 @@
 const { wrapSkimlinks } = require("./skimlinks-wrapping");
 const { wrapTrackonomics } = require("../lib/trackonomics-wrapping");
+const { affiliateRegex } = require("../constants/affiliate-links-validation");
 
-const wrapAffiliateLink = (affiliateLink, contentPageUrl) => {
+const isAffiliateLink = url => affiliateRegex.test(url);
+
+const isExternalLink = url =>
+  url &&
+  !url.startsWith("https://www.thetimes.co.uk") &&
+  !url.startsWith("https://www.thetimes.com");
+
+const addRelTag = url => {
+  if (!isExternalLink(url)) {
+    return null;
+  }
+
+  return isAffiliateLink(url) ? "sponsored" : "nofollow";
+};
+
+const wrapAffiliateLink = (affiliateLink, contentPageUrl, elementName) => {
   const skimlinksUrl = wrapSkimlinks(affiliateLink, contentPageUrl);
+  const trackonomicsUrl = wrapTrackonomics(skimlinksUrl, contentPageUrl);
 
-  return wrapTrackonomics(skimlinksUrl, contentPageUrl);
+  return elementName === "interactive"
+    ? {
+        url: trackonomicsUrl,
+        rel: addRelTag(trackonomicsUrl)
+      }
+    : {
+        href: trackonomicsUrl,
+        rel: addRelTag(trackonomicsUrl)
+      };
 };
 
 module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
@@ -33,11 +58,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
             : attributes.href || "";
 
         // If the link is external, set target to _blank. Wrap affiliate link if necessary.
-        if (
-          href &&
-          !href.startsWith("https://www.thetimes.co.uk") &&
-          !href.startsWith("https://www.thetimes.com")
-        ) {
+        if (isExternalLink(href)) {
           if (newElement.name === "interactive") {
             newElement = {
               ...newElement,
@@ -48,7 +69,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
                   attributes: {
                     ...elementAttributes,
                     target: "_blank",
-                    url: wrapAffiliateLink(href, contentPageUrl)
+                    ...wrapAffiliateLink(href, contentPageUrl, newElement.name)
                   }
                 }
               }
@@ -59,7 +80,7 @@ module.exports.affiliateLinksValidation = (children, articleDataFromRender) => {
               attributes: {
                 ...attributes,
                 target: "_blank",
-                href: wrapAffiliateLink(href, contentPageUrl)
+                ...wrapAffiliateLink(href, contentPageUrl, newElement.name)
               }
             };
           }

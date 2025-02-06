@@ -6,6 +6,7 @@ interface AttributesProps {
   url: string;
   target?: string;
   text: string;
+  rel: string | null;
 }
 
 interface RootProps {
@@ -30,7 +31,7 @@ export const CtaButton: React.FC<RootProps> = props => {
           'click'
         )
       }
-      rel="nofollow"
+      rel={attributes.rel ? attributes.rel : undefined}
     >
       {attributes.text}
     </Link>

@@ -29,12 +29,14 @@ const Link = ({
   url,
   onPress = () => {},
   target = null,
+  rel,
   underlined = true,
   responsiveLinkStyles = null
 }) => {
   const props = {
     underlined,
     target,
+    rel,
     responsiveLinkStyles
   };
 
@@ -55,6 +57,7 @@ const Link = ({
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   url: PropTypes.string,
+  rel: PropTypes.string,
   onPress: PropTypes.func,
   target: PropTypes.string,
   underlined: PropTypes.bool,
