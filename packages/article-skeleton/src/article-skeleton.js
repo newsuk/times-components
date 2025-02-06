@@ -183,6 +183,7 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
+  console.log({newContent})
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
