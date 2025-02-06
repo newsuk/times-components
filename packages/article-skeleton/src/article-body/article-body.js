@@ -563,10 +563,16 @@ const renderers = ({
     return <Heading6>{children}</Heading6>;
   },
   link(key, attributes, children) {
-    const { href, target, dropCap } = attributes;
+    const { href, target, dropCap, rel } = attributes;
 
     return (
-      <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
+      <ArticleLink
+        dropCap={dropCap}
+        key={key}
+        target={target}
+        url={href}
+        rel={rel}
+      >
         {children}
       </ArticleLink>
     );
