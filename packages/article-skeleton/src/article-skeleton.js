@@ -184,6 +184,8 @@ const ArticleSkeleton = ({
 
   const newContent = reduceArticleContent(content, articleContentReducers);
   console.log(JSON.stringify(newContent, null, 2));
+  console.dir(newContent[0], {depth: null});
+  console.dir(newContent[0].children, {depth: null});
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
