@@ -183,7 +183,7 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
-  console.dir({newContent}, {depth: null});
+  console.log(JSON.stringify(newContent, null, 2));
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
