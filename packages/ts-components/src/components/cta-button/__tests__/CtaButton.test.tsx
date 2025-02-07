@@ -24,8 +24,8 @@ describe('CtaButton Component', () => {
       'affiliate cta clicked',
       'navigation',
       'click',
-      "https://www.example.com", 
-      "book a stay"
+      'https://www.example.com',
+      'book a stay'
     );
   });
 

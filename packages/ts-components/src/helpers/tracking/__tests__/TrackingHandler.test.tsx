@@ -24,14 +24,18 @@ describe('tealiumTrackingHandler', () => {
     const action = 'click';
     const browsingMethod = 'navigation';
     const additionalParams = { customKey: 'customValue' };
+    const parentName = 'test';
+    const sectionDetails = 'cta button';
 
-    tealiumTrackingHandler(eventName, action, browsingMethod, additionalParams);
+    tealiumTrackingHandler(eventName, action, browsingMethod);
 
     if (window.utag && window.utag.link) {
       window.utag.link({
         event_navigation_name: eventName,
         event_navigation_action: action,
         event_navigation_browsing_method: browsingMethod,
+        article_parent_name: parentName,
+        section_details: sectionDetails,
         ...additionalParams
       });
     } else {
