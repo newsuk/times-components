@@ -51,10 +51,12 @@ export const InlineNewsletterPuff = ({
           return null;
         }
 
-        const title = isAutoNewsletterPuff ? newsletter.title : headline;
+        const title = isAutoNewsletterPuff
+          ? 'ibrahim testing newsletter title'
+          : headline || 'Default Newsletter Title';
         const description = isAutoNewsletterPuff
-          ? newsletter.description
-          : copy;
+          ? 'ibrahim testing newsletter description'
+          : copy || 'Default Newsletter description';
         return (
           <FetchProvider url={url} options={fetchOptions}>
             <TrackingContextProvider
