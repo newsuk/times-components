@@ -23,6 +23,7 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
 
 const renderComponent = (
   analyticsStream?: () => void,
+  isAutoNewsletterPuff = false,
   mocks: any[] = [
     {
       request: {
@@ -36,7 +37,8 @@ const renderComponent = (
           newsletter: {
             id: 'a2l6E000000CdHzQAK',
             isSubscribed: false,
-            title: 'RED BOX',
+            title: isAutoNewsletterPuff ? 'Auto Newsletter Title' : 'RED BOX',
+            description:"description",
             __typename: 'Newsletter'
           }
         }
@@ -51,6 +53,7 @@ const renderComponent = (
         context={{ component: 'ArticleSkeleton' }}
       >
         <InlineNewsletterPuff
+          isAutoNewsletterPuff={isAutoNewsletterPuff}
           {...{
             code: 'TNL-119',
             section: 'news',
@@ -75,32 +78,37 @@ describe('Inline Newsletter Puff', () => {
   });
 
   it('renders placeholder when loading', () => {
-    const component = renderComponent();
+    const component = renderComponent(undefined, false);
     expect(component.baseElement).toMatchSnapshot();
   });
 
   it('renders null when is already subscribed', async () => {
-    const component = renderComponent(jest.fn(), [
-      {
-        request: {
-          query: getNewsletter,
-          variables: {
-            code: 'TNL-119'
-          }
-        },
-        result: {
-          data: {
-            newsletter: {
-              id: 'a2l6E000000CdHzQAK',
-              isSubscribed: true,
-              title: 'RED BOX',
-              __typename: 'Newsletter'
+    const component = renderComponent(
+      jest.fn(),
+      true,
+      [  
+        {
+          request: {
+            query: getNewsletter,
+            variables: {
+              code: 'TNL-119'
+            }
+          },
+          result: {
+            data: {
+              newsletter: {
+                id: 'a2l6E000000CdHzQAK',
+                isSubscribed: true,
+                title: 'RED BOX',
+                description:"description",
+                __typename: 'Newsletter'
+              }
             }
           }
         }
-      }
-    ]);
-
+      ]
+    );
+  
     await delay(0);
     expect(component.baseElement).toMatchSnapshot();
   });
@@ -108,7 +116,7 @@ describe('Inline Newsletter Puff', () => {
   it('renders signup state', async () => {
     (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
 
-    const component = renderComponent();
+    const component = renderComponent(undefined, false);
     await component.findAllByText('Sign up with one click');
     expect(component.baseElement).toMatchSnapshot();
   });
@@ -116,7 +124,7 @@ describe('Inline Newsletter Puff', () => {
   it('renders loading state state', async () => {
     (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
 
-    const component = renderComponent();
+    const component = renderComponent(undefined, false);
     const oneClickSignUp = await component.findAllByText(
       'Sign up with one click'
     );
@@ -150,7 +158,7 @@ describe('Inline Newsletter Puff', () => {
       (useFetch as jest.Mock).mockReturnValue({
         data: { isSubscribed: false }
       });
-      const component = renderComponent(analyticsStream);
+      const component = renderComponent(analyticsStream, false);
 
       await component.findAllByText('Sign up with one click');
 

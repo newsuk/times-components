@@ -29,6 +29,7 @@ const mocks = [
           id: "a2l6E000000CdHzQAK",
           isSubscribed: false,
           title: "Title",
+          description:"description",
           __typename: "Newsletter"
         }
       }
@@ -39,6 +40,7 @@ const mocks = [
           id: "a2l6E000000CdHzQAK",
           isSubscribed: false,
           title: "Title",
+          description:"description",
           __typename: "Newsletter"
         }
       }
