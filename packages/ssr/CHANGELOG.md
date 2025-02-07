@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.60.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.60.3...@times-components/ssr@2.60.4) (2025-02-07)
+
+
+### Reverts
+
+* Revert "feat(TMC-132 & TMC-133): Skimlinks and Trackonomics link wrapping (#4…" (#4060) ([47f8d97](https://github.com/newsuk/times-components/commit/47f8d97ffe4122edfa71959d9b876b1ea8b97d5b)), closes [#4](https://github.com/newsuk/times-components/issues/4) [#4060](https://github.com/newsuk/times-components/issues/4060)
+
+
+
+
+
 ## [2.60.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.60.2...@times-components/ssr@2.60.3) (2025-02-06)
 
 **Note:** Version bump only for package @times-components/ssr
