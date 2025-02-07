@@ -38,7 +38,7 @@ const renderComponent = (
             id: 'a2l6E000000CdHzQAK',
             isSubscribed: false,
             title: isAutoNewsletterPuff ? 'Auto Newsletter Title' : 'RED BOX',
-            description:"description",
+            description: 'description',
             __typename: 'Newsletter'
           }
         }
@@ -83,32 +83,28 @@ describe('Inline Newsletter Puff', () => {
   });
 
   it('renders null when is already subscribed', async () => {
-    const component = renderComponent(
-      jest.fn(),
-      true,
-      [  
-        {
-          request: {
-            query: getNewsletter,
-            variables: {
-              code: 'TNL-119'
-            }
-          },
-          result: {
-            data: {
-              newsletter: {
-                id: 'a2l6E000000CdHzQAK',
-                isSubscribed: true,
-                title: 'RED BOX',
-                description:"description",
-                __typename: 'Newsletter'
-              }
+    const component = renderComponent(jest.fn(), true, [
+      {
+        request: {
+          query: getNewsletter,
+          variables: {
+            code: 'TNL-119'
+          }
+        },
+        result: {
+          data: {
+            newsletter: {
+              id: 'a2l6E000000CdHzQAK',
+              isSubscribed: true,
+              title: 'RED BOX',
+              description: 'description',
+              __typename: 'Newsletter'
             }
           }
         }
-      ]
-    );
-  
+      }
+    ]);
+
     await delay(0);
     expect(component.baseElement).toMatchSnapshot();
   });

@@ -52,7 +52,9 @@ export const InlineNewsletterPuff = ({
         }
 
         const title = isAutoNewsletterPuff ? newsletter.title : headline;
-        const description = isAutoNewsletterPuff ? newsletter.description : copy;
+        const description = isAutoNewsletterPuff
+          ? newsletter.description
+          : copy;
         return (
           <FetchProvider url={url} options={fetchOptions}>
             <TrackingContextProvider

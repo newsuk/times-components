@@ -28,7 +28,7 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
           title: 'Daily Briefing',
-          description:"description",
+          description: 'description',
           __typename: 'Newsletter'
         }
       }
