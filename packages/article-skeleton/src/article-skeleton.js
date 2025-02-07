@@ -184,6 +184,9 @@ const ArticleSkeleton = ({
 
   const newContent = reduceArticleContent(content, articleContentReducers);
 
+  console.log("newContent...");
+  console.log(JSON.stringify(newContent, null, 2));
+
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   const scrollToTopAndRefresh = window => {
