@@ -26,6 +26,7 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
           title: 'Daily Briefing',
+          description:"description",
           __typename: 'Newsletter'
         }
       }
@@ -46,11 +47,6 @@ const showcase = {
           >
             <AutoNewsletterPuff
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Daily Briefing')}
-              copy={text(
-                'copy',
-                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-              )}
               section="sport"
             />
           </TrackingContextProvider>

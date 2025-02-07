@@ -50,6 +50,7 @@ export const InlineNewsletterPuff = ({
         if (newsletter.isSubscribed) {
           return null;
         }
+
         const title = isAutoNewsletterPuff ? newsletter.title : headline;
         const description = isAutoNewsletterPuff ? newsletter.description : copy;
         return (
