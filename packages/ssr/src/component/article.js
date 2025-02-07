@@ -13,9 +13,6 @@ const {
   defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
-const {
-  affiliateLinksValidation
-} = require("../lib/affiliate-links-validation");
 
 const scale = scales.large;
 
@@ -62,12 +59,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ? providerData.draftArticle
             : providerData.article;
           const articleTemplate = article ? article.template : null;
-          const articleContent = affiliateLinksValidation(
-            article.content,
-            articleDataFromRender
-          );
-
-          const formattedArticle = { ...article, content: articleContent };
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -89,7 +80,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               analyticsStream,
               article: {
-                ...formattedArticle,
+                ...article,
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
