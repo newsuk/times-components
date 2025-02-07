@@ -188,7 +188,7 @@ const ArticleSkeleton = ({
   const newNewContent = newContent.map((content, index) => {
     if(content.name === "paragraph") {
       if(content.children[0].name === "unorderedList"){
-        content.attributes.id = "list-paragraph";
+        content.attributes = {id: "list-paragraph"};
       }
   }
   return content;
