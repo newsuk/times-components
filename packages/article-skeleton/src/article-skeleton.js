@@ -183,18 +183,8 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
+  console.log("newContent...")
   console.log(JSON.stringify(newContent, null, 2));
-
-  const newNewContent = newContent.map((content, index) => {
-    if(content.name === "paragraph") {
-      if(content.children[0].name === "unorderedList"){
-        content.attributes = {id: "list-paragraph"};
-      }
-  }
-  return content;
-});
-
-  console.log(JSON.stringify(newNewContent, null, 2));
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -407,7 +397,7 @@ const ArticleSkeleton = ({
                       <ArticleBody
                         id={article.id}
                         analyticsStream={analyticsStream}
-                        content={newNewContent}
+                        content={newContent}
                         contextUrl={articleUrl}
                         section={section}
                         articleHeadline={headline}
