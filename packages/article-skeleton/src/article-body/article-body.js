@@ -572,6 +572,9 @@ const renderers = ({
       </ArticleLink>
     );
   },
+  listElement(key, _attributes, children) {
+    return <StyledLi key={key}>{children}</StyledLi>;
+  },
   paragraph(key, attributes, children) {
     const id = attributes && attributes.id;
     return (
@@ -618,9 +621,6 @@ const renderers = ({
   },
   unorderedList(key, _attributes, children) {
     return <StyledUl key={key}>{children}</StyledUl>;
-  },
-  listElement(key, _attributes, children) {
-    return <StyledLi key={key}>{children}</StyledLi>;
   },
   video(
     key,
