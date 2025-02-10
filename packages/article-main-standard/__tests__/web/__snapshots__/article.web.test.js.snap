@@ -833,7 +833,7 @@ exports[`6. an article with puzzle sidebar 1`] = `
                   >
                     <img
                       alt="Puzzle category thumbnail"
-                      src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png"
+                      src="https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png"
                     />
                     <p>
                       Crossword
@@ -843,7 +843,7 @@ exports[`6. an article with puzzle sidebar 1`] = `
                   <a>
                     <img
                       alt="Puzzle category thumbnail"
-                      src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/polygon-875ea55487.png"
+                      src="https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png"
                     />
                     <p>
                       Polygon
@@ -855,7 +855,7 @@ exports[`6. an article with puzzle sidebar 1`] = `
                   >
                     <img
                       alt="Puzzle category thumbnail"
-                      src="https://www.thetimes.co.uk/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
+                      src="https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
                     />
                     <p>
                       Sudoku
