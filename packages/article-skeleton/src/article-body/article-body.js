@@ -199,9 +199,22 @@ const renderers = ({
     const deckApi = deckApiUrl || deckApiFallback;
 
     switch (value) {
+      case "times-datawrapper":
+        const iframeValue = decodeURIComponent(attributes['embed-code']);
+        const fallbackImageSrc = iframeValue.replace(/\/\d+\/$/, '/full.png');          
+        return ( 
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <img
+              src={fallbackImageSrc}
+              alt='interactive-fallback-image'
+              width='100%'
+            />
+        </InteractiveContainer>
+        );
+
       case "in-article-info-card":
         return (
-          <Context.Consumer key={key}>
+          <Context.Consumer key={key}>  
             {({ theme }) => (
               <div id={id}>
                 <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
