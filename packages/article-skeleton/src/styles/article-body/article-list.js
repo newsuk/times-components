@@ -20,7 +20,7 @@ export const StyledUl = styled.ul`
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.body}px;
     line-height: 30px;
-    padding-left: 0;
+    padding-left: ${spacing(3)};
     padding-right: 0;
     width: 80.8%;
   }
