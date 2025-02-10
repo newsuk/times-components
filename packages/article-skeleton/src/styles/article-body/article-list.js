@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  breakpoints,
   colours,
   fontsWithFallback,
   fontSizes,
@@ -7,7 +8,26 @@ import {
 } from "@times-components/ts-styleguide";
 
 export const StyledUl = styled.ul`
-  padding-left: ${spacing(4)};
+  color: ${colours.functional.primary};
+  display: block;
+  font-family: ${fontsWithFallback.bodyRegular};
+  line-height: 26px;
+  font-size: ${fontSizes.bodyMobile}px;
+  margin: 0 auto ${spacing(5)};
+  padding-right: ${spacing(2)};
+  padding-left: ${spacing(6)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.body}px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
 `;
 
 export const StyledLi = styled.li`

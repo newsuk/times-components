@@ -48,6 +48,7 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import mapListElements from "./contentModifiers/map-list-elements";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
@@ -179,13 +180,11 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd(isPreview),
-    tagLastParagraph
+    tagLastParagraph,
+    mapListElements
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
-
-  console.log("newContent...");
-  console.log(JSON.stringify(newContent, null, 2));
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
