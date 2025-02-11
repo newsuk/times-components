@@ -7,6 +7,7 @@ import { hasEntitlement } from "@times-components/utils";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
+import UserEntitlementState from "./user-entitlement-state";
 
 const ArticleComments = ({
   articleId,
@@ -15,46 +16,74 @@ const ArticleComments = ({
   commentingConfig,
   isCommentEnabled,
   storefrontConfig,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isEntitlementFeatureEnabled
 }) => {
   const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
     undefined
   );
+  const [userEntitlementData, setUserEntitlementData] = useState(undefined);
+  const urlParams = new URLSearchParams(window.location.search);
+  const commentingAccesEntitlementFF = !!urlParams.get("commentingFF");
 
-  useEffect(() => {
-    const convertBase64JSONCookie = cookieValue => {
-      try {
-        return cookieValue ? JSON.parse(atob(cookieValue)) : undefined;
-      } catch (e) {
-        return undefined;
-      }
-    };
-
-    const fetchClientSideCookie = () => {
-      const cookies = document.cookie.split("; ");
-      const authDecisionCookie = cookies.find(row =>
-        row.startsWith("access-decisions=")
-      );
-      const cookieValue = authDecisionCookie
-        ? authDecisionCookie.split("=")[1]
-        : null;
-
-      if (cookieValue) {
+  useEffect(
+    () => {
+      const convertBase64JSONCookie = cookieValue => {
         try {
-          const jsonValue = convertBase64JSONCookie(cookieValue);
-          const entitlementChecker = hasEntitlement(jsonValue);
-          const entitlements = entitlementChecker("functionalCommentingFull");
-          setHasCommentingEntitlement(entitlements);
-        } catch (error) {
+          return cookieValue ? JSON.parse(atob(cookieValue)) : undefined;
+        } catch (e) {
+          return undefined;
+        }
+      };
+
+      const fetchClientSideCookie = () => {
+        const cookies = document.cookie.split("; ");
+        const authDecisionCookie = cookies.find(row =>
+          row.startsWith("access-decisions=")
+        );
+        const cookieValue = authDecisionCookie
+          ? authDecisionCookie.split("=")[1]
+          : null;
+
+        if (cookieValue) {
+          try {
+            const jsonValue = convertBase64JSONCookie(cookieValue);
+            const entitlementChecker = hasEntitlement(jsonValue);
+            const entitlements = entitlementChecker("functionalCommentingFull");
+            setHasCommentingEntitlement(entitlements);
+          } catch (error) {
+            setHasCommentingEntitlement(false);
+          }
+        } else {
           setHasCommentingEntitlement(false);
         }
-      } else {
-        setHasCommentingEntitlement(false);
-      }
-    };
+      };
 
-    fetchClientSideCookie();
-  }, []);
+      if (commentingAccesEntitlementFF) {
+        fetchClientSideCookie();
+      }
+    },
+    [commentingAccesEntitlementFF]
+  );
+
+  useEffect(
+    () => {
+      const fetchUserEntitlements = async () => {
+        const response = await fetch("/api/get-user-entitlements");
+        const data = await response.json();
+        setUserEntitlementData(data);
+      };
+
+      if (
+        typeof window !== "undefined" &&
+        !commentingAccesEntitlementFF &&
+        isEntitlementFeatureEnabled
+      ) {
+        fetchUserEntitlements();
+      }
+    },
+    [commentingAccesEntitlementFF, isEntitlementFeatureEnabled]
+  );
 
   let content;
   if (!isEnabled && !isCommentEnabled) {
@@ -71,8 +100,40 @@ const ArticleComments = ({
   } else {
     content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
   }
-  if (hasCommentingEntitlement === undefined) {
+  if (commentingAccesEntitlementFF && hasCommentingEntitlement === undefined) {
     return null;
+  }
+
+  if (!commentingAccesEntitlementFF) {
+    return isEnabled && isCommentEnabled ? (
+      <>
+        <UserState state={UserState.showJoinTheConversationDialog}>
+          <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+        </UserState>
+        {!isEntitlementFeatureEnabled ? (
+          <UserState state={UserState.showCommentingModule}>
+            <Comments
+              articleId={articleId}
+              isReadOnly={isReadOnly}
+              commentingConfig={commentingConfig}
+              domainSpecificUrl={domainSpecificUrl}
+            />
+          </UserState>
+        ) : (
+          <UserEntitlementState userEntitlementData={userEntitlementData}>
+            <Comments
+              articleId={articleId}
+              isReadOnly={isReadOnly}
+              commentingConfig={commentingConfig}
+              domainSpecificUrl={domainSpecificUrl}
+            />
+          </UserEntitlementState>
+        )}
+        ;
+      </>
+    ) : (
+      <DisabledComments />
+    );
   }
 
   return <UserState state={UserState.showArticleComments}>{content}</UserState>;
@@ -87,7 +148,8 @@ ArticleComments.propTypes = {
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool,
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
 };
 
 ArticleComments.defaultProps = {
