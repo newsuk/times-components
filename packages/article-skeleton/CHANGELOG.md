@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.150.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.149.2...@times-components/article-skeleton@1.150.0) (2025-02-11)
+
+
+### Features
+
+* **TMRP-144:** create article list renderers ([#4063](https://github.com/newsuk/times-components/issues/4063)) ([4e5601d](https://github.com/newsuk/times-components/commit/4e5601d68bac19e24bfff79c188ecb08d93d40fb))
+
+
+
+
+
 ## [1.149.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.149.1...@times-components/article-skeleton@1.149.2) (2025-02-06)
 
 **Note:** Version bump only for package @times-components/article-skeleton
