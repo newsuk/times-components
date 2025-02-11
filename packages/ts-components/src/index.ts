@@ -50,8 +50,8 @@ export {
 } from './components/opta/cricket/scorecard/OptaCricketScorecard';
 
 export {
-  OptaFootballFixturesTicker
-} from './components/opta/football/fixtures-ticker/OptaFootballFixturesTicker';
+  OptaFixturesTicker
+} from './components/opta/shared/fixtures-ticker/OptaFixturesTicker';
 export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
