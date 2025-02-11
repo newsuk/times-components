@@ -64,6 +64,7 @@ import {
   InlineAdWrapper,
   InlineAdTitle
 } from "../styles/article-body/responsive";
+import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 
 const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
@@ -570,6 +571,12 @@ const renderers = ({
         {children}
       </ArticleLink>
     );
+  },
+  listElement(key, attributes, children) {
+    return <StyledLi key={key}>{children}</StyledLi>;
+  },
+  unorderedList(key, attributes, children) {
+    return <StyledUl key={key}>{children}</StyledUl>;
   },
   paragraph(key, attributes, children) {
     const id = attributes && attributes.id;
