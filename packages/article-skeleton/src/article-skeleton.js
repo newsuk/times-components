@@ -49,6 +49,7 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import mapListElements from "./contentModifiers/map-list-elements";
+import reorderInteractiveBeforeAd from "./contentModifiers/reorder-interactive-before-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
@@ -181,7 +182,8 @@ const ArticleSkeleton = ({
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertInlineAd(isPreview),
     tagLastParagraph,
-    mapListElements
+    mapListElements,
+    reorderInteractiveBeforeAd
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
