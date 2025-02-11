@@ -16,18 +16,21 @@ import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
 import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 import { useFixturePageLink } from '../../utils/useFixturePageLink';
 
-export const OptaFootballFixturesTicker: React.FC<{
+export type OptaFixturesTickerProps = {
   season: string;
   competition: string;
-  date_from?: string;
-  date_to?: string;
+  date_from?: string | null;
+  date_to?: string | null;
   days_ahead?: number;
   days_before?: number;
   round?: string;
   isApp?: boolean;
   showButtons?: boolean;
   fixturesPageUrl?: string;
-}> = React.memo(
+  sport: string;
+};
+
+export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
   ({
     season,
     competition,
@@ -38,7 +41,8 @@ export const OptaFootballFixturesTicker: React.FC<{
     round,
     isApp,
     showButtons,
-    fixturesPageUrl
+    fixturesPageUrl,
+    sport
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -47,8 +51,6 @@ export const OptaFootballFixturesTicker: React.FC<{
 
     useEffect(
       () => {
-        const sport = 'football';
-
         initSettings();
         initStyleSheet(sport);
 
