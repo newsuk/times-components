@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
+exports[`OptaFixturesTicker rugby should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -18,7 +18,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
+exports[`OptaFixturesTicker rugby should render correctly 2`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -34,7 +34,7 @@ exports[`OptaFootballFixturesTicker with flags should render correctly 2`] = `
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = `
+exports[`OptaFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -52,7 +52,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 1`] = 
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = `
+exports[`OptaFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -68,7 +68,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly 2`] = 
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
+exports[`OptaFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -86,7 +86,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
+exports[`OptaFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -102,7 +102,41 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with f
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 1`] = `
+exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bxivhb dBqngZ"
+  >
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    />
+    <div
+      class="sc-bwzfXH uxFfR"
+      height="80"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bxivhb dBqngZ"
+  >
+    <div
+      class="sc-htpNat sc-EHOje gQHnKF"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"
@@ -120,7 +154,7 @@ exports[`OptaFootballFixturesTicker without flags should render correctly with i
 </DocumentFragment>
 `;
 
-exports[`OptaFootballFixturesTicker without flags should render correctly with isApp property 2`] = `
+exports[`OptaFixturesTicker without flags should render correctly with isApp property 2`] = `
 <DocumentFragment>
   <div
     class="sc-bxivhb dBqngZ"

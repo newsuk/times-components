@@ -10,7 +10,7 @@ import {
   initComponent
 } from '../../utils/config';
 
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaFootballSummary: React.FC<{
