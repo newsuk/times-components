@@ -177,6 +177,8 @@ const ArticleSkeleton = ({
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
+  console.log("url", url);
+
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
