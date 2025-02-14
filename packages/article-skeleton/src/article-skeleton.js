@@ -374,32 +374,9 @@ const ArticleSkeleton = ({
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
                         {!quizCategories.includes(getFirstSlugFromUrl(url)) ? (
-                          <ArticleSidebar
-                            pageLink={`${domainSpecificUrl}/puzzles`}
-                            sectionTitle="Puzzles"
-                            data={[
-                              {
-                                title: "Crossword",
-                                url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                              },
-                              {
-                                title: "Polygon",
-                                url: polygonUrl,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                              },
-                              {
-                                title: "Sudoku",
-                                url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                              }
-                            ]}
-                          />
+                          <div>sidebar</div>
                         ) : (
-                          <QuizleSidebar
-                            pageLink={`${domainSpecificUrl}/quizle`}
-                            sectionTitle="Today's Quizle"
-                          />
+                          <div>quizlesidebar</div>
                         )}
                       </PuzzlesSidebar>
                     </SidebarWarpper>
