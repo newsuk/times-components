@@ -1,6 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
 import {
-  QuestionIcon,
   Container,
   Titletag,
   Divider,
@@ -88,7 +87,10 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
               <Title>{sectionTitle}</Title>
             </Link>
           </div>
-          <QuestionIcon />
+          <img
+            src="https://www.thetimes.com/d/img/puzzles/new-illustrations/quizzesteasers-4e9e19ef6b.png"
+            className="question-icon"
+          />
         </TitleIconContainer>
       </>
       <Divider />
