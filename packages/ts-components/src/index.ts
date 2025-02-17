@@ -118,7 +118,6 @@ export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
 export { ArticleSidebar } from './components/article-sidebar/ArticleSidebar';
-export { QuizleSidebar } from './components/quizle-sidebar/QuizleSidebar';
 export { ArticleAudio } from './components/article-audio/ArticleAudio';
 export {
   FeaturesCarousel
