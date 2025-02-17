@@ -1,11 +1,4 @@
 import styled from 'styled-components';
-import QuizleIcon from './assets/QuizleIcon';
-
-export const QuestionIcon = styled(QuizleIcon)`
-  width: 37.652px;
-  height: 40px;
-  margin-left: 8px;
-`;
 
 export const Container = styled.div`
   padding-top: 12px;
@@ -56,6 +49,11 @@ export const TitleIconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  & .question-icon {
+    width: 37.652px;
+    height: 40px;
+    margin-left: 8px;
+  }
 `;
 
 export const Title = styled.h3`
