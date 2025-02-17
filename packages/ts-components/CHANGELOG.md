@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.122.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.121.0...@times-components/ts-components@1.122.0) (2025-02-17)
+
+
+### Features
+
+* **TMRP-94:**  Quizle component added ([#4069](https://github.com/newsuk/times-components/issues/4069)) ([ddf773d](https://github.com/newsuk/times-components/commit/ddf773d758b36eb50c2366533fffc28c4b40b04e))
+
+
+
+
+
 # [1.121.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.120.0...@times-components/ts-components@1.121.0) (2025-02-12)
 
 
