@@ -368,17 +368,17 @@ const ArticleSkeleton = ({
                             {
                               title: "Crossword",
                               url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
                             },
                             {
                               title: "Polygon",
                               url: polygonUrl,
-                              imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
                             },
                             {
                               title: "Sudoku",
                               url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                             }
                           ]}
                         />
