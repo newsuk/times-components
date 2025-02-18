@@ -6,13 +6,13 @@ const reorderInteractiveBeforeAd = content => {
   }
 
   const paywallChildren = paywallElement.children;
- 
+
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < paywallChildren.length - 2; i++) {
     if (
-      paywallChildren[i].name === "paragraph" && (
-        paywallChildren[i + 1].name.includes("inlineAd") || paywallChildren[i + 1].name === "ad"
-      )
-       &&
+      paywallChildren[i].name === "paragraph" &&
+      (paywallChildren[i + 1].name.includes("inlineAd") ||
+        paywallChildren[i + 1].name === "ad") &&
       paywallChildren[i + 2].name === "interactive" &&
       paywallChildren[i + 2].attributes.element.value === "times-travel-cta"
     ) {
@@ -23,7 +23,6 @@ const reorderInteractiveBeforeAd = content => {
     }
   }
 
-  
   return content;
 };
 
