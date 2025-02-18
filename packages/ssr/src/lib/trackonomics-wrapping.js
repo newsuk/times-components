@@ -1,9 +1,10 @@
 const {
   travelSiteCode,
-  theTimesSiteCode
+  theTimesSiteCode,
+  trackonomicsRegex
 } = require("../constants/affiliate-links-validation");
 
-/* const isTrackonomicsUrl = url => trackonomicsRegex.test(url); */
+const isTrackonomicsUrl = url => trackonomicsRegex.test(url);
 
 const getSiteCode = contentPageUrl => {
   const isTravelUrl =
@@ -24,10 +25,8 @@ const constructTrackonomicsUrl = (trackonomicsUrl, contentPageUrl) => {
 };
 
 const wrapTrackonomics = (skimlinksUrl, contentPageUrl) =>
-  /* isTrackonomicsUrl(skimlinksUrl)
+  isTrackonomicsUrl(skimlinksUrl)
     ? constructTrackonomicsUrl(skimlinksUrl, contentPageUrl)
-    : skimlinksUrl; */
-
-  constructTrackonomicsUrl(skimlinksUrl, contentPageUrl);
+    : skimlinksUrl;
 
 module.exports = { wrapTrackonomics };

@@ -1,16 +1,16 @@
 const { publisherId } = require("../constants/affiliate-links-validation");
-/* const { skimlinksDomainSet } = require("../constants/skimlinks-domains"); */
+const { skimlinksDomainSet } = require("../constants/skimlinks-domains");
 
-/* const extractDomain = url => {
+const extractDomain = url => {
   try {
     const { hostname } = new URL(url);
     return hostname.replace(/^www\./, "");
   } catch (error) {
     return null;
   }
-}; */
+};
 
-/* const urlContainsDomain = url => {
+const urlContainsDomain = url => {
   const domain = extractDomain(url);
 
   // Ensure skimlinksDomainSet is a Set and domain is valid
@@ -19,7 +19,7 @@ const { publisherId } = require("../constants/affiliate-links-validation");
   }
 
   return false;
-}; */
+};
 
 /**
  *
@@ -36,7 +36,6 @@ const constructSkimlinksUrl = (merchantUrl, contentPageUrl) => {
 };
 
 const wrapSkimlinks = (url, contentPageUrl) =>
-  /* urlContainsDomain(url) ? constructSkimlinksUrl(url, contentPageUrl) : url; */
-  constructSkimlinksUrl(url, contentPageUrl);
+  urlContainsDomain(url) ? constructSkimlinksUrl(url, contentPageUrl) : url;
 
 module.exports = { wrapSkimlinks };
