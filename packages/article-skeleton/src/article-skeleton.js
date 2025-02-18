@@ -1,5 +1,6 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -217,10 +218,6 @@ const ArticleSkeleton = ({
   const [polygonUrl, setPolygonUrl] = useState([]);
 
   const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
-  const quizCategories = ["culture", "life-style"];
-  const canShowSidebar = categoryPath
-    ? quizCategories.includes(categoryPath)
-    : false;
 
   const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
@@ -229,11 +226,11 @@ const ArticleSkeleton = ({
 
   useEffect(
     () => {
-      if (canShowSidebar) {
+      if (CanShowPuzzleSidebar(categoryPath)) {
         fetchPolygon();
       }
     },
-    [canShowSidebar]
+    [CanShowPuzzleSidebar, categoryPath]
   );
 
   return (
@@ -364,10 +361,10 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {canShowSidebar && (
+                  {CanShowPuzzleSidebar(categoryPath) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {categoryPath === "life-style" ? (
+                        {categoryPath === "culture" ? (
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
                             sectionTitle="Puzzles"
@@ -375,17 +372,17 @@ const ArticleSkeleton = ({
                               {
                                 title: "Crossword",
                                 url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
                               },
                               {
                                 title: "Polygon",
                                 url: polygonUrl,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
                               },
                               {
                                 title: "Sudoku",
                                 url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                               }
                             ]}
                           />
@@ -398,7 +395,9 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={canShowSidebar}>
+                  <ArticleContent
+                    showMargin={CanShowPuzzleSidebar(categoryPath)}
+                  >
                     {!!zephrDivs && (
                       <StaticContent
                         html={
