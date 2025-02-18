@@ -9,16 +9,16 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   WelcomeBanner,
-  ArticleSidebar,
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import fetchPolygonData from "./article-sidebar";
+// import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -216,9 +216,9 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
-  const [polygonUrl, setPolygonUrl] = useState([]);
+  // const [polygonUrl, setPolygonUrl] = useState([]);
 
-  const fetchPolygon = async () => {
+  /* const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
     setPolygonUrl(polygon);
   };
@@ -230,7 +230,7 @@ const ArticleSkeleton = ({
       }
     },
     [CanShowPuzzleSidebar, section]
-  );
+  ); */
 
   return (
     <StickyProvider>
@@ -361,26 +361,9 @@ const ArticleSkeleton = ({
                   {CanShowPuzzleSidebar(section) && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        <ArticleSidebar
-                          pageLink={`${domainSpecificUrl}/puzzles`}
-                          sectionTitle="Puzzles"
-                          data={[
-                            {
-                              title: "Crossword",
-                              url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                            },
-                            {
-                              title: "Polygon",
-                              url: polygonUrl,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                            },
-                            {
-                              title: "Sudoku",
-                              url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                            }
-                          ]}
+                        <QuizleSidebar
+                          pageLink={`${domainSpecificUrl}/quizle`}
+                          sectionTitle="Today's Quizle"
                         />
                       </PuzzlesSidebar>
                     </SidebarWarpper>
