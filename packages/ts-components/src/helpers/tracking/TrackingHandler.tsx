@@ -12,6 +12,8 @@ export const tealiumTrackingHandler = (
   eventName: string,
   action: string,
   browsingMethod: string,
+  parentName?: string,
+  sectionDetails?: string,
   additionalParams: TrackingParams = {}
 ): void => {
   if (window.utag && window.utag.link) {
@@ -19,6 +21,8 @@ export const tealiumTrackingHandler = (
       event_navigation_name: eventName,
       event_navigation_action: action,
       event_navigation_browsing_method: browsingMethod,
+      article_parent_name: parentName,
+      section_details: sectionDetails,
       ...additionalParams
     });
   } else {

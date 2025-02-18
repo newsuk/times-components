@@ -25,9 +25,11 @@ export const CtaButton: React.FC<RootProps> = props => {
       target={attributes.target || '_blank'}
       onClick={() =>
         tealiumTrackingHandler(
-          attributes.text.toLowerCase(),
+          'affiliate cta clicked',
           'navigation',
-          'click'
+          'click',
+          attributes.url,
+          attributes.text.toLowerCase()
         )
       }
       rel="nofollow"
