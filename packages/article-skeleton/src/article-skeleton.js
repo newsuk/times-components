@@ -12,12 +12,13 @@ import {
   Banner,
   SocialEmbedsProvider,
   useSocialEmbedsContext,
-  QuizleSidebar
+  QuizleSidebar,
+  ArticleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-// import fetchPolygonData from "./article-sidebar";
+import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -222,21 +223,21 @@ const ArticleSkeleton = ({
     ? quizCategories.includes(categoryPath)
     : false;
 
-  // const [polygonUrl, setPolygonUrl] = useState([]);
+  const [polygonUrl, setPolygonUrl] = useState([]);
 
-  /* const fetchPolygon = async () => {
+  const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
     setPolygonUrl(polygon);
   };
 
   useEffect(
     () => {
-      if (CanShowPuzzleSidebar(section)) {
+      if (canShowSidebar) {
         fetchPolygon();
       }
     },
-    [CanShowPuzzleSidebar, section]
-  ); */
+    [canShowSidebar]
+  );
 
   return (
     <StickyProvider>
@@ -367,10 +368,32 @@ const ArticleSkeleton = ({
                   {canShowSidebar && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        {categoryPath === "life-style" && (
+                        {categoryPath === "life-style" ? (
                           <QuizleSidebar
                             pageLink={`${domainSpecificUrl}/quizle`}
                             sectionTitle="Today's Quizle"
+                          />
+                        ) : (
+                          <ArticleSidebar
+                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              },
+                              {
+                                title: "Sudoku",
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              }
+                            ]}
                           />
                         )}
                       </PuzzlesSidebar>
