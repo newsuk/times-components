@@ -1,6 +1,5 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -375,7 +374,7 @@ const ArticleSkeleton = ({
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                  <ArticleContent showMargin={canShowSidebar}>
                     {!!zephrDivs && (
                       <StaticContent
                         html={
