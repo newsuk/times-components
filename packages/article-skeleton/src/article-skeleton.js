@@ -367,10 +367,12 @@ const ArticleSkeleton = ({
                   {canShowSidebar && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        <QuizleSidebar
-                          pageLink={`${domainSpecificUrl}/quizle`}
-                          sectionTitle="Today's Quizle"
-                        />
+                        {categoryPath === "life-style" && (
+                          <QuizleSidebar
+                            pageLink={`${domainSpecificUrl}/quizle`}
+                            sectionTitle="Today's Quizle"
+                          />
+                        )}
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
