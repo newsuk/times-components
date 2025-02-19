@@ -222,7 +222,7 @@ const ArticleSkeleton = ({
   const canShowSidebar = categoryPath
     ? quizCategories.includes(categoryPath)
     : false;
-  console.log(canShowSidebar);
+
   // const [polygonUrl, setPolygonUrl] = useState([]);
 
   /* const fetchPolygon = async () => {
@@ -365,7 +365,7 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) && (
+                  {canShowSidebar && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
                         <QuizleSidebar

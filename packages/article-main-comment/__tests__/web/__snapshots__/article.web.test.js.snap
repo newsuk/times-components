@@ -958,44 +958,6 @@ exports[`6. an article with puzzle sidebar 1`] = `
       <article>
         <div>
           <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <h3>
-                      BETA
-                    </h3>
-                    <a
-                      href="https://www.thetimes.co.uk/quizle"
-                    >
-                      <h3>
-                        Today's Quizle
-                      </h3>
-                    </a>
-                  </div>
-                  <img
-                    src="https://www.thetimes.com/d/img/puzzles/new-illustrations/quizzesteasers-4e9e19ef6b.png"
-                  />
-                </div>
-                <hr />
-                <div>
-                  <p>
-                    <span>
-                      Q: 
-                    </span>
-                  </p>
-                  <a
-                    href="https://www.thetimes.co.uk/quizle"
-                  >
-                    Test your knowledge
-                    <span />
-                  </a>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <div>
             <p>
               Some content
             </p>
