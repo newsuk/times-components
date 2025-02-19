@@ -216,6 +216,13 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
+  const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
+  const quizCategories = ["culture", "life-style"];
+  const canShowSidebar = categoryPath
+    ? quizCategories.includes(categoryPath)
+    : false;
+  console.log(canShowSidebar);
   // const [polygonUrl, setPolygonUrl] = useState([]);
 
   /* const fetchPolygon = async () => {
