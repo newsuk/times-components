@@ -8,12 +8,12 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   WelcomeBanner,
+  ArticleSidebar,
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
   useSocialEmbedsContext,
-  QuizleSidebar,
-  ArticleSidebar
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -369,11 +369,6 @@ const ArticleSkeleton = ({
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
                         {categoryPath === "life-style" ? (
-                          <QuizleSidebar
-                            pageLink={`${domainSpecificUrl}/quizle`}
-                            sectionTitle="Today's Quizle"
-                          />
-                        ) : (
                           <ArticleSidebar
                             pageLink={`${domainSpecificUrl}/puzzles`}
                             sectionTitle="Puzzles"
@@ -394,6 +389,11 @@ const ArticleSkeleton = ({
                                 imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
                               }
                             ]}
+                          />
+                        ) : (
+                          <QuizleSidebar
+                            pageLink={`${domainSpecificUrl}/quizle`}
+                            sectionTitle="Today's Quizle"
                           />
                         )}
                       </PuzzlesSidebar>
