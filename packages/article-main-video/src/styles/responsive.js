@@ -7,6 +7,10 @@ export const ArticleMainVideoContainer = styled.div`
 export const ArticleLeadAssetContainer = styled.div`
   position: relative;
 
+  & * {
+    max-width: 100%;
+  }
+
   &&& .vjs-poster::before {
     content: "";
     display: block;
