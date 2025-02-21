@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {
   breakpoints,
 } from "@times-components/ts-styleguide";
-import { ArticleBodyContainer } from "../responsive";
+import { ArticleBodyContainer, ArticleLabelText } from "../responsive";
 
 export const UpNextContainer = styled(ArticleBodyContainer)`
   padding: 20px;
@@ -53,6 +53,18 @@ export const UpNextTile = styled.div`
    width: 1px;
    right: -12px;
   }
+
+  &&& .vjs-big-play-button .vjs-icon-placeholder::before, .vjs-big-play-button .vjs-icon-placeholder::after {
+    display: none !important;
+  }
+`;
+export const ImageContainer = styled.div`
+  position: relative;
+`;
+export const VideoDurationLabel = styled(ArticleLabelText)`
+  bottom: 0;
+  left: 10px;
+  position: absolute;
 `;
 export const UpNextTileOverlay = styled.div`
   position: absolute;
