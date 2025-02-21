@@ -1,0 +1,996 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`full article with style 1`] = `
+.c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.c21 {
+  color: #333333;
+  display: block;
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c21:first-of-type:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.c24 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  padding-left: 10px;
+}
+
+.c20 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c27 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c28 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: block;
+}
+
+.c23 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.c22 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: block;
+}
+
+.c25 {
+  clear: both;
+  min-height: 283px;
+  margin: 30px 0;
+  box-sizing: content-box;
+  padding: 0 0 10px;
+  border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c26 {
+  border-bottom: 1px solid rgb(219,219,219);
+  color: #696969;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
+  -webkit-letter-spacing: 0.6px;
+  -moz-letter-spacing: 0.6px;
+  -ms-letter-spacing: 0.6px;
+  letter-spacing: 0.6px;
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c12 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+}
+
+.c12 + .c11 {
+  margin-top: -1px !important;
+}
+
+.c16 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c16 + .c15 {
+  margin-top: -1px !important;
+}
+
+.c16:last-child {
+  margin-bottom: 30px;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.c3 > .c15 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c17 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c18 {
+  position: relative;
+}
+
+.c9 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: 30px;
+  color: #1D1D1B;
+  margin: 0 0 8px 0;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1D1D1B;
+  margin-bottom: 7px;
+}
+
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c13 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  padding-top: 10px;
+}
+
+.c13:last-child {
+  padding-bottom: 10px;
+}
+
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c10 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: absolute;
+  left: 0;
+  width: 20.8333%;
+  z-index: 1;
+  top: 100%;
+  display: none;
+}
+
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c4 {
+  position: relative;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c14 {
+  margin-bottom: 20px;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width:768px) {
+  .c21 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c27 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c23 {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c25 {
+    min-height: 123px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c25 {
+    min-height: 283px;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c16 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .inline-meta {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 56.2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    min-height: 250px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div />
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+        </title>
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <meta />
+        <script>
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section","url":"https://url.io"}
+        </script>
+        <script />
+      </Helmet>
+      <div
+        className="c1"
+      >
+        <AdContainer
+          marginBottom={0}
+        />
+      </div>
+      <main
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                <div
+                  className="c7"
+                  paddingBottom="5px"
+                  paddingTop="5px"
+                >
+                  <div
+                    className="c8"
+                    color="#1D1D1B"
+                    fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                    fontSize={12}
+                    fontWeight="400"
+                    letterSpacing={0.5}
+                    lineHeight="12px"
+                    marginBottom={0}
+                    marginTop={-1}
+                    paddingTop={1}
+                  >
+                    SOME LABEL
+                  </div>
+                </div>
+                <h1
+                  className="c9"
+                >
+                  Some Headline
+                </h1>
+                <div
+                  className="c8"
+                  color="#333333"
+                  fontFamily="TimesModern-Regular, TimesModern-Regular-fallback, serif"
+                  fontSize={20}
+                  lineHeight="26px"
+                  paddingBottom="10px"
+                >
+                  Some Standfirst
+                </div>
+                <div
+                  className="c6"
+                  marginBottom="10px"
+                >
+                  <ArticleFlags />
+                </div>
+              </div>
+            </div>
+            <div
+              className="c10"
+            >
+              <div
+                className="c11 c12"
+              >
+                <div
+                  className="c6"
+                >
+                  <div
+                    className="c13"
+                  >
+                    <div
+                      className="c8"
+                      color="#696969"
+                      fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                      fontSize={14}
+                      lineHeight="17px"
+                    >
+                      <ArticleBylineWithLinks />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c11 c12"
+              >
+                <div
+                  className="c6"
+                >
+                  <div
+                    className="c13"
+                  >
+                    <div
+                      className="c8"
+                      color="#696969"
+                      fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                      fontSize={14}
+                      lineHeight="17px"
+                    >
+                      <DatePublication />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav>
+                <ArticleTopics
+                  justifyContent="flex-start"
+                />
+              </nav>
+            </div>
+          </div>
+          <ArticleLeadAsset
+            className="c14"
+          />
+          <div
+            className="c11 inline-meta c15 c16"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c13"
+              >
+                <div
+                  className="c8"
+                  color="#696969"
+                  fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                  fontSize={14}
+                  lineHeight="17px"
+                >
+                  <ArticleBylineWithLinks />
+                </div>
+              </div>
+              <div
+                className="c13"
+              >
+                <div
+                  className="c8"
+                  color="#696969"
+                  fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                  fontSize={14}
+                  lineHeight="17px"
+                >
+                  <DatePublication />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article
+          className="c17"
+        >
+          <div
+            className="c18"
+          >
+            <div
+              className="c19"
+            >
+              <div>
+                <div>
+                  <div
+                    className="c20"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <Link>
+                Some Link
+              </Link>
+              <p
+                className="c21"
+              >
+                Some content
+              </p>
+              <div
+                className="c22"
+              >
+                <div
+                  className="c23"
+                >
+                  <PullQuote>
+                    The pull quote content
+                  </PullQuote>
+                </div>
+              </div>
+              <div
+                className="c20"
+              >
+                <figure
+                  margin={0}
+                >
+                  <div
+                    className="c6"
+                    paddingBottom="56.25%"
+                    position="relative"
+                  >
+                    <div
+                      className="c6"
+                      height="100%"
+                      position="absolute"
+                      width="100%"
+                    >
+                      <div
+                        className="lcpItem"
+                        height="100%"
+                        width="100%"
+                      >
+                        <div
+                          height="100%"
+                          position="relative"
+                          width="100%"
+                        >
+                          <video
+                            className="video-js"
+                            height="100%"
+                            width="100%"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div
+                      className="c24"
+                    >
+                      <div
+                        className="c6"
+                      >
+                        <div
+                          className="c6"
+                          paddingTop="10px"
+                        >
+                          <div
+                            className="c8"
+                            color="#696969"
+                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                            fontSize={14}
+                            lineHeight="19px"
+                            marginBottom={4}
+                          >
+                            This is video caption
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div
+                className="c25"
+              >
+                <h2
+                  className="c26"
+                >
+                  Advertisement
+                </h2>
+                <AdContainer />
+              </div>
+              <div>
+                <div>
+                  <div
+                    className="c27"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div
+                    className="c28"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <div />
+            </div>
+          </div>
+          <ArticleExtras />
+        </article>
+      </main>
+      <AdContainer />
+      <AdContainer />
+      <AdContainer />
+    </article>
+  </div>
+</div>
+`;
