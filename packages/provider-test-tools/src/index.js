@@ -1,5 +1,6 @@
 import schema from "@times-components/schema/schema.json";
 import article from "./article";
+import articleVideo from "./article-video";
 import articleExtras from "./article-extras";
 import articleListNoImages from "./fixtures/article-list-no-images.json";
 import articleListWithImages from "./fixtures/article-list-with-images.json";
@@ -35,6 +36,7 @@ const makeMocks = mm(schema);
 export * from "./helpers";
 export {
   article,
+  articleVideo,
   articleExtras,
   authorProfile,
   clientTester,
