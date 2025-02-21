@@ -40,8 +40,8 @@ export const UpNextTile = styled.div`
   gap: 8px;
   position: relative;
 
-  & video {
-    width: 100%;
+  & * {
+    max-width: 100%;
   }
 
   &:not(:last-child)::after {
