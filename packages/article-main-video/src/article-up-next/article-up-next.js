@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ArticleLabelText, ArticleMainVideoContainer, ArticleTitle } from "../styles/responsive";
-import { UpNextContainer, UpNextTiles, UpNextTile, UpNextScroll, UpNextTileOverlayLeft, UpNextTileOverlayRight } from "../styles/article-up-next";
-import Video from "@times-components/video";
+import { UpNextContainer, UpNextTiles, UpNextTile, UpNextScroll, UpNextTileOverlayLeft, UpNextTileOverlayRight, ImageContainer, VideoDurationLabel } from "../styles/article-up-next";
 import { debounce } from "@times-components/utils";
+import Image from "@times-components/image";
 
 export const ArticleUpNext = ({ upNextArticles }) => {
   const scrollRef = useRef(null);
@@ -36,8 +36,11 @@ export const ArticleUpNext = ({ upNextArticles }) => {
         <UpNextScroll ref={scrollRef}>
           <UpNextTiles>
             {upNextArticles.map(article => (
-              <UpNextTile>
-                <Video />
+              <UpNextTile key={article.title}>
+                <ImageContainer>
+                  <VideoDurationLabel>Up Next</VideoDurationLabel>
+                  <Image url={article.posterImage} />
+                </ImageContainer>
                 <ArticleTitle>{article.title}</ArticleTitle>
               </UpNextTile>
             ))}

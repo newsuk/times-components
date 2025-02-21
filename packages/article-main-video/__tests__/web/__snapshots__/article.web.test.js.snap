@@ -3,6 +3,25 @@
 exports[`1. an article 1`] = `
 <div>
   <div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <div>
+              <img
+                alt="Some Title"
+                fetchpriority="high"
+                src="https://crop169.io?resize=360"
+                srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+              />
+            </div>
+          </div>
+        </div>
+        <figcaption />
+      </figure>
+    </div>
+  </div>
+  <div>
     <div
       id="article-marketing-header"
     />
@@ -82,161 +101,7 @@ exports[`1. an article 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    SOME LABEL
-                  </div>
-                </div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div
-                  aria-level="2"
-                  role="heading"
-                >
-                  Some Standfirst
-                </div>
-                <div>
-                  <ArticleFlags
-                    flags={
-                      Array [
-                        Object {
-                          "expiryTime": "2019-03-14T12:00:00.000Z",
-                          "type": "NEW",
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks
-                        ast={
-                          Array [
-                            Object {
-                              "byline": Array [
-                                Object {
-                                  "attributes": Object {},
-                                  "children": Array [
-                                    Object {
-                                      "attributes": Object {
-                                        "value": "Some byline",
-                                      },
-                                      "children": Array [],
-                                      "name": "text",
-                                    },
-                                  ],
-                                  "name": "inline",
-                                },
-                              ],
-                            },
-                          ]
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <figure>
-              <div>
-                <div>
-                  <div>
-                    <img
-                      alt="Some Title"
-                      fetchpriority="high"
-                      src="https://crop169.io?resize=360"
-                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                    />
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <div>
-                    <div>
-                      <div>
-                        Some Caption
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks
-                    ast={
-                      Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Some byline",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "inline",
-                            },
-                          ],
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -331,6 +196,7 @@ exports[`3. an error 1`] = `null`;
 
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <div>
+  <div />
   <div>
     <div
       id="article-marketing-header"
@@ -399,63 +265,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Short Headline
-                </h1>
-                <div>
-                  <ArticleFlags />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -497,6 +307,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`5. an article with ads 1`] = `
 <div>
+  <div />
   <div>
     <div
       id="article-marketing-header"
@@ -565,63 +376,7 @@ exports[`5. an article with ads 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div>
-                  <ArticleFlags />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -668,6 +423,7 @@ exports[`5. an article with ads 1`] = `
 
 exports[`6. an article with puzzle sidebar 1`] = `
 <div>
+  <div />
   <div>
     <div
       id="article-marketing-header"
@@ -736,63 +492,7 @@ exports[`6. an article with puzzle sidebar 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div>
-                  <ArticleFlags />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -905,6 +605,25 @@ exports[`6. an article with puzzle sidebar 1`] = `
 exports[`7. should show topics when logged in or shared 1`] = `
 <div>
   <div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <div>
+              <img
+                alt="Some Title"
+                fetchpriority="high"
+                src="https://crop169.io?resize=360"
+                srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+              />
+            </div>
+          </div>
+        </div>
+        <figcaption />
+      </figure>
+    </div>
+  </div>
+  <div>
     <div
       id="article-marketing-header"
     />
@@ -984,173 +703,7 @@ exports[`7. should show topics when logged in or shared 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    SOME LABEL
-                  </div>
-                </div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div
-                  aria-level="2"
-                  role="heading"
-                >
-                  Some Standfirst
-                </div>
-                <div>
-                  <ArticleFlags
-                    flags={
-                      Array [
-                        Object {
-                          "expiryTime": "2019-03-14T12:00:00.000Z",
-                          "type": "NEW",
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks
-                        ast={
-                          Array [
-                            Object {
-                              "byline": Array [
-                                Object {
-                                  "attributes": Object {},
-                                  "children": Array [
-                                    Object {
-                                      "attributes": Object {
-                                        "value": "Some byline",
-                                      },
-                                      "children": Array [],
-                                      "name": "text",
-                                    },
-                                  ],
-                                  "name": "inline",
-                                },
-                              ],
-                            },
-                          ]
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <nav>
-                <ArticleTopics
-                  topics={
-                    Array [
-                      Object {
-                        "name": "Topic",
-                        "slug": "topic",
-                      },
-                    ]
-                  }
-                />
-              </nav>
-            </div>
-          </div>
-          <div>
-            <figure>
-              <div>
-                <div>
-                  <div>
-                    <img
-                      alt="Some Title"
-                      fetchpriority="high"
-                      src="https://crop169.io?resize=360"
-                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                    />
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <div>
-                    <div>
-                      <div>
-                        Some Caption
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks
-                    ast={
-                      Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Some byline",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "inline",
-                            },
-                          ],
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -1242,6 +795,25 @@ exports[`7. should show topics when logged in or shared 1`] = `
 exports[`8. an article with no byline 1`] = `
 <div>
   <div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <div>
+              <img
+                alt="Some Title"
+                fetchpriority="high"
+                src="https://crop169.io?resize=360"
+                srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+              />
+            </div>
+          </div>
+        </div>
+        <figcaption />
+      </figure>
+    </div>
+  </div>
+  <div>
     <div
       id="article-marketing-header"
     />
@@ -1317,117 +889,7 @@ exports[`8. an article with no byline 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    SOME LABEL
-                  </div>
-                </div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div
-                  aria-level="2"
-                  role="heading"
-                >
-                  Some Standfirst
-                </div>
-                <div>
-                  <ArticleFlags
-                    flags={
-                      Array [
-                        Object {
-                          "expiryTime": "2019-03-14T12:00:00.000Z",
-                          "type": "NEW",
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <figure>
-              <div>
-                <div>
-                  <div>
-                    <img
-                      alt="Some Title"
-                      fetchpriority="high"
-                      src="https://crop169.io?resize=360"
-                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                    />
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <div>
-                    <div>
-                      <div>
-                        Some Caption
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
@@ -1519,6 +981,25 @@ exports[`8. an article with no byline 1`] = `
 exports[`9. an article with no label 1`] = `
 <div>
   <div>
+    <div>
+      <figure>
+        <div>
+          <div>
+            <div>
+              <img
+                alt="Some Title"
+                fetchpriority="high"
+                src="https://crop169.io?resize=360"
+                srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+              />
+            </div>
+          </div>
+        </div>
+        <figcaption />
+      </figure>
+    </div>
+  </div>
+  <div>
     <div
       id="article-marketing-header"
     />
@@ -1598,156 +1079,7 @@ exports[`9. an article with no label 1`] = `
         />
       </div>
       <main>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h1
-                  aria-level="1"
-                  role="heading"
-                >
-                  Some Headline
-                </h1>
-                <div
-                  aria-level="2"
-                  role="heading"
-                >
-                  Some Standfirst
-                </div>
-                <div>
-                  <ArticleFlags
-                    flags={
-                      Array [
-                        Object {
-                          "expiryTime": "2019-03-14T12:00:00.000Z",
-                          "type": "NEW",
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <ArticleBylineWithLinks
-                        ast={
-                          Array [
-                            Object {
-                              "byline": Array [
-                                Object {
-                                  "attributes": Object {},
-                                  "children": Array [
-                                    Object {
-                                      "attributes": Object {
-                                        "value": "Some byline",
-                                      },
-                                      "children": Array [],
-                                      "name": "text",
-                                    },
-                                  ],
-                                  "name": "inline",
-                                },
-                              ],
-                            },
-                          ]
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <DatePublication
-                        date="2015-03-13T18:54:58.000Z"
-                        publication="TIMES"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <figure>
-              <div>
-                <div>
-                  <div>
-                    <img
-                      alt="Some Title"
-                      fetchpriority="high"
-                      src="https://crop169.io?resize=360"
-                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                    />
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <div>
-                    <div>
-                      <div>
-                        Some Caption
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <ArticleBylineWithLinks
-                    ast={
-                      Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Some byline",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "inline",
-                            },
-                          ],
-                        },
-                      ]
-                    }
-                  />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <DatePublication
-                    date="2015-03-13T18:54:58.000Z"
-                    publication="TIMES"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
         <article>
           <div>
             <div>
