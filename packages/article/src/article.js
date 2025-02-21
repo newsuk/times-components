@@ -4,6 +4,7 @@ import ArticleInDepth from "@times-components/article-in-depth";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
+import ArticleMainVideo from "@times-components/article-main-video";
 import Responsive from "@times-components/responsive";
 import { scales } from "@times-components/ts-styleguide";
 import { MessageManager } from "@times-components/message-bar";
@@ -14,7 +15,8 @@ export const templates = {
   magazinecomment: ArticleMagazineComment,
   magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard
+  mainstandard: ArticleMainStandard,
+  mainvideo: ArticleMainVideo
 };
 
 export class TakeoverBailout extends Error {
