@@ -186,8 +186,8 @@ const ArticleSkeleton = ({
     reorderInteractiveBeforeAd
   ];
 
-  const newContent = reduceArticleContent(content, articleContentReducers);
-
+  const newContent = true;
+  
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   const scrollToTopAndRefresh = window => {
