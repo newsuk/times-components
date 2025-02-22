@@ -119,3 +119,11 @@ Object {
   "component": "spot im : username clicked",
 }
 `;
+
+exports[`should track when user clicks view more comments 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : view more comments clicked",
+}
+`;
