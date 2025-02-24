@@ -17,11 +17,11 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl
 }) => {
-  const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
+  const [zephrEntitlementResponse, setZephrEntitlementResponse] = useState(
     undefined
   );
   const urlParams = new URLSearchParams(window.location.search);
-  const commentingAccesEntitlementFF = !!urlParams.get("entitlements");
+  const entitlementsFF = !!urlParams.get("entitlements");
 
   useEffect(
     () => {
@@ -47,43 +47,30 @@ const ArticleComments = ({
             const jsonValue = convertBase64JSONCookie(cookieValue);
             const entitlementChecker = hasEntitlement(jsonValue);
             const entitlements = entitlementChecker("functionalCommentingFull");
-            setHasCommentingEntitlement(entitlements);
+            setZephrEntitlementResponse(entitlements);
           } catch (error) {
-            setHasCommentingEntitlement(false);
+            setZephrEntitlementResponse(false);
           }
         } else {
-          setHasCommentingEntitlement(false);
+          setZephrEntitlementResponse(false);
         }
       };
 
-      if (commentingAccesEntitlementFF) {
+      if (entitlementsFF) {
+        // Fetched client side cookie if FF is true
         fetchClientSideCookie();
       }
     },
-    [commentingAccesEntitlementFF]
+    [entitlementsFF]
   );
 
-  let content;
-  if (!isEnabled && !isCommentEnabled) {
-    content = <DisabledComments />;
-  } else if (hasCommentingEntitlement) {
-    content = (
-      <Comments
-        articleId={articleId}
-        isReadOnly={isReadOnly}
-        commentingConfig={commentingConfig}
-        domainSpecificUrl={domainSpecificUrl}
-      />
-    );
-  } else {
-    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
-  }
-  if (commentingAccesEntitlementFF && hasCommentingEntitlement === undefined) {
+  // Returns null until the client side cookie is fetched and FF is true
+  if (entitlementsFF && zephrEntitlementResponse === undefined) {
     return null;
   }
 
-  if (!commentingAccesEntitlementFF) {
-    return isEnabled && isCommentEnabled ? (
+  const ACSFallbackContent = () =>
+    isEnabled && isCommentEnabled ? (
       <>
         <UserState state={UserState.showJoinTheConversationDialog}>
           <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
@@ -96,14 +83,41 @@ const ArticleComments = ({
             domainSpecificUrl={domainSpecificUrl}
           />
         </UserState>
-        ;
       </>
     ) : (
       <DisabledComments />
     );
-  }
 
-  return <UserState state={UserState.showArticleComments}>{content}</UserState>;
+  const ZephrContent = () => {
+    let content;
+    if (!isEnabled && !isCommentEnabled) {
+      content = <DisabledComments />;
+    } else if (zephrEntitlementResponse) {
+      content = (
+        <Comments
+          articleId={articleId}
+          isReadOnly={isReadOnly}
+          commentingConfig={commentingConfig}
+          domainSpecificUrl={domainSpecificUrl}
+        />
+      );
+    } else {
+      content = (
+        <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+      );
+    }
+    return (
+      <UserState state={UserState.showArticleComments}>{content}</UserState>
+    );
+  };
+
+  if (entitlementsFF) {
+    if (!zephrEntitlementResponse) {
+      return ACSFallbackContent();
+    }
+    return ZephrContent();
+  }
+  return ACSFallbackContent();
 };
 
 ArticleComments.propTypes = {
