@@ -255,4 +255,5 @@ export const InlineAdTitle = styled.span`
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 `;
