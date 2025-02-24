@@ -90,7 +90,7 @@ const ArticleComments = ({
 
   const RenderZephrBasedContent = () => {
     let content;
-    if (!isEnabled && !isCommentEnabled) {
+    if (!(isEnabled && isCommentEnabled)) {
       content = <DisabledComments />;
     } else if (zephrEntitlementResponse) {
       content = (
