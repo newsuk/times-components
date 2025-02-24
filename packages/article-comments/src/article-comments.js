@@ -69,7 +69,7 @@ const ArticleComments = ({
     return null;
   }
 
-  const ACSFallbackContent = () =>
+  const FallbackContent = () =>
     isEnabled && isCommentEnabled ? (
       <>
         <UserState state={UserState.showJoinTheConversationDialog}>
@@ -88,7 +88,7 @@ const ArticleComments = ({
       <DisabledComments />
     );
 
-  const ZephrContent = () => {
+  const RenderZephrBasedContent = () => {
     let content;
     if (!isEnabled && !isCommentEnabled) {
       content = <DisabledComments />;
@@ -113,11 +113,11 @@ const ArticleComments = ({
 
   if (entitlementsFF) {
     if (!zephrEntitlementResponse) {
-      return ACSFallbackContent();
+      return FallbackContent();
     }
-    return ZephrContent();
+    return RenderZephrBasedContent();
   }
-  return ACSFallbackContent();
+  return FallbackContent();
 };
 
 ArticleComments.propTypes = {
