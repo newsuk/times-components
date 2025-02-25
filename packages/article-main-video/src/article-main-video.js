@@ -53,8 +53,9 @@ class ArticlePage extends Component {
     const relatedArticle =
       "Inside the Balmain designer Olivier Rousteing's Parisian apartment";
     const upNextArticleFields = {
-      posterImage:
-        leadAsset.posterImage.crop169.url || leadAsset.posterImage.crops[1].url,
+      posterImage: leadAsset.posterImage.crop169
+        ? leadAsset.posterImage.crop169.url
+        : leadAsset.posterImage.crops[1].url,
       duration: formattedVideoDuration
     };
     const upNextArticles = [
@@ -148,8 +149,9 @@ class ArticlePage extends Component {
     }
 
     const leadAssetUrl =
-      article.leadAsset.posterImage.crop169.url ||
-      article.leadAsset.posterImage.crops[1].url;
+      article.leadAsset.posterImage.crop169
+        ? article.leadAsset.posterImage.crop169.url
+        : article.leadAsset.posterImage.crops[1].url;
 
     return (
       <ArticleMainVideoContainer>
