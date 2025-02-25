@@ -11,12 +11,12 @@
   },
   "breadcrumbs": [
     {
-        "title": "UK",
-        "url": "/uk"
+      "title": "UK",
+      "url": "/uk"
     },
     {
-        "title": "Defence",
-        "url": "/uk/defence"
+      "title": "Defence",
+      "url": "/uk/defence"
     }
   ],
   "bylines": [
@@ -54,7 +54,7 @@
       }
     }
   ],
-  "commentsEnabled": true,
+  "commentsEnabled": false,
   "descriptionMarkup": [
     {
       "name": "paragraph",

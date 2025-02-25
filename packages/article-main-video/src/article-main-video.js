@@ -148,10 +148,9 @@ class ArticlePage extends Component {
       return null;
     }
 
-    const leadAssetUrl =
-      article.leadAsset.posterImage.crop169
-        ? article.leadAsset.posterImage.crop169.url
-        : article.leadAsset.posterImage.crops[1].url;
+    const leadAssetUrl = article.leadAsset.posterImage.crop169
+      ? article.leadAsset.posterImage.crop169.url
+      : article.leadAsset.posterImage.crops[1].url;
 
     return (
       <ArticleMainVideoContainer>
