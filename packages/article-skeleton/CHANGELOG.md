@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.152.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.151.1...@times-components/article-skeleton@1.152.0) (2025-02-25)
+
+
+### Features
+
+* **TMRP-193:** fix indents on unordered lists ([#4077](https://github.com/newsuk/times-components/issues/4077)) ([f066235](https://github.com/newsuk/times-components/commit/f06623552ace6139498b59c7d3894a0d71383169))
+
+
+
+
+
 ## [1.151.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.151.0...@times-components/article-skeleton@1.151.1) (2025-02-25)
 
 
