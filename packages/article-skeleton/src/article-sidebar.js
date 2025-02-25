@@ -13,18 +13,23 @@ const fetchPolygonData = async () => {
       })
     });
 
-    if (!response.ok)
+    if (!response.ok) {
       throw new Error(`Network response was not ok: ${response.status}`);
+    }
 
     const data = await response.json();
-    const puzzleUrls =
-      data?.data?.puzzles?.list?.map(
-        ({ slug, shortIdentifier }) => `${baseURL}/${slug}-${shortIdentifier}`
-      ) || [];
-    return puzzleUrls;
+    const puzzles =
+      data && data.data && data.data.puzzles && data.data.puzzles.list;
+
+    const puzzleUrl = puzzles
+      ? puzzles.map(
+          ({ slug, shortIdentifier }) => `${baseURL}/${slug}-${shortIdentifier}`
+        )
+      : [];
+    return puzzleUrl;
   } catch (error) {
-    // Handle error fetching puzzle data
-    return null;
+    console.error("Error fetching puzzle data:", error);
+    return [];
   }
 };
 
