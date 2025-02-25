@@ -15,6 +15,7 @@ import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
 import providerTester from "./provider-tester";
 import inlineVideo from "./fixtures/inline-video.json";
+import articleVideoData from "../fixtures/article-video.json";
 import keyFacts from "./fixtures/key-facts.json";
 import pullQuote from "./fixtures/pull-quote.json";
 import video from "../fixtures/video.json";
@@ -23,6 +24,7 @@ import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 const fixtures = {
   articleListNoImages,
   articleListWithImages,
+  articleVideoData,
   author,
   bylineWithLink,
   inlineVideo,

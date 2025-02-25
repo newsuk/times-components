@@ -160,7 +160,7 @@ export const ArticleLabelText = styled.p`
 
 export const BreadcrumbContainer = styled.div`
   & * {
-    color: #FFF;
+    color: #FFF !important;
     justify-content: center;
   }
 `;

@@ -2184,41 +2184,31 @@ export const testFixture = {
   headline: "Some Headline",
   label: "Some Label",
   leadAsset: {
-    __typename: "Image",
-    caption: "Some Caption",
-    credits: "Some Credits",
-    crop11: {
-      __typename: "Crop",
-      ratio: "1:1",
-      url: "https://crop11.io"
-    },
-    crop23: {
-      __typename: "Crop",
-      ratio: "2:3",
-      url: "https://crop23.io"
-    },
-    crop32: {
-      __typename: "Crop",
-      ratio: "3:2",
-      url: "https://crop32.io"
-    },
-    crop45: {
-      __typename: "Crop",
-      ratio: "4:5",
-      url: "https://crop45.io"
-    },
-    crop169: {
-      __typename: "Crop",
-      ratio: "16:9",
-      url: "https://crop169.io"
-    },
-    crop1251: {
-      __typename: "Crop",
-      ratio: "1.25:1",
-      url: "https://crop1251.io"
-    },
-    id: "id-123",
-    title: "Some Title"
+    __typename: "Video",
+    id: "3dbfe6b8-680b-11e9-b277-88f3d445182c",
+    is360: false,
+    brightcoveAccountId: "5436121857001",
+    brightcovePolicyKey: "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+    brightcoveVideoId: "5831024132001",
+    brightcovePlayerId: "default",
+    caption: "This is video caption",
+    posterImage: {
+      __typename: "Image",
+      caption: "CCTV captures moment of the explosion",
+      credits: "",
+      crop32: {
+        __typename: "Crop",
+        ratio: "3:2",
+        url: "https://video32.io"
+      },
+      crop169: {
+        __typename: "Crop",
+        ratio: "16:9",
+        url: "https://video169.io"
+      },
+      id: "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
+      title: ""
+    }
   },
   longRead: false,
   relatedArticleSlice: {
