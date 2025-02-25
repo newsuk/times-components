@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.90.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.89.19...@times-components/article-magazine-comment@3.90.0) (2025-02-25)
+
+
+### Features
+
+* **tmc-362:** change ad label from h2 to span ([#4073](https://github.com/newsuk/times-components/issues/4073)) ([9108ce2](https://github.com/newsuk/times-components/commit/9108ce2595998e5aa3ff0758614297bde1cde5fb))
+
+
+
+
+
 ## [3.89.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.89.18...@times-components/article-magazine-comment@3.89.19) (2025-02-18)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
