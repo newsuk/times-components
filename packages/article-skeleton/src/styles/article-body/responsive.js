@@ -245,7 +245,7 @@ export const InlineAdWrapper = styled.div`
   }
 `;
 
-export const InlineAdTitle = styled.h2`
+export const InlineAdTitle = styled.span`
   border-bottom: 1px solid rgb(219, 219, 219);
   color: #696969;
   flex: 1 1 100%;
@@ -255,4 +255,5 @@ export const InlineAdTitle = styled.h2`
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 `;

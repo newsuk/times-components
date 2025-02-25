@@ -626,9 +626,9 @@ exports[`5. an article with ads 1`] = `
           <div>
             <div>
               <div>
-                <h2>
+                <span>
                   Advertisement
-                </h2>
+                </span>
                 <AdContainer
                   slotName="inline-ad"
                 />

@@ -212,6 +212,7 @@ exports[`full article with style 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .c11 {
@@ -1021,11 +1022,11 @@ exports[`full article with style 1`] = `
             <div
               className="c27"
             >
-              <h2
+              <span
                 className="c28"
               >
                 Advertisement
-              </h2>
+              </span>
               <AdContainer />
             </div>
             <div>
@@ -1271,6 +1272,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .c11 {
@@ -2081,11 +2083,11 @@ exports[`full article with style in the culture magazine 1`] = `
             <div
               className="c27"
             >
-              <h2
+              <span
                 className="c28"
               >
                 Advertisement
-              </h2>
+              </span>
               <AdContainer />
             </div>
             <div>
@@ -2331,6 +2333,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .c11 {
@@ -3142,11 +3145,11 @@ exports[`full article with style in the style magazine 1`] = `
             <div
               className="c27"
             >
-              <h2
+              <span
                 className="c28"
               >
                 Advertisement
-              </h2>
+              </span>
               <AdContainer />
             </div>
             <div>
@@ -3392,6 +3395,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .c11 {
@@ -4202,11 +4206,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <div
               className="c27"
             >
-              <h2
+              <span
                 className="c28"
               >
                 Advertisement
-              </h2>
+              </span>
               <AdContainer />
             </div>
             <div>
