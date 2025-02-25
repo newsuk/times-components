@@ -38,8 +38,11 @@ export const ArticleUpNext = ({ upNextArticles }) => {
             {upNextArticles.map(article => (
               <UpNextTile key={article.title}>
                 <ImageContainer>
-                  <VideoDurationLabel>Up Next</VideoDurationLabel>
-                  <Image url={article.posterImage} />
+                  <VideoDurationLabel>{article.duration}</VideoDurationLabel>
+                  <Image
+                    aspectRatio={16 / 9}
+                    uri={article.posterImage}
+                  />
                 </ImageContainer>
                 <ArticleTitle>{article.title}</ArticleTitle>
               </UpNextTile>

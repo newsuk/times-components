@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { getHeadline } from "@times-components/utils";
 import DatePublication from "@times-components/date-publication";
 import ArticleTopics from "./article-topics";
 import {
@@ -51,11 +51,15 @@ class ArticlePage extends Component {
     const formattedVideoDuration = videoDuration.replace(".", ":");
     const articleCategory = 'Life & Style';
     const relatedArticle = 'Inside the Balmain designer Olivier Rousteing\'s Parisian apartment';
+    const upNextArticleFields = {
+      posterImage: leadAsset.posterImage.crop169.url || leadAsset.posterImage.crops[1].url,
+      duration: formattedVideoDuration
+    }
     const upNextArticles = [
-      {title: 'Article Title 1', posterImage: leadAsset.posterImage.crop169.url, duration: formattedVideoDuration },
-      {title: 'Article Title 2', posterImage: leadAsset.posterImage.crop169.url, duration: formattedVideoDuration },
-      {title: 'Article Title 3', posterImage: leadAsset.posterImage.crop169.url, duration: formattedVideoDuration },
-      {title: 'Article Title 4', posterImage: leadAsset.posterImage.crop169.url, duration: formattedVideoDuration },
+      {title: 'Article Title 1', ...upNextArticleFields },
+      {title: 'Article Title 2', ...upNextArticleFields },
+      {title: 'Article Title 3', ...upNextArticleFields },
+      {title: 'Article Title 4', ...upNextArticleFields },
     ];
 
     return (
@@ -93,7 +97,7 @@ class ArticlePage extends Component {
       </>
     );
   }
-
+  
   renderContentFooter() {
     const { article } = this.props;
     const {
@@ -138,10 +142,18 @@ class ArticlePage extends Component {
       return null;
     }
 
+    const leadAssetUrl = article.leadAsset.posterImage.crop169.url || article.leadAsset.posterImage.crops[1].url
+
     return (
       <ArticleMainVideoContainer>
         <ArticleLeadAssetContainer>
-          <ArticleLeadAsset {...getLeadAsset(article)} />
+          <ArticleLeadAsset
+            aspectRatio="16:9"
+            displayImage={leadAssetUrl}
+            getImageCrop={() => leadAssetUrl}
+            leadAsset={article.leadAsset}
+            isVideo={true}
+            />
         </ArticleLeadAssetContainer>
 
         <ArticleSkeleton
