@@ -493,6 +493,7 @@ exports[`1. a full article 1`] = `
       <span>
         PROMOTED CONTENT
       </span>
+      ;
     </article>
   </main>
 </article>
