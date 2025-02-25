@@ -190,6 +190,7 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
 
   const rendererdContent = newContent && (
     <ArticleBody
@@ -259,7 +260,6 @@ const ArticleSkeleton = ({
   ) : null;
 
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
-  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
 
   const fetchPolygon = async () => {

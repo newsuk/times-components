@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import {
-  breakpoints,
-} from "@times-components/ts-styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
 import { ArticleBodyContainer, ArticleLabelText } from "../responsive";
 
 export const UpNextContainer = styled(ArticleBodyContainer)`
@@ -18,7 +16,7 @@ export const UpNextScroll = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-  
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 `;
@@ -26,7 +24,7 @@ export const UpNextTiles = styled.div`
   display: grid;
   grid-template-columns: repeat(4, minmax(156px, 1fr));
   grid-column-gap: 24px;
-  
+
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, minmax(220px, 1fr));
   }
@@ -45,16 +43,17 @@ export const UpNextTile = styled.div`
   }
 
   &:not(:last-child)::after {
-   content: '';
-   position: absolute;
-   background-color: #333;
-   z-index: 1;
-   height: 100%;
-   width: 1px;
-   right: -12px;
+    content: "";
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+    height: 100%;
+    width: 1px;
+    right: -12px;
   }
 
-  &&& .vjs-big-play-button .vjs-icon-placeholder::before, .vjs-big-play-button .vjs-icon-placeholder::after {
+  &&& .vjs-big-play-button .vjs-icon-placeholder::before,
+  .vjs-big-play-button .vjs-icon-placeholder::after {
     display: none !important;
   }
 `;
@@ -75,11 +74,11 @@ export const UpNextTileOverlay = styled.div`
   z-index: 1;
 `;
 export const UpNextTileOverlayRight = styled(UpNextTileOverlay)`
-  background-image: linear-gradient(to left, #1D1D1B, transparent);
-  display: ${({ $displayStatus }) => $displayStatus ? 'flex' : 'none'};
+  background-image: linear-gradient(to left, #1d1d1b, transparent);
+  display: ${({ $displayStatus }) => ($displayStatus ? "flex" : "none")};
 `;
 export const UpNextTileOverlayLeft = styled(UpNextTileOverlay)`
-  display: ${({ $displayStatus }) => $displayStatus ? 'flex' : 'none'};
-  background-image: linear-gradient(to right, #1D1D1B, transparent);
+  display: ${({ $displayStatus }) => ($displayStatus ? "flex" : "none")};
+  background-image: linear-gradient(to right, #1d1d1b, transparent);
   left: 0;
 `;

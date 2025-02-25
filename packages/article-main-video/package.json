@@ -66,6 +66,7 @@
     "@times-components/ts-styleguide": "1.50.34",
     "@times-components/user-state": "0.5.51",
     "@times-components/utils": "6.26.0",
+    "@times-components/image": "6.18.2",
     "@times-components/video-label": "2.11.63",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

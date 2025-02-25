@@ -675,14 +675,14 @@ export const videoLeadAsset = ({
 
 const defaultBreadcrumbs = [
   {
-    "title": "UK",
-    "url": "/uk"
+    title: "UK",
+    url: "/uk"
   },
   {
-      "title": "Defence",
-      "url": "/uk/defence"
+    title: "Defence",
+    url: "/uk/defence"
   }
-]
+];
 const defaultBylines = [
   {
     byline: [
@@ -1350,43 +1350,6 @@ const defaultHeadline =
   "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record";
 const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "HURRICANE IRMA";
-const defaultLeadAsset = {
-  __typename: "Image",
-  caption: "Chris Reynolds Gordon at one of his party venues in London",
-  credits: "The credits",
-  crop11: {
-    __typename: "Crop",
-    ratio: "1:1",
-    url: "https://crop11.io/"
-  },
-  crop23: {
-    __typename: "Crop",
-    ratio: "2:3",
-    url: "https://crop23.io/"
-  },
-  crop32: {
-    __typename: "Crop",
-    ratio: "3:2",
-    url: "https://crop32.io/"
-  },
-  crop45: {
-    __typename: "Crop",
-    ratio: "4:5",
-    url: "https://crop45.io/"
-  },
-  crop169: {
-    __typename: "Crop",
-    ratio: "16:9",
-    url: "https://crop169.io/"
-  },
-  crop1251: {
-    __typename: "Crop",
-    ratio: "1.25:1",
-    url: "https://crop1251.io/"
-  },
-  id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
-  title: "Chris Reynolds Gordon at one of his party venues in London"
-};
 const defaultLongRead = false;
 const defaultRelatedArticleSlice = {
   __typename: "StandardSlice",
@@ -2188,7 +2151,8 @@ export const testFixture = {
     id: "3dbfe6b8-680b-11e9-b277-88f3d445182c",
     is360: false,
     brightcoveAccountId: "5436121857001",
-    brightcovePolicyKey: "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+    brightcovePolicyKey:
+      "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
     brightcoveVideoId: "5831024132001",
     brightcovePlayerId: "default",
     caption: "This is video caption",
