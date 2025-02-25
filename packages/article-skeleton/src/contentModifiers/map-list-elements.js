@@ -6,7 +6,9 @@ function mapListElements(children) {
   const newContent = children.map(child => {
     if (child.name === "paragraph" || child.name === "paywall") {
       if (child.name === "paywall") {
-        mapListElements(child.children);
+        // If the child is a paywall, we need to transform the lists sitting one level deeper
+        const newChildren = mapListElements(child.children);
+        child.children = newChildren;
       }
       if (
         child.children.length === 1 &&
