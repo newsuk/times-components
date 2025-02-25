@@ -212,6 +212,7 @@ exports[`full article with style 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .c12 {
@@ -956,11 +957,11 @@ exports[`full article with style 1`] = `
               <div
                 className="c25"
               >
-                <h2
+                <span
                   className="c26"
                 >
                   Advertisement
-                </h2>
+                </span>
                 <AdContainer />
               </div>
               <div>

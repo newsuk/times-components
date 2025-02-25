@@ -489,9 +489,9 @@ exports[`4. an article with ads with .co.uk 1`] = `
         <div>
           <div>
             <div>
-              <h2>
+              <span>
                 Advertisement
-              </h2>
+              </span>
               <AdContainer
                 slotName="inline-ad"
               />
@@ -780,9 +780,9 @@ exports[`5. an article with ads with .com 1`] = `
         <div>
           <div>
             <div>
-              <h2>
+              <span>
                 Advertisement
-              </h2>
+              </span>
               <AdContainer
                 slotName="inline-ad"
               />
