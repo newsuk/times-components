@@ -23,7 +23,7 @@ export const AutoNewsletterPuff = ({
 
 type AutoNewsletterPuffProps = {
   code: string;
-  copy: string;
-  headline: string;
+  copy?: string;
+  headline?: string;
   section: string;
 };
