@@ -8,7 +8,7 @@ import { Newsletter } from './newsletter/Newsletter';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import { InpContainer } from './styles';
-import { FetchProvider, useFetch } from '../../helpers/fetch/FetchProvider';
+import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
@@ -33,44 +33,33 @@ export const InlineNewsletterPuff = ({
 
   return (
     <FetchProvider url={url} options={fetchOptions}>
-      {() => {
-        const { loading, error, data } = useFetch<any>();
-
-        if (error) {
-          return null;
-        }
-
-        if (loading || !data.newsletter) {
+      {({ loading, error, data }: any) => {
+        if (error) return null;
+        if (loading || !data) {
           return (
             <InpContainer>
               <Placeholder />
             </InpContainer>
           );
         }
+        if (data.isSubscribed) return null;
 
-        if (data.newsletter.isSubscribed) {
-          return null;
-        }
-
-        const title = isAutoNewsletterPuff ? data.newsletter.title : headline;
-        const description = isAutoNewsletterPuff
-          ? data.newsletter.description
-          : copy;
+        const title = isAutoNewsletterPuff ? data.title : headline;
+        const description = isAutoNewsletterPuff ? data.description : copy;
 
         return (
           <TrackingContextProvider
             context={{
               object: 'InlineNewsletterPuff',
               attrs: {
-                article_parent_name: data.newsletter.title,
+                article_parent_name: data.title,
                 event_navigation_action: 'navigation',
               },
             }}
             scrolledEvent={{
               object: 'NewsletterPuffButton',
               attrs: {
-                event_navigation_name:
-                  'widget : puff : sign up now : displayed',
+                event_navigation_name: data.title,
                 event_navigation_browsing_method: 'automated',
                 event_navigation_action: 'navigation',
               },
