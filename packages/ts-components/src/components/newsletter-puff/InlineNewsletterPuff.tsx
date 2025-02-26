@@ -72,8 +72,8 @@ export const InlineNewsletterPuff = ({
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
-                    headline={newsletter?.title}
-                    copy={newsletter?.description}
+                    headline={newsletter.title}
+                    copy={newsletter.description}
                     code={code}
                     subscribeNewsletter={setUrl}
                   />
