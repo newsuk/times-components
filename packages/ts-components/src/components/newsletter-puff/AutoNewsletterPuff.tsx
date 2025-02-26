@@ -15,7 +15,7 @@ export const AutoNewsletterPuff = ({
     <InlineNewsletterPuff
       code={code}
       copy={copy}
-      headline={headline}
+      headline={"ibrahim testing newsletter title"}
       section={section}
     />
   </ViewCountWrapper>
