@@ -7,6 +7,44 @@ exports[`Render comments label, when comments are loaded 1`] = `
   margin-right: auto;
 }
 
+.c2 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c1 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+}
+
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
@@ -21,24 +59,110 @@ exports[`Render comments label, when comments are loaded 1`] = `
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
+    <p
+      class="c1"
+    >
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="c3"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+      >
+        here
+      </a>
+      .
+    </p>
   </div>
 </DocumentFragment>
 `;
 
-exports[`User States No user state 1`] = `<DocumentFragment />`;
+exports[`User States No user state 1`] = `
+<DocumentFragment>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c2 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c1 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="c1"
+    >
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="c3"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+      >
+        here
+      </a>
+      .
+    </p>
+  </div>
+</DocumentFragment>
+`;
 
 exports[`User States RA Users 1`] = `
 <DocumentFragment>
@@ -308,6 +432,44 @@ exports[`single comment 1`] = `
   margin-right: auto;
 }
 
+.c2 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c1 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+}
+
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
@@ -322,38 +484,30 @@ exports[`single comment 1`] = `
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
+    <p
+      class="c1"
+    >
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="c3"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+      >
+        here
+      </a>
+      .
+    </p>
   </div>
 </DocumentFragment>
 `;
 
-exports[`window listeners added all listeners added 1`] = `
-Array [
-  "spot-im-current-user-typing-start",
-  "spot-im-current-user-sent-message",
-  "spot-im-notification-drop-down-link",
-  "spot-im-user-up-vote-click",
-  "spot-im-sort-by-select",
-  "spot-im-user-clicked-reply",
-  "spot-im-clicked-settings",
-  "spot-im-user-notifications-click",
-  "spot-im-open-user-profile",
-  "spot-im-share-type",
-  "spot-im-renew-sso",
-]
-`;
+exports[`window listeners added all listeners added 1`] = `Array []`;
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
@@ -362,6 +516,44 @@ exports[`zero comments 1`] = `
   margin-right: auto;
 }
 
+.c2 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c1 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+}
+
 @media (min-width:768px) {
   .c0 {
     width: 80.8%;
@@ -376,19 +568,25 @@ exports[`zero comments 1`] = `
 
 <div
     class="c0"
-    id="comments-container"
   >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
+    <p
+      class="c1"
+    >
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="c3"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+      >
+        here
+      </a>
+      .
+    </p>
   </div>
 </DocumentFragment>
 `;
