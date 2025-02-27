@@ -23,8 +23,8 @@ export const FetchContext = ({
   const { loading, error, data } = useFetch<{
     newsletter: {
       id: string;
-      title?: string;
-      description?: string;
+      title: string;
+      description: string;
       isSubscribed: boolean;
     };
   }>();
