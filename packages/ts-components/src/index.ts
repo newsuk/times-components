@@ -38,8 +38,8 @@ export {
   AutoNewsletterPuff
 } from './components/newsletter-puff/AutoNewsletterPuff';
 export {
-  InlineNewsletterPuff
-} from './components/newsletter-puff/InlineNewsletterPuff';
+  NewsletterProvider
+} from './components/newsletter-puff/NewsletterProvider';
 export {
   PreviewNewsletterPuff
 } from './components/newsletter-puff/preview-newsletter-puff/PreviewNewsletterPuff';
