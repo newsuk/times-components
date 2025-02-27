@@ -15,7 +15,14 @@ export const InlineNewsletterPuff = ({
   section: string;
   setUrl: any;
 }) => {
-  const { loading, error, data } = useFetch<any>();
+  const { loading, error, data } = useFetch<{
+    newsletter: {
+      id: string;
+      title?: string;
+      description?: string;
+      isSubscribed: boolean;
+    };
+  }>();
 
   if (error) {
     return null;
