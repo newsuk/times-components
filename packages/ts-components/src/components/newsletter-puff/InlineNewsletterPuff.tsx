@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import { Placeholder } from '@times-components/image';
 import { capitalise } from '@times-components/utils';
 
-import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { FetchProvider, useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import { Newsletter } from './newsletter/Newsletter';
 import { InpContainer } from './styles';
 
-export const InlineNewsletterPuff = ({
+export const FetchContext = ({
+  copy,
+  headline,
   section,
   setUrl
 }: {
+  copy?: string;
+  headline?: string;
   section: string;
   setUrl: any;
 }) => {
@@ -61,13 +66,40 @@ export const InlineNewsletterPuff = ({
       {({ intersectObserverRef }) => (
         <Newsletter
           intersectObserverRef={intersectObserverRef}
-          section={capitalise(section)}
           code={data.newsletter.id}
-          headline={data.newsletter.title}
-          copy={data.newsletter.description}
+          headline={headline || data.newsletter.title}
+          copy={copy || data.newsletter.description}
+          section={capitalise(section)}
           subscribeNewsletter={setUrl}
         />
       )}
     </TrackingContextProvider>
+  );
+};
+
+export const InlineNewsletterPuff = ({
+  code,
+  copy,
+  headline,
+  section
+}: {
+  code: string;
+  copy?: string;
+  headline?: string;
+  section: string;
+}) => {
+  const [url, setUrl] = useState<string>(
+    `/api/is-subscribed-newsletter/${code}`
+  );
+
+  return (
+    <FetchProvider url={url} options={{ credentials: 'same-origin' }}>
+      <FetchContext
+        copy={copy}
+        headline={headline}
+        section={section}
+        setUrl={setUrl}
+      />
+    </FetchProvider>
   );
 };

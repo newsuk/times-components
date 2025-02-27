@@ -21,7 +21,7 @@ import {
   ArticleHeader,
   FetchProvider,
   InArticlePuff,
-  NewsletterProvider,
+  InlineNewsletterPuff,
   PreviewNewsletterPuff,
   AutoNewsletterPuff,
   OptaCricketScorecard,
@@ -350,12 +350,12 @@ const renderers = ({
           </div>
         ) : (
           <div id={id}>
-            <NewsletterProvider
-              // analyticsStream={analyticsStream}
+            <InlineNewsletterPuff
+              analyticsStream={analyticsStream}
               key={key}
               code={code}
-              // copy={safeDecodeURIComponent(copy)}
-              // headline={safeDecodeURIComponent(headline)}
+              copy={safeDecodeURIComponent(copy)}
+              headline={safeDecodeURIComponent(headline)}
               section={section}
             />
           </div>

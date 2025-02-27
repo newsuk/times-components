@@ -1,6 +1,6 @@
 import React from 'react';
 import { ViewCountWrapper } from '../../helpers/view-count-wrapper/ViewCountWrapper';
-import { NewsletterProvider } from './NewsletterProvider';
+import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 export const AutoNewsletterPuff = ({
   code,
@@ -13,6 +13,6 @@ export const AutoNewsletterPuff = ({
     trackingName={`auto-puff-${code}`}
     displayFunction={count => count !== undefined && [1, 3, 5].includes(count)}
   >
-    <NewsletterProvider code={code} section={section} />
+    <InlineNewsletterPuff code={code} section={section} />
   </ViewCountWrapper>
 );
