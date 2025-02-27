@@ -10,11 +10,13 @@ import { Newsletter } from './newsletter/Newsletter';
 import { InpContainer } from './styles';
 
 export const FetchContext = ({
+  code,
   copy,
   headline,
   section,
   setUrl
 }: {
+  code: string;
   copy?: string;
   headline?: string;
   section: string;
@@ -66,7 +68,7 @@ export const FetchContext = ({
       {({ intersectObserverRef }) => (
         <Newsletter
           intersectObserverRef={intersectObserverRef}
-          code={data.newsletter.id}
+          code={code}
           headline={headline || data.newsletter.title}
           copy={copy || data.newsletter.description}
           section={capitalise(section)}
@@ -95,6 +97,7 @@ export const InlineNewsletterPuff = ({
   return (
     <FetchProvider url={url} options={{ credentials: 'same-origin' }}>
       <FetchContext
+        code={code}
         copy={copy}
         headline={headline}
         section={section}
