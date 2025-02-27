@@ -1,4 +1,4 @@
-import { showcaseConverter } from '@times-components/storybook';
+/*import { showcaseConverter } from '@times-components/storybook';
 
 import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
@@ -108,3 +108,4 @@ const showcase = {
 };
 
 showcaseConverter(module, showcase);
+*/
