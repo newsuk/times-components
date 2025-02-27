@@ -2,7 +2,7 @@ export const getCookieValue = cookieName => {
   const allCookies = document.cookie;
   const cookiesArray = allCookies.split(";");
   const targetCookie = cookiesArray.find(cookie => cookie.includes(cookieName));
-  return targetCookie && targetCookie.split("=")[1];
+  return targetCookie ? targetCookie.split("=")[1] : null;
 };
 
 export const getBase64CookieValue = cookieName => {
