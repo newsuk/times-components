@@ -528,11 +528,9 @@ const renderers = ({
 
     return (
       <AutoNewsletterPuff
-        // analyticsStream={analyticsStream}
+        analyticsStream={analyticsStream}
         key={key}
         code={code}
-        // copy={copy}
-        // headline={headline}
         section={section}
       />
     );
