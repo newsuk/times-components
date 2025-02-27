@@ -10,11 +10,13 @@ export const NewsletterProvider = ({
   code: string;
   section: string;
 }) => {
-  const [url] = useState<string>(`/api/is-subscribed-newsletter/${code}`);
+  const [url, setUrl] = useState<string>(
+    `/api/is-subscribed-newsletter/${code}`
+  );
 
   return (
     <FetchProvider url={url} options={{ credentials: 'same-origin' }}>
-      <InlineNewsletterPuff section={section} />
+      <InlineNewsletterPuff section={section} setUrl={setUrl} />
     </FetchProvider>
   );
 };

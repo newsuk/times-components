@@ -37,6 +37,7 @@ export const Newsletter = ({
   error
 }: NewsletterProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
+
   const PuffButton = (style: 'link' | 'button') => (
     <InpSignupCTAContainer ref={intersectObserverRef} childStyle={style}>
       <NewsletterPuffButton
@@ -51,6 +52,7 @@ export const Newsletter = ({
       />
     </InpSignupCTAContainer>
   );
+
   return (
     <React.Fragment>
       <InpContainer section={section}>
