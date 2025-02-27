@@ -70,6 +70,7 @@ const mocks = [
           id: "a2l6E000000CdHzQAK",
           isSubscribed: false,
           title: "RED BOX",
+          description: "description",
           __typename: "Newsletter"
         }
       }
