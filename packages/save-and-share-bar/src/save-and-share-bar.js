@@ -10,7 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
 
-import { checkForSymphonyExperiment } from "@times-components/utils/src/check-for-symphony-experiment";
+import { checkForSymphonyExperiment } from "@times-components/utils";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";

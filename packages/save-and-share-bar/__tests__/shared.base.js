@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer, { act } from "react-test-renderer";
-import { checkForSymphonyExperiment } from "@times-components/utils/src/check-for-symphony-experiment";
+import { checkForSymphonyExperiment } from "@times-components/utils";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import { ShareItem } from "../src/components/share-item";
@@ -14,7 +14,7 @@ const mockEvent = {
   preventDefault: () => {}
 };
 
-jest.mock("@times-components/utils/src/check-for-symphony-experiment", () => ({
+jest.mock("@times-components/utils", () => ({
   checkForSymphonyExperiment: jest.fn()
 }));
 
