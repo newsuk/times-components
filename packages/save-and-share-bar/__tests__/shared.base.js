@@ -1,17 +1,22 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer, { act } from "react-test-renderer";
+import { checkForSymphonyExperiment } from "@times-components/utils/src/check-for-symphony-experiment";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import { ShareItem } from "../src/components/share-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/components/email-share";
-import { OutlineButton } from "../src/styled";
+import { OutlineButton, ShareButtonHighlightContainer } from "../src/styled";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
   preventDefault: () => {}
 };
+
+jest.mock("@times-components/utils/src/check-for-symphony-experiment", () => ({
+  checkForSymphonyExperiment: jest.fn()
+}));
 
 export default () => {
   describe("save and share bar component", () => {
@@ -73,6 +78,49 @@ export default () => {
         </MockedProvider>
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
+    });
+    it("renders the Share button highlight when Project Symphony is on and Share button has not been clicked", () => {
+      UserState.mockStates = [UserState.showSaveAndShareBar];
+      checkForSymphonyExperiment.mockReturnValue(true);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
+      expect(
+        testInstance.root.findAllByType(ShareButtonHighlightContainer)
+      ).toBeDefined();
+    });
+    it("does not render the Share button highlight when Project Symphony is on and Share button has been clicked", () => {
+      UserState.mockStates = [UserState.showSaveAndShareBar];
+      checkForSymphonyExperiment.mockReturnValue(true);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
+      act(() => {
+        testInstance.root
+          .findAllByType(OutlineButton)[0]
+          .props.onClick(mockEvent);
+      });
+      const shareButtonHighlightContainers = testInstance.root.findAllByType(
+        ShareButtonHighlightContainer
+      );
+      expect(shareButtonHighlightContainers.length).toBe(0);
+    });
+    it("does not render the Share button highlight when Project Symphony is not on", () => {
+      UserState.mockStates = [UserState.showSaveAndShareBar];
+      checkForSymphonyExperiment.mockReturnValue(false);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
+      const shareButtonHighlightContainers = testInstance.root.findAllByType(
+        ShareButtonHighlightContainer
+      );
+      expect(shareButtonHighlightContainers.length).toBe(0);
     });
     it("onPress events triggers correctly", () => {
       const testInstance = TestRenderer.create(

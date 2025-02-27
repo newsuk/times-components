@@ -152,7 +152,7 @@ function SaveAndShareBar(props) {
             Share
           </OutlineButton>
           {showShareButtonHightlight && (
-            <ShareButtonHighlightContainer>
+            <ShareButtonHighlightContainer data-testId="share-button-highlight">
               <ShareButtonHighlight />
             </ShareButtonHighlightContainer>
           )}
