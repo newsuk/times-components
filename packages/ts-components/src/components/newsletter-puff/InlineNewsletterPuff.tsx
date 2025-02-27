@@ -8,7 +8,7 @@ import { Newsletter } from './newsletter/Newsletter';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import { InpContainer } from './styles';
-import { FetchProvider } from '../../helpers/fetch/FetchProvider';
+import { FetchProvider, useFetch } from '../../helpers/fetch/FetchProvider';
 import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
@@ -33,33 +33,44 @@ export const InlineNewsletterPuff = ({
 
   return (
     <FetchProvider url={url} options={fetchOptions}>
-      {({ loading, error, data }: any) => {
-        if (error) return null;
-        if (loading || !data) {
+      {() => {
+        const { loading, error, data } = useFetch<any>();
+        console.log('data', {data,error,loading});
+        if (error) {
+          return null;
+        }
+
+        if (loading || !data.newsletter) {
           return (
             <InpContainer>
               <Placeholder />
             </InpContainer>
           );
         }
-        if (data.isSubscribed) return null;
 
-        const title = isAutoNewsletterPuff ? data.title : headline;
-        const description = isAutoNewsletterPuff ? data.description : copy;
+        if (data.newsletter.isSubscribed) {
+          return null;
+        }
+
+        const title = isAutoNewsletterPuff ? data.newsletter.title : headline;
+        const description = isAutoNewsletterPuff
+          ? data.newsletter.description
+          : copy;
 
         return (
           <TrackingContextProvider
             context={{
               object: 'InlineNewsletterPuff',
               attrs: {
-                article_parent_name: data.title,
+                article_parent_name: data.newsletter.title,
                 event_navigation_action: 'navigation',
               },
             }}
             scrolledEvent={{
               object: 'NewsletterPuffButton',
               attrs: {
-                event_navigation_name: data.title,
+                event_navigation_name:
+                  'widget : puff : sign up now : displayed',
                 event_navigation_browsing_method: 'automated',
                 event_navigation_action: 'navigation',
               },
