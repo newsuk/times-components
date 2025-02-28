@@ -1,4 +1,4 @@
-import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/polygon-data.js";
+import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/sidebar-data.js";
 
 const baseURL = "/puzzles/word-puzzles";
 
