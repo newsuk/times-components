@@ -4,6 +4,7 @@ import { getHeadline } from "@times-components/utils";
 import DatePublication from "@times-components/date-publication";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 import { Breadcrumb } from "@times-components/ts-components";
+import Link from "@times-components/link";
 import ArticleTopics from "./article-topics";
 import {
   articleDefaultProps,
@@ -11,6 +12,7 @@ import {
 } from "./article-prop-types/article-prop-types";
 
 import {
+  VideoArticleContainer,
   ArticleBodyContainer,
   ArticleBody,
   ArticleLeadAssetContainer,
@@ -39,43 +41,72 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const {
       headline,
+      categoryPath,
       publicationName,
       publishedTime,
       shortHeadline,
-      leadAsset
+      leadAsset,
+      relatedArticles,
+      upNext
     } = article;
 
-    const categoryColor = "#65EAFF";
-    const videoDurationMS = 902000;
-    const videoDuration = (videoDurationMS / 60000).toFixed(2);
-    const formattedVideoDuration = videoDuration.replace(".", ":");
-    const articleCategory = "Life & Style";
-    const relatedArticle =
-      "Inside the Balmain designer Olivier Rousteing's Parisian apartment";
-    const upNextArticleFields = {
-      posterImage: leadAsset.posterImage.crop169
-        ? leadAsset.posterImage.crop169.url
-        : leadAsset.posterImage.crops[1].url,
-      duration: formattedVideoDuration
+    const articleCategory = categoryPath && categoryPath.split("/")[1];
+    const categoryColors = {
+      comment: "#9b1f45",
+      "business-money": "#21709c",
+      sport: "#007a3f",
+      "life-style": "#149fb5",
+      culture: "#942364",
+      travel: "#145683",
+      world: "#005e61",
+      uk: "#39556a"
     };
-    const upNextArticles = [
-      { title: "Article Title 1", ...upNextArticleFields },
-      { title: "Article Title 2", ...upNextArticleFields },
-      { title: "Article Title 3", ...upNextArticleFields },
-      { title: "Article Title 4", ...upNextArticleFields }
-    ];
+
+    const categoryColor = categoryColors[articleCategory];
+
+    const formatVideoDuration = videoDurationMs => {
+      const videoDuration = (videoDurationMs / 60000).toFixed(2);
+      const formattedVideoDuration = videoDuration.replace(".", ":");
+      return formattedVideoDuration;
+    };
+
+    const upNextArticles =
+      upNext &&
+      upNext.map(upNextArticle => ({
+        id: upNextArticle.id,
+        title: upNextArticle.headline,
+        url: upNextArticle.url,
+        posterImage: upNextArticle.leadAsset.posterImage.crop169,
+        duration: formatVideoDuration(upNextArticle.leadAsset.duration)
+      }));
+
+    const leadAssetUrl = leadAsset.posterImage && leadAsset.posterImage.crop169;
 
     return (
-      <>
+      <VideoArticleContainer>
         <ArticleBodyContainer>
+          <ArticleLeadAssetContainer>
+            <ArticleLeadAsset
+              aspectRatio="16:9"
+              displayImage={leadAssetUrl}
+              getImageCrop={() => leadAssetUrl}
+              leadAsset={article.leadAsset}
+              isVideo
+            />
+          </ArticleLeadAssetContainer>
+
           <ArticleBody>
             <ArticleLabelContainer>
               <ArticleLabelText>
-                <ArticleLabelText as="span" $color={categoryColor}>
-                  {articleCategory}
-                </ArticleLabelText>
-                {` | `}
-                {formattedVideoDuration}
+                {categoryColor && (
+                  <>
+                    <ArticleLabelText as="span" $color={categoryColor}>
+                      {articleCategory}
+                    </ArticleLabelText>
+                    {` | `}
+                  </>
+                )}
+                {formatVideoDuration(leadAsset.duration)}
               </ArticleLabelText>
             </ArticleLabelContainer>
             <ArticleContentContainer>
@@ -91,18 +122,20 @@ class ArticlePage extends Component {
               <ArticleContent>{content}</ArticleContent>
             </ArticleContentContainer>
             <SaveAndShareContainer>{SaveAndShare}</SaveAndShareContainer>
-            {relatedArticle && (
+            {!!relatedArticles && (
               <ArticleContentContainer>
-                <ArticleLabelText $color="#AAA">Related</ArticleLabelText>
-                <ArticleTitle>{relatedArticle}</ArticleTitle>
+                <ArticleLabelText $color="#AAA">
+                  Related Article
+                </ArticleLabelText>
+                <Link url={relatedArticles[0].url}>
+                  <ArticleTitle>{relatedArticles[0].headline}</ArticleTitle>
+                </Link>
               </ArticleContentContainer>
             )}
           </ArticleBody>
         </ArticleBodyContainer>
-        {upNextArticles.length && (
-          <ArticleUpNext upNextArticles={upNextArticles} />
-        )}
-      </>
+        {!!upNextArticles && <ArticleUpNext upNextArticles={upNextArticles} />}
+      </VideoArticleContainer>
     );
   }
 
@@ -111,17 +144,15 @@ class ArticlePage extends Component {
     const { breadcrumbs, topics } = article;
 
     return (
-      <ArticleBodyContainer>
-        <ContentFooterContainer>
-          {breadcrumbs &&
-            breadcrumbs.length > 0 && (
-              <BreadcrumbContainer>
-                <Breadcrumb data={breadcrumbs} />
-              </BreadcrumbContainer>
-            )}
-          <ArticleTopics topics={topics} />
-        </ContentFooterContainer>
-      </ArticleBodyContainer>
+      <ContentFooterContainer>
+        {breadcrumbs &&
+          breadcrumbs.length > 0 && (
+            <BreadcrumbContainer>
+              <Breadcrumb data={breadcrumbs} />
+            </BreadcrumbContainer>
+          )}
+        <ArticleTopics topics={topics} />
+      </ContentFooterContainer>
     );
   }
 
@@ -148,22 +179,8 @@ class ArticlePage extends Component {
       return null;
     }
 
-    const leadAssetUrl = article.leadAsset.posterImage.crop169
-      ? article.leadAsset.posterImage.crop169.url
-      : article.leadAsset.posterImage.crops[1].url;
-
     return (
       <ArticleMainVideoContainer>
-        <ArticleLeadAssetContainer>
-          <ArticleLeadAsset
-            aspectRatio="16:9"
-            displayImage={leadAssetUrl}
-            getImageCrop={() => leadAssetUrl}
-            leadAsset={article.leadAsset}
-            isVideo
-          />
-        </ArticleLeadAssetContainer>
-
         <ArticleSkeleton
           analyticsStream={analyticsStream}
           data={article}

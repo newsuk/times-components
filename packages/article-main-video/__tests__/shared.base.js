@@ -2,8 +2,8 @@
 
 import React from "react";
 import { iterator } from "@times-components/test-utils";
+import { fixtures } from "@times-components/provider-test-tools";
 import ArticleMainVideo from "../src/article-main-video";
-import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
@@ -18,7 +18,7 @@ export const snapshotTests = renderComponent => [
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={articleFixture(testFixture)}
+          article={fixtures.articleVideoData}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}

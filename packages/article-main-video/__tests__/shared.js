@@ -8,10 +8,10 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
+import { fixtures } from "@times-components/provider-test-tools";
 import { UserState } from "./mocks";
 import shared from "./shared.base";
 import ArticleMainVideo from "../src/article-main-video";
-import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
@@ -52,7 +52,7 @@ export default () => {
             {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
-            article={articleFixture(testFixture)}
+            article={fixtures.articleVideoData}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}

@@ -2,11 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { debounce } from "@times-components/utils";
 import Image from "@times-components/image";
 import PropTypes from "prop-types";
-import {
-  ArticleLabelText,
-  ArticleMainVideoContainer,
-  ArticleTitle
-} from "../styles/responsive";
+import Link from "@times-components/link";
+import { ArticleLabelText, ArticleTitle } from "../styles/responsive";
 import {
   UpNextContainer,
   UpNextTiles,
@@ -15,7 +12,8 @@ import {
   UpNextTileOverlayLeft,
   UpNextTileOverlayRight,
   ImageContainer,
-  VideoDurationLabel
+  VideoDurationLabel,
+  ArticleUpNextContainer
 } from "../styles/article-up-next";
 
 export const ArticleUpNext = ({ upNextArticles }) => {
@@ -34,16 +32,18 @@ export const ArticleUpNext = ({ upNextArticles }) => {
   };
 
   useEffect(() => {
-    scrollRef.current.addEventListener("scroll", () => {
-      debounce(handleScroll(), 1000);
-    });
-    scrollRef.current.addEventListener("scrollend", () => {
-      debounce(handleScroll(true), 500);
-    });
+    if (scrollRef.current) {
+      scrollRef.current.addEventListener("scroll", () => {
+        debounce(handleScroll(), 1000);
+      });
+      scrollRef.current.addEventListener("scrollend", () => {
+        debounce(handleScroll(true), 500);
+      });
+    }
   }, []);
 
   return (
-    <ArticleMainVideoContainer $color="#1D1D1B">
+    <ArticleUpNextContainer>
       <UpNextContainer>
         <ArticleLabelText>Up Next</ArticleLabelText>
         {upNextArticles.length > 2 && (
@@ -52,21 +52,23 @@ export const ArticleUpNext = ({ upNextArticles }) => {
         <UpNextScroll ref={scrollRef}>
           <UpNextTiles>
             {upNextArticles.map(article => (
-              <UpNextTile key={article.title}>
-                <ImageContainer>
-                  <VideoDurationLabel>{article.duration}</VideoDurationLabel>
-                  <Image aspectRatio={16 / 9} uri={article.posterImage} />
-                </ImageContainer>
-                <ArticleTitle>{article.title}</ArticleTitle>
+              <UpNextTile key={article.id}>
+                <Link url={article.url}>
+                  <ImageContainer>
+                    <VideoDurationLabel>{article.duration}</VideoDurationLabel>
+                    <Image aspectRatio={16 / 9} uri={article.posterImage} />
+                  </ImageContainer>
+                  <ArticleTitle>{article.title}</ArticleTitle>
+                </Link>
               </UpNextTile>
             ))}
           </UpNextTiles>
         </UpNextScroll>
-        {upNextArticles.length > 2 && (
+        {upNextArticles.length > 1 && (
           <UpNextTileOverlayRight $displayStatus={showOverlay.right} />
         )}
       </UpNextContainer>
-    </ArticleMainVideoContainer>
+    </ArticleUpNextContainer>
   );
 };
 
