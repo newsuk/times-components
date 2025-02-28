@@ -23,10 +23,14 @@ export const FetchContext = ({
   setUrl: any;
 }) => {
   const { loading, error, data } = useFetch<{
-    newsletter: {
+    newsletter?: {
       id: string;
       title: string;
       description: string;
+      isSubscribed: boolean;
+    };
+    subscribeNewsletter?: {
+      id: string;
       isSubscribed: boolean;
     };
   }>();
@@ -43,7 +47,7 @@ export const FetchContext = ({
     );
   }
 
-  if (data.newsletter.isSubscribed) {
+  if (data.newsletter && data.newsletter.isSubscribed) {
     return null;
   }
 
@@ -52,7 +56,7 @@ export const FetchContext = ({
       context={{
         object: 'InlineNewsletterPuff',
         attrs: {
-          article_parent_name: data.newsletter.title,
+          article_parent_name: data?.newsletter?.title,
           event_navigation_action: 'navigation'
         }
       }}
