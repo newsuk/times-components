@@ -15,6 +15,8 @@ const mockEvent = {
 };
 
 jest.mock("@times-components/utils", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/utils"),
   checkForSymphonyExperiment: jest.fn()
 }));
 

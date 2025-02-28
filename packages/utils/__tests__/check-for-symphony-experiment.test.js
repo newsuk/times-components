@@ -1,8 +1,6 @@
-import {
-  getCookieValue,
-  getBase64CookieValue,
-  checkForSymphonyExperiment
-} from "../src/check-for-symphony-experiment";
+import getCookieValue from "../src/get-cookie-value";
+import getBase64CookieValue from "../src/get-base64-cookie-value";
+import checkForSymphonyExperiment from "../src/check-for-symphony-experiment";
 
 describe("getCookieValue", () => {
   beforeEach(() => {
