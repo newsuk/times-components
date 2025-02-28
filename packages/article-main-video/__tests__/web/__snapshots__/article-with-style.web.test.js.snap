@@ -19,7 +19,7 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c17 {
+.c16 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c36 {
+.c37 {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -53,11 +53,11 @@ exports[`full article with style 1`] = `
   color: #696969;
 }
 
-.c36:hover {
+.c37:hover {
   color: #006699;
 }
 
-.c38 {
+.c39 {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -78,18 +78,18 @@ exports[`full article with style 1`] = `
   color: #01000d;
 }
 
-.c38:hover {
+.c39:hover {
   color: #006699;
 }
 
-.c35 {
+.c36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c37 {
+.c38 {
   height: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -119,7 +119,28 @@ exports[`full article with style 1`] = `
   display: table;
 }
 
-.c16 {
+.c17 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #333333;
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.c17 cite {
+  font-style: normal;
+}
+
+.c18 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -161,7 +182,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -189,7 +210,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c21 {
+.c22 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -258,7 +279,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c18 {
+.c19 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -267,7 +288,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c19 {
+.c20 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -366,18 +387,18 @@ exports[`full article with style 1`] = `
   padding: 0;
 }
 
-.c33 {
+.c34 {
   padding: 20px;
   margin: 0 auto;
   width: 100%;
   max-width: 1144px;
 }
 
-.c22.c22.c22 {
+.c23.c23.c23 {
   margin: 8px 0 28px;
 }
 
-.c22.c22.c22 > div {
+.c23.c23.c23 > div {
   padding: 0;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -385,19 +406,19 @@ exports[`full article with style 1`] = `
   align-items: flex-start;
 }
 
-.c22.c22.c22 button {
+.c23.c23.c23 button {
   color: #e4e4e4;
   background-color: transparent;
   border-color: #e4e4e4;
 }
 
-.c39.c39.c39 {
+.c40.c40.c40 {
   border-bottom: 1px solid #e4e4e4;
   border-top: 1px solid #e4e4e4;
   margin-top: 20px;
 }
 
-.c39.c39.c39.c39.c39.c39.c39.c39.c39 div {
+.c40.c40.c40.c40.c40.c40.c40.c40.c40 div {
   border-color: #E4E4E !important;
   color: #e4e4e4 !important;
 }
@@ -433,7 +454,7 @@ exports[`full article with style 1`] = `
   margin: 0;
 }
 
-.c24 {
+.c25 {
   font-family: "TimesModern-Bold";
   font-size: 2rem;
   line-height: 1.125;
@@ -477,7 +498,7 @@ exports[`full article with style 1`] = `
   z-index: 2;
 }
 
-.c23 {
+.c24 {
   font-family: "Roboto";
   font-size: 1.2rem;
   line-height: 1.5;
@@ -494,7 +515,7 @@ exports[`full article with style 1`] = `
   z-index: 2;
 }
 
-.c34 * {
+.c35 * {
   color: #fff !important;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -502,17 +523,17 @@ exports[`full article with style 1`] = `
   justify-content: center;
 }
 
-.c25 {
+.c26 {
   width: 100%;
   background-color: #1d1d1b;
 }
 
-.c26 {
+.c27 {
   position: relative;
   padding: 20px;
 }
 
-.c27 {
+.c28 {
   overflow-x: auto;
   position: relative;
   -ms-overflow-style: none;
@@ -522,17 +543,17 @@ exports[`full article with style 1`] = `
   scrollbar-width: none;
 }
 
-.c27::-webkit-scrollbar {
+.c28::-webkit-scrollbar {
   display: none;
 }
 
-.c28 {
+.c29 {
   display: grid;
   grid-template-columns: repeat(4,minmax(156px,1fr));
   grid-column-gap: 24px;
 }
 
-.c29 {
+.c30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -544,11 +565,11 @@ exports[`full article with style 1`] = `
   position: relative;
 }
 
-.c29 * {
+.c30 * {
   max-width: 100%;
 }
 
-.c29:not(:last-child)::after {
+.c30:not(:last-child)::after {
   content: "";
   position: absolute;
   background-color: #333;
@@ -558,17 +579,17 @@ exports[`full article with style 1`] = `
   right: -12px;
 }
 
-.c29.c29.c29 .vjs-big-play-button .vjs-icon-placeholder::before,
-.c29 .vjs-big-play-button .vjs-icon-placeholder::after {
+.c30.c30.c30 .vjs-big-play-button .vjs-icon-placeholder::before,
+.c30 .vjs-big-play-button .vjs-icon-placeholder::after {
   display: none !important;
 }
 
-.c30 {
+.c31 {
   position: relative;
   margin-bottom: 8px;
 }
 
-.c31 {
+.c32 {
   font-family: "Roboto";
   font-size: 1.2rem;
   line-height: 1.5;
@@ -588,7 +609,7 @@ exports[`full article with style 1`] = `
   position: absolute;
 }
 
-.c32 {
+.c33 {
   background-image: linear-gradient(to left,#1d1d1b,transparent);
   display: -webkit-box;
   display: -webkit-flex;
@@ -613,7 +634,14 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c17 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
     padding-left: 0px;
   }
 }
@@ -632,7 +660,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c21 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -641,13 +669,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -656,7 +684,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
@@ -689,13 +717,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c19 {
     min-height: 123px;
   }
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c19 {
     min-height: 283px;
   }
 }
@@ -754,7 +782,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c33 {
+  .c34 {
     padding: 24px;
   }
 }
@@ -772,7 +800,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     background-color: unset;
     width: 220px;
     -webkit-order: 0;
@@ -782,19 +810,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c27 {
     padding: 24px;
   }
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c27 {
     padding: 0;
   }
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c29 {
     grid-column-gap: 0;
     grid-row-gap: 24px;
     grid-template-columns: 1fr;
@@ -802,7 +830,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29:not(:last-child)::after {
+  .c30:not(:last-child)::after {
     height: 1px;
     width: 100%;
     left: 0;
@@ -811,7 +839,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (max-width:1023px) {
-  .c32 {
+  .c33 {
     position: absolute;
     top: 0;
     right: 0;
@@ -920,9 +948,96 @@ exports[`full article with style 1`] = `
                   <div
                     className="c14"
                   >
-                    <PullQuote>
-                      The pull quote content
-                    </PullQuote>
+                    <blockquote>
+                      <div
+                        className="c15"
+                        marginBottom="15px"
+                        marginTop={0}
+                      >
+                        <div
+                          className="c16"
+                          color="#1D1D1B"
+                          fontFamily="TimesModern-Regular, TimesModern-Regular-fallback, serif"
+                          fontSize={75}
+                          marginBottom="-40px"
+                          marginTop={0}
+                        >
+                          “
+                        </div>
+                        <div
+                          className="c17"
+                        >
+                          <cite>
+                            The pull quote content
+                          </cite>
+                        </div>
+                        <div
+                          alignItems="center"
+                          className="c15"
+                          display="flex"
+                          flexDirection="row"
+                          height={20}
+                          marginTop="10px"
+                        >
+                          <div
+                            className="c16"
+                            color="#696969"
+                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                            fontSize={12}
+                            lineHeight="13px"
+                            marginBottom={0}
+                          >
+                            AName
+                          </div>
+                          <div
+                            className="c16"
+                            color="#696969"
+                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                            fontSize={12}
+                            lineHeight="13px"
+                            marginBottom={0}
+                          >
+                            , a text
+                          </div>
+                          <div
+                            alignItems="center"
+                            borderLeftColor="#DBDBDB"
+                            borderLeftWidth={1}
+                            className="c15"
+                            display="flex"
+                            flexDirection="row"
+                            height={13}
+                            marginLeft={7}
+                            paddingLeft={7}
+                          >
+                            <svg>
+                              <title>
+                                Twitter Icon
+                              </title>
+                              <g>
+                                <path />
+                              </g>
+                              <defs>
+                                <clipPath>
+                                  <rect />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <TextLink
+                              className="pullQuoteTwitterLink"
+                              color="#006699"
+                              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                              fontSize={12}
+                              lineHeight={13}
+                              marginLeft={4}
+                              textDecorationLine="none"
+                            >
+                              @AName
+                            </TextLink>
+                          </div>
+                        </div>
+                      </div>
+                    </blockquote>
                   </div>
                 </div>
                 <div
@@ -963,7 +1078,7 @@ exports[`full article with style 1`] = `
                     </div>
                     <figcaption>
                       <div
-                        className="c16"
+                        className="c18"
                       >
                         <div
                           className="c15"
@@ -973,7 +1088,7 @@ exports[`full article with style 1`] = `
                             paddingTop="10px"
                           >
                             <div
-                              className="c17"
+                              className="c16"
                               color="#696969"
                               fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                               fontSize={14}
@@ -989,23 +1104,14 @@ exports[`full article with style 1`] = `
                   </figure>
                 </div>
                 <div
-                  className="c18"
+                  className="c19"
                 >
                   <span
-                    className="c19"
+                    className="c20"
                   >
                     Advertisement
                   </span>
                   <AdContainer />
-                </div>
-                <div>
-                  <div>
-                    <div
-                      className="c20"
-                    >
-                      <ArticleImage />
-                    </div>
-                  </div>
                 </div>
                 <div>
                   <div>
@@ -1016,10 +1122,19 @@ exports[`full article with style 1`] = `
                     </div>
                   </div>
                 </div>
+                <div>
+                  <div>
+                    <div
+                      className="c22"
+                    >
+                      <ArticleImage />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
-              className="c22"
+              className="c23"
             >
               <SaveAndShareBar />
             </div>
@@ -1027,13 +1142,13 @@ exports[`full article with style 1`] = `
               className="c7"
             >
               <p
-                className="c23"
+                className="c24"
               >
                 Related Article
               </p>
               <Link>
                 <span
-                  className="c24"
+                  className="c25"
                 >
                   Related Article 1
                 </span>
@@ -1042,10 +1157,10 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <p
               className="c6"
@@ -1053,48 +1168,48 @@ exports[`full article with style 1`] = `
               Up Next
             </p>
             <div
-              className="c27"
+              className="c28"
             >
               <div
-                className="c28"
+                className="c29"
               >
                 <div
-                  className="c29"
+                  className="c30"
                 >
                   <Link>
                     <div
-                      className="c30"
+                      className="c31"
                     >
                       <p
-                        className="c31"
+                        className="c32"
                       >
                         15:03
                       </p>
                       <Image />
                     </div>
                     <span
-                      className="c24"
+                      className="c25"
                     >
                       Related Article 1
                     </span>
                   </Link>
                 </div>
                 <div
-                  className="c29"
+                  className="c30"
                 >
                   <Link>
                     <div
-                      className="c30"
+                      className="c31"
                     >
                       <p
-                        className="c31"
+                        className="c32"
                       >
                         15:03
                       </p>
                       <Image />
                     </div>
                     <span
-                      className="c24"
+                      className="c25"
                     >
                       Related Article 2
                     </span>
@@ -1103,41 +1218,41 @@ exports[`full article with style 1`] = `
               </div>
             </div>
             <div
-              className="c32"
+              className="c33"
             />
           </div>
         </div>
       </div>
       <div
-        className="c33"
+        className="c34"
       >
         <div
-          className="c34"
+          className="c35"
         >
           <nav
-            className="c35"
+            className="c36"
           >
             <a
-              className="c36"
+              className="c37"
             >
               UK
             </a>
             <div
-              className="c37"
+              className="c38"
             >
               <svg>
                 <path />
               </svg>
             </div>
             <a
-              className="c38"
+              className="c39"
             >
               Defence
             </a>
           </nav>
         </div>
         <nav
-          className="c39"
+          className="c40"
         >
           <ArticleTopics
             justifyContent="flex-start"
