@@ -1,5 +1,6 @@
 import schema from "@times-components/schema/schema.json";
 import article from "./article";
+import articleVideo from "./article-video";
 import articleExtras from "./article-extras";
 import articleListNoImages from "./fixtures/article-list-no-images.json";
 import articleListWithImages from "./fixtures/article-list-with-images.json";
@@ -14,6 +15,7 @@ import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
 import providerTester from "./provider-tester";
 import inlineVideo from "./fixtures/inline-video.json";
+import articleVideoData from "../fixtures/article-video.json";
 import keyFacts from "./fixtures/key-facts.json";
 import pullQuote from "./fixtures/pull-quote.json";
 import video from "../fixtures/video.json";
@@ -22,6 +24,7 @@ import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 const fixtures = {
   articleListNoImages,
   articleListWithImages,
+  articleVideoData,
   author,
   bylineWithLink,
   inlineVideo,
@@ -35,6 +38,7 @@ const makeMocks = mm(schema);
 export * from "./helpers";
 export {
   article,
+  articleVideo,
   articleExtras,
   authorProfile,
   clientTester,
