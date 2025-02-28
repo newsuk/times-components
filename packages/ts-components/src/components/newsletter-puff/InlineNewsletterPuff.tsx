@@ -51,12 +51,15 @@ export const FetchContext = ({
     return null;
   }
 
+  const title = headline || (data.newsletter && data.newsletter.title);
+  const description = copy || (data.newsletter && data.newsletter.description);
+
   return (
     <TrackingContextProvider
       context={{
         object: 'InlineNewsletterPuff',
         attrs: {
-          article_parent_name: data?.newsletter?.title,
+          article_parent_name: title,
           event_navigation_action: 'navigation'
         }
       }}
@@ -73,8 +76,8 @@ export const FetchContext = ({
         <Newsletter
           intersectObserverRef={intersectObserverRef}
           code={code}
-          headline={headline || data.newsletter.title}
-          copy={copy || data.newsletter.description}
+          headline={title}
+          copy={description}
           section={capitalise(section)}
           subscribeNewsletter={setUrl}
         />
