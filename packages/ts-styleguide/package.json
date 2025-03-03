@@ -51,8 +51,6 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/link": "3.17.34",
-    "@times-components/utils": "6.26.0",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },

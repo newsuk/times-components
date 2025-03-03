@@ -58,6 +58,7 @@
     "@times-components/article-magazine-standard": "3.90.2",
     "@times-components/article-main-comment": "2.94.2",
     "@times-components/article-main-standard": "3.102.2",
+    "@times-components/article-main-video": "1.0.0",
     "@times-components/context": "1.24.0",
     "@times-components/message-bar": "0.7.86",
     "@times-components/provider": "1.41.5",

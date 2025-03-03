@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { TcScrollView } from '@times-components/utils';
-import { TsTcText, TsTcView } from './components';
+import { TsTcText, TsTcView, TsTcScrollView } from './components';
 
 import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
 import styles from './helpers/storybookStyles';
@@ -45,7 +44,7 @@ const fontFixture = () => {
   const styleguide = timesStyleguide();
   const phrase = 'The Quick Brown Fox Jumps Over the Lazy Dog';
   return (
-    <TcScrollView>
+    <TsTcScrollView>
       <TsTcView style={styles.showoffFontsContainer}>
         <TsTcText style={styles.headline}>Body</TsTcText>
         {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
@@ -95,7 +94,7 @@ const fontFixture = () => {
         </TsTcText>
         {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
       </TsTcView>
-    </TcScrollView>
+    </TsTcScrollView>
   );
 };
 
