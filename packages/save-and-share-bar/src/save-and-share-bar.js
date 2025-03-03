@@ -52,7 +52,6 @@ function SaveAndShareBar(props) {
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
   const [shareButtonClicked, setShareButtonClicked] = React.useState(false);
-  const [isSymphonyExperiment, setIsSymphonyExperiment] = React.useState(false);
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -86,11 +85,6 @@ function SaveAndShareBar(props) {
     };
   }, []);
 
-  useEffect(() => {
-    const isSymphonyExperimentOn = checkForSymphonyExperiment();
-    setIsSymphonyExperiment(isSymphonyExperimentOn);
-  }, []);
-
   const barPosition = barRef.current
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
@@ -115,13 +109,9 @@ function SaveAndShareBar(props) {
     setPopoverOpen(prev => !prev);
   };
 
-  const setShareButtonClickState = () => {
-    setShareButtonClicked(true);
-  };
-
   const handleClick = e => {
     e.preventDefault();
-    setShareButtonClickState();
+    setShareButtonClicked(true);
     togglePopover();
   };
 
@@ -133,14 +123,11 @@ function SaveAndShareBar(props) {
     onCopyLink();
   }
 
-  const showShareButtonHightlight = isSymphonyExperiment && !shareButtonClicked;
+  const isSymphonyExperiment = checkForSymphonyExperiment();
+  const showShareButtonHighlight = isSymphonyExperiment && !shareButtonClicked;
 
   return (
-    <SaveAndShareBarContainer
-      data-testid="save-and-share-bar"
-      ref={barRef}
-      showShareButtonHightlight={showShareButtonHightlight}
-    >
+    <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
       {sharingEnabled && (
         <ShareButtonContainer>
           <OutlineButton
@@ -151,7 +138,7 @@ function SaveAndShareBar(props) {
             <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
-          {showShareButtonHightlight && (
+          {showShareButtonHighlight && (
             <ShareButtonHighlightContainer data-testId="share-button-highlight">
               <ShareButtonHighlight />
             </ShareButtonHighlightContainer>
