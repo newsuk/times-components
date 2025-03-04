@@ -1,26 +1,13 @@
 /* eslint-disable react/no-multi-comp */
 
 import React from "react";
-import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import { fixtures } from "@times-components/provider-test-tools";
 import ArticleMainVideo from "../src/article-main-video";
-import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
-
-const emptyArticle = {
-  bylines: null,
-  expirableFlags: null,
-  hasVideo: null,
-  label: null,
-  leadAsset: null,
-  longRead: false,
-  relatedArticleSlice: null,
-  standfirst: null,
-  topics: null
-};
 
 export const snapshotTests = renderComponent => [
   {
@@ -31,7 +18,7 @@ export const snapshotTests = renderComponent => [
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={articleFixture(testFixture)}
+          article={fixtures.articleVideoData}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
@@ -82,7 +69,7 @@ export const snapshotTests = renderComponent => [
 
       expect(output).toMatchSnapshot();
     }
-  },
+  }
 ];
 
 export default (renderComponent, platformTests = []) => {
@@ -100,10 +87,7 @@ export default (renderComponent, platformTests = []) => {
     global.Intl = realIntl;
   });
 
-  iterator([
-    ...snapshotTests(renderComponent),
-    ...platformTests
-  ]);
+  iterator([...snapshotTests(renderComponent), ...platformTests]);
 };
 
 export { adConfig };

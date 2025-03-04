@@ -65,7 +65,9 @@ const headlineCasePicker = (
 ) =>
   section &&
   section.toLowerCase() === 'style' &&
-  ['indepth', 'magazinestandard', 'magazinecomment', 'mainvideo'].includes(template)
+  ['indepth', 'magazinestandard', 'magazinecomment', 'mainvideo'].includes(
+    template
+  )
     ? 'none'
     : null;
 

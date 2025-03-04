@@ -17,41 +17,33 @@ const preventDefaultedAction = decorateAction =>
 const renderArticle = ({
   adConfig = articleAdConfig,
   analyticsStream,
-  decorateAction,
+  decorateAction
 }) => (
   <Article
     adConfig={adConfig}
     analyticsStream={analyticsStream}
     article={fixtures.articleVideoData}
     isLoading={false}
-    onAuthorPress={preventDefaultedAction(decorateAction)(
-      "onAuthorPress"
-    )}
+    onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
     onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
       "onCommentGuidelinesPress"
     )}
-    onCommentsPress={preventDefaultedAction(decorateAction)(
-      "onCommentsPress"
-    )}
+    onCommentsPress={preventDefaultedAction(decorateAction)("onCommentsPress")}
     onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
     onRelatedArticlePress={preventDefaultedAction(decorateAction)(
       "onRelatedArticlePress"
     )}
-    onTopicPress={preventDefaultedAction(decorateAction)(
-      "onTopicPress"
-    )}
+    onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
     onTwitterLinkPress={preventDefaultedAction(decorateAction)(
       "onTwitterLinkPress"
     )}
-    onVideoPress={preventDefaultedAction(decorateAction)(
-      "onVideoPress"
-    )}
+    onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
   />
 );
 
 export default {
   children: [
-    {      
+    {
       component: ({ boolean, color, select }, { decorateAction }) =>
         renderArticle({
           boolean,

@@ -13,10 +13,9 @@ import {
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/ts-styleguide";
+import { fixtures } from "@times-components/provider-test-tools";
 import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
-
 import Article from "../../src/article-main-video";
-import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
@@ -47,25 +46,6 @@ const tests = [
   {
     name: "a full article with video as the lead asset",
     test() {
-      const article = articleFixture({
-        ...testFixture,
-        content: [
-          {
-            attributes: {},
-            children: [
-              {
-                attributes: {
-                  value: "Some content"
-                },
-                children: [],
-                name: "text"
-              }
-            ],
-            name: "paragraph"
-          }
-        ]
-      });
-
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testInstance = TestRenderer.create(
@@ -79,7 +59,7 @@ const tests = [
             <Article
               adConfig={adConfig}
               analyticsStream={() => {}}
-              article={article}
+              article={fixtures.articleVideoData}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
               onCommentsPress={() => {}}
