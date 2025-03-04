@@ -13,8 +13,7 @@ import {
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/ts-styleguide";
-import { fixtures } from "@times-components/provider-test-tools";
-import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
+import { fixtures, MockedProvider } from "@times-components/provider-test-tools";
 import Article from "../../src/article-main-video";
 import { adConfig } from "../ad-mock";
 
