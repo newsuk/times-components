@@ -103,156 +103,50 @@ exports[`1. an article 1`] = `
         />
       </Helmet>
       <div>
-        <div>
-          <div>
-            <div>
-              <figure>
-                <div>
-                  <div>
-                    <div
-                      data-is-360={null}
-                    >
-                      <div>
-                        <video
-                          controls={true}
-                          data-account="5436121857001"
-                          data-application-id={true}
-                          data-embed="default"
-                          data-player="default"
-                          data-video-id="5831024132001"
-                          id="5831024132001-5436121857001-c80017b1-f7f1-44d9-9519-70976de55b14"
-                          poster="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=960"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption />
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>
-                15:03
-              </p>
-            </div>
-            <div>
-              <h1>
-                Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
-              </h1>
-              <div>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </div>
-              <div>
-                <p
-                  id="U123456789101112131415"
-                >
-                  As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
-                </p>
-              </div>
-            </div>
-            <div />
-            <div>
-              <p>
-                Related Article
-              </p>
-              <Link
-                url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
-              >
-                <span>
-                  Related Article 1
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <p>
-              Up Next
-            </p>
-            <div>
-              <div>
-                <div>
-                  <Link
-                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
-                  >
-                    <div>
-                      <p>
-                        15:03
-                      </p>
-                      <Image
-                        aspectRatio={1.7777777777777777}
-                      />
-                    </div>
-                    <span>
-                      Related Article 1
-                    </span>
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    url="https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv"
-                  >
-                    <div>
-                      <p>
-                        15:03
-                      </p>
-                      <Image
-                        aspectRatio={1.7777777777777777}
-                      />
-                    </div>
-                    <span>
-                      Related Article 2
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div />
-          </div>
-        </div>
+        <AdContainer
+          slotName="header"
+        />
       </div>
-      <div>
-        <div>
-          <nav
-            aria-label="breadcrumbs"
-          >
-            <a
-              aria-current="false"
-              href="/uk"
-              selected={false}
-            >
-              UK
-            </a>
+      <main>
+        <div />
+        <article>
+          <div>
             <div>
-              <svg
-                color="#aaaaaa"
-                fill="none"
-                height={16}
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
+              <p
+                id="U123456789101112131415"
               >
-                <path
-                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-                  fill="#aaaaaa"
-                />
-              </svg>
+                As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
+              </p>
+              <div
+                id="paywall-portal-article-footer"
+              />
             </div>
-            <a
-              aria-current="page"
-              href="/uk/defence"
-              selected={true}
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
-      </div>
+          </div>
+          <ArticleExtras
+            articleHeadline="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+            articleUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+            commentsEnabled={false}
+            domainSpecificUrl="https://www.thetimes.co.uk"
+            publishedTime="2015-03-13T18:54:58.000Z"
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            section="business"
+            sharingEnabled={true}
+            topics={
+              Array [
+                Object {
+                  "name": "Islington",
+                  "slug": "islington",
+                },
+                Object {
+                  "name": "Chelsea",
+                  "slug": "chelsea",
+                },
+              ]
+            }
+          />
+        </article>
+      </main>
       <AdContainer
         slotName="pixel"
       />
@@ -374,165 +268,35 @@ exports[`4. should show topics when logged in or shared 1`] = `
         />
       </Helmet>
       <div>
-        <div>
+        <AdContainer
+          slotName="header"
+        />
+      </div>
+      <main>
+        <div />
+        <article>
           <div>
             <div>
-              <figure>
-                <div>
-                  <div>
-                    <div
-                      data-is-360={null}
-                    >
-                      <div>
-                        <video
-                          controls={true}
-                          data-account="5436121857001"
-                          data-application-id={true}
-                          data-embed="default"
-                          data-player="default"
-                          data-video-id="5831024132001"
-                          id="5831024132001-5436121857001-c80017b1-f7f1-44d9-9519-70976de55b14"
-                          poster="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=960"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <figcaption />
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>
-                15:03
+              <p
+                id="U123456789101112131415"
+              >
+                As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
               </p>
-            </div>
-            <div>
-              <h1>
-                Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
-              </h1>
-              <div>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </div>
-              <div>
-                <p
-                  id="U123456789101112131415"
-                >
-                  As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
-                </p>
-              </div>
-            </div>
-            <div>
-              <SaveAndShareBar
-                articleHeadline="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
-                articleUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
-                hostName="https://www.thetimes.co.uk"
-                savingEnabled={true}
-                sharingEnabled={true}
+              <div
+                id="paywall-portal-article-footer"
               />
             </div>
-            <div>
-              <p>
-                Related Article
-              </p>
-              <Link
-                url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
-              >
-                <span>
-                  Related Article 1
-                </span>
-              </Link>
-            </div>
           </div>
-        </div>
-        <div>
-          <div>
-            <p>
-              Up Next
-            </p>
-            <div>
-              <div>
-                <div>
-                  <Link
-                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
-                  >
-                    <div>
-                      <p>
-                        15:03
-                      </p>
-                      <Image
-                        aspectRatio={1.7777777777777777}
-                      />
-                    </div>
-                    <span>
-                      Related Article 1
-                    </span>
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    url="https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv"
-                  >
-                    <div>
-                      <p>
-                        15:03
-                      </p>
-                      <Image
-                        aspectRatio={1.7777777777777777}
-                      />
-                    </div>
-                    <span>
-                      Related Article 2
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <nav
-            aria-label="breadcrumbs"
-          >
-            <a
-              aria-current="false"
-              href="/uk"
-              selected={false}
-            >
-              UK
-            </a>
-            <div>
-              <svg
-                color="#aaaaaa"
-                fill="none"
-                height={16}
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-                  fill="#aaaaaa"
-                />
-              </svg>
-            </div>
-            <a
-              aria-current="page"
-              href="/uk/defence"
-              selected={true}
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
-        <nav>
-          <ArticleTopics
+          <ArticleExtras
+            articleHeadline="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+            articleUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+            commentsEnabled={false}
+            domainSpecificUrl="https://www.thetimes.co.uk"
+            publishedTime="2015-03-13T18:54:58.000Z"
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            section="business"
+            sharingEnabled={true}
             topics={
               Array [
                 Object {
@@ -546,8 +310,8 @@ exports[`4. should show topics when logged in or shared 1`] = `
               ]
             }
           />
-        </nav>
-      </div>
+        </article>
+      </main>
       <AdContainer
         slotName="pixel"
       />
