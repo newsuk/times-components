@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c15 {
+.c11 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,7 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c16 {
+.c13 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -32,77 +32,43 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c37 {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-grid;
-  font-family: Roboto-Regular;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.250;
-  -webkit-letter-spacing: 0%;
-  -moz-letter-spacing: 0%;
-  -ms-letter-spacing: 0%;
-  letter-spacing: 0%;
-  font-stretch: normal display:inline-grid;
-  background-color: transparent;
-  min-height: 32px;
+.c19 {
   border: none;
-  place-content: center;
-  color: #696969;
-}
-
-.c37:hover {
-  color: #006699;
-}
-
-.c39 {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-grid;
-  font-family: Roboto-Regular;
-  font-size: 12px;
+  background-color: #9f0000;
+  padding-block: 8px;
+  padding-inline: 12px;
+  font-family: Roboto;
+  font-size: 1.4000000000000001rem;
   font-weight: 500;
-  line-height: 1.250;
-  -webkit-letter-spacing: 0%;
-  -moz-letter-spacing: 0%;
-  -ms-letter-spacing: 0%;
-  letter-spacing: 0%;
-  font-stretch: normal display:inline-grid;
-  background-color: transparent;
-  min-height: 32px;
-  border: none;
+  -webkit-letter-spacing: 0em;
+  -moz-letter-spacing: 0em;
+  -ms-letter-spacing: 0em;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+  display: inline-grid;
+  grid-template-columns: repeat(2,auto);
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
   place-content: center;
-  color: #01000d;
+  place-items: center;
+  cursor: pointer;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,0.5,1);
+  transition-timing-function: cubic-bezier(0,0,0.5,1);
 }
 
-.c39:hover {
-  color: #006699;
+.c19:hover {
+  background-color: #800000;
 }
 
-.c36 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c19:active {
+  background-color: #800000;
 }
 
-.c38 {
-  height: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-inline: 8px;
-}
-
-.c12 {
+.c8 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -113,34 +79,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c12:first-of-type:after {
+.c8:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c17 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  color: #333333;
-  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-.c17 cite {
-  font-style: normal;
-}
-
-.c18 {
+.c12 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -159,7 +104,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c11 {
+.c7 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -182,7 +127,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c21 {
+.c16 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -210,7 +155,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c22 {
+.c17 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -239,7 +184,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c14 {
+.c10 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -260,7 +205,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c13 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -279,7 +224,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c19 {
+.c14 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -288,7 +233,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c20 {
+.c15 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -303,7 +248,61 @@ exports[`full article with style 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.c3 > .c20 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c4 {
   display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c18 {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -311,60 +310,8 @@ exports[`full article with style 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  max-width: 1144px;
-  margin: 0 auto;
-}
-
-.c3 {
-  position: relative;
-  width: 100%;
-}
-
-.c3 * {
-  max-width: 100%;
-}
-
-.c3.c3.c3 .vjs-poster::before {
-  content: "";
-  display: block;
-  background-color: rgba(0,0,0,0.2);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.c3.c3.c3 .vjs-big-play-button .vjs-icon-placeholder::before,
-.c3 .vjs-big-play-button .vjs-icon-placeholder::after {
-  bottom: 24px;
-  left: 24px;
-  width: 48px !important;
-  background-size: 48px;
-  background-position-y: 32px;
-  z-index: 2;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASOSURBVHgB7Z2/ctNKFMY/M+mveYHL5tYXSGiBQaYEZjBvEOigCemgCq6gIqSBjjgFlBgKKLFmoIbwBN7wApgnWM7R7hpZ/iPJGGs32t/MiWJsJvaX7+zZ7D81UCFKqSZdIgpBcd5chXlaZF4+pJCp6zFFTHHUaDSGqIgGVkhKsCsUbUyKtCgSWsx3fK1S0L8CCRdR9Ch+qNVwQNGGz7DbKHZXKNo0BhRbFAK+oNwQLsuAYheuo/Rve6DcZUCxBdegNyUo+sofuD0WcAF6I9vKrXQtCr/nLVSF0m3dnvKfPfwBC/UDlbZ/j2IDJ4MjilvUf5QoSWkBjXh9LK8T7AqSolVWxFICnmDxLBIlRSwsYA3Es0iUELGQgDUSzyJRUMSiAn7FySkYReHC0sobmDiFHEyZr5t4DH/m3D//5jpQ6Y7mAerNDrnw2awnZwpo2j1O3SbqDafw5qz2cF4Kc+rWXTyGNZiZhVMFNKnr94DkconUjL+bp6YwvXiA+nRZiiKhU3msKk84UOmBR4FAFkFxP/uPYw6sYYe5LOy+9bQLsw6MEMSbBxeUMRdmHRjavnyG5MDT9sHIgUpPAwoE8uCB5Mg+SKfwTQSKsm2/SVJY6RUDPxAoyqiYWAdGqJA4/oTh8Cc8wi5RGaVwpel7ePgaFzYv0vUVPCLiL044kJHyO25v3cWd23eT7z0gMd0p0/4JOEK3+wpXW9d8cCMvJmiyA50bLLVuvNq67robIxYwgqNwcflv/X90Oo/hKIIFFHCczqPHiZAOuvE8C3gGHsDisYg7Ow9c6vIkDvRq1Hn/2XOXujx+pHAWl7o83jkwjQNdHpE7L+w6VXd5vBewarwXsNlsYm/vCT7230OIf7Fq1qBnmwQ8pN2+gZcHL0jEf1ARwzV4iBBnEuGi6BIqRnIKS3jE9vY9fPn62QXxmMSBx/CAjY1zeEptnSPCWRIHHsFhuEjs7j50yXVpjm0RcZIoupy0dVVU14LE7MAYjlF116QER2s8s0QjqxKOdGUc6JoURaZn5d6hYrhr8rH/AW96r30Qj4n5i50X5lUJPVREHH+mKnvWF+EsvLPpbXpindfFhBWpxTk9SmGzXCtGoChdu8QtPZiwj0BRRjUju7yN18eENJ4PV991+yA7nBVcmE8n/SDrwFBM5iOR2UM35kDTMAYXzuYwu+FmYpuDcSHvUBIIpBlr+ywTQ/rGhR0EskzVZN5eOd7uECHAvCVj3Zr2RNhsmM9imw3NfwiprLe7yllPzp3WNPtk61yV90mD7rwX5G75N1WZ28Pabfkn8TbzXpQ7sW6qMjegEvVBQn/mXMKxJ5NILPvYE0s4eGeScPTTbyQWOPqp9OIi8wNacHw+uST2jBiJkiy0Oot/kKlQJ6GLw59hIfGWgtLHfvp6AON9uIDSR4D2lD/0lYsn+6pwCO1yoDf5SLklJKcrvyd/BkaUTuuqHemfcNOgD9Cm6KrVwKJxexxhBSx0CO2iqN83I+ClJHxDAoHlIGFuRIAV34xgpQJmMYLyKE8EvWdPQA/g2msambpyfDPXSu/e8AvQJ5cIyAKg2gAAAABJRU5ErkJggg==);
-}
-
-.c3.c3.c3 .vjs-big-play-button:hover .vjs-icon-placeholder::before,
-.c3 .vjs-big-play-button:hover .vjs-icon-placeholder::after {
-  opacity: 0.4;
-}
-
-.c2 {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -372,253 +319,31 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.c4 > div {
-  margin: 0;
-  padding: 0;
-}
-
-.c34 {
-  padding: 20px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1144px;
-}
-
-.c23.c23.c23 {
-  margin: 8px 0 28px;
-}
-
-.c23.c23.c23 > div {
-  padding: 0;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c23.c23.c23 button {
-  color: #e4e4e4;
-  background-color: transparent;
-  border-color: #e4e4e4;
-}
-
-.c40.c40.c40 {
-  border-bottom: 1px solid #e4e4e4;
-  border-top: 1px solid #e4e4e4;
-  margin-top: 20px;
-}
-
-.c40.c40.c40.c40.c40.c40.c40.c40.c40 div {
-  border-color: #E4E4E !important;
-  color: #e4e4e4 !important;
-}
-
-.c7 {
-  max-width: 853px;
-  width: 100%;
-}
-
-.c10 * {
-  font-family: "Times Digital W04 Regular";
-  font-size: 1.6rem;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0em;
-  -moz-letter-spacing: 0em;
-  -ms-letter-spacing: 0em;
-  letter-spacing: 0em;
-  color: #aaa;
-  width: 100%;
-  padding: 0;
-  margin-block: 16px;
-}
-
-.c8 {
-  font-family: "TimesModern-Bold";
-  font-size: 3.6rem;
-  line-height: 1.125;
-  -webkit-letter-spacing: 0.03em;
-  -moz-letter-spacing: 0.03em;
-  -ms-letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  color: #fff;
-  margin: 0;
-}
-
-.c25 {
-  font-family: "TimesModern-Bold";
-  font-size: 2rem;
-  line-height: 1.125;
-  -webkit-letter-spacing: 0em;
-  -moz-letter-spacing: 0em;
-  -ms-letter-spacing: 0em;
-  letter-spacing: 0em;
-  color: #fff;
-}
-
-.c9 {
-  font-family: "Roboto";
-  font-size: 1.2rem;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0em;
-  -moz-letter-spacing: 0em;
-  -ms-letter-spacing: 0em;
-  letter-spacing: 0em;
-  color: #aaa;
-  margin-top: 10px;
-}
-
-.c5.c5.c5 {
-  width: 100%;
-}
-
-.c6 {
-  font-family: "Roboto";
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.03em;
-  -moz-letter-spacing: 0.03em;
-  -ms-letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
   position: relative;
-  text-transform: uppercase;
-  color: #FFF;
-  z-index: 2;
-}
-
-.c24 {
-  font-family: "Roboto";
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.03em;
-  -moz-letter-spacing: 0.03em;
-  -ms-letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 10px;
-  position: relative;
-  text-transform: uppercase;
-  color: #AAA;
-  z-index: 2;
-}
-
-.c35 * {
-  color: #fff !important;
+  z-index: 0;
+  box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c26 {
-  width: 100%;
-  background-color: #1d1d1b;
-}
-
-.c27 {
-  position: relative;
-  padding: 20px;
-}
-
-.c28 {
-  overflow-x: auto;
-  position: relative;
-  -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
-  scrollbar-width: none;
-}
-
-.c28::-webkit-scrollbar {
-  display: none;
-}
-
-.c29 {
-  display: grid;
-  grid-template-columns: repeat(4,minmax(156px,1fr));
-  grid-column-gap: 24px;
-}
-
-.c30 {
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
-}
-
-.c30 * {
-  max-width: 100%;
-}
-
-.c30:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  background-color: #333;
-  z-index: 1;
-  height: 100%;
-  width: 1px;
-  right: -12px;
-}
-
-.c30.c30.c30 .vjs-big-play-button .vjs-icon-placeholder::before,
-.c30 .vjs-big-play-button .vjs-icon-placeholder::after {
-  display: none !important;
-}
-
-.c31 {
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.c32 {
-  font-family: "Roboto";
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.03em;
-  -moz-letter-spacing: 0.03em;
-  -ms-letter-spacing: 0.03em;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 10px;
-  position: relative;
-  text-transform: uppercase;
-  color: #FFF;
-  z-index: 2;
-  bottom: 0;
-  left: 10px;
-  position: absolute;
-}
-
-.c33 {
-  background-image: linear-gradient(to left,#1d1d1b,transparent);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c8 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -628,39 +353,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+  .c8 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
   .c12 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c16 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c17 {
-    font-size: 30px;
-    line-height: 35px;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c21 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -669,28 +402,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c17 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c22 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c14 {
+  .c10 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -702,7 +420,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -711,141 +429,59 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c9 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c14 {
     min-height: 123px;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c14 {
     min-height: 283px;
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 24px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3.c3.c3 .vjs-big-play-button .vjs-icon-placeholder::before,
-  .c3 .vjs-big-play-button .vjs-icon-placeholder::after {
-    background-position-y: 18px;
-    background-size: 62px;
-    width: 62px !important;
-  }
-}
-
-@media (min-width:1024px) {
   .c2 {
-    margin: 0;
-    width: calc(100% - 240px);
+    padding-top: 20px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
-    padding: 24px;
+  .c18 {
+    bottom: 80px;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
-    padding: 24px 0;
+  .c18 {
+    bottom: 120px;
   }
 }
 
-@media (min-width:1440px) {
-  .c4 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+@media (min-width:1024px) {
+  .c6 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
 @media (min-width:768px) {
-  .c34 {
-    padding: 24px;
+  .c1 {
+    min-height: 90px;
   }
 }
 
 @media (min-width:1024px) {
-  .c9 {
-    margin-top: 8px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5.c5.c5 {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c26 {
-    background-color: unset;
-    width: 220px;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c27 {
-    padding: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c29 {
-    grid-column-gap: 0;
-    grid-row-gap: 24px;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30:not(:last-child)::after {
-    height: 1px;
-    width: 100%;
-    left: 0;
-    bottom: -12px;
-  }
-}
-
-@media (max-width:1023px) {
-  .c33 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 75px;
-    z-index: 1;
+  .c1 {
+    min-height: 250px;
   }
 }
 
@@ -889,376 +525,162 @@ exports[`full article with style 1`] = `
       <div
         className="c1"
       >
+        <AdContainer
+          marginBottom={0}
+        />
+      </div>
+      <main
+        className="c2"
+      >
         <div
-          className="c2"
+          className="c3"
+        />
+        <article
+          className="c4"
         >
           <div
-            className="c3"
-          >
-            <ArticleLeadAsset />
-          </div>
-          <div
-            className="c4"
+            className="c5"
           >
             <div
-              className="c5"
+              className="c6"
             >
+              <div>
+                <div>
+                  <div
+                    className="c7"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <Link>
+                Some Link
+              </Link>
               <p
-                className="c6"
-              >
-                15:03
-              </p>
-            </div>
-            <div
-              className="c7"
-            >
-              <h1
                 className="c8"
               >
-                Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
-              </h1>
+                Some content
+              </p>
               <div
                 className="c9"
               >
-                <DatePublication />
+                <div
+                  className="c10"
+                >
+                  <PullQuote>
+                    The pull quote content
+                  </PullQuote>
+                </div>
               </div>
               <div
-                className="c10"
+                className="c7"
               >
-                <div>
-                  <div>
-                    <div
-                      className="c11"
-                    >
-                      <ArticleImage />
-                    </div>
-                  </div>
-                </div>
-                <Link>
-                  Some Link
-                </Link>
-                <p
-                  className="c12"
-                >
-                  Some content
-                </p>
-                <div
-                  className="c13"
+                <figure
+                  margin={0}
                 >
                   <div
-                    className="c14"
-                  >
-                    <blockquote>
-                      <div
-                        className="c15"
-                        marginBottom="15px"
-                        marginTop={0}
-                      >
-                        <div
-                          className="c16"
-                          color="#1D1D1B"
-                          fontFamily="TimesModern-Regular, TimesModern-Regular-fallback, serif"
-                          fontSize={75}
-                          marginBottom="-40px"
-                          marginTop={0}
-                        >
-                          “
-                        </div>
-                        <div
-                          className="c17"
-                        >
-                          <cite>
-                            The pull quote content
-                          </cite>
-                        </div>
-                        <div
-                          alignItems="center"
-                          className="c15"
-                          display="flex"
-                          flexDirection="row"
-                          height={20}
-                          marginTop="10px"
-                        >
-                          <div
-                            className="c16"
-                            color="#696969"
-                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                            fontSize={12}
-                            lineHeight="13px"
-                            marginBottom={0}
-                          >
-                            AName
-                          </div>
-                          <div
-                            className="c16"
-                            color="#696969"
-                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                            fontSize={12}
-                            lineHeight="13px"
-                            marginBottom={0}
-                          >
-                            , a text
-                          </div>
-                          <div
-                            alignItems="center"
-                            borderLeftColor="#DBDBDB"
-                            borderLeftWidth={1}
-                            className="c15"
-                            display="flex"
-                            flexDirection="row"
-                            height={13}
-                            marginLeft={7}
-                            paddingLeft={7}
-                          >
-                            <svg>
-                              <title>
-                                Twitter Icon
-                              </title>
-                              <g>
-                                <path />
-                              </g>
-                              <defs>
-                                <clipPath>
-                                  <rect />
-                                </clipPath>
-                              </defs>
-                            </svg>
-                            <TextLink
-                              className="pullQuoteTwitterLink"
-                              color="#006699"
-                              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                              fontSize={12}
-                              lineHeight={13}
-                              marginLeft={4}
-                              textDecorationLine="none"
-                            >
-                              @AName
-                            </TextLink>
-                          </div>
-                        </div>
-                      </div>
-                    </blockquote>
-                  </div>
-                </div>
-                <div
-                  className="c11"
-                >
-                  <figure
-                    margin={0}
+                    className="c11"
+                    paddingBottom="56.25%"
+                    position="relative"
                   >
                     <div
-                      className="c15"
-                      paddingBottom="56.25%"
-                      position="relative"
+                      className="c11"
+                      height="100%"
+                      position="absolute"
+                      width="100%"
                     >
                       <div
-                        className="c15"
+                        className="lcpItem"
                         height="100%"
-                        position="absolute"
                         width="100%"
                       >
                         <div
-                          className="lcpItem"
                           height="100%"
+                          position="relative"
                           width="100%"
                         >
-                          <div
+                          <video
+                            className="video-js"
                             height="100%"
-                            position="relative"
                             width="100%"
-                          >
-                            <video
-                              className="video-js"
-                              height="100%"
-                              width="100%"
-                            />
-                          </div>
+                          />
                         </div>
                       </div>
                     </div>
-                    <figcaption>
+                  </div>
+                  <figcaption>
+                    <div
+                      className="c12"
+                    >
                       <div
-                        className="c18"
+                        className="c11"
                       >
                         <div
-                          className="c15"
+                          className="c11"
+                          paddingTop="10px"
                         >
                           <div
-                            className="c15"
-                            paddingTop="10px"
+                            className="c13"
+                            color="#696969"
+                            fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                            fontSize={14}
+                            lineHeight="19px"
+                            marginBottom={4}
                           >
-                            <div
-                              className="c16"
-                              color="#696969"
-                              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                              fontSize={14}
-                              lineHeight="19px"
-                              marginBottom={4}
-                            >
-                              This is video caption
-                            </div>
+                            This is video caption
                           </div>
                         </div>
                       </div>
-                    </figcaption>
-                  </figure>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div
+                className="c14"
+              >
+                <h2
+                  className="c15"
+                >
+                  Advertisement
+                </h2>
+                <AdContainer />
+              </div>
+              <div>
+                <div>
+                  <div
+                    className="c16"
+                  >
+                    <ArticleImage />
+                  </div>
                 </div>
-                <div
+              </div>
+              <div>
+                <div>
+                  <div
+                    className="c17"
+                  >
+                    <ArticleImage />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c18"
+              >
+                <button
                   className="c19"
                 >
-                  <span
-                    className="c20"
-                  >
-                    Advertisement
-                  </span>
-                  <AdContainer />
-                </div>
-                <div>
-                  <div>
-                    <div
-                      className="c21"
-                    >
-                      <ArticleImage />
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <div
-                      className="c22"
-                    >
-                      <ArticleImage />
-                    </div>
-                  </div>
-                </div>
+                  <svg>
+                    <path />
+                  </svg>
+                  New update
+                </button>
               </div>
-            </div>
-            <div
-              className="c23"
-            >
-              <SaveAndShareBar />
-            </div>
-            <div
-              className="c7"
-            >
-              <p
-                className="c24"
-              >
-                Related Article
-              </p>
-              <Link>
-                <span
-                  className="c25"
-                >
-                  Related Article 1
-                </span>
-              </Link>
+              <div />
             </div>
           </div>
-        </div>
-        <div
-          className="c26"
-        >
-          <div
-            className="c27"
-          >
-            <p
-              className="c6"
-            >
-              Up Next
-            </p>
-            <div
-              className="c28"
-            >
-              <div
-                className="c29"
-              >
-                <div
-                  className="c30"
-                >
-                  <Link>
-                    <div
-                      className="c31"
-                    >
-                      <p
-                        className="c32"
-                      >
-                        15:03
-                      </p>
-                      <Image />
-                    </div>
-                    <span
-                      className="c25"
-                    >
-                      Related Article 1
-                    </span>
-                  </Link>
-                </div>
-                <div
-                  className="c30"
-                >
-                  <Link>
-                    <div
-                      className="c31"
-                    >
-                      <p
-                        className="c32"
-                      >
-                        15:03
-                      </p>
-                      <Image />
-                    </div>
-                    <span
-                      className="c25"
-                    >
-                      Related Article 2
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div
-              className="c33"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="c34"
-      >
-        <div
-          className="c35"
-        >
-          <nav
-            className="c36"
-          >
-            <a
-              className="c37"
-            >
-              UK
-            </a>
-            <div
-              className="c38"
-            >
-              <svg>
-                <path />
-              </svg>
-            </div>
-            <a
-              className="c39"
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
-        <nav
-          className="c40"
-        >
-          <ArticleTopics
-            justifyContent="flex-start"
-          />
-        </nav>
-      </div>
+          <ArticleExtras />
+        </article>
+      </main>
       <AdContainer />
       <AdContainer />
       <AdContainer />
