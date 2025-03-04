@@ -190,6 +190,7 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
 
   const rendererdContent = newContent && (
     <ArticleBody
@@ -205,8 +206,7 @@ const ArticleSkeleton = ({
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
     />
-  )
-
+  );
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -230,6 +230,8 @@ const ArticleSkeleton = ({
     }
   ]);
 
+  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
+
   const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
@@ -239,27 +241,26 @@ const ArticleSkeleton = ({
       <MessageContext.Consumer>
         {({ showMessage }) => {
           const saveShareProps = {
-            articleId: articleId,
+            articleId,
             articleHeadline: headline,
-            articleUrl: articleUrl,
+            articleUrl,
             onCopyLink: () => showMessage("Article link copied"),
             onSaveToMyArticles: () => {},
             onShareOnEmail: () => {},
-            savingEnabled: savingEnabled,
-            sharingEnabled: sharingEnabled,
+            savingEnabled,
+            sharingEnabled,
             hostName: domainSpecificUrl
-          }
-          return (
-            Content
-              ? <SaveAndShareBar {...saveShareProps} />
-              : <StickySaveAndShareBar {...saveShareProps} />
-        )}}
+          };
+          return Content ? (
+            <SaveAndShareBar {...saveShareProps} />
+          ) : (
+            <StickySaveAndShareBar {...saveShareProps} />
+          );
+        }}
       </MessageContext.Consumer>
     </UserState>
   ) : null;
 
-  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
-  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   const [polygonUrl, setPolygonUrl] = useState([]);
 
   const fetchPolygon = async () => {
@@ -353,7 +354,9 @@ const ArticleSkeleton = ({
               html={'<div id="nu-zephr-article-target-below-head"></div>'}
             />
           )}
-          {Content ? <Content content={rendererdContent} SaveAndShare={SaveAndShare} /> : (
+          {Content ? (
+            <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
+          ) : (
             <Fragment>
               <HeaderAdContainer key="headerAd">
                 <AdContainer slotName="header" style={styles.adMarginStyle} />
@@ -477,7 +480,9 @@ const ArticleSkeleton = ({
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
-                        isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
+                        isEntitlementFeatureEnabled={
+                          isEntitlementFeatureEnabled
+                        }
                       />
                     )}
                   </LazyLoad>

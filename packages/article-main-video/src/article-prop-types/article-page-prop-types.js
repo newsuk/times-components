@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import ArticleMeta from "../article-meta/article-meta-prop-types";
 
 const articlePagePropTypes = {
   analyticsStream: PropTypes.func.isRequired,
   article: PropTypes.shape({
-    ...ArticleMeta.propTypes
-    // Could have more here.
+    onAuthorPress: PropTypes.func,
+    publicationName: PropTypes.string,
+    publishedTime: PropTypes.string
   }),
   error: PropTypes.shape({
     graphQLErrors: PropTypes.array,
