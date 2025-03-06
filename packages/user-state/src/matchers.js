@@ -1,7 +1,11 @@
+import checkForSymphonyExperiment from "@times-components/utils";
 /* User states */
 
+const isSymphonyExperiment = checkForSymphonyExperiment();
+
 const hasAccessLoggedInOrSharedUser = userState =>
-  userState.hasAccess && (userState.isLoggedIn || userState.isShared);
+  (userState.hasAccess && (userState.isLoggedIn || userState.isShared)) ||
+  isSymphonyExperiment;
 
 const hasAccessLoggedInUser = userState =>
   userState.hasAccess && userState.isLoggedIn;
