@@ -102,8 +102,6 @@ jobs:
 
   run_web_tests:
     executor: node
-    resource_class: medium
-    parallelism: 2
     steps:
       - checkout
       - install-lerna
