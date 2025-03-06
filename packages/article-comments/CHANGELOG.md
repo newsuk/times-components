@@ -3,6 +3,2523 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.39](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.38...@times-components/article-comments@0.44.39) (2025-02-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.38](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.37...@times-components/article-comments@0.44.38) (2025-02-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.37](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.36...@times-components/article-comments@0.44.37) (2025-02-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.36](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.35...@times-components/article-comments@0.44.36) (2025-01-29)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.35](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.34...@times-components/article-comments@0.44.35) (2025-01-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.34](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.33...@times-components/article-comments@0.44.34) (2025-01-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.33](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.32...@times-components/article-comments@0.44.33) (2025-01-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.32](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.31...@times-components/article-comments@0.44.32) (2025-01-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.31](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.30...@times-components/article-comments@0.44.31) (2025-01-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.30](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.29...@times-components/article-comments@0.44.30) (2025-01-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.29](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.28...@times-components/article-comments@0.44.29) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.28](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.27...@times-components/article-comments@0.44.28) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.27](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.26...@times-components/article-comments@0.44.27) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.26](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.25...@times-components/article-comments@0.44.26) (2024-12-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.25](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.24...@times-components/article-comments@0.44.25) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.24](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.23...@times-components/article-comments@0.44.24) (2024-12-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.22...@times-components/article-comments@0.44.23) (2024-11-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.22](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.21...@times-components/article-comments@0.44.22) (2024-11-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.21](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.20...@times-components/article-comments@0.44.21) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.20](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.19...@times-components/article-comments@0.44.20) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.19](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.18...@times-components/article-comments@0.44.19) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.17...@times-components/article-comments@0.44.18) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.16...@times-components/article-comments@0.44.17) (2024-10-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.15...@times-components/article-comments@0.44.16) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.14...@times-components/article-comments@0.44.15) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.13...@times-components/article-comments@0.44.14) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.12...@times-components/article-comments@0.44.13) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.11...@times-components/article-comments@0.44.12) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.10...@times-components/article-comments@0.44.11) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.9...@times-components/article-comments@0.44.10) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.8...@times-components/article-comments@0.44.9) (2024-09-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.7...@times-components/article-comments@0.44.8) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.6...@times-components/article-comments@0.44.7) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.5...@times-components/article-comments@0.44.6) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.4...@times-components/article-comments@0.44.5) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.3...@times-components/article-comments@0.44.4) (2024-08-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.2...@times-components/article-comments@0.44.3) (2024-08-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.1...@times-components/article-comments@0.44.2) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.44.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.0...@times-components/article-comments@0.44.1) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.44.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.28...@times-components/article-comments@0.44.0) (2024-08-08)
+
+
+### Features
+
+* **TMG-1729:** test-integrated commenting with internal cps endpoint ([#3910](https://github.com/newsuk/times-components/issues/3910)) ([7a4958d](https://github.com/newsuk/times-components/commit/7a4958db25785ecb068e0ab2d29fc0295bc8358f))
+
+
+
+
+
+## [0.43.28](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.27...@times-components/article-comments@0.43.28) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.27](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.26...@times-components/article-comments@0.43.27) (2024-07-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.26](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.25...@times-components/article-comments@0.43.26) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.25](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.24...@times-components/article-comments@0.43.25) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.24](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.23...@times-components/article-comments@0.43.24) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.22...@times-components/article-comments@0.43.23) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.22](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.21...@times-components/article-comments@0.43.22) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.21](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.20...@times-components/article-comments@0.43.21) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.20](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.19...@times-components/article-comments@0.43.20) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.19](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.18...@times-components/article-comments@0.43.19) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.17...@times-components/article-comments@0.43.18) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.16...@times-components/article-comments@0.43.17) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.15...@times-components/article-comments@0.43.16) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.14...@times-components/article-comments@0.43.15) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.13...@times-components/article-comments@0.43.14) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.12...@times-components/article-comments@0.43.13) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.11...@times-components/article-comments@0.43.12) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.10...@times-components/article-comments@0.43.11) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.9...@times-components/article-comments@0.43.10) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.8...@times-components/article-comments@0.43.9) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.7...@times-components/article-comments@0.43.8) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.6...@times-components/article-comments@0.43.7) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.5...@times-components/article-comments@0.43.6) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.4...@times-components/article-comments@0.43.5) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.3...@times-components/article-comments@0.43.4) (2024-04-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.2...@times-components/article-comments@0.43.3) (2024-04-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.1...@times-components/article-comments@0.43.2) (2024-04-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.43.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.43.0...@times-components/article-comments@0.43.1) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.42.1...@times-components/article-comments@0.43.0) (2024-03-19)
+
+
+### Features
+
+* **TMRS-88:** article domain reference updates ([#3798](https://github.com/newsuk/times-components/issues/3798)) ([87289ac](https://github.com/newsuk/times-components/commit/87289ac93dfae6322a54ad49f8ce6d3df80073b2))
+
+
+
+
+
+## [0.42.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.42.0...@times-components/article-comments@0.42.1) (2024-03-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.18...@times-components/article-comments@0.42.0) (2024-02-20)
+
+
+### Features
+
+* **TMRX-000:** Commenting SSO renew ([#3772](https://github.com/newsuk/times-components/issues/3772)) ([b9c81a9](https://github.com/newsuk/times-components/commit/b9c81a926185e4aee26c9e5fe3236b89ebf43438))
+
+
+
+
+
+## [0.41.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.17...@times-components/article-comments@0.41.18) (2024-02-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.16...@times-components/article-comments@0.41.17) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.15...@times-components/article-comments@0.41.16) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.14...@times-components/article-comments@0.41.15) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.13...@times-components/article-comments@0.41.14) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.12...@times-components/article-comments@0.41.13) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.11...@times-components/article-comments@0.41.12) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.10...@times-components/article-comments@0.41.11) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.9...@times-components/article-comments@0.41.10) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.8...@times-components/article-comments@0.41.9) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.7...@times-components/article-comments@0.41.8) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.6...@times-components/article-comments@0.41.7) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.5...@times-components/article-comments@0.41.6) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.4...@times-components/article-comments@0.41.5) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.3...@times-components/article-comments@0.41.4) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.2...@times-components/article-comments@0.41.3) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.1...@times-components/article-comments@0.41.2) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.41.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.0...@times-components/article-comments@0.41.1) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.41.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.40...@times-components/article-comments@0.41.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
+## [0.40.40](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.39...@times-components/article-comments@0.40.40) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.39](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.38...@times-components/article-comments@0.40.39) (2023-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.38](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.37...@times-components/article-comments@0.40.38) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.37](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.36...@times-components/article-comments@0.40.37) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.36](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.35...@times-components/article-comments@0.40.36) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.35](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.34...@times-components/article-comments@0.40.35) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.34](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.33...@times-components/article-comments@0.40.34) (2023-10-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.33](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.32...@times-components/article-comments@0.40.33) (2023-10-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.32](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.31...@times-components/article-comments@0.40.32) (2023-09-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.31](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.30...@times-components/article-comments@0.40.31) (2023-09-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.30](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.29...@times-components/article-comments@0.40.30) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.29](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.28...@times-components/article-comments@0.40.29) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.28](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.27...@times-components/article-comments@0.40.28) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.27](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.26...@times-components/article-comments@0.40.27) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.26](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.25...@times-components/article-comments@0.40.26) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.25](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.24...@times-components/article-comments@0.40.25) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.24](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.23...@times-components/article-comments@0.40.24) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.22...@times-components/article-comments@0.40.23) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.22](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.21...@times-components/article-comments@0.40.22) (2023-08-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.21](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.20...@times-components/article-comments@0.40.21) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.20](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.19...@times-components/article-comments@0.40.20) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.19](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.18...@times-components/article-comments@0.40.19) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.17...@times-components/article-comments@0.40.18) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.16...@times-components/article-comments@0.40.17) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.15...@times-components/article-comments@0.40.16) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.14...@times-components/article-comments@0.40.15) (2023-06-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.13...@times-components/article-comments@0.40.14) (2023-06-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.12...@times-components/article-comments@0.40.13) (2023-06-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.11...@times-components/article-comments@0.40.12) (2023-06-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.10...@times-components/article-comments@0.40.11) (2023-05-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.9...@times-components/article-comments@0.40.10) (2023-05-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.8...@times-components/article-comments@0.40.9) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.7...@times-components/article-comments@0.40.8) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.6...@times-components/article-comments@0.40.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.5...@times-components/article-comments@0.40.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.4...@times-components/article-comments@0.40.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.3...@times-components/article-comments@0.40.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.2...@times-components/article-comments@0.40.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.1...@times-components/article-comments@0.40.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.40.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.40.0...@times-components/article-comments@0.40.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.5...@times-components/article-comments@0.40.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [0.39.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.4...@times-components/article-comments@0.39.5) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.39.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.3...@times-components/article-comments@0.39.4) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.39.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.2...@times-components/article-comments@0.39.3) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.39.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.1...@times-components/article-comments@0.39.2) (2023-03-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.39.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.39.0...@times-components/article-comments@0.39.1) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.38.0...@times-components/article-comments@0.39.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+# [0.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.2...@times-components/article-comments@0.38.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [0.37.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.1...@times-components/article-comments@0.37.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [0.37.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.0...@times-components/article-comments@0.37.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.37.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.11...@times-components/article-comments@0.37.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [0.36.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.10...@times-components/article-comments@0.36.11) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.9...@times-components/article-comments@0.36.10) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.8...@times-components/article-comments@0.36.9) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.7...@times-components/article-comments@0.36.8) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.6...@times-components/article-comments@0.36.7) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.5...@times-components/article-comments@0.36.6) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.4...@times-components/article-comments@0.36.5) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.3...@times-components/article-comments@0.36.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* **TDP-2934:** Update copy in real name commenting blue banner ([#3209](https://github.com/newsuk/times-components/issues/3209)) ([5aab697](https://github.com/newsuk/times-components/commit/5aab697d9459ffe326a7f14f5e8f4c15b63cf3f5))
+
+
+
+
+
+## [0.36.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.2...@times-components/article-comments@0.36.3) (2023-01-04)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.1...@times-components/article-comments@0.36.2) (2022-12-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.36.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.36.0...@times-components/article-comments@0.36.1) (2022-12-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.35.0...@times-components/article-comments@0.36.0) (2022-12-12)
+
+
+### Features
+
+* **TDP-1219:** Remove realnameInlineBlueBanner feature flag and HiddenDiv from InlineMessage ([#3201](https://github.com/newsuk/times-components/issues/3201)) ([ea107dd](https://github.com/newsuk/times-components/commit/ea107ddfcfa8c2c872e1aa0ed610c3dd39b7eaeb))
+
+
+
+
+
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.34.0...@times-components/article-comments@0.35.0) (2022-12-09)
+
+
+### Features
+
+* **TDP-000:** commenting reauth - ready for switch over to v2 ([#3155](https://github.com/newsuk/times-components/issues/3155)) ([4737480](https://github.com/newsuk/times-components/commit/47374806474ef32c68eb45c8f477541ead3067c8))
+
+
+
+
+
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.18...@times-components/article-comments@0.34.0) (2022-12-07)
+
+
+### Features
+
+* **TDP-2429:** Remove feature flag from real name commenting smart banner ([#3197](https://github.com/newsuk/times-components/issues/3197)) ([95c86a9](https://github.com/newsuk/times-components/commit/95c86a928781a12eb768ddd577da353a63125b62))
+
+
+
+
+
+## [0.33.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.17...@times-components/article-comments@0.33.18) (2022-11-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.16...@times-components/article-comments@0.33.17) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.15...@times-components/article-comments@0.33.16) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.14...@times-components/article-comments@0.33.15) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.13...@times-components/article-comments@0.33.14) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.12...@times-components/article-comments@0.33.13) (2022-11-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.11...@times-components/article-comments@0.33.12) (2022-11-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.10...@times-components/article-comments@0.33.11) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.9...@times-components/article-comments@0.33.10) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.8...@times-components/article-comments@0.33.9) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.7...@times-components/article-comments@0.33.8) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.6...@times-components/article-comments@0.33.7) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.5...@times-components/article-comments@0.33.6) (2022-10-18)
+
+
+### Bug Fixes
+
+* **TDP-2612:** UserState refactor ([#3167](https://github.com/newsuk/times-components/issues/3167)) ([acb908b](https://github.com/newsuk/times-components/commit/acb908ba9827284f9d91b02c1246f4578716c559))
+
+
+
+
+
+## [0.33.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.4...@times-components/article-comments@0.33.5) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.3...@times-components/article-comments@0.33.4) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.2...@times-components/article-comments@0.33.3) (2022-10-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.1...@times-components/article-comments@0.33.2) (2022-10-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.0...@times-components/article-comments@0.33.1) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.32.1...@times-components/article-comments@0.33.0) (2022-09-16)
+
+
+### Features
+
+* **TDP-000:** commenting reauth with cpn ([#3154](https://github.com/newsuk/times-components/issues/3154)) ([8c6d619](https://github.com/newsuk/times-components/commit/8c6d619a684cd71267a1e62bde5f168df8ceac39))
+
+
+
+
+
+## [0.32.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.32.0...@times-components/article-comments@0.32.1) (2022-09-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.31.1...@times-components/article-comments@0.32.0) (2022-09-14)
+
+
+### Features
+
+* **TDP-000:** commenting pass cpn for reauthentication ([#3152](https://github.com/newsuk/times-components/issues/3152)) ([306428e](https://github.com/newsuk/times-components/commit/306428e88704b96f949bd45e42a74df879997231))
+
+
+
+
+
+## [0.31.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.31.0...@times-components/article-comments@0.31.1) (2022-09-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.5...@times-components/article-comments@0.31.0) (2022-09-08)
+
+
+### Features
+
+* **TDP-000:** Commenting re-auth testing ([#3148](https://github.com/newsuk/times-components/issues/3148)) ([7e9c2db](https://github.com/newsuk/times-components/commit/7e9c2db20297fd512a0b9cd870112f2030c57853))
+
+
+
+
+
+## [0.30.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.4...@times-components/article-comments@0.30.5) (2022-09-07)
+
+
+### Bug Fixes
+
+* **TDP-2475:** Add event listener to real name commenting reauthentication ([#3140](https://github.com/newsuk/times-components/issues/3140)) ([655b90d](https://github.com/newsuk/times-components/commit/655b90da4eff2afe0f4526b9ec26ce43fb92b747))
+
+
+
+
+
+## [0.30.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.3...@times-components/article-comments@0.30.4) (2022-09-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.30.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.2...@times-components/article-comments@0.30.3) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.30.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.1...@times-components/article-comments@0.30.2) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.0...@times-components/article-comments@0.30.1) (2022-09-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.29.1...@times-components/article-comments@0.30.0) (2022-08-25)
+
+
+### Features
+
+* **TDP-2203:** Reauthenticate users to real name commenting  ([2f0f215](https://github.com/newsuk/times-components/commit/2f0f21517edeef9f469eb3690b5c2b915966c29e))
+
+
+
+
+
+## [0.29.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.29.0...@times-components/article-comments@0.29.1) (2022-08-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.28.1...@times-components/article-comments@0.29.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.28.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.28.0...@times-components/article-comments@0.28.1) (2022-08-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.27.1...@times-components/article-comments@0.28.0) (2022-08-12)
+
+
+### Features
+
+* **TDP-2382:** removing banner state logic  ([7ead194](https://github.com/newsuk/times-components/commit/7ead194a5d1d57a073530260c6f05e4296846a65))
+
+
+
+
+
+## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.27.0...@times-components/article-comments@0.27.1) (2022-08-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.26.1...@times-components/article-comments@0.27.0) (2022-08-12)
+
+
+### Features
+
+* **TDP-000:** commenting test ([#3123](https://github.com/newsuk/times-components/issues/3123)) ([4ad599f](https://github.com/newsuk/times-components/commit/4ad599f5c97acf09560b46aa173393c8200480f6))
+
+
+
+
+
+## [0.26.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.26.0...@times-components/article-comments@0.26.1) (2022-08-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.25.0...@times-components/article-comments@0.26.0) (2022-08-11)
+
+
+### Features
+
+* **TDP-2233:** Trigger real name commenting banner  ([9e78364](https://github.com/newsuk/times-components/commit/9e78364b6eeee02f9d84f46cae94b038a14212bc))
+
+
+
+
+
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.2...@times-components/article-comments@0.25.0) (2022-08-10)
+
+
+### Features
+
+* **TDP-2318:** enable sso loginv2 endpoint prod  ([d5b2952](https://github.com/newsuk/times-components/commit/d5b29520ff6d293e8a34e3493fcba30b3ca85242))
+
+
+
+
+
+## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.1...@times-components/article-comments@0.24.2) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.0...@times-components/article-comments@0.24.1) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.2...@times-components/article-comments@0.24.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2259:** adding cursor: pointer style to inlinedialog component ([#3100](https://github.com/newsuk/times-components/issues/3100)) ([5da8ffc](https://github.com/newsuk/times-components/commit/5da8ffc2a8fb8fa59d87aedc882be03e1ac3d16f))
+
+
+
+
+
+## [0.23.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.1...@times-components/article-comments@0.23.2) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.23.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.0...@times-components/article-comments@0.23.1) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.7...@times-components/article-comments@0.23.0) (2022-08-04)
+
+
+### Features
+
+* triggering upgrade modal from article ([#3082](https://github.com/newsuk/times-components/issues/3082)) ([d35b130](https://github.com/newsuk/times-components/commit/d35b130ecc94e681549d55960307a6e805936483))
+
+
+
+
+
+## [0.22.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.6...@times-components/article-comments@0.22.7) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.5...@times-components/article-comments@0.22.6) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.4...@times-components/article-comments@0.22.5) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.3...@times-components/article-comments@0.22.4) (2022-07-29)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.2...@times-components/article-comments@0.22.3) (2022-07-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.1...@times-components/article-comments@0.22.2) (2022-07-27)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.0...@times-components/article-comments@0.22.1) (2022-07-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.67...@times-components/article-comments@0.22.0) (2022-07-26)
+
+
+### Features
+
+* **TDP-2202:** integrate new openweb commenting endpoint ([#3046](https://github.com/newsuk/times-components/issues/3046)) ([c8c39d7](https://github.com/newsuk/times-components/commit/c8c39d76c39c1f0a6e7ceaa8e648c75e57fcf8e8)), closes [#3052](https://github.com/newsuk/times-components/issues/3052)
+
+
+
+
+
+## [0.21.67](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.66...@times-components/article-comments@0.21.67) (2022-07-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.66](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.65...@times-components/article-comments@0.21.66) (2022-07-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.65](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.64...@times-components/article-comments@0.21.65) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.64](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.63...@times-components/article-comments@0.21.64) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.63](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.62...@times-components/article-comments@0.21.63) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.62](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.61...@times-components/article-comments@0.21.62) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.61](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.60...@times-components/article-comments@0.21.61) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.60](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.59...@times-components/article-comments@0.21.60) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.59](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.58...@times-components/article-comments@0.21.59) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.58](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.57...@times-components/article-comments@0.21.58) (2022-07-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.57](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.56...@times-components/article-comments@0.21.57) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.56](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.55...@times-components/article-comments@0.21.56) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.55](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.54...@times-components/article-comments@0.21.55) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.54](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.53...@times-components/article-comments@0.21.54) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.53](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.52...@times-components/article-comments@0.21.53) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.52](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.51...@times-components/article-comments@0.21.52) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.51](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.50...@times-components/article-comments@0.21.51) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.50](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.49...@times-components/article-comments@0.21.50) (2022-07-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.49](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.48...@times-components/article-comments@0.21.49) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.48](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.47...@times-components/article-comments@0.21.48) (2022-07-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.47](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.46...@times-components/article-comments@0.21.47) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.46](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.45...@times-components/article-comments@0.21.46) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.45](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.44...@times-components/article-comments@0.21.45) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.44](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.43...@times-components/article-comments@0.21.44) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.43](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.42...@times-components/article-comments@0.21.43) (2022-06-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.42](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.41...@times-components/article-comments@0.21.42) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.41](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.40...@times-components/article-comments@0.21.41) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.40](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.39...@times-components/article-comments@0.21.40) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.39](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.38...@times-components/article-comments@0.21.39) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.38](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.37...@times-components/article-comments@0.21.38) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.37](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.36...@times-components/article-comments@0.21.37) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.36](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.35...@times-components/article-comments@0.21.36) (2022-06-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.35](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.34...@times-components/article-comments@0.21.35) (2022-06-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.34](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.33...@times-components/article-comments@0.21.34) (2022-06-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.33](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.32...@times-components/article-comments@0.21.33) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.32](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.31...@times-components/article-comments@0.21.32) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.31](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.30...@times-components/article-comments@0.21.31) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.30](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.29...@times-components/article-comments@0.21.30) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.29](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.28...@times-components/article-comments@0.21.29) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.28](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.27...@times-components/article-comments@0.21.28) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.27](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.26...@times-components/article-comments@0.21.27) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.26](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.25...@times-components/article-comments@0.21.26) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.25](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.24...@times-components/article-comments@0.21.25) (2022-05-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.24](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.23...@times-components/article-comments@0.21.24) (2022-05-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.23](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.22...@times-components/article-comments@0.21.23) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.22](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.21...@times-components/article-comments@0.21.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.21](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.20...@times-components/article-comments@0.21.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.20](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.19...@times-components/article-comments@0.21.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.19](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.18...@times-components/article-comments@0.21.19) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.17...@times-components/article-comments@0.21.18) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.16...@times-components/article-comments@0.21.17) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.15...@times-components/article-comments@0.21.16) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.14...@times-components/article-comments@0.21.15) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.13...@times-components/article-comments@0.21.14) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.12...@times-components/article-comments@0.21.13) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.11...@times-components/article-comments@0.21.12) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.10...@times-components/article-comments@0.21.11) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.9...@times-components/article-comments@0.21.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.8...@times-components/article-comments@0.21.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.7...@times-components/article-comments@0.21.8) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.6...@times-components/article-comments@0.21.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.5...@times-components/article-comments@0.21.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.4...@times-components/article-comments@0.21.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.3...@times-components/article-comments@0.21.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.2...@times-components/article-comments@0.21.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.1...@times-components/article-comments@0.21.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.0...@times-components/article-comments@0.21.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.20.2...@times-components/article-comments@0.21.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1705:** remove react native from link ([#2909](https://github.com/newsuk/times-components/issues/2909)) ([6437462](https://github.com/newsuk/times-components/commit/643746243797d1e8516ddf783649254591cf1257))
+
+
+
+
+
+## [0.20.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.20.1...@times-components/article-comments@0.20.2) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.20.0...@times-components/article-comments@0.20.1) (2022-04-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.19.2...@times-components/article-comments@0.20.0) (2022-04-04)
+
+
+### Features
+
+* **TDP-1747:**  commented out message so an override cant display it… ([#2898](https://github.com/newsuk/times-components/issues/2898)) ([156620f](https://github.com/newsuk/times-components/commit/156620f94dfd3b5ee26eda88b925d8cb5e2f772a))
+
+
+
+
+
+## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.19.1...@times-components/article-comments@0.19.2) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.19.0...@times-components/article-comments@0.19.1) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.17...@times-components/article-comments@0.19.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [0.18.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.16...@times-components/article-comments@0.18.17) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.15...@times-components/article-comments@0.18.16) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.14...@times-components/article-comments@0.18.15) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.13...@times-components/article-comments@0.18.14) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.12...@times-components/article-comments@0.18.13) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.11...@times-components/article-comments@0.18.12) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.10...@times-components/article-comments@0.18.11) (2022-03-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.9...@times-components/article-comments@0.18.10) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.8...@times-components/article-comments@0.18.9) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.7...@times-components/article-comments@0.18.8) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.6...@times-components/article-comments@0.18.7) (2022-03-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.5...@times-components/article-comments@0.18.6) (2022-03-01)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.4...@times-components/article-comments@0.18.5) (2022-02-28)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.3...@times-components/article-comments@0.18.4) (2022-02-25)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.2...@times-components/article-comments@0.18.3) (2022-02-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.1...@times-components/article-comments@0.18.2) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.18.0...@times-components/article-comments@0.18.1) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.17.7...@times-components/article-comments@0.18.0) (2022-02-22)
+
+
+### Features
+
+* **TDP-563:** updated date-fns to use a single current version rathe… ([#2854](https://github.com/newsuk/times-components/issues/2854)) ([aca0dea](https://github.com/newsuk/times-components/commit/aca0deaa75f182f2b759ddfb262277d249aeff77))
+
+
+
+
+
+## [0.17.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.17.6...@times-components/article-comments@0.17.7) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.17.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.17.5...@times-components/article-comments@0.17.6) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.17.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.17.4...@times-components/article-comments@0.17.5) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
 ## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.17.3...@times-components/article-comments@0.17.4) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/article-comments

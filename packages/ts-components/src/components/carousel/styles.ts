@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts, colours, breakpoints } from '@times-components/styleguide';
+import { fonts, colours, breakpoints } from '@times-components/ts-styleguide';
 import ReactElasticCarousel from 'react-elastic-carousel';
 
 export const Headline = styled.div<{ isWide: boolean }>`
@@ -186,6 +186,7 @@ export const CarouselContainer = styled.div<{
   }
 `;
 
+// @ts-ignore
 export const StyledCarousel = styled(ReactElasticCarousel)<{
   isWide: boolean;
   sectionColour: string;

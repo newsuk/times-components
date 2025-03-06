@@ -38,5 +38,3 @@ yarn test:web
 
 More theme properties will be added in the future, such as the section colours,
 that will be defined by the apps' current navigation state.
-
-Client callbacks that are bridged through NativeModules can utilise contexts.

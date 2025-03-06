@@ -1,4 +1,4 @@
-import styleguide from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-styleguide";
 
 const { colours, fontFactory } = styleguide();
 
@@ -17,7 +17,7 @@ const styles = {
     justifyContent: "center",
     lineHeight: 0,
     minWidth: 100,
-    paddingTop: 4,
+    paddingTop: 2,
     width: 160
   }
 };

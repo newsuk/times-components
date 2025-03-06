@@ -1538,6 +1538,7 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
       }
@@ -1730,6 +1731,8 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
       }
@@ -1875,6 +1878,8 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
         url:
           "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
       }
@@ -1949,7 +1954,10 @@ const makeDefaultConfig = ({
   savingEnabled = true,
   standfirst = defaultStandfirst,
   topics = defaultTopics,
-  url = defaultUrl
+  url = defaultUrl,
+  isSavingEnabled = true,
+  isSharingEnabled = true,
+  isCommentEnabled = true
 } = {}) => ({
   author,
   bylines,
@@ -1971,7 +1979,10 @@ const makeDefaultConfig = ({
   slug,
   standfirst,
   topics,
-  url
+  url,
+  isSavingEnabled,
+  isSharingEnabled,
+  isCommentEnabled
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -1979,7 +1990,23 @@ export default ({ withAds = true, ...config } = {}) => {
     __typename: "Article",
     id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
     publicationName: "TIMES",
-    publishedTime: "2015-03-13T18:54:58.000Z"
+    publishedTime: "2015-03-13T18:54:58.000Z",
+    tiles: [
+      {
+        __typename: "Tile",
+        slices: [
+          {
+            __typename: "SecondaryFourSlice",
+            sections: [
+              {
+                __typename: "StandardSection",
+                title: "Some Section"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   };
 
   const defaultConfig = makeDefaultConfig(config);
@@ -2138,5 +2165,8 @@ export const testFixture = {
       slug: "topic"
     }
   ],
-  url: "https://url.io"
+  url: "https://url.io",
+  isSavingEnabled: true,
+  isSharingEnabled: true,
+  isCommentEnabled: true
 };

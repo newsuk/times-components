@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { mount } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import serializers from "./serializers";
@@ -23,7 +23,7 @@ const tests = [
     test: () => {
       const wrapper = mount(
         <Card {...props} isLoading>
-          <Text>Loading state</Text>
+          <TcText>Loading state</TcText>
         </Card>
       );
 
@@ -35,7 +35,7 @@ const tests = [
     test: () => {
       const wrapper = mount(
         <Card {...props} isLoading isReversed>
-          <Text>Loading in reverse</Text>
+          <TcText>Loading in reverse</TcText>
         </Card>
       );
 

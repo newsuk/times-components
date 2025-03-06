@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 1 article 1`] = `
+<DocumentFragment>
+  <div
+    id="recommended-articles"
+  >
+    <div
+      class="sc-bdVaJa vbIkV"
+    >
+      Today's news
+    </div>
+    <div>
+      RelatedArticles
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 2 articles 1`] = `
+<DocumentFragment>
+  <div
+    id="recommended-articles"
+  >
+    <div
+      class="sc-bdVaJa vbIkV"
+    >
+      Today's news
+    </div>
+    <div>
+      RelatedArticles
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+      <div>
+        Lieutenant Colonel Ian Crooke
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 3 articles 1`] = `
+<DocumentFragment>
+  <div
+    id="recommended-articles"
+  >
+    <div
+      class="sc-bdVaJa vbIkV"
+    >
+      Today's news
+    </div>
+    <div>
+      RelatedArticles
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+      <div>
+        Lieutenant Colonel Ian Crooke
+      </div>
+      <div>
+        Is the party over for Johnson?
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

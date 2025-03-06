@@ -10,6 +10,6 @@ export const InArticleLink: React.FC<{
 }> = ({ link, linkText, onClick }) => (
   <Link href={link} onClick={() => onClick && onClick(linkText)}>
     <LinkText>{linkText}</LinkText>
-    <IconForwardChevron height={18} width={8} fillColour={null} />
+    <IconForwardChevron height={18} width={8} />
   </Link>
 );

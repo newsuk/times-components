@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import ArticleSummary from "./src/article-summary";
 
 import defaultFixture from "./fixtures/default";
@@ -11,7 +11,7 @@ import videoLabelFixture from "./fixtures/video-label";
 import reviewFixture from "./fixtures/review";
 import straplineFixture from "./fixtures/strapline";
 
-const story = m => <View style={{ padding: 20 }}>{m}</View>;
+const story = m => <TcView style={{ padding: 20 }}>{m}</TcView>;
 const isTablet = true;
 
 export default {

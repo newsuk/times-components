@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import styles from "./styles";
+import sharedStyles from "./newStyles";
 
 const AuthorProfileHeadImage = ({ uri }) => (
   <Image
     aspectRatio={1}
-    style={styles.authorPhoto}
+    style={sharedStyles.authorPhoto}
     uri={uri}
     accessibilityLabel="author-image"
   />

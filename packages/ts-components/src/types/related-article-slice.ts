@@ -18,6 +18,13 @@ type Byline = {
 
 type Bylines = Array<{ byline: Byline[]; image?: any }>;
 
+export type ArticleBylineAuthorData = {
+  slug: string;
+  name?: string;
+  jobTitle?: string;
+  image?: string;
+};
+
 type Summary = {
   name: string;
   attributes?: { [attribute: string]: string };

@@ -3,6 +3,951 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.61](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.60...@times-components/error-view@2.6.61) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.60](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.59...@times-components/error-view@2.6.60) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.59](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.58...@times-components/error-view@2.6.59) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.58](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.57...@times-components/error-view@2.6.58) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.57](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.56...@times-components/error-view@2.6.57) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.56](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.55...@times-components/error-view@2.6.56) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.55](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.54...@times-components/error-view@2.6.55) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.54](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.53...@times-components/error-view@2.6.54) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.53](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.52...@times-components/error-view@2.6.53) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.52](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.51...@times-components/error-view@2.6.52) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.51](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.50...@times-components/error-view@2.6.51) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.50](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.49...@times-components/error-view@2.6.50) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.49](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.48...@times-components/error-view@2.6.49) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.48](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.47...@times-components/error-view@2.6.48) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.47](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.46...@times-components/error-view@2.6.47) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.46](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.45...@times-components/error-view@2.6.46) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.45](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.44...@times-components/error-view@2.6.45) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.44](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.43...@times-components/error-view@2.6.44) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.43](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.42...@times-components/error-view@2.6.43) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.42](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.41...@times-components/error-view@2.6.42) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.41](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.40...@times-components/error-view@2.6.41) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.40](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.39...@times-components/error-view@2.6.40) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.39](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.38...@times-components/error-view@2.6.39) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.38](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.37...@times-components/error-view@2.6.38) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.37](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.36...@times-components/error-view@2.6.37) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.36](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.35...@times-components/error-view@2.6.36) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.35](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.34...@times-components/error-view@2.6.35) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.34](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.33...@times-components/error-view@2.6.34) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.33](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.32...@times-components/error-view@2.6.33) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.32](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.31...@times-components/error-view@2.6.32) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.31](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.30...@times-components/error-view@2.6.31) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.30](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.29...@times-components/error-view@2.6.30) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.29](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.28...@times-components/error-view@2.6.29) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.28](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.27...@times-components/error-view@2.6.28) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.27](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.26...@times-components/error-view@2.6.27) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.26](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.25...@times-components/error-view@2.6.26) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.25](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.24...@times-components/error-view@2.6.25) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.24](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.23...@times-components/error-view@2.6.24) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.23](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.22...@times-components/error-view@2.6.23) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.22](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.21...@times-components/error-view@2.6.22) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.21](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.20...@times-components/error-view@2.6.21) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.20](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.19...@times-components/error-view@2.6.20) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.19](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.18...@times-components/error-view@2.6.19) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.18](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.17...@times-components/error-view@2.6.18) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.17](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.16...@times-components/error-view@2.6.17) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.16](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.15...@times-components/error-view@2.6.16) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.15](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.14...@times-components/error-view@2.6.15) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.14](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.13...@times-components/error-view@2.6.14) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.13](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.12...@times-components/error-view@2.6.13) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.12](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.11...@times-components/error-view@2.6.12) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.11](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.10...@times-components/error-view@2.6.11) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.10](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.9...@times-components/error-view@2.6.10) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.9](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.8...@times-components/error-view@2.6.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.8](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.7...@times-components/error-view@2.6.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.7](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.6...@times-components/error-view@2.6.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.6](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.5...@times-components/error-view@2.6.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.5](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.4...@times-components/error-view@2.6.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.4](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.3...@times-components/error-view@2.6.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.3](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.2...@times-components/error-view@2.6.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.2](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.1...@times-components/error-view@2.6.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.6.1](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.6.0...@times-components/error-view@2.6.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.21...@times-components/error-view@2.6.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [2.5.21](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.20...@times-components/error-view@2.5.21) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.20](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.19...@times-components/error-view@2.5.20) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.19](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.18...@times-components/error-view@2.5.19) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.18](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.17...@times-components/error-view@2.5.18) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.17](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.16...@times-components/error-view@2.5.17) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.16](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.15...@times-components/error-view@2.5.16) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.15](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.14...@times-components/error-view@2.5.15) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.14](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.13...@times-components/error-view@2.5.14) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.13](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.12...@times-components/error-view@2.5.13) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.12](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.11...@times-components/error-view@2.5.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.11](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.10...@times-components/error-view@2.5.11) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.10](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.9...@times-components/error-view@2.5.10) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.9](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.8...@times-components/error-view@2.5.9) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.8](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.7...@times-components/error-view@2.5.8) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.7](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.6...@times-components/error-view@2.5.7) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.6](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.5...@times-components/error-view@2.5.6) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.5](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.4...@times-components/error-view@2.5.5) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.4](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.3...@times-components/error-view@2.5.4) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.3](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.2...@times-components/error-view@2.5.3) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.2](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.1...@times-components/error-view@2.5.2) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.5.1](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.5.0...@times-components/error-view@2.5.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.5...@times-components/error-view@2.5.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [2.4.5](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.4...@times-components/error-view@2.4.5) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.3...@times-components/error-view@2.4.4) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.4.3](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.2...@times-components/error-view@2.4.3) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.4.2](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.1...@times-components/error-view@2.4.2) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.4.1](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.4.0...@times-components/error-view@2.4.1) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.92...@times-components/error-view@2.4.0) (2022-07-12)
+
+
+### Features
+
+* **TDP-1715:** remove react native from topics ([#3023](https://github.com/newsuk/times-components/issues/3023)) ([85cd12e](https://github.com/newsuk/times-components/commit/85cd12eaf132bf9f410d154a2e0400cea87a20b1))
+
+
+
+
+
+## [2.3.92](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.91...@times-components/error-view@2.3.92) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.91](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.90...@times-components/error-view@2.3.91) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.90](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.89...@times-components/error-view@2.3.90) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.89](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.88...@times-components/error-view@2.3.89) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.88](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.87...@times-components/error-view@2.3.88) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.87](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.86...@times-components/error-view@2.3.87) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.86](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.85...@times-components/error-view@2.3.86) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.85](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.84...@times-components/error-view@2.3.85) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.84](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.83...@times-components/error-view@2.3.84) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.83](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.82...@times-components/error-view@2.3.83) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.82](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.81...@times-components/error-view@2.3.82) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.81](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.80...@times-components/error-view@2.3.81) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.80](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.79...@times-components/error-view@2.3.80) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.79](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.78...@times-components/error-view@2.3.79) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.78](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.77...@times-components/error-view@2.3.78) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.77](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.76...@times-components/error-view@2.3.77) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.76](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.75...@times-components/error-view@2.3.76) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.75](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.74...@times-components/error-view@2.3.75) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.74](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.73...@times-components/error-view@2.3.74) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.73](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.72...@times-components/error-view@2.3.73) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.72](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.71...@times-components/error-view@2.3.72) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.71](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.70...@times-components/error-view@2.3.71) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.70](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.69...@times-components/error-view@2.3.70) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.69](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.68...@times-components/error-view@2.3.69) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.68](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.67...@times-components/error-view@2.3.68) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.67](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.66...@times-components/error-view@2.3.67) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.3.66](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.65...@times-components/error-view@2.3.66) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
 ## [2.3.65](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.64...@times-components/error-view@2.3.65) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/error-view

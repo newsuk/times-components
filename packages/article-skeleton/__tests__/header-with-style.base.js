@@ -1,9 +1,9 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
-import { Text, View } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -47,9 +47,9 @@ export const snapshotTests = renderComponent => [
     name: "article with header",
     test() {
       const header = () => (
-        <View>
-          <Text>Example Header</Text>
-        </View>
+        <TcView>
+          <TcText>Example Header</TcText>
+        </TcView>
       );
       const article = articleFixture(emptyArticle);
       const output = renderComponent(renderArticle(article), header);

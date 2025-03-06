@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -8,7 +7,6 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -21,27 +19,6 @@ const props = {
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 
-const styles = [
-  "alignItems",
-  "backgroundColor",
-  "bottom",
-  "display",
-  "flex",
-  "flexDirection",
-  "flexGrow",
-  "height",
-  "justifyContent",
-  "left",
-  "opacity",
-  "overflow",
-  "paddingBottom",
-  "position",
-  "right",
-  "top",
-  "width",
-  "zIndex"
-];
-
 export default () => {
   addSerializers(
     expect,
@@ -52,7 +29,6 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      rnwTransform(AppRegistry, styles),
       hoistStyleTransform
     )
   );

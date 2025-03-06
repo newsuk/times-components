@@ -12,7 +12,7 @@ import {
   MockedProvider
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import ArticleMagazineComment from "./src/article-magazine-comment";
 
@@ -142,7 +142,7 @@ export default {
         });
       },
       name: "Magazine Comment - Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

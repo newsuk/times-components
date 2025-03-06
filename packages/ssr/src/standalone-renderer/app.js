@@ -18,6 +18,11 @@ const makeHtml = (
 ) => `
         <!DOCTYPE html>
         <html>
+          <style>
+            html {
+              scroll-behavior: smooth;
+            }
+          </style>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             ${headMarkup}
@@ -77,11 +82,7 @@ server.get("/article/:id", (request, response) => {
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const commentingConfig = {
-    account: {
-      current: process.env.SPOT_ID,
-      readOnly: process.env.SPOT_ID
-    },
-    switchOver: "2020-08-10T16:00:00.000Z"
+    account: process.env.SPOT_ID
   };
 
   const headers = process.env.GRAPHQL_TOKEN
@@ -153,40 +154,6 @@ server.get("/profile/:slug", (request, response) => {
         response.send(
           makeHtml(initialState, initialProps, {
             bundleName: "author-profile",
-            headMarkup,
-            markup,
-            responsiveStyles,
-            styles
-          })
-        )
-    );
-});
-
-server.get("/topic/:slug", (request, response) => {
-  const {
-    params: { slug: topicSlug },
-    query: { page, pq }
-  } = request;
-  const currentPage = toNumber(page) || 1;
-  const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
-
-  ssr
-    .topic(
-      { currentPage, topicSlug },
-      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
-    )
-    .then(
-      ({
-        headMarkup,
-        initialProps,
-        initialState,
-        markup,
-        responsiveStyles,
-        styles
-      }) =>
-        response.send(
-          makeHtml(initialState, initialProps, {
-            bundleName: "topic",
             headMarkup,
             markup,
             responsiveStyles,

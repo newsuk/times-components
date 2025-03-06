@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyleSheet, View } from "react-native";
+import { TcView } from "@times-components/utils";
 
-export const boxStyles = StyleSheet.create({
+export const boxStyles = {
   box: {
     borderColor: "black",
     borderStyle: "solid",
@@ -10,11 +10,13 @@ export const boxStyles = StyleSheet.create({
     height: 200,
     width: 200
   }
-});
+};
 
 const Box = ({ children, color, id }) => (
   <div id={id}>
-    <View style={[boxStyles.box, { backgroundColor: color }]}>{children}</View>
+    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>
+      {children}
+    </TcView>
   </div>
 );
 Box.propTypes = {

@@ -1,12 +1,12 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 /* --- Body --- */
 
@@ -28,7 +28,7 @@ export const ParagraphContainer = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin-bottom: ${spacing(5)};
@@ -61,12 +61,8 @@ export const InteractiveContainer = styled.div`
 
 /* --- Lead Asset Styles --- */
 
-export const LeadAsset = styled(View)`
+export const LeadAsset = styled(TcView)`
   margin-bottom: ${spacing(2)};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
-  }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
@@ -75,7 +71,7 @@ export const LeadAsset = styled(View)`
   }
 `;
 
-export const LeadAssetCaptionContainer = styled(View)`
+export const LeadAssetCaptionContainer = styled(TcView)`
   margin-left: ${spacing(2)};
   margin-right: ${spacing(2)};
 
@@ -91,7 +87,7 @@ export const LeadAssetCaptionContainer = styled(View)`
 
 /* --- Article Images --- */
 
-export const PrimaryImg = styled(View)`
+export const PrimaryImg = styled(TcView)`
   width: 100%;
   flex-direction: column;
   padding-bottom: ${spacing(5)};
@@ -106,7 +102,7 @@ export const PrimaryImg = styled(View)`
   }
 `;
 
-export const SecondaryImg = styled(View)`
+export const SecondaryImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -126,7 +122,7 @@ export const SecondaryImg = styled(View)`
   }
 `;
 
-export const InlineImg = styled(View)`
+export const InlineImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -149,7 +145,7 @@ export const InlineImg = styled(View)`
 
 /* --- Pull Quotes --- */
 
-export const PullQuoteResp = styled(View)`
+export const PullQuoteResp = styled(TcView)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
   margin-bottom: ${spacing(2)};
@@ -165,7 +161,7 @@ export const PullQuoteResp = styled(View)`
   }
 `;
 
-export const PullQuoteContainer = styled(View)`
+export const PullQuoteContainer = styled(TcView)`
   display: block;
 
   @media (min-width: ${breakpoints.medium}px) {

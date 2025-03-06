@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
@@ -6,9 +6,9 @@ import {
   fontSizes,
   lineHeight,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
-export const AuthorImageContainer = styled(View)`
+export const AuthorImageContainer = styled(TcView)`
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
@@ -20,7 +20,8 @@ export const AuthorImageContainer = styled(View)`
   }
 `;
 
-export const DatePublicationContainer = styled(Text)`
+export const DatePublicationContainer = styled(TcText)`
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(3)};
@@ -30,7 +31,7 @@ export const DatePublicationContainer = styled(Text)`
   }
 `;
 
-export const FlagsContainer = styled(View)`
+export const FlagsContainer = styled(TcView)`
   padding-top: ${spacing(1)};
   padding-bottom: ${spacing(3)};
 
@@ -39,14 +40,17 @@ export const FlagsContainer = styled(View)`
   }
 `;
 
-export const HeaderContainer = styled(View)`
+export const HeaderContainer = styled(TcView)`
   order: 2;
+  z-index: 1;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
     margin: 0 auto ${spacing(2)};
     margin-left: auto;
     margin-right: auto;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
@@ -54,7 +58,17 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = styled(Text)`
+export const HeadlineContainer = styled.h1`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  ${props => props.styles && props.styles};
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -62,14 +76,14 @@ export const HeadlineContainer = styled(Text)`
   }
 `;
 
-export const LabelContainer = styled(View)`
+export const LabelContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     margin-top: 0px;
   }
 `;
 
-export const Meta = styled(View)`
-  max-width: 100%;
+export const Meta = styled(TcView)`
+  ${props => props.styles && props.styles} max-width: 100%;
   justify-content: center;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -77,7 +91,7 @@ export const Meta = styled(View)`
   }
 `;
 
-export const MetaContainer = styled(View)`
+export const MetaContainer = styled(TcView)`
   align-items: center;
   justify-content: center;
 
@@ -87,7 +101,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const Separator = styled(View)`
+export const Separator = styled(TcView)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -99,17 +113,30 @@ export const Separator = styled(View)`
   }
 `;
 
-export const StandfirstContainer = styled(Text)`
+export const StandfirstContainer = styled.h2`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-weight: 400;
+
+  ${props => props.styles && props.styles};
+
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
       font: "bodyRegular",
       fontSize: "infoTitle"
     })}px;
+    margin-top: ${spacing(1)};
     margin-bottom: ${spacing(5)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    margin-bottom: ${spacing(4)};
+    margin-top: ${spacing(1)};
+    margin-bottom: ${spacing(5)};
   }
 `;

@@ -5,7 +5,6 @@ import {
   compose,
   flattenStyleTransform,
   minimaliseTransform,
-  minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
 import UserState from "../src/user-state";
@@ -18,7 +17,6 @@ addSerializers(
   expect,
   compose(
     print,
-    minimalNativeTransform,
     minimaliseTransform((value, key) => key !== "style"),
     flattenStyleTransform
   )

@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,44 +5,11 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared-error.base";
 
 const keepProps = new Set(["class", "className", "style"]);
-
-const styles = [
-  "alignItems",
-  "alignSelf",
-  "backgroundColor",
-  "borderBottomWidth",
-  "borderColor",
-  "borderTopWidth",
-  "bottom",
-  "color",
-  "flex",
-  "flexDirection",
-  "fontFamily",
-  "fontSize",
-  "height",
-  "justifyContent",
-  "margin",
-  "marginBottom",
-  "marginLeft",
-  "marginRight",
-  "marginTop",
-  "maxWidth",
-  "minHeight",
-  "paddingBottom",
-  "paddingTop",
-  "paddingVertical",
-  "position",
-  "right",
-  "textAlign",
-  "viewBox",
-  "width"
-];
 
 export default () => {
   addSerializers(
@@ -54,7 +20,6 @@ export default () => {
       minimaliseTransform(
         (value, key) => !keepProps.has(key) && !key.includes("Class")
       ),
-      rnwTransform(AppRegistry, styles),
       flattenStyleTransform,
       hoistStyleTransform
     )

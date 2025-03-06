@@ -7,7 +7,7 @@ import styles from "../styles/article-topics";
 const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
-      <UserState state={UserState.loggedInOrShared}>
+      <UserState state={UserState.showTopicTags}>
         <nav>
           <ArticleTopics style={styles.topicsMetaContainer} topics={topics} />
         </nav>

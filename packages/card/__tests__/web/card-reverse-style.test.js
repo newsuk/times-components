@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { mount } from "enzyme";
 import serializers from "./serializers";
 import Card from "../../src/card";
@@ -19,7 +19,7 @@ serializers();
 it("card with reversed layout", () => {
   const wrapper = mount(
     <Card {...props} isReversed>
-      <Text>A card in reverse</Text>
+      <TcText>A card in reverse</TcText>
     </Card>
   );
 

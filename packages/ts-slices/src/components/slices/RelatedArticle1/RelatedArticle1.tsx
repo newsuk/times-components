@@ -6,27 +6,22 @@ import { SliceStyle } from '../../../types/styles';
 import { ClickHandlerType } from '../../../types/event';
 import { setDisplaySchema } from '../../../utils/getArticleStyles';
 
-import { Article } from '../../article/Article/Article';
+import { ArticleStandard } from '../../article/ArticleStandard/ArticleStandard';
 
 import { SliceContainer, SlotContainer } from './styles';
 
-const Lead1: React.FC<{
+const RelatedArticle1: React.FC<{
   slice: SliceData;
   styles?: SliceStyle;
   clickHandler?: ClickHandlerType;
 }> = React.memo(({ slice, styles, clickHandler }) => (
   <SliceContainer styles={styles}>
     <SlotContainer styles={styles}>
-      <Article
+      <ArticleStandard
         article={get(slice, 'children[0].article')}
         displaySchema={setDisplaySchema({
-          sm: {
-            imageRatio: '3:2',
-            headlineFontSize: 28
-          },
-          md: { isSideBySide: true },
-          lg: { headlineFontSize: 32 },
-          xlg: { headlineFontSize: 36 }
+          sm: { imageRatio: '16:9', headlineFontSize: 22 },
+          md: { isSideBySide: true }
         })}
         clickHandler={clickHandler}
       />
@@ -34,4 +29,4 @@ const Lead1: React.FC<{
   </SliceContainer>
 ));
 
-export default Lead1;
+export default RelatedArticle1;

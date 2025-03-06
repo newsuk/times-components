@@ -39,7 +39,7 @@ package has a `my-component.showcase.js` file which exports a showcase object.
 
 - type: string: story | decorator
 - name: string
-- platform: string: ios | android | native | web
+- platform: string: web
 - component: function: The method can take optional arguments `knobs` and
   `decorators`
 
@@ -52,7 +52,7 @@ export default {
     {
       type: "story",
       name: "The name of my showcase",
-      platform: "native",
+      platform: "web",
       component: (knobs, decorators) => (
         <MyComponent />
       )

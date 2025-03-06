@@ -10,7 +10,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -28,7 +28,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -52,20 +52,20 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 
 .c0 .pa-schedule .pa_ScheduleHeader_header {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 18px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ScheduleHeader_filterbar {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   background: #EDEDED;
   font-size: 16px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -93,7 +93,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -112,7 +112,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 12px;
   top: 60px;
   position: relative;
@@ -208,7 +208,7 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -226,7 +226,7 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -250,20 +250,20 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 
 .c0 .pa-schedule .pa_ScheduleHeader_header {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 18px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ScheduleHeader_filterbar {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   background: #EDEDED;
   font-size: 16px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -291,7 +291,7 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -310,7 +310,7 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 12px;
   top: 60px;
   position: relative;
@@ -406,7 +406,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -424,7 +424,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -448,20 +448,20 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 .c0 .pa-schedule .pa_ScheduleHeader_header {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 18px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ScheduleHeader_filterbar {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   background: #EDEDED;
   font-size: 16px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -489,7 +489,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -508,7 +508,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 12px;
   top: 60px;
   position: relative;
@@ -604,7 +604,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -622,7 +622,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -646,20 +646,20 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 
 .c0 .pa-schedule .pa_ScheduleHeader_header {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 18px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ScheduleHeader_filterbar {
   color: #1D1D1B;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   background: #EDEDED;
   font-size: 16px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -687,7 +687,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 16px;
 }
 
@@ -706,7 +706,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 12px;
   top: 60px;
   position: relative;

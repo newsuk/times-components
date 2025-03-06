@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 
@@ -20,7 +20,7 @@ const SimpleParagraph = ({
 
   return (
     <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
-      <Text allowFontScaling={false} selectable style={{ lineHeight }}>
+      <TcText allowFontScaling={false} selectable style={{ lineHeight }}>
         {children.map(child =>
           child.splitByDifferenceInAttributes().map(nestedChild => {
             const [attribute, href] = nestedChild.collapsedAttributes(0);
@@ -42,13 +42,13 @@ const SimpleParagraph = ({
               );
             }
             return (
-              <Text selectable allowFontScaling={false} style={style}>
+              <TcText selectable allowFontScaling={false} style={style}>
                 {nestedChild.string}
-              </Text>
+              </TcText>
             );
           })
         )}
-      </Text>
+      </TcText>
     </ArticleParagraphWrapper>
   );
 };

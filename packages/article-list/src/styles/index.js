@@ -1,10 +1,7 @@
-import { StyleSheet } from "react-native";
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const { colours, fontFactory, spacing } = styleguide();
-
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
   listContentErrorContainer: {
     flex: 1,
@@ -42,7 +39,7 @@ const styles = StyleSheet.create({
     ...sharedStyles.paginationSpacing,
     flex: 1
   }
-});
+};
 
 const retryButtonStyles = {
   alignSelf: "center",

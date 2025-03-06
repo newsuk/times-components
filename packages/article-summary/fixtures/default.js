@@ -1,6 +1,6 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
 import { ArticleFlags } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultHeadline =

@@ -10,7 +10,7 @@ import previewData from '../../fixtures/preview-data/in-article-info-card';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Info Card', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
+  .add('Standard with Copy & Subtitle', () => (
     <TrackingContextProvider
       analyticsStream={analyticsStream}
       context={{
@@ -21,26 +21,64 @@ storiesOf('Typescript Component/In Article/Info Card', module)
         }
       }}
     >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
+      <ArticleHarness>
+        <FetchProvider previewData={previewData[43606]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
+      </ArticleHarness>
     </TrackingContextProvider>
   ))
-  .add('Standard with Copy & Subtitle', () => (
-    <FetchProvider previewData={previewData[43606]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
-  ))
   .add('Standard with Image', () => (
-    <FetchProvider previewData={previewData[43961]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'Headline',
+          section_details: 'Section'
+        }
+      }}
+    >
+      <ArticleHarness>
+        <FetchProvider previewData={previewData[43961]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
   ))
   .add('Wide with Copy', () => (
-    <FetchProvider previewData={previewData[43603]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'Headline',
+          section_details: 'Section'
+        }
+      }}
+    >
+      <ArticleHarness>
+        <FetchProvider previewData={previewData[43603]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
   ))
   .add('Wide with Image', () => (
-    <FetchProvider previewData={previewData[43614]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'Headline',
+          section_details: 'Section'
+        }
+      }}
+    >
+      <ArticleHarness>
+        <FetchProvider previewData={previewData[43614]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
   ));

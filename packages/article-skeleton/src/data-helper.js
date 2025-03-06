@@ -76,6 +76,11 @@ export const getRegistrationType = () => {
   return user && user.registrationType ? user.registrationType : "";
 };
 
+export const getCustomerType = () => {
+  const user = (global.nuk && global.nuk.user) || {};
+  return user && user.customerType ? user.customerType : "";
+};
+
 export const getSharedStatus = () => {
   const user = (global.nuk && global.nuk.user) || {};
   return user && user.isShared ? "yes" : "no";
@@ -83,20 +88,24 @@ export const getSharedStatus = () => {
 
 export const getIsLiveOrBreakingFlag = flags => {
   const liveOrBreaking = ["LIVE", "BREAKING"];
-  let isObject;
 
   const findFlag =
     flags &&
-    flags.find(flag => {
-      if (typeof flag === "string") {
-        isObject = false;
-        return liveOrBreaking.includes(flag);
-      }
-      isObject = true;
-      return flag.type && liveOrBreaking.includes(flag.type);
-    });
+    flags.find(flag => liveOrBreaking.includes(flag.type.toUpperCase()));
 
-  return isObject && findFlag ? findFlag.type : findFlag;
+  return findFlag && findFlag.type;
+};
+
+export const getActiveArticleFlags = flags => {
+  if (!flags) {
+    return [];
+  }
+  const findFlag = flags.find(
+    flag =>
+      flag.expiryTime === null ||
+      new Date().getTime() < new Date(flag.expiryTime).getTime()
+  );
+  return findFlag && findFlag.type && findFlag.type.toLowerCase();
 };
 
 export default prepareDataForListView;

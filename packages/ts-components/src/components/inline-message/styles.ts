@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts } from '@times-components/styleguide';
+import { fonts } from '@times-components/ts-styleguide';
 
 const MessageConfig = {
   info: { background: '#bedeed', foreground: '#1573a2' },
@@ -45,7 +45,7 @@ export const ContentContainer = styled.div`
 export const Title = styled.div`
   font-family: ${fonts.supporting};
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 16px;
 
   margin-bottom: 6px;
@@ -53,6 +53,10 @@ export const Title = styled.div`
 export const Description = styled.div`
   font-family: ${fonts.supporting};
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
+  & a {
+    color: #333333;
+    text-decoration: underline;
+  }
 `;

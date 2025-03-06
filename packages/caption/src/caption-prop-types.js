@@ -1,8 +1,7 @@
-import { Text, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 
-const { style: TextPropTypesStyle } = Text.propTypes;
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+const { style: TextPropTypesStyle } = PropTypes.string;
+const { style: ViewPropTypesStyle } = PropTypes.object;
 
 export const propTypes = {
   children: PropTypes.element,

@@ -1,15 +1,15 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import Pagination from "@times-components/pagination";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
 const ArticleListPagination = props => (
-  <View style={styles.paginationContainer}>
-    <View style={styles.paginationSpacing}>
+  <TcView style={styles.paginationContainer}>
+    <TcView style={styles.paginationSpacing}>
       <Pagination {...props} generatePageLink={pageNum => `?page=${pageNum}`} />
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 ArticleListPagination.propTypes = {

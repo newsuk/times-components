@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount, shallow } from "enzyme";
 import {
   addSerializers,
@@ -7,25 +6,10 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter,
-  rnwTransform
+  stylePrinter
 } from "@times-components/jest-serializer";
 import Button from "../src/button";
 import shared from "./shared.base";
-
-const styles = [
-  "alignItems",
-  "backgroundColor",
-  "borderRadius",
-  "color",
-  "fontFamily",
-  "fontSize",
-  "height",
-  "justifyContent",
-  "minWidth",
-  "paddingTop",
-  "width"
-];
 
 const accessibleAttributes = new Set(["aria-label", "role", "tabIndex"]);
 
@@ -36,7 +20,6 @@ export default () => {
     compose(
       stylePrinter,
       minimalWebTransform,
-      rnwTransform(AppRegistry, styles),
       minimaliseTransform((value, key) => accessibleAttributes.has(key))
     )
   );

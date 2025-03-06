@@ -1,6 +1,6 @@
 import React from "react";
-import { boolean } from "@storybook/addon-knobs/react";
-import { scales } from "@times-components/styleguide";
+import { boolean } from "@storybook/addon-knobs";
+import { scales } from "@times-components/ts-styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
@@ -27,7 +27,7 @@ export default {
     {
       component: () => (
         <MockBookmarksProvider delay={1000} articleId={articleId}>
-          <MessageManager animate delay={3000} scale={scales.medium}>
+          <MessageManager delay={3000} scale={scales.medium}>
             <MessageContext.Consumer>
               {({ showMessage }) => (
                 <SaveAndShareBar
@@ -38,6 +38,7 @@ export default {
                   getTokenisedShareUrl={mockGetTokenisedArticleUrl}
                   savingEnabled={boolean("Is Saving Enabled", true)}
                   sharingEnabled={boolean("Is Sharing Enabled", true)}
+                  isPreviewMode
                 />
               )}
             </MessageContext.Consumer>

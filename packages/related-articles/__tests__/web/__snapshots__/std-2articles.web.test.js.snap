@@ -23,7 +23,7 @@ exports[`1. two related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              url="https://thetimes.com/l1/l2/article/first.com"
             >
               <div>
                 <Card
@@ -44,24 +44,13 @@ exports[`1. two related articles 1`] = `
                         title="first label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       First Short Headline
-                    </h3>
-                    <div>
-                      <div>
-                        <span>
-                          
-                          Summary 125
-                          ...
-                        </span>
-                      </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >
@@ -70,9 +59,9 @@ exports[`1. two related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
+                      <div>
                         Camilla Long, Environment Editor
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </Card>
@@ -91,7 +80,7 @@ exports[`1. two related articles 1`] = `
                   "padding": 10,
                 }
               }
-              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              url="https://thetimes.com/l1/l2/article/second.com"
             >
               <div>
                 <Card
@@ -112,24 +101,13 @@ exports[`1. two related articles 1`] = `
                         title="second label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       Second Short Headline
-                    </h3>
-                    <div>
-                      <div>
-                        <span>
-                          
-                          Summary 125
-                          ...
-                        </span>
-                      </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >
@@ -138,9 +116,9 @@ exports[`1. two related articles 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
+                      <div>
                         Camilla Long, Environment Editor
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </Card>

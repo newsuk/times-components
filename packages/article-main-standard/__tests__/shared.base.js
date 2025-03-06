@@ -142,6 +142,33 @@ export const snapshotTests = renderComponent => [
 
       expect(output).toMatchSnapshot();
     }
+  },
+  {
+    name: "an article with puzzle sidebar",
+    test() {
+      const output = renderComponent(
+        <ArticleMainStandard
+          {...articleProps}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={articleFixture({
+            ...testFixture,
+            ...emptyArticle,
+            section: "Times2"
+          })}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
   }
 ];
 

@@ -1,0 +1,27 @@
+import styled from 'styled-components';
+import { CSSProperties } from 'react';
+
+type Style = CSSProperties | undefined;
+
+export default styled.div<{ style?: Style }>`
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: ${({ style }) =>
+    style && style.color ? style.color : 'rgb(0, 0, 0)'};
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: ${({ style }) =>
+    style && style.fontSize ? style.fontSize : '14px'};
+  font-weight: ${({ style }) => style && style.fontWeight && style.fontWeight};
+  margin-bottom: ${({ style }) =>
+    style && style.marginBottom ? style.marginBottom : '0px'};
+  margin-left: ${({ style }) =>
+    style && style.marginLeft ? style.marginLeft : '0px'};
+  margin-top: ${({ style }) =>
+    style && style.marginTop ? style.marginTop : '0px'};
+  font-family: ${({ style }) =>
+    style && style.fontFamily ? style.fontFamily : 'sans-serif'};
+`;

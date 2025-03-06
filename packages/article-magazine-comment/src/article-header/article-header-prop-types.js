@@ -15,7 +15,8 @@ const articleHeaderPropTypes = {
   longRead: PropTypes.bool,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
+  updatedTime: PropTypes.string
 };
 
 const articleHeaderDefaultProps = {
@@ -23,7 +24,8 @@ const articleHeaderDefaultProps = {
   hasVideo: false,
   label: null,
   longRead: false,
-  standfirst: null
+  standfirst: null,
+  updatedTime: null
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

@@ -179,6 +179,7 @@ describe('GalleryCarousel', () => {
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : left',
           section_details: 'Section'
         },
@@ -212,6 +213,7 @@ describe('GalleryCarousel', () => {
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_name: 'button : right',
+          event_navigation_browsing_method: 'click',
           section_details: 'Section'
         },
         component: 'ArticleSkeleton',

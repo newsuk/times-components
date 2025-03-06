@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { TextLink } from "@times-components/link";
 import { IconTwitter } from "@times-components/icons";
 import { propTypes, defaultProps } from "./pull-quote-twitter-link-prop-types";
@@ -14,9 +14,10 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
   const url = makeTwitterUrl(twitter);
 
   return (
-    <View style={styles.twitterContainer}>
-      <IconTwitter height={10} width={11} />
+    <TcView style={styles.twitterContainer}>
+      <IconTwitter fillColour="currentColor" height={10} width={11} />
       <TextLink
+        className="pullQuoteTwitterLink"
         key={url}
         onPress={e => onTwitterLinkPress(e, { twitter, url })}
         style={styles.link}
@@ -25,7 +26,7 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
       >
         {twitter}
       </TextLink>
-    </View>
+    </TcView>
   );
 };
 

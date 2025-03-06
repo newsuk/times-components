@@ -1,9 +1,8 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 import withPageState from "./pagination-wrapper";
 import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
@@ -11,8 +10,7 @@ import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
 import LinkContainer from "./styles/responsive";
 
-const { colours, fontFactory } = styleguide();
-const styles = StyleSheet.create({
+const styles = {
   arrow: {
     color: colours.functional.action,
     ...fontFactory({
@@ -20,7 +18,7 @@ const styles = StyleSheet.create({
       fontSize: "meta"
     })
   }
-});
+};
 
 const Pagination = ({
   count,

@@ -3,6 +3,1031 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.41](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.40...@times-components/pull-quote@3.15.41) (2024-11-20)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.40](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.39...@times-components/pull-quote@3.15.40) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.39](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.38...@times-components/pull-quote@3.15.39) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.38](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.37...@times-components/pull-quote@3.15.38) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.37](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.36...@times-components/pull-quote@3.15.37) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.36](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.35...@times-components/pull-quote@3.15.36) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.35](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.34...@times-components/pull-quote@3.15.35) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.34](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.33...@times-components/pull-quote@3.15.34) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.33](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.32...@times-components/pull-quote@3.15.33) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.32](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.31...@times-components/pull-quote@3.15.32) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.31](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.30...@times-components/pull-quote@3.15.31) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.30](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.29...@times-components/pull-quote@3.15.30) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.29](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.28...@times-components/pull-quote@3.15.29) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.28](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.27...@times-components/pull-quote@3.15.28) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.27](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.26...@times-components/pull-quote@3.15.27) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.26](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.25...@times-components/pull-quote@3.15.26) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.25](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.24...@times-components/pull-quote@3.15.25) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.24](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.23...@times-components/pull-quote@3.15.24) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.23](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.22...@times-components/pull-quote@3.15.23) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.22](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.21...@times-components/pull-quote@3.15.22) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.21](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.20...@times-components/pull-quote@3.15.21) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.20](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.19...@times-components/pull-quote@3.15.20) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.19](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.18...@times-components/pull-quote@3.15.19) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.18](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.17...@times-components/pull-quote@3.15.18) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.17](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.16...@times-components/pull-quote@3.15.17) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.16](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.15...@times-components/pull-quote@3.15.16) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.15](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.14...@times-components/pull-quote@3.15.15) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.14](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.13...@times-components/pull-quote@3.15.14) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.13](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.12...@times-components/pull-quote@3.15.13) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.12](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.11...@times-components/pull-quote@3.15.12) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.11](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.10...@times-components/pull-quote@3.15.11) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.10](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.9...@times-components/pull-quote@3.15.10) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.8...@times-components/pull-quote@3.15.9) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.7...@times-components/pull-quote@3.15.8) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.6...@times-components/pull-quote@3.15.7) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.5...@times-components/pull-quote@3.15.6) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.4...@times-components/pull-quote@3.15.5) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.3...@times-components/pull-quote@3.15.4) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.2...@times-components/pull-quote@3.15.3) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.1...@times-components/pull-quote@3.15.2) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.15.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.15.0...@times-components/pull-quote@3.15.1) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.21...@times-components/pull-quote@3.15.0) (2023-11-08)
+
+
+### Features
+
+* **TMRX-1611:** update twitter logo to X ([#3640](https://github.com/newsuk/times-components/issues/3640)) ([47900db](https://github.com/newsuk/times-components/commit/47900dbda000a827d32764746c1b272736b497b0))
+
+
+
+
+
+## [3.14.21](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.20...@times-components/pull-quote@3.14.21) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.20](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.19...@times-components/pull-quote@3.14.20) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.19](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.18...@times-components/pull-quote@3.14.19) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.18](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.17...@times-components/pull-quote@3.14.18) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.17](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.16...@times-components/pull-quote@3.14.17) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.16](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.15...@times-components/pull-quote@3.14.16) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.15](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.14...@times-components/pull-quote@3.14.15) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.14](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.13...@times-components/pull-quote@3.14.14) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.13](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.12...@times-components/pull-quote@3.14.13) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.12](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.11...@times-components/pull-quote@3.14.12) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.11](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.10...@times-components/pull-quote@3.14.11) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.10](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.9...@times-components/pull-quote@3.14.10) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.8...@times-components/pull-quote@3.14.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.7...@times-components/pull-quote@3.14.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.6...@times-components/pull-quote@3.14.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.5...@times-components/pull-quote@3.14.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.4...@times-components/pull-quote@3.14.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.3...@times-components/pull-quote@3.14.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.2...@times-components/pull-quote@3.14.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.1...@times-components/pull-quote@3.14.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.14.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.14.0...@times-components/pull-quote@3.14.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.14.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.13.4...@times-components/pull-quote@3.14.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [3.13.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.13.3...@times-components/pull-quote@3.13.4) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.13.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.13.2...@times-components/pull-quote@3.13.3) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.13.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.13.1...@times-components/pull-quote@3.13.2) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.13.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.13.0...@times-components/pull-quote@3.13.1) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.3...@times-components/pull-quote@3.13.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.2...@times-components/pull-quote@3.12.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.1...@times-components/pull-quote@3.12.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.0...@times-components/pull-quote@3.12.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.4...@times-components/pull-quote@3.12.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [3.11.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.3...@times-components/pull-quote@3.11.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.2...@times-components/pull-quote@3.11.3) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.1...@times-components/pull-quote@3.11.2) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.0...@times-components/pull-quote@3.11.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.7...@times-components/pull-quote@3.11.0) (2023-01-12)
+
+
+### Features
+
+* **TDP-2852:** Replaced Tiempo, Flama and Century fonts with Times Modern ([#3213](https://github.com/newsuk/times-components/issues/3213)) ([f727c75](https://github.com/newsuk/times-components/commit/f727c75fa0fea754b341205966de7c5ae1fc2240))
+
+
+
+
+
+## [3.10.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.6...@times-components/pull-quote@3.10.7) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.5...@times-components/pull-quote@3.10.6) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.4...@times-components/pull-quote@3.10.5) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.3...@times-components/pull-quote@3.10.4) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.2...@times-components/pull-quote@3.10.3) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.1...@times-components/pull-quote@3.10.2) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.10.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.0...@times-components/pull-quote@3.10.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.10...@times-components/pull-quote@3.10.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [3.9.10](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.9...@times-components/pull-quote@3.9.10) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.8...@times-components/pull-quote@3.9.9) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.7...@times-components/pull-quote@3.9.8) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.6...@times-components/pull-quote@3.9.7) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.5...@times-components/pull-quote@3.9.6) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.4...@times-components/pull-quote@3.9.5) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.3...@times-components/pull-quote@3.9.4) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.2...@times-components/pull-quote@3.9.3) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+## [3.9.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.1...@times-components/pull-quote@3.9.2) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.9.0...@times-components/pull-quote@3.9.1) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.23...@times-components/pull-quote@3.9.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1707:** remove react native from pull quote ([#2989](https://github.com/newsuk/times-components/issues/2989)) ([a0da767](https://github.com/newsuk/times-components/commit/a0da76798cb28f2fbdfc1a5b30e0cda837b03234))
+
+
+
+
+
+## [3.8.23](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.22...@times-components/pull-quote@3.8.23) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.22](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.21...@times-components/pull-quote@3.8.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.21](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.20...@times-components/pull-quote@3.8.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.20](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.19...@times-components/pull-quote@3.8.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.19](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.18...@times-components/pull-quote@3.8.19) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.18](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.17...@times-components/pull-quote@3.8.18) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.17](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.16...@times-components/pull-quote@3.8.17) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.16](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.15...@times-components/pull-quote@3.8.16) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.15](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.14...@times-components/pull-quote@3.8.15) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.14](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.13...@times-components/pull-quote@3.8.14) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.13](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.12...@times-components/pull-quote@3.8.13) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.12](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.11...@times-components/pull-quote@3.8.12) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.11](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.10...@times-components/pull-quote@3.8.11) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.10](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.9...@times-components/pull-quote@3.8.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.8...@times-components/pull-quote@3.8.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.7...@times-components/pull-quote@3.8.8) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.6...@times-components/pull-quote@3.8.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.5...@times-components/pull-quote@3.8.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.5](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.4...@times-components/pull-quote@3.8.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.3...@times-components/pull-quote@3.8.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.2...@times-components/pull-quote@3.8.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.1...@times-components/pull-quote@3.8.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.8.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.0...@times-components/pull-quote@3.8.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.8.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.7.0...@times-components/pull-quote@3.8.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1705:** remove react native from link ([#2909](https://github.com/newsuk/times-components/issues/2909)) ([6437462](https://github.com/newsuk/times-components/commit/643746243797d1e8516ddf783649254591cf1257))
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.6.53...@times-components/pull-quote@3.7.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [3.6.53](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.6.52...@times-components/pull-quote@3.6.53) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.6.52](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.6.51...@times-components/pull-quote@3.6.52) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
 ## [3.6.51](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.6.50...@times-components/pull-quote@3.6.51) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/pull-quote

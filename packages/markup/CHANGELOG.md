@@ -3,6 +3,965 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.61...@times-components/markup@3.9.0) (2024-10-18)
+
+
+### Features
+
+* **TMD-892:** Productionise Tag Manager hyperlink tooling ([#3961](https://github.com/newsuk/times-components/issues/3961)) ([fdb8285](https://github.com/newsuk/times-components/commit/fdb82854249456f48aebae62756a6e2615c05cbe))
+
+
+
+
+
+## [3.8.61](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.60...@times-components/markup@3.8.61) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.60](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.59...@times-components/markup@3.8.60) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.59](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.58...@times-components/markup@3.8.59) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.58](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.57...@times-components/markup@3.8.58) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.57](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.56...@times-components/markup@3.8.57) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.56](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.55...@times-components/markup@3.8.56) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.55](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.54...@times-components/markup@3.8.55) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.54](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.53...@times-components/markup@3.8.54) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.53](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.52...@times-components/markup@3.8.53) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.52](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.51...@times-components/markup@3.8.52) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.51](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.50...@times-components/markup@3.8.51) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.50](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.49...@times-components/markup@3.8.50) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.49](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.48...@times-components/markup@3.8.49) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.48](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.47...@times-components/markup@3.8.48) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.47](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.46...@times-components/markup@3.8.47) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.46](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.45...@times-components/markup@3.8.46) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.45](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.44...@times-components/markup@3.8.45) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.44](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.43...@times-components/markup@3.8.44) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.43](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.42...@times-components/markup@3.8.43) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.42](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.41...@times-components/markup@3.8.42) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.41](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.40...@times-components/markup@3.8.41) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.40](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.39...@times-components/markup@3.8.40) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.39](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.38...@times-components/markup@3.8.39) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.38](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.37...@times-components/markup@3.8.38) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.37](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.36...@times-components/markup@3.8.37) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.36](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.35...@times-components/markup@3.8.36) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.35](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.34...@times-components/markup@3.8.35) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.34](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.33...@times-components/markup@3.8.34) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.33](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.32...@times-components/markup@3.8.33) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.32](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.31...@times-components/markup@3.8.32) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.31](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.30...@times-components/markup@3.8.31) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.30](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.29...@times-components/markup@3.8.30) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.29](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.28...@times-components/markup@3.8.29) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.28](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.27...@times-components/markup@3.8.28) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.27](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.26...@times-components/markup@3.8.27) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.26](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.25...@times-components/markup@3.8.26) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.25](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.24...@times-components/markup@3.8.25) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.24](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.23...@times-components/markup@3.8.24) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.23](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.22...@times-components/markup@3.8.23) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.22](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.21...@times-components/markup@3.8.22) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.21](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.20...@times-components/markup@3.8.21) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.20](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.19...@times-components/markup@3.8.20) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.19](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.18...@times-components/markup@3.8.19) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.18](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.17...@times-components/markup@3.8.18) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.17](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.16...@times-components/markup@3.8.17) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.16](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.15...@times-components/markup@3.8.16) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.15](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.14...@times-components/markup@3.8.15) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.14](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.13...@times-components/markup@3.8.14) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.13](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.12...@times-components/markup@3.8.13) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.12](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.11...@times-components/markup@3.8.12) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.11](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.10...@times-components/markup@3.8.11) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.10](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.9...@times-components/markup@3.8.10) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.9](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.8...@times-components/markup@3.8.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.8](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.7...@times-components/markup@3.8.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.7](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.6...@times-components/markup@3.8.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.6](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.5...@times-components/markup@3.8.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.5](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.4...@times-components/markup@3.8.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.4](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.3...@times-components/markup@3.8.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.2...@times-components/markup@3.8.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.2](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.1...@times-components/markup@3.8.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.8.1](https://github.com/newsuk/times-components/compare/@times-components/markup@3.8.0...@times-components/markup@3.8.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+# [3.8.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.21...@times-components/markup@3.8.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [3.7.21](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.20...@times-components/markup@3.7.21) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.20](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.19...@times-components/markup@3.7.20) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.19](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.18...@times-components/markup@3.7.19) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.18](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.17...@times-components/markup@3.7.18) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.17](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.16...@times-components/markup@3.7.17) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.16](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.15...@times-components/markup@3.7.16) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.15](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.14...@times-components/markup@3.7.15) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.14](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.13...@times-components/markup@3.7.14) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.13](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.12...@times-components/markup@3.7.13) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.12](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.11...@times-components/markup@3.7.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.11](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.10...@times-components/markup@3.7.11) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.10](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.9...@times-components/markup@3.7.10) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.9](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.8...@times-components/markup@3.7.9) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.8](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.7...@times-components/markup@3.7.8) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.7](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.6...@times-components/markup@3.7.7) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.6](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.5...@times-components/markup@3.7.6) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.5](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.4...@times-components/markup@3.7.5) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.4](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.3...@times-components/markup@3.7.4) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.3](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.2...@times-components/markup@3.7.3) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.2](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.1...@times-components/markup@3.7.2) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.7.1](https://github.com/newsuk/times-components/compare/@times-components/markup@3.7.0...@times-components/markup@3.7.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.6.3...@times-components/markup@3.7.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [3.6.3](https://github.com/newsuk/times-components/compare/@times-components/markup@3.6.2...@times-components/markup@3.6.3) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.6.2](https://github.com/newsuk/times-components/compare/@times-components/markup@3.6.1...@times-components/markup@3.6.2) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.6.1](https://github.com/newsuk/times-components/compare/@times-components/markup@3.6.0...@times-components/markup@3.6.1) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.5.1...@times-components/markup@3.6.0) (2022-07-14)
+
+
+### Features
+
+* **TDP-2110:** Replaced 'native' with 'web' in showcase ([#3028](https://github.com/newsuk/times-components/issues/3028)) ([e63ef53](https://github.com/newsuk/times-components/commit/e63ef53b58caf838004d1d25c33915cf576eb93a))
+
+
+
+
+
+## [3.5.1](https://github.com/newsuk/times-components/compare/@times-components/markup@3.5.0...@times-components/markup@3.5.1) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.92...@times-components/markup@3.5.0) (2022-07-12)
+
+
+### Features
+
+* **TDP-1715:** remove react native from topics ([#3023](https://github.com/newsuk/times-components/issues/3023)) ([85cd12e](https://github.com/newsuk/times-components/commit/85cd12eaf132bf9f410d154a2e0400cea87a20b1))
+
+
+
+
+
+## [3.4.92](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.91...@times-components/markup@3.4.92) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.91](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.90...@times-components/markup@3.4.91) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.90](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.89...@times-components/markup@3.4.90) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.89](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.88...@times-components/markup@3.4.89) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.88](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.87...@times-components/markup@3.4.88) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.87](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.86...@times-components/markup@3.4.87) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.86](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.85...@times-components/markup@3.4.86) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.85](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.84...@times-components/markup@3.4.85) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.84](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.83...@times-components/markup@3.4.84) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.83](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.82...@times-components/markup@3.4.83) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.82](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.81...@times-components/markup@3.4.82) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.81](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.80...@times-components/markup@3.4.81) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.80](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.79...@times-components/markup@3.4.80) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.79](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.78...@times-components/markup@3.4.79) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.78](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.77...@times-components/markup@3.4.78) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.77](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.76...@times-components/markup@3.4.77) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.76](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.75...@times-components/markup@3.4.76) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.75](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.74...@times-components/markup@3.4.75) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.74](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.73...@times-components/markup@3.4.74) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.73](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.72...@times-components/markup@3.4.73) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.72](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.71...@times-components/markup@3.4.72) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.71](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.70...@times-components/markup@3.4.71) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.70](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.69...@times-components/markup@3.4.70) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.69](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.68...@times-components/markup@3.4.69) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.68](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.67...@times-components/markup@3.4.68) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.67](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.66...@times-components/markup@3.4.67) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.4.66](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.65...@times-components/markup@3.4.66) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
 ## [3.4.65](https://github.com/newsuk/times-components/compare/@times-components/markup@3.4.64...@times-components/markup@3.4.65) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/markup

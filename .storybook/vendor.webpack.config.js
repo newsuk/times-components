@@ -1,10 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
+const crypto = require("crypto");
+
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
 
 module.exports = {
   context: process.cwd(),
   entry: {
-    vendor: ["prop-types", "react", "react-dom", "react-native-web"]
+    vendor: ["prop-types", "react", "react-dom"]
   },
   mode: 'development',
   output: {

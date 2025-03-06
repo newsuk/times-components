@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an error view 1`] = `
-<main
+<div
   role="main"
 >
   <div>
@@ -27,11 +27,11 @@ exports[`1. an error view 1`] = `
       />
     </div>
   </div>
-</main>
+</div>
 `;
 
 exports[`2. an error view with header 1`] = `
-<main
+<div
   role="main"
 >
   <div>
@@ -60,11 +60,11 @@ exports[`2. an error view with header 1`] = `
       />
     </div>
   </div>
-</main>
+</div>
 `;
 
 exports[`3. an empty list 1`] = `
-<main
+<div
   role="main"
 >
   <div>
@@ -72,11 +72,11 @@ exports[`3. an empty list 1`] = `
       Empty state
     </div>
   </div>
-</main>
+</div>
 `;
 
 exports[`4. loading state 1`] = `
-<main
+<div
   role="main"
 >
   <div>
@@ -151,5 +151,5 @@ exports[`4. loading state 1`] = `
       </div>
     </div>
   </div>
-</main>
+</div>
 `;

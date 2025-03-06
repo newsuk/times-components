@@ -264,6 +264,7 @@ const relatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
       }
@@ -454,6 +455,8 @@ const relatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
         url:
           "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
       }
@@ -597,6 +600,8 @@ const relatedArticleSlice = {
             name: "paragraph"
           }
         ],
+        categoryPath:
+          "/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23",
         url:
           "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
       }
@@ -604,6 +609,90 @@ const relatedArticleSlice = {
   ],
   sliceName: "StandardSlice"
 };
+
+const categorisedArticles = {
+  categoryArticles: {
+    label: "category",
+    articles: [
+      {
+        bylines: [
+          {
+            byline: [
+              {
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Patrick Kidd"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
+              }
+            ]
+          }
+        ],
+        headline: "TMS: Pratchett’s law of the jungle - Disable Saving 2",
+        label: "Health",
+        media: {
+          crops: [
+            {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104",
+              ratio: "3:2"
+            }
+          ]
+        },
+        publicationName: "TIMES",
+        publishedDateTime: "2015-03-23T20:39:39.000Z",
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+      }
+    ]
+  },
+  parentCategoryArticles: {
+    label: "parent",
+    articles: [
+      {
+        bylines: [
+          {
+            byline: [
+              {
+                attributes: {},
+                children: [
+                  {
+                    attributes: {
+                      value: "Patrick Kidd"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "inline"
+              }
+            ]
+          }
+        ],
+        headline: "TMS: Pratchett’s law of the jungle - Disable Saving",
+        label: "Health",
+        media: {
+          crops: [
+            {
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104",
+              ratio: "3:2"
+            }
+          ]
+        },
+        publicationName: "TIMES",
+        publishedDateTime: "2015-03-23T19:39:39.000Z",
+        categoryPath: "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+      }
+    ]
+  }
+};
+
 const topics = [
   {
     __typename: "Topic",
@@ -632,143 +721,4 @@ const topics = [
   }
 ];
 
-const latestFromSection = {
-  section: "Business",
-  items: [
-    {
-      id: "37cad600-d915-11eb-b92f-5fe539a30c29",
-      headline: "Google bows to pressure on scam ads",
-      summary:
-        "Google UK has bowed to pressure from police and regulators to clamp down on scam promotions by announcing that all advertisers selling a financial product",
-      canonicalID: "google-uk-bows-to-pressure-on-scam-adverts-w80sk3g2n",
-      publishedTime: "2021-06-29T23:01:00Z",
-      updatedTime: "2021-06-29T20:48:38Z",
-      author: "Tom Knowles,",
-      slug: "google-uk-bows-to-pressure-on-scam-adverts",
-      shortIdentifier: "w80sk3g2n",
-      leadAsset: [
-        {
-          ratio: "3:2",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "16:9",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "1:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "2:3",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "4:5",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "1.25:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
-        }
-      ]
-    },
-    {
-      id: "7d04fd9e-d916-11eb-8f14-0bb645f59db0",
-      headline: "Bridgepoint top brass to share £1.6bn",
-      summary:
-        "The 144 partners and senior executives at the private equity group behind itsu sushi and MotoGP racing are set to crystallise personal wealth of about £1.6 bill",
-      canonicalID: "bridgepoint-top-brass-to-share-1-6bn-9g3xpvhp3",
-      publishedTime: "2021-06-29T23:01:00Z",
-      updatedTime: "2021-06-29T21:09:02Z",
-      author: "Patrick Hosking, Financial Editor",
-      slug: "bridgepoint-top-brass-to-share-1-6bn",
-      shortIdentifier: "9g3xpvhp3",
-      leadAsset: [
-        {
-          ratio: "3:2",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "16:9",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "1:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "2:3",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "4:5",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "1.25:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
-        }
-      ]
-    },
-    {
-      id: "48362340-d8ee-11eb-8f14-0bb645f59db0",
-      headline: "Private equity views bridge into public markets",
-      summary:
-        "“This is about the partners getting rich. It’s not about anything else.” That was the trenchant view of one rival private equity figure yesterday as Bridgepoint",
-      label: "Analysis",
-      canonicalID: "private-equity-views-bridge-into-public-markets-qfd7lxwq6",
-      publishedTime: "2021-06-29T23:01:00Z",
-      updatedTime: "2021-06-30T04:48:14Z",
-      author: "Patrick Hosking, Financial Editor",
-      slug: "private-equity-views-bridge-into-public-markets",
-      shortIdentifier: "qfd7lxwq6",
-      leadAsset: [
-        {
-          ratio: "3:2",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "16:9",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "1:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
-        },
-        {
-          ratio: "2:3",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/94670fa6-d8f1-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "4:5",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/9bea9040-d8f1-11eb-8f14-0bb645f59db0.jpg"
-        },
-        {
-          ratio: "1.25:1",
-          source:
-            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
-        }
-      ]
-    }
-  ]
-};
-
-export { relatedArticleSlice, topics, latestFromSection };
+export { relatedArticleSlice, categorisedArticles, topics };

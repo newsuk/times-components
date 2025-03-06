@@ -1,6 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   authorHeadContainer: {
     alignItems: "center",
@@ -11,10 +10,6 @@ const styles = {
     paddingBottom: spacing(8),
     width: "100%"
   },
-  authorHeadContainerNative: {
-    paddingBottom: spacing(4),
-    paddingTop: spacing(6)
-  },
   authorHeadWrapper: {
     alignItems: "center",
     backgroundColor: "transparent",
@@ -23,7 +18,6 @@ const styles = {
   authorPhoto: {
     borderColor: colours.functional.contrast,
     borderRadius: 50,
-    marginBottom: spacing(4),
     marginLeft: "auto",
     marginRight: "auto",
     overflow: "hidden",
@@ -39,7 +33,8 @@ const styles = {
   },
   biographyContainer: {
     paddingBottom: spacing(6),
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     width: "100%"
   },
   jobTitle: {
@@ -47,8 +42,7 @@ const styles = {
     ...fontFactory({
       font: "bodyRegularSmallCaps",
       fontSize: "meta"
-    }),
-    marginTop: spacing(1)
+    })
   },
   loadingContainer: {
     alignItems: "center",
@@ -79,13 +73,14 @@ const styles = {
   },
   twitter: {
     flexDirection: "row",
-    paddingVertical: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
   },
   twitterLink: {
     color: colours.functional.action,
     ...fontFactory({
       font: "supporting",
-      fontSize: "tertiary"
+      fontSize: "tertiaryTwitter"
     }),
     paddingLeft: spacing(1),
     textDecorationLine: "none"

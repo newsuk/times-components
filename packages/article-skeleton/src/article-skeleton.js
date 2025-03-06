@@ -1,17 +1,25 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
-  AlgoliaSearchProvider
+  WelcomeBanner,
+  ArticleSidebar,
+  UpdateButtonWithDelay,
+  Banner,
+  SocialEmbedsProvider,
+  useSocialEmbedsContext
 } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import fetchPolygonData from "./article-sidebar";
+import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -25,7 +33,13 @@ import {
   BodyContainer,
   getHeaderAdStyles,
   HeaderContainer,
-  MainContainer
+  MainContainer,
+  UpdateButtonContainer,
+  PuzzlesSidebar,
+  SidebarWarpper,
+  ArticleWrapper,
+  ArticleContent,
+  EmailBannerContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -33,9 +47,10 @@ import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
-import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
-import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import mapListElements from "./contentModifiers/map-list-elements";
+import reorderInteractiveBeforeAd from "./contentModifiers/reorder-interactive-before-ad";
+import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -49,16 +64,14 @@ const ArticleSkeleton = ({
   logoUrl,
   receiveChildList,
   commentingConfig,
+  articleDataFromRender,
   paidContentClassName,
   isPreview,
   swgProductId,
-  additionalRelatedArticlesFlag,
-  inlineRelatedArticleOptions,
-  algoliaSearchKeys,
-  latestFromSectionFlag,
-  latestFromSection,
-  olympicsKeys,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  zephrDivs,
+  showAudioPlayer,
+  storefrontConfig
 }) => {
   const {
     commentsEnabled,
@@ -69,29 +82,121 @@ const ArticleSkeleton = ({
     url,
     headline,
     shortHeadline,
-    label,
+    expirableFlags,
     topics,
     relatedArticleSlice,
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    isSavingEnabled,
+    isSharingEnabled,
+    isCommentEnabled,
+    isEntitlementFeatureEnabled
   } = article;
+
+  const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
+
+  const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
+
+  useEffect(
+    () => {
+      // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
+      if (
+        (isSocialEmbedAllowed.twitter || isAllowedOnce.twitter) &&
+        window.twttr &&
+        window.twttr.widgets
+      ) {
+        window.twttr.widgets.load();
+      }
+    },
+    [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
+  );
+
+  const sidebarRef = useRef();
+
+  const handleScroll = () => {
+    const sidebarNode = sidebarRef.current;
+    if (sidebarNode) {
+      const adElements = document.querySelectorAll(
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
+      );
+
+      let isAnyAdIntersecting = false;
+
+      adElements.forEach(adElement => {
+        if (adElement) {
+          const adRect = adElement.getBoundingClientRect();
+          const isAdIntersecting =
+            adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
+            adRect.bottom >= sidebarNode.getBoundingClientRect().top;
+
+          if (isAdIntersecting) {
+            isAnyAdIntersecting = true;
+          }
+        }
+      });
+
+      if (isAnyAdIntersecting) {
+        sidebarNode.style.opacity = "0";
+      } else {
+        sidebarNode.style.opacity = "1";
+      }
+    }
+  };
+
+  useEffect(() => {
+    const verifyEmailFlag = !!JSON.parse(
+      window.sessionStorage.getItem("verifyEmail")
+    );
+    setShowEmailVerifyBanner(verifyEmailFlag);
+  }, []);
+
+  useEffect(() => {
+    const sidebarNode = sidebarRef.current;
+    if (sidebarNode) {
+      sidebarNode.style.transition = "opacity 0.2s ease";
+    }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const {
+    hostName,
+    canonicalUrl,
+    breadcrumbs,
+    categorisedArticles,
+    deckApiUrl
+  } = articleDataFromRender || {};
+
+  const articleUrl =
+    hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
-    insertNewsletterPuff(section, isPreview),
-    insertNativeAd,
-    insertInlineAd,
-    insertInlineRelatedArticles(
-      relatedArticleSlice,
-      inlineRelatedArticleOptions
-    ),
-    tagLastParagraph
+    insertNewsletterPuff(section, isPreview, expirableFlags),
+    insertInlineAd(isPreview),
+    tagLastParagraph,
+    mapListElements,
+    reorderInteractiveBeforeAd
   ];
+
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
+
+  const scrollToTopAndRefresh = window => {
+    window.scroll({
+      left: 0,
+      top: 0
+    });
+    window.location.reload(true);
+  };
 
   receiveChildList([
     {
@@ -104,6 +209,29 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
+  const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
+  const isSharingSavingEnabled =
+    isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
+  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const [polygonUrl, setPolygonUrl] = useState([]);
+
+  const fetchPolygon = async () => {
+    const polygon = await fetchPolygonData();
+    setPolygonUrl(polygon);
+  };
+
+  useEffect(
+    () => {
+      if (CanShowPuzzleSidebar(section)) {
+        fetchPolygon();
+      }
+    },
+    [CanShowPuzzleSidebar, section]
+  );
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -116,6 +244,18 @@ const ArticleSkeleton = ({
         }}
         analyticsStream={analyticsStream}
       >
+        {showVerifyEmailBanner && (
+          <EmailBannerContainer>
+            <Banner
+              title="Check your inbox"
+              body="Verify your email by clicking on the link sent to your inbox."
+              onClose={() => {
+                window.sessionStorage.setItem("verifyEmail", false);
+                setShowEmailVerifyBanner(false);
+              }}
+            />
+          </EmailBannerContainer>
+        )}
         {isPreview && (
           <div className="Container">
             <div className="ArticleMetaBanner">
@@ -149,101 +289,216 @@ const ArticleSkeleton = ({
           data-article-sectionname={section}
           data-article-template={template}
         >
+          {!!zephrDivs && (
+            <StaticContent
+              html={'<div id="nu-zephr-article-target-top-head"></div>'}
+            />
+          )}
           <Head
             article={article}
+            articleUrl={articleUrl}
             logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
+            breadcrumbs={breadcrumbs}
+            domainSpecificUrl={domainSpecificUrl}
           />
-          <AlgoliaSearchProvider
-            algoliaSearchKeys={algoliaSearchKeys}
-            article={{ id: articleId, label, section, topics }}
-            analyticsStream={analyticsStream}
-          >
-            <Fragment>
-              <HeaderAdContainer key="headerAd">
-                <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>
-              <MainContainer accessibilityRole="main">
-                <HeaderContainer>
-                  <Header />
-                  {savingEnabled || sharingEnabled ? (
-                    <UserState state={UserState.loggedInOrShared}>
-                      <MessageContext.Consumer>
-                        {({ showMessage }) => (
-                          <StickySaveAndShareBar
-                            articleId={articleId}
-                            articleHeadline={headline}
-                            articleUrl={url}
-                            onCopyLink={() =>
-                              showMessage("Article link copied")
-                            }
-                            onSaveToMyArticles={() => {}}
-                            onShareOnEmail={() => {}}
-                            savingEnabled={savingEnabled}
-                            sharingEnabled={sharingEnabled}
-                          />
-                        )}
-                      </MessageContext.Consumer>
-                    </UserState>
-                  ) : null}
-                </HeaderContainer>
-                <BodyContainer accessibilityRole="article">
-                  {newContent && (
-                    <ArticleBody
-                      analyticsStream={analyticsStream}
-                      content={newContent}
-                      contextUrl={url}
-                      section={section}
-                      paidContentClassName={paidContentClassName}
-                      template={template}
-                      isPreview={isPreview}
-                      olympicsKeys={olympicsKeys}
-                    />
-                  )}
-                  <PaywallPortal
-                    id="paywall-portal-article-footer"
-                    componentName="subscribe-cta"
+          {!!zephrDivs && (
+            <StaticContent
+              html={'<div id="nu-zephr-article-target-below-head"></div>'}
+            />
+          )}
+          <Fragment>
+            <HeaderAdContainer key="headerAd">
+              <AdContainer slotName="header" style={styles.adMarginStyle} />
+            </HeaderAdContainer>
+            <MainContainer>
+              <WelcomeBanner />
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-top-maincontainer"></div>'
+                  }
+                />
+              )}
+              <HeaderContainer showAudioPlayer={showAudioPlayer}>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                    }
                   />
-                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                    {({ observed, registerNode }) => (
-                      <ArticleExtras
-                        analyticsStream={analyticsStream}
-                        articleId={articleId}
-                        articleHeadline={headline}
-                        articleUrl={url}
-                        publishedTime={publishedTime}
-                        savingEnabled={savingEnabled}
-                        sharingEnabled={sharingEnabled}
-                        commentsEnabled={commentsEnabled}
-                        registerNode={registerNode}
-                        relatedArticleSlice={relatedArticleSlice}
-                        relatedArticlesVisible={
-                          !!observed.get("related-articles")
+                )}
+                <Header />
+                {isSharingSavingEnabled ? (
+                  <UserState state={UserState.showSaveAndShareBar}>
+                    <MessageContext.Consumer>
+                      {({ showMessage }) => (
+                        <StickySaveAndShareBar
+                          articleId={articleId}
+                          articleHeadline={headline}
+                          articleUrl={articleUrl}
+                          onCopyLink={() => showMessage("Article link copied")}
+                          onSaveToMyArticles={() => {}}
+                          onShareOnEmail={() => {}}
+                          savingEnabled={savingEnabled}
+                          sharingEnabled={sharingEnabled}
+                          hostName={domainSpecificUrl}
+                        />
+                      )}
+                    </MessageContext.Consumer>
+                  </UserState>
+                ) : null}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
+                    }
+                  />
+                )}
+              </HeaderContainer>
+              <BodyContainer>
+                <ArticleWrapper>
+                  {CanShowPuzzleSidebar(section) && (
+                    <SidebarWarpper>
+                      <PuzzlesSidebar ref={sidebarRef}>
+                        <ArticleSidebar
+                          pageLink={`${domainSpecificUrl}/puzzles`}
+                          sectionTitle="Puzzles"
+                          data={[
+                            {
+                              title: "Crossword",
+                              url: `${domainSpecificUrl}/puzzles/crossword`,
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                            },
+                            {
+                              title: "Polygon",
+                              url: polygonUrl,
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                            },
+                            {
+                              title: "Sudoku",
+                              url: `${domainSpecificUrl}/puzzles/sudoku`,
+                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                            }
+                          ]}
+                        />
+                      </PuzzlesSidebar>
+                    </SidebarWarpper>
+                  )}
+                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                    {!!zephrDivs && (
+                      <StaticContent
+                        html={
+                          '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
                         }
-                        commentingConfig={commentingConfig}
-                        topics={topics}
-                        additionalRelatedArticlesFlag={
-                          additionalRelatedArticlesFlag
-                        }
-                        latestFromSectionFlag={latestFromSectionFlag}
-                        latestFromSection={latestFromSection}
                       />
                     )}
-                  </LazyLoad>
-                </BodyContainer>
-              </MainContainer>
-            </Fragment>
-            <AdContainer slotName="pixel" />
-            <AdContainer slotName="pixelteads" />
-            <AdContainer slotName="pixelskin" />
-          </AlgoliaSearchProvider>
+                    {newContent && (
+                      <ArticleBody
+                        id={article.id}
+                        analyticsStream={analyticsStream}
+                        content={newContent}
+                        contextUrl={articleUrl}
+                        section={section}
+                        articleHeadline={headline}
+                        paidContentClassName={paidContentClassName}
+                        template={template}
+                        isPreview={isPreview}
+                        isLiveOrBreaking={isLiveOrBreaking}
+                        deckApiUrl={deckApiUrl}
+                      />
+                    )}
+                    {isLiveOrBreaking && (
+                      <UserState state={UserState.showLiveUpdateButton}>
+                        <UpdateButtonContainer data-testid="Update button container">
+                          <UpdateButtonWithDelay
+                            delay={8000}
+                            update
+                            display
+                            label="New update"
+                            handleClick={() => scrollToTopAndRefresh(window)}
+                            updatedTime={article.publishedTime}
+                            articleId={article.id}
+                          />
+                        </UpdateButtonContainer>
+                      </UserState>
+                    )}
+                    <PaywallPortal
+                      id="paywall-portal-article-footer"
+                      componentName="subscribe-cta"
+                    >
+                      {!!zephrDivs && (
+                        <StaticContent
+                          html={
+                            '<div id="nu-zephr-article-target-paywall"></div>'
+                          }
+                        />
+                      )}
+                    </PaywallPortal>
+                  </ArticleContent>
+                </ArticleWrapper>
+                <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                  {({ observed, registerNode }) => (
+                    <ArticleExtras
+                      analyticsStream={analyticsStream}
+                      articleId={articleId}
+                      articleHeadline={headline}
+                      articleUrl={articleUrl}
+                      section={section}
+                      publishedTime={publishedTime}
+                      savingEnabled={savingEnabled}
+                      sharingEnabled={sharingEnabled}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      categorisedArticles={categorisedArticles}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
+                      commentingConfig={commentingConfig}
+                      topics={topics}
+                      isSharingSavingEnabled={isSharingSavingEnabled}
+                      isCommentEnabled={isCommentEnabled}
+                      storefrontConfig={storefrontConfig}
+                      breadcrumbs={breadcrumbs}
+                      domainSpecificUrl={domainSpecificUrl}
+                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
+                    />
+                  )}
+                </LazyLoad>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
+                    }
+                  />
+                )}
+              </BodyContainer>
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
+                  }
+                />
+              )}
+            </MainContainer>
+          </Fragment>
+          <AdContainer slotName="pixel" />
+          <AdContainer slotName="pixelteads" />
+          <AdContainer slotName="pixelskin" />
         </article>
       </TrackingContextProvider>
     </StickyProvider>
   );
 };
+
+const ArticleSkeletonWithProvider = props => (
+  <SocialEmbedsProvider>
+    <ArticleSkeleton {...props} />
+  </SocialEmbedsProvider>
+);
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
@@ -255,4 +510,6 @@ export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
 
-export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));
+export default articleTrackingContext(
+  withTrackScrollDepth(ArticleSkeletonWithProvider)
+);

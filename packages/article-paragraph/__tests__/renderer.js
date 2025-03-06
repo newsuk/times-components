@@ -1,6 +1,6 @@
 import React from "react";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import ArticleParagraph from "../src";

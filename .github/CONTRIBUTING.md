@@ -172,9 +172,9 @@ name
 
 eg
 
-* Filename = GillSansMTStd-Medium
-* FontName / Full name = GillSansMTStd-Medium
-* FamilyName = GillSansMTStd-Medium
+* Filename = TimesDigitalW04-Regular
+* FontName / Full name = TimesDigitalW04-Regular
+* FamilyName = TimesDigitalW04-Regular
 
 ## Folder Structure
 

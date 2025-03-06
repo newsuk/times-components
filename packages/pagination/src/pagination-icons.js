@@ -1,18 +1,16 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
-import Svg, { G, Path } from "@times-components/svgs";
-import styleguide from "@times-components/styleguide";
-
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import PageLabel from "./page-label";
 
-const { colours, fontFactory, spacing } = styleguide();
 const textStyle = {
   color: colours.functional.action,
   height: 15,
   ...fontFactory({
     font: "supporting",
     fontSize: "pagingMeta"
-  })
+  }),
+  lineHeight: 13
 };
 
 const container = {
@@ -20,7 +18,7 @@ const container = {
   flexDirection: "row"
 };
 
-const styles = StyleSheet.create({
+const styles = {
   nextContainer: Object.assign(
     {
       paddingBottom: "8px",
@@ -49,41 +47,44 @@ const styles = StyleSheet.create({
     },
     textStyle
   )
-});
+};
 
 export const NextPageIcon = () => (
-  <View style={styles.nextContainer} testID="pagination-button-next">
-    <Text style={styles.nextText}>
+  <TcView style={styles.nextContainer} data-testid="pagination-button-next">
+    <TcText style={checkStylesForUnits(styles.nextText)}>
       <PageLabel direction="Next" />
-    </Text>
-    <Svg
+    </TcText>
+    <svg
       aria-label="icon-next-page"
       height={12}
       style={{ marginTop: spacing(-0.5) }}
       viewBox="42 12 60 120"
       width={7}
     >
-      <G fill={colours.functional.action}>
-        <Path d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z" />
-      </G>
-    </Svg>
-  </View>
+      <g fill={colours.functional.action}>
+        <path d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z" />
+      </g>
+    </svg>
+  </TcView>
 );
 
 export const PreviousPageIcon = () => (
-  <View style={styles.previousContainer} testID="pagination-button-previous">
-    <Svg
+  <TcView
+    style={styles.previousContainer}
+    data-testid="pagination-button-previous"
+  >
+    <svg
       height={12}
       style={{ marginTop: spacing(-0.5) }}
       viewBox="42 12 60 120"
       width={7}
     >
-      <G fill={colours.functional.action}>
-        <Path d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z" />
-      </G>
-    </Svg>
-    <Text style={styles.previousText}>
+      <g fill={colours.functional.action}>
+        <path d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z" />
+      </g>
+    </svg>
+    <TcText style={checkStylesForUnits(styles.previousText)}>
       <PageLabel direction="Previous" />
-    </Text>
-  </View>
+    </TcText>
+  </TcView>
 );

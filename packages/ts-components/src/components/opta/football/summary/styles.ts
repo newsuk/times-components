@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-import { WidgetContainerBase } from '../shared-styles';
+import { WidgetContainerBase } from '../../shared/shared-styles';
 
 export const WidgetContainer = styled(WidgetContainerBase)`
   .Opta {
@@ -132,7 +132,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           .Opta-Event-Text {
             color: ${colours.functional.brandColour};
             font-family: ${fonts.supporting};
-            font-size: 14px;
+            font-size: 13px;
             line-height: 16px;
 
             .Opta-Event-Player,

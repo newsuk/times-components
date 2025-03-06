@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { StandardSlice } from "@times-components/slice-layout";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
@@ -13,7 +13,7 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const { isVisible, onPress, slice, heading } = this.props;
+    const { isVisible, onPress, slice, heading, hideBorder } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
     if (
@@ -33,7 +33,7 @@ class RelatedArticles extends Component {
         isOpinionByline = false,
         isReversed = false,
         showImage = true,
-        showSummary = true,
+        showSummary = false,
         summaryConfig = {}
       } = config;
       return (
@@ -58,9 +58,10 @@ class RelatedArticles extends Component {
     };
 
     return (
-      <View>
+      <TcView>
         <RelatedArticlesHeading heading={heading} />
         <StandardSlice
+          hideBorder={hideBorder}
           itemCount={items.length}
           renderItems={config =>
             items.map(item =>
@@ -68,7 +69,7 @@ class RelatedArticles extends Component {
             )
           }
         />
-      </View>
+      </TcView>
     );
   }
 }

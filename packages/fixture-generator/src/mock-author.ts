@@ -20,7 +20,8 @@ class MockAuthor {
       name: "Fiona Hamilton",
       hasLeadAssets: false,
       twitter: "fiona-hamilton",
-      slug: "fiona-hamilton"
+      slug: "fiona-hamilton",
+      contractualTitle: "Contractual Title"
     };
   }
 

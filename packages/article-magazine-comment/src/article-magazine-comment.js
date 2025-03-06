@@ -31,7 +31,8 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      updatedTime
     } = article;
 
     const authorImage =
@@ -55,6 +56,7 @@ class ArticlePage extends Component {
           publicationName={publicationName}
           publishedTime={publishedTime}
           standfirst={standfirst}
+          updatedTime={updatedTime}
         />
         <LeadAsset
           {...getLeadAsset(article)}
@@ -76,14 +78,11 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
+      articleDataFromRender,
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
-      olympicsKeys
+      storefrontConfig
     } = this.props;
 
     if (error || isLoading) {
@@ -99,14 +98,11 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
+        articleDataFromRender={articleDataFromRender}
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
-        additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-        algoliaSearchKeys={algoliaSearchKeys}
-        latestFromSectionFlag={latestFromSectionFlag}
-        latestFromSection={latestFromSection}
-        olympicsKeys={olympicsKeys}
+        storefrontConfig={storefrontConfig}
       />
     );
   }

@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -12,7 +11,6 @@ import {
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -26,7 +24,6 @@ jest.mock("@times-components/utils", () => {
   function MockServerClientRender({ client }) {
     return client();
   }
-
   return {
     ...utils,
     ServerClientRender: MockServerClientRender
@@ -57,8 +54,7 @@ addSerializers(
       Broadcast: justChildren,
       Subscriber: justChildren,
       Watermark: propsNoChildren
-    }),
-    rnwTransform(AppRegistry)
+    })
   )
 );
 

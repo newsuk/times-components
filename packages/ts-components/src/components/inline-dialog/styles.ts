@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, fonts } from '@times-components/styleguide';
+import { breakpoints, fonts } from '@times-components/ts-styleguide';
 
 export const Container = styled.div`
   display: flex;
@@ -34,14 +34,14 @@ export const Button = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-
+  cursor: pointer;
   background-color: #008387;
   color: white;
   font-family: ${fonts.supporting};
   width: 127px;
   height: 48px;
 
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;

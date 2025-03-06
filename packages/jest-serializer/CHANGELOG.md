@@ -3,6 +3,488 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.20](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.19...@times-components/jest-serializer@3.13.20) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.19](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.18...@times-components/jest-serializer@3.13.19) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.18](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.17...@times-components/jest-serializer@3.13.18) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.17](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.16...@times-components/jest-serializer@3.13.17) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.16](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.15...@times-components/jest-serializer@3.13.16) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.15](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.14...@times-components/jest-serializer@3.13.15) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.14](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.13...@times-components/jest-serializer@3.13.14) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.13](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.12...@times-components/jest-serializer@3.13.13) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.12](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.11...@times-components/jest-serializer@3.13.12) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.11](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.10...@times-components/jest-serializer@3.13.11) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.10](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.9...@times-components/jest-serializer@3.13.10) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.9](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.8...@times-components/jest-serializer@3.13.9) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.8](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.7...@times-components/jest-serializer@3.13.8) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.7](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.6...@times-components/jest-serializer@3.13.7) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.6](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.5...@times-components/jest-serializer@3.13.6) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.5](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.4...@times-components/jest-serializer@3.13.5) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.3...@times-components/jest-serializer@3.13.4) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.2...@times-components/jest-serializer@3.13.3) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.1...@times-components/jest-serializer@3.13.2) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.13.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.0...@times-components/jest-serializer@3.13.1) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.4...@times-components/jest-serializer@3.13.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1668:** update menu transition for mobile ([#3721](https://github.com/newsuk/times-components/issues/3721)) ([c572cea](https://github.com/newsuk/times-components/commit/c572cea8f94e4767c56630d7db8f6df17d41e220))
+
+
+
+
+
+## [3.12.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.3...@times-components/jest-serializer@3.12.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
+## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.2...@times-components/jest-serializer@3.12.3) (2024-01-11)
+
+
+### Bug Fixes
+
+* **TMRX-1446:** remove window reference, update types and ad block ([#3709](https://github.com/newsuk/times-components/issues/3709)) ([9cf291a](https://github.com/newsuk/times-components/commit/9cf291a20ed1ff44db78823aee3a818548a7d7ae))
+
+
+
+
+
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.1...@times-components/jest-serializer@3.12.2) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.0...@times-components/jest-serializer@3.12.1) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.11.0...@times-components/jest-serializer@3.12.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.1...@times-components/jest-serializer@3.11.0) (2023-08-16)
+
+
+### Features
+
+* **TMRX-1388:** updated typography for dropdown active state ([#3489](https://github.com/newsuk/times-components/issues/3489)) ([b339e33](https://github.com/newsuk/times-components/commit/b339e3350a890223da7bfd9a782653933d277198))
+
+
+
+
+
+## [3.10.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.0...@times-components/jest-serializer@3.10.1) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.1...@times-components/jest-serializer@3.10.0) (2023-08-10)
+
+
+### Features
+
+* **TMRX-1444:** Update image on mobile web for Lead 1 and Lead 3 ([#3483](https://github.com/newsuk/times-components/issues/3483)) ([e49f620](https://github.com/newsuk/times-components/commit/e49f6203bc75b2e528538343fac8483e9ee34960))
+
+
+
+
+
+## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.0...@times-components/jest-serializer@3.9.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.3...@times-components/jest-serializer@3.9.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
+## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.2...@times-components/jest-serializer@3.8.3) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.8.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.1...@times-components/jest-serializer@3.8.2) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.8.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.0...@times-components/jest-serializer@3.8.1) (2023-03-27)
+
+
+### Bug Fixes
+
+* **TDP-000:** pass slug to secondary nav for selection ([#3301](https://github.com/newsuk/times-components/issues/3301)) ([97a0e79](https://github.com/newsuk/times-components/commit/97a0e79ab7a7e9167a7bb24504aa1529301d46ec))
+
+
+
+
+
+# [3.8.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.7.2...@times-components/jest-serializer@3.8.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [3.7.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.7.1...@times-components/jest-serializer@3.7.2) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.7.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.7.0...@times-components/jest-serializer@3.7.1) (2023-03-08)
+
+
+### Bug Fixes
+
+* **TDP-3304:** secondary navigation desktop design optimisation ([#3263](https://github.com/newsuk/times-components/issues/3263)) ([cae2ed9](https://github.com/newsuk/times-components/commit/cae2ed9c4c64880b66fe5c2ba3c86266eca17b57))
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.6.0...@times-components/jest-serializer@3.7.0) (2023-02-24)
+
+
+### Features
+
+* **TDP-3274:** minor fix for roboto on articles ([#3249](https://github.com/newsuk/times-components/issues/3249)) ([a961c52](https://github.com/newsuk/times-components/commit/a961c5234ea488a5933e66a12f13317367ca2a38))
+
+
+
+
+
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.5...@times-components/jest-serializer@3.6.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [3.5.5](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.4...@times-components/jest-serializer@3.5.5) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
+## [3.5.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.3...@times-components/jest-serializer@3.5.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.5.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.2...@times-components/jest-serializer@3.5.3) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.5.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.1...@times-components/jest-serializer@3.5.2) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
+## [3.5.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.0...@times-components/jest-serializer@3.5.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.4.2...@times-components/jest-serializer@3.5.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.4.1...@times-components/jest-serializer@3.4.2) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+## [3.4.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.4.0...@times-components/jest-serializer@3.4.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.4.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.3.1...@times-components/jest-serializer@3.4.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [3.3.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.3.0...@times-components/jest-serializer@3.3.1) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.3.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.31...@times-components/jest-serializer@3.3.0) (2022-07-19)
+
+
+### Features
+
+* **tdp-1712:** updated jest configurator ([#3034](https://github.com/newsuk/times-components/issues/3034)) ([af6061a](https://github.com/newsuk/times-components/commit/af6061ae8f196b33e5d48e4e706526e71f1538f5))
+
+
+
+
+
+## [3.2.31](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.30...@times-components/jest-serializer@3.2.31) (2022-07-14)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react native from jest-serializer ([#3031](https://github.com/newsuk/times-components/issues/3031)) ([c4842b6](https://github.com/newsuk/times-components/commit/c4842b68bd394c43a397a7c2c67db068140ad2ea))
+
+
+
+
+
+## [3.2.30](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.29...@times-components/jest-serializer@3.2.30) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
 ## [3.2.29](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.28...@times-components/jest-serializer@3.2.29) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/jest-serializer

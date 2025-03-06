@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptaFootballFixturesTournament should render full width correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa gCTnDg"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render full width correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa ecgEcY"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa laZDmH"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa Ssmqo"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly with single column 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa laZDmH"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX UELGY team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render national competitions correctly with single column 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa Ssmqo"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX UELGY team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render other competitions correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa laZDmH"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX bqOljm"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballFixturesTournament should render other competitions correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa Ssmqo"
+  >
+    <div
+      class="sc-htpNat sc-ifAKCX bqOljm"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

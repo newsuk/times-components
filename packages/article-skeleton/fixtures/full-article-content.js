@@ -1,7 +1,7 @@
 export default [
   {
     attributes: {
-      title: "New Brexit referendum"
+      title: "New Brexit referendummmmmmm"
     },
     children: [
       {
@@ -129,6 +129,138 @@ export default [
     name: "keyFacts"
   },
   {
+    name: "interactive",
+    attributes: {
+      id: "620560ef-068e-4bed-b5ce-dd8e5b5c97fc",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
+      element: {
+        value: "times-travel-cta",
+        attributes: {
+          url: "https://twitter.com/realDonaldTrump/status/1042263143496511488"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "cd578cd9-7076-427f-8b4e-2e23866da03b",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https://youtube.com/embed/p6Cnazi_Fi0",
+          ratio: "r16-9"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "cd693ed7-51e1-42bd-b528-7d11a42a8c93",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https:\\/\\/www.tiktok.com\\/embed\\/7355418637924060448",
+          "date-to": "2024-09-17",
+          "date-from": "2024-09-17"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "606ece43-40a5-4d53-866e-499aacb2a7d0",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-text-collapse-1.0.0/times-text-collapse.html",
+      element: {
+        value: "times-text-collapse",
+        attributes: {
+          disclaimer_text: "This%20article%20contains%20affiliate%20links.",
+          toggle_active_text: "Show%20less",
+          disclaimer_full_text:
+            "Our%20travel%20journalism%20is%20written%20and%20edited%20by%20independent%20experts%20to%20inform%2C%20inspire%20and%20advise%20our%20readers%20about%20the%20best%20choices%20for%20your%20holidays.%20We%20also%20feature%20properties%20and%20itineraries%20from%20a%20specially%20selected%20list%20of%20trusted%20operators.%20These%20buttons%20and%20adverts%20are%20clearly%20signposted%2C%20and%20provide%20direct%20links%20through%20to%20external%20sites.%20If%20you%20click%20and%20buy%20a%20product%2C%20we%20may%20earn%20revenue.",
+          toggle_inactive_text: "Show%20more"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "79c66dbd-2e9c-4dee-9677-53e7ed94418e",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src: "https%3A%2F%2Fwww.tiktok.com%2Fembed%2F7277615534731005217",
+          ratio: "r1-1",
+          url:
+            "https://www.booking.com/hotel/gb/grays-court.en-gb.html?aid=886291&amp;no_rooms=1&amp;group_adults=2&amp;label=times-edition-top-seven-christmas-shops",
+          text: "Book a stay",
+          target: "_blank",
+          dateTo: "2024-12-02",
+          dateFrom: "2024-12-02"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "c645139b-7af7-45c2-a120-1b1fcc39ac94",
+      display: "fullwidth",
+      url:
+        "https://components.timesdev.tools/lib2/times-article-slices-1.0.0/times-article-slices.html",
+      element: {
+        value: "times-article-slices",
+        attributes: {
+          title: "Read more",
+          "date-to": "2024-09-17",
+          articles:
+            "W3siaWQiOiJOemMxTkRZek1XTXRNRFZqWWkwME5EYzVMVGc0TkRZdFpUQXlaV0k1WXpWaE1qZzEiLCJoZWFkbGluZSI6Ik1UQWdiMllnZEdobElHSmxjM1FnYVhOc1lXNWtjeUJwYmlCVWFHRnBiR0Z1WkE9PSIsInN1bW1hcnkiOiI0b0NtSUZSb1lXbHNZVzVrSUVWNGNHeHZjbVZ5SUhSeWFYQXNJSGRwZEdnZ2RHbHRaU0J2YmlCTGIyZ2dUR0Z1ZEdFc0lGQm9kV3RsZENCaGJtUWdVR2hwSUZCb2FlS0FvaUJDWlhOMElHaHZkR1ZzY3lCcGJpQlVhR0ZwYkdGdVpPS0FvaUJDWlhOMElIUm9hVzVuY3lCMGJ5QmtieUJwYmlCVWFHRnBiR0Z1WkVsMDRvQ1pjeUJwYm1OeVpXUnBZbXhsSUhSb1lYUWdTMjlvSUZsaGJ5Qk9iMmtnYVhOdTRvQ1pkQ0RpZ0tZPSIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5aGNuUnBZMnhsTDJKbGMzUXRkR2hoYVd4aGJtUXRhWE5zWVc1a2N5MHpjWEZvWWpsa05UVT0iLCJsYWJlbCI6IlZHaGhhV3hoYm1RPSIsImltYWdlIjp7ImFsdCI6IlMyOW9JRXhoYm5SaCIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5cGJXRm5aWE5sY25abGNpOXBiV0ZuWlM4bE1rWnRaWFJvYjJSbEpUSkdkR2x0WlhNbE1rWndjbTlrSlRKR2QyVmlKVEpHWW1sdUpUSkdZVEkwWWpVNU5qTXROV0ptTVMwMFpXWTNMVGc0TWpNdE0yTmlNakE0TkRZM05qazRMbXB3Wno5amNtOXdQVFE1T1RrbE1rTXlPREV5SlRKRE1DVXlRekE9In19LHsiaWQiOiJabUkzTWpFeVl6SXRPVFkyTnkwMFptRmtMVGxsT0RjdFkyWmhNV1UwTjJRMU1qWm0iLCJoZWFkbGluZSI6IlYyWGlnSmwyWlNCbWIzVnVaQ0JoSUhkbFpXc2dhVzRnVkdoaGFXeGhibVFnWm05eUlHeGxjM01nZEdoaGJpRENvemN3TUNEaWdKUWdhVzVqYkhWa2FXNW5JR1pzYVdkb2RITT0iLCJzdW1tYXJ5IjoiNG9DbUlHRnlaU0IwWVhocGN5RGlnSlFnZDJsMGFDQjBhR1VnYkdGMGRHVnlJR3hwYTJWc2VTQjBieUJqYjNOMElIbHZkU0RDb3pRd0lHWnZjaUIwYUdVZ2RIZHZMV2h2ZFhJZ2FtOTFjbTVsZVM3aWdLSWdWR2hoYVd4aGJtUWdkSEpoZG1Wc0lHZDFhV1JsSU9LQW9pQXhOaUJ2WmlCMGFHVWdZbVZ6ZENCb2IzUmxiSE1nYVc0Z1ZHaGhhV3hoYm1RZ1ZHaGxjbVVnYVhNZ1lTQnlaV0Z6YjI0Z1ptOXlJT0tBcGc9PSIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5aGNuUnBZMnhsTDNSb1lXbHNZVzVrTFdSbFlXd3RkMlZsYXkxcmFHRnZMV3hoYXkxME4yY3lZM2MyT0RjPSIsImxhYmVsIjoiIiwiaW1hZ2UiOnsiYWx0IjoiVkdobElISmxjMjl5ZENCdmNHVnlZWFJsY3lCa1lYa2dkRzkxY25NZ1lXTnliM056SUhSb1pTQkJibVJoYldGdUlGTmxZU0IwYnlCMGFHVWdVMmx0YVd4aGJpQkpjMnhoYm1SeiIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5cGJXRm5aWE5sY25abGNpOXBiV0ZuWlM4bE1rWnRaWFJvYjJSbEpUSkdkR2x0WlhNbE1rWndjbTlrSlRKR2QyVmlKVEpHWW1sdUpUSkdOalEwT1RVNU5qQXROak14WlMwME5HWmpMVGd5WmprdFl6Sm1ZekZpTnpRd09XUTVMbXB3Wno5amNtOXdQVFF6TmpnbE1rTXlORFUzSlRKRE1DVXlRelF4TXc9PSJ9fSx7ImlkIjoiTWpnek1EVmhaalV0T0RKbE5pMDBZbVV5TFRrd1lXTXRNVGhoTVRnelpHTTRaV1kwIiwiaGVhZGxpbmUiOiJNVFlnYjJZZ2RHaGxJR0psYzNRZ2FHOTBaV3h6SUdsdUlGUm9ZV2xzWVc1ayIsInN1bW1hcnkiOiJRbUZ1WjJ0dmF5Qm9ZWE1nWVNCa2FYcDZlV2x1WnlCaGNuSmhlU0J2WmlCaFkyTnZiVzF2WkdGMGFXOXVJR052ZG1WeWFXNW5JR1YyWlhKNUlITjBlV3hsSUdGdVpDQmlkV1JuWlhRZ2FXMWhaMmx1WVdKc1pTNGdSbWx5YzNRdGRHbHRaWEp6SUhOb2IzVnNaQ0JoYVcwZ2RHOGdjM1JoZVNCdVpXRnlJSFJvWlNCRGFHRnZJRkJvY21GNVlTQlNhWFpsY2lCbWIzSWdZU0JuWlc1MGJHVnlJR2x1ZEhKdlpIVmpkR2x2YmlCMGJ5QjBhR1VnNG9DbSIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5aGNuUnBZMnhsTDJKbGMzUXRhRzkwWld4ekxXbHVMWFJvWVdsc1lXNWtMV015YURCM09EWnJaZz09IiwibGFiZWwiOiIiLCJpbWFnZSI6eyJhbHQiOiJRMDlOVHlCUWIybHVkQ0JaWVcxMUlHbHVJRkJvZFd0bGRBPT0iLCJ1cmwiOiJhSFIwY0hNNkx5OTNkM2N1YzNSaFoybHVaeTEwYUdWMGFXMWxjeTVqYnk1MWF5OXBiV0ZuWlhObGNuWmxjaTlwYldGblpTOGxNa1p0WlhSb2IyUmxKVEpHZEdsdFpYTWxNa1p3Y205a0pUSkdkMlZpSlRKR1ltbHVKVEpHT1RjeFlqQmlNMkl0T1RneVlTMDBPV0ZsTFdKa1pEVXRPR1kzTkRjMU5ESTJObVEzTG1wd1p6OWpjbTl3UFRFMU5qUWxNa000T0RBbE1rTXpNVGdsTWtNdyJ9fSx7ImlkIjoiTUdWaFlXSXdNRGd0TkRrM01DMDBObUppTFdJeVpXTXRNVFkwT0dOaFlUZ3lZakkxIiwiaGVhZGxpbmUiOiJWR2hoYVd4aGJtUWdkSEpoZG1Wc0lHZDFhV1JsIiwic3VtbWFyeSI6IlJuSnZiU0JwZEhNZ1pXNWphR0Z1ZEdsdVp5QnlZV2x1Wm05eVpYTjBjeXdnY21GdFlteHBibWNnYlc5MWJuUmhhVzV6SUdGdVpDQnNkVzFpWlhKcGJtY2daV3hsY0doaGJuUnpJSFJ2SUdsMGN5Qm1ZWEl0Wm14MWJtY2dhWE5zWVc1a2N5d2dhR1ZoZG1WdWJIa2dZbVZoWTJobGN5QmhibVFnYTJGc1pXbGtiM05qYjNCcFl5QnRZWEpwYm1VZ2JHbG1aU3dnYm05MElIUnZJRzFsYm5ScGIyNGdhWFJ6SUdaeVpXNWxkR2xqSUdOcGRHbGxjeUJ6ZEhKbGQyNGdkMmwwYUNCbmJHbDBkR1Z5YVc1bklFSjFaR1JvYVhOMElPS0FwZz09IiwidXJsIjoiYUhSMGNITTZMeTkzZDNjdWMzUmhaMmx1WnkxMGFHVjBhVzFsY3k1amJ5NTFheTloY25ScFkyeGxMM1JvWVdsc1lXNWtMVEJ3YzNReWNtdHNNZz09IiwibGFiZWwiOiJRWE5wWVE9PSIsImltYWdlIjp7ImFsdCI6IiIsInVybCI6ImFIUjBjSE02THk5M2QzY3VjM1JoWjJsdVp5MTBhR1YwYVcxbGN5NWpieTUxYXk5cGJXRm5aWE5sY25abGNpOXBiV0ZuWlM4bE1rWnRaWFJvYjJSbEpUSkdkR2x0WlhNbE1rWndjbTlrSlRKR2QyVmlKVEpHWW1sdUpUSkdabVkxTldOaE5UTXRZMkU1TVMwMFpqYzFMVGs1WmpndE1UUTBZVGd3T0RCaU16Z3lMbXB3Wno5amNtOXdQVEV5T0RBbE1rTTNNakFsTWtNd0pUSkRNQT09In19XQ==",
+          "date-from": "2024-09-17"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "1907da4d-7f6e-41e0-b5d1-094863d60eed",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src:
+            "https://compass.pressekompass.net/compasses/times/is-going-to-university-worth-it_times",
+          ratio: "r1-1"
+        }
+      }
+    },
+    children: []
+  },
+  {
     children: [
       {
         attributes: {
@@ -147,6 +279,22 @@ export default [
         },
         children: [],
         name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            value: "article-header",
+            attributes: {
+              updated: "2022-04-20T20:30:00+01:00",
+              date: "20/04/2022",
+              time: "20:30",
+              breaking: "true",
+              headline: "This%20is%20the%20headline"
+            }
+          }
+        },
+        name: "interactive",
+        children: []
       },
       {
         attributes: {

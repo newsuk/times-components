@@ -1,4 +1,4 @@
-import { colours, tabletWidth } from "@times-components/styleguide";
+import { colours, tabletWidth } from "@times-components/ts-styleguide";
 
 const sharedStyles = {
   topicsContainer: {

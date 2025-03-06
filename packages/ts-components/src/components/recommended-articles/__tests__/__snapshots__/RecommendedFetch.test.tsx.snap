@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecommendedFetch> should render headers in lowercase correctly 1`] = `
+<DocumentFragment>
+  <div>
+    FetchProvider
+    <div>
+      <div>
+        RecommendedArticles
+      </div>
+      <div>
+        Read more
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

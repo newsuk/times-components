@@ -1,8 +1,11 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { Platform, View } from "react-native";
-import { screenWidth, ServerClientRender } from "@times-components/utils";
+import {
+  screenWidth,
+  ServerClientRender,
+  TcView
+} from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdContainer from "./ad-container";
@@ -27,8 +30,6 @@ class Ad extends Component {
 
     this.prebidConfig = prebidConfig;
 
-    this.isWeb = Platform.OS === "web";
-
     this.state = {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
@@ -38,11 +39,9 @@ class Ad extends Component {
   }
 
   componentDidMount() {
-    if (this.isWeb) {
-      this.setState({
-        hasAdBlock: window.hasAdBlock
-      });
-    }
+    this.setState({
+      hasAdBlock: window.hasAdBlock
+    });
   }
 
   setAdReady = () => {
@@ -67,9 +66,8 @@ class Ad extends Component {
       style
     } = this.props;
     const { config, hasError, isAdReady, hasAdBlock } = this.state;
-    const { isWeb } = this;
 
-    if ((isWeb && hasAdBlock) || hasError) return null;
+    if (hasAdBlock || hasError) return null;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -112,14 +110,11 @@ class Ad extends Component {
       ? { height: 0, width: 0 }
       : {
           height: config.maxSizes.height,
-          width:
-            Platform.OS === "ios" || Platform.OS === "android"
-              ? screenWidth()
-              : config.maxSizes.width
+          width: config.maxSizes.width
         };
 
     const adView = (
-      <View style={[styles.container, style]}>
+      <TcView style={{ ...styles.container, ...style }}>
         {isLoading ? null : (
           <DOMContext
             baseUrl={baseUrl}
@@ -130,14 +125,10 @@ class Ad extends Component {
             {...sizeProps}
           />
         )}
-      </View>
+      </TcView>
     );
 
-    return isWeb ? (
-      <ServerClientRender client={() => adView} server={null} />
-    ) : (
-      adView
-    );
+    return <ServerClientRender client={() => adView} server={null} />;
   }
 
   render() {

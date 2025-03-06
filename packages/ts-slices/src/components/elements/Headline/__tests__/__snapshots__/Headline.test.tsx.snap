@@ -1,17 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Headline /> should render headline component correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa elQUxc"
-  >
-    <a
-      href=""
-    >
-      <h3>
-        Some example headline
-      </h3>
-    </a>
-  </div>
-</DocumentFragment>
-`;
+exports[`<Headline /> should not render if the headline attribute is empty in the article object 1`] = `<DocumentFragment />`;

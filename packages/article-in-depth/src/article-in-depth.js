@@ -32,7 +32,8 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      textColour
+      textColour,
+      updatedTime
     } = article;
 
     return (
@@ -45,6 +46,7 @@ class ArticlePage extends Component {
           label={label}
           standfirst={standfirst}
           textColour={textColour}
+          updatedTime={updatedTime}
         />
         <LeadAsset
           {...getLeadAsset(article)}
@@ -74,13 +76,10 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
+      articleDataFromRender,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
-      olympicsKeys
+      storefrontConfig
     } = this.props;
 
     if (error || isLoading) {
@@ -96,13 +95,10 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
+        articleDataFromRender={articleDataFromRender}
         isPreview={isPreview}
         swgProductId={swgProductId}
-        additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-        algoliaSearchKeys={algoliaSearchKeys}
-        latestFromSectionFlag={latestFromSectionFlag}
-        latestFromSection={latestFromSection}
-        olympicsKeys={olympicsKeys}
+        storefrontConfig={storefrontConfig}
       />
     );
   }

@@ -4,6 +4,7 @@ exports[`1. iconemail renders 1`] = `
 <svg
   aria-label="icon-email"
   role="img"
+  title="IconEmail"
   viewBox="b4de9ef077a0a2ad684a1d8e6916ebc4"
   width={20}
 >
@@ -25,6 +26,7 @@ exports[`2. iconfacebook renders 1`] = `
 <svg
   aria-label="icon-facebook"
   role="img"
+  title="IconFacebook"
   viewBox="bd9a71c8a3142edf7cab6a62a2277378"
   width={20}
 >
@@ -63,6 +65,7 @@ exports[`4. iconstar renders 1`] = `
 <svg
   aria-label="icon-save-star"
   role="img"
+  title="IconStar"
   viewBox="951cf65ef61fef616e498a37f3f5a9b1"
   width={20}
 >
@@ -81,6 +84,7 @@ exports[`5. iconcopylink renders 1`] = `
   aria-label="icon-copy-link"
   height={15}
   role="img"
+  title="IconCopyLink"
   viewBox="7798bdae936d01418f5704cad29092ad"
   width={20}
 >
@@ -99,6 +103,7 @@ exports[`6. iconsavebookmark renders 1`] = `
   aria-label="icon-save-bookmark"
   height={16}
   role="img"
+  title="IconSaveBookmark"
   viewBox="192c9a888d6def500471679101ad9f5c"
   width={20}
 >
@@ -116,16 +121,31 @@ exports[`7. icontwitter renders 1`] = `
 <svg
   aria-label="icon-twitter"
   role="img"
-  viewBox="f0ca3b77f62fa9136cdfd9a3f847d07b"
+  title="IconTwitter"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
   width={20}
+  xmlns="http://www.w3.org/2000/svg"
 >
   <title>
     IconTwitter
   </title>
-  <path
-    d="0407fd6a3edc199eb6063d0ebd2c66ad"
-    fill="#006699"
-  />
+  <g
+    clipPath="url(#clip0_2702_211136)"
+  >
+    <path
+      d="4c07ddf11115ea0567c67f79847089a8"
+      fill="#006699"
+    />
+  </g>
+  <defs>
+    <clipPath>
+      <rect
+        fill="white"
+        height="24"
+        width="24"
+      />
+    </clipPath>
+  </defs>
 </svg>
 `;
 
@@ -133,6 +153,7 @@ exports[`8. iconvideo renders 1`] = `
 <svg
   aria-label="icon-video"
   role="img"
+  title="IconVideo"
   viewBox="32c562c1b3cee8479f67d0cbd8edef4d"
   width={20}
 >
@@ -157,6 +178,7 @@ exports[`9. iconvideo360player renders 1`] = `
 <svg
   aria-label="icon-video-360-player"
   role="img"
+  title="IconVideo360Player"
   viewBox="544726bb051c5bacf72288529e947083"
   width={20}
 >
@@ -174,6 +196,7 @@ exports[`10. thestlogo renders 1`] = `
 <svg
   aria-label="logo-the-sunday-times"
   role="img"
+  title="TheSTLogo"
   viewBox="432b2b997b72ed04860614d58bfe21fa"
   width={20}
 >
@@ -191,6 +214,7 @@ exports[`11. thetimeslogo renders 1`] = `
 <svg
   aria-label="logo-the-times"
   role="img"
+  title="TheTimesLogo"
   viewBox="064d9dc888226a281482b4aa9646de05"
   width={20}
 >
@@ -209,11 +233,12 @@ exports[`12. closeicon renders 1`] = `
   aria-label="icon-close"
   height={28}
   role="img"
+  title="Close Icon"
   viewBox="a20267b134584c37a6dc39235d4a5519"
   width={20}
 >
   <title>
-    Close Icon
+    CloseIcon
   </title>
   <path
     d="e47f4fab4bd751d2d3ea1eb7a66c492a"
@@ -234,6 +259,339 @@ exports[`13. iconforwardchevron renders 1`] = `
   >
     <path
       d="cf23b8f47ac97eeec14ee4c65e472078"
+    />
+  </g>
+</svg>
+`;
+
+exports[`14. iconactivityindicator renders 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div
+    className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
+  >
+    <activity-indicator__ActivityIndicatorSpinner
+      data-fill-colour="#006699"
+      data-title="IconActivityIndicator"
+    >
+      <div
+        className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
+        data-fill-colour="#006699"
+        data-title="IconActivityIndicator"
+      />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
+`;
+
+exports[`15. iconcheck renders 1`] = `
+<svg
+  aria-label="icon-check"
+  height={24}
+  role="img"
+  title="IconCheck"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    IconCheck
+  </title>
+  <mask
+    height="25"
+    id="mask0_4528_7566"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      d="c280c4356fb0883731691f9e991eb8e6"
+      fill="#0A0A0A"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_7566)"
+  >
+    <rect
+      fill="#01000D"
+      height="24"
+      width="24"
+      y="0.00976562"
+    />
+  </g>
+</svg>
+`;
+
+exports[`16. playermodalicon renders 1`] = `
+<svg
+  aria-label="player-modal-icon"
+  height={32}
+  role="img"
+  title="PlayerModalIcon"
+  viewBox="1fd4b573d0fe8d27dfdd9e57d4791171"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    PlayerModalIcon
+  </title>
+  <mask
+    height="33"
+    id="mask0_4528_2997"
+    maskUnits="userSpaceOnUse"
+    width="32"
+    x="0"
+    y="-1"
+  >
+    <path
+      d="6f23c565c6d3119843d0aaa44277021a"
+      fill="#0A0A0A"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_2997)"
+  >
+    <rect
+      fill="#01000D"
+      height="32"
+      width="32"
+      y="-0.00976562"
+    />
+  </g>
+</svg>
+`;
+
+exports[`17. playerback renders 1`] = `
+<svg
+  aria-label="player-back-icon"
+  height={25}
+  role="img"
+  title="PlayerBack"
+  viewBox="85ab46e3a09f3f406f793cf1f0f94dc3"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    PlayerBack
+  </title>
+  <mask
+    height="25"
+    id="mask0_4528_3080"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      d="d4a9fe7d1cf77be46375876fd4308a77"
+      fill="black"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_3080)"
+  >
+    <rect
+      fill="#01000D"
+      height="24"
+      width="24"
+      y="0.666992"
+    />
+  </g>
+</svg>
+`;
+
+exports[`18. playerfront renders 1`] = `
+<svg
+  aria-label="player-front-icon"
+  height={25}
+  role="img"
+  title="PlayerFront"
+  viewBox="85ab46e3a09f3f406f793cf1f0f94dc3"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    PlayerFront
+  </title>
+  <mask
+    height="25"
+    id="mask0_4528_3102"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      d="57148bd9760f00266cbaa3e57b971222"
+      fill="black"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_3102)"
+  >
+    <rect
+      fill="#01000D"
+      height="24"
+      width="24"
+      y="0.666992"
+    />
+  </g>
+</svg>
+`;
+
+exports[`19. playicon renders 1`] = `
+<svg
+  aria-label="play-icon"
+  height={25}
+  role="img"
+  title="PlayIcon"
+  viewBox="85ab46e3a09f3f406f793cf1f0f94dc3"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    PlayIcon
+  </title>
+  <mask
+    height="25"
+    id="mask0_4528_3091"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      d="3420dc93fcb12056529e85a28d7e7ca4"
+      fill="black"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_3091)"
+  >
+    <rect
+      fill="black"
+      height="24"
+      width="24"
+      y="0.666992"
+    />
+  </g>
+</svg>
+`;
+
+exports[`20. pauseicon renders 1`] = `
+<svg
+  aria-label="pause-icon"
+  height={24}
+  role="img"
+  title="PauseIcon"
+  viewBox="64d1e00fd2b6c31d67196279dc2a1859"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    PauseIcon
+  </title>
+  <mask
+    height="24"
+    id="mask0_4528_2487"
+    maskUnits="userSpaceOnUse"
+    width="25"
+    x="0"
+    y="0"
+  >
+    <path
+      clipRule="evenodd"
+      d="626ed5d5133f0e11ac778079125ea6f4"
+      fill="black"
+      fillRule="evenodd"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4528_2487)"
+  >
+    <rect
+      fill="black"
+      height="24"
+      width="24"
+      x="0.5"
+    />
+  </g>
+</svg>
+`;
+
+exports[`21. iconvolume renders 1`] = `
+<svg
+  aria-label="icon-volume"
+  height={24}
+  role="img"
+  title="IconVolume"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    IconVolume
+  </title>
+  <mask
+    height="24"
+    id="mask0_4571_9118"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      clipRule="evenodd"
+      d="2e9ecf32e71d62928069405cb71de5b0"
+      fill="#0A0A0A"
+      fillRule="evenodd"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4571_9118)"
+  >
+    <rect
+      fill="#01000D"
+      height="24"
+      width="24"
+    />
+  </g>
+</svg>
+`;
+
+exports[`22. audiocloseicon renders 1`] = `
+<svg
+  aria-label="audio-close-icon"
+  height={24}
+  role="img"
+  title="AudioCloseIcon"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    AudioCloseIcon
+  </title>
+  <mask
+    height="24"
+    id="mask0_4612_9510"
+    maskUnits="userSpaceOnUse"
+    width="24"
+    x="0"
+    y="0"
+  >
+    <path
+      d="5c7bece067443b74a1697dcdd4d70715"
+      fill="#000"
+    />
+  </mask>
+  <g
+    mask="url(#mask0_4612_9510)"
+  >
+    <rect
+      fill="#000"
+      height="24"
+      width="24"
     />
   </g>
 </svg>

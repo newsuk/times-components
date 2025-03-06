@@ -1,17 +1,14 @@
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   minimaliseTransform,
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform,
-  rnwTransform
+  replaceTransform
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
@@ -30,10 +27,8 @@ export default () => {
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
-      }),
-      rnwTransform(AppRegistry)
+        TimesImage: propsNoChildren
+      })
     )
   );
 

@@ -1,11 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styles from "./styles";
 import { ListItemSeparator } from "./styles/responsive";
 
 const ArticleListItemSeparator = () => (
   <ListItemSeparator>
-    <View style={styles.listItemSeparator} />
+    <TcView style={styles.listItemSeparator} />
   </ListItemSeparator>
 );
 

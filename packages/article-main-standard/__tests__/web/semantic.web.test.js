@@ -12,7 +12,7 @@ import {
   replaceTransform
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
 
 import Article from "../../src/article-main-standard";
@@ -134,7 +134,7 @@ const tests = [
         <ContextProviderWithDefaults
           value={{
             theme: { scale, sectionColour },
-            user: { isLoggedIn: true }
+            user: { hasAccess: true, isLoggedIn: true }
           }}
         >
           <MockedProvider>
@@ -149,7 +149,7 @@ const tests = [
               onRelatedArticlePress={() => {}}
               onTopicPress={() => {}}
               onVideoPress={() => {}}
-              commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+              commentingConfig={{ account: "dummiy-spotim-id" }}
             />
           </MockedProvider>
         </ContextProviderWithDefaults>
@@ -171,6 +171,7 @@ beforeEach(() => {
 
   const nuk = {
     user: {
+      hasAccess: true,
       isLoggedIn: true
     }
   };

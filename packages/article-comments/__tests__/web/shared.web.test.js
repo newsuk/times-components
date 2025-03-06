@@ -7,48 +7,84 @@ import "jest-styled-components";
 import { UserState } from "./mocks";
 
 import ArticleComments from "../../src/article-comments";
+import { ssoCallback } from "../../src/comment-login";
 
 const renderComments = ({
   enabled,
-  publishedTime = "2021-08-10T16:00:00.000Z"
+  domainSpecificUrl = "https://www.thetimes.co.uk"
 }) =>
   render(
     <ArticleComments
       articleId="dummy-article-id"
-      publishedTime={publishedTime}
       commentsEnabled={enabled}
       isEnabled={enabled}
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
-      commentingConfig={{
-        account: {
-          current: "CurrentSpotID",
-          readOnly: "ReadOnlySpotID"
-        },
-        switchOver: "2020-08-10T16:00:00.000Z"
-      }}
+      commentingConfig={{ account: "sp_pCQgrRiN" }}
+      storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
+      isCommentEnabled
+      domainSpecificUrl={domainSpecificUrl}
     />
   );
 
+describe("comments-login", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  const xhrMock = {
+    open: jest.fn(),
+    send: jest.fn(),
+    addEventListener: jest.fn()
+  };
+
+  it("uses new commenting service", () => {
+    global.window = Object.create(window);
+
+    jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
+
+    ssoCallback("mock-code-a", {});
+
+    expect(xhrMock.open).toHaveBeenCalledWith(
+      "GET",
+      "/api/comments/loginv2?codeA=mock-code-a"
+    );
+  });
+});
+
 describe("User States", () => {
   it("enabled comments", () => {
-    UserState.mockStates = [UserState.subscriber];
-
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
     });
 
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
-      "https://launcher.spot.im/spot/CurrentSpotID"
+      "https://launcher.spot.im/spot/sp_pCQgrRiN"
     );
 
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it("uses com host when received", () => {
+    const { asFragment, baseElement } = renderComments({
+      count: 123,
+      enabled: true,
+      domainSpecificUrl: "https://www.thetimes.com"
+    });
+
+    expect(
+      baseElement
+        .getElementsByTagName("script")[0]
+        .getAttribute("data-post-url")
+    ).toEqual("https://www.thetimes.com/article/dummy-article-id");
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("RA Users", () => {
-    UserState.mockStates = [UserState.metered, UserState.loggedIn];
+    UserState.mockStates = [UserState.showJoinTheConversationDialog];
 
     const { asFragment, getAllByText } = renderComments({
       count: 123,
@@ -67,20 +103,6 @@ describe("User States", () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
-});
-
-it("pre-switchover comments", () => {
-  const { asFragment, baseElement } = renderComments({
-    count: 123,
-    enabled: true,
-    publishedTime: "2019-08-10T16:00:00.000Z"
-  });
-  expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
-    "https://launcher.spot.im/spot/ReadOnlySpotID"
-  );
-  expect(baseElement.getElementsByClassName("info").length).toEqual(1);
-
-  expect(asFragment()).toMatchSnapshot();
 });
 
 it("disabled comments", () => {
@@ -115,14 +137,10 @@ it("Render comments label, when comments are loaded", () => {
       isEnabled
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
-      commentingConfig={{
-        account: {
-          current: "CurrentSpotID",
-          readOnly: "ReadOnlySpotID"
-        },
-        switchOver: "2020-08-10T16:00:00.000Z"
-      }}
+      commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
+      isCommentEnabled
+      domainSpecificUrl="https://www.thetimes.co.uk"
     />
   );
 
@@ -142,6 +160,7 @@ describe("window listeners added", () => {
     window.document.addEventListener = realAddEventListener;
     listeners = {};
   });
+
   it("all listeners added", () => {
     render(
       <ArticleComments
@@ -150,14 +169,10 @@ describe("window listeners added", () => {
         isEnabled
         onCommentGuidelinesPress={() => {}}
         onCommentsPress={() => {}}
-        commentingConfig={{
-          account: {
-            current: "CurrentSpotID",
-            readOnly: "ReadOnlySpotID"
-          },
-          switchOver: "2020-08-10T16:00:00.000Z"
-        }}
+        commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
+        isCommentEnabled
+        domainSpecificUrl="https://www.thetimes.co.uk"
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();

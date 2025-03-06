@@ -6,8 +6,11 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  commentingConfig: PropTypes.string.isRequired,
-  navigationMode: PropTypes.shape({}).isRequired
+  commentingConfig: PropTypes.shape({
+    account: PropTypes.string.isRequired
+  }).isRequired,
+  navigationMode: PropTypes.shape({}).isRequired,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleDefaultProps = {

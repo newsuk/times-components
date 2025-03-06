@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 import { olympicColour } from '../shared-styles';
 
 const highlightColour = '#e4e4e4';
@@ -22,7 +22,7 @@ export const Container = styled.div<{
   .pa-medaltable {
     .pa_MedalTableView_medaltable {
       font-size: 16px;
-      color: ${fonts.brandColour};
+      color: ${colours.functional.brandColour};
       font-family: ${fonts.headline};
       background-color: ${colours.functional.backgroundPrimary};
       padding-bottom: 60px;

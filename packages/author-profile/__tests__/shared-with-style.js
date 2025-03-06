@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,43 +5,10 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-style.base";
 import author from "./fixtures";
-
-const styles = [
-  "alignItems",
-  "alignSelf",
-  "backgroundColor",
-  "borderBottomColor",
-  "borderBottomWidth",
-  "borderColor",
-  "borderRadius",
-  "flex",
-  "flexDirection",
-  "fontFamily",
-  "fontSize",
-  "height",
-  "lineHeight",
-  "marginBottom",
-  "marginLeft",
-  "marginRight",
-  "minHeight",
-  "overflow",
-  "paddingBottom",
-  "paddingHorizontal",
-  "paddingLeft",
-  "paddingTop",
-  "paddingVertical",
-  "position",
-  "textAlign",
-  "textDecorationLine",
-  "top",
-  "WebkitFontSmoothing",
-  "width"
-];
 
 export default () => {
   addSerializers(
@@ -54,8 +20,7 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      hoistStyleTransform,
-      rnwTransform(AppRegistry, styles)
+      hoistStyleTransform
     )
   );
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts, colours, breakpoints } from '@times-components/styleguide';
+import { fonts, colours, breakpoints } from '@times-components/ts-styleguide';
 import ReactElasticCarousel from 'react-elastic-carousel';
 
 export const Headline = styled.div`
@@ -117,6 +117,7 @@ export const CarouselIndicator = styled.div<{ active?: boolean }>`
   cursor: pointer;
 `;
 
+// @ts-ignore
 export const StyledCarousel = styled(ReactElasticCarousel)<{
   sectionColour: string;
 }>`

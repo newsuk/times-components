@@ -1,34 +1,21 @@
-import React, { useState } from 'react';
-import { Mutation } from 'react-apollo';
+import React, { useMemo, useState } from 'react';
 
 import { GetNewsletter } from '@times-components/provider';
-import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
-import Image, { Placeholder } from '@times-components/image';
+import { Placeholder } from '@times-components/image';
+import { capitalise } from '@times-components/utils';
 
-import { NewsletterPuffButton } from './NewsletterPuffButton';
-
-import { NewsletterPuffLink } from './NewsletterPuffLink';
+import { Newsletter } from './newsletter/Newsletter';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-import {
-  InpContainer,
-  InpCopy,
-  InpImageContainer,
-  InpPreferencesContainer,
-  InpSignupContainer,
-  InpSignupCTAContainer,
-  InpSignupHeadline,
-  InpSignupLabel,
-  InpSubscribedContainer,
-  InpSubscribedHeadline
-} from './styles';
+import { InpContainer } from './styles';
+import { FetchProvider } from '../../helpers/fetch/FetchProvider';
+import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
-  imageUri: string;
-  label?: string;
+  section: string;
   code: string;
 };
 
@@ -36,10 +23,12 @@ export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  imageUri,
-  label
+  section
 }: InlineNewsletterPuffProps) => {
-  const [justSubscribed, setJustSubscribed] = useState(false);
+  const [url, setUrl] = useState<string>(
+    `/api/is-subscribed-newsletter/${code}`
+  );
+  const fetchOptions = useMemo(() => ({ credentials: 'same-origin' }), []);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -50,83 +39,50 @@ export const InlineNewsletterPuff = ({
 
         if (isLoading || !newsletter) {
           return (
-            <InpContainer style={{ height: 257 }}>
+            <InpContainer>
               <Placeholder />
             </InpContainer>
           );
         }
 
-        if (newsletter.isSubscribed && !justSubscribed) {
+        if (newsletter.isSubscribed) {
           return null;
         }
 
         return (
-          <Mutation
-            mutation={subscribeNewsletterMutation}
-            onCompleted={({ subscribeNewsletter = {} }: any) => {
-              setJustSubscribed(subscribeNewsletter.isSubscribed);
-            }}
-          >
-            {(
-              subscribeNewsletter: any,
-              { loading: updatingSubscription }: any
-            ) => (
-              <TrackingContextProvider
-                context={{
-                  object: 'InlineNewsletterPuff',
-                  attrs: {
-                    article_parent_name: newsletter.title,
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-                scrolledEvent={{
-                  object: 'NewsletterPuffButton',
-                  attrs: {
-                    event_navigation_name:
-                      'widget : puff : sign up now : displayed',
-                    event_navigation_browsing_method: 'automated',
-                    event_navigation_action: 'navigation'
-                  }
-                }}
-              >
-                {({ intersectObserverRef }) => (
-                  <InpContainer>
-                    <InpImageContainer>
-                      <Image aspectRatio={1.42} uri={imageUri} />
-                    </InpImageContainer>
-                    {justSubscribed ? (
-                      <InpSubscribedContainer>
-                        <InpSubscribedHeadline>
-                          {`You’ve successfully signed up to ${
-                            newsletter.title
-                          }`}
-                        </InpSubscribedHeadline>
-                        <InpPreferencesContainer>
-                          <NewsletterPuffLink />
-                        </InpPreferencesContainer>
-                      </InpSubscribedContainer>
-                    ) : (
-                      <InpSignupContainer>
-                        <InpSignupLabel>{label}</InpSignupLabel>
-                        <InpSignupHeadline>{headline}</InpSignupHeadline>
-                        <InpCopy>{copy}</InpCopy>
-                        <InpSignupCTAContainer ref={intersectObserverRef}>
-                          <NewsletterPuffButton
-                            updatingSubscription={updatingSubscription}
-                            onPress={() => {
-                              if (!updatingSubscription) {
-                                subscribeNewsletter({ variables: { code } });
-                              }
-                            }}
-                          />
-                        </InpSignupCTAContainer>
-                      </InpSignupContainer>
-                    )}
-                  </InpContainer>
-                )}
-              </TrackingContextProvider>
-            )}
-          </Mutation>
+          <FetchProvider url={url} options={fetchOptions}>
+            <TrackingContextProvider
+              context={{
+                object: 'InlineNewsletterPuff',
+                attrs: {
+                  article_parent_name: newsletter.title,
+                  event_navigation_action: 'navigation'
+                }
+              }}
+              scrolledEvent={{
+                object: 'NewsletterPuffButton',
+                attrs: {
+                  event_navigation_name:
+                    'widget : puff : sign up now : displayed',
+                  event_navigation_browsing_method: 'automated',
+                  event_navigation_action: 'navigation'
+                }
+              }}
+            >
+              {({ intersectObserverRef }) => (
+                <ContentProvider>
+                  <Newsletter
+                    intersectObserverRef={intersectObserverRef}
+                    section={capitalise(section)}
+                    headline={headline}
+                    copy={copy}
+                    code={code}
+                    subscribeNewsletter={setUrl}
+                  />
+                </ContentProvider>
+              )}
+            </TrackingContextProvider>
+          </FetchProvider>
         );
       }}
     </GetNewsletter>

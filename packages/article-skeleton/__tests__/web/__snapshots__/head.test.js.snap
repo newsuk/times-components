@@ -3,10 +3,92 @@
 exports[`Head defaults to an empty string if both headline and shortHeadline are null 1`] = `
 Array [
   "",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
+`;
+
+exports[`Head outputs a live blog schema 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+  </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://url.io"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://url.io"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Some Headline","mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"datePublished":"2015-03-13T18:54:58.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":null,"url":"https://url.io","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"liveBlogUpdate":[{"@type":"BlogPosting","headline":"headline","datePublished":"2022-04-20T20:30:00","dateModified":"2022-04-20T20:30:00","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"url":"https://url.io#u_20220420203000h","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleBody":"Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections. The pro-Remain party announced its MEP hopefuls from almost 4"}],"articleSection":"Comment"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
+  </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
+</Helmet>
 `;
 
 exports[`Head outputs array of author in context schema 1`] = `
@@ -15,9 +97,6 @@ exports[`Head outputs array of author in context schema 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -48,7 +127,7 @@ exports[`Head outputs array of author in context schema 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -68,7 +147,7 @@ exports[`Head outputs array of author in context schema 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -82,8 +161,66 @@ exports[`Head outputs array of author in context schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]},{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]},{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
+</Helmet>
+`;
+
+exports[`Head outputs array of keywords in article schema 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    
+  </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content=""
+    name="article:title"
+  />
+  <meta
+    name="article:publication"
+  />
+  <meta
+    content=""
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    property="og:url"
+  />
+  <meta
+    content=""
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    name="twitter:url"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport","keywords":"Section:Sport"}
+  </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -93,9 +230,6 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -126,7 +260,7 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -146,7 +280,7 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -160,8 +294,13 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/twitterusername"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/twitterusername"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -171,9 +310,6 @@ exports[`Head outputs correct metadata 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -204,7 +340,7 @@ exports[`Head outputs correct metadata 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -224,7 +360,7 @@ exports[`Head outputs correct metadata 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -238,8 +374,13 @@ exports[`Head outputs correct metadata 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://www.thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -249,9 +390,6 @@ exports[`Head outputs correct metadata for a video article 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -282,7 +420,7 @@ exports[`Head outputs correct metadata for a video article 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -306,7 +444,7 @@ exports[`Head outputs correct metadata for a video article 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -320,13 +458,18 @@ exports[`Head outputs correct metadata for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -336,9 +479,6 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -369,7 +509,7 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -389,7 +529,7 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -403,8 +543,97 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
+</Helmet>
+`;
+
+exports[`Head outputs correct metadata when syndicated article 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+  </title>
+  <meta
+    content="noindex"
+    name="robots"
+  />
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://url.io"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://url.io"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
+  </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -414,9 +643,6 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -447,7 +673,7 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -467,7 +693,7 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -481,8 +707,93 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"isPartOf":{"@type":["CreativeWork","Product"],"name":"The Times & The Sunday Times","productID":"uat-thetimes.co.uk:basic"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io","isPartOf":{"@type":["CreativeWork","Product"],"name":"The Times & The Sunday Times","productID":"uat-thetimes.co.uk:basic"}}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
+</Helmet>
+`;
+
+exports[`Head outputs correct metadata with .COM host 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+  </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://url.io"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://url.io"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://www.thetimes.com/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
+  </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -492,9 +803,6 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -525,7 +833,7 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -545,7 +853,7 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -559,8 +867,13 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":"https://thetimes.co.uk/profile/richard-lloyd-parry"}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":"undefined/profile/richard-lloyd-parry"}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -570,9 +883,6 @@ exports[`Head outputs seoDescription as video description for a video article wh
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -603,7 +913,7 @@ exports[`Head outputs seoDescription as video description for a video article wh
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -627,7 +937,7 @@ exports[`Head outputs seoDescription as video description for a video article wh
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -641,13 +951,18 @@ exports[`Head outputs seoDescription as video description for a video article wh
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"some seoDescription","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"some seoDescription","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -657,9 +972,6 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -690,7 +1002,7 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -714,7 +1026,7 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -728,13 +1040,18 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop1251.io","caption":"Some Caption"},"thumbnailUrl":"https://crop1251.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop1251.io","caption":"Some Caption"},"thumbnailUrl":"https://crop1251.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop1251.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop1251.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -744,9 +1061,6 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -777,7 +1091,7 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -801,7 +1115,7 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -815,13 +1129,18 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop11.io","caption":"Some Caption"},"thumbnailUrl":"https://crop11.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop11.io","caption":"Some Caption"},"thumbnailUrl":"https://crop11.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop11.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop11.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -831,9 +1150,6 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -864,7 +1180,7 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -888,7 +1204,7 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -902,13 +1218,18 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop23.io","caption":"Some Caption"},"thumbnailUrl":"https://crop23.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop23.io","caption":"Some Caption"},"thumbnailUrl":"https://crop23.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop23.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop23.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -918,9 +1239,6 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -951,7 +1269,7 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -975,7 +1293,7 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -989,13 +1307,18 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop32.io","caption":"Some Caption"},"thumbnailUrl":"https://crop32.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop32.io","caption":"Some Caption"},"thumbnailUrl":"https://crop32.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop32.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop32.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1005,9 +1328,6 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1038,7 +1358,7 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1062,7 +1382,7 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1076,13 +1396,18 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop45.io","caption":"Some Caption"},"thumbnailUrl":"https://crop45.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop45.io","caption":"Some Caption"},"thumbnailUrl":"https://crop45.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop45.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop45.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1092,9 +1417,6 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1125,7 +1447,7 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1149,7 +1471,7 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1163,13 +1485,18 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Title","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1179,9 +1506,6 @@ exports[`Head outputs title as video description for a video article when there 
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1208,7 +1532,7 @@ exports[`Head outputs title as video description for a video article when there 
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1228,7 +1552,7 @@ exports[`Head outputs title as video description for a video article when there 
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1238,13 +1562,18 @@ exports[`Head outputs title as video description for a video article when there 
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Some Headline","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Some Headline","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1254,9 +1583,6 @@ exports[`Head outputs video schema for a video article 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1287,7 +1613,7 @@ exports[`Head outputs video schema for a video article 1`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1311,7 +1637,7 @@ exports[`Head outputs video schema for a video article 1`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1325,13 +1651,18 @@ exports[`Head outputs video schema for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1341,9 +1672,6 @@ exports[`Head outputs video schema for a video article 2`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1374,7 +1702,7 @@ exports[`Head outputs video schema for a video article 2`] = `
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1398,7 +1726,7 @@ exports[`Head outputs video schema for a video article 2`] = `
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1412,13 +1740,18 @@ exports[`Head outputs video schema for a video article 2`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}]}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://video169.io?resize=1200","caption":"This is video caption"},"thumbnailUrl":"https://video169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1428,9 +1761,6 @@ exports[`Head removes author from context schema if there is empty array of byli
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1458,7 +1788,7 @@ exports[`Head removes author from context schema if there is empty array of byli
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1478,7 +1808,7 @@ exports[`Head removes author from context schema if there is empty array of byli
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1492,8 +1822,13 @@ exports[`Head removes author from context schema if there is empty array of byli
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
@@ -1503,9 +1838,6 @@ exports[`Head removes author from context schema if there is empty array of byli
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1532,7 +1864,7 @@ exports[`Head removes author from context schema if there is empty array of byli
     property="og:type"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     property="og:url"
   />
   <meta
@@ -1552,7 +1884,7 @@ exports[`Head removes author from context schema if there is empty array of byli
     name="twitter:card"
   />
   <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    content="https://url.io"
     name="twitter:url"
   />
   <meta
@@ -1566,79 +1898,60 @@ exports[`Head removes author from context schema if there is empty array of byli
   <script
     type="application/ld+json"
   >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://url.io"}
   </script>
+  <script
+    async={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
 </Helmet>
 `;
 
 exports[`Head removes section from title if there are no tiles 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "",
-  "The Times",
 ]
 `;
 
 exports[`Head removes section from title if there are no tiles with sections 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "",
-  "The Times",
 ]
 `;
 
 exports[`Head shows Sunday Times in title if publication is SUNDAYTIMES 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Sunday Times",
 ]
 `;
 
 exports[`Head shows Times in title if publication is TIMES 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses news in title if news is the only available section 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "News | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses news in title if news is the only available section 2`] = `
 Array [
   "Some Headline",
-  " | ",
-  "News | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses short headline if headline not available 1`] = `
 Array [
   "short headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses the first non-news section in title 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;

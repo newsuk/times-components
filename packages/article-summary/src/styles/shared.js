@@ -1,10 +1,14 @@
-import styleguide from "@times-components/styleguide";
+import {
+  colours,
+  fontFactory,
+  fontsWithFallback,
+  spacing
+} from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, fonts, spacing } = styleguide();
 const sharedStyles = {
   headline: {
     color: colours.functional.primary,
-    fontFamily: fonts.headline,
+    fontFamily: fontsWithFallback.headline,
     fontWeight: "900",
     marginBottom: spacing(1)
   },

@@ -25,10 +25,23 @@ export const initSettings = () => {
   }
 };
 
-const cssUrl =
-  'https://secure.widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css';
+const getStyleSheetUrl = (sport: string) => {
+  switch (sport) {
+    case 'cricket':
+      return 'https://secure.widget.cloud.opta.net/v3/css/v3.cricket.opta-widgets.css';
 
-export const initStyleSheet = () => {
+    case 'rugby':
+      return 'https://secure.widget.cloud.opta.net/v3/css/v3.rugby.opta-widgets.css';
+
+    case 'football':
+    default:
+      return 'https://secure.widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css';
+  }
+};
+
+export const initStyleSheet = (sport: string) => {
+  const cssUrl = getStyleSheetUrl(sport);
+
   if (!document.head.querySelector(`link[href="${cssUrl}"]`)) {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');

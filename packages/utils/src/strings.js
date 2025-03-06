@@ -14,3 +14,19 @@ export const ratioTextToFloat = s => {
 
 export const stripTags = (str, replacement) =>
   str.replace(/(<([^>]+)>)/gi, replacement);
+
+export const checkStylesForUnits = styles => {
+  const newStyles = styles;
+
+  Object.keys(newStyles).forEach(key => {
+    if (key === "lineHeight") {
+      const value = newStyles[key];
+      if (typeof value === "number") {
+        newStyles[key] = `${value}px`;
+      }
+    }
+  });
+
+  // TODO: ADAM: this is only looking in a flat structure, maybe we should look for nested values in future
+  return newStyles;
+};

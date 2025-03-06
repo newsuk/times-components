@@ -2,203 +2,103 @@
 
 exports[`1. card loading state 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c1 {
-  display: block;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 2;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
 
 .c2 {
   display: block;
-  opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
-<style>
-.S1 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
-}
-
-.S2 {
-  height: 24px;
-  margin-bottom: 10px;
-  max-width: 300px;
-}
-
-.S3 {
-  height: 10px;
-  margin-bottom: 10px;
-}
-
-.S4 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
-}
-
-.S5 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-bottom: 0px;
-  min-width: 100%;
-}
-
-.S6 {
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: start;
-  align-items: flex-start;
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
-  justify-content: center;
-  left: 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-}
-
-.IS4 {
-  padding-bottom: 150%;
-}
-
-.IS5 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS6 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS7 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS8 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS9 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS10 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS11 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS12 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS13 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS14 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS15 {
-  height: 10;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-bottom: 0;
-  max-width: 240;
+  min-width: 100%;
+  min-height: 84px;
 }
 
-.IS16 {
-  height: 10;
-  margin-bottom: 0;
-  max-width: 240;
-}
-</style>
-
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -213,11 +113,13 @@ exports[`1. card loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -226,261 +128,299 @@ exports[`1. card loading state 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 animations__FadeIn-sc-2iiu4y-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S6"
+      <tc-view__TcView
+        alignItems="flex-start"
+        display="flex"
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="flex-end"
       >
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S1"
+        <StyledComponent
+          alignItems="flex-start"
+          display="flex"
+          flexDirection="row"
+          flexWrap="wrap"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          justifyContent="flex-end"
         >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={800}
-            lowResQuality={null}
-            lowResSize={60}
-            rounded={false}
-            uri="https://img.io/img"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S5"
-        >
-          <_default>
-            <Gradient
-              className="IS7"
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS10"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS13"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS16"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-      </div>
+          <div
+            alignItems="flex-start"
+            className="c1"
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
+            justifyContent="flex-end"
+          >
+            <tc-view__TcView
+              className=""
+              flex={1}
+              maxWidth={320}
+            >
+              <StyledComponent
+                className=""
+                flex={1}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                      ],
+                    },
+                    "displayName": "tc-view__TcView",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                maxWidth={320}
+              >
+                <div
+                  className="c1"
+                  flex={1}
+                  maxWidth={320}
+                >
+                  <TimesImage
+                    aspectRatio={0.6666666666666666}
+                    disablePlaceholder={false}
+                    fadeImageIn={false}
+                    highResSize={800}
+                    isLcpItem={false}
+                    lowResQuality={null}
+                    lowResSize={60}
+                    rounded={false}
+                    uri="https://img.io/img"
+                  />
+                </div>
+              </StyledComponent>
+            </tc-view__TcView>
+            <card-content__TcCardContainer
+              className=""
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": 0,
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                className=""
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  className="c3"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      height={24}
+                      marginBottom="10px"
+                      maxWidth={300}
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom="10px"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom="10px"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom={0}
+                      maxWidth={240}
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;
 
 exports[`2. card with reversed loading state 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c3 {
   display: block;
-  opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
 
 .c2 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
-}
-
-<style>
-.S1 {
-  height: 24px;
-  margin-bottom: 10px;
-  max-width: 300px;
-}
-
-.S2 {
-  height: 10px;
-  margin-bottom: 10px;
-}
-
-.S3 {
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
-}
-
-.S4 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
-}
-
-.S5 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-bottom: 0px;
-  min-width: 100%;
-}
-
-.S6 {
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: start;
-  align-items: flex-start;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-.IS1 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS2 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS3 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS4 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS5 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS6 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS7 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS8 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS9 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS10 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS11 {
-  height: 10;
-  margin-bottom: 0;
-  max-width: 240;
-}
-
-.IS12 {
-  height: 10;
-  margin-bottom: 0;
-  max-width: 240;
-}
-
-.IS13 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS14 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS15 {
-  -webkit-align-items: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
-  justify-content: center;
-  left: 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+  min-height: 84px;
 }
 
-.IS16 {
-  padding-bottom: 150%;
-}
-</style>
-
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -495,11 +435,13 @@ exports[`2. card with reversed loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -508,57 +450,202 @@ exports[`2. card with reversed loading state 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 animations__FadeIn-sc-2iiu4y-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S6"
+      <tc-view__TcView
+        alignItems="flex-start"
+        display="flex"
+        flexDirection="row"
+        flexWrap="wrap"
+        height="auto"
+        justifyContent="flex-end"
       >
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minHeight-1lorjx1 r-minWidth-3e7lpq S4"
+        <StyledComponent
+          alignItems="flex-start"
+          display="flex"
+          flexDirection="row"
+          flexWrap="wrap"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          height="auto"
+          justifyContent="flex-end"
         >
-          <_default>
-            <Gradient
-              className="IS3"
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS6"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS9"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS12"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S5"
-        >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={800}
-            lowResQuality={null}
-            lowResSize={60}
-            rounded={false}
-            uri="https://img.io/img"
-          />
-        </div>
-      </div>
+          <div
+            alignItems="flex-start"
+            className="c1"
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
+            height="auto"
+            justifyContent="flex-end"
+          >
+            <card-content__TcCardContainer
+              className=""
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": "10px",
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                className=""
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": "10px",
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  className="c2"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      height={24}
+                      marginBottom="10px"
+                      maxWidth={300}
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom="10px"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom="10px"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      height={10}
+                      marginBottom={0}
+                      maxWidth={240}
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+            <tc-view__TcView
+              className=""
+              flex={1}
+              marginBottom={0}
+              maxWidth={320}
+            >
+              <StyledComponent
+                className=""
+                flex={1}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                      ],
+                    },
+                    "displayName": "tc-view__TcView",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                marginBottom={0}
+                maxWidth={320}
+              >
+                <div
+                  className="c1"
+                  flex={1}
+                  marginBottom={0}
+                  maxWidth={320}
+                >
+                  <TimesImage
+                    aspectRatio={0.6666666666666666}
+                    disablePlaceholder={false}
+                    fadeImageIn={false}
+                    highResSize={800}
+                    isLcpItem={false}
+                    lowResQuality={null}
+                    lowResSize={60}
+                    rounded={false}
+                    uri="https://img.io/img"
+                  />
+                </div>
+              </StyledComponent>
+            </tc-view__TcView>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;

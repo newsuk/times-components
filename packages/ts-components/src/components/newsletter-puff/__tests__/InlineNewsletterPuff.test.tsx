@@ -2,21 +2,24 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
 
 import mockDate from 'mockdate';
 
-import {
-  getNewsletter,
-  subscribeNewsletter
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import { useFetch } from '../../../helpers/fetch/FetchProvider';
 
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+
+jest.mock('../../../helpers/fetch/FetchProvider', () => ({
+  ...jest.requireActual('../../../helpers/fetch/FetchProvider'),
+  useFetch: jest.fn()
+}));
 
 const renderComponent = (
   analyticsStream?: () => void,
@@ -38,25 +41,6 @@ const renderComponent = (
           }
         }
       }
-    },
-    {
-      delay: 50,
-      request: {
-        query: subscribeNewsletter,
-        variables: {
-          code: 'TNL-119'
-        }
-      },
-      result: {
-        data: {
-          subscribeNewsletter: {
-            id: 'a2l6E000000CdHzQAK',
-            isSubscribed: true,
-            title: 'RED BOX',
-            __typename: 'Newsletter'
-          }
-        }
-      }
     }
   ]
 ) =>
@@ -69,13 +53,10 @@ const renderComponent = (
         <InlineNewsletterPuff
           {...{
             code: 'TNL-119',
-
-            label: 'STRAIGHT IN YOUR INBOX',
+            section: 'news',
             headline: 'Politics. Explained.',
             copy:
-              'Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.',
-            imageUri:
-              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg'
+              'Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.'
           }}
         />
       </TrackingContextProvider>
@@ -95,12 +76,6 @@ describe('Inline Newsletter Puff', () => {
 
   it('renders placeholder when loading', () => {
     const component = renderComponent();
-    expect(component.baseElement).toMatchSnapshot();
-  });
-
-  it('renders signup state', async () => {
-    const component = renderComponent();
-    await component.findByText('Sign up now');
     expect(component.baseElement).toMatchSnapshot();
   });
 
@@ -130,96 +105,32 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
+  it('renders signup state', async () => {
+    (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
+
+    const component = renderComponent();
+    await component.findAllByText('Sign up with one click');
+    expect(component.baseElement).toMatchSnapshot();
+  });
+
+  it('renders loading state state', async () => {
+    (useFetch as jest.Mock).mockReturnValue({ data: { isSubscribed: false } });
+
+    const component = renderComponent();
+    const oneClickSignUp = await component.findAllByText(
+      'Sign up with one click'
+    );
+
+    fireEvent.click(oneClickSignUp[0]);
+    expect(component.baseElement).toMatchSnapshot();
+  });
+
   it('renders signup view when not already subscribed', async () => {
     const component = renderComponent();
 
     await delay(0);
 
     expect(component.baseElement).toMatchSnapshot();
-  });
-
-  describe('Clicking Subscribe', () => {
-    it("renders 'saving' when the button is clicked", async () => {
-      const component = renderComponent(() => true);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      expect(component.baseElement).toMatchSnapshot();
-      expect(await component.findByText('Saving…')).toBeTruthy();
-    });
-
-    it('triggers analytics when subscribed', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      await component.findByText('Saving…');
-
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Clicked',
-        component: 'ArticleSkeleton',
-        object: 'NewsletterPuffButton',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'click',
-          event_navigation_name: 'widget : puff : sign up now'
-        }
-      });
-    });
-  });
-
-  describe('Manage preferences ', () => {
-    beforeEach(() => {
-      mockDate.set(1620000000000);
-    });
-
-    afterEach(() => {
-      mockDate.reset();
-      jest.clearAllMocks();
-      cleanup();
-    });
-    it('renders the success view after subscribing ', async () => {
-      const component = renderComponent(() => true);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      expect(
-        await component.findByText('Manage preferences here')
-      ).toBeTruthy();
-      expect(component.baseElement).toMatchSnapshot();
-    });
-
-    it('triggers analytics event when manage preferences clicked', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      const link = await component.findByText('Manage preferences here');
-
-      analyticsStream.mockClear();
-
-      fireEvent.click(link);
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Clicked',
-        object: 'NewsletterPuffLink',
-        component: 'ArticleSkeleton',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'click',
-          event_navigation_name: 'widget : puff : manage preferences here'
-        }
-      });
-    });
   });
 
   describe('intersectionObserverTests', () => {
@@ -234,11 +145,14 @@ describe('Inline Newsletter Puff', () => {
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
-    it('sign up now : displayed', async () => {
+    it('Sign up with one click : displayed', async () => {
       const analyticsStream = jest.fn();
+      (useFetch as jest.Mock).mockReturnValue({
+        data: { isSubscribed: false }
+      });
       const component = renderComponent(analyticsStream);
 
-      await component.findByText('Sign up now');
+      await component.findAllByText('Sign up with one click');
 
       FakeIntersectionObserver.intersect();
 
@@ -252,33 +166,6 @@ describe('Inline Newsletter Puff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'automated',
           event_navigation_name: 'widget : puff : sign up now : displayed'
-        }
-      });
-    });
-    it('manage preferences here : displayed', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      await component.findByText('Manage preferences here');
-
-      analyticsStream.mockClear();
-
-      FakeIntersectionObserver.intersect();
-
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Scrolled',
-        component: 'ArticleSkeleton',
-        object: 'NewsletterPuffLink',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'automated',
-          event_navigation_name:
-            'widget : puff : manage preferences here : displayed'
         }
       });
     });

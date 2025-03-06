@@ -43,7 +43,8 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      topics
+      topics,
+      updatedTime
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
@@ -58,6 +59,7 @@ class ArticlePage extends Component {
               headline={getHeadline(headline, shortHeadline)}
               label={label}
               standfirst={standfirst}
+              updatedTime={updatedTime}
             />
           </HeaderContainer>
           <MetaContainer>
@@ -81,20 +83,19 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
+      articleDataFromRender,
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
-      olympicsKeys,
-      getFallbackThumbnailUrl169
+      getFallbackThumbnailUrl169,
+      zephrDivs,
+      storefrontConfig
     } = this.props;
 
     if (error || isLoading) {
       return null;
     }
+
     return (
       <ArticleMainStandardContainer>
         <ArticleSkeleton
@@ -106,14 +107,12 @@ class ArticlePage extends Component {
           receiveChildList={receiveChildList}
           navigationMode={navigationMode}
           commentingConfig={commentingConfig}
+          articleDataFromRender={articleDataFromRender}
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           swgProductId={swgProductId}
-          additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-          algoliaSearchKeys={algoliaSearchKeys}
-          latestFromSectionFlag={latestFromSectionFlag}
-          latestFromSection={latestFromSection}
-          olympicsKeys={olympicsKeys}
+          zephrDivs={zephrDivs}
+          storefrontConfig={storefrontConfig}
         />
       </ArticleMainStandardContainer>
     );

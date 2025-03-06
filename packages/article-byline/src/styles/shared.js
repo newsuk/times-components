@@ -1,6 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory } = styleguide();
 const shared = {
   link: {
     ...fontFactory({
@@ -18,7 +17,8 @@ const shared = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.primary,
-    flexDirection: "row"
+    flexDirection: "row",
+    lineHeight: "25px"
   },
   opinion: {
     ...fontFactory({

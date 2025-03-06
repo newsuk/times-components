@@ -90,7 +90,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+          commentingConfig={{ account: "dummiy-spotim-id" }}
         />
       );
 
@@ -155,7 +155,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+          commentingConfig={{ account: "dummiy-spotim-id" }}
         />
       );
 
@@ -199,7 +199,7 @@ iterator([
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+          commentingConfig={{ account: "dummiy-spotim-id" }}
         />
       );
 

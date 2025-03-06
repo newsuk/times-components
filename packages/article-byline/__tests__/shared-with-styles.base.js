@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import authorsFixture from "../fixtures/authors.json";
@@ -7,9 +7,9 @@ import authorsFixture from "../fixtures/authors.json";
 export default Component => {
   const renderArticleByline = props =>
     TestRenderer.create(
-      <View>
+      <TcView>
         <Component {...props} />
-      </View>
+      </TcView>
     );
 
   const tests = [

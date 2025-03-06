@@ -1,4 +1,4 @@
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 
 export default {
   makeArticleUrl: ({ slug, shortIdentifier }) =>
@@ -12,7 +12,6 @@ export default {
   user: {
     isLoggedIn: false,
     isMetered: false,
-    isMeteredExpired: false,
     isShared: false,
     registrationType: ""
   }

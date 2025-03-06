@@ -4,13 +4,24 @@ export default Component =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
-        actionName: "Pressed",
+        actionName: "navigation",
         eventName: "onSaveToMyArticles",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
+          event_navigation_name: "add to my articles"
         }),
         trackingName: "ArticleSaveToMyArticles"
+      },
+      {
+        actionName: "navigation",
+        eventName: "onRemoveFromMyArticles",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_navigation_name: "remove from my articles"
+        }),
+        trackingName: "ArticleRemoveFromMyArticles"
       },
       {
         actionName: "Pressed",
@@ -47,6 +58,26 @@ export default Component =>
           articleHeadline
         }),
         trackingName: "ArticleShareOnTwitter"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareBarExpend",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_social_action: "share start"
+        }),
+        trackingName: "ArticleShareOnExpend"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareBarClose",
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline,
+          event_social_action: "share start"
+        }),
+        trackingName: "ArticleShareOnClose"
       }
     ]
   });

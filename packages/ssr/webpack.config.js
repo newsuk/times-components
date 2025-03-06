@@ -1,7 +1,11 @@
 const path = require("path");
+const crypto = require("crypto");
 const outputFolder = require("./src/lib/resolve-dist");
 
-const alias = { "react-native$": "react-native-web" };
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
+
 const extensions = [".js"];
 
 const productionOptions = {
@@ -20,12 +24,18 @@ const babelConfig = {
     loader: "babel-loader",
     options: {
       cacheDirectory: true,
-      plugins: [
-        "babel-plugin-styled-components",
-        "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-transform-react-display-name"
-      ],
-      presets: ["module:metro-react-native-babel-preset"]
+      plugins: ["babel-plugin-styled-components"],
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            targets: {
+              esmodules: true
+            }
+          }
+        ],
+        "@babel/preset-react"
+      ]
     }
   }
 };
@@ -39,8 +49,7 @@ module.exports = {
   ...options,
   entry: {
     article: path.resolve(__dirname, "./src/client/article.js"),
-    "author-profile": path.resolve(__dirname, "./src/client/author-profile.js"),
-    topic: path.resolve(__dirname, "./src/client/topic.js")
+    "author-profile": path.resolve(__dirname, "./src/client/author-profile.js")
   },
   module: {
     rules: [babelConfig]
@@ -62,7 +71,6 @@ module.exports = {
     path: outputFolder
   },
   resolve: {
-    alias,
     extensions
   }
 };

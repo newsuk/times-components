@@ -20,6 +20,7 @@ query ArticleQuery($id: ID!) {
     leadAsset {
       ... on Video {
         id
+        title
         brightcoveAccountId
         brightcovePolicyKey
         brightcoveVideoId
@@ -40,11 +41,33 @@ query ArticleQuery($id: ID!) {
           ...relatedProps
         }
       }
+      ... on LeadOneAndTwoSlice {
+        lead {
+          ...relatedProps
+        }
+        support1 {
+          ...relatedProps
+        }
+        support2 {
+          ...relatedProps
+        }
+      }
+      ... on OpinionOneAndTwoSlice {
+        opinion {
+          ...relatedProps
+        }
+        support1 {
+          ...relatedProps
+        }
+        support2 {
+          ...relatedProps
+        }
+      }
     }
     sharingEnabled
     savingEnabled
     standfirst
-    tiles {
+    tiles(first: 5, desc: true) {
       slices {
         sections {
           title
@@ -71,6 +94,7 @@ query ArticleQuery($id: ID!) {
 fragment imageProps on Image {
   caption
   credits
+  title
   crop169: crop(ratio: "16:9") {
     ratio
     url
@@ -141,7 +165,7 @@ fragment articleProps on Article {
   shortHeadline
   seoDescription
   slug
-  url
+  url: categoryPath
 }
 
 fragment relatedProps on Tile {

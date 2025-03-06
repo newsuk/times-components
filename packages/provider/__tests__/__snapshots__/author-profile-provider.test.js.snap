@@ -36,6 +36,7 @@ Object {
       "name": "text",
     },
   ],
+  "contractualTitle": "Contractual Title",
   "hasLeadAssets": true,
   "image": "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
   "jobTitle": "Defence Editor",

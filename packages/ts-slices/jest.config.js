@@ -8,7 +8,6 @@ const buildConfig = dir => {
   const name = packageName.replace('@times-components/', '');
   return {
     rootDir: path.join(dir, '../..'),
-    preset: 'react-native-web',
     moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jsdom',
@@ -18,9 +17,12 @@ const buildConfig = dir => {
       `**/packages/${name}/**/__tests__/*.test.ts`
     ],
     transform: {
-      '.+\\.js$': './node_modules/react-native/jest/preprocessor.js',
+      '.+\\.js$': 'babel-jest',
       '.+\\.tsx?$': 'ts-jest'
     },
+    transformIgnorePatterns: [
+      "node_modules/(?!(@times-components|@storybook/react)/)"
+    ],
     globals: {
       'ts-jest': {
         tsConfig: './tsconfig.jest.json'

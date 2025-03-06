@@ -1,30 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`save and share tracking events when press copy to clipboard 1`] = `
-Object {
-  "action": "Pressed",
-  "attrs": Object {
-    "articleHeadline": "test-headline",
-    "articleId": "id-123",
-  },
-  "component": "ArticleCopyLink",
-}
-`;
-
-exports[`save and share tracking events when press copy to clipboard: onCopyLink 1`] = `
-Array [
-  Array [],
-]
-`;
-
 exports[`save and share tracking events when press share article url by email 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareUrlByEmail",
+  "component": "ArticleShareOnExpend",
 }
 `;
 
@@ -46,8 +30,9 @@ Object {
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareOnFacebook",
+  "component": "ArticleShareOnExpend",
 }
 `;
 
@@ -63,8 +48,9 @@ Object {
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
+    "event_social_action": "share start",
   },
-  "component": "ArticleShareOnTwitter",
+  "component": "ArticleShareOnExpend",
 }
 `;
 

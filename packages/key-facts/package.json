@@ -1,7 +1,7 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.1.53",
-  "description": "Bulleted list of text data",
+  "version": "2.13.3",
+  "description": "Bulleted list of text data ",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
   "scripts": {
@@ -9,7 +9,8 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
@@ -21,9 +22,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
     "web",
     "key-facts",
     "component"
@@ -36,39 +35,30 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator": "2.8.0",
-    "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.1.71",
-    "@times-components/test-utils": "2.3.10",
-    "@times-components/webpack-configurator": "2.0.29",
+    "@times-components/jest-configurator-web": "0.8.2",
+    "@times-components/jest-serializer": "3.13.20",
+    "@times-components/storybook": "4.12.34",
+    "@times-components/tealium-utils": "0.9.1",
+    "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "jest-styled-components": "6.3.1",
+    "mockdate": "3.0.5",
     "prettier": "1.14.3",
     "react": "16.9.0",
-    "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
-    "react-test-renderer": "16.9.0",
     "stylelint": "9.4.0",
-    "stylelint-config-recommended": "2.1.0",
-    "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.3.2",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/context": "1.2.31",
-    "@times-components/link": "3.6.49",
-    "@times-components/markup": "3.4.65",
-    "@times-components/markup-forest": "1.8.1",
-    "@times-components/responsive": "0.7.5",
-    "@times-components/styleguide": "3.38.27",
-    "lodash.pick": "4.4.0",
+    "@times-components/markup": "3.9.0",
+    "@times-components/markup-forest": "1.9.2",
+    "@times-components/responsive": "0.27.0",
+    "@times-components/ts-components": "1.123.0",
+    "@times-components/ts-styleguide": "1.50.34",
+    "@times-components/utils": "6.26.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
@@ -78,9 +68,7 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.50",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16"
   },
   "publishConfig": {
     "access": "public"

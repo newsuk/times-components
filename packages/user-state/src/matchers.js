@@ -1,20 +1,44 @@
-export const isLoggedIn = userState => userState.isLoggedIn;
+/* User states */
 
-export const isMeteredExpired = userState =>
-  isLoggedIn(userState) && userState.isMeteredExpired;
+const hasAccessLoggedInOrSharedUser = userState =>
+  userState.hasAccess && (userState.isLoggedIn || userState.isShared);
 
-export const isShared = userState => userState.isShared;
+const hasAccessLoggedInUser = userState =>
+  userState.hasAccess && userState.isLoggedIn;
 
-export const isMetered = userState =>
-  isLoggedIn(userState) && userState.isMetered;
+const isMeteredUser = userState =>
+  userState.isMetered ||
+  userState.isLightPackUser ||
+  userState.isRegisteredUser;
 
-export const isSubscriber = userState =>
-  isLoggedIn(userState) && !userState.isMetered && !userState.isMeteredExpired;
+const hasAccessLoggedInNonMeteredUser = userState =>
+  hasAccessLoggedInUser(userState) && !isMeteredUser(userState);
 
-export const isNonMeteredExpiredUser = user =>
-  isLoggedIn(user) && !isMeteredExpired(user);
+const hasAccessLoggedInMeteredUser = userState =>
+  hasAccessLoggedInUser(userState) && isMeteredUser(userState);
 
-export const shouldShowFullArticle = user =>
-  isShared(user) || isNonMeteredExpiredUser(user);
+/* Entitlements */
 
-export const isLoggedInOrShared = user => isShared(user) || isLoggedIn(user);
+export const showSaveAndShareBar = userState =>
+  hasAccessLoggedInOrSharedUser(userState);
+
+export const showArticleExtras = userState =>
+  hasAccessLoggedInOrSharedUser(userState);
+
+export const showTopicTags = userState =>
+  hasAccessLoggedInOrSharedUser(userState);
+
+export const showArticleSaveButton = userState =>
+  hasAccessLoggedInUser(userState);
+
+export const showLiveUpdateButton = userState =>
+  hasAccessLoggedInUser(userState);
+
+export const showTokenisedEmailShare = userState =>
+  hasAccessLoggedInNonMeteredUser(userState);
+
+export const showCommentingModule = userState =>
+  hasAccessLoggedInNonMeteredUser(userState);
+
+export const showJoinTheConversationDialog = userState =>
+  hasAccessLoggedInMeteredUser(userState);

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import VideoLabel from "./src/video-label";

@@ -5,15 +5,19 @@ exports[`1. no child elements 1`] = `""`;
 exports[`2. a single child element 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>
@@ -27,15 +31,19 @@ exports[`2. a single child element 1`] = `
 exports[`3. two child elements 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -43,9 +51,11 @@ exports[`3. two child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-2
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-2
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>
@@ -59,15 +69,19 @@ exports[`3. two child elements 1`] = `
 exports[`4. three child elements 1`] = `
 <config__Base>
   <div>
-    <responsive__SliceContainer>
+    <responsive__SliceContainer
+      hideBorder={false}
+    >
       <div>
         <responsive__Base>
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -75,9 +89,11 @@ exports[`4. three child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-2
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-2
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -85,9 +101,11 @@ exports[`4. three child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-3
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-3
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>

@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import renderTrees from "@times-components/markup-forest";
 import renderers from "@times-components/markup";
+import styled from "styled-components";
+
+const InlineText = styled(TcText)`
+  ${props =>
+    props.textStyle ? checkStylesForUnits(props.textStyle) : ""} ${props =>
+    props.bylineStyle ? checkStylesForUnits(props.bylineStyle) : ""};
+`;
 
 const bylineRenderers = (Component, textStyle, props = {}) => ({
   ...renderers,
@@ -17,9 +24,14 @@ const bylineRenderers = (Component, textStyle, props = {}) => ({
   inline(key, attributes, children) {
     const { className, bylineStyle } = props;
     return (
-      <Text className={className} key={key} style={[textStyle, bylineStyle]}>
+      <InlineText
+        className={className}
+        key={key}
+        textStyle={textStyle}
+        bylineStyle={bylineStyle}
+      >
         {children}
-      </Text>
+      </InlineText>
     );
   }
 });

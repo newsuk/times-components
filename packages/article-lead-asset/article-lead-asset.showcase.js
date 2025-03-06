@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import ArticleLeadAsset from "./src/article-lead-asset";
 
 const preventDefaultedAction = decorateAction =>
@@ -30,9 +30,9 @@ const videoLeadAsset = {
 
 // eslint-disable-next-line react/prop-types
 const createCaption = label => ({ caption: { text, credits } }) => (
-  <Text>
+  <TcText>
     {label}: {text} {credits}
-  </Text>
+  </TcText>
 );
 
 export default {

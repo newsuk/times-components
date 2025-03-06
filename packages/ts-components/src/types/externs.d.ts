@@ -19,15 +19,111 @@ declare module '@times-components/tracking' {
   export function withTrackEvents<T>(component: FC<T>, attr: any): FC<T>;
 }
 
+declare module '@times-components/ts-slices' {
+  export const Slice = React.FC;
+  export type SliceArticle = {
+    id?: string;
+    url?: string;
+    categoryPath?: string;
+    label?: string;
+    byline?: string;
+    headline: string;
+    standfirst?: string;
+    summary?: string;
+    cta?: string;
+    datePublished?: string;
+    dateUpdated?: string;
+    template?: string;
+    images: {
+      alt?: string;
+      crops: Array<{
+        url: string;
+        ratio: string;
+      }>;
+    };
+  };
+  export type ClickHandlerType = (
+    event: MouseEventType,
+    article: SliceArticle,
+    position?: string
+  ) => void;
+  export type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
+}
+
+declare module '@times-components/ts-styleguide' {
+  type ColourMap = Record<string, string>;
+  type Colours = Record<string, ColourMap>;
+
+  type Breakpoints = {
+    small: string;
+    medium: string;
+    wide: string;
+    huge: string;
+  };
+
+  type Fonts = {
+    body: string;
+    bodyRegular: string;
+    headline: string;
+    brandColour: string;
+    headlineRegular: string;
+    supporting: string;
+  };
+
+  type FontFactory = () => {
+    fontFamily: Record<string, string>;
+    fontSize: Record<string, number>;
+    lineHeight: ({ font: string, fontSize: number }) => number;
+  };
+
+  export const fonts: Fonts;
+  export const fontSizes: {
+    newsletterPuffCopy: number;
+    newsletterPuffHeadline: number;
+    newsletterPuffLabel: number;
+  };
+  export const timesFontFactory: fontSizes;
+  export const spacing: (multiple: number) => number;
+  export const breakpoints: Breakpoints;
+  export const colours: Colours;
+  export const tabletRowPadding: number;
+
+  export const scales: {
+    large: string;
+    medium: string;
+    xlarge: string;
+  };
+  const styleguide: () => {
+    colours: Colours;
+    fontFactory: FontFactory;
+  };
+
+  export { styleguide };
+  export default styleguide;
+}
+
 declare module '@times-components/icons' {
   import { FC } from 'react';
   type IconProps = {
-    fillColour: string | null;
+    fillColour?: string;
+    strokeColour?: string;
     height?: number;
     width?: number;
+    title?: string;
+    fill?: string;
   };
   export const IconForwardChevron: FC<IconProps>;
   export const IconForwardArrow: FC<IconProps>;
+  export const IconStar: FC<IconProps>;
+  export const IconActivityIndicator: FC<IconProps>;
+  export const IconCheck: FC<IconProps>;
+  export const PlayerModalIcon: FC<IconProps>;
+  export const PlayerBack: FC<IconProps>;
+  export const PlayerFront: FC<IconProps>;
+  export const PlayIcon: FC<IconProps>;
+  export const PauseIcon: FC<IconProps>;
+  export const IconVolume: FC<IconProps>;
+  export const AudioCloseIcon: FC<IconProps>;
 }
 
 declare module '@times-components/image' {
@@ -52,52 +148,17 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
+  export const HoverIcon: React.FC<{
+    colour?: string;
+    hoverColour?: string;
+    underline?: boolean;
+  }>;
+  export const TcView: React.FC<{ style?: React.CSSProperties }>;
+  export const TcText: React.FC<{ style?: React.CSSProperties }>;
+  export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
-}
-
-declare module '@times-components/styleguide' {
-  type ColourMap = Record<string, string>;
-  type Colours = Record<string, ColourMap>;
-
-  type Breakpoints = {
-    small: string;
-    medium: string;
-    wide: string;
-    huge: string;
-  };
-
-  type Fonts = {
-    body: string;
-    bodyRegular: string;
-    headline: string;
-    brandColour: string;
-    headlineRegular: string;
-    supporting: string;
-  };
-
-  export const fonts: Fonts;
-  export const fontSizes: {
-    newsletterPuffCopy: number;
-    newsletterPuffHeadline: number;
-    newsletterPuffLabel: number;
-  };
-  export const spacing: (multiple: number) => number;
-  export const breakpoints: Breakpoints;
-  export const colours: Colours;
-
-  export const scales: {
-    large: string;
-    medium: string;
-    xlarge: string;
-  };
-  const styleguide: () => {
-    colours: any;
-    fontFactory: (v: any) => any;
-  };
-
-  export default styleguide;
 }
 
 declare module '@times-components/button' {
@@ -143,7 +204,6 @@ declare module '@times-components/provider' {
 declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
-  export const subscribeNewsletter: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {
@@ -165,9 +225,10 @@ declare module '@times-components/related-articles' {
   import { FC } from 'react';
   type RelatedArticles = {
     heading?: string;
-    analyticsStream: AnalyticsStreamType;
-    isVisible: boolean;
     slice: any;
+    isVisible: boolean;
+    onPress?: any;
+    analyticsStream: AnalyticsStreamType;
   };
   const RelatedArticles: FC<RelatedArticles>;
   export default RelatedArticles;

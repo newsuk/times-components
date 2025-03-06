@@ -2,10 +2,10 @@
 
 exports[`1. single inline element 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
     Lindsay McIntosh, Scottish Political Editor
   </div>
@@ -14,15 +14,15 @@ exports[`1. single inline element 1`] = `
 
 exports[`2. with the author in the begining 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
     , Environment Editor
   </div>
@@ -31,15 +31,15 @@ exports[`2. with the author in the begining 1`] = `
 
 exports[`3. with the author at the end 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
     RBS Six Nations, 
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Mike Atherton
   </div>
@@ -48,30 +48,30 @@ exports[`3. with the author at the end 1`] = `
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
      | 
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Mike Atherton
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
      | 
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Alexandra Frean
   </div>
@@ -80,30 +80,30 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
     , 
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Mike Atherton
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
     , 
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Alexandra Frean
   </div>
@@ -112,25 +112,25 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 
 exports[`6. with multiple authors separated by spaces 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 dBuniw"
   >
      
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Mike Atherton
   </div>
   <div
-    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
   >
     Alexandra Frean
   </div>

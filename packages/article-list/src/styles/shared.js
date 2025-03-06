@@ -1,6 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   listEmptyMessage: {
     color: colours.functional.secondary,
@@ -8,7 +7,8 @@ const styles = {
       font: "bodyRegular",
       fontSize: "infoTitle"
     }),
-    marginHorizontal: spacing(8),
+    marginLeft: spacing(8),
+    marginRight: spacing(8),
     marginTop: spacing(12),
     textAlign: "center"
   },
@@ -23,8 +23,10 @@ const styles = {
   listErrorContainer: {
     height: "100%",
     justifyContent: "space-between",
-    marginHorizontal: spacing(2),
-    paddingVertical: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
   },
   listErrorHeading: {
     alignSelf: "center",
@@ -38,7 +40,8 @@ const styles = {
   },
   listErrorImageContainer: {
     alignSelf: "center",
-    marginVertical: spacing(4)
+    marginTop: spacing(4),
+    marginBottom: spacing(4)
   },
   listErrorMessage: {
     color: colours.functional.secondary,
@@ -49,18 +52,19 @@ const styles = {
     textAlign: "center"
   },
   listItemContainer: {
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(2)
+    padding: spacing(2)
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1
   },
   listItemSeparatorContainer: {
-    paddingHorizontal: spacing(2)
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2)
   },
   loadingContainer: {
-    paddingVertical: spacing(5)
+    paddingTop: spacing(5),
+    paddingBottom: spacing(5)
   },
   paginationContainer: {
     alignItems: "stretch",

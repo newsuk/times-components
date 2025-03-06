@@ -3,20 +3,15 @@ import { mockUserState } from "@times-components/user-state";
 
 export const UserState = mockUserState();
 
-jest.mock("../src/bar-item", () => "BarItem");
-
 jest.mock("@times-components/icons", () => ({
   IconCopyLink: "IconCopyLink",
   IconEmail: "IconEmail",
   IconFacebook: "IconFacebook",
   IconSaveBookmark: "IconSaveBookmark",
-  IconTwitter: "IconTwitter"
+  IconTwitter: "IconTwitter",
+  IconActivityIndicator: "IconActivityIndicator"
 }));
 
-jest.mock("react-native", () => {
-  const reactNativeMock = require.requireActual("react-native");
-  reactNativeMock.Clipboard = {
-    setString: jest.fn()
-  };
-  return reactNativeMock;
-});
+jest.mock("@times-components/ts-components", () => ({
+  SaveStar: "SaveStar"
+}));

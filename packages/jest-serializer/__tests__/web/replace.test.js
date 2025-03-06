@@ -1,19 +1,16 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import Enzyme, { mount } from "enzyme";
 import React16Adapter from "enzyme-adapter-react-16/build/index";
-import { View, Text } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   propsNoChildren,
   replace,
   replaceTransform,
-  stylePrinter,
-  rnwTransform
+  stylePrinter
 } from "../../src";
 
 Enzyme.configure({ adapter: new React16Adapter() });
@@ -25,7 +22,7 @@ describe("The replace serializer should", () => {
       enzymeTreeSerializer(),
       replace({
         ChildComponent: () => ({
-          children: [<Text>Replaced</Text>],
+          children: [<TcText>Replaced</TcText>],
           node: { type: "Placeholder" },
           props: {}
         })
@@ -33,9 +30,9 @@ describe("The replace serializer should", () => {
     );
 
     // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
     // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
 
     const wrapper = mount(
       <WrapperComponent>
@@ -56,9 +53,9 @@ describe("The replace serializer should", () => {
     );
 
     // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
     // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
 
     const wrapper = mount(
       <WrapperComponent>
@@ -77,15 +74,14 @@ describe("The replace serializer should", () => {
         stylePrinter,
         replaceTransform({
           ChildComponent: propsNoChildren
-        }),
-        rnwTransform(AppRegistry)
+        })
       )
     );
 
     // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
     // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
 
     const wrapper = mount(
       <WrapperComponent>
@@ -104,15 +100,14 @@ describe("The replace serializer should", () => {
         stylePrinter,
         replaceTransform({
           ChildComponent: justChildren
-        }),
-        rnwTransform(AppRegistry)
+        })
       )
     );
 
     // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
     // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
 
     const wrapper = mount(
       <WrapperComponent>
@@ -133,48 +128,20 @@ describe("The replace serializer should", () => {
           div: justChildren,
           View: justChildren,
           WrapperComponent: justChildren
-        }),
-        rnwTransform(AppRegistry)
+        })
       )
     );
 
     // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
+    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
     // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
+    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
 
     const wrapper = mount(
       <WrapperComponent>
         <ChildComponent text="Hello world1!" />
         <ChildComponent text="Hello world2!" />
         <ChildComponent text="Hello world3!" />
-      </WrapperComponent>
-    );
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it("provide a helper to remove native elements from a web tree", () => {
-    addSerializers(
-      expect,
-      enzymeTreeSerializer(),
-      compose(
-        stylePrinter,
-        replaceTransform({
-          ...meltNative
-        }),
-        rnwTransform(AppRegistry)
-      )
-    );
-
-    // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <View>{children}</View>;
-    // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <Text>{text}</Text>;
-
-    const wrapper = mount(
-      <WrapperComponent>
-        <ChildComponent text="Hello world!" />
       </WrapperComponent>
     );
 

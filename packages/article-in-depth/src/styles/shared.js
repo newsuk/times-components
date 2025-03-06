@@ -1,15 +1,18 @@
-import styleguide, {
+import {
+  colours,
+  fontFactory,
+  spacing,
   tabletWidth,
   tabletWidthMax
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleHeadline: {
     ...fontFactory({
       font: "headline",
       fontSize: "headline"
     }),
+    fontWeight: 400,
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
     textAlign: "center"
@@ -17,7 +20,8 @@ const sharedStyles = {
   container: {
     alignItems: "center",
     paddingBottom: spacing(9),
-    paddingHorizontal: spacing(4),
+    paddingLeft: spacing(4),
+    paddingRight: spacing(4),
     paddingTop: spacing(12)
   },
   containerTablet: {
@@ -59,7 +63,8 @@ const sharedStyles = {
   },
   metaContainer: {
     alignItems: "center",
-    marginHorizontal: spacing(2),
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
     paddingBottom: spacing(2),
     paddingTop: spacing(2),
     borderBottomColor: colours.functional.keyline,
@@ -90,9 +95,9 @@ const sharedStyles = {
       font: "headlineRegular",
       fontSize: "smallestHeadline"
     }),
+    fontWeight: 400,
     color: colours.functional.primary,
     marginBottom: spacing(3),
-    paddingHorizontal: spacing(2),
     textAlign: "center"
   }
 };

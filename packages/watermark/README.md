@@ -1,6 +1,6 @@
 # Watermark
 
-A Times standard image (native) or svg (web) that acts as a placeholder image
+A Times standard svg that acts as a placeholder image
 wherever required. The Watermark component can act as a placeholder for failed
 images, or as a loading state. It requires height and width props for layout.
 
@@ -24,7 +24,7 @@ yarn lint
 
 ## Testing
 
-Testing can be done on each platform individually
+Testing can be done by running:
 
 ```
 yarn test:web

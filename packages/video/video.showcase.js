@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { View, Text, Alert } from "react-native";
 import React from "react";
 import Video from "./src/video";
 
@@ -9,7 +8,7 @@ const policyKey =
 const accountId = "5436121857001";
 const videoId = "5831024132001";
 const posterImageURI =
-  "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
+  "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg";
 
 const defaultVideoProps = {
   accountId,
@@ -17,10 +16,8 @@ const defaultVideoProps = {
   id,
   is360: false,
   onVideoPress: () => {
-    Alert.alert(
-      "onVideoPress called",
-      "(Storybook does not play videos on native - it is handled by the host app)"
-    );
+    // eslint-disable-next-line no-console
+    console.log("onVideoPress called");
   },
   policyKey,
   poster: {
@@ -36,26 +33,73 @@ export default {
   children: [
     {
       component: () => (
-        <View>
-          <Text
+        <div>
+          <div
             style={{
               marginBottom: 10,
               marginTop: 10
             }}
           >
             Mobile size:
-          </Text>
+          </div>
           <Video {...defaultVideoProps} />
-          <Text
+          <div
+            style={{
+              marginBottom: 10,
+              marginTop: 20
+            }}
+          >
+            Tablet size:
+          </div>
+          <Video
+            {...defaultVideoProps}
+            videoId="5612887446001"
+            id={mockId}
+            width={498}
+            height={280}
+          />
+
+          <div
             style={{
               marginBottom: 10,
               marginTop: 20
             }}
           >
             Desktop size:
-          </Text>
-          <Video {...defaultVideoProps} height={374} width={664} />
-        </View>
+          </div>
+          <Video
+            {...defaultVideoProps}
+            playerId="MxxcO1yYU"
+            videoId="6353430818112"
+            accountId="5436121856001"
+            width={760}
+            height={427}
+            poster={{
+              uri:
+                "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"
+            }}
+          />
+          <div
+            style={{
+              marginBottom: 10,
+              marginTop: 200
+            }}
+          >
+            Desktop size:
+          </div>
+          <Video
+            {...defaultVideoProps}
+            playerId="MxxcO1yYU"
+            videoId="6358939106112"
+            accountId="5436121856001"
+            width={498}
+            height={280}
+            poster={{
+              uri:
+                "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9db3d1a4-26b3-4bc2-b50e-1d2d103c363f.jpg?crop=1600%2C900%2C0%2C0&amp;resize=960"
+            }}
+          />
+        </div>
       ),
       name: "default player",
       type: "story"
@@ -68,32 +112,32 @@ export default {
           is360: true
         };
         return (
-          <View>
-            <Text
+          <div>
+            <div
               style={{
                 marginBottom: 10,
                 marginTop: 10
               }}
             >
               Mobile size:
-            </Text>
+            </div>
             <Video {...defaultVideoProps} {...props} />
-            <Text
+            <div
               style={{
                 marginBottom: 10,
                 marginTop: 20
               }}
             >
               Desktop size:
-            </Text>
+            </div>
             <Video
               {...defaultVideoProps}
               {...props}
-              height={374}
-              width={664}
+              width={768}
+              height={432}
               id={mockId}
             />
-          </View>
+          </div>
         );
       },
       name: "360 player",
@@ -102,33 +146,33 @@ export default {
     },
     {
       component: () => (
-        <View>
+        <div>
           <Video {...defaultVideoProps} />
-          <View style={{ height: 20 }} />
+          <div style={{ height: 20 }} />
           <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} />
-        </View>
+        </div>
       ),
       name: "two players with different videos",
       type: "story"
     },
     {
       component: () => (
-        <View
+        <div
           style={{
             height: "100%",
             width: "100%"
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
-        </View>
+        </div>
       ),
       name: "100% width and height",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {
       component: () => (
-        <View
+        <div
           style={{
             height: "100vh",
             overflow: "hidden",
@@ -136,7 +180,7 @@ export default {
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
-        </View>
+        </div>
       ),
       name: "100% width and height",
       platform: "web",
@@ -144,31 +188,31 @@ export default {
     },
     {
       component: () => (
-        <View>
-          <Text
+        <div>
+          <div
             style={{
               marginBottom: 10,
               marginTop: 10
             }}
           >
             Mobile size:
-          </Text>
+          </div>
           <Video {...defaultVideoProps} videoId="invalid id" />
-          <Text
+          <div
             style={{
               marginBottom: 10,
               marginTop: 20
             }}
           >
             Desktop size:
-          </Text>
+          </div>
           <Video
             {...defaultVideoProps}
             height={374}
             videoId="invalid id"
             width={664}
           />
-        </View>
+        </div>
       ),
       name: "with error",
       platform: "web",
@@ -176,31 +220,31 @@ export default {
     },
     {
       component: () => (
-        <View>
-          <Text
+        <div>
+          <div
             style={{
               marginBottom: 10,
               marginTop: 10
             }}
           >
             Mobile size:
-          </Text>
+          </div>
           <Video {...defaultVideoProps} poster={null} />
-          <Text
+          <div
             style={{
               marginBottom: 10,
               marginTop: 20
             }}
           >
             Desktop size:
-          </Text>
+          </div>
           <Video
             {...defaultVideoProps}
             height={374}
             poster={null}
             width={664}
           />
-        </View>
+        </div>
       ),
       name: "no poster image",
       type: "story"

@@ -8,7 +8,8 @@ const buildConfig = dir => {
   const name = packageName.replace('@times-components/', '');
   return {
     rootDir: path.join(dir, '../..'),
-    preset: 'react-native-web',
+    preset: 'ts-jest',
+    maxWorkers: 1,
     moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jest-environment-jsdom-sixteen',
@@ -18,12 +19,13 @@ const buildConfig = dir => {
       `**/packages/${name}/**/__tests__/*.test.ts`
     ],
     transform: {
-      '.+\\.js$': './node_modules/react-native/jest/preprocessor.js',
+      '.+\\.js$': 'babel-jest',
       '.+\\.tsx?$': 'ts-jest'
     },
     globals: {
       'ts-jest': {
-        tsConfig: './tsconfig.jest.json'
+        tsConfig: './tsconfig.jest.json',
+        isolatedModules: true
       }
     },
     collectCoverage: true,
@@ -33,15 +35,14 @@ const buildConfig = dir => {
       '<rootDir>/packages/ts-components/src/**/*.(tsx|ts)',
       '!<rootDir>/packages/ts-components/src/**/*.(stories|d).*',
       '!<rootDir>/packages/ts-components/src/index.*',
-      '!<rootDir>/packages/ts-components/src/fixtures/**',
       '!<rootDir>/node_modules/'
     ],
     coverageThreshold: {
       global: {
-        statements: 84,
-        branches: 78,
-        functions: 88,
-        lines: 85
+        statements: 95.5,
+        branches: 83,
+        lines: 95.5,
+        functions: 93.70
       }
     }
   };

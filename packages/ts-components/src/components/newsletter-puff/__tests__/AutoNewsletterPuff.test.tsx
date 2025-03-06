@@ -5,17 +5,13 @@ import { cleanup, render } from '@testing-library/react';
 import { AutoNewsletterPuff } from '../AutoNewsletterPuff';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { MockedProvider } from '@times-components/provider-test-tools';
-import {
-  getNewsletter,
-  subscribeNewsletter
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 
 const defaultProps = {
   code: '123',
   copy: 'abc',
   headline: 'headline',
-  imageUri: 'http://jpeg.jpg',
-  label: 'news'
+  section: 'sport'
 };
 
 const mocks = [
@@ -31,25 +27,7 @@ const mocks = [
         newsletter: {
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
-          title: 'Best of Times',
-          __typename: 'Newsletter'
-        }
-      }
-    }
-  },
-  {
-    delay: 1000,
-    request: {
-      query: subscribeNewsletter,
-      variables: {
-        code: 'TNL-101'
-      }
-    },
-    result: {
-      data: {
-        subscribeNewsletter: {
-          id: 'a2l6E000000CdHzQAK',
-          isSubscribed: true,
+          title: 'Daily Briefing',
           __typename: 'Newsletter'
         }
       }

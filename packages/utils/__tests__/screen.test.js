@@ -1,14 +1,11 @@
-/* global context */
 import {
   acceptedWidths,
-  convertToPixels,
   normaliseWidthForAssetRequestCache,
-  screenWidth,
-  screenWidthInPixels
+  screenWidth
 } from "../src/index";
 
 describe("screen utilities", () => {
-  context("normaliseWidthForAssetRequestCache", () => {
+  describe("normaliseWidthForAssetRequestCache", () => {
     it("should return the next highest value from the acceptedWidths array", () => {
       const firstAcceptedWidthItem = acceptedWidths[0];
       const width = firstAcceptedWidthItem - 1;
@@ -26,21 +23,9 @@ describe("screen utilities", () => {
     });
   });
 
-  context("screenWidth", () => {
+  describe("screenWidth", () => {
     it("should return the device screen width", () => {
       expect(screenWidth()).toMatchSnapshot();
-    });
-  });
-
-  context("screenWidthInPixels", () => {
-    it("should return the correct device screen width in pixels", () => {
-      expect(screenWidthInPixels()).toMatchSnapshot();
-    });
-  });
-
-  context("convertToPixels", () => {
-    it("should convert a number to pixels using pixel density", () => {
-      expect(convertToPixels(50)).toMatchSnapshot();
     });
   });
 });

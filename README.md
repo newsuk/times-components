@@ -5,18 +5,13 @@
 
 ### Purpose
 
-Home of The Times' `react`/`react native` components, using
-[react-native-web](https://github.com/necolas/react-native-web) to share across platforms
+Home of The Times' `react` components.
 
 ### Dev Environment
 
 We require MacOS with [Node.js](https://nodejs.org) (for specific version please check package.json restrictions),
 [yarn](https://yarnpkg.com) (latest)
 
-Native development
-requires [Xcode](https://developer.apple.com/xcode),
-[JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html) and
-[pip](https://pip.pypa.io/en/stable/installing/).
 
 You can try without these requirements, but you'd be on your own.
 
@@ -26,11 +21,9 @@ Go to http://components.thetimes.co.uk
 
 ## Getting Started
 
-1. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
+1. Run `yarn install`
 
-2. Run `yarn install`
-
-3. Components can be seen running in a storybook:
+2. Components can be seen running in a storybook
 
 - storybook
   1. `yarn storybook`
@@ -38,7 +31,7 @@ Go to http://components.thetimes.co.uk
 
 ### Schema
 
-See [utils package](packages/utils/README.md) on how to update the schema
+See [utils package](packages/utils/README.md) on how to update the schema.
 
 ## Debugging
 
@@ -58,7 +51,18 @@ Any of these source files can be debugged directly.
 
 ## Link times-components to the Render project
 
-Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
+Follow these steps [here](https://github.com/newsuk/cps-content-render#integrating-with-times-components)
+
+You will also see the option to do a canary release in the pipeline, which will publish a test version of your changes that you can import in render.
+
+## See your changes in Render with rnw.js files
+
+Besides linking the Times Components and Render repos together, you can view changes made to Times Components in Render through the rnw.js files.
+
+1. In Times Components, after you have made your changes, run `yarn bundle` in the package in which you were working. If you were working in the `ts-components` package you will need to run `yarn build` first and then `yarn bundle`.
+2. Running the command creates an rnw.js file in the root of the folder. Check the file to see if your changes have come through.
+3. Copy the contents of the rnw.js file and paste it into the related file in Render's `node_modules`. For example, if you bundled the rnw.js file in the `article-skeleton` package in Times Components, you would paste the contents into `node_modules/@times-components/article-skeleton/rnw.js`.
+4. Run render and you should see your changes.
 
 ## Debugging the tests
 
@@ -108,7 +112,7 @@ Tests are currently using [jest](https://jestjs.io/) to run so if you want to de
 ## Contributing
 
 See the [CONTRIBUTING.md](.github/CONTRIBUTING.md) for an extensive breakdown of
-the project
+the project.
 
 `yarn commit` will commit files (same as `git commit`), and will aid the
 contributor with adding a suitable commit message inline with

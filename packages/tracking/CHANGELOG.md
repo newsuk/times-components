@@ -3,6 +3,944 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.22.34](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.33...@times-components/tracking@2.22.34) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.33](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.32...@times-components/tracking@2.22.33) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.32](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.31...@times-components/tracking@2.22.32) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.31](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.30...@times-components/tracking@2.22.31) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.30](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.29...@times-components/tracking@2.22.30) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.29](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.28...@times-components/tracking@2.22.29) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.28](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.27...@times-components/tracking@2.22.28) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.27](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.26...@times-components/tracking@2.22.27) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.26](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.25...@times-components/tracking@2.22.26) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.25](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.24...@times-components/tracking@2.22.25) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.24](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.23...@times-components/tracking@2.22.24) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.23](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.22...@times-components/tracking@2.22.23) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.22](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.21...@times-components/tracking@2.22.22) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.21](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.20...@times-components/tracking@2.22.21) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.20](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.19...@times-components/tracking@2.22.20) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.19](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.18...@times-components/tracking@2.22.19) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.18](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.17...@times-components/tracking@2.22.18) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.17](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.16...@times-components/tracking@2.22.17) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.16](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.15...@times-components/tracking@2.22.16) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.15](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.14...@times-components/tracking@2.22.15) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.14](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.13...@times-components/tracking@2.22.14) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.13](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.12...@times-components/tracking@2.22.13) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.12](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.11...@times-components/tracking@2.22.12) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.11](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.10...@times-components/tracking@2.22.11) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.10](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.9...@times-components/tracking@2.22.10) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.9](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.8...@times-components/tracking@2.22.9) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.8](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.7...@times-components/tracking@2.22.8) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.7](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.6...@times-components/tracking@2.22.7) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.5...@times-components/tracking@2.22.6) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.4...@times-components/tracking@2.22.5) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.3...@times-components/tracking@2.22.4) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.2...@times-components/tracking@2.22.3) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.1...@times-components/tracking@2.22.2) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.22.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.22.0...@times-components/tracking@2.22.1) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.22.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.6...@times-components/tracking@2.22.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1668:** update menu transition for mobile ([#3721](https://github.com/newsuk/times-components/issues/3721)) ([c572cea](https://github.com/newsuk/times-components/commit/c572cea8f94e4767c56630d7db8f6df17d41e220))
+
+
+
+
+
+## [2.21.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.5...@times-components/tracking@2.21.6) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
+## [2.21.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.4...@times-components/tracking@2.21.5) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.21.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.3...@times-components/tracking@2.21.4) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.21.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.2...@times-components/tracking@2.21.3) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [2.21.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.1...@times-components/tracking@2.21.2) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.21.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.0...@times-components/tracking@2.21.1) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.6...@times-components/tracking@2.21.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+## [2.20.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.5...@times-components/tracking@2.20.6) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.4...@times-components/tracking@2.20.5) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.3...@times-components/tracking@2.20.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
+## [2.20.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.2...@times-components/tracking@2.20.3) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.1...@times-components/tracking@2.20.2) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.0...@times-components/tracking@2.20.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
+# [2.20.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.19.4...@times-components/tracking@2.20.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
+## [2.19.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.19.3...@times-components/tracking@2.19.4) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.19.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.19.2...@times-components/tracking@2.19.3) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.19.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.19.1...@times-components/tracking@2.19.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.19.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.19.0...@times-components/tracking@2.19.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.18.2...@times-components/tracking@2.19.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [2.18.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.18.1...@times-components/tracking@2.18.2) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.18.0...@times-components/tracking@2.18.1) (2023-03-08)
+
+
+### Bug Fixes
+
+* **TDP-3304:** secondary navigation desktop design optimisation ([#3263](https://github.com/newsuk/times-components/issues/3263)) ([cae2ed9](https://github.com/newsuk/times-components/commit/cae2ed9c4c64880b66fe5c2ba3c86266eca17b57))
+
+
+
+
+
+# [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.17.0...@times-components/tracking@2.18.0) (2023-02-24)
+
+
+### Features
+
+* **TDP-3274:** minor fix for roboto on articles ([#3249](https://github.com/newsuk/times-components/issues/3249)) ([a961c52](https://github.com/newsuk/times-components/commit/a961c5234ea488a5933e66a12f13317367ca2a38))
+
+
+
+
+
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.16.1...@times-components/tracking@2.17.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.16.0...@times-components/tracking@2.16.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.5...@times-components/tracking@2.16.0) (2023-01-31)
+
+
+### Features
+
+* **TDP-3047:** Add lcpItem to Author Image BG ([#3224](https://github.com/newsuk/times-components/issues/3224)) ([f359fb2](https://github.com/newsuk/times-components/commit/f359fb28389d9ece227def02c4e6e4706b695f5c))
+
+
+
+
+
+## [2.15.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.4...@times-components/tracking@2.15.5) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.3...@times-components/tracking@2.15.4) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
+## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.2...@times-components/tracking@2.15.3) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.1...@times-components/tracking@2.15.2) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.0...@times-components/tracking@2.15.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
+# [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.14.2...@times-components/tracking@2.15.0) (2022-11-03)
+
+
+### Features
+
+* **TDP-000:** Bookmarks migrated to Newskit ([#3174](https://github.com/newsuk/times-components/issues/3174)) ([8d4f7ad](https://github.com/newsuk/times-components/commit/8d4f7ad7fd41d4e54c69ff626edefdd1c4413f36))
+
+
+
+
+
+## [2.14.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.14.1...@times-components/tracking@2.14.2) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.14.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.14.0...@times-components/tracking@2.14.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.14.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.13.1...@times-components/tracking@2.14.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [2.13.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.13.0...@times-components/tracking@2.13.1) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.13.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.4...@times-components/tracking@2.13.0) (2022-10-19)
+
+
+### Features
+
+* **TDP-2614:** added class lcpItem to article-lead-asset ([#3168](https://github.com/newsuk/times-components/issues/3168)) ([f8e1634](https://github.com/newsuk/times-components/commit/f8e16340798a7f41326253eadc53014bd1fb3112))
+
+
+
+
+
+## [2.12.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.3...@times-components/tracking@2.12.4) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.12.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.2...@times-components/tracking@2.12.3) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.12.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.1...@times-components/tracking@2.12.2) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.12.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.0...@times-components/tracking@2.12.1) (2022-08-20)
+
+
+### Bug Fixes
+
+* **TDP-2385:** Fix object,Object error ([#3134](https://github.com/newsuk/times-components/issues/3134)) ([908e29c](https://github.com/newsuk/times-components/commit/908e29c2b672fc1af5ac5409146ac7abd9699f2d))
+
+
+
+
+
+# [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.11.1...@times-components/tracking@2.12.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [2.11.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.11.0...@times-components/tracking@2.11.1) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.3...@times-components/tracking@2.11.0) (2022-07-19)
+
+
+### Features
+
+* **tdp-1712:** updated jest configurator ([#3034](https://github.com/newsuk/times-components/issues/3034)) ([af6061a](https://github.com/newsuk/times-components/commit/af6061ae8f196b33e5d48e4e706526e71f1538f5))
+
+
+
+
+
+## [2.10.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.2...@times-components/tracking@2.10.3) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.10.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.1...@times-components/tracking@2.10.2) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.0...@times-components/tracking@2.10.1) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.32...@times-components/tracking@2.10.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1696:** add TcFlatlist component, refactor slice-layout ([#3022](https://github.com/newsuk/times-components/issues/3022)) ([32dc942](https://github.com/newsuk/times-components/commit/32dc942c7e0895453d7c80d2e30b6bcf466c9bdf))
+
+
+
+
+
+## [2.9.32](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.31...@times-components/tracking@2.9.32) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.31](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.30...@times-components/tracking@2.9.31) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.30](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.29...@times-components/tracking@2.9.30) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.29](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.28...@times-components/tracking@2.9.29) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.28](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.27...@times-components/tracking@2.9.28) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.27](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.26...@times-components/tracking@2.9.27) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.26](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.25...@times-components/tracking@2.9.26) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.25](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.24...@times-components/tracking@2.9.25) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.24](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.23...@times-components/tracking@2.9.24) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.23](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.22...@times-components/tracking@2.9.23) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.22](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.21...@times-components/tracking@2.9.22) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.21](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.20...@times-components/tracking@2.9.21) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.20](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.19...@times-components/tracking@2.9.20) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.19](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.18...@times-components/tracking@2.9.19) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.18](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.17...@times-components/tracking@2.9.18) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.17](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.16...@times-components/tracking@2.9.17) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.16](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.15...@times-components/tracking@2.9.16) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.15](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.14...@times-components/tracking@2.9.15) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.14](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.13...@times-components/tracking@2.9.14) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.13](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.12...@times-components/tracking@2.9.13) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.12](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.11...@times-components/tracking@2.9.12) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.11](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.10...@times-components/tracking@2.9.11) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.10](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.9...@times-components/tracking@2.9.10) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.9](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.8...@times-components/tracking@2.9.9) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.8](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.7...@times-components/tracking@2.9.8) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.7](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.6...@times-components/tracking@2.9.7) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.5...@times-components/tracking@2.9.6) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
 ## [2.9.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.4...@times-components/tracking@2.9.5) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/tracking

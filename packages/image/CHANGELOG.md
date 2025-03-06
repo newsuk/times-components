@@ -3,6 +3,1067 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.18.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.18.1...@times-components/image@6.18.2) (2024-11-05)
+
+
+### Bug Fixes
+
+* **TMD-839:** handling GIFs as the lead asset within related articles rail ([#3975](https://github.com/newsuk/times-components/issues/3975)) ([d453d0f](https://github.com/newsuk/times-components/commit/d453d0ffd99529725f342ea6ec02581c5c5b1690))
+
+
+
+
+
+## [6.18.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.18.0...@times-components/image@6.18.1) (2024-07-08)
+
+
+### Bug Fixes
+
+* **TMD-529:** add background colour to image container ([#3883](https://github.com/newsuk/times-components/issues/3883)) ([034e31d](https://github.com/newsuk/times-components/commit/034e31dd00463ff6ec431ca7425179e1ad5495c6))
+
+
+
+
+
+# [6.18.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.20...@times-components/image@6.18.0) (2024-07-02)
+
+
+### Features
+
+* **TMD-329:** remove placeholder for article image ([#3856](https://github.com/newsuk/times-components/issues/3856)) ([9f1d249](https://github.com/newsuk/times-components/commit/9f1d249ac23312d00cb47a995767deb856e81a71))
+
+
+
+
+
+## [6.17.20](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.19...@times-components/image@6.17.20) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.19](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.18...@times-components/image@6.17.19) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.18](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.17...@times-components/image@6.17.18) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.17](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.16...@times-components/image@6.17.17) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.16](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.15...@times-components/image@6.17.16) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.14...@times-components/image@6.17.15) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.13...@times-components/image@6.17.14) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.12...@times-components/image@6.17.13) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.11...@times-components/image@6.17.12) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.10...@times-components/image@6.17.11) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.9...@times-components/image@6.17.10) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.8...@times-components/image@6.17.9) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.7...@times-components/image@6.17.8) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.6...@times-components/image@6.17.7) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.5...@times-components/image@6.17.6) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.4...@times-components/image@6.17.5) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.3...@times-components/image@6.17.4) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.2...@times-components/image@6.17.3) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.1...@times-components/image@6.17.2) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.17.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.17.0...@times-components/image@6.17.1) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.17.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.16.0...@times-components/image@6.17.0) (2024-04-18)
+
+
+### Features
+
+* **TMD-177:** remove low res and set a small default ([#3826](https://github.com/newsuk/times-components/issues/3826)) ([28cc54a](https://github.com/newsuk/times-components/commit/28cc54aea7a61efd71a51585b359b1547dc6b8a7))
+
+
+
+
+
+# [6.16.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.33...@times-components/image@6.16.0) (2024-04-12)
+
+
+### Features
+
+* **TMD-177:** removed low res article images ([#3810](https://github.com/newsuk/times-components/issues/3810)) ([2b821e0](https://github.com/newsuk/times-components/commit/2b821e060140457d300ea9ecf8e876eb4e30b944))
+
+
+
+
+
+## [6.15.33](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.32...@times-components/image@6.15.33) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.32](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.31...@times-components/image@6.15.32) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.31](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.30...@times-components/image@6.15.31) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.30](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.29...@times-components/image@6.15.30) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.29](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.28...@times-components/image@6.15.29) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.28](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.27...@times-components/image@6.15.28) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.27](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.26...@times-components/image@6.15.27) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.26](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.25...@times-components/image@6.15.26) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.25](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.24...@times-components/image@6.15.25) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.24](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.23...@times-components/image@6.15.24) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.23](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.22...@times-components/image@6.15.23) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.22](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.21...@times-components/image@6.15.22) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.21](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.20...@times-components/image@6.15.21) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.20](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.19...@times-components/image@6.15.20) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.19](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.18...@times-components/image@6.15.19) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.18](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.17...@times-components/image@6.15.18) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.17](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.16...@times-components/image@6.15.17) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.16](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.15...@times-components/image@6.15.16) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.14...@times-components/image@6.15.15) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.13...@times-components/image@6.15.14) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.12...@times-components/image@6.15.13) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.11...@times-components/image@6.15.12) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.10...@times-components/image@6.15.11) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.9...@times-components/image@6.15.10) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.8...@times-components/image@6.15.9) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.7...@times-components/image@6.15.8) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.6...@times-components/image@6.15.7) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.5...@times-components/image@6.15.6) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.4...@times-components/image@6.15.5) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.3...@times-components/image@6.15.4) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.2...@times-components/image@6.15.3) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.1...@times-components/image@6.15.2) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.15.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.15.0...@times-components/image@6.15.1) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.15.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.24...@times-components/image@6.15.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1181:** added lazy loading to tc_images ([#3358](https://github.com/newsuk/times-components/issues/3358)) ([80efb79](https://github.com/newsuk/times-components/commit/80efb79b64494a5c436c34db46f4266c704e99e8))
+
+
+
+
+
+## [6.14.24](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.23...@times-components/image@6.14.24) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.23](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.22...@times-components/image@6.14.23) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.22](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.21...@times-components/image@6.14.22) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.21](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.20...@times-components/image@6.14.21) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.20](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.19...@times-components/image@6.14.20) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.19](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.18...@times-components/image@6.14.19) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.18](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.17...@times-components/image@6.14.18) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.17](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.16...@times-components/image@6.14.17) (2023-03-22)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.16](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.15...@times-components/image@6.14.16) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.14...@times-components/image@6.14.15) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.13...@times-components/image@6.14.14) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.12...@times-components/image@6.14.13) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.11...@times-components/image@6.14.12) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.10...@times-components/image@6.14.11) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.9...@times-components/image@6.14.10) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.8...@times-components/image@6.14.9) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.7...@times-components/image@6.14.8) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.6...@times-components/image@6.14.7) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.5...@times-components/image@6.14.6) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.4...@times-components/image@6.14.5) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.3...@times-components/image@6.14.4) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.2...@times-components/image@6.14.3) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.1...@times-components/image@6.14.2) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.0...@times-components/image@6.14.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.14.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.6...@times-components/image@6.14.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [6.13.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.5...@times-components/image@6.13.6) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.4...@times-components/image@6.13.5) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.3...@times-components/image@6.13.4) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.2...@times-components/image@6.13.3) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.1...@times-components/image@6.13.2) (2022-09-06)
+
+
+### Reverts
+
+* **TDP-000:** Image without resize attribute ([#3141](https://github.com/newsuk/times-components/issues/3141)) ([437d3c9](https://github.com/newsuk/times-components/commit/437d3c919a53a00fa8f2dd5f320b49dcbee7ea0f))
+
+
+
+
+
+## [6.13.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.0...@times-components/image@6.13.1) (2022-09-06)
+
+
+### Bug Fixes
+
+* **TDP-000:** image without resize ([#3137](https://github.com/newsuk/times-components/issues/3137)) ([1238250](https://github.com/newsuk/times-components/commit/123825054ca14d8db8c8202d68adf7d709c22bdd))
+
+
+
+
+
+# [6.13.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.8...@times-components/image@6.13.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [6.12.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.7...@times-components/image@6.12.8) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.6...@times-components/image@6.12.7) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.5...@times-components/image@6.12.6) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.4...@times-components/image@6.12.5) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.3...@times-components/image@6.12.4) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.2...@times-components/image@6.12.3) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.1...@times-components/image@6.12.2) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.12.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.12.0...@times-components/image@6.12.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+# [6.12.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.16...@times-components/image@6.12.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+## [6.11.16](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.15...@times-components/image@6.11.16) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.14...@times-components/image@6.11.15) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.13...@times-components/image@6.11.14) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.12...@times-components/image@6.11.13) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.11...@times-components/image@6.11.12) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.10...@times-components/image@6.11.11) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.9...@times-components/image@6.11.10) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.8...@times-components/image@6.11.9) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.7...@times-components/image@6.11.8) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.6...@times-components/image@6.11.7) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.5...@times-components/image@6.11.6) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.4...@times-components/image@6.11.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.3...@times-components/image@6.11.4) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.2...@times-components/image@6.11.3) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.1...@times-components/image@6.11.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.11.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.11.0...@times-components/image@6.11.1) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.6...@times-components/image@6.11.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [6.10.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.5...@times-components/image@6.10.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.10.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.4...@times-components/image@6.10.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.10.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.3...@times-components/image@6.10.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.10.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.2...@times-components/image@6.10.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.10.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.1...@times-components/image@6.10.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.10.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.10.0...@times-components/image@6.10.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.10.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.9.0...@times-components/image@6.10.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1703:** removed react-native use of its own <Image/> component ([#2906](https://github.com/newsuk/times-components/issues/2906)) ([2717c6f](https://github.com/newsuk/times-components/commit/2717c6f5005b195f9805ff63002bfa8b1ef026c3))
+
+
+
+
+
+# [6.9.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.8.15...@times-components/image@6.9.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [6.8.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.8.14...@times-components/image@6.8.15) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.8.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.8.13...@times-components/image@6.8.14) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
 ## [6.8.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.8.12...@times-components/image@6.8.13) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/image

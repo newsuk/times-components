@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,26 +5,11 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   justChildren,
-  meltNative,
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-
-const styles = [
-  "alignItems",
-  "display",
-  "flex",
-  "flexDirection",
-  "flexWrap",
-  "height",
-  "justifyContent",
-  "marginBottom",
-  "maxWidth",
-  "minWidth"
-];
 
 export default () => {
   addSerializers(
@@ -38,13 +22,11 @@ export default () => {
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       }),
       flattenStyleTransform,
       hoistStyleTransform,
-      minimalWebTransform,
-      rnwTransform(AppRegistry, styles)
+      minimalWebTransform
     )
   );
 

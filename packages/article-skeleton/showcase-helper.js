@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types,no-shadow */
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { colours, scales } from "@times-components/styleguide";
+import { colours, scales } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import {
@@ -65,7 +65,7 @@ const mocks = [
 ];
 
 const TestHeader = () => (
-  <View
+  <TcView
     style={{
       alignItems: "center",
       borderColor: "#66666",
@@ -75,8 +75,8 @@ const TestHeader = () => (
       padding: 20
     }}
   >
-    <Text>THIS IS A TEST ARTICLE HEADER</Text>
-  </View>
+    <TcText>THIS IS A TEST ARTICLE HEADER</TcText>
+  </TcView>
 );
 
 const preventDefaultedAction = decorateAction =>
@@ -114,20 +114,6 @@ const renderArticleSkeleton = ({
   const data = fullArticleFixture(config);
   const showHeader = header ? () => <TestHeader /> : () => null;
 
-  const olympicsKeys = {
-    staging: {
-      endpoint: "https://olympics-embed-staging.pamedia.io",
-      authToken: "6i3DuEwbVhr2Fht6",
-      gamesCode: "OG2020-TR2"
-    },
-    prod: {
-      endpoint: "https://olympics-embed.pamedia.io",
-      authToken: "6i3DuEwbVhr2Fht6",
-      gamesCode: "OG2020-TR2"
-    }
-  };
-  const endpoint = select("OlympicsKeys", olympicsKeys, olympicsKeys.staging);
-
   return (
     <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
@@ -137,7 +123,6 @@ const renderArticleSkeleton = ({
           data={data}
           Header={showHeader}
           isPreview={isPreview}
-          olympicsKeys={endpoint}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}

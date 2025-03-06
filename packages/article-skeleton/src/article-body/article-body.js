@@ -14,30 +14,37 @@ import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import {
+  ArticleHeader,
   FetchProvider,
   InArticlePuff,
   InlineNewsletterPuff,
   PreviewNewsletterPuff,
   AutoNewsletterPuff,
+  OptaCricketScorecard,
   OptaFootballFixtures,
   OptaFootballStandings,
   OptaFootballSummary,
   OptaFootballMatchStats,
-  OlympicsMedalTable,
-  OlympicsSchedule,
+  OptaRugbyFixtures,
+  OptaRugbyStandings,
+  OptaRugbySummary,
+  OptaRugbyMatchStats,
   InfoCard,
   GalleryCarousel,
-  InArticleRelatedArticles,
   InfoCardBulletPoints,
   BigNumbers,
-  HiddenDiv
+  safeDecodeURIComponent,
+  Timelines,
+  SocialMediaEmbed,
+  AffiliateLinkDisclaimer,
+  CtaButton,
+  ArticleCard
 } from "@times-components/ts-components";
-
+import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 
@@ -54,14 +61,16 @@ import {
   Heading4,
   Heading5,
   Heading6,
-  NativeAd,
-  NativeAdTitle,
-  Ad,
   InlineAdWrapper,
   InlineAdTitle
 } from "../styles/article-body/responsive";
+import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 
-const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
+const deckApiFallback =
+  "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
+
+const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
+const hasDisabledAds = id => disabledAds.includes(id);
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -96,11 +105,15 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  olympicsKeys
+  isLiveOrBreaking,
+  section,
+  articleHeadline,
+  articleId,
+  deckApiUrl
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -108,7 +121,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -116,7 +129,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -124,10 +137,18 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
+      </InlineAdWrapper>
+    );
+  },
+  inlineAd4(key) {
+    return hasDisabledAds(articleId) ? null : (
+      <InlineAdWrapper>
+        <InlineAdTitle>Advertisement</InlineAdTitle>
+        <AdContainer key={key} slotName="inlineAd4" />
       </InlineAdWrapper>
     );
   },
@@ -144,52 +165,50 @@ const renderers = ({
       </Context.Consumer>
     );
   },
-  nativeAd(key) {
-    return (
-      <NativeAd className="group-3 hidden" key={key}>
-        <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
-        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd>
-    );
-  },
-  image(key, { display, ratio, url, caption, credits }) {
+  image(key, { id, display, ratio, url, caption, title, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
         {({ observed, registerNode }) => (
           <div id={key} ref={node => registerNode(node)}>
-            <MediaWrapper>
-              <ArticleImage
-                captionOptions={{
-                  caption,
-                  credits
-                }}
-                imageOptions={{
-                  display,
-                  highResSize: highResSizeCalc(observed, key, template),
-                  lowResQuality: 3,
-                  lowResSize: 400,
-                  ratio,
-                  uri: url
-                }}
-              />
-            </MediaWrapper>
+            <div id={id}>
+              <MediaWrapper>
+                <ArticleImage
+                  captionOptions={{
+                    caption,
+                    title,
+                    credits
+                  }}
+                  imageOptions={{
+                    display,
+                    highResSize: highResSizeCalc(observed, key, template),
+                    lowResQuality: 3,
+                    lowResSize: 400,
+                    ratio,
+                    uri: url
+                  }}
+                />
+              </MediaWrapper>
+            </div>
           </div>
         )}
       </LazyLoad>
     );
   },
-  interactive(key, { url, element, display }) {
+  interactive(key, { id, url, element, display }) {
     const { attributes, value } = element;
+    const deckApi = deckApiUrl || deckApiFallback;
+
     switch (value) {
       case "in-article-info-card":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InfoCard sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <InfoCard sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -198,9 +217,11 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InfoCardBulletPoints sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <InfoCardBulletPoints sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -209,9 +230,24 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <BigNumbers sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <BigNumbers sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
+            )}
+          </Context.Consumer>
+        );
+
+      case "in-article-timelines":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <Timelines sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -220,72 +256,166 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <GalleryCarousel sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <GalleryCarousel sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
 
+      case "twitter-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={attributes.url}
+              vendorName="twitter"
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+
+      case "times-embed-iframe-max": {
+        const src = (element.attributes && element.attributes.src) || "";
+        const isYoutube = src.includes("youtube");
+        const isTikTok = src.includes("tiktok");
+
+        if (!isYoutube || !isTikTok) {
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              <div id={id}>
+                <InteractiveWrapper
+                  attributes={attributes}
+                  element={value}
+                  key={key}
+                  source={url}
+                />
+              </div>
+            </InteractiveContainer>
+          );
+        }
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={isTikTok ? decodeURIComponent(src) : src}
+              vendorName={(isYoutube && "youtube") || (isTikTok && "tiktok")}
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-travel-cta": {
+        const elementAttr = element.attributes;
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <CtaButton attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-text-collapse": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <AffiliateLinkDisclaimer attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-article-slices": {
+        const elementAttr = element.attributes;
+
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <ArticleCard element={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
-        const { code, copy, headline, imageUri, label } = attributes;
+        const { code, copy, headline } = attributes;
 
         return isPreview ? (
-          <PreviewNewsletterPuff
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
-          />
+          <div id={id}>
+            <PreviewNewsletterPuff
+              copy={safeDecodeURIComponent(copy)}
+              headline={safeDecodeURIComponent(headline)}
+              section={section}
+            />
+          </div>
         ) : (
-          <InlineNewsletterPuff
-            analyticsStream={analyticsStream}
-            key={key}
-            code={code}
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
-          />
+          <div id={id}>
+            <InlineNewsletterPuff
+              analyticsStream={analyticsStream}
+              key={key}
+              code={code}
+              copy={safeDecodeURIComponent(copy)}
+              headline={safeDecodeURIComponent(headline)}
+              section={section}
+            />
+          </div>
+        );
+
+      case "opta-cricket-scorecard":
+      case "opta-cricket-scorecard-v3":
+        return (
+          <div id={id}>
+            <OptaCricketScorecard
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-football-fixtures-v3":
         return (
-          <OptaFootballFixtures
-            season={attributes.season}
-            competition={attributes.competition}
-            date_from={attributes["date-from"]}
-            date_to={attributes["date-to"]}
-          />
+          <div id={id}>
+            <OptaFootballFixtures
+              season={attributes.season}
+              competition={attributes.competition}
+              date_from={attributes["date-from"]}
+              date_to={attributes["date-to"]}
+            />
+          </div>
         );
 
       case "opta-football-standings-v3":
         return (
-          <OptaFootballStandings
-            season={attributes.season}
-            competition={attributes.competition}
-            default_nav={attributes.group}
-            navigation
-          />
+          <div id={id}>
+            <OptaFootballStandings
+              season={attributes.season}
+              competition={attributes.competition}
+              default_nav={attributes.group}
+              navigation
+            />
+          </div>
         );
 
       case "opta-football-match-summary-v3":
         return (
-          <OptaFootballSummary
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaFootballSummary
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-football-match-stats-v3":
         return (
-          <OptaFootballMatchStats
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaFootballMatchStats
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-football-match-lineups-v3":
@@ -294,60 +424,106 @@ const renderers = ({
       case "opta-football-hub":
         return null;
 
+      case "opta-rugby-union-fixtures-v2":
+      case "opta-rugby-fixtures-v3":
+        return (
+          <div id={id}>
+            <OptaRugbyFixtures
+              season={attributes.season}
+              competition={attributes.competition}
+              date_from={attributes["date-from"]}
+              date_to={attributes["date-to"]}
+            />
+          </div>
+        );
+
+      case "opta-rugby-union-standings-v2":
+      case "opta-rugby-standings-v3":
+        return (
+          <div id={id}>
+            <OptaRugbyStandings
+              season={attributes.season}
+              competition={attributes.competition}
+              default_nav={attributes.group}
+              navigation
+            />
+          </div>
+        );
+
+      case "opta-rugby-union-match-summary-v2":
+      case "opta-rugby-match-summary-v3":
+        return (
+          <div id={id}>
+            <OptaRugbySummary
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
+        );
+
+      case "opta-rugby-union-match-stats-v2":
+      case "opta-rugby-match-stats-v3":
+        return (
+          <div id={id}>
+            <OptaRugbyMatchStats
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
+        );
+
       case "in-article-puff":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InArticlePuff
-                  sectionColour={theme.sectionColour}
-                  forceImageAspectRatio="3:2"
-                />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={`${deckApi}?id=${attributes["deck-id"]}`}>
+                  <InArticlePuff
+                    sectionColour={theme.sectionColour}
+                    forceImageAspectRatio="3:2"
+                    isLiveOrBreaking={isLiveOrBreaking}
+                  />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
 
-      case "olympics-medal-table":
+      case "article-header":
         return (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <OlympicsMedalTable
-                keys={olympicsKeys}
-                sectionColor={theme.sectionColour}
-              />
-            )}
-          </Context.Consumer>
-        );
-
-      case "olympics-schedule":
-        return (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <OlympicsSchedule
-                keys={olympicsKeys}
-                sectionColor={theme.sectionColour}
-              />
-            )}
-          </Context.Consumer>
+          <div id={id}>
+            <ArticleHeader
+              updated={attributes.updated}
+              // date={attributes.date}
+              // time={attributes.time}
+              breaking={attributes.breaking}
+              headline={attributes.headline}
+              authorSlug={attributes.slug}
+              description={attributes.description}
+            />
+          </div>
         );
 
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <InteractiveWrapper
-              attributes={attributes}
-              element={value}
-              key={key}
-              source={url}
-            />
+            <div id={id}>
+              <InteractiveWrapper
+                attributes={attributes}
+                element={value}
+                key={key}
+                source={url}
+              />
+            </div>
           </InteractiveContainer>
         );
     }
   },
   autoNewsletterPuff(key, { element }) {
     const {
-      attributes: { code, copy, headline, imageUri, label }
+      attributes: { code, copy, headline }
     } = element;
 
     return (
@@ -357,28 +533,20 @@ const renderers = ({
         code={code}
         copy={copy}
         headline={headline}
-        imageUri={imageUri}
-        label={label}
+        section={section}
       />
     );
   },
-  autoInlineRelatedArticles(key, { element }) {
-    return (
-      <Context.Consumer key={key}>
-        {({ theme }) => (
-          <HiddenDiv className="inlineRelatedArticles">
-            <InArticleRelatedArticles
-              heading="Related Articles"
-              relatedArticles={element.attributes.relatedArticles}
-              sectionColour={theme.sectionColour}
-            />
-          </HiddenDiv>
-        )}
-      </Context.Consumer>
-    );
-  },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    return <KeyFacts ast={node} key={key} />;
+    return (
+      <KeyFacts
+        key={key}
+        ast={node}
+        section={section}
+        headline={articleHeadline}
+        isLiveOrBreaking={isLiveOrBreaking}
+      />
+    );
   },
   heading2(key, attributes, children) {
     return <Heading2>{children}</Heading2>;
@@ -403,6 +571,12 @@ const renderers = ({
         {children}
       </ArticleLink>
     );
+  },
+  listElement(key, attributes, children) {
+    return <StyledLi key={key}>{children}</StyledLi>;
+  },
+  unorderedList(key, attributes, children) {
+    return <StyledUl key={key}>{children}</StyledUl>;
   },
   paragraph(key, attributes, children) {
     const id = attributes && attributes.id;
@@ -501,7 +675,10 @@ const ArticleBody = ({
   isPreview,
   swgProductId,
   inArticlePuffFlag,
-  olympicsKeys
+  isLiveOrBreaking,
+  articleHeadline,
+  id: articleId,
+  deckApiUrl
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -511,7 +688,11 @@ const ArticleBody = ({
       isPreview,
       swgProductId,
       inArticlePuffFlag,
-      olympicsKeys
+      isLiveOrBreaking,
+      articleId,
+      section,
+      articleHeadline,
+      deckApiUrl
     })
   );
 

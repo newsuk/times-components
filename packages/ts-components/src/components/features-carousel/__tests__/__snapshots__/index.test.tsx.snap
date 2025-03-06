@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render FeaturesCarousel should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    id="benefits-carousel"
+  >
+    <div
+      class="sc-ifAKCX kBZkQw"
+    >
+      Your benefits
+    </div>
+    <div
+      class="sc-bdVaJa imSEdd"
+    >
+      <div
+        class="sc-bwzfXH eItuQg"
+      >
+        <a
+          class="sc-htpNat otwAI"
+          href="#link1"
+        >
+          <img
+            alt="Title 1"
+            src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Faec31880-e317-4375-bcd1-ac45fd91cc14.jpg?crop=1000%2C1000%2C85%2C0&resize=750"
+          />
+          <div
+            class="sc-bxivhb jKJuBC"
+          >
+            <h3>
+              Title 1
+            </h3>
+            <p>
+              Lorem Ipsum 1
+            </p>
+          </div>
+        </a>
+        <a
+          class="sc-htpNat otwAI"
+          href="#link2"
+        >
+          <img
+            alt="Title 2"
+            src="https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
+          />
+          <div
+            class="sc-bxivhb kmeDRD"
+          >
+            <h3>
+              Title 2
+            </h3>
+            <p>
+              Lorem Ipsum 2
+            </p>
+          </div>
+        </a>
+        <a
+          class="sc-htpNat otwAI"
+          href="#link3"
+        >
+          <img
+            alt="Title 3"
+            src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F267ca092-d828-45ad-8205-df18fb802c04.png?crop=450%2C450%2C175%2C0&resize=240"
+          />
+          <div
+            class="sc-bxivhb gwQcbZ"
+          >
+            <h3>
+              Title 3
+            </h3>
+            <p>
+              Lorem Ipsum 3
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

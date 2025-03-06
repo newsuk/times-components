@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import renderer from "react-test-renderer";
 import {
   CenteredDecorator,
@@ -10,7 +10,7 @@ import {
 import { StrictWrapper } from "../src/showcase-to-storybook";
 import "./shared-showcase";
 
-const WrappedComponent = () => <Text>I am in Storybook!</Text>;
+const WrappedComponent = () => <TcText>I am in Storybook!</TcText>;
 
 export default () => {
   it("Centered Decorator", () => {

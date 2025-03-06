@@ -21,6 +21,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+.gradle
 
 # node.js
 #
@@ -54,6 +55,7 @@ packages/*/rnw.js
 
 # developer editor preferences
 .vscode
+.idea
 
 fragment-matcher.js
 

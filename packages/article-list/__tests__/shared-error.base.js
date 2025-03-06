@@ -14,13 +14,14 @@ jest.mock("../src/article-list-item", () => ({ article }) => {
 
   return "ArticleListItem";
 });
+let consoleSpy;
 
 beforeAll(() => {
-  this.spy = jest.spyOn(console, "error").mockImplementation();
+  consoleSpy = jest.spyOn(console, "error").mockImplementation();
 });
 
 afterAll(() => {
-  this.spy.mockRestore();
+  consoleSpy.mockRestore();
 });
 
 export default () => {
@@ -28,10 +29,12 @@ export default () => {
     {
       name: "page error",
       test() {
+        const refetchMock = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleListPageError refetch={() => {}} />
+          <ArticleListPageError refetch={refetchMock} />
         );
-
+        testInstance.root.findByType("Button").props.onPress();
+        expect(refetchMock).toHaveBeenCalled();
         expect(testInstance).toMatchSnapshot();
       }
     },

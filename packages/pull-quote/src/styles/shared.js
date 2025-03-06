@@ -1,6 +1,5 @@
-import styleguideFactory from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguideFactory();
 const sharedStyles = {
   caption: {
     ...fontFactory({
@@ -31,7 +30,7 @@ const sharedStyles = {
   link: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "link"
+      fontSize: "caption"
     }),
     color: colours.functional.action,
     marginLeft: 4,

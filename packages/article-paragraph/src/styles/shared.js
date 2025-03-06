@@ -1,8 +1,9 @@
-import styleguide, {
+import {
+  styleguide,
   scales,
-  fonts,
+  fontsWithFallback,
   tabletWidth
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 import { fontSize, margins } from "./drop-cap-sizes";
 
 const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
@@ -37,7 +38,7 @@ const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {
     },
     dropCapTextElement: {
       color: colours.functional.primary,
-      fontFamily: fonts[dropCapFont],
+      fontFamily: fontsWithFallback[dropCapFont],
       fontSize: dropCapFontSize,
       marginBottom: dropCapMargins.bottom,
       marginRight: spacing(1),

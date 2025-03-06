@@ -1,6 +1,20 @@
 import insertDropcapIntoAST from "../../src/contentModifiers/dropcap-util";
 import { isQuote } from "../../src/contentModifiers/dropcap-util-common";
 
+const childWithMarkupNoChildren = {
+  name: "paragraph",
+  children: [
+    {
+      name: "link",
+      children: [],
+      attributes: {
+        href:
+          "https://www.telegraph.co.uk/business/2023/03/05/huawei-abandons-plans-1bn-cambridge-research-campus/"
+      }
+    }
+  ]
+};
+
 const child = {
   attributes: [],
   children: [
@@ -479,6 +493,15 @@ describe("insertDropcapIntoAST", () => {
   it("should NOT insert dropcap if it belongs to the wrong template", () => {
     const template = "mainstandard";
     expect(insertDropcapIntoAST(template)([child])).toEqual([child]);
+  });
+  it("should NOT insert dropcap if the markup does not contain children even with disableDropcap true", () => {
+    const template = "indepth";
+    const isDropcapDisabled = false;
+    expect(
+      insertDropcapIntoAST(template, isDropcapDisabled)([
+        childWithMarkupNoChildren
+      ])
+    ).toEqual([childWithMarkupNoChildren]);
   });
 
   it("should NOT insert dropcap if it belongs to the right template but disableDropcap is true", () => {

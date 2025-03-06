@@ -12,7 +12,7 @@ const {
   ContextProviderWithDefaults,
   defaults
 } = require("@times-components/context/rnw");
-const { scales, themeFactory } = require("@times-components/styleguide/rnw");
+const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
 
 const scale = scales.large;
 
@@ -25,17 +25,19 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeTopicUrl,
     navigationMode,
     commentingConfig,
+    articleDataFromRender,
     getCookieValue,
     userState,
     paidContentClassName,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
-    olympicsKeys,
-    getFallbackThumbnailUrl169
+    getFallbackThumbnailUrl169,
+    zephrDivs,
+    sharingSavingFlag,
+    commentingFlag,
+    showAudioPlayer,
+    storefrontConfig,
+    isEntitlementFeatureEnabled
   } = data;
 
   return React.createElement(
@@ -56,6 +58,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const article = isPreview
             ? providerData.draftArticle
             : providerData.article;
+          const articleTemplate = article ? article.template : null;
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -66,8 +69,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 makeTopicUrl,
                 theme: {
                   ...themeFactory(
-                    getSectionFromTiles(article),
-                    article.template
+                    article ? getSectionFromTiles(article) : "",
+                    articleTemplate
                   ),
                   scale: scale || defaults.theme.scale
                 },
@@ -78,7 +81,14 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               analyticsStream,
               article: {
                 ...article,
-                section: getSectionNameForAnalytics(article)
+                section: article
+                  ? getSectionNameForAnalytics(article)
+                  : "unknown section",
+                isSavingEnabled: sharingSavingFlag,
+                isSharingEnabled: sharingSavingFlag,
+                isCommentEnabled: commentingFlag,
+                isEntitlementFeatureEnabled,
+                isPreview
               },
               error,
               isLoading,
@@ -89,15 +99,14 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               onTopicPress: () => {},
               refetch,
               commentingConfig,
+              articleDataFromRender,
               paidContentClassName,
               isPreview,
               swgProductId,
-              additionalRelatedArticlesFlag,
-              algoliaSearchKeys,
-              latestFromSectionFlag,
-              latestFromSection,
-              olympicsKeys,
-              getFallbackThumbnailUrl169
+              getFallbackThumbnailUrl169,
+              zephrDivs,
+              showAudioPlayer,
+              storefrontConfig
             })
           );
         }

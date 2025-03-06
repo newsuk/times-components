@@ -3,6 +3,1036 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.91](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.90...@times-components/interactive-wrapper@0.9.91) (2024-12-12)
+
+
+### Bug Fixes
+
+* **TMRS-575:** iframe component heights ([#4006](https://github.com/newsuk/times-components/issues/4006)) ([f4c3691](https://github.com/newsuk/times-components/commit/f4c36910a5a5d7e82dcfd10acfa62e3b3278154f))
+
+
+
+
+
+## [0.9.90](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.89...@times-components/interactive-wrapper@0.9.90) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.89](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.88...@times-components/interactive-wrapper@0.9.89) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.88](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.87...@times-components/interactive-wrapper@0.9.88) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.87](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.86...@times-components/interactive-wrapper@0.9.87) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.86](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.85...@times-components/interactive-wrapper@0.9.86) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.85](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.84...@times-components/interactive-wrapper@0.9.85) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.84](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.83...@times-components/interactive-wrapper@0.9.84) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.83](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.82...@times-components/interactive-wrapper@0.9.83) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.82](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.81...@times-components/interactive-wrapper@0.9.82) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.81](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.80...@times-components/interactive-wrapper@0.9.81) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.80](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.79...@times-components/interactive-wrapper@0.9.80) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.79](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.78...@times-components/interactive-wrapper@0.9.79) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.78](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.77...@times-components/interactive-wrapper@0.9.78) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.77](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.76...@times-components/interactive-wrapper@0.9.77) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.76](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.75...@times-components/interactive-wrapper@0.9.76) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.75](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.74...@times-components/interactive-wrapper@0.9.75) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.74](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.73...@times-components/interactive-wrapper@0.9.74) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.73](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.72...@times-components/interactive-wrapper@0.9.73) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.72](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.71...@times-components/interactive-wrapper@0.9.72) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.71](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.70...@times-components/interactive-wrapper@0.9.71) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.70](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.69...@times-components/interactive-wrapper@0.9.70) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.69](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.68...@times-components/interactive-wrapper@0.9.69) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.68](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.67...@times-components/interactive-wrapper@0.9.68) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.67](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.66...@times-components/interactive-wrapper@0.9.67) (2024-04-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.66](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.65...@times-components/interactive-wrapper@0.9.66) (2024-04-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.65](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.64...@times-components/interactive-wrapper@0.9.65) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.64](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.63...@times-components/interactive-wrapper@0.9.64) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.63](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.62...@times-components/interactive-wrapper@0.9.63) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.62](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.61...@times-components/interactive-wrapper@0.9.62) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.61](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.60...@times-components/interactive-wrapper@0.9.61) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.60](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.59...@times-components/interactive-wrapper@0.9.60) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.59](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.58...@times-components/interactive-wrapper@0.9.59) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.58](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.57...@times-components/interactive-wrapper@0.9.58) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.57](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.56...@times-components/interactive-wrapper@0.9.57) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.56](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.55...@times-components/interactive-wrapper@0.9.56) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.55](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.54...@times-components/interactive-wrapper@0.9.55) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.54](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.53...@times-components/interactive-wrapper@0.9.54) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.53](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.52...@times-components/interactive-wrapper@0.9.53) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.52](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.51...@times-components/interactive-wrapper@0.9.52) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.51](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.50...@times-components/interactive-wrapper@0.9.51) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.50](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.49...@times-components/interactive-wrapper@0.9.50) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.49](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.48...@times-components/interactive-wrapper@0.9.49) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.48](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.47...@times-components/interactive-wrapper@0.9.48) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.47](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.46...@times-components/interactive-wrapper@0.9.47) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.46](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.45...@times-components/interactive-wrapper@0.9.46) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.45](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.44...@times-components/interactive-wrapper@0.9.45) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.44](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.43...@times-components/interactive-wrapper@0.9.44) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.43](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.42...@times-components/interactive-wrapper@0.9.43) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.42](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.41...@times-components/interactive-wrapper@0.9.42) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.41](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.40...@times-components/interactive-wrapper@0.9.41) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.40](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.39...@times-components/interactive-wrapper@0.9.40) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.39](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.38...@times-components/interactive-wrapper@0.9.39) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.38](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.37...@times-components/interactive-wrapper@0.9.38) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.37](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.36...@times-components/interactive-wrapper@0.9.37) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.36](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.35...@times-components/interactive-wrapper@0.9.36) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.35](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.34...@times-components/interactive-wrapper@0.9.35) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.34](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.33...@times-components/interactive-wrapper@0.9.34) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.33](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.32...@times-components/interactive-wrapper@0.9.33) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.32](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.31...@times-components/interactive-wrapper@0.9.32) (2023-05-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.31](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.30...@times-components/interactive-wrapper@0.9.31) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.30](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.29...@times-components/interactive-wrapper@0.9.30) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.29](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.28...@times-components/interactive-wrapper@0.9.29) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.28](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.27...@times-components/interactive-wrapper@0.9.28) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.27](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.26...@times-components/interactive-wrapper@0.9.27) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.26](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.25...@times-components/interactive-wrapper@0.9.26) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.25](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.24...@times-components/interactive-wrapper@0.9.25) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.24](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.23...@times-components/interactive-wrapper@0.9.24) (2023-03-22)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.23](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.22...@times-components/interactive-wrapper@0.9.23) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.22](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.21...@times-components/interactive-wrapper@0.9.22) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.21](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.20...@times-components/interactive-wrapper@0.9.21) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.20](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.19...@times-components/interactive-wrapper@0.9.20) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.19](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.18...@times-components/interactive-wrapper@0.9.19) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.18](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.17...@times-components/interactive-wrapper@0.9.18) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.17](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.16...@times-components/interactive-wrapper@0.9.17) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.16](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.15...@times-components/interactive-wrapper@0.9.16) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.15](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.14...@times-components/interactive-wrapper@0.9.15) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.14](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.13...@times-components/interactive-wrapper@0.9.14) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.13](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.12...@times-components/interactive-wrapper@0.9.13) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.12](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.11...@times-components/interactive-wrapper@0.9.12) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.11](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.10...@times-components/interactive-wrapper@0.9.11) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.10](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.9...@times-components/interactive-wrapper@0.9.10) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.9](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.8...@times-components/interactive-wrapper@0.9.9) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.8](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.7...@times-components/interactive-wrapper@0.9.8) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.7](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.6...@times-components/interactive-wrapper@0.9.7) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.6](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.5...@times-components/interactive-wrapper@0.9.6) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.4...@times-components/interactive-wrapper@0.9.5) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.3...@times-components/interactive-wrapper@0.9.4) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.2...@times-components/interactive-wrapper@0.9.3) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.1...@times-components/interactive-wrapper@0.9.2) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.0...@times-components/interactive-wrapper@0.9.1) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.60...@times-components/interactive-wrapper@0.9.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.8.60](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.59...@times-components/interactive-wrapper@0.8.60) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.59](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.58...@times-components/interactive-wrapper@0.8.59) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.58](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.57...@times-components/interactive-wrapper@0.8.58) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.57](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.56...@times-components/interactive-wrapper@0.8.57) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.56](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.55...@times-components/interactive-wrapper@0.8.56) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.55](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.54...@times-components/interactive-wrapper@0.8.55) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.54](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.53...@times-components/interactive-wrapper@0.8.54) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.53](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.52...@times-components/interactive-wrapper@0.8.53) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.52](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.51...@times-components/interactive-wrapper@0.8.52) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.51](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.50...@times-components/interactive-wrapper@0.8.51) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.50](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.49...@times-components/interactive-wrapper@0.8.50) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.49](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.48...@times-components/interactive-wrapper@0.8.49) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.48](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.47...@times-components/interactive-wrapper@0.8.48) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.47](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.46...@times-components/interactive-wrapper@0.8.47) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.46](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.45...@times-components/interactive-wrapper@0.8.46) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.45](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.44...@times-components/interactive-wrapper@0.8.45) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.44](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.43...@times-components/interactive-wrapper@0.8.44) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.43](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.42...@times-components/interactive-wrapper@0.8.43) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.42](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.41...@times-components/interactive-wrapper@0.8.42) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.41](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.40...@times-components/interactive-wrapper@0.8.41) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.40](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.39...@times-components/interactive-wrapper@0.8.40) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.39](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.38...@times-components/interactive-wrapper@0.8.39) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.38](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.37...@times-components/interactive-wrapper@0.8.38) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.37](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.36...@times-components/interactive-wrapper@0.8.37) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.36](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.35...@times-components/interactive-wrapper@0.8.36) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.35](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.34...@times-components/interactive-wrapper@0.8.35) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.34](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.33...@times-components/interactive-wrapper@0.8.34) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.33](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.32...@times-components/interactive-wrapper@0.8.33) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.32](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.31...@times-components/interactive-wrapper@0.8.32) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.31](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.30...@times-components/interactive-wrapper@0.8.31) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.30](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.29...@times-components/interactive-wrapper@0.8.30) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.29](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.28...@times-components/interactive-wrapper@0.8.29) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.28](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.27...@times-components/interactive-wrapper@0.8.28) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.27](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.26...@times-components/interactive-wrapper@0.8.27) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.26](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.25...@times-components/interactive-wrapper@0.8.26) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.25](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.24...@times-components/interactive-wrapper@0.8.25) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
 ## [0.8.24](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.23...@times-components/interactive-wrapper@0.8.24) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper

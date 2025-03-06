@@ -2,15 +2,11 @@ import { createSerializer } from "enzyme-to-json";
 import minimalise, {
   minimaliseTransform,
   minimalWebTransform,
-  minimalWeb,
-  minimalNative,
-  minimalNativeTransform
+  minimalWeb
 } from "./minimalise";
-import rnw, { rnwTransform } from "./rnw";
 import flattenStyle, { flattenStyleTransform } from "./flatten-style";
 import replace, {
   justChildren,
-  meltNative,
   propsNoChildren,
   replaceTransform
 } from "./replace";
@@ -43,13 +39,6 @@ const compose = (printer, ...transformers) =>
     )
   );
 
-const minimalRnw = (AppRegistry, includeStyleProps) =>
-  compose(
-    stylePrinter,
-    minimalWebTransform,
-    rnwTransform(AppRegistry, includeStyleProps)
-  );
-
 const addSerializers = (expect, ...serializers) => {
   serializers.forEach(serializer => expect.addSnapshotSerializer(serializer));
 };
@@ -71,12 +60,8 @@ export {
   hoistStyle,
   hoistStyleTransform,
   justChildren,
-  meltNative,
   minimalise,
   minimaliseTransform,
-  minimalNative,
-  minimalNativeTransform,
-  minimalRnw,
   minimalWeb,
   minimalWebTransform,
   print,
@@ -85,7 +70,5 @@ export {
   replaceProp,
   replacePropTransform,
   replaceTransform,
-  rnw,
-  rnwTransform,
   stylePrinter
 };

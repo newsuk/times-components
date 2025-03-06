@@ -1,0 +1,38 @@
+{
+    "featuresCarouselData": {
+        "hideHeading": false,
+        "heading": "Your benefits",
+        "carouselItems": [
+            {
+                "title": "Title 1",
+                "text": "Lorem Ipsum 1",
+                "image": "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Faec31880-e317-4375-bcd1-ac45fd91cc14.jpg?crop=1000%2C1000%2C85%2C0&resize=750",
+                "color": {
+                    "bg": "#E8F6F8",
+                    "title": "#44A6A9"
+                },
+                "url": "#link1"
+            },
+            {
+                "title": "Title 2",
+                "text": "Lorem Ipsum 2",
+                "image": "https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png",
+                "color": {
+                    "bg": "#FFEED9",
+                    "title": "#EB7231"
+                },
+                "url": "#link2"
+            },
+            {
+                "title": "Title 3",
+                "text": "Lorem Ipsum 3",
+                "image": "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F267ca092-d828-45ad-8205-df18fb802c04.png?crop=450%2C450%2C175%2C0&resize=240",
+                "color": {
+                    "bg": "#E4E4E4",
+                    "title": "#111110"
+                },
+                "url": "#link3"
+            }
+        ]
+    }
+}

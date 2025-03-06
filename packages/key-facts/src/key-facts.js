@@ -1,74 +1,79 @@
 import React from "react";
-import { View } from "react-native";
-import Context from "@times-components/context";
-import styleguide, { colours } from "@times-components/styleguide";
-import KeyFactsContainer from "./key-facts-container";
-import KeyFactsText from "./key-facts-text";
-import KeyFactsTitle from "./key-facts-title";
-import KeyFactsWrapper from "./key-facts-wrapper";
-import { defaultProps, propTypes } from "./key-facts-prop-types";
-import styles from "./styles";
+import { TrackingContextProvider } from "@times-components/ts-components";
 
-const KeyFacts = ({ ast, onLinkPress }) => {
+import KeyFactsText from "./key-facts-text";
+import props from "./key-facts-prop-types";
+
+import { KeyFactsTitle, KeyFactsContainer } from "./styles";
+
+// Function to convert key items incorrectly marked as "paywall" into list items
+function formatPaywallItems(items) {
+  const flattenedItems = items.reduce((accumulator, currentValue) => {
+    if (currentValue.name === "paywall") {
+      return accumulator.concat(currentValue.children);
+    }
+    return accumulator.concat([currentValue]);
+  }, []);
+
+  return [...flattenedItems].map(item => ({
+    ...item,
+    children: item.children.map(
+      i => (i.name === "paywall" ? { ...i.children[0] } : i)
+    )
+  }));
+}
+
+const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
   const {
     children,
     attributes: { title }
   } = ast;
+
   const { children: keyFactsItems } = children[0];
+  const formattedKeyFactItems = formatPaywallItems(keyFactsItems);
 
-  const renderTitle = (color, fontStyle) => {
-    if (!title) return null;
-
-    return <KeyFactsTitle color={color} fontStyle={fontStyle} title={title} />;
-  };
-
-  const renderKeyFact = (item, listIndex, fontStyle, backgroundColor) => (
-    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
-      <View style={[styles.bullet, { backgroundColor }]} />
-      <KeyFactsText
-        fontStyle={fontStyle}
-        item={item}
-        listIndex={listIndex}
-        onLinkPress={onLinkPress}
-      />
-    </View>
-  );
+  const articleFlag = isLiveOrBreaking
+    ? isLiveOrBreaking.toLowerCase()
+    : "no flag";
 
   return (
-    <Context.Consumer>
-      {({ theme: { scale, sectionColour } }) => {
-        const themedStyles = styleguide({ scale });
-
-        return (
-          <KeyFactsContainer>
-            {renderTitle(
-              sectionColour || colours.functional.brandColour,
-              themedStyles.fontFactory({
-                font: "supporting",
-                fontSize: "keyFactsTitle"
-              })
-            )}
-            <KeyFactsWrapper>
-              {keyFactsItems.map((item, index) =>
-                renderKeyFact(
-                  item,
-                  index,
-                  themedStyles.fontFactory({
-                    font: "body",
-                    fontSize: "secondary"
-                  }),
-                  sectionColour || colours.functional.bullet
-                )
-              )}
-            </KeyFactsWrapper>
-          </KeyFactsContainer>
-        );
+    <TrackingContextProvider
+      context={{
+        object: "KeyMoments",
+        attrs: {
+          component_type: "in-article component: key moments: interactive",
+          event_navigation_action: "navigation",
+          component_name: title,
+          section_details: `section : ${section}`,
+          article_name: headline,
+          article_flag: articleFlag
+        }
       }}
-    </Context.Consumer>
+      scrolledEvent={{
+        action: "Scrolled",
+        attrs: {
+          event_navigation_name: "in-article component displayed : key moments",
+          event_navigation_browsing_method: "scroll"
+        }
+      }}
+    >
+      {({ fireAnalyticsEvent, intersectObserverRef }) => (
+        <KeyFactsContainer ref={intersectObserverRef}>
+          {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
+          {formattedKeyFactItems.map((keyFactItem, index) => (
+            <KeyFactsText
+              listIndex={index}
+              keyFactItem={keyFactItem}
+              fireAnalyticsEvent={fireAnalyticsEvent}
+              articleFlag={articleFlag}
+            />
+          ))}
+        </KeyFactsContainer>
+      )}
+    </TrackingContextProvider>
   );
 };
 
-KeyFacts.propTypes = propTypes;
-KeyFacts.defaultProps = defaultProps;
+KeyFacts.propTypes = props;
 
 export default KeyFacts;

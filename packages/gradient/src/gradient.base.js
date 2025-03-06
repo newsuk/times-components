@@ -1,18 +1,17 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { defaultProps, propTypes } from "./gradient-prop-types.base";
 
 const GradientBase = ({ children, degrees, endColour, startColour, style }) => (
-  <View
-    style={[
-      {
-        backgroundImage: `linear-gradient(${degrees}deg, ${startColour} 0%, ${endColour} 100%)`
-      },
-      style
-    ]}
+  <TcView
+    style={{
+      backgroundImage: `linear-gradient(${degrees}deg, ${startColour} 0%, ${endColour} 100%)`,
+
+      ...style
+    }}
   >
     {children}
-  </View>
+  </TcView>
 );
 
 GradientBase.propTypes = propTypes;

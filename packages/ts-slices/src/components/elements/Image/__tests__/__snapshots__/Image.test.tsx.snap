@@ -2,21 +2,21 @@
 
 exports[`<Image /> should render image component correctly 1`] = `
 <div
-  class="sc-bdVaJa foWszs"
+  class="sc-htpNat hFCgGz"
 >
   <a
     href=""
   >
     <div
-      class="sc-bwzfXH cRKciC"
+      class="sc-bxivhb gqElVf"
     >
-      <div>
-        <div>
-          LazyImage
-        </div>
-        <div>
-          https://dummyimage.com/300
-        </div>
+      <div
+        class="sc-bdVaJa fdpJDB"
+      >
+        <img
+          alt="image alt text"
+          src="https://dummyimage.com/300"
+        />
       </div>
     </div>
   </a>

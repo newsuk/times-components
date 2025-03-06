@@ -1,4 +1,5 @@
 /* eslint-env browser */
+import getCpnId from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
   const xhr = new XMLHttpRequest();
@@ -13,28 +14,25 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
-    completeSSOCallback
-  );
-
 const ssoCallback = (codeA, completeSSOCallback) =>
   loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}`,
+    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   );
 
-const executeSSOtransaction = (isReadOnly, callback) => {
+const executeSSOtransaction = () => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    if (isReadOnly) {
-      window.SPOTIM.startSSO(ssoCallbackReadOnly);
-    } else {
-      window.SPOTIM.startSSO(ssoCallback);
-    }
+    const acsTnlCookie =
+      window &&
+      window.nuk &&
+      window.nuk.getCookieValue &&
+      window.nuk.getCookieValue("acs_tnl");
 
-    callback();
+    const cpn = `${getCpnId(acsTnlCookie)}_v2`;
+
+    window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
 };
 
+export { ssoCallback };
 export default executeSSOtransaction;

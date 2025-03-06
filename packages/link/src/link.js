@@ -1,7 +1,13 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import styled from "styled-components";
-import { breakpoints } from "@times-components/styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
+
+import {
+  handleOnClickScrollTo,
+  handleHrefScrollTo
+} from "@times-components/utils";
+
 import PropTypes from "prop-types";
 
 const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
@@ -33,7 +39,14 @@ const Link = ({
   };
 
   return (
-    <RespLink href={url} onClick={onPress} {...props}>
+    <RespLink
+      onClick={event => {
+        handleOnClickScrollTo(event, url);
+        onPress(event);
+      }}
+      href={handleHrefScrollTo(url)}
+      {...props}
+    >
       {children}
     </RespLink>
   );

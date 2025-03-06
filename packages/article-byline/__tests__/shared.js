@@ -1,11 +1,9 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  print
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
@@ -15,8 +13,7 @@ export default Component => {
     compose(
       print,
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
-      rnwTransform(AppRegistry)
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 

@@ -10,5 +10,6 @@ query AuthorQuery($slug: Slug!) {
     name
     twitter
     metaDescription
+    contractualTitle
   }
 }

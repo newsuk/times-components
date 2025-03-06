@@ -11,11 +11,6 @@ export const justChildren = (node, props, children) => ({
   children
 });
 
-export const meltNative = {
-  Text: justChildren,
-  View: justChildren
-};
-
 export const replaceTransform = config => (accum, node, props, children) => {
   if (config[node.type] === undefined) {
     return {

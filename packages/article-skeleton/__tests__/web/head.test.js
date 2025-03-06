@@ -55,6 +55,39 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        articleUrl={article.url}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+        domainSpecificUrl="https://www.thetimes.co.uk"
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs correct metadata with .COM host", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={article}
+        articleUrl={article.url}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+        domainSpecificUrl="https://www.thetimes.com"
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs correct metadata when syndicated article", () => {
+    const syndicatedArticle = {
+      ...article,
+      id: "37a19ac4-1cbb-11ee-8198-bf96b6365670"
+    };
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={syndicatedArticle}
+        articleUrl={syndicatedArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -67,6 +100,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
         swgProductId="uat-thetimes.co.uk:basic"
@@ -80,6 +114,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -189,8 +224,45 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs array of keywords in article schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          tiles: [
+            {
+              slices: [
+                {
+                  sections: [
+                    {
+                      id: "e0313ff2-5180-4ef1-a3dd-e6db63e21647",
+                      title: "Sport"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              slices: [
+                {
+                  sections: [
+                    {
+                      id: "a532cd03-8c03-4d91-8f66-9b937a5dff42",
+                      title: "Sport"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -233,6 +305,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -277,6 +350,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -291,6 +365,7 @@ describe("Head", () => {
           ...article,
           bylines: []
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -303,6 +378,7 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -314,6 +390,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{ ...article, seoDescription: "sample seoDescription" }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -329,6 +406,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: "short headline"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -345,6 +423,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -394,6 +473,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -421,6 +501,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -448,6 +529,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -463,6 +545,7 @@ describe("Head", () => {
           ...article,
           tiles: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -493,6 +576,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -508,6 +592,7 @@ describe("Head", () => {
           ...article,
           publicationName: "SUNDAYTIMES"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -523,6 +608,7 @@ describe("Head", () => {
           ...article,
           publicationName: "TIMES"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -538,6 +624,7 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -561,6 +648,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -582,6 +670,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: []
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -617,6 +706,7 @@ describe("Head", () => {
           ...article,
           leadAsset: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -629,7 +719,9 @@ describe("Head", () => {
   });
 
   it("shows image tags if leadAsset available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} articleUrl={article.url} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ property: "og:image" })
@@ -641,7 +733,10 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={standardArticleWithInlineVideo} />
+      <Head
+        article={standardArticleWithInlineVideo}
+        articleUrl={standardArticleWithInlineVideo.url}
+      />
     );
 
     expect(
@@ -656,6 +751,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -667,6 +763,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -686,6 +783,8 @@ describe("Head", () => {
   ratios.forEach(({ crop, ratio }) => {
     const leadAsset = {
       __typename: "Video",
+      brightcoveAccountId: "5436121857001",
+      brightcoveVideoId: "5831024132001",
       caption: "Some Caption",
       credits: "Some Credits",
       [crop]: {
@@ -701,6 +800,7 @@ describe("Head", () => {
       const testRenderer = TestRenderer.create(
         <Head
           article={{ ...videoArticle, leadAsset }}
+          articleUrl={videoArticle.url}
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
@@ -713,6 +813,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{ ...videoArticle, descriptionMarkup: null }}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -728,8 +829,63 @@ describe("Head", () => {
           descriptionMarkup: null,
           seoDescription: "some seoDescription"
         }}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs a live blog schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          expirableFlags: [{ type: "LIVE", expiryTime: null }],
+          content: [
+            {
+              name: "interactive",
+              attributes: {
+                element: {
+                  value: "article-header",
+                  attributes: {
+                    headline: "headline",
+                    updated: "2022-04-20T20:30:00"
+                  }
+                }
+              },
+              children: []
+            },
+            {
+              children: [
+                {
+                  attributes: {
+                    value:
+                      "Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections."
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
+            },
+            {
+              children: [
+                {
+                  attributes: {
+                    value:
+                      "The pro-Remain party announced its MEP hopefuls from almost 4"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
+            }
+          ]
+        }}
+        articleUrl={article.url}
       />
     );
     expect(testRenderer).toMatchSnapshot();

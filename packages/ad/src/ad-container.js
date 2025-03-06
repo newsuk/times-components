@@ -1,32 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
 
+import { TcView } from "@times-components/utils";
 import styles from "./styles";
 
 const AdContainer = ({ slotName, style }) => {
   const adMap = {
     header: "ad-header",
     "inline-ad": "ad-article-inline",
-    articleListAd: "inline-ad",
+    articleListAd: "ad-article-inline",
     pixel: "ad-pixel",
     pixelteads: "ad-pixelteads",
     pixelskin: "ad-pixelskin",
     inlineAd1: "ad-article-inline-1",
     inlineAd2: "ad-article-inline-2",
-    inlineAd3: "ad-article-inline-3"
+    inlineAd3: "ad-article-inline-3",
+    inlineAd4: "ad-article-inline-4"
   };
 
   return (
-    <View id={slotName} style={[styles.container, style]}>
+    <TcView style={{ ...styles.container, ...style }}>
       <div id={`${adMap[slotName]}`} />
-    </View>
+    </TcView>
   );
 };
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypes.style.isRequired
+  style: PropTypes.oneOfType([PropTypes.object]).isRequired
 };
 
 AdContainer.propTypes = propTypes;

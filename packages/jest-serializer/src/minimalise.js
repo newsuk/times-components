@@ -30,22 +30,3 @@ export const minimalWebTransform = minimaliseTransform(
 );
 
 export const minimalWeb = traverse(print, minimalWebTransform);
-
-const redundantNativeKeys = new Set([
-  "accessible",
-  "allowFontScaling",
-  "className",
-  "ellipsizeMode",
-  "href",
-  "isTVSelectable"
-]);
-
-export const minimalNativeTransform = minimaliseTransform(
-  (value, key) =>
-    value === undefined ||
-    typeof value === "function" ||
-    isEmptyObject(value) ||
-    redundantNativeKeys.has(key)
-);
-
-export const minimalNative = traverse(print, minimalNativeTransform);

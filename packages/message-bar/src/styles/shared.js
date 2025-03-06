@@ -1,4 +1,4 @@
-import { colours, fontFactory } from "@times-components/styleguide";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 
 const height = 50;
 
@@ -10,7 +10,8 @@ const messageBarBody = {
   height,
   flexGrow: 1,
   flexShrink: 0,
-  marginHorizontal: "auto"
+  marginLeft: "auto",
+  marginRight: "auto"
 };
 
 const messageBarCloseButton = {
@@ -21,7 +22,10 @@ const messageBarCloseButton = {
   justifyContent: "center",
   marginLeft: "auto",
   marginRight: 20,
-  width: 28
+  width: 28,
+  padding: 0,
+  display: "inherit",
+  border: "0px"
 };
 
 const messageBarText = scale => ({

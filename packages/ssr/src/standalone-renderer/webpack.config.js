@@ -1,11 +1,15 @@
 const path = require("path");
+const crypto = require("crypto");
 const outputFolder = require("../lib/resolve-dist");
+
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
 
 module.exports = () => ({
   entry: {
     article: path.resolve(__dirname, "./page-init/article.js"),
-    "author-profile": path.resolve(__dirname, "./page-init/author-profile.js"),
-    topic: path.resolve(__dirname, "./page-init/topic.js")
+    "author-profile": path.resolve(__dirname, "./page-init/author-profile.js")
   },
   mode: "production",
   module: {
@@ -16,12 +20,8 @@ module.exports = () => ({
           loader: "babel-loader",
           options: {
             cacheDirectory: true,
-            plugins: [
-              "babel-plugin-styled-components",
-              "@babel/plugin-proposal-object-rest-spread",
-              "@babel/plugin-transform-react-display-name"
-            ],
-            presets: ["module:metro-react-native-babel-preset"]
+            plugins: ["babel-plugin-styled-components"],
+            presets: ["@babel/preset-env", "@babel/preset-react"]
           }
         }
       }

@@ -6,7 +6,7 @@ import {
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
-import { breakpoints } from '@times-components/styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import {
   Container,
   ContentContainer,

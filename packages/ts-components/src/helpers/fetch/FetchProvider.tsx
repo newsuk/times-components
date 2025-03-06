@@ -24,32 +24,43 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
   previewData,
   children
 }) => {
-  const [loading, setLoading] = useState<boolean>(!previewData);
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
-  const [data, setData] = useState<any | undefined>(previewData);
+  const [data, setData] = useState<any | undefined>();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        if (url) {
-          const response = await fetch(url, options);
-          const json = await response.json();
+  useEffect(
+    () => {
+      if (!loading) {
+        setLoading(true);
 
-          setData(json);
-          setLoading(false);
-        } else {
-          throw new Error('must provide a Fetch url');
-        }
-      } catch (error) {
-        setError(error);
-        setLoading(false);
+        const fetchData = async () => {
+          try {
+            if (previewData) {
+              await new Promise(resolve => setTimeout(resolve, 1500));
+              setData(previewData);
+              setLoading(false);
+              return;
+            }
+            if (url) {
+              const response = await fetch(url, options);
+              const json = await response.json();
+
+              setData(json);
+              setLoading(false);
+            } else {
+              throw new Error('must provide a Fetch url');
+            }
+          } catch (err) {
+            setError(err instanceof Error ? err.message : 'unknown error');
+            setLoading(false);
+          }
+        };
+
+        fetchData();
       }
-    };
-
-    if (!previewData) {
-      fetchData();
-    }
-  }, []);
+    },
+    [url, options, previewData]
+  );
 
   return (
     <FetchProviderContext.Provider value={{ loading, error, data }}>

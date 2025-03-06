@@ -13,10 +13,9 @@ import {
   schemaToMocks
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 
-import { latestFromSection } from "./fixtures/full-article";
 import Article, { templates } from "./src/article";
 
 const preventDefaultedAction = decorateAction =>
@@ -39,12 +38,7 @@ const VIDEO = 256;
 const TEASED_CONTENT = 512;
 
 const commentingConfig = {
-  account: {
-    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_pCQgrRiN",
-    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
-  },
-  switchOver:
-    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2023-10-10T16:00:00.000Z"
+  account: "sp_pCQgrRiN"
 };
 
 export const makeArticleConfiguration = ({
@@ -223,11 +217,7 @@ const renderArticle = ({
   scale,
   section,
   template,
-  isTeaser,
-  isMeteredExpired,
-  additionalRelatedArticlesFlag,
-  latestFromSectionFlag,
-  algoliaSearchKeys
+  isTeaser
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -252,8 +242,7 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn: !isTeaser || isMeteredExpired,
-              isMeteredExpired
+              isLoggedIn: !isTeaser
             }
           }}
         >
@@ -286,12 +275,6 @@ const renderArticle = ({
               "onVideoPress"
             )}
             refetch={refetch}
-            additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-            algoliaSearchKeys={algoliaSearchKeys}
-            latestFromSectionFlag={latestFromSectionFlag}
-            latestFromSection={latestFromSection.find(
-              ({ section: sectionName }) => sectionName === section
-            )}
             commentingConfig={commentingConfig}
           />
         </ContextProviderWithDefaults>
@@ -327,7 +310,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
   const template = selectTemplate(select);
@@ -341,25 +323,9 @@ const renderArticleConfig = ({
       : null;
 
   const user = (global.nuk && global.nuk.user) || {};
-  const { isLoggedIn, isMeteredExpired, isShared } = user;
-  const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
+  const { isLoggedIn, isShared } = user;
+  const isTeaser = !isShared && !isLoggedIn;
 
-  const algoliaSearchKeys = {
-    applicationId: "",
-    apiKey: "",
-    indexName: ""
-  };
-
-  const additionalRelatedArticlesFlag = boolean(
-    "Additional Featured Articles",
-    false,
-    "User State"
-  );
-  const latestFromSectionFlag = boolean(
-    "Latest from Section",
-    false,
-    "User State"
-  );
   return (
     <Fragment>
       {link}
@@ -387,13 +353,9 @@ const renderArticleConfig = ({
             inDepthBackgroundColour,
             inDepthTextColour,
             isTeaser,
-            isMeteredExpired,
             scale,
             section,
-            template,
-            additionalRelatedArticlesFlag,
-            latestFromSectionFlag,
-            algoliaSearchKeys
+            template
           })}
         </ArticleConfigurator>
       }

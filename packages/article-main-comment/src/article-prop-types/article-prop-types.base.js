@@ -12,7 +12,8 @@ const articlePagePropTypes = {
   }),
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
-  receiveChildList: PropTypes.func.isRequired
+  receiveChildList: PropTypes.func.isRequired,
+  zephrDivs: PropTypes.bool
 };
 
 const articlePageDefaultProps = {

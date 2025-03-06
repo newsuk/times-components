@@ -17,12 +17,14 @@ const AuthorProfileHead = ({
   jobTitle,
   name,
   twitter,
-  uri
+  uri,
+  contractualTitle,
+  isLargeDevice
 }) => {
   const renderBiography = () => {
     if (!biography) return null;
     return (
-      <BioContainer>
+      <BioContainer style={styles.biographyContainer}>
         <AuthorProfileHeadBiography biography={biography} />
       </BioContainer>
     );
@@ -31,7 +33,7 @@ const AuthorProfileHead = ({
   const renderImage = () => {
     if (!uri) return null;
     return (
-      <ImageContainer>
+      <ImageContainer className="lcpItem">
         <AuthorProfileHeadImage uri={uri} />
       </ImageContainer>
     );
@@ -41,9 +43,9 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <AuthorNameWrapper
-        accessibilityRole="header"
+        role="heading"
         aria-level="1"
-        testID="author-name"
+        data-testid="author-name"
       >
         {name}
       </AuthorNameWrapper>
@@ -59,6 +61,8 @@ const AuthorProfileHead = ({
         renderImage={renderImage}
         renderName={renderName}
         twitter={twitter}
+        contractualTitle={contractualTitle}
+        isLargeDevice={isLargeDevice}
       />
     </AuthorHeadWrapper>
   );

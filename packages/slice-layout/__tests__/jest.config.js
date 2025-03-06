@@ -1,5 +1,4 @@
-const jestConfigurator = require("@times-components/jest-configurator").default;
+const jestConfigurator = require("@times-components/jest-configurator-web")
+  .default;
 
-module.exports = jestConfigurator(null, __dirname, {
-  coverageIgnoreGlobs: ["templates", "slice-layout.js"]
-});
+module.exports = jestConfigurator(__dirname);

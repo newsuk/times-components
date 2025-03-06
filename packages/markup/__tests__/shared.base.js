@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "../src/markup";
@@ -17,6 +17,7 @@ import subscript from "../fixtures/subscript.json";
 import subscriptWithFallback from "../fixtures/subscript-fallback.json";
 import superscript from "../fixtures/superscript.json";
 import superscriptWithFallback from "../fixtures/superscript-fallback.json";
+import link from "../fixtures/link.json";
 
 export default renderComponent => {
   const tests = [
@@ -56,7 +57,7 @@ export default renderComponent => {
       name: "image tag",
       test: () => {
         const output = renderComponent(
-          <View>{renderTrees(image, coreRenderers)}</View>
+          <TcView>{renderTrees(image, coreRenderers)}</TcView>
         );
 
         expect(output).toMatchSnapshot();
@@ -131,10 +132,20 @@ export default renderComponent => {
       }
     },
     {
+      name: "link",
+      test: () => {
+        const output = renderComponent(
+          <TcView>{renderTree(link, coreRenderers)}</TcView>
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "does not render a script tag",
       test: () => {
         const output = renderComponent(
-          <View>{renderTrees(script, coreRenderers)}</View>
+          <TcView>{renderTrees(script, coreRenderers)}</TcView>
         );
 
         expect(output).toMatchSnapshot();

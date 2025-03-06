@@ -56,10 +56,20 @@ class UnwrappedSticky extends Component {
     this.isSticky = shouldBeSticky;
 
     if (shouldBeSticky) {
+      const shareBanner = window.document.getElementById(
+        "shared-token-header-banner"
+      );
+      const timesRadioBanner = window.document.querySelector(
+        ".times-radio-banner"
+      );
+      const sharedBannerHeight = (shareBanner && shareBanner.offsetHeight) || 0;
+      const timesRadioBannerHeight =
+        (timesRadioBanner && timesRadioBanner.offsetHeight) || 0;
+      const bannersHeight = sharedBannerHeight + timesRadioBannerHeight;
       const styles = window.getComputedStyle(component);
 
       container.style.cssText += `
-        top: ${stickyContext.top}px;
+        top: ${stickyContext.top - bannersHeight}px;
         z-index: ${zIndex};
         position: fixed;
         left: 0;

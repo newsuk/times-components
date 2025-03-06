@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Caption, { CentredCaption } from "../src/caption";
@@ -42,7 +42,7 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Caption credits={credits} text={captionText}>
-            <Text>Hello world!</Text>
+            <TcText>Hello world!</TcText>
           </Caption>
         );
 
@@ -84,7 +84,7 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <CentredCaption credits={credits} text={captionText}>
-            <Text>Hello world!</Text>
+            <TcText>Hello world!</TcText>
           </CentredCaption>
         );
 

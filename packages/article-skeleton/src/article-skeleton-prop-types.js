@@ -8,13 +8,12 @@ const articleSkeletonPropTypes = {
   navigationMode: PropTypes.shape({}),
   receiveChildList: PropTypes.func,
   commentingConfig: PropTypes.shape({
-    accounts: PropTypes.shape({
-      current: PropTypes.string.isRequired,
-      readOnly: PropTypes.string.isRequired
-    }),
-    switchOver: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired
   }).isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  zephrDivs: PropTypes.bool,
+  showAudioPlayer: PropTypes.bool,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleSkeletonDefaultProps = {
@@ -22,7 +21,8 @@ const articleSkeletonDefaultProps = {
   data: { content: [] },
   Header: () => null,
   receiveChildList: () => {},
-  swgProductId: null
+  swgProductId: null,
+  zephrDivs: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

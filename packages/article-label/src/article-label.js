@@ -1,13 +1,19 @@
 import React from "react";
-import { Text } from "react-native";
-import { gqlRgbaToHex } from "@times-components/utils";
+import {
+  checkStylesForUnits,
+  gqlRgbaToHex,
+  TcText
+} from "@times-components/utils";
 import PropTypes from "prop-types";
 import styles from "./style";
 
+const articleStyle = color => ({
+  ...checkStylesForUnits(styles.title),
+  color: gqlRgbaToHex(color) || color
+});
+
 const ArticleLabel = ({ color, title }) => (
-  <Text style={[styles.title, { color: gqlRgbaToHex(color) || color }]}>
-    {title.toUpperCase()}
-  </Text>
+  <TcText style={articleStyle(color)}>{title.toUpperCase()}</TcText>
 );
 
 ArticleLabel.propTypes = {

@@ -1248,6 +1248,8 @@ export interface Author {
   twitter?: string | null;
 
   slug?: Slug | null;
+
+  contractualTitle?: string | null;
 }
 
 export interface AuthorArticles {
@@ -1348,6 +1350,8 @@ export interface Article extends ArticleInterface {
   tokenisedUrl?: Url | null;
   /** Topics that the requested article belong to */
   topics?: (Topic | null)[] | null;
+
+  categoryPath?: Url | null;
 
   url?: Url | null;
 

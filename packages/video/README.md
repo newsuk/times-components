@@ -1,9 +1,7 @@
 # Video
 
-This package displays video content on web and native. For web, it shows an
-inline video player using the brightcove SDK. For native, it simply shows a
-splash image and play icon, and invokes a supplied callback when the image is
-tapped.
+This package displays video content. It shows an
+inline video player using the brightcove SDK.
 
 ## Contributing
 
@@ -25,7 +23,7 @@ yarn lint
 
 ## Testing
 
-Testing can be done on each platform individually
+Testing can be done by running"
 
 ```
 yarn test:web

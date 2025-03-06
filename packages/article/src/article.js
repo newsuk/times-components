@@ -5,7 +5,7 @@ import ArticleMagazineStandard from "@times-components/article-magazine-standard
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import Responsive from "@times-components/responsive";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import { MessageManager } from "@times-components/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
 
@@ -26,11 +26,18 @@ export class TakeoverBailout extends Error {
 
 const Article = props => {
   const { article, onImagePress } = props;
-  const { leadAsset, template } = article || {};
+  const { leadAsset, template, isPreview } = article || {};
   let { content } = article || {};
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
+
+  if (article && !isPreview) {
+    if (!article.tiles.length && !content.length) {
+      throw new Error("ENOCONTENT");
+    }
+  }
+
   let onImagePressArticle = null;
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
@@ -48,7 +55,7 @@ const Article = props => {
 
   return (
     <Responsive>
-      <MessageManager animate delay={3000} scale={scales.medium}>
+      <MessageManager delay={3000} scale={scales.medium}>
         <Component {...newProps} onImagePress={onImagePressArticle} />
       </MessageManager>
     </Responsive>

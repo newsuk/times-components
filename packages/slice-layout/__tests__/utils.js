@@ -1,8 +1,8 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 
-const ExampleChild = ({ children }) => <Text>{children}</Text>;
+const ExampleChild = ({ children }) => <TcText>{children}</TcText>;
 ExampleChild.displayName = "ExampleChild";
 
 ExampleChild.propTypes = {

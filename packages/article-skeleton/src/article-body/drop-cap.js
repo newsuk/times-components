@@ -1,7 +1,7 @@
 import React from "react";
-import { fonts } from "@times-components/styleguide";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { getStringBounds } from "../body-utils";
 import styles from "../styles/shared";
 
@@ -16,7 +16,7 @@ export default (scale, color, dropCapFont, paragraph) => {
   const baseStyle = letter.attributes[0][0].settings;
   const fontSize = baseStyle.fontSize * 6;
   const fontSettings = {
-    fontFamily: fonts[dropCapFont],
+    fontFamily: fontsWithFallback[dropCapFont],
     fontStyle: "",
     fontWeight: "",
     fontSize,
@@ -36,7 +36,7 @@ export default (scale, color, dropCapFont, paragraph) => {
     height
   );
   const element = (
-    <Text
+    <TcText
       allowFontScaling={false}
       style={[
         {
@@ -44,13 +44,13 @@ export default (scale, color, dropCapFont, paragraph) => {
           left: styles.articleMainContentRow.paddingLeft,
           fontSize,
           lineHeight: height * 1.33,
-          fontFamily: fonts[dropCapFont],
+          fontFamily: fontsWithFallback[dropCapFont],
           color: fontSettings.color
         }
       ]}
     >
       {letter.string}
-    </Text>
+    </TcText>
   );
   return {
     exclusion,

@@ -1,14 +1,14 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import Gradient from "@times-components/gradient";
 import styles from "./styles";
 
 const AuthorProfileHeadLoading = () => (
-  <View style={styles.loadingContainer}>
-    <View style={styles.loadingRoundImage}>
+  <TcView style={styles.loadingContainer}>
+    <TcView style={styles.loadingRoundImage}>
       <Gradient style={styles.loadingGradient} />
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 export default AuthorProfileHeadLoading;

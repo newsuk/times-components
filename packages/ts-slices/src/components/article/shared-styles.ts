@@ -1,7 +1,7 @@
 import get from 'lodash.get';
 
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { DisplaySchema } from '../../types/styles';
 import { isSideBySide, isCentered } from '../../utils/getArticleStyles';
@@ -117,7 +117,7 @@ export const Label = styled.p`
   color: ${colours.functional.secondary};
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-family: ${fonts.supporting};
   text-transform: uppercase;
 `;

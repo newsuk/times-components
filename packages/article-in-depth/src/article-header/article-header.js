@@ -1,9 +1,15 @@
 import React from "react";
-import { View } from "react-native";
-import { ArticleFlags } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
-import { gqlRgbaToStyle } from "@times-components/utils";
+import {
+  gqlRgbaToStyle,
+  checkStylesForUnits,
+  TcView
+} from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -26,37 +32,42 @@ const ArticleHeader = ({
   headline,
   label,
   standfirst,
-  textColour: rgbTextColour
+  textColour: rgbTextColour,
+  updatedTime
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
+  const headlineContainerStyles = (headlineFont, headlineCase) =>
+    checkStylesForUnits({
+      ...styles.articleHeadline,
+      color: textColour,
+      fontFamily: headlineFont ? fontsWithFallback[headlineFont] : null,
+      textTransform: headlineCase || null
+    });
 
   return (
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (
-        <View
+        <TcView
           style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
         >
-          <HeaderContainer style={styles.container}>
+          <HeaderContainer styles={styles.container}>
             <Label color={textColour} isVideo={hasVideo} label={label} />
             <HeadlineContainer
-              accessibilityRole="header"
+              role="heading"
               aria-level="1"
-              style={[
-                styles.articleHeadline,
-                { color: textColour },
-                headlineFont ? { fontFamily: fonts[headlineFont] } : null,
-                headlineCase ? { textTransform: headlineCase } : null
-              ]}
+              styles={headlineContainerStyles(headlineFont, headlineCase)}
             >
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <ArticleFlags color={textColour} flags={flags} />
+              <UpdatedTimeProvider updatedTime={updatedTime}>
+                <ArticleFlags color={textColour} flags={flags} />
+              </UpdatedTimeProvider>
             </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
           </HeaderContainer>
-        </View>
+        </TcView>
       )}
     </Context.Consumer>
   );

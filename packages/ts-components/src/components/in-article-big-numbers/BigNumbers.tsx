@@ -9,16 +9,19 @@ import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
   Container,
   ContentContainer,
+  ListItem,
+  NumberContainer,
+  StyledShowAllButton
+} from './styles';
+import {
+  PlaceholderContainer,
+  Label,
   Headline,
   ListContainer,
   List,
-  ListItem,
-  NumberContainer,
   Copy,
-  ShowAllContainer,
-  ShowAllButton
-} from './styles';
-import { PlaceholderContainer, Label } from '../common-styles';
+  ShowAllContainer
+} from '../common-styles';
 import { isStandard, isWide } from '../../helpers/layout-size/layoutSize';
 import { DeckData } from '../../helpers/fetch/types';
 
@@ -135,7 +138,7 @@ export const BigNumbers: React.FC<{
             </ListContainer>
           </ContentContainer>
           <ShowAllContainer showAll={showAll} displayShowAll={displayShowAll}>
-            <ShowAllButton
+            <StyledShowAllButton
               onClick={() =>
                 handleShowAll(
                   fireAnalyticsEvent,
@@ -144,7 +147,7 @@ export const BigNumbers: React.FC<{
               }
             >
               {showAll ? 'Collapse' : 'Show all'}
-            </ShowAllButton>
+            </StyledShowAllButton>
           </ShowAllContainer>
         </Container>
       )}

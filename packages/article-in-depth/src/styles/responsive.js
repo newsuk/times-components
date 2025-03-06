@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
@@ -6,10 +6,11 @@ import {
   fontSizes,
   lineHeight,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
-export const DatePublicationContainer = styled(Text)`
+export const DatePublicationContainer = styled(TcText)`
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(1)};
@@ -19,7 +20,7 @@ export const DatePublicationContainer = styled(Text)`
   }
 `;
 
-export const FlagsContainer = styled(View)`
+export const FlagsContainer = styled(TcView)`
   padding-top: ${spacing(1)};
   padding-bottom: ${spacing(3)};
 
@@ -28,8 +29,10 @@ export const FlagsContainer = styled(View)`
   }
 `;
 
-export const HeaderContainer = styled(View)`
-  order: 2;
+export const HeaderContainer = styled(TcView)`
+  ${props => props.styles && props.styles} order: 2;
+  padding: 61px 10px 45px;
+
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
     margin-top: 0;
@@ -42,7 +45,17 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = styled(Text)`
+export const HeadlineContainer = styled.h1`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font-family: sans-serif;  
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -50,13 +63,13 @@ export const HeadlineContainer = styled(Text)`
   }
 `;
 
-export const LabelContainer = styled(View)`
+export const LabelContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     margin-top: 0px;
   }
 `;
 
-export const Meta = styled(View)`
+export const Meta = styled(TcView)`
   max-width: 100%;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -64,7 +77,7 @@ export const Meta = styled(View)`
   }
 `;
 
-export const MetaContainer = styled(View)`
+export const MetaContainer = styled(TcView)`
   align-items: center;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -73,7 +86,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const Separator = styled(View)`
+export const Separator = styled(TcView)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -85,7 +98,18 @@ export const Separator = styled(View)`
   }
 `;
 
-export const StandfirstContainer = styled(Text)`
+export const StandfirstContainer = styled.h2`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  ${props => props.styles && props.styles}
+
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
@@ -110,6 +134,6 @@ export const LeadAsset = styled(ArticleLeadAsset)`
   }
 `;
 
-export const LeadAssetCaptionContainer = styled(View)`
+export const LeadAssetCaptionContainer = styled(TcView)`
   display: flex;
 `;

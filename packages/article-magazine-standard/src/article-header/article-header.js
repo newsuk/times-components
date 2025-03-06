@@ -1,8 +1,11 @@
 import React from "react";
 import Context from "@times-components/context";
-import { ArticleFlags } from "@times-components/ts-components";
-import { fonts } from "@times-components/styleguide";
-
+import { checkStylesForUnits } from "@times-components/utils";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -18,6 +21,13 @@ import {
   HeadlineContainer
 } from "../styles/responsive";
 
+const headlineContainerStyles = (headlineFont, headlineCase) =>
+  checkStylesForUnits({
+    ...styles.articleHeadline,
+    fontFamily: headlineFont ? fontsWithFallback[headlineFont] : null,
+    textTransform: headlineCase || null
+  });
+
 const ArticleHeader = ({
   bylines,
   flags,
@@ -26,25 +36,24 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  updatedTime
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
       <HeaderContainer style={styles.container}>
         <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer
-          accessibilityRole="header"
+          role="heading"
           aria-level="1"
-          style={[
-            styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null,
-            headlineCase ? { textTransform: headlineCase } : null
-          ]}
+          styles={headlineContainerStyles(headlineFont, headlineCase)}
         >
           {headline}
         </HeadlineContainer>
         <FlagsContainer>
-          <ArticleFlags flags={flags} />
+          <UpdatedTimeProvider updatedTime={updatedTime}>
+            <ArticleFlags flags={flags} />
+          </UpdatedTimeProvider>
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta

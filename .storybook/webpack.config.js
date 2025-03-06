@@ -1,14 +1,17 @@
 const path = require("path");
 const webpack = require("webpack");
+const crypto = require("crypto");
+
+const cryptoCreateHash = crypto.createHash;
+crypto.createHash = algorithm =>
+  cryptoCreateHash(algorithm === "md4" ? "sha256" : algorithm);
 
 module.exports = async ({ config }, env, defaultConfig) => {
   config.devtool = "eval-source-map";
   config.resolve = {
     ...config.resolve,
     alias: {
-      ...config.resolve.alias,
-      "react-native": "react-native-web",
-      "@storybook/react-native": "@storybook/react"
+      ...config.resolve.alias
     },
     extensions: [".tsx", ".ts", ".js", ".mjs"],
     mainFields: ["devModule", "dev", "module", "main"]
@@ -29,7 +32,10 @@ module.exports = async ({ config }, env, defaultConfig) => {
   config.module.rules.push(
     {
       test: /\.(png|jpe?g|gif)$/,
-      loader: "react-native-web-image-loader?name=[hash].[ext]"
+      loader: "file-loader",
+      options: {
+        name: '[path][name].[ext]',
+      },
     },
     {
       test: /\.mjs$/,

@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import { iterator } from "@times-components/test-utils";
 
 import {
@@ -7,7 +6,6 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 
@@ -19,7 +17,6 @@ export default () => {
     enzymeRenderedSerializer(),
     compose(
       stylePrinter,
-      rnwTransform(AppRegistry),
       minimalWebTransform,
       minimaliseTransform(
         (value, key) => key === "style" || key === "className"

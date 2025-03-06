@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 export const Container = styled.div`
   display: none;

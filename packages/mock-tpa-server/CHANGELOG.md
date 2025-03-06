@@ -3,6 +3,260 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.11](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.10...@times-components/mock-tpa-server@0.4.11) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.10](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.9...@times-components/mock-tpa-server@0.4.10) (2024-09-16)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.9](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.8...@times-components/mock-tpa-server@0.4.9) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.7...@times-components/mock-tpa-server@0.4.8) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.6...@times-components/mock-tpa-server@0.4.7) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.5...@times-components/mock-tpa-server@0.4.6) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.4...@times-components/mock-tpa-server@0.4.5) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.3...@times-components/mock-tpa-server@0.4.4) (2024-02-09)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.2...@times-components/mock-tpa-server@0.4.3) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.1...@times-components/mock-tpa-server@0.4.2) (2023-06-02)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.4.0...@times-components/mock-tpa-server@0.4.1) (2023-06-01)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.3...@times-components/mock-tpa-server@0.4.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
+## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.2...@times-components/mock-tpa-server@0.3.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.3.2](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.1...@times-components/mock-tpa-server@0.3.2) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.0...@times-components/mock-tpa-server@0.3.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.84...@times-components/mock-tpa-server@0.3.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.2.84](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.83...@times-components/mock-tpa-server@0.2.84) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.83](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.82...@times-components/mock-tpa-server@0.2.83) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.82](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.81...@times-components/mock-tpa-server@0.2.82) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.81](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.80...@times-components/mock-tpa-server@0.2.81) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.80](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.79...@times-components/mock-tpa-server@0.2.80) (2022-05-25)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.79](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.78...@times-components/mock-tpa-server@0.2.79) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.78](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.77...@times-components/mock-tpa-server@0.2.78) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.77](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.76...@times-components/mock-tpa-server@0.2.77) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.76](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.75...@times-components/mock-tpa-server@0.2.76) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.75](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.74...@times-components/mock-tpa-server@0.2.75) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.74](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.73...@times-components/mock-tpa-server@0.2.74) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.73](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.72...@times-components/mock-tpa-server@0.2.73) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.72](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.71...@times-components/mock-tpa-server@0.2.72) (2022-03-02)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.71](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.70...@times-components/mock-tpa-server@0.2.71) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
+## [0.2.70](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.69...@times-components/mock-tpa-server@0.2.70) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/mock-tpa-server
+
+
+
+
+
 ## [0.2.69](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.2.68...@times-components/mock-tpa-server@0.2.69) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/mock-tpa-server

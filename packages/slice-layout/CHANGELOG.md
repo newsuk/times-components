@@ -3,6 +3,981 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.61...@times-components/slice-layout@0.52.0) (2024-12-02)
+
+
+### Features
+
+* **TMRS-482:** add CategorisedArticles  ([#3976](https://github.com/newsuk/times-components/issues/3976)) ([164ee6a](https://github.com/newsuk/times-components/commit/164ee6ae81516489bd6d5afb8e7289104c65720a))
+
+
+
+
+
+## [0.51.61](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.60...@times-components/slice-layout@0.51.61) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.60](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.59...@times-components/slice-layout@0.51.60) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.59](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.58...@times-components/slice-layout@0.51.59) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.58](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.57...@times-components/slice-layout@0.51.58) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.57](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.56...@times-components/slice-layout@0.51.57) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.56](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.55...@times-components/slice-layout@0.51.56) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.55](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.54...@times-components/slice-layout@0.51.55) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.54](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.53...@times-components/slice-layout@0.51.54) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.53](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.52...@times-components/slice-layout@0.51.53) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.52](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.51...@times-components/slice-layout@0.51.52) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.51](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.50...@times-components/slice-layout@0.51.51) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.50](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.49...@times-components/slice-layout@0.51.50) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.49](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.48...@times-components/slice-layout@0.51.49) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.48](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.47...@times-components/slice-layout@0.51.48) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.47](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.46...@times-components/slice-layout@0.51.47) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.46](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.45...@times-components/slice-layout@0.51.46) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.45](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.44...@times-components/slice-layout@0.51.45) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.44](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.43...@times-components/slice-layout@0.51.44) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.43](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.42...@times-components/slice-layout@0.51.43) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.42](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.41...@times-components/slice-layout@0.51.42) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.41](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.40...@times-components/slice-layout@0.51.41) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.40](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.39...@times-components/slice-layout@0.51.40) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.39](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.38...@times-components/slice-layout@0.51.39) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.38](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.37...@times-components/slice-layout@0.51.38) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.37](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.36...@times-components/slice-layout@0.51.37) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.36](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.35...@times-components/slice-layout@0.51.36) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.35](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.34...@times-components/slice-layout@0.51.35) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.34](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.33...@times-components/slice-layout@0.51.34) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.33](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.32...@times-components/slice-layout@0.51.33) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.32](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.31...@times-components/slice-layout@0.51.32) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.31](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.30...@times-components/slice-layout@0.51.31) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.30](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.29...@times-components/slice-layout@0.51.30) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.29](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.28...@times-components/slice-layout@0.51.29) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.28](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.27...@times-components/slice-layout@0.51.28) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.27](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.26...@times-components/slice-layout@0.51.27) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.26](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.25...@times-components/slice-layout@0.51.26) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.25](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.24...@times-components/slice-layout@0.51.25) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.24](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.23...@times-components/slice-layout@0.51.24) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.23](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.22...@times-components/slice-layout@0.51.23) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.22](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.21...@times-components/slice-layout@0.51.22) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.21](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.20...@times-components/slice-layout@0.51.21) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.20](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.19...@times-components/slice-layout@0.51.20) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.19](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.18...@times-components/slice-layout@0.51.19) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.18](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.17...@times-components/slice-layout@0.51.18) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.17](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.16...@times-components/slice-layout@0.51.17) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.16](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.15...@times-components/slice-layout@0.51.16) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.15](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.14...@times-components/slice-layout@0.51.15) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.14](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.13...@times-components/slice-layout@0.51.14) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.13](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.12...@times-components/slice-layout@0.51.13) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.12](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.11...@times-components/slice-layout@0.51.12) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.11](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.10...@times-components/slice-layout@0.51.11) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.10](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.9...@times-components/slice-layout@0.51.10) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.9](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.8...@times-components/slice-layout@0.51.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.8](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.7...@times-components/slice-layout@0.51.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.7](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.6...@times-components/slice-layout@0.51.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.6](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.5...@times-components/slice-layout@0.51.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.4...@times-components/slice-layout@0.51.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.3...@times-components/slice-layout@0.51.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.2...@times-components/slice-layout@0.51.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.1...@times-components/slice-layout@0.51.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.51.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.51.0...@times-components/slice-layout@0.51.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.21...@times-components/slice-layout@0.51.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [0.50.21](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.20...@times-components/slice-layout@0.50.21) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.20](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.19...@times-components/slice-layout@0.50.20) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.19](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.18...@times-components/slice-layout@0.50.19) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.18](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.17...@times-components/slice-layout@0.50.18) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.17](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.16...@times-components/slice-layout@0.50.17) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.16](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.15...@times-components/slice-layout@0.50.16) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.15](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.14...@times-components/slice-layout@0.50.15) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.14](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.13...@times-components/slice-layout@0.50.14) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.13](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.12...@times-components/slice-layout@0.50.13) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.12](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.11...@times-components/slice-layout@0.50.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.11](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.10...@times-components/slice-layout@0.50.11) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.10](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.9...@times-components/slice-layout@0.50.10) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.9](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.8...@times-components/slice-layout@0.50.9) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.8](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.7...@times-components/slice-layout@0.50.8) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.7](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.6...@times-components/slice-layout@0.50.7) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.6](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.5...@times-components/slice-layout@0.50.6) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.4...@times-components/slice-layout@0.50.5) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.3...@times-components/slice-layout@0.50.4) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.2...@times-components/slice-layout@0.50.3) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.1...@times-components/slice-layout@0.50.2) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.50.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.0...@times-components/slice-layout@0.50.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.50.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.6...@times-components/slice-layout@0.50.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.49.6](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.5...@times-components/slice-layout@0.49.6) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.49.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.4...@times-components/slice-layout@0.49.5) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.49.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.3...@times-components/slice-layout@0.49.4) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.49.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.2...@times-components/slice-layout@0.49.3) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.49.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.1...@times-components/slice-layout@0.49.2) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.49.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.0...@times-components/slice-layout@0.49.1) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.49.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.48.1...@times-components/slice-layout@0.49.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1696:** add TcFlatlist component, refactor slice-layout ([#3022](https://github.com/newsuk/times-components/issues/3022)) ([32dc942](https://github.com/newsuk/times-components/commit/32dc942c7e0895453d7c80d2e30b6bcf466c9bdf))
+
+
+
+
+
+## [0.48.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.48.0...@times-components/slice-layout@0.48.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.47...@times-components/slice-layout@0.48.0) (2022-06-22)
+
+
+### Features
+
+* **TDP-1421:** Remove react native from 'times-components/slice-layout' package ([#2994](https://github.com/newsuk/times-components/issues/2994)) ([dc5dc4d](https://github.com/newsuk/times-components/commit/dc5dc4da032565a727e4e62adfc5b606ad60c298))
+
+
+
+
+
+## [0.47.47](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.46...@times-components/slice-layout@0.47.47) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.46](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.45...@times-components/slice-layout@0.47.46) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.45](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.44...@times-components/slice-layout@0.47.45) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.44](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.43...@times-components/slice-layout@0.47.44) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.43](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.42...@times-components/slice-layout@0.47.43) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.42](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.41...@times-components/slice-layout@0.47.42) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.41](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.40...@times-components/slice-layout@0.47.41) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.40](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.39...@times-components/slice-layout@0.47.40) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.39](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.38...@times-components/slice-layout@0.47.39) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.38](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.37...@times-components/slice-layout@0.47.38) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.37](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.36...@times-components/slice-layout@0.47.37) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.36](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.35...@times-components/slice-layout@0.47.36) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.35](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.34...@times-components/slice-layout@0.47.35) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.34](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.33...@times-components/slice-layout@0.47.34) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.33](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.32...@times-components/slice-layout@0.47.33) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.32](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.31...@times-components/slice-layout@0.47.32) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.31](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.30...@times-components/slice-layout@0.47.31) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.30](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.29...@times-components/slice-layout@0.47.30) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.29](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.28...@times-components/slice-layout@0.47.29) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.28](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.27...@times-components/slice-layout@0.47.28) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.27](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.26...@times-components/slice-layout@0.47.27) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.26](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.25...@times-components/slice-layout@0.47.26) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.25](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.24...@times-components/slice-layout@0.47.25) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.24](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.23...@times-components/slice-layout@0.47.24) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.23](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.22...@times-components/slice-layout@0.47.23) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.47.22](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.21...@times-components/slice-layout@0.47.22) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
 ## [0.47.21](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.20...@times-components/slice-layout@0.47.21) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/slice-layout

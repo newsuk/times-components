@@ -1,209 +1,206 @@
 import {
-  isLoggedIn,
-  isMeteredExpired,
-  isShared,
-  isMetered,
-  isNonMeteredExpiredUser,
-  isSubscriber,
-  shouldShowFullArticle,
-  isLoggedInOrShared
+  showSaveAndShareBar,
+  showArticleExtras,
+  showTopicTags,
+  showArticleSaveButton,
+  showLiveUpdateButton,
+  showTokenisedEmailShare,
+  showCommentingModule,
+  showJoinTheConversationDialog
 } from "../src/matchers";
 
 const defaultUserState = {
+  hasAccess: false,
   isLoggedIn: false,
   isMetered: false,
-  isMeteredExpired: false,
-  isShared: false
+  isShared: false,
+  isLightPackUser: false,
+  isRegisteredUser: false
+};
+
+const hasAccessLoggedInOrSharedUser = func => {
+  it("should return true if hasAccess and isLoggedIn", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return true if hasAccess and isShared", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isShared: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return false if not hasAccess", () => {
+    const userState = { ...defaultUserState };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if not isLoggedIn and not isShared", () => {
+    const userState = { ...defaultUserState, hasAccess: true };
+    expect(func(userState)).toBe(false);
+  });
+};
+
+const hasAccessLoggedInUser = func => {
+  it("should return true if hasAccess and isLoggedIn", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return false if not hasAccess", () => {
+    const userState = { ...defaultUserState };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if not isLoggedIn", () => {
+    const userState = { ...defaultUserState, hasAccess: true };
+    expect(func(userState)).toBe(false);
+  });
+};
+
+const hasAccessLoggedInNonMeteredUser = func => {
+  it("should return true if hasAccess and isLoggedIn", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return false if not hasAccess", () => {
+    const userState = { ...defaultUserState };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if hasAccess and not isLoggedIn", () => {
+    const userState = { ...defaultUserState, hasAccess: true };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if isMetered", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isMetered: true
+    };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if isLightPackUser", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isLightPackUser: true
+    };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if isRegisteredUser", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isRegisteredUser: true
+    };
+    expect(func(userState)).toBe(false);
+  });
+};
+
+const hasAccessLoggedInMeteredUser = func => {
+  it("should return true if hasAccess, isLoggedIn and isMetered", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isMetered: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return true if hasAccess, isLoggedIn and isLightPackUser", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isLightPackUser: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return true if hasAccess, isLoggedIn and isRegisteredUser", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true,
+      isRegisteredUser: true
+    };
+    expect(func(userState)).toBe(true);
+  });
+
+  it("should return false if not hasAccess", () => {
+    const userState = { ...defaultUserState };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if not isLoggedIn", () => {
+    const userState = { ...defaultUserState, hasAccess: true };
+    expect(func(userState)).toBe(false);
+  });
+
+  it("should return false if not metered user", () => {
+    const userState = {
+      ...defaultUserState,
+      hasAccess: true,
+      isLoggedIn: true
+    };
+    expect(func(userState)).toBe(false);
+  });
 };
 
 describe("user state should", () => {
-  describe("isLoggedIn", () => {
-    it("return true if userState isLoggedIn is true", () => {
-      const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(isLoggedIn(userState)).toBe(true);
-    });
-
-    it("return false if userState isLoggedIn is false", () => {
-      const userState = { ...defaultUserState, isLoggedIn: false };
-      expect(isLoggedIn(userState)).toBe(false);
-    });
+  describe("showSaveAndShareBar", () => {
+    hasAccessLoggedInOrSharedUser(showSaveAndShareBar);
   });
 
-  describe("isMeteredExpired", () => {
-    it("return true if user.isLoggedIn equals true and user.isMeteredExpired equals true", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true,
-        isMeteredExpired: true
-      };
-      expect(isMeteredExpired(userState)).toBe(true);
-    });
-
-    it("return false if user.isLoggedIn equals true and iuser.isMeteredExpired equals false", () => {
-      expect(
-        isMeteredExpired({
-          ...defaultUserState,
-          isLoggedIn: true,
-          isMetered: true
-        })
-      ).toBe(false);
-    });
+  describe("showArticleExtras", () => {
+    hasAccessLoggedInOrSharedUser(showArticleExtras);
   });
 
-  describe("isShared", () => {
-    it("return true if userState.isShared equals true", () => {
-      const userState = { ...defaultUserState, isShared: true };
-      expect(isShared(userState)).toBe(true);
-    });
-
-    it("return false if userState.isShared equals true", () => {
-      const userState = { ...defaultUserState, isShared: false };
-      expect(isShared(userState)).toBe(false);
-    });
+  describe("showTopicTags", () => {
+    hasAccessLoggedInOrSharedUser(showTopicTags);
   });
 
-  describe("isMetered", () => {
-    it("return true if user.isLoggedIn equals true and user.isMetered equals true", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true
-      };
-      expect(isMetered(userState)).toBe(true);
-    });
-
-    it("return false if user.isLoggedIn equals true and user.isMetered equals false", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: false
-      };
-      expect(isMetered(userState)).toBe(false);
-    });
+  describe("showArticleSaveButton", () => {
+    hasAccessLoggedInUser(showArticleSaveButton);
   });
 
-  describe("isNonMeteredExpiredUser", () => {
-    it("returns true when user is a subscriber", () => {
-      const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(isNonMeteredExpiredUser(userState)).toBe(true);
-    });
-
-    it("returns true when user is a metered", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: false
-      };
-      expect(isNonMeteredExpiredUser(userState)).toBe(true);
-    });
-
-    it("returns false when user is a metered expired", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: false,
-        isMeteredExpired: false
-      };
-      expect(isNonMeteredExpiredUser(userState)).toBe(true);
-    });
-
-    it("returns false when user is guest", () => {
-      const userState = { ...defaultUserState, isLoggedIn: false };
-      expect(isNonMeteredExpiredUser(userState)).toBe(false);
-    });
+  describe("showLiveUpdateButton", () => {
+    hasAccessLoggedInUser(showLiveUpdateButton);
   });
 
-  describe("isSubscriber", () => {
-    it("returns true when user is subscriber", () => {
-      const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(isSubscriber(userState)).toBe(true);
-    });
-
-    it("returns false when user is metered", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true
-      };
-      expect(isSubscriber(userState)).toBe(false);
-    });
-
-    it("returns false when user is guest", () => {
-      const userState = { ...defaultUserState };
-      expect(isSubscriber(userState)).toBe(false);
-    });
+  describe("showTokenisedEmailShare", () => {
+    hasAccessLoggedInNonMeteredUser(showTokenisedEmailShare);
   });
 
-  describe("isLoggedInOrShared", () => {
-    it("returns true when user is subscriber", () => {
-      const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(isLoggedInOrShared(userState)).toBe(true);
-    });
-
-    it("returns true when user is metered", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true
-      };
-      expect(isLoggedInOrShared(userState)).toBe(true);
-    });
-
-    it("returns true when user is metered expired", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true,
-        isMeteredExpired: true
-      };
-      expect(isLoggedInOrShared(userState)).toBe(true);
-    });
-
-    it("returns true when user is on share token", () => {
-      const userState = { ...defaultUserState, isShared: true };
-      expect(isLoggedInOrShared(userState)).toBe(true);
-    });
-
-    it("returns false when user is guest", () => {
-      const userState = { ...defaultUserState };
-      expect(isLoggedInOrShared(userState)).toBe(false);
-    });
+  describe("showCommentingModule", () => {
+    hasAccessLoggedInNonMeteredUser(showCommentingModule);
   });
 
-  describe("shouldShowFullArticle", () => {
-    it("returns true when user is subscriber", () => {
-      const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(shouldShowFullArticle(userState)).toBe(true);
-    });
-
-    it("returns true when user is metered", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true
-      };
-      expect(shouldShowFullArticle(userState)).toBe(true);
-    });
-
-    it("returns true when user is on share token", () => {
-      const userState = { ...defaultUserState, isShared: true };
-      expect(shouldShowFullArticle(userState)).toBe(true);
-    });
-
-    it("returns false when user is guest", () => {
-      const userState = { ...defaultUserState };
-      expect(shouldShowFullArticle(userState)).toBe(false);
-    });
-
-    it("returns false when user is metered expired", () => {
-      const userState = {
-        ...defaultUserState,
-        isLoggedIn: true,
-        isMetered: true,
-        isMeteredExpired: true
-      };
-      expect(shouldShowFullArticle(userState)).toBe(false);
-    });
+  describe("showJoinTheConversationDialog", () => {
+    hasAccessLoggedInMeteredUser(showJoinTheConversationDialog);
   });
 });

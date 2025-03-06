@@ -1,16 +1,19 @@
 /* eslint-env browser */
 import React, { Fragment } from "react";
-import { ActivityIndicator, Text } from "react-native";
 import styled from "styled-components";
 import Link from "@times-components/link";
-import { HoverIcon } from "@times-components/utils";
+import {
+  HoverIcon,
+  TcText,
+  checkStylesForUnits
+} from "@times-components/utils";
 import PropTypes from "prop-types";
-import { IconStar } from "@times-components/icons";
+import { IconStar, IconActivityIndicator } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 import withTrackEvents from "./tracking/with-track-events";
 
 const IconContainer = styled(HoverIcon)`
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -55,7 +58,11 @@ function SaveStar({
 
   function renderActivity() {
     if (isLoading) {
-      return <ActivityIndicator size="small" style={styles.activityLoader} />;
+      return (
+        <IconContainer colour={colour} hoverColour={hoverColour}>
+          <IconActivityIndicator style={styles.activityLoader} />
+        </IconContainer>
+      );
     }
 
     return renderSaveButton();
@@ -63,7 +70,9 @@ function SaveStar({
 
   return (
     <Fragment>
-      <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
+      <TcText style={checkStylesForUnits(styles.label)}>
+        {savedStatus ? "Saved" : "Save"}
+      </TcText>
       {renderActivity()}
     </Fragment>
   );

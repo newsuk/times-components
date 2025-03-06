@@ -145,6 +145,45 @@
     },
     {
       "name": "paragraph",
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "All those things which falls under the cognizance of man might very likely be mutually related in the same fashion and there can be nothing so remote that we cannot reach to it. All those things which falls under the cognizance of man might very likely be mutually related in the same fashion and there can be nothing so remote that we cannot reach to it. All those things which falls under "
+          },
+          "children": []
+        },
+        {
+          "name": "link",
+          "attributes": {
+            "href": "#e9356a62-76bf-4e50-a04e-8c1b29b2fc5e"
+          },
+          "children": [
+            {
+              "name": "bold",
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "See Photo-Caption Number"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value": " might very likely be mutually."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "paragraph",
       "attributes": {},
       "children": [
         {
@@ -173,6 +212,22 @@
           "children": []
         }
       ]
+    },
+    {
+      "name": "image",
+      "attributes": {
+        "id": "e9356a62-76bf-4e50-a04e-8c1b29b2fc5e",
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
+      },
+      "children": []
     },
     {
       "name": "paragraph",
@@ -554,6 +609,77 @@
   ],
   "content": [
     {
+      "name": "keyFacts",
+      "attributes": {
+        "title": "Key moments"
+      },
+      "children": [
+        {
+          "name": "unorderedList",
+          "children": [
+            {
+              "name": "listElement",
+              "children": [
+                {
+                  "name": "link",
+                  "attributes": {
+                    "href": "#U123456789101112131415",
+                    "type": "article"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "This link goes to the first headline of the live blog"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listElement",
+              "children": [
+                {
+                  "name": "link",
+                  "attributes": {
+                    "href": "#U234567891011121314151",
+                    "type": "article"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "This link goes to the second headline of the live blog"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "element": {
+          "value": "article-header",
+          "attributes": {
+            "updated": "2022-04-20T20:30:00+01:00",
+            "date": "20/04/2022",
+            "time": "20:30",
+            "breaking": "true",
+            "headline": "First headline update for live blog"
+          }
+        }
+      },
+      "name": "interactive",
+      "children": []
+    },
+    {
       "name": "interactive",
       "attributes": {
         "id": "e7c8c3ca-eaa7-433f-9668-417cb91a8a28",
@@ -586,7 +712,9 @@
     },
     {
       "name": "paragraph",
-      "attributes": {},
+      "attributes": {
+        "id": "U123456789101112131415"
+      },
       "children": [
         {
           "name": "text",
@@ -638,21 +766,6 @@
       ]
     },
     {
-      "name": "image",
-      "attributes": {
-        "display": "secondary",
-        "caption": "Iron man: Thomas at home",
-        "credits": "GARETH PHILLIPS",
-        "ratio": "1200:1500",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
-        "relativeHeight": 0.4,
-        "relativeHorizontalOffset": 0.16666666666666666,
-        "relativeVerticalOffset": 0.2,
-        "relativeWidth": 0.5
-      },
-      "children": []
-    },
-    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -678,6 +791,37 @@
       ]
     },
     {
+      "attributes": {
+        "element": {
+          "value": "article-header",
+          "attributes": {
+            "updated": "2022-04-20T20:30:00+01:00",
+            "date": "20/04/2022",
+            "time": "20:30",
+            "breaking": "true",
+            "headline": "This%20is%20the%20headline"
+          }
+        }
+      },
+      "name": "interactive",
+      "children": []
+    },
+    {
+      "name": "image",
+      "attributes": {
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
+      },
+      "children": []
+    },
+    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -685,6 +829,72 @@
           "name": "text",
           "attributes": {
             "value": "His parties cater largely to couples and single girls. There are different formats – three women to two men; all women; the masquerade ball. Everyone has to be under 35. The organisers like the women to make the first move and there is a “zero tolerance policy” if any one of them complains to security. Photography is banned unless it is a “Heaven Sinema” party, where you get a nice DVD. Some people, “especially celebrities”, wear masks. “We’ve had Grammy winners,” Reynolds Gordon boasts. “We had a model who was on the cover of Vogue. This is going on all over London. Sex is a drug.”"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "paragraph",
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "All those things which falls under the cognizance of man might very likely be mutually related in the same fashion and there can be nothing so remote that we cannot reach to it "
+          },
+          "children": []
+        },
+        {
+          "name": "link",
+          "attributes": {
+            "href": "#af52d619-6ba3-47e9-9db4-2f4edbcb3dff"
+          },
+          "children": [
+            {
+              "name": "bold",
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "See Interactive"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value": ". All those things which falls under the cognizance of man might very likely be mutually related in the same fashion and there can be nothing so remote that we cannot reach to it. All those things which falls under "
+          },
+          "children": []
+        },
+        {
+          "name": "link",
+          "attributes": {
+            "href": "#e9356a62-76bf-4e50-a04e-8c1b29b2fc5e"
+          },
+          "children": [
+            {
+              "name": "bold",
+              "children": [
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "See Image"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value": " might very likely be mutually."
           },
           "children": []
         }
@@ -722,8 +932,43 @@
       ]
     },
     {
+      "name": "image",
+      "attributes": {
+        "id": "e9356a62-76bf-4e50-a04e-8c1b29b2fc5e",
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
+      },
+      "children": []
+    },
+    {
+      "attributes": {
+        "id": "af52d619-6ba3-47e9-9db4-2f4edbcb3dff",
+        "element": {
+          "value": "article-header",
+          "attributes": {
+            "updated": "2022-04-20T20:30:00+01:00",
+            "date": "20/04/2022",
+            "time": "20:30",
+            "breaking": "true",
+            "headline": "This%20is%20the%20second%20headline%20for%20liveBlog"
+          }
+        }
+      },
+      "name": "interactive",
+      "children": []
+    },
+    {
       "name": "paragraph",
-      "attributes": {},
+      "attributes": {
+        "id": "U234567891011121314151"
+      },
       "children": [
         {
           "name": "text",
@@ -1267,6 +1512,7 @@
   "longRead": false,
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
+  "updatedTime": "2022-02-24T09:00:00.000Z",
   "relatedArticleSlice": {
     "__typename": "StandardSlice",
     "items": [
@@ -1514,6 +1760,7 @@
             ]
           }
         ],
+        "categoryPath": "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
         "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
       },
       {
@@ -1698,6 +1945,7 @@
             ]
           }
         ],
+        "categoryPath": "/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
         "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
       },
       {
@@ -1853,6 +2101,7 @@
             ]
           }
         ],
+        "categoryPath": "/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
         "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k"
       }
     ]
@@ -1931,5 +2180,6 @@
       "slug": "chelsea"
     }
   ],
+  "categoryPath": "/edition/news/france-defies-may-over-russia-37b27qd2s",
   "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
 }

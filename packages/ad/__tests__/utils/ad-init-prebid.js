@@ -18,17 +18,6 @@ export default () => {
     expect(init.prebid.process).toHaveBeenCalledTimes(1);
   });
 
-  it("does not perform bidding request for native", () => {
-    const init = adInit({ ...initOptions, platform: "native" });
-    jest.spyOn(init.prebid, "process");
-    jest.spyOn(init.prebid, "init");
-    jest.spyOn(init.prebid, "bid");
-    init.init();
-    expect(init.prebid.init).not.toHaveBeenCalled();
-    expect(init.prebid.bid).not.toHaveBeenCalled();
-    expect(init.prebid.process).toHaveBeenCalled();
-  });
-
   it("requestPrebidBids fetches bids using pbjs", done => {
     const init = adInit(initOptions);
     mock.window.pbjs.addAdUnits = jest.fn();

@@ -77,10 +77,19 @@ Array [
   <title>
     Twitter Icon
   </title>,
-  <path
-    fill="#facade"
-    stroke="#c0ffee"
-  />,
+  <g>
+    <path
+      fill="#facade"
+      stroke="#c0ffee"
+    />
+  </g>,
+  <defs>
+    <clipPath>
+      <rect
+        fill="white"
+      />
+    </clipPath>
+  </defs>,
 ]
 `;
 
@@ -138,9 +147,7 @@ Array [
 
 exports[`12. closeicon renders with different colours 1`] = `
 Array [
-  <title>
-    Close Icon
-  </title>,
+  <title />,
   <path
     fill="white"
     stroke="white"
@@ -154,4 +161,158 @@ exports[`13. iconforwardchevron renders with different colours 1`] = `
 >
   <path />
 </g>
+`;
+
+exports[`14. iconactivityindicator renders with different colours 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div>
+    <activity-indicator__ActivityIndicatorSpinner>
+      <div />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
+`;
+
+exports[`15. iconcheck renders with different colours 1`] = `
+Array [
+  <title>
+    Check Icon
+  </title>,
+  <mask>
+    <path
+      fill="#0A0A0A"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#01000D"
+    />
+  </g>,
+]
+`;
+
+exports[`16. playermodalicon renders with different colours 1`] = `
+Array [
+  <title>
+    Player Modal Icon
+  </title>,
+  <mask>
+    <path
+      fill="#0A0A0A"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#01000D"
+    />
+  </g>,
+]
+`;
+
+exports[`17. playerback renders with different colours 1`] = `
+Array [
+  <title>
+    Player Back Icon
+  </title>,
+  <mask>
+    <path
+      fill="black"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#01000D"
+    />
+  </g>,
+]
+`;
+
+exports[`18. playerfront renders with different colours 1`] = `
+Array [
+  <title>
+    Player Front Icon
+  </title>,
+  <mask>
+    <path
+      fill="black"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#01000D"
+    />
+  </g>,
+]
+`;
+
+exports[`19. playicon renders with different colours 1`] = `
+Array [
+  <title>
+    Play Icon
+  </title>,
+  <mask>
+    <path
+      fill="black"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="black"
+    />
+  </g>,
+]
+`;
+
+exports[`20. pauseicon renders with different colours 1`] = `
+Array [
+  <title>
+    Pause Icon
+  </title>,
+  <mask>
+    <path
+      fill="black"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="black"
+    />
+  </g>,
+]
+`;
+
+exports[`21. iconvolume renders with different colours 1`] = `
+Array [
+  <title>
+    Volume Icon
+  </title>,
+  <mask>
+    <path
+      fill="#0A0A0A"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#01000D"
+    />
+  </g>,
+]
+`;
+
+exports[`22. audiocloseicon renders with different colours 1`] = `
+Array [
+  <title>
+    Audio Close Icon
+  </title>,
+  <mask>
+    <path
+      fill="#000"
+    />
+  </mask>,
+  <g>
+    <rect
+      fill="#000"
+    />
+  </g>,
+]
 `;

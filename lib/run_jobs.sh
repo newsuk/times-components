@@ -7,9 +7,9 @@ then
   then
     yarn lint
     yarn test
-    npx lerna run test --stream --since -- -- --ci --bail --coverage
+    lerna run test --stream --since -- -- --ci --bail --coverage
   else
-    npx lerna run test:$JOB_TYPE --stream --since -- -- --ci --bail --coverage
+    lerna run test:$JOB_TYPE --stream --since -- -- --ci --bail --coverage
   fi
 
   echo "Publishing branch changes to coveralls for PR"
@@ -26,9 +26,9 @@ then
   then
     yarn lint
     yarn test
-    npx lerna run test --stream -- -- --ci --bail --coverage
+    lerna run test --stream -- -- --ci --bail --coverage
   else
-    npx lerna run test:$JOB_TYPE --stream -- -- --ci --bail --coverage
+    lerna run test:$JOB_TYPE --stream -- -- --ci --bail --coverage
   fi
 
   exit 0
@@ -39,7 +39,7 @@ if [ $JOB_TYPE == 'rest' ]
 then
   yarn lint
   yarn test
-  npx lerna run test --stream -- -- --ci --bail --coverage
+  lerna run test --stream -- -- --ci --bail --coverage
 else
-  npx lerna run test:$JOB_TYPE --stream -- -- --ci --bail --coverage
+  lerna run test:$JOB_TYPE --stream -- -- --ci --bail --coverage
 fi

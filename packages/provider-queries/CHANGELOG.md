@@ -3,6 +3,195 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.24.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.3...@times-components/provider-queries@2.24.0) (2024-12-13)
+
+
+### Features
+
+* **TMD-1182:** Update to TPA field for image alt text ([#4001](https://github.com/newsuk/times-components/issues/4001)) ([1bbbc41](https://github.com/newsuk/times-components/commit/1bbbc41ad94f401b90ca653b800e0a075dc6efda))
+
+
+
+
+
+## [2.23.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.2...@times-components/provider-queries@2.23.3) (2024-09-16)
+
+
+### Bug Fixes
+
+* **TMRS-427:** refactor 410 error logic tc ([#3934](https://github.com/newsuk/times-components/issues/3934)) ([d715f97](https://github.com/newsuk/times-components/commit/d715f9716462d76bf92f0c2258c23714d5919196))
+
+
+
+
+
+## [2.23.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.1...@times-components/provider-queries@2.23.2) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+## [2.23.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.0...@times-components/provider-queries@2.23.1) (2024-08-28)
+
+
+### Reverts
+
+* Revert "feat(TMRS-329): Category path added to email share (#3923)" (#3928) ([d0c261e](https://github.com/newsuk/times-components/commit/d0c261ec6b1caa0b2af4ef9c7eed1656fed63a9d)), closes [#3923](https://github.com/newsuk/times-components/issues/3923) [#3928](https://github.com/newsuk/times-components/issues/3928)
+
+
+
+
+
+# [2.23.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.22.0...@times-components/provider-queries@2.23.0) (2024-08-28)
+
+
+### Features
+
+* **TMRS-329:** Category path added to email share ([#3923](https://github.com/newsuk/times-components/issues/3923)) ([e856800](https://github.com/newsuk/times-components/commit/e856800235a26df352a0074edba52941233c094c))
+
+
+
+
+
+# [2.22.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.21.1...@times-components/provider-queries@2.22.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
+## [2.21.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.21.0...@times-components/provider-queries@2.21.1) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+# [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.20.1...@times-components/provider-queries@2.21.0) (2024-02-09)
+
+
+### Features
+
+* **TMPZ-321:** Update puzzle sidebar component so that polygon links to the latest polygon puzzle instead of the word puzzles cateogory page ([#3756](https://github.com/newsuk/times-components/issues/3756)) ([cde3b44](https://github.com/newsuk/times-components/commit/cde3b44af598ee195c551819415b0c1262ffbefa))
+
+
+
+
+
+## [2.20.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.20.0...@times-components/provider-queries@2.20.1) (2023-07-27)
+
+
+### Bug Fixes
+
+* **TMRX-1307:** Add name field to VideoObjects ([#3463](https://github.com/newsuk/times-components/issues/3463)) ([fc4d3da](https://github.com/newsuk/times-components/commit/fc4d3dab8bf615c5f9a2565e6899774ad8abc2c3))
+
+
+
+
+
+# [2.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.19.0...@times-components/provider-queries@2.20.0) (2023-06-01)
+
+
+### Features
+
+* **TMRX-1266:** update schema to have sections listed under keywords ([#3384](https://github.com/newsuk/times-components/issues/3384)) ([82b3aff](https://github.com/newsuk/times-components/commit/82b3aff7c4c481a0a5437322ea904c0e3376ca95))
+
+
+
+
+
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.18.2...@times-components/provider-queries@2.19.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
+## [2.18.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.18.1...@times-components/provider-queries@2.18.2) (2023-04-03)
+
+
+### Bug Fixes
+
+* **TDP-3396:** Return the first tile in the article ([#3303](https://github.com/newsuk/times-components/issues/3303)) ([811ee57](https://github.com/newsuk/times-components/commit/811ee5779bf3abd620df729a8eb3b86fac5e9acb))
+
+
+
+
+
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.18.0...@times-components/provider-queries@2.18.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
+# [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.17.2...@times-components/provider-queries@2.18.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [2.17.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.17.1...@times-components/provider-queries@2.17.2) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+## [2.17.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.17.0...@times-components/provider-queries@2.17.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **TDP-2320:** Remove react-native from provider-queries package ([#3085](https://github.com/newsuk/times-components/issues/3085)) ([a8fd834](https://github.com/newsuk/times-components/commit/a8fd83428960735551fa244244c4be8d0c5c8ecf))
+
+
+
+
+
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.16.0...@times-components/provider-queries@2.17.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended articles ([#2969](https://github.com/newsuk/times-components/issues/2969)) ([9b6b9b0](https://github.com/newsuk/times-components/commit/9b6b9b09c918433ad5b2945d5fe2fc4c13002c13))
+
+
+
+
+
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.3...@times-components/provider-queries@2.16.0) (2022-05-25)
+
+
+### Features
+
+* **TDP-1942:** Integrate Times Components to NewsKit API ([#2946](https://github.com/newsuk/times-components/issues/2946)) ([53ab6f0](https://github.com/newsuk/times-components/commit/53ab6f00849da0dfd4256dce7d5feae5154cafd9)), closes [#2939](https://github.com/newsuk/times-components/issues/2939) [#2941](https://github.com/newsuk/times-components/issues/2941) [#2943](https://github.com/newsuk/times-components/issues/2943) [#2944](https://github.com/newsuk/times-components/issues/2944)
+
+
+
+
+
 ## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.2...@times-components/provider-queries@2.15.3) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/provider-queries

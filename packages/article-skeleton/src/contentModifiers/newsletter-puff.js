@@ -1,3 +1,5 @@
+import { getIsLiveOrBreakingFlag } from "../data-helper";
+
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",
   attributes: {
@@ -17,9 +19,9 @@ const newslettersBySection = [
     section: "news",
     payload: setNewsletterPayload({
       code: "TNL-101",
-      headline: "Best of Times",
+      headline: "Daily Briefing",
       copy:
-        "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
+        "Our flagship newsletter featuring our top stories and analysis, delivered every morning.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
     })
@@ -30,7 +32,7 @@ const newslettersBySection = [
       code: "TNL-103",
       headline: "Business briefing",
       copy:
-        "In-depth analysis and comment on the latest financial and economic news from our award-winning Business teams.",
+        "Morning and midday updates on financial and economic news from our award-winning business team.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800"
     })
@@ -41,9 +43,82 @@ const newslettersBySection = [
       code: "TNL-134",
       headline: "Editor’s Choice – Scotland",
       copy:
-        "The biggest stories of the week from The Times and The Sunday Times Scotland, delivered directly to you every Saturday morning.",
+        "The biggest stories from The Times and Sunday Times Scotland, every Saturday.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
+    })
+  },
+  {
+    section: "money",
+    payload: setNewsletterPayload({
+      code: "TNL-107",
+      headline: "Money newsletter",
+      copy:
+        "Personal finance and investment news from our money experts, every Monday.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
+    })
+  },
+  {
+    section: "law",
+    payload: setNewsletterPayload({
+      code: "TNL-121",
+      headline: "The Brief",
+      copy:
+        "Get expert analysis, news and commentary in The Brief, our legal editor's insider's guide, every Thursday.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800"
+    })
+  },
+  {
+    section: "home",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Inside Britain's most exclusive homes, expert advice and what's really happening in the property market, every Monday.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+    })
+  },
+  {
+    section: "luxury",
+    payload: setNewsletterPayload({
+      code: "TNL-148",
+      headline: "Luxury newsletter",
+      copy:
+        "Do you need more luxury in your life? Sign up to the Times Luxury newsletter with one click.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbd3c7a9-4d25-422a-b4a5-a48072778002.jpg?crop=1990%2C1322%2C0%2C0&resize=800"
+    })
+  },
+  {
+    section: "bricks & mortar",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Get expert advice and find out what's really happening in the property market.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+    })
+  },
+  {
+    section: "ireland",
+    payload: setNewsletterPayload({
+      code: "TNL-152",
+      headline: "Best of Times Ireland newsletter:",
+      copy:
+        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday."
+    })
+  },
+  {
+    section: "irish sport",
+    payload: setNewsletterPayload({
+      code: "TNL-152",
+      headline: "Best of Times Ireland newsletter:",
+      copy:
+        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday."
     })
   }
 ];
@@ -92,8 +167,8 @@ const checkParagraphs = (children, paywall) => {
   return paragraphs + paywallParagraphs >= 5;
 };
 
-const insertNewsletterPuff = (section, isPreview) => children => {
-  if (isPreview) return children;
+const insertNewsletterPuff = (section, isPreview, flags) => children => {
+  if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;

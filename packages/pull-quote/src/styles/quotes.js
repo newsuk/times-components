@@ -1,6 +1,4 @@
-import styleguideFactory from "@times-components/styleguide";
-
-const { fonts, spacing } = styleguideFactory();
+import { fontsWithFallback, spacing } from "@times-components/ts-styleguide";
 
 const quoteMargins = {
   cultureMagazine: {
@@ -16,7 +14,7 @@ const quoteMargins = {
 
 const quoteStyleFactory = fontName => ({
   ...(quoteMargins[fontName] || {}),
-  fontFamily: fonts[fontName] || fonts.headlineRegular,
+  fontFamily: fontsWithFallback[fontName] || fontsWithFallback.headlineRegular,
   fontSize: 75,
   marginBottom: spacing(-8),
   marginTop: 0

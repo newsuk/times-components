@@ -2,7 +2,7 @@
 /* eslint-disable no-underscore-dangle */
 
 const { ApolloClient } = require("apollo-client");
-const { AppRegistry } = require("react-native");
+const ReactDOMClient = require("react-dom");
 const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
@@ -20,7 +20,13 @@ const makeClient = options => {
   }
 
   const networkInterfaceOptions = {
-    fetch,
+    fetch: (url, opts) => {
+      const compressedUrl = url
+        .replace(/(%20)+/g, "%20")
+        .replace(/(%0A)+/g, "");
+
+      return fetch(compressedUrl, opts);
+    },
     headers: options.headers ? { ...options.headers } : {},
     uri: options.uri
   };
@@ -86,9 +92,9 @@ module.exports = (component, clientOptions, data) => {
 
   const App = component(client, analyticsStream, data, {});
 
-  AppRegistry.registerComponent("App", () => () => App);
-
-  AppRegistry.runApplication("App", {
-    rootTag: document.getElementById(clientOptions.rootTag)
-  });
+  if (clientOptions.zephrDivs && clientOptions.zephrDivs === true) {
+    ReactDOMClient.hydrate(App, document.getElementById(clientOptions.rootTag));
+  } else {
+    ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag));
+  }
 };

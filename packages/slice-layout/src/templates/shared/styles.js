@@ -1,11 +1,12 @@
-import { colours, spacing } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/ts-styleguide";
 
 const styles = {
   itemColSeparator: {
     borderColor: colours.functional.keyline,
     borderRightWidth: 1,
     borderStyle: "solid",
-    marginVertical: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   },
   itemRowSeparator: {
     borderBottomWidth: 1,

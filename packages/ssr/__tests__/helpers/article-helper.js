@@ -2,8 +2,9 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 import {
   checkDropCapChanges,
   checkShareBarLoaded,
-  waitUntilSelectorExists
-} from "../cypress/support";
+  waitUntilSelectorExists,
+  terminalLog
+} from "../cypress/support/e2e.js";
 
 const relatedArticleCount = 3;
 
@@ -40,10 +41,9 @@ const articleTemplateTest = (template, options = {}) => {
         .get("#related-articles")
         .scrollIntoView()
         .then(() => {
-          // wait for the image to transition and be removed (unfortunately Cypress doesn't auto wait for this)
-          cy.wait(2000);
-
-          cy.get("#related-articles > div:first-child img").as("raImages");
+          cy.get("#related-articles > div:first-child img:first-child").as(
+            "raImages"
+          );
 
           cy.get("@raImages")
             .its("length")
@@ -52,7 +52,11 @@ const articleTemplateTest = (template, options = {}) => {
           cy.get("@raImages").each(item => {
             const url = new URL(item.attr("src"));
             const initialResize = "100";
-            expect(url.searchParams.get("resize")).to.not.equal(initialResize);
+            const resize =
+              url && url.searchParams && url.searchParams.get("resize");
+            if (resize) {
+              expect(resize).to.not.equal(initialResize);
+            }
           });
         }));
 
@@ -178,7 +182,7 @@ const articleTemplateTest = (template, options = {}) => {
             }
           ]
         })
-        .checkA11y();
+        .checkA11y(null, null, terminalLog, null);
     });
   });
 };

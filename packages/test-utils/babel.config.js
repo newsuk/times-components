@@ -3,8 +3,18 @@ module.exports = api => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "@babel/plugin-transform-react-display-name"
+      "@babel/plugin-transform-runtime"
     ],
-    presets: ["module:metro-react-native-babel-preset"]
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          targets: {
+            node: "current"
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ]
   };
 };

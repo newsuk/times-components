@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text } from "react-native";
-import styles from "./styles";
+import {
+  VideoErrorContainer,
+  VideoErrorHeading,
+  VideoErrorBody
+} from "./styles";
 
 const VideoError = ({ height, width }) => (
-  <View
-    style={[
-      styles.background,
-      {
-        height,
-        width
-      }
-    ]}
+  <VideoErrorContainer
+    style={{
+      height,
+      width
+    }}
   >
-    <Text style={styles.heading}>Video unable to play</Text>
-    <Text style={styles.body}>
+    <VideoErrorHeading>Video unable to play</VideoErrorHeading>
+    <VideoErrorBody>
       Please check your network connection and try refreshing the page. If that
       doesn&apos;t work, please try again later
-    </Text>
-  </View>
+    </VideoErrorBody>
+  </VideoErrorContainer>
 );
 
 VideoError.propTypes = {

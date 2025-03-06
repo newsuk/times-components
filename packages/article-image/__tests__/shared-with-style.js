@@ -1,16 +1,13 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   minimaliseTransform,
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform,
-  rnwTransform
+  replaceTransform
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared-with-style.base";
@@ -28,12 +25,10 @@ export default () => {
         InlineImage: justChildren,
         InsetCaptionWeb: justChildren,
         "responsive-styles__component": justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       }),
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
-      rnwTransform(AppRegistry)
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 

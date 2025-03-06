@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import { iterator } from "@times-components/test-utils";
 import ArticleTopics from "../src/article-topics";
 import ArticleTopic from "../src/article-topic";

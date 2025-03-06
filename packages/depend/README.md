@@ -72,7 +72,7 @@ Consider following repo:
   "name": "foo",
   "version": "0.0.1",
   "dependencies": {
-    "react-native": "0.54.2",
+    "react": "16.10.0",
     "bar": "0.0.1"
   }
 }
@@ -85,7 +85,7 @@ Consider following repo:
   "name": "bar",
   "version": "0.0.2",
   "dependencies": {
-    "react-native": "0.53.1",
+    "react": "16.9.0",
     "glob": "6.2.1"
   }
 }
@@ -95,29 +95,29 @@ Consider following repo:
 
 ```dot
   digraph {
-    "foo@0.0.1" -> "react-native@0.54.2";
+    "foo@0.0.1" -> "react@16.10.0";
     "foo@0.0.1" -> "bar@0.0.1";
-    "bar@0.0.2" -> "react-native@0.53.1";
+    "bar@0.0.2" -> "react@16.9.0";
     "bar@0.0.2" -> "glob@6.2.1";
   }
 ```
 
-`depend -l . -g "*=>react-native"` will only outputs the subset that has
-react-native as a dependency:
+`depend -l . -g "*=>react"` will only outputs the subset that has
+reacte as a dependency:
 
 ```dot
 digraph {
-  "foo@0.0.1" -> "react-native@0.54.2";
-  "bar@0.0.2" -> "react-native@0.53.1";
+  "foo@0.0.1" -> "react@16.10.0";
+  "bar@0.0.2" -> "react@16.9.0";
 }
 ```
 
-`depend -l . -g "foo=>*"` will only outputs the subset that has react-native as
+`depend -l . -g "foo=>*"` will only outputs the subset that has react as
 a dependency:
 
 ```dot
 digraph {
-  "foo@0.0.1" -> "react-native@0.54.2";
+  "foo@0.0.1" -> "react@16.10.0";
   "foo@0.0.1" -> "bar@0.0.1";
 }
 ```
@@ -141,8 +141,8 @@ and `circo` can be obtained by installing the graphviz package.
 Adds `{package}@{version}` to the set of rules. Use this in conjunction with
 `--hint` to verify the expected behaviour and use `--fix` to apply the changes.
 
-`depend -l . --pick react-native@0.54.2 --hint` would set all react-native
-dependencies to _0.54.2_
+`depend -l . --pick react@16.10.0 --hint` would set all react
+dependencies to _16.10.0_
 
 ### Filter
 
@@ -153,9 +153,9 @@ matches the relationship. Currently only supported placeholder symbol is "\*".
 
 #### Examples
 
-`=>react-native@0.50.*`
+`=>react@16.9.*`
 
-everything that installs react-native ver0.50.\*
+everything that installs react ver16.9.\*
 
 `=>jest`
 

@@ -1,12 +1,12 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled, { css } from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 /* --- Body --- */
 
@@ -28,7 +28,7 @@ export const ParagraphContainer = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin-bottom: ${spacing(5)};
@@ -42,6 +42,7 @@ export const Paragraph = styled.p`
 `;
 
 export const InteractiveContainer = styled.div`
+  position: relative;
   margin-bottom: ${spacing(4)};
 
   ${props =>
@@ -65,33 +66,9 @@ export const InteractiveContainer = styled.div`
         `};
 `;
 
-/* --- Lead Asset Styles --- */
-
-export const LeadAsset = styled(View)`
-  margin-bottom: ${spacing(2)};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-`;
-
-export const LeadAssetCaptionContainer = styled(View)`
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: flex;
-  }
-`;
-
 /* --- Article Images --- */
 
-export const PrimaryImg = styled(View)`
+export const PrimaryImg = styled(TcView)`
   width: 100%;
   flex-direction: column;
   padding-bottom: ${spacing(5)};
@@ -106,11 +83,11 @@ export const PrimaryImg = styled(View)`
   }
 `;
 
-export const FullWidthImg = styled(View)`
+export const FullWidthImg = styled(TcView)`
   padding-bottom: ${spacing(4)};
 `;
 
-export const SecondaryImg = styled(View)`
+export const SecondaryImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -130,7 +107,7 @@ export const SecondaryImg = styled(View)`
   }
 `;
 
-export const InlineImg = styled(View)`
+export const InlineImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -153,7 +130,7 @@ export const InlineImg = styled(View)`
 
 /* --- Pull Quotes --- */
 
-export const PullQuoteResp = styled(View)`
+export const PullQuoteResp = styled(TcView)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
   margin-bottom: ${spacing(2)};
@@ -169,7 +146,7 @@ export const PullQuoteResp = styled(View)`
   }
 `;
 
-export const PullQuoteContainer = styled(View)`
+export const PullQuoteContainer = styled(TcView)`
   display: block;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -185,7 +162,7 @@ export const PullQuoteContainer = styled(View)`
 `;
 
 const sharedHeadingStyles = `color: ${colours.functional.primary};
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-weight: 400;
   margin: 0 auto ${spacing(2)};
   padding-right: ${spacing(2)};
@@ -251,47 +228,6 @@ export const Heading6 = styled.h6`
   }
 `;
 
-export const NativeAd = styled.div`
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-  @media (min-width: 768px) {
-    min-height: 120px;
-  }
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
-  &.hidden {
-    visibility: hidden;
-  }
-`;
-
-export const NativeAdTitle = styled.h2`
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  flex: 1 1 100%;
-  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-`;
-
-export const Ad = styled.div`
-  flex: 1 1 50%;
-  @media (max-width: 767px) {
-    flex: 1 1 46%;
-    &:first-of-type {
-      margin-right: 1.5%;
-    }
-    &:last-child {
-      margin-left: 1.5%;
-    }
-  }
-`;
-
 export const InlineAdWrapper = styled.div`
   clear: both;
   min-height: 283px;
@@ -304,19 +240,20 @@ export const InlineAdWrapper = styled.div`
     min-height: 123px;
   }
 
-  @media (min-width: 970px) {
+  @media (min-width: 1024px) {
     min-height: 283px;
   }
 `;
 
-export const InlineAdTitle = styled.h2`
+export const InlineAdTitle = styled.span`
   border-bottom: 1px solid rgb(219, 219, 219);
   color: #696969;
   flex: 1 1 100%;
-  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
+  font: normal ${fontSizes.teaser}px / 17px ${fontsWithFallback.bodyRegular};
   letter-spacing: 0.6px;
   margin: 0 0 10px;
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
 `;

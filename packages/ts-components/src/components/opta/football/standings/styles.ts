@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-import { WidgetContainerBase } from '../shared-styles';
+import { WidgetContainerBase } from '../../shared/shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  columns?: boolean;
+}>`
   .Opta {
     h3.Opta-groupname {
       height: 40px;
@@ -32,6 +34,10 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       margin: 0;
       padding: 0;
       background-color: transparent;
+
+      @media (min-width: ${breakpoints.medium}px) {
+        ${({ columns }) => columns && 'column-count: 2;'};
+      }
 
       &.Opta-Dropdown {
         .Opta-Nav {
@@ -155,7 +161,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               padding: 0;
               color: ${colours.functional.primary};
               font-family: ${fonts.supporting};
-              font-size: 14px;
+              font-size: 13px;
               line-height: 14px;
               font-weight: normal;
               text-align: center;
@@ -185,7 +191,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
             th {
               width: 42px;
-              padding: 6px 0 0 0;
+              padding: 0;
               color: ${colours.section.sport};
               font-family: ${fonts.supporting};
               font-size: 14px;
@@ -196,7 +202,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
               @media (min-width: ${breakpoints.medium}px) {
                 width: 50px;
-                font-size: 16px;
+                font-size: 15px;
                 line-height: 16px;
               }
             }

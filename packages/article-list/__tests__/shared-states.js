@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import {
@@ -58,7 +58,7 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleList
             adConfig={adConfig}
-            articleListHeader={<Text>Some Header</Text>}
+            articleListHeader={<TcText>Some Header</TcText>}
             emptyStateMessage="Empty State"
             error={apolloError}
             refetch={() => {}}

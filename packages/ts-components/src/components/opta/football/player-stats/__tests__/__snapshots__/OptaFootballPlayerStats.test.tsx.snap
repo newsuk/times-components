@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptaFootballPlayerStats should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa laZDmH"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb deUMuZ team-flags"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaFootballPlayerStats should render correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa Ssmqo"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb deUMuZ team-flags"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -19,9 +19,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     >
       <title>
         Some Short Headline
-         | 
-        
-        The Times
       </title>
       <meta
         content="max-image-preview:large"
@@ -48,7 +45,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         property="og:type"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         property="og:url"
       />
       <meta
@@ -64,7 +61,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         name="twitter:card"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         name="twitter:url"
       />
       <meta
@@ -74,17 +71,20 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section","url":"https://url.io"}
       </script>
+      <script
+        async={true}
+        src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
     </Helmet>
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div>
@@ -146,9 +146,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               <div>
                 <div>
                   <img
-                    alt="Some Caption"
-                    src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                    alt="Some Title"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
               </div>
@@ -176,6 +177,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   articleHeadline=""
                   articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
                   articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
                   savingEnabled={true}
                   sharingEnabled={true}
                 />
@@ -184,33 +186,25 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
-        <p>
-          Some content
-        </p>
+      <article>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <p>
+              Some content
+            </p>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline=""
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -257,6 +251,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -282,7 +277,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 </div>
 `;
 
-exports[`4. an article with ads 1`] = `
+exports[`4. an article with ads with .co.uk 1`] = `
 <div>
   <div
     id="article-marketing-header"
@@ -297,9 +292,6 @@ exports[`4. an article with ads 1`] = `
     >
       <title>
         Some Headline
-         | 
-        
-        The Times
       </title>
       <meta
         content="max-image-preview:large"
@@ -326,7 +318,7 @@ exports[`4. an article with ads 1`] = `
         property="og:type"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         property="og:url"
       />
       <meta
@@ -342,7 +334,7 @@ exports[`4. an article with ads 1`] = `
         name="twitter:card"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         name="twitter:url"
       />
       <meta
@@ -352,17 +344,20 @@ exports[`4. an article with ads 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section","url":"https://url.io"}
       </script>
+      <script
+        async={true}
+        src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
     </Helmet>
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div>
@@ -424,9 +419,10 @@ exports[`4. an article with ads 1`] = `
               <div>
                 <div>
                   <img
-                    alt="Some Caption"
-                    src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                    alt="Some Title"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
               </div>
@@ -454,6 +450,7 @@ exports[`4. an article with ads 1`] = `
                   articleHeadline="Some Headline"
                   articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
                   articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
                   savingEnabled={true}
                   sharingEnabled={true}
                 />
@@ -462,38 +459,30 @@ exports[`4. an article with ads 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <div>
-          <h2>
-            Advertisement
-          </h2>
-          <AdContainer
-            slotName="inline-ad"
-          />
+          <div>
+            <div>
+              <span>
+                Advertisement
+              </span>
+              <AdContainer
+                slotName="inline-ad"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -540,6 +529,7 @@ exports[`4. an article with ads 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -565,7 +555,7 @@ exports[`4. an article with ads 1`] = `
 </div>
 `;
 
-exports[`7. an article with no author 1`] = `
+exports[`5. an article with ads with .com 1`] = `
 <div>
   <div
     id="article-marketing-header"
@@ -580,9 +570,284 @@ exports[`7. an article with no author 1`] = `
     >
       <title>
         Some Headline
-         | 
-        
-        The Times
+      </title>
+      <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
+      <meta
+        content="Some Headline"
+        name="article:title"
+      />
+      <meta
+        content="The Times"
+        name="article:publication"
+      />
+      <meta
+        content="Some byline"
+        name="author"
+      />
+      <meta
+        content="Some Headline"
+        property="og:title"
+      />
+      <meta
+        content="article"
+        property="og:type"
+      />
+      <meta
+        content="https://url.io"
+        property="og:url"
+      />
+      <meta
+        content="https://crop169.io?resize=1200"
+        property="og:image"
+      />
+      <meta
+        content="Some Headline"
+        name="twitter:title"
+      />
+      <meta
+        content="summary_large_image"
+        name="twitter:card"
+      />
+      <meta
+        content="https://url.io"
+        name="twitter:url"
+      />
+      <meta
+        content="https://crop169.io?resize=1200"
+        name="twitter:image"
+      />
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section","url":"https://url.io"}
+      </script>
+      <script
+        async={true}
+        src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
+    </Helmet>
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main>
+      <div>
+        <div>
+          <div>
+            <Image
+              accessibilityLabel="author-image"
+              aspectRatio={1}
+              uri={null}
+            />
+          </div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Headline
+          </h1>
+          <div>
+            <ArticleFlags />
+          </div>
+          <div>
+            <div>
+              <ArticleBylineWithLinks
+                ast={
+                  Array [
+                    Object {
+                      "byline": Array [
+                        Object {
+                          "attributes": Object {},
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "Some byline",
+                              },
+                              "children": Array [],
+                              "name": "text",
+                            },
+                          ],
+                          "name": "inline",
+                        },
+                      ],
+                    },
+                  ]
+                }
+              />
+            </div>
+            <div />
+            <div>
+              <div>
+                <DatePublication
+                  date="2015-03-13T18:54:58.000Z"
+                  publication="TIMES"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <figure>
+            <div>
+              <div>
+                <div>
+                  <img
+                    alt="Some Title"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+                  />
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <CenteredCaption
+                credits="Some Credits"
+                text="Some Caption"
+              />
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  hostName="www.thetimes.com"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article>
+        <div>
+          <div>
+            <div>
+              <span>
+                Advertisement
+              </span>
+              <AdContainer
+                slotName="inline-ad"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          domainSpecificUrl="www.thetimes.com"
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
+          relatedArticleSlice={
+            Object {
+              "__typename": "StandardSlice",
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          section="Some Section"
+          sharingEnabled={true}
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
+
+exports[`8. an article with no author 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
+  >
+    <Helmet
+      encodeSpecialCharacters={false}
+    >
+      <title>
+        Some Headline
       </title>
       <meta
         content="max-image-preview:large"
@@ -609,7 +874,7 @@ exports[`7. an article with no author 1`] = `
         property="og:type"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         property="og:url"
       />
       <meta
@@ -625,7 +890,7 @@ exports[`7. an article with no author 1`] = `
         name="twitter:card"
       />
       <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+        content="https://url.io"
         name="twitter:url"
       />
       <meta
@@ -635,17 +900,20 @@ exports[`7. an article with no author 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Rick Broadbent"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"Some Section","keywords":"Section:Some Section","url":"https://url.io"}
       </script>
+      <script
+        async={true}
+        src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
     </Helmet>
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div>
@@ -728,9 +996,10 @@ exports[`7. an article with no author 1`] = `
               <div>
                 <div>
                   <img
-                    alt="Some Caption"
-                    src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                    alt="Some Title"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
               </div>
@@ -758,6 +1027,7 @@ exports[`7. an article with no author 1`] = `
                   articleHeadline="Some Headline"
                   articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
                   articleUrl="https://url.io"
+                  hostName="https://www.thetimes.co.uk"
                   savingEnabled={true}
                   sharingEnabled={true}
                 />
@@ -766,33 +1036,25 @@ exports[`7. an article with no author 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
-        <p>
-          Some content
-        </p>
+      <article>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <p>
+              Some content
+            </p>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
           commentsEnabled={true}
+          domainSpecificUrl="https://www.thetimes.co.uk"
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -839,6 +1101,7 @@ exports[`7. an article with no author 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [

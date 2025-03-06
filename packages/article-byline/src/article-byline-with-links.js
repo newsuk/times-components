@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types, no-sequences, no-unused-expressions */
 import React from "react";
-import { Platform } from "react-native";
 import { TextLink } from "@times-components/link";
+import { checkStylesForUnits } from "@times-components/utils";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
@@ -17,7 +17,7 @@ const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
       onPress={e => {
         onAuthorPress(e, { name, slug });
       }}
-      style={styles.link}
+      style={checkStylesForUnits(styles.link)}
       url={url}
     >
       {children}
@@ -29,15 +29,11 @@ const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
   renderByline(
     withTrackEvents(AuthorComponent),
     ast,
-    // TODO: revert platform switch after design signoff
-    centered && Platform.OS === "web"
-      ? [styles.text, styles.centered]
-      : styles.text,
+    centered ? [styles.text, styles.centered] : styles.text,
     props
   );
 
 ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";
-
 ArticleBylineWithLinks.propTypes = propTypes;
 ArticleBylineWithLinks.defaultProps = defaultProps;
 

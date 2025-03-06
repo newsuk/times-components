@@ -1,126 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. with responsive styles 1`] = `
-.c0 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: "TimesDigitalW04-Regular";
-  font-size: 17px;
-  line-height: 26px;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  target={null}
->
-  The Times
-</a>
+exports[`Link renders the link 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+    >
+      The Times
+    </a>
+  </div>
+</body>
 `;
 
-exports[`2. with a target 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  target="_blank"
->
-  The Times
-</a>
-`;
-
-exports[`3. renders link 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  target={null}
->
-  The Times
-</a>
-`;
-
-exports[`4. renders link with target 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  target="_blank"
->
-  The Times
-</a>
-`;
-
-exports[`5. renders text link 1`] = `
-<a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
-  href="http://thetimes.co.uk"
-  role="link"
->
-  The Times
-</a>
-`;
-
-exports[`6. text link with multiple styles 1`] = `
-<a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
-  href="http://thetimes.co.uk"
-  role="link"
-  style={
-    Object {
-      "backgroundColor": "rgba(0,0,255,1.00)",
-      "color": "rgba(255,0,0,1.00)",
-    }
-  }
->
-  The Times
-</a>
-`;
-
-exports[`7. text link with children 1`] = `
-<a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
-  href="http://thetimes.co.uk"
-  role="link"
->
-  <p>
-    The Times
-  </p>
-</a>
-`;
-
-exports[`8. text link with target 1`] = `
-<a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
-  href="http://thetimes.co.uk"
-  rel=" noopener noreferrer"
-  role="link"
-  target="_blank"
->
-  <p>
-    The Times
-  </p>
-</a>
+exports[`Link renders the link with a target 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+      target="_blank"
+    >
+      The Times
+    </a>
+  </div>
+</body>
 `;

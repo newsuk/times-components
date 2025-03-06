@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colours, fonts } from '@times-components/styleguide';
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const Link = styled.a`
   display: flex;
@@ -19,5 +19,5 @@ export const LinkText = styled.div`
   margin-top: 1px;
   margin-right: 12px;
   font-family: ${fonts.supporting};
-  font-size: 16px;
+  font-size: 15px;
 `;

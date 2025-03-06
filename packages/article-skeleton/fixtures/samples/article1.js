@@ -121,6 +121,7 @@ export default {
                 id: "cf094960-0455-42e1-b4af-c8d6395c4136",
                 display: "primary",
                 caption: "Madsen crashed into Tanfield’s back wheel",
+                title: "The title",
                 credits: null,
                 url:
                   "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa7a06232-f450-11eb-a2a3-afea84050239.jpg?crop=1003%2C669%2C129%2C141",
@@ -848,7 +849,7 @@ export default {
       hasVideo: false,
       headline:
         "Tokyo Olympics: ‘Denmark bent rules and caused crash’ that ended British team’s hopes",
-      id: "b708d244-f46f-11eb-a2a3-afea84050239",
+      id: "c8bf6998-d498-11ed-b5c3-54651fc826e9",
       label: "Olympics",
       publicationName: "TIMES",
       publishedTime: "2021-08-03T16:00:00.000Z",

@@ -1,10 +1,8 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
+export default {
   ast: PropTypes.object.isRequired,
-  onLinkPress: PropTypes.func
-};
-
-export const defaultProps = {
-  onLinkPress: () => {}
+  section: PropTypes.string,
+  headline: PropTypes.string,
+  isLiveOrBreaking: PropTypes.string
 };

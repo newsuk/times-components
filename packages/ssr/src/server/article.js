@@ -18,16 +18,18 @@ module.exports = (
     makeTopicUrl,
     navigationMode,
     commentingConfig,
+    commentCount,
+    articleDataFromRender,
     paidContentClassName,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
-    olympicsKeys,
     getFallbackThumbnailUrl169,
-    commentCount
+    zephrDivs,
+    sharingSavingFlag = true,
+    commentingFlag = true,
+    showAudioPlayer,
+    storefrontConfig,
+    isEntitlementFeatureEnabled = false
   },
   userState
 ) => {
@@ -73,19 +75,22 @@ module.exports = (
       getFallbackThumbnailUrl169,
       navigationMode,
       commentingConfig,
+      commentCount,
+      articleDataFromRender,
       userState,
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
-      olympicsKeys,
-      commentCount
+      zephrDivs,
+      sharingSavingFlag,
+      commentingFlag,
+      showAudioPlayer,
+      storefrontConfig,
+      isEntitlementFeatureEnabled
     },
     name: "article"
   };
+
   return runServer(article, options).catch(error => {
     throw new Error(error);
   });

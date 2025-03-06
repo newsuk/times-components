@@ -16,9 +16,10 @@ functions from `markup-forest`, which iterates over and renders with the given
 - paragraph
 - strong
 - text
+- link
 
 This package should only have core renderers with no dependencies beyond
-React/React Native. If a consumer would like to support more complex elements
+React. If a consumer would like to support more complex elements
 they'll need to provide renderers for them.
 
 ## Contributing
@@ -41,7 +42,7 @@ yarn lint
 
 ## Testing
 
-Testing can be done on each platform individually
+Testing can be done by running:
 
 ```
 yarn test:web
@@ -76,12 +77,6 @@ const data = [
 renderTrees(data, coreRenderers);
 
 /*
-native
-
-<Text>
-  Some text value here
-</Text>
-
 web
 
 <span>

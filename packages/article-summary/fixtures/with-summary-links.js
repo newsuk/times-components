@@ -1,5 +1,5 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
 const defaultHeadline = "Sajid Javid to end hostile era for illegal immigrants";

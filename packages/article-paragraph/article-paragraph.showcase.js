@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
-import { colours, themeFactory } from "@times-components/styleguide";
+import { colours, themeFactory } from "@times-components/ts-styleguide";
 import { ArticleLink } from "@times-components/article-skeleton";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
@@ -88,5 +88,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/Article Paragraph|Dropcap"
+  name: "PRIMITIVES ARTICLE PARAGRAPH/Dropcap"
 };

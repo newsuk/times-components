@@ -1,5 +1,5 @@
 const defaultCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104";
+  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500";
 const defaultHasVideo = false;
 const defaultHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";

@@ -122,6 +122,7 @@ exports[`5. with a twitter handle 1`] = `
       </div>
       <div>
         <IconTwitter
+          fillColour="currentColor"
           height={10}
           width={11}
         />

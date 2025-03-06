@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,24 +5,10 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks";
 import shared from "./images.base";
-
-const styles = [
-  "alignItems",
-  "flex",
-  "flexBasis",
-  "fontWeight",
-  "justifyContent",
-  "lineHeight",
-  "marginBottom",
-  "marginTop",
-  "paddingBottom",
-  "paddingTop"
-];
 
 export default () => {
   addSerializers(
@@ -35,8 +20,7 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      hoistStyleTransform,
-      rnwTransform(AppRegistry, styles)
+      hoistStyleTransform
     )
   );
 

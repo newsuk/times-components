@@ -48,7 +48,8 @@ const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
           image: "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
           jobTitle: "Defence Editor",
           name: "Deborah Haynes",
-          twitter: "jdoe"
+          twitter: "jdoe",
+          contractualTitle: "Contractual Title"
         })
       }
     },
@@ -106,13 +107,15 @@ export default ({
                 shortIdentifier: `968n7tdck${itemIndex}`,
                 slug: `this-is-slug-${itemIndex}`,
                 summary: [],
+                categoryPath: `/article${itemIndex}`,
                 url: "https://url.io"
               },
               itemIndex
             );
           },
           Crop: () => ({
-            url: "https://placeimg.com/300/200/tech"
+            url:
+              "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg"
           }),
           Image: () => {
             imageIndex += 1;

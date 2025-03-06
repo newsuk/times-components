@@ -19,23 +19,15 @@ exports[`<FetchProvider> error 1`] = `
 exports[`<FetchProvider> fetch 1`] = `
 <DocumentFragment>
   <div>
-    boo
+    Loading
   </div>
 </DocumentFragment>
 `;
 
-exports[`<FetchProvider> loading 1`] = `
+exports[`<FetchProvider> fetch 2`] = `
 <DocumentFragment>
   <div>
-    boo
-  </div>
-</DocumentFragment>
-`;
-
-exports[`<FetchProvider> preview 1`] = `
-<DocumentFragment>
-  <div>
-    boo
+    Fetched
   </div>
 </DocumentFragment>
 `;

@@ -1,6 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   container: {
     borderColor: colours.functional.keyline,
@@ -20,7 +19,7 @@ const styles = {
     color: colours.functional.secondary,
     ...fontFactory({
       font: "supporting",
-      fontSize: "link"
+      fontSize: "linkTopic"
     }),
     position: "relative"
   },

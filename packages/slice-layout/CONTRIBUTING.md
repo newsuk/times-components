@@ -9,8 +9,7 @@ ideas, conventions and information on submitting a PR
 Slice layout templates sit within their own named directory within the `/templates`
 directory. The Components take functions as `props` (render props) that pass
 configuration objects to consumers of Slice layout. The configuration objects are
-generated from `config.js` and `config.web.js` for native and web respectively.
-The objects manage JS properties for native and both JS properties _and_
+generated is from `config.js`. The objects manage JS properties _and_
 responsive CSS class names for web, that provide a suggested layout and format
 for the children that will be laid out in each template.
 
@@ -48,11 +47,9 @@ An example template looks like this:
 .
 └── standard
     ├── config.js
-    ├── config.web.js
     ├── index.js
-    ├── index.web.js
     ├── proptypes.js
-    └── responsive.web.js
+    └── responsive.js
 ```
 
 ### Image placeholder rules

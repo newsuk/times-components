@@ -10,48 +10,176 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
     <RelatedArticles
+      hideBorder={false}
       isVisible={true}
     />
-    <RelatedArticleSlice
-      heading="Related Articles"
-    />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
-    <div
-      id="sponsored-article"
-    />
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
-    publishedTime="2020-07-10T16:00:00.000Z"
   />,
 ]
 `;
 
-exports[`2. no related articles, topics and comments when user not logged in, only sponsored div 1`] = `
-<div
-  id="sponsored-article-container"
->
+exports[`2. no topics and comments when user not logged in, only related articles, category articles, and sponsored div 1`] = `
+Array [
   <div
-    id="sponsored-article"
-  />
-</div>
+    id="related-articles"
+  >
+    <RelatedArticles
+      hideBorder={true}
+      isVisible={true}
+    />
+    <div
+      id="categorised-articles"
+    >
+      <div>
+        More from category
+      </div>
+      <div>
+        <div>
+          <article>
+            <div>
+              <div>
+                <a
+                  href="/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+                >
+                  <div>
+                    <div>
+                      <img
+                        alt="TMS: Pratchett’s law of the jungle - Disable Saving 2"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <p>
+                Health
+              </p>
+              <div>
+                <a
+                  href="/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+                >
+                  <h3>
+                    TMS: Pratchett’s law of the jungle - Disable Saving 2
+                  </h3>
+                </a>
+              </div>
+              <p>
+                March 23 2015, 8.39pm
+              </p>
+              
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div
+      id="categorised-articles"
+    >
+      <div>
+        More from parent
+      </div>
+      <div>
+        <div>
+          <article>
+            <div>
+              <div>
+                <a
+                  href="/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+                >
+                  <div>
+                    <div>
+                      <img
+                        alt="TMS: Pratchett’s law of the jungle - Disable Saving"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <p>
+                Health
+              </p>
+              <div>
+                <a
+                  href="/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
+                >
+                  <h3>
+                    TMS: Pratchett’s law of the jungle - Disable Saving
+                  </h3>
+                </a>
+              </div>
+              <p>
+                March 23 2015, 7.39pm
+              </p>
+              
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
+  </div>,
+]
 `;
 
 exports[`3. read only comments when the user is a share token reader 1`] = `
@@ -64,36 +192,49 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
     <RelatedArticles
+      hideBorder={false}
       isVisible={true}
     />
-    <RelatedArticleSlice
-      heading="Related Articles"
-    />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
-    <div
-      id="sponsored-article"
-    />
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
-    isReadOnly={true}
   />,
 ]
 `;
@@ -108,36 +249,49 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
     <RelatedArticles
+      hideBorder={false}
       isVisible={true}
     />
-    <RelatedArticleSlice
-      heading="Related Articles"
-    />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
-    <div
-      id="sponsored-article"
-    />
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
-    publishedTime="2020-07-10T16:00:00.000Z"
   />,
 ]
 `;

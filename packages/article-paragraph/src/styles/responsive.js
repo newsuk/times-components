@@ -2,10 +2,10 @@ import styled, { css } from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const dropCapFontSizes = {
   cultureMagazine: 104,
@@ -31,13 +31,13 @@ const dropCapMargins = {
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   display: block;
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin: 0 auto ${spacing(5)};
   padding-right: ${spacing(2)};
   padding-left: ${spacing(2)};
-   
+
   // Clear fix for floated dropcap
   &:first-of-type:after {
     content: "";
@@ -68,6 +68,6 @@ export const DropCap = styled.span`
     margin-top: ${dropCapMargins[font]}em;
     line-height: ${lineHeights[font]}em;
     font-size: ${dropCapFontSizes[font]}px;
-    font-family: "${fonts[font]}";
+    font-family: ${fontsWithFallback[font]};
   `};
 `;

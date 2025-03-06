@@ -10,17 +10,19 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     debounceTimeMs,
     navigationMode,
     commentingConfig,
+    articleDataFromRender,
     paidContentClassName,
     userState,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
-    olympicsKeys,
-    commentCount
+    zephrDivs,
+    sharingSavingFlag = true,
+    commentingFlag = true,
+    showAudioPlayer,
+    storefrontConfig,
+    isEntitlementFeatureEnabled
   } = window.nuk.article;
+
   const { getCookieValue } = window.nuk;
 
   const data = {
@@ -31,24 +33,27 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     navigationMode,
     getCookieValue,
     commentingConfig,
+    articleDataFromRender,
     paidContentClassName,
     userState,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
-    olympicsKeys,
-    commentCount
+    zephrDivs,
+    sharingSavingFlag,
+    commentingFlag,
+    showAudioPlayer,
+    storefrontConfig,
+    isEntitlementFeatureEnabled
   };
 
   const clientOptions = {
     rootTag,
-    useGET: false,
+    useGET: true,
     headers: {
       "x-new-topic-data-source": true
-    }
+    },
+    zephrDivs,
+    showAudioPlayer
   };
 
   runClient(article, clientOptions, data);

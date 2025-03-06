@@ -14,5 +14,6 @@ window.nuk.graphqlapi = {
 };
 window.nuk.user = {
   ...window.nuk.user,
+  hasAccess: true,
   isLoggedIn: true
 };

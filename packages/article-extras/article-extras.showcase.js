@@ -2,28 +2,12 @@
 
 import React from "react";
 import styled from "styled-components";
-import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import ArticleExtras from "./src/article-extras";
-import {
-  relatedArticleSlice,
-  topics,
-  latestFromSection
-} from "./fixtures/article-extras";
-
-const algoliaSearchKeys = {
-  applicationId: process.env.STORYBOOK_ALGOLIA_ID || "",
-  apiKey: process.env.STORYBOOK_ALGOLIA_KEY || "",
-  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
-};
+import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const commentingConfig = {
-  account: {
-    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
-    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
-  },
-  switchOver:
-    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2020-08-10T16:00:00.000Z"
+  account: "sp_pCQgrRiN"
 };
 
 const Container = styled.div`
@@ -42,6 +26,7 @@ const getAnalyticsStream = action => event => {
   console.log("analytics-action", event);
   action("analytics-action")(event);
 };
+
 export default {
   children: [
     {
@@ -49,34 +34,17 @@ export default {
         const slice = boolean("Related Article Slice", false, "User State");
         return (
           <Container className={slice ? "slice" : undefined}>
-            <AlgoliaSearchProvider
-              algoliaSearchKeys={algoliaSearchKeys}
-              article={{ id: "dummy-article-id" }}
+            <ArticleExtras
               analyticsStream={getAnalyticsStream(action)}
-            >
-              <ArticleExtras
-                analyticsStream={() => {}}
-                articleId="dummy-article-id"
-                commentsEnabled
-                registerNode={() => {}}
-                relatedArticleSlice={relatedArticleSlice}
-                relatedArticlesVisible
-                commentingConfig={commentingConfig}
-                topics={topics}
-                additionalRelatedArticlesFlag={boolean(
-                  "Additional Featured Articles",
-                  false,
-                  "User State"
-                )}
-                latestFromSectionFlag={boolean(
-                  "Latest from Section",
-                  false,
-                  "User State"
-                )}
-                section="Comment"
-                latestFromSection={latestFromSection}
-              />
-            </AlgoliaSearchProvider>
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              commentingConfig={commentingConfig}
+              topics={topics}
+              section="Comment"
+            />
           </Container>
         );
       },
@@ -118,23 +86,16 @@ export default {
         };
         return (
           <>
-            <AlgoliaSearchProvider
-              algoliaSearchKeys={algoliaSearchKeys}
-              article={article}
+            <ArticleExtras
               analyticsStream={getAnalyticsStream(action)}
-            >
-              <ArticleExtras
-                analyticsStream={getAnalyticsStream(action)}
-                articleId={article.id}
-                commentsEnabled
-                registerNode={() => {}}
-                relatedArticleSlice={relatedArticleSlice}
-                relatedArticlesVisible={false}
-                commentingConfig={commentingConfig}
-                topics={topics}
-                additionalRelatedArticlesFlag
-              />
-            </AlgoliaSearchProvider>
+              articleId={article.id}
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible={false}
+              commentingConfig={commentingConfig}
+              topics={topics}
+            />
           </>
         );
       },

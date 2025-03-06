@@ -3,6 +3,2356 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.13.2...@times-components/key-facts@2.13.3) (2025-02-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.13.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.13.1...@times-components/key-facts@2.13.2) (2025-02-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.13.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.13.0...@times-components/key-facts@2.13.1) (2025-02-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.13.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.125...@times-components/key-facts@2.13.0) (2025-02-05)
+
+
+### Features
+
+* **TMD-1364:** Key moments block cutting off content when placed low… ([#4045](https://github.com/newsuk/times-components/issues/4045)) ([173a148](https://github.com/newsuk/times-components/commit/173a1489e51159e42d7aadf45eeef3c57cda8324))
+
+
+
+
+
+## [2.12.125](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.124...@times-components/key-facts@2.12.125) (2025-01-29)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.124](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.123...@times-components/key-facts@2.12.124) (2025-01-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.123](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.122...@times-components/key-facts@2.12.123) (2025-01-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.122](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.121...@times-components/key-facts@2.12.122) (2025-01-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.121](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.120...@times-components/key-facts@2.12.121) (2025-01-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.120](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.119...@times-components/key-facts@2.12.120) (2025-01-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.119](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.118...@times-components/key-facts@2.12.119) (2025-01-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.118](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.117...@times-components/key-facts@2.12.118) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.117](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.116...@times-components/key-facts@2.12.117) (2024-12-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.116](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.115...@times-components/key-facts@2.12.116) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.115](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.114...@times-components/key-facts@2.12.115) (2024-12-05)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.114](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.113...@times-components/key-facts@2.12.114) (2024-12-03)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.113](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.112...@times-components/key-facts@2.12.113) (2024-12-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.112](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.111...@times-components/key-facts@2.12.112) (2024-11-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.111](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.110...@times-components/key-facts@2.12.111) (2024-11-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.110](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.109...@times-components/key-facts@2.12.110) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.109](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.108...@times-components/key-facts@2.12.109) (2024-11-05)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.108](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.107...@times-components/key-facts@2.12.108) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.107](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.106...@times-components/key-facts@2.12.107) (2024-10-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.106](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.105...@times-components/key-facts@2.12.106) (2024-10-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.105](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.104...@times-components/key-facts@2.12.105) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.104](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.103...@times-components/key-facts@2.12.104) (2024-10-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.103](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.102...@times-components/key-facts@2.12.103) (2024-10-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.102](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.101...@times-components/key-facts@2.12.102) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.101](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.100...@times-components/key-facts@2.12.101) (2024-10-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.100](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.99...@times-components/key-facts@2.12.100) (2024-10-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.99](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.98...@times-components/key-facts@2.12.99) (2024-09-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.98](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.97...@times-components/key-facts@2.12.98) (2024-09-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.97](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.96...@times-components/key-facts@2.12.97) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.96](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.95...@times-components/key-facts@2.12.96) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.95](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.94...@times-components/key-facts@2.12.95) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.94](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.93...@times-components/key-facts@2.12.94) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.93](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.92...@times-components/key-facts@2.12.93) (2024-08-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.92](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.91...@times-components/key-facts@2.12.92) (2024-08-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.91](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.90...@times-components/key-facts@2.12.91) (2024-08-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.90](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.89...@times-components/key-facts@2.12.90) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.89](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.88...@times-components/key-facts@2.12.89) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.88](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.87...@times-components/key-facts@2.12.88) (2024-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.87](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.86...@times-components/key-facts@2.12.87) (2024-07-30)
+
+
+### Bug Fixes
+
+* **TMD-551:** render mislabelled paywall key facts ([#3893](https://github.com/newsuk/times-components/issues/3893)) ([3a33244](https://github.com/newsuk/times-components/commit/3a33244d4481675b9c8e0ab4c53b5eaaf52f9f2c))
+
+
+
+
+
+## [2.12.86](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.85...@times-components/key-facts@2.12.86) (2024-07-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.85](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.84...@times-components/key-facts@2.12.85) (2024-07-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.84](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.83...@times-components/key-facts@2.12.84) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.83](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.82...@times-components/key-facts@2.12.83) (2024-07-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.82](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.81...@times-components/key-facts@2.12.82) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.81](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.80...@times-components/key-facts@2.12.81) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.80](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.79...@times-components/key-facts@2.12.80) (2024-06-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.79](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.78...@times-components/key-facts@2.12.79) (2024-06-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.78](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.77...@times-components/key-facts@2.12.78) (2024-06-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.77](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.76...@times-components/key-facts@2.12.77) (2024-06-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.76](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.75...@times-components/key-facts@2.12.76) (2024-06-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.75](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.74...@times-components/key-facts@2.12.75) (2024-06-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.74](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.73...@times-components/key-facts@2.12.74) (2024-06-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.73](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.72...@times-components/key-facts@2.12.73) (2024-06-03)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.72](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.71...@times-components/key-facts@2.12.72) (2024-05-31)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.71](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.70...@times-components/key-facts@2.12.71) (2024-05-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.70](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.69...@times-components/key-facts@2.12.70) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.69](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.68...@times-components/key-facts@2.12.69) (2024-05-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.68](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.67...@times-components/key-facts@2.12.68) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.67](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.66...@times-components/key-facts@2.12.67) (2024-05-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.66](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.65...@times-components/key-facts@2.12.66) (2024-05-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.65](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.64...@times-components/key-facts@2.12.65) (2024-05-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.64](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.63...@times-components/key-facts@2.12.64) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.63](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.62...@times-components/key-facts@2.12.63) (2024-04-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.62](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.61...@times-components/key-facts@2.12.62) (2024-04-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.61](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.60...@times-components/key-facts@2.12.61) (2024-04-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.60](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.59...@times-components/key-facts@2.12.60) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.59](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.58...@times-components/key-facts@2.12.59) (2024-03-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.58](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.57...@times-components/key-facts@2.12.58) (2024-02-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.57](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.56...@times-components/key-facts@2.12.57) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.56](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.55...@times-components/key-facts@2.12.56) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.55](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.54...@times-components/key-facts@2.12.55) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.54](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.53...@times-components/key-facts@2.12.54) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.53](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.52...@times-components/key-facts@2.12.53) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.52](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.51...@times-components/key-facts@2.12.52) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.51](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.50...@times-components/key-facts@2.12.51) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.50](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.49...@times-components/key-facts@2.12.50) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.49](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.48...@times-components/key-facts@2.12.49) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.48](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.47...@times-components/key-facts@2.12.48) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.47](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.46...@times-components/key-facts@2.12.47) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.46](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.45...@times-components/key-facts@2.12.46) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.45](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.44...@times-components/key-facts@2.12.45) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.44](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.43...@times-components/key-facts@2.12.44) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.43](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.42...@times-components/key-facts@2.12.43) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.42](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.41...@times-components/key-facts@2.12.42) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.41](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.40...@times-components/key-facts@2.12.41) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.40](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.39...@times-components/key-facts@2.12.40) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.39](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.38...@times-components/key-facts@2.12.39) (2023-11-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.38](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.37...@times-components/key-facts@2.12.38) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.37](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.36...@times-components/key-facts@2.12.37) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.36](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.35...@times-components/key-facts@2.12.36) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.35](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.34...@times-components/key-facts@2.12.35) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.34](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.33...@times-components/key-facts@2.12.34) (2023-10-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.33](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.32...@times-components/key-facts@2.12.33) (2023-10-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.32](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.31...@times-components/key-facts@2.12.32) (2023-09-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.31](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.30...@times-components/key-facts@2.12.31) (2023-09-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.30](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.29...@times-components/key-facts@2.12.30) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.29](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.28...@times-components/key-facts@2.12.29) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.28](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.27...@times-components/key-facts@2.12.28) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.27](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.26...@times-components/key-facts@2.12.27) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.26](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.25...@times-components/key-facts@2.12.26) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.25](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.24...@times-components/key-facts@2.12.25) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.24](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.23...@times-components/key-facts@2.12.24) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.23](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.22...@times-components/key-facts@2.12.23) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.22](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.21...@times-components/key-facts@2.12.22) (2023-08-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.21](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.20...@times-components/key-facts@2.12.21) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.20](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.19...@times-components/key-facts@2.12.20) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.19](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.18...@times-components/key-facts@2.12.19) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.18](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.17...@times-components/key-facts@2.12.18) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.17](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.16...@times-components/key-facts@2.12.17) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.16](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.15...@times-components/key-facts@2.12.16) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.15](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.14...@times-components/key-facts@2.12.15) (2023-06-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.14](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.13...@times-components/key-facts@2.12.14) (2023-06-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.13](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.12...@times-components/key-facts@2.12.13) (2023-06-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.12](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.11...@times-components/key-facts@2.12.12) (2023-06-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.11](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.10...@times-components/key-facts@2.12.11) (2023-05-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.10](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.9...@times-components/key-facts@2.12.10) (2023-05-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.9](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.8...@times-components/key-facts@2.12.9) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.8](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.7...@times-components/key-facts@2.12.8) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.6...@times-components/key-facts@2.12.7) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.5...@times-components/key-facts@2.12.6) (2023-04-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.4...@times-components/key-facts@2.12.5) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.3...@times-components/key-facts@2.12.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.2...@times-components/key-facts@2.12.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.1...@times-components/key-facts@2.12.2) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.0...@times-components/key-facts@2.12.1) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.44...@times-components/key-facts@2.12.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
+## [2.11.44](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.43...@times-components/key-facts@2.11.44) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.43](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.42...@times-components/key-facts@2.11.43) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.42](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.41...@times-components/key-facts@2.11.42) (2023-03-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.41](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.40...@times-components/key-facts@2.11.41) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.40](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.39...@times-components/key-facts@2.11.40) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.39](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.38...@times-components/key-facts@2.11.39) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.38](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.37...@times-components/key-facts@2.11.38) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.37](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.36...@times-components/key-facts@2.11.37) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.36](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.35...@times-components/key-facts@2.11.36) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.35](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.34...@times-components/key-facts@2.11.35) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.34](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.33...@times-components/key-facts@2.11.34) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.33](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.32...@times-components/key-facts@2.11.33) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.32](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.31...@times-components/key-facts@2.11.32) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.31](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.30...@times-components/key-facts@2.11.31) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.30](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.29...@times-components/key-facts@2.11.30) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.29](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.28...@times-components/key-facts@2.11.29) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.28](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.27...@times-components/key-facts@2.11.28) (2023-01-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.27](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.26...@times-components/key-facts@2.11.27) (2023-01-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.26](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.25...@times-components/key-facts@2.11.26) (2022-12-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.25](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.24...@times-components/key-facts@2.11.25) (2022-12-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.24](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.23...@times-components/key-facts@2.11.24) (2022-12-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.23](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.22...@times-components/key-facts@2.11.23) (2022-11-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.22](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.21...@times-components/key-facts@2.11.22) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.21](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.20...@times-components/key-facts@2.11.21) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.20](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.19...@times-components/key-facts@2.11.20) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.19](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.18...@times-components/key-facts@2.11.19) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.18](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.17...@times-components/key-facts@2.11.18) (2022-11-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.17](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.16...@times-components/key-facts@2.11.17) (2022-11-03)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.16](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.15...@times-components/key-facts@2.11.16) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.15](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.14...@times-components/key-facts@2.11.15) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.14](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.13...@times-components/key-facts@2.11.14) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.13](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.12...@times-components/key-facts@2.11.13) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.12](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.11...@times-components/key-facts@2.11.12) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.11](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.10...@times-components/key-facts@2.11.11) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.10](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.9...@times-components/key-facts@2.11.10) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.9](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.8...@times-components/key-facts@2.11.9) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.8](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.7...@times-components/key-facts@2.11.8) (2022-10-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.6...@times-components/key-facts@2.11.7) (2022-10-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.5...@times-components/key-facts@2.11.6) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
+## [2.11.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.4...@times-components/key-facts@2.11.5) (2022-09-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.3...@times-components/key-facts@2.11.4) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.2...@times-components/key-facts@2.11.3) (2022-09-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.1...@times-components/key-facts@2.11.2) (2022-09-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.11.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.0...@times-components/key-facts@2.11.1) (2022-08-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.76...@times-components/key-facts@2.11.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [2.10.76](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.75...@times-components/key-facts@2.10.76) (2022-08-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.75](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.74...@times-components/key-facts@2.10.75) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.74](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.73...@times-components/key-facts@2.10.74) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.73](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.72...@times-components/key-facts@2.10.73) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.72](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.71...@times-components/key-facts@2.10.72) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.71](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.70...@times-components/key-facts@2.10.71) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.70](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.69...@times-components/key-facts@2.10.70) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.69](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.68...@times-components/key-facts@2.10.69) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.68](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.67...@times-components/key-facts@2.10.68) (2022-07-29)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.67](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.66...@times-components/key-facts@2.10.67) (2022-07-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.66](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.65...@times-components/key-facts@2.10.66) (2022-07-27)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.65](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.64...@times-components/key-facts@2.10.65) (2022-07-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.64](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.63...@times-components/key-facts@2.10.64) (2022-07-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.63](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.62...@times-components/key-facts@2.10.63) (2022-07-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.62](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.61...@times-components/key-facts@2.10.62) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.61](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.60...@times-components/key-facts@2.10.61) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.60](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.59...@times-components/key-facts@2.10.60) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.59](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.58...@times-components/key-facts@2.10.59) (2022-07-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.58](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.57...@times-components/key-facts@2.10.58) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.57](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.56...@times-components/key-facts@2.10.57) (2022-07-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.56](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.55...@times-components/key-facts@2.10.56) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.55](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.54...@times-components/key-facts@2.10.55) (2022-07-13)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.54](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.53...@times-components/key-facts@2.10.54) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.53](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.52...@times-components/key-facts@2.10.53) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.52](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.51...@times-components/key-facts@2.10.52) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.51](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.50...@times-components/key-facts@2.10.51) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.50](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.49...@times-components/key-facts@2.10.50) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.49](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.48...@times-components/key-facts@2.10.49) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.48](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.47...@times-components/key-facts@2.10.48) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.47](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.46...@times-components/key-facts@2.10.47) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.46](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.45...@times-components/key-facts@2.10.46) (2022-07-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.45](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.44...@times-components/key-facts@2.10.45) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.44](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.43...@times-components/key-facts@2.10.44) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.43](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.42...@times-components/key-facts@2.10.43) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.42](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.41...@times-components/key-facts@2.10.42) (2022-06-23)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.41](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.40...@times-components/key-facts@2.10.41) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.40](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.39...@times-components/key-facts@2.10.40) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.39](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.38...@times-components/key-facts@2.10.39) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.38](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.37...@times-components/key-facts@2.10.38) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.37](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.36...@times-components/key-facts@2.10.37) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.36](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.35...@times-components/key-facts@2.10.36) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.35](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.34...@times-components/key-facts@2.10.35) (2022-06-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.34](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.33...@times-components/key-facts@2.10.34) (2022-06-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.33](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.32...@times-components/key-facts@2.10.33) (2022-06-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.32](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.31...@times-components/key-facts@2.10.32) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.31](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.30...@times-components/key-facts@2.10.31) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.30](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.29...@times-components/key-facts@2.10.30) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.29](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.28...@times-components/key-facts@2.10.29) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.28](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.27...@times-components/key-facts@2.10.28) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.27](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.26...@times-components/key-facts@2.10.27) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.26](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.25...@times-components/key-facts@2.10.26) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.25](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.24...@times-components/key-facts@2.10.25) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.24](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.23...@times-components/key-facts@2.10.24) (2022-05-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.23](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.22...@times-components/key-facts@2.10.23) (2022-05-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.22](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.21...@times-components/key-facts@2.10.22) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.21](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.20...@times-components/key-facts@2.10.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.20](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.19...@times-components/key-facts@2.10.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.19](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.18...@times-components/key-facts@2.10.19) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.18](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.17...@times-components/key-facts@2.10.18) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.17](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.16...@times-components/key-facts@2.10.17) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.16](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.15...@times-components/key-facts@2.10.16) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.15](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.14...@times-components/key-facts@2.10.15) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.14](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.13...@times-components/key-facts@2.10.14) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.13](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.12...@times-components/key-facts@2.10.13) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.12](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.11...@times-components/key-facts@2.10.12) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.11](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.10...@times-components/key-facts@2.10.11) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.10](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.9...@times-components/key-facts@2.10.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.9](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.8...@times-components/key-facts@2.10.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.8](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.7...@times-components/key-facts@2.10.8) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.6...@times-components/key-facts@2.10.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.5...@times-components/key-facts@2.10.6) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.4...@times-components/key-facts@2.10.5) (2022-04-19)
+
+
+### Bug Fixes
+
+* **TDP-1777:** Make analytics article_flag data lower case ([#2916](https://github.com/newsuk/times-components/issues/2916)) ([5c4f49a](https://github.com/newsuk/times-components/commit/5c4f49a0ee07224815ed84b707c940e0dc8de39d))
+
+
+
+
+
+## [2.10.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.3...@times-components/key-facts@2.10.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.2...@times-components/key-facts@2.10.3) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.1...@times-components/key-facts@2.10.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.10.0...@times-components/key-facts@2.10.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.9.2...@times-components/key-facts@2.10.0) (2022-04-11)
+
+
+### Features
+
+* **TDP-1577:** key moments links ([#2911](https://github.com/newsuk/times-components/issues/2911)) ([82774c5](https://github.com/newsuk/times-components/commit/82774c5a66384185f57d73568964e75418599eba))
+
+
+
+
+
+## [2.9.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.9.1...@times-components/key-facts@2.9.2) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.9.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.9.0...@times-components/key-facts@2.9.1) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.8.0...@times-components/key-facts@2.9.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor links ([#2904](https://github.com/newsuk/times-components/issues/2904)) ([761a1c5](https://github.com/newsuk/times-components/commit/761a1c590d597e9cb1a4a78dbbf2b747d81749c9))
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.7.0...@times-components/key-facts@2.8.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1639:** live flag analytics param renaming ([#2900](https://github.com/newsuk/times-components/issues/2900)) ([39099ab](https://github.com/newsuk/times-components/commit/39099ab577734ff2123c18aace8afc706faf3634))
+
+
+
+
+
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.6.0...@times-components/key-facts@2.7.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2902](https://github.com/newsuk/times-components/issues/2902)) ([fa8c45c](https://github.com/newsuk/times-components/commit/fa8c45c09cb0e2e1ae2cd7b927b9cd4ad5975600))
+
+
+
+
+
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.5.0...@times-components/key-facts@2.6.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2901](https://github.com/newsuk/times-components/issues/2901)) ([6c487a9](https://github.com/newsuk/times-components/commit/6c487a9a47cd141101405d0cbd48fc31fc70bdee))
+
+
+
+
+
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.4...@times-components/key-facts@2.5.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2899](https://github.com/newsuk/times-components/issues/2899)) ([0534c22](https://github.com/newsuk/times-components/commit/0534c222ffb3691afaf79ea456976575a994a103))
+
+
+
+
+
+## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.3...@times-components/key-facts@2.4.4) (2022-04-01)
+
+
+### Bug Fixes
+
+* **TDP-1577:** key moments - handle scroll in javascript ([#2897](https://github.com/newsuk/times-components/issues/2897)) ([69e48df](https://github.com/newsuk/times-components/commit/69e48df9b48c9d3e21582cdd15ec3c12febcb254))
+
+
+
+
+
+## [2.4.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.2...@times-components/key-facts@2.4.3) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.4.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.1...@times-components/key-facts@2.4.2) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.4.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.0...@times-components/key-facts@2.4.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **TDP-1577:** key facts anchor links ([#2894](https://github.com/newsuk/times-components/issues/2894)) ([241706c](https://github.com/newsuk/times-components/commit/241706cd752c939240fd4b9f15af84825d6b0f56))
+
+
+
+
+
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.9...@times-components/key-facts@2.4.0) (2022-03-31)
+
+
+### Features
+
+* **TDP-000:** add article URL to anchor tag href ([#2892](https://github.com/newsuk/times-components/issues/2892)) ([3a65356](https://github.com/newsuk/times-components/commit/3a653566ce7907a387ef957af09c76fe69e8492a))
+
+
+
+
+
+## [2.3.9](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.8...@times-components/key-facts@2.3.9) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.8](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.7...@times-components/key-facts@2.3.8) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.6...@times-components/key-facts@2.3.7) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.5...@times-components/key-facts@2.3.6) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.4...@times-components/key-facts@2.3.5) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.3...@times-components/key-facts@2.3.4) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.2...@times-components/key-facts@2.3.3) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.1...@times-components/key-facts@2.3.2) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.3.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.0...@times-components/key-facts@2.3.1) (2022-03-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.7...@times-components/key-facts@2.3.0) (2022-03-11)
+
+
+### Features
+
+* **TDP-1139:** fixing article name value ([#2877](https://github.com/newsuk/times-components/issues/2877)) ([7f021a6](https://github.com/newsuk/times-components/commit/7f021a6b355a0f440a2861f751e34f105c05f5b7))
+
+
+
+
+
+## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.6...@times-components/key-facts@2.2.7) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics clean up ([#2875](https://github.com/newsuk/times-components/issues/2875)) ([4405463](https://github.com/newsuk/times-components/commit/4405463104fc04b3dabe40fd0b220f7c6910f7fd))
+
+
+
+
+
+## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.5...@times-components/key-facts@2.2.6) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics ([#2874](https://github.com/newsuk/times-components/issues/2874)) ([aa9af8e](https://github.com/newsuk/times-components/commit/aa9af8e3041da5984c9ecf7a9f1c21fbf3e8ac51))
+
+
+
+
+
+## [2.2.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.4...@times-components/key-facts@2.2.5) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.2.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.3...@times-components/key-facts@2.2.4) (2022-03-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.2.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.2...@times-components/key-facts@2.2.3) (2022-03-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.2.2](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.1...@times-components/key-facts@2.2.2) (2022-03-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.2.1](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.0...@times-components/key-facts@2.2.1) (2022-03-01)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.57...@times-components/key-facts@2.2.0) (2022-02-28)
+
+
+### Features
+
+* **TDP-1139:** live news analytics for in article components ([#2862](https://github.com/newsuk/times-components/issues/2862)) ([89f912b](https://github.com/newsuk/times-components/commit/89f912be1ac9e16a439d28ef93f905e59971303f))
+
+
+
+
+
+## [2.1.57](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.56...@times-components/key-facts@2.1.57) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.1.56](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.55...@times-components/key-facts@2.1.56) (2022-02-14)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.1.55](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.54...@times-components/key-facts@2.1.55) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.1.54](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.53...@times-components/key-facts@2.1.54) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
 ## [2.1.53](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.1.52...@times-components/key-facts@2.1.53) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/key-facts

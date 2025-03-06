@@ -13,14 +13,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import ClientUserStateConsumer from "./client-user-state-consumer";
 import {
-  isLoggedIn,
-  isMetered,
-  isMeteredExpired,
-  isNonMeteredExpiredUser,
-  isShared,
-  shouldShowFullArticle,
-  isSubscriber,
-  isLoggedInOrShared
+  showSaveAndShareBar,
+  showArticleExtras,
+  showTopicTags,
+  showArticleSaveButton,
+  showLiveUpdateButton,
+  showTokenisedEmailShare,
+  showCommentingModule,
+  showJoinTheConversationDialog
 } from "./matchers";
 
 function UserState({
@@ -38,14 +38,14 @@ function UserState({
   );
 }
 
-UserState.loggedIn = isLoggedIn;
-UserState.meteredExpired = isMeteredExpired;
-UserState.metered = isMetered;
-UserState.shared = isShared;
-UserState.nonMeteredExpiredUser = isNonMeteredExpiredUser;
-UserState.fullArticle = shouldShowFullArticle;
-UserState.subscriber = isSubscriber;
-UserState.loggedInOrShared = isLoggedInOrShared;
+UserState.showSaveAndShareBar = showSaveAndShareBar;
+UserState.showArticleExtras = showArticleExtras;
+UserState.showTopicTags = showTopicTags;
+UserState.showArticleSaveButton = showArticleSaveButton;
+UserState.showLiveUpdateButton = showLiveUpdateButton;
+UserState.showTokenisedEmailShare = showTokenisedEmailShare;
+UserState.showCommentingModule = showCommentingModule;
+UserState.showJoinTheConversationDialog = showJoinTheConversationDialog;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,

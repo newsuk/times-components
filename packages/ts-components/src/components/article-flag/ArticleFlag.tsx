@@ -1,5 +1,5 @@
 import React from 'react';
-import { colours } from '@times-components/styleguide';
+import { colours } from '@times-components/ts-styleguide';
 import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
 import {
   ArticleFlagContainer,
@@ -10,8 +10,9 @@ import {
   FlagsContainer
 } from './styles';
 import getActiveFlags from './getActiveFlags';
+import { FlagType } from './types';
 
-const ArticleFlag: React.FC<{ color: string; title: string }> = ({
+const ArticleFlag: React.FC<{ color?: string; title: string }> = ({
   color = colours.functional.primary,
   title
 }) => (
@@ -27,51 +28,54 @@ const ArticleFlag: React.FC<{ color: string; title: string }> = ({
   </ArticleFlagContainer>
 );
 
-const NewArticleFlag: React.FC = () => (
-  <ArticleFlag color={colours.functional.articleFlagNew} title="new" />
-);
+const NewArticleFlag: React.FC<{ color?: string }> = ({
+  color = colours.functional.articleFlagNew
+}) => <ArticleFlag color={color} title="new" />;
 
-const UpdatedArticleFlag: React.FC = () => (
-  <ArticleFlag color={colours.functional.articleFlagUpdated} title="updated" />
-);
+const UpdatedArticleFlag: React.FC<{ color?: string }> = ({
+  color = colours.functional.articleFlagUpdated
+}) => <ArticleFlag color={color} title="updated" />;
 
-const ExclusiveArticleFlag: React.FC = () => (
-  <ArticleFlag
-    color={colours.functional.articleFlagExclusive}
-    title="exclusive"
-  />
-);
+const ExclusiveArticleFlag: React.FC<{ color?: string }> = ({
+  color = colours.functional.articleFlagExclusive
+}) => <ArticleFlag color={color} title="exclusive" />;
 
-const SponsoredArticleFlag: React.FC = () => (
-  <ArticleFlag color={colours.functional.tertiary} title="sponsored" />
-);
+const SponsoredArticleFlag: React.FC<{ color?: string }> = ({
+  color = colours.functional.tertiary
+}) => <ArticleFlag color={color} title="sponsored" />;
 
-const LongReadArticleFlag: React.FC = () => (
-  <ArticleFlag color={colours.functional.secondary} title="long read" />
-);
+const LongReadArticleFlag: React.FC<{ color?: string }> = ({
+  color = colours.functional.secondary
+}) => <ArticleFlag color={color} title="long read" />;
 
-const flagsMapping = () =>
-  new Map([
-    ['NEW', <NewArticleFlag />],
-    ['LIVE', <LiveArticleFlag />],
-    ['BREAKING', <BreakingArticleFlag />],
-    ['UPDATED', <UpdatedArticleFlag />],
-    ['EXCLUSIVE', <ExclusiveArticleFlag />],
-    ['SPONSORED', <SponsoredArticleFlag />],
-    ['LONGREAD', <LongReadArticleFlag />]
+const flagsMapping = (override = '') => {
+  let colourProp;
+  if (override !== '') {
+    colourProp = {
+      color: override
+    };
+  }
+
+  return new Map([
+    ['NEW', <NewArticleFlag {...colourProp} />],
+    ['LIVE', <LiveArticleFlag {...colourProp} />],
+    ['BREAKING', <BreakingArticleFlag {...colourProp} />],
+    ['UPDATED', <UpdatedArticleFlag {...colourProp} />],
+    ['EXCLUSIVE', <ExclusiveArticleFlag {...colourProp} />],
+    ['SPONSORED', <SponsoredArticleFlag {...colourProp} />],
+    ['LONGREAD', <LongReadArticleFlag {...colourProp} />]
   ]);
+};
 
-export type FlagType = Array<{
-  expiryTime: string | null;
-  type: string;
-}>;
-
-const FlagsView: React.FC<{ allFlags: FlagType }> = ({ allFlags }) => {
+const FlagsView: React.FC<{ allFlags: FlagType; overrideColor?: string }> = ({
+  allFlags,
+  overrideColor = ''
+}) => {
   return (
     <Flags>
       {allFlags.map(flag => (
         <FlagPadding key={flag.type} allFlags={allFlags}>
-          {flagsMapping().get(flag.type)}
+          {flagsMapping(overrideColor).get(flag.type)}
         </FlagPadding>
       ))}
     </Flags>
@@ -82,7 +86,8 @@ const ArticleFlags: React.FC<{
   flags: FlagType;
   longRead: boolean;
   withContainer: boolean;
-}> = ({ flags = [], longRead = false, withContainer = false }) => {
+  color?: string;
+}> = ({ flags = [], longRead = false, withContainer = false, color = '' }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
     ...activeFlags,
@@ -94,12 +99,12 @@ const ArticleFlags: React.FC<{
   }
 
   if (!withContainer) {
-    return <FlagsView allFlags={allFlags} />;
+    return <FlagsView allFlags={allFlags} overrideColor={color} />;
   }
 
   return (
     <FlagsContainer>
-      <FlagsView allFlags={allFlags} />
+      <FlagsView allFlags={allFlags} overrideColor={color} />
     </FlagsContainer>
   );
 };

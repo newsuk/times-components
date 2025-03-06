@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import { View } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import { TcView } from "@times-components/utils";
+import {
+  colours,
+  fontsWithFallback,
+  fontSizes
+} from "@times-components/ts-styleguide";
 
 const styles = {
   color: colours.section.comment,
-  fontFamily: fonts.supporting,
+  fontFamily: fontsWithFallback.supporting,
   fontSize: fontSizes.cardMetaMobile,
   letterSpacing: 0.6,
   lineHeight: 12
@@ -23,7 +27,7 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const ComponentWrapper = ({ children }) => (
-  <View style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</View>
+  <TcView style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</TcView>
 );
 
 const getProps = decorateAction => ({

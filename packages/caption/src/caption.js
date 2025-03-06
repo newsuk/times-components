@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import xss from "xss";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
 
@@ -7,10 +8,23 @@ const renderCredits = (style, credits) => {
   if (!credits || credits === "") {
     return null;
   }
+
+  const sanitisedText = xss(credits.toUpperCase(), {
+    whiteList: { p: [], a: ["href"], br: [], img: [], b: [], strong: [] },
+    stripIgnoreTag: true,
+    stripIgnoreTagBody: ["script"]
+  });
+
   return (
-    <Text style={[styles.text, styles.credits, style.text, style.credits]}>
-      {credits.toUpperCase()}
-    </Text>
+    <TcText
+      style={checkStylesForUnits({
+        ...styles.text,
+        ...styles.credits,
+        ...style.text,
+        ...style.credits
+      })}
+      dangerouslySetInnerHTML={{ __html: sanitisedText }}
+    />
   );
 };
 
@@ -19,17 +33,27 @@ const renderText = (style, text) => {
     return null;
   }
 
-  return <Text style={[styles.text, style.text, style.caption]}>{text}</Text>;
+  return (
+    <TcText
+      style={checkStylesForUnits({
+        ...styles.text,
+        ...style.text,
+        ...style.caption
+      })}
+    >
+      {text}
+    </TcText>
+  );
 };
 
 const Caption = ({ children, credits, style, text }) => (
-  <View>
+  <TcView>
     {children}
-    <View style={[styles.container, style.container]}>
+    <TcView style={{ ...styles.container, ...style.container }}>
       {renderText(style, text)}
       {renderCredits(style, credits)}
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 Caption.propTypes = propTypes;

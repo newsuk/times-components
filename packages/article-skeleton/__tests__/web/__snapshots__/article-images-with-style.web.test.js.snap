@@ -1,7 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c8 {
+.c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -9,105 +24,62 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c9 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c9.hidden {
-  visibility: hidden;
-}
-
-.c10 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c11 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
-.c2 > .c3 {
+.c2 > .c7 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
+.c3 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c6 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c6 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c6.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 #c9c7c7ed;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: #ffffffdb;
-}
-
-.c5 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c5 + .c4 {
-  margin-top: -1px !important;
-}
-
-.c5:last-child {
-  margin-bottom: 30px;
-}
-
-.c5.contains-tc-sticky {
-  border-bottom-color: transparent;
+.c4 {
+  position: relative;
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -126,43 +98,15 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c6 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c11 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c11:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c11:last-child {
-    margin-left: 1.5%;
   }
 }
 
@@ -173,21 +117,11 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
 @media (min-width:1024px) {
   .c5 {
-    width: 56.2%;
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -197,82 +131,50 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
 }
-
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
 
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
+      />
+      <article
+        className="c3"
       >
         <div
-          className="c3 c4 c5"
+          className="c4"
         >
           <div
-            className="IS2"
-          />
-          <div>
-            <div
-              className="c6"
-            >
+            className="c5"
+          >
+            <div>
               <div>
-                <SaveAndShareBar />
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
               </div>
             </div>
+            <div />
           </div>
         </div>
-      </div>
-      <article
-        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
-      >
-        <div>
-          <div
-            className="c8 responsive__PrimaryImg-sc-4v1r4q-5 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
-          </div>
-        </div>
-        <div
-          className="group-3 hidden c9"
-        >
-          <h2
-            className="c10"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c11"
-          />
-          <div
-            className="c11"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -284,109 +186,81 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c8 {
+.c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-bottom: 20px;
 }
 
-.c9 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c9.hidden {
-  visibility: hidden;
-}
-
-.c10 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c11 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
-.c2 > .c3 {
+.c2 > .c7 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
+.c3 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c6 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c6 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c6.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 #c9c7c7ed;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: #ffffffdb;
-}
-
-.c5 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c5 + .c4 {
-  margin-top: -1px !important;
-}
-
-.c5:last-child {
-  margin-bottom: 30px;
-}
-
-.c5.contains-tc-sticky {
-  border-bottom-color: transparent;
+.c4 {
+  position: relative;
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -404,34 +278,6 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 10px;
 }
 
-@media (min-width:768px) {
-  .c9 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c11 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c11:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c11:last-child {
-    margin-left: 1.5%;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -439,21 +285,11 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
 @media (min-width:1024px) {
   .c5 {
-    width: 56.2%;
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -463,82 +299,50 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
 }
-
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
 
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
+      />
+      <article
+        className="c3"
       >
         <div
-          className="c3 c4 c5"
+          className="c4"
         >
           <div
-            className="IS2"
-          />
-          <div>
-            <div
-              className="c6"
-            >
+            className="c5"
+          >
+            <div>
               <div>
-                <SaveAndShareBar />
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
               </div>
             </div>
+            <div />
           </div>
         </div>
-      </div>
-      <article
-        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
-      >
-        <div>
-          <div
-            className="c8 responsive__FullWidthImg-sc-4v1r4q-6 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
-          </div>
-        </div>
-        <div
-          className="group-3 hidden c9"
-        >
-          <h2
-            className="c10"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c11"
-          />
-          <div
-            className="c11"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -550,7 +354,22 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c8 {
+.c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -563,105 +382,62 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c9 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c9.hidden {
-  visibility: hidden;
-}
-
-.c10 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c11 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
-.c2 > .c3 {
+.c2 > .c7 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
+.c3 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c6 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c6 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c6.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 #c9c7c7ed;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: #ffffffdb;
-}
-
-.c5 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c5 + .c4 {
-  margin-top: -1px !important;
-}
-
-.c5:last-child {
-  margin-bottom: 30px;
-}
-
-.c5.contains-tc-sticky {
-  border-bottom-color: transparent;
+.c4 {
+  position: relative;
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -680,7 +456,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -689,36 +465,8 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c6 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c11 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c11:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c11:last-child {
-    margin-left: 1.5%;
   }
 }
 
@@ -729,21 +477,11 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
 @media (min-width:1024px) {
   .c5 {
-    width: 56.2%;
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -753,82 +491,50 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
 }
-
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
 
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
+      />
+      <article
+        className="c3"
       >
         <div
-          className="c3 c4 c5"
+          className="c4"
         >
           <div
-            className="IS2"
-          />
-          <div>
-            <div
-              className="c6"
-            >
+            className="c5"
+          >
+            <div>
               <div>
-                <SaveAndShareBar />
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
               </div>
             </div>
+            <div />
           </div>
         </div>
-      </div>
-      <article
-        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
-      >
-        <div>
-          <div
-            className="c8 responsive__SecondaryImg-sc-4v1r4q-7 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
-          </div>
-        </div>
-        <div
-          className="group-3 hidden c9"
-        >
-          <h2
-            className="c10"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c11"
-          />
-          <div
-            className="c11"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -840,7 +546,22 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c8 {
+.c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -854,105 +575,62 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c9 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c9.hidden {
-  visibility: hidden;
-}
-
-.c10 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c11 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
-.c2 > .c3 {
+.c2 > .c7 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
+.c3 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c6 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c6 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c6.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 #c9c7c7ed;
-}
-
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: #ffffffdb;
-}
-
-.c5 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c5 + .c4 {
-  margin-top: -1px !important;
-}
-
-.c5:last-child {
-  margin-bottom: 30px;
-}
-
-.c5.contains-tc-sticky {
-  border-bottom-color: transparent;
+.c4 {
+  position: relative;
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -971,7 +649,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -980,36 +658,8 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c6 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c11 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c11:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c11:last-child {
-    margin-left: 1.5%;
   }
 }
 
@@ -1020,21 +670,11 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
 @media (min-width:1024px) {
   .c5 {
-    width: 56.2%;
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -1044,82 +684,50 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-@media (min-width:970px) {
+@media (min-width:1024px) {
   .c0 {
     min-height: 250px;
   }
 }
-
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
 
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
+      />
+      <article
+        className="c3"
       >
         <div
-          className="c3 c4 c5"
+          className="c4"
         >
           <div
-            className="IS2"
-          />
-          <div>
-            <div
-              className="c6"
-            >
+            className="c5"
+          >
+            <div>
               <div>
-                <SaveAndShareBar />
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
               </div>
             </div>
+            <div />
           </div>
         </div>
-      </div>
-      <article
-        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
-      >
-        <div>
-          <div
-            className="c8 responsive__InlineImg-sc-4v1r4q-8 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
-          </div>
-        </div>
-        <div
-          className="group-3 hidden c9"
-        >
-          <h2
-            className="c10"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c11"
-          />
-          <div
-            className="c11"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>

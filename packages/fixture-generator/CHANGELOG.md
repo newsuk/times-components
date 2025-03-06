@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.35.0...@times-components/fixture-generator@0.35.1) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.34.1...@times-components/fixture-generator@0.35.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
+## [0.34.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.34.0...@times-components/fixture-generator@0.34.1) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.33.1...@times-components/fixture-generator@0.34.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
+## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.33.0...@times-components/fixture-generator@0.33.1) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.32.1...@times-components/fixture-generator@0.33.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.32.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.32.0...@times-components/fixture-generator@0.32.1) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.31.1...@times-components/fixture-generator@0.32.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1703:** removed react-native use of its own <Image/> component ([#2906](https://github.com/newsuk/times-components/issues/2906)) ([2717c6f](https://github.com/newsuk/times-components/commit/2717c6f5005b195f9805ff63002bfa8b1ef026c3))
+
+
+
+
+
 ## [0.31.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.31.0...@times-components/fixture-generator@0.31.1) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/fixture-generator

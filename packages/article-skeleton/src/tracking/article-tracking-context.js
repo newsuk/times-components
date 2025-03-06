@@ -2,15 +2,28 @@ import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
   getRegistrationType,
+  getCustomerType,
   getSharedStatus,
-  getIsLiveOrBreakingFlag
+  getIsLiveOrBreakingFlag,
+  getActiveArticleFlags
 } from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
-      const flags = data.expirableFlags || data.flags;
+      let hasAccessViaTimes = false;
+      const flags = data.expirableFlags;
+
+      if (window) {
+        // eslint-disable-next-line
+        if (window.__TIMES_ACCESS_AND_IDENTITY__) {
+          // eslint-disable-next-line
+          if (window.__TIMES_ACCESS_AND_IDENTITY__.hasAccess) {
+            hasAccessViaTimes = true;
+          }
+        }
+      }
 
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
@@ -26,10 +39,7 @@ export default Component =>
         article_topic_tags: data.topics
           ? data.topics.map(topic => topic.name)
           : [],
-        // eslint-disable-next-line
-        isLocked: window.__TIMES_ACCESS_AND_IDENTITY__?.hasAccess
-          ? "unlocked"
-          : "locked",
+        isLocked: hasAccessViaTimes ? "unlocked" : "locked",
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
@@ -49,8 +59,14 @@ export default Component =>
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
+        customerType: getCustomerType(),
         shared: getSharedStatus(),
-        other_details: getIsLiveOrBreakingFlag(flags) || ""
+        article_flag: getActiveArticleFlags(flags)
+          ? getActiveArticleFlags(flags)
+          : "no flag",
+        article_template_name: getIsLiveOrBreakingFlag(flags)
+          ? "live template"
+          : "standard template"
       };
     },
     trackingObjectName: "Article"

@@ -1,23 +1,21 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
-const { style: TextStylePropTypes } = Text.propTypes;
-
 const ArticleSummaryStrapline = ({ strapline, style }) => (
-  <Text
-    accessibilityRole="header"
+  <TcText
+    role="heading"
     aria-level="4"
-    style={[styles.strapline, style]}
+    style={{ ...styles.strapline, ...style }}
   >
     {strapline}
-  </Text>
+  </TcText>
 );
 
 ArticleSummaryStrapline.propTypes = {
   strapline: PropTypes.string.isRequired,
-  style: TextStylePropTypes
+  style: {}
 };
 
 ArticleSummaryStrapline.defaultProps = {

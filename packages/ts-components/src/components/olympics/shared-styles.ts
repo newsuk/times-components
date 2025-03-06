@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colours, fonts } from '@times-components/styleguide';
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 const highlightColour = '#e4e4e4';
 export const olympicColour = '#402f7a';

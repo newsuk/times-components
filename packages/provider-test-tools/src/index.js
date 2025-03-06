@@ -13,12 +13,9 @@ import mm from "./make-mocks";
 import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
 import providerTester from "./provider-tester";
-import topic from "./topic";
 import inlineVideo from "./fixtures/inline-video.json";
 import keyFacts from "./fixtures/key-facts.json";
 import pullQuote from "./fixtures/pull-quote.json";
-import topicArticles from "./fixtures/topic-articles.json";
-import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
 import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 
@@ -30,8 +27,6 @@ const fixtures = {
   inlineVideo,
   keyFacts,
   pullQuote,
-  topic: topicHead,
-  topicArticles,
   video
 };
 
@@ -51,7 +46,6 @@ export {
   MockFixture,
   providerTester,
   schemaToMocks,
-  topic,
   bookmarks,
   MockBookmarksProvider
 };

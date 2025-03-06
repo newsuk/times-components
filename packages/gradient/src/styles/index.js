@@ -1,6 +1,4 @@
-import { StyleSheet } from "react-native";
-
-const styles = StyleSheet.create({
+const styles = {
   container: {
     position: "relative"
   },
@@ -11,6 +9,6 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0
   }
-});
+};
 
 export default styles;

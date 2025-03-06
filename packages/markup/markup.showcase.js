@@ -1,9 +1,9 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
 import React from "react";
-import { View, Text } from "react-native";
+import { TcText, TcTextLink, TcView } from "@times-components/utils";
 import { CenteredDecorator } from "@times-components/storybook";
-import { fonts } from "@times-components/styleguide";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "./src/markup";
 
@@ -13,17 +13,18 @@ const bio = require("./fixtures/bio.json");
 const ratings = require("./fixtures/ratings.json");
 const subscript = require("./fixtures/multiple-subscripts.json");
 const superscript = require("./fixtures/multiple-superscripts.json");
+const link = require("./fixtures/link.json");
 
 export default {
   children: [
     {
       decorator: CenteredDecorator,
-      platform: "native",
+      platform: "web",
       type: "decorator"
     },
     {
       component: () => (
-        <View>{renderTrees(multiParagraph, coreRenderers)}</View>
+        <TcView>{renderTrees(multiParagraph, coreRenderers)}</TcView>
       ),
       name: "Multiple paragraphs",
       type: "story"
@@ -33,66 +34,68 @@ export default {
         renderTree(mixture, {
           ...coreRenderers,
           block(key, attributes, renderedChildren) {
-            return {
-              element: <View key={key}>{renderedChildren}</View>
-            };
+            return <TcView key={key}>{renderedChildren}</TcView>;
           },
           link(key, attributes, renderedChildren) {
-            return {
-              element: (
-                <Text href={attributes.href} key={key}>
-                  {renderedChildren}
-                </Text>
-              )
-            };
+            const { href: url } = attributes;
+            return (
+              <TcTextLink href={url} key={key}>
+                {renderedChildren}
+              </TcTextLink>
+            );
           }
         }),
       name: "Mixture of tags",
       type: "story"
     },
     {
-      component: () => <Text>{renderTrees(bio, coreRenderers)}</Text>,
+      component: () => <TcText>{renderTrees(bio, coreRenderers)}</TcText>,
       name: "Biography",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(ratings, coreRenderers)}</View>,
+      component: () => <TcView>{renderTrees(link, coreRenderers)}</TcView>,
+      name: "Link",
+      type: "story"
+    },
+    {
+      component: () => <TcView>{renderTrees(ratings, coreRenderers)}</TcView>,
       name: "Ratings",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>,
+      component: () => <TcView>{renderTrees(subscript, coreRenderers)}</TcView>,
       name: "Subscript",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>,
+      component: () => (
+        <TcView>{renderTrees(superscript, coreRenderers)}</TcView>
+      ),
       name: "Superscript",
       type: "story"
     },
     {
       component: () => (
-        <View>
+        <TcView>
           {renderTrees(multiParagraph, {
             ...coreRenderers,
             paragraph(key, attributes, children) {
-              return {
-                element: (
-                  <Text
-                    key={key}
-                    style={{
-                      color: "red",
-                      fontFamily: fonts.headline,
-                      margin: 10
-                    }}
-                  >
-                    {children}
-                  </Text>
-                )
-              };
+              return (
+                <TcText
+                  key={key}
+                  style={{
+                    color: "red",
+                    fontFamily: fontsWithFallback.headline,
+                    margin: 10
+                  }}
+                >
+                  {children}
+                </TcText>
+              );
             }
           })}
-        </View>
+        </TcView>
       ),
       name: "Multiple children with styling",
       type: "story"

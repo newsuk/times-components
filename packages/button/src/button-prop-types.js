@@ -1,15 +1,12 @@
-import { ViewPropTypes, Text } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
   fontSize: PropTypes.number,
   lineHeight: PropTypes.number,
   onPress: PropTypes.func.isRequired,
-  style: ViewPropTypesStyle,
+  style: PropTypes.object,
   title: PropTypes.string,
-  textStyle: Text.propTypes.style,
+  textStyle: PropTypes.string,
   underlayColor: PropTypes.string
 };
 

@@ -8,7 +8,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
@@ -94,7 +94,7 @@ const renderArticle = (data, isPreview = false) => (
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
-        commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+        commentingConfig={{ account: "dummiy-spotim-id" }}
         isPreview={isPreview}
       />
     </Context.Provider>
@@ -139,9 +139,17 @@ describe("Article with automatically placed NewsletterPuff", () => {
   it("should not render another NewsletterPuff when one already exists", () => {
     article.section = "News";
     article.content[3] = paywallContentWithNewsletter;
+    article.flags = ["new"];
     const output = TestRenderer.create(renderArticle(article));
     expect(output).toMatchSnapshot();
     const isNewsletterPuffs = output.root.findAllByType("InlineNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(1);
+  });
+
+  it("should not render a NewsletterPuff when the article is either a live or breaking", () => {
+    article.flags = ["live"];
+    const output = TestRenderer.create(renderArticle(article));
+    const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
+    expect(isNewsletterPuffs.length).toBe(0);
   });
 });

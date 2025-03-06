@@ -3,6 +3,731 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.19.0...@times-components/lazy-load@0.20.0) (2024-07-02)
+
+
+### Features
+
+* **TMD-329:** remove placeholder for article image ([#3856](https://github.com/newsuk/times-components/issues/3856)) ([9f1d249](https://github.com/newsuk/times-components/commit/9f1d249ac23312d00cb47a995767deb856e81a71))
+
+
+
+
+
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.18.0...@times-components/lazy-load@0.19.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-247:** update styling ([#3879](https://github.com/newsuk/times-components/issues/3879)) ([cd64b88](https://github.com/newsuk/times-components/commit/cd64b88a956775ff78d43190e26486e921b5b7d1))
+
+
+
+
+
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.17.0...@times-components/lazy-load@0.18.0) (2024-06-25)
+
+
+### Features
+
+* **TMRS-246:** remove 0 value entries ([#3877](https://github.com/newsuk/times-components/issues/3877)) ([4a0616b](https://github.com/newsuk/times-components/commit/4a0616bf172d488ac01a684cc7bbd76784941ecf))
+
+
+
+
+
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.16.0...@times-components/lazy-load@0.17.0) (2024-06-19)
+
+
+### Features
+
+* **TMW-000:** Add error message to newsletter puff ([#3875](https://github.com/newsuk/times-components/issues/3875)) ([1b61983](https://github.com/newsuk/times-components/commit/1b6198344bae4aca0345bbe116d7501abcc31295))
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.15.0...@times-components/lazy-load@0.16.0) (2024-06-13)
+
+
+### Features
+
+* **TMRS-240:** widget updates ([#3871](https://github.com/newsuk/times-components/issues/3871)) ([9de5b40](https://github.com/newsuk/times-components/commit/9de5b407d66bbf4f6ce7c62f6c35281323197082))
+
+
+
+
+
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.14.0...@times-components/lazy-load@0.15.0) (2024-06-10)
+
+
+### Features
+
+* **TMRS-208:** update widget tile states ([#3865](https://github.com/newsuk/times-components/issues/3865)) ([13c18f2](https://github.com/newsuk/times-components/commit/13c18f213f9acde4a802d028c05176889e47ff99))
+
+
+
+
+
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.13.0...@times-components/lazy-load@0.14.0) (2024-05-31)
+
+
+### Features
+
+* **TMD-217:** Save and share bar updates ([#3846](https://github.com/newsuk/times-components/issues/3846)) ([8d47af2](https://github.com/newsuk/times-components/commit/8d47af2e6220e30e691e810c5f9021587ed8e2ab))
+
+
+
+
+
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.12.1...@times-components/lazy-load@0.13.0) (2024-05-24)
+
+
+### Features
+
+* **TMRS-170:** euros ticker replace flags ([#3858](https://github.com/newsuk/times-components/issues/3858)) ([3c3e623](https://github.com/newsuk/times-components/commit/3c3e6234fdc457631a32717c91d3632de51a1dfc))
+
+
+
+
+
+## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.12.0...@times-components/lazy-load@0.12.1) (2024-05-20)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.11.2...@times-components/lazy-load@0.12.0) (2024-05-16)
+
+
+### Features
+
+* **TMRS-170:** add opta football fixtures ticker component ([#3849](https://github.com/newsuk/times-components/issues/3849)) ([e8524a9](https://github.com/newsuk/times-components/commit/e8524a97bd58a8ab134f61f1394d061da5fe55d5))
+
+
+
+
+
+## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.11.1...@times-components/lazy-load@0.11.2) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.11.0...@times-components/lazy-load@0.11.1) (2024-03-25)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.10.0...@times-components/lazy-load@0.11.0) (2024-02-01)
+
+
+### Features
+
+* **TMPZ-244:** Add puzzle sidebar component to article sidebar ([#3667](https://github.com/newsuk/times-components/issues/3667)) ([cb19d9b](https://github.com/newsuk/times-components/commit/cb19d9be6755dd885882e42d69b45e28a38e533c)), closes [#3668](https://github.com/newsuk/times-components/issues/3668)
+
+
+
+
+
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.9.0...@times-components/lazy-load@0.10.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1762:** remove breadcrumb last item url logic ([#3749](https://github.com/newsuk/times-components/issues/3749)) ([c6ca76a](https://github.com/newsuk/times-components/commit/c6ca76a20502018eacd7cfee93f5139d9b965438))
+
+
+
+
+
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.1...@times-components/lazy-load@0.9.0) (2024-01-29)
+
+
+### Features
+
+* **TMRX-1762:** add padding to breadcrumb container ([#3748](https://github.com/newsuk/times-components/issues/3748)) ([f7b1fe0](https://github.com/newsuk/times-components/commit/f7b1fe0c27af26d50911d2f38970b411db6df841))
+
+
+
+
+
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.0...@times-components/lazy-load@0.8.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.34...@times-components/lazy-load@0.8.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Sync dependancies ([98e6d13](https://github.com/newsuk/times-components/commit/98e6d1309833ddd9401d9f1f7852dd4a5dd372a0))
+
+
+
+
+
+## [0.7.34](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.33...@times-components/lazy-load@0.7.34) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.33](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.32...@times-components/lazy-load@0.7.33) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.32](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.31...@times-components/lazy-load@0.7.32) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.31](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.30...@times-components/lazy-load@0.7.31) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.30](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.29...@times-components/lazy-load@0.7.30) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.29](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.28...@times-components/lazy-load@0.7.29) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.28](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.27...@times-components/lazy-load@0.7.28) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.27](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.26...@times-components/lazy-load@0.7.27) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.26](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.25...@times-components/lazy-load@0.7.26) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.25](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.24...@times-components/lazy-load@0.7.25) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.24](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.23...@times-components/lazy-load@0.7.24) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.23](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.22...@times-components/lazy-load@0.7.23) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.22](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.21...@times-components/lazy-load@0.7.22) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.21](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.20...@times-components/lazy-load@0.7.21) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.20](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.19...@times-components/lazy-load@0.7.20) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.19](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.18...@times-components/lazy-load@0.7.19) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.18](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.17...@times-components/lazy-load@0.7.18) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.17](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.16...@times-components/lazy-load@0.7.17) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.16](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.15...@times-components/lazy-load@0.7.16) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.15](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.14...@times-components/lazy-load@0.7.15) (2023-03-27)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.14](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.13...@times-components/lazy-load@0.7.14) (2023-03-22)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.13](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.12...@times-components/lazy-load@0.7.13) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.12](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.11...@times-components/lazy-load@0.7.12) (2023-03-08)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.11](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.10...@times-components/lazy-load@0.7.11) (2023-02-24)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.10](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.9...@times-components/lazy-load@0.7.10) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.9](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.8...@times-components/lazy-load@0.7.9) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.7...@times-components/lazy-load@0.7.8) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.6...@times-components/lazy-load@0.7.7) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.6](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.5...@times-components/lazy-load@0.7.6) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.4...@times-components/lazy-load@0.7.5) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.3...@times-components/lazy-load@0.7.4) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.2...@times-components/lazy-load@0.7.3) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.1...@times-components/lazy-load@0.7.2) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.0...@times-components/lazy-load@0.7.1) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.63...@times-components/lazy-load@0.7.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [0.6.63](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.62...@times-components/lazy-load@0.6.63) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.62](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.61...@times-components/lazy-load@0.6.62) (2022-07-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.61](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.60...@times-components/lazy-load@0.6.61) (2022-07-14)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.60](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.59...@times-components/lazy-load@0.6.60) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.59](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.58...@times-components/lazy-load@0.6.59) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.58](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.57...@times-components/lazy-load@0.6.58) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.57](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.56...@times-components/lazy-load@0.6.57) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.56](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.55...@times-components/lazy-load@0.6.56) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.55](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.54...@times-components/lazy-load@0.6.55) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.54](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.53...@times-components/lazy-load@0.6.54) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.53](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.52...@times-components/lazy-load@0.6.53) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.52](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.51...@times-components/lazy-load@0.6.52) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.51](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.50...@times-components/lazy-load@0.6.51) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.50](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.49...@times-components/lazy-load@0.6.50) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.49](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.48...@times-components/lazy-load@0.6.49) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.48](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.47...@times-components/lazy-load@0.6.48) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.47](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.46...@times-components/lazy-load@0.6.47) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.46](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.45...@times-components/lazy-load@0.6.46) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.45](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.44...@times-components/lazy-load@0.6.45) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.44](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.43...@times-components/lazy-load@0.6.44) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.43](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.42...@times-components/lazy-load@0.6.43) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.42](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.41...@times-components/lazy-load@0.6.42) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.41](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.40...@times-components/lazy-load@0.6.41) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.40](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.39...@times-components/lazy-load@0.6.40) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.39](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.38...@times-components/lazy-load@0.6.39) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.38](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.37...@times-components/lazy-load@0.6.38) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.37](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.36...@times-components/lazy-load@0.6.37) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.36](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.35...@times-components/lazy-load@0.6.36) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.35](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.34...@times-components/lazy-load@0.6.35) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.34](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.33...@times-components/lazy-load@0.6.34) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.33](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.32...@times-components/lazy-load@0.6.33) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.32](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.31...@times-components/lazy-load@0.6.32) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.31](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.30...@times-components/lazy-load@0.6.31) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
 ## [0.6.30](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.29...@times-components/lazy-load@0.6.30) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/lazy-load

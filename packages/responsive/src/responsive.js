@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { getEditionBreakpoint } from "@times-components/styleguide";
+import { getEditionBreakpoint } from "@times-components/ts-styleguide";
 import { getDimensions } from "@times-components/utils";
 import ResponsiveContext from "./context";
 

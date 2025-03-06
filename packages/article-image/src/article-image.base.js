@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import Caption from "@times-components/caption";
 import Context from "@times-components/context";
 import { ModalImage } from "@times-components/image";
@@ -47,7 +47,7 @@ const renderCaption = (caption, credits, display, theme) => {
   return display === "fullwidth" ? (
     captionComponent
   ) : (
-    <View style={styles[`${display}Caption`]}>{captionComponent}</View>
+    <TcView style={styles[`${display}Caption`]}>{captionComponent}</TcView>
   );
 };
 
@@ -70,7 +70,7 @@ const ArticleImage = ({
     relativeHorizontalOffset,
     relativeVerticalOffset
   } = imageOptions;
-  const { caption, credits } = captionOptions;
+  const { caption, title, credits } = captionOptions;
 
   if (display === "inline") {
     return (
@@ -97,9 +97,9 @@ const ArticleImage = ({
 
   return (
     <Fragment>
-      <View style={styles[`${display}Image`]}>
+      <TcView style={styles[`${display}Image`]}>
         <ModalImage
-          accessibilityLabel={caption}
+          accessibilityLabel={title || caption}
           aspectRatio={aspectRatio}
           caption={<Caption credits={credits} text={caption} />}
           highResSize={highResSize}
@@ -114,7 +114,7 @@ const ArticleImage = ({
           relativeHorizontalOffset={relativeHorizontalOffset}
           relativeVerticalOffset={relativeVerticalOffset}
         />
-      </View>
+      </TcView>
       {renderedCaption}
     </Fragment>
   );

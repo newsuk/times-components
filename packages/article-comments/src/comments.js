@@ -24,7 +24,6 @@ class Comments extends Component {
     const {
       articleId,
       isReadOnly,
-      publishedTime,
       commentingConfig,
       onCommentStart,
       onCommentPost,
@@ -40,7 +39,8 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked
+      onCommentSettingsClicked,
+      domainSpecificUrl
     } = this.props;
 
     if (!this.container || !articleId || !commentingConfig) {
@@ -75,22 +75,11 @@ class Comments extends Component {
       }
     };
 
-    let isSpotAccountReadOnly = true;
-    let spotAccountId = commentingConfig.account.readOnly;
-
-    if (commentingConfig && commentingConfig.switchOver) {
-      const switchOverDate = commentingConfig.switchOver;
-      if (publishedTime > switchOverDate) {
-        isSpotAccountReadOnly = false;
-        spotAccountId = commentingConfig.account.current;
-      }
-    }
-
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      onCommentStart,
-      { once: true }
+      onCommentStart
     );
+
     document.addEventListener(
       "spot-im-current-user-sent-message",
       onCommentPost
@@ -125,25 +114,30 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(isSpotAccountReadOnly, () => {});
+        executeSSOtransaction();
       } else {
-        document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(isSpotAccountReadOnly, () => {})
-        );
+        document.addEventListener("spot-im-api-ready", () => {
+          executeSSOtransaction();
+        });
       }
     }
+
+    // In case of token expiration we need to renew sso
+    document.addEventListener("spot-im-renew-sso", () => {
+      executeSSOtransaction();
+    });
 
     const launcherScript = document.createElement("script");
     launcherScript.setAttribute("async", "async");
     launcherScript.setAttribute(
       "src",
-      `https://launcher.spot.im/spot/${spotAccountId}`
+      `https://launcher.spot.im/spot/${commentingConfig.account}`
     );
     launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
     launcherScript.setAttribute("data-post-id", articleId);
     launcherScript.setAttribute(
       "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`
+      `${domainSpecificUrl}/article/${articleId}`
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
@@ -209,13 +203,8 @@ Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
-    accounts: PropTypes.shape({
-      current: PropTypes.string.isRequired,
-      readOnly: PropTypes.string.isRequired
-    }),
-    switchOver: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired
   }).isRequired,
-  publishedTime: PropTypes.string.isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
   onCommentNotification: PropTypes.func,
@@ -230,7 +219,8 @@ Comments.propTypes = {
   onCommentRecommend: PropTypes.func,
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
-  onCommentSettingsClicked: PropTypes.func
+  onCommentSettingsClicked: PropTypes.func,
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.

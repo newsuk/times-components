@@ -2,14 +2,14 @@ import React from "react";
 import get from "lodash.get";
 import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
+
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
-// Get the section for an article, preferring it not to be News
-function getSectionName(article) {
-  const { tiles } = article;
+const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
+// Get the section for an article, preferring it not to be News
+function reduceTilesToTitles(tiles, prefix = "") {
   if (!tiles) {
     return null;
   }
@@ -22,9 +22,14 @@ function getSectionName(article) {
     acc.push(...slice.sections);
     return acc;
   }, []);
-  const titles = sections.map(section => section.title);
 
-  if (titles.length === 0) {
+  return sections.map(section => prefix + section.title);
+}
+function getSectionName(article) {
+  const { tiles } = article;
+  const titles = reduceTilesToTitles(tiles);
+
+  if (titles == null) {
     return null;
   }
 
@@ -32,7 +37,46 @@ function getSectionName(article) {
 
   return nonNews.length ? nonNews[0] : "News";
 }
+function getSectionNameList(article) {
+  const { tiles } = article;
+  const titles = reduceTilesToTitles(tiles, "Section:");
 
+  if (titles == null) {
+    return null;
+  }
+
+  const uniqueSectionsArr = titles.filter(
+    (item, pos, self) => self.indexOf(item) === pos
+  );
+  const maxUniqueSections = 2;
+  const uniqueSections = uniqueSectionsArr
+    .slice(0, maxUniqueSections)
+    .toString();
+
+  return uniqueSections;
+}
+function getIsLiveBlogExpiryTime(articleFlags = []) {
+  let time = "";
+  if (articleFlags !== undefined) {
+    for (let i = 0; i < articleFlags.length; i += 1) {
+      if (articleFlags[i].type === "LIVE") {
+        time = articleFlags[i].expiryTime;
+      }
+    }
+  }
+  return time;
+}
+function getIsLiveBlog(articleFlags = []) {
+  if (articleFlags !== undefined) {
+    const articleLiveFlag = articleFlags.find(
+      flag =>
+        flag.type === "LIVE" &&
+        (Date.now() < new Date(flag.expiryTime) || flag.expiryTime === null)
+    );
+    return articleLiveFlag !== undefined;
+  }
+  return false;
+}
 function getAuthorAsText(article) {
   const { bylines } = article;
   if (!bylines) {
@@ -53,11 +97,11 @@ function getAuthors({ bylines }) {
   return bylines.map(byline => byline.author).filter(author => author);
 }
 
-function getAuthorSchema(article) {
+function getAuthorSchema(article, domainSpecificUrl) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-        const url = `https://thetimes.co.uk/profile/${slug}`;
+        const url = `${domainSpecificUrl}/profile/${slug}`;
         return {
           "@type": "Person",
           name,
@@ -120,12 +164,99 @@ const getThumbnailUrl = article => {
   return crop ? crop.url : "";
 };
 
+const getLiveBlogUpdates = (article, publisher, author) => {
+  const updates = [];
+  if (article === null) {
+    return updates;
+  }
+  const { content } = article;
+  const anchorString = (updateTxt = "", headlineTxt = "") => {
+    const onlyNumbersReg = /\D+/g;
+    const onlyNumbers = updateTxt.replace(onlyNumbersReg, "");
+    const acronymReg = /\b(\w)/g;
+    const acronymMatch = headlineTxt.match(acronymReg);
+    const acronym = acronymMatch === null ? "" : acronymMatch.join("");
+    return `u_${onlyNumbers}${acronym}`;
+  };
+
+  if (content !== undefined) {
+    let update;
+    const loopContent = contentObj => {
+      for (let i = 0; i < contentObj.length; i += 1) {
+        if (contentObj[i].name === "interactive") {
+          if (
+            contentObj[i].attributes.element &&
+            contentObj[i].attributes.element.value === "article-header"
+          ) {
+            if (update !== undefined) {
+              updates.push(update);
+            }
+            const { attributes } = contentObj[i].attributes.element;
+            update = {
+              "@type": "BlogPosting",
+              headline: attributes.headline,
+              datePublished: attributes.updated,
+              dateModified: attributes.updated,
+              publisher,
+              url: `${article.url}#${anchorString(
+                attributes.updated,
+                attributes.headline
+              )}`,
+              author
+            };
+          }
+        } else if (contentObj[i].name === "paragraph") {
+          if (update !== undefined) {
+            const text = get(contentObj[i], "children[0].attributes.value", "");
+            if (update.articleBody) {
+              update.articleBody += ` ${text}`;
+            } else {
+              update.articleBody = text;
+            }
+          }
+        } else if (contentObj[i].name === "image") {
+          if (update !== undefined) {
+            update.image = {
+              "@type": "ImageObject",
+              url: contentObj[i].attributes.url,
+              caption: contentObj[i].attributes.caption
+            };
+          }
+        } else if (contentObj[i].name === "video") {
+          if (update !== undefined) {
+            update.video = {
+              "@type": "VideoObject",
+              thumbnail: contentObj[i].attributes.posterImageUrl
+            };
+          }
+        } else if (contentObj[i].name === "paywall") {
+          if (contentObj[i].children) {
+            if (contentObj[i].children.length > 0) {
+              loopContent(contentObj[i].children);
+            }
+          }
+        }
+      }
+    };
+    loopContent(content);
+
+    if (update !== undefined) {
+      updates.push(update);
+    }
+  }
+
+  return updates;
+};
+
 function Head({
   article,
+  articleUrl,
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  breadcrumbs,
+  domainSpecificUrl
 }) {
   const {
     descriptionMarkup,
@@ -137,9 +268,12 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
-    url
+    keywords
   } = article;
 
+  const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
+  const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
+  const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
@@ -148,6 +282,7 @@ function Head({
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
+  const sectionNameList = getSectionNameList(article);
   const thumbnailUrl =
     getThumbnailUrl(article) ||
     (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
@@ -155,7 +290,7 @@ function Head({
   const leadassetUrl =
     appendToImageURL(getArticleLeadAssetUrl(article), "resize", 1200) ||
     thumbnailUrl;
-  const authors = getAuthorSchema(article);
+  const authors = getAuthorSchema(article, domainSpecificUrl);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
@@ -172,9 +307,22 @@ function Head({
   const authorSchema =
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
+  const publisherSchema = {
+    "@type": "Organization",
+    name: publication,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl
+    }
+  };
+  const liveBlogUpdateSchema = getLiveBlogUpdates(
+    article,
+    publisherSchema,
+    authorSchema
+  );
 
   const jsonLD = {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: title,
     publisher: {
@@ -186,7 +334,8 @@ function Head({
       }
     },
     mainEntityOfPage: {
-      "@type": "WebPage"
+      "@type": "WebPage",
+      "@id": articleUrl
     },
     dateCreated: publishedTime,
     datePublished,
@@ -203,7 +352,10 @@ function Head({
     },
     thumbnailUrl,
     dateModified,
-    author: authorSchema
+    author: authorSchema,
+    articleSection: sectionname,
+    keywords: sectionNameList,
+    url: articleUrl
   };
 
   if (swgProductId) {
@@ -213,63 +365,112 @@ function Head({
       productID: swgProductId
     };
   }
+
   const videoJsonLD = hasVideo
     ? {
-        "@context": "https://schema.org/",
+        "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: leadAsset.title || title,
+        name: leadAsset && leadAsset.title ? leadAsset.title : title,
         uploadDate: dateModified,
         thumbnailUrl,
         description:
           Array.isArray(descriptionMarkup) && descriptionMarkup.length
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
-        contentUrl: url
+        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
       }
     : null;
 
+  const liveBlogJsonLD = {
+    "@context": "https://schema.org",
+    "@type": "LiveBlogPosting",
+    headline,
+    description: seoDescription,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl
+    },
+    datePublished: publishedTime,
+    dateModified: updatedTime,
+    coverageStartTime: publishedTime,
+    coverageEndTime: liveBlogArticleExpiry,
+    url: articleUrl,
+    keywords,
+    image: {
+      "@type": "ImageObject",
+      url: leadassetUrl,
+      caption
+    },
+    publisher: publisherSchema,
+    author: authorSchema,
+    liveBlogUpdate: liveBlogUpdateSchema,
+    articleSection: sectionname
+  };
+  const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
+
+  const breadcrumbJsonLD =
+    breadcrumbs && breadcrumbs.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((breadcrumb, breadcrumbIndex) => ({
+            "@type": "ListItem",
+            position: breadcrumbIndex + 1,
+            name: breadcrumb.title,
+            item: `${domainSpecificUrl}/${breadcrumb.slug}`
+          }))
+        }
+      : null;
+
   return (
-    <Context.Consumer>
-      {({ makeArticleUrl }) => {
-        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
-        return (
-          <Helmet encodeSpecialCharacters={false}>
-            <title>
-              {title} | {sectionname ? `${sectionname} | ` : ""}
-              {publication}
-            </title>
-            <meta name="robots" content="max-image-preview:large" />
-            <meta content={title} name="article:title" />
-            <meta content={publication} name="article:publication" />
-            {desc && <meta content={desc} name="description" />}
-            {authorName && <meta content={authorName} name="author" />}
+    <Helmet encodeSpecialCharacters={false}>
+      <title>{title}</title>
+      {isSyndicatedArticle && <meta name="robots" content="noindex" />}
+      <meta name="robots" content="max-image-preview:large" />
+      <meta content={title} name="article:title" />
+      <meta content={publication} name="article:publication" />
+      {desc && <meta content={desc} name="description" />}
+      {authorName && <meta content={authorName} name="author" />}
 
-            <meta content={title} property="og:title" />
-            <meta content="article" property="og:type" />
-            <meta content={makeArticleUrl(article)} property="og:url" />
-            {desc && <meta content={desc} property="og:description" />}
-            {leadassetUrl && (
-              <meta content={leadassetUrl} property="og:image" />
-            )}
-            {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
+      <meta content={title} property="og:title" />
+      <meta content="article" property="og:type" />
+      <meta content={articleUrl} property="og:url" />
+      {desc && <meta content={desc} property="og:description" />}
+      {leadassetUrl && <meta content={leadassetUrl} property="og:image" />}
+      {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
 
-            <meta content={title} name="twitter:title" />
-            <meta content="summary_large_image" name="twitter:card" />
-            <meta content={makeArticleUrl(article)} name="twitter:url" />
-            {desc && <meta content={desc} name="twitter:description" />}
-            {leadassetUrl && (
-              <meta content={leadassetUrl} name="twitter:image" />
-            )}
-            <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
-            {videoJsonLD && (
-              <script type="application/ld+json">
-                {JSON.stringify(videoJsonLD)}
-              </script>
-            )}
-          </Helmet>
-        );
-      }}
-    </Context.Consumer>
+      <meta content={title} name="twitter:title" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta content={articleUrl} name="twitter:url" />
+      {desc && <meta content={desc} name="twitter:description" />}
+      {leadassetUrl && <meta content={leadassetUrl} name="twitter:image" />}
+
+      {isLiveBlogArticle && (
+        <script type="application/ld+json">
+          {JSON.stringify(liveBlogJsonLD)}
+        </script>
+      )}
+
+      <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+
+      {videoJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(videoJsonLD)}
+        </script>
+      )}
+
+      {breadcrumbJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbJsonLD)}
+        </script>
+      )}
+
+      <script
+        type="text/javascript"
+        async
+        src="https://platform.twitter.com/widgets.js"
+      />
+    </Helmet>
   );
 }
 
@@ -285,14 +486,18 @@ Head.propTypes = {
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired,
+  articleUrl: PropTypes.string.isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  domainSpecificUrl: PropTypes.string.isRequired,
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
+  breadcrumbs: []
 };
 
 export default Head;

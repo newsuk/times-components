@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount, shallow } from "enzyme";
 import {
   addSerializers,
@@ -7,7 +6,6 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter,
   replacePropTransform
 } from "@times-components/jest-serializer";
@@ -19,7 +17,6 @@ addSerializers(
   enzymeRenderedSerializer(),
   compose(
     stylePrinter,
-    rnwTransform(AppRegistry),
     minimalWebTransform,
     minimaliseTransform(
       (value, key) =>

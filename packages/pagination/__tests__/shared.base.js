@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 
@@ -9,7 +9,7 @@ export default (withPageState, renderComponent) => {
       name: "inner component with page",
       test: () => {
         const Component = props => (
-          <Text>{JSON.stringify(props, null, 2)}</Text>
+          <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
 
@@ -26,7 +26,7 @@ export default (withPageState, renderComponent) => {
       name: "inner component with new props",
       test: () => {
         const Component = props => (
-          <Text>{JSON.stringify(props, null, 2)}</Text>
+          <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
 
@@ -48,7 +48,7 @@ export default (withPageState, renderComponent) => {
       name: "inner component with prev page",
       test: () => {
         const Component = props => (
-          <Text>{JSON.stringify(props, null, 2)}</Text>
+          <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
 
@@ -67,7 +67,7 @@ export default (withPageState, renderComponent) => {
       name: "inner component with next page",
       test: () => {
         const Component = props => (
-          <Text>{JSON.stringify(props, null, 2)}</Text>
+          <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
 

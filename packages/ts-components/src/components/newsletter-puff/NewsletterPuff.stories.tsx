@@ -2,16 +2,13 @@ import { showcaseConverter } from '@times-components/storybook';
 
 import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
-import {
-  getNewsletter,
-  subscribeNewsletter
-} from '@times-components/provider-queries';
+import { getNewsletter } from '@times-components/provider-queries';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { PreviewNewsletterPuff } from './PreviewNewsletterPuff';
+import { PreviewNewsletterPuff } from './preview-newsletter-puff/PreviewNewsletterPuff';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
@@ -28,25 +25,7 @@ const mocks = [
         newsletter: {
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: false,
-          title: 'Best of Times',
-          __typename: 'Newsletter'
-        }
-      }
-    }
-  },
-  {
-    delay: 1000,
-    request: {
-      query: subscribeNewsletter,
-      variables: {
-        code: 'TNL-101'
-      }
-    },
-    result: {
-      data: {
-        subscribeNewsletter: {
-          id: 'a2l6E000000CdHzQAK',
-          isSubscribed: true,
+          title: 'Daily Briefing',
           __typename: 'Newsletter'
         }
       }
@@ -67,15 +46,12 @@ const showcase = {
           >
             <AutoNewsletterPuff
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Best of Times')}
+              headline={text('headline', 'Daily Briefing')}
               copy={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}
-              imageUri={text(
-                'imageUri',
-                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
-              )}
+              section="sport"
             />
           </TrackingContextProvider>
         </MockedProvider>
@@ -94,15 +70,12 @@ const showcase = {
             context={{ component: 'ArticleSkeleton' }}
           >
             <InlineNewsletterPuff
+              section="news"
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Best of Times')}
+              headline={text('headline', 'Daily Briefing')}
               copy={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-              )}
-              imageUri={text(
-                'imageUri',
-                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
               )}
             />
           </TrackingContextProvider>
@@ -117,14 +90,11 @@ const showcase = {
       // eslint-disable-next-line react/prop-types
       component: ({ text }: any) => (
         <PreviewNewsletterPuff
-          headline={text('headline', 'Best of Times')}
+          section="sport"
+          headline={text('headline', 'Daily Briefing')}
           copy={text(
             'copy',
             'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-          )}
-          imageUri={text(
-            'imageUri',
-            'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
           )}
         />
       ),

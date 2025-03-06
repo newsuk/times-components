@@ -2,7 +2,7 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
 import contentWithHeadingTags from "../fixtures/headings-article-content";
@@ -45,7 +45,8 @@ export const renderArticle = (data, header = null) => (
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
-      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+      commentingConfig={{ account: "dummiy-spotim-id" }}
+      zephrDivs
     />
   </ContextProviderWithDefaults>
 );

@@ -11,8 +11,8 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
-import styles from "./styles";
-import { LeadAsset } from "./styles/responsive";
+import newStyles from "./newStyles";
+import { LeadAsset } from "./newStyles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -31,7 +31,8 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      updatedTime
     } = article;
 
     return (
@@ -45,12 +46,13 @@ class ArticlePage extends Component {
           publicationName={publicationName}
           publishedTime={publishedTime}
           standfirst={standfirst}
+          updatedTime={updatedTime}
         />
         <LeadAsset
           {...getLeadAsset(article)}
           getImageCrop={getStandardTemplateCrop}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          style={styles.leadAssetContainer}
+          style={newStyles.leadAssetContainer}
         />
       </Fragment>
     );
@@ -66,14 +68,11 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
+      articleDataFromRender,
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
-      olympicsKeys
+      storefrontConfig
     } = this.props;
 
     if (error || isLoading) {
@@ -89,14 +88,11 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
+        articleDataFromRender={articleDataFromRender}
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
-        additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-        algoliaSearchKeys={algoliaSearchKeys}
-        latestFromSectionFlag={latestFromSectionFlag}
-        latestFromSection={latestFromSection}
-        olympicsKeys={olympicsKeys}
+        storefrontConfig={storefrontConfig}
       />
     );
   }

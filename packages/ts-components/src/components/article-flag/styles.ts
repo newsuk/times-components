@@ -1,7 +1,52 @@
-import styled from 'styled-components';
-import { fonts } from '@times-components/styleguide';
-import { FlagType } from './ArticleFlag';
+import styled, { keyframes } from 'styled-components';
+import { fonts } from '@times-components/ts-styleguide';
+import { FlagType } from './types';
 import { gqlRgbaToStyle } from '@times-components/utils';
+
+export const LiveArticleFlagContainer = styled.div`
+  background-color: #9f0000;
+  height: 24px;
+  padding: 7px 7px 7px 9px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+`;
+
+export const LiveArticleFlagText = styled.span`
+  font-family: ${fonts.supporting};
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+`;
+
+const flashing = keyframes`
+  0% {
+    background-color: #ffffff;
+  }
+
+  50% {
+   background-color: #9f0000;
+  }
+
+  100% {
+    background-color: #ffffff;
+  }`;
+
+export const LiveArticleFlagIconContainer = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+`;
+
+export const LiveArticleFlagIcon = styled.div`
+  height: 6px;
+  width: 6px;
+  animation: ${flashing} 2000ms infinite;
+`;
 
 export const ArticleFlagContainer = styled.div`
   display: flex;
@@ -9,11 +54,10 @@ export const ArticleFlagContainer = styled.div`
   flex-direction: row;
 `;
 
-export const LiveArticleFlagContainer = styled.div`
+export const LiveFlagAndTimestampContainer = styled.div`
   display: flex;
-  padding: 2px 6px;
-  background-color: #9f0000;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: row;
 `;
 
 export const ArticleFlagBullet = styled.div`
@@ -21,12 +65,6 @@ export const ArticleFlagBullet = styled.div`
   height: 5px;
   width: 5px;
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
-`;
-
-export const LiveDiamondContainer = styled.div`
-  margin-right: 4px;
-  color: #ffffff;
-  line-height: 16px;
 `;
 
 export const ArticleFlagTextContainer = styled.div`
@@ -37,14 +75,6 @@ export const ArticleFlagTextContainer = styled.div`
   line-height: 12px;
   margin-left: 5px;
   color: ${({ color }) => gqlRgbaToStyle(color) || color};
-`;
-export const LiveArticleFlagTextContainer = styled.div`
-  font-family: ${fonts.supporting};
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  line-height: 16px;
 `;
 
 export const FlagPadding = styled.div<{ allFlags: FlagType }>`

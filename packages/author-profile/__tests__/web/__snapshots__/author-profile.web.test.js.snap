@@ -17,6 +17,7 @@ exports[`2. a loading state 1`] = `
   <ArticleList
     articleListHeader={
       <AuthorProfileHead
+        contractualTitle=""
         isLoading={true}
         jobTitle=""
         metaDescription=""
@@ -70,6 +71,7 @@ exports[`3. an article list with images 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -123,6 +125,7 @@ exports[`4. an article list without images 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -176,6 +179,7 @@ exports[`5. fetches more articles 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -234,6 +238,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -278,17 +283,20 @@ exports[`7. an article list header 1`] = `
       >
         Name
       </h1>
-      <h2
-        aria-level="2"
-        role="heading"
-      >
-        job title
-      </h2>
+      <div>
+        <h2
+          aria-level="2"
+          role="heading"
+        >
+          job title
+        </h2>
+      </div>
       <div>
         <div>
           <IconTwitter
-            height={15}
-            width={15}
+            fillColour="currentColor"
+            height={12}
+            width={12}
           />
         </div>
         <TextLink

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import Box from "./box";
 
 export default class Boxes extends Component {
@@ -13,7 +13,7 @@ export default class Boxes extends Component {
     const { boxes } = this.props;
     return boxes.map(item => (
       <Box id={item.elementId} key={item.elementId} {...item}>
-        <Text>{item.elementId}</Text>
+        <TcText>{item.elementId}</TcText>
       </Box>
     ));
   }

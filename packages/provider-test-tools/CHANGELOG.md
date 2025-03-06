@@ -3,6 +3,287 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.4...@times-components/provider-test-tools@1.30.5) (2024-12-13)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.30.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.3...@times-components/provider-test-tools@1.30.4) (2024-09-16)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.30.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.2...@times-components/provider-test-tools@1.30.3) (2024-09-06)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.30.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.1...@times-components/provider-test-tools@1.30.2) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.30.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.0...@times-components/provider-test-tools@1.30.1) (2024-08-28)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.30.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.29.3...@times-components/provider-test-tools@1.30.0) (2024-08-08)
+
+
+### Features
+
+* **TMRS-268:** update queries and article list component to use upda… ([#3913](https://github.com/newsuk/times-components/issues/3913)) ([28184a2](https://github.com/newsuk/times-components/commit/28184a239aa0b33753b5183e41ecf73fff404636))
+
+
+
+
+
+## [1.29.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.29.2...@times-components/provider-test-tools@1.29.3) (2024-04-19)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.29.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.29.1...@times-components/provider-test-tools@1.29.2) (2024-02-09)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.29.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.29.0...@times-components/provider-test-tools@1.29.1) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.28.1...@times-components/provider-test-tools@1.29.0) (2023-06-02)
+
+
+### Features
+
+* **TMRX-697:** replaced 3rd party images with S3 hosted ones ([#3388](https://github.com/newsuk/times-components/issues/3388)) ([8ca726e](https://github.com/newsuk/times-components/commit/8ca726ea2fa147691d4dca2f9effc113d0f076a2))
+
+
+
+
+
+## [1.28.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.28.0...@times-components/provider-test-tools@1.28.1) (2023-06-01)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.3...@times-components/provider-test-tools@1.28.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
+## [1.27.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.2...@times-components/provider-test-tools@1.27.3) (2023-04-03)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.27.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.1...@times-components/provider-test-tools@1.27.2) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.27.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.0...@times-components/provider-test-tools@1.27.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.8...@times-components/provider-test-tools@1.27.0) (2022-08-18)
+
+
+### Features
+
+* **TDP-1712:** remove react-native foreverrrrr ([#3064](https://github.com/newsuk/times-components/issues/3064)) ([2a20cb5](https://github.com/newsuk/times-components/commit/2a20cb5abc10a4e7ca2d62487967f8fcf4eccb62)), closes [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3050](https://github.com/newsuk/times-components/issues/3050) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3057](https://github.com/newsuk/times-components/issues/3057) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3065](https://github.com/newsuk/times-components/issues/3065) [#3037](https://github.com/newsuk/times-components/issues/3037) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3045](https://github.com/newsuk/times-components/issues/3045) [#3056](https://github.com/newsuk/times-components/issues/3056) [#3066](https://github.com/newsuk/times-components/issues/3066) [#3069](https://github.com/newsuk/times-components/issues/3069) [#3068](https://github.com/newsuk/times-components/issues/3068) [#3070](https://github.com/newsuk/times-components/issues/3070) [#3072](https://github.com/newsuk/times-components/issues/3072) [#3073](https://github.com/newsuk/times-components/issues/3073) [#3071](https://github.com/newsuk/times-components/issues/3071) [#3074](https://github.com/newsuk/times-components/issues/3074) [#3076](https://github.com/newsuk/times-components/issues/3076) [#3079](https://github.com/newsuk/times-components/issues/3079) [#3078](https://github.com/newsuk/times-components/issues/3078) [#3083](https://github.com/newsuk/times-components/issues/3083) [#3087](https://github.com/newsuk/times-components/issues/3087) [#3091](https://github.com/newsuk/times-components/issues/3091) [#3096](https://github.com/newsuk/times-components/issues/3096) [#3102](https://github.com/newsuk/times-components/issues/3102) [#3105](https://github.com/newsuk/times-components/issues/3105) [#3108](https://github.com/newsuk/times-components/issues/3108) [#3111](https://github.com/newsuk/times-components/issues/3111) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3113](https://github.com/newsuk/times-components/issues/3113) [#3114](https://github.com/newsuk/times-components/issues/3114) [#3120](https://github.com/newsuk/times-components/issues/3120) [#3119](https://github.com/newsuk/times-components/issues/3119) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3112](https://github.com/newsuk/times-components/issues/3112) [#3126](https://github.com/newsuk/times-components/issues/3126) [#3127](https://github.com/newsuk/times-components/issues/3127) [#3116](https://github.com/newsuk/times-components/issues/3116) [#3128](https://github.com/newsuk/times-components/issues/3128) [#3132](https://github.com/newsuk/times-components/issues/3132) [#3133](https://github.com/newsuk/times-components/issues/3133)
+
+
+
+
+
+## [1.26.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.7...@times-components/provider-test-tools@1.26.8) (2022-08-08)
+
+
+### Bug Fixes
+
+* **TDP-2343:** Update provider-test-tools ([#3101](https://github.com/newsuk/times-components/issues/3101)) ([6b6b76a](https://github.com/newsuk/times-components/commit/6b6b76a581414cebd37d60fc5338ba3a0b53d65d))
+
+
+
+
+
+## [1.26.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.6...@times-components/provider-test-tools@1.26.7) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.26.6](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.5...@times-components/provider-test-tools@1.26.6) (2022-08-02)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.26.5](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.4...@times-components/provider-test-tools@1.26.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.26.4](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.3...@times-components/provider-test-tools@1.26.4) (2022-05-25)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.26.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.2...@times-components/provider-test-tools@1.26.3) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2924](https://github.com/newsuk/times-components/issues/2924)) ([7453ab2](https://github.com/newsuk/times-components/commit/7453ab2498cc12a6e6ea8ba1df9ee71bb4798628))
+
+
+
+
+
+## [1.26.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.1...@times-components/provider-test-tools@1.26.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2922](https://github.com/newsuk/times-components/issues/2922)) ([ca8259f](https://github.com/newsuk/times-components/commit/ca8259fd2b978f4821c8b14dedd6452dc4d8c1e2))
+
+
+
+
+
+## [1.26.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.0...@times-components/provider-test-tools@1.26.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.25.1...@times-components/provider-test-tools@1.26.0) (2022-04-11)
+
+
+### Features
+
+* **TDP-1577:** key moments links ([#2911](https://github.com/newsuk/times-components/issues/2911)) ([82774c5](https://github.com/newsuk/times-components/commit/82774c5a66384185f57d73568964e75418599eba))
+
+
+
+
+
+## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.25.0...@times-components/provider-test-tools@1.25.1) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.24.0...@times-components/provider-test-tools@1.25.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-1577:** Add offset to Live News anchor links ([#2887](https://github.com/newsuk/times-components/issues/2887)) ([8699328](https://github.com/newsuk/times-components/commit/86993289c07d1ce81faed25e1dc8c456c9af767a))
+
+
+
+
+
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.23.0...@times-components/provider-test-tools@1.24.0) (2022-03-16)
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.3...@times-components/provider-test-tools@1.23.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1247:** Last updated timestamp ([#2864](https://github.com/newsuk/times-components/issues/2864)) ([57355b6](https://github.com/newsuk/times-components/commit/57355b6a2a067ca098e63802f018e69e78ac186e))
+
+
+
+
+
+## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.2...@times-components/provider-test-tools@1.22.3) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+## [1.22.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.1...@times-components/provider-test-tools@1.22.2) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
 ## [1.22.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.0...@times-components/provider-test-tools@1.22.1) (2022-01-24)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

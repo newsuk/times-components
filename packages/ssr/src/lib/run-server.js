@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 
 const { ApolloClient } = require("apollo-client");
-const { AppRegistry } = require("react-native-web");
 const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
@@ -21,13 +20,25 @@ const makeClient = options => {
   }
 
   const networkInterfaceOptions = {
-    fetch,
+    fetch: (url, opts) => {
+      const compressedUrl = url
+        .replace(/(%20)+/g, "%20")
+        .replace(/(%0A)+/g, "");
+
+      return fetch(compressedUrl, opts);
+    },
     headers: { "content-type": "application/json" },
     uri: options.uri
   };
 
   if (options.headers) {
     Object.assign(networkInterfaceOptions.headers, options.headers);
+  }
+
+  if (options.useGET) {
+    networkInterfaceOptions.headers["content-type"] =
+      "application/x-www-form-urlencoded";
+    networkInterfaceOptions.useGETForQueries = true;
   }
 
   const httpLink = createHttpLink(networkInterfaceOptions);
@@ -52,17 +63,15 @@ const makeClient = options => {
 
 const renderData = (app, helmetContext = {}) =>
   getDataFromTree(app).then(() => {
-    AppRegistry.registerComponent("App", () => () => app);
-
-    const { element, getStyleElement } = AppRegistry.getApplication("App");
     const serverStylesheet = new ServerStyleSheet();
 
     const markup = ReactDOMServer.renderToString(
-      serverStylesheet.collectStyles(element)
+      serverStylesheet.collectStyles(app)
     );
 
     const responsiveStyles = serverStylesheet.getStyleTags();
-    const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
+    const newStylesheet = new ServerStyleSheet();
+    const styles = newStylesheet.getStyleTags();
 
     const { helmet } = helmetContext;
     const headMarkup = helmet

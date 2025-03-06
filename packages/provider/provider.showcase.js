@@ -1,20 +1,17 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import gql from "graphql-tag";
 import {
   article as makeArticleParams,
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture,
-  topic as makeTopicParams
+  MockFixture
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,
-  AuthorArticlesWithImagesProvider,
-  TopicProvider,
-  TopicArticlesProvider
+  AuthorArticlesWithImagesProvider
 } from "./src/provider.js";
 
 export default {
@@ -49,7 +46,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -83,7 +80,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -118,7 +115,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorProfileProvider>
               </MockedProvider>
             )}
@@ -142,7 +139,7 @@ export default {
             render={mocks => (
               <MockedProvider mocks={mocks}>
                 <ArticleProvider debounceTimeMs={0} id={id}>
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </ArticleProvider>
               </MockedProvider>
             )}
@@ -179,7 +176,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorArticlesWithImagesProvider>
               </MockedProvider>
             )}
@@ -187,77 +184,6 @@ export default {
         );
       },
       name: "Author Profile Articles with Images",
-      type: "story"
-    },
-    {
-      component: () => {
-        const articleImageRatio = "3:2";
-        const name = "Chelsea";
-        const pageSize = 2;
-        const slug = "chelsea";
-
-        return (
-          <MockFixture
-            params={makeTopicParams({
-              articleVariables: iteration => ({
-                first: pageSize,
-                imageRatio: articleImageRatio,
-                skip: (iteration - 1) * pageSize,
-                slug
-              }),
-              name,
-              pageSize,
-              slug
-            })}
-            render={mocks => (
-              <MockedProvider mocks={mocks}>
-                <TopicProvider debounceTimeMs={0} slug="chelsea">
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-                </TopicProvider>
-              </MockedProvider>
-            )}
-          />
-        );
-      },
-      name: "Topic",
-      type: "story"
-    },
-    {
-      component: () => {
-        const articleImageRatio = "3:2";
-        const name = "Chelsea";
-        const pageSize = 2;
-        const slug = "chelsea";
-
-        return (
-          <MockFixture
-            params={makeTopicParams({
-              articleVariables: iteration => ({
-                first: pageSize,
-                imageRatio: articleImageRatio,
-                skip: (iteration - 1) * pageSize,
-                slug
-              }),
-              name,
-              pageSize,
-              slug
-            })}
-            render={mocks => (
-              <MockedProvider mocks={mocks}>
-                <TopicArticlesProvider
-                  debounceTimeMs={0}
-                  page={1}
-                  pageSize={pageSize}
-                  slug={slug}
-                >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-                </TopicArticlesProvider>
-              </MockedProvider>
-            )}
-          />
-        );
-      },
-      name: "Topic Articles",
       type: "story"
     }
   ],

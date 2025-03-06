@@ -1,14 +1,13 @@
+/* eslint-disable react/forbid-prop-types */
 import React from "react";
-import { Text, View, ViewPropTypes } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
 const SomeComponent = ({ style, children }) => (
-  <View style={style}>
+  <TcView style={style}>
     {children}
-    <Text>deeply nested</Text>
-  </View>
+    <TcText>deeply nested</TcText>
+  </TcView>
 );
 
 SomeComponent.propTypes = {
@@ -16,7 +15,7 @@ SomeComponent.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
-  style: ViewPropTypesStyle
+  style: PropTypes.object
 };
 
 SomeComponent.defaultProps = {
