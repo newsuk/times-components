@@ -1781,4 +1781,3 @@ exports[`15. card should re-render when loading state changes 2`] = `
     </div>
   </div>
 </div>
-`;
