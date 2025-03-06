@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c6 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -47,21 +47,68 @@ exports[`1. a primary image 1`] = `
   z-index: 1;
 }
 
-.c2 > .c7 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c6 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c7 {
   position: relative;
+}
+
+.c5 {
+  background-color: #FFFFFF;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c5.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c4 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c4 + .c3 {
+  margin-top: -1px !important;
+}
+
+.c4:last-child {
+  margin-bottom: 10px;
 }
 
 .c0 {
@@ -98,14 +145,14 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c9 {
     width: 56.2%;
   }
 }
@@ -118,10 +165,28 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c8 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
   }
 }
 
@@ -153,20 +218,37 @@ exports[`1. a primary image 1`] = `
     >
       <div
         className="c2"
-      />
-      <article
-        className="c3"
       >
         <div
-          className="c4"
+          className="c3 c4"
         >
           <div
-            className="c5"
+            display="none"
+          />
+          <div>
+            <div
+              className="c5"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c9"
                 >
                   <ArticleImage />
                 </div>
@@ -186,7 +268,7 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c6 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -228,21 +310,68 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 1;
 }
 
-.c2 > .c7 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c6 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c7 {
   position: relative;
+}
+
+.c5 {
+  background-color: #FFFFFF;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c5.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c4 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c4 + .c3 {
+  margin-top: -1px !important;
+}
+
+.c4:last-child {
+  margin-bottom: 10px;
 }
 
 .c0 {
@@ -286,10 +415,28 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c8 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
   }
 }
 
@@ -321,20 +468,37 @@ exports[`2. a fullwidth image 1`] = `
     >
       <div
         className="c2"
-      />
-      <article
-        className="c3"
       >
         <div
-          className="c4"
+          className="c3 c4"
         >
           <div
-            className="c5"
+            display="none"
+          />
+          <div>
+            <div
+              className="c5"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c9"
                 >
                   <ArticleImage />
                 </div>
@@ -354,7 +518,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c6 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -405,21 +569,68 @@ exports[`3. a secondary image 1`] = `
   z-index: 1;
 }
 
-.c2 > .c7 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c6 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c7 {
   position: relative;
+}
+
+.c5 {
+  background-color: #FFFFFF;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c5.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c4 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c4 + .c3 {
+  margin-top: -1px !important;
+}
+
+.c4:last-child {
+  margin-bottom: 10px;
 }
 
 .c0 {
@@ -456,7 +667,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -465,7 +676,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c9 {
     width: 56.2%;
   }
 }
@@ -478,10 +689,28 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c8 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
   }
 }
 
@@ -513,20 +742,37 @@ exports[`3. a secondary image 1`] = `
     >
       <div
         className="c2"
-      />
-      <article
-        className="c3"
       >
         <div
-          className="c4"
+          className="c3 c4"
         >
           <div
-            className="c5"
+            display="none"
+          />
+          <div>
+            <div
+              className="c5"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c9"
                 >
                   <ArticleImage />
                 </div>
@@ -546,7 +792,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c6 {
+.c9 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -598,21 +844,68 @@ exports[`4. an inline image 1`] = `
   z-index: 1;
 }
 
-.c2 > .c7 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c6 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c4 {
+.c7 {
   position: relative;
+}
+
+.c5 {
+  background-color: #FFFFFF;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c5.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c4 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c4 + .c3 {
+  margin-top: -1px !important;
+}
+
+.c4:last-child {
+  margin-bottom: 10px;
 }
 
 .c0 {
@@ -649,7 +942,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -658,7 +951,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c9 {
     width: 56.2%;
   }
 }
@@ -671,10 +964,28 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c8 {
     margin-top: 0;
     -webkit-transition: margin-top 0.2s ease;
     transition: margin-top 0.2s ease;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
   }
 }
 
@@ -706,20 +1017,37 @@ exports[`4. an inline image 1`] = `
     >
       <div
         className="c2"
-      />
-      <article
-        className="c3"
       >
         <div
-          className="c4"
+          className="c3 c4"
         >
           <div
-            className="c5"
+            display="none"
+          />
+          <div>
+            <div
+              className="c5"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
           >
             <div>
               <div>
                 <div
-                  className="c6"
+                  className="c9"
                 >
                   <ArticleImage />
                 </div>

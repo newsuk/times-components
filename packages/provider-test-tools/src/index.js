@@ -17,6 +17,7 @@ import inlineVideo from "./fixtures/inline-video.json";
 import keyFacts from "./fixtures/key-facts.json";
 import pullQuote from "./fixtures/pull-quote.json";
 import video from "../fixtures/video.json";
+import articleVideo from "../fixtures/article-video.json";
 import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 
 const fixtures = {
@@ -27,7 +28,8 @@ const fixtures = {
   inlineVideo,
   keyFacts,
   pullQuote,
-  video
+  video,
+  articleVideo
 };
 
 const makeMocks = mm(schema);
