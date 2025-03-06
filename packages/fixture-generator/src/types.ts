@@ -968,7 +968,6 @@ export enum TemplateType {
   Magazinestandard = "magazinestandard",
   Maincomment = "maincomment",
   Mainstandard = "mainstandard",
-  Mainvideo = "mainvideo",
   Takeoverpage = "takeoverpage"
 }
 
