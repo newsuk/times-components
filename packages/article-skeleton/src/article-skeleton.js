@@ -332,23 +332,21 @@ const ArticleSkeleton = ({
                 )}
                 <Header />
                 {isSharingSavingEnabled ? (
-                  <UserState state={UserState.showSaveAndShareBar}>
-                    <MessageContext.Consumer>
-                      {({ showMessage }) => (
-                        <StickySaveAndShareBar
-                          articleId={articleId}
-                          articleHeadline={headline}
-                          articleUrl={articleUrl}
-                          onCopyLink={() => showMessage("Article link copied")}
-                          onSaveToMyArticles={() => {}}
-                          onShareOnEmail={() => {}}
-                          savingEnabled={savingEnabled}
-                          sharingEnabled={sharingEnabled}
-                          hostName={domainSpecificUrl}
-                        />
-                      )}
-                    </MessageContext.Consumer>
-                  </UserState>
+                  <MessageContext.Consumer>
+                    {({ showMessage }) => (
+                      <StickySaveAndShareBar
+                        articleId={articleId}
+                        articleHeadline={headline}
+                        articleUrl={articleUrl}
+                        onCopyLink={() => showMessage("Article link copied")}
+                        onSaveToMyArticles={() => {}}
+                        onShareOnEmail={() => {}}
+                        savingEnabled={savingEnabled}
+                        sharingEnabled={sharingEnabled}
+                        hostName={domainSpecificUrl}
+                      />
+                    )}
+                  </MessageContext.Consumer>
                 ) : null}
                 {!!zephrDivs && (
                   <StaticContent
