@@ -1,0 +1,9 @@
+src
+__tests__
+__mocks__
+fixtures
+coverage
+storybook-components
+*.stories.js
+*.test.js
+.*

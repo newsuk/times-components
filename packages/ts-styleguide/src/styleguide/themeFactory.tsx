@@ -16,6 +16,9 @@ const sectionColourPickerConfig: Record<string, Record<string, string>> = {
   mainstandard: {
     ...sectionColours
   },
+  mainvideo: {
+    ...sectionColours
+  },
   takeoverpage: {}
 };
 
@@ -35,6 +38,7 @@ const magazineSectionsConfig: Record<string, Record<string, string>> = {
   magazinestandard: magazineSections,
   maincomment: {},
   mainstandard: {},
+  mainvideo: {},
   takeoverpage: {}
 };
 
@@ -61,7 +65,9 @@ const headlineCasePicker = (
 ) =>
   section &&
   section.toLowerCase() === 'style' &&
-  ['indepth', 'magazinestandard', 'magazinecomment'].includes(template)
+  ['indepth', 'magazinestandard', 'magazinecomment', 'mainvideo'].includes(
+    template
+  )
     ? 'none'
     : null;
 
