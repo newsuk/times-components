@@ -67,7 +67,7 @@ export default function useSidebarLogic({
       }
 
       const observer = new ResizeObserver(([entry]) => {
-        if (entry?.contentRect?.height) {
+        if (entry && entry.contentRect && entry.contentRect.height) {
           setQuizleSidebarHeight(-entry.contentRect.height);
         }
       });
