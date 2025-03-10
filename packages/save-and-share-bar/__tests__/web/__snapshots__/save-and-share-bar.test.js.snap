@@ -15,7 +15,7 @@ exports[`save and share bar component email icon when tokenising with loading st
       className="share-item__IconContainer-sc-1idd4zx-3 dwBDja"
     >
       <div
-        className="styled__EmailSpinnerContainer-qkwc0r-8 jwSyWD"
+        className="styled__EmailSpinnerContainer-qkwc0r-10 cRrJdh"
       >
         <IconActivityIndicator
           size="small"
@@ -37,10 +37,10 @@ exports[`save and share bar component save and share bar renders correctly when 
   data-testid="save-and-share-bar"
 >
   <div
-    className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
+    className="styled__ShareButtonContainer-qkwc0r-1 cxdDMy"
   >
     <button
-      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
+      className="styled__OutlineButton-qkwc0r-4 jWKrMk"
     >
       <svg
         aria-hidden="true"
@@ -59,16 +59,16 @@ exports[`save and share bar component save and share bar renders correctly when 
     </button>
     <div
       aria-expanded={false}
-      className="styled__Popover-qkwc0r-3 jfAJcD"
+      className="styled__Popover-qkwc0r-5 kDlDSt"
     >
       <div
-        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
+        className="styled__PopoverHeader-qkwc0r-6 etSOho"
       >
         <h3>
           Share this article
         </h3>
         <button
-          className="styled__CloseButton-qkwc0r-6 drykZc"
+          className="styled__CloseButton-qkwc0r-8 dbcqZq"
         >
           <svg
             fill="none"
@@ -85,7 +85,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         </button>
       </div>
       <div
-        className="styled__PopoverContent-qkwc0r-5 dKaMVi"
+        className="styled__PopoverContent-qkwc0r-7 etEKKi"
       >
         <a
           className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
@@ -214,10 +214,10 @@ exports[`save and share bar component save and share bar renders correctly when 
   data-testid="save-and-share-bar"
 >
   <div
-    className="styled__ShareButtonContainer-qkwc0r-1 vORLH"
+    className="styled__ShareButtonContainer-qkwc0r-1 cxdDMy"
   >
     <button
-      className="styled__OutlineButton-qkwc0r-2 ljZNyf"
+      className="styled__OutlineButton-qkwc0r-4 jWKrMk"
     >
       <svg
         aria-hidden="true"
@@ -236,16 +236,16 @@ exports[`save and share bar component save and share bar renders correctly when 
     </button>
     <div
       aria-expanded={false}
-      className="styled__Popover-qkwc0r-3 hRIknm"
+      className="styled__Popover-qkwc0r-5 cMcJTI"
     >
       <div
-        className="styled__PopoverHeader-qkwc0r-4 dwnPtB"
+        className="styled__PopoverHeader-qkwc0r-6 etSOho"
       >
         <h3>
           Share this article
         </h3>
         <button
-          className="styled__CloseButton-qkwc0r-6 drykZc"
+          className="styled__CloseButton-qkwc0r-8 dbcqZq"
         >
           <svg
             fill="none"
@@ -262,7 +262,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         </button>
       </div>
       <div
-        className="styled__PopoverContent-qkwc0r-5 dKaMVi"
+        className="styled__PopoverContent-qkwc0r-7 etEKKi"
       >
         <a
           className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"

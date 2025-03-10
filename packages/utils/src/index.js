@@ -26,3 +26,8 @@ export { default as TcScrollView } from "./tc-scroll-view";
 export {
   default as CanShowPuzzleSidebar
 } from "./article-puzzle-sidebar-whitelist";
+export { default as getCookieValue } from "./get-cookie-value";
+export { default as getBase64CookieValue } from "./get-base64-cookie-value";
+export {
+  default as checkForSymphonyExperiment
+} from "./check-for-symphony-experiment";
