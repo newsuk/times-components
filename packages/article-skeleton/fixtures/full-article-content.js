@@ -131,6 +131,21 @@ export default [
   {
     name: "interactive",
     attributes: {
+      id: "71d5c591-629b-45a5-b4c2-979d10e1788c",
+      display: "primary",
+      url: "https://components.timesdev.tools/lib2/times-datawrapper-3.0.0/times-datawrapper.html",
+      element: {
+        value: "times-datawrapper",
+        attributes: {
+          "embed-code": "https%3A%2F%2Fdatawrapper.dwcdn.net%2FFkxPq%2F1%2F"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
       id: "620560ef-068e-4bed-b5ce-dd8e5b5c97fc",
       display: "primary",
       url:
