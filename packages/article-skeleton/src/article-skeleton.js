@@ -18,7 +18,7 @@ import {
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import fetchPolygonData from "./article-sidebar";
+import useSidebarLogic from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -113,57 +113,11 @@ const ArticleSkeleton = ({
     [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
   );
 
-  const sidebarRef = useRef();
-
-  const handleScroll = () => {
-    const sidebarNode = sidebarRef.current;
-    if (sidebarNode) {
-      const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
-      );
-
-      let isAnyAdIntersecting = false;
-
-      adElements.forEach(adElement => {
-        if (adElement) {
-          const adRect = adElement.getBoundingClientRect();
-          const isAdIntersecting =
-            adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
-            adRect.bottom >= sidebarNode.getBoundingClientRect().top;
-
-          if (isAdIntersecting) {
-            isAnyAdIntersecting = true;
-          }
-        }
-      });
-
-      if (isAnyAdIntersecting) {
-        sidebarNode.style.opacity = "0";
-      } else {
-        sidebarNode.style.opacity = "1";
-      }
-    }
-  };
-
   useEffect(() => {
     const verifyEmailFlag = !!JSON.parse(
       window.sessionStorage.getItem("verifyEmail")
     );
     setShowEmailVerifyBanner(verifyEmailFlag);
-  }, []);
-
-  useEffect(() => {
-    const sidebarNode = sidebarRef.current;
-    if (sidebarNode) {
-      sidebarNode.style.transition = "opacity 0.2s ease";
-    }
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   const {
@@ -224,20 +178,18 @@ const ArticleSkeleton = ({
     : false;
 
   const [polygonUrl, setPolygonUrl] = useState([]);
+  const [quizleSidebarHeight, setQuizleSidebarHeight] = useState();
+  const quizleSidebarRef = useRef(null);
+  const sidebarRef = useRef();
 
-  const fetchPolygon = async () => {
-    const polygon = await fetchPolygonData();
-    setPolygonUrl(polygon);
-  };
-
-  useEffect(
-    () => {
-      if (canShowSidebar) {
-        fetchPolygon();
-      }
-    },
-    [canShowSidebar]
-  );
+  useSidebarLogic({
+    canShowSidebar,
+    categoryPath,
+    quizleSidebarRef,
+    sidebarRef,
+    setPolygonUrl,
+    setQuizleSidebarHeight
+  });
 
   return (
     <StickyProvider>
@@ -391,15 +343,24 @@ const ArticleSkeleton = ({
                             ]}
                           />
                         ) : (
-                          <QuizleSidebar
-                            pageLink={`${domainSpecificUrl}/quizle`}
-                            sectionTitle="Today's Quizle"
-                          />
+                          <div ref={quizleSidebarRef}>
+                            <QuizleSidebar
+                              pageLink={`${domainSpecificUrl}/quizle`}
+                              sectionTitle="Today's Quizle"
+                            />
+                          </div>
                         )}
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={canShowSidebar}>
+                  <ArticleContent
+                    showMargin={canShowSidebar}
+                    dynamicMargin={
+                      canShowSidebar && categoryPath !== "life-style"
+                        ? quizleSidebarHeight
+                        : undefined
+                    }
+                  >
                     {!!zephrDivs && (
                       <StaticContent
                         html={
