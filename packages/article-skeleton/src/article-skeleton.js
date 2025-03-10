@@ -1,6 +1,5 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -13,12 +12,13 @@ import {
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import fetchPolygonData from "./article-sidebar";
+import useSidebarLogic from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -113,57 +113,11 @@ const ArticleSkeleton = ({
     [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
   );
 
-  const sidebarRef = useRef();
-
-  const handleScroll = () => {
-    const sidebarNode = sidebarRef.current;
-    if (sidebarNode) {
-      const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__InlineAdWrapper-sc-4v1r4q-14, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
-      );
-
-      let isAnyAdIntersecting = false;
-
-      adElements.forEach(adElement => {
-        if (adElement) {
-          const adRect = adElement.getBoundingClientRect();
-          const isAdIntersecting =
-            adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
-            adRect.bottom >= sidebarNode.getBoundingClientRect().top;
-
-          if (isAdIntersecting) {
-            isAnyAdIntersecting = true;
-          }
-        }
-      });
-
-      if (isAnyAdIntersecting) {
-        sidebarNode.style.opacity = "0";
-      } else {
-        sidebarNode.style.opacity = "1";
-      }
-    }
-  };
-
   useEffect(() => {
     const verifyEmailFlag = !!JSON.parse(
       window.sessionStorage.getItem("verifyEmail")
     );
     setShowEmailVerifyBanner(verifyEmailFlag);
-  }, []);
-
-  useEffect(() => {
-    const sidebarNode = sidebarRef.current;
-    if (sidebarNode) {
-      sidebarNode.style.transition = "opacity 0.2s ease";
-    }
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   const {
@@ -216,21 +170,33 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
+  const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
+  const quizCategories = ["culture", "life-style"];
+  const canShowSidebar = categoryPath
+    ? quizCategories.includes(categoryPath)
+    : false;
+
   const [polygonUrl, setPolygonUrl] = useState([]);
+  const [quizleSidebarHeight, setQuizleSidebarHeight] = useState();
+  const quizleSidebarRef = useRef(null);
+  const sidebarRef = useRef();
 
-  const fetchPolygon = async () => {
-    const polygon = await fetchPolygonData();
-    setPolygonUrl(polygon);
-  };
+  useSidebarLogic({
+    canShowSidebar,
+    categoryPath,
+    quizleSidebarRef,
+    sidebarRef,
+    setPolygonUrl,
+    setQuizleSidebarHeight
+  });
 
-  useEffect(
-    () => {
-      if (CanShowPuzzleSidebar(section)) {
-        fetchPolygon();
-      }
-    },
-    [CanShowPuzzleSidebar, section]
-  );
+  const isQuizleSidebar =
+    canShowSidebar &&
+    categoryPath !== "life-style" &&
+    typeof quizleSidebarHeight === "number";
+  const sidebarType =
+    (isQuizleSidebar && "quizle") || (canShowSidebar && "article") || undefined;
 
   return (
     <StickyProvider>
@@ -360,34 +326,48 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               <BodyContainer>
                 <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) && (
+                  {canShowSidebar && (
                     <SidebarWarpper>
                       <PuzzlesSidebar ref={sidebarRef}>
-                        <ArticleSidebar
-                          pageLink={`${domainSpecificUrl}/puzzles`}
-                          sectionTitle="Puzzles"
-                          data={[
-                            {
-                              title: "Crossword",
-                              url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                            },
-                            {
-                              title: "Polygon",
-                              url: polygonUrl,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                            },
-                            {
-                              title: "Sudoku",
-                              url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                            }
-                          ]}
-                        />
+                        {categoryPath === "life-style" ? (
+                          <ArticleSidebar
+                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              },
+                              {
+                                title: "Sudoku",
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              }
+                            ]}
+                          />
+                        ) : (
+                          <div ref={quizleSidebarRef}>
+                            <QuizleSidebar
+                              pageLink={`${domainSpecificUrl}/quizle`}
+                              sectionTitle="Today's Quizle"
+                            />
+                          </div>
+                        )}
                       </PuzzlesSidebar>
                     </SidebarWarpper>
                   )}
-                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                  <ArticleContent
+                    sidebarType={sidebarType}
+                    dynamicMargin={
+                      isQuizleSidebar ? quizleSidebarHeight : undefined
+                    }
+                  >
                     {!!zephrDivs && (
                       <StaticContent
                         html={
