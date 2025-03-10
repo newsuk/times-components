@@ -74,7 +74,7 @@ export const Titletag = styled.h3`
   margin-block: 0;
 `;
 
-export const Bottom = styled.div`
+export const Question = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

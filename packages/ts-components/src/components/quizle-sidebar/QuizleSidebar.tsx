@@ -6,7 +6,7 @@ import {
   Link,
   Title,
   TitleIconContainer,
-  Bottom
+  Question
 } from './styles';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 import { handleClick } from './tracking-helpers';
@@ -94,7 +94,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
         </TitleIconContainer>
       </>
       <Divider />
-      <Bottom>
+      <Question>
         <p>
           <span className="q-icon">Q: </span>
           {currentQuestion}
@@ -109,7 +109,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
           Test your knowledge
           <span className="q-arrow" />
         </Link>
-      </Bottom>
+      </Question>
       <Divider />
     </Container>
   );

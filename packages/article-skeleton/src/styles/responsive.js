@@ -98,9 +98,9 @@ export const ArticleWrapper = styled.div`
 
 export const ArticleContent = styled.div`
   @media (min-width: ${breakpoints.wide}px) {
-    margin-top: ${({ showMargin, dynamicMargin }) => {
-      if (dynamicMargin !== undefined) return `${dynamicMargin}px`;
-      if (showMargin) return "-335px";
+    margin-top: ${({ dynamicMargin, sidebarType }) => {
+      if (typeof dynamicMargin === "number") return `${dynamicMargin}px`;
+      if (sidebarType === "article") return "-335px";
       return "0";
     }};
     transition: margin-top 0.2s ease;
