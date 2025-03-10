@@ -191,6 +191,13 @@ const ArticleSkeleton = ({
     setQuizleSidebarHeight
   });
 
+  const isQuizleSidebar =
+    canShowSidebar &&
+    categoryPath !== "life-style" &&
+    typeof quizleSidebarHeight === "number";
+  const sidebarType =
+    (isQuizleSidebar && "quizle") || (canShowSidebar && "article") || undefined;
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -356,11 +363,9 @@ const ArticleSkeleton = ({
                     </SidebarWarpper>
                   )}
                   <ArticleContent
-                    showMargin={canShowSidebar}
+                    sidebarType={sidebarType}
                     dynamicMargin={
-                      canShowSidebar && categoryPath !== "life-style"
-                        ? quizleSidebarHeight
-                        : undefined
+                      isQuizleSidebar ? quizleSidebarHeight : undefined
                     }
                   >
                     {!!zephrDivs && (
