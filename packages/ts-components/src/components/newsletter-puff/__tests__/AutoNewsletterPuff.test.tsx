@@ -9,8 +9,8 @@ import { getNewsletter } from '@times-components/provider-queries';
 
 const defaultProps = {
   code: '123',
-  copy: 'abc',
-  headline: 'headline',
+  description: 'abc',
+  title: 'headline',
   section: 'sport'
 };
 

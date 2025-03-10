@@ -46,8 +46,8 @@ const showcase = {
           >
             <AutoNewsletterPuff
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Daily Briefing')}
-              copy={text(
+              title={text('headline', 'Daily Briefing')}
+              description={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}
@@ -72,8 +72,8 @@ const showcase = {
             <InlineNewsletterPuff
               section="news"
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Daily Briefing')}
-              copy={text(
+              title={text('headline', 'Daily Briefing')}
+              description={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}

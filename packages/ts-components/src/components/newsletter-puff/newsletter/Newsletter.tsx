@@ -18,8 +18,8 @@ import { InpContainer } from '../styles';
 type NewsletterProps = {
   intersectObserverRef: (ref: HTMLElement | null) => void;
   section?: string;
-  headline: string;
-  copy: string;
+  title: string;
+  description: string;
   code: string;
   subscribeNewsletter: any;
   loading?: boolean;
@@ -29,8 +29,8 @@ type NewsletterProps = {
 export const Newsletter = ({
   intersectObserverRef,
   section,
-  headline,
-  copy,
+  title,
+  description,
   code,
   subscribeNewsletter,
   loading,
@@ -60,7 +60,7 @@ export const Newsletter = ({
             <InpSubscribedContainer>
               <InpCopy>
                 You've succesfully signed up to{' '}
-                <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
+                <InpSignupHeadline>{`${title}.`} </InpSignupHeadline>
                 <NewsletterPuffLink />
               </InpCopy>
               <InpPreferencesContainer />
@@ -79,8 +79,8 @@ export const Newsletter = ({
           !error && (
             <InpSignupContainer>
               <InpCopy>
-                <InpSignupHeadline>{headline} </InpSignupHeadline>
-                {`${copy} `}
+                <InpSignupHeadline>{title} </InpSignupHeadline>
+                {`${description} `}
                 {PuffButton('link')}
               </InpCopy>
               {PuffButton('button')}
