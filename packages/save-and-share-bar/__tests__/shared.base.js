@@ -93,6 +93,23 @@ export default () => {
         testInstance.root.findAllByType(ShareButtonHighlightContainer)
       ).toBeDefined();
     });
+    it("does not render the Share button highlight when Project Symphony is on, Share button has not been clicked on this page and the Share button highlight has been dismissed on previously viewed articles", () => {
+      UserState.mockStates = [UserState.showSaveAndShareBar];
+      checkForSymphonyExperiment.mockReturnValue(true);
+      window.localStorage.setItem(
+        "hasShareButtonHighlightBeenDismissed",
+        "true"
+      );
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
+      const shareButtonHighlightContainers = testInstance.root.findAllByType(
+        ShareButtonHighlightContainer
+      );
+      expect(shareButtonHighlightContainers.length).toBe(0);
+    });
     it("does not render the Share button highlight when Project Symphony is on and Share button has been clicked", () => {
       UserState.mockStates = [UserState.showSaveAndShareBar];
       checkForSymphonyExperiment.mockReturnValue(true);
