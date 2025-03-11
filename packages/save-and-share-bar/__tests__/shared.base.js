@@ -81,7 +81,7 @@ export default () => {
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
-    it("renders the Share button highlight when Project Symphony is on and Share button has not been clicked", () => {
+    it("renders the Share button highlight when Project Symphony is on, Share button has not been clicked on this page and Share button highlight has not been previously seen on other articles", () => {
       UserState.mockStates = [UserState.showSaveAndShareBar];
       checkForSymphonyExperiment.mockReturnValue(true);
       const testInstance = TestRenderer.create(

@@ -113,6 +113,7 @@ function SaveAndShareBar(props) {
     e.preventDefault();
     setShareButtonClicked(true);
     togglePopover();
+    window.localStorage.setItem("hasShareButtonHighlightBeenDismissed", true);
   };
 
   function copyToClipboard(e) {
@@ -124,7 +125,13 @@ function SaveAndShareBar(props) {
   }
 
   const isSymphonyExperiment = checkForSymphonyExperiment();
-  const showShareButtonHighlight = isSymphonyExperiment && !shareButtonClicked;
+  const hasShareButtonHighlightBeenDismissed = window.localStorage.getItem(
+    "hasShareButtonHighlightBeenDismissed"
+  );
+  const showShareButtonHighlight =
+    isSymphonyExperiment &&
+    !shareButtonClicked &&
+    !hasShareButtonHighlightBeenDismissed;
 
   return (
     <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
