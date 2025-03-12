@@ -96,10 +96,7 @@ export default () => {
     it("does not render the Share button highlight when Project Symphony is on, Share button has not been clicked on this page and the Share button highlight has been dismissed on previously viewed articles", () => {
       UserState.mockStates = [UserState.showSaveAndShareBar];
       checkForSymphonyExperiment.mockReturnValue(true);
-      window.localStorage.setItem(
-        "hasShareButtonHighlightBeenDismissed",
-        "true"
-      );
+      window.localStorage.setItem("hasShareButtonBeenClicked", "true");
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
