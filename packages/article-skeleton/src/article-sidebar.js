@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/polygon-data.js";
+import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/sidebar-data.js";
 
 const baseURL = "/puzzles/word-puzzles";
 
-const fetchPolygonData = async () => {
+export const fetchPolygonData = async () => {
   try {
     const response = await fetch("https://api.thetimes.co.uk/graphql", {
       method: "POST",
@@ -34,7 +34,7 @@ const fetchPolygonData = async () => {
   }
 };
 
-export default function useSidebarLogic({
+export function useSidebarLogic({
   canShowSidebar,
   categoryPath,
   quizleSidebarRef,
