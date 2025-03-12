@@ -365,7 +365,7 @@ const ArticleSkeleton = ({
                     dynamicMargin={
                       isQuizleSidebar ? quizleSidebarHeight : undefined
                     }
-                    data-testid={sidebarType}
+                    data-testid={isQuizleSidebar ? "quizle" : "Puzzle"}
                   >
                     {!!zephrDivs && (
                       <StaticContent

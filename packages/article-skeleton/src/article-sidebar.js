@@ -63,7 +63,7 @@ export function useSidebarLogic({
         categoryPath === "life-style" ||
         !quizleSidebarRef.current
       ) {
-        return () => {};
+        return undefined;
       }
 
       const observer = new ResizeObserver(([entry]) => {
@@ -72,14 +72,9 @@ export function useSidebarLogic({
         }
       });
 
-      const timeoutId = setTimeout(() => {
-        observer.observe(quizleSidebarRef.current);
-      }, 300);
+      observer.observe(quizleSidebarRef.current);
 
-      return () => {
-        clearTimeout(timeoutId);
-        observer.disconnect();
-      };
+      return () => observer.disconnect();
     },
     [canShowSidebar, categoryPath]
   );
