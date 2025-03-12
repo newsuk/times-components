@@ -26,3 +26,4 @@ export { default as TcScrollView } from "./tc-scroll-view";
 export {
   default as CanShowPuzzleSidebar
 } from "./article-puzzle-sidebar-whitelist";
+export { default as hasEntitlement } from "./get-entitlements";

@@ -36,8 +36,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
-    storefrontConfig,
-    isEntitlementFeatureEnabled
+    storefrontConfig
   } = data;
 
   return React.createElement(
@@ -87,7 +86,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 isSavingEnabled: sharingSavingFlag,
                 isSharingEnabled: sharingSavingFlag,
                 isCommentEnabled: commentingFlag,
-                isEntitlementFeatureEnabled,
                 isPreview
               },
               error,
