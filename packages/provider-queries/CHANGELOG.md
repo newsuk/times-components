@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.24.0...@times-components/provider-queries@2.25.0) (2025-03-12)
+
+
+### Features
+
+* **TMRP-171:** Change Articles Puzzle Sidebar query from an EditionQuery to a PuzzlesQuery ([#4075](https://github.com/newsuk/times-components/issues/4075)) ([4bb38a4](https://github.com/newsuk/times-components/commit/4bb38a4d8e0623c1ce5cf2afb7c9331ba5384011))
+
+
+
+
+
 # [2.24.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.23.3...@times-components/provider-queries@2.24.0) (2024-12-13)
 
 
