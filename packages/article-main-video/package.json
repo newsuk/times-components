@@ -1,0 +1,80 @@
+{
+  "name": "@times-components/article-main-video",
+  "version": "1.0.0",
+  "description": "Main Video Article Template",
+  "main": "dist/article-main-video",
+  "dev": "src/article-main-video",
+  "scripts": {
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "test:web": "TZ=UTC jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "TZ=UTC yarn test:web -u",
+    "prepublishOnly": "yarn transpile && yarn bundle",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react",
+    "article-main-video",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@times-components/jest-configurator-web": "0.8.2",
+    "@times-components/jest-serializer": "3.13.21",
+    "@times-components/provider-test-tools": "1.30.6",
+    "@times-components/storybook": "4.12.35",
+    "@times-components/tealium-utils": "0.9.1",
+    "@times-components/test-utils": "2.4.2",
+    "@times-components/webpack-configurator": "2.1.1",
+    "babel-jest": "24.8.0",
+    "eslint": "5.9.0",
+    "jest": "24.8.0",
+    "jest-styled-components": "6.3.1",
+    "prettier": "1.14.3",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-test-renderer": "16.9.0",
+    "webpack": "4.30.0"
+  },
+  "dependencies": {
+    "@times-components/ad": "2.22.24",
+    "@times-components/article-lead-asset": "1.19.1",
+    "@times-components/article-skeleton": "1.154.0",
+    "@times-components/article-topics": "4.11.56",
+    "@times-components/context": "1.24.0",
+    "@times-components/image": "6.18.3",
+    "@times-components/link": "3.17.35",
+    "@times-components/date-publication": "0.30.35",
+    "@times-components/ts-components": "1.123.2",
+    "@times-components/ts-styleguide": "1.50.35",
+    "@times-components/user-state": "0.5.52",
+    "@times-components/utils": "6.27.0",
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
+  },
+  "resolutions": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9",
+    "react-dom": ">=16.9"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
