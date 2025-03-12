@@ -34,9 +34,7 @@ export const snapshotTests = renderComponent => [
   {
     name: "loading",
     test() {
-      const output = renderComponent(
-        <ArticleMainVideo isLoading />
-      );
+      const output = renderComponent(<ArticleMainVideo isLoading />);
 
       expect(output).toMatchSnapshot();
     }
