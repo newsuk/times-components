@@ -13,7 +13,6 @@ import { UserState } from "./mocks";
 import shared from "./shared.base";
 import ArticleMainVideo from "../src/article-main-video";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 const omitProps = new Set([
   "className",
@@ -49,7 +48,6 @@ export default () => {
 
         const output = TestRenderer.create(
           <ArticleMainVideo
-            {...articleProps}
             adConfig={adConfig}
             analyticsStream={() => {}}
             article={fixtures.articleVideoData}

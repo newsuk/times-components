@@ -14,7 +14,6 @@ import "./mocks";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainVideo from "../src/article-main-video";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
@@ -162,7 +161,6 @@ export default () => {
         }}
       >
         <ArticleMainVideo
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={article}

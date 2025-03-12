@@ -5,7 +5,6 @@ import { iterator } from "@times-components/test-utils";
 import { fixtures } from "@times-components/provider-test-tools";
 import ArticleMainVideo from "../src/article-main-video";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
@@ -15,7 +14,6 @@ export const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <ArticleMainVideo
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={fixtures.articleVideoData}
@@ -37,7 +35,7 @@ export const snapshotTests = renderComponent => [
     name: "loading",
     test() {
       const output = renderComponent(
-        <ArticleMainVideo {...articleProps} isLoading />
+        <ArticleMainVideo isLoading />
       );
 
       expect(output).toMatchSnapshot();
@@ -53,7 +51,6 @@ export const snapshotTests = renderComponent => [
       const output = renderComponent(
         <ArticleMainVideo
           {...props}
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           onAuthorPress={() => {}}
