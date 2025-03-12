@@ -276,6 +276,17 @@ const renderers = ({
           </InteractiveContainer>
         );
 
+      case "instagram-embed":
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <SocialMediaEmbed
+              url={attributes.url}
+              vendorName="instagram"
+              id={id}
+            />
+          </InteractiveContainer>
+        );
+
       case "times-embed-iframe-max": {
         const src = (element.attributes && element.attributes.src) || "";
         const isYoutube = src.includes("youtube");

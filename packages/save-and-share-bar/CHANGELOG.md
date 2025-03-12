@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.26.19...@times-components/save-and-share-bar@0.27.0) (2025-03-12)
+
+
+### Features
+
+* **TMG-3003:** Add blue dot to share button ([#4079](https://github.com/newsuk/times-components/issues/4079)) ([d0e76b3](https://github.com/newsuk/times-components/commit/d0e76b38891228624bf0415828b1179c4c2c596e))
+
+
+
+
+
 ## [0.26.19](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.26.18...@times-components/save-and-share-bar@0.26.19) (2025-03-12)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.41.6",
+  "version": "1.41.7",
   "main": "dist/provider",
   "dev": "src/provider",
   "description": "Provider",
@@ -36,9 +36,9 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.2",
-    "@times-components/jest-serializer": "3.13.20",
+    "@times-components/jest-serializer": "3.13.21",
     "@times-components/provider-test-tools": "1.30.6",
-    "@times-components/storybook": "4.12.34",
+    "@times-components/storybook": "4.12.35",
     "@times-components/test-utils": "2.4.2",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@times-components/provider-queries": "2.25.0",
-    "@times-components/utils": "6.26.0",
+    "@times-components/utils": "6.27.0",
     "graphql-tag": "2.10.3",
     "hoist-non-react-statics": "3.3.2",
     "lodash.isequal": "4.4.0",

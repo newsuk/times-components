@@ -18,13 +18,15 @@ describe('SocialEmbedsProvider and useSocialEmbedsContext', () => {
     expect(result.current.isSocialEmbedAllowed).toEqual({
       twitter: false,
       tiktok: false,
-      youtube: false
+      youtube: false,
+      instagram: false
     });
 
     expect(result.current.isAllowedOnce).toEqual({
       twitter: false,
       tiktok: false,
-      youtube: false
+      youtube: false,
+      instagram: false
     });
   });
 
