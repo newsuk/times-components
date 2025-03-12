@@ -1,6 +1,6 @@
 {
   "name": "@times-components/error-view",
-  "version": "2.6.61",
+  "version": "2.6.62",
   "description": "Handles errors",
   "main": "dist/error-view",
   "dev": "src/error-view",
@@ -36,8 +36,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.2",
-    "@times-components/jest-serializer": "3.13.20",
-    "@times-components/storybook": "4.12.34",
+    "@times-components/jest-serializer": "3.13.21",
+    "@times-components/storybook": "4.12.35",
     "@times-components/test-utils": "2.4.2",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
@@ -52,8 +52,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.50.34",
-    "@times-components/utils": "6.26.0",
+    "@times-components/ts-styleguide": "1.50.35",
+    "@times-components/utils": "6.27.0",
     "prop-types": "15.7.2"
   },
   "resolutions": {
