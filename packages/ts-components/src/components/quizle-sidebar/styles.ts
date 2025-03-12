@@ -74,12 +74,11 @@ export const Titletag = styled.h3`
   margin-block: 0;
 `;
 
-export const Bottom = styled.div`
+export const Question = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 8px 0 0;
-  min-height: 230px;
   justify-content: space-between;
 
   & .q-icon {
