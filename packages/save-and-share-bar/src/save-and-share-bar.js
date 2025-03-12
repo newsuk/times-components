@@ -51,7 +51,10 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
-  const [shareButtonClicked, setShareButtonClicked] = React.useState(false);
+
+  const [shareHighlightVisible, setShareHighlightVisible] = React.useState(
+    false
+  );
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -85,6 +88,15 @@ function SaveAndShareBar(props) {
     };
   }, []);
 
+  // Set visiblity of the share highlight
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setShareHighlightVisible(
+        window.localStorage.getItem("hasShareButtonBeenClicked") !== "true"
+      );
+    }
+  }, []);
+
   const barPosition = barRef.current
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
@@ -111,9 +123,9 @@ function SaveAndShareBar(props) {
 
   const handleClick = e => {
     e.preventDefault();
-    setShareButtonClicked(true);
+    window.localStorage.setItem("hasShareButtonBeenClicked", "true");
+    setShareHighlightVisible(false);
     togglePopover();
-    window.localStorage.setItem("hasShareButtonHighlightBeenDismissed", true);
   };
 
   function copyToClipboard(e) {
@@ -125,13 +137,6 @@ function SaveAndShareBar(props) {
   }
 
   const isSymphonyExperiment = checkForSymphonyExperiment();
-  const hasShareButtonHighlightBeenDismissed = window.localStorage.getItem(
-    "hasShareButtonHighlightBeenDismissed"
-  );
-  const showShareButtonHighlight =
-    isSymphonyExperiment &&
-    !shareButtonClicked &&
-    !hasShareButtonHighlightBeenDismissed;
 
   return (
     <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
@@ -145,11 +150,12 @@ function SaveAndShareBar(props) {
             <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
-          {showShareButtonHighlight && (
-            <ShareButtonHighlightContainer data-testId="share-button-highlight">
-              <ShareButtonHighlight />
-            </ShareButtonHighlightContainer>
-          )}
+          {isSymphonyExperiment &&
+            shareHighlightVisible && (
+              <ShareButtonHighlightContainer data-testId="share-button-highlight">
+                <ShareButtonHighlight />
+              </ShareButtonHighlightContainer>
+            )}
           <Popover
             ref={popoverRef}
             position={getPosition()}
