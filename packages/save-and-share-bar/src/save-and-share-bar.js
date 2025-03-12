@@ -90,11 +90,13 @@ function SaveAndShareBar(props) {
 
   // Set visiblity of the share highlight
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setShareHighlightVisible(
-        window.localStorage.getItem("hasShareButtonBeenClicked") !== "true"
-      );
-    }
+    const isSymphonyExperiment = checkForSymphonyExperiment();
+    const hasShareButtonBeenClicked =
+      window.localStorage.getItem("hasShareButtonBeenClicked") === "true";
+
+    setShareHighlightVisible(
+      isSymphonyExperiment && !hasShareButtonBeenClicked
+    );
   }, []);
 
   const barPosition = barRef.current
@@ -136,8 +138,6 @@ function SaveAndShareBar(props) {
     onCopyLink();
   }
 
-  const isSymphonyExperiment = checkForSymphonyExperiment();
-
   return (
     <SaveAndShareBarContainer data-testid="save-and-share-bar" ref={barRef}>
       {sharingEnabled && (
@@ -150,12 +150,11 @@ function SaveAndShareBar(props) {
             <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
-          {isSymphonyExperiment &&
-            shareHighlightVisible && (
-              <ShareButtonHighlightContainer data-testId="share-button-highlight">
-                <ShareButtonHighlight />
-              </ShareButtonHighlightContainer>
-            )}
+          {shareHighlightVisible && (
+            <ShareButtonHighlightContainer data-testId="share-button-highlight">
+              <ShareButtonHighlight />
+            </ShareButtonHighlightContainer>
+          )}
           <Popover
             ref={popoverRef}
             position={getPosition()}
