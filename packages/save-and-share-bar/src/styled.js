@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const SaveAndShareBarContainer = styled.div`
   display: flex;
@@ -10,46 +10,7 @@ export const SaveAndShareBarContainer = styled.div`
 `;
 
 export const ShareButtonContainer = styled.div`
-  display: flex;
   position: relative;
-`;
-
-const flashing = keyframes`
-  0% {
-    box-shadow: 0;
-  }
-
-  50% {  
-  box-shadow: 0 0 3px 4px #4B9FC950;
-  }
-
-  100% {  
-    box-shadow: 0;
-  }
-`;
-
-export const ShareButtonHighlightContainer = styled.div`
-  display: flex;
-  background-color: #ffffff;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-`;
-
-export const ShareButtonHighlight = styled.div`
-  background-color: #4b9fc9;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  right: -1px;
-  top: -1px;
-  z-index: 2;
-  animation: ${flashing} 2400ms infinite;
 `;
 
 export const OutlineButton = styled.button`
