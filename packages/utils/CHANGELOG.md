@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.28.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.27.1...@times-components/utils@6.28.0) (2025-03-13)
+
+
+### Features
+
+* **TMG-3003:** Share button highlight ([#4099](https://github.com/newsuk/times-components/issues/4099)) ([1ed5d89](https://github.com/newsuk/times-components/commit/1ed5d896bd140bc7bc82845ba73361a3aa066f48))
+
+
+
+
+
 ## [6.27.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.26.0...@times-components/utils@6.27.1) (2025-03-13)
 
 **Note:** Version bump only for package @times-components/utils

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.13.6",
+  "version": "2.13.7",
   "description": "Bulleted list of text data ",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -36,8 +36,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.2",
-    "@times-components/jest-serializer": "3.13.22",
-    "@times-components/storybook": "4.12.36",
+    "@times-components/jest-serializer": "3.13.23",
+    "@times-components/storybook": "4.12.37",
     "@times-components/tealium-utils": "0.9.1",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
@@ -53,12 +53,12 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/markup": "3.9.2",
+    "@times-components/markup": "3.9.3",
     "@times-components/markup-forest": "1.9.2",
-    "@times-components/responsive": "0.27.2",
-    "@times-components/ts-components": "1.123.3",
-    "@times-components/ts-styleguide": "1.50.36",
-    "@times-components/utils": "6.27.1",
+    "@times-components/responsive": "0.27.3",
+    "@times-components/ts-components": "1.123.4",
+    "@times-components/ts-styleguide": "1.50.37",
+    "@times-components/utils": "6.28.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
