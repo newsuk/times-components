@@ -18,6 +18,8 @@ import styles from "./styles";
 import {
   SaveAndShareBarContainer,
   ShareButtonContainer,
+  ShareButtonHighlightContainer,
+  ShareButtonHighlight,
   OutlineButton,
   Popover,
   PopoverHeader,
@@ -29,6 +31,31 @@ import EmailShare from "./components/email-share";
 import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 import ShareIcon from "./assets/share-icon";
+
+const getCookieValue = cookieName => {
+  const allCookies = document.cookie;
+  const cookiesArray = allCookies.split(";");
+  const targetCookie = cookiesArray.find(cookie => cookie.includes(cookieName));
+  return targetCookie ? targetCookie.split("=")[1] : null;
+};
+
+const getBase64CookieValue = cookieName => {
+  const cookieValue = getCookieValue(cookieName);
+  if (!cookieValue) return undefined;
+  try {
+    return JSON.parse(atob(cookieValue));
+  } catch (e) {
+    return undefined;
+  }
+};
+
+const checkForSymphonyExperiment = () => {
+  const zephrDecisions = getBase64CookieValue("nuk_zephr_decisions");
+  if (!zephrDecisions || !zephrDecisions["free-access-symphony"]) {
+    return false;
+  }
+  return zephrDecisions["free-access-symphony"].includes("ARTICLE_ACCESS");
+};
 
 function SaveAndShareBar(props) {
   const {
@@ -48,6 +75,10 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
+
+  const [shareHighlightVisible, setShareHighlightVisible] = React.useState(
+    false
+  );
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -81,6 +112,19 @@ function SaveAndShareBar(props) {
     };
   }, []);
 
+  // Set visiblity of the share highlight
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const isSymphonyExperiment = checkForSymphonyExperiment();
+      const hasShareButtonBeenClicked =
+        window.localStorage.getItem("hasShareButtonBeenClicked") === "true";
+
+      setShareHighlightVisible(
+        isSymphonyExperiment && !hasShareButtonBeenClicked
+      );
+    }
+  }, []);
+
   const barPosition = barRef.current
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
@@ -105,6 +149,13 @@ function SaveAndShareBar(props) {
     setPopoverOpen(prev => !prev);
   };
 
+  const handleClick = e => {
+    e.preventDefault();
+    window.localStorage.setItem("hasShareButtonBeenClicked", "true");
+    setShareHighlightVisible(false);
+    togglePopover();
+  };
+
   function copyToClipboard(e) {
     const { onCopyLink } = props;
     e.preventDefault();
@@ -120,11 +171,16 @@ function SaveAndShareBar(props) {
           <OutlineButton
             ref={shareBtnRef}
             isPopoverOpen={popoverOpen}
-            onClick={togglePopover}
+            onClick={handleClick}
           >
             <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
+          {shareHighlightVisible && (
+            <ShareButtonHighlightContainer data-testId="share-button-highlight">
+              <ShareButtonHighlight />
+            </ShareButtonHighlightContainer>
+          )}
           <Popover
             ref={popoverRef}
             position={getPosition()}
