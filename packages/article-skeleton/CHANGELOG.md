@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.155.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.153.0...@times-components/article-skeleton@1.155.0) (2025-03-13)
+
+
+### Features
+
+* **TMG-000:** Remove SaveAndShareBar UserState logic ([#4082](https://github.com/newsuk/times-components/issues/4082)) ([2b04f85](https://github.com/newsuk/times-components/commit/2b04f85baebcc0f85cf828ed96c665dcaaf1b05f))
+* **TMW-000:** Remove user state wrapper for share ([#4096](https://github.com/newsuk/times-components/issues/4096)) ([38d83d5](https://github.com/newsuk/times-components/commit/38d83d563ab47119fd2a394a17ea90fef6fc0206))
+
+
+
+
+
 # [1.153.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.152.0...@times-components/article-skeleton@1.153.0) (2025-03-12)
 
 

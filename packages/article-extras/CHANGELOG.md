@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.34.14...@times-components/article-extras@0.36.0) (2025-03-13)
+
+
+### Features
+
+* **TMG-000:** Remove SaveAndShareBar UserState logic ([#4082](https://github.com/newsuk/times-components/issues/4082)) ([2b04f85](https://github.com/newsuk/times-components/commit/2b04f85baebcc0f85cf828ed96c665dcaaf1b05f))
+
+
+
+
+
 ## [0.34.14](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.34.13...@times-components/article-extras@0.34.14) (2025-03-12)
 
 **Note:** Version bump only for package @times-components/article-extras

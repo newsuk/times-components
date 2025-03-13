@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "3.13.57",
+  "version": "3.13.58",
   "description": "Article byline information ",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
@@ -35,8 +35,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.2",
-    "@times-components/jest-serializer": "3.13.21",
-    "@times-components/storybook": "4.12.35",
+    "@times-components/jest-serializer": "3.13.22",
+    "@times-components/storybook": "4.12.36",
     "@times-components/test-utils": "2.4.2",
     "@times-components/webpack-configurator": "2.1.1",
     "babel-jest": "24.8.0",
@@ -52,12 +52,12 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/link": "3.17.35",
-    "@times-components/markup": "3.9.1",
+    "@times-components/link": "3.17.36",
+    "@times-components/markup": "3.9.2",
     "@times-components/markup-forest": "1.9.2",
-    "@times-components/tracking": "2.22.35",
-    "@times-components/ts-styleguide": "1.50.35",
-    "@times-components/utils": "6.27.0",
+    "@times-components/tracking": "2.22.36",
+    "@times-components/ts-styleguide": "1.50.36",
+    "@times-components/utils": "6.27.1",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
