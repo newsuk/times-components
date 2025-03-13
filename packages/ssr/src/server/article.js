@@ -54,7 +54,7 @@ module.exports = (
   }
   if (typeof commentingConfig !== "object") {
     throw new Error(
-      `SpotIM account ID should be an object.. Received ${commentingConfig}`
+      `SpotIM account ID should be an object. Received ${commentingConfig}`
     );
   }
 
