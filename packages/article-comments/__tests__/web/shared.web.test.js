@@ -55,6 +55,8 @@ describe("comments-login", () => {
 
 describe("User States", () => {
   it("enabled comments", () => {
+    window.document.cookie = "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ.";
+    UserState.mockStates = [UserState.showArticleComments];
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
@@ -68,6 +70,9 @@ describe("User States", () => {
   });
 
   it("uses com host when received", () => {
+    window.document.cookie = "auth-decisions=eyJmcC0xMTExIjp0cnVlfQ.";
+    UserState.mockStates = [UserState.showArticleComments];
+
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true,
@@ -84,8 +89,12 @@ describe("User States", () => {
   });
 
   it("RA Users", () => {
-    UserState.mockStates = [UserState.showJoinTheConversationDialog];
-
+    UserState.mockStates = [
+      UserState.showJoinTheConversationDialog,
+      UserState.showArticleComments
+    ];
+    window.document.cookie =
+      "auth-decisions=eyJmcC0xMTExIjp0cnVlLCJhbGciOiJIUfzI1NiJc9";
     const { asFragment, getAllByText } = renderComments({
       count: 123,
       enabled: true

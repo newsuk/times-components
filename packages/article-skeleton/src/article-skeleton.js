@@ -91,8 +91,7 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled,
-    isEntitlementFeatureEnabled
+    isCommentEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -462,7 +461,6 @@ const ArticleSkeleton = ({
                       storefrontConfig={storefrontConfig}
                       breadcrumbs={breadcrumbs}
                       domainSpecificUrl={domainSpecificUrl}
-                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
                     />
                   )}
                 </LazyLoad>

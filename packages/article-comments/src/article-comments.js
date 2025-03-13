@@ -6,62 +6,79 @@ import UserState from "@times-components/user-state";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
-import UserEntitlementState from "./user-entitlement-state";
 
 const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
   commentingConfig,
-  isCommentEnabled,
   storefrontConfig,
-  domainSpecificUrl,
-  isEntitlementFeatureEnabled
+  domainSpecificUrl
 }) => {
-  const [userEntitlementData, setUserEntitlementData] = useState(undefined);
-
-  useEffect(
-    () => {
-      const fetchUserEntitlements = async () => {
-        const response = await fetch("/api/get-user-entitlements");
-        const data = await response.json();
-        setUserEntitlementData(data);
-      };
-
-      if (typeof window !== "undefined" && isEntitlementFeatureEnabled) {
-        fetchUserEntitlements();
-      }
-    },
-    [isEntitlementFeatureEnabled]
+  const [hasCommentingEntitlement, setHasCommentingEntitlement] = useState(
+    false
   );
 
-  return isEnabled && isCommentEnabled ? (
-    <>
-      <UserState state={UserState.showJoinTheConversationDialog}>
-        <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
-      </UserState>
-      {!isEntitlementFeatureEnabled ? (
-        <UserState state={UserState.showCommentingModule}>
-          <Comments
-            articleId={articleId}
-            isReadOnly={isReadOnly}
-            commentingConfig={commentingConfig}
-            domainSpecificUrl={domainSpecificUrl}
-          />
-        </UserState>
-      ) : (
-        <UserEntitlementState userEntitlementData={userEntitlementData}>
-          <Comments
-            articleId={articleId}
-            isReadOnly={isReadOnly}
-            commentingConfig={commentingConfig}
-            domainSpecificUrl={domainSpecificUrl}
-          />
-        </UserEntitlementState>
-      )}
-    </>
-  ) : (
-    <DisabledComments />
+  useEffect(() => {
+    const convertBase64JSONCookie = cookieValue => {
+      try {
+        return cookieValue
+          ? JSON.parse(Buffer.from(cookieValue, "base64").toString())
+          : undefined;
+      } catch (e) {
+        return undefined;
+      }
+    };
+
+    const fetchClientSideCookie = () => {
+      const cookies = window.document.cookie.split("; ");
+      const authDecisionCookie = cookies.find(row =>
+        row.startsWith("auth-decisions=")
+      );
+      const cookieValue = authDecisionCookie
+        ? authDecisionCookie.split("=")[1]
+        : null;
+
+      if (cookieValue) {
+        try {
+          const jsonValue = convertBase64JSONCookie(cookieValue);
+          const entitlements = jsonValue ? jsonValue["fp-1111"] : false;
+          setHasCommentingEntitlement(entitlements);
+        } catch (error) {
+          setHasCommentingEntitlement(false);
+        }
+      } else {
+        setHasCommentingEntitlement(false);
+      }
+    };
+
+    fetchClientSideCookie();
+  }, []);
+
+  let content;
+  if (!isEnabled) {
+    content = <DisabledComments />;
+  } else if (hasCommentingEntitlement) {
+    content = (
+      <Comments
+        articleId={articleId}
+        isReadOnly={isReadOnly}
+        commentingConfig={commentingConfig}
+        domainSpecificUrl={domainSpecificUrl}
+      />
+    );
+  } else {
+    content = <JoinTheConversationDialog storefrontConfig={storefrontConfig} />;
+  }
+
+  return (
+    <UserState
+      state={UserState.showArticleComments}
+      fallback={<DisabledComments />}
+      serverRender={false}
+    >
+      {content}
+    </UserState>
   );
 };
 
@@ -73,14 +90,11 @@ ArticleComments.propTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
-  isCommentEnabled: PropTypes.bool,
-  domainSpecificUrl: PropTypes.string.isRequired,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false,
-  isCommentEnabled: true
+  isReadOnly: false
 };
 
 export default ArticleComments;
