@@ -66,7 +66,7 @@
     "@times-components/card": "6.16.1",
     "@times-components/context": "1.24.0",
     "@times-components/error-view": "2.6.62",
-    "@times-components/image": "6.18.2",
+    "@times-components/image": "6.18.3",
     "@times-components/lazy-load": "0.20.0",
     "@times-components/link": "3.17.35",
     "@times-components/pagination": "3.13.21",
