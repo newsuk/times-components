@@ -18,6 +18,7 @@ import {
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import SaveAndShareBar from "@times-components/save-and-share-bar";
 import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
@@ -61,6 +62,8 @@ const ArticleSkeleton = ({
   analyticsStream,
   data: article,
   Header,
+  Content,
+  ContentFooter,
   logoUrl,
   receiveChildList,
   commentingConfig,
@@ -187,6 +190,23 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceArticleContent(content, articleContentReducers);
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
+  const rendererdContent = newContent && (
+    <ArticleBody
+      id={article.id}
+      analyticsStream={analyticsStream}
+      content={newContent}
+      contextUrl={articleUrl}
+      section={section}
+      articleHeadline={headline}
+      paidContentClassName={paidContentClassName}
+      template={template}
+      isPreview={isPreview}
+      isLiveOrBreaking={isLiveOrBreaking}
+      deckApiUrl={deckApiUrl}
+    />
+  );
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -210,12 +230,37 @@ const ArticleSkeleton = ({
     }
   ]);
 
+  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
+
   const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
-  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const SaveAndShare = true ? (
+    <UserState state={UserState.showSaveAndShareBar}>
+      <MessageContext.Consumer>
+        {({ showMessage }) => {
+          const saveShareProps = {
+            articleId,
+            articleHeadline: headline,
+            articleUrl,
+            onCopyLink: () => showMessage("Article link copied"),
+            onSaveToMyArticles: () => {},
+            onShareOnEmail: () => {},
+            savingEnabled,
+            sharingEnabled,
+            hostName: domainSpecificUrl
+          };
+          return Content ? (
+            <SaveAndShareBar {...saveShareProps} />
+          ) : (
+            <StickySaveAndShareBar {...saveShareProps} />
+          );
+        }}
+      </MessageContext.Consumer>
+    </UserState>
+  ) : null;
+
   const [polygonUrl, setPolygonUrl] = useState([]);
 
   const fetchPolygon = async () => {
@@ -309,180 +354,157 @@ const ArticleSkeleton = ({
               html={'<div id="nu-zephr-article-target-below-head"></div>'}
             />
           )}
-          <Fragment>
-            <HeaderAdContainer key="headerAd">
-              <AdContainer slotName="header" style={styles.adMarginStyle} />
-            </HeaderAdContainer>
-            <MainContainer>
-              <WelcomeBanner />
-              {!!zephrDivs && (
-                <StaticContent
-                  html={
-                    '<div id="nu-zephr-article-target-top-maincontainer"></div>'
-                  }
-                />
-              )}
-              <HeaderContainer showAudioPlayer={showAudioPlayer}>
+          {Content ? (
+            <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
+          ) : (
+            <Fragment>
+              <HeaderAdContainer key="headerAd">
+                <AdContainer slotName="header" style={styles.adMarginStyle} />
+              </HeaderAdContainer>
+              <MainContainer>
+                <WelcomeBanner />
                 {!!zephrDivs && (
                   <StaticContent
                     html={
-                      '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                      '<div id="nu-zephr-article-target-top-maincontainer"></div>'
                     }
                   />
                 )}
-                <Header />
-                {isSharingSavingEnabled ? (
-                  <MessageContext.Consumer>
-                    {({ showMessage }) => (
-                      <StickySaveAndShareBar
-                        articleId={articleId}
-                        articleHeadline={headline}
-                        articleUrl={articleUrl}
-                        onCopyLink={() => showMessage("Article link copied")}
-                        onSaveToMyArticles={() => {}}
-                        onShareOnEmail={() => {}}
-                        savingEnabled={savingEnabled}
-                        sharingEnabled={sharingEnabled}
-                        hostName={domainSpecificUrl}
-                      />
-                    )}
-                  </MessageContext.Consumer>
-                ) : null}
-                {!!zephrDivs && (
-                  <StaticContent
-                    html={
-                      '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
-                    }
-                  />
-                )}
-              </HeaderContainer>
-              <BodyContainer>
-                <ArticleWrapper>
-                  {CanShowPuzzleSidebar(section) && (
-                    <SidebarWarpper>
-                      <PuzzlesSidebar ref={sidebarRef}>
-                        <ArticleSidebar
-                          pageLink={`${domainSpecificUrl}/puzzles`}
-                          sectionTitle="Puzzles"
-                          data={[
-                            {
-                              title: "Crossword",
-                              url: `${domainSpecificUrl}/puzzles/crossword`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                            },
-                            {
-                              title: "Polygon",
-                              url: polygonUrl,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                            },
-                            {
-                              title: "Sudoku",
-                              url: `${domainSpecificUrl}/puzzles/sudoku`,
-                              imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                            }
-                          ]}
-                        />
-                      </PuzzlesSidebar>
-                    </SidebarWarpper>
+                <HeaderContainer showAudioPlayer={showAudioPlayer}>
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={
+                        '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                      }
+                    />
                   )}
-                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
-                    {!!zephrDivs && (
-                      <StaticContent
-                        html={
-                          '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
-                        }
-                      />
-                    )}
-                    {newContent && (
-                      <ArticleBody
-                        id={article.id}
-                        analyticsStream={analyticsStream}
-                        content={newContent}
-                        contextUrl={articleUrl}
-                        section={section}
-                        articleHeadline={headline}
-                        paidContentClassName={paidContentClassName}
-                        template={template}
-                        isPreview={isPreview}
-                        isLiveOrBreaking={isLiveOrBreaking}
-                        deckApiUrl={deckApiUrl}
-                      />
-                    )}
-                    {isLiveOrBreaking && (
-                      <UserState state={UserState.showLiveUpdateButton}>
-                        <UpdateButtonContainer data-testid="Update button container">
-                          <UpdateButtonWithDelay
-                            delay={8000}
-                            update
-                            display
-                            label="New update"
-                            handleClick={() => scrollToTopAndRefresh(window)}
-                            updatedTime={article.publishedTime}
-                            articleId={article.id}
+                  <Header />
+                  {SaveAndShare}
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={
+                        '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
+                      }
+                    />
+                  )}
+                </HeaderContainer>
+                <BodyContainer>
+                  <ArticleWrapper>
+                    {CanShowPuzzleSidebar(section) && (
+                      <SidebarWarpper>
+                        <PuzzlesSidebar ref={sidebarRef}>
+                          <ArticleSidebar
+                            pageLink={`${domainSpecificUrl}/puzzles`}
+                            sectionTitle="Puzzles"
+                            data={[
+                              {
+                                title: "Crossword",
+                                url: `${domainSpecificUrl}/puzzles/crossword`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                              },
+                              {
+                                title: "Polygon",
+                                url: polygonUrl,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                              },
+                              {
+                                title: "Sudoku",
+                                url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                              }
+                            ]}
                           />
-                        </UpdateButtonContainer>
-                      </UserState>
+                        </PuzzlesSidebar>
+                      </SidebarWarpper>
                     )}
-                    <PaywallPortal
-                      id="paywall-portal-article-footer"
-                      componentName="subscribe-cta"
-                    >
+                    <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                       {!!zephrDivs && (
                         <StaticContent
                           html={
-                            '<div id="nu-zephr-article-target-paywall"></div>'
+                            '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
                           }
                         />
                       )}
-                    </PaywallPortal>
-                  </ArticleContent>
-                </ArticleWrapper>
-                <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                  {({ observed, registerNode }) => (
-                    <ArticleExtras
-                      analyticsStream={analyticsStream}
-                      articleId={articleId}
-                      articleHeadline={headline}
-                      articleUrl={articleUrl}
-                      section={section}
-                      publishedTime={publishedTime}
-                      savingEnabled={savingEnabled}
-                      sharingEnabled={sharingEnabled}
-                      commentsEnabled={commentsEnabled}
-                      registerNode={registerNode}
-                      relatedArticleSlice={relatedArticleSlice}
-                      categorisedArticles={categorisedArticles}
-                      relatedArticlesVisible={
-                        !!observed.get("related-articles")
+                      {rendererdContent}
+                      {isLiveOrBreaking && (
+                        <UserState state={UserState.showLiveUpdateButton}>
+                          <UpdateButtonContainer data-testid="Update button container">
+                            <UpdateButtonWithDelay
+                              delay={8000}
+                              update
+                              display
+                              label="New update"
+                              handleClick={() => scrollToTopAndRefresh(window)}
+                              updatedTime={article.publishedTime}
+                              articleId={article.id}
+                            />
+                          </UpdateButtonContainer>
+                        </UserState>
+                      )}
+                      <PaywallPortal
+                        id="paywall-portal-article-footer"
+                        componentName="subscribe-cta"
+                      >
+                        {!!zephrDivs && (
+                          <StaticContent
+                            html={
+                              '<div id="nu-zephr-article-target-paywall"></div>'
+                            }
+                          />
+                        )}
+                      </PaywallPortal>
+                    </ArticleContent>
+                  </ArticleWrapper>
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                    {({ observed, registerNode }) => (
+                      <ArticleExtras
+                        analyticsStream={analyticsStream}
+                        articleId={articleId}
+                        articleHeadline={headline}
+                        articleUrl={articleUrl}
+                        section={section}
+                        publishedTime={publishedTime}
+                        savingEnabled={savingEnabled}
+                        sharingEnabled={sharingEnabled}
+                        commentsEnabled={commentsEnabled}
+                        registerNode={registerNode}
+                        relatedArticleSlice={relatedArticleSlice}
+                        categorisedArticles={categorisedArticles}
+                        relatedArticlesVisible={
+                          !!observed.get("related-articles")
+                        }
+                        commentingConfig={commentingConfig}
+                        topics={topics}
+                        isSharingSavingEnabled={isSharingSavingEnabled}
+                        isCommentEnabled={isCommentEnabled}
+                        storefrontConfig={storefrontConfig}
+                        breadcrumbs={breadcrumbs}
+                        domainSpecificUrl={domainSpecificUrl}
+                        isEntitlementFeatureEnabled={
+                          isEntitlementFeatureEnabled
+                        }
+                      />
+                    )}
+                  </LazyLoad>
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={
+                        '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
                       }
-                      commentingConfig={commentingConfig}
-                      topics={topics}
-                      isSharingSavingEnabled={isSharingSavingEnabled}
-                      isCommentEnabled={isCommentEnabled}
-                      storefrontConfig={storefrontConfig}
-                      breadcrumbs={breadcrumbs}
-                      domainSpecificUrl={domainSpecificUrl}
-                      isEntitlementFeatureEnabled={isEntitlementFeatureEnabled}
                     />
                   )}
-                </LazyLoad>
+                </BodyContainer>
                 {!!zephrDivs && (
                   <StaticContent
                     html={
-                      '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
+                      '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
                     }
                   />
                 )}
-              </BodyContainer>
-              {!!zephrDivs && (
-                <StaticContent
-                  html={
-                    '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
-                  }
-                />
-              )}
-            </MainContainer>
-          </Fragment>
+              </MainContainer>
+            </Fragment>
+          )}
+          {ContentFooter && <ContentFooter />}
           <AdContainer slotName="pixel" />
           <AdContainer slotName="pixelteads" />
           <AdContainer slotName="pixelskin" />

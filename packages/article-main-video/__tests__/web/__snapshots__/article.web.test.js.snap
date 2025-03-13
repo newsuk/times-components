@@ -1,0 +1,599 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. an article 1`] = `
+<div>
+  <div>
+    <div
+      id="article-marketing-header"
+    />
+    <article
+      data-article-sectionname="business"
+      data-article-template="mainvideo"
+      id="article-main"
+    >
+      <Helmet
+        encodeSpecialCharacters={false}
+      >
+        <title>
+          Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
+        </title>
+        <meta
+          content="max-image-preview:large"
+          name="robots"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          name="description"
+        />
+        <meta
+          content="Rick Broadbent"
+          name="author"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+          property="og:url"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          property="og:description"
+        />
+        <meta
+          content="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200"
+          property="og:image"
+        />
+        <meta
+          content="max-video-preview:-1"
+          name="robots"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+          name="twitter:url"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          name="twitter:description"
+        />
+        <meta
+          content="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"Comment"}
+        </script>
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200","caption":null},"thumbnailUrl":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
+        </script>
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"VideoObject","name":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","uploadDate":"2022-02-24T09:00:00.000Z","thumbnailUrl":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203","description":"In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+        </script>
+        <script
+          async={true}
+          src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+      </Helmet>
+      <div>
+        <div>
+          <div>
+            <div>
+              <figure>
+                <div>
+                  <div>
+                    <div
+                      data-is-360={null}
+                    >
+                      <div>
+                        <video
+                          controls={true}
+                          data-account="5436121857001"
+                          data-application-id={true}
+                          data-embed="default"
+                          data-player="default"
+                          data-video-id="5831024132001"
+                          id="5831024132001-5436121857001-c80017b1-f7f1-44d9-9519-70976de55b14"
+                          poster="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=960"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption />
+              </figure>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                15:03
+              </p>
+            </div>
+            <div>
+              <h1>
+                Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
+              </h1>
+              <div>
+                <DatePublication
+                  date="2015-03-13T18:54:58.000Z"
+                  publication="TIMES"
+                />
+              </div>
+              <div>
+                <p
+                  id="U123456789101112131415"
+                >
+                  As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
+                </p>
+              </div>
+            </div>
+            <div />
+            <div>
+              <p>
+                Related Article
+              </p>
+              <Link
+                url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+              >
+                <span>
+                  Related Article 1
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>
+              Up Next
+            </p>
+            <div />
+            <div>
+              <div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 1
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 1
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 2
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <nav
+            aria-label="breadcrumbs"
+          >
+            <a
+              aria-current="false"
+              href="/uk"
+              selected={false}
+            >
+              UK
+            </a>
+            <div>
+              <svg
+                color="#aaaaaa"
+                fill="none"
+                height={16}
+                width={16}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
+                  fill="#aaaaaa"
+                />
+              </svg>
+            </div>
+            <a
+              aria-current="page"
+              href="/uk/defence"
+              selected={true}
+            >
+              Defence
+            </a>
+          </nav>
+        </div>
+      </div>
+      <AdContainer
+        slotName="pixel"
+      />
+      <AdContainer
+        slotName="pixelteads"
+      />
+      <AdContainer
+        slotName="pixelskin"
+      />
+    </article>
+  </div>
+</div>
+`;
+
+exports[`2. loading 1`] = `null`;
+
+exports[`3. an error 1`] = `null`;
+
+exports[`4. should show topics when logged in or shared 1`] = `
+<div>
+  <div>
+    <div
+      id="article-marketing-header"
+    />
+    <article
+      data-article-sectionname="business"
+      data-article-template="mainvideo"
+      id="article-main"
+    >
+      <Helmet
+        encodeSpecialCharacters={false}
+      >
+        <title>
+          Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
+        </title>
+        <meta
+          content="max-image-preview:large"
+          name="robots"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          name="description"
+        />
+        <meta
+          content="Rick Broadbent"
+          name="author"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+          property="og:url"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          property="og:description"
+        />
+        <meta
+          content="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200"
+          property="og:image"
+        />
+        <meta
+          content="max-video-preview:-1"
+          name="robots"
+        />
+        <meta
+          content="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+          name="twitter:url"
+        />
+        <meta
+          content="In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him"
+          name="twitter:description"
+        />
+        <meta
+          content="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"Comment"}
+        </script>
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=1200","caption":null},"thumbnailUrl":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
+        </script>
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"https://schema.org","@type":"VideoObject","name":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","uploadDate":"2022-02-24T09:00:00.000Z","thumbnailUrl":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203","description":"In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+        </script>
+        <script
+          async={true}
+          src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+      </Helmet>
+      <div>
+        <div>
+          <div>
+            <div>
+              <figure>
+                <div>
+                  <div>
+                    <div
+                      data-is-360={null}
+                    >
+                      <div>
+                        <video
+                          controls={true}
+                          data-account="5436121857001"
+                          data-application-id={true}
+                          data-embed="default"
+                          data-player="default"
+                          data-video-id="5831024132001"
+                          id="5831024132001-5436121857001-c80017b1-f7f1-44d9-9519-70976de55b14"
+                          poster="https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203&resize=960"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption />
+              </figure>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                15:03
+              </p>
+            </div>
+            <div>
+              <h1>
+                Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France
+              </h1>
+              <div>
+                <DatePublication
+                  date="2015-03-13T18:54:58.000Z"
+                  publication="TIMES"
+                />
+              </div>
+              <div>
+                <p
+                  id="U123456789101112131415"
+                >
+                  As I follow Chris Reynolds Gordon down the first floor corridor of a £27 million house, nestled between the Colombian consulate and the Swedish ambassador’s residence, we pass an ornate room full of mattresses. He smiles and closes the door as we walk past. This is the habitat of a man who is making his fortune from hosting “elite” sex parties in one of London’s wealthiest postcodes, and the room was the venue of his latest sex party. He has not read Fifty Shades of Grey but, he says, “I’m living it.”
+                </p>
+              </div>
+            </div>
+            <div>
+              <SaveAndShareBar
+                articleHeadline="Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France"
+                articleUrl="https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+                hostName="https://www.thetimes.co.uk"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
+            <div>
+              <p>
+                Related Article
+              </p>
+              <Link
+                url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+              >
+                <span>
+                  Related Article 1
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>
+              Up Next
+            </p>
+            <div />
+            <div>
+              <div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 1
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 1
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    url="https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv"
+                  >
+                    <div>
+                      <p>
+                        15:03
+                      </p>
+                      <Image
+                        aspectRatio={1.7777777777777777}
+                      />
+                    </div>
+                    <span>
+                      Related Article 2
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <nav
+            aria-label="breadcrumbs"
+          >
+            <a
+              aria-current="false"
+              href="/uk"
+              selected={false}
+            >
+              UK
+            </a>
+            <div>
+              <svg
+                color="#aaaaaa"
+                fill="none"
+                height={16}
+                width={16}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
+                  fill="#aaaaaa"
+                />
+              </svg>
+            </div>
+            <a
+              aria-current="page"
+              href="/uk/defence"
+              selected={true}
+            >
+              Defence
+            </a>
+          </nav>
+        </div>
+        <nav>
+          <ArticleTopics
+            topics={
+              Array [
+                Object {
+                  "name": "Islington",
+                  "slug": "islington",
+                },
+                Object {
+                  "name": "Chelsea",
+                  "slug": "chelsea",
+                },
+              ]
+            }
+          />
+        </nav>
+      </div>
+      <AdContainer
+        slotName="pixel"
+      />
+      <AdContainer
+        slotName="pixelteads"
+      />
+      <AdContainer
+        slotName="pixelskin"
+      />
+    </article>
+  </div>
+</div>
+`;
