@@ -5437,6 +5437,63 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/image@6.18.2":
+  version "6.18.2"
+  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-6.18.2.tgz#b61f31d30e9aee2d8e54c9f00d79decf94602bf9"
+  integrity sha512-O2C0kW+u9PxPx98BGZfRTCjuXRd4ER7Gom0NzMCUsu8Yd7um3N/+vhESVhqiCHKNgieilKntgPIasPNFkNYYvg==
+  dependencies:
+    "@times-components/ts-styleguide" "1.50.34"
+    "@times-components/utils" "6.26.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/link@3.17.34":
+  version "3.17.34"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.17.34.tgz#e01ba55062d960420c0af73ce972e962adac8564"
+  integrity sha512-FEuQKKQoIJsShOesFbA0E+ldObJmdGMjTtYszo66Zbkh/UcsPSa4GL4DKM9LdwVnm3BaWubIbNgi0AABDbZylQ==
+  dependencies:
+    "@times-components/ts-styleguide" "1.50.34"
+    "@times-components/utils" "6.26.0"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/markup@3.9.1":
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-3.9.1.tgz#c695d81660dcb8d7bbd55a22054ba1421d1c7492"
+  integrity sha512-jRbYCx2Uai9oZ4u3m6LtrxDs3PKsHVhF5B3LNFr4hkabYUUX3zZ4N/CYsLGvtkpD/WcUplt50jVo6jGDFOHi9Q==
+  dependencies:
+    "@times-components/ts-styleguide" "1.50.35"
+    "@times-components/utils" "6.27.0"
+
+"@times-components/ts-styleguide@1.50.34":
+  version "1.50.34"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.50.34.tgz#1cfdfab05e2bdb296f8803cbe1822fce385cc94f"
+  integrity sha512-BVslHD5MSxqKwBPVnpGQ5dpZRBwkBZHUjdfatQS5hInxsNqIVDqcwx/v2xwlev2AAd2o+oCkVJJyeZwHp80fyw==
+  dependencies:
+    "@times-components/link" "3.17.34"
+    "@times-components/utils" "6.26.0"
+    react "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/utils@6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.26.0.tgz#43464ff4c70d8d5cd27456a723c672e43f60b322"
+  integrity sha512-R7WAyR6JjG2Ti2fgTMoQlvSiZeqpDk2ZeskjMqCFC75ECAyuK1MNySaFjx4wEYBtq1mzf10kWJTeqTkqYPEhUw==
+  dependencies:
+    "@times-components/schema" "0.7.5"
+    "@times-components/ts-styleguide" "1.50.34"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
