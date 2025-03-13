@@ -43,12 +43,12 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   commentingConfig,
   topics,
-  isSharingSavingEnabled,
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
   domainSpecificUrl,
-  isEntitlementFeatureEnabled
+  isEntitlementFeatureEnabled,
+  isSharingSavingEntitlementEnabled
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -114,6 +114,7 @@ const ArticleExtras = ({
       </PromotedContentContainer>
     </>
   );
+
   return (
     <UserState
       state={UserState.showArticleExtras}
@@ -122,26 +123,27 @@ const ArticleExtras = ({
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
-      {isSharingSavingEnabled && (
-        <UserState state={UserState.showSaveAndShareBar}>
-          <MessageContext.Consumer>
-            {({ showMessage }) => (
-              <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-                <SaveAndShareBar
-                  articleId={articleId}
-                  articleHeadline={articleHeadline}
-                  articleUrl={articleUrl}
-                  onCopyLink={() => showMessage("Article link copied")}
-                  onSaveToMyArticles={() => {}}
-                  onShareOnEmail={() => {}}
-                  savingEnabled={savingEnabled}
-                  sharingEnabled={sharingEnabled}
-                />
-              </ShareAndSaveContainer>
-            )}
-          </MessageContext.Consumer>
-        </UserState>
-      )}
+      <MessageContext.Consumer>
+        {({ showMessage }) => (
+          <ShareAndSaveContainer
+            showBottomBorder={!relatedArticleSlice}
+            isSharingSavingEntitlementEnabled={
+              isSharingSavingEntitlementEnabled
+            }
+          >
+            <SaveAndShareBar
+              articleId={articleId}
+              articleHeadline={articleHeadline}
+              articleUrl={articleUrl}
+              onCopyLink={() => showMessage("Article link copied")}
+              onSaveToMyArticles={() => {}}
+              onShareOnEmail={() => {}}
+              savingEnabled={savingEnabled}
+              sharingEnabled={sharingEnabled}
+            />
+          </ShareAndSaveContainer>
+        )}
+      </MessageContext.Consumer>
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
@@ -173,19 +175,18 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired,
-  isEntitlementFeatureEnabled: PropTypes.bool.isRequired
+  isEntitlementFeatureEnabled: PropTypes.bool.isRequired,
+  isSharingSavingEntitlementEnabled: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   categorisedArticles: null,
   topics: null,
-  isSharingSavingEnabled: true,
   isCommentEnabled: true,
   breadcrumbs: []
 };
