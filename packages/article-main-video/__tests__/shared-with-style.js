@@ -9,12 +9,11 @@ import {
   minimalWebTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
+import { fixtures } from "@times-components/provider-test-tools";
 import "./mocks";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainVideo from "../src/article-main-video";
-import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
-import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
@@ -50,8 +49,8 @@ export default () => {
   });
 
   it("full article with style", () => {
-    const article = articleFixture({
-      ...testFixture,
+    const article = {
+      ...fixtures.articleVideoData,
       content: [
         {
           attributes: {
@@ -153,7 +152,7 @@ export default () => {
           name: "image"
         }
       ]
-    });
+    };
 
     const output = TestRenderer.create(
       <ContextProviderWithDefaults
@@ -162,7 +161,6 @@ export default () => {
         }}
       >
         <ArticleMainVideo
-          {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={article}

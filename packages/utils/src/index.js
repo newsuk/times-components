@@ -23,7 +23,7 @@ export { default as TcFlatList } from "./tc-flat-list";
 export { default as TcText } from "./tc-text";
 export { default as TcTextLink } from "./tc-text-link";
 export { default as TcScrollView } from "./tc-scroll-view";
-export { debounce } from "./debounce";
+export { default as debounce } from "./debounce";
 export {
   default as CanShowPuzzleSidebar
 } from "./article-puzzle-sidebar-whitelist";

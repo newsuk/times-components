@@ -1,4 +1,4 @@
-export const debounce = (
+const debounce = (
   fn,
   delay
 ) => {

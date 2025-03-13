@@ -11,12 +11,12 @@
   },
   "breadcrumbs": [
     {
-        "title": "UK",
-        "url": "/uk"
+      "title": "UK",
+      "url": "/uk"
     },
     {
-        "title": "Defence",
-        "url": "/uk/defence"
+      "title": "Defence",
+      "url": "/uk/defence"
     }
   ],
   "bylines": [
@@ -54,7 +54,7 @@
       }
     }
   ],
-  "commentsEnabled": true,
+  "commentsEnabled": false,
   "descriptionMarkup": [
     {
       "name": "paragraph",
@@ -136,6 +136,7 @@
     "__typename": "Video",
     "id": "c80017b1-f7f1-44d9-9519-70976de55b14",
     "caption": null,
+    "duration": 902000,
     "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
     "brightcovePlayerId": "default",
     "brightcoveVideoId": "5831024132001",
@@ -145,32 +146,14 @@
     "is360": null,
     "posterImage": {
       "id": "a037039c-2853-46b6-ad85-c332a1220798",
-      "crops": [
-        {
-          "ratio": "3:2",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2592%2C0%2C0"
-        },
-        {
-          "ratio": "16:9",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203"
-        },
-        {
-          "ratio": "1:1",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=2592%2C2592%2C648%2C0"
-        },
-        {
-          "ratio": "2:3",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=1728%2C2592%2C1080%2C0"
-        },
-        {
-          "ratio": "4:5",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=2074%2C2592%2C907%2C0"
-        },
-        {
-          "ratio": "5:4",
-          "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3240%2C2592%2C324%2C0"
-        }
-      ],
+      "crop32": {
+        "ratio": "3:2",
+        "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2592%2C0%2C0"
+      },
+      "crop169": {
+        "ratio": "16:9",
+        "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203"
+      },
       "caption": "tiger stripe cat on white background"
     }
   },
@@ -233,599 +216,6 @@
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
   "updatedTime": "2022-02-24T09:00:00.000Z",
-  "relatedArticleSlice": {
-    "__typename": "StandardSlice",
-    "items": [
-      {
-        "bylines": [
-          {
-            "__typename": "TextByline",
-            "byline": [
-              {
-                "name": "inline",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Patrick Kidd" },
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "hasVideo": true,
-        "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
-        "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-        "label": "Health",
-        "leadAsset": {
-          "crop169": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
-            "relativeHeight": 0.4,
-            "relativeHorizontalOffset": 0.16666666666666666,
-            "relativeVerticalOffset": 0.2,
-            "relativeWidth": 0.5
-          },
-          "crop32": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
-            "relativeHeight": 0.4,
-            "relativeHorizontalOffset": 0.16666666666666666,
-            "relativeVerticalOffset": 0.2,
-            "relativeWidth": 0.5
-          },
-          "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-          "title": "TMS: Pratchett’s law of the jungle",
-          "__typename": "Image"
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T19:39:39.000Z",
-        "section": "sport",
-        "shortHeadline": "TMS: Pratchett’s law of the jungle",
-        "shortIdentifier": "abc123",
-        "slug": "related-article-slug",
-        "summary105": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": { "value": " in 1965, aged 17, and the" },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary125": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value": " in 1965, aged 17, and the paper recalls in a"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary145": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary160": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary175": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary225": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Terry Pratchett, who died last week, began his career on the "
-                },
-                "children": []
-              },
-              {
-                "name": "italic",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "text",
-                "attributes": {
-                  "value": " in 1965, aged 17, and the paper recalls in a tribute that he wore his school uniform to his job interview. The editor, impressed, told him: “I like"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "categoryPath": "/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779"
-      },
-      {
-        "bylines": [
-          {
-            "__typename": "TextByline",
-            "byline": [
-              {
-                "name": "inline",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": {
-                      "value": "Graeme Paton Transport Correspondent"
-                    },
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-        "hasVideo": true,
-        "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
-        "label": "Science",
-        "leadAsset": {
-          "crop169": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210",
-            "relativeHeight": 0.4,
-            "relativeHorizontalOffset": 0.16666666666666666,
-            "relativeVerticalOffset": 0.2,
-            "relativeWidth": 0.5
-          },
-          "crop32": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210",
-            "relativeHeight": 0.4,
-            "relativeHorizontalOffset": 0.16666666666666666,
-            "relativeVerticalOffset": 0.2,
-            "relativeWidth": 0.5
-          },
-          "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-          "title": "Rise of centenarian drivers as elderly push on",
-          "__typename": "Image"
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T20:42:27.000Z",
-        "section": "comment",
-        "shortHeadline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-        "summary105": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary125": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary145": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": []
-          }
-        ],
-        "summary160": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Figures from the"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary175": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Figures from the Driver and Vehicle"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary225": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly reliant on the car."
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "Figures from the Driver and Vehicle Licensing Agency revealed that record numbers of"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "categoryPath": "/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz"
-      },
-      {
-        "bylines": [
-          {
-            "__typename": "TextByline",
-            "byline": [
-              {
-                "name": "inline",
-                "attributes": {},
-                "children": [
-                  {
-                    "name": "text",
-                    "attributes": {
-                      "value": "Jack Malvern Arts Correspondent Dominic Kennedy"
-                    },
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "headline": "Syndicated url: At long last, a burial place fit for a king",
-        "hasVideo": true,
-        "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-        "label": "Science",
-        "leadAsset": {
-          "posterImage": {
-            "crop169": {
-              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262",
-              "relativeHeight": 0.4,
-              "relativeHorizontalOffset": 0.16666666666666666,
-              "relativeVerticalOffset": 0.2,
-              "relativeWidth": 0.5
-            },
-            "crop32": {
-              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262",
-              "relativeHeight": 0.4,
-              "relativeHorizontalOffset": 0.16666666666666666,
-              "relativeVerticalOffset": 0.2,
-              "relativeWidth": 0.5
-            },
-            "id": "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
-            "title": "",
-            "__typename": "Video"
-          }
-        },
-        "publicationName": "TIMES",
-        "publishedTime": "2015-03-23T20:56:09.000Z",
-        "section": "thedish",
-        "shortHeadline": "Syndicated url: At long last, a burial place fit for a king",
-        "summary105": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary125": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary145": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary160": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary175": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "summary225": [
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can rest assured that the ceremony will be a family affair, even after all this time."
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "paragraph",
-            "attributes": {},
-            "children": [
-              {
-                "name": "text",
-                "attributes": {
-                  "value": "His coffin has been"
-                },
-                "children": []
-              }
-            ]
-          }
-        ],
-        "categoryPath": "/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
-        "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k"
-      }
-    ]
-  },
   "savingEnabled": true,
   "sharingEnabled": true,
   "section": "business",
@@ -833,7 +223,7 @@
   "shortIdentifier": "37b27qd2s",
   "slug": "france-defies-may-over-russia",
   "standfirst": "After 10 years helping others to cycling glory, Geraint Thomas has finally won the Tour de France. Simon Barnes hangs out with the Welsh hero at home in Cardiff",
-  "template": "mainstandard",
+  "template": "mainvideo",
   "textColour": {
     "rgba": {
       "alpha": 1,
@@ -901,5 +291,242 @@
     }
   ],
   "categoryPath": "/edition/news/france-defies-may-over-russia-37b27qd2s",
-  "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+  "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
+  "relatedArticles": [
+    {
+      "id": "7c22c534-8f80-43d8-9154-6de0e303fb1e",
+      "publishedTime": "2025-02-25T14:26:46.000Z",
+      "headline": "Related Article 1",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt",
+      "leadAsset": {
+        "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
+        "caption": null,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369289615112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "396c7eed-55d6-44fc-88df-656010f3fccc",
+          "crops": [
+            {
+              "ratio": "3:2",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1080%2C720%2C100%2C0"
+            },
+            {
+              "ratio": "16:9",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1280%2C720%2C0%2C0"
+            },
+            {
+              "ratio": "1:1",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=720%2C720%2C280%2C0"
+            },
+            {
+              "ratio": "2:3",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=480%2C720%2C400%2C0"
+            },
+            {
+              "ratio": "4:5",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=576%2C720%2C352%2C0"
+            },
+            {
+              "ratio": "5:4",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=900%2C720%2C190%2C0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e566f92b-0f73-4758-86f1-4acdb7a82c59",
+      "publishedTime": "2025-02-25T14:27:25.000Z",
+      "headline": "Related Article 2",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv",
+      "leadAsset": {
+        "id": "8dc1df1f-f8d1-4ce7-99d0-bae68a4cd9a5",
+        "caption": null,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369216014112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "6daf70f1-991b-401c-830e-cdf8851c8ab8",
+          "crops": [
+            {
+              "ratio": "3:2",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1080%2C720%2C100%2C0"
+            },
+            {
+              "ratio": "16:9",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1280%2C720%2C0%2C0"
+            },
+            {
+              "ratio": "1:1",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=720%2C720%2C280%2C0"
+            },
+            {
+              "ratio": "2:3",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=480%2C720%2C400%2C0"
+            },
+            {
+              "ratio": "4:5",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=576%2C720%2C352%2C0"
+            },
+            {
+              "ratio": "5:4",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=900%2C720%2C190%2C0"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "upNext": [
+    {
+      "id": "7c22c534-8f80-43d8-9154-6de0e303fb1e",
+      "publishedTime": "2025-02-25T14:26:46.000Z",
+      "headline": "Related Article 1",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt",
+      "leadAsset": {
+        "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
+        "caption": null,
+        "duration": 902000,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369289615112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "396c7eed-55d6-44fc-88df-656010f3fccc",
+          "crops": [
+            {
+              "ratio": "3:2",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1080%2C720%2C100%2C0"
+            },
+            {
+              "ratio": "16:9",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1280%2C720%2C0%2C0"
+            },
+            {
+              "ratio": "1:1",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=720%2C720%2C280%2C0"
+            },
+            {
+              "ratio": "2:3",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=480%2C720%2C400%2C0"
+            },
+            {
+              "ratio": "4:5",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=576%2C720%2C352%2C0"
+            },
+            {
+              "ratio": "5:4",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=900%2C720%2C190%2C0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7c22c534-8f80-43d8-9154-6de0e303fb1e",
+      "publishedTime": "2025-02-25T14:26:46.000Z",
+      "headline": "Related Article 1",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt",
+      "leadAsset": {
+        "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
+        "caption": null,
+        "duration": 902000,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369289615112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "396c7eed-55d6-44fc-88df-656010f3fccc",
+          "crops": [
+            {
+              "ratio": "3:2",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1080%2C720%2C100%2C0"
+            },
+            {
+              "ratio": "16:9",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1280%2C720%2C0%2C0"
+            },
+            {
+              "ratio": "1:1",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=720%2C720%2C280%2C0"
+            },
+            {
+              "ratio": "2:3",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=480%2C720%2C400%2C0"
+            },
+            {
+              "ratio": "4:5",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=576%2C720%2C352%2C0"
+            },
+            {
+              "ratio": "5:4",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=900%2C720%2C190%2C0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e566f92b-0f73-4758-86f1-4acdb7a82c59",
+      "publishedTime": "2025-02-25T14:27:25.000Z",
+      "headline": "Related Article 2",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv",
+      "leadAsset": {
+        "id": "8dc1df1f-f8d1-4ce7-99d0-bae68a4cd9a5",
+        "caption": null,
+        "duration": 902000,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369216014112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "6daf70f1-991b-401c-830e-cdf8851c8ab8",
+          "crops": [
+            {
+              "ratio": "3:2",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1080%2C720%2C100%2C0"
+            },
+            {
+              "ratio": "16:9",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1280%2C720%2C0%2C0"
+            },
+            {
+              "ratio": "1:1",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=720%2C720%2C280%2C0"
+            },
+            {
+              "ratio": "2:3",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=480%2C720%2C400%2C0"
+            },
+            {
+              "ratio": "4:5",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=576%2C720%2C352%2C0"
+            },
+            {
+              "ratio": "5:4",
+              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=900%2C720%2C190%2C0"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset } from "@times-components/utils";
+import { getHeadline } from "@times-components/utils";
 import DatePublication from "@times-components/date-publication";
+import ArticleLeadAsset from "@times-components/article-lead-asset";
+import { Breadcrumb } from "@times-components/ts-components";
+import Link from "@times-components/link";
 import ArticleTopics from "./article-topics";
 import {
   articleDefaultProps,
   articlePropTypes
 } from "./article-prop-types/article-prop-types";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
 
 import {
+  VideoArticleContainer,
   ArticleBodyContainer,
   ArticleBody,
   ArticleLeadAssetContainer,
@@ -26,7 +29,6 @@ import {
   ContentFooterContainer
 } from "./styles/responsive";
 import { ArticleUpNext } from "./article-up-next/article-up-next";
-import { Breadcrumb } from "@times-components/ts-components";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -39,79 +41,118 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const {
       headline,
+      categoryPath,
       publicationName,
       publishedTime,
       shortHeadline,
       leadAsset,
+      relatedArticles,
+      upNext
     } = article;
 
-    const categoryColor = "#65EAFF";
-    const videoDurationMS = 902000 ;
-    const videoDuration = (videoDurationMS / 60000).toFixed(2);
-    const formattedVideoDuration = videoDuration.replace(".", ":");
-    const articleCategory = 'Life & Style';
-    const relatedArticle = 'Inside the Balmain designer Olivier Rousteing\'s Parisian apartment';
-    const upNextArticles = [
-      {title: 'Article Title 1', videoRef: leadAsset },
-      {title: 'Article Title 2', videoRef: leadAsset },
-      {title: 'Article Title 3', videoRef: leadAsset },
-      {title: 'Article Title 4', videoRef: leadAsset },
-    ];
+    const articleCategory = categoryPath && categoryPath.split("/")[1];
+    const categoryColors = {
+      comment: "#9b1f45",
+      "business-money": "#21709c",
+      sport: "#007a3f",
+      "life-style": "#149fb5",
+      culture: "#942364",
+      travel: "#145683",
+      world: "#005e61",
+      uk: "#39556a"
+    };
+
+    const categoryColor = categoryColors[articleCategory];
+
+    const formatVideoDuration = videoDurationMs => {
+      const videoDuration = (videoDurationMs / 60000).toFixed(2);
+      const formattedVideoDuration = videoDuration.replace(".", ":");
+      return formattedVideoDuration;
+    };
+
+    const upNextArticles =
+      upNext &&
+      upNext.map(upNextArticle => ({
+        id: upNextArticle.id,
+        title: upNextArticle.headline,
+        url: upNextArticle.url,
+        posterImage: upNextArticle.leadAsset.posterImage.crop169,
+        duration: formatVideoDuration(upNextArticle.leadAsset.duration)
+      }));
+
+    const leadAssetUrl = leadAsset.posterImage && leadAsset.posterImage.crop169;
 
     return (
-      <>
+      <VideoArticleContainer>
         <ArticleBodyContainer>
+          <ArticleLeadAssetContainer>
+            <ArticleLeadAsset
+              aspectRatio="16:9"
+              displayImage={leadAssetUrl}
+              getImageCrop={() => leadAssetUrl}
+              leadAsset={article.leadAsset}
+              isVideo
+            />
+          </ArticleLeadAssetContainer>
+
           <ArticleBody>
             <ArticleLabelContainer>
               <ArticleLabelText>
-                <ArticleLabelText as='span' $color={categoryColor}>{articleCategory}</ArticleLabelText>
-                {` | `}
-                {formattedVideoDuration}
+                {categoryColor && (
+                  <>
+                    <ArticleLabelText as="span" $color={categoryColor}>
+                      {articleCategory}
+                    </ArticleLabelText>
+                    {` | `}
+                  </>
+                )}
+                {formatVideoDuration(leadAsset.duration)}
               </ArticleLabelText>
             </ArticleLabelContainer>
             <ArticleContentContainer>
-              <ArticleHeadline>{getHeadline(headline, shortHeadline)}</ArticleHeadline>
+              <ArticleHeadline>
+                {getHeadline(headline, shortHeadline)}
+              </ArticleHeadline>
               <ArticleMeta>
-                <DatePublication date={publishedTime} publication={publicationName} />
+                <DatePublication
+                  date={publishedTime}
+                  publication={publicationName}
+                />
               </ArticleMeta>
-              <ArticleContent>
-                {content}
-              </ArticleContent>
+              <ArticleContent>{content}</ArticleContent>
             </ArticleContentContainer>
-            <SaveAndShareContainer>
-              {SaveAndShare}
-            </SaveAndShareContainer>
-            {relatedArticle && (
+            <SaveAndShareContainer>{SaveAndShare}</SaveAndShareContainer>
+            {!!relatedArticles && (
               <ArticleContentContainer>
-                <ArticleLabelText $color="#AAA">Related</ArticleLabelText>
-                <ArticleTitle>{relatedArticle}</ArticleTitle>
+                <ArticleLabelText $color="#AAA">
+                  Related Article
+                </ArticleLabelText>
+                <Link url={relatedArticles[0].url}>
+                  <ArticleTitle>{relatedArticles[0].headline}</ArticleTitle>
+                </Link>
               </ArticleContentContainer>
             )}
           </ArticleBody>
         </ArticleBodyContainer>
-        <ArticleUpNext upNextArticles={upNextArticles} />
-      </>
+        {!!upNextArticles && <ArticleUpNext upNextArticles={upNextArticles} />}
+      </VideoArticleContainer>
     );
   }
 
   renderContentFooter() {
     const { article } = this.props;
-    const {
-      breadcrumbs,
-      topics
-    } = article;
+    const { breadcrumbs, topics } = article;
 
     return (
-      <ArticleBodyContainer>
-        <ContentFooterContainer>
-          {breadcrumbs && breadcrumbs.length > 0 && (
+      <ContentFooterContainer>
+        {breadcrumbs &&
+          breadcrumbs.length > 0 && (
             <BreadcrumbContainer>
               <Breadcrumb data={breadcrumbs} />
             </BreadcrumbContainer>
           )}
-          <ArticleTopics topics={topics} />
-        </ContentFooterContainer>
-      </ArticleBodyContainer>
+        <ArticleTopics topics={topics} />
+      </ContentFooterContainer>
     );
   }
 
@@ -140,10 +181,6 @@ class ArticlePage extends Component {
 
     return (
       <ArticleMainVideoContainer>
-        <ArticleLeadAssetContainer>
-          <ArticleLeadAsset {...getLeadAsset(article)} />
-        </ArticleLeadAssetContainer>
-
         <ArticleSkeleton
           analyticsStream={analyticsStream}
           data={article}
