@@ -123,24 +123,22 @@ const ArticleExtras = ({
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
       {isSharingSavingEnabled && (
-        <UserState state={UserState.showSaveAndShareBar}>
-          <MessageContext.Consumer>
-            {({ showMessage }) => (
-              <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-                <SaveAndShareBar
-                  articleId={articleId}
-                  articleHeadline={articleHeadline}
-                  articleUrl={articleUrl}
-                  onCopyLink={() => showMessage("Article link copied")}
-                  onSaveToMyArticles={() => {}}
-                  onShareOnEmail={() => {}}
-                  savingEnabled={savingEnabled}
-                  sharingEnabled={sharingEnabled}
-                />
-              </ShareAndSaveContainer>
-            )}
-          </MessageContext.Consumer>
-        </UserState>
+        <MessageContext.Consumer>
+          {({ showMessage }) => (
+            <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
+              <SaveAndShareBar
+                articleId={articleId}
+                articleHeadline={articleHeadline}
+                articleUrl={articleUrl}
+                onCopyLink={() => showMessage("Article link copied")}
+                onSaveToMyArticles={() => {}}
+                onShareOnEmail={() => {}}
+                savingEnabled={savingEnabled}
+                sharingEnabled={sharingEnabled}
+              />
+            </ShareAndSaveContainer>
+          )}
+        </MessageContext.Consumer>
       )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments

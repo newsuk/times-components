@@ -10,6 +10,7 @@ import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import { SaveStar } from "@times-components/ts-components";
 
+import { checkForSymphonyExperiment } from "@times-components/utils";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
@@ -18,6 +19,8 @@ import styles from "./styles";
 import {
   SaveAndShareBarContainer,
   ShareButtonContainer,
+  ShareButtonHighlightContainer,
+  ShareButtonHighlight,
   OutlineButton,
   Popover,
   PopoverHeader,
@@ -48,6 +51,10 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
+
+  const [shareHighlightVisible, setShareHighlightVisible] = React.useState(
+    false
+  );
 
   const barRef = React.useRef();
   const shareBtnRef = React.useRef();
@@ -81,6 +88,17 @@ function SaveAndShareBar(props) {
     };
   }, []);
 
+  // Set visiblity of the share highlight
+  useEffect(() => {
+    const isSymphonyExperiment = checkForSymphonyExperiment();
+    const hasShareButtonBeenClicked =
+      window.localStorage.getItem("hasShareButtonBeenClicked") === "true";
+
+    setShareHighlightVisible(
+      isSymphonyExperiment && !hasShareButtonBeenClicked
+    );
+  }, []);
+
   const barPosition = barRef.current
     ? barRef.current.getBoundingClientRect().bottom
     : windowHeight;
@@ -105,6 +123,13 @@ function SaveAndShareBar(props) {
     setPopoverOpen(prev => !prev);
   };
 
+  const handleClick = e => {
+    e.preventDefault();
+    window.localStorage.setItem("hasShareButtonBeenClicked", "true");
+    setShareHighlightVisible(false);
+    togglePopover();
+  };
+
   function copyToClipboard(e) {
     const { onCopyLink } = props;
     e.preventDefault();
@@ -120,11 +145,16 @@ function SaveAndShareBar(props) {
           <OutlineButton
             ref={shareBtnRef}
             isPopoverOpen={popoverOpen}
-            onClick={togglePopover}
+            onClick={handleClick}
           >
             <ShareIcon height={14} width={14} />
             Share
           </OutlineButton>
+          {shareHighlightVisible && (
+            <ShareButtonHighlightContainer data-testId="share-button-highlight">
+              <ShareButtonHighlight />
+            </ShareButtonHighlightContainer>
+          )}
           <Popover
             ref={popoverRef}
             position={getPosition()}
