@@ -29,7 +29,7 @@ module.exports = (
     commentingFlag = true,
     showAudioPlayer,
     storefrontConfig,
-    isEntitlementFeatureEnabled = false
+    hasCommentingEntitlement = false
   },
   userState
 ) => {
@@ -86,7 +86,7 @@ module.exports = (
       commentingFlag,
       showAudioPlayer,
       storefrontConfig,
-      isEntitlementFeatureEnabled
+      hasCommentingEntitlement
     },
     name: "article"
   };
