@@ -13,3 +13,5 @@ const debounce = (
 
   return debounced;
 };
+
+export default debounce;
