@@ -266,11 +266,13 @@ const renderers = ({
         );
 
       case "twitter-embed":
+      case "instagram-embed":
+        const vendorName = value.split("-")[0];
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <SocialMediaEmbed
               url={attributes.url}
-              vendorName="twitter"
+              vendorName={vendorName}
               id={id}
             />
           </InteractiveContainer>

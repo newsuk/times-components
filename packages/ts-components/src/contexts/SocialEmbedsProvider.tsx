@@ -19,12 +19,14 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
   const [isSocialEmbedAllowed, setIsSocialEmbedAllowed] = useState<
     Record<string, boolean>
   >({
+    instagram: false,
     twitter: false,
     tiktok: false,
     youtube: false
   });
 
   const [isAllowedOnce, setIsAllowedOnce] = useState<Record<string, boolean>>({
+    instagram: false,
     twitter: false,
     tiktok: false,
     youtube: false
@@ -34,6 +36,7 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
     () => {
       // Set defaults or perform any logic needed to initialize the values
       setIsAllowedOnce({
+        instagram: isSocialEmbedAllowed.instagram,
         twitter: isSocialEmbedAllowed.twitter,
         tiktok: isSocialEmbedAllowed.tiktok,
         youtube: isSocialEmbedAllowed.youtube

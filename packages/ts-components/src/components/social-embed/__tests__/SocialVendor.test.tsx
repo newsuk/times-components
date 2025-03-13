@@ -23,6 +23,12 @@ jest.mock('../components/TiktokComponent', () => ({
   ))
 }));
 
+jest.mock('../components/InstagramComponent', () => ({
+  Instagram: jest.fn(() => (
+    <div data-testid="instagram-component">Instagram Component</div>
+  ))
+}));
+
 describe('Vendor Component', () => {
   const renderVendor = (vendorName: VendorName, url: string) =>
     render(<Vendor vendorName={vendorName} url={url} />);
@@ -43,6 +49,11 @@ describe('Vendor Component', () => {
       'https://www.tiktok.com/@user/video/1234567890'
     );
     expect(screen.getByTestId('tiktok-component')).toBeInTheDocument();
+  });
+
+  it('renders the Instagram component when vendorName is "instagram"', () => {
+    renderVendor('instagram' as VendorName, 'https://instagram.com/some/video');
+    expect(screen.getByTestId('instagram-component')).toBeInTheDocument();
   });
 
   it('throws an error if an invalid vendorName is provided', () => {
