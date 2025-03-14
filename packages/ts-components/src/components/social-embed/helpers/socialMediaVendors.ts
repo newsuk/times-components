@@ -11,5 +11,14 @@ export const socialMediaVendors: {
     status: 'pending',
     title: 'Youtube'
   },
-  tiktok: { id: '5e7f6927b8e05c4e491e7380', status: 'pending', title: 'Tiktok' }
+  tiktok: {
+    id: '5e7f6927b8e05c4e491e7380',
+    status: 'pending',
+    title: 'Tiktok'
+  },
+  instagram: {
+    id: '5e7f6927b8e05c4e491e6324',
+    status: 'pending',
+    title: 'Instagram'
+  }
 };

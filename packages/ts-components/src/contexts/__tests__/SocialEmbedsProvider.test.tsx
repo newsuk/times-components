@@ -16,12 +16,14 @@ describe('SocialEmbedsProvider and useSocialEmbedsContext', () => {
     const { result } = renderHook(() => useSocialEmbedsContext(), { wrapper });
 
     expect(result.current.isSocialEmbedAllowed).toEqual({
+      instagram: false,
       twitter: false,
       tiktok: false,
       youtube: false
     });
 
     expect(result.current.isAllowedOnce).toEqual({
+      instagram: false,
       twitter: false,
       tiktok: false,
       youtube: false
