@@ -1,5 +1,5 @@
 import React, { FC, useState, useRef } from 'react';
-import { AudioButton } from './styles';
+import { AudioButton, AudioDuration } from './styles';
 import { AudioPlayer } from '../audio-player-components/AudioPlayer';
 import { PlayIcon, PauseIcon } from '@times-components/icons';
 export interface ArticleAudioProps {
@@ -30,6 +30,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
 
     if (audioState === 'playing') {
       setAudioState('paused');
+      setisAudioPlayerVisible(false);
     } else {
       setAudioState('playing');
     }
@@ -37,6 +38,7 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
 
   const hidePlayer = () => {
     setisAudioPlayerVisible(false);
+    setAudioState('not-started');
   };
 
   return (
@@ -49,8 +51,9 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
       />
       <AudioButton
         onClick={handlePlayPause}
+        className="article-audio-button"
         style={{
-          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : 'unset',
+          backgroundColor: audioState !== 'not-started' ? '#1D1D1B' : '#fff',
           color: audioState === 'not-started' ? '#333' : '#fff'
         }}
       >
@@ -67,25 +70,30 @@ export const ArticleAudio: FC<ArticleAudioProps> = ({ audioSrc }) => {
             <PlayIcon width={16} height={16} /> Listen
           </>
         )}
-        <span
+        <AudioDuration
           style={{
             color: audioState === 'not-started' ? '#696969' : '#fff'
           }}
         >
           {' '}
           {duration} min
-        </span>
+        </AudioDuration>
       </AudioButton>
-      {isAudioPlayerVisible && (
+      <div
+        data-testid="audioPlayerWrapper"
+        style={{
+          display: !isAudioPlayerVisible ? 'none' : 'block'
+        }}
+      >
         <AudioPlayer
           src={audioSrc}
           isPlayingProp={audioState === 'playing'}
           onPlay={() => setAudioState('playing')}
           onPause={() => setAudioState('paused')}
-          onEnded={() => setAudioState('not-started')}
+          onEnded={() => hidePlayer()}
           onClose={() => hidePlayer()}
         />
-      )}
+      </div>
     </div>
   );
 };
