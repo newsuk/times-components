@@ -3,5 +3,6 @@ query GetNewsletter($code: String!) {
     id
     isSubscribed
     title
+    description
   }
 }
