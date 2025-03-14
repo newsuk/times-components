@@ -32,3 +32,4 @@ export { default as getBase64CookieValue } from "./get-base64-cookie-value";
 export {
   default as checkForSymphonyExperiment
 } from "./check-for-symphony-experiment";
+export { default as hasEntitlement } from "./get-entitlements";

@@ -39,7 +39,8 @@
     "@times-components/ts-styleguide": "1.51.0",
     "@times-components/user-state": "0.5.55",
     "prop-types": "15.7.2",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "@times-components/utils": "6.26.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",

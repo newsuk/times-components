@@ -94,8 +94,7 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled,
-    isEntitlementFeatureEnabled
+    isCommentEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
