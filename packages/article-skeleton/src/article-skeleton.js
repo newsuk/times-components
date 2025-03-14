@@ -479,9 +479,6 @@ const ArticleSkeleton = ({
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
-                        isEntitlementFeatureEnabled={
-                          isEntitlementFeatureEnabled
-                        }
                       />
                     )}
                   </LazyLoad>
