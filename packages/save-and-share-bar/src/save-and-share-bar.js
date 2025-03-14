@@ -33,6 +33,31 @@ import SaveButton from "./components/save-button";
 import { ShareItem, ShareItemLabel } from "./components/share-item";
 import ShareIcon from "./assets/share-icon";
 
+const getCookieValue = cookieName => {
+  const allCookies = document.cookie;
+  const cookiesArray = allCookies.split(";");
+  const targetCookie = cookiesArray.find(cookie => cookie.includes(cookieName));
+  return targetCookie ? targetCookie.split("=")[1] : null;
+};
+
+const getBase64CookieValue = cookieName => {
+  const cookieValue = getCookieValue(cookieName);
+  if (!cookieValue) return undefined;
+  try {
+    return JSON.parse(atob(cookieValue));
+  } catch (e) {
+    return undefined;
+  }
+};
+
+const checkForSymphonyExperiment = () => {
+  const zephrDecisions = getBase64CookieValue("nuk_zephr_decisions");
+  if (!zephrDecisions || !zephrDecisions["free-access-symphony"]) {
+    return false;
+  }
+  return zephrDecisions["free-access-symphony"].includes("ARTICLE_ACCESS");
+};
+
 function SaveAndShareBar(props) {
   const {
     articleId,
