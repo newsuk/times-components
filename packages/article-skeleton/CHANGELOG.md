@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.156.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.155.1...@times-components/article-skeleton@1.156.0) (2025-03-17)
+
+
+### Features
+
+* **TMRS-497:** add instagram embed component ([#4100](https://github.com/newsuk/times-components/issues/4100)) ([ce7eac3](https://github.com/newsuk/times-components/commit/ce7eac3666adb69cbc751ae720cf29c9afbf28d2))
+* **TMRS-684:** video article template UI  ([#4101](https://github.com/newsuk/times-components/issues/4101)) ([964bee6](https://github.com/newsuk/times-components/commit/964bee6570dba6247174606707675eebc8402f97))
+
+
+
+
+
 ## [1.155.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.155.0...@times-components/article-skeleton@1.155.1) (2025-03-13)
 
 **Note:** Version bump only for package @times-components/article-skeleton

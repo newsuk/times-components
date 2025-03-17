@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.124.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.123.4...@times-components/ts-components@1.124.0) (2025-03-17)
+
+
+### Features
+
+* **TMRS-497:** add instagram embed component ([#4100](https://github.com/newsuk/times-components/issues/4100)) ([ce7eac3](https://github.com/newsuk/times-components/commit/ce7eac3666adb69cbc751ae720cf29c9afbf28d2))
+
+
+
+
+
 ## [1.123.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.123.3...@times-components/ts-components@1.123.4) (2025-03-13)
 
 **Note:** Version bump only for package @times-components/ts-components

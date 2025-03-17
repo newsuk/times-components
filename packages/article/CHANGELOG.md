@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.18.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.77...@times-components/article@7.18.0) (2025-03-17)
+
+
+### Features
+
+* **TMRS-684:** video article template UI  ([#4101](https://github.com/newsuk/times-components/issues/4101)) ([964bee6](https://github.com/newsuk/times-components/commit/964bee6570dba6247174606707675eebc8402f97))
+
+
+
+
+
 ## [7.17.77](https://github.com/newsuk/times-components/compare/@times-components/article@7.17.76...@times-components/article@7.17.77) (2025-03-13)
 
 **Note:** Version bump only for package @times-components/article
