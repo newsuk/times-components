@@ -112,6 +112,9 @@ const ArticleComments = ({
   };
 
   if (entitlementsFF) {
+    if (!zephrEntitlementResponse) {
+      return FallbackContent();
+    }
     return RenderZephrBasedContent();
   }
   return FallbackContent();
