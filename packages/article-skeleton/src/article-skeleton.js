@@ -1,6 +1,5 @@
 import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -13,7 +12,8 @@ import {
   UpdateButtonWithDelay,
   Banner,
   SocialEmbedsProvider,
-  useSocialEmbedsContext
+  useSocialEmbedsContext,
+  QuizleSidebar
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
@@ -176,6 +176,12 @@ const ArticleSkeleton = ({
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
+  const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
+  const quizCategories = ["culture", "life-style"];
+  const canShowSidebar = categoryPath
+    ? quizCategories.includes(categoryPath)
+    : false;
+
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -262,11 +268,11 @@ const ArticleSkeleton = ({
 
   useEffect(
     () => {
-      if (CanShowPuzzleSidebar(section)) {
+      if (canShowSidebar) {
         fetchPolygon();
       }
     },
-    [CanShowPuzzleSidebar, section]
+    [canShowSidebar]
   );
 
   return (
@@ -382,34 +388,41 @@ const ArticleSkeleton = ({
                 </HeaderContainer>
                 <BodyContainer>
                   <ArticleWrapper>
-                    {CanShowPuzzleSidebar(section) && (
+                    {canShowSidebar && (
                       <SidebarWarpper>
                         <PuzzlesSidebar ref={sidebarRef}>
-                          <ArticleSidebar
-                            pageLink={`${domainSpecificUrl}/puzzles`}
-                            sectionTitle="Puzzles"
-                            data={[
-                              {
-                                title: "Crossword",
-                                url: `${domainSpecificUrl}/puzzles/crossword`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                              },
-                              {
-                                title: "Polygon",
-                                url: polygonUrl,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                              },
-                              {
-                                title: "Sudoku",
-                                url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                imgUrl: `${domainSpecificUrl}/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                              }
-                            ]}
-                          />
+                          {categoryPath === "life-style" ? (
+                            <ArticleSidebar
+                              pageLink={`${domainSpecificUrl}/puzzles`}
+                              sectionTitle="Puzzles"
+                              data={[
+                                {
+                                  title: "Crossword",
+                                  url: `${domainSpecificUrl}/puzzles/crossword`,
+                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
+                                },
+                                {
+                                  title: "Polygon",
+                                  url: polygonUrl,
+                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
+                                },
+                                {
+                                  title: "Sudoku",
+                                  url: `${domainSpecificUrl}/puzzles/sudoku`,
+                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
+                                }
+                              ]}
+                            />
+                          ) : (
+                            <QuizleSidebar
+                              pageLink={`${domainSpecificUrl}/quizle`}
+                              sectionTitle="Today's Quizle"
+                            />
+                          )}
                         </PuzzlesSidebar>
                       </SidebarWarpper>
                     )}
-                    <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
+                    <ArticleContent showMargin={canShowSidebar}>
                       {!!zephrDivs && (
                         <StaticContent
                           html={
