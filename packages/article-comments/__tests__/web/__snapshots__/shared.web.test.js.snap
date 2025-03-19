@@ -116,7 +116,7 @@ exports[`User States RA Users 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  background-color: #005C8A;
+  background-color: #005c8a;
   color: white;
   font-family: Roboto-Regular;
   font-weight: 500;
