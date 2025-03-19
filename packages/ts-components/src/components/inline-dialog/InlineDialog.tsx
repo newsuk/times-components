@@ -1,5 +1,11 @@
 import React, { FC } from 'react';
-import { Container, ContentContainer, Title, Description, Button } from './styles';
+import {
+  Container,
+  ContentContainer,
+  Title,
+  Description,
+  Button
+} from './styles';
 
 export const InlineDialog: FC<{
   title: string;
@@ -9,11 +15,11 @@ export const InlineDialog: FC<{
 }> = ({ title, href = '#', onClick, buttonText, children }) => (
   <Container>
     <ContentContainer>
-    <Title>{title}</Title>
-    <Description>{children}</Description>
-    <Button href={href} onClick={onClick}>
-      {buttonText}
-    </Button>
+      <Title>{title}</Title>
+      <Description>{children}</Description>
+      <Button href={href} onClick={onClick}>
+        {buttonText}
+      </Button>
     </ContentContainer>
   </Container>
 );

@@ -12,7 +12,6 @@ export const Container = styled.div`
     padding-top: 20px;
   }
 `;
-
 export const ContentContainer = styled.div`
   max-width: 343px;
   display: flex;
@@ -22,8 +21,7 @@ export const ContentContainer = styled.div`
   @media (min-width: ${breakpoints.medium}px) {
     max-width: 403px;
   }
-`
-
+`;
 export const Title = styled.div`
   font-family: ${fonts.headlineRegular};
   font-weight: 700;
@@ -50,7 +48,7 @@ export const Button = styled.a`
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #005C8A;
+  background-color: #005c8a;
   color: white;
   font-family: ${fonts.supporting};
   font-weight: 500;
