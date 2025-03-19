@@ -9,17 +9,12 @@ const JoinTheConversationDialog = ({ storefrontConfig }) => {
     window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
   const isRegisteredUser =
     window.nuk && window.nuk.user && window.nuk.user.isRegisteredUser;
-  // add my account used for different environments
   const myAccountUrl =
     window.__TIMES_CONFIG__ &&
     window.__TIMES_CONFIG__.account &&
     window.__TIMES_CONFIG__.account.url;
-  // eslint-disable-next-line no-console
-  console.log("***myAccountUrl***", myAccountUrl);
   const href =
     isLightPackUser || isRegisteredUser ? myAccountUrl : storefrontConfig;
-  // eslint-disable-next-line no-console
-  console.log("***href***", href);
 
   return (
     <InlineDialog
