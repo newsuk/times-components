@@ -111,7 +111,7 @@ const ArticleComments = ({
     );
   };
 
-  if (entitlementsFF) { 
+  if (entitlementsFF) {
     return RenderZephrBasedContent();
   }
   return FallbackContent();
