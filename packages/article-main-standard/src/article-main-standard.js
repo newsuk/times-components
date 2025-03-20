@@ -67,7 +67,13 @@ class ArticlePage extends Component {
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
-        <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={renderCaption}
+          isWebPFormatActive={
+            this.props.articleDataFromRender.isWebPFormatActive
+          }
+        />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
       </Fragment>
     );
