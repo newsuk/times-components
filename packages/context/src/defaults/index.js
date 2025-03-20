@@ -13,6 +13,7 @@ export default {
     isLoggedIn: false,
     isMetered: false,
     isShared: false,
-    registrationType: ""
+    registrationType: "",
+    hasAccess: false
   }
 };
