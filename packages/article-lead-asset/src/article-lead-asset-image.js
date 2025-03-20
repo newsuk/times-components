@@ -4,8 +4,10 @@ import getRatio from "./get-ratio";
 import { imageLeadAssetPropTypes } from "./article-lead-asset-prop-types";
 import styles from "../styles/index";
 
-const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
-  const url = addMissingProtocol(uri);
+const LeadAssetImage = ({ aspectRatio, alt, uri, isWebPFormatActive }) => {
+  const url = isWebPFormatActive
+    ? appendToImageURL(addMissingProtocol(uri), "format", "webp")
+    : addMissingProtocol(uri);
   const ratio = getRatio(aspectRatio);
 
   const sizes = [360, 520, 680, 860, 1200, 1500];

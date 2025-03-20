@@ -63,6 +63,9 @@ class ArticlePage extends Component {
           getImageCrop={getStandardTemplateCrop}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAssetContainer}
+          isWebPFormatActive={
+            this.props.articleDataFromRender.isWebPFormatActive
+          }
         />
       </Fragment>
     );

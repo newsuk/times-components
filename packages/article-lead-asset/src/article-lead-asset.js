@@ -11,7 +11,8 @@ const ArticleLeadAsset = ({
   displayImage,
   isVideo,
   leadAsset,
-  style
+  style,
+  isWebPFormatActive
 }) => {
   if (!leadAsset || !displayImage) {
     return null;
@@ -41,6 +42,7 @@ const ArticleLeadAsset = ({
       aspectRatio={aspectRatio}
       alt={leadAsset.title || caption.text}
       uri={displayImage.url}
+      isWebPFormatActive={isWebPFormatActive}
     />
   );
 

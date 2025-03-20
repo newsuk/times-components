@@ -169,7 +169,8 @@ const ArticleSkeleton = ({
     canonicalUrl,
     breadcrumbs,
     categorisedArticles,
-    deckApiUrl
+    deckApiUrl,
+    isWebPFormatActive
   } = articleDataFromRender || {};
 
   const articleUrl =
@@ -206,6 +207,7 @@ const ArticleSkeleton = ({
       isPreview={isPreview}
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
+      isWebPFormatActive={!!isWebPFormatActive}
     />
   );
 
