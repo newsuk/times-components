@@ -24,7 +24,8 @@ function mockUserState() {
         RealUserState.showArticleSaveButton,
         RealUserState.showLiveUpdateButton,
         RealUserState.showTokenisedEmailShare,
-        RealUserState.showCommentingModule
+        RealUserState.showCommentingModule,
+        RealUserState.showArticleComments
       ];
     };
 
