@@ -29,9 +29,12 @@ class TimesImage extends Component {
       uri,
       onLayout,
       rounded,
-      isLcpItem
+      isLcpItem,
+      isWebPFormatActive
     } = this.props;
-    const url = addMissingProtocol(uri);
+    const url = isWebPFormatActive
+      ? appendToImageURL(addMissingProtocol(uri), "format", "webp")
+      : addMissingProtocol(uri);
     const styles = {
       ...style
     };

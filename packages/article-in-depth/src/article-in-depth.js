@@ -52,6 +52,9 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAsset}
+          isWebPFormatActive={
+            this.props.articleDataFromRender.isWebPFormatActive
+          }
         />
         <ArticleKeylineItem>
           <Meta
