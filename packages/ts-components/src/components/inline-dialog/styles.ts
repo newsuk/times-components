@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0;
+  padding-bottom: 28px;
 
   @media (min-width: ${breakpoints.medium}px) {
     padding-bottom: 48px;
