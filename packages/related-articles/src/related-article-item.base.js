@@ -93,7 +93,8 @@ class RelatedArticleItem extends Component {
         lengths: summaryLengths = [],
         style: summaryStyle = {},
         type: summaryType
-      }
+      },
+      isWebPFormatActive
     } = this.props;
     const { article } = this.props;
     const { highResSize } = this.state;
@@ -117,6 +118,7 @@ class RelatedArticleItem extends Component {
             lowResSize={200}
             relatedArticle
             showImage={showImage}
+            isWebPFormatActive={isWebPFormatActive}
           >
             <ArticleSummary
               bylineProps={{

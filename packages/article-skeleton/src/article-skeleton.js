@@ -481,6 +481,7 @@ const ArticleSkeleton = ({
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
+                        isWebPFormatActive={isWebPFormatActive}
                       />
                     )}
                   </LazyLoad>
