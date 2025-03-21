@@ -483,6 +483,7 @@ const ArticleSkeleton = ({
                         topics={topics}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
+                        isWebPFormatActive={isWebPFormatActive}
                       />
                     )}
                   </LazyLoad>

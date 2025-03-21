@@ -44,7 +44,8 @@ const ArticleExtras = ({
   commentingConfig,
   topics,
   breadcrumbs,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isWebPFormatActive
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -75,6 +76,7 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
           hideBorder={!isRecommendedActive && Boolean(categoryArticles)}
+          isWebPFormatActive={isWebPFormatActive}
         />
         {isRecommendedActive && (
           <RecommendedFetch
