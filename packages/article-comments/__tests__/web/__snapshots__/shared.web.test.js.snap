@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render comments label, when comments are loaded 1`] = `<DocumentFragment />`;
-
 exports[`disabled comments 1`] = `
 <DocumentFragment>
   .c0 {
