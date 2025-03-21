@@ -173,7 +173,8 @@ const ArticleSkeleton = ({
     canonicalUrl,
     breadcrumbs,
     categorisedArticles,
-    deckApiUrl
+    deckApiUrl,
+    isWebPFormatActive
   } = articleDataFromRender || {};
 
   const articleUrl =
@@ -204,6 +205,7 @@ const ArticleSkeleton = ({
       isPreview={isPreview}
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
+      isWebPFormatActive={!!isWebPFormatActive}
     />
   );
 
@@ -479,6 +481,7 @@ const ArticleSkeleton = ({
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
+                        isWebPFormatActive={isWebPFormatActive}
                       />
                     )}
                   </LazyLoad>
