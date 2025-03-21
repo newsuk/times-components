@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.45.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.44...@times-components/article-comments@0.45.0) (2025-03-21)
+
+
+### Features
+
+* **TMG-2609:** Commenting entitlement using zephr response ([#4074](https://github.com/newsuk/times-components/issues/4074)) ([89406b7](https://github.com/newsuk/times-components/commit/89406b733841e35ea7083657d3534bdcb6931c16))
+
+
+
+
+
 ## [0.44.44](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.44.43...@times-components/article-comments@0.44.44) (2025-03-17)
 
 **Note:** Version bump only for package @times-components/article-comments

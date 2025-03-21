@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.61.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.60.19...@times-components/ssr@2.61.0) (2025-03-21)
+
+
+### Features
+
+* **TMG-2609:** Commenting entitlement using zephr response ([#4074](https://github.com/newsuk/times-components/issues/4074)) ([89406b7](https://github.com/newsuk/times-components/commit/89406b733841e35ea7083657d3534bdcb6931c16))
+
+
+
+
+
 ## [2.60.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.60.18...@times-components/ssr@2.60.19) (2025-03-20)
 
 **Note:** Version bump only for package @times-components/ssr
