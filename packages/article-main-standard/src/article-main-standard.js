@@ -71,6 +71,7 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           renderCaption={renderCaption}
           isWebPFormatActive={
+            this.props.articleDataFromRender &&
             this.props.articleDataFromRender.isWebPFormatActive
           }
         />
