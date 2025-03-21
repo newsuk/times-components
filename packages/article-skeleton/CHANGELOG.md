@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.158.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.157.0...@times-components/article-skeleton@1.158.0) (2025-03-21)
+
+
+### Features
+
+* **TMG-2609:** Commenting entitlement using zephr response ([#4074](https://github.com/newsuk/times-components/issues/4074)) ([89406b7](https://github.com/newsuk/times-components/commit/89406b733841e35ea7083657d3534bdcb6931c16))
+
+
+
+
+
+# [1.157.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.156.0...@times-components/article-skeleton@1.157.0) (2025-03-20)
+
+
+### Features
+
+* **TMRS-487:** remove fullwidth ([#4104](https://github.com/newsuk/times-components/issues/4104)) ([00b6742](https://github.com/newsuk/times-components/commit/00b6742f18c3f58543e56ea2c39c73408ee5e9f9))
+
+
+
+
+
 # [1.156.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.155.1...@times-components/article-skeleton@1.156.0) (2025-03-17)
 
 
