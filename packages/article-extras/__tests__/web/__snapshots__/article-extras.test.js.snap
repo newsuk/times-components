@@ -51,7 +51,6 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -233,7 +232,6 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -290,7 +288,6 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
