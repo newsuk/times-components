@@ -28,7 +28,9 @@ const ArticleComments = ({
 
     if (search.get(FEATURE_FLAG_NAME)) {
       const decisions = getBase64CookieValue(COOKIE_NAME);
-      setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
+      if (decisions) {
+        setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
+      }
     }
   }, []);
 
