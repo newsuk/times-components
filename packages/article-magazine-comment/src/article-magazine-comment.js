@@ -32,7 +32,8 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      updatedTime
+      updatedTime,
+      articleDataFromRender
     } = article;
 
     const authorImage =
@@ -64,8 +65,7 @@ class ArticlePage extends Component {
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAssetContainer}
           isWebPFormatActive={
-            this.props.articleDataFromRender &&
-            this.props.articleDataFromRender.isWebPFormatActive
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
           }
         />
       </Fragment>

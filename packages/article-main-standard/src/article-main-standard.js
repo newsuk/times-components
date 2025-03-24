@@ -44,7 +44,8 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       topics,
-      updatedTime
+      updatedTime,
+      articleDataFromRender
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
@@ -71,8 +72,7 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           renderCaption={renderCaption}
           isWebPFormatActive={
-            this.props.articleDataFromRender &&
-            this.props.articleDataFromRender.isWebPFormatActive
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
           }
         />
         <ArticleMeta {...metaProps} inline className="inline-meta" />

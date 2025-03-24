@@ -13,10 +13,12 @@ class TimesImage extends Component {
     const imgUrl = appendToImageURL(url, "resize", highResSize);
     return (
       <picture>
-        <source
-          srcSet={appendToImageURL(imgUrl, "format", "webp")}
-          type="image/webp"
-        />
+        {isWebPFormatActive && (
+          <source
+            srcSet={appendToImageURL(imgUrl, "format", "webp")}
+            type="image/webp"
+          />
+        )}
         <StyledImage
           alt={accessibilityLabel}
           loading="lazy"
@@ -35,8 +37,7 @@ class TimesImage extends Component {
       uri,
       onLayout,
       rounded,
-      isLcpItem,
-      isWebPFormatActive
+      isLcpItem
     } = this.props;
     const url = addMissingProtocol(uri);
     const styles = {

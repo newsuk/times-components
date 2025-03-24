@@ -13,7 +13,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri, isWebPFormatActive }) => {
     size => `${appendToImageURL(url, "resize", size)} ${size}w`
   );
   const webpSrcSet = srcSet
-    .map(url => appendToImageURL(url, "format", "webp"))
+    .map(srcSetUrl => appendToImageURL(srcSetUrl, "format", "webp"))
     .join(",");
 
   return (
@@ -22,7 +22,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri, isWebPFormatActive }) => {
       className="lcpItem"
     >
       <picture>
-        <source srcSet={webpSrcSet} type="image/webp" />
+        {isWebPFormatActive && <source srcSet={webpSrcSet} type="image/webp" />}
         <img
           alt={alt}
           style={styles.img}

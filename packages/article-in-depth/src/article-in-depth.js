@@ -33,7 +33,8 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       textColour,
-      updatedTime
+      updatedTime,
+      articleDataFromRender
     } = article;
 
     return (
@@ -53,8 +54,7 @@ class ArticlePage extends Component {
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAsset}
           isWebPFormatActive={
-            this.props.articleDataFromRender &&
-            this.props.articleDataFromRender.isWebPFormatActive
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
           }
         />
         <ArticleKeylineItem>
