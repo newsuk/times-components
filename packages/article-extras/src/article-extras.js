@@ -169,14 +169,16 @@ ArticleExtras.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isWebPFormatActive: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   categorisedArticles: null,
   topics: null,
-  breadcrumbs: []
+  breadcrumbs: [],
+  isWebPFormatActive: false
 };
 
 export default ArticleExtras;
