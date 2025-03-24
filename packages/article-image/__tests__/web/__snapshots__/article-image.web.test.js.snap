@@ -52,18 +52,20 @@ Array [
       >
         <div>
           <div>
-            <responsive
-              alt={null}
-              loading="lazy"
-              src="https://img/someImage"
-              zIndex={2}
-            >
-              <img
+            <picture>
+              <responsive
                 alt={null}
                 loading="lazy"
                 src="https://img/someImage"
-              />
-            </responsive>
+                zIndex={2}
+              >
+                <img
+                  alt={null}
+                  loading="lazy"
+                  src="https://img/someImage"
+                />
+              </responsive>
+            </picture>
           </div>
         </div>
       </tc-view__TcView>
@@ -132,18 +134,20 @@ Array [
       >
         <div>
           <div>
-            <responsive
-              alt="Some caption"
-              loading="lazy"
-              src="https://img/someImage"
-              zIndex={2}
-            >
-              <img
+            <picture>
+              <responsive
                 alt="Some caption"
                 loading="lazy"
                 src="https://img/someImage"
-              />
-            </responsive>
+                zIndex={2}
+              >
+                <img
+                  alt="Some caption"
+                  loading="lazy"
+                  src="https://img/someImage"
+                />
+              </responsive>
+            </picture>
           </div>
         </div>
       </tc-view__TcView>
@@ -197,18 +201,20 @@ Array [
       >
         <div>
           <div>
-            <responsive
-              alt="Some caption"
-              loading="lazy"
-              src="https://img/someImage?resize=900"
-              zIndex={2}
-            >
-              <img
+            <picture>
+              <responsive
                 alt="Some caption"
                 loading="lazy"
                 src="https://img/someImage?resize=900"
-              />
-            </responsive>
+                zIndex={2}
+              >
+                <img
+                  alt="Some caption"
+                  loading="lazy"
+                  src="https://img/someImage?resize=900"
+                />
+              </responsive>
+            </picture>
           </div>
         </div>
       </tc-view__TcView>

@@ -243,6 +243,7 @@ exports[`card with reversed layout 1`] = `
               fadeImageIn={false}
               highResSize={600}
               isLcpItem={false}
+              isWebPFormatActive={false}
               lowResQuality={null}
               lowResSize={30}
               rounded={false}

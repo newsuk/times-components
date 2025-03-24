@@ -5,10 +5,12 @@ exports[`1. page error 1`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="2d7dffcd8e7f3cde3e959c364dc3d432"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="2d7dffcd8e7f3cde3e959c364dc3d432"
+          />
+        </picture>
       </div>
     </div>
   </div>

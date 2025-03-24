@@ -72,11 +72,13 @@ exports[`1. a full article 1`] = `
     />
   </Helmet>
   <main>
-    <img
-      alt="author-image"
-      loading="lazy"
-      src="https://image.io"
-    />
+    <picture>
+      <img
+        alt="author-image"
+        loading="lazy"
+        src="https://image.io"
+      />
+    </picture>
     SOME LABEL
     <h1
       aria-level="1"
@@ -248,11 +250,13 @@ exports[`1. a full article 1`] = `
       </span>
     </a>
     <article>
-      <img
-        alt="An image caption"
-        loading="lazy"
-        src="https://image.io"
-      />
+      <picture>
+        <img
+          alt="An image caption"
+          loading="lazy"
+          src="https://image.io"
+        />
+      </picture>
       An image caption
       <a
         href="https://link.io"

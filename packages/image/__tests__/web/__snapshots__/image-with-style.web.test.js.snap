@@ -35,9 +35,11 @@ exports[`1. default image 1`] = `
     paddingBottom="66.66666666666667%"
     position="relative"
   >
-    <img
-      className="c1"
-    />
+    <picture>
+      <img
+        className="c1"
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -77,9 +79,11 @@ exports[`2. default modal 1`] = `
     paddingBottom="66.66666666666667%"
     position="relative"
   >
-    <img
-      className="c1"
-    />
+    <picture>
+      <img
+        className="c1"
+      />
+    </picture>
   </div>
 </div>
 `;

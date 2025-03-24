@@ -99,12 +99,14 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </a>
     </nav>
     <figure>
-      <img
-        alt="Some Title"
-        fetchpriority="high"
-        src="https://crop169.io?resize=360"
-        srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-      />
+      <picture>
+        <img
+          alt="Some Title"
+          fetchpriority="high"
+          src="https://crop169.io?resize=360"
+          srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+        />
+      </picture>
       <figcaption>
         Some Caption
       </figcaption>
@@ -267,11 +269,13 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </span>
     </a>
     <article>
-      <img
-        alt="An image caption"
-        loading="lazy"
-        src="https://image.io"
-      />
+      <picture>
+        <img
+          alt="An image caption"
+          loading="lazy"
+          src="https://image.io"
+        />
+      </picture>
       An image caption
       <a
         href="https://link.io"

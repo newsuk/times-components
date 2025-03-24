@@ -925,13 +925,15 @@ exports[`full article with style 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
-                    display="block"
-                    opacity={1}
-                    position="absolute"
-                    width="100%"
-                    zIndex={2}
-                  />
+                  <picture>
+                    <img
+                      display="block"
+                      opacity={1}
+                      position="absolute"
+                      width="100%"
+                      zIndex={2}
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -2006,13 +2008,15 @@ exports[`full article with style in the culture magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
-                    display="block"
-                    opacity={1}
-                    position="absolute"
-                    width="100%"
-                    zIndex={2}
-                  />
+                  <picture>
+                    <img
+                      display="block"
+                      opacity={1}
+                      position="absolute"
+                      width="100%"
+                      zIndex={2}
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -3088,13 +3092,15 @@ exports[`full article with style in the style magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
-                    display="block"
-                    opacity={1}
-                    position="absolute"
-                    width="100%"
-                    zIndex={2}
-                  />
+                  <picture>
+                    <img
+                      display="block"
+                      opacity={1}
+                      position="absolute"
+                      width="100%"
+                      zIndex={2}
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -4169,13 +4175,15 @@ exports[`full article with style in the sunday times magazine 1`] = `
                   position="relative"
                   width="100%"
                 >
-                  <img
-                    display="block"
-                    opacity={1}
-                    position="absolute"
-                    width="100%"
-                    zIndex={2}
-                  />
+                  <picture>
+                    <img
+                      display="block"
+                      opacity={1}
+                      position="absolute"
+                      width="100%"
+                      zIndex={2}
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
