@@ -26,9 +26,6 @@ const slugMap = {
   functionalOfflineAccessPuzzles: "fp-1125"
 };
 
-const hasEntitlement = decisions => entitlement => {
-  const slugToLookup = slugMap[entitlement];
-  return !!decisions[slugToLookup];
-};
+const hasEntitlement = (decisions, slug) => !!decisions[slugMap[slug]];
 
 export default hasEntitlement;
