@@ -34,7 +34,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     getFallbackThumbnailUrl169,
     zephrDivs,
     sharingSavingFlag,
-    commentingFlag,
     showAudioPlayer,
     storefrontConfig
   } = data;
@@ -85,7 +84,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   : "unknown section",
                 isSavingEnabled: sharingSavingFlag,
                 isSharingEnabled: sharingSavingFlag,
-                isCommentEnabled: commentingFlag,
                 isPreview
               },
               error,

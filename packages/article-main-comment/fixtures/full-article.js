@@ -1956,8 +1956,7 @@ const makeDefaultConfig = ({
   topics = defaultTopics,
   url = defaultUrl,
   isSavingEnabled = true,
-  isSharingEnabled = true,
-  isCommentEnabled = true
+  isSharingEnabled = true
 } = {}) => ({
   author,
   bylines,
@@ -1981,8 +1980,7 @@ const makeDefaultConfig = ({
   topics,
   url,
   isSavingEnabled,
-  isSharingEnabled,
-  isCommentEnabled
+  isSharingEnabled
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2178,6 +2176,5 @@ export const testFixture = {
   ],
   url: "https://url.io",
   isSavingEnabled: true,
-  isSharingEnabled: true,
-  isCommentEnabled: true
+  isSharingEnabled: true
 };

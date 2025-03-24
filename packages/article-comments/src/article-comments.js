@@ -2,119 +2,54 @@
 
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import UserState from "@times-components/user-state";
-import { hasEntitlement } from "@times-components/utils";
+
+import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
+
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
+
+const COOKIE_NAME = "access-decisions";
+const ENTITLEMENT_SLUG = "functionalCommentingFull";
+const FEATURE_FLAG_NAME = "entitlements";
 
 const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
   commentingConfig,
-  isCommentEnabled,
   storefrontConfig,
   domainSpecificUrl
 }) => {
-  const [zephrEntitlementResponse, setZephrEntitlementResponse] = useState(
-    undefined
-  );
-  const urlParams = new URLSearchParams(window.location.search);
-  const entitlementsFF = !!urlParams.get("entitlements");
+  const [isEntitled, setIsEntitled] = useState(undefined);
 
-  useEffect(
-    () => {
-      const convertBase64JSONCookie = cookieValue => {
-        try {
-          return cookieValue ? JSON.parse(atob(cookieValue)) : undefined;
-        } catch (e) {
-          return undefined;
-        }
-      };
+  useEffect(() => {
+    const search = new URLSearchParams(window.location.search);
 
-      const fetchClientSideCookie = () => {
-        const cookies = document.cookie.split("; ");
-        const authDecisionCookie = cookies.find(row =>
-          row.startsWith("access-decisions=")
-        );
-        const cookieValue = authDecisionCookie
-          ? authDecisionCookie.split("=")[1]
-          : null;
+    if (!!search.get(FEATURE_FLAG_NAME)) {
+      const decisions = getBase64CookieValue(COOKIE_NAME);
+      setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
+    }
+  }, []);
 
-        if (cookieValue) {
-          try {
-            const jsonValue = convertBase64JSONCookie(cookieValue);
-            const entitlementChecker = hasEntitlement(jsonValue);
-            const entitlements = entitlementChecker("functionalCommentingFull");
-            setZephrEntitlementResponse(entitlements);
-          } catch (error) {
-            setZephrEntitlementResponse(false);
-          }
-        } else {
-          setZephrEntitlementResponse(false);
-        }
-      };
-
-      if (entitlementsFF) {
-        // Fetched client side cookie if FF is true
-        fetchClientSideCookie();
-      }
-    },
-    [entitlementsFF]
-  );
-
-  // Returns null until the client side cookie is fetched and FF is true
-  if (entitlementsFF && zephrEntitlementResponse === undefined) {
+  if (isEntitled === undefined) {
     return null;
   }
 
-  const FallbackContent = () =>
-    isEnabled && isCommentEnabled ? (
-      <>
-        <UserState state={UserState.showJoinTheConversationDialog}>
-          <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
-        </UserState>
-        <UserState state={UserState.showCommentingModule}>
-          <Comments
-            articleId={articleId}
-            isReadOnly={isReadOnly}
-            commentingConfig={commentingConfig}
-            domainSpecificUrl={domainSpecificUrl}
-          />
-        </UserState>
-      </>
-    ) : (
-      <DisabledComments />
-    );
-
-  const RenderZephrBasedContent = () => {
-    let content;
-    if (!(isEnabled && isCommentEnabled)) {
-      content = <DisabledComments />;
-    } else if (zephrEntitlementResponse) {
-      content = (
-        <Comments
-          articleId={articleId}
-          isReadOnly={isReadOnly}
-          commentingConfig={commentingConfig}
-          domainSpecificUrl={domainSpecificUrl}
-        />
-      );
-    } else {
-      content = (
-        <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
-      );
-    }
-    return (
-      <UserState state={UserState.showArticleComments}>{content}</UserState>
-    );
-  };
-
-  if (entitlementsFF) {
-    return RenderZephrBasedContent();
+  if (!isEnabled === undefined) {
+    return <DisabledComments />;
   }
-  return FallbackContent();
+
+  return isEntitled ? (
+    <Comments
+      articleId={articleId}
+      isReadOnly={isReadOnly}
+      commentingConfig={commentingConfig}
+      domainSpecificUrl={domainSpecificUrl}
+    />
+  ) : (
+    <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+  );
 };
 
 ArticleComments.propTypes = {
@@ -125,13 +60,11 @@ ArticleComments.propTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
-  isCommentEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false,
-  isCommentEnabled: true
+  isReadOnly: false
 };
 
 export default ArticleComments;

@@ -17,7 +17,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     zephrDivs,
     sharingSavingFlag = true,
-    commentingFlag = true,
     showAudioPlayer,
     storefrontConfig
   } = window.nuk.article;
@@ -39,7 +38,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     zephrDivs,
     sharingSavingFlag,
-    commentingFlag,
     showAudioPlayer,
     storefrontConfig
   };
