@@ -19,6 +19,7 @@ Array [
     <RelatedArticles
       hideBorder={false}
       isVisible={true}
+      isWebPFormatActive={false}
     />
     <div>
       RecommendedFetch
@@ -65,6 +66,7 @@ Array [
     <RelatedArticles
       hideBorder={true}
       isVisible={true}
+      isWebPFormatActive={false}
     />
     <div
       id="categorised-articles"
@@ -201,6 +203,7 @@ Array [
     <RelatedArticles
       hideBorder={false}
       isVisible={true}
+      isWebPFormatActive={false}
     />
     <div>
       RecommendedFetch
@@ -258,6 +261,7 @@ Array [
     <RelatedArticles
       hideBorder={false}
       isVisible={true}
+      isWebPFormatActive={false}
     />
     <div>
       RecommendedFetch

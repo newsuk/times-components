@@ -163,9 +163,11 @@ exports[`1. page error 1`] = `
         paddingBottom="110%"
         position="relative"
       >
-        <img
-          className="c3"
-        />
+        <picture>
+          <img
+            className="c3"
+          />
+        </picture>
       </div>
     </div>
   </div>

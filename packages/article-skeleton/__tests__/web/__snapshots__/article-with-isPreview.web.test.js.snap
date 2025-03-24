@@ -95,6 +95,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                         "uri": "https://image.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -122,6 +123,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                         "uri": "https://image.io/secondary",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -149,6 +151,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                         "uri": "https://image.io/inline",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -478,6 +481,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                         "uri": "https://image.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -505,6 +509,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                         "uri": "https://image.io/secondary",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -532,6 +537,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                         "uri": "https://image.io/inline",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
