@@ -177,7 +177,8 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isWebPFormatActive: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
@@ -186,7 +187,8 @@ ArticleExtras.defaultProps = {
   topics: null,
   isSharingSavingEnabled: true,
   isCommentEnabled: true,
-  breadcrumbs: []
+  breadcrumbs: [],
+  isWebPFormatActive: false
 };
 
 export default ArticleExtras;

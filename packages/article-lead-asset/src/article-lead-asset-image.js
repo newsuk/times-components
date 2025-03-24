@@ -5,28 +5,32 @@ import { imageLeadAssetPropTypes } from "./article-lead-asset-prop-types";
 import styles from "../styles/index";
 
 const LeadAssetImage = ({ aspectRatio, alt, uri, isWebPFormatActive }) => {
-  const url = isWebPFormatActive
-    ? appendToImageURL(addMissingProtocol(uri), "format", "webp")
-    : addMissingProtocol(uri);
+  const url = addMissingProtocol(uri);
   const ratio = getRatio(aspectRatio);
 
   const sizes = [360, 520, 680, 860, 1200, 1500];
   const srcSet = sizes.map(
     size => `${appendToImageURL(url, "resize", size)} ${size}w`
   );
+  const webpSrcSet = srcSet
+    .map(url => appendToImageURL(url, "format", "webp"))
+    .join(",");
 
   return (
     <div
       style={{ ...styles.wrapper, paddingBottom: `${100 / ratio}%` }}
       className="lcpItem"
     >
-      <img
-        alt={alt}
-        style={styles.img}
-        src={appendToImageURL(url, "resize", sizes[0])}
-        srcSet={srcSet.join(",")}
-        fetchpriority="high"
-      />
+      <picture>
+        <source srcSet={webpSrcSet} type="image/webp" />
+        <img
+          alt={alt}
+          style={styles.img}
+          src={appendToImageURL(url, "resize", sizes[0])}
+          srcSet={srcSet.join(",")}
+          fetchpriority="high"
+        />
+      </picture>
     </div>
   );
 };
