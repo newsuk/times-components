@@ -23,7 +23,7 @@ jest.mock("../../src/join-the-conversation-dialog", () => () => (
 
 describe("<ArticleComments>", () => {
   it("should show <DisabledComments> when isEnabled=false", () => {
-    const { getByText } = render(<ArticleComments isEnabled={false} />);
+    const { getByText } = render(<ArticleComments />);
     expect(getByText("DisabledComments"));
   });
 
@@ -31,7 +31,7 @@ describe("<ArticleComments>", () => {
     UserState.showCommentingModule = () => false;
     UserState.showJoinTheConversationDialog = () => true;
 
-    const { getByText } = render(<ArticleComments isEnabled={true} />);
+    const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("JoinTheConversationDialog"));
   });
 
@@ -39,7 +39,7 @@ describe("<ArticleComments>", () => {
     UserState.showCommentingModule = () => true;
     UserState.showJoinTheConversationDialog = () => false;
 
-    const { getByText } = render(<ArticleComments isEnabled={true} />);
+    const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("Comments"));
   });
 
@@ -47,7 +47,7 @@ describe("<ArticleComments>", () => {
     delete window.location;
     window.location = { search: "?entitlements=1" };
 
-    const { getByText } = render(<ArticleComments isEnabled={true} />);
+    const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("JoinTheConversationDialog"));
   });
 
@@ -57,7 +57,7 @@ describe("<ArticleComments>", () => {
 
     getBase64CookieValue.mockReturnValue({ "fp-1113": false });
 
-    const { getByText } = render(<ArticleComments isEnabled={true} />);
+    const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("JoinTheConversationDialog"));
   });
 
@@ -67,7 +67,7 @@ describe("<ArticleComments>", () => {
 
     getBase64CookieValue.mockReturnValue({ "fp-1113": true });
 
-    const { getByText } = render(<ArticleComments isEnabled={true} />);
+    const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("Comments"));
   });
 });
