@@ -27,8 +27,10 @@ const ArticleComments = ({
 
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
+
     if (search.get(FEATURE_FLAG_NAME)) {
       const decisions = getBase64CookieValue(COOKIE_NAME);
+
       if (decisions) {
         setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
       } else {
