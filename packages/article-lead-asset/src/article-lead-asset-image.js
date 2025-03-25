@@ -12,8 +12,15 @@ const LeadAssetImage = ({ aspectRatio, alt, uri, isWebPFormatActive }) => {
   const srcSet = sizes.map(
     size => `${appendToImageURL(url, "resize", size)} ${size}w`
   );
-  const webpSrcSet = srcSet
-    .map(srcSetUrl => appendToImageURL(srcSetUrl, "format", "webp"))
+  const webpSrcSet = sizes
+    .map(
+      size =>
+        `${appendToImageURL(
+          appendToImageURL(url, "format", "webp"),
+          "resize",
+          size
+        )} ${size}w`
+    )
     .join(",");
 
   return (
