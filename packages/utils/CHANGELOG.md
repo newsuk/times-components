@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.31.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.30.1...@times-components/utils@6.31.0) (2025-03-25)
+
+
+### Features
+
+* **TMW-000:** Commenting entitlement feature flag ([#4110](https://github.com/newsuk/times-components/issues/4110)) ([2a0cf25](https://github.com/newsuk/times-components/commit/2a0cf25ba2bc59753478efed538f6ab963bb8702))
+
+
+
+
+
 ## [6.30.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.30.0...@times-components/utils@6.30.1) (2025-03-24)
 
 
