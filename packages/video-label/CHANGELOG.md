@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.70](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.69...@times-components/video-label@2.11.70) (2025-03-25)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
 ## [2.11.69](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.68...@times-components/video-label@2.11.69) (2025-03-24)
 
 **Note:** Version bump only for package @times-components/video-label
