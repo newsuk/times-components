@@ -2,6 +2,7 @@ import React from "react";
 import { addUserStateKnobs } from "@times-components/user-state";
 
 import ArticleComments from "./src/article-comments";
+import JoinTheConversationDialog from "./src/join-the-conversation-dialog";
 
 const commentingConfig = {
   account: "sp_pCQgrRiN"
@@ -41,6 +42,11 @@ export default {
         />
       ),
       name: "Disabled",
+      type: "story"
+    },
+    {
+      component: () => <JoinTheConversationDialog />,
+      name: "Join the Conversation Dialog",
       type: "story"
     }
   ],
