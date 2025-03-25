@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.2](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.21.1...@times-components/lazy-load@0.21.2) (2025-03-25)
+
+
+### Bug Fixes
+
+* **TMW-000:** Commenting entitlement deps ([#4109](https://github.com/newsuk/times-components/issues/4109)) ([eb5257a](https://github.com/newsuk/times-components/commit/eb5257abdde7ba2ff60adcba612df0aececc9b64))
+
+
+
+
+
 ## [0.21.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.21.0...@times-components/lazy-load@0.21.1) (2025-03-21)
 
 **Note:** Version bump only for package @times-components/lazy-load
