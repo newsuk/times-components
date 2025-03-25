@@ -32,7 +32,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       bylines,
       hasVideo,
@@ -44,8 +44,7 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       topics,
-      updatedTime,
-      articleDataFromRender
+      updatedTime
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
