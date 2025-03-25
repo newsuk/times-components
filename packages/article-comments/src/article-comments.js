@@ -25,11 +25,14 @@ const ArticleComments = ({
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
 
+  const [cookieValue, setCookieValue] = useState("unset");
+
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
 
     if (search.get(FEATURE_FLAG_NAME)) {
       const decisions = getBase64CookieValue(COOKIE_NAME);
+      setCookieValue(decisions);
       if (decisions) {
         setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
       } else {
@@ -66,6 +69,21 @@ const ArticleComments = ({
     );
   }
 
+  return (
+    <>
+      <div>
+        flagEnabled:
+        {flagEnabled !== undefined ? flagEnabled.toString() : "undefined"}
+      </div>
+      <div>
+        isEntitled:
+        {isEntitled !== undefined ? isEntitled.toString() : "undefined"}
+      </div>
+      <div>cookieValue: {JSON.stringify(cookieValue)}</div>
+    </>
+  );
+
+  /*
   return isEntitled ? (
     <Comments
       articleId={articleId}
@@ -76,6 +94,7 @@ const ArticleComments = ({
   ) : (
     <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
   );
+  */
 };
 
 ArticleComments.propTypes = {
