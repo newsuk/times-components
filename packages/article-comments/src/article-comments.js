@@ -32,6 +32,8 @@ const ArticleComments = ({
       const decisions = getBase64CookieValue(COOKIE_NAME);
       if (decisions) {
         setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
+      } else {
+        setIsEntitled(false);
       }
     } else {
       setFlagEnabled(false);
