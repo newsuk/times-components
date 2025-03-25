@@ -43,7 +43,8 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   commentingConfig,
   topics,
-  storefrontConfig,
+  isSharingSavingEnabled,
+  isCommentEnabled,
   breadcrumbs,
   domainSpecificUrl
 }) => {
@@ -144,7 +145,7 @@ const ArticleExtras = ({
         articleId={articleId}
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
-        storefrontConfig={storefrontConfig}
+        isCommentEnabled={isCommentEnabled}
         domainSpecificUrl={domainSpecificUrl}
       />
     </UserState>
@@ -168,7 +169,8 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  storefrontConfig: PropTypes.string.isRequired,
+  isSharingSavingEnabled: PropTypes.bool,
+  isCommentEnabled: PropTypes.bool,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired
 };

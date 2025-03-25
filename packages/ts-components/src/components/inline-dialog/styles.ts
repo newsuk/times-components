@@ -50,8 +50,7 @@ export const Button = styled.a`
   cursor: pointer;
   background-color: #005c8a;
   color: white;
-  font-family: ${fonts.supporting};
-  font-weight: 500;
+  font-family: ${fonts.cta};
   width: 100%;
   height: 48px;
   padding: 18.5px 0;

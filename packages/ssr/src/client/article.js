@@ -16,8 +16,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
-    showAudioPlayer,
-    storefrontConfig
+    sharingSavingFlag = true,
+    commentingFlag = true,
+    showAudioPlayer
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -36,8 +37,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
-    showAudioPlayer,
-    storefrontConfig
+    sharingSavingFlag,
+    commentingFlag,
+    showAudioPlayer
   };
 
   const clientOptions = {

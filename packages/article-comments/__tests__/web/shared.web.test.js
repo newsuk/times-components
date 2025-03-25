@@ -19,7 +19,6 @@ const renderComments = ({
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
-      storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
       domainSpecificUrl={domainSpecificUrl}
     />

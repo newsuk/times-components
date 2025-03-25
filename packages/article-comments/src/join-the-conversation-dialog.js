@@ -5,7 +5,7 @@ import { InlineDialog } from "@times-components/ts-components";
 
 const JoinTheConversationDialog = () => {
   const href =
-    window.__TIMES_CONFIG__ &&
+    typeof window !== "undefined" && window.__TIMES_CONFIG__ &&
     window.__TIMES_CONFIG__.account &&
     window.__TIMES_CONFIG__.account.url;
 

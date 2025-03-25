@@ -11,8 +11,7 @@ const articlePropTypes = {
   }),
   receiveChildList: PropTypes.func,
   navigationMode: PropTypes.shape({}).isRequired,
-  zephrDivs: PropTypes.bool,
-  storefrontConfig: PropTypes.string.isRequired
+  zephrDivs: PropTypes.bool
 };
 
 const articleDefaultProps = {

@@ -10,5 +10,6 @@ export default {
   headlineRegular: 'TimesModern-Regular, TimesModern-Regular-fallback, serif',
   stMagazine: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
   styleMagazine: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
-  supporting: 'Roboto-Regular, Roboto-Regular-fallback, sans-serif'
+  supporting: 'Roboto-Regular, Roboto-Regular-fallback, sans-serif',
+  cta: 'Roboto-Medium, Roboto, sans-serif'
 };
