@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+import UserState from "@times-components/user-state";
 import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
 
 import Comments from "./comments";
@@ -21,6 +22,7 @@ const ArticleComments = ({
   storefrontConfig,
   domainSpecificUrl
 }) => {
+  const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
 
   useEffect(() => {
@@ -30,16 +32,38 @@ const ArticleComments = ({
       const decisions = getBase64CookieValue(COOKIE_NAME);
       if (decisions) {
         setIsEntitled(hasEntitlement(decisions, ENTITLEMENT_SLUG));
+      } else {
+        setIsEntitled(false);
       }
+    } else {
+      setFlagEnabled(false);
     }
   }, []);
 
-  if (isEntitled === undefined) {
+  if (flagEnabled === undefined && isEntitled === undefined) {
     return null;
   }
 
-  if (!isEnabled === undefined) {
+  if (!isEnabled) {
     return <DisabledComments />;
+  }
+
+  if (flagEnabled === false) {
+    return (
+      <>
+        <UserState state={UserState.showCommentingModule}>
+          <Comments
+            articleId={articleId}
+            isReadOnly={isReadOnly}
+            commentingConfig={commentingConfig}
+            domainSpecificUrl={domainSpecificUrl}
+          />
+        </UserState>
+        <UserState state={UserState.showJoinTheConversationDialog}>
+          <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+        </UserState>
+      </>
+    );
   }
 
   return isEntitled ? (
