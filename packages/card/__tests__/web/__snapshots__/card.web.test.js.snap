@@ -1766,10 +1766,12 @@ exports[`15. card should re-render when loading state changes 1`] = `
     <div>
       <div>
         <div>
-          <img
-            loading="lazy"
-            src="https://img.io/img?resize=360"
-          />
+          <picture>
+            <img
+              loading="lazy"
+              src="https://img.io/img?resize=360"
+            />
+          </picture>
         </div>
       </div>
     </div>
