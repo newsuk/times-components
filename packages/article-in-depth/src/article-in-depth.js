@@ -20,7 +20,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       backgroundColour,
       bylines,
@@ -33,8 +33,7 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       textColour,
-      updatedTime,
-      articleDataFromRender
+      updatedTime
     } = article;
 
     return (

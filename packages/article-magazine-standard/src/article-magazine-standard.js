@@ -21,7 +21,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -32,8 +32,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      updatedTime,
-      articleDataFromRender
+      updatedTime
     } = article;
 
     return (

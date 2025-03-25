@@ -456,7 +456,7 @@ const ArticleSkeleton = ({
                       </PaywallPortal>
                     </ArticleContent>
                   </ArticleWrapper>
-                  {/* <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
                     {({ observed, registerNode }) => (
                       <ArticleExtras
                         analyticsStream={analyticsStream}
@@ -484,7 +484,7 @@ const ArticleSkeleton = ({
                         isWebPFormatActive={isWebPFormatActive}
                       />
                     )}
-                  </LazyLoad> */}
+                  </LazyLoad>
                   {!!zephrDivs && (
                     <StaticContent
                       html={
