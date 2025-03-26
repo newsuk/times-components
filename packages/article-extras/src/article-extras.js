@@ -47,7 +47,8 @@ const ArticleExtras = ({
   isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isWebPFormatActive
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -78,6 +79,7 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
           hideBorder={!isRecommendedActive && Boolean(categoryArticles)}
+          isWebPFormatActive={isWebPFormatActive}
         />
         {isRecommendedActive && (
           <RecommendedFetch
@@ -175,7 +177,8 @@ ArticleExtras.propTypes = {
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  domainSpecificUrl: PropTypes.string.isRequired
+  domainSpecificUrl: PropTypes.string.isRequired,
+  isWebPFormatActive: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
@@ -184,7 +187,8 @@ ArticleExtras.defaultProps = {
   topics: null,
   isSharingSavingEnabled: true,
   isCommentEnabled: true,
-  breadcrumbs: []
+  breadcrumbs: [],
+  isWebPFormatActive: false
 };
 
 export default ArticleExtras;

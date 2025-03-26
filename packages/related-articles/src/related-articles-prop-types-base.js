@@ -9,5 +9,6 @@ export default {
       })
     ),
     sliceName: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  isWebPFormatActive: PropTypes.bool
 };

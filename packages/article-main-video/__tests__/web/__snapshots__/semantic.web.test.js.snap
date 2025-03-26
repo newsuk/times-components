@@ -298,10 +298,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src={null}
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src={null}
+      />
+    </picture>
     <span>
       Related Article 1
     </span>
@@ -313,10 +315,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src={null}
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src={null}
+      />
+    </picture>
     <span>
       Related Article 1
     </span>
@@ -328,10 +332,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src={null}
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src={null}
+      />
+    </picture>
     <span>
       Related Article 2
     </span>
