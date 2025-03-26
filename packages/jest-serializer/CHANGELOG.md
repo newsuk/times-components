@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.28](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.27...@times-components/jest-serializer@3.13.28) (2025-03-26)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
 ## [3.13.27](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.26...@times-components/jest-serializer@3.13.27) (2025-03-25)
 
 **Note:** Version bump only for package @times-components/jest-serializer
