@@ -92,8 +92,6 @@ const ArticleSkeleton = ({
     savingEnabled,
     sharingEnabled,
     publishedTime,
-    isSavingEnabled,
-    isSharingEnabled,
     isCommentEnabled
   } = article;
 
@@ -231,10 +229,6 @@ const ArticleSkeleton = ({
 
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
 
-  const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
-  const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
-  const isSharingSavingEnabled =
-    isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
   const SaveAndShare = true ? (
     <UserState state={UserState.showSaveAndShareBar}>
       <MessageContext.Consumer>
@@ -474,7 +468,7 @@ const ArticleSkeleton = ({
                         }
                         commentingConfig={commentingConfig}
                         topics={topics}
-                        isSharingSavingEnabled={isSharingSavingEnabled}
+                        isSharingSavingEnabled={savingEnabled || sharingEnabled}
                         isCommentEnabled={isCommentEnabled}
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
