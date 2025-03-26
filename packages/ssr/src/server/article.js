@@ -26,7 +26,6 @@ module.exports = (
     getFallbackThumbnailUrl169,
     zephrDivs,
     sharingSavingFlag = true,
-    commentingFlag = true,
     showAudioPlayer,
     storefrontConfig
   },
@@ -82,7 +81,6 @@ module.exports = (
       swgProductId,
       zephrDivs,
       sharingSavingFlag,
-      commentingFlag,
       showAudioPlayer,
       storefrontConfig
     },

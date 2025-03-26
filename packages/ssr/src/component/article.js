@@ -34,7 +34,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     getFallbackThumbnailUrl169,
     zephrDivs,
     sharingSavingFlag,
-    commentingFlag,
     showAudioPlayer,
     storefrontConfig
   } = data;
