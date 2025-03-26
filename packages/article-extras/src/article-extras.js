@@ -119,27 +119,26 @@ const ArticleExtras = ({
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
-      {savingEnabled ||
-        (sharingEnabled && (
-          <UserState state={UserState.showSaveAndShareBar}>
-            <MessageContext.Consumer>
-              {({ showMessage }) => (
-                <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-                  <SaveAndShareBar
-                    articleId={articleId}
-                    articleHeadline={articleHeadline}
-                    articleUrl={articleUrl}
-                    onCopyLink={() => showMessage("Article link copied")}
-                    onSaveToMyArticles={() => {}}
-                    onShareOnEmail={() => {}}
-                    savingEnabled={savingEnabled}
-                    sharingEnabled={sharingEnabled}
-                  />
-                </ShareAndSaveContainer>
-              )}
-            </MessageContext.Consumer>
-          </UserState>
-        ))}
+      {(savingEnabled || sharingEnabled) && (
+        <UserState state={UserState.showSaveAndShareBar}>
+          <MessageContext.Consumer>
+            {({ showMessage }) => (
+              <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
+                <SaveAndShareBar
+                  articleId={articleId}
+                  articleHeadline={articleHeadline}
+                  articleUrl={articleUrl}
+                  onCopyLink={() => showMessage("Article link copied")}
+                  onSaveToMyArticles={() => {}}
+                  onShareOnEmail={() => {}}
+                  savingEnabled={savingEnabled}
+                  sharingEnabled={sharingEnabled}
+                />
+              </ShareAndSaveContainer>
+            )}
+          </MessageContext.Consumer>
+        </UserState>
+      )}
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
