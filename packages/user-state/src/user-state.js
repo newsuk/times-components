@@ -20,8 +20,7 @@ import {
   showLiveUpdateButton,
   showTokenisedEmailShare,
   showCommentingModule,
-  showJoinTheConversationDialog,
-  showArticleComments
+  showJoinTheConversationDialog
 } from "./matchers";
 
 function UserState({
@@ -47,7 +46,6 @@ UserState.showLiveUpdateButton = showLiveUpdateButton;
 UserState.showTokenisedEmailShare = showTokenisedEmailShare;
 UserState.showCommentingModule = showCommentingModule;
 UserState.showJoinTheConversationDialog = showJoinTheConversationDialog;
-UserState.showArticleComments = showArticleComments;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,
