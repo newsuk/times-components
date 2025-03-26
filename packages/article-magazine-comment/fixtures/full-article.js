@@ -1954,10 +1954,7 @@ const makeDefaultConfig = ({
   savingEnabled = true,
   standfirst = defaultStandfirst,
   topics = defaultTopics,
-  url = defaultUrl,
-  isSavingEnabled = true,
-  isSharingEnabled = true,
-  isCommentEnabled = true
+  url = defaultUrl
 } = {}) => ({
   author,
   bylines,
@@ -1979,10 +1976,7 @@ const makeDefaultConfig = ({
   slug,
   standfirst,
   topics,
-  url,
-  isSavingEnabled,
-  isSharingEnabled,
-  isCommentEnabled
+  url
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2165,8 +2159,5 @@ export const testFixture = {
       slug: "topic"
     }
   ],
-  url: "https://url.io",
-  isSavingEnabled: true,
-  isSharingEnabled: true,
-  isCommentEnabled: true
+  url: "https://url.io"
 };

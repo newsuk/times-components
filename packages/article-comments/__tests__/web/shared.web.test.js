@@ -21,7 +21,6 @@ const renderComments = ({
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
-      isCommentEnabled
       domainSpecificUrl={domainSpecificUrl}
     />
   );
@@ -85,7 +84,6 @@ it("Render comments label, when comments are loaded", () => {
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
-      isCommentEnabled
       domainSpecificUrl="https://www.thetimes.co.uk"
     />
   );
@@ -117,7 +115,6 @@ describe("window listeners added", () => {
         onCommentsPress={() => {}}
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
-        isCommentEnabled
         domainSpecificUrl="https://www.thetimes.co.uk"
       />
     );

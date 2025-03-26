@@ -216,8 +216,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           articleUrl="https://url.io"
           commentsEnabled={true}
           domainSpecificUrl="https://www.thetimes.co.uk"
-          isCommentEnabled={true}
-          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -507,8 +505,6 @@ exports[`4. an article with ads with .co.uk 1`] = `
           articleUrl="https://url.io"
           commentsEnabled={true}
           domainSpecificUrl="https://www.thetimes.co.uk"
-          isCommentEnabled={true}
-          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -798,8 +794,6 @@ exports[`5. an article with ads with .com 1`] = `
           articleUrl="https://url.io"
           commentsEnabled={true}
           domainSpecificUrl="www.thetimes.com"
-          isCommentEnabled={true}
-          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {

@@ -43,8 +43,6 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   commentingConfig,
   topics,
-  isSharingSavingEnabled,
-  isCommentEnabled,
   storefrontConfig,
   breadcrumbs,
   domainSpecificUrl
@@ -121,7 +119,7 @@ const ArticleExtras = ({
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
-      {isSharingSavingEnabled && (
+      {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.showSaveAndShareBar}>
           <MessageContext.Consumer>
             {({ showMessage }) => (
@@ -146,7 +144,6 @@ const ArticleExtras = ({
         articleId={articleId}
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
-        isCommentEnabled={isCommentEnabled}
         storefrontConfig={storefrontConfig}
         domainSpecificUrl={domainSpecificUrl}
       />
@@ -171,8 +168,6 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  isSharingSavingEnabled: PropTypes.bool,
-  isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired
@@ -182,8 +177,6 @@ ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   categorisedArticles: null,
   topics: null,
-  isSharingSavingEnabled: true,
-  isCommentEnabled: true,
   breadcrumbs: []
 };
 
