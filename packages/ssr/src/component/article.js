@@ -33,7 +33,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
-    sharingSavingFlag,
     showAudioPlayer,
     storefrontConfig
   } = data;
@@ -82,8 +81,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
-                isSavingEnabled: sharingSavingFlag,
-                isSharingEnabled: sharingSavingFlag,
                 isPreview
               },
               error,

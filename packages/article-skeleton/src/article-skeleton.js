@@ -91,9 +91,7 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime,
-    isSavingEnabled,
-    isSharingEnabled
+    publishedTime
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -230,11 +228,7 @@ const ArticleSkeleton = ({
 
   const domainSpecificUrl = hostName || "https://www.thetimes.co.uk";
 
-  const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
-  const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
-  const isSharingSavingEnabled =
-    isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
-  const SaveAndShare = true ? (
+  const SaveAndShare = (
     <UserState state={UserState.showSaveAndShareBar}>
       <MessageContext.Consumer>
         {({ showMessage }) => {
@@ -257,7 +251,7 @@ const ArticleSkeleton = ({
         }}
       </MessageContext.Consumer>
     </UserState>
-  ) : null;
+  );
 
   const [polygonUrl, setPolygonUrl] = useState([]);
 
@@ -473,7 +467,6 @@ const ArticleSkeleton = ({
                         }
                         commentingConfig={commentingConfig}
                         topics={topics}
-                        isSharingSavingEnabled={isSharingSavingEnabled}
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
