@@ -93,8 +93,7 @@ const ArticleSkeleton = ({
     sharingEnabled,
     publishedTime,
     isSavingEnabled,
-    isSharingEnabled,
-    isCommentEnabled
+    isSharingEnabled
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -475,7 +474,6 @@ const ArticleSkeleton = ({
                         commentingConfig={commentingConfig}
                         topics={topics}
                         isSharingSavingEnabled={isSharingSavingEnabled}
-                        isCommentEnabled={isCommentEnabled}
                         storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
