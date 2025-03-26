@@ -1657,10 +1657,12 @@ exports[`12. card should re-render when image uri changes 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="http://foo?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="http://foo?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
