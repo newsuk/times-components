@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-video",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Main Video Article Template",
   "main": "dist/article-main-video",
   "dev": "src/article-main-video",
@@ -53,7 +53,7 @@
   "dependencies": {
     "@times-components/ad": "2.22.33",
     "@times-components/article-lead-asset": "1.19.10",
-    "@times-components/article-skeleton": "1.158.5",
+    "@times-components/article-skeleton": "1.158.6",
     "@times-components/article-topics": "4.11.65",
     "@times-components/context": "1.25.4",
     "@times-components/date-publication": "0.30.44",
