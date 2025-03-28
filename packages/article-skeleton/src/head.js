@@ -467,7 +467,7 @@ function Head({
 
       <script
         type="text/javascript"
-        async
+        defer
         src="https://platform.twitter.com/widgets.js"
       />
     </Helmet>
