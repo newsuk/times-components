@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.125.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.124.6...@times-components/ts-components@1.125.0) (2025-03-28)
+
+
+### Features
+
+* **TMG-3050:** Fix CTA URL for Commenting banner ([#4103](https://github.com/newsuk/times-components/issues/4103)) ([2a6b973](https://github.com/newsuk/times-components/commit/2a6b973bfaa40105beff42b0223ccb1fc82153c3))
+
+
+
+
+
 ## [1.124.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.124.5...@times-components/ts-components@1.124.6) (2025-03-26)
 
 **Note:** Version bump only for package @times-components/ts-components

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pull-quote",
-  "version": "3.15.51",
+  "version": "3.15.52",
   "description": "Pull Quote for Times Components Articles ",
   "main": "dist/pull-quote",
   "dev": "src/pull-quote",
@@ -53,10 +53,10 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/icons": "2.23.10",
-    "@times-components/link": "3.17.44",
-    "@times-components/ts-styleguide": "1.51.6",
-    "@times-components/utils": "6.31.1",
+    "@times-components/icons": "2.23.11",
+    "@times-components/link": "3.17.45",
+    "@times-components/ts-styleguide": "1.52.0",
+    "@times-components/utils": "6.31.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

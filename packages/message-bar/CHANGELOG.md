@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.97](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.96...@times-components/message-bar@0.7.97) (2025-03-28)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
 ## [0.7.96](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.7.95...@times-components/message-bar@0.7.96) (2025-03-26)
 
 **Note:** Version bump only for package @times-components/message-bar
