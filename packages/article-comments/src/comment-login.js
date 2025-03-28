@@ -21,7 +21,9 @@ const ssoCallback = (codeA, completeSSOCallback) =>
   );
 
 const executeSSOtransaction = () => {
+  console.log("***1***");
   if (window.SPOTIM && window.SPOTIM.startSSO) {
+    console.log("***2***");
     const acsTnlCookie =
       window &&
       window.nuk &&
@@ -32,6 +34,7 @@ const executeSSOtransaction = () => {
 
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
+  console.log("***3***");
 };
 
 export { ssoCallback };

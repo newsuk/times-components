@@ -113,10 +113,13 @@ class Comments extends Component {
     );
 
     if (!isReadOnly) {
+      console.log("***4***");
       if (window.SPOTIM && window.SPOTIM.startSSO) {
+        console.log("***5***");
         executeSSOtransaction();
       } else {
         document.addEventListener("spot-im-api-ready", () => {
+          console.log("***6***");
           executeSSOtransaction();
         });
       }
