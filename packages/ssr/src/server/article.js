@@ -25,8 +25,6 @@ module.exports = (
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
-    sharingSavingFlag = true,
-    commentingFlag = true,
     showAudioPlayer
   },
   userState
@@ -80,8 +78,6 @@ module.exports = (
       isPreview,
       swgProductId,
       zephrDivs,
-      sharingSavingFlag,
-      commentingFlag,
       showAudioPlayer
     },
     name: "article"

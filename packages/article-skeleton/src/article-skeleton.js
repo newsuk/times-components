@@ -479,8 +479,6 @@ const ArticleSkeleton = ({
                         }
                         commentingConfig={commentingConfig}
                         topics={topics}
-                        isSharingSavingEnabled={isSharingSavingEnabled}
-                        isCommentEnabled={isCommentEnabled}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
                       />
