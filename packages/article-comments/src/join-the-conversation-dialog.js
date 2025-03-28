@@ -1,34 +1,26 @@
 /* eslint-env browser */
+/* eslint no-underscore-dangle: 0 */
 import React from "react";
-import PropTypes from "prop-types";
 import { InlineDialog } from "@times-components/ts-components";
 
-const JoinTheConversationDialog = ({ storefrontConfig }) => {
-  const isLightPackUser =
-    window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
-  const href = isLightPackUser ? null : storefrontConfig;
-  // temp solution until the modal is moved out to a proper UI repo
-  // this event triggers cps-content-render/packages/components-global/src/FreeArticlePromotion/FreeArticleBottomBanner/FreeArticleBottomBanner.tsx
-  // todo: remove this event dispatching and implement the modal from the shared UI component repo
-  const onClick = isLightPackUser
-    ? () =>
-        document && document.dispatchEvent(new Event("show::upgrade::modal"))
-    : null;
+const JoinTheConversationDialog = () => {
+  const href =
+    typeof window !== "undefined" &&
+    window.__TIMES_CONFIG__ &&
+    window.__TIMES_CONFIG__.account &&
+    window.__TIMES_CONFIG__.account.url;
+
   return (
     <InlineDialog
       title="Join the conversation"
-      buttonText="View offers"
+      buttonText="Go to My account"
       href={href}
-      onClick={onClick}
+      onClick={() => {}}
     >
       Commenting is only available to unlimited access subscribers. Upgrade your
       subscription to have your say.
     </InlineDialog>
   );
-};
-
-JoinTheConversationDialog.propTypes = {
-  storefrontConfig: PropTypes.string.isRequired
 };
 
 export default JoinTheConversationDialog;

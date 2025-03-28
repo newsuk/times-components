@@ -68,6 +68,7 @@ declare module '@times-components/ts-styleguide' {
     brandColour: string;
     headlineRegular: string;
     supporting: string;
+    cta: string;
   };
 
   type FontFactory = () => {

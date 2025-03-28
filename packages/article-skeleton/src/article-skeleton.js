@@ -73,8 +73,7 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer,
-  storefrontConfig
+  showAudioPlayer
 }) => {
   const {
     commentsEnabled,
@@ -480,7 +479,6 @@ const ArticleSkeleton = ({
                         }
                         commentingConfig={commentingConfig}
                         topics={topics}
-                        storefrontConfig={storefrontConfig}
                         breadcrumbs={breadcrumbs}
                         domainSpecificUrl={domainSpecificUrl}
                       />

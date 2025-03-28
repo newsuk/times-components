@@ -16,8 +16,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
-    showAudioPlayer,
-    storefrontConfig
+    showAudioPlayer
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -36,8 +35,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
-    showAudioPlayer,
-    storefrontConfig
+    showAudioPlayer
   };
 
   const clientOptions = {

@@ -6,8 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  navigationMode: PropTypes.shape({}).isRequired,
-  storefrontConfig: PropTypes.string.isRequired
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 const articleDefaultProps = {

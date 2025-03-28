@@ -19,7 +19,6 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  storefrontConfig,
   domainSpecificUrl
 }) => {
   const [flagEnabled, setFlagEnabled] = useState(undefined);
@@ -60,7 +59,7 @@ const ArticleComments = ({
           />
         </UserState>
         <UserState state={UserState.showJoinTheConversationDialog}>
-          <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+          <JoinTheConversationDialog />
         </UserState>
       </>
     );
@@ -74,7 +73,7 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
+    <JoinTheConversationDialog />
   );
 };
 
@@ -85,7 +84,6 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
-  storefrontConfig: PropTypes.string.isRequired,
   domainSpecificUrl: PropTypes.string.isRequired
 };
 
