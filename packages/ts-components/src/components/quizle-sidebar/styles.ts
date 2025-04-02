@@ -79,7 +79,7 @@ export const Bottom = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 8px 0 0;
-  min-height: 230px;
+  min-height: 90px;
   justify-content: space-between;
 
   & .q-icon {
