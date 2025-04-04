@@ -79,7 +79,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
               onClick={() =>
                 handleClick(
                   fireAnalyticsEvent,
-                  'quizle sidebar: header selected'
+                  'quizle sidebar: title selected'
                 )
               }
               className="trigger"
@@ -102,7 +102,10 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
         <Link
           href={pageLink}
           onClick={() =>
-            handleClick(fireAnalyticsEvent, 'quizle sidebar: link selected')
+            handleClick(
+              fireAnalyticsEvent,
+              'quizle sidebar: test your knowledge'
+            )
           }
           className="quizle-link"
         >
