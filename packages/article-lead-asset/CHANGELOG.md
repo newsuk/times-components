@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.19.10...@times-components/article-lead-asset@1.20.0) (2025-04-07)
+
+
+### Features
+
+* **tmc-363:** Change twitter script from async to defer ([#4116](https://github.com/newsuk/times-components/issues/4116)) ([f606253](https://github.com/newsuk/times-components/commit/f606253d5e4313c2233b3a878849c018d8efb2cb))
+
+
+
+
+
 ## [1.19.10](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.19.9...@times-components/article-lead-asset@1.19.10) (2025-03-26)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

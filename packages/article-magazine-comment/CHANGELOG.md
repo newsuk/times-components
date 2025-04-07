@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.92.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.91.0...@times-components/article-magazine-comment@3.92.0) (2025-04-07)
+
+
+### Features
+
+* **tmc-363:** Change twitter script from async to defer ([#4116](https://github.com/newsuk/times-components/issues/4116)) ([f606253](https://github.com/newsuk/times-components/commit/f606253d5e4313c2233b3a878849c018d8efb2cb))
+
+
+
+
+
 # [3.91.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.90.15...@times-components/article-magazine-comment@3.91.0) (2025-03-28)
 
 
