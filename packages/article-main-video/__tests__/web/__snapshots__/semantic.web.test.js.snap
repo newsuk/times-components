@@ -92,7 +92,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
       {"@context":"https://schema.org","@type":"VideoObject","name":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","uploadDate":"2022-02-24T09:00:00.000Z","thumbnailUrl":"https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203","description":"In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
     </script>
     <script
-      async={true}
+      defer={true}
       src="https://platform.twitter.com/widgets.js"
       type="text/javascript"
     />
