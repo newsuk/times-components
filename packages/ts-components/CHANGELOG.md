@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.126.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.125.1...@times-components/ts-components@1.126.0) (2025-04-08)
+
+
+### Features
+
+* **TMRP-290:** Tracking Specs for Quizle sidebar ([#4119](https://github.com/newsuk/times-components/issues/4119)) ([3f62fbf](https://github.com/newsuk/times-components/commit/3f62fbf3b2021d6d3f9686911031e04dd25ec49f))
+
+
+
+
+
 ## [1.125.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.125.0...@times-components/ts-components@1.125.1) (2025-04-07)
 
 **Note:** Version bump only for package @times-components/ts-components
