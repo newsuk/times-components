@@ -47,7 +47,7 @@ describe('QuizleSidebar', () => {
       action: 'Clicked',
       attrs: {
         event_navigation_action: 'navigation',
-        event_navigation_name: 'quizle sidebar: header selected',
+        event_navigation_name: 'quizle sidebar: title selected',
         event_navigation_browsing_method: 'click',
         component_name: 'Quizle Sidebar'
       }
@@ -63,7 +63,7 @@ describe('QuizleSidebar', () => {
       action: 'Clicked',
       attrs: {
         event_navigation_action: 'navigation',
-        event_navigation_name: 'quizle sidebar: link selected',
+        event_navigation_name: 'quizle sidebar: test your knowledge',
         event_navigation_browsing_method: 'click',
         component_name: 'Quizle Sidebar'
       }
