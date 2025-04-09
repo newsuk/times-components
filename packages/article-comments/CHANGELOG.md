@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.47.2...@times-components/article-comments@0.48.0) (2025-04-09)
+
+
+### Features
+
+* **TMD-463:** Tracking for View more comments ([#4023](https://github.com/newsuk/times-components/issues/4023)) ([55f8cec](https://github.com/newsuk/times-components/commit/55f8cecdb799311034561640fb8967a59dfbd36a))
+
+
+
+
+
 ## [0.47.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.47.1...@times-components/article-comments@0.47.2) (2025-04-08)
 
 **Note:** Version bump only for package @times-components/article-comments
