@@ -77,6 +77,11 @@ export default Component =>
         actionName: "navigation",
         eventName: "onCommentNotificationClicked",
         trackingName: "spot im : notification clicked"
+      },
+      {
+        actionName: "navigation",
+        eventName: "viewMoreComments",
+        trackingName: "spot im : view more comments clicked"
       }
     ]
   });
