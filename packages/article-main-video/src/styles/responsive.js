@@ -134,6 +134,7 @@ export const ArticleContent = styled.div`
 export const ArticleHeadline = styled.h1`
   font-family: "TimesModern-Bold";
   font-size: 3.6rem;
+  font-weight: 400;
   line-height: 1.125;
   letter-spacing: 0.03em;
   color: #fff;
