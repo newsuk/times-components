@@ -129,67 +129,73 @@ export default [
     name: "keyFacts"
   },
   {
-    "name": "interactive",
-    "attributes": {
-      "id": "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
-      "display": "primary",
-      "url": "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
-      "element": {
-        "value": "times-travel-cta",
-        "attributes": {
-          "url": "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
-          "text": "Book a stay",
-          "target": "_blank",
+    name: "interactive",
+    attributes: {
+      id: "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
+      element: {
+        value: "times-travel-cta",
+        attributes: {
+          url:
+            "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
+          text: "Book a stay",
+          target: "_blank",
           "date-to": "2024-11-13",
-          "className": "js-cta-experiment-original",
+          className: "js-cta-experiment-original",
           "date-from": "2024-11-13",
-          "textOnlyId": "21e73363-86a2-4470-b703-a92f4f3347a3"
+          textOnlyId: "21e73363-86a2-4470-b703-a92f4f3347a3"
         }
       }
     },
-    "children": []
+    children: []
   },
   {
-    "name": "interactive",
-    "attributes": {
-      "id": "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
-      "display": "primary",
-      "url": "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
-      "element": {
-        "value": "times-travel-cta",
-        "attributes": {
-          "url": "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
-          "text": "Book a stay",
-          "target": "_blank",
+    name: "interactive",
+    attributes: {
+      id: "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
+      element: {
+        value: "times-travel-cta",
+        attributes: {
+          url:
+            "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
+          text: "Book a stay",
+          target: "_blank",
           "date-to": "2024-11-13",
-          "className": "js-cta-experiment-original js-cta-experiment-variation",
+          className: "js-cta-experiment-original js-cta-experiment-variation",
           "date-from": "2024-11-13",
-          "textOnlyId": "21e73363-86a2-4470-b703-a92f4f3347a3"
+          textOnlyId: "21e73363-86a2-4470-b703-a92f4f3347a3"
         }
       }
     },
-    "children": []
+    children: []
   },
   {
-    "name": "interactive",
-    "attributes": {
-      "id": "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
-      "display": "primary",
-      "url": "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
-      "element": {
-        "value": "times-travel-cta",
-        "attributes": {
-          "url": "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
-          "text": "Book a package",
-          "target": "_blank",
+    name: "interactive",
+    attributes: {
+      id: "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-travel-cta-1.0.0/times-travel-cta.html",
+      element: {
+        value: "times-travel-cta",
+        attributes: {
+          url:
+            "https://www.booking.com/searchresults.hr.html?aid=311088&amp;label=liberty-fabay-AcuNMANBzwLbPmYTVcK8DgS626028297357%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1557670637731%3Alp2840%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZYBPBWb9YOZ0&amp;gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQbV6rjsNOTLNWCkHVMliq16aPNsg5DHFDpN2qh5svSbLp13c9AYBWQaAhEIEALw_wcB&amp;highlighted_hotels=7110661&amp;redirected=1&amp;city=-749044&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=dc9669a26ac31e654eb85826e7ffb50b",
+          text: "Book a package",
+          target: "_blank",
           "date-to": "2024-11-13",
-          "className": "js-cta-experiment-variation",
+          className: "js-cta-experiment-variation",
           "date-from": "2024-11-13",
-          "textOnlyId": "21e73363-86a2-4470-b703-a92f4f3347a3"
+          textOnlyId: "21e73363-86a2-4470-b703-a92f4f3347a3"
         }
       }
     },
-    "children": []
+    children: []
   },
   {
     name: "interactive",
