@@ -6,15 +6,14 @@ interface AttributesProps {
   url: string;
   target?: string;
   text: string;
+  className?: string;
 }
 
 interface RootProps {
   attributes?: AttributesProps;
 }
 
-export const CtaButton: React.FC<RootProps> = props => {
-  const attributes = props.attributes;
-
+export const CtaButton: React.FC<RootProps> = ({ attributes }) => {
   if (!attributes || !attributes.text.trim() || !attributes.url.trim()) {
     return null;
   }
@@ -23,6 +22,7 @@ export const CtaButton: React.FC<RootProps> = props => {
     <Link
       href={attributes.url}
       target={attributes.target || '_blank'}
+      className={attributes.className}
       onClick={() =>
         tealiumTrackingHandler(
           'affiliate cta clicked',
@@ -33,6 +33,13 @@ export const CtaButton: React.FC<RootProps> = props => {
         )
       }
       rel="nofollow"
+      style={{
+        display:
+          attributes.className &&
+          attributes.className.includes('js-cta-experiment-variation')
+            ? 'none'
+            : 'block'
+      }}
     >
       {attributes.text}
     </Link>
