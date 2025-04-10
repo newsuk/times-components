@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.161.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.160.2...@times-components/article-skeleton@1.161.0) (2025-04-10)
+
+
+### Features
+
+* **TMC-422:** Add className prop to CTA button ([#4120](https://github.com/newsuk/times-components/issues/4120)) ([b313f41](https://github.com/newsuk/times-components/commit/b313f41453d50ed246fccd28c42a6b6418784482))
+
+
+
+
+
 ## [1.160.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.160.1...@times-components/article-skeleton@1.160.2) (2025-04-09)
 
 **Note:** Version bump only for package @times-components/article-skeleton
