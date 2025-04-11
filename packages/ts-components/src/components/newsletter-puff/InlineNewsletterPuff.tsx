@@ -13,17 +13,19 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
-  copy: string;
-  headline: string;
+  copy?: string;
+  headline?: string;
   section: string;
   code: string;
+  isAutoNewsletterPuff?: boolean;
 };
 
 export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  section
+  section,
+  isAutoNewsletterPuff
 }: InlineNewsletterPuffProps) => {
   const [url, setUrl] = useState<string>(
     `/api/is-subscribed-newsletter/${code}`
@@ -49,6 +51,12 @@ export const InlineNewsletterPuff = ({
           return null;
         }
 
+        const title = isAutoNewsletterPuff
+          ? 'ibrahim testing newsletter title'
+          : headline || 'Default Newsletter Title';
+        const description = isAutoNewsletterPuff
+          ? 'ibrahim testing newsletter description'
+          : copy || 'Default Newsletter description';
         return (
           <FetchProvider url={url} options={fetchOptions}>
             <TrackingContextProvider
@@ -74,8 +82,8 @@ export const InlineNewsletterPuff = ({
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
-                    headline={headline}
-                    copy={copy}
+                    headline={title}
+                    copy={description}
                     code={code}
                     subscribeNewsletter={setUrl}
                   />
