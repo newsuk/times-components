@@ -13,16 +13,16 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { ContentProvider } from '../save-star/ContentProvider';
 
 type InlineNewsletterPuffProps = {
-  copy: string;
-  headline: string;
   section: string;
   code: string;
+  title: string;
+  description: string;
 };
 
 export const InlineNewsletterPuff = ({
   code,
-  copy,
-  headline,
+  title,
+  description,
   section
 }: InlineNewsletterPuffProps) => {
   const [url, setUrl] = useState<string>(
@@ -74,8 +74,8 @@ export const InlineNewsletterPuff = ({
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
                     section={capitalise(section)}
-                    headline={headline}
-                    copy={copy}
+                    title={title}
+                    description={description}
                     code={code}
                     subscribeNewsletter={setUrl}
                   />
