@@ -42,6 +42,7 @@ class ArticlePage extends Component {
     const {
       headline,
       categoryPath,
+      categoryConnection,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -64,6 +65,11 @@ class ArticlePage extends Component {
 
     const categoryColor = categoryColors[articleCategory];
 
+    const getCategoryLabel = slug => {
+      const category = categoryConnection.nodes.find(cat => cat.slug === slug);
+      return category ? category.title : "";
+    };
+
     const formatVideoDuration = videoDurationMs => {
       const videoDuration = (videoDurationMs / 60000).toFixed(2);
       const formattedVideoDuration = videoDuration.replace(".", ":");
@@ -76,7 +82,7 @@ class ArticlePage extends Component {
         id: upNextArticle.id,
         title: upNextArticle.headline,
         url: upNextArticle.url,
-        posterImage: upNextArticle.leadAsset.posterImage.crop169,
+        posterImage: upNextArticle.leadAsset.posterImage.crop169.url,
         duration: formatVideoDuration(upNextArticle.leadAsset.duration)
       }));
 
@@ -101,7 +107,7 @@ class ArticlePage extends Component {
                 {categoryColor && (
                   <>
                     <ArticleLabelText as="span" $color={categoryColor}>
-                      {articleCategory}
+                      {getCategoryLabel(articleCategory)}
                     </ArticleLabelText>
                     {` | `}
                   </>

@@ -4,7 +4,7 @@ import { select, boolean } from "@storybook/addon-knobs";
 import { SUBSCRIBER, GUEST } from "./states";
 
 const activeStatesPerUserState = {
-  [SUBSCRIBER]: ["isLoggedIn"],
+  [SUBSCRIBER]: ["isLoggedIn", "hasAccess"],
   [GUEST]: []
 };
 

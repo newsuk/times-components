@@ -54,6 +54,34 @@
       }
     }
   ],
+  "categoryConnection": {
+    "nodes": [
+      {
+        "categoryType": "SECONDARY",
+        "slug": "business-money",
+        "title": "Business & Money",
+        "parent": null
+      },
+      {
+        "categoryType": "PRIMARY",
+        "slug": "sport",
+        "title": "Sport",
+        "parent": null
+      },
+      {
+        "categoryType": "SECONDARY",
+        "slug": "life-style",
+        "title": "Life & Style",
+        "parent": null
+      },
+      {
+        "categoryType": "SECONDARY",
+        "slug": "culture",
+        "title": "Culture",
+        "parent": null
+      }
+    ]
+  },
   "commentsEnabled": false,
   "descriptionMarkup": [
     {
@@ -148,11 +176,11 @@
       "id": "a037039c-2853-46b6-ad85-c332a1220798",
       "crop32": {
         "ratio": "3:2",
-        "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2592%2C0%2C0"
+        "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
       },
       "crop169": {
         "ratio": "16:9",
-        "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2F95dcd3e2-0041-4644-a559-0767f2ff864d.jpg?crop=3888%2C2187%2C0%2C203"
+        "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
       },
       "caption": "tiger stripe cat on white background"
     }
@@ -162,7 +190,7 @@
     "credits": "Gareth Philips",
     "crop169": {
       "ratio": "16:9",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0",
+      "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960",
       "relativeHeight": 0.4,
       "relativeHorizontalOffset": 0.16666666666666666,
       "relativeVerticalOffset": 0.2,
@@ -170,39 +198,7 @@
     },
     "crop32": {
       "ratio": "3:2",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=4272%2C2848%2C0%2C0",
-      "relativeHeight": 0.4,
-      "relativeHorizontalOffset": 0.16666666666666666,
-      "relativeVerticalOffset": 0.2,
-      "relativeWidth": 0.5
-    },
-    "crop1251": {
-      "ratio": "1.25:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=3560%2C2848%2C356%2C0",
-      "relativeHeight": 0.4,
-      "relativeHorizontalOffset": 0.16666666666666666,
-      "relativeVerticalOffset": 0.2,
-      "relativeWidth": 0.5
-    },
-    "crop11": {
-      "ratio": "1:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2848%2C2848%2C712%2C0",
-      "relativeHeight": 0.4,
-      "relativeHorizontalOffset": 0.16666666666666666,
-      "relativeVerticalOffset": 0.2,
-      "relativeWidth": 0.5
-    },
-    "crop45": {
-      "ratio": "4:5",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2278%2C2848%2C997%2C0",
-      "relativeHeight": 0.4,
-      "relativeHorizontalOffset": 0.16666666666666666,
-      "relativeVerticalOffset": 0.2,
-      "relativeWidth": 0.5
-    },
-    "crop23": {
-      "ratio": "2:3",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=1899%2C2848%2C1187%2C0",
+      "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960",
       "relativeHeight": 0.4,
       "relativeHorizontalOffset": 0.16666666666666666,
       "relativeVerticalOffset": 0.2,
@@ -290,7 +286,7 @@
       "slug": "chelsea"
     }
   ],
-  "categoryPath": "/edition/news/france-defies-may-over-russia-37b27qd2s",
+  "categoryPath": "/news/france-defies-may-over-russia-37b27qd2s",
   "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
   "relatedArticles": [
     {
@@ -356,32 +352,14 @@
         "is360": null,
         "posterImage": {
           "id": "6daf70f1-991b-401c-830e-cdf8851c8ab8",
-          "crops": [
-            {
-              "ratio": "3:2",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1080%2C720%2C100%2C0"
-            },
-            {
-              "ratio": "16:9",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1280%2C720%2C0%2C0"
-            },
-            {
-              "ratio": "1:1",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=720%2C720%2C280%2C0"
-            },
-            {
-              "ratio": "2:3",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=480%2C720%2C400%2C0"
-            },
-            {
-              "ratio": "4:5",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=576%2C720%2C352%2C0"
-            },
-            {
-              "ratio": "5:4",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=900%2C720%2C190%2C0"
-            }
-          ]
+          "crop32": {
+            "ratio": "3:2",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          },
+          "crop169": {
+            "ratio": "16:9",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          }
         }
       }
     }
@@ -390,7 +368,7 @@
     {
       "id": "7c22c534-8f80-43d8-9154-6de0e303fb1e",
       "publishedTime": "2025-02-25T14:26:46.000Z",
-      "headline": "Related Article 1",
+      "headline": "Up Next Article 1",
       "url": "https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt",
       "leadAsset": {
         "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
@@ -405,39 +383,21 @@
         "is360": null,
         "posterImage": {
           "id": "396c7eed-55d6-44fc-88df-656010f3fccc",
-          "crops": [
-            {
-              "ratio": "3:2",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1080%2C720%2C100%2C0"
-            },
-            {
-              "ratio": "16:9",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1280%2C720%2C0%2C0"
-            },
-            {
-              "ratio": "1:1",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=720%2C720%2C280%2C0"
-            },
-            {
-              "ratio": "2:3",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=480%2C720%2C400%2C0"
-            },
-            {
-              "ratio": "4:5",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=576%2C720%2C352%2C0"
-            },
-            {
-              "ratio": "5:4",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=900%2C720%2C190%2C0"
-            }
-          ]
+          "crop32": {
+            "ratio": "3:2",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          },
+          "crop169": {
+            "ratio": "16:9",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          }
         }
       }
     },
     {
-      "id": "7c22c534-8f80-43d8-9154-6de0e303fb1e",
+      "id": "7c22c534-8f80-43d8-9154-6de0e303fb1f",
       "publishedTime": "2025-02-25T14:26:46.000Z",
-      "headline": "Related Article 1",
+      "headline": "Up Next Article 2",
       "url": "https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt",
       "leadAsset": {
         "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
@@ -452,39 +412,21 @@
         "is360": null,
         "posterImage": {
           "id": "396c7eed-55d6-44fc-88df-656010f3fccc",
-          "crops": [
-            {
-              "ratio": "3:2",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1080%2C720%2C100%2C0"
-            },
-            {
-              "ratio": "16:9",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=1280%2C720%2C0%2C0"
-            },
-            {
-              "ratio": "1:1",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=720%2C720%2C280%2C0"
-            },
-            {
-              "ratio": "2:3",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=480%2C720%2C400%2C0"
-            },
-            {
-              "ratio": "4:5",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=576%2C720%2C352%2C0"
-            },
-            {
-              "ratio": "5:4",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Fc4ec2450-ff38-49bb-abfd-1efd2e06631f.jpg?crop=900%2C720%2C190%2C0"
-            }
-          ]
+          "crop32": {
+            "ratio": "3:2",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          },
+          "crop169": {
+            "ratio": "16:9",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          }
         }
       }
     },
     {
       "id": "e566f92b-0f73-4758-86f1-4acdb7a82c59",
       "publishedTime": "2025-02-25T14:27:25.000Z",
-      "headline": "Related Article 2",
+      "headline": "Up Next Article 3",
       "url": "https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv",
       "leadAsset": {
         "id": "8dc1df1f-f8d1-4ce7-99d0-bae68a4cd9a5",
@@ -499,32 +441,43 @@
         "is360": null,
         "posterImage": {
           "id": "6daf70f1-991b-401c-830e-cdf8851c8ab8",
-          "crops": [
-            {
-              "ratio": "3:2",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1080%2C720%2C100%2C0"
-            },
-            {
-              "ratio": "16:9",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=1280%2C720%2C0%2C0"
-            },
-            {
-              "ratio": "1:1",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=720%2C720%2C280%2C0"
-            },
-            {
-              "ratio": "2:3",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=480%2C720%2C400%2C0"
-            },
-            {
-              "ratio": "4:5",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=576%2C720%2C352%2C0"
-            },
-            {
-              "ratio": "5:4",
-              "url": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ff5b9f758-5f53-4f5f-bbf9-065d1735d3df.jpg?crop=900%2C720%2C190%2C0"
-            }
-          ]
+          "crop32": {
+            "ratio": "3:2",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          },
+          "crop169": {
+            "ratio": "16:9",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          }
+        }
+      }
+    },
+    {
+      "id": "e566f92b-0f73-4758-86f1-4acdb7a82c60",
+      "publishedTime": "2025-02-25T14:27:25.000Z",
+      "headline": "Up Next Article 4",
+      "url": "https://www.staging-thetimes.co.uk/article/related-article-2-8wv8sxtsv",
+      "leadAsset": {
+        "id": "8dc1df1f-f8d1-4ce7-99d0-bae68a4cd9a5",
+        "caption": null,
+        "duration": 902000,
+        "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+        "brightcovePlayerId": "default",
+        "brightcoveVideoId": "6369216014112",
+        "brightcoveAccountId": "5436121856001",
+        "paidOnly": false,
+        "skySports": false,
+        "is360": null,
+        "posterImage": {
+          "id": "6daf70f1-991b-401c-830e-cdf8851c8ab8",
+          "crop32": {
+            "ratio": "3:2",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          },
+          "crop169": {
+            "ratio": "16:9",
+            "url": "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+          }
         }
       }
     }
