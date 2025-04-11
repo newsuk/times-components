@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.32.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.31.0...@times-components/provider-test-tools@1.32.0) (2025-04-11)
+
+
+### Features
+
+* **TMRA-123:** update video article story ([#4121](https://github.com/newsuk/times-components/issues/4121)) ([1110065](https://github.com/newsuk/times-components/commit/1110065265a05950bde0b2819fbadc7ea044e92a))
+
+
+
+
+
 # [1.31.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.30.6...@times-components/provider-test-tools@1.31.0) (2025-03-17)
 
 

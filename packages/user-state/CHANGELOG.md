@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.6.7...@times-components/user-state@0.7.0) (2025-04-11)
+
+
+### Features
+
+* **TMRA-123:** update video article story ([#4121](https://github.com/newsuk/times-components/issues/4121)) ([1110065](https://github.com/newsuk/times-components/commit/1110065265a05950bde0b2819fbadc7ea044e92a))
+
+
+
+
+
 ## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.6.6...@times-components/user-state@0.6.7) (2025-04-07)
 
 **Note:** Version bump only for package @times-components/user-state
