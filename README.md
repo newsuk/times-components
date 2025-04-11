@@ -109,10 +109,11 @@ Tests are currently using [jest](https://jestjs.io/) to run so if you want to de
   ]
 ```
 
-## Contributing
+## Contributing.
 
 See the [CONTRIBUTING.md](.github/CONTRIBUTING.md) for an extensive breakdown of
 the project.
+
 
 `yarn commit` will commit files (same as `git commit`), and will aid the
 contributor with adding a suitable commit message inline with
