@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.28.4...@times-components/responsive@0.29.0) (2025-04-14)
+
+
+### Features
+
+* **TMP-975:** tweak to Quizle Sidebar styling ([#4122](https://github.com/newsuk/times-components/issues/4122)) ([61339fd](https://github.com/newsuk/times-components/commit/61339fd65ed7c76bd324e319d8ceb4859fa7e12d))
+
+
+
+
+
 ## [0.28.4](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.28.3...@times-components/responsive@0.28.4) (2025-04-11)
 
 **Note:** Version bump only for package @times-components/responsive

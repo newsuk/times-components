@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.106](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.105...@times-components/interactive-wrapper@0.9.106) (2025-04-14)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
 ## [0.9.105](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.104...@times-components/interactive-wrapper@0.9.105) (2025-04-14)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
