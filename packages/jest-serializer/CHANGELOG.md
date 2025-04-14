@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.14.0...@times-components/jest-serializer@3.15.0) (2025-04-14)
+
+
+### Features
+
+* **TMRP-233:** implement webp images ([#4105](https://github.com/newsuk/times-components/issues/4105)) ([66f0ce5](https://github.com/newsuk/times-components/commit/66f0ce53c4cd8fe101d66fc18c69c758e786af46))
+
+
+
+
+
 # [3.14.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.13.28...@times-components/jest-serializer@3.14.0) (2025-04-07)
 
 

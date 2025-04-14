@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.38.6...@times-components/article-extras@0.39.0) (2025-04-14)
+
+
+### Features
+
+* **TMRP-233:** implement webp images ([#4105](https://github.com/newsuk/times-components/issues/4105)) ([66f0ce5](https://github.com/newsuk/times-components/commit/66f0ce53c4cd8fe101d66fc18c69c758e786af46))
+
+
+
+
+
 ## [0.38.6](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.38.5...@times-components/article-extras@0.38.6) (2025-04-11)
 
 **Note:** Version bump only for package @times-components/article-extras
