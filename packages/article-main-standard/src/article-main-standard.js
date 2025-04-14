@@ -32,7 +32,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       bylines,
       hasVideo,
@@ -67,7 +67,13 @@ class ArticlePage extends Component {
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
-        <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={renderCaption}
+          isWebPFormatActive={
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
+          }
+        />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
       </Fragment>
     );

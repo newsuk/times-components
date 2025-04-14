@@ -142,6 +142,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         "uri": "https://image.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -169,6 +170,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         "uri": "https://image.io/secondary",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -196,6 +198,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         "uri": "https://image.io/inline",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>

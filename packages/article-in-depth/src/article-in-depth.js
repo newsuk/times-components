@@ -20,7 +20,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       backgroundColour,
       bylines,
@@ -52,6 +52,9 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAsset}
+          isWebPFormatActive={
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
+          }
         />
         <ArticleKeylineItem>
           <Meta

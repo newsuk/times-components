@@ -298,10 +298,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+      />
+    </picture>
     <span>
       Up Next Article 1
     </span>
@@ -313,10 +315,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+      />
+    </picture>
     <span>
       Up Next Article 2
     </span>
@@ -328,10 +332,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+      />
+    </picture>
     <span>
       Up Next Article 3
     </span>
@@ -343,10 +349,12 @@ exports[`1. a full article with video as the lead asset 1`] = `
     <p>
       15:03
     </p>
-    <img
-      loading="lazy"
-      src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
+      />
+    </picture>
     <span>
       Up Next Article 4
     </span>

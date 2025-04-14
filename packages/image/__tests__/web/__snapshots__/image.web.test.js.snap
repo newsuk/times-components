@@ -28,10 +28,12 @@ exports[`1. default layout 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -64,10 +66,12 @@ exports[`2. default layout without uri 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src={null}
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src={null}
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -100,10 +104,12 @@ exports[`3. default layout without aspect ratio 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -136,10 +142,12 @@ exports[`4. rounded image 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -172,10 +180,12 @@ exports[`5. with existing url params 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src="https://image.io?resize=1400"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://image.io?resize=1400"
+      />
+    </picture>
   </div>
 </div>
 `;
@@ -208,10 +218,12 @@ exports[`6. with disabled placeholder 1`] = `
 
 <div>
   <div>
-    <img
-      loading="lazy"
-      src="https://image.io?resize=1400"
-    />
+    <picture>
+      <img
+        loading="lazy"
+        src="https://image.io?resize=1400"
+      />
+    </picture>
   </div>
 </div>
 `;

@@ -21,7 +21,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -53,6 +53,9 @@ class ArticlePage extends Component {
           getImageCrop={getStandardTemplateCrop}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={newStyles.leadAssetContainer}
+          isWebPFormatActive={
+            articleDataFromRender && articleDataFromRender.isWebPFormatActive
+          }
         />
       </Fragment>
     );

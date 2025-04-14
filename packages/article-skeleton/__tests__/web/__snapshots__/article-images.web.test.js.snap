@@ -73,6 +73,7 @@ exports[`1. a primary image 1`] = `
                         "uri": "https://image-2.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -187,6 +188,7 @@ exports[`2. a fullwidth image 1`] = `
                         "uri": "https://image-2.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -301,6 +303,7 @@ exports[`3. a secondary image 1`] = `
                         "uri": "https://image-2.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>
@@ -415,6 +418,7 @@ exports[`4. an inline image 1`] = `
                         "uri": "https://image-inline.io",
                       }
                     }
+                    isWebPFormatActive={false}
                   />
                 </div>
               </div>

@@ -61,6 +61,7 @@ exports[`1. card default state 1`] = `
               fadeImageIn={false}
               highResSize={360}
               isLcpItem={false}
+              isWebPFormatActive={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -215,6 +216,7 @@ exports[`2. pass an empty state to the image component 1`] = `
               fadeImageIn={false}
               highResSize={360}
               isLcpItem={false}
+              isWebPFormatActive={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -482,6 +484,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
               fadeImageIn={false}
               highResSize={360}
               isLcpItem={false}
+              isWebPFormatActive={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -716,6 +719,7 @@ exports[`5. card with reversed layout 1`] = `
               fadeImageIn={false}
               highResSize={360}
               isLcpItem={false}
+              isWebPFormatActive={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -958,6 +962,7 @@ exports[`7. card with a loading state 1`] = `
                     fadeImageIn={false}
                     highResSize={360}
                     isLcpItem={false}
+                    isWebPFormatActive={false}
                     lowResQuality={null}
                     lowResSize={50}
                     rounded={false}
@@ -1400,6 +1405,7 @@ exports[`9. card with reversed loading state 1`] = `
                     fadeImageIn={false}
                     highResSize={360}
                     isLcpItem={false}
+                    isWebPFormatActive={false}
                     lowResQuality={null}
                     lowResSize={50}
                     rounded={false}
@@ -1585,10 +1591,12 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1605,10 +1613,12 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1625,10 +1635,12 @@ exports[`12. card should re-render when image uri changes 1`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1645,10 +1657,12 @@ exports[`12. card should re-render when image uri changes 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="http://foo?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="http://foo?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1665,10 +1679,12 @@ exports[`13. card should re-render when low res size changes 1`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1685,10 +1701,12 @@ exports[`13. card should re-render when low res size changes 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1705,10 +1723,12 @@ exports[`14. card should re-render when high res size changes 1`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1725,10 +1745,12 @@ exports[`14. card should re-render when high res size changes 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img"
+          />
+        </picture>
       </div>
     </div>
   </div>
@@ -1746,10 +1768,12 @@ exports[`15. card should re-render when loading state changes 1`] = `
     <div>
       <div>
         <div>
-          <img
-            loading="lazy"
-            src="https://img.io/img?resize=360"
-          />
+          <picture>
+            <img
+              loading="lazy"
+              src="https://img.io/img?resize=360"
+            />
+          </picture>
         </div>
       </div>
     </div>
@@ -1768,10 +1792,12 @@ exports[`15. card should re-render when loading state changes 2`] = `
   <div>
     <div>
       <div>
-        <img
-          loading="lazy"
-          src="https://img.io/img?resize=360"
-        />
+        <picture>
+          <img
+            loading="lazy"
+            src="https://img.io/img?resize=360"
+          />
+        </picture>
       </div>
     </div>
   </div>

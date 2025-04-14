@@ -55,7 +55,8 @@ const ArticleImage = ({
   imageOptions,
   captionOptions,
   onImagePress,
-  images
+  images,
+  isWebPFormatActive
 }) => {
   const {
     display,
@@ -78,6 +79,7 @@ const ArticleImage = ({
         captionOptions={captionOptions}
         imageOptions={imageOptions}
         onImagePress={onImagePress}
+        isWebPFormatActive={isWebPFormatActive}
       />
     );
   }
@@ -113,6 +115,7 @@ const ArticleImage = ({
           relativeHeight={relativeHeight}
           relativeHorizontalOffset={relativeHorizontalOffset}
           relativeVerticalOffset={relativeVerticalOffset}
+          isWebPFormatActive={isWebPFormatActive}
         />
       </TcView>
       {renderedCaption}
