@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/link": "3.17.47",
-    "@times-components/utils": "6.31.4",
+    "@times-components/utils": "6.31.5",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
