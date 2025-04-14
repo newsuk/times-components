@@ -6,6 +6,7 @@ export const Container = styled.div`
   border-width: 3px;
   border-color: #c05729;
   min-width: 160px;
+  min-height: 340px;
 `;
 
 export const Description = styled.p`
