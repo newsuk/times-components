@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
 
+import { TrackingContextProvider } from "@times-components/ts-components";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
@@ -59,7 +60,21 @@ const ArticleComments = ({
           />
         </UserState>
         <UserState state={UserState.showJoinTheConversationDialog}>
-          <JoinTheConversationDialog />
+          <TrackingContextProvider
+            context={{
+              object: "JoinTheConversationDialog",
+              attrs: {
+                event_navigation_action: "navigation",
+                article_parent_name: "commenting"
+              }
+            }}
+          >
+            {({ fireAnalyticsEvent }) => (
+              <JoinTheConversationDialog
+                fireAnalyticsEvent={fireAnalyticsEvent}
+              />
+            )}
+          </TrackingContextProvider>
         </UserState>
       </>
     );
@@ -73,7 +88,18 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <JoinTheConversationDialog />
+    <TrackingContextProvider
+      context={{
+        object: "JoinTheConversationDialog",
+        attrs: {
+          article_parent_name: "commenting"
+        }
+      }}
+    >
+      {({ fireAnalyticsEvent }) => (
+        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
+      )}
+    </TrackingContextProvider>
   );
 };
 
