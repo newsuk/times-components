@@ -84,6 +84,8 @@ class ArticlePage extends Component {
       return null;
     };
 
+    console.log(article, "upNext");
+
     const upNextArticles =
       upNext && upNext.items
         ? upNext.items.map(upNextArticle => ({
