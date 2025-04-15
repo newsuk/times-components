@@ -34,6 +34,7 @@ const renderArticle = ({
   const category = select("Article category", userStatesOptions, "life-style");
   const upNextArticles = select("Number of upNext articles", [1, 2, 3, 4], 4);
 
+  console.log(articleUpNextData.items.slice(4 - upNextArticles), "upNextArr2");
   return (
     <Article
       adConfig={adConfig}
@@ -41,7 +42,10 @@ const renderArticle = ({
       article={{
         ...articleData,
         categoryPath: `/${category}/${articleData.categoryPath}`,
-        upNext: articleUpNextData.slice(4 - upNextArticles)
+        upNext: {
+          ...articleUpNextData,
+          items: articleUpNextData.items.slice(4 - upNextArticles)
+        }
       }}
       isLoading={false}
       onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
@@ -65,6 +69,8 @@ const renderArticle = ({
 };
 
 const upNextArr = fixtures.articleVideoData.upNext;
+
+console.log(fixtures.articleVideoData, "upNextArr");
 
 export default {
   children: [

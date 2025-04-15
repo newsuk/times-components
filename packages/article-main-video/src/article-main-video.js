@@ -76,14 +76,16 @@ class ArticlePage extends Component {
       return formattedVideoDuration;
     };
 
+    console.log(article, "upNext");
+
     const upNextArticles =
       upNext &&
-      upNext.map(upNextArticle => ({
-        id: upNextArticle.id,
-        title: upNextArticle.headline,
-        url: upNextArticle.url,
-        posterImage: upNextArticle.leadAsset.posterImage.crop169.url,
-        duration: formatVideoDuration(upNextArticle.leadAsset.duration)
+      upNext.items.map(({ article }) => ({
+        id: article.id,
+        title: article.headline,
+        url: article.url,
+        posterImage: article.leadAsset.posterImage.crop169.url,
+        duration: formatVideoDuration(article.leadAsset.duration)
       }));
 
     const leadAssetUrl = leadAsset.posterImage && leadAsset.posterImage.crop169;
@@ -133,8 +135,8 @@ class ArticlePage extends Component {
                 <ArticleLabelText $color="#AAA">
                   Related Article
                 </ArticleLabelText>
-                <Link url={relatedArticles[0].url}>
-                  <ArticleTitle>{relatedArticles[0].headline}</ArticleTitle>
+                <Link url={relatedArticles.items[0].url}>
+                  <ArticleTitle>{relatedArticles.items[0].headline}</ArticleTitle>
                 </Link>
               </ArticleContentContainer>
             )}
