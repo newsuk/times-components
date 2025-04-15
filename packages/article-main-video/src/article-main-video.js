@@ -76,8 +76,6 @@ class ArticlePage extends Component {
       return formattedVideoDuration;
     };
 
-    console.log(article, "upNext");
-
     const upNextArticles =
       upNext &&
       upNext.items.map(({ article }) => ({
