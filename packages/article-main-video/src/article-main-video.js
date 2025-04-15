@@ -71,19 +71,22 @@ class ArticlePage extends Component {
     };
 
     const formatVideoDuration = videoDurationMs => {
-      const videoDuration = (videoDurationMs / 60000).toFixed(2);
-      const formattedVideoDuration = videoDuration.replace(".", ":");
-      return formattedVideoDuration;
+      if (!videoDurationMs) {
+        const videoDuration = (videoDurationMs / 60000).toFixed(2);
+        const formattedVideoDuration = videoDuration.replace(".", ":");
+        return formattedVideoDuration;
+      }
+      return null;
     };
 
     const upNextArticles =
       upNext &&
-      upNext.items.map(({ article }) => ({
-        id: article.id,
-        title: article.headline,
-        url: article.url,
-        posterImage: article.leadAsset.posterImage.crop169.url,
-        duration: formatVideoDuration(article.leadAsset.duration)
+      upNext.items.map(upNextArticle => ({
+        id: upNextArticle.article.id,
+        title: upNextArticle.article.headline,
+        url: upNextArticle.article.url,
+        posterImage: upNextArticle.article.leadAsset.posterImage.crop169.url,
+        duration: formatVideoDuration(upNextArticle.article.leadAsset.duration)
       }));
 
     const leadAssetUrl = leadAsset.posterImage && leadAsset.posterImage.crop169;
@@ -134,7 +137,9 @@ class ArticlePage extends Component {
                   Related Article
                 </ArticleLabelText>
                 <Link url={relatedArticles.items[0].url}>
-                  <ArticleTitle>{relatedArticles.items[0].headline}</ArticleTitle>
+                  <ArticleTitle>
+                    {relatedArticles.items[0].headline}
+                  </ArticleTitle>
                 </Link>
               </ArticleContentContainer>
             )}
