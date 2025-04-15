@@ -18,22 +18,20 @@ fragment articlePageProps on Article {
   upNext {
     __typename
     items {
-      headline
-      articleId
-      leadAsset {
-        __typename
-      }
       article {
         headline
         id
+        categoryPath
         leadAsset {
           __typename
+          ... on Video {
+            duration
+            posterImage {
+              ...imageProps
+            }
+          }
         }
       }
-    }
-    sections {
-      id
-      title
     }
   }
   relatedArticleSlice {
@@ -41,14 +39,9 @@ fragment articlePageProps on Article {
     items {
       article {
         headline
+        categoryPath
         id
-        leadAsset {
-          __typename
-        }
       }
-    }
-    sections {
-      title
     }
   }
   keywords
