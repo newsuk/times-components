@@ -71,7 +71,7 @@ class ArticlePage extends Component {
     };
 
     const formatVideoDuration = videoDurationMs => {
-      if (!videoDurationMs) {
+      if (videoDurationMs) {
         const videoDuration = (videoDurationMs / 60000).toFixed(2);
         const formattedVideoDuration = videoDuration.replace(".", ":");
         return formattedVideoDuration;
@@ -136,9 +136,9 @@ class ArticlePage extends Component {
                 <ArticleLabelText $color="#AAA">
                   Related Article
                 </ArticleLabelText>
-                <Link url={relatedArticles.items[0].url}>
+                <Link url={relatedArticles.items[0].article.url}>
                   <ArticleTitle>
-                    {relatedArticles.items[0].headline}
+                    {relatedArticles.items[0].article.headline}
                   </ArticleTitle>
                 </Link>
               </ArticleContentContainer>
