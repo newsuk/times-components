@@ -1,6 +1,6 @@
 const GET_PUZZLE_SECTIONS = `
-  query GetPuzzlesByType($type: String!) {
-    puzzles(type: $type){
+  query GetPuzzlesByType($puzzleStartDate: ShortDate!, $puzzleEndDate: ShortDate!, $type: String!) {
+    puzzles(dateSince: $puzzleStartDate, dateBefore: $puzzleEndDate, type: $type){
       list(first:1){
         shortIdentifier
         slug
