@@ -359,34 +359,6 @@ exports[`1. a full article with video as the lead asset 1`] = `
       Up Next Article 4
     </span>
   </a>
-  <nav
-    aria-label="breadcrumbs"
-  >
-    <a
-      aria-current="false"
-      href="/uk"
-      selected={false}
-    >
-      UK
-    </a>
-    <svg
-      color="#aaaaaa"
-      height={16}
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="4c0bdba61311616771707e81d8dcc8f3"
-      />
-    </svg>
-    <a
-      aria-current="page"
-      href="/uk/defence"
-      selected={true}
-    >
-      Defence
-    </a>
-  </nav>
   <nav>
     <a
       href="/topic/islington"
