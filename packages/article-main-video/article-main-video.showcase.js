@@ -38,6 +38,18 @@ const renderArticle = ({
     <Article
       adConfig={adConfig}
       analyticsStream={analyticsStream}
+      articleDataFromRender={{
+        breadcrumbs: [
+          {
+            title: "Primary Category",
+            url: `/${category}`
+          },
+          {
+            title: "Secondary Category",
+            url: "/uk/defence"
+          }
+        ]
+      }}
       article={{
         ...articleData,
         categoryPath: `/${category}/${articleData.categoryPath}`,
