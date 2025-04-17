@@ -1,6 +1,7 @@
 import React from "react";
 import { addUserStateKnobs } from "@times-components/user-state";
 
+import { TrackingContextProvider } from "@times-components/ts-components";
 import ArticleComments from "./src/article-comments";
 import JoinTheConversationDialog from "./src/join-the-conversation-dialog";
 
@@ -45,7 +46,23 @@ export default {
       type: "story"
     },
     {
-      component: () => <JoinTheConversationDialog />,
+      component: () => (
+        <TrackingContextProvider
+          context={{
+            object: "JoinTheConversationDialog",
+            attrs: {
+              event_navigation_action: "navigation",
+              article_parent_name: "commenting"
+            }
+          }}
+        >
+          {({ fireAnalyticsEvent }) => (
+            <JoinTheConversationDialog
+              fireAnalyticsEvent={fireAnalyticsEvent}
+            />
+          )}
+        </TrackingContextProvider>
+      ),
       name: "Join the Conversation Dialog",
       type: "story"
     }

@@ -4,7 +4,25 @@ exports[`Render comments label, when comments are loaded 1`] = `<DocumentFragmen
 
 exports[`disabled comments 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+}
+
+.c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,24 +45,6 @@ exports[`disabled comments 1`] = `
   padding-bottom: 5px;
   padding-top: 30px;
   text-align: center;
-}
-
-.c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
 }
 
 @media (min-width:768px) {
