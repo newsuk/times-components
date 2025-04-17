@@ -52,8 +52,9 @@ class ArticlePage extends Component {
 
     const primaryCategory =
       breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs[0] : null;
-    const categoryLabel = primaryCategory?.title || "";
-    const categoryUrl = primaryCategory?.url.split("/")[1] || "";
+    const categoryLabel = (primaryCategory && primaryCategory.title) || "";
+    const categoryUrl =
+      (primaryCategory && primaryCategory.url.split("/")[1]) || "";
     const categoryColors = {
       comment: "#9b1f45",
       "business-money": "#21709c",
