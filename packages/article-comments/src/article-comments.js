@@ -24,7 +24,13 @@ const ArticleComments = ({
 }) => {
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
-
+  const trackingContext = {
+    object: "JoinTheConversationDialog",
+    attrs: {
+      event_navigation_action: "navigation",
+      article_parent_name: "commenting"
+    }
+  };
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
 
@@ -60,15 +66,7 @@ const ArticleComments = ({
           />
         </UserState>
         <UserState state={UserState.showJoinTheConversationDialog}>
-          <TrackingContextProvider
-            context={{
-              object: "JoinTheConversationDialog",
-              attrs: {
-                event_navigation_action: "navigation",
-                article_parent_name: "commenting"
-              }
-            }}
-          >
+          <TrackingContextProvider context={trackingContext}>
             {({ fireAnalyticsEvent }) => (
               <JoinTheConversationDialog
                 fireAnalyticsEvent={fireAnalyticsEvent}
@@ -88,14 +86,7 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <TrackingContextProvider
-      context={{
-        object: "JoinTheConversationDialog",
-        attrs: {
-          article_parent_name: "commenting"
-        }
-      }}
-    >
+    <TrackingContextProvider context={trackingContext}>
       {({ fireAnalyticsEvent }) => (
         <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
       )}

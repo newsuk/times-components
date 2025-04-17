@@ -20,6 +20,7 @@ const JoinTheConversationDialog = ({ fireAnalyticsEvent }) => {
         );
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
 
