@@ -9,16 +9,6 @@
       "red": 255
     }
   },
-  "breadcrumbs": [
-    {
-      "title": "UK",
-      "url": "/uk"
-    },
-    {
-      "title": "Defence",
-      "url": "/uk/defence"
-    }
-  ],
   "bylines": [
     {
       "__typename": "TextByline",
@@ -288,7 +278,7 @@
   ],
   "categoryPath": "/news/france-defies-may-over-russia-37b27qd2s",
   "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
-  "relatedArticles": {
+  "relatedArticleSlice": {
     "__typename": "StandardSlice",
     "items": [
       {

@@ -256,42 +256,7 @@ exports[`1. an article 1`] = `
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <nav
-            aria-label="breadcrumbs"
-          >
-            <a
-              aria-current="false"
-              href="/uk"
-              selected={false}
-            >
-              UK
-            </a>
-            <div>
-              <svg
-                color="#aaaaaa"
-                fill="none"
-                height={16}
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-                  fill="#aaaaaa"
-                />
-              </svg>
-            </div>
-            <a
-              aria-current="page"
-              href="/uk/defence"
-              selected={true}
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
-      </div>
+      <div />
       <AdContainer
         slotName="pixel"
       />
@@ -575,40 +540,6 @@ exports[`4. should show topics when logged in or shared 1`] = `
         </div>
       </div>
       <div>
-        <div>
-          <nav
-            aria-label="breadcrumbs"
-          >
-            <a
-              aria-current="false"
-              href="/uk"
-              selected={false}
-            >
-              UK
-            </a>
-            <div>
-              <svg
-                color="#aaaaaa"
-                fill="none"
-                height={16}
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-                  fill="#aaaaaa"
-                />
-              </svg>
-            </div>
-            <a
-              aria-current="page"
-              href="/uk/defence"
-              selected={true}
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
         <nav>
           <ArticleTopics
             topics={

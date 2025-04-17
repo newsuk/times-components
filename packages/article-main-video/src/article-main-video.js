@@ -38,20 +38,22 @@ class ArticlePage extends Component {
   }
 
   renderContent({ content, SaveAndShare }) {
-    const { article } = this.props;
+    const { article, articleDataFromRender } = this.props;
     const {
       headline,
-      categoryPath,
-      categoryConnection,
       publicationName,
       publishedTime,
       shortHeadline,
       leadAsset,
-      relatedArticles,
+      relatedArticleSlice,
       upNext
     } = article;
+    const { breadcrumbs } = articleDataFromRender || {};
 
-    const articleCategory = categoryPath && categoryPath.split("/")[1];
+    const primaryCategory =
+      breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs[0] : null;
+    const categoryLabel = primaryCategory?.title || "";
+    const categoryUrl = primaryCategory?.url.split("/")[1] || "";
     const categoryColors = {
       comment: "#9b1f45",
       "business-money": "#21709c",
@@ -63,12 +65,7 @@ class ArticlePage extends Component {
       uk: "#39556a"
     };
 
-    const categoryColor = categoryColors[articleCategory];
-
-    const getCategoryLabel = slug => {
-      const category = categoryConnection.nodes.find(cat => cat.slug === slug);
-      return category ? category.title : "";
-    };
+    const categoryColor = categoryColors[categoryUrl];
 
     const formatVideoDuration = videoDurationMs => {
       if (videoDurationMs) {
@@ -110,7 +107,7 @@ class ArticlePage extends Component {
                 {categoryColor && (
                   <>
                     <ArticleLabelText as="span" $color={categoryColor}>
-                      {getCategoryLabel(articleCategory)}
+                      {categoryLabel}
                     </ArticleLabelText>
                     {` | `}
                   </>
@@ -131,14 +128,14 @@ class ArticlePage extends Component {
               <ArticleContent>{content}</ArticleContent>
             </ArticleContentContainer>
             <SaveAndShareContainer>{SaveAndShare}</SaveAndShareContainer>
-            {!!relatedArticles && (
+            {!!relatedArticleSlice && (
               <ArticleContentContainer>
                 <ArticleLabelText $color="#AAA">
                   Related Article
                 </ArticleLabelText>
-                <Link url={relatedArticles.items[0].article.url}>
+                <Link url={relatedArticleSlice.items[0].article.url}>
                   <ArticleTitle>
-                    {relatedArticles.items[0].article.headline}
+                    {relatedArticleSlice.items[0].article.headline}
                   </ArticleTitle>
                 </Link>
               </ArticleContentContainer>
@@ -151,8 +148,9 @@ class ArticlePage extends Component {
   }
 
   renderContentFooter() {
-    const { article } = this.props;
-    const { breadcrumbs, topics } = article;
+    const { article, articleDataFromRender } = this.props;
+    const { topics } = article;
+    const { breadcrumbs } = articleDataFromRender || {};
 
     return (
       <ContentFooterContainer>
