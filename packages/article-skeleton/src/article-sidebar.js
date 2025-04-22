@@ -1,10 +1,14 @@
 import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/sidebar-data.js";
 
 const baseURL = "/puzzles/word-puzzles";
-const today = new Date();
-const year = today.getFullYear();
-const month = String(today.getMonth() + 1).padStart(2, "0");
-const day = String(today.getDate()).padStart(2, "0");
+const londonDate = new Intl.DateTimeFormat("en-UK", {
+  timeZone: "Europe/London",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit"
+}).format(new Date());
+
+const [day, month, year] = londonDate.split("/");
 const formattedDate = `${year}-${month}-${day}`;
 
 const fetchPolygonData = async () => {
