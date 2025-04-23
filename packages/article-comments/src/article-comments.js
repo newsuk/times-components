@@ -88,9 +88,7 @@ const ArticleComments = ({
   ) : (
     <TrackingContextProvider context={trackingContext}>
       {({ fireAnalyticsEvent }) => (
-        <JoinTheConversationDialog
-         fireAnalyticsEvent={fireAnalyticsEvent}
-        />
+        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
       )}
     </TrackingContextProvider>
   );
