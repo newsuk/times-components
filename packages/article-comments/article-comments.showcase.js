@@ -49,7 +49,7 @@ export default {
       component: () => (
         <TrackingContextProvider
           context={{
-            object: "JoinTheConversationDialog",
+            component: "JoinTheConversationDialog",
             attrs: {
               event_navigation_action: "navigation",
               article_parent_name: "commenting"

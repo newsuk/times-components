@@ -25,7 +25,7 @@ const ArticleComments = ({
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
   const trackingContext = {
-    object: "JoinTheConversationDialog",
+    component: "JoinTheConversationDialog",
     attrs: {
       event_navigation_action: "navigation",
       article_parent_name: "commenting"
@@ -88,7 +88,9 @@ const ArticleComments = ({
   ) : (
     <TrackingContextProvider context={trackingContext}>
       {({ fireAnalyticsEvent }) => (
-        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
+        <JoinTheConversationDialog
+         fireAnalyticsEvent={fireAnalyticsEvent}
+        />
       )}
     </TrackingContextProvider>
   );
