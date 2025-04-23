@@ -26,6 +26,7 @@ const ArticleComments = ({
   const [isEntitled, setIsEntitled] = useState(undefined);
   const trackingContext = {
     component: "JoinTheConversationDialog",
+    object: "JoinTheConversationDialog",
     attrs: {
       event_navigation_action: "navigation",
       article_parent_name: "commenting"

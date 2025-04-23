@@ -32,7 +32,7 @@ const JoinTheConversationDialog = ({ fireAnalyticsEvent }) => {
       onClick={() =>
         handleClick(
           fireAnalyticsEvent,
-          "upgrade sticky footer : Go to My account",
+          "upgrade sticky footer : go to my account",
           "click"
         )
       }
