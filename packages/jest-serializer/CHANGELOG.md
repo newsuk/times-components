@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.16.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.15.0...@times-components/jest-serializer@3.16.0) (2025-04-24)
+
+
+### Features
+
+* **TMG-3047:** add tracking for join the conversation banner ([#4123](https://github.com/newsuk/times-components/issues/4123)) ([e3d41c5](https://github.com/newsuk/times-components/commit/e3d41c5dc0f3d5ae6cf339546e5792acad0af65d))
+
+
+
+
+
 # [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.14.0...@times-components/jest-serializer@3.15.0) (2025-04-14)
 
 

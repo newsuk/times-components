@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.49.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.48.5...@times-components/article-comments@0.49.0) (2025-04-24)
+
+
+### Features
+
+* **TMG-3047:** add tracking for join the conversation banner ([#4123](https://github.com/newsuk/times-components/issues/4123)) ([e3d41c5](https://github.com/newsuk/times-components/commit/e3d41c5dc0f3d5ae6cf339546e5792acad0af65d))
+
+
+
+
+
 ## [0.48.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.48.4...@times-components/article-comments@0.48.5) (2025-04-14)
 
 **Note:** Version bump only for package @times-components/article-comments
