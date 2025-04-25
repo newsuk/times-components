@@ -47,6 +47,7 @@ import {
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
+import { useLocation } from "react-router-dom";
 
 import {
   PrimaryImg,
@@ -70,7 +71,7 @@ const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-const hasDisabledAds = id => disabledAds.includes(id);
+const hasDisabledAds = (id, pathname) => disabledAds.includes(id) || pathname.includes("/obituaries");
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -110,11 +111,12 @@ const renderers = ({
   articleHeadline,
   articleId,
   deckApiUrl,
-  isWebPFormatActive
+  isWebPFormatActive,
+  pathname
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, pathname) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -122,7 +124,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, pathname) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -130,7 +132,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, pathname) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -138,7 +140,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, pathname) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -146,7 +148,7 @@ const renderers = ({
     );
   },
   inlineAd4(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, pathname) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd4" />
@@ -683,23 +685,31 @@ const ArticleBody = ({
   id: articleId,
   deckApiUrl,
   isWebPFormatActive
-}) =>
-  renderTrees(
-    bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({
-      paidContentClassName,
-      template,
-      isPreview,
-      swgProductId,
-      inArticlePuffFlag,
-      isLiveOrBreaking,
-      articleId,
-      section,
-      articleHeadline,
-      deckApiUrl,
-      isWebPFormatActive
-    })
-  );
+}) => {
+
+  const location = useLocation();
+  const pathname = location.pathname || "";
+
+  return (
+    renderTrees(
+      bodyContent.map(decorateAd({ contextUrl, section })),
+      renderers({
+        paidContentClassName,
+        template,
+        isPreview,
+        swgProductId,
+        inArticlePuffFlag,
+        isLiveOrBreaking,
+        articleId,
+        section,
+        articleHeadline,
+        deckApiUrl,
+        isWebPFormatActive,
+        pathname
+      })
+    )
+  )
+}
 
 ArticleBody.propTypes = {
   content: PropTypes.arrayOf(
