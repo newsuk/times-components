@@ -1,4 +1,4 @@
-import fetchPolygonData from "../../src/article-sidebar";
+import { fetchPolygonData } from "../../src/article-sidebar";
 
 // Mock fetch globally
 global.fetch = jest.fn();
