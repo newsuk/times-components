@@ -9,6 +9,7 @@ const AuthorProfileHeadImage = ({ uri }) => (
     style={sharedStyles.authorPhoto}
     uri={uri}
     accessibilityLabel="author-image"
+    isWebPFormatActive
   />
 );
 
