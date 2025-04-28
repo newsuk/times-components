@@ -90,7 +90,8 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    categoryConnection
   } = article;
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -208,6 +209,7 @@ const ArticleSkeleton = ({
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
       isWebPFormatActive={!!isWebPFormatActive}
+      categoryConnection={categoryConnection}
     />
   );
 

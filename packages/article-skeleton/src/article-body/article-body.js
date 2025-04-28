@@ -69,8 +69,40 @@ import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
-const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-const hasDisabledAds = (id) => disabledAds.includes(id);
+/* const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"]; */
+/* const hasObituariesCategory = (categories) => {
+  return categories.some((node) => node.title === "Obituaries");
+};
+ */
+
+const hasObituariesCategory = (categories) => {
+  if (!categories || categories.length === 0) {
+     // eslint-disable-next-line no-console
+    console.log("[hasObituariesCategory] No categories found");
+    return false;
+  }
+  
+  const hasObituaries = categories.some(
+    (category) => category.title === "Obituaries"
+  );
+  
+   // eslint-disable-next-line no-console
+  console.log("[hasObituariesCategory] Found Obituaries?", JSON.stringify(hasObituaries, null, 2));
+  
+  return hasObituaries;
+};
+const hasDisabledAds = (id, categories) => { 
+  const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
+  const result = disabledAds.includes(id) || hasObituariesCategory(categories);
+  
+ // eslint-disable-next-line no-console
+  console.log("[hasDisabledAds] categories:", categories);
+   // eslint-disable-next-line no-console
+  console.log("[hasDisabledAds] result:", JSON.stringify(result, null, 2));
+  
+  return result;
+};
+
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -111,10 +143,11 @@ const renderers = ({
   articleId,
   deckApiUrl,
   isWebPFormatActive,
+  categories
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, categories) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -122,7 +155,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, categories) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -130,7 +163,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, categories) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -138,7 +171,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, categories) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -146,7 +179,7 @@ const renderers = ({
     );
   },
   inlineAd4(key) {
-    return hasDisabledAds(articleId) ? null : (
+    return hasDisabledAds(articleId, categories) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd4" />
@@ -682,9 +715,10 @@ const ArticleBody = ({
   articleHeadline,
   id: articleId,
   deckApiUrl,
-  isWebPFormatActive
+  isWebPFormatActive,
+  categoryConnection 
 }) => 
-    renderTrees(
+     renderTrees(
       bodyContent.map(decorateAd({ contextUrl, section })),
       renderers({
         paidContentClassName,
@@ -697,9 +731,11 @@ const ArticleBody = ({
         section,
         articleHeadline,
         deckApiUrl,
-        isWebPFormatActive
+        isWebPFormatActive,
+        categories: categoryConnection.nodes
       })
     )
+  
 
 ArticleBody.propTypes = {
   content: PropTypes.arrayOf(
@@ -711,7 +747,16 @@ ArticleBody.propTypes = {
   ).isRequired,
   contextUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string,
-  section: PropTypes.string
+  section: PropTypes.string,
+  categoryConnection: PropTypes.shape({
+    nodes: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
+        categoryType: PropTypes.string.isRequired
+      })
+    )
+  })
 };
 
 export { ArticleLink };
