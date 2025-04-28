@@ -57,9 +57,9 @@ export const Newsletter = ({
         {loading && <LoadingOverlay />}
         {!error &&
           justSubscribed && (
-            <InpSubscribedContainer>
+            <InpSubscribedContainer>    
               <InpCopy>
-                You've succesfully signed up to{' '}
+                You've successfully signed up to the{' '}
                 <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
                 <NewsletterPuffLink />
               </InpCopy>
