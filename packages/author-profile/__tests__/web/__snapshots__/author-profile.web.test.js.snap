@@ -274,6 +274,7 @@ exports[`7. an article list header 1`] = `
         <Image
           accessibilityLabel="author-image"
           aspectRatio={1}
+          isWebPFormatActive={true}
           uri="https://image.io"
         />
       </div>
@@ -325,6 +326,7 @@ exports[`8. an article list header with no bio, job title, name or twitter 1`] =
         <Image
           accessibilityLabel="author-image"
           aspectRatio={1}
+          isWebPFormatActive={true}
           uri="https://image.io"
         />
       </div>
