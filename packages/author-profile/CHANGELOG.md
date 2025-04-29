@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.20.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.19.50...@times-components/author-profile@6.20.0) (2025-04-29)
+
+
+### Features
+
+* **TMPR-96:** Enable webp on author page ([8d1cbb5](https://github.com/newsuk/times-components/commit/8d1cbb5b3abb7f081ab5767156752eacd34348c9))
+* **TMPR-96:** Update snapshot ([c52dc5d](https://github.com/newsuk/times-components/commit/c52dc5d5172abef4452efaaa7d81c8f71050edd8))
+
+
+
+
+
 ## [6.19.50](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.19.49...@times-components/author-profile@6.19.50) (2025-04-29)
 
 **Note:** Version bump only for package @times-components/author-profile
