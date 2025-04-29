@@ -10,13 +10,6 @@ query ArticleQuery($id: ID!) {
     }
     commentsEnabled
     content: paywalledContent
-    categoryConnection {
-			nodes {
-				title
-				slug
-				categoryType
-			}
-		}
     descriptionMarkup: summary(maxCharCount: 200)
     dropcapsDisabled
     expirableFlags {
