@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-components",
-  "version": "1.129.1",
+  "version": "1.129.2",
   "description": "Reuseable Typescript React Components ",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -57,7 +57,7 @@
     "@times-components/link": "3.18.1",
     "@times-components/provider": "1.43.0",
     "@times-components/provider-queries": "2.25.0",
-    "@times-components/related-articles": "6.20.2",
+    "@times-components/related-articles": "6.20.3",
     "@times-components/ts-slices": "1.10.16",
     "@times-components/ts-styleguide": "1.53.1",
     "@times-components/utils": "6.31.7",

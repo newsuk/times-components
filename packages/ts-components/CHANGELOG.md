@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.129.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.1...@times-components/ts-components@1.129.2) (2025-04-29)
+
+
+### Bug Fixes
+
+* **TMRA-193:** fix newsletter signup typo ([#4129](https://github.com/newsuk/times-components/issues/4129)) ([803d345](https://github.com/newsuk/times-components/commit/803d34509abb33540ae05e734cbb64c1870e8b92))
+
+
+
+
+
 ## [1.129.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.0...@times-components/ts-components@1.129.1) (2025-04-24)
 
 **Note:** Version bump only for package @times-components/ts-components
