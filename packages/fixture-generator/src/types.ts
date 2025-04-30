@@ -59,6 +59,8 @@ export interface ArticleInput {
 
   relatedArticleSlice?: ArticleSliceInput | null;
 
+  upNext?: ArticleSliceInput | null;
+
   textColour?: ColourInput | null;
 
   savingEnabled: boolean;
@@ -142,6 +144,8 @@ export interface VideoInput {
   posterImage: ImageInput;
 
   is360?: boolean | null;
+
+  duration?: number | null;
 }
 
 export interface BylineInput {
@@ -414,6 +418,10 @@ export interface DraftArticleInput {
   publishedTime?: DateTime | null;
   /** we can use the same input as it only specifies articles by UUIDthe only problem is MediaInput which has a required 'title' fieldwhich we could default to an empty string in Ingest */
   relatedArticleSlice?: DraftArticleSliceInput | null;
+
+  upNext?: DraftArticleSliceInput | null;
+
+  upNext?: DraftArticleSliceInput | null;
 
   textColour?: ColourInput | null;
 
@@ -968,7 +976,8 @@ export enum TemplateType {
   Magazinestandard = "magazinestandard",
   Maincomment = "maincomment",
   Mainstandard = "mainstandard",
-  Takeoverpage = "takeoverpage"
+  Takeoverpage = "takeoverpage",
+  Mainvideo = "mainvideo"
 }
 
 export enum WorkDeskName {
@@ -1329,6 +1338,10 @@ export interface Article extends ArticleInterface {
   /** Related article slice */
   relatedArticleSlice?: ArticleSlice | null;
 
+  upNext?: ArticleSlice | null;
+
+  upNext?: ArticleSlice | null;
+
   savingEnabled?: boolean | null;
 
   sharingEnabled?: boolean | null;
@@ -1449,6 +1462,10 @@ export interface Video {
   skySports?: boolean | null;
 
   brightcoveAccountId?: string | null;
+
+  duration?: number | null;
+
+  duration?: number | null;
 
   posterImage?: Image | null;
 
@@ -1709,6 +1726,10 @@ export interface DraftArticle extends ArticleInterface {
   updatedTime?: DateTime | null;
   /** Related article slice */
   relatedArticleSlice?: DraftArticleSlice | null;
+
+  upNext?: DraftArticleSlice | null;
+
+  upNext?: DraftArticleSlice | null;
 
   savingEnabled?: boolean | null;
 

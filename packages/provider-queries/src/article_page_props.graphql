@@ -21,7 +21,7 @@ fragment articlePageProps on Article {
       article {
         headline
         id
-        categoryPath
+        url: categoryPath
         leadAsset {
           __typename
           ... on Video {
@@ -39,7 +39,7 @@ fragment articlePageProps on Article {
     items {
       article {
         headline
-        categoryPath
+        url: categoryPath
         id
       }
     }
