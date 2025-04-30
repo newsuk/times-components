@@ -63,6 +63,8 @@ const ArticleExtras = ({
   const parentCategoryArticles =
     (categorisedArticles && categorisedArticles.parentCategoryArticles) || null;
 
+  const isObituariesArticle = articleUrl.includes("obituaries")
+
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
     isRecommendedActive,
@@ -100,7 +102,7 @@ const ArticleExtras = ({
             />
           )}
       </div>
-      <PromotedContentContainer>
+     {!isObituariesArticle && <PromotedContentContainer>
         <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
         <PromotedContentGrid>
           <PromotedContentAd id="advert-inarticle-native-1" />
@@ -109,7 +111,7 @@ const ArticleExtras = ({
           <PromotedContentAd id="advert-inarticle-native-3" />
           <PromotedContentAd id="advert-inarticle-native-4" />
         </PromotedContentGrid>
-      </PromotedContentContainer>
+      </PromotedContentContainer> }
     </>
   );
   return (
