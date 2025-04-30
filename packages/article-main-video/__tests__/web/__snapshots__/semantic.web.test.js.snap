@@ -295,9 +295,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
     href="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
     target={null}
   >
-    <p>
-      15:03
-    </p>
+    <p />
     <picture>
       <img
         loading="lazy"
@@ -373,5 +371,24 @@ exports[`1. a full article with video as the lead asset 1`] = `
       Chelsea
     </a>
   </nav>
+  <span>
+    Advertisement
+  </span>
+  <p>
+    Comments for this article have been turned off
+  </p>
+  <p>
+    Comments are subject to our community guidelines, which can be viewed
+     
+    <a
+      href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+    >
+      here
+    </a>
+    .
+  </p>
+  <span>
+    Advertisement
+  </span>
 </article>
 `;

@@ -183,9 +183,7 @@ exports[`1. an article 1`] = `
                     url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
                   >
                     <div>
-                      <p>
-                        15:03
-                      </p>
+                      <p />
                       <Image
                         aspectRatio={1.7777777777777777}
                         uri="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -256,7 +254,26 @@ exports[`1. an article 1`] = `
           </div>
         </div>
       </div>
-      <div />
+      <div>
+        <div>
+          <span>
+            Advertisement
+          </span>
+          <AdContainer
+            slotName="inline-ad"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            Advertisement
+          </span>
+          <AdContainer
+            slotName="ad-article-inline-1"
+          />
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -466,9 +483,7 @@ exports[`4. should show topics when logged in or shared 1`] = `
                     url="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
                   >
                     <div>
-                      <p>
-                        15:03
-                      </p>
+                      <p />
                       <Image
                         aspectRatio={1.7777777777777777}
                         uri="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -556,6 +571,41 @@ exports[`4. should show topics when logged in or shared 1`] = `
             }
           />
         </nav>
+        <div>
+          <span>
+            Advertisement
+          </span>
+          <AdContainer
+            slotName="inline-ad"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>
+            Comments for this article have been turned off
+          </p>
+          <p>
+            Comments are subject to our community guidelines, which can be viewed
+             
+            <TextLink
+              url="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+            >
+              here
+            </TextLink>
+            .
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            Advertisement
+          </span>
+          <AdContainer
+            slotName="ad-article-inline-1"
+          />
+        </div>
       </div>
       <AdContainer
         slotName="pixel"

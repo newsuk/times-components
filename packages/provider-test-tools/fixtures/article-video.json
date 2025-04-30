@@ -373,7 +373,7 @@
           "leadAsset": {
             "id": "01264c94-b66e-435d-9db6-4e4d11b7bda8",
             "caption": null,
-            "duration": 902000,
+            "duration": null,
             "brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
             "brightcovePlayerId": "default",
             "brightcoveVideoId": "6369289615112",

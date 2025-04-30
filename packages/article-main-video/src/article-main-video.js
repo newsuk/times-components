@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleSkeleton, {
+  InlineAdWrapper,
+  InlineAdTitle
+} from "@times-components/article-skeleton";
+import { AdContainer } from "@times-components/ad";
 import { getHeadline } from "@times-components/utils";
 import DatePublication from "@times-components/date-publication";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 import { Breadcrumb } from "@times-components/ts-components";
 import Link from "@times-components/link";
+import UserState from "@times-components/user-state";
+import ArticleComments from "@times-components/article-comments";
 import ArticleTopics from "./article-topics";
 import {
   articleDefaultProps,
@@ -26,7 +32,8 @@ import {
   ArticleHeadline,
   ArticleTitle,
   BreadcrumbContainer,
-  ContentFooterContainer
+  ContentFooterContainer,
+  CommentContainer
 } from "./styles/responsive";
 import { ArticleUpNext } from "./article-up-next/article-up-next";
 
@@ -52,8 +59,9 @@ class ArticlePage extends Component {
 
     const primaryCategory =
       breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs[0] : null;
-    const categoryLabel = primaryCategory?.title || "";
-    const categoryUrl = primaryCategory?.url.split("/")[1] || "";
+    const categoryLabel = (primaryCategory && primaryCategory.title) || "";
+    const categoryUrl =
+      (primaryCategory && primaryCategory.url.split("/")[1]) || "";
     const categoryColors = {
       comment: "#9b1f45",
       "business-money": "#21709c",
@@ -77,14 +85,18 @@ class ArticlePage extends Component {
     };
 
     const upNextArticles =
-      upNext &&
-      upNext.items.map(upNextArticle => ({
-        id: upNextArticle.article.id,
-        title: upNextArticle.article.headline,
-        url: upNextArticle.article.url,
-        posterImage: upNextArticle.article.leadAsset.posterImage.crop169.url,
-        duration: formatVideoDuration(upNextArticle.article.leadAsset.duration)
-      }));
+      upNext && upNext.items
+        ? upNext.items.map(upNextArticle => ({
+            id: upNextArticle.article.id,
+            title: upNextArticle.article.headline,
+            url: upNextArticle.article.url,
+            posterImage:
+              upNextArticle.article.leadAsset.posterImage.crop169.url,
+            duration: formatVideoDuration(
+              upNextArticle.article.leadAsset.duration
+            )
+          }))
+        : null;
 
     const leadAssetUrl = leadAsset.posterImage && leadAsset.posterImage.crop169;
 
@@ -148,20 +160,46 @@ class ArticlePage extends Component {
   }
 
   renderContentFooter() {
-    const { article, articleDataFromRender } = this.props;
-    const { topics } = article;
+    const { article, articleDataFromRender, commentingConfig } = this.props;
+    const { topics, commentsEnabled, id } = article;
     const { breadcrumbs } = articleDataFromRender || {};
 
+    const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
+
+    const renderAd = slot =>
+      disabledAds.includes(id) ? null : (
+        <InlineAdWrapper>
+          <InlineAdTitle>Advertisement</InlineAdTitle>
+          <AdContainer slotName={slot} />
+        </InlineAdWrapper>
+      );
     return (
-      <ContentFooterContainer>
-        {breadcrumbs &&
-          breadcrumbs.length > 0 && (
-            <BreadcrumbContainer>
-              <Breadcrumb data={breadcrumbs} />
-            </BreadcrumbContainer>
-          )}
-        <ArticleTopics topics={topics} />
-      </ContentFooterContainer>
+      <>
+        <ContentFooterContainer>
+          {breadcrumbs &&
+            breadcrumbs.length > 0 && (
+              <BreadcrumbContainer>
+                <Breadcrumb data={breadcrumbs} />
+              </BreadcrumbContainer>
+            )}
+          <ArticleTopics topics={topics} />
+          {renderAd("inline-ad")}
+        </ContentFooterContainer>
+        <UserState state={UserState.showArticleExtras}>
+          <CommentContainer>
+            <ArticleComments
+              articleId={id}
+              isEnabled={commentsEnabled}
+              commentingConfig={commentingConfig}
+              domainSpecificUrl="https://www.thetimes.com"
+              isDark
+            />
+          </CommentContainer>
+        </UserState>
+        <ContentFooterContainer>
+          {renderAd("ad-article-inline-1")}
+        </ContentFooterContainer>
+      </>
     );
   }
 

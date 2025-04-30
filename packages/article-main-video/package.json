@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.22.39",
+    "@times-components/article-comments": "0.49.1",
     "@times-components/article-lead-asset": "1.22.0",
     "@times-components/article-skeleton": "1.162.3",
     "@times-components/article-topics": "4.11.71",

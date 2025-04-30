@@ -52,10 +52,13 @@ const renderArticle = ({
       }}
       article={{
         ...articleData,
+        id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         categoryPath: `/${category}/${articleData.categoryPath}`,
         upNext: {
           ...articleUpNextData,
-          items: articleUpNextData.items.slice(4 - upNextArticles)
+          items: articleUpNextData
+            ? articleUpNextData.items.slice(4 - upNextArticles)
+            : null
         }
       }}
       isLoading={false}

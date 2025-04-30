@@ -124,9 +124,9 @@ const newslettersBySection = [
 ];
 
 const getNewsletterPuff = section => {
-  const newsletter = newslettersBySection.find(
-    item => item.section === section.toLowerCase()
-  );
+  const newsletter = section
+    ? newslettersBySection.find(item => item.section === section.toLowerCase())
+    : undefined;
   return newsletter ? newsletter.payload : undefined;
 };
 

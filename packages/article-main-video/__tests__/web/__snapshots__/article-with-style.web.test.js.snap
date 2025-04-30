@@ -215,8 +215,39 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
+.c37 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c39 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c38 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
 .c0 {
   background-color: #121212;
+}
+
+.c36 {
+  background-color: #fff;
+  margin: 32px auto 0;
+  padding-inline: 20px;
 }
 
 .c1 {
@@ -322,8 +353,8 @@ exports[`full article with style 1`] = `
 }
 
 .c35.c35.c35 {
-  border-bottom: 1px solid #e4e4e4;
-  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #4e4e4e;
+  border-top: 1px solid #4e4e4e;
   margin-top: 20px;
 }
 
@@ -626,6 +657,24 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c18 {
     min-height: 283px;
+  }
+}
+
+@media (min-width:768px) {
+  .c37 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c37 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c36 {
+    max-width: 1144px;
   }
 }
 
@@ -1010,9 +1059,7 @@ exports[`full article with style 1`] = `
                     >
                       <p
                         className="c32"
-                      >
-                        15:03
-                      </p>
+                      />
                       <Image />
                     </div>
                     <span
@@ -1103,6 +1150,57 @@ exports[`full article with style 1`] = `
             justifyContent="flex-start"
           />
         </nav>
+        <div
+          className="c18"
+        >
+          <span
+            className="c19"
+          >
+            Advertisement
+          </span>
+          <AdContainer />
+        </div>
+      </div>
+      <div
+        className="c36"
+      >
+        <div
+          className="c37"
+        >
+          <p
+            className="c38"
+          >
+            Comments for this article have been turned off
+          </p>
+          <p
+            className="c39"
+          >
+            Comments are subject to our community guidelines, which can be viewed
+             
+            <TextLink
+              color="#006699"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+              fontSize={12}
+            >
+              here
+            </TextLink>
+            .
+          </p>
+        </div>
+      </div>
+      <div
+        className="c34"
+      >
+        <div
+          className="c18"
+        >
+          <span
+            className="c19"
+          >
+            Advertisement
+          </span>
+          <AdContainer />
+        </div>
       </div>
       <AdContainer />
       <AdContainer />
