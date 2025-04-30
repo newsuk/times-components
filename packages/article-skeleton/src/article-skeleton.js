@@ -178,6 +178,8 @@ const ArticleSkeleton = ({
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
+  const isObituariesArticle = articleUrl.includes("obituaries")
+
   const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
   const quizCategories = ["culture", "life-style"];
   const canShowSidebar = categoryPath
@@ -360,9 +362,9 @@ const ArticleSkeleton = ({
             <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
           ) : (
             <Fragment>
-              <HeaderAdContainer key="headerAd">
+              {!isObituariesArticle && <HeaderAdContainer key="headerAd">
                 <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>
+              </HeaderAdContainer>}
               <MainContainer>
                 <WelcomeBanner />
                 {!!zephrDivs && (
