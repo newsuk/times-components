@@ -421,8 +421,6 @@ export interface DraftArticleInput {
 
   upNext?: DraftArticleSliceInput | null;
 
-  upNext?: DraftArticleSliceInput | null;
-
   textColour?: ColourInput | null;
 
   savingEnabled: boolean;
@@ -1340,8 +1338,6 @@ export interface Article extends ArticleInterface {
 
   upNext?: ArticleSlice | null;
 
-  upNext?: ArticleSlice | null;
-
   savingEnabled?: boolean | null;
 
   sharingEnabled?: boolean | null;
@@ -1462,8 +1458,6 @@ export interface Video {
   skySports?: boolean | null;
 
   brightcoveAccountId?: string | null;
-
-  duration?: number | null;
 
   duration?: number | null;
 
@@ -1726,8 +1720,6 @@ export interface DraftArticle extends ArticleInterface {
   updatedTime?: DateTime | null;
   /** Related article slice */
   relatedArticleSlice?: DraftArticleSlice | null;
-
-  upNext?: DraftArticleSlice | null;
 
   upNext?: DraftArticleSlice | null;
 
