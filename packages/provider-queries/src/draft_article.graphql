@@ -27,9 +27,18 @@ query ArticleDraftQuery($id: ID!) {
           ...imageProps
         }
         is360
+        duration
       }
       ... on Image {
         ...imageProps
+      }
+    }
+    upNext {
+      sliceName: __typename
+      ... on DraftStandardSlice {
+        items {
+          ...relatedProps
+        }
       }
     }
     relatedArticleSlice {
@@ -140,7 +149,7 @@ fragment articleProps on Article {
   shortIdentifier
   shortHeadline
   slug
-  url
+  url: categoryPath
 }
 
 fragment draftArticleProps on DraftArticle {
@@ -212,6 +221,7 @@ fragment relatedProps on DraftTile {
           title
         }
         ... on Video {
+          duration
           posterImage {
             crop169: crop(ratio: "16:9") {
               url

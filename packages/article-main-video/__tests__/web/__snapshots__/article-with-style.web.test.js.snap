@@ -32,76 +32,6 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c37 {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-grid;
-  font-family: Roboto-Regular;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.250;
-  -webkit-letter-spacing: 0%;
-  -moz-letter-spacing: 0%;
-  -ms-letter-spacing: 0%;
-  letter-spacing: 0%;
-  font-stretch: normal display:inline-grid;
-  background-color: transparent;
-  min-height: 32px;
-  border: none;
-  place-content: center;
-  color: #696969;
-}
-
-.c37:hover {
-  color: #006699;
-}
-
-.c39 {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-grid;
-  font-family: Roboto-Regular;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.250;
-  -webkit-letter-spacing: 0%;
-  -moz-letter-spacing: 0%;
-  -ms-letter-spacing: 0%;
-  letter-spacing: 0%;
-  font-stretch: normal display:inline-grid;
-  background-color: transparent;
-  min-height: 32px;
-  border: none;
-  place-content: center;
-  color: #01000d;
-}
-
-.c39:hover {
-  color: #006699;
-}
-
-.c36 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c38 {
-  height: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-inline: 8px;
-}
-
 .c12 {
   color: #333333;
   display: block;
@@ -285,8 +215,39 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
+.c37 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c39 {
+  color: #696969;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.c38 {
+  color: #333333;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-size: 27px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
 .c0 {
   background-color: #121212;
+}
+
+.c36 {
+  background-color: #fff;
+  margin: 32px auto 0;
+  padding-inline: 20px;
 }
 
 .c1 {
@@ -391,13 +352,13 @@ exports[`full article with style 1`] = `
   border-color: #e4e4e4;
 }
 
-.c40.c40.c40 {
-  border-bottom: 1px solid #e4e4e4;
-  border-top: 1px solid #e4e4e4;
+.c35.c35.c35 {
+  border-bottom: 1px solid #4e4e4e;
+  border-top: 1px solid #4e4e4e;
   margin-top: 20px;
 }
 
-.c40.c40.c40.c40.c40.c40.c40.c40.c40 div {
+.c35.c35.c35.c35.c35.c35.c35.c35.c35 div {
   border-color: #E4E4E !important;
   color: #e4e4e4 !important;
 }
@@ -493,14 +454,6 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
   color: #AAA;
   z-index: 2;
-}
-
-.c35 * {
-  color: #fff !important;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .c25 {
@@ -704,6 +657,24 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c18 {
     min-height: 283px;
+  }
+}
+
+@media (min-width:768px) {
+  .c37 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c37 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c36 {
+    max-width: 1144px;
   }
 }
 
@@ -1088,9 +1059,7 @@ exports[`full article with style 1`] = `
                     >
                       <p
                         className="c32"
-                      >
-                        15:03
-                      </p>
+                      />
                       <Image />
                     </div>
                     <span
@@ -1174,38 +1143,64 @@ exports[`full article with style 1`] = `
       <div
         className="c34"
       >
-        <div
-          className="c35"
-        >
-          <nav
-            className="c36"
-          >
-            <a
-              className="c37"
-            >
-              UK
-            </a>
-            <div
-              className="c38"
-            >
-              <svg>
-                <path />
-              </svg>
-            </div>
-            <a
-              className="c39"
-            >
-              Defence
-            </a>
-          </nav>
-        </div>
         <nav
-          className="c40"
+          className="c35"
         >
           <ArticleTopics
             justifyContent="flex-start"
           />
         </nav>
+        <div
+          className="c18"
+        >
+          <span
+            className="c19"
+          >
+            Advertisement
+          </span>
+          <AdContainer />
+        </div>
+      </div>
+      <div
+        className="c36"
+      >
+        <div
+          className="c37"
+        >
+          <p
+            className="c38"
+          >
+            Comments for this article have been turned off
+          </p>
+          <p
+            className="c39"
+          >
+            Comments are subject to our community guidelines, which can be viewed
+             
+            <TextLink
+              color="#006699"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+              fontSize={12}
+            >
+              here
+            </TextLink>
+            .
+          </p>
+        </div>
+      </div>
+      <div
+        className="c34"
+      >
+        <div
+          className="c18"
+        >
+          <span
+            className="c19"
+          >
+            Advertisement
+          </span>
+          <AdContainer />
+        </div>
       </div>
       <AdContainer />
       <AdContainer />

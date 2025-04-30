@@ -35,7 +35,7 @@ const Article = props => {
   }
 
   if (article && !isPreview) {
-    if (!article.tiles.length && !content.length) {
+    if (article.tiles && article.tiles.length < 1 && !content.length) {
       throw new Error("ENOCONTENT");
     }
   }

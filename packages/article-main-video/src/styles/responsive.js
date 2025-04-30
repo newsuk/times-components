@@ -4,6 +4,15 @@ import { breakpoints } from "@times-components/ts-styleguide";
 export const ArticleMainVideoContainer = styled.div`
   background-color: #121212;
 `;
+export const CommentContainer = styled.div`
+  background-color: #fff;
+  margin: 32px auto 0;
+  padding-inline: 20px;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    max-width: 1144px;
+  }
+`;
 export const VideoArticleContainer = styled.div`
   width: 100%;
   max-width: 1144px;
@@ -106,8 +115,8 @@ export const SaveAndShareContainer = styled.div`
 `;
 export const TopicsContainer = styled.nav`
   &&& {
-    border-bottom: 1px solid #e4e4e4;
-    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #4e4e4e;
+    border-top: 1px solid #4e4e4e;
     margin-top: 20px;
     &&& div {
       border-color: #E4E4E !important;

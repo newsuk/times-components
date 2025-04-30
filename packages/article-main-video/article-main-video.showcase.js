@@ -38,10 +38,28 @@ const renderArticle = ({
     <Article
       adConfig={adConfig}
       analyticsStream={analyticsStream}
+      articleDataFromRender={{
+        breadcrumbs: [
+          {
+            title: "Primary Category",
+            url: `/${category}`
+          },
+          {
+            title: "Secondary Category",
+            url: "/uk/defence"
+          }
+        ]
+      }}
       article={{
         ...articleData,
+        id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         categoryPath: `/${category}/${articleData.categoryPath}`,
-        upNext: articleUpNextData.slice(4 - upNextArticles)
+        upNext: {
+          ...articleUpNextData,
+          items: articleUpNextData
+            ? articleUpNextData.items.slice(4 - upNextArticles)
+            : null
+        }
       }}
       isLoading={false}
       onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
