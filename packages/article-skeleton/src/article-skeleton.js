@@ -528,6 +528,10 @@ ArticleSkeleton.propTypes = {
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
 export { KeylineItem, ArticleKeylineItem } from "./keylines";
+export {
+  InlineAdWrapper,
+  InlineAdTitle
+} from "./styles/article-body/responsive";
 
 export { ArticleLink };
 

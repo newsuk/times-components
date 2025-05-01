@@ -15,6 +15,35 @@ fragment articlePageProps on Article {
     type
     expiryTime
   }
+  upNext {
+    __typename
+    items {
+      article {
+        headline
+        id
+        url: categoryPath
+        leadAsset {
+          __typename
+          ... on Video {
+            duration
+            posterImage {
+              ...imageProps
+            }
+          }
+        }
+      }
+    }
+  }
+  relatedArticleSlice {
+    __typename
+    items {
+      article {
+        headline
+        url: categoryPath
+        id
+      }
+    }
+  }
   keywords
   leadAsset {
     __typename
@@ -22,6 +51,7 @@ fragment articlePageProps on Article {
       brightcoveAccountId
       brightcovePolicyKey
       brightcoveVideoId
+      duration
       posterImage {
         ...imageProps
       }

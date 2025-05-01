@@ -295,9 +295,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
     href="https://www.staging-thetimes.co.uk/article/related-article-1-b76fh95mt"
     target={null}
   >
-    <p>
-      15:03
-    </p>
+    <p />
     <picture>
       <img
         loading="lazy"
@@ -359,34 +357,6 @@ exports[`1. a full article with video as the lead asset 1`] = `
       Up Next Article 4
     </span>
   </a>
-  <nav
-    aria-label="breadcrumbs"
-  >
-    <a
-      aria-current="false"
-      href="/uk"
-      selected={false}
-    >
-      UK
-    </a>
-    <svg
-      color="#aaaaaa"
-      height={16}
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="4c0bdba61311616771707e81d8dcc8f3"
-      />
-    </svg>
-    <a
-      aria-current="page"
-      href="/uk/defence"
-      selected={true}
-    >
-      Defence
-    </a>
-  </nav>
   <nav>
     <a
       href="/topic/islington"
@@ -401,5 +371,24 @@ exports[`1. a full article with video as the lead asset 1`] = `
       Chelsea
     </a>
   </nav>
+  <span>
+    Advertisement
+  </span>
+  <p>
+    Comments for this article have been turned off
+  </p>
+  <p>
+    Comments are subject to our community guidelines, which can be viewed
+     
+    <a
+      href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+    >
+      here
+    </a>
+    .
+  </p>
+  <span>
+    Advertisement
+  </span>
 </article>
 `;
