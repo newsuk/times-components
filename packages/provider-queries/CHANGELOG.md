@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.25.0...@times-components/provider-queries@2.26.0) (2025-05-01)
+
+
+### Features
+
+* **TMRA-152:** add query fields ([#4124](https://github.com/newsuk/times-components/issues/4124)) ([0cabf9e](https://github.com/newsuk/times-components/commit/0cabf9e98071f61c34e54a38c2e56556ef50b8f8))
+
+
+
+
+
 # [2.25.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.24.0...@times-components/provider-queries@2.25.0) (2025-03-12)
 
 

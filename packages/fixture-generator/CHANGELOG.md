@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.35.1...@times-components/fixture-generator@0.36.0) (2025-05-01)
+
+
+### Features
+
+* **TMRA-152:** add query fields ([#4124](https://github.com/newsuk/times-components/issues/4124)) ([0cabf9e](https://github.com/newsuk/times-components/commit/0cabf9e98071f61c34e54a38c2e56556ef50b8f8))
+
+
+
+
+
 ## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.35.0...@times-components/fixture-generator@0.35.1) (2024-09-06)
 
 **Note:** Version bump only for package @times-components/fixture-generator

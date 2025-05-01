@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.163.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.162.3...@times-components/article-skeleton@1.163.0) (2025-05-01)
+
+
+### Features
+
+* **TMRA-152:** add query fields ([#4124](https://github.com/newsuk/times-components/issues/4124)) ([0cabf9e](https://github.com/newsuk/times-components/commit/0cabf9e98071f61c34e54a38c2e56556ef50b8f8))
+
+
+
+
+
 ## [1.162.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.162.2...@times-components/article-skeleton@1.162.3) (2025-04-29)
 
 **Note:** Version bump only for package @times-components/article-skeleton
