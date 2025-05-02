@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.27.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.26.0...@times-components/provider-queries@2.27.0) (2025-05-02)
+
+
+### Features
+
+* **TMPZ-955:** Article Sidebar Polygon link is wrong day ([#4125](https://github.com/newsuk/times-components/issues/4125)) ([046e750](https://github.com/newsuk/times-components/commit/046e750ec852af969abca82d516d5c66859a3138))
+
+
+
+
+
 # [2.26.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.25.0...@times-components/provider-queries@2.26.0) (2025-05-01)
 
 
