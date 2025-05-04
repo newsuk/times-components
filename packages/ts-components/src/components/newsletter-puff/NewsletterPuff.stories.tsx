@@ -46,11 +46,6 @@ const showcase = {
           >
             <AutoNewsletterPuff
               code={text('code', 'TNL-101')}
-              headline={text('headline', 'Daily Briefing')}
-              copy={text(
-                'copy',
-                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-              )}
               section="sport"
             />
           </TrackingContextProvider>
