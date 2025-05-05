@@ -73,6 +73,10 @@ exports[`1. a full article 1`] = `
   </Helmet>
   <main>
     <picture>
+      <source
+        srcSet="https://image.io?format=webp"
+        type="image/webp"
+      />
       <img
         alt="author-image"
         loading="lazy"
@@ -251,6 +255,10 @@ exports[`1. a full article 1`] = `
     </a>
     <article>
       <picture>
+        <source
+          srcSet="https://image.io?format=webp"
+          type="image/webp"
+        />
         <img
           alt="An image caption"
           loading="lazy"

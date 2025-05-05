@@ -9,16 +9,14 @@ import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {
   highResImage({ highResSize = 300, url }) {
-    const { accessibilityLabel, isWebPFormatActive } = this.props;
+    const { accessibilityLabel } = this.props;
     const imgUrl = appendToImageURL(url, "resize", highResSize);
     return (
       <picture>
-        {isWebPFormatActive && (
-          <source
-            srcSet={appendToImageURL(imgUrl, "format", "webp")}
-            type="image/webp"
-          />
-        )}
+        <source
+          srcSet={appendToImageURL(imgUrl, "format", "webp")}
+          type="image/webp"
+        />
         <StyledImage
           alt={accessibilityLabel}
           loading="lazy"

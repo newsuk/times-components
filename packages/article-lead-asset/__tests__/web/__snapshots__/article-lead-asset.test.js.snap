@@ -28,6 +28,10 @@ exports[`1. renders correctly with an image lead asset 1`] = `
           width="100%"
         >
           <picture>
+            <source
+              srcSet="https://crop169.io/?format=webp&resize=360 360w,https://crop169.io/?format=webp&resize=520 520w,https://crop169.io/?format=webp&resize=680 680w,https://crop169.io/?format=webp&resize=860 860w,https://crop169.io/?format=webp&resize=1200 1200w,https://crop169.io/?format=webp&resize=1500 1500w"
+              type="image/webp"
+            />
             <img
               alt="Chris Reynolds Gordon at one of his party venues in London"
               display="block"
@@ -143,6 +147,10 @@ exports[`5. it renders correctly with a classname 1`] = `
           width="100%"
         >
           <picture>
+            <source
+              srcSet="https://crop169.io/?format=webp&resize=360 360w,https://crop169.io/?format=webp&resize=520 520w,https://crop169.io/?format=webp&resize=680 680w,https://crop169.io/?format=webp&resize=860 860w,https://crop169.io/?format=webp&resize=1200 1200w,https://crop169.io/?format=webp&resize=1500 1500w"
+              type="image/webp"
+            />
             <img
               alt="Chris Reynolds Gordon at one of his party venues in London"
               display="block"

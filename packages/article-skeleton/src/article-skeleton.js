@@ -172,7 +172,6 @@ const ArticleSkeleton = ({
     breadcrumbs,
     categorisedArticles,
     deckApiUrl,
-    isWebPFormatActive,
     isExcludedFromAdsPathFromServer
   } = articleDataFromRender || {};
 
@@ -211,7 +210,6 @@ const ArticleSkeleton = ({
       isPreview={isPreview}
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
-      isWebPFormatActive={!!isWebPFormatActive}
       isExcludedFromAdsPathFromServer={isExcludedFromAdsPathFromServer}
     />
   );
@@ -497,7 +495,6 @@ const ArticleSkeleton = ({
                           topics={topics}
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}
-                          isWebPFormatActive={isWebPFormatActive}
                           isExcludedFromAdsPathFromServer={
                             isExcludedFromAdsPathFromServer
                           }
