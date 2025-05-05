@@ -109,8 +109,7 @@ const renderers = ({
   section,
   articleHeadline,
   articleId,
-  deckApiUrl,
-  isWebPFormatActive
+  deckApiUrl
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -188,7 +187,6 @@ const renderers = ({
                     ratio,
                     uri: url
                   }}
-                  isWebPFormatActive={isWebPFormatActive}
                 />
               </MediaWrapper>
             </div>
@@ -681,8 +679,7 @@ const ArticleBody = ({
   isLiveOrBreaking,
   articleHeadline,
   id: articleId,
-  deckApiUrl,
-  isWebPFormatActive
+  deckApiUrl
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -696,8 +693,7 @@ const ArticleBody = ({
       articleId,
       section,
       articleHeadline,
-      deckApiUrl,
-      isWebPFormatActive
+      deckApiUrl
     })
   );
 

@@ -21,7 +21,7 @@ const renderCaption = (display, caption, credits) => {
   );
 };
 
-const InlineImage = ({ imageOptions, captionOptions, isWebPFormatActive }) => {
+const InlineImage = ({ imageOptions, captionOptions }) => {
   const {
     display,
     highResSize,
@@ -51,7 +51,6 @@ const InlineImage = ({ imageOptions, captionOptions, isWebPFormatActive }) => {
           lowResSize={lowResSize}
           lowResQuality={lowResQuality}
           uri={uri}
-          isWebPFormatActive={isWebPFormatActive}
         />
       </InsetImageStyle>
       {imgCaption}
