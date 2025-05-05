@@ -159,6 +159,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               <div>
                 <div>
                   <picture>
+                    <source
+                      srcSet="https://crop169.io?format=webp&resize=360 360w,https://crop169.io?format=webp&resize=520 520w,https://crop169.io?format=webp&resize=680 680w,https://crop169.io?format=webp&resize=860 860w,https://crop169.io?format=webp&resize=1200 1200w,https://crop169.io?format=webp&resize=1500 1500w"
+                      type="image/webp"
+                    />
                     <img
                       alt="Some Title"
                       fetchpriority="high"
@@ -445,6 +449,10 @@ exports[`4. an article with ads with .co.uk 1`] = `
               <div>
                 <div>
                   <picture>
+                    <source
+                      srcSet="https://crop169.io?format=webp&resize=360 360w,https://crop169.io?format=webp&resize=520 520w,https://crop169.io?format=webp&resize=680 680w,https://crop169.io?format=webp&resize=860 860w,https://crop169.io?format=webp&resize=1200 1200w,https://crop169.io?format=webp&resize=1500 1500w"
+                      type="image/webp"
+                    />
                     <img
                       alt="Some Title"
                       fetchpriority="high"
@@ -736,6 +744,10 @@ exports[`5. an article with ads with .com 1`] = `
               <div>
                 <div>
                   <picture>
+                    <source
+                      srcSet="https://crop169.io?format=webp&resize=360 360w,https://crop169.io?format=webp&resize=520 520w,https://crop169.io?format=webp&resize=680 680w,https://crop169.io?format=webp&resize=860 860w,https://crop169.io?format=webp&resize=1200 1200w,https://crop169.io?format=webp&resize=1500 1500w"
+                      type="image/webp"
+                    />
                     <img
                       alt="Some Title"
                       fetchpriority="high"

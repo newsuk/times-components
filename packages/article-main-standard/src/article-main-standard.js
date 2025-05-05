@@ -75,9 +75,6 @@ class ArticlePage extends Component {
           <LeadAsset
             {...getLeadAsset(article)}
             renderCaption={renderCaption}
-            isWebPFormatActive={
-              articleDataFromRender && articleDataFromRender.isWebPFormatActive
-            }
           />
         )}
         {!removeTeaserContent && (

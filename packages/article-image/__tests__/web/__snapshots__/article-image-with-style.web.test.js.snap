@@ -107,7 +107,6 @@ Array [
           fadeImageIn={false}
           highResSize={null}
           isLcpItem={false}
-          isWebPFormatActive={false}
           onImagePress={null}
           rounded={false}
           uri="https://img/someImage"
@@ -415,7 +414,6 @@ Array [
           fadeImageIn={false}
           highResSize={null}
           isLcpItem={false}
-          isWebPFormatActive={false}
           onImagePress={null}
           rounded={false}
           uri="https://img/someImage"

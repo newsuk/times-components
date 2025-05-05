@@ -73,6 +73,10 @@ exports[`1. a full article 1`] = `
   </Helmet>
   <main>
     <picture>
+      <source
+        srcSet={null}
+        type="image/webp"
+      />
       <img
         alt="author-image"
         loading="lazy"
@@ -104,6 +108,10 @@ exports[`1. a full article 1`] = `
     </span>
     <figure>
       <picture>
+        <source
+          srcSet="https://crop169.io?format=webp&resize=360 360w,https://crop169.io?format=webp&resize=520 520w,https://crop169.io?format=webp&resize=680 680w,https://crop169.io?format=webp&resize=860 860w,https://crop169.io?format=webp&resize=1200 1200w,https://crop169.io?format=webp&resize=1500 1500w"
+          type="image/webp"
+        />
         <img
           alt="Some Title"
           fetchpriority="high"
@@ -264,6 +272,10 @@ exports[`1. a full article 1`] = `
     </a>
     <article>
       <picture>
+        <source
+          srcSet="https://image.io?format=webp"
+          type="image/webp"
+        />
         <img
           alt="An image title"
           loading="lazy"

@@ -114,7 +114,6 @@ const renderers = ({
   articleHeadline,
   articleId,
   deckApiUrl,
-  isWebPFormatActive,
   isExcludedFromAdsPathFromServer
 }) => ({
   ...coreRenderers,
@@ -193,7 +192,6 @@ const renderers = ({
                     ratio,
                     uri: url
                   }}
-                  isWebPFormatActive={isWebPFormatActive}
                 />
               </MediaWrapper>
             </div>
@@ -687,7 +685,6 @@ const ArticleBody = ({
   articleHeadline,
   id: articleId,
   deckApiUrl,
-  isWebPFormatActive,
   isExcludedFromAdsPathFromServer
 }) =>
   renderTrees(
@@ -703,7 +700,6 @@ const ArticleBody = ({
       section,
       articleHeadline,
       deckApiUrl,
-      isWebPFormatActive,
       contextUrl,
       isExcludedFromAdsPathFromServer
     })
