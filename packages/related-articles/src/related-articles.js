@@ -13,14 +13,7 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const {
-      isVisible,
-      onPress,
-      slice,
-      heading,
-      hideBorder,
-      isWebPFormatActive
-    } = this.props;
+    const { isVisible, onPress, slice, heading, hideBorder } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
     if (
@@ -60,7 +53,6 @@ class RelatedArticles extends Component {
           showImage={showImage}
           showSummary={showSummary}
           summaryConfig={summaryConfig}
-          isWebPFormatActive={isWebPFormatActive}
         />
       );
     };

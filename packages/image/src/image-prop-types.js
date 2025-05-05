@@ -11,8 +11,7 @@ export const propTypes = {
   onLayout: PropTypes.func,
   rounded: PropTypes.bool,
   uri: PropTypes.string,
-  isLcpItem: PropTypes.bool,
-  isWebPFormatActive: PropTypes.bool
+  isLcpItem: PropTypes.bool
 };
 
 export const defaultProps = {
@@ -22,6 +21,5 @@ export const defaultProps = {
   highResSize: null,
   rounded: false,
   uri: null,
-  isLcpItem: false,
-  isWebPFormatActive: false
+  isLcpItem: false
 };

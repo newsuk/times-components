@@ -45,8 +45,7 @@ class CardContent extends Component {
       lowResSize,
       relatedArticle,
       showImage,
-      isLcpItem,
-      isWebPFormatActive
+      isLcpItem
     } = this.props;
 
     const TcCardContainer = styled(TcView)`
@@ -78,7 +77,6 @@ class CardContent extends Component {
             lowResSize={lowResSize}
             uri={imageUri}
             isLcpItem={isLcpItem}
-            isWebPFormatActive={isWebPFormatActive}
           />
         </TcView>
       );

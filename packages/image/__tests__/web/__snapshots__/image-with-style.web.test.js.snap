@@ -36,6 +36,7 @@ exports[`1. default image 1`] = `
     position="relative"
   >
     <picture>
+      <source />
       <img
         className="c1"
       />
@@ -80,6 +81,7 @@ exports[`2. default modal 1`] = `
     position="relative"
   >
     <picture>
+      <source />
       <img
         className="c1"
       />
