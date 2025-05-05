@@ -29,6 +29,10 @@ exports[`1. default layout 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
@@ -67,6 +71,10 @@ exports[`2. default layout without uri 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet={null}
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src={null}
@@ -105,6 +113,10 @@ exports[`3. default layout without aspect ratio 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
@@ -143,6 +155,10 @@ exports[`4. rounded image 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
@@ -181,6 +197,10 @@ exports[`5. with existing url params 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet="https://image.io?resize=1400&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://image.io?resize=1400"
@@ -219,6 +239,10 @@ exports[`6. with disabled placeholder 1`] = `
 <div>
   <div>
     <picture>
+      <source
+        srcSet="https://image.io?resize=1400&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://image.io?resize=1400"
