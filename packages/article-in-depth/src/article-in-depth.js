@@ -53,9 +53,6 @@ class ArticlePage extends Component {
             {...getLeadAsset(article)}
             renderCaption={({ caption }) => <CentredCaption {...caption} />}
             style={styles.leadAsset}
-            isWebPFormatActive={
-              articleDataFromRender && articleDataFromRender.isWebPFormatActive
-            }
           />
         )}
         {!removeTeaserContent && (

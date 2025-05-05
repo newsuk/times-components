@@ -6,6 +6,10 @@ exports[`1. page error 1`] = `
     <div>
       <div>
         <picture>
+          <source
+            srcSet="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png?format=webp"
+            type="image/webp"
+          />
           <img
             loading="lazy"
             src="2d7dffcd8e7f3cde3e959c364dc3d432"

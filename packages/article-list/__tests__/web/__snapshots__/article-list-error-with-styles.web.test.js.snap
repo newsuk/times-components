@@ -164,6 +164,7 @@ exports[`1. page error 1`] = `
         position="relative"
       >
         <picture>
+          <source />
           <img
             className="c3"
           />
