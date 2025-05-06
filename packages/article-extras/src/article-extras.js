@@ -5,7 +5,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import isExcludedPage from "@times-components/utils/src/excluded-paths";
+import { isExcludedPage } from "@times-components/utils";
 import {
   RecommendedFetch,
   Breadcrumb,

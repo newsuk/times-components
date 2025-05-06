@@ -47,7 +47,7 @@ import {
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import isExcludedPage from "@times-components/utils/src/excluded-paths";
+import { isExcludedPage } from "@times-components/utils";
 
 import {
   PrimaryImg,

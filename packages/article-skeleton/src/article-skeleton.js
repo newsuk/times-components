@@ -5,7 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import isExcludedPage from "@times-components/utils/src/excluded-paths";
+import { isExcludedPage } from "@times-components/utils";
 import {
   TrackingContextProvider,
   WelcomeBanner,
