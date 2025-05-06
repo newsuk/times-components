@@ -47,6 +47,7 @@ import {
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
+import isExcludedPage from "@times-components/utils/src/excluded-paths";
 
 import {
   PrimaryImg,
@@ -69,17 +70,9 @@ import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
-const urlIncludesObituariesCategory = (contextUrl) => {
-  if (!contextUrl) {
-    return false;
-  }
-  const urlHasObituaries = contextUrl.includes("obituaries")
-  
-  return urlHasObituaries;
-};
 const hasDisabledAds = (id, contextUrl) => { 
   const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-  const result = disabledAds.includes(id) || urlIncludesObituariesCategory(contextUrl);
+  const result = disabledAds.includes(id) || isExcludedPage(contextUrl);
 
   return result;
 };
