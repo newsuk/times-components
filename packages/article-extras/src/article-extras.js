@@ -5,6 +5,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
+import isExcludedPage from "@times-components/utils/src/excluded-paths";
 import {
   RecommendedFetch,
   Breadcrumb,
@@ -63,7 +64,7 @@ const ArticleExtras = ({
   const parentCategoryArticles =
     (categorisedArticles && categorisedArticles.parentCategoryArticles) || null;
 
-  const isObituariesArticle = articleUrl.includes("obituaries")
+  const isExcludedArticlePath = isExcludedPage(articleUrl);
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
@@ -102,7 +103,7 @@ const ArticleExtras = ({
             />
           )}
       </div>
-     {!isObituariesArticle && <PromotedContentContainer>
+     {!isExcludedArticlePath && <PromotedContentContainer>
         <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
         <PromotedContentGrid>
           <PromotedContentAd id="advert-inarticle-native-1" />
