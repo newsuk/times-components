@@ -177,7 +177,7 @@ const ArticleSkeleton = ({
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
-    const isExcludedArticlePath = isExcludedPage(articleUrl);
+  const isExcludedArticlePath = isExcludedPage(articleUrl);
 
   const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
   const quizCategories = ["culture", "life-style"];
@@ -360,9 +360,11 @@ const ArticleSkeleton = ({
             <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
           ) : (
             <Fragment>
-              {!isExcludedArticlePath && <HeaderAdContainer key="headerAd">
-                <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>}
+              {!isExcludedArticlePath && (
+                <HeaderAdContainer key="headerAd">
+                  <AdContainer slotName="header" style={styles.adMarginStyle} />
+                </HeaderAdContainer>
+              )}
               <MainContainer>
                 <WelcomeBanner />
                 {!!zephrDivs && (
