@@ -7,13 +7,13 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 
 import Head from "../../src/head";
 import articleFixture, {
   testFixture,
-  videoLeadAsset
+  videoLeadAsset,
 } from "../../fixtures/full-article";
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
@@ -22,7 +22,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style"
+  "style",
 ]);
 
 addSerializers(
@@ -39,11 +39,11 @@ const article = articleFixture({ ...testFixture });
 const videoArticle = articleFixture({
   ...testFixture,
   hasVideo: true,
-  leadAsset: videoLeadAsset()
+  leadAsset: videoLeadAsset(),
 });
 const standardArticleWithInlineVideo = articleFixture({
   ...testFixture,
-  hasVideo: true
+  hasVideo: true,
 });
 
 const paidContentClassName = "class-name";
@@ -82,7 +82,7 @@ describe("Head", () => {
   it("outputs correct metadata when syndicated article", () => {
     const syndicatedArticle = {
       ...article,
-      id: "37a19ac4-1cbb-11ee-8198-bf96b6365670"
+      id: "37a19ac4-1cbb-11ee-8198-bf96b6365670",
     };
     const testRenderer = TestRenderer.create(
       <Head
@@ -136,7 +136,7 @@ describe("Head", () => {
                 jobTitle: "Asia Editor",
                 twitter: "dicklp",
                 slug: "richard-lloyd-parry",
-                name: "Richard Lloyd Parry"
+                name: "Richard Lloyd Parry",
               },
               byline: [
                 {
@@ -146,16 +146,16 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
+                        value: "Oliver Wright",
+                      },
+                    },
                   ],
                   attributes: {
-                    slug: "oliver-wright"
-                  }
-                }
+                    slug: "oliver-wright",
+                  },
+                },
               ],
-              image: null
+              image: null,
             },
             {
               __typename: "TextByline",
@@ -167,13 +167,13 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: ", Policy Editor | "
-                      }
-                    }
-                  ]
-                }
+                        value: ", Policy Editor | ",
+                      },
+                    },
+                  ],
+                },
               ],
-              image: null
+              image: null,
             },
             {
               __typename: "AuthorByline",
@@ -183,7 +183,7 @@ describe("Head", () => {
                 jobTitle: "Asia Editor",
                 twitter: "dicklp",
                 slug: "richard-lloyd-parry",
-                name: "Richard Lloyd Parry"
+                name: "Richard Lloyd Parry",
               },
               byline: [
                 {
@@ -193,16 +193,16 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: "Tom Knowles"
-                      }
-                    }
+                        value: "Tom Knowles",
+                      },
+                    },
                   ],
                   attributes: {
-                    slug: "tom-knowles"
-                  }
-                }
+                    slug: "tom-knowles",
+                  },
+                },
               ],
-              image: null
+              image: null,
             },
             {
               __typename: "TextByline",
@@ -214,15 +214,15 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: ", Technology Correspondent"
-                      }
-                    }
-                  ]
-                }
+                        value: ", Technology Correspondent",
+                      },
+                    },
+                  ],
+                },
               ],
-              image: null
-            }
-          ]
+              image: null,
+            },
+          ],
         }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -236,14 +236,14 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         breadcrumbs={[
-            {
-                title: "Sport",
-                url: "/sport"
-            },
-            {
-                title: "Rugby union",
-                url: "/sport/rugby-union"
-            }
+          {
+            title: "Sport",
+            url: "/sport",
+          },
+          {
+            title: "Rugby union",
+            url: "/sport/rugby-union",
+          },
         ]}
         article={{
           tiles: [
@@ -253,11 +253,11 @@ describe("Head", () => {
                   sections: [
                     {
                       id: "e0313ff2-5180-4ef1-a3dd-e6db63e21647",
-                      title: "Sport"
-                    }
-                  ]
-                }
-              ]
+                      title: "Sport",
+                    },
+                  ],
+                },
+              ],
             },
             {
               slices: [
@@ -265,13 +265,13 @@ describe("Head", () => {
                   sections: [
                     {
                       id: "a532cd03-8c03-4d91-8f66-9b937a5dff42",
-                      title: "Sport"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+                      title: "Sport",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         }}
       />
     );
@@ -292,7 +292,7 @@ describe("Head", () => {
                 jobTitle: "Asia Editor",
                 twitter: "twitterusername",
                 slug: "richard-lloyd-parry",
-                name: "Richard Lloyd Parry"
+                name: "Richard Lloyd Parry",
               },
               byline: [
                 {
@@ -302,18 +302,18 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
+                        value: "Oliver Wright",
+                      },
+                    },
                   ],
                   attributes: {
-                    slug: "oliver-wright"
-                  }
-                }
+                    slug: "oliver-wright",
+                  },
+                },
               ],
-              image: null
-            }
-          ]
+              image: null,
+            },
+          ],
         }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -337,7 +337,7 @@ describe("Head", () => {
                 jobTitle: "Asia Editor",
                 twitter: "",
                 slug: "richard-lloyd-parry",
-                name: "Richard Lloyd Parry"
+                name: "Richard Lloyd Parry",
               },
               byline: [
                 {
@@ -347,18 +347,18 @@ describe("Head", () => {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
+                        value: "Oliver Wright",
+                      },
+                    },
                   ],
                   attributes: {
-                    slug: "oliver-wright"
-                  }
-                }
+                    slug: "oliver-wright",
+                  },
+                },
               ],
-              image: null
-            }
-          ]
+              image: null,
+            },
+          ],
         }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -373,7 +373,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          bylines: []
+          bylines: [],
         }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -386,7 +386,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          bylines: null
+          bylines: null,
         }}
         articleUrl={article.url}
         logoUrl={logoUrl}
@@ -414,7 +414,7 @@ describe("Head", () => {
         article={{
           ...article,
           headline: null,
-          shortHeadline: "short headline"
+          shortHeadline: "short headline",
         }}
         articleUrl={article.url}
       />
@@ -431,7 +431,7 @@ describe("Head", () => {
         article={{
           ...article,
           headline: null,
-          shortHeadline: null
+          shortHeadline: null,
         }}
         articleUrl={article.url}
       />
@@ -453,35 +453,35 @@ describe("Head", () => {
                 {
                   sections: [
                     {
-                      title: "News"
-                    }
-                  ]
-                }
-              ]
+                      title: "News",
+                    },
+                  ],
+                },
+              ],
             },
             {
               slices: [
                 {
                   sections: [
                     {
-                      title: "Comment"
-                    }
-                  ]
-                }
-              ]
+                      title: "Comment",
+                    },
+                  ],
+                },
+              ],
             },
             {
               slices: [
                 {
                   sections: [
                     {
-                      title: "Foreign"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+                      title: "Foreign",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         }}
         articleUrl={article.url}
       />
@@ -503,13 +503,13 @@ describe("Head", () => {
                 {
                   sections: [
                     {
-                      title: "News"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+                      title: "News",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         }}
         articleUrl={article.url}
       />
@@ -531,13 +531,13 @@ describe("Head", () => {
                 {
                   sections: [
                     {
-                      title: "News"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+                      title: "News",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         }}
         articleUrl={article.url}
       />
@@ -553,7 +553,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          tiles: null
+          tiles: null,
         }}
         articleUrl={article.url}
       />
@@ -573,18 +573,18 @@ describe("Head", () => {
             {
               slices: [
                 {
-                  sections: []
-                }
-              ]
+                  sections: [],
+                },
+              ],
             },
             {
               slices: [
                 {
-                  sections: []
-                }
-              ]
-            }
-          ]
+                  sections: [],
+                },
+              ],
+            },
+          ],
         }}
         articleUrl={article.url}
       />
@@ -600,7 +600,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          publicationName: "SUNDAYTIMES"
+          publicationName: "SUNDAYTIMES",
         }}
         articleUrl={article.url}
       />
@@ -616,7 +616,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          publicationName: "TIMES"
+          publicationName: "TIMES",
         }}
         articleUrl={article.url}
       />
@@ -632,7 +632,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          bylines: null
+          bylines: null,
         }}
         articleUrl={article.url}
       />
@@ -656,7 +656,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          descriptionMarkup: null
+          descriptionMarkup: null,
         }}
         articleUrl={article.url}
       />
@@ -678,7 +678,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          descriptionMarkup: []
+          descriptionMarkup: [],
         }}
         articleUrl={article.url}
       />
@@ -714,7 +714,7 @@ describe("Head", () => {
       <Head
         article={{
           ...article,
-          leadAsset: null
+          leadAsset: null,
         }}
         articleUrl={article.url}
       />
@@ -787,7 +787,7 @@ describe("Head", () => {
     { ratio: "3:2", crop: "crop32" },
     { ratio: "16:9", crop: "crop169" },
     { ratio: "4:5", crop: "crop45" },
-    { ratio: "1.25:1", crop: "crop1251" }
+    { ratio: "1.25:1", crop: "crop1251" },
   ];
 
   ratios.forEach(({ crop, ratio }) => {
@@ -800,10 +800,10 @@ describe("Head", () => {
       [crop]: {
         __typename: "Crop",
         ratio,
-        url: `https://${crop}.io`
+        url: `https://${crop}.io`,
       },
       id: "id-123",
-      title: "Some Title"
+      title: "Some Title",
     };
 
     it(`outputs thumbnail urls for a article for ${ratio} ratio`, () => {
@@ -837,7 +837,7 @@ describe("Head", () => {
         article={{
           ...videoArticle,
           descriptionMarkup: null,
-          seoDescription: "some seoDescription"
+          seoDescription: "some seoDescription",
         }}
         articleUrl={videoArticle.url}
         logoUrl={logoUrl}
@@ -861,39 +861,39 @@ describe("Head", () => {
                   value: "article-header",
                   attributes: {
                     headline: "headline",
-                    updated: "2022-04-20T20:30:00"
-                  }
-                }
+                    updated: "2022-04-20T20:30:00",
+                  },
+                },
               },
-              children: []
+              children: [],
             },
             {
               children: [
                 {
                   attributes: {
                     value:
-                      "Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections."
+                      "Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections.",
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "paragraph"
+              name: "paragraph",
             },
             {
               children: [
                 {
                   attributes: {
                     value:
-                      "The pro-Remain party announced its MEP hopefuls from almost 4"
+                      "The pro-Remain party announced its MEP hopefuls from almost 4",
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "paragraph"
-            }
-          ]
+              name: "paragraph",
+            },
+          ],
         }}
         articleUrl={article.url}
       />
