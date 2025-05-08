@@ -235,6 +235,16 @@ describe("Head", () => {
   it("outputs array of keywords in article schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
+        breadcrumbs={[
+            {
+                title: "Sport",
+                url: "/sport"
+            },
+            {
+                title: "Rugby union",
+                url: "/sport/rugby-union"
+            }
+        ]}
         article={{
           tiles: [
             {

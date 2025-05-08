@@ -8,53 +8,6 @@ import { appendToImageURL } from "@times-components/utils";
 
 const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
-// Get the section for an article, preferring it not to be News
-function reduceTilesToTitles(tiles, prefix = "") {
-  if (!tiles) {
-    return null;
-  }
-
-  const slices = tiles.reduce((acc, tile) => {
-    acc.push(...tile.slices);
-    return acc;
-  }, []);
-  const sections = slices.reduce((acc, slice) => {
-    acc.push(...slice.sections);
-    return acc;
-  }, []);
-
-  return sections.map(section => prefix + section.title);
-}
-function getSectionName(article) {
-  const { tiles } = article;
-  const titles = reduceTilesToTitles(tiles);
-
-  if (titles == null) {
-    return null;
-  }
-
-  const nonNews = titles.filter(title => title !== "News");
-
-  return nonNews.length ? nonNews[0] : "News";
-}
-function getSectionNameList(article) {
-  const { tiles } = article;
-  const titles = reduceTilesToTitles(tiles, "Section:");
-
-  if (titles == null) {
-    return null;
-  }
-
-  const uniqueSectionsArr = titles.filter(
-    (item, pos, self) => self.indexOf(item) === pos
-  );
-  const maxUniqueSections = 2;
-  const uniqueSections = uniqueSectionsArr
-    .slice(0, maxUniqueSections)
-    .toString();
-
-  return uniqueSections;
-}
 function getIsLiveBlogExpiryTime(articleFlags = []) {
   let time = "";
   if (articleFlags !== undefined) {
@@ -281,8 +234,6 @@ function Head({
     (Array.isArray(descriptionMarkup) && descriptionMarkup.length
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
-  const sectionname = getSectionName(article);
-  const sectionNameList = getSectionNameList(article);
   const thumbnailUrl =
     getThumbnailUrl(article) ||
     (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
@@ -294,6 +245,8 @@ function Head({
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
+  const primaryCategory = breadcrumbs.length > 0 ? breadcrumbs[0].title : "News";
+  const categoryLabels = breadcrumbs.length > 0 ? breadcrumbs.map(breadcrumb => `Section:${breadcrumb.title}`).toString() : "";
 
   const dateModified = updatedTime || datePublished;
 
@@ -353,8 +306,8 @@ function Head({
     thumbnailUrl,
     dateModified,
     author: authorSchema,
-    articleSection: sectionname,
-    keywords: sectionNameList,
+    articleSection: primaryCategory,
+    keywords: categoryLabels,
     url: articleUrl
   };
 
@@ -404,7 +357,7 @@ function Head({
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
-    articleSection: sectionname
+    articleSection: primaryCategory
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
