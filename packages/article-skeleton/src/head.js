@@ -245,8 +245,13 @@ function Head({
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
-  const primaryCategory = breadcrumbs.length > 0 ? breadcrumbs[0].title : "News";
-  const categoryLabels = breadcrumbs.length > 0 ? breadcrumbs.map(breadcrumb => `Section:${breadcrumb.title}`).toString() : "";
+  const primaryCategory =
+    breadcrumbs.length > 0 ? breadcrumbs[0].title : "News";
+  const categoryLabels = breadcrumbs.length > 0
+    ? breadcrumbs
+        .map((breadcrumb) => `Section:${breadcrumb.title}`)
+        .toString()
+    : "";
 
   const dateModified = updatedTime || datePublished;
 
