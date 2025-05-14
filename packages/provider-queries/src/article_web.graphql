@@ -137,6 +137,7 @@ fragment imageProps on Image {
 }
 
 fragment articleProps on Article {
+  associatedDesks
   bylines {
     ... on Byline {
       ... on AuthorByline {

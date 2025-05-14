@@ -4,7 +4,7 @@
     "window": true
   },
   "rules": {
-    "react-hooks/exhaustive-deps": false,
+    "react-hooks/exhaustive-deps": 0,
     "no-fallthrough": 1,
     "no-underscore-dangle": 0
   },

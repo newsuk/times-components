@@ -214,7 +214,7 @@ exports[`Head outputs array of keywords in article schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport","keywords":"Section:Sport,Section:Rugby union"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"News","keywords":"Section:Sport,Section:Rugby union"}
   </script>
   <script
     type="application/ld+json"
@@ -962,6 +962,64 @@ exports[`Head outputs seoDescription as video description for a video article wh
     type="application/ld+json"
   >
     {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"some seoDescription","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+  </script>
+  <script
+    defer={true}
+    src="https://platform.twitter.com/widgets.js"
+    type="text/javascript"
+  />
+</Helmet>
+`;
+
+exports[`Head outputs stringified array for associatedDesks in article schema 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    
+  </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
+    content=""
+    name="article:title"
+  />
+  <meta
+    name="article:publication"
+  />
+  <meta
+    content=""
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    property="og:url"
+  />
+  <meta
+    content=""
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    name="twitter:url"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport,Football","keywords":"Section:Sport,Section:Rugby union"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sport","item":"undefined/undefined"},{"@type":"ListItem","position":2,"name":"Rugby union","item":"undefined/undefined"}]}
   </script>
   <script
     defer={true}
