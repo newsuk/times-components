@@ -33,4 +33,3 @@ export {
   default as checkForSymphonyExperiment
 } from "./check-for-symphony-experiment";
 export { default as hasEntitlement } from "./get-entitlements";
-export { default as isExcludedPage } from "./excluded-paths";
