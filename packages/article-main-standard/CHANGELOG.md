@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.107.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.106.5...@times-components/article-main-standard@3.107.0) (2025-05-14)
+
+
+### Features
+
+* **TMG-2570:** Removed commenting entitlement ff ([#4137](https://github.com/newsuk/times-components/issues/4137)) ([0a16c12](https://github.com/newsuk/times-components/commit/0a16c1227840f1205166cf9774e9f9632fa8f866))
+
+
+
+
+
 ## [3.106.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.106.4...@times-components/article-main-standard@3.106.5) (2025-05-02)
 
 **Note:** Version bump only for package @times-components/article-main-standard
