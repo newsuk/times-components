@@ -246,12 +246,18 @@ function Head({
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
   const primaryCategory = article.associatedDesks
-    ? article.associatedDesks.toString()
+    ? article.associatedDesks[0]
     : "News";
-  const categoryLabels =
+  const deskSections = article.associatedDesks
+    ? article.associatedDesks.map(deskSection => `Section:${deskSection}`)
+    : [];
+  const breadcrumbSections =
     breadcrumbs.length > 0
-      ? breadcrumbs.map(breadcrumb => `Section:${breadcrumb.title}`).toString()
-      : "";
+      ? breadcrumbs.map(breadcrumb => `Section:${breadcrumb.title}`)
+      : [];
+  const keywordsArr = deskSections.concat(breadcrumbSections);
+  const categoryLabels =
+    keywordsArr.length > 0 ? [...new Set(keywordsArr)].toString() : "";
   const dateModified = updatedTime || datePublished;
 
   const defaultAuthorSchema = {

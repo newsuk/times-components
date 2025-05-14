@@ -1014,7 +1014,7 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport,Football","keywords":"Section:Sport,Section:Rugby union"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport","keywords":"Section:Sport,Section:Football,Section:Rugby union"}
   </script>
   <script
     type="application/ld+json"
