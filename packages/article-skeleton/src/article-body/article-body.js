@@ -42,7 +42,8 @@ import {
   SocialMediaEmbed,
   AffiliateLinkDisclaimer,
   CtaButton,
-  ArticleCard
+  ArticleCard,
+  PalinPolls
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -315,6 +316,15 @@ const renderers = ({
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
             <CtaButton attributes={elementAttr} />
+          </InteractiveContainer>
+        );
+      }
+
+      case "times-palin-polls": {
+        const elementAttr = element.attributes;
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <PalinPolls source={elementAttr.source} />
           </InteractiveContainer>
         );
       }
