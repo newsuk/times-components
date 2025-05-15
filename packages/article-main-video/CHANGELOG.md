@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.6.2...@times-components/article-main-video@1.7.0) (2025-05-15)
+
+
+### Features
+
+* **TMRA-277:** update NewsArticle schema ([#4134](https://github.com/newsuk/times-components/issues/4134)) ([5c9176f](https://github.com/newsuk/times-components/commit/5c9176f1c8453c5b11259ae6eb9aef12aff79b8a))
+
+
+
+
+
 ## [1.6.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.6.1...@times-components/article-main-video@1.6.2) (2025-05-14)
 
 **Note:** Version bump only for package @times-components/article-main-video

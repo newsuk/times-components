@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.99.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.98.0...@times-components/article-main-comment@2.99.0) (2025-05-15)
+
+
+### Features
+
+* **TMRA-277:** update NewsArticle schema ([#4134](https://github.com/newsuk/times-components/issues/4134)) ([5c9176f](https://github.com/newsuk/times-components/commit/5c9176f1c8453c5b11259ae6eb9aef12aff79b8a))
+
+
+### Reverts
+
+* Revert "feat(TMG-2570): Removed commenting entitlement ff (#4137)" (#4139) ([bc8de62](https://github.com/newsuk/times-components/commit/bc8de62911d34965c27492fde6f9420836971d2f)), closes [#4137](https://github.com/newsuk/times-components/issues/4137) [#4139](https://github.com/newsuk/times-components/issues/4139)
+
+
+
+
+
 # [2.98.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.97.5...@times-components/article-main-comment@2.98.0) (2025-05-14)
 
 

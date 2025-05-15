@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.165.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.164.1...@times-components/article-skeleton@1.165.0) (2025-05-15)
+
+
+### Features
+
+* **TMRA-277:** update NewsArticle schema ([#4134](https://github.com/newsuk/times-components/issues/4134)) ([5c9176f](https://github.com/newsuk/times-components/commit/5c9176f1c8453c5b11259ae6eb9aef12aff79b8a))
+
+
+
+
+
 ## [1.164.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.164.0...@times-components/article-skeleton@1.164.1) (2025-05-14)
 
 
