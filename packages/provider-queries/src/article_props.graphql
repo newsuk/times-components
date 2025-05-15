@@ -1,4 +1,5 @@
 fragment articleProps on Article {
+  associatedDesks
   bylines {
     ... on Byline {
       byline
