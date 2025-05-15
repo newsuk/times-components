@@ -46,4 +46,20 @@ const fetchPolygonData = async () => {
   }
 };
 
-export default fetchPolygonData;
+const fetchSidebarData = async () => {
+  try {
+    const response = await fetch(
+      "https://tnl-render.tools.news/production/config/puzzles/config.json"
+    );
+    if (!response.ok) {
+      throw new Error("Failed to fetch");
+    }
+    const data = await response.json();
+    return data[0].sidebar;
+  } catch (error) {
+    console.error("Error fetching sidebar data:", error);
+    return [];
+  }
+};
+
+export { fetchPolygonData, fetchSidebarData };
