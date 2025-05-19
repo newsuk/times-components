@@ -100,7 +100,7 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
         <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer height={80}>
+          <PlaceholderContainer isHeight>
             <Placeholder />
           </PlaceholderContainer>
         )}

@@ -10,7 +10,7 @@ import {
   initComponent
 } from '../../utils/config';
 
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaRugbyFixtures: React.FC<{
@@ -19,68 +19,89 @@ export const OptaRugbyFixtures: React.FC<{
   date_from: string;
   date_to: string;
   full_width?: boolean;
-}> = React.memo(({ season, competition, date_from, date_to, full_width }) => {
-  const ref = React.createRef<HTMLDivElement>();
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
+}> = React.memo(
+  ({
+    season,
+    competition,
+    date_from,
+    date_to,
+    full_width,
+    heightSm,
+    heightMd,
+    heightLg
+  }) => {
+    const ref = React.createRef<HTMLDivElement>();
 
-  const [isReady, setIsReady] = useState<boolean>(false);
+    const [isReady, setIsReady] = useState<boolean>(false);
+    const isHeight = heightSm || heightMd || heightLg;
 
-  useEffect(() => {
-    const sport = 'rugby';
+    useEffect(() => {
+      const sport = 'rugby';
 
-    initSettings();
-    initStyleSheet(sport);
+      initSettings();
+      initStyleSheet(sport);
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement(
-          'opta-widget',
-          {
-            sport,
-            widget: 'fixtures',
-            season,
-            competition,
-            date_from,
-            date_to,
-            live: true,
-            grouping: 'date',
-            show_grouping: true,
-            show_subgrouping: false,
-            show_crests: true,
-            date_format: 'dddd MMMM D YYYY',
-            breakpoints: 520
-          },
-          initElement('opta-widget', {
-            sport,
-            widget: 'match_summary',
-            season: '',
-            competition: '',
-            match: '',
-            live: true,
-            show_crests: true,
-            show_tries: true,
-            show_conversions: true,
-            show_penalties: true,
-            show_drop_goals: 'scored',
-            show_cards: 'all',
-            breakpoints: '520'
-          })
-        ).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement(
+            'opta-widget',
+            {
+              sport,
+              widget: 'fixtures',
+              season,
+              competition,
+              date_from,
+              date_to,
+              live: true,
+              grouping: 'date',
+              show_grouping: true,
+              show_subgrouping: false,
+              show_crests: true,
+              date_format: 'dddd MMMM D YYYY',
+              breakpoints: 520
+            },
+            initElement('opta-widget', {
+              sport,
+              widget: 'match_summary',
+              season: '',
+              competition: '',
+              match: '',
+              live: true,
+              show_crests: true,
+              show_tries: true,
+              show_conversions: true,
+              show_penalties: true,
+              show_drop_goals: 'scored',
+              show_cards: 'all',
+              breakpoints: '520'
+            })
+          ).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, []);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    }, []);
 
-  return (
-    <Container border={isReady} fullWidth={full_width}>
-      <WidgetContainer ref={ref} />
+    return (
+      <Container
+        border={isReady}
+        fullWidth={full_width}
+        heightSm={heightSm}
+        heightMd={heightMd}
+        heightLg={heightLg}
+      >
+        <WidgetContainer ref={ref} />
 
-      {!isReady && (
-        <PlaceholderContainer>
-          <Placeholder />
-        </PlaceholderContainer>
-      )}
-    </Container>
-  );
-});
+        {!isReady && (
+          <PlaceholderContainer isHeight={!!isHeight}>
+            <Placeholder />
+          </PlaceholderContainer>
+        )}
+      </Container>
+    );
+  }
+);

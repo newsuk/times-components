@@ -1,30 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
-
-export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
-  margin: 0 auto 20px auto;
-  background-color: ${colours.functional.backgroundPrimary};
-  border-top: ${({ border }) =>
-    border ? `2px solid ${colours.section.sport}` : 'none'};
-
-  a {
-    text-decoration: none;
-  }
-
-  @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
-  }
-`;
-
-export const PlaceholderContainer = styled.div`
-  position: relative;
-  height: 200px;
-`;
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const WidgetContainerBase = styled.div`
   .Opta {

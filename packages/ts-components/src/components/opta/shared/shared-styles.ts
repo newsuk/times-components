@@ -84,10 +84,12 @@ const flagStyles = Object.keys(countries).map(
 export const Container = styled.div<{
   border: boolean;
   fullWidth?: boolean;
-  $height?: number;
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
 }>`
-  ${({ $height }) =>
-    $height && `height: ${$height}px;`} margin: 0 auto 20px auto;
+  ${({ heightSm }) => heightSm && `height: ${heightSm}px;`}
+  margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
     border ? `2px solid ${colours.section.sport}` : 'none'};
@@ -98,17 +100,21 @@ export const Container = styled.div<{
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
+    ${({ heightMd }) => heightMd && `height: ${heightMd}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
+    ${({ heightLg }) => heightLg && `height: ${heightLg}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
 
-export const PlaceholderContainer = styled.div<{ height?: number }>`
+export const PlaceholderContainer = styled.div<{
+  isHeight: boolean;
+}>`
   position: relative;
-  height: ${({ height }) => height || '200'}px;
+  height: ${({ isHeight }) => (isHeight ? '100%' : '200px')};
 `;
 
 export const WidgetContainerBase = styled.div`

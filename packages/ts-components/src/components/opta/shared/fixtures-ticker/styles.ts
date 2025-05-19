@@ -4,7 +4,7 @@ import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 import { WidgetContainerBase } from '../shared-styles';
 
 export const Container = styled.div`
-  height: 80px;
+  height: 81px;
 `;
 
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
@@ -54,7 +54,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   .Opta-Scroll,
   .Opta-Window,
   .Opta-Room {
-    height: 80px !important;
+    height: 81px !important;
   }
 
   ${({ showButtons }) =>
@@ -196,7 +196,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   }
 
   .Opta-fixture {
-    height: 80px;
+    height: 81px;
     padding-inline: 4px;
     display: flex;
     flex-direction: column;

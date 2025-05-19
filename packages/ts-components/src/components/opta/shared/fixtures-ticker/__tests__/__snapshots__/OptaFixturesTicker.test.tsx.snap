@@ -3,14 +3,13 @@
 exports[`OptaFixturesTicker rugby should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     />
     <div
-      class="sc-bwzfXH uxFfR"
-      height="80"
+      class="sc-bwzfXH jStUkM"
     >
       Placeholder
     </div>
@@ -21,10 +20,10 @@ exports[`OptaFixturesTicker rugby should render correctly 1`] = `
 exports[`OptaFixturesTicker rugby should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     >
       <div>
         Widget
@@ -37,14 +36,13 @@ exports[`OptaFixturesTicker rugby should render correctly 2`] = `
 exports[`OptaFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     />
     <div
-      class="sc-bwzfXH uxFfR"
-      height="80"
+      class="sc-bwzfXH jStUkM"
     >
       Placeholder
     </div>
@@ -55,10 +53,10 @@ exports[`OptaFixturesTicker with flags should render correctly 1`] = `
 exports[`OptaFixturesTicker with flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     >
       <div>
         Widget
@@ -71,14 +69,13 @@ exports[`OptaFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     />
     <div
-      class="sc-bwzfXH uxFfR"
-      height="80"
+      class="sc-bwzfXH jStUkM"
     >
       Placeholder
     </div>
@@ -89,10 +86,10 @@ exports[`OptaFixturesTicker without flags should render correctly 1`] = `
 exports[`OptaFixturesTicker without flags should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     >
       <div>
         Widget
@@ -105,14 +102,13 @@ exports[`OptaFixturesTicker without flags should render correctly 2`] = `
 exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     />
     <div
-      class="sc-bwzfXH uxFfR"
-      height="80"
+      class="sc-bwzfXH jStUkM"
     >
       Placeholder
     </div>
@@ -123,10 +119,10 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
 exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje gQHnKF"
+      class="sc-htpNat sc-EHOje jWLyDH"
     >
       <div>
         Widget
@@ -139,14 +135,13 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
 exports[`OptaFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje cjTULJ"
+      class="sc-htpNat sc-EHOje jIIHoi"
     />
     <div
-      class="sc-bwzfXH uxFfR"
-      height="80"
+      class="sc-bwzfXH jStUkM"
     >
       Placeholder
     </div>
@@ -157,10 +152,10 @@ exports[`OptaFixturesTicker without flags should render correctly with isApp pro
 exports[`OptaFixturesTicker without flags should render correctly with isApp property 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb dBqngZ"
+    class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje cjTULJ"
+      class="sc-htpNat sc-EHOje jIIHoi"
     >
       <div>
         Widget

@@ -10,7 +10,7 @@ import {
   initComponent
 } from '../../utils/config';
 
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaRugbyStandings: React.FC<{
@@ -19,11 +19,24 @@ export const OptaRugbyStandings: React.FC<{
   default_nav?: string;
   navigation?: boolean;
   full_width?: boolean;
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
 }> = React.memo(
-  ({ season, competition, default_nav = 1, navigation, full_width }) => {
+  ({
+    season,
+    competition,
+    default_nav = 1,
+    navigation,
+    full_width,
+    heightSm,
+    heightMd,
+    heightLg
+  }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
+    const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(() => {
       const sport = 'rugby';
@@ -52,11 +65,17 @@ export const OptaRugbyStandings: React.FC<{
     }, []);
 
     return (
-      <Container border={isReady} fullWidth={full_width}>
+      <Container
+        border={isReady}
+        fullWidth={full_width}
+        heightSm={heightSm}
+        heightMd={heightMd}
+        heightLg={heightLg}
+      >
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer>
+          <PlaceholderContainer isHeight={!!isHeight}>
             <Placeholder />
           </PlaceholderContainer>
         )}
