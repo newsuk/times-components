@@ -29,6 +29,9 @@ export const OptaFootballFixturesTournament: React.FC<{
   hide_matchday?: boolean;
   columns?: boolean;
   full_width?: boolean;
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
 }> = React.memo(
   ({
     season,
@@ -43,7 +46,10 @@ export const OptaFootballFixturesTournament: React.FC<{
     hide_matchday,
     show_title = true,
     columns = true,
-    full_width
+    full_width,
+    heightSm,
+    heightMd,
+    heightLg
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
@@ -104,7 +110,14 @@ export const OptaFootballFixturesTournament: React.FC<{
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
-      <Container border={isReady} fullWidth={full_width} className={classes}>
+      <Container
+        border={isReady}
+        fullWidth={full_width}
+        className={classes}
+        heightSm={heightSm}
+        heightMd={heightMd}
+        heightLg={heightLg}  
+      >
         <WidgetContainer
           ref={ref}
           isNationalComp={isNationalComp}
@@ -113,7 +126,7 @@ export const OptaFootballFixturesTournament: React.FC<{
         />
 
         {!isReady && (
-          <PlaceholderContainer>
+          <PlaceholderContainer isHeight>
             <Placeholder />
           </PlaceholderContainer>
         )}

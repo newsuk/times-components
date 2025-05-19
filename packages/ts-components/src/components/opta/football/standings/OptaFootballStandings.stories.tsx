@@ -19,7 +19,7 @@ const showcase = {
     },
     {
       component: () => (
-        <OptaFootballStandings season="2024" competition="10" height={1057} />
+        <OptaFootballStandings season="2024" competition="10" heightSm={1057} />
       ),
       name: 'Standings (with height)',
       type: 'story'

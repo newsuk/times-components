@@ -23,7 +23,9 @@ export const OptaFootballPlayerStats: React.FC<{
   hide_zeroes?: boolean;
   show_title?: boolean;
   full_width?: boolean;
-  height?: number;
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
 }> = React.memo(
   ({
     season,
@@ -33,8 +35,10 @@ export const OptaFootballPlayerStats: React.FC<{
     show_title = true,
     visible_categories,
     classes,
-    height
-  }) => {
+    heightSm,
+    heightMd,
+    heightLg
+    }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
@@ -84,12 +88,14 @@ export const OptaFootballPlayerStats: React.FC<{
         border={isReady}
         fullWidth={full_width}
         className={classes}
-        $height={height}
+        heightSm={heightSm}
+        heightMd={heightMd}
+        heightLg={heightLg}
       >
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer height={height}>
+          <PlaceholderContainer isHeight>
             <Placeholder />
           </PlaceholderContainer>
         )}

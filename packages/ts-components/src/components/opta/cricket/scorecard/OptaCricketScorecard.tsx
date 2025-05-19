@@ -9,16 +9,24 @@ import {
   initElement,
   initComponent
 } from '../../utils/config';
-
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaCricketScorecard: React.FC<{
   competition: string;
   match: string;
   full_width?: boolean;
-  height?: number;
-}> = React.memo(({ competition, match, full_width, height }) => {
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
+}> = React.memo(({
+    competition,
+    match,
+    full_width,
+    heightSm,
+    heightMd,
+    heightLg
+  }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -69,11 +77,17 @@ export const OptaCricketScorecard: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady} fullWidth={full_width} $height={height}>
+    <Container
+      border={isReady}
+      fullWidth={full_width}
+      heightSm={heightSm}
+      heightMd={heightMd}
+      heightLg={heightLg}
+    >
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer height={height}>
+        <PlaceholderContainer isHeight>
           <Placeholder />
         </PlaceholderContainer>
       )}

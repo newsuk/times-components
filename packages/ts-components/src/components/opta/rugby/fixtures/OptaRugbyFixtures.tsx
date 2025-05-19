@@ -10,7 +10,7 @@ import {
   initComponent
 } from '../../utils/config';
 
-import { Container, PlaceholderContainer } from '../shared-styles';
+import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
 export const OptaRugbyFixtures: React.FC<{
@@ -19,7 +19,19 @@ export const OptaRugbyFixtures: React.FC<{
   date_from: string;
   date_to: string;
   full_width?: boolean;
-}> = React.memo(({ season, competition, date_from, date_to, full_width }) => {
+  heightSm?: number;
+  heightMd?: number;
+  heightLg?: number;
+}> = React.memo(({
+  season,
+  competition,
+  date_from,
+  date_to,
+  full_width,
+  heightSm,
+  heightMd,
+  heightLg
+}) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -73,11 +85,17 @@ export const OptaRugbyFixtures: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady} fullWidth={full_width}>
+    <Container
+      border={isReady}
+      fullWidth={full_width}
+      heightSm={heightSm}
+      heightMd={heightMd}
+      heightLg={heightLg}
+    >
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer>
+        <PlaceholderContainer isHeight>
           <Placeholder />
         </PlaceholderContainer>
       )}
