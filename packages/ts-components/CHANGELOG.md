@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.129.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.5...@times-components/ts-components@1.129.6) (2025-05-19)
+
+
+### Bug Fixes
+
+* **TMC-500:** Implement & fix Palin Polls component ([#4135](https://github.com/newsuk/times-components/issues/4135)) ([724ff29](https://github.com/newsuk/times-components/commit/724ff29bdc351c1d7127c36bf68165fa6f824451))
+
+
+
+
+
 ## [1.129.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.4...@times-components/ts-components@1.129.5) (2025-05-15)
 
 **Note:** Version bump only for package @times-components/ts-components
