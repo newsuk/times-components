@@ -43,6 +43,7 @@ export const OptaFootballPlayerStats: React.FC<{
 
     const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition);
+    const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(
       () => {
@@ -95,7 +96,7 @@ export const OptaFootballPlayerStats: React.FC<{
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer isHeight>
+          <PlaceholderContainer isHeight={!!isHeight}>
             <Placeholder />
           </PlaceholderContainer>
         )}

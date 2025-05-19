@@ -9,7 +9,7 @@ exports[`OptaFootballStandings should render correctly 1`] = `
       class="sc-htpNat sc-bxivhb gJKBih team-flags"
     />
     <div
-      class="sc-bwzfXH jStUkM"
+      class="sc-bwzfXH kVYHKf"
     >
       Placeholder
     </div>
@@ -42,7 +42,7 @@ exports[`OptaFootballStandings should render correctly, with columns 1`] = `
       class="sc-htpNat sc-bxivhb jPAjPs team-flags"
     />
     <div
-      class="sc-bwzfXH jStUkM"
+      class="sc-bwzfXH kVYHKf"
     >
       Placeholder
     </div>

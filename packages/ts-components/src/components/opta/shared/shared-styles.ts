@@ -111,7 +111,7 @@ export const Container = styled.div<{
 `;
 
 export const PlaceholderContainer = styled.div<{ 
-  isHeight?: boolean;
+  isHeight: boolean;
  }>`
   position: relative;
   height: ${({ isHeight }) => isHeight ? '100%' : '200px'};

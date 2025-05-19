@@ -36,6 +36,8 @@ export const OptaFootballFixtures: React.FC<{
 
   const [isReady, setIsReady] = useState<boolean>(false);
 
+  const isHeight = heightSm || heightMd || heightLg;
+
   useEffect(() => {
     const sport = 'football';
 
@@ -91,7 +93,7 @@ export const OptaFootballFixtures: React.FC<{
       <WidgetContainer ref={ref} />
 
       {!isReady && (
-        <PlaceholderContainer isHeight>
+        <PlaceholderContainer isHeight={!!isHeight}>
           <Placeholder />
         </PlaceholderContainer>
       )}
