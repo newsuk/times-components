@@ -117,7 +117,7 @@ export const OptaFootballFixturesTournament: React.FC<{
         className={classes}
         heightSm={heightSm}
         heightMd={heightMd}
-        heightLg={heightLg}  
+        heightLg={heightLg}
       >
         <WidgetContainer
           ref={ref}

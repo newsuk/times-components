@@ -40,7 +40,7 @@ export const OptaFootballStandings: React.FC<{
     heightSm,
     heightMd,
     heightLg
-    }) => {
+  }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
@@ -84,7 +84,7 @@ export const OptaFootballStandings: React.FC<{
         className={classes}
         heightSm={heightSm}
         heightMd={heightMd}
-        heightLg={heightLg}  
+        heightLg={heightLg}
       >
         <WidgetContainer ref={ref} columns={columns} />
 

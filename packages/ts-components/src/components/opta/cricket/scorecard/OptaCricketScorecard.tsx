@@ -19,80 +19,75 @@ export const OptaCricketScorecard: React.FC<{
   heightSm?: number;
   heightMd?: number;
   heightLg?: number;
-}> = React.memo(({
-    competition,
-    match,
-    full_width,
-    heightSm,
-    heightMd,
-    heightLg
-  }) => {
-  const ref = React.createRef<HTMLDivElement>();
+}> = React.memo(
+  ({ competition, match, full_width, heightSm, heightMd, heightLg }) => {
+    const ref = React.createRef<HTMLDivElement>();
 
-  const [isReady, setIsReady] = useState<boolean>(false);
+    const [isReady, setIsReady] = useState<boolean>(false);
 
-  const isHeight = heightSm || heightMd || heightLg;
+    const isHeight = heightSm || heightMd || heightLg;
 
-  useEffect(() => {
-    const sport = 'cricket';
+    useEffect(() => {
+      const sport = 'cricket';
 
-    initSettings();
-    initStyleSheet(sport);
+      initSettings();
+      initStyleSheet(sport);
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport,
-          widget: 'score_card',
-          season: '0',
-          competition,
-          match,
-          template: 'normal',
-          live: true,
-          show_match_header: true,
-          show_crests: true,
-          show_competition_name: true,
-          show_match_description: true,
-          show_date: true,
-          date_format: 'DD/MM/YYYY',
-          show_venue: true,
-          show_officials: false,
-          show_toss: false,
-          show_state_of_play: true,
-          navigation: 'tabs',
-          show_batting: true,
-          show_mins_batted: false,
-          show_fours: true,
-          show_sixes: true,
-          show_strike_rate: true,
-          show_bowling: true,
-          show_economy: true,
-          show_fow: true,
-          player_naming: 'full',
-          breakpoints: '520'
-        }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport,
+            widget: 'score_card',
+            season: '0',
+            competition,
+            match,
+            template: 'normal',
+            live: true,
+            show_match_header: true,
+            show_crests: true,
+            show_competition_name: true,
+            show_match_description: true,
+            show_date: true,
+            date_format: 'DD/MM/YYYY',
+            show_venue: true,
+            show_officials: false,
+            show_toss: false,
+            show_state_of_play: true,
+            navigation: 'tabs',
+            show_batting: true,
+            show_mins_batted: false,
+            show_fours: true,
+            show_sixes: true,
+            show_strike_rate: true,
+            show_bowling: true,
+            show_economy: true,
+            show_fow: true,
+            player_naming: 'full',
+            breakpoints: '520'
+          }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, []);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    }, []);
 
-  return (
-    <Container
-      border={isReady}
-      fullWidth={full_width}
-      heightSm={heightSm}
-      heightMd={heightMd}
-      heightLg={heightLg}
-    >
-      <WidgetContainer ref={ref} />
+    return (
+      <Container
+        border={isReady}
+        fullWidth={full_width}
+        heightSm={heightSm}
+        heightMd={heightMd}
+        heightLg={heightLg}
+      >
+        <WidgetContainer ref={ref} />
 
-      {!isReady && (
-        <PlaceholderContainer isHeight={!!isHeight}>
-          <Placeholder />
-        </PlaceholderContainer>
-      )}
-    </Container>
-  );
-});
+        {!isReady && (
+          <PlaceholderContainer isHeight={!!isHeight}>
+            <Placeholder />
+          </PlaceholderContainer>
+        )}
+      </Container>
+    );
+  }
+);

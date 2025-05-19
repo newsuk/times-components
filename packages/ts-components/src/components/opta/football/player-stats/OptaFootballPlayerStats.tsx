@@ -38,7 +38,7 @@ export const OptaFootballPlayerStats: React.FC<{
     heightSm,
     heightMd,
     heightLg
-    }) => {
+  }) => {
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);

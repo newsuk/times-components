@@ -88,7 +88,7 @@ export const Container = styled.div<{
   heightMd?: number;
   heightLg?: number;
 }>`
-  ${({ heightSm }) => heightSm && `height: ${heightSm}px;` }
+  ${({ heightSm }) => heightSm && `height: ${heightSm}px;`}
   margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
@@ -100,21 +100,21 @@ export const Container = styled.div<{
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
-    ${({ heightMd }) => heightMd && `height: ${heightMd}px;` }
+    ${({ heightMd }) => heightMd && `height: ${heightMd}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    ${({ heightLg }) => heightLg && `height: ${heightLg}px;` }
+    ${({ heightLg }) => heightLg && `height: ${heightLg}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
 
-export const PlaceholderContainer = styled.div<{ 
+export const PlaceholderContainer = styled.div<{
   isHeight: boolean;
- }>`
+}>`
   position: relative;
-  height: ${({ isHeight }) => isHeight ? '100%' : '200px'};
+  height: ${({ isHeight }) => (isHeight ? '100%' : '200px')};
 `;
 
 export const WidgetContainerBase = styled.div`
