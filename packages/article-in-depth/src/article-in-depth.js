@@ -81,7 +81,8 @@ class ArticlePage extends Component {
       commentingConfig,
       articleDataFromRender,
       isPreview,
-      swgProductId
+      swgProductId,
+      removeTeaserContent
     } = this.props;
 
     if (error || isLoading) {
@@ -100,6 +101,7 @@ class ArticlePage extends Component {
         articleDataFromRender={articleDataFromRender}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        removeTeaserContent={removeTeaserContent}
       />
     );
   }
