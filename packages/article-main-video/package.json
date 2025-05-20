@@ -5,10 +5,10 @@
   "main": "dist/article-main-video",
   "dev": "src/article-main-video",
   "scripts": {
-    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,@times-components/article-comments,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck --verbose",
     "test:web": "TZ=UTC jest --config='./__tests__/jest.config.js'",
     "test:web:updatesnapshot": "TZ=UTC yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
