@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.130.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.6...@times-components/ts-components@1.130.0) (2025-05-20)
+
+
+### Features
+
+* **TMRA-309:** update height parameters ([#4141](https://github.com/newsuk/times-components/issues/4141)) ([bff182e](https://github.com/newsuk/times-components/commit/bff182efb665fe805c0b9f571fa54c790bd61c4b))
+
+
+### Reverts
+
+* Revert "fix(TMC-500): Implement & fix Palin Polls component (#4135)" (#4142) ([62a0722](https://github.com/newsuk/times-components/commit/62a07228627816229dcb29e01bbe203ecfaa7237)), closes [#4135](https://github.com/newsuk/times-components/issues/4135) [#4142](https://github.com/newsuk/times-components/issues/4142)
+
+
+
+
+
 ## [1.129.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.129.5...@times-components/ts-components@1.129.6) (2025-05-19)
 
 

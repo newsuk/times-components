@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.165.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.165.1...@times-components/article-skeleton@1.165.2) (2025-05-20)
+
+
+### Reverts
+
+* Revert "fix(TMC-500): Implement & fix Palin Polls component (#4135)" (#4142) ([62a0722](https://github.com/newsuk/times-components/commit/62a07228627816229dcb29e01bbe203ecfaa7237)), closes [#4135](https://github.com/newsuk/times-components/issues/4135) [#4142](https://github.com/newsuk/times-components/issues/4142)
+
+
+
+
+
 ## [1.165.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.165.0...@times-components/article-skeleton@1.165.1) (2025-05-19)
 
 
