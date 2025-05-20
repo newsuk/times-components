@@ -46,7 +46,7 @@ import styles from "./styles/article-body/index";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
-import { removeContentFromTeaserPage } from "./contentModifiers/teaser-content";
+import removeContentFromTeaserPage from "./contentModifiers/teaser-content";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";

@@ -1,4 +1,4 @@
-export const removeContentFromTeaserPage = removeTeaserContent => children => {
+const removeContentFromTeaserPage = removeTeaserContent => children => {
   if (removeTeaserContent) {
     if (children.find(child => child.name === "paywall") === undefined) {
       return [];
@@ -7,3 +7,5 @@ export const removeContentFromTeaserPage = removeTeaserContent => children => {
 
   return children;
 };
+
+export default removeContentFromTeaserPage;
