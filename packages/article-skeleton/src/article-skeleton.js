@@ -5,7 +5,6 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { isExcludedPage } from "@times-components/utils";
 import {
   TrackingContextProvider,
   WelcomeBanner,
@@ -173,13 +172,12 @@ const ArticleSkeleton = ({
     breadcrumbs,
     categorisedArticles,
     deckApiUrl,
-    isWebPFormatActive
+    isWebPFormatActive,
+    isExcludedFromAdsPathFromServer
   } = articleDataFromRender || {};
 
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
-
-    const isExcludedArticlePath = isExcludedPage(articleUrl);
 
   const categoryPath = url ? url.split("/").filter(Boolean)[0] || null : null;
   const quizCategories = ["culture", "life-style"];
@@ -363,7 +361,7 @@ const ArticleSkeleton = ({
             <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
           ) : (
             <Fragment>
-              {!isExcludedArticlePath && <HeaderAdContainer key="headerAd">
+              {!isExcludedFromAdsPathFromServer && <HeaderAdContainer key="headerAd">
                 <AdContainer slotName="header" style={styles.adMarginStyle} />
               </HeaderAdContainer>}
               <MainContainer>

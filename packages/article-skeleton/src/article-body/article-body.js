@@ -47,7 +47,6 @@ import {
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import { isExcludedPage } from "@times-components/utils";
 
 import {
   PrimaryImg,
@@ -70,9 +69,9 @@ import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
-const hasDisabledAds = (id, contextUrl) => { 
+const hasDisabledAds = (id, isExcludedFromAdsPathFromServer) => { 
   const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-  const result = disabledAds.includes(id) || isExcludedPage(contextUrl);
+  const result = disabledAds.includes(id) || isExcludedFromAdsPathFromServer;
 
   return result;
 };
@@ -117,11 +116,12 @@ const renderers = ({
   articleId,
   deckApiUrl,
   isWebPFormatActive,
-  contextUrl
+  contextUrl,
+  isExcludedFromAdsPathFromServer
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return hasDisabledAds(articleId, contextUrl) ? null : (
+    return hasDisabledAds(articleId, isExcludedFromAdsPathFromServer) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -129,7 +129,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return hasDisabledAds(articleId, contextUrl) ? null : (
+    return hasDisabledAds(articleId, isExcludedFromAdsPathFromServer) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -137,7 +137,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return hasDisabledAds(articleId, contextUrl) ? null : (
+    return hasDisabledAds(articleId, isExcludedFromAdsPathFromServer) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -145,7 +145,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return hasDisabledAds(articleId, contextUrl) ? null : (
+    return hasDisabledAds(articleId, isExcludedFromAdsPathFromServer) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -153,7 +153,7 @@ const renderers = ({
     );
   },
   inlineAd4(key) {
-    return hasDisabledAds(articleId, contextUrl) ? null : (
+    return hasDisabledAds(articleId, isExcludedFromAdsPathFromServer) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd4" />
@@ -690,6 +690,7 @@ const ArticleBody = ({
   id: articleId,
   deckApiUrl,
   isWebPFormatActive,
+  isExcludedFromAdsPathFromServer
 }) => 
      renderTrees(
       bodyContent.map(decorateAd({ contextUrl, section })),
@@ -705,7 +706,8 @@ const ArticleBody = ({
         articleHeadline,
         deckApiUrl,
         isWebPFormatActive,
-        contextUrl
+        contextUrl,
+        isExcludedFromAdsPathFromServer
       })
     )
   

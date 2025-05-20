@@ -5,7 +5,6 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { isExcludedPage } from "@times-components/utils";
 import {
   RecommendedFetch,
   Breadcrumb,
@@ -46,7 +45,8 @@ const ArticleExtras = ({
   topics,
   breadcrumbs,
   domainSpecificUrl,
-  isWebPFormatActive
+  isWebPFormatActive,
+  isExcludedFromAdsPathFromServer
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -64,7 +64,7 @@ const ArticleExtras = ({
   const parentCategoryArticles =
     (categorisedArticles && categorisedArticles.parentCategoryArticles) || null;
 
-  const isExcludedArticlePath = isExcludedPage(articleUrl);
+  const isExcludedFromAdsPathFromServer = isExcludedFromAdsPathFromServer(articleUrl);
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
@@ -103,7 +103,7 @@ const ArticleExtras = ({
             />
           )}
       </div>
-     {!isExcludedArticlePath && <PromotedContentContainer>
+     {!isExcludedFromAdsPathFromServer && <PromotedContentContainer>
         <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
         <PromotedContentGrid>
           <PromotedContentAd id="advert-inarticle-native-1" />
