@@ -154,23 +154,6 @@ export default [
   {
     name: "interactive",
     attributes: {
-      id: "0c013d2c-d157-476c-b732-bab81c1123c7",
-      display: "primary",
-      url:
-        "https://components.timesdev.tools/lib2/times-palin-polls-1.0.0/times-palin-polls.html",
-      element: {
-        value: "times-palin-polls",
-        attributes: {
-          source:
-            "PHNjcmlwdCBjbGFzcz0icGFsaW4tcG9sbCIgc3JjPSJodHRwczovL3d3dy50aGV0aW1lcy5jby51ay9wb2xsaW5nd2lkZ2V0cy92My93aWRnZXQuanM/cXVlc3Rpb25faWQ9OTIxNTMmZ2FtZT1wb2xsaW5nIj48L3NjcmlwdD4="
-        }
-      }
-    },
-    children: []
-  },
-  {
-    name: "interactive",
-    attributes: {
       id: "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
       display: "primary",
       url:

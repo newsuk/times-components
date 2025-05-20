@@ -128,9 +128,6 @@ export {
 export { CtaButton } from './components/cta-button/CtaButton';
 export { SocialMediaEmbed } from './components/social-embed/SocialMediaEmbed';
 
-// Palin Polls
-export { PalinPolls } from './components/palin-polls/PalinPolls';
-
 // Contexts
 export {
   useSocialEmbedsContext,
