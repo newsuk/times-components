@@ -64,8 +64,6 @@ const ArticleExtras = ({
   const parentCategoryArticles =
     (categorisedArticles && categorisedArticles.parentCategoryArticles) || null;
 
-  const isExcludedFromAdsPathFromServer = isExcludedFromAdsPathFromServer(articleUrl);
-
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
     isRecommendedActive,
