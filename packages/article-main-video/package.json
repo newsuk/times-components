@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-video",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "Main Video Article Template",
   "main": "dist/article-main-video",
   "dev": "src/article-main-video",
