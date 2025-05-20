@@ -29,6 +29,7 @@ export class TakeoverBailout extends Error {
 const Article = props => {
   const { article, onImagePress } = props;
   const { leadAsset, template, isPreview } = article || {};
+
   let { content } = article || {};
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
@@ -54,6 +55,9 @@ const Article = props => {
       template: article && article.template ? article.template : "mainstandard"
     }
   };
+
+  // eslint-disable-next-line no-console
+  console.log('newProps', newProps)
 
   return (
     <Responsive>
