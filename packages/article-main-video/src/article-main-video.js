@@ -218,7 +218,8 @@ class ArticlePage extends Component {
       isPreview,
       swgProductId,
       getFallbackThumbnailUrl169,
-      zephrDivs
+      zephrDivs,
+      removeTeaserContent
     } = this.props;
 
     if (error || isLoading) {
@@ -242,6 +243,7 @@ class ArticlePage extends Component {
           isPreview={isPreview}
           swgProductId={swgProductId}
           zephrDivs={zephrDivs}
+          removeTeaserContent={removeTeaserContent}
         />
       </ArticleMainVideoContainer>
     );

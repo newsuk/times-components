@@ -84,7 +84,8 @@ class ArticlePage extends Component {
       articleDataFromRender,
       paidContentClassName,
       isPreview,
-      swgProductId
+      swgProductId,
+      removeTeaserContent
     } = this.props;
 
     if (error || isLoading) {
@@ -104,6 +105,7 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        removeTeaserContent={removeTeaserContent}
       />
     );
   }
