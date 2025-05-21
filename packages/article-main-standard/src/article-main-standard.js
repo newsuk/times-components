@@ -16,7 +16,8 @@ import {
   HeaderContainer,
   HeaderTopContainer,
   LeadAsset,
-  MetaContainer
+  MetaContainer,
+  EmptyTeaserPadding
 } from "./styles/responsive";
 
 const renderCaption = ({ caption }) => (
@@ -53,6 +54,7 @@ class ArticlePage extends Component {
       <Fragment>
         <HeaderTopContainer>
           <HeaderContainer>
+            {removeTeaserContent && <EmptyTeaserPadding />}
             <ArticleHeader
               flags={expirableFlags}
               hasVideo={hasVideo}
