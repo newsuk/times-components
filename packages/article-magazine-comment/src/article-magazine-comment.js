@@ -21,7 +21,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, articleDataFromRender } = this.props;
+    const { article, articleDataFromRender, removeTeaserContent } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -58,15 +58,17 @@ class ArticlePage extends Component {
           standfirst={standfirst}
           updatedTime={updatedTime}
         />
-        <LeadAsset
-          {...getLeadAsset(article)}
-          getImageCrop={getStandardTemplateCrop}
-          renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          style={styles.leadAssetContainer}
-          isWebPFormatActive={
-            articleDataFromRender && articleDataFromRender.isWebPFormatActive
-          }
-        />
+        {!removeTeaserContent && (
+          <LeadAsset
+            {...getLeadAsset(article)}
+            getImageCrop={getStandardTemplateCrop}
+            renderCaption={({ caption }) => <CentredCaption {...caption} />}
+            style={styles.leadAssetContainer}
+            isWebPFormatActive={
+              articleDataFromRender && articleDataFromRender.isWebPFormatActive
+            }
+          />
+        )}
       </Fragment>
     );
   }

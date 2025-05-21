@@ -20,7 +20,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, articleDataFromRender } = this.props;
+    const { article, articleDataFromRender, removeTeaserContent } = this.props;
     const {
       backgroundColour,
       bylines,
@@ -48,23 +48,27 @@ class ArticlePage extends Component {
           textColour={textColour}
           updatedTime={updatedTime}
         />
-        <LeadAsset
-          {...getLeadAsset(article)}
-          renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          style={styles.leadAsset}
-          isWebPFormatActive={
-            articleDataFromRender && articleDataFromRender.isWebPFormatActive
-          }
-        />
-        <ArticleKeylineItem>
-          <Meta
-            backgroundColour={backgroundColour}
-            bylines={bylines}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-            textColour={textColour}
+        {!removeTeaserContent && (
+          <LeadAsset
+            {...getLeadAsset(article)}
+            renderCaption={({ caption }) => <CentredCaption {...caption} />}
+            style={styles.leadAsset}
+            isWebPFormatActive={
+              articleDataFromRender && articleDataFromRender.isWebPFormatActive
+            }
           />
-        </ArticleKeylineItem>
+        )}
+        {!removeTeaserContent && (
+          <ArticleKeylineItem>
+            <Meta
+              backgroundColour={backgroundColour}
+              bylines={bylines}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
+              textColour={textColour}
+            />
+          </ArticleKeylineItem>
+        )}
       </Fragment>
     );
   }
