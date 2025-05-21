@@ -69,13 +69,12 @@ import { StyledLi, StyledUl } from "../styles/article-body/article-list";
 const deckApiFallback =
   "https://editorial-tm.newsapis.co.uk/prod/deck-component-data-api";
 
-const hasDisabledAds = (id, isExcludedFromAdsPathFromServer) => { 
+const hasDisabledAds = (id, isExcludedFromAdsPathFromServer) => {
   const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
   const result = disabledAds.includes(id) || isExcludedFromAdsPathFromServer;
 
   return result;
 };
-
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -690,26 +689,25 @@ const ArticleBody = ({
   deckApiUrl,
   isWebPFormatActive,
   isExcludedFromAdsPathFromServer
-}) => 
-     renderTrees(
-      bodyContent.map(decorateAd({ contextUrl, section })),
-      renderers({
-        paidContentClassName,
-        template,
-        isPreview,
-        swgProductId,
-        inArticlePuffFlag,
-        isLiveOrBreaking,
-        articleId,
-        section,
-        articleHeadline,
-        deckApiUrl,
-        isWebPFormatActive,
-        contextUrl,
-        isExcludedFromAdsPathFromServer
-      })
-    )
-  
+}) =>
+  renderTrees(
+    bodyContent.map(decorateAd({ contextUrl, section })),
+    renderers({
+      paidContentClassName,
+      template,
+      isPreview,
+      swgProductId,
+      inArticlePuffFlag,
+      isLiveOrBreaking,
+      articleId,
+      section,
+      articleHeadline,
+      deckApiUrl,
+      isWebPFormatActive,
+      contextUrl,
+      isExcludedFromAdsPathFromServer
+    })
+  );
 
 ArticleBody.propTypes = {
   content: PropTypes.arrayOf(

@@ -362,9 +362,11 @@ const ArticleSkeleton = ({
             <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
           ) : (
             <Fragment>
-              {!isExcludedFromAdsPathFromServer && <HeaderAdContainer key="headerAd">
-                <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>}
+              {!isExcludedFromAdsPathFromServer && (
+                <HeaderAdContainer key="headerAd">
+                  <AdContainer slotName="header" style={styles.adMarginStyle} />
+                </HeaderAdContainer>
+              )}
               <MainContainer>
                 <WelcomeBanner />
                 {!!zephrDivs && (
@@ -490,8 +492,9 @@ const ArticleSkeleton = ({
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}
                           isWebPFormatActive={isWebPFormatActive}
-                        isExcludedFromAdsPathFromServer={isExcludedFromAdsPathFromServer}
-                        
+                          isExcludedFromAdsPathFromServer={
+                            isExcludedFromAdsPathFromServer
+                          }
                         />
                       )}
                     </LazyLoad>
