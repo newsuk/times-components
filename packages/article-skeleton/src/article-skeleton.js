@@ -212,6 +212,7 @@ const ArticleSkeleton = ({
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
       isWebPFormatActive={!!isWebPFormatActive}
+      isExcludedFromAdsPathFromServer={isExcludedFromAdsPathFromServer}
     />
   );
 
@@ -489,6 +490,8 @@ const ArticleSkeleton = ({
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}
                           isWebPFormatActive={isWebPFormatActive}
+                        isExcludedFromAdsPathFromServer={isExcludedFromAdsPathFromServer}
+                        
                         />
                       )}
                     </LazyLoad>

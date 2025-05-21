@@ -56,9 +56,6 @@ const Article = props => {
     }
   };
 
-  // eslint-disable-next-line no-console
-  console.log('newProps', newProps)
-
   return (
     <Responsive>
       <MessageManager delay={3000} scale={scales.medium}>

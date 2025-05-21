@@ -116,7 +116,6 @@ const renderers = ({
   articleId,
   deckApiUrl,
   isWebPFormatActive,
-  contextUrl,
   isExcludedFromAdsPathFromServer
 }) => ({
   ...coreRenderers,
