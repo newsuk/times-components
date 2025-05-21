@@ -117,11 +117,3 @@ export const EmailBannerContainer = styled.div`
     margin: auto;
   }
 `;
-
-export const EmptyTeaserPadding = styled.div`
-  padding-top: 10px;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    padding-top: 0;
-  }
-`;

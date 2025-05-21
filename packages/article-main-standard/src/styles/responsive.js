@@ -95,3 +95,11 @@ export const LeadAsset = styled(ArticleLeadAsset)`
     margin-right: auto;
   }
 `;
+
+export const EmptyTeaserPadding = styled.div`
+  padding-top: 10px;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    padding-top: 0;
+  }
+`;
