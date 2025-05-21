@@ -101,16 +101,18 @@ const ArticleExtras = ({
             />
           )}
       </div>
-     {!isExcludedFromAdsPathFromServer && <PromotedContentContainer>
-        <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
-        <PromotedContentGrid>
-          <PromotedContentAd id="advert-inarticle-native-1" />
-          <PromotedContentAd id="advert-inarticle-native-2" />
-          <PromotedContentSectionDivider />
-          <PromotedContentAd id="advert-inarticle-native-3" />
-          <PromotedContentAd id="advert-inarticle-native-4" />
-        </PromotedContentGrid>
-      </PromotedContentContainer> }
+      {!isExcludedFromAdsPathFromServer && (
+        <PromotedContentContainer>
+          <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
+          <PromotedContentGrid>
+            <PromotedContentAd id="advert-inarticle-native-1" />
+            <PromotedContentAd id="advert-inarticle-native-2" />
+            <PromotedContentSectionDivider />
+            <PromotedContentAd id="advert-inarticle-native-3" />
+            <PromotedContentAd id="advert-inarticle-native-4" />
+          </PromotedContentGrid>
+        </PromotedContentContainer>
+      )}
     </>
   );
   return (
