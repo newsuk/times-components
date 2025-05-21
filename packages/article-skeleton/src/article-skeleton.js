@@ -40,7 +40,8 @@ import {
   SidebarWarpper,
   ArticleWrapper,
   ArticleContent,
-  EmailBannerContainer
+  EmailBannerContainer,
+  EmptyTeaserPadding
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -365,6 +366,7 @@ const ArticleSkeleton = ({
               </HeaderAdContainer>
               <MainContainer>
                 <WelcomeBanner />
+                {removeTeaserContent && <EmptyTeaserPadding />}
                 {!!zephrDivs && (
                   <StaticContent
                     html={
