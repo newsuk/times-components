@@ -464,32 +464,34 @@ const ArticleSkeleton = ({
                       </PaywallPortal>
                     </ArticleContent>
                   </ArticleWrapper>
-                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                    {({ observed, registerNode }) => (
-                      <ArticleExtras
-                        analyticsStream={analyticsStream}
-                        articleId={articleId}
-                        articleHeadline={headline}
-                        articleUrl={articleUrl}
-                        section={section}
-                        publishedTime={publishedTime}
-                        savingEnabled={savingEnabled}
-                        sharingEnabled={sharingEnabled}
-                        commentsEnabled={commentsEnabled}
-                        registerNode={registerNode}
-                        relatedArticleSlice={relatedArticleSlice}
-                        categorisedArticles={categorisedArticles}
-                        relatedArticlesVisible={
-                          !!observed.get("related-articles")
-                        }
-                        commentingConfig={commentingConfig}
-                        topics={topics}
-                        breadcrumbs={breadcrumbs}
-                        domainSpecificUrl={domainSpecificUrl}
-                        isWebPFormatActive={isWebPFormatActive}
-                      />
-                    )}
-                  </LazyLoad>
+                  {!removeTeaserContent && (
+                    <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                      {({ observed, registerNode }) => (
+                        <ArticleExtras
+                          analyticsStream={analyticsStream}
+                          articleId={articleId}
+                          articleHeadline={headline}
+                          articleUrl={articleUrl}
+                          section={section}
+                          publishedTime={publishedTime}
+                          savingEnabled={savingEnabled}
+                          sharingEnabled={sharingEnabled}
+                          commentsEnabled={commentsEnabled}
+                          registerNode={registerNode}
+                          relatedArticleSlice={relatedArticleSlice}
+                          categorisedArticles={categorisedArticles}
+                          relatedArticlesVisible={
+                            !!observed.get("related-articles")
+                          }
+                          commentingConfig={commentingConfig}
+                          topics={topics}
+                          breadcrumbs={breadcrumbs}
+                          domainSpecificUrl={domainSpecificUrl}
+                          isWebPFormatActive={isWebPFormatActive}
+                        />
+                      )}
+                    </LazyLoad>
+                  )}
                   {!!zephrDivs && (
                     <StaticContent
                       html={
