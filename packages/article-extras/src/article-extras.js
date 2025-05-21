@@ -171,7 +171,8 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired,
-  isWebPFormatActive: PropTypes.bool
+  isWebPFormatActive: PropTypes.bool,
+  isExcludedFromAdsPathFromServer: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
@@ -179,7 +180,8 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   breadcrumbs: [],
-  isWebPFormatActive: false
+  isWebPFormatActive: false,
+  isExcludedFromAdsPathFromServer: false
 };
 
 export default ArticleExtras;
