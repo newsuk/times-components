@@ -306,8 +306,6 @@ exports[`1. an article 1`] = `
             slotName="videoAd1"
           />
         </div>
-      </div>
-      <div>
         <div>
           <span>
             Advertisement
@@ -622,8 +620,6 @@ exports[`4. should show topics when logged in or shared 1`] = `
             slotName="videoAd1"
           />
         </div>
-      </div>
-      <div>
         <div>
           <p>
             Comments have not been enabled for this article
@@ -639,8 +635,6 @@ exports[`4. should show topics when logged in or shared 1`] = `
             .
           </p>
         </div>
-      </div>
-      <div>
         <div>
           <span>
             Advertisement

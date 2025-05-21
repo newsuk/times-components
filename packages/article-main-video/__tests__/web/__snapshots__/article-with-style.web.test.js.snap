@@ -673,12 +673,6 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c36 {
-    max-width: 1144px;
-  }
-}
-
-@media (min-width:1024px) {
   .c1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1160,37 +1154,33 @@ exports[`full article with style 1`] = `
           </span>
           <AdContainer />
         </div>
-      </div>
-      <div
-        className="c36"
-      >
         <div
-          className="c37"
+          className="c36"
         >
-          <p
-            className="c38"
+          <div
+            className="c37"
           >
-            Comments have not been enabled for this article
-          </p>
-          <p
-            className="c39"
-          >
-            Comments are subject to our community guidelines, which can be viewed
-             
-            <TextLink
-              color="#006699"
-              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-              fontSize={12}
+            <p
+              className="c38"
             >
-              here
-            </TextLink>
-            .
-          </p>
+            Comments have not been enabled for this article
+            </p>
+            <p
+              className="c39"
+            >
+              Comments are subject to our community guidelines, which can be viewed
+               
+              <TextLink
+                color="#006699"
+                fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+                fontSize={12}
+              >
+                here
+              </TextLink>
+              .
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        className="c34"
-      >
         <div
           className="c18"
         >

@@ -8,10 +8,6 @@ export const CommentContainer = styled.div`
   background-color: #fff;
   margin: 32px auto 0;
   padding-inline: 20px;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    max-width: 1144px;
-  }
 `;
 export const VideoArticleContainer = styled.div`
   width: 100%;
