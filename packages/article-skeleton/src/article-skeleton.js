@@ -172,7 +172,8 @@ const ArticleSkeleton = ({
     breadcrumbs,
     categorisedArticles,
     deckApiUrl,
-    isWebPFormatActive
+    isWebPFormatActive,
+    isExcludedFromAdsPathFromServer
   } = articleDataFromRender || {};
 
   const articleUrl =
@@ -211,6 +212,7 @@ const ArticleSkeleton = ({
       isLiveOrBreaking={isLiveOrBreaking}
       deckApiUrl={deckApiUrl}
       isWebPFormatActive={!!isWebPFormatActive}
+      isExcludedFromAdsPathFromServer={isExcludedFromAdsPathFromServer}
     />
   );
 
@@ -360,9 +362,11 @@ const ArticleSkeleton = ({
             <Content content={rendererdContent} SaveAndShare={SaveAndShare} />
           ) : (
             <Fragment>
-              <HeaderAdContainer key="headerAd">
-                <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>
+              {!isExcludedFromAdsPathFromServer && (
+                <HeaderAdContainer key="headerAd">
+                  <AdContainer slotName="header" style={styles.adMarginStyle} />
+                </HeaderAdContainer>
+              )}
               <MainContainer>
                 <WelcomeBanner />
                 {!!zephrDivs && (
@@ -488,6 +492,9 @@ const ArticleSkeleton = ({
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}
                           isWebPFormatActive={isWebPFormatActive}
+                          isExcludedFromAdsPathFromServer={
+                            isExcludedFromAdsPathFromServer
+                          }
                         />
                       )}
                     </LazyLoad>

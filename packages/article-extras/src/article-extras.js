@@ -45,7 +45,8 @@ const ArticleExtras = ({
   topics,
   breadcrumbs,
   domainSpecificUrl,
-  isWebPFormatActive
+  isWebPFormatActive,
+  isExcludedFromAdsPathFromServer
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
     if (breadcrumbs && breadcrumbs.length > 0) {
@@ -100,16 +101,18 @@ const ArticleExtras = ({
             />
           )}
       </div>
-      <PromotedContentContainer>
-        <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
-        <PromotedContentGrid>
-          <PromotedContentAd id="advert-inarticle-native-1" />
-          <PromotedContentAd id="advert-inarticle-native-2" />
-          <PromotedContentSectionDivider />
-          <PromotedContentAd id="advert-inarticle-native-3" />
-          <PromotedContentAd id="advert-inarticle-native-4" />
-        </PromotedContentGrid>
-      </PromotedContentContainer>
+      {!isExcludedFromAdsPathFromServer && (
+        <PromotedContentContainer>
+          <PromotedContentTitle>PROMOTED CONTENT</PromotedContentTitle>
+          <PromotedContentGrid>
+            <PromotedContentAd id="advert-inarticle-native-1" />
+            <PromotedContentAd id="advert-inarticle-native-2" />
+            <PromotedContentSectionDivider />
+            <PromotedContentAd id="advert-inarticle-native-3" />
+            <PromotedContentAd id="advert-inarticle-native-4" />
+          </PromotedContentGrid>
+        </PromotedContentContainer>
+      )}
     </>
   );
   return (
@@ -170,7 +173,8 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired,
-  isWebPFormatActive: PropTypes.bool
+  isWebPFormatActive: PropTypes.bool,
+  isExcludedFromAdsPathFromServer: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
@@ -178,7 +182,8 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   breadcrumbs: [],
-  isWebPFormatActive: false
+  isWebPFormatActive: false,
+  isExcludedFromAdsPathFromServer: false
 };
 
 export default ArticleExtras;
