@@ -19,7 +19,7 @@ import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import fetchPolygonData from "./article-sidebar";
+import { fetchPolygonData, fetchSidebarData } from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -266,6 +266,7 @@ const ArticleSkeleton = ({
   );
 
   const [polygonUrl, setPolygonUrl] = useState([]);
+  const [sidebarData, setSidebarData] = useState(null);
 
   const fetchPolygon = async () => {
     const polygon = await fetchPolygonData();
@@ -280,6 +281,15 @@ const ArticleSkeleton = ({
     },
     [canShowSidebar]
   );
+
+  useEffect(() => {
+    const loadSidebarData = async () => {
+      const data = await fetchSidebarData();
+      setSidebarData(data);
+    };
+
+    loadSidebarData();
+  }, []);
 
   return (
     <StickyProvider>
@@ -399,27 +409,23 @@ const ArticleSkeleton = ({
                     {canShowSidebar && (
                       <SidebarWarpper>
                         <PuzzlesSidebar ref={sidebarRef}>
-                          {categoryPath === "life-style" ? (
+                          {categoryPath === "life-style" &&
+                          Array.isArray(sidebarData) &&
+                          sidebarData.length > 0 ? (
                             <ArticleSidebar
                               pageLink={`${domainSpecificUrl}/puzzles`}
                               sectionTitle="Puzzles"
-                              data={[
-                                {
-                                  title: "Crossword",
-                                  url: `${domainSpecificUrl}/puzzles/crossword`,
-                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png`
-                                },
-                                {
-                                  title: "Polygon",
-                                  url: polygonUrl,
-                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png`
-                                },
-                                {
-                                  title: "Sudoku",
-                                  url: `${domainSpecificUrl}/puzzles/sudoku`,
-                                  imgUrl: `https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png`
-                                }
-                              ]}
+                              data={sidebarData.map(item => ({
+                                title: item.name,
+                                url:
+                                  item.type === "polygon"
+                                    ? polygonUrl
+                                    : item.link ||
+                                      `${domainSpecificUrl}/puzzles/${
+                                        item.type
+                                      }`,
+                                imgUrl: item.image
+                              }))}
                             />
                           ) : (
                             <QuizleSidebar
