@@ -290,7 +290,7 @@ const renderers = ({
         const isTikTok = src.includes("tiktok");
 
         if (!isYoutube || !isTikTok) {
-          return (
+          return null /* (
             <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
               <div id={id}>
                 <InteractiveWrapper
@@ -301,7 +301,7 @@ const renderers = ({
                 />
               </div>
             </InteractiveContainer>
-          );
+          ); */
         }
 
         return (
