@@ -84,22 +84,17 @@ exports[`1. an article 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"News"}
+          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"Comment"}
         </script>
         <script
           type="application/ld+json"
         >
-          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"thumbnailUrl":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"News","keywords":"Section:Comment,Section:News","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"thumbnailUrl":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
         </script>
         <script
           type="application/ld+json"
         >
           {"@context":"https://schema.org","@type":"VideoObject","name":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","uploadDate":"2022-02-24T09:00:00.000Z","thumbnailUrl":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","description":"In the autumn of 1973 Vice-President Spiro Agnew was having difficulty getting President Richard Nixon on the phone. If the White House really wanted him to resign, he reasoned, Nixon should tell him","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
-        </script>
-        <script
-          type="application/ld+json"
-        >
-          {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Comment","item":"https://www.thetimes.co.uk/undefined"},{"@type":"ListItem","position":2,"name":"News","item":"https://www.thetimes.co.uk/undefined"}]}
         </script>
         <script
           defer={true}
@@ -139,10 +134,6 @@ exports[`1. an article 1`] = `
           <div>
             <div>
               <p>
-                <span>
-                  Comment
-                </span>
-                 | 
                 15:03
               </p>
             </div>
@@ -265,40 +256,6 @@ exports[`1. an article 1`] = `
       </div>
       <div>
         <div>
-          <nav
-            aria-label="breadcrumbs"
-          >
-            <a
-              aria-current="false"
-              href="/comment"
-              selected={false}
-            >
-              Comment
-            </a>
-            <div>
-              <svg
-                color="#aaaaaa"
-                fill="none"
-                height={16}
-                width={16}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m6.667 4-.94.94L8.78 8l-3.053 3.06.94.94 4-4-4-4Z"
-                  fill="#aaaaaa"
-                />
-              </svg>
-            </div>
-            <a
-              aria-current="page"
-              href="/news"
-              selected={true}
-            >
-              News
-            </a>
-          </nav>
-        </div>
-        <div>
           <span>
             Advertisement
           </span>
@@ -419,12 +376,12 @@ exports[`4. should show topics when logged in or shared 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"News"}
+          {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"datePublished":"2015-03-13T18:54:58.000Z","dateModified":"2022-02-24T09:00:00.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":"2030-03-13T13:00:00.000Z","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":{"@type":"Person","name":"Rick Broadbent"},"liveBlogUpdate":[],"articleSection":"Comment"}
         </script>
         <script
           type="application/ld+json"
         >
-          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"thumbnailUrl":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"News","keywords":"","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","caption":null},"thumbnailUrl":"https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960","dateModified":"2022-02-24T09:00:00.000Z","author":{"@type":"Person","name":"Rick Broadbent"},"articleSection":"Comment","keywords":"Section:Comment,Section:News","url":"https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"}
         </script>
         <script
           type="application/ld+json"
