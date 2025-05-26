@@ -126,6 +126,7 @@ export const PromotedContentGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 32px;
   margin-block-start: 16px;
+  min-height: 150px;
 
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, 1fr);
@@ -135,6 +136,7 @@ export const PromotedContentGrid = styled.div`
 export const PromotedContentAd = styled.div`
   position: relative;
   min-height: 150px;
+  
   &:nth-child(1)::after,
   &:nth-child(4)::after {
     position: absolute;
