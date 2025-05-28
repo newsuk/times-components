@@ -126,7 +126,7 @@ export const PromotedContentGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 32px;
   margin-block-start: 16px;
-  min-height: 150px;
+  min-height: 50px;
 
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, 1fr);
