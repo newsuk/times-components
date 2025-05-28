@@ -130,6 +130,7 @@ export const PromotedContentGrid = styled.div`
 
   @media (min-width: ${breakpoints.wide}px) {
     grid-template-columns: repeat(4, 1fr);
+    min-height: 50px;
   }
 `;
 
