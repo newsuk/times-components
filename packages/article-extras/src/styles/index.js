@@ -137,7 +137,7 @@ export const PromotedContentGrid = styled.div`
 export const PromotedContentAd = styled.div`
   position: relative;
   min-height: 150px;
-  
+
   &:nth-child(1)::after,
   &:nth-child(4)::after {
     position: absolute;
