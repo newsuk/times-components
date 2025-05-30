@@ -15,7 +15,9 @@ const AdContainer = ({ slotName, style }) => {
     inlineAd1: "ad-article-inline-1",
     inlineAd2: "ad-article-inline-2",
     inlineAd3: "ad-article-inline-3",
-    inlineAd4: "ad-article-inline-4"
+    inlineAd4: "ad-article-inline-4",
+    videoAd1: "ad-vid-article-1",
+    videoAd2: "ad-vid-article-2"
   };
 
   return (
