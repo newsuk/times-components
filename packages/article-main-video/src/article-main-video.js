@@ -196,9 +196,7 @@ class ArticlePage extends Component {
             />
           </CommentContainer>
         </UserState>
-        <ContentFooterContainer>
-          {renderAd("videoAd2")}
-        </ContentFooterContainer>
+        <ContentFooterContainer>{renderAd("videoAd2")}</ContentFooterContainer>
       </>
     );
   }
