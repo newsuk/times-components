@@ -21,7 +21,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, articleDataFromRender, removeTeaserContent } = this.props;
+    const { article, removeTeaserContent } = this.props;
     const {
       bylines,
       expirableFlags,
