@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.19.18",
+  "version": "4.19.19",
   "main": "dist/video",
   "dev": "src/video",
   "description": "Video",
@@ -54,7 +54,7 @@
   "dependencies": {
     "@times-components/error-view": "2.6.77",
     "@times-components/icons": "2.23.16",
-    "@times-components/image": "6.19.2",
+    "@times-components/image": "6.19.3",
     "@times-components/ts-styleguide": "1.53.1",
     "@times-components/utils": "6.31.7",
     "prop-types": "15.7.2",
