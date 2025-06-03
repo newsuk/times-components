@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.131.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.130.1...@times-components/ts-components@1.131.0) (2025-06-03)
+
+
+### Features
+
+* **TMRA-284:** update ticker styling ([#4154](https://github.com/newsuk/times-components/issues/4154)) ([297186b](https://github.com/newsuk/times-components/commit/297186bda534e0e7de228bf250cfc4b7add3c4c6))
+
+
+
+
+
 ## [1.130.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.130.0...@times-components/ts-components@1.130.1) (2025-06-02)
 
 **Note:** Version bump only for package @times-components/ts-components
