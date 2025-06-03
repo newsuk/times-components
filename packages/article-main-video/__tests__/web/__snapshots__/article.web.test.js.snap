@@ -303,7 +303,7 @@ exports[`1. an article 1`] = `
             Advertisement
           </span>
           <AdContainer
-            slotName="inline-ad"
+            slotName="videoAd1"
           />
         </div>
       </div>
@@ -313,7 +313,7 @@ exports[`1. an article 1`] = `
             Advertisement
           </span>
           <AdContainer
-            slotName="ad-article-inline-1"
+            slotName="videoAd2"
           />
         </div>
       </div>
@@ -619,7 +619,7 @@ exports[`4. should show topics when logged in or shared 1`] = `
             Advertisement
           </span>
           <AdContainer
-            slotName="inline-ad"
+            slotName="videoAd1"
           />
         </div>
       </div>
@@ -646,7 +646,7 @@ exports[`4. should show topics when logged in or shared 1`] = `
             Advertisement
           </span>
           <AdContainer
-            slotName="ad-article-inline-1"
+            slotName="videoAd2"
           />
         </div>
       </div>

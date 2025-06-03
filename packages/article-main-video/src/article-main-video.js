@@ -183,7 +183,7 @@ class ArticlePage extends Component {
               </BreadcrumbContainer>
             )}
           <ArticleTopics topics={topics} />
-          {renderAd("inline-ad")}
+          {renderAd("videoAd1")}
         </ContentFooterContainer>
         <UserState state={UserState.showArticleExtras}>
           <CommentContainer>
@@ -196,9 +196,7 @@ class ArticlePage extends Component {
             />
           </CommentContainer>
         </UserState>
-        <ContentFooterContainer>
-          {renderAd("ad-article-inline-1")}
-        </ContentFooterContainer>
+        <ContentFooterContainer>{renderAd("videoAd2")}</ContentFooterContainer>
       </>
     );
   }
