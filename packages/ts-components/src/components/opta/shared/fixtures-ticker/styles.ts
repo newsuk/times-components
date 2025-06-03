@@ -136,7 +136,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
 
   .Opta-Scroller {
     background-color: white !important;
-    border: 1px solid #999 !important;
+    border: 1px solid #e4e4e4 !important;
     border-radius: 2px;
     box-sizing: border-box;
     padding: 39px 0 !important;
@@ -229,7 +229,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         isApp &&
         `
           @media (prefers-color-scheme: dark) {
-          color: #e4e4e4 !important;
+          color: #CCC !important;
         }
       `}
     }
@@ -242,7 +242,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         isApp &&
         `
         @media (prefers-color-scheme: dark) {
-          color: #fff !important;
+          color: #EEE !important;
         }
       `}
     }
@@ -256,7 +256,7 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         isApp &&
         `
         @media (prefers-color-scheme: dark) {
-          color: #fff !important;
+          color: #EEE !important;
         }
       `}
     }
@@ -284,19 +284,18 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       }
       .Opta-timings .Opta-Time * {
         font-weight: 400;
-        color: #696969 !important;
       }
     }
 
     &.Opta-result > div {
-      border: 1px solid #ccc !important;
+      border: 1px solid #e4e4e4 !important;
 
       ${({ isApp }) =>
         isApp &&
         `
         @media (prefers-color-scheme: dark) {
           background-color: #1d1d1b !important;
-          border: 1px solid #333 !important;
+          border: 1px solid #AAA !important;
         }
       `}
 

@@ -6,7 +6,7 @@ exports[`OptaFixturesTicker rugby should render correctly 1`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     />
     <div
       class="sc-bwzfXH jStUkM"
@@ -23,7 +23,7 @@ exports[`OptaFixturesTicker rugby should render correctly 2`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     >
       <div>
         Widget
@@ -39,7 +39,7 @@ exports[`OptaFixturesTicker with flags should render correctly 1`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     />
     <div
       class="sc-bwzfXH jStUkM"
@@ -56,7 +56,7 @@ exports[`OptaFixturesTicker with flags should render correctly 2`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     >
       <div>
         Widget
@@ -72,7 +72,7 @@ exports[`OptaFixturesTicker without flags should render correctly 1`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     />
     <div
       class="sc-bwzfXH jStUkM"
@@ -89,7 +89,7 @@ exports[`OptaFixturesTicker without flags should render correctly 2`] = `
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     >
       <div>
         Widget
@@ -105,7 +105,7 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     />
     <div
       class="sc-bwzfXH jStUkM"
@@ -122,7 +122,7 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jWLyDH"
+      class="sc-htpNat sc-EHOje fmlkzb"
     >
       <div>
         Widget
@@ -138,7 +138,7 @@ exports[`OptaFixturesTicker without flags should render correctly with isApp pro
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jIIHoi"
+      class="sc-htpNat sc-EHOje kOQTjl"
     />
     <div
       class="sc-bwzfXH jStUkM"
@@ -155,7 +155,7 @@ exports[`OptaFixturesTicker without flags should render correctly with isApp pro
     class="sc-bxivhb kSTJgb"
   >
     <div
-      class="sc-htpNat sc-EHOje jIIHoi"
+      class="sc-htpNat sc-EHOje kOQTjl"
     >
       <div>
         Widget
