@@ -22,14 +22,7 @@ const ArticleComments = ({
 }) => {
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
-  // const trackingContext = {
-  //   component: "JoinTheConversationDialog",
-  //   object: "JoinTheConversationDialog",
-  //   attrs: {
-  //     event_navigation_action: "navigation",
-  //     article_parent_name: "commenting"
-  //   }
-  // };
+  
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
 
