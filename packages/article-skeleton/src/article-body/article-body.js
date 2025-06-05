@@ -282,10 +282,21 @@ const renderers = ({
           </InteractiveContainer>
         );
 
+      case "times-travel-offers-new": {
+        return null;
+      }
+
       case "times-embed-iframe-max": {
         const src = (element.attributes && element.attributes.src) || "";
         const isYoutube = src.includes("youtube");
         const isTikTok = src.includes("tiktok");
+        const isBestsellingHolidaysOffer = src.includes(
+          "best-selling-holidays"
+        );
+
+        if (isBestsellingHolidaysOffer) {
+          return null;
+        }
 
         if (!isYoutube || !isTikTok) {
           return (
