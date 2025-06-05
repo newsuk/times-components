@@ -22,7 +22,7 @@ const ArticleComments = ({
 }) => {
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
-  
+
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
 
@@ -58,7 +58,10 @@ const ArticleComments = ({
           />
         </UserState>
         <UserState state={UserState.showJoinTheConversationDialog}>
-          <div id="zephr__commenting-banner"/>
+          <div
+            id="zephr__commenting-banner"
+            data-testid="zephr__commenting-banner"
+          />
         </UserState>
       </>
     );
@@ -72,7 +75,7 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <div id="zephr__commenting-banner"/>
+    <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
   );
 };
 
