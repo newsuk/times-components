@@ -233,7 +233,7 @@ exports[`full article with style 1`] = `
 .c38 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
-  font-size: 27px;
+  font-size: 24px;
   margin: 0;
   padding-bottom: 5px;
   padding-top: 30px;
@@ -1170,7 +1170,7 @@ exports[`full article with style 1`] = `
           <p
             className="c38"
           >
-            Comments for this article have been turned off
+            Comments have not been enabled for this article
           </p>
           <p
             className="c39"
