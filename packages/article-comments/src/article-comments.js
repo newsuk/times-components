@@ -6,10 +6,8 @@ import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
 
-import { TrackingContextProvider } from "@times-components/ts-components";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
-import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const COOKIE_NAME = "access-decisions";
 const ENTITLEMENT_SLUG = "functionalCommentingFull";
@@ -24,14 +22,7 @@ const ArticleComments = ({
 }) => {
   const [flagEnabled, setFlagEnabled] = useState(undefined);
   const [isEntitled, setIsEntitled] = useState(undefined);
-  const trackingContext = {
-    component: "JoinTheConversationDialog",
-    object: "JoinTheConversationDialog",
-    attrs: {
-      event_navigation_action: "navigation",
-      article_parent_name: "commenting"
-    }
-  };
+
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
 
@@ -67,13 +58,10 @@ const ArticleComments = ({
           />
         </UserState>
         <UserState state={UserState.showJoinTheConversationDialog}>
-          <TrackingContextProvider context={trackingContext}>
-            {({ fireAnalyticsEvent }) => (
-              <JoinTheConversationDialog
-                fireAnalyticsEvent={fireAnalyticsEvent}
-              />
-            )}
-          </TrackingContextProvider>
+          <div
+            id="zephr__commenting-banner"
+            data-testid="zephr__commenting-banner"
+          />
         </UserState>
       </>
     );
@@ -87,11 +75,7 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <TrackingContextProvider context={trackingContext}>
-      {({ fireAnalyticsEvent }) => (
-        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
-      )}
-    </TrackingContextProvider>
+    <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
   );
 };
 

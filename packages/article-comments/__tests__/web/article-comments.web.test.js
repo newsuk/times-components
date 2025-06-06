@@ -31,8 +31,8 @@ describe("<ArticleComments>", () => {
     UserState.showCommentingModule = () => false;
     UserState.showJoinTheConversationDialog = () => true;
 
-    const { getByText } = render(<ArticleComments isEnabled />);
-    expect(getByText("JoinTheConversationDialog"));
+    const { getByTestId } = render(<ArticleComments isEnabled />);
+    expect(getByTestId("zephr__commenting-banner"));
   });
 
   it("should show <Comments> when isEnabled=true and UserState.showCommentingModule returns true", () => {
@@ -47,8 +47,8 @@ describe("<ArticleComments>", () => {
     delete window.location;
     window.location = { search: "?entitlements=1" };
 
-    const { getByText } = render(<ArticleComments isEnabled />);
-    expect(getByText("JoinTheConversationDialog"));
+    const { getByTestId } = render(<ArticleComments isEnabled />);
+    expect(getByTestId("zephr__commenting-banner"));
   });
 
   it("should show <JoinTheConversationDialog> when isEnabled=true and no entitlement", () => {
@@ -57,8 +57,8 @@ describe("<ArticleComments>", () => {
 
     getBase64CookieValue.mockReturnValue({ "fp-1113": false });
 
-    const { getByText } = render(<ArticleComments isEnabled />);
-    expect(getByText("JoinTheConversationDialog"));
+    const { getByTestId } = render(<ArticleComments isEnabled />);
+    expect(getByTestId("zephr__commenting-banner"));
   });
 
   it("should show <Comments> when isEnabled=true and isEntitled=true", () => {
