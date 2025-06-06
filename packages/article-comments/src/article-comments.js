@@ -55,28 +55,30 @@ const ArticleComments = ({
     return <DisabledComments />;
   }
 
+  const RenderUserState = () => (
+    <>
+      <UserState state={UserState.showCommentingModule}>
+        <Comments
+          articleId={articleId}
+          isReadOnly={isReadOnly}
+          commentingConfig={commentingConfig}
+          domainSpecificUrl={domainSpecificUrl}
+        />
+      </UserState>
+      <UserState state={UserState.showJoinTheConversationDialog}>
+        <TrackingContextProvider context={trackingContext}>
+          {({ fireAnalyticsEvent }) => (
+            <JoinTheConversationDialog
+              fireAnalyticsEvent={fireAnalyticsEvent}
+            />
+          )}
+        </TrackingContextProvider>
+      </UserState>
+    </>
+  );
+
   if (flagEnabled === false) {
-    return (
-      <>
-        <UserState state={UserState.showCommentingModule}>
-          <Comments
-            articleId={articleId}
-            isReadOnly={isReadOnly}
-            commentingConfig={commentingConfig}
-            domainSpecificUrl={domainSpecificUrl}
-          />
-        </UserState>
-        <UserState state={UserState.showJoinTheConversationDialog}>
-          <TrackingContextProvider context={trackingContext}>
-            {({ fireAnalyticsEvent }) => (
-              <JoinTheConversationDialog
-                fireAnalyticsEvent={fireAnalyticsEvent}
-              />
-            )}
-          </TrackingContextProvider>
-        </UserState>
-      </>
-    );
+    return <RenderUserState />;
   }
 
   return isEntitled ? (
@@ -87,11 +89,7 @@ const ArticleComments = ({
       domainSpecificUrl={domainSpecificUrl}
     />
   ) : (
-    <TrackingContextProvider context={trackingContext}>
-      {({ fireAnalyticsEvent }) => (
-        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
-      )}
-    </TrackingContextProvider>
+    <RenderUserState />
   );
 };
 
