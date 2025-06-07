@@ -84,7 +84,24 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
             initComponent();
             setIsReady(true);
           }
-        });
+        })
+        .then(() => {
+          const script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.innerHTML = `
+            console.log('inside script');
+            Opta.events.subscribe('widget.init', function (widget) {
+              console.log('widget.init');
+            });
+            Opta.events.subscribe('widget.drawn', function (widget) {
+              console.log('widget.drawn');
+            });
+            Opta.events.subscribe('widget.loaded', function (widget) {
+              document.getElementById('opta-placeholder-container').style.display = 'none';
+            });
+          `;
+          document.body.appendChild(script);
+      });
       },
       [ref]
     );
@@ -97,13 +114,14 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
 
     return (
       <Container>
-        <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
-
-        {!isReady && (
-          <PlaceholderContainer isHeight>
+          <PlaceholderContainer isHeight id='opta-placeholder-container'>
             <Placeholder />
           </PlaceholderContainer>
-        )}
+          <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
+
+        {/* {!isReady && ( */}
+
+        {/* )} */}
       </Container>
     );
   }

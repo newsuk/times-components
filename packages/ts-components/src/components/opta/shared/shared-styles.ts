@@ -93,6 +93,7 @@ export const Container = styled.div<{
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
     border ? `2px solid ${colours.section.sport}` : 'none'};
+  position: relative;
 
   a {
     text-decoration: none;
@@ -113,8 +114,10 @@ export const Container = styled.div<{
 export const PlaceholderContainer = styled.div<{
   isHeight: boolean;
 }>`
-  position: relative;
+  position: absolute;
+  width: 100%;
   height: ${({ isHeight }) => (isHeight ? '100%' : '200px')};
+  top: 0;
 `;
 
 export const WidgetContainerBase = styled.div`

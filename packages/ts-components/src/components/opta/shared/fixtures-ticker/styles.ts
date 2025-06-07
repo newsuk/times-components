@@ -5,6 +5,7 @@ import { WidgetContainerBase } from '../shared-styles';
 
 export const Container = styled.div`
   height: 81px;
+  position: relative;
 `;
 
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
