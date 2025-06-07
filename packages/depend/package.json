@@ -64,7 +64,7 @@
     "glob": "7.1.2",
     "lodash.flatten": "4.4.0",
     "minimatch": "3.0.4",
-    "semver": "5.5.0"
+    "semver": "5.7.2"
   },
   "publishConfig": {
     "access": "public"
