@@ -3,10 +3,6 @@
 exports[`ArticleProvider returns query result 1`] = `
 Object {
   "__typename": "Article",
-  "associatedDesks": Array [
-    "Hello World",
-    "Hello World",
-  ],
   "backgroundColour": Object {
     "__typename": "Colour",
     "rgba": Object {
@@ -693,10 +689,6 @@ Object {
         "__typename": "Tile",
         "article": Object {
           "__typename": "Article",
-          "associatedDesks": Array [
-            "Hello World",
-            "Hello World",
-          ],
           "bylines": Array [
             Object {
               "__typename": "TextByline",

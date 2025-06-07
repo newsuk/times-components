@@ -235,64 +235,7 @@ describe("Head", () => {
   it("outputs array of keywords in article schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
-        breadcrumbs={[
-          {
-            title: "Sport",
-            url: "/sport"
-          },
-          {
-            title: "Rugby union",
-            url: "/sport/rugby-union"
-          }
-        ]}
         article={{
-          tiles: [
-            {
-              slices: [
-                {
-                  sections: [
-                    {
-                      id: "e0313ff2-5180-4ef1-a3dd-e6db63e21647",
-                      title: "Sport"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              slices: [
-                {
-                  sections: [
-                    {
-                      id: "a532cd03-8c03-4d91-8f66-9b937a5dff42",
-                      title: "Sport"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }}
-      />
-    );
-    expect(testRenderer).toMatchSnapshot();
-  });
-
-  it("outputs stringified array for associatedDesks in article schema", () => {
-    const testRenderer = TestRenderer.create(
-      <Head
-        breadcrumbs={[
-          {
-            title: "Sport",
-            url: "/sport"
-          },
-          {
-            title: "Rugby union",
-            url: "/sport/rugby-union"
-          }
-        ]}
-        article={{
-          associatedDesks: ["Sport", "Football"],
           tiles: [
             {
               slices: [
