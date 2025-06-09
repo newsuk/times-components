@@ -1217,33 +1217,37 @@ exports[`full article with style 1`] = `
           </span>
           <AdContainer />
         </div>
+      </div>
+      <div
+        className="c39"
+      >
         <div
-          className="c39"
+          className="c40"
         >
-          <div
-            className="c40"
+          <p
+            className="c41"
           >
-            <p
-              className="c41"
-            >
             Comments have not been enabled for this article
-            </p>
-            <p
-              className="c42"
+          </p>
+          <p
+            className="c42"
+          >
+            Comments are subject to our community guidelines, which can be viewed
+             
+            <TextLink
+              color="#006699"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
+              fontSize={12}
             >
-              Comments are subject to our community guidelines, which can be viewed
-               
-              <TextLink
-                color="#006699"
-                fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                fontSize={12}
-              >
-                here
-              </TextLink>
-              .
-            </p>
-          </div>
+              here
+            </TextLink>
+            .
+          </p>
         </div>
+      </div>
+      <div
+        className="c35"
+      >
         <div
           className="c37"
         >
