@@ -184,19 +184,19 @@ class ArticlePage extends Component {
             )}
           <ArticleTopics topics={topics} />
           {renderAd("videoAd1")}
+          <UserState state={UserState.showArticleExtras}>
+            <CommentContainer>
+              <ArticleComments
+                articleId={id}
+                isEnabled={commentsEnabled}
+                commentingConfig={commentingConfig}
+                domainSpecificUrl="https://www.thetimes.com"
+                isDark
+              />
+            </CommentContainer>
+          </UserState>
+          {renderAd("videoAd2")}
         </ContentFooterContainer>
-        <UserState state={UserState.showArticleExtras}>
-          <CommentContainer>
-            <ArticleComments
-              articleId={id}
-              isEnabled={commentsEnabled}
-              commentingConfig={commentingConfig}
-              domainSpecificUrl="https://www.thetimes.com"
-              isDark
-            />
-          </CommentContainer>
-        </UserState>
-        <ContentFooterContainer>{renderAd("videoAd2")}</ContentFooterContainer>
       </>
     );
   }
