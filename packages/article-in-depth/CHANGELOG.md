@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.100.13](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.100.12...@times-components/article-in-depth@3.100.13) (2025-06-10)
+
+
+### Bug Fixes
+
+* **TMRA-264:** resolve cssSelector value on in-depth template ([#4160](https://github.com/newsuk/times-components/issues/4160)) ([dd9dac2](https://github.com/newsuk/times-components/commit/dd9dac2926ea093d210162bed77971259173818f))
+
+
+
+
+
 ## [3.100.12](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.100.11...@times-components/article-in-depth@3.100.12) (2025-06-05)
 
 **Note:** Version bump only for package @times-components/article-in-depth
