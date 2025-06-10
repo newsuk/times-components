@@ -234,7 +234,8 @@ export const InlineAdWrapper = styled.div`
   margin: 30px 0;
   box-sizing: content-box;
   padding: 0 0 10px;
-  border-bottom: 1px solid rgb(219, 219, 219);
+  border-bottom: 1px solid
+    ${({ isDark }) => (isDark ? "#4E4E4E" : "rgb(219, 219, 219)")};
 
   @media (min-width: 768px) {
     min-height: 123px;
@@ -246,8 +247,9 @@ export const InlineAdWrapper = styled.div`
 `;
 
 export const InlineAdTitle = styled.span`
-  border-bottom: 1px solid rgb(219, 219, 219);
-  color: #696969;
+  border-bottom: 1px solid
+    ${({ isDark }) => (isDark ? "#4E4E4E" : "rgb(219, 219, 219)")};
+  color: ${({ isDark }) => (isDark ? "#CCC" : "#696969")};
   flex: 1 1 100%;
   font: normal ${fontSizes.teaser}px / 17px ${fontsWithFallback.bodyRegular};
   letter-spacing: 0.6px;

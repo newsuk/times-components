@@ -297,6 +297,10 @@ exports[`1. a full article with video as the lead asset 1`] = `
   >
     <p />
     <picture>
+      <source
+        srcSet="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -314,6 +318,10 @@ exports[`1. a full article with video as the lead asset 1`] = `
       15:03
     </p>
     <picture>
+      <source
+        srcSet="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -331,6 +339,10 @@ exports[`1. a full article with video as the lead asset 1`] = `
       15:03
     </p>
     <picture>
+      <source
+        srcSet="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -348,6 +360,10 @@ exports[`1. a full article with video as the lead asset 1`] = `
       15:03
     </p>
     <picture>
+      <source
+        srcSet="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960&format=webp"
+        type="image/webp"
+      />
       <img
         loading="lazy"
         src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg?resize=960"
@@ -375,7 +391,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
     Advertisement
   </span>
   <p>
-    Comments for this article have been turned off
+    Comments have not been enabled for this article
   </p>
   <p>
     Comments are subject to our community guidelines, which can be viewed

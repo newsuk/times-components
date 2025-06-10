@@ -40,7 +40,7 @@ exports[`disabled comments 1`] = `
 .c1 {
   color: #333333;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
-  font-size: 27px;
+  font-size: 24px;
   margin: 0;
   padding-bottom: 5px;
   padding-top: 30px;
@@ -65,7 +65,7 @@ exports[`disabled comments 1`] = `
     <p
       class="c1"
     >
-      Comments for this article have been turned off
+      Comments have not been enabled for this article
     </p>
     <p
       class="c2"

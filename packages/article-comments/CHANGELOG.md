@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.51.0...@times-components/article-comments@0.51.1) (2025-06-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.50.5...@times-components/article-comments@0.51.0) (2025-06-05)
+
+
+### Features
+
+* **TMRA-344:** remove card snapshots ([#4158](https://github.com/newsuk/times-components/issues/4158)) ([f503a0d](https://github.com/newsuk/times-components/commit/f503a0db459540741b8901410f4cfaa47f485a04))
+
+
+
+
+
+## [0.50.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.50.4...@times-components/article-comments@0.50.5) (2025-06-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.50.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.50.3...@times-components/article-comments@0.50.4) (2025-06-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
 ## [0.50.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.50.2...@times-components/article-comments@0.50.3) (2025-05-20)
 
 **Note:** Version bump only for package @times-components/article-comments

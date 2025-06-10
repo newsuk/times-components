@@ -20,7 +20,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, articleDataFromRender, removeTeaserContent } = this.props;
+    const { article, removeTeaserContent } = this.props;
     const {
       backgroundColour,
       bylines,
@@ -53,9 +53,6 @@ class ArticlePage extends Component {
             {...getLeadAsset(article)}
             renderCaption={({ caption }) => <CentredCaption {...caption} />}
             style={styles.leadAsset}
-            isWebPFormatActive={
-              articleDataFromRender && articleDataFromRender.isWebPFormatActive
-            }
           />
         )}
         {!removeTeaserContent && (
@@ -84,6 +81,7 @@ class ArticlePage extends Component {
       receiveChildList,
       commentingConfig,
       articleDataFromRender,
+      paidContentClassName,
       isPreview,
       swgProductId,
       removeTeaserContent
@@ -103,6 +101,7 @@ class ArticlePage extends Component {
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
         articleDataFromRender={articleDataFromRender}
+        paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
         removeTeaserContent={removeTeaserContent}

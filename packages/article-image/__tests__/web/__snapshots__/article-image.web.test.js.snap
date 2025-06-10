@@ -53,6 +53,10 @@ Array [
         <div>
           <div>
             <picture>
+              <source
+                srcSet="https://img/someImage?format=webp"
+                type="image/webp"
+              />
               <responsive
                 alt={null}
                 loading="lazy"
@@ -135,6 +139,10 @@ Array [
         <div>
           <div>
             <picture>
+              <source
+                srcSet="https://img/someImage?format=webp"
+                type="image/webp"
+              />
               <responsive
                 alt="Some caption"
                 loading="lazy"
@@ -202,6 +210,10 @@ Array [
         <div>
           <div>
             <picture>
+              <source
+                srcSet="https://img/someImage?resize=900&format=webp"
+                type="image/webp"
+              />
               <responsive
                 alt="Some caption"
                 loading="lazy"

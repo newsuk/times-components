@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.31.9](https://github.com/newsuk/times-components/compare/@times-components/utils@6.31.8...@times-components/utils@6.31.9) (2025-06-10)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.31.8](https://github.com/newsuk/times-components/compare/@times-components/utils@6.31.7...@times-components/utils@6.31.8) (2025-06-05)
+
+
+### Reverts
+
+* Revert "feature(TMC-355): Removed ads from obituaries articles (#4132)" (#4136) ([fd3271b](https://github.com/newsuk/times-components/commit/fd3271b3153cc5c238bdb89dae9e889a006a7b50)), closes [#4132](https://github.com/newsuk/times-components/issues/4132) [#4136](https://github.com/newsuk/times-components/issues/4136)
+
+
+
+
+
 ## [6.31.7](https://github.com/newsuk/times-components/compare/@times-components/utils@6.31.6...@times-components/utils@6.31.7) (2025-04-24)
 
 **Note:** Version bump only for package @times-components/utils

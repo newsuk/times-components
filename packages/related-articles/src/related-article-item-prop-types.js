@@ -10,8 +10,7 @@ export const relatedArticleItemPropTypes = {
   bylineClass: PropTypes.string,
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
-  imageContainerClass: PropTypes.string,
-  isWebPFormatActive: PropTypes.bool
+  imageContainerClass: PropTypes.string
 };
 
 export const relatedArticleItemDefaultProps = {
@@ -19,6 +18,5 @@ export const relatedArticleItemDefaultProps = {
   bylineClass: "",
   contentContainerClass: "",
   headlineClass: "",
-  imageContainerClass: "",
-  isWebPFormatActive: false
+  imageContainerClass: ""
 };

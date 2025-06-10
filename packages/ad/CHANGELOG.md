@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.23.1...@times-components/ad@2.23.2) (2025-06-10)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.23.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.23.0...@times-components/ad@2.23.1) (2025-06-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+# [2.23.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.22.39...@times-components/ad@2.23.0) (2025-06-03)
+
+
+### Features
+
+* **TMRA-206:** video article comments ([#4131](https://github.com/newsuk/times-components/issues/4131)) ([a7bedd7](https://github.com/newsuk/times-components/commit/a7bedd73f450a3240d9980168b268efe2b5044ce))
+
+
+
+
+
 ## [2.22.39](https://github.com/newsuk/times-components/compare/@times-components/ad@2.22.38...@times-components/ad@2.22.39) (2025-04-24)
 
 **Note:** Version bump only for package @times-components/ad

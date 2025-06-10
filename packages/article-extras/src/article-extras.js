@@ -45,7 +45,6 @@ const ArticleExtras = ({
   topics,
   breadcrumbs,
   domainSpecificUrl,
-  isWebPFormatActive,
   isExcludedFromAdsPathFromServer
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
@@ -77,7 +76,6 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
           hideBorder={!isRecommendedActive && Boolean(categoryArticles)}
-          isWebPFormatActive={isWebPFormatActive}
         />
         {isRecommendedActive && (
           <RecommendedFetch
@@ -173,7 +171,6 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
   domainSpecificUrl: PropTypes.string.isRequired,
-  isWebPFormatActive: PropTypes.bool,
   isExcludedFromAdsPathFromServer: PropTypes.bool
 };
 
@@ -182,7 +179,6 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   breadcrumbs: [],
-  isWebPFormatActive: false,
   isExcludedFromAdsPathFromServer: false
 };
 

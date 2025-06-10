@@ -29,7 +29,7 @@ const rugbyCompetitons = ['209', '201', '242'];
 storiesOf('Typescript Component/In Article/Rugby/Fixtures', module)
   .addDecorator(withKnobs)
   .add('Rugby Fixtures Ticker', () => {
-    const selComp = select('Competition', rugbyCompetitons, '209');
+    const selComp = select('Competition', rugbyCompetitons, '201');
     return (
       <OptaFixturesTicker
         season={text('season', '2025')}
@@ -48,6 +48,7 @@ storiesOf('Typescript Component/In Article/Rugby/Fixtures', module)
         }
         round={text('round(s)', '')}
         sport="rugby"
+        isApp={boolean('isApp', false)}
       />
     );
   });

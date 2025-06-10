@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.54.1](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.54.0...@times-components/ts-styleguide@1.54.1) (2025-06-10)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
+# [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.53.1...@times-components/ts-styleguide@1.54.0) (2025-06-05)
+
+
+### Features
+
+* **TMRA-344:** remove card snapshots ([#4158](https://github.com/newsuk/times-components/issues/4158)) ([f503a0d](https://github.com/newsuk/times-components/commit/f503a0db459540741b8901410f4cfaa47f485a04))
+
+
+
+
+
 ## [1.53.1](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.53.0...@times-components/ts-styleguide@1.53.1) (2025-04-24)
 
 **Note:** Version bump only for package @times-components/ts-styleguide

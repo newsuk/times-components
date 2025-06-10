@@ -33,7 +33,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, articleDataFromRender, removeTeaserContent } = this.props;
+    const { article, removeTeaserContent } = this.props;
     const {
       bylines,
       hasVideo,
@@ -72,13 +72,7 @@ class ArticlePage extends Component {
           )}
         </HeaderTopContainer>
         {!removeTeaserContent && (
-          <LeadAsset
-            {...getLeadAsset(article)}
-            renderCaption={renderCaption}
-            isWebPFormatActive={
-              articleDataFromRender && articleDataFromRender.isWebPFormatActive
-            }
-          />
+          <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
         )}
         {!removeTeaserContent && (
           <ArticleMeta {...metaProps} inline className="inline-meta" />

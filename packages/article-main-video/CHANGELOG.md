@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.9.0...@times-components/article-main-video@1.9.1) (2025-06-10)
+
+**Note:** Version bump only for package @times-components/article-main-video
+
+
+
+
+
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.8.0...@times-components/article-main-video@1.9.0) (2025-06-05)
+
+
+### Features
+
+* **TMRA-344:** remove card snapshots ([#4158](https://github.com/newsuk/times-components/issues/4158)) ([f503a0d](https://github.com/newsuk/times-components/commit/f503a0db459540741b8901410f4cfaa47f485a04))
+
+
+
+
+
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.7.10...@times-components/article-main-video@1.8.0) (2025-06-03)
+
+
+### Features
+
+* **TMRA-206:** video article comments ([#4131](https://github.com/newsuk/times-components/issues/4131)) ([a7bedd7](https://github.com/newsuk/times-components/commit/a7bedd73f450a3240d9980168b268efe2b5044ce))
+
+
+
+
+
+## [1.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.7.9...@times-components/article-main-video@1.7.10) (2025-06-02)
+
+**Note:** Version bump only for package @times-components/article-main-video
+
+
+
+
+
 ## [1.7.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.7.8...@times-components/article-main-video@1.7.9) (2025-05-22)
 
 **Note:** Version bump only for package @times-components/article-main-video
