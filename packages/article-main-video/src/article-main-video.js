@@ -168,8 +168,8 @@ class ArticlePage extends Component {
 
     const renderAd = slot =>
       disabledAds.includes(id) ? null : (
-        <InlineAdWrapper>
-          <InlineAdTitle>Advertisement</InlineAdTitle>
+        <InlineAdWrapper isDark>
+          <InlineAdTitle isDark>Advertisement</InlineAdTitle>
           <AdContainer slotName={slot} />
         </InlineAdWrapper>
       );

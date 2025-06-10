@@ -13,7 +13,8 @@ import {
   UpNextTileOverlayRight,
   ImageContainer,
   VideoDurationLabel,
-  ArticleUpNextContainer
+  ArticleUpNextContainer,
+  ImageOverlay
 } from "../styles/article-up-next";
 
 export const ArticleUpNext = ({ upNextArticles }) => {
@@ -56,6 +57,7 @@ export const ArticleUpNext = ({ upNextArticles }) => {
                 <Link url={article.url}>
                   <ImageContainer>
                     <VideoDurationLabel>{article.duration}</VideoDurationLabel>
+                    <ImageOverlay />
                     <Image aspectRatio={16 / 9} uri={article.posterImage} />
                   </ImageContainer>
                   <ArticleTitle>{article.title}</ArticleTitle>

@@ -8,20 +8,18 @@ export const CommentContainer = styled.div`
   background-color: #fff;
   margin: 32px auto 0;
   padding-inline: 20px;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    max-width: 1144px;
-  }
 `;
 export const VideoArticleContainer = styled.div`
   width: 100%;
   max-width: 1144px;
   margin: 0 auto;
   @media (min-width: ${breakpoints.wide}px) {
+    column-gap: 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 24px;
+    padding-bottom: 0;
   }
 `;
 export const ArticleLeadAssetContainer = styled.div`
@@ -33,11 +31,15 @@ export const ArticleLeadAssetContainer = styled.div`
   &&& .vjs-poster::before {
     content: "";
     display: block;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
     width: 100%;
-    height: 100%;
+    height: 25%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: 1;
   }
@@ -67,7 +69,7 @@ export const ArticleBodyContainer = styled.div`
   flex-wrap: wrap;
   @media (min-width: ${breakpoints.wide}px) {
     margin: 0;
-    width: calc(100% - 240px);
+    width: calc(100% - 252px);
   }
 `;
 export const ArticleBody = styled.div`
@@ -84,7 +86,7 @@ export const ArticleBody = styled.div`
     padding: 24px;
   }
   @media (min-width: ${breakpoints.wide}px) {
-    padding: 24px 0;
+    padding: 24px 0 0;
   }
   @media (min-width: 1440px) {
     flex-direction: row;

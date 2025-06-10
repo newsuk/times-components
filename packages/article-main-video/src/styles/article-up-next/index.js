@@ -74,6 +74,18 @@ export const ImageContainer = styled.div`
   position: relative;
   margin-bottom: 8px;
 `;
+export const ImageOverlay = styled.div`
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+`;
 export const VideoDurationLabel = styled(ArticleLabelText)`
   bottom: 0;
   left: 10px;
