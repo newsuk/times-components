@@ -81,6 +81,7 @@ class ArticlePage extends Component {
       receiveChildList,
       commentingConfig,
       articleDataFromRender,
+      paidContentClassName,
       isPreview,
       swgProductId,
       removeTeaserContent
@@ -100,6 +101,7 @@ class ArticlePage extends Component {
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
         articleDataFromRender={articleDataFromRender}
+        paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
         removeTeaserContent={removeTeaserContent}
