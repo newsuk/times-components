@@ -310,8 +310,6 @@ exports[`1. an article 1`] = `
             slotName="videoAd1"
           />
         </div>
-      </div>
-      <div>
         <div>
           <span>
             Advertisement
@@ -630,25 +628,23 @@ exports[`4. should show topics when logged in or shared 1`] = `
             slotName="videoAd1"
           />
         </div>
-      </div>
-      <div>
         <div>
-          <p>
-            Comments have not been enabled for this article
-          </p>
-          <p>
-            Comments are subject to our community guidelines, which can be viewed
-             
-            <TextLink
-              url="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-            >
-              here
-            </TextLink>
-            .
-          </p>
+          <div>
+            <p>
+              Comments have not been enabled for this article
+            </p>
+            <p>
+              Comments are subject to our community guidelines, which can be viewed
+               
+              <TextLink
+                url="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+              >
+                here
+              </TextLink>
+              .
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
         <div>
           <span>
             Advertisement
