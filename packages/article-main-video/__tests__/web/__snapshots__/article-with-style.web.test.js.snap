@@ -1226,7 +1226,7 @@ exports[`full article with style 1`] = `
             <p
               className="c41"
             >
-              Comments have not been enabled for this article
+              Comments are not enabled for this article
             </p>
             <p
               className="c42"
