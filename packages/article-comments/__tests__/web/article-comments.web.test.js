@@ -43,17 +43,21 @@ describe("<ArticleComments>", () => {
     expect(getByText("Comments"));
   });
 
-  it("should show <JoinTheConversationDialog> when isEnabled=true and no cookie", () => {
+  it("should show <JoinTheConversationDialog> when isEnabled=true and no cookie and UserState.showJoinTheConversationDialog returns true", () => {
     delete window.location;
     window.location = { search: "?entitlements=1" };
+    UserState.showJoinTheConversationDialog = () => true;
+    UserState.showCommentingModule = () => false;
 
     const { getByText } = render(<ArticleComments isEnabled />);
     expect(getByText("JoinTheConversationDialog"));
   });
 
-  it("should show <JoinTheConversationDialog> when isEnabled=true and no entitlement", () => {
+  it("should show <JoinTheConversationDialog> when isEnabled=true and no entitlement and UserState.showJoinTheConversationDialog returns true", () => {
     delete window.location;
     window.location = { search: "?entitlements=1" };
+    UserState.showJoinTheConversationDialog = () => true;
+    UserState.showCommentingModule = () => false;
 
     getBase64CookieValue.mockReturnValue({ "fp-1113": false });
 
