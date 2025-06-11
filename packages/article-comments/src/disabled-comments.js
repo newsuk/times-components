@@ -10,7 +10,7 @@ import styles from "./styles";
 const DisabledComments = () => (
   <CommentContainer>
     <CommentDisabledHeadline>
-      Comments have not been enabled for this article
+      Comments are not enabled for this article
     </CommentDisabledHeadline>
     <CommentDisabledGuidelines>
       Comments are subject to our community guidelines, which can be viewed{" "}
