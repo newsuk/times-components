@@ -41,8 +41,9 @@ export const CommentDisabledGuidelines = styled.p`
 
 export const CommentDisabledHeadline = styled.p`
   color: ${colours.functional.primary};
-  font-family: ${fontsWithFallback.headline};
+  font-family: ${fontsWithFallback.headlineLight};
   font-size: ${fontSizes.commentsHeadline}px;
+  font-weight: 300;
   margin: 0;
   padding-bottom: ${spacing(1)};
   padding-top: ${spacing(6)};
