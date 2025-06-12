@@ -12,7 +12,7 @@ import {
 
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
-import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
+import { isNationalCompetition } from '../../utils/replaceTeamDetails';
 import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 
 export const OptaFootballFixturesTournament: React.FC<{

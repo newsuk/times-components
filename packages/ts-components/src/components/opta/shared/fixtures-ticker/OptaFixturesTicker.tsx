@@ -12,9 +12,10 @@ import {
 
 import { PlaceholderContainer } from '../shared-styles';
 import { Container, WidgetContainer } from './styles';
-import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
+import { isNationalCompetition } from '../../utils/replaceTeamDetails';
 import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
 import { useFixturePageLink } from '../../utils/useFixturePageLink';
+import { useUpdateTeamNames } from '../../utils/useUpdateTeamNames';
 
 export type OptaFixturesTickerProps = {
   season: string;
@@ -48,6 +49,7 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
 
     const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition);
+    const isLionsComp = sport === 'rugby' && competition === '221';
 
     useEffect(
       () => {
@@ -94,6 +96,7 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
       useFixturePageLink(ref, 'Opta-Room', fixturesPageUrl);
 
     isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-TeamName');
+    isLionsComp && useUpdateTeamNames(ref, 'Opta-TeamName');
 
     return (
       <Container>

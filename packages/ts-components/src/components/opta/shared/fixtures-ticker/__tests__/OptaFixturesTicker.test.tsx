@@ -26,7 +26,7 @@ jest.mock('../../../utils/config', () => ({
   initElement: mockInitElement,
   initComponent: mockInitComponent
 }));
-jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
+jest.mock('../../../utils/replaceTeamDetails', () => ({
   isNationalCompetition: mockIsNationalComp
 }));
 jest.mock('../../../utils/useFixturePageLink', () => ({
@@ -37,7 +37,7 @@ jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
 }));
 
 import { OptaFixturesTicker } from '../OptaFixturesTicker';
-import { isNationalCompetition } from '../../../utils/replaceNationalTeamDetails';
+import { isNationalCompetition } from '../../../utils/replaceTeamDetails';
 
 const requiredProps = {
   season: '2020',

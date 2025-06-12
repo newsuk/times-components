@@ -7,6 +7,7 @@ export default {
   cultureMagazine: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
   dropCap: 'TimesModern-Regular, TimesModern-Regular-fallback, serif',
   headline: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
+  headlineLight: 'Times Modern, Times Modern-fallback, serif',
   headlineRegular: 'TimesModern-Regular, TimesModern-Regular-fallback, serif',
   stMagazine: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
   styleMagazine: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',

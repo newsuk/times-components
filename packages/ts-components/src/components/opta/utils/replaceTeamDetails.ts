@@ -37,3 +37,31 @@ export const replaceWithTBD = (element: HTMLCollectionOf<Element>) => {
     }
   }, 500);
 };
+
+export const replaceTeamName = (element: HTMLCollectionOf<Element>) => {
+  let count = 0;
+  const replaceDetails = setInterval(() => {
+    if (count >= 25) {
+      clearInterval(replaceDetails);
+    }
+    count++;
+
+    for (let optaTeamName of element) {
+      const country = optaTeamName as HTMLElement;
+
+      if (country) {
+        const replacements = [
+          { pattern: /British & Irish Lions/g, replacement: 'The Lions' },
+          {
+            pattern: /First Nations & Pasifika XV/g,
+            replacement: 'FN & Pasifika XV'
+          }
+        ];
+
+        replacements.forEach(({ pattern, replacement }) => {
+          country.innerText = country.innerText.replace(pattern, replacement);
+        });
+      }
+    }
+  }, 500);
+};

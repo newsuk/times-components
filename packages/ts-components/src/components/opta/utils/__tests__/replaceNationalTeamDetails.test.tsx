@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import * as optaFn from '../replaceNationalTeamDetails';
+import * as optaFn from '../replaceTeamDetails';
 
 const mockReplaceNationalTeamDetails = () => {
   const mockDomContainer = document.createElement('div');
