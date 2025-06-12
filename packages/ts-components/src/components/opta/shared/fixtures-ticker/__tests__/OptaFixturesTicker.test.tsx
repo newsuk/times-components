@@ -11,7 +11,7 @@ const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
 const mockIsNationalComp = jest.fn();
 const mockUseFixturePageLink = jest.fn();
-const mockUseUpdateNationalTeamDetails = jest.fn();
+const mockuseUpdateTeamDetails = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -32,8 +32,8 @@ jest.mock('../../../utils/replaceTeamDetails', () => ({
 jest.mock('../../../utils/useFixturePageLink', () => ({
   useFixturePageLink: mockUseFixturePageLink
 }));
-jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
-  useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails
+jest.mock('../../../utils/useUpdateTeamDetails', () => ({
+  useUpdateTeamDetails: mockuseUpdateTeamDetails
 }));
 
 import { OptaFixturesTicker } from '../OptaFixturesTicker';
@@ -107,7 +107,7 @@ describe('OptaFixturesTicker without flags', () => {
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
+    expect(mockuseUpdateTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -131,7 +131,7 @@ describe('OptaFixturesTicker without flags', () => {
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
     expect(mockUseFixturePageLink).not.toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
+    expect(mockuseUpdateTeamDetails).toHaveBeenCalled();
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -154,7 +154,7 @@ describe('OptaFixturesTicker without flags', () => {
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
     expect(mockUseFixturePageLink).toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
+    expect(mockuseUpdateTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });

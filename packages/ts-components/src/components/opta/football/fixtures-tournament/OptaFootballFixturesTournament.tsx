@@ -13,7 +13,7 @@ import {
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 import { isNationalCompetition } from '../../utils/replaceTeamDetails';
-import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
+import { useUpdateTeamDetails } from '../../utils/useUpdateTeamDetails';
 
 export const OptaFootballFixturesTournament: React.FC<{
   season: string;
@@ -54,7 +54,7 @@ export const OptaFootballFixturesTournament: React.FC<{
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
-    const isNationalComp = isNationalCompetition(competition);
+    const isNationalComp = isNationalCompetition(competition, 'football');
     const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(() => {
@@ -108,7 +108,7 @@ export const OptaFootballFixturesTournament: React.FC<{
       });
     }, []);
 
-    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
+    useUpdateTeamDetails('football', competition, ref, 'Opta-Team');
 
     return (
       <Container
