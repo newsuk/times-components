@@ -1,7 +1,10 @@
 import React from 'react';
+import { TextDecoder } from 'util';
 import { render, screen } from '@testing-library/react';
 import { ArticleCardsProps, ArticleProps } from '../types';
 import { ArticleCard } from '../ArticleCard';
+
+Object.assign(global, { TextDecoder });
 
 jest.mock('../Card/Card', () => ({
   __esModule: true,
