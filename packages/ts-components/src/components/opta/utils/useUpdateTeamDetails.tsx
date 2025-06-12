@@ -20,6 +20,6 @@ export const useUpdateTeamDetails = (
         TeamNameContainers && replaceTeamName(TeamNameContainers);
       }
     },
-    [ref]
+    [ref, competition]
   );
 };
