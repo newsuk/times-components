@@ -27,28 +27,28 @@ describe('isNationalCompetition', () => {
   jest.spyOn(optaFn, 'isNationalCompetition');
 
   it('should return TRUE if is in array of national competitions', async () => {
-    const isNationalCompetition = optaFn.isNationalCompetition('3');
-    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('3');
+    const isNationalCompetition = optaFn.isNationalCompetition('3', 'football');
+    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('3', 'football');
     expect(isNationalCompetition).toBe(true);
   });
 
   it('should return FALSE if is in array of national competitions', async () => {
-    const isNationalCompetition = optaFn.isNationalCompetition('8');
-    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('8');
+    const isNationalCompetition = optaFn.isNationalCompetition('8', 'football');
+    expect(optaFn.isNationalCompetition).toHaveBeenCalledWith('8', 'football');
     expect(isNationalCompetition).toBe(false);
   });
 });
 
-describe('replaceWithTBD', () => {
-  jest.spyOn(optaFn, 'replaceWithTBD');
+describe('replaceTeamName', () => {
+  jest.spyOn(optaFn, 'replaceTeamName');
 
   it('should replace images when valid elements are passed', async () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceWithTBD = await optaFn.replaceWithTBD(elements);
+    const replaceWithTBD = await optaFn.replaceTeamName(elements);
 
-    expect(optaFn.replaceWithTBD).toHaveBeenCalledWith(elements);
+    expect(optaFn.replaceTeamName).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
     expect(replaceWithTBD).toBe(undefined);
     const transformedElements = Array.from(elements);
@@ -62,9 +62,9 @@ describe('replaceWithTBD', () => {
     jest.useFakeTimers();
     const container = mockReplaceNationalTeamDetails();
     const elements = container.getElementsByClassName('Opta-TeamName');
-    const replaceWithTBD = await optaFn.replaceWithTBD(elements);
+    const replaceWithTBD = await optaFn.replaceTeamName(elements);
 
-    expect(optaFn.replaceWithTBD).toHaveBeenCalledWith(elements);
+    expect(optaFn.replaceTeamName).toHaveBeenCalledWith(elements);
     jest.advanceTimersByTime(3000);
     expect(replaceWithTBD).toBe(undefined);
     const transformedElements = Array.from(elements);
