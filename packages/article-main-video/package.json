@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-video",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Main Video Article Template",
   "main": "dist/article-main-video",
   "dev": "src/article-main-video",
@@ -52,9 +52,9 @@
   },
   "dependencies": {
     "@times-components/ad": "2.23.2",
-    "@times-components/article-comments": "0.52.0",
+    "@times-components/article-comments": "0.52.1",
     "@times-components/article-lead-asset": "1.22.2",
-    "@times-components/article-skeleton": "1.165.13",
+    "@times-components/article-skeleton": "1.165.14",
     "@times-components/article-topics": "4.11.73",
     "@times-components/context": "1.25.11",
     "@times-components/date-publication": "0.31.3",
