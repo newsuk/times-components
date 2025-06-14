@@ -17,18 +17,6 @@ export const snapshotTests = renderComponent => [
           adConfig={adConfig}
           analyticsStream={() => {}}
           article={fixtures.articleVideoData}
-          articleDataFromRender={{
-            breadcrumbs: [
-              {
-                title: "Comment",
-                url: "/comment"
-              },
-              {
-                title: "News",
-                url: "/news"
-              }
-            ]
-          }}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
