@@ -150,7 +150,7 @@ exports[`disabled comments 1`] = `
   text-decoration: underline;
   color: #006699;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .c0 {
@@ -161,7 +161,7 @@ exports[`disabled comments 1`] = `
 .c2 {
   color: #696969;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   padding-bottom: 30px;
   padding-top: 5px;
@@ -170,8 +170,9 @@ exports[`disabled comments 1`] = `
 
 .c1 {
   color: #333333;
-  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
+  font-family: Times Modern,Times Modern-fallback,serif;
   font-size: 24px;
+  font-weight: 300;
   margin: 0;
   padding-bottom: 5px;
   padding-top: 30px;
@@ -205,7 +206,7 @@ exports[`disabled comments 1`] = `
       <a
         class="c3"
         href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px;"
       >
         here
       </a>

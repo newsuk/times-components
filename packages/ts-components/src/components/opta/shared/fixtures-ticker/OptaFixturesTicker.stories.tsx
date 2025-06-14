@@ -24,12 +24,12 @@ const footballCompetitons = [
   '941',
   '1125'
 ];
-const rugbyCompetitons = ['209', '201', '242'];
+const rugbyCompetitons = ['209', '201', '221', '242'];
 
 storiesOf('Typescript Component/In Article/Rugby/Fixtures', module)
   .addDecorator(withKnobs)
   .add('Rugby Fixtures Ticker', () => {
-    const selComp = select('Competition', rugbyCompetitons, '201');
+    const selComp = select('Competition', rugbyCompetitons, '221');
     return (
       <OptaFixturesTicker
         season={text('season', '2025')}
