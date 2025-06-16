@@ -37,6 +37,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     removeTeaserContent
   } = data;
 
+  const withArticleTrackingContext = require("../../../article-skeleton/src/tracking/article-tracking-context").default;
+  const TrackedArticle = withArticleTrackingContext(Article);
+
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -57,6 +60,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             : providerData.article;
           const articleTemplate = article ? article.template : null;
 
+          const sectionPath = article ? getSectionFromTiles(article) : "";
+          const sectionHierarchy = sectionPath ? sectionPath.split(":") : [];
+
           return React.createElement(
             ContextProviderWithDefaults,
             {
@@ -74,13 +80,12 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 user: userState
               }
             },
-            React.createElement(Article, {
+            React.createElement(TrackedArticle, {
               analyticsStream,
               article: {
                 ...article,
-                section: article
-                  ? getSectionNameForAnalytics(article)
-                  : "unknown section",
+                section: sectionPath || "unknown section",
+                sectionHierarchy,
                 isPreview
               },
               error,

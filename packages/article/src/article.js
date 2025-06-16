@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import ArticleInDepth from "@times-components/article-in-depth";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
@@ -27,8 +26,18 @@ export class TakeoverBailout extends Error {
 }
 
 const Article = props => {
-  const { article, onImagePress } = props;
+  const { article, onImagePress, trackingContext } = props;
   const { leadAsset, template, isPreview } = article || {};
+
+    // Set window.utag_data from tracking context
+  useEffect(() => {
+    if (typeof window !== "undefined" && trackingContext) {
+      window.utag_data = {
+        ...window.utag_data, // preserve any existing data
+        ...trackingContext   // inject tracking context values
+      };
+    }
+  }, [trackingContext]);
 
   let { content } = article || {};
   if (template === "takeoverpage") {
