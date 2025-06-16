@@ -3,32 +3,16 @@
 exports[`OptaFixturesTicker rugby should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kSTJgb"
+    class="sc-bxivhb gBdBES"
   >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    />
-    <div
-      class="sc-bwzfXH jStUkM"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFixturesTicker rugby should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bxivhb kSTJgb"
-  >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-EHOje iwBZBl"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -36,32 +20,16 @@ exports[`OptaFixturesTicker rugby should render correctly 2`] = `
 exports[`OptaFixturesTicker with flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kSTJgb"
+    class="sc-bxivhb gBdBES"
   >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    />
-    <div
-      class="sc-bwzfXH jStUkM"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFixturesTicker with flags should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bxivhb kSTJgb"
-  >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-EHOje iwBZBl"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -69,32 +37,16 @@ exports[`OptaFixturesTicker with flags should render correctly 2`] = `
 exports[`OptaFixturesTicker without flags should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kSTJgb"
+    class="sc-bxivhb gBdBES"
   >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    />
-    <div
-      class="sc-bwzfXH jStUkM"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFixturesTicker without flags should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bxivhb kSTJgb"
-  >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-EHOje iwBZBl"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -102,32 +54,16 @@ exports[`OptaFixturesTicker without flags should render correctly 2`] = `
 exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kSTJgb"
+    class="sc-bxivhb gBdBES"
   >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    />
-    <div
-      class="sc-bwzfXH jStUkM"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFixturesTicker without flags should render correctly with fixturesPageUrl 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bxivhb kSTJgb"
-  >
     <div
-      class="sc-htpNat sc-EHOje fmlkzb"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-EHOje iwBZBl"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -135,32 +71,16 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
 exports[`OptaFixturesTicker without flags should render correctly with isApp property 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kSTJgb"
+    class="sc-bxivhb gBdBES"
   >
     <div
-      class="sc-htpNat sc-EHOje kOQTjl"
-    />
-    <div
-      class="sc-bwzfXH jStUkM"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFixturesTicker without flags should render correctly with isApp property 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bxivhb kSTJgb"
-  >
     <div
-      class="sc-htpNat sc-EHOje kOQTjl"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-EHOje feChYV"
+    />
   </div>
 </DocumentFragment>
 `;

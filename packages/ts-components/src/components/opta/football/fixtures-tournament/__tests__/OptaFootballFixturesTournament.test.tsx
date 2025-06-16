@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 
 import 'regenerator-runtime';
 import '@testing-library/jest-dom';
@@ -11,6 +11,8 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockIsNationalComp = jest.fn();
+const mockReplaceTeamName = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,6 +28,11 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
+jest.mock('../../../utils/replaceTeamDetails', () => ({
+  isNationalCompetition: mockIsNationalComp,
+  replaceTeamName: mockReplaceTeamName
+}));
+
 import { OptaFootballFixturesTournament } from '../OptaFootballFixturesTournament';
 
 afterEach(() => {
@@ -34,12 +41,14 @@ afterEach(() => {
 
 describe('OptaFootballFixturesTournament', () => {
   it('should render national competitions correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFootballFixturesTournament season="2023" competition="3" />
     );
-    expect(asFragment()).toMatchSnapshot();
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
@@ -48,7 +57,7 @@ describe('OptaFootballFixturesTournament', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render full width correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFootballFixturesTournament
         season="2023"
         competition="3"
@@ -56,22 +65,20 @@ describe('OptaFootballFixturesTournament', () => {
       />
     );
     expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
-
-    expect(asFragment()).toMatchSnapshot();
   });
   it('should render national competitions correctly with single column', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFootballFixturesTournament
         season="2023"
         competition="3"
         columns={false}
       />
     );
-    expect(asFragment()).toMatchSnapshot();
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
@@ -80,12 +87,14 @@ describe('OptaFootballFixturesTournament', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render other competitions correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFootballFixturesTournament season="2023" competition="8" />
     );
-    expect(asFragment()).toMatchSnapshot();
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);

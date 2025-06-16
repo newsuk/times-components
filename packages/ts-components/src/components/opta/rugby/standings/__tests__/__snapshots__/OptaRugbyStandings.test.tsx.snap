@@ -3,13 +3,13 @@
 exports[`OptaRugbyStandings should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
       class="sc-bxivhb sc-ifAKCX jRsipM"
     />
     <div
-      class="sc-bwzfXH kVYHKf"
+      class="sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
@@ -20,7 +20,7 @@ exports[`OptaRugbyStandings should render correctly 1`] = `
 exports[`OptaRugbyStandings should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa iGGGrD"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
       class="sc-bxivhb sc-ifAKCX jRsipM"

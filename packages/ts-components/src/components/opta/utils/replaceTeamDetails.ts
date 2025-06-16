@@ -12,21 +12,27 @@ export const isNationalCompetition = (
   return sport === 'football' && nationalCompetitions.includes(competition);
 };
 
-export const replaceTeamName = (element: HTMLCollectionOf<Element>) => {
-  let count = 0;
-  const replaceDetails = setInterval(() => {
-    if (count >= 25) {
-      clearInterval(replaceDetails);
-    }
-    count++;
+export const replaceTeamName = () => {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.innerHTML = `
+    Opta.events.subscribe('widget.loaded', function (widget) {
+      const placeholder = document.querySelector('.opta-placeholder');
 
-    for (let optaTeamName of element) {
-      const country = optaTeamName as HTMLElement;
+      const attr = widget.widget.attr;
+      const sport = attr.sport;
+      const competition = attr.competition;
+      const nationalFootballCompetitions = [3, 235, 941];
+    
+      if (sport === 'football' && nationalFootballCompetitions.includes(competition)) {
+        Opta(widget.widget.wid).addClass('team-flags');
+      }
 
-      if (country) {
+      Opta(widget.widget.wid + ' .Opta-TeamName').each(function (num, element) {
+        const team = Opta(element);
         const isGroupPlayoff =
-          country.innerText.includes('Third Place') ||
-          country.innerText.includes('Group');
+          team[0].innerText.includes('Third Place') ||
+          team[0].innerText.includes('Group');
 
         const replacements = [
           { pattern: /Quarter-Finalist/g, replacement: 'QF' },
@@ -39,11 +45,16 @@ export const replaceTeamName = (element: HTMLCollectionOf<Element>) => {
         ];
 
         replacements.forEach(({ pattern, replacement }) => {
-          country.innerText = isGroupPlayoff
+          team[0].innerText = isGroupPlayoff
             ? 'TBD'
-            : country.innerText.replace(pattern, replacement);
+            : team[0].innerText.replace(pattern, replacement);
         });
+      });
+
+      if (placeholder) {
+        placeholder.style.display = 'none';
       }
-    }
-  }, 500);
+    });
+  `;
+  document.body.appendChild(script);
 };

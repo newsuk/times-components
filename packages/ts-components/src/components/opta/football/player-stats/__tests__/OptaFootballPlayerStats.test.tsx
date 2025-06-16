@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 
 import 'regenerator-runtime';
 import '@testing-library/jest-dom';
@@ -11,6 +11,8 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockIsNationalComp = jest.fn();
+const mockReplaceTeamName = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,6 +28,11 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
+jest.mock('../../../utils/replaceTeamDetails', () => ({
+  isNationalCompetition: mockIsNationalComp,
+  replaceTeamName: mockReplaceTeamName
+}));
+
 import { OptaFootballPlayerStats } from '../OptaFootballPlayerStats';
 
 const requiredProps = {
@@ -37,16 +44,19 @@ const requiredProps = {
 
 describe('OptaFootballPlayerStats', () => {
   it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFootballPlayerStats {...requiredProps} />
     );
     expect(asFragment()).toMatchSnapshot();
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
-    expect(mockInitSettings).toHaveBeenCalledTimes(2);
-    expect(mockInitStyleSheet).toHaveBeenCalledTimes(2);
-    expect(mockInitComponent).toHaveBeenCalledTimes(2);
+    expect(mockInitSettings).toHaveBeenCalledTimes(1);
+    expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
+    expect(mockInitComponent).toHaveBeenCalledTimes(1);
 
     expect(asFragment()).toMatchSnapshot();
   });

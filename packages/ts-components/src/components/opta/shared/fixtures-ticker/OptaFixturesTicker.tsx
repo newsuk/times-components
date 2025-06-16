@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { Placeholder } from '@times-components/image';
 
@@ -12,8 +12,10 @@ import {
 
 import { PlaceholderContainer } from '../shared-styles';
 import { Container, WidgetContainer } from './styles';
-import { isNationalCompetition } from '../../utils/replaceTeamDetails';
-import { useUpdateTeamDetails } from '../../utils/useUpdateTeamDetails';
+import {
+  isNationalCompetition,
+  replaceTeamName
+} from '../../utils/replaceTeamDetails';
 import { useFixturePageLink } from '../../utils/useFixturePageLink';
 
 export type OptaSport = 'cricket' | 'rugby' | 'football';
@@ -47,8 +49,6 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
     sport
   }) => {
     const ref = React.createRef<HTMLDivElement>();
-
-    const [isReady, setIsReady] = useState<boolean>(false);
     const isNationalComp = isNationalCompetition(competition, sport);
 
     useEffect(
@@ -56,37 +56,40 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
         initSettings();
         initStyleSheet(sport);
 
-        initScript().then(() => {
-          if (ref.current) {
-            ref.current.innerHTML = initElement('opta-widget', {
-              sport,
-              widget: 'fixtures',
-              season,
-              competition,
-              date_from,
-              date_to,
-              days_ahead,
-              days_before,
-              round,
-              live: true,
-              start_on_current: true,
-              template: 'strip',
-              team_naming: 'brief',
-              match_status: 'all',
-              order_by: 'date_ascending',
-              show_grouping: true,
-              show_crests: !isNationalComp,
-              show_date: true,
-              show_live: true,
-              date_format: 'ddd Do MMM',
-              fixture_width: 160,
-              breakpoints: 520
-            }).outerHTML;
+        initScript()
+          .then(() => {
+            if (ref.current) {
+              ref.current.innerHTML = initElement('opta-widget', {
+                sport,
+                widget: 'fixtures',
+                season,
+                competition,
+                date_from,
+                date_to,
+                days_ahead,
+                days_before,
+                round,
+                live: true,
+                start_on_current: true,
+                template: 'strip',
+                team_naming: 'brief',
+                match_status: 'all',
+                order_by: 'date_ascending',
+                show_grouping: true,
+                show_crests: !isNationalComp,
+                show_date: true,
+                show_live: true,
+                date_format: 'ddd Do MMM',
+                fixture_width: 160,
+                breakpoints: 520
+              }).outerHTML;
 
-            initComponent();
-            setIsReady(true);
-          }
-        });
+              initComponent();
+            }
+          })
+          .then(() => {
+            replaceTeamName();
+          });
       },
       [ref]
     );
@@ -95,17 +98,12 @@ export const OptaFixturesTicker: React.FC<OptaFixturesTickerProps> = React.memo(
       !isApp &&
       useFixturePageLink(ref, 'Opta-Room', fixturesPageUrl);
 
-    useUpdateTeamDetails(sport, competition, ref, 'Opta-TeamName');
-
     return (
       <Container>
+        <PlaceholderContainer className="opta-placeholder">
+          <Placeholder />
+        </PlaceholderContainer>
         <WidgetContainer isApp={isApp} showButtons={showButtons} ref={ref} />
-
-        {!isReady && (
-          <PlaceholderContainer isHeight>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
       </Container>
     );
   }

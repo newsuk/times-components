@@ -56,7 +56,7 @@ storiesOf('Typescript Component/In Article/Rugby/Fixtures', module)
 storiesOf('Typescript Component/In Article/Football/Fixtures', module)
   .addDecorator(withKnobs)
   .add('Football Fixtures Ticker', () => {
-    const selComp = select('Competition', footballCompetitons, '8');
+    const selComp = select('Competition', footballCompetitons, '1');
     return (
       <OptaFixturesTicker
         season={text('season', '2024')}
@@ -82,7 +82,7 @@ storiesOf('Typescript Component/In Article/Football/Fixtures', module)
 storiesOf('Typescript Component/In Article/Football/Fixtures', module)
   .addDecorator(withKnobs)
   .add('Fixtures Ticker buttons and link', () => {
-    const selComp = select('Competition', footballCompetitons, '8');
+    const selComp = select('Competition', footballCompetitons, '1');
     return (
       <OptaFixturesTicker
         season={text('season', '2024')}

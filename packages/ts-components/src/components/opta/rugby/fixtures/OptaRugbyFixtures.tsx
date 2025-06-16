@@ -88,7 +88,6 @@ export const OptaRugbyFixtures: React.FC<{
 
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         heightSm={heightSm}
         heightMd={heightMd}
@@ -97,7 +96,7 @@ export const OptaRugbyFixtures: React.FC<{
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
+          <PlaceholderContainer>
             <Placeholder />
           </PlaceholderContainer>
         )}

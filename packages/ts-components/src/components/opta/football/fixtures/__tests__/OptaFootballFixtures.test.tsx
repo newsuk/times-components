@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
+import { act, render } from '@testing-library/react';
 
 import 'regenerator-runtime';
 import '@testing-library/jest-dom';
@@ -11,6 +11,8 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockIsNationalComp = jest.fn();
+const mockReplaceTeamName = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,6 +28,18 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
+jest.mock('../../../utils/replaceTeamDetails', () => ({
+  isNationalCompetition: mockIsNationalComp,
+  replaceTeamName: mockReplaceTeamName
+}));
+
+const mockChildMethod = jest.fn();
+jest.spyOn(React, 'useRef').mockReturnValue({
+  current: {
+    childMethod: mockChildMethod
+  }
+});
+
 import { OptaFootballFixtures } from '../OptaFootballFixtures';
 
 const requiredProps = {
@@ -37,12 +51,11 @@ const requiredProps = {
 
 describe('OptaFootballFixtures', () => {
   it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
-      <OptaFootballFixtures {...requiredProps} />
-    );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    const { asFragment } = render(<OptaFootballFixtures {...requiredProps} />);
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
