@@ -34,7 +34,27 @@ export default Component =>
         }
       }
 
+      // Build hierarchical page sections
+      const rawHierarchy = get(data, "sectionHierarchy", []);
+      const sectionHierarchy = Array.isArray(rawHierarchy)
+        ? rawHierarchy.filter(Boolean)
+        : [];
+
+      const sectionAttrs = {};
+
+      sectionHierarchy.forEach((section, index) => {
+        const key = index === 0 ? "page_section" : `page_section_${index + 1}`;
+        const value = sectionHierarchy.slice(0, index + 1).join(":");
+        sectionAttrs[key] = value;
+      });
+
+      // Fallback if no sectionHierarchy provided
+      if (sectionHierarchy.length === 0 && pageSection) {
+        sectionAttrs.page_section = pageSection;
+      }
+
       return {
+        ...sectionAttrs,
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
           ? data.topics.map(topic => topic.name)
