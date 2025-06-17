@@ -27,15 +27,15 @@ describe("<ArticleComments>", () => {
   });
 
   it("should show <JoinTheConversationDialog> when isEnabled=true and no cookie", () => {
-    const { getByText } = render(<ArticleComments isEnabled />);
-    expect(getByText("JoinTheConversationDialog"));
+    const { getByTestId } = render(<ArticleComments isEnabled />);
+    expect(getByTestId("zephr__commenting-banner"));
   });
 
   it("should show <JoinTheConversationDialog> when isEnabled=true and no entitlement", () => {
     getBase64CookieValue.mockReturnValue({ "fp-1113": false });
 
-    const { getByText } = render(<ArticleComments isEnabled />);
-    expect(getByText("JoinTheConversationDialog"));
+    const { getByTestId } = render(<ArticleComments isEnabled />);
+    expect(getByTestId("zephr__commenting-banner"));
   });
 
   it("should show <Comments> when isEnabled=true", () => {
