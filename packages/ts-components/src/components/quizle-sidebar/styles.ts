@@ -55,6 +55,10 @@ export const TitleIconContainer = styled.div`
     height: 40px;
     margin-left: 8px;
   }
+  & .titleWrapper {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h3`
