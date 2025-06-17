@@ -34,27 +34,25 @@ export default Component =>
         }
       }
 
-      // Build hierarchical page sections
-      const rawHierarchy = get(data, "sectionHierarchy", []);
-      const sectionHierarchy = Array.isArray(rawHierarchy)
-        ? rawHierarchy.filter(Boolean)
-        : [];
+       // --- Inline section transformation ---
+  const sectionPath = pageSection || get(data, "section", "");
+  const result = {};
+  if (sectionPath) {
+    const cleanRoute = sectionPath.replace(/^\/|\/$/g, '');
+    const parts = cleanRoute
+      .split('/')
+      .filter(Boolean)
+      .map(part => part.charAt(0).toUpperCase() + part.slice(1));
 
-      const sectionAttrs = {};
-
-      sectionHierarchy.forEach((section, index) => {
-        const key = index === 0 ? "page_section" : `page_section_${index + 1}`;
-        const value = sectionHierarchy.slice(0, index + 1).join(":");
-        sectionAttrs[key] = value;
-      });
-
-      // Fallback if no sectionHierarchy provided
-      if (sectionHierarchy.length === 0 && pageSection) {
-        sectionAttrs.page_section = pageSection;
-      }
+    let cumulative = '';
+    parts.forEach((part, index) => {
+      cumulative = cumulative ? `${cumulative}:${part}` : part;
+      const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
+      result[key] = cumulative;
+    });
+  }
 
       return {
-        ...sectionAttrs,
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
           ? data.topics.map(topic => topic.name)
@@ -76,7 +74,7 @@ export default Component =>
         publishedTime: get(data, "publishedTime", ""),
         parent_site: get(data, "publicationName", ""),
         referralUrl,
-        section: pageSection || get(data, "section", ""),
+       /*  section: pageSection || get(data, "section", ""), */
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),
@@ -86,7 +84,8 @@ export default Component =>
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
-          : "standard template"
+          : "standard template",
+          ...result
       };
     },
     trackingObjectName: "Article"

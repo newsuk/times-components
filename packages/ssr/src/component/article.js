@@ -37,9 +37,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     removeTeaserContent
   } = data;
 
-  const withArticleTrackingContext = require("../../../article-skeleton/src/tracking/article-tracking-context").default;
-  const TrackedArticle = withArticleTrackingContext(Article);
-
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },
@@ -60,8 +57,26 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             : providerData.article;
           const articleTemplate = article ? article.template : null;
 
-          const sectionPath = article ? getSectionFromTiles(article) : "";
-          const sectionHierarchy = sectionPath ? sectionPath.split(":") : [];
+          const sectionPath = article ? getSectionNameForAnalytics(article) : "";
+
+
+// --- Inline section transformation ---
+const sectionData = {};
+if (sectionPath) {
+  const cleanRoute = sectionPath.replace(/^\/|\/$/g, '');
+  const parts = cleanRoute
+    .split('/')
+    .filter(Boolean)
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1));
+
+  let cumulative = '';
+  parts.forEach((part, index) => {
+    cumulative = cumulative ? `${cumulative}:${part}` : part;
+    const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
+    sectionData[key] = cumulative;
+  });
+}
+
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -80,13 +95,13 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 user: userState
               }
             },
-            React.createElement(TrackedArticle, {
+            React.createElement(Article, {
               analyticsStream,
               article: {
                 ...article,
                 section: sectionPath || "unknown section",
-                sectionHierarchy,
-                isPreview
+    isPreview,
+    ...sectionData // ✅ Add page_section/page_section_2/etc. here
               },
               error,
               isLoading,
