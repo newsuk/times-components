@@ -34,9 +34,7 @@ export const OptaRugbyFixtures: React.FC<{
     heightLg
   }) => {
     const ref = React.createRef<HTMLDivElement>();
-
     const [isReady, setIsReady] = useState<boolean>(false);
-    const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(() => {
       const sport = 'rugby';
@@ -88,7 +86,6 @@ export const OptaRugbyFixtures: React.FC<{
 
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         heightSm={heightSm}
         heightMd={heightMd}
@@ -97,7 +94,7 @@ export const OptaRugbyFixtures: React.FC<{
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
+          <PlaceholderContainer>
             <Placeholder />
           </PlaceholderContainer>
         )}

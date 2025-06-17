@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { Placeholder } from '@times-components/image';
 
@@ -10,6 +10,10 @@ import {
   initComponent
 } from '../../utils/config';
 
+import {
+  isNationalCompetition,
+  replaceTeamName
+} from '../../utils/replaceTeamDetails';
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
 
@@ -34,10 +38,7 @@ export const OptaFootballFixtures: React.FC<{
     heightLg
   }) => {
     const ref = React.createRef<HTMLDivElement>();
-
-    const [isReady, setIsReady] = useState<boolean>(false);
-
-    const isHeight = heightSm || heightMd || heightLg;
+    const isNationalComp = isNationalCompetition(competition, 'football');
 
     useEffect(() => {
       const sport = 'football';
@@ -45,47 +46,49 @@ export const OptaFootballFixtures: React.FC<{
       initSettings();
       initStyleSheet(sport);
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement(
-            'opta-widget',
-            {
-              sport,
-              widget: 'fixtures',
-              season,
-              competition,
-              date_from,
-              date_to,
-              live: true,
-              grouping: 'date',
-              show_grouping: true,
-              show_crests: true,
-              date_format: 'dddd MMMM D YYYY',
-              breakpoints: 520
-            },
-            initElement('opta-widget', {
-              sport,
-              widget: 'match_summary',
-              season: '',
-              competition: '',
-              match: '',
-              live: true,
-              show_crests: true,
-              show_goals: true,
-              show_cards: 'red',
-              breakpoints: '520'
-            })
-          ).outerHTML;
+      initScript()
+        .then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement(
+              'opta-widget',
+              {
+                sport,
+                widget: 'fixtures',
+                season,
+                competition,
+                date_from,
+                date_to,
+                live: true,
+                grouping: 'date',
+                show_grouping: true,
+                show_crests: !isNationalComp,
+                date_format: 'dddd MMMM D YYYY',
+                breakpoints: 520
+              },
+              initElement('opta-widget', {
+                sport,
+                widget: 'match_summary',
+                season: '',
+                competition: '',
+                match: '',
+                live: true,
+                show_crests: true,
+                show_goals: true,
+                show_cards: 'red',
+                breakpoints: '520'
+              })
+            ).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
+            initComponent();
+          }
+        })
+        .then(() => {
+          replaceTeamName();
+        });
     }, []);
 
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         heightSm={heightSm}
         heightMd={heightMd}
@@ -93,11 +96,9 @@ export const OptaFootballFixtures: React.FC<{
       >
         <WidgetContainer ref={ref} />
 
-        {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
+        <PlaceholderContainer className="opta-placeholder">
+          <Placeholder />
+        </PlaceholderContainer>
       </Container>
     );
   }

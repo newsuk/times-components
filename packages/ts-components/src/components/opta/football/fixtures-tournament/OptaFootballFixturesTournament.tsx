@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { Placeholder } from '@times-components/image';
 
@@ -12,8 +12,10 @@ import {
 
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
-import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
-import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
+import {
+  isNationalCompetition,
+  replaceTeamName
+} from '../../utils/replaceTeamDetails';
 
 export const OptaFootballFixturesTournament: React.FC<{
   season: string;
@@ -52,10 +54,7 @@ export const OptaFootballFixturesTournament: React.FC<{
     heightLg
   }) => {
     const ref = React.createRef<HTMLDivElement>();
-
-    const [isReady, setIsReady] = useState<boolean>(false);
-    const isNationalComp = isNationalCompetition(competition);
-    const isHeight = heightSm || heightMd || heightLg;
+    const isNationalComp = isNationalCompetition(competition, 'football');
 
     useEffect(() => {
       const sport = 'football';
@@ -63,74 +62,72 @@ export const OptaFootballFixturesTournament: React.FC<{
       initSettings();
       initStyleSheet(sport);
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement(
-            'opta-widget',
-            {
-              sport,
-              widget: 'fixtures',
-              season,
-              competition,
-              date_from,
-              date_to,
-              days_ahead,
-              days_before,
-              matchday,
-              round,
-              show_title,
-              live: true,
-              grouping: 'matchday',
-              show_grouping: true,
-              sub_grouping: 'date|matchday|group',
-              show_subgrouping: true,
-              show_crests: !isNationalComp,
-              date_format: 'dddd MMMM D YYYY',
-              breakpoints: 520
-            },
-            initElement('opta-widget', {
-              sport,
-              widget: 'match_summary',
-              season: '',
-              competition: '',
-              match: '',
-              live: true,
-              show_crests: true,
-              show_goals: true,
-              show_cards: 'red',
-              breakpoints: '520'
-            })
-          ).outerHTML;
+      initScript()
+        .then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement(
+              'opta-widget',
+              {
+                sport,
+                widget: 'fixtures',
+                season,
+                competition,
+                date_from,
+                date_to,
+                days_ahead,
+                days_before,
+                matchday,
+                round,
+                show_title,
+                live: true,
+                grouping: 'matchday',
+                show_grouping: true,
+                sub_grouping: 'date|matchday|group',
+                show_subgrouping: true,
+                show_crests: !isNationalComp,
+                date_format: 'dddd MMMM D YYYY',
+                breakpoints: 520
+              },
+              initElement('opta-widget', {
+                sport,
+                widget: 'match_summary',
+                season: '',
+                competition: '',
+                match: '',
+                live: true,
+                show_crests: true,
+                show_goals: true,
+                show_cards: 'red',
+                breakpoints: '520'
+              })
+            ).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
+            initComponent();
+          }
+        })
+        .then(() => {
+          replaceTeamName();
+        });
     }, []);
-
-    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Team');
 
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         className={classes}
         heightSm={heightSm}
         heightMd={heightMd}
         heightLg={heightLg}
       >
+        <PlaceholderContainer className="opta-placeholder">
+          <Placeholder />
+        </PlaceholderContainer>
+
         <WidgetContainer
           ref={ref}
           isNationalComp={isNationalComp}
           hide_matchday={hide_matchday}
           columns={columns}
         />
-
-        {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
       </Container>
     );
   }

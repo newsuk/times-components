@@ -5,6 +5,8 @@ import { WidgetContainerBase } from '../shared-styles';
 
 export const Container = styled.div`
   height: 81px;
+  position: relative;
+  overflow: hidden;
 `;
 
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
@@ -47,6 +49,8 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
   isApp?: boolean;
   showButtons?: boolean;
 }>`
+
+
   .Opta {
     font-family: Roboto !important;
   }
@@ -247,6 +251,9 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
       `}
     }
 
+    .Opta-Score {
+      width: 18px !important;
+    }
     .Opta-TeamName,
     .Opta-Team-Score {
       color: #01000d !important;
@@ -333,7 +340,9 @@ export const WidgetContainer = styled(WidgetContainerBase)<{
         border-top: none !important;
       }
     }
-
+    .Opta-Image {
+      margin-right; 6px;
+    }
     .Opta-Image-Team-Small {
       height: 20px;
     }

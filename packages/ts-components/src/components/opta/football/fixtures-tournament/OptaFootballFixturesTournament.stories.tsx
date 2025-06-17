@@ -18,6 +18,7 @@ const showcase = {
           season="2023"
           competition="3"
           show_title={false}
+          heightSm={1000}
           full_width
         />
       ),

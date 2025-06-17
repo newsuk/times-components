@@ -3,31 +3,15 @@
 exports[`OptaFootballFixtures should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-ifAKCX kRuyQz"
+      class="sc-htpNat sc-ifAKCX dJlqPD"
     />
     <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixtures should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
-    <div
-      class="sc-htpNat sc-ifAKCX kRuyQz"
-    >
-      <div>
-        Widget
-      </div>
     </div>
   </div>
 </DocumentFragment>

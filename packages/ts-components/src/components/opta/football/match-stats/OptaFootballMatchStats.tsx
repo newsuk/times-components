@@ -34,7 +34,6 @@ export const OptaFootballMatchStats: React.FC<{
     const ref = React.createRef<HTMLDivElement>();
 
     const [isReady, setIsReady] = useState<boolean>(false);
-    const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(() => {
       const sport = 'football';
@@ -72,7 +71,6 @@ export const OptaFootballMatchStats: React.FC<{
 
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         heightSm={heightSm}
         heightMd={heightMd}
@@ -81,7 +79,7 @@ export const OptaFootballMatchStats: React.FC<{
         <WidgetContainer ref={ref} />
 
         {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
+          <PlaceholderContainer>
             <Placeholder />
           </PlaceholderContainer>
         )}

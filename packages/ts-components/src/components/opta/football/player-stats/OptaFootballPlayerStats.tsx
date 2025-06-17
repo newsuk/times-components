@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { Placeholder } from '@times-components/image';
 
@@ -12,8 +12,7 @@ import {
 
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
-import { isNationalCompetition } from '../../utils/replaceNationalTeamDetails';
-import { useUpdateNationalTeamDetails } from '../../utils/useUpdateNationalTeamDetails';
+import { replaceTeamName } from '../../utils/replaceTeamDetails';
 
 export const OptaFootballPlayerStats: React.FC<{
   season: string;
@@ -41,10 +40,6 @@ export const OptaFootballPlayerStats: React.FC<{
   }) => {
     const ref = React.createRef<HTMLDivElement>();
 
-    const [isReady, setIsReady] = useState<boolean>(false);
-    const isNationalComp = isNationalCompetition(competition);
-    const isHeight = heightSm || heightMd || heightLg;
-
     useEffect(
       () => {
         const sport = 'football';
@@ -52,41 +47,41 @@ export const OptaFootballPlayerStats: React.FC<{
         initSettings();
         initStyleSheet(sport);
 
-        initScript().then(() => {
-          if (ref.current) {
-            ref.current.innerHTML = initElement('opta-widget', {
-              sport,
-              widget: 'player_ranking',
-              hide_zeroes,
-              season,
-              competition,
-              template: 'normal',
-              graph_style: 'relative',
-              visible_categories,
-              live: true,
-              show_match_header: true,
-              show_halftime_score: true,
-              show_competition_name: true,
-              show_date: true,
-              show_crests: true,
-              show_title,
-              date_format: 'DD/MM/YYYY',
-              breakpoints: '200'
-            }).outerHTML;
+        initScript()
+          .then(() => {
+            if (ref.current) {
+              ref.current.innerHTML = initElement('opta-widget', {
+                sport,
+                widget: 'player_ranking',
+                hide_zeroes,
+                season,
+                competition,
+                template: 'normal',
+                graph_style: 'relative',
+                visible_categories,
+                live: true,
+                show_match_header: true,
+                show_halftime_score: true,
+                show_competition_name: true,
+                show_date: true,
+                show_crests: true,
+                show_title,
+                date_format: 'DD/MM/YYYY',
+                breakpoints: '200'
+              }).outerHTML;
 
-            initComponent();
-            setIsReady(true);
-          }
-        });
+              initComponent();
+            }
+          })
+          .then(() => {
+            replaceTeamName();
+          });
       },
       [ref]
     );
 
-    isNationalComp && useUpdateNationalTeamDetails(ref, 'Opta-Image-Team');
-
     return (
       <Container
-        border={isReady}
         fullWidth={full_width}
         className={classes}
         heightSm={heightSm}
@@ -95,11 +90,9 @@ export const OptaFootballPlayerStats: React.FC<{
       >
         <WidgetContainer ref={ref} />
 
-        {!isReady && (
-          <PlaceholderContainer isHeight={!!isHeight}>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
+        <PlaceholderContainer className="opta-placeholder">
+          <Placeholder />
+        </PlaceholderContainer>
       </Container>
     );
   }

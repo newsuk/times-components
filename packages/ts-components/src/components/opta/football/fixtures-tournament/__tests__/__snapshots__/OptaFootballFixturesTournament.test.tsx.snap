@@ -3,32 +3,16 @@
 exports[`OptaFootballFixturesTournament should render full width correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kYgBaB"
+    class="sc-bdVaJa cWUgCn"
   >
     <div
-      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
-    />
-    <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTournament should render full width correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa hSmNfz"
-  >
     <div
-      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-ifAKCX fUGfdR"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -36,32 +20,16 @@ exports[`OptaFootballFixturesTournament should render full width correctly 2`] =
 exports[`OptaFootballFixturesTournament should render national competitions correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
-    />
-    <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTournament should render national competitions correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
     <div
-      class="sc-htpNat sc-ifAKCX dniyMN team-flags"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-ifAKCX fUGfdR"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -69,32 +37,16 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
 exports[`OptaFootballFixturesTournament should render national competitions correctly with single column 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-ifAKCX UELGY team-flags"
-    />
-    <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTournament should render national competitions correctly with single column 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
     <div
-      class="sc-htpNat sc-ifAKCX UELGY team-flags"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-ifAKCX iwaKRi"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -102,32 +54,16 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
 exports[`OptaFootballFixturesTournament should render other competitions correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-ifAKCX bqOljm"
-    />
-    <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
     </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballFixturesTournament should render other competitions correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
     <div
-      class="sc-htpNat sc-ifAKCX bqOljm"
-    >
-      <div>
-        Widget
-      </div>
-    </div>
+      class="sc-htpNat sc-ifAKCX fUGfdR"
+    />
   </div>
 </DocumentFragment>
 `;

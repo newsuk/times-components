@@ -13,7 +13,7 @@ const showcase = {
       type: 'decorator'
     },
     {
-      component: () => <OptaFootballStandings season="2023" competition="8" />,
+      component: () => <OptaFootballStandings season="2023" competition="3" />,
       name: 'Standings',
       type: 'story'
     },

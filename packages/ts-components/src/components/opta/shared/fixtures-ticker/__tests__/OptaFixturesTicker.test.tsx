@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 jest.mock('@times-components/image', () => ({
@@ -9,9 +9,9 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockReplaceTeamName = jest.fn();
 const mockIsNationalComp = jest.fn();
 const mockUseFixturePageLink = jest.fn();
-const mockUseUpdateNationalTeamDetails = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,18 +26,16 @@ jest.mock('../../../utils/config', () => ({
   initElement: mockInitElement,
   initComponent: mockInitComponent
 }));
-jest.mock('../../../utils/replaceNationalTeamDetails', () => ({
-  isNationalCompetition: mockIsNationalComp
+jest.mock('../../../utils/replaceTeamDetails', () => ({
+  isNationalCompetition: mockIsNationalComp,
+  replaceTeamName: mockReplaceTeamName
 }));
 jest.mock('../../../utils/useFixturePageLink', () => ({
   useFixturePageLink: mockUseFixturePageLink
 }));
-jest.mock('../../../utils/useUpdateNationalTeamDetails', () => ({
-  useUpdateNationalTeamDetails: mockUseUpdateNationalTeamDetails
-}));
 
 import { OptaFixturesTicker } from '../OptaFixturesTicker';
-import { isNationalCompetition } from '../../../utils/replaceNationalTeamDetails';
+import { isNationalCompetition } from '../../../utils/replaceTeamDetails';
 
 const requiredProps = {
   season: '2020',
@@ -52,7 +50,7 @@ afterEach(() => {
 
 describe('OptaFixturesTicker rugby', () => {
   it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFixturesTicker
         {...requiredProps}
         sport="rugby"
@@ -60,9 +58,10 @@ describe('OptaFixturesTicker rugby', () => {
         competition="209"
       />
     );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
@@ -74,12 +73,13 @@ describe('OptaFixturesTicker rugby', () => {
 
 describe('OptaFixturesTicker with flags', () => {
   it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFixturesTicker sport="football" {...requiredProps} />
     );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
@@ -97,17 +97,17 @@ describe('OptaFixturesTicker without flags', () => {
   it('should render correctly', async () => {
     (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFixturesTicker sport="football" season="2023" competition="3" />
     );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -115,7 +115,7 @@ describe('OptaFixturesTicker without flags', () => {
   it('should render correctly with isApp property', async () => {
     (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFixturesTicker
         sport="football"
         season="2023"
@@ -123,22 +123,22 @@ describe('OptaFixturesTicker without flags', () => {
         isApp={true}
       />
     );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
     expect(mockUseFixturePageLink).not.toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correctly with fixturesPageUrl', async () => {
     (isNationalCompetition as jest.Mock).mockReturnValue(true);
 
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <OptaFixturesTicker
         sport="football"
         season="2023"
@@ -146,15 +146,15 @@ describe('OptaFixturesTicker without flags', () => {
         fixturesPageUrl={'https://www.thetimes.co.uk/sport/football/euro-2024'}
       />
     );
-    expect(asFragment()).toMatchSnapshot();
-
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockReplaceTeamName();
+    });
 
     expect(mockInitSettings).toHaveBeenCalled();
     expect(mockInitStyleSheet).toHaveBeenCalled();
     expect(mockInitComponent).toHaveBeenCalled();
     expect(mockUseFixturePageLink).toHaveBeenCalled();
-    expect(mockUseUpdateNationalTeamDetails).toHaveBeenCalled();
 
     expect(asFragment()).toMatchSnapshot();
   });

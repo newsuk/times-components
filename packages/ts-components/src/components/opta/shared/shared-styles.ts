@@ -82,17 +82,16 @@ const flagStyles = Object.keys(countries).map(
 );
 
 export const Container = styled.div<{
-  border: boolean;
   fullWidth?: boolean;
   heightSm?: number;
   heightMd?: number;
   heightLg?: number;
 }>`
+  position: relative;
   ${({ heightSm }) => heightSm && `height: ${heightSm}px;`}
   margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
-  border-top: ${({ border }) =>
-    border ? `2px solid ${colours.section.sport}` : 'none'};
+  border-top: 2px solid ${colours.section.sport};
 
   a {
     text-decoration: none;
@@ -110,19 +109,20 @@ export const Container = styled.div<{
   }
 `;
 
-export const PlaceholderContainer = styled.div<{
-  isHeight: boolean;
-}>`
-  position: relative;
-  height: ${({ isHeight }) => (isHeight ? '100%' : '200px')};
+export const PlaceholderContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 `;
 
 export const WidgetContainerBase = styled.div`
-  &.team-flags {
-    ${flagStyles};
-  }
-
   .Opta {
+    &.team-flags {
+      ${flagStyles};
+    }
+
     .Opta_W {
       margin: 0;
       background-color: transparent;

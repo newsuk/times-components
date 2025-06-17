@@ -3,31 +3,15 @@
 exports[`OptaFootballStandings should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-bxivhb gJKBih team-flags"
+      class="sc-htpNat sc-bxivhb bZgvkl"
     />
     <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballStandings should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
-    <div
-      class="sc-htpNat sc-bxivhb gJKBih team-flags"
-    >
-      <div>
-        Widget
-      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -36,31 +20,15 @@ exports[`OptaFootballStandings should render correctly 2`] = `
 exports[`OptaFootballStandings should render correctly, with columns 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa hOxnUM"
+    class="sc-bdVaJa kzAIuV"
   >
     <div
-      class="sc-htpNat sc-bxivhb jPAjPs team-flags"
+      class="sc-htpNat sc-bxivhb gcTjsg"
     />
     <div
-      class="sc-bwzfXH kVYHKf"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaFootballStandings should render correctly, with columns 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa iGGGrD"
-  >
-    <div
-      class="sc-htpNat sc-bxivhb jPAjPs team-flags"
-    >
-      <div>
-        Widget
-      </div>
     </div>
   </div>
 </DocumentFragment>
