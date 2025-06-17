@@ -380,7 +380,7 @@ function Head({
             "@type": "ListItem",
             position: breadcrumbIndex + 1,
             name: breadcrumb.title,
-            item: `${domainSpecificUrl}/${breadcrumb.slug}`
+            item: `${domainSpecificUrl}${breadcrumb.url}`
           }))
         }
       : null;
