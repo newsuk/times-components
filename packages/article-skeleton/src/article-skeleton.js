@@ -166,6 +166,26 @@ const ArticleSkeleton = ({
     };
   }, []);
 
+  useEffect(() => {
+  if (typeof window === "undefined") return;
+
+  const pageSections = Object.keys(article || {}).reduce((acc, key) => {
+    if (key.startsWith("page_section")) {
+      acc[key] = article[key];
+    }
+    return acc;
+  }, {});
+
+  if (Object.keys(pageSections).length > 0) {
+    window.utag_data = {
+      ...(window.utag_data || {}),
+      page_section: article.page_section,
+      page_section_2: article.page_section_2,
+      page_section_3: article.page_section_3
+    };
+  }
+}, [article]);
+
   const {
     hostName,
     canonicalUrl,
@@ -296,7 +316,7 @@ const ArticleSkeleton = ({
           component: "ArticleSkeleton",
           attrs: {
             article_name: headline || shortHeadline || "",
-            section_details: section
+            section_details: section,
           }
         }}
         analyticsStream={analyticsStream}
