@@ -34,9 +34,7 @@ export const OptaRugbyStandings: React.FC<{
     heightLg
   }) => {
     const ref = React.createRef<HTMLDivElement>();
-
     const [isReady, setIsReady] = useState<boolean>(false);
-    const isHeight = heightSm || heightMd || heightLg;
 
     useEffect(() => {
       const sport = 'rugby';
