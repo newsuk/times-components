@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.11.1...@times-components/article-main-video@1.12.0) (2025-06-17)
+
+
+### Features
+
+* **TMRA-391:** update rugby sports name ([#4164](https://github.com/newsuk/times-components/issues/4164)) ([fef060d](https://github.com/newsuk/times-components/commit/fef060d56abbc7719998b5bdc7302bb3af4fb8be))
+
+
+
+
+
 ## [1.11.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.11.0...@times-components/article-main-video@1.11.1) (2025-06-13)
 
 **Note:** Version bump only for package @times-components/article-main-video
