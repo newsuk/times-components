@@ -34,23 +34,23 @@ export default Component =>
         }
       }
 
-       // --- Inline section transformation ---
-  const sectionPath = pageSection || get(data, "section", "");
-  const result = {};
-  if (sectionPath) {
-    const cleanRoute = sectionPath.replace(/^\/|\/$/g, '');
-    const parts = cleanRoute
-      .split('/')
-      .filter(Boolean)
-      .map(part => part.charAt(0).toUpperCase() + part.slice(1));
+       // --- Section hierarchy transformation ---
+      const sectionPath = pageSection || get(data, "section", "");
+      const result = {};
+      if (sectionPath) {
+        const cleanRoute = sectionPath.replace(/^\/|\/$/g, "");
+        const parts = cleanRoute
+          .split("/")
+          .filter(Boolean)
+          .map(part => part.charAt(0).toUpperCase() + part.slice(1));
 
-    let cumulative = '';
-    parts.forEach((part, index) => {
-      cumulative = cumulative ? `${cumulative}:${part}` : part;
-      const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
-      result[key] = cumulative;
-    });
-  }
+        let cumulative = "";
+        parts.forEach((part, index) => {
+          cumulative = cumulative ? `${cumulative}:${part}` : part;
+          const key = index === 0 ? "page_section" : `page_section_${index + 1}`;
+          result[key] = cumulative;
+        });
+      }
 
       return {
         articleId: get(data, "id", ""),
