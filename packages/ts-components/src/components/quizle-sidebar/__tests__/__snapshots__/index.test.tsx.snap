@@ -6,14 +6,11 @@ exports[`QuizleSidebar should render QuizleSidebar component 1`] = `
     class="sc-bdVaJa cMctWl"
   >
     <div
-      class="sc-ifAKCX eAXdqo"
+      class="sc-ifAKCX diojoA"
     >
-      <div>
-        <h3
-          class="sc-bZQynM RZeQF"
-        >
-          BETA
-        </h3>
+      <div
+        class="titleWrapper"
+      >
         <a
           class="trigger sc-bxivhb dfGUog"
           href="https://www.thetimes.com/puzzles"
