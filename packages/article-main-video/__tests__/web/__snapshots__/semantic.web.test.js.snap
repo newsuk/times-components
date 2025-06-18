@@ -393,6 +393,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
   <p>
     Comments are not enabled for this article
   </p>
+  <hr />
   <p>
     Comments are subject to our community guidelines, which can be viewed
      

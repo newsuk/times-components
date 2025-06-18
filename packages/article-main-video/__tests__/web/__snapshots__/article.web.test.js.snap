@@ -633,6 +633,7 @@ exports[`4. should show topics when logged in or shared 1`] = `
             <p>
               Comments are not enabled for this article
             </p>
+            <hr />
             <p>
               Comments are subject to our community guidelines, which can be viewed
                

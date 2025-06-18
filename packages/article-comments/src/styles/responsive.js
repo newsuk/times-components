@@ -49,3 +49,11 @@ export const CommentDisabledHeadline = styled.p`
   padding-top: ${spacing(6)};
   text-align: center;
 `;
+
+export const Divider = styled.hr`
+  margin: 4px auto 12px;
+  max-width: 456px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e4e4e4;
+`;
