@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.24.1...@times-components/tracking@2.25.0) (2025-06-18)
+
+
+### Features
+
+* **TMRA-344:** add divider to disabled comments ([#4170](https://github.com/newsuk/times-components/issues/4170)) ([d5edf14](https://github.com/newsuk/times-components/commit/d5edf14e603dcd185e74b0aa39d984a32a7e96da))
+
+
+
+
+
 ## [2.24.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.24.0...@times-components/tracking@2.24.1) (2025-06-10)
 
 **Note:** Version bump only for package @times-components/tracking
