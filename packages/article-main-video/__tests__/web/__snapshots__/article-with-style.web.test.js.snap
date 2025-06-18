@@ -247,7 +247,7 @@ exports[`full article with style 1`] = `
   margin-right: auto;
 }
 
-.c42 {
+.c43 {
   color: #696969;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
@@ -266,6 +266,14 @@ exports[`full article with style 1`] = `
   padding-bottom: 5px;
   padding-top: 30px;
   text-align: center;
+}
+
+.c42 {
+  margin: 4px auto 12px;
+  max-width: 456px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #E4E4E4;
 }
 
 .c0 {
@@ -1229,8 +1237,11 @@ exports[`full article with style 1`] = `
             >
               Comments are not enabled for this article
             </p>
-            <p
+            <hr
               className="c42"
+            />
+            <p
+              className="c43"
             >
               Comments are subject to our community guidelines, which can be viewed
                

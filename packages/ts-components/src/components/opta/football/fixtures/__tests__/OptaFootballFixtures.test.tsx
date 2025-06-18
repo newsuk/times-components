@@ -33,13 +33,6 @@ jest.mock('../../../utils/replaceTeamDetails', () => ({
   replaceTeamName: mockReplaceTeamName
 }));
 
-const mockChildMethod = jest.fn();
-jest.spyOn(React, 'useRef').mockReturnValue({
-  current: {
-    childMethod: mockChildMethod
-  }
-});
-
 import { OptaFootballFixtures } from '../OptaFootballFixtures';
 
 const requiredProps = {

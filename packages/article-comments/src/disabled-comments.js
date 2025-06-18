@@ -3,7 +3,8 @@ import { TextLink } from "@times-components/link";
 import {
   CommentContainer,
   CommentDisabledHeadline,
-  CommentDisabledGuidelines
+  CommentDisabledGuidelines,
+  Divider
 } from "./styles/responsive";
 import styles from "./styles";
 
@@ -12,6 +13,7 @@ const DisabledComments = () => (
     <CommentDisabledHeadline>
       Comments are not enabled for this article
     </CommentDisabledHeadline>
+    <Divider />
     <CommentDisabledGuidelines>
       Comments are subject to our community guidelines, which can be viewed{" "}
       <TextLink

@@ -135,7 +135,7 @@ exports[`Render comments label, when comments are loaded 1`] = `
 
 exports[`disabled comments 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c4 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -158,7 +158,7 @@ exports[`disabled comments 1`] = `
   margin-right: auto;
 }
 
-.c2 {
+.c3 {
   color: #696969;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 14px;
@@ -177,6 +177,14 @@ exports[`disabled comments 1`] = `
   padding-bottom: 5px;
   padding-top: 30px;
   text-align: center;
+}
+
+.c2 {
+  margin: 4px auto 12px;
+  max-width: 456px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #E4E4E4;
 }
 
 @media (min-width:768px) {
@@ -199,12 +207,15 @@ exports[`disabled comments 1`] = `
     >
       Comments are not enabled for this article
     </p>
-    <p
+    <hr
       class="c2"
+    />
+    <p
+      class="c3"
     >
       Comments are subject to our community guidelines, which can be viewed 
       <a
-        class="c3"
+        class="c4"
         href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
         style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px;"
       >
