@@ -55,5 +55,5 @@ export const Divider = styled.hr`
   max-width: 456px;
   width: 100%;
   border: none;
-  border-top: 1px solid #E4E4E4;
+  border-top: 1px solid #e4e4e4;
 `;
