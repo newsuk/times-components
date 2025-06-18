@@ -59,25 +59,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
 
           const sectionPath = article ? getSectionNameForAnalytics(article) : "";
 
-
-// --- Inline section transformation ---
-const sectionData = {};
-if (sectionPath) {
-  const cleanRoute = sectionPath.replace(/^\/|\/$/g, '');
-  const parts = cleanRoute
-    .split('/')
-    .filter(Boolean)
-    .map(part => part.charAt(0).toUpperCase() + part.slice(1));
-
-  let cumulative = '';
-  parts.forEach((part, index) => {
-    cumulative = cumulative ? `${cumulative}:${part}` : part;
-    const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
-    sectionData[key] = cumulative;
-  });
-}
-
-
           return React.createElement(
             ContextProviderWithDefaults,
             {
@@ -100,8 +81,8 @@ if (sectionPath) {
               article: {
                 ...article,
                 section: sectionPath || "unknown section",
-    isPreview,
-    ...sectionData // ✅ Add page_section/page_section_2/etc. here
+                isPreview,
+                url: article.url || articleDataFromRender.canonicalUrl || ""
               },
               error,
               isLoading,
