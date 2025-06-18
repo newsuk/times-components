@@ -55,7 +55,7 @@ class ArticlePage extends Component {
       relatedArticleSlice,
       upNext
     } = article;
-    const { breadcrumbs } = articleDataFromRender || {};
+    const { breadcrumbs, isEmbeddedMode } = articleDataFromRender || {};
 
     const primaryCategory =
       breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs[0] : null;
@@ -127,7 +127,7 @@ class ArticlePage extends Component {
                 {formatVideoDuration(leadAsset.duration)}
               </ArticleLabelText>
             </ArticleLabelContainer>
-            <ArticleContentContainer>
+            <ArticleContentContainer isEmbeddedMode={isEmbeddedMode}>
               <ArticleHeadline>
                 {getHeadline(headline, shortHeadline)}
               </ArticleHeadline>
@@ -139,7 +139,9 @@ class ArticlePage extends Component {
               </ArticleMeta>
               <ArticleContent>{content}</ArticleContent>
             </ArticleContentContainer>
-            <SaveAndShareContainer>{SaveAndShare}</SaveAndShareContainer>
+            {!isEmbeddedMode && (
+              <SaveAndShareContainer>{SaveAndShare}</SaveAndShareContainer>
+            )}
             {!!relatedArticleSlice && (
               <ArticleContentContainer>
                 <ArticleLabelText $color="#AAA">

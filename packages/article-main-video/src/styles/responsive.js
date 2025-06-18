@@ -129,6 +129,7 @@ export const TopicsContainer = styled.nav`
 export const ArticleContentContainer = styled.div`
   max-width: 853px;
   width: 100%;
+  ${({isEmbeddedMode}) => isEmbeddedMode && 'margin-bottom: 8px !important;'}
 `;
 export const ArticleContent = styled.div`
   & * {

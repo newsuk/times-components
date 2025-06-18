@@ -44,6 +44,41 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "an article with embeddedMode",
+    test() {
+      const output = renderComponent(
+        <ArticleMainVideo
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={fixtures.articleVideoData}
+          articleDataFromRender={{
+            breadcrumbs: [
+              {
+                title: "Comment",
+                url: "/comment"
+              },
+              {
+                title: "News",
+                url: "/news"
+              }
+            ],
+            isEmbeddedMode: true
+          }}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "loading",
     test() {
       const output = renderComponent(<ArticleMainVideo isLoading />);
