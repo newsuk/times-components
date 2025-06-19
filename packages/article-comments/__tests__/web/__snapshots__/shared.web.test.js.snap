@@ -150,18 +150,20 @@ exports[`disabled comments 1`] = `
   text-decoration: underline;
   color: #006699;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c0 {
   margin-left: auto;
   margin-right: auto;
+  padding-inline: 20px;
 }
 
 .c3 {
-  color: #696969;
+  color: #737373;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding-bottom: 30px;
   padding-top: 5px;
@@ -171,7 +173,7 @@ exports[`disabled comments 1`] = `
 .c1 {
   color: #333333;
   font-family: Times Modern,Times Modern-fallback,serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
   padding-bottom: 5px;
@@ -180,8 +182,8 @@ exports[`disabled comments 1`] = `
 }
 
 .c2 {
-  margin: 4px auto 12px;
-  max-width: 456px;
+  margin: 4px auto 4px;
+  max-width: 522px;
   width: 100%;
   border: none;
   border-top: 1px solid #e4e4e4;
@@ -196,6 +198,18 @@ exports[`disabled comments 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    font-size: 24px;
   }
 }
 
@@ -217,7 +231,7 @@ exports[`disabled comments 1`] = `
       <a
         class="c4"
         href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px;"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 16px;"
       >
         here
       </a>
