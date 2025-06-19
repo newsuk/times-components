@@ -245,12 +245,14 @@ exports[`full article with style 1`] = `
 .c40 {
   margin-left: auto;
   margin-right: auto;
+  padding-inline: 20px;
 }
 
 .c43 {
-  color: #696969;
+  color: #737373;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding-bottom: 30px;
   padding-top: 5px;
@@ -260,7 +262,7 @@ exports[`full article with style 1`] = `
 .c41 {
   color: #333333;
   font-family: Times Modern,Times Modern-fallback,serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
   padding-bottom: 5px;
@@ -269,8 +271,8 @@ exports[`full article with style 1`] = `
 }
 
 .c42 {
-  margin: 4px auto 12px;
-  max-width: 456px;
+  margin: 4px auto 4px;
+  max-width: 522px;
   width: 100%;
   border: none;
   border-top: 1px solid #e4e4e4;
@@ -283,7 +285,6 @@ exports[`full article with style 1`] = `
 .c39 {
   background-color: #fff;
   margin: 32px auto 0;
-  padding-inline: 20px;
 }
 
 .c1 {
@@ -726,6 +727,18 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c40 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c41 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c41 {
+    font-size: 24px;
   }
 }
 
@@ -1248,7 +1261,7 @@ exports[`full article with style 1`] = `
               <TextLink
                 color="#006699"
                 fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                fontSize={14}
+                fontSize={16}
               >
                 here
               </TextLink>

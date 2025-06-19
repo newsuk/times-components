@@ -7,7 +7,6 @@ export const ArticleMainVideoContainer = styled.div`
 export const CommentContainer = styled.div`
   background-color: #fff;
   margin: 32px auto 0;
-  padding-inline: 20px;
 `;
 export const VideoArticleContainer = styled.div`
   width: 100%;

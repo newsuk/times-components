@@ -10,6 +10,7 @@ import {
 export const CommentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
+  padding-inline: ${spacing(4)};
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
@@ -30,9 +31,10 @@ export const CommentEnabledGuidelines = styled.p`
 `;
 
 export const CommentDisabledGuidelines = styled.p`
-  color: ${colours.functional.secondary};
+  color: #737373;
   font-family: ${fontsWithFallback.supporting};
   font-size: ${fontSizes.commentsGuidelines}px;
+  line-height: 1.5;
   margin: 0;
   padding-bottom: ${spacing(6)};
   padding-top: ${spacing(1)};
@@ -42,17 +44,25 @@ export const CommentDisabledGuidelines = styled.p`
 export const CommentDisabledHeadline = styled.p`
   color: ${colours.functional.primary};
   font-family: ${fontsWithFallback.headlineLight};
-  font-size: ${fontSizes.commentsHeadline}px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
   padding-bottom: ${spacing(1)};
   padding-top: ${spacing(6)};
   text-align: center;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    font-size: ${fontSizes.commentsHeadline}px;
+  }
 `;
 
 export const Divider = styled.hr`
-  margin: 4px auto 12px;
-  max-width: 456px;
+  margin: 4px auto 4px;
+  max-width: 522px;
   width: 100%;
   border: none;
   border-top: 1px solid #e4e4e4;
