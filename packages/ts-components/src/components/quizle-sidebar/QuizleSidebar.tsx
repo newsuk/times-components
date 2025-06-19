@@ -1,7 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import {
   Container,
-  Titletag,
   Divider,
   Link,
   Title,
@@ -72,8 +71,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
     <Container>
       <>
         <TitleIconContainer>
-          <div>
-            <Titletag>BETA</Titletag>
+          <div className="titleWrapper">
             <Link
               href={pageLink}
               onClick={() =>
