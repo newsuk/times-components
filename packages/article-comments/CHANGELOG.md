@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.54.0...@times-components/article-comments@0.55.0) (2025-06-19)
+
+
+### Features
+
+* **TMRA-344:** additional updates for comment styling ([#4172](https://github.com/newsuk/times-components/issues/4172)) ([dc22c9c](https://github.com/newsuk/times-components/commit/dc22c9c4722848c6c75e4aaed182c888a39ecbb2))
+
+
+
+
+
 # [0.54.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.53.0...@times-components/article-comments@0.54.0) (2025-06-18)
 
 

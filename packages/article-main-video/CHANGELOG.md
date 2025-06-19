@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.14.0...@times-components/article-main-video@1.15.0) (2025-06-19)
+
+
+### Features
+
+* **TMRA-344:** additional updates for comment styling ([#4172](https://github.com/newsuk/times-components/issues/4172)) ([dc22c9c](https://github.com/newsuk/times-components/commit/dc22c9c4722848c6c75e4aaed182c888a39ecbb2))
+
+
+
+
+
 # [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.13.0...@times-components/article-main-video@1.14.0) (2025-06-19)
 
 
