@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.13.0...@times-components/article-main-video@1.14.0) (2025-06-19)
+
+
+### Features
+
+* **TMRA-500:** hide save share app ([#4171](https://github.com/newsuk/times-components/issues/4171)) ([de4a49b](https://github.com/newsuk/times-components/commit/de4a49ba44a17c7637d39337a4df3486a174793e))
+
+
+
+
+
 # [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.12.0...@times-components/article-main-video@1.13.0) (2025-06-18)
 
 

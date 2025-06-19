@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.19.21",
+  "version": "7.19.22",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -58,7 +58,7 @@
     "@times-components/article-magazine-standard": "3.95.17",
     "@times-components/article-main-comment": "2.99.17",
     "@times-components/article-main-standard": "3.108.17",
-    "@times-components/article-main-video": "1.13.0",
+    "@times-components/article-main-video": "1.14.0",
     "@times-components/context": "1.25.13",
     "@times-components/message-bar": "0.7.106",
     "@times-components/provider": "1.46.0",
