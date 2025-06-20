@@ -18,8 +18,8 @@ import { InpContainer } from '../styles';
 type NewsletterProps = {
   intersectObserverRef: (ref: HTMLElement | null) => void;
   section?: string;
-  headline: string;
-  copy: string;
+  headline?: string;
+  copy?: string;
   code: string;
   subscribeNewsletter: any;
   loading?: boolean;
