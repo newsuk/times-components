@@ -34,6 +34,28 @@ export default Component =>
         }
       }
 
+       const transformRouteToUtagPageSectionFormat = (route) => {
+  if (!route) return;
+
+  const result = {};
+  let cumulative = '';
+
+  const cleanRoute = route.replace(/^\/|\/$/g, '');
+
+  const parts = cleanRoute
+    .split('/')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
+
+  parts.forEach((part, index) => {
+    cumulative = cumulative ? `${cumulative}:${part}` : part;
+    const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
+    result[key] = cumulative;
+  });
+
+  return result;
+};
+    
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
@@ -57,6 +79,7 @@ export default Component =>
         parent_site: get(data, "publicationName", ""),
         referralUrl,
         section: pageSection || get(data, "section", ""),
+        ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),
@@ -66,7 +89,7 @@ export default Component =>
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
-          : "standard template"
+          : "standard template",
       };
     },
     trackingObjectName: "Article"

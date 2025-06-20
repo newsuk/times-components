@@ -57,6 +57,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             : providerData.article;
           const articleTemplate = article ? article.template : null;
 
+          const sectionPath = article ? getSectionNameForAnalytics(article) : "";
+
           return React.createElement(
             ContextProviderWithDefaults,
             {
@@ -78,10 +80,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               analyticsStream,
               article: {
                 ...article,
-                section: article
-                  ? getSectionNameForAnalytics(article)
-                  : "unknown section",
-                isPreview
+                section: sectionPath || "unknown section",
+                isPreview,
+                url: article.url || articleDataFromRender.canonicalUrl || ""
               },
               error,
               isLoading,

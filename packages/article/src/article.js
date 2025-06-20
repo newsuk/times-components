@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import ArticleInDepth from "@times-components/article-in-depth";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
