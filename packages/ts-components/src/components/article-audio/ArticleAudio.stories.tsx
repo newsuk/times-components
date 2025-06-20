@@ -7,7 +7,9 @@ storiesOf('Typescript Component/Article Audio', module).add(
   () => {
     return (
       <div style={{ padding: '10px' }}>
-        <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+        <div style={{ marginLeft: '50px' }}>
+          <ArticleAudio audioSrc="https://www.kozco.com/tech/LRMonoPhase4.mp3" />
+        </div>
       </div>
     );
   }
