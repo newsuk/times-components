@@ -12,10 +12,6 @@ Object {
         "__typename": "Tile",
         "article": Object {
           "__typename": "Article",
-          "associatedDesks": Array [
-            "Hello World",
-            "Hello World",
-          ],
           "bylines": Array [
             Object {
               "__typename": "TextByline",
@@ -126,10 +122,6 @@ Object {
         "__typename": "Tile",
         "article": Object {
           "__typename": "Article",
-          "associatedDesks": Array [
-            "Hello World",
-            "Hello World",
-          ],
           "bylines": Array [
             Object {
               "__typename": "TextByline",
@@ -220,10 +212,6 @@ Object {
         "__typename": "Tile",
         "article": Object {
           "__typename": "Article",
-          "associatedDesks": Array [
-            "Hello World",
-            "Hello World",
-          ],
           "bylines": Array [
             Object {
               "__typename": "TextByline",
