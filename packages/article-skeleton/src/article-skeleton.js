@@ -99,13 +99,24 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
-  const pageTracking = transformRouteToUtagPageSectionFormat(url);
+const getChannelPageEvent = (props) => {
+  return {
+    ...props,
+  };
+};
 
-  useEffect(() => {
+const pageTracking = getChannelPageEvent(
+  transformRouteToUtagPageSectionFormat(url)
+);
+
+useEffect(() => {
   if (typeof window !== "undefined" && pageTracking) {
-    window.utag_data = {...window.utag_data, ...pageTracking };
+    window.utag_data = {
+      ...window.utag_data,
+      ...pageTracking,
+    };
   }
-}, []);
+}, []); 
 
   useEffect(
     () => {
