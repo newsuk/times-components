@@ -52,7 +52,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import mapListElements from "./contentModifiers/map-list-elements";
 import reorderInteractiveBeforeAd from "./contentModifiers/reorder-interactive-before-ad";
-import { getIsLiveOrBreakingFlag } from "./data-helper";
+import { getIsLiveOrBreakingFlag, transformRouteToUtagPageSectionFormat } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -99,38 +99,13 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
-  const transformRouteToUtagPageSectionFormat = (route) => {
-  if (!route) return;
+  const pageTracking = transformRouteToUtagPageSectionFormat(article.url);
 
-  const result = {};
-  let cumulative = '';
-
-  const cleanRoute = route.replace(/^\/|\/$/g, '');
-
-  const parts = cleanRoute
-    .split('/')
-    .filter(Boolean)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
-
-  parts.forEach((part, index) => {
-    cumulative = cumulative ? `${cumulative}:${part}` : part;
-    const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
-    result[key] = cumulative;
-  });
-
-  return result;
-};
-
-const utagPageSections = transformRouteToUtagPageSectionFormat(url);
-
-useEffect(() => {
-  if (typeof window !== "undefined") {
-    window.utag_data = {
-      ...window.utag_data,
-      ...utagPageSections
-    };
+  useEffect(() => {
+  if (typeof window !== "undefined" && pageTracking) {
+    window.utag_data = {...window.utag_data, ...pageTracking };
   }
-}, [url]);
+}, []);
 
   useEffect(
     () => {
@@ -330,6 +305,7 @@ useEffect(() => {
           attrs: {
             article_name: headline || shortHeadline || "",
             section_details: section,
+            ...pageTracking 
           }
         }}
         analyticsStream={analyticsStream}

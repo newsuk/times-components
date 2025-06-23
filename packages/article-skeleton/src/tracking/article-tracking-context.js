@@ -1,11 +1,13 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
+import StaticContent from "./static-content";
 import {
   getRegistrationType,
   getCustomerType,
   getSharedStatus,
   getIsLiveOrBreakingFlag,
-  getActiveArticleFlags
+  getActiveArticleFlags,
+  transformRouteToUtagPageSectionFormat
 } from "../data-helper";
 
 export default Component =>
@@ -33,28 +35,6 @@ export default Component =>
           editionType = isPastSixDays ? "past 6 days" : "current edition";
         }
       }
-
-       const transformRouteToUtagPageSectionFormat = (route) => {
-  if (!route) return;
-
-  const result = {};
-  let cumulative = '';
-
-  const cleanRoute = route.replace(/^\/|\/$/g, '');
-
-  const parts = cleanRoute
-    .split('/')
-    .filter(Boolean)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
-
-  parts.forEach((part, index) => {
-    cumulative = cumulative ? `${cumulative}:${part}` : part;
-    const key = index === 0 ? 'page_section' : `page_section_${index + 1}`;
-    result[key] = cumulative;
-  });
-
-  return result;
-};
     
       return {
         articleId: get(data, "id", ""),

@@ -108,4 +108,26 @@ export const getActiveArticleFlags = flags => {
   return findFlag && findFlag.type && findFlag.type.toLowerCase();
 };
 
+export const transformRouteToUtagPageSectionFormat = (route = "") => {
+  const cleanRoute = route.replace(/^\/|\/$/g, "");
+
+  if (!cleanRoute) return;
+
+  const result = {};
+  let cumulative = "";
+
+  const parts = cleanRoute
+    .split("/")
+    .filter(Boolean)
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1));
+
+  parts.forEach((part, index) => {
+    cumulative = cumulative ? `${cumulative}:${part}` : part;
+    const key = index === 0 ? "page_section" : `page_section_${index + 1}`;
+    result[key] = cumulative;
+  });
+
+  return result;
+};
+
 export default prepareDataForListView;
