@@ -58,7 +58,6 @@ export default Component =>
         parent_site: get(data, "publicationName", ""),
         referralUrl,
         section: pageSection || get(data, "section", ""),
-        ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),
@@ -71,5 +70,6 @@ export default Component =>
           : "standard template",
       };
     },
-    trackingObjectName: "Article"
+    trackingObjectName: "Article",
+    ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
   });

@@ -106,15 +106,18 @@ const ArticleSkeleton = ({
 
   const route = url || "";
 
-const getChannelPageEvent = (props) => {
-  return {
-    ...props,
+   const getChannelPageEvent = (pageSections) => {
+    return {
+      ...pageSections,
+    };
   };
-};
 
-const pageTracking = getChannelPageEvent(
-  transformRouteToUtagPageSectionFormat(route)
-);
+
+const utagPageSections = transformRouteToUtagPageSectionFormat(route);
+
+ const pageTracking = getChannelPageEvent({
+        ...utagPageSections,
+    });
 
 useEffect(() => {
   if (typeof window !== "undefined" && pageTracking) {
@@ -125,7 +128,7 @@ useEffect(() => {
     // eslint-disable-next-line no-console
     console.log("utag_data updated:", window.utag_data);
   }
-}, []); 
+}, [pageTracking]); 
 
   useEffect(
     () => {
