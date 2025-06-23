@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.25.0...@times-components/tracking@2.26.0) (2025-06-23)
+
+
+### Features
+
+* **TMPZ-1150:** Remove "BETA" Tag from Quizle ([#4169](https://github.com/newsuk/times-components/issues/4169)) ([ce7d83e](https://github.com/newsuk/times-components/commit/ce7d83ebc799a6ff56ed8b04f8e65a64522c4ce2))
+
+
+
+
+
 # [2.25.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.24.1...@times-components/tracking@2.25.0) (2025-06-18)
 
 
