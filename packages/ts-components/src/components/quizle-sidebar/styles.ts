@@ -55,6 +55,10 @@ export const TitleIconContainer = styled.div`
     height: 40px;
     margin-left: 8px;
   }
+  & .titleWrapper {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h3`
@@ -64,15 +68,6 @@ export const Title = styled.h3`
   font-size: 1.8rem;
   letter-spacing: 0em;
   margin: 2px 0 0;
-`;
-
-export const Titletag = styled.h3`
-  font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 18px;
-  text-align: left;
-  margin-block: 0;
 `;
 
 export const Bottom = styled.div`
