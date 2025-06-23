@@ -99,6 +99,13 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
+  // eslint-disable-next-line no-console
+  console.log('url', url)
+  // eslint-disable-next-line no-console
+  console.log('article.url', article.url)
+
+  const route = url || "";
+
 const getChannelPageEvent = (props) => {
   return {
     ...props,
@@ -106,7 +113,7 @@ const getChannelPageEvent = (props) => {
 };
 
 const pageTracking = getChannelPageEvent(
-  transformRouteToUtagPageSectionFormat(url)
+  transformRouteToUtagPageSectionFormat(route)
 );
 
 useEffect(() => {
@@ -115,6 +122,8 @@ useEffect(() => {
       ...window.utag_data,
       ...pageTracking,
     };
+    // eslint-disable-next-line no-console
+    console.log("utag_data updated:", window.utag_data);
   }
 }, []); 
 
