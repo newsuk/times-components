@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useEffect, useState } from "react";
+import { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
@@ -99,7 +99,7 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
-  const pageTracking = transformRouteToUtagPageSectionFormat(article.url);
+  const pageTracking = transformRouteToUtagPageSectionFormat(url);
 
   useEffect(() => {
   if (typeof window !== "undefined" && pageTracking) {

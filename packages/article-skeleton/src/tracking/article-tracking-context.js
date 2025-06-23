@@ -1,6 +1,5 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
-import StaticContent from "./static-content";
 import {
   getRegistrationType,
   getCustomerType,
