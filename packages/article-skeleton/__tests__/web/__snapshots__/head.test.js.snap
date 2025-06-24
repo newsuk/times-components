@@ -219,7 +219,7 @@ exports[`Head outputs array of keywords in article schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sport","item":"undefined/undefined"},{"@type":"ListItem","position":2,"name":"Rugby union","item":"undefined/undefined"}]}
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sport","item":"undefined/sport"},{"@type":"ListItem","position":2,"name":"Rugby union","item":"undefined/sport/rugby-union"}]}
   </script>
   <script
     defer={true}
@@ -1019,7 +1019,7 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sport","item":"undefined/undefined"},{"@type":"ListItem","position":2,"name":"Rugby union","item":"undefined/undefined"}]}
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Sport","item":"undefined/sport"},{"@type":"ListItem","position":2,"name":"Rugby union","item":"undefined/sport/rugby-union"}]}
   </script>
   <script
     defer={true}
