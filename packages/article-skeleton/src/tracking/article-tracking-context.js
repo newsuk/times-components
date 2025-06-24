@@ -16,6 +16,8 @@ export default Component =>
       let hasAccessViaTimes = false;
       const flags = data.expirableFlags;
 
+      console.log('DATA-ARTICLE', data)
+
       if (window) {
         // eslint-disable-next-line
         if (window.__TIMES_ACCESS_AND_IDENTITY__) {
@@ -58,6 +60,7 @@ export default Component =>
         parent_site: get(data, "publicationName", ""),
         referralUrl,
         section: pageSection || get(data, "section", ""),
+        ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),
@@ -71,5 +74,4 @@ export default Component =>
       };
     },
     trackingObjectName: "Article",
-    ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
   });

@@ -37,6 +37,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     removeTeaserContent
   } = data;
 
+  // eslint-disable-next-line no-console
+  console.log('data-server', data)
+
   return React.createElement(
     HelmetProvider,
     { context: helmetContext },

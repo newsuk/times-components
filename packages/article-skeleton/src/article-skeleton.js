@@ -106,16 +106,19 @@ const ArticleSkeleton = ({
 
   const route = url || "";
 
-   const getChannelPageEvent = (pageSections) => {
+   /* const getChannelPageEvent = (pageSections) => {
     return {
       ...pageSections,
     };
-  };
+  }; */
 
 
 const utagPageSections = transformRouteToUtagPageSectionFormat(route);
 
- const pageTracking = getChannelPageEvent({
+// eslint-disable-next-line no-console
+console.log('utagPageSections', utagPageSections)
+
+ /* const pageTracking = getChannelPageEvent({
         ...utagPageSections,
     });
 
@@ -128,7 +131,7 @@ useEffect(() => {
     // eslint-disable-next-line no-console
     console.log("utag_data updated:", window.utag_data);
   }
-}, [pageTracking]); 
+}, [pageTracking]);  */
 
   useEffect(
     () => {
