@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.15.1...@times-components/article-main-video@1.15.2) (2025-06-24)
+
+
+### Bug Fixes
+
+* **TMPR-359:** update breadcrumblist page metadata with valid URLs ([#4168](https://github.com/newsuk/times-components/issues/4168)) ([7513316](https://github.com/newsuk/times-components/commit/75133167e6650c2a3cbe458a824b47ef214e2c4b))
+
+
+
+
+
 ## [1.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.15.0...@times-components/article-main-video@1.15.1) (2025-06-23)
 
 **Note:** Version bump only for package @times-components/article-main-video
