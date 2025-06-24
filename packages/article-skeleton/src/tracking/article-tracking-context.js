@@ -16,8 +16,6 @@ export default Component =>
       let hasAccessViaTimes = false;
       const flags = data.expirableFlags;
 
-      console.log('DATA-ARTICLE', data)
-
       if (window) {
         // eslint-disable-next-line
         if (window.__TIMES_ACCESS_AND_IDENTITY__) {
@@ -36,6 +34,9 @@ export default Component =>
           editionType = isPastSixDays ? "past 6 days" : "current edition";
         }
       }
+
+      const url = get(data, "url") || get(data, "articleDataFromRender.canonicalUrl", "");
+      const pageSections = transformRouteToUtagPageSectionFormat(url) || {};
     
       return {
         articleId: get(data, "id", ""),
@@ -60,7 +61,7 @@ export default Component =>
         parent_site: get(data, "publicationName", ""),
         referralUrl,
         section: pageSection || get(data, "section", ""),
-        ...transformRouteToUtagPageSectionFormat(get(data, "url", "")),
+        ...pageSections,
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),

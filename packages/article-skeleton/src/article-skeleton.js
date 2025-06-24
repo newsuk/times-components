@@ -99,12 +99,11 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
-  // eslint-disable-next-line no-console
-  console.log('url', url)
-  // eslint-disable-next-line no-console
-  console.log('article.url', article.url)
+  const route = articleDataFromRender.canonicalUrl || "";
+  const utagPageSections = transformRouteToUtagPageSectionFormat(route) || {};
 
-  const route = url || "";
+  // eslint-disable-next-line no-console
+  console.log('utagPageSections', utagPageSections);
 
    /* const getChannelPageEvent = (pageSections) => {
     return {
@@ -113,25 +112,18 @@ const ArticleSkeleton = ({
   }; */
 
 
-const utagPageSections = transformRouteToUtagPageSectionFormat(route);
+    // eslint-disable-next-line no-console
+    console.log('utagPageSections', utagPageSections)
 
-// eslint-disable-next-line no-console
-console.log('utagPageSections', utagPageSections)
-
- /* const pageTracking = getChannelPageEvent({
-        ...utagPageSections,
-    });
-
-useEffect(() => {
-  if (typeof window !== "undefined" && pageTracking) {
+ useEffect(() => {
+  if (typeof window !== "undefined") {
     window.utag_data = {
       ...window.utag_data,
-      ...pageTracking,
+      ...utagPageSections, // Safe spread
     };
-    // eslint-disable-next-line no-console
     console.log("utag_data updated:", window.utag_data);
   }
-}, [pageTracking]);  */
+}, [route]);  
 
   useEffect(
     () => {
