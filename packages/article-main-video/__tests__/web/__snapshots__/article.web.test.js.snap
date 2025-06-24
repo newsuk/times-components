@@ -432,7 +432,7 @@ exports[`2. an article with embeddedmode 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Comment","item":"https://www.thetimes.co.uk/undefined"},{"@type":"ListItem","position":2,"name":"News","item":"https://www.thetimes.co.uk/undefined"}]}
+          {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Comment","item":"https://www.thetimes.co.uk/comment"},{"@type":"ListItem","position":2,"name":"News","item":"https://www.thetimes.co.uk/news"}]}
         </script>
         <script
           defer={true}
