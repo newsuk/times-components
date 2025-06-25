@@ -59,7 +59,7 @@ export const Newsletter = ({
           justSubscribed && (
             <InpSubscribedContainer>
               <InpCopy>
-                You've successfully signed up to the{' '}
+                You’ve successfully signed up to the{' '}
                 <InpSignupHeadline>{`${headline}.`} </InpSignupHeadline>
                 <NewsletterPuffLink />
               </InpCopy>
