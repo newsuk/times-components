@@ -316,3 +316,17 @@ Array [
   </g>,
 ]
 `;
+
+exports[`23. iconwhatsapp renders with different colours 1`] = `
+Array [
+  <title>
+    WhatsApp Icon
+  </title>,
+  <g
+    fill="#facade"
+    stroke="#c0ffee"
+  >
+    <path />
+  </g>,
+]
+`;

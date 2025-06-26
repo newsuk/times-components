@@ -20,3 +20,4 @@ export { default as PlayIcon } from "./icons/play-icon";
 export { default as PauseIcon } from "./icons/pause-icon";
 export { default as IconVolume } from "./icons/audio-volume";
 export { default as AudioCloseIcon } from "./icons/audio-close";
+export { default as IconWhatsApp} from "./icons/whatsApp";
