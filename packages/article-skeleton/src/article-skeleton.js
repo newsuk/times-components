@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useEffect, useState } from "react";
+import { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
@@ -52,7 +52,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import mapListElements from "./contentModifiers/map-list-elements";
 import reorderInteractiveBeforeAd from "./contentModifiers/reorder-interactive-before-ad";
-import { getIsLiveOrBreakingFlag } from "./data-helper";
+import { getIsLiveOrBreakingFlag, transformRouteToUtagPageSectionFormat } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -98,6 +98,32 @@ const ArticleSkeleton = ({
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
+
+  const route = articleDataFromRender.canonicalUrl || "";
+  const utagPageSections = transformRouteToUtagPageSectionFormat(route) || {};
+
+  // eslint-disable-next-line no-console
+  console.log('utagPageSections', utagPageSections);
+
+   /* const getChannelPageEvent = (pageSections) => {
+    return {
+      ...pageSections,
+    };
+  }; */
+
+
+    // eslint-disable-next-line no-console
+    console.log('utagPageSections', utagPageSections)
+
+ useEffect(() => {
+  if (typeof window !== "undefined") {
+    window.utag_data = {
+      ...window.utag_data,
+      ...utagPageSections, // Safe spread
+    };
+    console.log("utag_data updated:", window.utag_data);
+  }
+}, [route]);  
 
   useEffect(
     () => {
@@ -296,7 +322,8 @@ const ArticleSkeleton = ({
           component: "ArticleSkeleton",
           attrs: {
             article_name: headline || shortHeadline || "",
-            section_details: section
+            section_details: section,
+            ...pageTracking 
           }
         }}
         analyticsStream={analyticsStream}

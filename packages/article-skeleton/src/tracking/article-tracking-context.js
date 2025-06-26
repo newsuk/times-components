@@ -5,7 +5,8 @@ import {
   getCustomerType,
   getSharedStatus,
   getIsLiveOrBreakingFlag,
-  getActiveArticleFlags
+  getActiveArticleFlags,
+  transformRouteToUtagPageSectionFormat
 } from "../data-helper";
 
 export default Component =>
@@ -34,6 +35,9 @@ export default Component =>
         }
       }
 
+      const url = get(data, "url") || get(data, "articleDataFromRender.canonicalUrl", "");
+      const pageSections = transformRouteToUtagPageSectionFormat(url) || {};
+    
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
@@ -57,6 +61,7 @@ export default Component =>
         parent_site: get(data, "publicationName", ""),
         referralUrl,
         section: pageSection || get(data, "section", ""),
+        ...pageSections,
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         customerType: getCustomerType(),
@@ -66,8 +71,8 @@ export default Component =>
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
-          : "standard template"
+          : "standard template",
       };
     },
-    trackingObjectName: "Article"
+    trackingObjectName: "Article",
   });
