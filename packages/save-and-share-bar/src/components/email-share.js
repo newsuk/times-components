@@ -6,6 +6,7 @@ import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import { ShareItem, ShareItemLabel } from "./share-item";
 import { EmailSpinnerContainer } from "../styled";
 import styles from "../styles";
+import { timesShareText } from "../constants";
 
 class EmailShare extends Component {
   constructor(props) {
@@ -56,10 +57,14 @@ class EmailShare extends Component {
 
   openMailClient(url) {
     const { articleHeadline, publicationName } = this.props;
-    const publication =
-      publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
+    const isTimes = publicationName === "TIMES";
+    const publication = !isTimes ? "The Sunday Times" : "The Times";
 
-    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`;
+    const emailBody = !isTimes
+      ? `I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`
+      : `${timesShareText}${articleHeadline}%0A%0A${url}`;
+
+    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=${emailBody}`;
 
     window.location.assign(mailtoEmailUrl);
   }

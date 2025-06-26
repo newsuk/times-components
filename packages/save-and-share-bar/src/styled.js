@@ -119,7 +119,7 @@ export const Popover = styled.div`
   z-index: 99;
 
   width: calc(100vw - 24px);
-  max-width: 450px;
+  max-width: min-content;
 
   /* Pointer Arrow */
   &::after {
