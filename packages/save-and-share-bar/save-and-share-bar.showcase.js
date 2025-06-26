@@ -39,6 +39,7 @@ export default {
                   savingEnabled={boolean("Is Saving Enabled", true)}
                   sharingEnabled={boolean("Is Sharing Enabled", true)}
                   isPreviewMode
+                  hostName="https://www.thetimes.com"
                 />
               )}
             </MessageContext.Consumer>
