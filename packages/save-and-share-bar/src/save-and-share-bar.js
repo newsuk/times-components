@@ -5,7 +5,8 @@ import { checkForSymphonyExperiment } from "@times-components/utils";
 import {
   IconFacebook,
   IconTwitter,
-  IconCopyLink
+  IconCopyLink,
+  IconWhatsApp
 } from "@times-components/icons";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
@@ -13,7 +14,7 @@ import { SaveStar } from "@times-components/ts-components";
 
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
-import SharingApiUrls from "./constants";
+import SharingApiUrls, { timesShareText } from "./constants";
 import styles from "./styles";
 
 import {
@@ -51,6 +52,7 @@ function SaveAndShareBar(props) {
   const [popoverOpen, setPopoverOpen] = React.useState(false);
   const [windowHeight, setWindowHeight] = React.useState(null);
   const [windowWidth, setWindowWidth] = React.useState(null);
+  const [isMobileDevice, setIsMobileDevice] = React.useState(false);
 
   const [shareHighlightVisible, setShareHighlightVisible] = React.useState(
     false
@@ -98,6 +100,14 @@ function SaveAndShareBar(props) {
       setShareHighlightVisible(
         isSymphonyExperiment && !hasShareButtonBeenClicked
       );
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.navigator) {
+      const mobileRegex = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|windows phone|Opera Mini/i;
+
+      setIsMobileDevice(mobileRegex.test(window.navigator.userAgent));
     }
   }, []);
 
@@ -172,64 +182,94 @@ function SaveAndShareBar(props) {
             <PopoverContent>
               <SectionContext.Consumer>
                 {({ publicationName }) => (
-                  <UserState
-                    state={UserState.showTokenisedEmailShare}
-                    fallback={
+                  <>
+                    <UserState
+                      state={UserState.showTokenisedEmailShare}
+                      fallback={
+                        <EmailShare
+                          {...props}
+                          shouldTokenise={false}
+                          publicationName={publicationName}
+                        />
+                      }
+                    >
                       <EmailShare
                         {...props}
-                        shouldTokenise={false}
+                        shouldTokenise
                         publicationName={publicationName}
                       />
-                    }
-                  >
-                    <EmailShare
-                      {...props}
-                      shouldTokenise
-                      publicationName={publicationName}
-                    />
-                  </UserState>
+                    </UserState>
+
+                    <ShareItem
+                      testId="share-twitter"
+                      tooltipContent="Share on Twitter"
+                      href={`${SharingApiUrls.twitter}?text=${
+                        publicationName !== "TIMES"
+                          ? articleUrl
+                          : `${timesShareText}${articleUrl}`
+                      }`}
+                      onClick={onShareOnTwitter}
+                    >
+                      <ShareItemLabel
+                        icon={
+                          <IconTwitter
+                            ariaLabel=""
+                            fillColour="currentColor"
+                            height={styles.svgIcon.height}
+                            title="Share on Twitter"
+                          />
+                        }
+                      >
+                        Twitter
+                      </ShareItemLabel>
+                    </ShareItem>
+
+                    <ShareItem
+                      testId="share-facebook"
+                      tooltipContent="Share on Facebook"
+                      href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+                      onClick={onShareOnFB}
+                    >
+                      <ShareItemLabel
+                        icon={
+                          <IconFacebook
+                            ariaLabel=""
+                            fillColour="currentColor"
+                            height={styles.svgIcon.fb.height}
+                            title="Share on Facebook"
+                          />
+                        }
+                      >
+                        Facebook
+                      </ShareItemLabel>
+                    </ShareItem>
+
+                    {publicationName === "TIMES" &&
+                      isMobileDevice && (
+                        <ShareItem
+                          testId="share-whatsApp"
+                          tooltipContent="Share on WhatsApp"
+                          href={`${
+                            SharingApiUrls.whatsApp
+                          }?text=${timesShareText}${articleUrl}`}
+                          onClick={onShareOnFB}
+                        >
+                          <ShareItemLabel
+                            icon={
+                              <IconWhatsApp
+                                ariaLabel=""
+                                fillColour="currentColor"
+                                title="Share on WhatsApp"
+                              />
+                            }
+                          >
+                            WhatsApp
+                          </ShareItemLabel>
+                        </ShareItem>
+                      )}
+                  </>
                 )}
               </SectionContext.Consumer>
-
-              <ShareItem
-                testId="share-twitter"
-                tooltipContent="Share on Twitter"
-                href={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-                onClick={onShareOnTwitter}
-              >
-                <ShareItemLabel
-                  icon={
-                    <IconTwitter
-                      ariaLabel=""
-                      fillColour="currentColor"
-                      height={styles.svgIcon.height}
-                      title="Share on Twitter"
-                    />
-                  }
-                >
-                  Twitter
-                </ShareItemLabel>
-              </ShareItem>
-
-              <ShareItem
-                testId="share-facebook"
-                tooltipContent="Share on Facebook"
-                href={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-                onClick={onShareOnFB}
-              >
-                <ShareItemLabel
-                  icon={
-                    <IconFacebook
-                      ariaLabel=""
-                      fillColour="currentColor"
-                      height={styles.svgIcon.fb.height}
-                      title="Share on Facebook"
-                    />
-                  }
-                >
-                  Facebook
-                </ShareItemLabel>
-              </ShareItem>
 
               <ShareItem
                 testId="copy-to-clickboard"
