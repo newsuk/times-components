@@ -154,6 +154,46 @@ export default [
   {
     name: "interactive",
     attributes: {
+      id: "85a6b262-ce89-4de3-8f96-19485e318a2b",
+      display: "fullwidth",
+      url:
+        "https://components.timesdev.tools/lib2/times-travel-offers-new-1.0.0/times-travel-offers-new.html",
+      element: {
+        value: "times-travel-offers-new",
+        attributes: {
+          title: "You might also like",
+          offers: "159665,141403,35503",
+          selectdata:
+            "W3siSUQiOjE1OTY2NSwidGl0bGUiOiJBbGwtSW5jbHVzaXZlIFVsdHJhLUx1eHVyeSBDYXJpYmJlYW4gVm95YWdlICYjMDM4OyBCYXJiYWRvcyBSZXRyZWF0In0seyJJRCI6MTQxNDAzLCJ0aXRsZSI6IkEgQ2FyaWJiZWFuIENocmlzdG1hczogTHV4dXJ5IEFsbC1JbmNsdXNpdmUgU2lsdmVyc2VhIENydWlzZSAmIzAzODsgQmFyYmFkb3MgRXNjYXBlIn0seyJJRCI6MzU1MDMsInRpdGxlIjoiQ29zdGEgUmljYSBUb3VyIn1d",
+          description: "Brought to you by Times Travel."
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
+      id: "4b689375-c6a0-4df3-a3c1-cc80b993609d",
+      display: "fullwidth",
+      url:
+        "https://components.timesdev.tools/lib2/times-embed-1.2.0/times-embed-iframe-max.html",
+      element: {
+        value: "times-embed-iframe-max",
+        attributes: {
+          src:
+            "https://www.thetimes.co.uk/travel/offers-component/best-selling-holidays/",
+          headline: "",
+          standfirst: "",
+          textOnlyId: "2e9a888b-579c-4e6c-abf2-926d973324fe"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "interactive",
+    attributes: {
       id: "a8c7ae8d-8ee6-4e04-aff9-caac5f1bbb2b",
       display: "primary",
       url:
