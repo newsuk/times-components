@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.136.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.135.0...@times-components/ts-components@1.136.0) (2025-06-30)
+
+
+### Features
+
+* **TMC-366:** Article cards - changes from co.uk to .com ([#4174](https://github.com/newsuk/times-components/issues/4174)) ([e90cae7](https://github.com/newsuk/times-components/commit/e90cae71fe361ee4065ae449eb654aae056cd4a8))
+
+
+
+
+
 # [1.135.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.134.0...@times-components/ts-components@1.135.0) (2025-06-25)
 
 
