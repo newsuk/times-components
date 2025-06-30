@@ -11,7 +11,7 @@ import {
   Hidden
 } from './styles';
 import { ArticleCardProps } from '../types';
-import { tealiumTrackingHandler, truncateText } from '../utils';
+import { tealiumTrackingHandler, truncateText, replaceUrl } from '../utils';
 
 const Card = (props: ArticleCardProps) => {
   const { article, numOfArticles, isLeadingArticle, isLastCard } = props;
@@ -28,7 +28,7 @@ const Card = (props: ArticleCardProps) => {
     <StyledCard $numOfArticles={numOfArticles}>
       {isLeadingArticle ? (
         <a
-          href={article.url}
+          href={replaceUrl(article.url)}
           onClick={() => {
             tealiumTrackingHandler(article.headline, article.headline);
           }}
@@ -46,7 +46,7 @@ const Card = (props: ArticleCardProps) => {
       ) : (
         <Hidden xs>
           <a
-            href={article.url}
+            href={replaceUrl(article.url)}
             onClick={() => {
               tealiumTrackingHandler(article.headline, article.headline);
             }}
@@ -66,7 +66,7 @@ const Card = (props: ArticleCardProps) => {
       <StyledContent $numOfArticles={numOfArticles}>
         <StyledLink
           $numOfArticles={numOfArticles}
-          href={article.url}
+          href={replaceUrl(article.url)}
           onClick={() =>
             tealiumTrackingHandler(article.headline, article.headline)
           }

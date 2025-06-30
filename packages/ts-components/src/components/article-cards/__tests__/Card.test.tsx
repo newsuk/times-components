@@ -14,7 +14,7 @@ describe('Card Component', () => {
   const mockProps: ArticleCardProps = {
     article: {
       id: '1',
-      url: 'https://example.com',
+      url: 'https://example.com/travel',
       headline: 'Test Headline',
       image: { url: 'https://example.com/image.jpg', alt: 'test' },
       summary: 'Test Summary',
@@ -47,7 +47,7 @@ describe('Card Component', () => {
     render(<Card {...mockProps} />);
 
     const link = screen.getAllByRole('link')[0];
-    expect(link).toHaveAttribute('href', 'https://example.com');
+    expect(link).toHaveAttribute('href', '/travel');
   });
 
   it('logs the headline when the link is clicked', () => {
