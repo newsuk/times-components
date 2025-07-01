@@ -5437,10 +5437,10 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/icons@2.23.23-7a7db99c2d4af0e629558918c8859c5498192065.7+7a7db99c2d":
-  version "2.23.23-7a7db99c2d4af0e629558918c8859c5498192065.7"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.23.23-7a7db99c2d4af0e629558918c8859c5498192065.7.tgz#36b0bcaca1774c591affbd7685f7ebee7f263286"
-  integrity sha512-IObQMHued6vXK438SxcEizGwlUIK64sgVC541PJ5Ad8Q63/iCPTELPnv9WGGxiNsDZIbri/tl87o7MoJxA/q/g==
+"@times-components/icons@2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9+ee5bfc0707":
+  version "2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9.tgz#2d4e7fcad2965a891de639710c6d9121e07cb31d"
+  integrity sha512-njYY4uba3DEUx9f/3sO49mPCiKwuqIU1B0dYK50FoBqvk3E+lJJNxCUq0yNN81C1Bgx0v3WtyxLDwrWG90PcbA==
   dependencies:
     "@times-components/ts-styleguide" "^1.56.1"
     "@times-components/utils" "^6.31.13"

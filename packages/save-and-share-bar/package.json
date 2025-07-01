@@ -34,7 +34,7 @@
   "dependencies": {
     "@storybook/addon-knobs": "6.4.0",
     "@times-components/context": "1.25.15",
-    "@times-components/icons": "2.23.23-7a7db99c2d4af0e629558918c8859c5498192065.7+7a7db99c2d",
+    "@times-components/icons": "2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9+ee5bfc0707",
     "@times-components/message-bar": "0.7.108",
     "@times-components/provider-queries": "2.28.0",
     "@times-components/tracking": "2.26.0",
