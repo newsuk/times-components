@@ -109,7 +109,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                           </div>
                         </a>
                         <a
-                          href="https://twitter.com/intent/tweet?text=https://url.io"
+                          href="https://twitter.com/intent/tweet?text=Shared with you by a Times subscriber.%0A%0AEnjoy this article for free.%0A%0Ahttps://url.io"
                           target="_blank"
                           title="Share on Twitter"
                         >
@@ -450,7 +450,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                           </div>
                         </a>
                         <a
-                          href="https://twitter.com/intent/tweet?text=https://url.io"
+                          href="https://twitter.com/intent/tweet?text=Shared with you by a Times subscriber.%0A%0AEnjoy this article for free.%0A%0Ahttps://url.io"
                           target="_blank"
                           title="Share on Twitter"
                         >
