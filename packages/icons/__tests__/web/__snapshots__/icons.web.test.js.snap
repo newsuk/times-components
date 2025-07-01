@@ -596,3 +596,27 @@ exports[`22. audiocloseicon renders 1`] = `
   </g>
 </svg>
 `;
+
+exports[`23. iconwhatsapp renders 1`] = `
+<svg
+  aria-label="icon-whatsApp"
+  height={20}
+  role="img"
+  title="IconWhatsApp"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    IconWhatsApp
+  </title>
+  <g
+    fill="#1D1D1B"
+    fillRule="nonzero"
+  >
+    <path
+      d="99c7553404f52713028cf8177b750175"
+    />
+  </g>
+</svg>
+`;
