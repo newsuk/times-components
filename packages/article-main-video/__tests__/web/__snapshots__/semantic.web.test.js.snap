@@ -189,7 +189,7 @@ exports[`1. a full article with video as the lead asset 1`] = `
   </a>
   <a
     data-testid="share-twitter"
-    href="https://twitter.com/intent/tweet?text=Shared with you by a Times subscriber.%0A%0AEnjoy this article for free.%0A%0Ahttps://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
+    href="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s"
     target="_blank"
     title="Share on Twitter"
   >
