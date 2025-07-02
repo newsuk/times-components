@@ -21,6 +21,7 @@ fragment articleProps on Article {
   label
   publicationName
   publishedTime
+  firstPublishedTime
   section
   shortHeadline
   shortIdentifier
