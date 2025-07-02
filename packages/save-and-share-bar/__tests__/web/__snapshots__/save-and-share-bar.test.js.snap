@@ -59,7 +59,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </button>
     <div
       aria-expanded={false}
-      className="styled__Popover-qkwc0r-5 kDlDSt"
+      className="styled__Popover-qkwc0r-5 bKeYAf"
     >
       <div
         className="styled__PopoverHeader-qkwc0r-6 etSOho"
@@ -117,7 +117,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         <a
           className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
           data-testid="share-twitter"
-          href="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+          href="https://twitter.com/intent/tweet?text=Shared with you by a Times subscriber.%0A%0AEnjoy this article for free.%0A%0Ahttps://www.thetimes.co.uk/"
           target="_blank"
           title="Share on Twitter"
         >
@@ -236,7 +236,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </button>
     <div
       aria-expanded={false}
-      className="styled__Popover-qkwc0r-5 cMcJTI"
+      className="styled__Popover-qkwc0r-5 dvbnOd"
     >
       <div
         className="styled__PopoverHeader-qkwc0r-6 etSOho"
@@ -294,7 +294,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         <a
           className="share-item__StyledLink-sc-1idd4zx-2 iTJLEp"
           data-testid="share-twitter"
-          href="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+          href="https://twitter.com/intent/tweet?text=Shared with you by a Times subscriber.%0A%0AEnjoy this article for free.%0A%0Ahttps://www.thetimes.co.uk/"
           target="_blank"
           title="Share on Twitter"
         >

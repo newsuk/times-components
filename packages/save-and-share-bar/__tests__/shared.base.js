@@ -9,6 +9,7 @@ import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/components/email-share";
 import { OutlineButton, ShareButtonHighlightContainer } from "../src/styled";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
+import { timesShareText } from "../src/constants";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -202,7 +203,7 @@ export default () => {
       const testInstance = TestRenderer.create(
         <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
-      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=${timesShareText}${articleHeadline}%0A%0A${url}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);
@@ -219,7 +220,7 @@ export default () => {
           hostName="https://www.thetimes.com"
         />
       );
-      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=${timesShareText}${articleHeadline}%0A%0A${url}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);
@@ -247,7 +248,7 @@ export default () => {
         <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
       const url = `${articleUrl}?shareToken=foo`;
-      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=${timesShareText}${articleHeadline}%0A%0A${url}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);
@@ -257,7 +258,7 @@ export default () => {
       const testInstance = TestRenderer.create(
         <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
-      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=${timesShareText}${articleHeadline}%0A%0A${articleUrl}`;
       await testInstance.root
         .findAllByType(ShareItem)[0]
         .props.onClick(mockEvent);

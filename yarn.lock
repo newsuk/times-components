@@ -5437,6 +5437,16 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/icons@2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9+ee5bfc0707":
+  version "2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.23.23-ee5bfc070774aee15bd24d483c9acecb2efa344e.9.tgz#2d4e7fcad2965a891de639710c6d9121e07cb31d"
+  integrity sha512-njYY4uba3DEUx9f/3sO49mPCiKwuqIU1B0dYK50FoBqvk3E+lJJNxCUq0yNN81C1Bgx0v3WtyxLDwrWG90PcbA==
+  dependencies:
+    "@times-components/ts-styleguide" "^1.56.1"
+    "@times-components/utils" "^6.31.13"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
