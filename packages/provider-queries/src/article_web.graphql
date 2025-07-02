@@ -170,6 +170,7 @@ fragment articleProps on Article {
   publicationName
   publishedTime
   updatedTime
+  firstPublishedTime
   section
   shortIdentifier
   shortHeadline

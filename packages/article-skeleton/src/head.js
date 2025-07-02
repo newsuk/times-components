@@ -219,6 +219,7 @@ function Head({
     shortHeadline,
     publishedTime,
     updatedTime,
+    firstPublishedTime,
     hasVideo,
     seoDescription,
     keywords
@@ -355,7 +356,7 @@ function Head({
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
-    coverageStartTime: publishedTime,
+    coverageStartTime: firstPublishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
     keywords,
