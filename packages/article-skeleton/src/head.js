@@ -354,9 +354,9 @@ function Head({
       "@type": "WebPage",
       "@id": articleUrl
     },
-    datePublished: firstPublishedTime,
+    datePublished: firstPublishedTime || publishedTime,
     dateModified: updatedTime,
-    coverageStartTime: firstPublishedTime,
+    coverageStartTime: firstPublishedTime || publishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
     keywords,
