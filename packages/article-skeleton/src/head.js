@@ -219,7 +219,6 @@ function Head({
     shortHeadline,
     publishedTime,
     updatedTime,
-    firstPublishedTime,
     hasVideo,
     seoDescription,
     keywords
