@@ -356,7 +356,7 @@ function Head({
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
-    coverageStartTime: firstPublishedTime || publishedTime,
+    coverageStartTime: publishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
     keywords,
