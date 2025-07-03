@@ -221,7 +221,8 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
-    keywords
+    keywords,
+    firstPublishedTime
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -353,9 +354,9 @@ function Head({
       "@type": "WebPage",
       "@id": articleUrl
     },
-    datePublished: publishedTime,
+    datePublished: firstPublishedTime,
     dateModified: updatedTime,
-    coverageStartTime: publishedTime,
+    coverageStartTime: firstPublishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
     keywords,
