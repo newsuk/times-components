@@ -209,7 +209,8 @@ function Head({
   getFallbackThumbnailUrl169,
   swgProductId,
   breadcrumbs,
-  domainSpecificUrl
+  domainSpecificUrl,
+  firstPublishedTime
 }) {
   const {
     descriptionMarkup,
@@ -353,9 +354,9 @@ function Head({
       "@type": "WebPage",
       "@id": articleUrl
     },
-    datePublished: publishedTime,
+    datePublished: firstPublishedTime || publishedTime,
     dateModified: updatedTime,
-    coverageStartTime: publishedTime,
+    coverageStartTime: firstPublishedTime || publishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
     keywords,
@@ -455,12 +456,14 @@ Head.propTypes = {
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
   domainSpecificUrl: PropTypes.string.isRequired,
-  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
+  firstPublishedTime: PropTypes.string
 };
 
 Head.defaultProps = {
   swgProductId: null,
-  breadcrumbs: []
+  breadcrumbs: [],
+  firstPublishedTime: null
 };
 
 export default Head;
