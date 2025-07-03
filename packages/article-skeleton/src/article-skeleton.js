@@ -172,7 +172,8 @@ const ArticleSkeleton = ({
     breadcrumbs,
     categorisedArticles,
     deckApiUrl,
-    isExcludedFromAdsPathFromServer
+    isExcludedFromAdsPathFromServer,
+    firstPublishedTime
   } = articleDataFromRender || {};
 
   const articleUrl =
@@ -360,6 +361,7 @@ const ArticleSkeleton = ({
             swgProductId={swgProductId}
             breadcrumbs={breadcrumbs}
             domainSpecificUrl={domainSpecificUrl}
+            firstPublishedTime={firstPublishedTime}
           />
           {!!zephrDivs && (
             <StaticContent
