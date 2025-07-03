@@ -457,7 +457,7 @@ Head.propTypes = {
   swgProductId: PropTypes.string,
   domainSpecificUrl: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  firstPublishedTime: PropTypes.string,
+  firstPublishedTime: PropTypes.string
 };
 
 Head.defaultProps = {
