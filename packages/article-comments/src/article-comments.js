@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
-
 import { TrackingContextProvider } from "@times-components/ts-components";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
@@ -18,7 +17,8 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isNewCommentingBannerEnabled = false
 }) => {
   const [isEntitled, setIsEntitled] = useState(undefined);
   const trackingContext = {
@@ -29,6 +29,7 @@ const ArticleComments = ({
       article_parent_name: "commenting"
     }
   };
+
   useEffect(() => {
     const decisions = getBase64CookieValue(COOKIE_NAME);
     if (decisions) {
@@ -46,19 +47,29 @@ const ArticleComments = ({
     return <DisabledComments />;
   }
 
-  return isEntitled ? (
-    <Comments
-      articleId={articleId}
-      isReadOnly={isReadOnly}
-      commentingConfig={commentingConfig}
-      domainSpecificUrl={domainSpecificUrl}
-    />
-  ) : (
-    <TrackingContextProvider context={trackingContext}>
-      {({ fireAnalyticsEvent }) => (
-        <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
-      )}
-    </TrackingContextProvider>
+  if (isEntitled) {
+    return (
+      <Comments
+        articleId={articleId}
+        isReadOnly={isReadOnly}
+        commentingConfig={commentingConfig}
+        domainSpecificUrl={domainSpecificUrl}
+      />
+    );
+  }
+
+  if (!isNewCommentingBannerEnabled) {
+    return (
+      <TrackingContextProvider context={trackingContext}>
+        {({ fireAnalyticsEvent }) => (
+          <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
+        )}
+      </TrackingContextProvider>
+    );
+  }
+
+  return (
+    <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
   );
 };
 
@@ -69,11 +80,13 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  isNewCommentingBannerEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false
+  isReadOnly: false,
+  isNewCommentingBannerEnabled: PropTypes.bool
 };
 
 export default ArticleComments;

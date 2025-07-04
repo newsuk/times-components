@@ -17,6 +17,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     zephrDivs,
     showAudioPlayer,
+    isNewCommentingBannerEnabled,
     removeTeaserContent
   } = window.nuk.article;
 
@@ -37,6 +38,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     zephrDivs,
     showAudioPlayer,
+    isNewCommentingBannerEnabled,
     removeTeaserContent
   };
 
@@ -47,7 +49,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
       "x-new-topic-data-source": true
     },
     zephrDivs,
-    showAudioPlayer
+    showAudioPlayer,
+    isNewCommentingBannerEnabled
   };
 
   runClient(article, clientOptions, data);

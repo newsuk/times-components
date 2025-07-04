@@ -10,6 +10,7 @@ const articleSkeletonPropTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  isNewCommentingBannerEnabled: PropTypes.bool,
   swgProductId: PropTypes.string,
   zephrDivs: PropTypes.bool,
   showAudioPlayer: PropTypes.bool

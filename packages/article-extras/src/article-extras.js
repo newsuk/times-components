@@ -42,6 +42,7 @@ const ArticleExtras = ({
   categorisedArticles,
   relatedArticlesVisible,
   commentingConfig,
+  isNewCommentingBannerEnabled,
   topics,
   breadcrumbs,
   domainSpecificUrl,
@@ -146,6 +147,7 @@ const ArticleExtras = ({
         articleId={articleId}
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
+        isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
         domainSpecificUrl={domainSpecificUrl}
       />
     </UserState>
@@ -166,6 +168,7 @@ ArticleExtras.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  isNewCommentingBannerEnabled: PropTypes.bool,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
@@ -179,7 +182,8 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   breadcrumbs: [],
-  isExcludedFromAdsPathFromServer: false
+  isExcludedFromAdsPathFromServer: false,
+  isNewCommentingBannerEnabled: PropTypes.bool
 };
 
 export default ArticleExtras;
