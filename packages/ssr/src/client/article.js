@@ -50,7 +50,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     },
     zephrDivs,
     showAudioPlayer,
-    isNewCommentingBannerEnabled,
+    isNewCommentingBannerEnabled
   };
 
   runClient(article, clientOptions, data);

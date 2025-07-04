@@ -182,7 +182,8 @@ ArticleExtras.defaultProps = {
   categorisedArticles: null,
   topics: null,
   breadcrumbs: [],
-  isExcludedFromAdsPathFromServer: false
+  isExcludedFromAdsPathFromServer: false,
+  isNewCommentingBannerEnabled: PropTypes.bool
 };
 
 export default ArticleExtras;

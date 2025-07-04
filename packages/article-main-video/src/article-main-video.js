@@ -162,7 +162,12 @@ class ArticlePage extends Component {
   }
 
   renderContentFooter() {
-    const { article, articleDataFromRender, commentingConfig, isNewCommentingBannerEnabled } = this.props;
+    const {
+      article,
+      articleDataFromRender,
+      commentingConfig,
+      isNewCommentingBannerEnabled
+    } = this.props;
     const { topics, commentsEnabled, id } = article;
     const { breadcrumbs } = articleDataFromRender || {};
 
