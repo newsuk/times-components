@@ -27,15 +27,13 @@ const mockProps = {
   articleId: "test-article-id",
   isEnabled: true,
   commentingConfig: { account: "test-account" },
-  domainSpecificUrl: "https://test.com"
+  domainSpecificUrl: "https://test.com",
+  isNewCommentingBannerEnabled: false,
 };
 
 describe("<ArticleComments>", () => {
  beforeEach(() => {
     jest.clearAllMocks();
-    window.__TIMES_ACCESS_AND_IDENTITY__ = {
-      isNewCommentingBannerEnabled: false
-    };
     getBase64CookieValue.mockReturnValue(null);
   });
 
@@ -70,33 +68,25 @@ describe("<ArticleComments>", () => {
 describe("<ArticleComments> new commenting banner enabled", () => {
     beforeEach(() => { 
        jest.clearAllMocks(); 
-       window.__TIMES_ACCESS_AND_IDENTITY__ = {
-         isNewCommentingBannerEnabled: true
-       };
-       // Ensure isEntitled is false for the banner tests
        getBase64CookieValue.mockReturnValue(null);
     });
     
-    afterEach(() => {
-        delete window.__TIMES_ACCESS_AND_IDENTITY__;
-    });
-    
     it("should show Zephr commenting banner when isEnabled=true and no cookie", () => {
-      const { container } = render(<ArticleComments {...mockProps} />);
+      const { container } = render(<ArticleComments {...mockProps} isNewCommentingBannerEnabled={true}/>);
       expect(container.querySelector('[data-testid="zephr__commenting-banner"]')).toBeInTheDocument();
     });
 
     it("should show Zephr commenting banner when isEnabled=true and no entitlement", () => {
       getBase64CookieValue.mockReturnValue({ "fp-1113": false });
 
-      const { container } = render(<ArticleComments {...mockProps} />);
+      const { container } = render(<ArticleComments {...mockProps} isNewCommentingBannerEnabled={true}/>);
       expect(container.querySelector('[data-testid="zephr__commenting-banner"]')).toBeInTheDocument();
     });
     
     it("should show <Comments> when isEnabled=true and has entitlement", () => {
       getBase64CookieValue.mockReturnValue({ "fp-1113": true });
 
-      const { getByText } = render(<ArticleComments {...mockProps} />);
+      const { getByText } = render(<ArticleComments {...mockProps} isNewCommentingBannerEnabled={true}/>);
       expect(getByText("Comments")).toBeInTheDocument();
     });
 });

@@ -26,6 +26,7 @@ module.exports = (
     getFallbackThumbnailUrl169,
     zephrDivs,
     showAudioPlayer,
+    isNewCommentingBannerEnabled,
     removeTeaserContent
   },
   userState
@@ -80,6 +81,7 @@ module.exports = (
       swgProductId,
       zephrDivs,
       showAudioPlayer,
+      isNewCommentingBannerEnabled,
       removeTeaserContent
     },
     name: "article"
