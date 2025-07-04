@@ -4,10 +4,10 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { getBase64CookieValue, hasEntitlement } from "@times-components/utils";
-
+import { TrackingContextProvider } from "@times-components/ts-components";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
-
+import JoinTheConversationDialog from "./join-the-conversation-dialog";
 const COOKIE_NAME = "access-decisions";
 const ENTITLEMENT_SLUG = "functionalCommentingFull";
 
@@ -19,7 +19,15 @@ const ArticleComments = ({
   domainSpecificUrl
 }) => {
   const [isEntitled, setIsEntitled] = useState(undefined);
-
+  const trackingContext = {
+    component: "JoinTheConversationDialog",
+    object: "JoinTheConversationDialog",
+    attrs: {
+      event_navigation_action: "navigation",
+      article_parent_name: "commenting"
+    }
+  };
+  
   useEffect(() => {
     const decisions = getBase64CookieValue(COOKIE_NAME);
     if (decisions) {
@@ -36,6 +44,9 @@ const ArticleComments = ({
   if (!isEnabled) {
     return <DisabledComments />;
   }
+  const isNewCommentingBannerEnabled = window?.__TIMES_ACCESS_AND_IDENTITY__
+    ? window.__TIMES_ACCESS_AND_IDENTITY__.isNewCommentingBannerEnabled
+    : false;
 
   return isEntitled ? (
     <Comments
@@ -44,8 +55,15 @@ const ArticleComments = ({
       commentingConfig={commentingConfig}
       domainSpecificUrl={domainSpecificUrl}
     />
-  ) : (
-    <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
+  ) : ( !isNewCommentingBannerEnabled ? (
+      <TrackingContextProvider context={trackingContext}>
+        {({ fireAnalyticsEvent }) => (
+          <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
+        )}
+      </TrackingContextProvider>
+    ) : (
+      <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
+    )
   );
 };
 
