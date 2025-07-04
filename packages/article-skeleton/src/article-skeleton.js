@@ -493,7 +493,9 @@ const ArticleSkeleton = ({
                             !!observed.get("related-articles")
                           }
                           commentingConfig={commentingConfig}
-                          isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
+                          isNewCommentingBannerEnabled={
+                            isNewCommentingBannerEnabled
+                          }
                           topics={topics}
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}

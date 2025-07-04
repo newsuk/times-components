@@ -8,6 +8,7 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
+
 const COOKIE_NAME = "access-decisions";
 const ENTITLEMENT_SLUG = "functionalCommentingFull";
 
@@ -28,7 +29,7 @@ const ArticleComments = ({
       article_parent_name: "commenting"
     }
   };
-  
+
   useEffect(() => {
     const decisions = getBase64CookieValue(COOKIE_NAME);
     if (decisions) {
@@ -46,22 +47,29 @@ const ArticleComments = ({
     return <DisabledComments />;
   }
 
-  return isEntitled ? (
-    <Comments
-      articleId={articleId}
-      isReadOnly={isReadOnly}
-      commentingConfig={commentingConfig}
-      domainSpecificUrl={domainSpecificUrl}
-    />
-  ) : ( !isNewCommentingBannerEnabled ? (
+  if (isEntitled) {
+    return (
+      <Comments
+        articleId={articleId}
+        isReadOnly={isReadOnly}
+        commentingConfig={commentingConfig}
+        domainSpecificUrl={domainSpecificUrl}
+      />
+    );
+  }
+
+  if (!isNewCommentingBannerEnabled) {
+    return (
       <TrackingContextProvider context={trackingContext}>
         {({ fireAnalyticsEvent }) => (
           <JoinTheConversationDialog fireAnalyticsEvent={fireAnalyticsEvent} />
         )}
       </TrackingContextProvider>
-    ) : (
-      <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
-    )
+    );
+  }
+
+  return (
+    <div id="zephr__commenting-banner" data-testid="zephr__commenting-banner" />
   );
 };
 
@@ -77,7 +85,8 @@ ArticleComments.propTypes = {
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false
+  isReadOnly: false,
+  isNewCommentingBannerEnabled: PropTypes.bool
 };
 
 export default ArticleComments;
