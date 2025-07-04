@@ -49,6 +49,7 @@ Array [
       }
     }
     isEnabled={true}
+    isNewCommentingBannerEnabled={false}
   />,
 ]
 `;
@@ -227,6 +228,7 @@ Array [
       }
     }
     isEnabled={true}
+    isNewCommentingBannerEnabled={false}
   />,
 ]
 `;
@@ -280,6 +282,7 @@ Array [
       }
     }
     isEnabled={true}
+    isNewCommentingBannerEnabled={false}
   />,
 ]
 `;
