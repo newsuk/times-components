@@ -2,16 +2,158 @@
 
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="zephr__commenting-banner"
-    id="zephr__commenting-banner"
-  />
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
+.c1 {
+  max-width: 343px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-family: TimesModern-Regular;
+  font-weight: 700;
+  font-color: #333333;
+  font-size: 28px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 8px;
+}
+
+.c3 {
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  font-color: #333333;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #005c8a;
+  color: white;
+  font-family: Roboto-Medium;
+  width: 100%;
+  height: 48px;
+  padding: 18.5px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 16px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-bottom: 48px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 403px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Join the conversation
+      </div>
+      <div
+        class="c3"
+      >
+        Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+      </div>
+      <a
+        class="c4"
+        href="#"
+      >
+        Go to My account
+      </a>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`disabled comments 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
+  font-size: 16px;
+}
+
+.c0 {
   margin-left: auto;
   margin-right: auto;
   padding-inline: 20px;
@@ -45,24 +187,6 @@ exports[`disabled comments 1`] = `
   width: 100%;
   border: none;
   border-top: 1px solid #e4e4e4;
-}
-
-.c4 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 16px;
 }
 
 @media (min-width:768px) {
@@ -119,10 +243,134 @@ exports[`disabled comments 1`] = `
 
 exports[`single comment 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="zephr__commenting-banner"
-    id="zephr__commenting-banner"
-  />
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
+.c1 {
+  max-width: 343px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-family: TimesModern-Regular;
+  font-weight: 700;
+  font-color: #333333;
+  font-size: 28px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 8px;
+}
+
+.c3 {
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  font-color: #333333;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #005c8a;
+  color: white;
+  font-family: Roboto-Medium;
+  width: 100%;
+  height: 48px;
+  padding: 18.5px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 16px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-bottom: 48px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 403px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Join the conversation
+      </div>
+      <div
+        class="c3"
+      >
+        Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+      </div>
+      <a
+        class="c4"
+        href="#"
+      >
+        Go to My account
+      </a>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -130,9 +378,133 @@ exports[`window listeners added all listeners added 1`] = `Array []`;
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="zephr__commenting-banner"
-    id="zephr__commenting-banner"
-  />
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
+.c1 {
+  max-width: 343px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  font-family: TimesModern-Regular;
+  font-weight: 700;
+  font-color: #333333;
+  font-size: 28px;
+  line-height: 32px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 8px;
+}
+
+.c3 {
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  font-color: #333333;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 660px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #005c8a;
+  color: white;
+  font-family: Roboto-Medium;
+  width: 100%;
+  height: 48px;
+  padding: 18.5px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin: 16px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-bottom: 48px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 403px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Join the conversation
+      </div>
+      <div
+        class="c3"
+      >
+        Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
+      </div>
+      <a
+        class="c4"
+        href="#"
+      >
+        Go to My account
+      </a>
+    </div>
+  </div>
 </DocumentFragment>
 `;
