@@ -16,7 +16,8 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  domainSpecificUrl
+  domainSpecificUrl,
+  isNewCommentingBannerEnabled = false
 }) => {
   const [isEntitled, setIsEntitled] = useState(undefined);
   const trackingContext = {
@@ -44,9 +45,6 @@ const ArticleComments = ({
   if (!isEnabled) {
     return <DisabledComments />;
   }
-  const isNewCommentingBannerEnabled = window?.__TIMES_ACCESS_AND_IDENTITY__
-    ? window.__TIMES_ACCESS_AND_IDENTITY__.isNewCommentingBannerEnabled
-    : false;
 
   return isEntitled ? (
     <Comments
@@ -74,6 +72,7 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  isNewCommentingBannerEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired
 };
 

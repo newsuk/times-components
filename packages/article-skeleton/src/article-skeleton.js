@@ -68,6 +68,7 @@ const ArticleSkeleton = ({
   logoUrl,
   receiveChildList,
   commentingConfig,
+  isNewCommentingBannerEnabled,
   articleDataFromRender,
   paidContentClassName,
   isPreview,
@@ -494,6 +495,7 @@ const ArticleSkeleton = ({
                             !!observed.get("related-articles")
                           }
                           commentingConfig={commentingConfig}
+                          isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
                           topics={topics}
                           breadcrumbs={breadcrumbs}
                           domainSpecificUrl={domainSpecificUrl}
