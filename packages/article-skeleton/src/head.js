@@ -179,7 +179,24 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           if (update !== undefined) {
             update.video = {
               "@type": "VideoObject",
-              thumbnail: contentObj[i].attributes.posterImageUrl
+              name:
+                contentObj[i].attributes.title || update.headline || "Video",
+              uploadDate:
+                contentObj[i].attributes.updated || update.datePublished,
+              thumbnailUrl: contentObj[i].attributes.posterImageUrl,
+              description:
+                contentObj[i].attributes.description ||
+                contentObj[i].attributes.title ||
+                update.headline,
+              contentUrl:
+                contentObj[i].attributes.brightcoveAccountId &&
+                contentObj[i].attributes.brightcoveVideoId
+                  ? `https://players.brightcove.net/${
+                      contentObj[i].attributes.brightcoveAccountId
+                    }/default_default/index.html?videoId=${
+                      contentObj[i].attributes.brightcoveVideoId
+                    }`
+                  : undefined
             };
           }
         } else if (contentObj[i].name === "paywall") {
