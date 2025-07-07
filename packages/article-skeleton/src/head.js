@@ -20,7 +20,9 @@ const extractVideoStructuredDataFromContent = (
       contentObj =>
         contentObj.name === "video" &&
         contentObj.attributes.brightcoveVideoId &&
-        contentObj.attributes.brightcoveVideoId !== leadAssetVideoId
+        (leadAssetVideoId
+          ? contentObj.attributes.brightcoveVideoId !== leadAssetVideoId
+          : true)
     )
     .map(({ attributes }) => {
       const {
@@ -484,6 +486,15 @@ function Head({
           {JSON.stringify(videoJsonLD)}
         </script>
       ))}
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          name: "test name",
+          contentUrl: `testUrl`
+        })}
+      </script>
 
       {breadcrumbJsonLD && (
         <script type="application/ld+json">
