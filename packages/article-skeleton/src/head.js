@@ -6,56 +6,64 @@ import PropTypes from "prop-types";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
-const testContent = [				{
-					"name": "video",
-					"attributes": {
-						"id": "8ae134aa-97a9-4aad-8641-39dcba28aa94",
-						"display": "fullwidth",
-						"brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
-						"brightcovePlayerId": "default",
-						"brightcoveVideoId": "6375312701112",
-						"brightcoveAccountId": "5436121856001",
-						"paidOnly": false,
-						"skySports": false,
-						"is360": null,
-						"caption": "He said IAG will be flying to as many US destinations this year as it was before the pandemic.",
-						"posterImageUrl": "https://www.staging-thetimes.co.uk/imageserver/image/%2Ffccdb893-3755-4a4b-a827-b1b364aafa42.jpg?crop=1280%2C720%2C0%2C0",
-						"posterImageId": "510b7065-5d20-4327-a900-ba14f3f06c67",
-						"relativeHorizontalOffset": 0,
-						"relativeVerticalOffset": 0,
-						"relativeWidth": 1,
-						"relativeHeight": 1
-					},
-					"children": []
-				},
-				{
-					"name": "video",
-					"attributes": {
-						"id": "da0a2f02-66da-4837-956f-d6522ec20cb7",
-						"display": "fullwidth",
-						"brightcovePolicyKey": "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
-						"brightcovePlayerId": "default",
-						"brightcoveVideoId": "6375308560112",
-						"brightcoveAccountId": "5436121856001",
-						"paidOnly": false,
-						"skySports": false,
-						"is360": null,
-						"posterImageUrl": "https://www.staging-thetimes.co.uk/imageserver/image/%2F9be1d3be-2727-40db-9f9a-988b08e6224a.jpg?crop=1280%2C720%2C0%2C0",
-						"posterImageId": "3f711069-c725-45fd-90b4-011d50a4248a",
-						"relativeHorizontalOffset": 0,
-						"relativeVerticalOffset": 0,
-						"relativeWidth": 1,
-						"relativeHeight": 1
-					},
-					"children": []
-				}]
+const testContent = [
+  {
+    name: "video",
+    attributes: {
+      id: "8ae134aa-97a9-4aad-8641-39dcba28aa94",
+      display: "fullwidth",
+      brightcovePolicyKey:
+        "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+      brightcovePlayerId: "default",
+      brightcoveVideoId: "6375312701112",
+      brightcoveAccountId: "5436121856001",
+      paidOnly: false,
+      skySports: false,
+      is360: null,
+      caption:
+        "He said IAG will be flying to as many US destinations this year as it was before the pandemic.",
+      posterImageUrl:
+        "https://www.staging-thetimes.co.uk/imageserver/image/%2Ffccdb893-3755-4a4b-a827-b1b364aafa42.jpg?crop=1280%2C720%2C0%2C0",
+      posterImageId: "510b7065-5d20-4327-a900-ba14f3f06c67",
+      relativeHorizontalOffset: 0,
+      relativeVerticalOffset: 0,
+      relativeWidth: 1,
+      relativeHeight: 1
+    },
+    children: []
+  },
+  {
+    name: "video",
+    attributes: {
+      id: "da0a2f02-66da-4837-956f-d6522ec20cb7",
+      display: "fullwidth",
+      brightcovePolicyKey:
+        "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+      brightcovePlayerId: "default",
+      brightcoveVideoId: "6375308560112",
+      brightcoveAccountId: "5436121856001",
+      paidOnly: false,
+      skySports: false,
+      is360: null,
+      posterImageUrl:
+        "https://www.staging-thetimes.co.uk/imageserver/image/%2F9be1d3be-2727-40db-9f9a-988b08e6224a.jpg?crop=1280%2C720%2C0%2C0",
+      posterImageId: "3f711069-c725-45fd-90b4-011d50a4248a",
+      relativeHorizontalOffset: 0,
+      relativeVerticalOffset: 0,
+      relativeWidth: 1,
+      relativeHeight: 1
+    },
+    children: []
+  }
+];
 
 const extractVideoStructuredDataFromContent = (
   fallbackDescription,
   fallbackTitle,
   uploadDate,
   leadAssetVideoId
-) => testContent
+) =>
+  testContent
     .filter(
       contentObj =>
         contentObj.name === "video" &&
@@ -304,7 +312,7 @@ function Head({
     keywords
   } = article;
 
-  const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
+  const { brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
@@ -409,22 +417,6 @@ function Head({
     };
   }
 
-  const leadVideoJsonLD =
-    hasVideo && brightcoveVideoId
-      ? {
-          "@context": "https://schema.org",
-          "@type": "VideoObject",
-          name: leadAsset && leadAsset.title ? leadAsset.title : title,
-          uploadDate: dateModified,
-          thumbnailUrl,
-          description:
-            Array.isArray(descriptionMarkup) && descriptionMarkup.length
-              ? renderTreeAsText({ children: descriptionMarkup })
-              : seoDescription || leadAsset.title || title,
-          contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-        }
-      : null;
-
   const fallbackDescription =
     Array.isArray(descriptionMarkup) && descriptionMarkup.length
       ? renderTreeAsText({ children: descriptionMarkup })
@@ -510,7 +502,6 @@ function Head({
       )}
 
       <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
-
 
       {videoJsonLDs.map(videoJsonLD => (
         <script type="application/ld+json" key={videoJsonLD.brightcoveVideoId}>
