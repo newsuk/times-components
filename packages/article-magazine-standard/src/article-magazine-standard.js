@@ -74,6 +74,7 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
+      isNewCommentingBannerEnabled,
       removeTeaserContent
     } = this.props;
 
@@ -94,6 +95,7 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
         removeTeaserContent={removeTeaserContent}
       />
     );
