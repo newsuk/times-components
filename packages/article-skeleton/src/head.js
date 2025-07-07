@@ -8,6 +8,31 @@ import { appendToImageURL } from "@times-components/utils";
 
 const testContent = [
   {
+    name: "heading2",
+    children: [
+      {
+        name: "text",
+        children: [],
+        attributes: {
+          value: "BA boss says ‘Trump slump’ has reversed on routes to America"
+        }
+      }
+    ]
+  },
+  {
+    name: "paragraph",
+    children: [
+      {
+        name: "text",
+        children: [],
+        attributes: {
+          value:
+            "Luis Gallego, chief executive of the British Airways owner IAG, reports that the so-called Trump slump has reversed itself on North Atlantic aviation routes, even if US domestic demand remains wobbly."
+        }
+      }
+    ]
+  },
+  {
     name: "video",
     attributes: {
       id: "8ae134aa-97a9-4aad-8641-39dcba28aa94",
