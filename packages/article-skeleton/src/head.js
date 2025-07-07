@@ -6,6 +6,46 @@ import PropTypes from "prop-types";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
+const extractVideoStructuredDataFromContent = (
+  contentNodes,
+  fallbackDescription,
+  fallbackTitle,
+  uploadDate,
+  leadAssetVideoId
+) => {
+  if (!Array.isArray(contentNodes)) return [];
+
+  return contentNodes
+    .filter(
+      contentObj =>
+        contentObj.name === "video" &&
+        contentObj.attributes.brightcoveVideoId &&
+        contentObj.attributes.brightcoveVideoId !== leadAssetVideoId
+    )
+    .map(({ attributes }) => {
+      const {
+        brightcoveAccountId,
+        brightcoveVideoId,
+        posterImageUrl,
+        title,
+        caption
+      } = attributes;
+
+      return {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: title || fallbackTitle,
+        uploadDate,
+        thumbnailUrl: posterImageUrl,
+        description: fallbackDescription || caption,
+        ...(brightcoveAccountId &&
+          brightcoveVideoId && {
+            contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+          })
+      };
+    });
+};
+
 const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
 function getIsLiveBlogExpiryTime(articleFlags = []) {
@@ -330,20 +370,36 @@ function Head({
     };
   }
 
-  const videoJsonLD = hasVideo
-    ? {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        name: leadAsset && leadAsset.title ? leadAsset.title : title,
-        uploadDate: dateModified,
-        thumbnailUrl,
-        description:
-          Array.isArray(descriptionMarkup) && descriptionMarkup.length
-            ? renderTreeAsText({ children: descriptionMarkup })
-            : seoDescription || leadAsset.title || title,
-        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      }
-    : null;
+  const leadVideoJsonLD =
+    hasVideo && brightcoveVideoId && brightcoveAccountId
+      ? {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          name: leadAsset && leadAsset.title ? leadAsset.title : title,
+          uploadDate: dateModified,
+          thumbnailUrl,
+          description:
+            Array.isArray(descriptionMarkup) && descriptionMarkup.length
+              ? renderTreeAsText({ children: descriptionMarkup })
+              : seoDescription || leadAsset.title || title,
+          contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+        }
+      : null;
+
+  const fallbackDescription =
+    Array.isArray(descriptionMarkup) && descriptionMarkup.length
+      ? renderTreeAsText({ children: descriptionMarkup })
+      : seoDescription || leadAsset.title || title;
+
+  const uploadDate = updatedTime || publishedTime;
+
+  const videoJsonLDs = extractVideoStructuredDataFromContent(
+    article.content,
+    fallbackDescription,
+    title,
+    uploadDate,
+    brightcoveVideoId
+  );
 
   const liveBlogJsonLD = {
     "@context": "https://schema.org",
@@ -417,11 +473,17 @@ function Head({
 
       <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
 
-      {videoJsonLD && (
+      {leadVideoJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(leadVideoJsonLD)}
+        </script>
+      )}
+
+      {videoJsonLDs.map(videoJsonLD => (
         <script type="application/ld+json">
           {JSON.stringify(videoJsonLD)}
         </script>
-      )}
+      ))}
 
       {breadcrumbJsonLD && (
         <script type="application/ld+json">
