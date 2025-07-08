@@ -478,14 +478,21 @@ function Head({
         </script>
       )}
 
-      {videoJsonLDs.map(videoJsonLD => (
-        <script
-          key={`video-jsonld-${videoJsonLD.brightcoveVideoId}`}
-          type="application/ld+json"
-        >
-          {JSON.stringify(videoJsonLD)}
+      {videoJsonLDs[0] && (
+        <script type="application/ld+json">
+          {JSON.stringify(videoJsonLDs[0])}
         </script>
-      ))}
+      )}
+      {videoJsonLDs[1] && (
+        <script type="application/ld+json">
+          {JSON.stringify(videoJsonLDs[1])}
+        </script>
+      )}
+      {videoJsonLDs[2] && (
+        <script type="application/ld+json">
+          {JSON.stringify(videoJsonLDs[2])}
+        </script>
+      )}
 
       {breadcrumbJsonLD && (
         <script type="application/ld+json">
