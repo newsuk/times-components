@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.166.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.165.22...@times-components/article-skeleton@1.166.0) (2025-07-08)
+
+
+### Features
+
+* **TMPR-415:** update metadata for live blog post ([#4180](https://github.com/newsuk/times-components/issues/4180)) ([1b88ba8](https://github.com/newsuk/times-components/commit/1b88ba8354c09590b8ed9e906df82d817578b183))
+
+
+
+
+
 ## [1.165.22](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.165.21...@times-components/article-skeleton@1.165.22) (2025-06-30)
 
 **Note:** Version bump only for package @times-components/article-skeleton
