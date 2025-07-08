@@ -1,19 +1,77 @@
 export default {
   data: {
     article: {
-      backgroundColour: null,
-      commentsEnabled: true,
+      id: "cc72a8a9-fbc2-4333-832a-a6103ba38866",
+      slug:
+        "tactical-nuclear-weapons-explained-from-f-35a-jets-to-trident-d5-missiles",
+      shortIdentifier: "2tnn5kh8j",
+      headline:
+        "Tactical nuclear weapons explained — from F-35A jets to Trident D5 missiles",
+      shortHeadline:
+        "Tactical nuclear weapons explained — from F-35A jets to Trident D5 missiles",
+      seoDescription:
+        "Tactical nuclear weapons explained — from F-35A jets to Trident D5 missiles",
+      commercialSection: null,
+      template: "mainstandard",
+      hasVideo: true,
+      isTeased: false,
+      url:
+        "https://www.uat-thetimes.co.uk/article/tactical-nuclear-weapons-explained-from-f-35a-jets-to-trident-d5-missiles-2tnn5kh8j",
+      tagsUpdatedTime: null,
+      byline: [
+        {
+          name: "inline",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value: "ibrahim kurhan"
+              }
+            }
+          ]
+        }
+      ],
+      publicationName: "TIMES",
+      publishedTime: "2025-06-26T11:14:31.000Z",
+      firstPublishedTime: "2025-06-26T11:14:31.000Z",
+      updatedTime: "2025-07-08T18:30:26.000Z",
+      dataSource: "NEWSPRESS",
+      associatedDesks: [],
       content: [
         {
+          name: "video",
+          attributes: {
+            id: "8bf9a028-151a-4723-b7b5-7f7e87f3e0ea",
+            display: "fullwidth",
+            brightcovePolicyKey:
+              "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+            brightcovePlayerId: "default",
+            brightcoveVideoId: "6375245120112",
+            brightcoveAccountId: "5436121856001",
+            paidOnly: false,
+            skySports: false,
+            is360: null,
+            posterImageUrl:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F4ece8867-b4ea-41f6-ba92-93418db0dedb.jpg?crop=1280%2C720%2C0%2C0",
+            posterImageId: "d7397705-2a5c-4bc1-abb2-dd10e8e2d954",
+            relativeHorizontalOffset: 0,
+            relativeVerticalOffset: 0,
+            relativeWidth: 1,
+            relativeHeight: 1
+          },
+          children: []
+        },
+        {
           name: "paragraph",
           children: [
             {
               name: "text",
+              children: [],
               attributes: {
                 value:
-                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said."
-              },
-              children: []
+                  "President Putin has a nuclear escalation ladder, which gives him the option of using tactical nuclear weapons to kill thousands of troops, before choosing to wipe out an entire city with a much bigger bomb. Britain, by contrast, only has the option of an “on/off switch” — fire Trident missiles from one of its four nuclear submarines and potentially be responsible for another Hiroshima."
+              }
             }
           ]
         },
@@ -22,11 +80,11 @@ export default {
           children: [
             {
               name: "text",
+              children: [],
               attributes: {
                 value:
-                  "John Eyers of Southport, Merseyside, worked in construction and had a love of wild camping and adventuring. His last trip had been to the Welsh mountains, just one month before his death last week."
-              },
-              children: []
+                  "It is with this in mind, and after fears that Putin considered using tactical nuclear weapons in the early months of the Ukraine war in 2022, that British ministers now want other options."
+              }
             }
           ]
         },
@@ -35,30 +93,83 @@ export default {
           children: [
             {
               name: "text",
-              attributes: {
-                value: "His twin sister, Jenny McCann from London, told the "
-              },
-              children: []
-            },
-            {
-              name: "italic",
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "Daily Mail"
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "text",
+              children: [],
               attributes: {
                 value:
-                  " he was the “fittest, healthiest person I know”, but added that Eyers had a “belief in his own immortality”. She said that before he went on a ventilator he had confessed to a doctor that he wished he had received the jab."
-              },
-              children: []
+                  "Of the world’s 195 countries, only nine have nuclear weapons: the United States, Russia, China, UK, France, India, Pakistan, Israel and North Korea. The number of warheads held by the US, Russia and Britain has been declining since the fall of the Soviet Union in 1991."
+              }
+            }
+          ]
+        },
+        {
+          name: "video",
+          attributes: {
+            id: "1d5c69cf-61fd-4548-90a9-13fc1bfccd5d",
+            display: "fullwidth",
+            brightcovePolicyKey:
+              "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+            brightcovePlayerId: "default",
+            brightcoveVideoId: "6375367504112",
+            brightcoveAccountId: "5436121856001",
+            paidOnly: false,
+            skySports: false,
+            is360: null,
+            posterImageUrl:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F2d4428d6-97f9-4762-9127-76df3eec4a73.jpg?crop=1280%2C720%2C0%2C0",
+            posterImageId: "3eb7b66d-10c9-40b9-8983-55a1e6bd994f",
+            relativeHorizontalOffset: 0,
+            relativeVerticalOffset: 0,
+            relativeWidth: 1,
+            relativeHeight: 1
+          },
+          children: []
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "It is with this in mind, and after fears that Putin considered using tactical nuclear weapons in the early months of the Ukraine war in 2022, that British ministers now want other options."
+              }
+            }
+          ]
+        },
+        {
+          name: "video",
+          attributes: {
+            id: "de72c786-b818-4e1b-a0c5-6b8ddb3f37b2",
+            display: "fullwidth",
+            brightcovePolicyKey:
+              "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+            brightcovePlayerId: "default",
+            brightcoveVideoId: "6375364378112",
+            brightcoveAccountId: "5436121856001",
+            paidOnly: false,
+            skySports: false,
+            is360: null,
+            posterImageUrl:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F43d7d074-9216-4558-8e30-feb670ca537e.jpg?crop=1280%2C720%2C0%2C0",
+            posterImageId: "675c07f0-83ef-4d07-a43e-165444b1b6e1",
+            relativeHorizontalOffset: 0,
+            relativeVerticalOffset: 0,
+            relativeWidth: 1,
+            relativeHeight: 1
+          },
+          children: []
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "It is with this in mind, and after fears that Putin considered using tactical nuclear weapons in the early months of the Ukraine war in 2022, that British ministers now want other options."
+              }
             }
           ]
         },
@@ -67,781 +178,93 @@ export default {
           children: [
             {
               name: "text",
+              children: [],
               attributes: {
-                value: "According to the newspaper, McCann has"
-              },
-              children: []
-            },
-            {
-              name: "paywall",
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value:
-                      " been targeted by antivaxers on social media after sharing news of her brother’s death, with some falsely claiming she had been “paid by the government”."
-                  },
-                  children: []
-                }
-              ]
+                value:
+                  "Of the world’s 195 countries, only nine have nuclear weapons: the United States, Russia, China, UK, France, India, Pakistan, Israel and North Korea. The number of warheads held by the US, Russia and Britain has been declining since the fall of the Soviet Union in 1991."
+              }
             }
           ]
         },
         {
-          name: "paywall",
-          children: [
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Eyers, who competed in ironman competitions and was an amateur bodybuilder, died in intensive care after suffering from an infection and organ failure, leaving behind a daughter aged 19. Four weeks previously he had tested positive for coronavirus."
-                  }
-                }
-              ]
-            },
-            {
-              name: "ad",
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "McCann said her brother was “pumped full of every drug in the hospital” but he died from the virus."
-                  }
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "“They threw everything at him but eventually the bedfellows of Covid-19, infection and organ failure claimed his life,” she said. “Before he was ventilated he told his consultant that he wished he had been vaccinated, that he wished he had listened. His death is a tragedy. It shouldn’t have happened.”"
-                  }
-                }
-              ]
-            },
-            {
-              name: "image",
-              attributes: {
-                id: "7140fc6b-fcb8-431a-9a51-ba5351d0fecf",
-                display: "inline",
-                caption:
-                  "Eyers confessed that he wished he had received the vaccine",
-                credits: null,
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6060bb00-f523-11eb-8f01-2c678acbb979.jpg?crop=1080%2C1080%2C0%2C0",
-                ratio: "1000:1000",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 0.9836065573770492
-              },
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "She described her brother as a “fun uncle” who dressed up as Father Christmas on Christmas Day."
-                  }
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "“My mum wants people to know about John. For his story to save someone’s life. For pain and loss to drive people to get a vaccine,” she said."
-                  }
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Ministers are worried that three million under-30s have yet to get a coronavirus vaccination and have vowed to introduce measures to encourage take-up. It has been announced that 16 and 17-year-olds are "
-                  }
-                },
-                {
-                  name: "link",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "soon to be offered jabs"
-                      }
-                    }
-                  ],
-                  attributes: {
-                    href:
-                      "https://www.thetimes.co.uk/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
-                    type: "article",
-                    canonicalId:
-                      "all-children-over-16-will-be-offered-covid-jabs-235m87qj2"
-                  }
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      ", paving the way for the rollout to 1.5 million teenagers later this month."
-                  }
-                }
-              ]
-            }
-          ]
+          name: "ad",
+          children: []
+        },
+        {
+          name: "video",
+          attributes: {
+            id: "bd1730b6-1701-44c1-9a62-b44b0bd400ed",
+            display: "fullwidth",
+            brightcovePolicyKey:
+              "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
+            brightcovePlayerId: "default",
+            brightcoveVideoId: "6375369932112",
+            brightcoveAccountId: "5436121856001",
+            paidOnly: false,
+            skySports: false,
+            is360: null,
+            posterImageUrl:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F5080ebeb-4ead-4735-aaa9-a4db329f4a70.jpg?crop=1280%2C720%2C0%2C0",
+            posterImageId: "d2b500cd-584a-4d9f-8200-18df98b0f2e7",
+            relativeHorizontalOffset: 0,
+            relativeVerticalOffset: 0,
+            relativeWidth: 1,
+            relativeHeight: 1
+          },
+          children: []
         }
       ],
-      descriptionMarkup: [
-        {
-          name: "paragraph",
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value:
-                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said."
-              },
-              children: []
-            }
-          ]
-        },
-        {
-          name: "paragraph",
-          children: [
-            {
-              name: "text",
-              attributes: {
-                value: "John Eyers of"
-              },
-              children: []
-            }
-          ]
-        }
-      ],
-      dropcapsDisabled: false,
-      expirableFlags: [
-        {
-          type: "NEW",
-          expiryTime: "2021-08-04T16:00:00.000Z"
-        }
-      ],
-      keywords: [
-        "healthy",
-        "father",
-        "dies",
-        "after",
-        "refusing",
-        "covid",
-        "vaccine",
-        "and",
-        "‘wishing",
-        "he",
-        "had",
-        "listened’"
-      ],
-      leadAsset: {
-        caption:
-          "John Eyers, who enjoyed hiking and running, died in intensive care",
-        credits: null,
-        crop169: {
-          ratio: "16:9",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C573%2C20%2C154"
-        },
-        crop32: {
-          ratio: "3:2",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C679%2C22%2C150"
-        },
-        crop1251: null,
-        crop11: {
-          ratio: "1:1",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=558%2C558%2C352%2C132"
-        },
-        crop45: {
-          ratio: "4:5",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=764%2C955%2C263%2C98"
-        },
-        crop23: {
-          ratio: "2:3",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=524%2C786%2C371%2C140"
-        },
-        crop2251: null,
-        id: "aad8cdea-43f7-46b9-85a6-30c1e5d5b736",
-        title: ""
+      categoryConnection: {
+        nodes: []
       },
-      relatedArticleSlice: {
-        sliceName: "StandardSlice",
-        items: [
+      leadAsset: {
+        __typename: "Image",
+        id: "6f3fa00d-dce0-4414-91c5-6f0f1293389b",
+        crops: [
           {
-            leadAsset: null,
-            article: {
-              leadAsset: {
-                crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3265%2C458%2C825"
-                },
-                crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3870%2C466%2C457"
-                },
-                id: "d6b0502d-5f54-413c-8701-907af06bf5c1",
-                title: "Teen girl after her vaccination"
-              },
-              bylines: [
-                {
-                  byline: [
-                    {
-                      name: "author",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: "Steven Swinford"
-                          }
-                        }
-                      ],
-                      attributes: {
-                        slug: "steven-swinford"
-                      }
-                    }
-                  ],
-                  image: null
-                },
-                {
-                  byline: [
-                    {
-                      name: "inline",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: ", Political Editor | "
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  image: null
-                },
-                {
-                  byline: [
-                    {
-                      name: "author",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: "Chris Smyth"
-                          }
-                        }
-                      ],
-                      attributes: {
-                        slug: "chris-smyth"
-                      }
-                    }
-                  ],
-                  image: null
-                },
-                {
-                  byline: [
-                    {
-                      name: "inline",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: ", Whitehall Editor"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  image: null
-                }
-              ],
-              hasVideo: false,
-              headline: "All UK children over 16 will be offered Covid vaccine",
-              id: "50403140-f49e-11eb-a2a3-afea84050239",
-              label: null,
-              publicationName: "TIMES",
-              publishedTime: "2021-08-04T08:20:00.000Z",
-              updatedTime: "2021-08-04T11:59:29.000Z",
-              section: "news",
-              shortIdentifier: "235m87qj2",
-              shortHeadline: "All children over 16 will be offered Covid jab",
-              slug: "all-children-over-16-will-be-offered-covid-jabs",
-              url:
-                "https://www.thetimes.co.uk/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
-              summary105: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary125: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary145: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "The Joint"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary160: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "The Joint Committee on"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary175: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "The Joint Committee on Vaccination and"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary225: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "The Joint Committee on Vaccination and Immunisation (JCVI) is expected to recommend vaccines"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ]
-            }
+            ratio: "3:2",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=1080%2C720%2C100%2C0"
           },
           {
-            leadAsset: null,
-            article: {
-              leadAsset: {
-                crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C182"
-                },
-                crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0"
-                },
-                id: "0533812b-b8b3-442d-8899-4dc8c82d09d1",
-                title: "Coronavirus - Tue Aug 3, 2021"
-              },
-              bylines: [
-                {
-                  byline: [
-                    {
-                      name: "author",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: "Chris Smyth"
-                          }
-                        }
-                      ],
-                      attributes: {
-                        slug: "chris-smyth"
-                      }
-                    }
-                  ],
-                  image: null
-                },
-                {
-                  byline: [
-                    {
-                      name: "inline",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: ", Whitehall Editor"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  image: null
-                }
-              ],
-              hasVideo: false,
-              headline:
-                "94% of English adults have Covid antibodies, ONS data shows",
-              id: "658b3bc4-f518-11eb-8f01-2c678acbb979",
-              label: "CORONAVIRUS",
-              publicationName: "TIMES",
-              publishedTime: "2021-08-04T11:45:00.000Z",
-              updatedTime: "2021-08-04T14:21:56.000Z",
-              section: "news",
-              shortIdentifier: "vrdgr9sqc",
-              shortHeadline:
-                "94% of English adults have antibodies, official data shows",
-              slug: "94-of-adults-have-covid-antibodies-ons-data-shows",
-              url:
-                "https://www.thetimes.co.uk/article/94-of-adults-have-covid-antibodies-ons-data-shows-vrdgr9sqc",
-              summary105: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary125: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary145: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "The final phase of"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary160: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "The final phase of vaccination in"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary175: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "The final phase of vaccination in adults, coupled"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary225: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
-                      },
-                      children: []
-                    }
-                  ]
-                },
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "The final phase of vaccination in adults, coupled with a surge of cases in young people, mean that"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ]
-            }
+            ratio: "16:9",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=1280%2C720%2C0%2C0"
+          },
+          {
+            ratio: "1:1",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=720%2C720%2C280%2C0"
+          },
+          {
+            ratio: "2:3",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=480%2C720%2C400%2C0"
+          },
+          {
+            ratio: "4:5",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=576%2C720%2C352%2C0"
+          },
+          {
+            ratio: "5:4",
+            url:
+              "https://www.uat-thetimes.co.uk/imageserver/image/%2F7fb9e444-9fe4-4787-b118-cd409b64a2b3.jpg?crop=900%2C720%2C190%2C0"
           }
         ]
       },
-      sharingEnabled: true,
-      savingEnabled: true,
-      standfirst: null,
-      tiles: [
+      tiles: [],
+      topics: null,
+      tags: {
+        nodes: []
+      },
+      expirableFlags: [
         {
-          slices: [
-            {
-              sections: [
-                {
-                  id: "3a5c0fcd-04eb-4b49-8cae-08d36e3c1c9b",
-                  title: "News"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          slices: [
-            {
-              sections: []
-            }
-          ]
-        },
-        {
-          slices: [
-            {
-              sections: [
-                {
-                  id: "ba2ada9a-1037-4136-8901-67be5df95f37",
-                  title: "News"
-                }
-              ]
-            }
-          ]
+          type: "NEW",
+          expiryTime: "2025-06-26T14:14:31.000Z"
         }
       ],
-      template: "mainstandard",
-      textColour: null,
-      topics: [
-        {
-          name: "Coronavirus",
-          slug: "coronavirus"
-        }
-      ],
-      bylines: [
-        {
-          byline: [
-            {
-              name: "inline",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value: "Peter Chappell"
-                  }
-                }
-              ]
-            }
-          ],
-          image: null
-        }
-      ],
-      hasVideo: false,
-      headline:
-        "Healthy father dies after refusing Covid vaccine and ‘wishing he had listened’",
-      id: "b9e7981c-f521-11eb-8f01-2c678acbb979",
-      label: "CORONAVIRUS",
-      publicationName: "TIMES",
-      publishedTime: "2021-08-04T13:00:00.000Z",
-      updatedTime: "2021-08-04T15:51:18.000Z",
-      section: "news",
-      shortIdentifier: "lzsqms0ds",
-      shortHeadline:
-        "Healthy father dies after refusing jab and ‘wishing he had listened’",
-      slug:
-        "healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened",
-      url:
-        "https://www.thetimes.co.uk/article/healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened-lzsqms0ds"
+      embeddedContent: null
     }
   }
 };
