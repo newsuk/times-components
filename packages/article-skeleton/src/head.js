@@ -370,20 +370,21 @@ function Head({
     };
   }
 
-  const leadVideoJsonLD = hasVideo
-    ? {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        name: leadAsset && leadAsset.title ? leadAsset.title : title,
-        uploadDate: dateModified,
-        thumbnailUrl,
-        description:
-          Array.isArray(descriptionMarkup) && descriptionMarkup.length
-            ? renderTreeAsText({ children: descriptionMarkup })
-            : seoDescription || leadAsset.title || title,
-        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      }
-    : null;
+  const leadVideoJsonLD =
+    hasVideo && brightcoveVideoId && brightcoveAccountId
+      ? {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          name: leadAsset && leadAsset.title ? leadAsset.title : title,
+          uploadDate: dateModified,
+          thumbnailUrl,
+          description:
+            Array.isArray(descriptionMarkup) && descriptionMarkup.length
+              ? renderTreeAsText({ children: descriptionMarkup })
+              : seoDescription || leadAsset.title || title,
+          contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+        }
+      : null;
 
   const fallbackDescription =
     Array.isArray(descriptionMarkup) && descriptionMarkup.length
@@ -480,12 +481,11 @@ function Head({
 
       {videoJsonLDs.map(videoJsonLD => (
         <script
-          key={`video-jsonld-${videoJsonLD.brightcoveVideoId}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(videoJsonLD)
-          }}
-        />
+          key={`video-jsonld-${videoJsonLD.brightcoveVideoId}`}
+        >
+          {JSON.stringify(videoJsonLD)}
+        </script>
       ))}
 
       {breadcrumbJsonLD && (
