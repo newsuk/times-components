@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.39.23...@times-components/article-extras@0.40.0) (2025-07-08)
+
+
+### Features
+
+* **TMG-3220:** add zephr component for commenting banner  ([#4157](https://github.com/newsuk/times-components/issues/4157)) ([08dfadd](https://github.com/newsuk/times-components/commit/08dfadd2eadbfe13f4185398bd94975b52039406))
+
+
+
+
+
 ## [0.39.23](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.39.22...@times-components/article-extras@0.39.23) (2025-06-30)
 
 **Note:** Version bump only for package @times-components/article-extras

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.63.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.62.41...@times-components/ssr@2.63.0) (2025-07-08)
+
+
+### Features
+
+* **TMG-3220:** add zephr component for commenting banner  ([#4157](https://github.com/newsuk/times-components/issues/4157)) ([08dfadd](https://github.com/newsuk/times-components/commit/08dfadd2eadbfe13f4185398bd94975b52039406))
+
+
+
+
+
 ## [2.62.41](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.62.40...@times-components/ssr@2.62.41) (2025-07-08)
 
 **Note:** Version bump only for package @times-components/ssr
