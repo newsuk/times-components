@@ -95,6 +95,7 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
+      isNewCommentingBannerEnabled,
       getFallbackThumbnailUrl169,
       zephrDivs,
       removeTeaserContent
@@ -119,6 +120,7 @@ class ArticlePage extends Component {
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           swgProductId={swgProductId}
+          isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
           zephrDivs={zephrDivs}
           removeTeaserContent={removeTeaserContent}
         />

@@ -162,7 +162,12 @@ class ArticlePage extends Component {
   }
 
   renderContentFooter() {
-    const { article, articleDataFromRender, commentingConfig } = this.props;
+    const {
+      article,
+      articleDataFromRender,
+      commentingConfig,
+      isNewCommentingBannerEnabled
+    } = this.props;
     const { topics, commentsEnabled, id } = article;
     const { breadcrumbs } = articleDataFromRender || {};
 
@@ -192,6 +197,7 @@ class ArticlePage extends Component {
                 articleId={id}
                 isEnabled={commentsEnabled}
                 commentingConfig={commentingConfig}
+                isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
                 domainSpecificUrl="https://www.thetimes.com"
                 isDark
               />
@@ -213,6 +219,7 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
+      isNewCommentingBannerEnabled,
       articleDataFromRender,
       paidContentClassName,
       isPreview,
@@ -238,6 +245,7 @@ class ArticlePage extends Component {
           receiveChildList={receiveChildList}
           navigationMode={navigationMode}
           commentingConfig={commentingConfig}
+          isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
           articleDataFromRender={articleDataFromRender}
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
