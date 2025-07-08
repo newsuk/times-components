@@ -6,89 +6,16 @@ import PropTypes from "prop-types";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
-const testContent = [
-  {
-    name: "heading2",
-    children: [
-      {
-        name: "text",
-        children: [],
-        attributes: {
-          value: "BA boss says ‘Trump slump’ has reversed on routes to America"
-        }
-      }
-    ]
-  },
-  {
-    name: "paragraph",
-    children: [
-      {
-        name: "text",
-        children: [],
-        attributes: {
-          value:
-            "Luis Gallego, chief executive of the British Airways owner IAG, reports that the so-called Trump slump has reversed itself on North Atlantic aviation routes, even if US domestic demand remains wobbly."
-        }
-      }
-    ]
-  },
-  {
-    name: "video",
-    attributes: {
-      id: "8ae134aa-97a9-4aad-8641-39dcba28aa94",
-      display: "fullwidth",
-      brightcovePolicyKey:
-        "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
-      brightcovePlayerId: "default",
-      brightcoveVideoId: "6375312701112",
-      brightcoveAccountId: "5436121856001",
-      paidOnly: false,
-      skySports: false,
-      is360: null,
-      caption:
-        "He said IAG will be flying to as many US destinations this year as it was before the pandemic.",
-      posterImageUrl:
-        "https://www.staging-thetimes.co.uk/imageserver/image/%2Ffccdb893-3755-4a4b-a827-b1b364aafa42.jpg?crop=1280%2C720%2C0%2C0",
-      posterImageId: "510b7065-5d20-4327-a900-ba14f3f06c67",
-      relativeHorizontalOffset: 0,
-      relativeVerticalOffset: 0,
-      relativeWidth: 1,
-      relativeHeight: 1
-    },
-    children: []
-  },
-  {
-    name: "video",
-    attributes: {
-      id: "da0a2f02-66da-4837-956f-d6522ec20cb7",
-      display: "fullwidth",
-      brightcovePolicyKey:
-        "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
-      brightcovePlayerId: "default",
-      brightcoveVideoId: "6375308560112",
-      brightcoveAccountId: "5436121856001",
-      paidOnly: false,
-      skySports: false,
-      is360: null,
-      posterImageUrl:
-        "https://www.staging-thetimes.co.uk/imageserver/image/%2F9be1d3be-2727-40db-9f9a-988b08e6224a.jpg?crop=1280%2C720%2C0%2C0",
-      posterImageId: "3f711069-c725-45fd-90b4-011d50a4248a",
-      relativeHorizontalOffset: 0,
-      relativeVerticalOffset: 0,
-      relativeWidth: 1,
-      relativeHeight: 1
-    },
-    children: []
-  }
-];
-
 const extractVideoStructuredDataFromContent = (
+  content,
   fallbackDescription,
-  fallbackTitle,
+  title,
   uploadDate,
   leadAssetVideoId
-) =>
-  testContent
+) => {
+  if (!Array.isArray(content)) return [];
+
+  return content
     .filter(
       contentObj =>
         contentObj.name === "video" &&
@@ -100,23 +27,23 @@ const extractVideoStructuredDataFromContent = (
         brightcoveAccountId,
         brightcoveVideoId,
         posterImageUrl,
-        title,
         caption
       } = attributes;
 
       return {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: title || fallbackTitle,
+        name: title,
         uploadDate,
         thumbnailUrl: posterImageUrl,
-        description: fallbackDescription || caption,
+        description: caption || fallbackDescription,
         ...(brightcoveAccountId &&
           brightcoveVideoId && {
             contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
           })
       };
     });
+};
 
 const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
@@ -334,10 +261,11 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
-    keywords
+    keywords,
+    content
   } = article;
 
-  const { brightcoveVideoId } = leadAsset || {};
+  const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
@@ -442,6 +370,21 @@ function Head({
     };
   }
 
+  const leadVideoJsonLD = hasVideo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: leadAsset && leadAsset.title ? leadAsset.title : title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : seoDescription || leadAsset.title || title,
+        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+      }
+    : null;
+
   const fallbackDescription =
     Array.isArray(descriptionMarkup) && descriptionMarkup.length
       ? renderTreeAsText({ children: descriptionMarkup })
@@ -450,6 +393,7 @@ function Head({
   const uploadDate = updatedTime || publishedTime;
 
   const videoJsonLDs = extractVideoStructuredDataFromContent(
+    content,
     fallbackDescription,
     title,
     uploadDate,
@@ -528,8 +472,14 @@ function Head({
 
       <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
 
+      {leadVideoJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(leadVideoJsonLD)}
+        </script>
+      )}
+
       {videoJsonLDs.map(videoJsonLD => (
-        <script type="application/ld+json" key={videoJsonLD.brightcoveVideoId}>
+        <script type="application/ld+json">
           {JSON.stringify(videoJsonLD)}
         </script>
       ))}
