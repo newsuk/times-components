@@ -80,6 +80,7 @@ const ArticleSkeleton = ({
 }) => {
   const {
     commentsEnabled,
+    commentsSortOrder,
     content,
     dropcapsDisabled,
     id: articleId,
@@ -488,6 +489,7 @@ const ArticleSkeleton = ({
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
                           commentsEnabled={commentsEnabled}
+                          commentsSortOrder={commentsSortOrder}
                           registerNode={registerNode}
                           relatedArticleSlice={relatedArticleSlice}
                           categorisedArticles={categorisedArticles}

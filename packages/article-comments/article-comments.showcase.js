@@ -24,10 +24,32 @@ export default {
             onCommentsPress={() => {}}
             url="dummy-article-url"
             commentingConfig={commentingConfig}
+            domainSpecificUrl="https://www.thetimes.com"
           />
         );
       },
       name: "Enabled",
+      type: "story"
+    },
+    {
+      // eslint-disable-next-line react/prop-types
+      component: () => {
+        addUserStateKnobs();
+        return (
+          <ArticleComments
+            articleId="dummy-article-id"
+            commentsEnabled
+            commentsSortOrder={"newest"}
+            isEnabled
+            onCommentGuidelinesPress={() => {}}
+            onCommentsPress={() => {}}
+            url="dummy-article-url"
+            commentingConfig={commentingConfig}
+            domainSpecificUrl="https://www.thetimes.com"
+          />
+        );
+      },
+      name: "Enabled - with sorting comments by newest",
       type: "story"
     },
     {
@@ -40,6 +62,7 @@ export default {
           onCommentsPress={() => {}}
           url="dummy-article-url"
           commentingConfig={commentingConfig}
+          domainSpecificUrl="https://www.thetimes.com"
         />
       ),
       name: "Disabled",

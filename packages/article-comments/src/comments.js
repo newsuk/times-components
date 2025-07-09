@@ -25,6 +25,7 @@ class Comments extends Component {
       articleId,
       isReadOnly,
       commentingConfig,
+      commentsSortOrder,
       onCommentStart,
       onCommentPost,
       onCommentNotification,
@@ -146,6 +147,7 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
+    commentsSortOrder && launcherScript.setAttribute("data-sort-by", commentsSortOrder);
 
     this.container.appendChild(launcherScript);
   }

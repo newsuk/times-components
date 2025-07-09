@@ -9,6 +9,7 @@ query ArticleQuery($id: ID!) {
       }
     }
     commentsEnabled
+    commentsSortOrder
     content: paywalledContent
     descriptionMarkup: summary(maxCharCount: 200)
     dropcapsDisabled

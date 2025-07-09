@@ -17,6 +17,7 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
+  commentsSortOrder,
   domainSpecificUrl,
   isNewCommentingBannerEnabled = false
 }) => {
@@ -53,6 +54,7 @@ const ArticleComments = ({
         articleId={articleId}
         isReadOnly={isReadOnly}
         commentingConfig={commentingConfig}
+        commentsSortOrder={commentsSortOrder}
         domainSpecificUrl={domainSpecificUrl}
       />
     );
@@ -80,6 +82,7 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  commentsSortOrder: PropTypes.string,
   isNewCommentingBannerEnabled: PropTypes.bool,
   domainSpecificUrl: PropTypes.string.isRequired
 };
