@@ -181,6 +181,7 @@ const getLiveBlogUpdates = (article, publisher, author) => {
               "@type": "VideoObject",
               name:
                 contentObj[i].attributes.title || update.headline || "Video",
+              description: contentObj[i].attributes.caption,
               uploadDate:
                 contentObj[i].attributes.updated || update.datePublished,
               thumbnailUrl: contentObj[i].attributes.posterImageUrl,
