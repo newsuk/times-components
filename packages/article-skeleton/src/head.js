@@ -158,6 +158,23 @@ const getLiveBlogUpdates = (article, publisher, author) => {
               author
             };
           }
+        } else if (contentObj[i].name === "paragraph") {
+          if (update !== undefined) {
+            const text = get(contentObj[i], "children[0].attributes.value", "");
+            if (update.articleBody) {
+              update.articleBody += ` ${text}`;
+            } else {
+              update.articleBody = text;
+            }
+          }
+        } else if (contentObj[i].name === "image") {
+          if (update !== undefined) {
+            update.image = {
+              "@type": "ImageObject",
+              url: contentObj[i].attributes.url,
+              caption: contentObj[i].attributes.caption
+            };
+          }
         } else if (contentObj[i].name === "video") {
           if (update !== undefined) {
             update.video = {
@@ -217,7 +234,8 @@ function Head({
     publishedTime,
     updatedTime,
     hasVideo,
-    seoDescription
+    seoDescription,
+    keywords
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -343,6 +361,8 @@ function Head({
   const liveBlogJsonLD = {
     "@context": "https://schema.org",
     "@type": "LiveBlogPosting",
+    headline,
+    description: seoDescription,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": articleUrl
@@ -352,6 +372,7 @@ function Head({
     coverageStartTime: firstPublishedTime || publishedTime,
     coverageEndTime: liveBlogArticleExpiry,
     url: articleUrl,
+    keywords,
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
