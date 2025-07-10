@@ -89,7 +89,8 @@ ArticleComments.propTypes = {
 
 ArticleComments.defaultProps = {
   isReadOnly: false,
-  isNewCommentingBannerEnabled: PropTypes.bool
+  isNewCommentingBannerEnabled: PropTypes.bool,
+  commentsSortOrder: null
 };
 
 export default ArticleComments;

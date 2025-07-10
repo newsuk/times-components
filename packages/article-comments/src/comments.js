@@ -147,8 +147,9 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
-    commentsSortOrder && launcherScript.setAttribute("data-sort-by", commentsSortOrder);
-
+    if (commentsSortOrder) {
+      launcherScript.setAttribute("data-sort-by", commentsSortOrder);
+    }
     this.container.appendChild(launcherScript);
   }
 
@@ -214,6 +215,7 @@ Comments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  commentsSortOrder: PropTypes.string,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
   onCommentNotification: PropTypes.func,
@@ -235,6 +237,7 @@ Comments.propTypes = {
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
 Comments.defaultProps = {
+  commentsSortOrder: null,
   onCommentStart: () => {},
   onCommentPost: () => {},
   onCommentNotification: () => {},

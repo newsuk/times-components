@@ -39,7 +39,7 @@ export default {
           <ArticleComments
             articleId="dummy-article-id"
             commentsEnabled
-            commentsSortOrder={"newest"}
+            commentsSortOrder="newest"
             isEnabled
             onCommentGuidelinesPress={() => {}}
             onCommentsPress={() => {}}
