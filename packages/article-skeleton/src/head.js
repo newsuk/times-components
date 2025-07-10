@@ -330,8 +330,27 @@ function Head({
     };
   }
 
-  const videoJsonLD = hasVideo
-    ? {
+  const extractVideoFromContent = (content = []) => {
+    for (let i = 0; i < content.length; i += 1) {
+      const node = content[i];
+      if (node.name === "video" && node.attributes?.brightcoveVideoId) {
+        return node.attributes;
+      }
+      if (node.name === "paywall" && Array.isArray(node.children)) {
+        const nested = extractVideoFromContent(node.children);
+        if (nested) return nested;
+      }
+    }
+    return null;
+  };
+
+  const videoFromContent = extractVideoFromContent(article.content);
+
+  let videoJsonLD = null;
+
+  if (hasVideo) {
+    if (brightcoveAccountId && brightcoveVideoId) {
+      videoJsonLD = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
         name: leadAsset && leadAsset.title ? leadAsset.title : title,
@@ -342,8 +361,29 @@ function Head({
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
         contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      }
-    : null;
+      };
+    } else if (
+      videoFromContent.brightcoveAccountId &&
+      videoFromContent.brightcoveVideoId
+    ) {
+      videoJsonLD = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: videoFromContent.caption || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : seoDescription || videoFromContent.caption || title,
+        contentUrl: `https://players.brightcove.net/${
+          videoFromContent.brightcoveAccountId
+        }/default_default/index.html?videoId=${
+          videoFromContent.brightcoveVideoId
+        }`
+      };
+    }
+  }
 
   const liveBlogJsonLD = {
     "@context": "https://schema.org",
