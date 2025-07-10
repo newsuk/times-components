@@ -50,7 +50,7 @@ Object {
     },
   ],
   "commentsEnabled": true,
-  "commentsSortOrder": "best",
+  "commentsSortOrder": "newest",
   "content": Array [
     Object {
       "attributes": Object {},
