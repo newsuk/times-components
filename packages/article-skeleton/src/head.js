@@ -333,7 +333,7 @@ function Head({
   const extractVideoFromContent = (content = []) => {
     for (let i = 0; i < content.length; i += 1) {
       const node = content[i];
-      if (node.name === "video" && node.attributes?.brightcoveVideoId) {
+      if (node.name === "video" && node.attributes.brightcoveVideoId) {
         return node.attributes;
       }
       if (node.name === "paywall" && Array.isArray(node.children)) {
