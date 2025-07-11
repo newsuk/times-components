@@ -168,7 +168,7 @@ class ArticlePage extends Component {
       commentingConfig,
       isNewCommentingBannerEnabled
     } = this.props;
-    const { topics, commentsEnabled, id } = article;
+    const { topics, commentsEnabled, commentsSortOrder, id } = article;
     const { breadcrumbs } = articleDataFromRender || {};
 
     const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
@@ -196,6 +196,7 @@ class ArticlePage extends Component {
               <ArticleComments
                 articleId={id}
                 isEnabled={commentsEnabled}
+                commentsSortOrder={commentsSortOrder}
                 commentingConfig={commentingConfig}
                 isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
                 domainSpecificUrl="https://www.thetimes.com"

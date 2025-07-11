@@ -24,6 +24,7 @@ describe("ArticleProvider", () => {
       makeParams({
         makeArticle: article => ({
           ...article,
+          commentsSortOrder: "newest",
           content: [
             {
               children: [

@@ -9,6 +9,7 @@ query ArticleDraftQuery($id: ID!) {
       }
     }
     commentsEnabled
+    commentsSortOrder
     content
     dropcapsDisabled
     expirableFlags {
