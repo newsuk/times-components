@@ -1,6 +1,8 @@
 import React from 'react';
 
 export const Twitter = ({ url }: { url: string }) => {
+
+  console.log('lol twitter url', url);
   return (
     <blockquote className="twitter-tweet" data-testid="twitter-embed">
       <a href={url} />
