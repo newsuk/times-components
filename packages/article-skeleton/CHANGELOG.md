@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.169.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.168.0...@times-components/article-skeleton@1.169.0) (2025-07-14)
+
+
+### Features
+
+* **TMPR-418:** add missing video attributes to live articles ([#4181](https://github.com/newsuk/times-components/issues/4181)) ([b30c6e4](https://github.com/newsuk/times-components/commit/b30c6e401232988a21202f03310f03e0e572d414))
+
+
+
+
+
 # [1.168.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.167.1...@times-components/article-skeleton@1.168.0) (2025-07-14)
 
 
