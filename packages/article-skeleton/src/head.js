@@ -117,7 +117,12 @@ const getThumbnailUrl = article => {
   return crop ? crop.url : "";
 };
 
-const getLiveBlogUpdates = (article, publisher, author) => {
+const getLiveBlogUpdates = (
+  article,
+  publisher,
+  author,
+  isLiveArticleMetaDataEnabled
+) => {
   const updates = [];
   if (article === null) {
     return updates;
@@ -179,7 +184,29 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           if (update !== undefined) {
             update.video = {
               "@type": "VideoObject",
-              thumbnail: contentObj[i].attributes.posterImageUrl
+              ...(isLiveArticleMetaDataEnabled
+                ? {
+                    name:
+                      contentObj[i].attributes.title ||
+                      update.headline ||
+                      "Video",
+                    description: contentObj[i].attributes.caption,
+                    uploadDate:
+                      contentObj[i].attributes.updated || update.datePublished,
+                    thumbnailUrl: contentObj[i].attributes.posterImageUrl,
+                    contentUrl:
+                      contentObj[i].attributes.brightcoveAccountId &&
+                      contentObj[i].attributes.brightcoveVideoId
+                        ? `https://players.brightcove.net/${
+                            contentObj[i].attributes.brightcoveAccountId
+                          }/default_default/index.html?videoId=${
+                            contentObj[i].attributes.brightcoveVideoId
+                          }`
+                        : undefined
+                  }
+                : {
+                    thumbnail: contentObj[i].attributes.posterImageUrl
+                  })
             };
           }
         } else if (contentObj[i].name === "paywall") {
@@ -210,7 +237,8 @@ function Head({
   swgProductId,
   breadcrumbs,
   domainSpecificUrl,
-  firstPublishedTime
+  firstPublishedTime,
+  isLiveArticleMetaDataEnabled
 }) {
   const {
     descriptionMarkup,
@@ -282,7 +310,8 @@ function Head({
   const liveBlogUpdateSchema = getLiveBlogUpdates(
     article,
     publisherSchema,
-    authorSchema
+    authorSchema,
+    isLiveArticleMetaDataEnabled
   );
 
   const jsonLD = {
@@ -457,13 +486,15 @@ Head.propTypes = {
   swgProductId: PropTypes.string,
   domainSpecificUrl: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  firstPublishedTime: PropTypes.string
+  firstPublishedTime: PropTypes.string,
+  isLiveArticleMetaDataEnabled: PropTypes.bool
 };
 
 Head.defaultProps = {
   swgProductId: null,
   breadcrumbs: [],
-  firstPublishedTime: null
+  firstPublishedTime: null,
+  isLiveArticleMetaDataEnabled: false
 };
 
 export default Head;
