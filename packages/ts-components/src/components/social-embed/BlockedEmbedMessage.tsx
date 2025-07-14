@@ -25,6 +25,8 @@ export type BlockedEmbedMessageProps = {
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   vendorName
 }) => {
+  console.log('lol vendorName', vendorName);
+
   const {
     setIsSocialEmbedAllowed,
     setIsAllowedOnce
@@ -35,9 +37,11 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
       ...prev,
       [vendorName]: true
     }));
+    console.log('lol setIsAllowedOnce', vendorName);
   };
 
   const handleEnableCookies = () => {
+    console.log('lol handleEnableCookies', vendorName);
     enableCookies(vendorName, setIsSocialEmbedAllowed);
   };
 
@@ -47,6 +51,7 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
       modalType.GDPR,
       window.__TIMES_CONFIG__.sourcepoint.gdprMessageId
     );
+    console.log('lol handlePrivacyManagerClick', modalType.GDPR);
   };
 
   return (
