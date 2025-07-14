@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.168.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.167.1...@times-components/article-skeleton@1.168.0) (2025-07-14)
+
+
+### Features
+
+* **TMRA-552:** integrate commentsortorder data ([#4183](https://github.com/newsuk/times-components/issues/4183)) ([20fadac](https://github.com/newsuk/times-components/commit/20fadac4bf394a158d4101dc0af5a8cd3dd56d23))
+
+
+
+
+
 ## [1.167.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.167.0...@times-components/article-skeleton@1.167.1) (2025-07-09)
 
 **Note:** Version bump only for package @times-components/article-skeleton
