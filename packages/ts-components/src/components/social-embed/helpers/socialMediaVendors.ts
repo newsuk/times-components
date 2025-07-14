@@ -17,7 +17,7 @@ export const socialMediaVendors: {
     title: 'Tiktok'
   },
   instagram: {
-    id: '5e7f6927b8e05c4e491e6324',
+    id: '5e717c8e69966540e4554f05',
     status: 'pending',
     title: 'Instagram'
   }
