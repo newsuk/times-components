@@ -2,22 +2,38 @@ import React, { useEffect } from 'react';
 import { InstagramContainer } from '../styles';
 import { Placeholder } from '@times-components/image';
 
+declare global {
+  interface Window {
+    instgrm?: {
+      Embeds: {
+        process: () => void;
+      };
+    };
+  }
+}
+
 export const Instagram = ({ url }: { url: string }) => {
 
   console.log('lol instagram url', url);
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.instagram.com/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
+useEffect(() => {
+  const script = document.createElement('script');
+  script.src = 'https://www.instagram.com/embed.js';
+  script.async = true;
 
-    console.log('lol in useEffect InstagramComponent');
+  script.onload = () => {
+    console.log('lol script on load');
+    if (window.instgrm?.Embeds?.process) {
+      console.log('lol window.instgrm?.Embeds?.process', window.instgrm?.Embeds?.process);
+      window.instgrm.Embeds.process();
+    }
+  };
+  document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
 
   return (
     <InstagramContainer
