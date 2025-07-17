@@ -60,6 +60,27 @@ export default () => {
       }
     },
     {
+      name: "renders correctly with comments sorted by newest",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            commentsSortOrder="newest"
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            categorisedArticles={categorisedArticles}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
       name:
         "no topics and comments when user not logged in, only related articles, category articles, and sponsored div",
       test: () => {

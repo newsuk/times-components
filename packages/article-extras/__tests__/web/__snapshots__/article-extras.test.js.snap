@@ -48,13 +48,69 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    commentsSortOrder={null}
     isEnabled={true}
     isNewCommentingBannerEnabled={false}
   />,
 ]
 `;
 
-exports[`2. no topics and comments when user not logged in, only related articles, category articles, and sponsored div 1`] = `
+exports[`2. renders correctly with comments sorted by newest 1`] = `
+Array [
+  <div />,
+  <div>
+    <nav
+      data-cy="topic-tags"
+    >
+      <ArticleTopics />
+    </nav>
+  </div>,
+  <div
+    id="related-articles"
+  >
+    <RelatedArticles
+      hideBorder={false}
+      isVisible={true}
+    />
+    <div>
+      RecommendedFetch
+    </div>
+  </div>,
+  <div>
+    <span>
+      PROMOTED CONTENT
+    </span>
+    <div>
+      <div
+        id="advert-inarticle-native-1"
+      />
+      <div
+        id="advert-inarticle-native-2"
+      />
+      <div />
+      <div
+        id="advert-inarticle-native-3"
+      />
+      <div
+        id="advert-inarticle-native-4"
+      />
+    </div>
+  </div>,
+  <ArticleComments
+    articleId="dummy-article-id"
+    commentingConfig={
+      Object {
+        "account": "sp_pCQgrRiN",
+      }
+    }
+    commentsSortOrder="newest"
+    isEnabled={true}
+    isNewCommentingBannerEnabled={false}
+  />,
+]
+`;
+
+exports[`3. no topics and comments when user not logged in, only related articles, category articles, and sponsored div 1`] = `
 Array [
   <div
     id="related-articles"
@@ -179,7 +235,7 @@ Array [
 ]
 `;
 
-exports[`3. read only comments when the user is a share token reader 1`] = `
+exports[`4. read only comments when the user is a share token reader 1`] = `
 Array [
   <div />,
   <div>
@@ -227,13 +283,14 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    commentsSortOrder={null}
     isEnabled={true}
     isNewCommentingBannerEnabled={false}
   />,
 ]
 `;
 
-exports[`4. renders the additional related articles 1`] = `
+exports[`5. renders the additional related articles 1`] = `
 Array [
   <div />,
   <div>
@@ -281,6 +338,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    commentsSortOrder={null}
     isEnabled={true}
     isNewCommentingBannerEnabled={false}
   />,

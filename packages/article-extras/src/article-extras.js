@@ -32,6 +32,7 @@ const ArticleExtras = ({
   analyticsStream,
   articleId,
   commentsEnabled,
+  commentsSortOrder,
   registerNode,
   savingEnabled,
   sharingEnabled,
@@ -146,6 +147,7 @@ const ArticleExtras = ({
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
+        commentsSortOrder={commentsSortOrder}
         commentingConfig={commentingConfig}
         isNewCommentingBannerEnabled={isNewCommentingBannerEnabled}
         domainSpecificUrl={domainSpecificUrl}
@@ -161,6 +163,7 @@ ArticleExtras.propTypes = {
   section: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
+  commentsSortOrder: PropTypes.string,
   registerNode: PropTypes.func.isRequired,
   relatedArticleSlice: PropTypes.shape({}),
   categorisedArticles: PropTypes.shape({}),
@@ -180,6 +183,7 @@ ArticleExtras.propTypes = {
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   categorisedArticles: null,
+  commentsSortOrder: null,
   topics: null,
   breadcrumbs: [],
   isExcludedFromAdsPathFromServer: false,
