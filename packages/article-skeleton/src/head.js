@@ -8,6 +8,22 @@ import { appendToImageURL } from "@times-components/utils";
 
 const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
+function extractVideoFromContent(content = []) {
+  for (let i = 0; i < content.length; i += 1) {
+    if (
+      content[i].name === "video" &&
+      content[i].attributes.brightcoveVideoId
+    ) {
+      return content[i].attributes;
+    }
+    if (content[i].name === "paywall" && Array.isArray(content[i].children)) {
+      const nested = extractVideoFromContent(content[i].children);
+      if (nested) return nested;
+    }
+  }
+  return null;
+}
+
 function getIsLiveBlogExpiryTime(articleFlags = []) {
   let time = "";
   if (articleFlags !== undefined) {
@@ -361,8 +377,13 @@ function Head({
     };
   }
 
-  const videoJsonLD = hasVideo
-    ? {
+  const videoFromContent = extractVideoFromContent(article.content);
+
+  let videoJsonLD = null;
+
+  if (hasVideo) {
+    if (brightcoveAccountId && brightcoveVideoId) {
+      videoJsonLD = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
         name: leadAsset && leadAsset.title ? leadAsset.title : title,
@@ -373,8 +394,29 @@ function Head({
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
         contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      }
-    : null;
+      };
+    } else if (
+      videoFromContent.brightcoveAccountId &&
+      videoFromContent.brightcoveVideoId
+    ) {
+      videoJsonLD = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: videoFromContent.caption || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : seoDescription || videoFromContent.caption || title,
+        contentUrl: `https://players.brightcove.net/${
+          videoFromContent.brightcoveAccountId
+        }/default_default/index.html?videoId=${
+          videoFromContent.brightcoveVideoId
+        }`
+      };
+    }
+  }
 
   const liveBlogJsonLD = {
     "@context": "https://schema.org",
