@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.9.435...@times-components/article-paragraph@1.10.0) (2025-07-17)
+
+
+### Features
+
+* **TMRA-652:** add commentsSortOrder prop ([#4187](https://github.com/newsuk/times-components/issues/4187)) ([833018a](https://github.com/newsuk/times-components/commit/833018a3d2f804491a6665e88fc87d90e135e2a4))
+
+
+
+
+
 ## [1.9.435](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.9.434...@times-components/article-paragraph@1.9.435) (2025-07-14)
 
 **Note:** Version bump only for package @times-components/article-paragraph
