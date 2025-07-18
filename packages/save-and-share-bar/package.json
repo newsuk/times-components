@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-and-share-bar",
-  "version": "0.28.33",
+  "version": "0.28.34",
   "description": "Save and Share bar ",
   "main": "dist/save-and-share-bar",
   "dev": "src/save-and-share-bar",
@@ -34,11 +34,11 @@
   "dependencies": {
     "@storybook/addon-knobs": "6.4.0",
     "@times-components/context": "1.25.15",
-    "@times-components/icons": "2.23.22",
-    "@times-components/message-bar": "0.7.108",
+    "@times-components/icons": "2.23.23",
+    "@times-components/message-bar": "0.7.109",
     "@times-components/provider-queries": "2.29.0",
     "@times-components/tracking": "2.26.0",
-    "@times-components/ts-components": "1.136.1",
+    "@times-components/ts-components": "1.136.2",
     "@times-components/ts-styleguide": "1.56.1",
     "@times-components/user-state": "0.7.9",
     "@times-components/utils": "6.31.13",
