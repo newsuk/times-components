@@ -190,7 +190,8 @@ const getLiveBlogUpdates = (
                       contentObj[i].attributes.title ||
                       update.headline ||
                       "Video",
-                    description: contentObj[i].attributes.caption,
+                    description:
+                      contentObj[i].attributes.caption || update.description,
                     uploadDate:
                       contentObj[i].attributes.updated || update.datePublished,
                     thumbnailUrl: contentObj[i].attributes.posterImageUrl,
