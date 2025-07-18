@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.170.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.169.2...@times-components/article-skeleton@1.170.0) (2025-07-18)
+
+
+### Features
+
+* **TMR-2557:** add WhatsApp share button and update pre-populated text ([#4176](https://github.com/newsuk/times-components/issues/4176)) ([b527205](https://github.com/newsuk/times-components/commit/b52720589de26e5fa05e9d125dbc475e3325fc69))
+
+
+
+
+
 ## [1.169.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.169.1...@times-components/article-skeleton@1.169.2) (2025-07-18)
 
 **Note:** Version bump only for package @times-components/article-skeleton

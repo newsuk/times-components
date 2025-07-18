@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.28.34...@times-components/save-and-share-bar@0.29.0) (2025-07-18)
+
+
+### Features
+
+* **TMR-2557:** add WhatsApp share button and update pre-populated text ([#4176](https://github.com/newsuk/times-components/issues/4176)) ([b527205](https://github.com/newsuk/times-components/commit/b52720589de26e5fa05e9d125dbc475e3325fc69))
+
+
+
+
+
 ## [0.28.34](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.28.33...@times-components/save-and-share-bar@0.28.34) (2025-07-18)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
