@@ -232,3 +232,14 @@ exports[`22. audiocloseicon sets a width when height is set 1`] = `
   xmlns="http://www.w3.org/2000/svg"
 />
 `;
+
+exports[`23. iconwhatsapp sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-whatsApp"
+  height={50}
+  role="img"
+  title="WhatsApp Icon"
+  width={20}
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
