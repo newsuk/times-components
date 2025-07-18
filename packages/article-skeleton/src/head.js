@@ -122,8 +122,7 @@ const getLiveBlogUpdates = (
   publisher,
   author,
   isLiveArticleMetaDataEnabled,
-  seoDescription,
-  descriptionMarkup
+  desc
 ) => {
   const updates = [];
   if (article === null) {
@@ -192,13 +191,7 @@ const getLiveBlogUpdates = (
                       contentObj[i].attributes.title ||
                       update.headline ||
                       "Video",
-                    description:
-                      contentObj[i].attributes.caption ||
-                      seoDescription ||
-                      (Array.isArray(descriptionMarkup) &&
-                      descriptionMarkup.length
-                        ? renderTreeAsText({ children: descriptionMarkup })
-                        : null),
+                    description: contentObj[i].attributes.caption || desc,
                     uploadDate:
                       contentObj[i].attributes.updated || update.datePublished,
                     thumbnailUrl: contentObj[i].attributes.posterImageUrl,
@@ -320,8 +313,7 @@ function Head({
     publisherSchema,
     authorSchema,
     isLiveArticleMetaDataEnabled,
-    seoDescription,
-    descriptionMarkup
+    desc
   );
 
   const jsonLD = {
