@@ -381,41 +381,35 @@ function Head({
 
   let videoJsonLD = null;
 
-  if (hasVideo) {
-    if (brightcoveAccountId && brightcoveVideoId) {
-      videoJsonLD = {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        name: leadAsset && leadAsset.title ? leadAsset.title : title,
-        uploadDate: dateModified,
-        thumbnailUrl,
-        description:
-          Array.isArray(descriptionMarkup) && descriptionMarkup.length
-            ? renderTreeAsText({ children: descriptionMarkup })
-            : seoDescription || leadAsset.title || title,
-        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      };
-    } else if (
-      videoFromContent.brightcoveAccountId &&
-      videoFromContent.brightcoveVideoId
-    ) {
-      videoJsonLD = {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        name: videoFromContent.caption || title,
-        uploadDate: dateModified,
-        thumbnailUrl,
-        description:
-          Array.isArray(descriptionMarkup) && descriptionMarkup.length
-            ? renderTreeAsText({ children: descriptionMarkup })
-            : seoDescription || videoFromContent.caption || title,
-        contentUrl: `https://players.brightcove.net/${
+  const leadAssetHasVideo = brightcoveAccountId && brightcoveVideoId;
+  const contentHasVideo =
+    videoFromContent.brightcoveAccountId && videoFromContent.brightcoveVideoId;
+
+  if (leadAssetHasVideo || contentHasVideo) {
+    const videoName = leadAssetHasVideo
+      ? leadAsset.title || title
+      : videoFromContent.caption || title;
+
+    const contentUrl = leadAssetHasVideo
+      ? `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+      : `https://players.brightcove.net/${
           videoFromContent.brightcoveAccountId
         }/default_default/index.html?videoId=${
           videoFromContent.brightcoveVideoId
-        }`
-      };
-    }
+        }`;
+
+    videoJsonLD = {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: videoName,
+      uploadDate: dateModified,
+      thumbnailUrl,
+      description:
+        Array.isArray(descriptionMarkup) && descriptionMarkup.length
+          ? renderTreeAsText({ children: descriptionMarkup })
+          : seoDescription || videoName,
+      contentUrl
+    };
   }
 
   const liveBlogJsonLD = {
