@@ -186,21 +186,29 @@ exports[`Head outputs array of keywords in article schema 1`] = `
   encodeSpecialCharacters={false}
 >
   <title>
-    
+    Some Headline
   </title>
   <meta
     content="max-image-preview:large"
     name="robots"
   />
   <meta
-    content=""
+    content="Some Headline"
     name="article:title"
   />
   <meta
     name="article:publication"
   />
   <meta
-    content=""
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
     property="og:title"
   />
   <meta
@@ -211,7 +219,15 @@ exports[`Head outputs array of keywords in article schema 1`] = `
     property="og:url"
   />
   <meta
-    content=""
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
     name="twitter:title"
   />
   <meta
@@ -221,15 +237,23 @@ exports[`Head outputs array of keywords in article schema 1`] = `
   <meta
     name="twitter:url"
   />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"News","keywords":"Section:Sport,Section:Rugby union"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"News","keywords":"Section:Sport,Section:Rugby union"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"","thumbnailUrl":null,"description":"","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","thumbnailUrl":"https://crop169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
   </script>
   <script
     type="application/ld+json"
@@ -1026,21 +1050,29 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
   encodeSpecialCharacters={false}
 >
   <title>
-    
+    Some Headline
   </title>
   <meta
     content="max-image-preview:large"
     name="robots"
   />
   <meta
-    content=""
+    content="Some Headline"
     name="article:title"
   />
   <meta
     name="article:publication"
   />
   <meta
-    content=""
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Richard Lloyd Parry, Tokyo"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
     property="og:title"
   />
   <meta
@@ -1051,7 +1083,15 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
     property="og:url"
   />
   <meta
-    content=""
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
     name="twitter:title"
   />
   <meta
@@ -1061,15 +1101,23 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
   <meta
     name="twitter:url"
   />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=1200"
+    name="twitter:image"
+  />
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport","keywords":"Section:Sport,Section:Football,Section:Rugby union"}
+    {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"Sport","keywords":"Section:Sport,Section:Football,Section:Rugby union"}
   </script>
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"","thumbnailUrl":null,"description":"","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","thumbnailUrl":"https://crop169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
   </script>
   <script
     type="application/ld+json"
