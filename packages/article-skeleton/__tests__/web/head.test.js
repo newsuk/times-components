@@ -246,7 +246,6 @@ describe("Head", () => {
           }
         ]}
         article={{
-          ...testFixture,
           tiles: [
             {
               slices: [
@@ -293,7 +292,6 @@ describe("Head", () => {
           }
         ]}
         article={{
-          ...testFixture,
           associatedDesks: ["Sport", "Football"],
           tiles: [
             {
@@ -941,29 +939,6 @@ describe("Head", () => {
                 }
               ],
               name: "paragraph"
-            },
-            {
-              name: "video",
-              attributes: {
-                id: "d66c782f-22ed-4a08-860f-77a775b88f51",
-                display: "fullwidth",
-                brightcovePolicyKey:
-                  "BCpkADawqM1d6QTQTQZNvZeQPJoanIYcUVVRuuypZErRN3_-wE6wBEkRhk0JnCMFbIDR4pNtFoO6cbWqB_IL50zx9ZcSLdfMhcNAv46bQxrMyXybmBxe3BeueHE8n6I2qFRSbna8vguRIdZd",
-                brightcovePlayerId: "default",
-                brightcoveVideoId: "6375208289112",
-                brightcoveAccountId: "5436121856001",
-                paidOnly: false,
-                skySports: false,
-                is360: null,
-                posterImageUrl:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fde739895-b80e-48be-ad50-027f8d5cea3a.jpg?crop=1280%2C720%2C0%2C0",
-                posterImageId: "8de16842-57ce-4e33-ae20-bc67144699b4",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 1
-              },
-              children: []
             }
           ]
         }}
