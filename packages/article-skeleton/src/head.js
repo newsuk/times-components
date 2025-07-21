@@ -378,38 +378,44 @@ function Head({
   }
 
   const videoFromContent = extractVideoFromContent(article.content);
-
   let videoJsonLD = null;
 
-  const leadAssetHasVideo = brightcoveAccountId && brightcoveVideoId;
-  const contentHasVideo =
-    videoFromContent.brightcoveAccountId && videoFromContent.brightcoveVideoId;
+  if (hasVideo) {
+    const isLeadAssetVideo = brightcoveAccountId && brightcoveVideoId;
 
-  if (leadAssetHasVideo || contentHasVideo) {
-    const videoName = leadAssetHasVideo
-      ? leadAsset.title || title
-      : videoFromContent.caption || title;
+    const isContentVideo =
+      videoFromContent &&
+      videoFromContent.brightcoveAccountId &&
+      videoFromContent.brightcoveVideoId;
 
-    const contentUrl = leadAssetHasVideo
-      ? `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
-      : `https://players.brightcove.net/${
-          videoFromContent.brightcoveAccountId
-        }/default_default/index.html?videoId=${
-          videoFromContent.brightcoveVideoId
-        }`;
+    if (isLeadAssetVideo || isContentVideo) {
+      const accountId = isLeadAssetVideo
+        ? brightcoveAccountId
+        : videoFromContent.brightcoveAccountId;
 
-    videoJsonLD = {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      name: videoName,
-      uploadDate: dateModified,
-      thumbnailUrl,
-      description:
-        Array.isArray(descriptionMarkup) && descriptionMarkup.length
-          ? renderTreeAsText({ children: descriptionMarkup })
-          : seoDescription || videoName,
-      contentUrl
-    };
+      const videoId = isLeadAssetVideo
+        ? brightcoveVideoId
+        : videoFromContent.brightcoveVideoId;
+
+      const videoName = isLeadAssetVideo
+        ? (leadAsset && leadAsset.title) || title
+        : videoFromContent.caption || title;
+
+      const contentUrl = `https://players.brightcove.net/${accountId}/default_default/index.html?videoId=${videoId}`;
+
+      videoJsonLD = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: videoName,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : seoDescription || videoName,
+        contentUrl
+      };
+    }
   }
 
   const liveBlogJsonLD = {
