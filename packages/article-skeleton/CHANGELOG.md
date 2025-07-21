@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.170.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.170.0...@times-components/article-skeleton@1.170.1) (2025-07-21)
+
+
+### Bug Fixes
+
+* **TMPR-520:** add missing description to live blog articles ([#4189](https://github.com/newsuk/times-components/issues/4189)) ([bbfd9c6](https://github.com/newsuk/times-components/commit/bbfd9c6156fb2af04a528206847717ee4d1c0aad))
+
+
+
+
+
 # [1.170.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.169.2...@times-components/article-skeleton@1.170.0) (2025-07-18)
 
 
