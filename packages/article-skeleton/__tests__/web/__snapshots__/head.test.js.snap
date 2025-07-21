@@ -76,12 +76,17 @@ exports[`Head outputs a live blog schema 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Some Headline","mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"datePublished":"2015-03-13T18:54:58.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":null,"url":"https://url.io","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"liveBlogUpdate":[{"@type":"BlogPosting","headline":"headline","datePublished":"2022-04-20T20:30:00","dateModified":"2022-04-20T20:30:00","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"url":"https://url.io#u_20220420203000h","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleBody":"Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections. The pro-Remain party announced its MEP hopefuls from almost 4"}],"articleSection":"News"}
+    {"@context":"https://schema.org","@type":"LiveBlogPosting","headline":"Some Headline","mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"datePublished":"2015-03-13T18:54:58.000Z","coverageStartTime":"2015-03-13T18:54:58.000Z","coverageEndTime":null,"url":"https://url.io","keywords":["Supplement","In","Depth","Template","Style"],"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"liveBlogUpdate":[{"@type":"BlogPosting","headline":"headline","datePublished":"2022-04-20T20:30:00","dateModified":"2022-04-20T20:30:00","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"url":"https://url.io#u_20220420203000h","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleBody":"Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections. The pro-Remain party announced its MEP hopefuls from almost 4","video":{"@type":"VideoObject","thumbnail":"https://www.thetimes.co.uk/imageserver/image/%2Fde739895-b80e-48be-ad50-027f8d5cea3a.jpg?crop=1280%2C720%2C0%2C0"}}],"articleSection":"News"}
   </script>
   <script
     type="application/ld+json"
   >
     {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://url.io"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["undefined/profile/richard-lloyd-parry","https://twitter.com/dicklp"]}],"articleSection":"News","keywords":"","url":"https://url.io"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://crop169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
   </script>
   <script
     defer={true}
@@ -220,6 +225,11 @@ exports[`Head outputs array of keywords in article schema 1`] = `
     type="application/ld+json"
   >
     {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"News","keywords":"Section:Sport,Section:Rugby union"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"VideoObject","name":"","thumbnailUrl":null,"description":"","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
   </script>
   <script
     type="application/ld+json"
@@ -1055,6 +1065,11 @@ exports[`Head outputs stringified array for associatedDesks in article schema 1`
     type="application/ld+json"
   >
     {"@context":"https://schema.org","@type":"NewsArticle","headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage"},"isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"author":{"@type":"Organization","name":"The Times"},"articleSection":"Sport","keywords":"Section:Sport,Section:Football,Section:Rugby union"}
+  </script>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"VideoObject","name":"","thumbnailUrl":null,"description":"","contentUrl":"https://players.brightcove.net/5436121856001/default_default/index.html?videoId=6375208289112"}
   </script>
   <script
     type="application/ld+json"
