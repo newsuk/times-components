@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-import { WidgetContainerBase } from '../shared-styles';
+import { WidgetContainerBase } from '../../shared/shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  showDetails: boolean;
+}>`
   .Opta {
-    h2 {
-      margin: 20px 0 10px 0 !important;
+    .Opta_W > .Opta-Cf {
+      margin-bottom: 20px;
     }
-
     .Opta-Cf {
       padding: 0;
       background-color: transparent;
@@ -16,6 +17,9 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       table {
         tbody {
           tr {
+            line-height: 30px;
+            height: 30px;
+
             td {
               color: ${colours.functional.brandColour};
               font-family: ${fonts.headline};
@@ -24,10 +28,26 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               padding: 0;
 
               &.Opta-Crest {
+                position: relative;
                 text-align: left;
 
                 &.Opta-Home {
                   text-align: right;
+
+                  .Opta-Image-Holder {
+                    right: 0;
+                  }
+                }
+
+                &.Opta-Away {
+                  .Opta-Image-Holder {
+                    left: 0;
+                  }
+                }
+
+                .Opta-Image-Holder {
+                  position: absolute;
+                  top: 0;
                 }
 
                 img {
@@ -88,33 +108,46 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             }
 
             &.Opta-Score-Extras {
+              line-height: 18px;
+              height: 18px;
               td {
                 color: ${colours.functional.brandColour};
                 font-family: ${fonts.supporting};
                 font-size: 14px;
-                line-height: 28px;
+                line-height: 10px;
+                height: 10px;
 
                 span {
                   color: inherit;
                   font-size: inherit;
+                  display: inline-block;
+                  margin-top: -4px;
                 }
               }
             }
 
             &.Opta-MatchHeader-Details {
+              line-height: 18px;
+              height: 18px;
+
+              td {
+                block-size: 18px;
+              }
               div {
                 padding: 0;
                 color: ${colours.section.sport};
                 font-family: ${fonts.supporting};
                 font-size: 12px;
-                line-height: 12px;
+                line-height: 18px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 background-color: transparent;
+                min-height: 18px;
 
                 span {
                   margin: 0 6px;
                   color: inherit;
+                  line-height: 18px;
                   font-size: inherit;
                 }
               }
@@ -124,6 +157,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       }
 
       .Opta-Events {
+        display: ${props => (props.showDetails ? 'block' : 'none')};
         padding: 10px 0 2px 0;
 
         li {

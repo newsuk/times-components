@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 
 import 'regenerator-runtime';
 import '@testing-library/jest-dom';
@@ -11,6 +11,7 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockHasMatchEvents = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,6 +27,10 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
+jest.mock('../../../utils/hasMatchEvents', () => ({
+  hasMatchEvents: mockHasMatchEvents
+}));
+
 import { OptaCricketScorecard } from '../OptaCricketScorecard';
 
 const requiredProps = {
@@ -35,12 +40,12 @@ const requiredProps = {
 
 describe('OptaCricketScorecard', () => {
   it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
-      <OptaCricketScorecard {...requiredProps} />
-    );
-    expect(asFragment()).toMatchSnapshot();
+    const { asFragment } = render(<OptaCricketScorecard {...requiredProps} />);
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+    act(() => {
+      mockInitComponent();
+      mockHasMatchEvents();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);

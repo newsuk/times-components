@@ -11,7 +11,7 @@ exports[`OptaFixturesTicker rugby should render correctly 1`] = `
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-EHOje imofIK"
+      class="sc-htpNat sc-EHOje eaxvCi"
     />
   </div>
 </DocumentFragment>
@@ -28,7 +28,7 @@ exports[`OptaFixturesTicker with flags should render correctly 1`] = `
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-EHOje imofIK"
+      class="sc-htpNat sc-EHOje eaxvCi"
     />
   </div>
 </DocumentFragment>
@@ -45,7 +45,7 @@ exports[`OptaFixturesTicker without flags should render correctly 1`] = `
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-EHOje imofIK"
+      class="sc-htpNat sc-EHOje eaxvCi"
     />
   </div>
 </DocumentFragment>
@@ -62,7 +62,7 @@ exports[`OptaFixturesTicker without flags should render correctly with fixturesP
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-EHOje imofIK"
+      class="sc-htpNat sc-EHOje eaxvCi"
     />
   </div>
 </DocumentFragment>
@@ -79,7 +79,7 @@ exports[`OptaFixturesTicker without flags should render correctly with isApp pro
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-EHOje iSgSIo"
+      class="sc-htpNat sc-EHOje tvKtZ"
     />
   </div>
 </DocumentFragment>

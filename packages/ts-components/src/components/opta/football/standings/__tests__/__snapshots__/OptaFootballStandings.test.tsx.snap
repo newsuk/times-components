@@ -3,10 +3,10 @@
 exports[`OptaFootballStandings should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kzAIuV"
+    class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-htpNat sc-bxivhb bZgvkl"
+      class="sc-htpNat sc-bxivhb dxhqCa"
     />
     <div
       class="opta-placeholder sc-bwzfXH eSqyJ"
@@ -20,10 +20,10 @@ exports[`OptaFootballStandings should render correctly 1`] = `
 exports[`OptaFootballStandings should render correctly, with columns 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kzAIuV"
+    class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-htpNat sc-bxivhb gcTjsg"
+      class="sc-htpNat sc-bxivhb gGMrWb"
     />
     <div
       class="opta-placeholder sc-bwzfXH eSqyJ"

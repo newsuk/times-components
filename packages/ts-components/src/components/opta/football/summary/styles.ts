@@ -3,12 +3,10 @@ import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../../shared/shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  showDetails: boolean;
+}>`
   .Opta {
-    h2 {
-      margin: 20px 0 10px 0 !important;
-    }
-
     .Opta-Cf {
       padding: 0;
       background-color: transparent;
@@ -16,6 +14,9 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       table {
         tbody {
           tr {
+            line-height: 30px;
+            height: 30px;
+
             td {
               color: ${colours.functional.brandColour};
               font-family: ${fonts.headline};
@@ -88,26 +89,39 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             }
 
             &.Opta-Score-Extras {
+              line-height: 18px;
+              height: 18px;
+
               td {
                 color: ${colours.functional.brandColour};
                 font-family: ${fonts.supporting};
                 font-size: 14px;
-                line-height: 28px;
+                height: 10px;
+                line-height: 10px;
 
                 span {
                   color: inherit;
                   font-size: inherit;
+                  display: inline-block;
+                  margin-top: -4px;
                 }
               }
             }
 
             &.Opta-MatchHeader-Details {
+              line-height: 18px;
+              height: 18px;
+
+              td {
+                block-size: 18px;
+              }
+
               div {
                 padding: 0;
                 color: ${colours.section.sport};
                 font-family: ${fonts.supporting};
                 font-size: 12px;
-                line-height: 12px;
+                line-height: 18px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 background-color: transparent;
@@ -124,6 +138,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       }
 
       .Opta-Events {
+        display: ${props => (props.showDetails ? 'block' : 'none')};
         padding: 10px 0 2px 0;
 
         li {

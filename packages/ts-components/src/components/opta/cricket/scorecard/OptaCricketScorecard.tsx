@@ -11,6 +11,8 @@ import {
 } from '../../utils/config';
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
 import { WidgetContainer } from './styles';
+import { hasMatchEvents } from '../../utils/hasMatchEvents';
+import Button from '../../shared/button/Button';
 
 export const OptaCricketScorecard: React.FC<{
   competition: string;
@@ -22,51 +24,61 @@ export const OptaCricketScorecard: React.FC<{
 }> = React.memo(
   ({ competition, match, full_width, heightSm, heightMd, heightLg }) => {
     const ref = React.createRef<HTMLDivElement>();
-    const [isReady, setIsReady] = useState<boolean>(false);
+    const [showDetails, setShowDetails] = useState<boolean>(false);
+    const [disabledButton, setDisabledButton] = useState<boolean>(true);
 
     useEffect(() => {
       const sport = 'cricket';
 
+      window.addEventListener('message', event => {
+        if (event.data === 'enableButton') {
+          setDisabledButton(false);
+        }
+      });
+
       initSettings();
       initStyleSheet(sport);
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement('opta-widget', {
-            sport,
-            widget: 'score_card',
-            season: '0',
-            competition,
-            match,
-            template: 'normal',
-            live: true,
-            show_match_header: true,
-            show_crests: true,
-            show_competition_name: true,
-            show_match_description: true,
-            show_date: true,
-            date_format: 'DD/MM/YYYY',
-            show_venue: true,
-            show_officials: false,
-            show_toss: false,
-            show_state_of_play: true,
-            navigation: 'tabs',
-            show_batting: true,
-            show_mins_batted: false,
-            show_fours: true,
-            show_sixes: true,
-            show_strike_rate: true,
-            show_bowling: true,
-            show_economy: true,
-            show_fow: true,
-            player_naming: 'full',
-            breakpoints: '520'
-          }).outerHTML;
+      initScript()
+        .then(() => {
+          if (ref.current) {
+            ref.current.innerHTML = initElement('opta-widget', {
+              sport,
+              widget: 'score_card',
+              season: '0',
+              competition,
+              match,
+              template: 'normal',
+              live: true,
+              show_match_header: true,
+              show_crests: true,
+              show_competition_name: true,
+              show_match_description: true,
+              show_date: true,
+              date_format: 'DD/MM/YYYY',
+              show_venue: true,
+              show_officials: false,
+              show_toss: false,
+              show_state_of_play: true,
+              navigation: 'tabs',
+              show_batting: true,
+              show_mins_batted: false,
+              show_fours: true,
+              show_sixes: true,
+              show_strike_rate: true,
+              show_bowling: true,
+              show_economy: true,
+              show_fow: true,
+              player_naming: 'full',
+              breakpoints: '520'
+            }).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
+            initComponent();
+          }
+        })
+        .then(() => {
+          hasMatchEvents(true);
+        });
     }, []);
 
     return (
@@ -75,14 +87,20 @@ export const OptaCricketScorecard: React.FC<{
         heightSm={heightSm}
         heightMd={heightMd}
         heightLg={heightLg}
+        hasPadding
       >
-        <WidgetContainer ref={ref} />
+        <WidgetContainer ref={ref} showDetails={showDetails} />
 
-        {!isReady && (
-          <PlaceholderContainer>
-            <Placeholder />
-          </PlaceholderContainer>
-        )}
+        <Button
+          onClick={() => setShowDetails(!showDetails)}
+          disabled={disabledButton}
+        >
+          {showDetails ? 'Hide Details' : 'Show Details'}
+        </Button>
+
+        <PlaceholderContainer className="opta-placeholder">
+          <Placeholder />
+        </PlaceholderContainer>
       </Container>
     );
   }
