@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.170.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.170.1...@times-components/article-skeleton@1.170.2) (2025-07-23)
+
+
+### Bug Fixes
+
+* **TMPR-299:** inline video url undefined ([#4188](https://github.com/newsuk/times-components/issues/4188)) ([efbf69a](https://github.com/newsuk/times-components/commit/efbf69ac08df363a21c2a0ab00a70b76431fa342))
+
+
+
+
+
 ## [1.170.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.170.0...@times-components/article-skeleton@1.170.1) (2025-07-21)
 
 
