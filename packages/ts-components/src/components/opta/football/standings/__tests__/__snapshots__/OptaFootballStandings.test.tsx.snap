@@ -6,7 +6,7 @@ exports[`OptaFootballStandings should render correctly 1`] = `
     class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-htpNat sc-bxivhb dxhqCa"
+      class="sc-htpNat sc-bxivhb cXLUfH"
     />
     <div
       class="opta-placeholder sc-bwzfXH eSqyJ"
@@ -23,7 +23,7 @@ exports[`OptaFootballStandings should render correctly, with columns 1`] = `
     class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-htpNat sc-bxivhb gGMrWb"
+      class="sc-htpNat sc-bxivhb iwEYKC"
     />
     <div
       class="opta-placeholder sc-bwzfXH eSqyJ"

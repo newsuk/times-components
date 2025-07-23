@@ -11,7 +11,7 @@ exports[`OptaFootballFixturesTournament should render full width correctly 1`] =
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-ifAKCX fXYhZz"
+      class="sc-htpNat sc-ifAKCX etYffo"
     />
   </div>
 </DocumentFragment>
@@ -28,7 +28,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-ifAKCX fXYhZz"
+      class="sc-htpNat sc-ifAKCX etYffo"
     />
   </div>
 </DocumentFragment>
@@ -45,7 +45,7 @@ exports[`OptaFootballFixturesTournament should render national competitions corr
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-ifAKCX jINGvR"
+      class="sc-htpNat sc-ifAKCX loviIg"
     />
   </div>
 </DocumentFragment>
@@ -62,7 +62,7 @@ exports[`OptaFootballFixturesTournament should render other competitions correct
       Placeholder
     </div>
     <div
-      class="sc-htpNat sc-ifAKCX fXYhZz"
+      class="sc-htpNat sc-ifAKCX etYffo"
     />
   </div>
 </DocumentFragment>

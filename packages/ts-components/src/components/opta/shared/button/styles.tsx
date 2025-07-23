@@ -7,7 +7,7 @@ export const WidgetButton = styled.button<{ disabled: boolean }>`
   font-size: 14px;
   padding: 0 12px;
   height: 36px;
-  border: 2px solid ${({ disabled }) => (disabled ? '#EEE' : '#CCC')};
+  border: 1px solid ${({ disabled }) => (disabled ? '#EEE' : '#CCC')};
   color: ${({ disabled }) => (disabled ? '#AAA' : '#333')};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   display: block;
