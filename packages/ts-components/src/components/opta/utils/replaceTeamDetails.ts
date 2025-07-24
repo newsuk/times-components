@@ -24,12 +24,6 @@ export const replaceTeamName = () => {
       const competition = attr.competition;
       const nationalFootballCompetitions = [3, 235, 941];
     
-      // This added class to replace flags for the Euro 2024 here;
-      // - packages/ts-components/src/components/opta/shared/shared-styles.ts
-      // if (sport === 'football' && nationalFootballCompetitions.includes(competition)) {
-      //   Opta(widget.widget.wid).addClass('team-flags');
-      // }
-
       Opta(widget.widget.wid + ' .Opta-TeamName').each(function (num, element) {
         const team = Opta(element);
         const isGroupPlayoff =
