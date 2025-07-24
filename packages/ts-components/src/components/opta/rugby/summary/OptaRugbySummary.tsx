@@ -29,9 +29,9 @@ export const OptaRugbySummary: React.FC<{
     competition,
     match,
     full_width,
-    heightSm,
-    heightMd,
-    heightLg
+    heightSm = 197,
+    heightMd = 197,
+    heightLg = 197
   }) => {
     const ref = React.createRef<HTMLDivElement>();
     const [showDetails, setShowDetails] = useState<boolean>(false);

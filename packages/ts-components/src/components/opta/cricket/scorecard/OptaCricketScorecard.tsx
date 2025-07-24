@@ -22,7 +22,14 @@ export const OptaCricketScorecard: React.FC<{
   heightMd?: number;
   heightLg?: number;
 }> = React.memo(
-  ({ competition, match, full_width, heightSm, heightMd, heightLg }) => {
+  ({
+    competition,
+    match,
+    full_width,
+    heightSm = 258,
+    heightMd = 258,
+    heightLg = 258
+  }) => {
     const ref = React.createRef<HTMLDivElement>();
     const [showDetails, setShowDetails] = useState<boolean>(false);
     const [disabledButton, setDisabledButton] = useState<boolean>(true);

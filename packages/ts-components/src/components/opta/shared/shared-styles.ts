@@ -89,7 +89,7 @@ export const Container = styled.div<{
   hasPadding?: boolean;
 }>`
   position: relative;
-  ${({ heightSm }) => heightSm && `height: ${heightSm}px;`}
+  ${({ heightSm }) => heightSm && `min-height: ${heightSm}px;`}
   margin: 0 auto 20px auto;
   padding-bottom: ${({ hasPadding }) => (hasPadding ? '20px' : '0')};
   background-color: ${colours.functional.backgroundPrimary};
@@ -100,12 +100,12 @@ export const Container = styled.div<{
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
-    ${({ heightMd }) => heightMd && `height: ${heightMd}px;`}
+    ${({ heightMd }) => heightMd && `min-height: ${heightMd}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    ${({ heightLg }) => heightLg && `height: ${heightLg}px;`}
+    ${({ heightLg }) => heightLg && `min-height: ${heightLg}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
