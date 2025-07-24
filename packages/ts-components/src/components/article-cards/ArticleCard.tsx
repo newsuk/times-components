@@ -5,6 +5,7 @@ import { ArticleCardsProps, ArticleProps } from './types';
 
 export const ArticleCard: FC<ArticleCardsProps> = ({ element }) => {
   const decodeBase64 = (value: string): string => {
+    if (!value) return '';
     try {
       const binaryString = atob(value);
 
