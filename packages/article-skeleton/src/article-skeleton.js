@@ -119,7 +119,7 @@ const ArticleSkeleton = ({
   // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
   if (
     (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) &&
-    window.instgrm?.Embeds?.process
+    window.instgrm.Embeds.process
   ) {
     window.instgrm.Embeds.process();
   }
