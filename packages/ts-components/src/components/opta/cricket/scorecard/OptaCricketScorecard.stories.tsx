@@ -21,7 +21,7 @@ const showcase = {
     },
     {
       component: () => (
-        <OptaCricketScorecard competition="3071" match="55391" heightSm={905} />
+        <OptaCricketScorecard competition="3628" match="63869" heightSm={248} />
       ),
       name: 'Scorecard (1st inns) with set height',
       type: 'story'

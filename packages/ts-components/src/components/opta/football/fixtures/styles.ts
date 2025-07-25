@@ -5,10 +5,6 @@ import { WidgetContainerBase } from '../../shared/shared-styles';
 
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
   .Opta {
-    h2 {
-      margin: 20px 0 0 0 !important;
-    }
-
     .Opta-js-main {
       table {
         tbody {

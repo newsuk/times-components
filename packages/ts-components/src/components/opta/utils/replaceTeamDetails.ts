@@ -24,10 +24,6 @@ export const replaceTeamName = () => {
       const competition = attr.competition;
       const nationalFootballCompetitions = [3, 235, 941];
     
-      if (sport === 'football' && nationalFootballCompetitions.includes(competition)) {
-        Opta(widget.widget.wid).addClass('team-flags');
-      }
-
       Opta(widget.widget.wid + ' .Opta-TeamName').each(function (num, element) {
         const team = Opta(element);
         const isGroupPlayoff =

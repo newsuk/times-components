@@ -3,31 +3,21 @@
 exports[`OptaRugbySummary should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kzAIuV"
+    class="sc-bdVaJa dGvccO"
   >
     <div
-      class="sc-bxivhb sc-ifAKCX elsoGX"
+      class="sc-htpNat sc-bxivhb hSWFib"
     />
+    <button
+      class="sc-ifAKCX gaTBwd"
+      disabled=""
+    >
+      Show Details
+    </button>
     <div
-      class="sc-bwzfXH eSqyJ"
+      class="opta-placeholder sc-bwzfXH eSqyJ"
     >
       Placeholder
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`OptaRugbySummary should render correctly 2`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa kzAIuV"
-  >
-    <div
-      class="sc-bxivhb sc-ifAKCX elsoGX"
-    >
-      <div>
-        Widget
-      </div>
     </div>
   </div>
 </DocumentFragment>
