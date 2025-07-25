@@ -87,8 +87,7 @@ export const OptaCricketScorecard: React.FC<{
         })
         .then(() => {
           hasMatchEvents(true);
-        }
-      );
+        });
 
       return () => {
         window.removeEventListener('message', handleMessage);

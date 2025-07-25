@@ -70,19 +70,25 @@ describe('OptaRugbySummary', () => {
     expect(button).toBeDisabled();
 
     act(() => {
-      window.dispatchEvent(new MessageEvent('message', { data: 'enableButton' }));
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'enableButton' })
+      );
     });
 
     expect(button).not.toBeDisabled();
   });
 
   it('should toggle details when button is clicked', () => {
-    const { getByRole, getByText } = render(<OptaRugbySummary {...requiredProps} />);
+    const { getByRole, getByText } = render(
+      <OptaRugbySummary {...requiredProps} />
+    );
     const button = getByRole('button');
 
     // Enable the button first
     act(() => {
-      window.dispatchEvent(new MessageEvent('message', { data: 'enableButton' }));
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'enableButton' })
+      );
     });
 
     expect(button).toHaveTextContent('Show Details');
@@ -110,7 +116,9 @@ describe('OptaRugbySummary', () => {
     expect(button).toBeDisabled();
 
     act(() => {
-      window.dispatchEvent(new MessageEvent('message', { data: 'someOtherEvent' }));
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'someOtherEvent' })
+      );
     });
 
     expect(button).toBeDisabled();

@@ -79,8 +79,7 @@ export const OptaRugbySummary: React.FC<{
         })
         .then(() => {
           hasMatchEvents();
-        }
-      );
+        });
 
       return () => {
         window.removeEventListener('message', handleMessage);

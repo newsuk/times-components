@@ -77,8 +77,7 @@ export const OptaFootballSummary: React.FC<{
         })
         .then(() => {
           hasMatchEvents();
-        }
-      );
+        });
 
       return () => {
         window.removeEventListener('message', handleMessage);
