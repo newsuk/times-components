@@ -26,9 +26,9 @@ export const OptaCricketScorecard: React.FC<{
     competition,
     match,
     full_width,
-    heightSm = 258,
-    heightMd = 258,
-    heightLg = 258
+    heightSm = 238,
+    heightMd = 238,
+    heightLg = 238
   }) => {
     const ref = React.createRef<HTMLDivElement>();
     const [showDetails, setShowDetails] = useState<boolean>(false);
@@ -37,11 +37,13 @@ export const OptaCricketScorecard: React.FC<{
     useEffect(() => {
       const sport = 'cricket';
 
-      window.addEventListener('message', event => {
+      const handleMessage = (event: MessageEvent) => {
         if (event.data === 'enableButton') {
           setDisabledButton(false);
         }
-      });
+      };
+
+      window.addEventListener('message', handleMessage);
 
       initSettings();
       initStyleSheet(sport);
@@ -85,7 +87,12 @@ export const OptaCricketScorecard: React.FC<{
         })
         .then(() => {
           hasMatchEvents(true);
-        });
+        }
+      );
+
+      return () => {
+        window.removeEventListener('message', handleMessage);
+      };
     }, []);
 
     return (

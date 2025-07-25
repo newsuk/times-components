@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-import { WidgetContainerBase } from '../../shared/shared-styles';
+import { WidgetContainerBase } from './shared-styles';
 
 export const WidgetContainer = styled(WidgetContainerBase)<{
   showDetails: boolean;

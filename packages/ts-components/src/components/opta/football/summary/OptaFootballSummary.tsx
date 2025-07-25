@@ -11,7 +11,7 @@ import {
 } from '../../utils/config';
 
 import { Container, PlaceholderContainer } from '../../shared/shared-styles';
-import { WidgetContainer } from '../../rugby/summary/styles';
+import { WidgetContainer } from '../../shared/summary-styles';
 import Button from '../../shared/button/Button';
 import { hasMatchEvents } from '../../utils/hasMatchEvents';
 
@@ -40,11 +40,13 @@ export const OptaFootballSummary: React.FC<{
     useEffect(() => {
       const sport = 'football';
 
-      window.addEventListener('message', event => {
+      const handleMessage = (event: MessageEvent) => {
         if (event.data === 'enableButton') {
           setDisabledButton(false);
         }
-      });
+      };
+
+      window.addEventListener('message', handleMessage);
 
       initSettings();
       initStyleSheet(sport);
@@ -75,7 +77,12 @@ export const OptaFootballSummary: React.FC<{
         })
         .then(() => {
           hasMatchEvents();
-        });
+        }
+      );
+
+      return () => {
+        window.removeEventListener('message', handleMessage);
+      };
     }, []);
 
     return (
