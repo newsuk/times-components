@@ -2,8 +2,12 @@ import React, { useEffect } from 'react';
 import { InstagramContainer } from '../styles';
 import { Placeholder } from '@times-components/image';
 
+
 export const Instagram = ({ url }: { url: string }) => {
-  useEffect(() => {
+
+  console.log('lol instagram url', url);
+
+useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://www.instagram.com/embed.js';
     script.async = true;
