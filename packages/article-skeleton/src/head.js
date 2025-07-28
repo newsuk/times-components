@@ -133,13 +133,7 @@ const getThumbnailUrl = article => {
   return crop ? crop.url : "";
 };
 
-const getLiveBlogUpdates = (
-  article,
-  publisher,
-  author,
-  isLiveArticleMetaDataEnabled,
-  desc
-) => {
+const getLiveBlogUpdates = (article, publisher, author, desc) => {
   const updates = [];
   if (article === null) {
     return updates;
@@ -201,29 +195,21 @@ const getLiveBlogUpdates = (
           if (update !== undefined) {
             update.video = {
               "@type": "VideoObject",
-              ...(isLiveArticleMetaDataEnabled
-                ? {
-                    name:
-                      contentObj[i].attributes.title ||
-                      update.headline ||
-                      "Video",
-                    description: contentObj[i].attributes.caption || desc,
-                    uploadDate:
-                      contentObj[i].attributes.updated || update.datePublished,
-                    thumbnailUrl: contentObj[i].attributes.posterImageUrl,
-                    contentUrl:
-                      contentObj[i].attributes.brightcoveAccountId &&
+              name:
+                contentObj[i].attributes.title || update.headline || "Video",
+              description: contentObj[i].attributes.caption || desc,
+              uploadDate:
+                contentObj[i].attributes.updated || update.datePublished,
+              thumbnailUrl: contentObj[i].attributes.posterImageUrl,
+              contentUrl:
+                contentObj[i].attributes.brightcoveAccountId &&
+                contentObj[i].attributes.brightcoveVideoId
+                  ? `https://players.brightcove.net/${
+                      contentObj[i].attributes.brightcoveAccountId
+                    }/default_default/index.html?videoId=${
                       contentObj[i].attributes.brightcoveVideoId
-                        ? `https://players.brightcove.net/${
-                            contentObj[i].attributes.brightcoveAccountId
-                          }/default_default/index.html?videoId=${
-                            contentObj[i].attributes.brightcoveVideoId
-                          }`
-                        : undefined
-                  }
-                : {
-                    thumbnail: contentObj[i].attributes.posterImageUrl
-                  })
+                    }`
+                  : undefined
             };
           }
         } else if (contentObj[i].name === "paywall") {
@@ -254,8 +240,7 @@ function Head({
   swgProductId,
   breadcrumbs,
   domainSpecificUrl,
-  firstPublishedTime,
-  isLiveArticleMetaDataEnabled
+  firstPublishedTime
 }) {
   const {
     descriptionMarkup,
@@ -328,7 +313,6 @@ function Head({
     article,
     publisherSchema,
     authorSchema,
-    isLiveArticleMetaDataEnabled,
     desc
   );
 
@@ -530,15 +514,13 @@ Head.propTypes = {
   swgProductId: PropTypes.string,
   domainSpecificUrl: PropTypes.string.isRequired,
   breadcrumbs: PropTypes.arrayOf(PropTypes.shape({})),
-  firstPublishedTime: PropTypes.string,
-  isLiveArticleMetaDataEnabled: PropTypes.bool
+  firstPublishedTime: PropTypes.string
 };
 
 Head.defaultProps = {
   swgProductId: null,
   breadcrumbs: [],
-  firstPublishedTime: null,
-  isLiveArticleMetaDataEnabled: false
+  firstPublishedTime: null
 };
 
 export default Head;
