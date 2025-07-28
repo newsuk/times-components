@@ -4,8 +4,6 @@ import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 export const AutoNewsletterPuff = ({
   code,
-  copy,
-  headline,
   section
 }: AutoNewsletterPuffProps) => (
   <ViewCountWrapper
@@ -14,16 +12,13 @@ export const AutoNewsletterPuff = ({
   >
     <InlineNewsletterPuff
       code={code}
-      copy={copy}
-      headline={headline}
       section={section}
+      isAutoNewsletterPuff={true}
     />
   </ViewCountWrapper>
 );
 
 type AutoNewsletterPuffProps = {
   code: string;
-  copy: string;
-  headline: string;
   section: string;
 };
