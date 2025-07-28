@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.137.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.136.2...@times-components/ts-components@1.137.0) (2025-07-28)
+
+
+### Features
+
+* **TMRA-524:** update opta components to expand collapse data ([#4190](https://github.com/newsuk/times-components/issues/4190)) ([8583348](https://github.com/newsuk/times-components/commit/85833484a0e41448390da420895132adcd4b63ff))
+
+
+
+
+
 ## [1.136.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.136.1...@times-components/ts-components@1.136.2) (2025-07-18)
 
 **Note:** Version bump only for package @times-components/ts-components
