@@ -9,7 +9,7 @@ export const WidgetContainerBase = styled.div`
 
       h2 {
         height: auto;
-        margin: 20px 0;
+        margin: 20px 0 10px;
         color: ${colours.section.sport};
         font-family: ${fonts.supporting};
         font-size: 12px;
@@ -33,6 +33,10 @@ export const WidgetContainerBase = styled.div`
         margin: 0;
         border-collapse: collapse;
         border-spacing: 0;
+
+        &.Opta-MatchHeader {
+          height: 75px;
+        }
       }
     }
 

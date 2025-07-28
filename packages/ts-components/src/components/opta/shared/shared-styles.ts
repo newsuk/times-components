@@ -86,25 +86,26 @@ export const Container = styled.div<{
   heightSm?: number;
   heightMd?: number;
   heightLg?: number;
+  hasPadding?: boolean;
 }>`
   position: relative;
-  ${({ heightSm }) => heightSm && `height: ${heightSm}px;`}
+  ${({ heightSm }) => heightSm && `min-height: ${heightSm}px;`}
   margin: 0 auto 20px auto;
+  padding-bottom: ${({ hasPadding }) => (hasPadding ? '20px' : '0')};
   background-color: ${colours.functional.backgroundPrimary};
   border-top: 2px solid ${colours.section.sport};
-
   a {
     text-decoration: none;
   }
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
-    ${({ heightMd }) => heightMd && `height: ${heightMd}px;`}
+    ${({ heightMd }) => heightMd && `min-height: ${heightMd}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    ${({ heightLg }) => heightLg && `height: ${heightLg}px;`}
+    ${({ heightLg }) => heightLg && `min-height: ${heightLg}px;`}
     width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
@@ -129,7 +130,7 @@ export const WidgetContainerBase = styled.div`
 
       h2 {
         height: auto;
-        margin: 20px 0;
+        margin: 20px 0 10px;
         color: ${colours.section.sport};
         font-family: ${fonts.supporting};
         font-size: 12px;
@@ -153,6 +154,27 @@ export const WidgetContainerBase = styled.div`
         margin: 0;
         border-collapse: collapse;
         border-spacing: 0;
+
+        &.Opta-MatchHeader {
+          height: 75px;
+
+          tbody {
+            tr.Opta-MatchHeader-Details td > div,
+            div.Opta-MatchHeader-Details > div {
+              height: 18px;
+              min-height: 18px;
+            }
+
+            tr.Opta-MatchHeader-Details td span {
+              line-height: 18px;
+            }
+
+            th,
+            td {
+              height: 18px;
+            }
+          }
+        }
       }
     }
 

@@ -21,7 +21,7 @@ const showcase = {
     },
     {
       component: () => (
-        <OptaFootballSummary season="2020" competition="8" match="2128595" />
+        <OptaFootballSummary season="2024" competition="616" match="2494105" />
       ),
       name: 'Summary (results)',
       type: 'story'

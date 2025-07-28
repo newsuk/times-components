@@ -3,10 +3,10 @@
 exports[`OptaRugbyFixtures should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kzAIuV"
+    class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-bxivhb sc-EHOje ledBOK"
+      class="sc-htpNat sc-ifAKCX hxMGWN"
     />
     <div
       class="sc-bwzfXH eSqyJ"
@@ -20,10 +20,10 @@ exports[`OptaRugbyFixtures should render correctly 1`] = `
 exports[`OptaRugbyFixtures should render correctly 2`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kzAIuV"
+    class="sc-bdVaJa dEqLmD"
   >
     <div
-      class="sc-bxivhb sc-EHOje ledBOK"
+      class="sc-htpNat sc-ifAKCX hxMGWN"
     >
       <div>
         Widget

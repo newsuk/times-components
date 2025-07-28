@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
-import { WidgetContainerBase } from '../shared-styles';
+import { WidgetContainerBase } from '../../shared/shared-styles';
 
 export const WidgetContainer = styled(WidgetContainerBase)`
   .Opta {
-    h2 {
-      margin: 20px 0 10px 0 !important;
-    }
-
     .Opta-Cf {
       padding: 0;
       background-color: transparent;

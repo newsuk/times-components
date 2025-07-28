@@ -3,12 +3,11 @@ import { colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)<{
+  showDetails: boolean;
+}>`
   .Opta {
-    h2 {
-      margin: 20px 0 10px 0 !important;
-    }
-
+    padding-bottom: 10px;
     .Opta-Cf {
       padding: 0;
       background-color: transparent;
@@ -95,6 +94,9 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       }
 
       .Opta-scorecard {
+        display: ${props => (props.showDetails ? 'block' : 'none')};
+        padding-bottom: 10px;
+
         .Opta-Tabs {
           .Opta-Nav {
             background-color: transparent;

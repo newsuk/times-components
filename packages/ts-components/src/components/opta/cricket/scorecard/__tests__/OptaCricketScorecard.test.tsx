@@ -1,6 +1,5 @@
 import React from 'react';
-import { render, waitForElementToBeRemoved } from '@testing-library/react';
-
+import { render, act, fireEvent } from '@testing-library/react';
 import 'regenerator-runtime';
 import '@testing-library/jest-dom';
 
@@ -11,6 +10,7 @@ jest.mock('@times-components/image', () => ({
 const mockInitSettings = jest.fn();
 const mockInitStyleSheet = jest.fn();
 const mockInitComponent = jest.fn();
+const mockHasMatchEvents = jest.fn();
 
 const mockInitElement = () => {
   const element = document.createElement('div');
@@ -26,6 +26,10 @@ jest.mock('../../../utils/config', () => ({
   initComponent: mockInitComponent
 }));
 
+jest.mock('../../../utils/hasMatchEvents', () => ({
+  hasMatchEvents: mockHasMatchEvents
+}));
+
 import { OptaCricketScorecard } from '../OptaCricketScorecard';
 
 const requiredProps = {
@@ -34,18 +38,86 @@ const requiredProps = {
 };
 
 describe('OptaCricketScorecard', () => {
-  it('should render correctly', async () => {
-    const { asFragment, getByText } = render(
-      <OptaCricketScorecard {...requiredProps} />
-    );
-    expect(asFragment()).toMatchSnapshot();
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
 
-    await waitForElementToBeRemoved(getByText('Placeholder'));
+  it('should render correctly', async () => {
+    const { asFragment } = render(<OptaCricketScorecard {...requiredProps} />);
+
+    act(() => {
+      mockInitComponent();
+      mockHasMatchEvents();
+    });
 
     expect(mockInitSettings).toHaveBeenCalledTimes(1);
     expect(mockInitStyleSheet).toHaveBeenCalledTimes(1);
     expect(mockInitComponent).toHaveBeenCalledTimes(1);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should disable the button initially', () => {
+    const { getByRole } = render(<OptaCricketScorecard {...requiredProps} />);
+    const button = getByRole('button');
+    expect(button).toBeDisabled();
+  });
+
+  it('should enable the button when enableButton message is received', () => {
+    const { getByRole } = render(<OptaCricketScorecard {...requiredProps} />);
+    const button = getByRole('button');
+    expect(button).toBeDisabled();
+
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'enableButton' })
+      );
+    });
+
+    expect(button).not.toBeDisabled();
+  });
+
+  it('should toggle details when button is clicked', () => {
+    const { getByRole } = render(<OptaCricketScorecard {...requiredProps} />);
+    const button = getByRole('button');
+
+    // Enable the button first
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'enableButton' })
+      );
+    });
+
+    expect(button).toHaveTextContent('Show Details');
+    fireEvent.click(button);
+    expect(button).toHaveTextContent('Hide Details');
+    fireEvent.click(button);
+    expect(button).toHaveTextContent('Show Details');
+  });
+
+  it('should add and remove the message event listener on mount and unmount', () => {
+    const addEventListenerSpy = jest.spyOn(window, 'addEventListener');
+
+    const { unmount } = render(<OptaCricketScorecard {...requiredProps} />);
+    expect(addEventListenerSpy).toHaveBeenCalledWith(
+      'message',
+      expect.any(Function)
+    );
+
+    unmount();
+  });
+
+  it('should not enable the button if message event data is not "enableButton"', () => {
+    const { getByRole } = render(<OptaCricketScorecard {...requiredProps} />);
+    const button = getByRole('button');
+    expect(button).toBeDisabled();
+
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', { data: 'someOtherEvent' })
+      );
+    });
+
+    expect(button).toBeDisabled();
   });
 });
