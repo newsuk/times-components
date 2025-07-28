@@ -79,9 +79,7 @@ describe('OptaRugbySummary', () => {
   });
 
   it('should toggle details when button is clicked', () => {
-    const { getByRole, getByText } = render(
-      <OptaRugbySummary {...requiredProps} />
-    );
+    const { getByRole } = render(<OptaRugbySummary {...requiredProps} />);
     const button = getByRole('button');
 
     // Enable the button first

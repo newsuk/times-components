@@ -78,9 +78,7 @@ describe('OptaCricketScorecard', () => {
   });
 
   it('should toggle details when button is clicked', () => {
-    const { getByRole, getByText } = render(
-      <OptaCricketScorecard {...requiredProps} />
-    );
+    const { getByRole } = render(<OptaCricketScorecard {...requiredProps} />);
     const button = getByRole('button');
 
     // Enable the button first
