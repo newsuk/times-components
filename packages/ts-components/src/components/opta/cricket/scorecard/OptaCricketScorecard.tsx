@@ -26,9 +26,9 @@ export const OptaCricketScorecard: React.FC<{
     competition,
     match,
     full_width,
-    heightSm = 238,
-    heightMd = 238,
-    heightLg = 238
+    heightSm = 258,
+    heightMd = 258,
+    heightLg = 258
   }) => {
     const ref = React.createRef<HTMLDivElement>();
     const [showDetails, setShowDetails] = useState<boolean>(false);
