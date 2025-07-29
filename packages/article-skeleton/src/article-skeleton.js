@@ -21,6 +21,7 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import { fetchPolygonData, fetchSidebarData } from "./article-sidebar";
 import StaticContent from "./static-content";
+import { loadInstagramEmbedScript } from '../fixtures/instagram-loader';
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -97,19 +98,21 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
-  const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
+const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
-  const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
+const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
 useEffect(() => {
-  // Trigger Instagram embed refresh when embed is allowed
-  if (
-    (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) &&
-    window.instgrm &&
-    window.instgrm.Embeds &&
-    typeof window.instgrm.Embeds.process === 'function'
-  ) {
-    window.instgrm.Embeds.process();
+  if (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) {
+    loadInstagramEmbedScript().then(() => {
+      if (
+        window.instgrm &&
+        window.instgrm.Embeds &&
+        typeof window.instgrm.Embeds.process === 'function'
+      ) {
+        window.instgrm.Embeds.process();
+      }
+    });
   }
 }, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
 
