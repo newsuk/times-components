@@ -25,6 +25,7 @@ export type BlockedEmbedMessageProps = {
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   vendorName
 }) => {
+  // eslint-disable-next-line no-console
   console.log('lol vendorName', vendorName);
 
   const {
@@ -37,10 +38,12 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
       ...prev,
       [vendorName]: true
     }));
+    // eslint-disable-next-line no-console
     console.log('lol setIsAllowedOnce', vendorName);
   };
 
   const handleEnableCookies = () => {
+    // eslint-disable-next-line no-console
     console.log('lol handleEnableCookies', vendorName);
     enableCookies(vendorName, setIsSocialEmbedAllowed);
   };
@@ -51,6 +54,7 @@ export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
       modalType.GDPR,
       window.__TIMES_CONFIG__.sourcepoint.gdprMessageId
     );
+    // eslint-disable-next-line no-console
     console.log('lol handlePrivacyManagerClick', modalType.GDPR);
   };
 

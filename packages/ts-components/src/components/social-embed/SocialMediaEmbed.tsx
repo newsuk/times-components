@@ -20,7 +20,7 @@ declare global {
       };
     };
     instgrm?: {
-      Embeds: {
+      Embeds?: {
         process: () => void;
       };
     };
