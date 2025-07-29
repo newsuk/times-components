@@ -103,8 +103,12 @@ const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
 useEffect(() => {
-  if (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) {
-    loadInstagramEmbedScript().then(() => {
+  const shouldLoadInstagram = isSocialEmbedAllowed.instagram || isAllowedOnce.instagram;
+
+  if (!shouldLoadInstagram || typeof window === 'undefined') return;
+
+  loadInstagramEmbedScript()
+    .then(() => {
       if (
         window.instgrm &&
         window.instgrm.Embeds &&
@@ -112,8 +116,10 @@ useEffect(() => {
       ) {
         window.instgrm.Embeds.process();
       }
+    })
+    .catch((err) => {
+      console.error("Failed to load Instagram script", err);
     });
-  }
 }, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
 
 
