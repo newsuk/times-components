@@ -23,6 +23,7 @@ export const enableCookies = (
   };
 
   const vendorId = socialMediaVendors[vendorName].id;
+  // eslint-disable-next-line no-console
   console.log('lol vendorId', vendorId);
 
   if (window.__tcfapi && vendorId) {
@@ -39,8 +40,11 @@ export const enableCookies = (
             Object.keys(data.grants[vendorId].purposeGrants),
             []
           );
+              // eslint-disable-next-line no-console
           console.log('lol successful', successful);
+              // eslint-disable-next-line no-console
           console.log('lol data', data);
+              // eslint-disable-next-line no-console
           console.log('lol data.grants[vendorId]', data.grants[vendorId]);
         } else {
           setIsSocialEmbedAllowed(prev => ({

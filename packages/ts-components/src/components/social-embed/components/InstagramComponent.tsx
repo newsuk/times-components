@@ -5,6 +5,7 @@ import { Placeholder } from '@times-components/image';
 
 export const Instagram = ({ url }: { url: string }) => {
 
+  
   console.log('lol instagram url', url);
 
 // useEffect(() => {
