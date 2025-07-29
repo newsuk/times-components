@@ -117,15 +117,19 @@ useEffect(() => {
 }, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
 
 
-  useEffect(() => {
-  // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
-  if (
-    (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) &&
-    window.instgrm.Embeds.process
-  ) {
-    window.instgrm.Embeds.process();
-  }
-}, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
+useEffect(
+    () => {
+      // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
+      if (
+        (isSocialEmbedAllowed.twitter || isAllowedOnce.twitter) &&
+        window.twttr &&
+        window.twttr.widgets
+      ) {
+        window.twttr.widgets.load();
+      }
+    },
+    [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
+  );
 
   const sidebarRef = useRef();
 
