@@ -101,19 +101,18 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
-  useEffect(
-    () => {
-      // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
-      if (
-        (isSocialEmbedAllowed.twitter || isAllowedOnce.twitter) &&
-        window.twttr &&
-        window.twttr.widgets
-      ) {
-        window.twttr.widgets.load();
-      }
-    },
-    [isSocialEmbedAllowed.twitter, isAllowedOnce.twitter]
-  );
+useEffect(() => {
+  // Trigger Instagram embed refresh when embed is allowed
+  if (
+    (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) &&
+    window.instgrm &&
+    window.instgrm.Embeds &&
+    typeof window.instgrm.Embeds.process === 'function'
+  ) {
+    window.instgrm.Embeds.process();
+  }
+}, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
+
 
   useEffect(() => {
   // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
