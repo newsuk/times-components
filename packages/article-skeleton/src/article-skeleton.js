@@ -21,7 +21,6 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import { fetchPolygonData, fetchSidebarData } from "./article-sidebar";
 import StaticContent from "./static-content";
-import { loadInstagramEmbedScript } from '../fixtures/instagram-loader';
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -103,30 +102,14 @@ const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
 useEffect(() => {
-  const shouldLoadInstagram = isSocialEmbedAllowed.instagram || isAllowedOnce.instagram;
-
-  if (!shouldLoadInstagram || typeof window === 'undefined') return;
-
-  loadInstagramEmbedScript()
-    .then(() => {
-      console.log('lol in then', window.instgrm, window.instgrm.Embeds);
-      if (
-        typeof window.instgrm !== 'undefined' &&
-        typeof window.instgrm.Embeds !== 'undefined' &&
-        typeof window.instgrm.Embeds.process === 'function'
-      ) {
-        console.log('lol u ifu', window.instgrm.Embeds.process);
-        window.instgrm.Embeds.process();
-      } else {
-        console.warn('Instagram embed script loaded but `window.instgrm.Embeds.process` is not ready yet.');
-      }
-    })
-    .catch((err) => {
-      console.error("Failed to load Instagram script", err);
-    });
+  // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
+  if (
+    (isSocialEmbedAllowed.instagram || isAllowedOnce.instagram) &&
+    window.instgrm?.Embeds?.process
+  ) {
+    window.instgrm.Embeds.process();
+  }
 }, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
-
-
 
 useEffect(
     () => {
