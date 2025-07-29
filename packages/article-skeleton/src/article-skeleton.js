@@ -109,18 +109,23 @@ useEffect(() => {
 
   loadInstagramEmbedScript()
     .then(() => {
+      console.log('lol in then', window.instgrm, window.instgrm.Embeds);
       if (
-        window.instgrm &&
-        window.instgrm.Embeds &&
+        typeof window.instgrm !== 'undefined' &&
+        typeof window.instgrm.Embeds !== 'undefined' &&
         typeof window.instgrm.Embeds.process === 'function'
       ) {
+        console.log('lol u ifu', window.instgrm.Embeds.process);
         window.instgrm.Embeds.process();
+      } else {
+        console.warn('Instagram embed script loaded but `window.instgrm.Embeds.process` is not ready yet.');
       }
     })
     .catch((err) => {
       console.error("Failed to load Instagram script", err);
     });
 }, [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]);
+
 
 
 useEffect(
