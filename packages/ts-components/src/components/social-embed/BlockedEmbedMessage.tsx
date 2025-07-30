@@ -25,7 +25,6 @@ export type BlockedEmbedMessageProps = {
 export const BlockedEmbedMessage: FC<BlockedEmbedMessageProps> = ({
   vendorName
 }) => {
-
   const {
     setIsSocialEmbedAllowed,
     setIsAllowedOnce

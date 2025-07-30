@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { InstagramContainer } from '../styles';
 import { Placeholder } from '@times-components/image';
 
-
 export const Instagram = ({ url }: { url: string }) => {
 
+    useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.instagram.com/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
 
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <InstagramContainer
