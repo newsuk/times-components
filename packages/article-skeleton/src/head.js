@@ -513,7 +513,6 @@ function Head({
         defer
         src="https://platform.instagram.com/en_US/embeds.js"
       />
-
     </Helmet>
   );
 }

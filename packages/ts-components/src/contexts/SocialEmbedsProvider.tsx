@@ -34,7 +34,6 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
 
   useEffect(
     () => {
-      console.log('lol in use Effect', isSocialEmbedAllowed);
       // Set defaults or perform any logic needed to initialize the values
       setIsAllowedOnce({
         instagram: isSocialEmbedAllowed.instagram,
@@ -42,16 +41,9 @@ export const SocialEmbedsProvider: React.FC = ({ children }) => {
         tiktok: isSocialEmbedAllowed.tiktok,
         youtube: isSocialEmbedAllowed.youtube
       });
-      // eslint-disable-next-line no-console
-      console.log('lol in use Effect 2', isSocialEmbedAllowed);
     },
     [isSocialEmbedAllowed]
   );
-
-  // eslint-disable-next-line no-console
-  console.log('lol isSocialEmbedAllowed', isSocialEmbedAllowed);
-  // eslint-disable-next-line no-console
-  console.log('lol isAllowedOnce', isAllowedOnce);
 
   return (
     <SocialEmbedsContext.Provider

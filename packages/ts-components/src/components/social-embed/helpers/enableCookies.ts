@@ -11,20 +11,16 @@ export const enableCookies = (
         ...prev,
         [vendorName]: true
       }));
-      console.log('lol enable cookies', vendorName);
       return true;
     }
     setIsSocialEmbedAllowed(prev => ({
       ...prev,
       [vendorName]: false
     }));
-    console.log('lol dont enable cookies', vendorName);
     return null;
   };
 
   const vendorId = socialMediaVendors[vendorName].id;
-  // eslint-disable-next-line no-console
-  console.log('lol vendorId', vendorId);
 
   if (window.__tcfapi && vendorId) {
     window.__tcfapi(
@@ -40,18 +36,11 @@ export const enableCookies = (
             Object.keys(data.grants[vendorId].purposeGrants),
             []
           );
-              // eslint-disable-next-line no-console
-          console.log('lol successful', successful);
-              // eslint-disable-next-line no-console
-          console.log('lol data', data);
-              // eslint-disable-next-line no-console
-          console.log('lol data.grants[vendorId]', data.grants[vendorId]);
         } else {
           setIsSocialEmbedAllowed(prev => ({
             ...prev,
             [vendorName]: false
           }));
-          console.log('lol socialMedia not allowed', vendorName);
         }
       }
     );
