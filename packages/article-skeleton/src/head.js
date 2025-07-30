@@ -507,6 +507,12 @@ function Head({
         defer
         src="https://platform.twitter.com/widgets.js"
       />
+
+      <script
+        type="text/javascript"
+        defer
+        src="https://platform.instagram.com/en_US/embeds.js"
+      />
     </Helmet>
   );
 }
