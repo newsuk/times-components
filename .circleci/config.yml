@@ -17,9 +17,7 @@ parameters:
   deploy_secrets:
     type: boolean
     default: false
-  use_secret_rotator:
-    type: boolean
-    default: true
+
 orbs:
   sonarcloud: sonarsource/sonarcloud@2.0.0
   aws-cli: circleci/aws-cli@4.1.2
@@ -54,6 +52,29 @@ commands:
           name: "Install Lerna"
           command: yarn global add lerna@7.4.2
           working_directory: ~/project/
+  
+  fetch_secrets:
+    parameters:
+      environment:
+        type: string
+        default: "dev"
+      role_arn:
+        type: string
+        default: "" 
+      region:
+        type: string
+        default: "eu-west-1" 
+    steps:
+      - when:
+          condition:
+            or:
+              - equal: [ "<< parameters.environment >>", "dev" ]
+          steps:
+            - aws-cli/setup:
+                region: << parameters.region >>
+                role_arn: << parameters.role_arn >>
+            - aws-secrets-manager/get-aws-secret:
+                aws-secret-name: times-components/dev/GH_TOKEN
 
 jobs:
   setup:
@@ -340,16 +361,6 @@ jobs:
             cd terraform-secret-rotator
             terraform apply -var-file=variables/<< parameters.env >>.tfvars -auto-approve
 
-  get_secret_gh_token_dev:
-    executor: node
-    steps:
-      - aws-cli/setup:
-          region: "eu-west-1"
-          role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
-      - aws-secrets-manager/get-aws-secret:
-          aws-secret-name: times-components/dev/GH_TOKEN
-  
-
 only_on_pr_branch: &only_on_pr_branch
   filters:
     branches:
@@ -412,6 +423,10 @@ workflows:
             - run_unit_tests
             - run_cypress_tests
       - publish_storybook:
+          pre-steps:
+            - fetch_secrets:
+                env: dev
+                role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
           <<: *only_on_master_branch
           requires:
             - verdaccio-test
@@ -422,12 +437,18 @@ workflows:
           requires:
             - setup
       - publish_canary:
+          pre-steps:
+            - fetch_secrets:
+                env: dev
+                role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
           <<: *only_on_pr_branch
           requires:
             - Approve canary release
-      - get_secret_gh_token_dev:
-          filters: pipeline.parameters.use_secret_rotator == true and pipeline.git.branch != "master"
       - publish_npm:
+          pre-steps:
+            - fetch_secrets:
+                env: dev
+                role_arn: arn:aws:iam::512040659177:role/circle-oidc-nuk-aws-digital-dev-tnlweb
           <<: *only_on_master_branch
           requires:
             - verdaccio-test
