@@ -55,7 +55,7 @@ commands:
   
   fetch_secrets:
     parameters:
-      environment:
+      env:
         type: string
         default: "dev"
       role_arn:
@@ -68,7 +68,7 @@ commands:
       - when:
           condition:
             or:
-              - equal: [ "<< parameters.environment >>", "dev" ]
+              - equal: [ "<< parameters.env >>", "dev" ]
           steps:
             - aws-cli/setup:
                 region: << parameters.region >>
