@@ -14,8 +14,3 @@ module "secret_rotator_times_components_dev" {
 
   secrets =  merge(local.dev_env_secrets)
 }
-
-
-
-
-
