@@ -1,0 +1,4 @@
+region         = "eu-west-1"
+bucket         = "times-components-terraform-state"
+key            = "times-components/terraform.tfstate"
+encrypt        = true
