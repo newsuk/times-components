@@ -60,7 +60,6 @@ commands:
         default: "dev"
       role_arn:
         type: string
-        default: "" 
       region:
         type: string
         default: "eu-west-1" 
