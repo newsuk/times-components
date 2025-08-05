@@ -10,3 +10,13 @@ variable "service_owner" {
   default     = "Times Media"
 }
 
+variable "environment" {
+  type = string
+  description = "Times components environment"
+}
+
+variable "account" {
+  type        = string
+  description = "account for times-components"
+  default     = "aws-digital-dev-tnlweb"
+}
