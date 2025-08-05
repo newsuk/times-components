@@ -328,10 +328,6 @@ jobs:
           command: |
             cd terraform-secret-rotator
             terraform plan -var-file=variables/<< parameters.env >>.tfvars -out=<< parameters.env >>-plan
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - terraform-secret-rotator/<< parameters.env >>-plan
 
   apply-secret-terraform:
     executor: terraform_secret
