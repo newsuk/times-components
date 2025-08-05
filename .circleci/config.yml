@@ -73,7 +73,7 @@ commands:
                 region: << parameters.region >>
                 role_arn: << parameters.role_arn >>
             - aws-secrets-manager/get-aws-secret:
-                aws-secret-name: times-components/dev/GH_TOKEN
+                aws-secret-name: times-components/<< parameters.env >>/GH_TOKEN
 
 jobs:
   setup:
