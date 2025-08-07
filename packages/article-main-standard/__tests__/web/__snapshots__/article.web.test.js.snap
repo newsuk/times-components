@@ -75,6 +75,11 @@ exports[`1. an article 1`] = `
           src="https://platform.twitter.com/widgets.js"
           type="text/javascript"
         />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
+          type="text/javascript"
+        />
       </Helmet>
       <div>
         <AdContainer
@@ -398,6 +403,11 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           src="https://platform.twitter.com/widgets.js"
           type="text/javascript"
         />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
+          type="text/javascript"
+        />
       </Helmet>
       <div>
         <AdContainer
@@ -562,6 +572,11 @@ exports[`5. an article with ads 1`] = `
         <script
           defer={true}
           src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
           type="text/javascript"
         />
       </Helmet>
@@ -733,6 +748,11 @@ exports[`6. an article with puzzle sidebar 1`] = `
         <script
           defer={true}
           src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
           type="text/javascript"
         />
       </Helmet>
@@ -911,6 +931,11 @@ exports[`7. should show topics when logged in or shared 1`] = `
         <script
           defer={true}
           src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
           type="text/javascript"
         />
       </Helmet>
@@ -1275,6 +1300,11 @@ exports[`8. an article with no byline 1`] = `
           src="https://platform.twitter.com/widgets.js"
           type="text/javascript"
         />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
+          type="text/javascript"
+        />
       </Helmet>
       <div>
         <AdContainer
@@ -1560,6 +1590,11 @@ exports[`9. an article with no label 1`] = `
         <script
           defer={true}
           src="https://platform.twitter.com/widgets.js"
+          type="text/javascript"
+        />
+        <script
+          defer={true}
+          src="https://platform.instagram.com/en_US/embeds.js"
           type="text/javascript"
         />
       </Helmet>

@@ -70,6 +70,11 @@ exports[`1. a full article 1`] = `
       src="https://platform.twitter.com/widgets.js"
       type="text/javascript"
     />
+    <script
+      defer={true}
+      src="https://platform.instagram.com/en_US/embeds.js"
+      type="text/javascript"
+    />
   </Helmet>
   <main>
     SOME LABEL
