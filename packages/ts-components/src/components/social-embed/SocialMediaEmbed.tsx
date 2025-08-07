@@ -19,6 +19,11 @@ declare global {
         load: (element?: HTMLElement) => void;
       };
     };
+    instgrm?: {
+      Embeds?: {
+        process: () => void;
+      };
+    };
   }
 }
 

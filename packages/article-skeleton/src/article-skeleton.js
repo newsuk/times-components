@@ -103,6 +103,20 @@ const ArticleSkeleton = ({
 
   useEffect(
     () => {
+      // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
+      if (
+        window.instgrm &&
+        window.instgrm.Embeds &&
+        typeof window.instgrm.Embeds.process === "function"
+      ) {
+        window.instgrm.Embeds.process();
+      }
+    },
+    [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
+  );
+
+  useEffect(
+    () => {
       // Trigger Twitter embed load when isSocialEmbedAllowed or isAllowedOnce switches to true
       if (
         (isSocialEmbedAllowed.twitter || isAllowedOnce.twitter) &&

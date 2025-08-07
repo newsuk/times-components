@@ -78,6 +78,11 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         src="https://platform.twitter.com/widgets.js"
         type="text/javascript"
       />
+      <script
+        defer={true}
+        src="https://platform.instagram.com/en_US/embeds.js"
+        type="text/javascript"
+      />
     </Helmet>
     <div>
       <AdContainer
@@ -363,6 +368,11 @@ exports[`4. an article with ads with .co.uk 1`] = `
       <script
         defer={true}
         src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
+      <script
+        defer={true}
+        src="https://platform.instagram.com/en_US/embeds.js"
         type="text/javascript"
       />
     </Helmet>
@@ -655,6 +665,11 @@ exports[`5. an article with ads with .com 1`] = `
       <script
         defer={true}
         src="https://platform.twitter.com/widgets.js"
+        type="text/javascript"
+      />
+      <script
+        defer={true}
+        src="https://platform.instagram.com/en_US/embeds.js"
         type="text/javascript"
       />
     </Helmet>
