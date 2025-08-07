@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.18.3...@times-components/article-main-video@1.19.0) (2025-08-07)
+
+
+### Features
+
+* **TMC-579:** Instagram embed bug ([#4186](https://github.com/newsuk/times-components/issues/4186)) ([0f3bfd7](https://github.com/newsuk/times-components/commit/0f3bfd73b83193a3dad60cb6620170feb20bd4b9))
+
+
+
+
+
 ## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-video@1.18.2...@times-components/article-main-video@1.18.3) (2025-07-28)
 
 **Note:** Version bump only for package @times-components/article-main-video
