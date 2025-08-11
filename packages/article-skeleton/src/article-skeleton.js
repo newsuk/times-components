@@ -189,8 +189,7 @@ const ArticleSkeleton = ({
     categorisedArticles,
     deckApiUrl,
     isExcludedFromAdsPathFromServer,
-    firstPublishedTime,
-    isLiveArticleMetaDataEnabled
+    firstPublishedTime
   } = articleDataFromRender || {};
 
   const articleUrl =
@@ -379,7 +378,6 @@ const ArticleSkeleton = ({
             breadcrumbs={breadcrumbs}
             domainSpecificUrl={domainSpecificUrl}
             firstPublishedTime={firstPublishedTime}
-            isLiveArticleMetaDataEnabled={isLiveArticleMetaDataEnabled}
           />
           {!!zephrDivs && (
             <StaticContent
