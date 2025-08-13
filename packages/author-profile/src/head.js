@@ -14,8 +14,7 @@ function Head({ metaDescription, description, name, slug, articles }) {
     content = renderTreeArrayAsText(description).substring(0, 200);
   }
   const hostName = "https://www.thetimes.com";
-  const DualMasthead = "/d/assets/dual-masthead-6a9822c61a.png"; 
-
+  const DualMasthead = "/d/assets/dual-masthead-6a9822c61a.png";
 
   return (
     <Helmet>
