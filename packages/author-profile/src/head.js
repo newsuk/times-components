@@ -40,9 +40,9 @@ function Head({ metaDescription, description, name, slug, articles }) {
           url: `${hostName}/profile/${slug}`,
           mainEntity: {
             "@type": "ItemList",
-            itemListElement: articles?.map((article, index) => ({
+            itemListElement: articles.map((article, index) => ({
               "@type": "ListItem",
-              url: article?.url,
+              url: article.url,
               position: index + 1
             }))
           },
