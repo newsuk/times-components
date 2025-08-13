@@ -18,6 +18,7 @@ function Head({ metaDescription, description, name }) {
     <Helmet>
       <title>{name} | The Times &amp; The Sunday Times</title>
       <meta content={content} name="description" />
+      {/* <meta content={content} name="description" /> */}
     </Helmet>
   );
 }
