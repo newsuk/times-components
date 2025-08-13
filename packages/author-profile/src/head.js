@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
-import DualMasthead from "../assets/dual-masthead.png";
 
 function Head({ metaDescription, description, name, slug, articles }) {
   let content = `Get up to date information and read all the latest articles from ${name}.`;
@@ -15,6 +14,8 @@ function Head({ metaDescription, description, name, slug, articles }) {
     content = renderTreeArrayAsText(description).substring(0, 200);
   }
   const hostName = "https://www.thetimes.com";
+  const DualMasthead = "/d/assets/dual-masthead-6a9822c61a.png"; 
+
 
   return (
     <Helmet>
