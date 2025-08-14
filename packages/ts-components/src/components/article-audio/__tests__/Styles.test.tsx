@@ -14,7 +14,7 @@ describe('AudioButton', () => {
 
     expect(button).toHaveStyleRule('background-color', 'unset');
     expect(button).toHaveStyleRule('border-radius', '0');
-    expect(button).toHaveStyleRule('padding', '7px 11px');
+    expect(button).toHaveStyleRule('padding', '6px 11px');
     expect(button).toHaveStyleRule('border', '1px solid #333333');
     expect(button).toHaveStyleRule('display', 'flex');
     expect(button).toHaveStyleRule('align-items', 'center');
