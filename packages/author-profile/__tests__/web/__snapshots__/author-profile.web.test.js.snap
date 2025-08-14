@@ -13,6 +13,11 @@ exports[`2. a loading state 1`] = `
       content="Get up to date information and read all the latest articles from ."
       name="description"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"","description":"Get up to date information and read all the latest articles from .","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","url":"https://article1.io","position":1}]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+    </script>
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -56,6 +61,11 @@ exports[`3. an article list with images 1`] = `
       content="Camilla Long"
       name="description"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"Name","description":"Camilla Long","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","url":"https://article1.io","position":1}]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+    </script>
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -110,6 +120,11 @@ exports[`4. an article list without images 1`] = `
       content="Camilla Long"
       name="description"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"Name","description":"Camilla Long","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","url":"https://article1.io","position":1}]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+    </script>
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -164,6 +179,11 @@ exports[`5. fetches more articles 1`] = `
       content="Camilla Long"
       name="description"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"Name","description":"Camilla Long","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","url":"https://article1.io","position":1},{"@type":"ListItem","url":"https://article3.io","position":2}]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+    </script>
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -223,6 +243,11 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
       content="Camilla Long"
       name="description"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"Name","description":"Camilla Long","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","url":"https://article1.io","position":1}]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+    </script>
   </Helmet>
   <ArticleList
     articleListHeader={
