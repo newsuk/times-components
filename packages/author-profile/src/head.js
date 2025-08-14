@@ -13,8 +13,6 @@ function Head({ metaDescription, description, name, slug, articles }) {
   } else if (description && description.length) {
     content = renderTreeArrayAsText(description).substring(0, 200);
   }
-  const hostName = "https://www.thetimes.com";
-  const DualMasthead = "/d/assets/dual-masthead-6a9822c61a.png";
 
   return (
     <Helmet>
@@ -29,7 +27,7 @@ function Head({ metaDescription, description, name, slug, articles }) {
             name: "The Times",
             logo: {
               "@type": "ImageObject",
-              url: DualMasthead,
+              url: "/d/assets/dual-masthead-6a9822c61a.png",
               width: "600",
               height: "315"
             }
@@ -37,7 +35,7 @@ function Head({ metaDescription, description, name, slug, articles }) {
 
           headline: name,
           description: content,
-          url: `${hostName}/profile/${slug}`,
+          url: `https://www.thetimes.com/profile/${slug}`,
           mainEntity: {
             "@type": "ItemList",
             itemListElement: articles.map((article, index) => ({
