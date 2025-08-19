@@ -41,7 +41,7 @@ exports[`Render FeaturesCarousel should render a snapshot 1`] = `
         >
           <img
             alt="Title 2"
-            src="https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png"
+            src="https://www.thetimes.com/d/img/puzzles/new-svg-icons/sudoku-82ab496537.svg"
           />
           <div
             class="sc-bxivhb kmeDRD"
