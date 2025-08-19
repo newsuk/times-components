@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.21.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.20.19...@times-components/author-profile@6.21.0) (2025-08-19)
+
+
+### Features
+
+* **TMPR-527:** add profile metadata to profile pages ([#4193](https://github.com/newsuk/times-components/issues/4193)) ([41ea566](https://github.com/newsuk/times-components/commit/41ea5663c776e7fa9e0a3a2dfc168bbaf1a37626))
+
+
+
+
+
 ## [6.20.19](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.20.18...@times-components/author-profile@6.20.19) (2025-08-07)
 
 **Note:** Version bump only for package @times-components/author-profile
