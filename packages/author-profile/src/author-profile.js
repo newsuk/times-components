@@ -118,6 +118,8 @@ const AuthorProfile = ({
               metaDescription={metaDescription}
               description={biography}
               name={name}
+              slug={slug}
+              articles={get(data, "articles.list", [])}
             />
             <ArticleList
               articleListHeader={articleListHeader}
