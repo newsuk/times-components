@@ -97,6 +97,9 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
+  console.log('ARTICLE-TC', article)
+  const test = section
+
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
@@ -114,6 +117,15 @@ const ArticleSkeleton = ({
     },
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
   );
+
+  //test za window section
+
+  useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.utag_data = { ...window.utag_data, ...test };
+        }
+    }, []);
+    
 
   useEffect(
     () => {
