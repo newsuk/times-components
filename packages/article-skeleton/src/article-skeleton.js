@@ -120,11 +120,23 @@ const ArticleSkeleton = ({
 
   //test za window section
 
-  useEffect(() => {
-        if (typeof window !== 'undefined') {
-            window.utag_data = { ...window.utag_data, ...test };
-        }
-    }, []);
+ useEffect(() => {
+  if (typeof window !== "undefined") {
+    // Ensure utag_data exists
+    window.utag_data = window.utag_data || {};
+
+    // Push/update values
+    window.utag_data.section = "AAA";
+
+    // You can also merge deeply if needed
+    window.utag_data = {
+      ...window.utag_data,
+      customFlag: "AAA"
+    };
+
+    console.log("Updated utag_data", window.utag_data);
+  }
+}, [section]);
     
 
   useEffect(
