@@ -124,16 +124,17 @@ const ArticleSkeleton = ({
   if (typeof window !== "undefined") {
     window.utag_data = window.utag_data || {};
 
-    const newPageSection = publishedTime;
+    const newPageSection = "test";
 
     window.utag_data = {
-  ...window.utag_data,
-  page_sectionNew: newPageSection
+      ...window.utag_data,
+      page_sectionNew: newPageSection
 };
 
+    // eslint-disable-next-line no-console
     console.log("Updated utag_data", window.utag_data);
   }
-}, [publishedTime]);
+}, []);
     
 
   useEffect(
