@@ -97,8 +97,8 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
-  console.log('ARTICLE-TC', article)
-  const test = section
+  console.log('dataTC', data)
+  /* console.log('ARTICLE-TC', article) */
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
@@ -118,15 +118,9 @@ const ArticleSkeleton = ({
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
   );
 
-  //test za window section
-
  useEffect(() => {
   if (typeof window !== "undefined") {
-    // Ensure utag_data exists
     window.utag_data = window.utag_data || {};
-
-    // Push/update values
-    window.utag_data.section = "AAA";
 
     // You can also merge deeply if needed
     window.utag_data = {
@@ -136,7 +130,7 @@ const ArticleSkeleton = ({
 
     console.log("Updated utag_data", window.utag_data);
   }
-}, [section]);
+}, []);
     
 
   useEffect(
