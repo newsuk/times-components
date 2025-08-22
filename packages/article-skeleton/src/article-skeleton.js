@@ -124,7 +124,12 @@ const ArticleSkeleton = ({
   if (typeof window !== "undefined") {
     window.utag_data = window.utag_data || {};
 
-    window.utag_data.page_section = publishedTime;
+    const newPageSection = publishedTime;
+
+    window.utag_data = {
+  ...window.utag_data,
+  page_sectionNew: newPageSection
+};
 
     console.log("Updated utag_data", window.utag_data);
   }
