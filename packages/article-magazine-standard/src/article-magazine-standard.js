@@ -78,6 +78,11 @@ class ArticlePage extends Component {
       removeTeaserContent
     } = this.props;
 
+    console.log('ARTICLETC', article)
+    console.log('analyticsStream', analyticsStream)
+    console.log('articleDataFromRender', articleDataFromRender)
+
+
     if (error || isLoading) {
       return null;
     }

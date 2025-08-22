@@ -97,8 +97,8 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
-  console.log('dataTC', data)
-  /* console.log('ARTICLE-TC', article) */
+  console.log('ARTICLE-TC', article)
+  console.log('ARTRENDER', articleDataFromRender)
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
@@ -126,7 +126,7 @@ const ArticleSkeleton = ({
 
     console.log("Updated utag_data", window.utag_data);
   }
-}, [page_section]);
+}, []);
     
 
   useEffect(
