@@ -97,7 +97,9 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
+  // eslint-disable-next-line no-console
   console.log('ARTICLE-TC', article)
+  // eslint-disable-next-line no-console
   console.log('ARTRENDER', articleDataFromRender)
 
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
@@ -122,11 +124,11 @@ const ArticleSkeleton = ({
   if (typeof window !== "undefined") {
     window.utag_data = window.utag_data || {};
 
-    window.utag_data.page_section = publishedTime
+    window.utag_data.page_section = publishedTime;
 
     console.log("Updated utag_data", window.utag_data);
   }
-}, []);
+}, [publishedTime]);
     
 
   useEffect(

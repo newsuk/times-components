@@ -78,8 +78,11 @@ class ArticlePage extends Component {
       removeTeaserContent
     } = this.props;
 
+    // eslint-disable-next-line no-console
     console.log('ARTICLETC', article)
+    // eslint-disable-next-line no-console
     console.log('analyticsStream', analyticsStream)
+    // eslint-disable-next-line no-console
     console.log('articleDataFromRender', articleDataFromRender)
 
 
