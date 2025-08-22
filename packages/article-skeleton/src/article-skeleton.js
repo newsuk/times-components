@@ -122,15 +122,11 @@ const ArticleSkeleton = ({
   if (typeof window !== "undefined") {
     window.utag_data = window.utag_data || {};
 
-    // You can also merge deeply if needed
-    window.utag_data = {
-      ...window.utag_data,
-      customFlag: "AAA"
-    };
+    window.utag_data.page_section = publishedTime
 
     console.log("Updated utag_data", window.utag_data);
   }
-}, []);
+}, [page_section]);
     
 
   useEffect(
