@@ -120,23 +120,24 @@ const ArticleSkeleton = ({
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
   );
 
+  useEffect(() => {
   if (typeof window !== "undefined") {
-    // Ensure utag_data exists
     window.utag_data = window.utag_data || {};
 
-    // Push/update values
-    window.utag_data.page_section = "hello world";
+    // eslint-disable-next-line no-console
+    // eslint-disable-next-line no-console
+    console.log("BEFORE change utag_data", window.utag_data)
 
-    // You can also merge deeply if needed
-    window.utag_data = {
-      ...window.utag_data,
-      customFlag: "example",
-      page_sectionNew: "hello world new",
-    };
+
+    // Mutate safely instead of replacing the whole object
+    window.utag_data.page_section = "hello world";
+    window.utag_data.customFlag = "example";
+    window.utag_data.page_sectionNew = "hello world new";
 
     // eslint-disable-next-line no-console
     console.log("Updated utag_data", window.utag_data);
   }
+}, []);
     
 
   useEffect(
