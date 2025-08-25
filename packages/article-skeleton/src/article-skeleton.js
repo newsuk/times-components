@@ -98,20 +98,19 @@ const ArticleSkeleton = ({
   } = article;
 
   useEffect(() => {
+  if (typeof window === "undefined") return;
+
+  // Ensure utag_data exists
+  window.utag_data = window.utag_data || {};
+
+  // Only update if different (prevents any side-effect loops)
   if (typeof window !== "undefined") {
-    // Ensure window.utag_data exists
-    window.utag_data = window.utag_data || {};
+    window.utag_data = {
+      ...window.utag_data,
+      page_section: "BLA"
+    };
 
-    // Set page_section dynamically based on article data from server
-    // article._values.cpi_commercial_section comes from server-side
-    window.utag_data.page_section = article._values.cpi_commercial_section || "BLA";
-
-    // Optionally, push the updated data immediately
-    if (window.utag && typeof window.utag.view === "function") {
-      window.utag.view(window.utag_data);
-    }
-
-    console.log('UPDATED UTAG', window.utag_data)
+    console.log("Updated utag_data", window.utag_data);
   }
 }, [article._values.cpi_commercial_section]);
 
