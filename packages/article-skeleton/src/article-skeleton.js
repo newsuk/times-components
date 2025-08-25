@@ -97,6 +97,24 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+    // Ensure window.utag_data exists
+    window.utag_data = window.utag_data || {};
+
+    // Set page_section dynamically based on article data from server
+    // article._values.cpi_commercial_section comes from server-side
+    window.utag_data.page_section = article._values.cpi_commercial_section || "BLA";
+
+    // Optionally, push the updated data immediately
+    if (window.utag && typeof window.utag.view === "function") {
+      window.utag.view(window.utag_data);
+    }
+
+    console.log('UPDATED UTAG', window.utag_data)
+  }
+}, [article._values.cpi_commercial_section]);
+
   // eslint-disable-next-line no-console
   console.log('ARTICLE-TC', article)
   // eslint-disable-next-line no-console
@@ -105,17 +123,6 @@ const ArticleSkeleton = ({
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
-
-  useEffect(() => {
-  if (typeof window === "undefined") return;
-
-  if (typeof window !== "undefined") {
-     window.utag_data = { ...window.utag_data };
-
-     // eslint-disable-next-line no-console
-    console.log("Updated utag_data", window.utag_data);
-  }
-}, [section]);
 
   useEffect(
     () => {
