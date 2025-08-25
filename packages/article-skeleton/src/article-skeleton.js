@@ -106,6 +106,17 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
+  useEffect(() => {
+  if (typeof window === "undefined") return;
+
+  if (typeof window !== "undefined") {
+     window.utag_data = { ...window.utag_data };
+
+     // eslint-disable-next-line no-console
+    console.log("Updated utag_data", window.utag_data);
+  }
+}, [section]);
+
   useEffect(
     () => {
       // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
@@ -118,28 +129,7 @@ const ArticleSkeleton = ({
       }
     },
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
-  );
-
-  useEffect(() => {
-  if (typeof window === "undefined") {
-    // eslint-disable-next-line no-console
-    return console.log('UNDEFINED')
-  };
-
-  // Ensure utag_data exists
-  window.utag_data = window.utag_data || {};
-
-  // Only update if different (prevents any side-effect loops)
-  if (window.utag_data.page_section && typeof window !== 'undefined') {
-    window.utag_data.page_section = article.section || "BLA";
-    window.utag_data.page_sectionNew = "hello world";
-
-    // eslint-disable-next-line no-console
-    console.log("Updated utag_data", window.utag_data);
-  }
-
-}, []);
-    
+  );    
 
   useEffect(
     () => {
