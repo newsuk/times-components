@@ -120,21 +120,23 @@ const ArticleSkeleton = ({
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
   );
 
- useEffect(() => {
   if (typeof window !== "undefined") {
+    // Ensure utag_data exists
     window.utag_data = window.utag_data || {};
 
-    const newPageSection = "test";
+    // Push/update values
+    window.utag_data.page_section = "hello world";
 
+    // You can also merge deeply if needed
     window.utag_data = {
       ...window.utag_data,
-      page_sectionNew: newPageSection
-};
+      customFlag: "example",
+      page_sectionNew: "hello world new",
+    };
 
     // eslint-disable-next-line no-console
     console.log("Updated utag_data", window.utag_data);
   }
-}, []);
     
 
   useEffect(
