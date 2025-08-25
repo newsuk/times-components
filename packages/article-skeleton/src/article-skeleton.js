@@ -121,22 +121,23 @@ const ArticleSkeleton = ({
   );
 
   useEffect(() => {
-  if (typeof window !== "undefined") {
-    window.utag_data = window.utag_data || {};
-
+  if (typeof window === "undefined") {
     // eslint-disable-next-line no-console
-    // eslint-disable-next-line no-console
-    console.log("BEFORE change utag_data", window.utag_data)
+    return console.log('UNDEFINED')
+  };
 
+  // Ensure utag_data exists
+  window.utag_data = window.utag_data || {};
 
-    // Mutate safely instead of replacing the whole object
-    window.utag_data.page_section = "hello world";
-    window.utag_data.customFlag = "example";
-    window.utag_data.page_sectionNew = "hello world new";
+  // Only update if different (prevents any side-effect loops)
+  if (window.utag_data.page_section && typeof window !== 'undefined') {
+    window.utag_data.page_section = article.section || "BLA";
+    window.utag_data.page_sectionNew = "hello world";
 
     // eslint-disable-next-line no-console
     console.log("Updated utag_data", window.utag_data);
   }
+
 }, []);
     
 
