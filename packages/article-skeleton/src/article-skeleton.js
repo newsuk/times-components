@@ -98,7 +98,7 @@ const ArticleSkeleton = ({
   } = article;
 
   useEffect(() => {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined") {return};
 
   // Ensure utag_data exists
   window.utag_data = window.utag_data || {};
@@ -112,7 +112,7 @@ const ArticleSkeleton = ({
 
     console.log("Updated utag_data", window.utag_data);
   }
-}, [article._values.cpi_commercial_section]);
+}, []);
 
   // eslint-disable-next-line no-console
   console.log('ARTICLE-TC', article)
