@@ -6,9 +6,9 @@ metadata:
   annotations:
     circleci.com/project-slug: github/newsuk/times-components
     backstage.io/source-location: url:https://github.com/newsuk/times-components/
-    github.com/team-slug: newsuk/times-components
     backstage.io/techdocs-ref: dir:.
     backstage.io/productivity-hub-metrics-enabled: 'true'
+    
   tags:
     - bu:newsuk
 spec:
