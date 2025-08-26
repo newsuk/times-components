@@ -81,7 +81,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 ...article,
                 section: article
                   ? getSectionNameForAnalytics(article)
-                  : "unknown section",
+                  : "test section",
                 isPreview
               },
               error,
