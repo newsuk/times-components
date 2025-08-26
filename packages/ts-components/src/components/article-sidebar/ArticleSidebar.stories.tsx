@@ -11,19 +11,19 @@ const getAttributes = () => {
       title: 'Crossword',
       url: 'https://www.thetimes.com/puzzles/crossword',
       imgUrl:
-        'https://www.thetimes.com/d/img/puzzles/new-illustrations/crossword-c7ae8934ef.png'
+        'https://www.thetimes.com/d/img/puzzles/new-svg-icons/crosswordclub-bab367331b.svg'
     },
     {
       title: 'Polygon',
       url: 'https://www.thetimes.com/puzzles/word-puzzles',
       imgUrl:
-        'https://www.thetimes.com/d/img/puzzles/new-illustrations/polygon-875ea55487.png'
+        'https://www.thetimes.com/d/img/puzzles/new-svg-icons/polygon-20e7fe15fe.svg'
     },
     {
       title: 'Sudoku',
       url: 'https://www.thetimes.com/puzzles/sudoku',
       imgUrl:
-        'https://www.thetimes.com/d/img/puzzles/new-illustrations/sudoku-ee2aea0209.png'
+        'https://www.thetimes.com/d/img/puzzles/new-svg-icons/sudoku-82ab496537.svg'
     }
   ];
   const pageLink = 'https://www.thetimes.com/puzzles';

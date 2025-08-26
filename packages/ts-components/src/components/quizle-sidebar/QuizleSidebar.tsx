@@ -86,7 +86,7 @@ export const QuizleSidebar: FC<QuizleSideBarProps> = ({
             </Link>
           </div>
           <img
-            src="https://www.thetimes.com/d/img/puzzles/new-illustrations/quizzesteasers-4e9e19ef6b.png"
+            src="https://www.thetimes.com/d/img/puzzles/new-svg-icons/quizle-a15f1f6b66.svg"
             className="question-icon"
           />
         </TitleIconContainer>

@@ -24,7 +24,7 @@ exports[`QuizleSidebar should render QuizleSidebar component 1`] = `
       </div>
       <img
         class="question-icon"
-        src="https://www.thetimes.com/d/img/puzzles/new-illustrations/quizzesteasers-4e9e19ef6b.png"
+        src="https://www.thetimes.com/d/img/puzzles/new-svg-icons/quizle-a15f1f6b66.svg"
       />
     </div>
     <hr
