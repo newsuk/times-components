@@ -119,7 +119,8 @@ const AuthorProfile = ({
               description={biography}
               name={name}
               slug={slug}
-              articles={get(data, "articles.list", [])}
+              jobTitle={jobTitle}
+              uri={uri}
             />
             <ArticleList
               articleListHeader={articleListHeader}
