@@ -106,6 +106,7 @@ const ArticleSkeleton = ({
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
 
+
   useEffect(
     () => {
       // Trigger Instagram embed refresh when isSocialEmbedAllowed or isAllowedOnce switches to true
@@ -194,9 +195,18 @@ const ArticleSkeleton = ({
     categorisedArticles,
     deckApiUrl,
     isExcludedFromAdsPathFromServer,
+    commercialSection,
     firstPublishedTime,
     isLiveArticleMetaDataEnabled
   } = articleDataFromRender || {};
+
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+    window.utag_data = window.utag_data || {};
+    window.utag_data.page_section = commercialSection;
+    console.log("utag_data updated:", commercialSection);
+  }
+}, [commercialSection]);
 
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
