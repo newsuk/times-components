@@ -97,9 +97,15 @@ const ArticleSkeleton = ({
     publishedTime
   } = article;
 
+  // eslint-disable-next-line no-console
+  console.log('ARTICLE-TC', article)
+  // eslint-disable-next-line no-console
+  console.log('ARTRENDER', articleDataFromRender)
+
   const [showVerifyEmailBanner, setShowEmailVerifyBanner] = useState(false);
 
   const { isSocialEmbedAllowed, isAllowedOnce } = useSocialEmbedsContext();
+
 
   useEffect(
     () => {
@@ -113,7 +119,7 @@ const ArticleSkeleton = ({
       }
     },
     [isSocialEmbedAllowed.instagram, isAllowedOnce.instagram]
-  );
+  );    
 
   useEffect(
     () => {
@@ -189,9 +195,18 @@ const ArticleSkeleton = ({
     categorisedArticles,
     deckApiUrl,
     isExcludedFromAdsPathFromServer,
+    commercialSection,
     firstPublishedTime,
     isLiveArticleMetaDataEnabled
   } = articleDataFromRender || {};
+
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+    window.utag_data = window.utag_data || {};
+    window.utag_data.page_section = commercialSection;
+    console.log("utag_data updated:", commercialSection);
+  }
+}, [commercialSection]);
 
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
