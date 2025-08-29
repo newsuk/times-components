@@ -5,7 +5,7 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
 
-function Head({ metaDescription, description, name, slug, articles }) {
+function Head({ metaDescription, description, name, slug, jobTitle, uri }) {
   let content = `Get up to date information and read all the latest articles from ${name}.`;
 
   if (metaDescription) {
@@ -20,32 +20,16 @@ function Head({ metaDescription, description, name, slug, articles }) {
       <meta content={content} name="description" />
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "http://schema.org",
-          "@type": "CollectionPage",
-          publisher: {
-            "@type": "Organization",
-            name: "The Times",
-            logo: {
-              "@type": "ImageObject",
-              url: "/d/assets/dual-masthead-6a9822c61a.png",
-              width: "600",
-              height: "315"
-            }
-          },
-
-          headline: name,
-          description: content,
-          url: `https://www.thetimes.com/profile/${slug}`,
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
           mainEntity: {
-            "@type": "ItemList",
-            itemListElement: articles.map((article, index) => ({
-              "@type": "ListItem",
-              url: article.url,
-              position: index + 1
-            }))
-          },
-          isAccessibleForFree: true,
-          articleSection: "author profile page"
+            "@type": "Person",
+            description: content,
+            image: uri,
+            jobTitle,
+            name,
+            url: `https://www.thetimes.com/profile/${slug}`
+          }
         })}
       </script>
     </Helmet>
@@ -57,17 +41,15 @@ Head.propTypes = {
   description: authorProfileHeadPropTypes.biography.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string,
-  articles: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string
-    })
-  )
+  jobTitle: PropTypes.string,
+  uri: PropTypes.string
 };
 
 Head.defaultProps = {
   metaDescription: null,
   slug: "",
-  articles: []
+  jobTitle: "",
+  uri: ""
 };
 
 export default Head;

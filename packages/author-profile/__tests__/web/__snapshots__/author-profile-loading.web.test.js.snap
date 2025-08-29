@@ -14,7 +14,7 @@ exports[`1. an article list loading with images 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"","description":"Get up to date information and read all the latest articles from .","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+      {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","description":"Get up to date information and read all the latest articles from .","image":"","jobTitle":"","name":"","url":"https://www.thetimes.com/profile/some-slug"}}
     </script>
   </Helmet>
   <ArticleList
@@ -53,7 +53,7 @@ exports[`2. an article list loading without images 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"http://schema.org","@type":"CollectionPage","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"/d/assets/dual-masthead-6a9822c61a.png","width":"600","height":"315"}},"headline":"","description":"Get up to date information and read all the latest articles from .","url":"https://www.thetimes.com/profile/some-slug","mainEntity":{"@type":"ItemList","itemListElement":[]},"isAccessibleForFree":true,"articleSection":"author profile page"}
+      {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","description":"Get up to date information and read all the latest articles from .","image":"","jobTitle":"","name":"","url":"https://www.thetimes.com/profile/some-slug"}}
     </script>
   </Helmet>
   <ArticleList
