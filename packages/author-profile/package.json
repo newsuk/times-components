@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "6.21.1",
+  "version": "6.22.0",
   "description": "Author profile information along with a list of articles they have written ",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
